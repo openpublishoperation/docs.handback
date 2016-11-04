@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 1722
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 228
+[ Handoff Success Files ](#handoff-success-list)| 227
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 1494
+[ Ignored Files ](#ignored-list)| 1495
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -63,7 +63,6 @@
  [docs\core\tools\dotnet-run.md](https://github.com/dotnet/docs/blob/c6ee3f5663d0a3f62914e8de474cca4d15340c9d/docs/core/tools/dotnet-run.md) | HandedOffSuccess | [Details](#18731d9fcc190371d908779a69a81114e0685aba60)
  [docs\core\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/c6ee3f5663d0a3f62914e8de474cca4d15340c9d/docs/core/tools/dotnet-test.md) | HandedOffSuccess | [Details](#b12861f0ce3c40bf4db51994ea5d4a92b8ef016261)
  [docs\core\tools\extensibility.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/core/tools/extensibility.md) | HandedOffSuccess | [Details](#ea16d4b841f5c93da222df56db36d6fb70ea35f963)
- [docs\core\tools\global-json.md](https://github.com/dotnet/docs/blob/a77454a141ed46eaeeda25dc723476fdb4e542e9/docs/core/tools/global-json.md) | HandedOffSuccess | [Details](#bc6cb807d7754753b67f89a6039358d0570f22e364)
  [docs\core\tools\index.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/core/tools/index.md) | HandedOffSuccess | [Details](#3a3326f96cf69d0ac466e52107597d80c2790b6265)
  [docs\core\tools\media\test-protocol\dotnet-test-discover.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tools/media/test-protocol/dotnet-test-discover.png) | HandedOffSuccess | [Details](#ef6d86dc7da862a2a61112c666acbd4fa48b22c866)
  [docs\core\tools\media\test-protocol\dotnet-test-execute.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tools/media/test-protocol/dotnet-test-execute.png) | HandedOffSuccess | [Details](#63bf500252fc112edf2e2bf9293b7fdcf08cc83467)
@@ -279,6 +278,7 @@
  [ci-scripts\setnetcoreenv.ps1](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/ci-scripts/setnetcoreenv.ps1) | Ignored | [Details](#2e7decad50ad3978a74db5cce5b3c573511ab36017)
  [CONTRIBUTING.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/CONTRIBUTING.md) | Ignored | [Details](#4aacb99e7ead83200f60ab0da99b93d27b7ab26a18)
  [docfx.json](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docfx.json) | Ignored | [Details](#4ee99047f4aef8214e293b1d56be43e5c6a59d8419)
+ [docs\core\tools\global-json.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/core/tools/global-json.md) | Ignored | [Details](#2353a22ea41c3fbf5700ba40da5cdb89b5bf287264)
  [docs\csharp\async.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/async.md) | Ignored | [Details](#11de6461cd4d25cab767d9c2828043e81a0c6d6988)
  [docs\csharp\basic-types.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/basic-types.md) | Ignored | [Details](#2d8ac3251f7d4938d81692fc90b9b81368904d6d89)
  [docs\csharp\classes.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/classes.md) | Ignored | [Details](#4c30950df5b5bbc4068b448dd6807f0c55dd283e90)
@@ -320,7 +320,7 @@
  [docs\csharp\getting-started\publishing-with-visual-studio.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/publishing-with-visual-studio.md) | Ignored | [Details](#9c9010e7fede6107ab04e43747ab61621c026066127)
  [docs\csharp\getting-started\with-cross-platform-tools.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-cross-platform-tools.md) | Ignored | [Details](#6cc1205116cfe040e1a058f9cd722140665e665b128)
  [docs\csharp\getting-started\with-csharp-interactive.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-csharp-interactive.md) | Ignored | [Details](#480103685a4e5552c70fde34cd99a320693792de129)
- [docs\csharp\getting-started\with-visual-studio.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-visual-studio.md) | Ignored | [Details](#93638d41bdef21e6877dc3a0f6019a97c5a94755131)
+ [docs\csharp\getting-started\with-visual-studio.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-visual-studio.md) | Ignored | [Details](#0a24b81a077eac9e2def8c4d7d475cc9afb463db131)
  [docs\csharp\getting-started\with-visual-studio-code.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-visual-studio-code.md) | Ignored | [Details](#22437be2e42a56ffb6ee7aacf1712554d597d95f130)
  [docs\csharp\implicitly-typed-lambda-expressions.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/implicitly-typed-lambda-expressions.md) | Ignored | [Details](#c43c1bd2ed95da0c3f8fc6061968e97671da43ee132)
  [docs\csharp\indexers.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/indexers.md) | Ignored | [Details](#ff2819defeb5375e9ee37a7b00a169e62f7b0a2c134)
@@ -2534,12 +2534,12 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='bc6cb807d7754753b67f89a6039358d0570f22e364'></a> Source: [docs\core\tools\global-json.md](https://github.com/dotnet/docs/blob/a77454a141ed46eaeeda25dc723476fdb4e542e9/docs/core/tools/global-json.md)
-* Status: HandedOffSuccess
+##### <a name='2353a22ea41c3fbf5700ba40da5cdb89b5bf287264'></a> Source: [docs\core\tools\global-json.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/core/tools/global-json.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/69731281b8762408678fe9431c3b93fb59a132a5/ol-handoff/dotnet/docs.zh-cn/master/ht/global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.zh-cn.xlf)
-* Handoff Datetime: 2016-11-04 15:13:54
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
@@ -3331,7 +3331,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='93638d41bdef21e6877dc3a0f6019a97c5a94755131'></a> Source: [docs\csharp\getting-started\with-visual-studio.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-visual-studio.md)
+##### <a name='0a24b81a077eac9e2def8c4d7d475cc9afb463db131'></a> Source: [docs\csharp\getting-started\with-visual-studio.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/csharp/getting-started/with-visual-studio.md)
 * Status: Ignored
 * Target File: 
 * Handoff File: 
