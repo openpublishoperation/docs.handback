@@ -2539,8 +2539,8 @@
 ##### <a name='2353a22ea41c3fbf5700ba40da5cdb89b5bf287264'></a> Source: [docs\core\tools\global-json.md](https://github.com/dotnet/docs/blob/6f3a46284bd5820520739577919fa202f5b784d7/docs/core/tools/global-json.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/1236671b76eca255f0fb80a001607a3fbe8a73da/ol-handoff/dotnet/docs.ko-kr/master/ht/global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.ko-kr.xlf)
-* Handoff Datetime: 2016-11-04 17:13:42
+* Handoff File: [global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/c8fba2bb21adc8c79e05d30f4ffcd5320fb3bcc4/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/global-json.bcf96f7f0bed50cf3a64cde9a9077d38563d8cfa.ko-kr.xlf)
+* Handoff Datetime: 2016-11-05 05:56:06
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
