@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | HandedOffSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea38)
+ [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | HandedOffSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858227)
 
 ## Item Details
-##### <a name='e79746734c179c3f7797a10bdcd79606b818afea38'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
+##### <a name='be658d2c660aff736eceffe23757c13154e7858227'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/b9cc2781af990db05572e6a19c872ba84fe28019/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf)
-* Handoff Datetime: 2016-11-08 23:54:12
+* Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/693e2fe654350c401551c1c4e3b7ba418619c799/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ko-kr.xlf)
+* Handoff Datetime: 2016-11-09 07:53:04
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
