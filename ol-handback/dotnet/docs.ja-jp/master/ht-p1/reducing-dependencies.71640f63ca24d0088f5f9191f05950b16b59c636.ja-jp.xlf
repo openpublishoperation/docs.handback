@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">caae9f0a32c4378488329fd6d88c1dc7bf96ae9a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\reducing-dependencies.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f092be6e8b03fa8f1e8c2408f261d26993d078ea</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d13aab02bcdf2637f78010cf62e522d32a87ac0f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">project.json によるパッケージ依存関係の縮小</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">project.json によるパッケージ依存関係の縮小</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">project.json によるパッケージ依存関係の縮小</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article covers what you need to know about reducing your package dependencies when authoring <ph id="ph1">`project.json`</ph> libraries.</source>
+          <target state="translated">この記事では、<ph id="ph1">`project.json`</ph> ライブラリの作成時にパッケージ依存関係を減らすために知っておくべきことについて紹介します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>By the end of this article, you will learn how to compose your library such that it only uses the dependencies it needs.</source>
+          <target state="translated">この記事を最後までお読みいただくと、必要な依存関係だけが使用されるようにライブラリを構築する方法を理解できます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Why it's Important</source>
+          <target state="translated">これが重要な理由</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>.NET Core is a product made up of NuGet packages.</source>
+          <target state="translated">.NET Core は NuGet パッケージで構成される製品です。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>An essential package is the <bpt id="p1">[</bpt>.NET Standard Library metapackage<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library)</ept>, which is a NuGet package composed of other packages.</source>
+          <target state="translated">必要不可欠なパッケージが <bpt id="p1">[</bpt>.NET Standard Library メタパッケージ<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library)</ept>です。これは他のパッケージから構成される NuGet パッケージです。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It provides you with the set of packages that are guaranteed to work on multiple .NET implementations, such as .NET Framework, .NET Core and Xamarin/Mono.</source>
+          <target state="translated">一連のパッケージが提供されますが、それらは .NET Framework、.NET Core、Xamarin/Mono など、複数の .NET 実装で動作することが確認されています。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>However, there's a good chance that your library won't use every single package it contains.</source>
+          <target state="translated">しかしながら、お使いのライブラリではすべてのパッケージが使用されるとは限りません。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.</source>
+          <target state="translated">ライブラリを作成し、NuGet 経由で配信するときは、実際に使用するパッケージにのみ依存関係を "減らす" ことが推奨されます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This results in a smaller overall footprint for NuGet packages.</source>
+          <target state="translated">結果的に、NuGet パッケージの全体的フットプリントが少なくなります。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>How to do it</source>
+          <target state="translated">その方法</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Currently, there is no official <ph id="ph1">`dotnet`</ph> command which trims package references.</source>
+          <target state="translated">現在のところ、パッケージ参照を減らす正式な <ph id="ph1">`dotnet`</ph> コマンドはありません。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, you'll have to do it manually.</source>
+          <target state="translated">代わりに、手動で行う必要があります。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The general process looks like the following:</source>
+          <target state="translated">一般的なプロセスは次のようになります。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Reference <ph id="ph1">`NETStandard.Library`</ph> version <ph id="ph2">`1.6.0`</ph> in a <ph id="ph3">`dependencies`</ph> section of your <ph id="ph4">`project.json`</ph>.</source>
+          <target state="translated">お使いの <ph id="ph4">`project.json`</ph> の <ph id="ph3">`dependencies`</ph> セクションにある <ph id="ph1">`NETStandard.Library`</ph> バージョン <ph id="ph2">`1.6.0`</ph> を参照します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Restore packages with <ph id="ph1">`dotnet restore`</ph> from the command line.</source>
+          <target state="translated">コマンド ラインから <ph id="ph1">`dotnet restore`</ph> でパッケージを復元します。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Inspect the <ph id="ph1">`project.lock.json`</ph> file and find the <ph id="ph2">`NETSTandard.Library`</ph> section.</source>
+          <target state="translated"><ph id="ph1">`project.lock.json`</ph> ファイルを調べ、<ph id="ph2">`NETSTandard.Library`</ph> というセクションを探します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It's near the beginning of the file.</source>
+          <target state="translated">ファイルの始まりの近くにあります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Copy all of the listed packages under <ph id="ph1">`dependencies`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dependencies`</ph> の下にあるパッケージをすべてコピーします。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Remove the <ph id="ph1">`.NETStandard.Library`</ph> reference and replace it with the copied packages.</source>
+          <target state="translated"><ph id="ph1">`.NETStandard.Library`</ph> 参照を削除し、コピーしたパッケージで置き換えます。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Remove references to packages you don't need.</source>
+          <target state="translated">不要なパッケージ参照を削除します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can find out which packages you don't need by one of the following ways:</source>
+          <target state="translated">不要なパッケージは次の方法で確認できます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Trial and error.</source>
+          <target state="translated">試用とエラー。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.</source>
+          <target state="translated">パッケージを削除したり、復元したり、ライブラリがまだコンパイルするか確認したり、このプロセスを繰り返したりなどの操作が含まれます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Using a tool such as <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> or <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> to peek at references to see what your code is actually using.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> や <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> などのツールを利用し、コードで実際に利用されている参照を確認します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can then remove packages which don't correspond to types you're using.</source>
+          <target state="translated">その後、利用している種類に該当しないパッケージを削除できます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Imagine that you wrote a library which provided additional functionality to generic collection types.</source>
+          <target state="translated">追加機能を汎用コレクション タイプに提供するライブラリを記述したとします。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Such a library would need to depend on packages such as <ph id="ph1">`System.Collections`</ph>, but may not at all depend on packages such as <ph id="ph2">`System.Net.Http`</ph>.</source>
+          <target state="translated">そのようなライブラリは <ph id="ph1">`System.Collections`</ph> のようなパッケージに依存しなければなりませんが、<ph id="ph2">`System.Net.Http`</ph> のようなパッケージにはまったく依存しないことがあります。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>As such, it would be good to trim package dependencies down to only what this library required!</source>
+          <target state="translated">そのため、このライブラリが必要とするものだけにパッケージ依存関係を減らすと効果的です。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To trim this library, you start with the <ph id="ph1">`project.json`</ph> file and add a reference to <ph id="ph2">`NETStandard.Library`</ph> version <ph id="ph3">`1.6.0`</ph>.</source>
+          <target state="translated">このライブラリから余計なものを減らすには、最初に <ph id="ph1">`project.json`</ph> ファイルから始め、<ph id="ph2">`NETStandard.Library`</ph> バージョン <ph id="ph3">`1.6.0`</ph> の参照を追加します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Next, you restore packages with <ph id="ph1">`dotnet restore`</ph>, inspect the <ph id="ph2">`project.lock.json`</ph> file, and find all the packages restored for <ph id="ph3">`NETSTandard.Library`</ph>.</source>
+          <target state="translated">次に、<ph id="ph1">`dotnet restore`</ph> でパッケージを復元し、<ph id="ph2">`project.lock.json`</ph> ファイルを調べ、<ph id="ph3">`NETSTandard.Library`</ph> に対して復元されたすべてのパッケージを探します。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Here's what the relevant section in the <ph id="ph1">`project.lock.json`</ph> file looks like when targeting <ph id="ph2">`netstandard1.0`</ph>:</source>
+          <target state="translated"><ph id="ph2">`netstandard1.0`</ph> をターゲットにするとき、<ph id="ph1">`project.lock.json`</ph> ファイルの関連セクションは次のようになります。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Next, copy over the package references into the <ph id="ph1">`dependencies`</ph> section of the library's <ph id="ph2">`project.json`</ph> file, replacing the <ph id="ph3">`NETStandard.Library`</ph> reference:</source>
+          <target state="translated">次に、ライブラリの <ph id="ph2">`project.json`</ph> ファイルの <ph id="ph1">`dependencies`</ph> セクションにパッケージ参照をコピーします。<ph id="ph3">`NETStandard.Library`</ph> 参照を置き換えます。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>That's quite a lot of packages, many of which which certainly aren't necessary for extending collection types.</source>
+          <target state="translated">パッケージがたくさんあります。コレクション タイプを拡張するとき、この多くが実際には必要ありません。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can either remove packages manually or use a tool such as <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> or <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> to identify which packages your code actually uses.</source>
+          <target state="translated">手動でパッケージを削除するか、<bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> や <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> のようなツールを利用し、コードで実際に使用されるパッケージを特定できます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Here's what a trimmed package could look like:</source>
+          <target state="translated">余計なものを減らしたパッケージは次のようになります。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Now, it has a smaller footprint than if it had depended on the <ph id="ph1">`NETStandard.Library`</ph> metapackage.</source>
+          <target state="translated">これで、<ph id="ph1">`NETStandard.Library`</ph> メタパッケージに依存する場合より、フットプリントが少なくなります。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
