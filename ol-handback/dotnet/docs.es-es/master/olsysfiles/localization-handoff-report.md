@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | HandedOffSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858227)
 
 ## Item Details
-##### <a name='be658d2c660aff736eceffe23757c13154e7858227'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/648bdde171a2115366638e002f7067453aecc7d2/ol-handoff/dotnet/docs.es-es/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.es-es.xlf)
-* Handoff Datetime: 2016-11-09 07:52:42
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
