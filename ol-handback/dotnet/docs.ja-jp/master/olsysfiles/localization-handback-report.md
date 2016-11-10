@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | InSyncHandedBackSuccess | [Details](#62c70ffdd25af909f110b3173231d436060ba38373)
 
 ## Item Details
-##### <a name='62c70ffdd25af909f110b3173231d436060ba38373'></a> Source: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs.ja-jp/blob/606015f8562b788d15d21d9a91e774d777de05ff/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Handoff File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/6feb2e62dfa8f7292c4fb9984f0e8def6262c3ae/ol-handoff/dotnet/docs.ja-jp/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf)
-* Handoff Datetime: 2016-11-05 05:55:28
-* Handoff Reason: Include
-* Archive File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/3341537406c1000a32a700475b063b2d6dc460bf/ol-archive/dotnet/docs.ja-jp/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf)
-* Archive Datetime: 2016-11-07 23:38:33
-* Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/8885e586fa6812566429529cf56434ac0019f6b2/ol-handback/dotnet/docs.ja-jp/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ja-jp.xlf)
-* Handback Datetime: 2016-11-10 13:00:59
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
