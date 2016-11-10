@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | InSyncHandedBackSuccess | [Details](#62c70ffdd25af909f110b3173231d436060ba38373)
 
 ## Item Details
-##### <a name='62c70ffdd25af909f110b3173231d436060ba38373'></a> Source: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs.ru-ru/blob/1c27f157197cf056d1c26d8e41eaec3dd6e4dbf1/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Handoff File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/be75058b575b44e44d1fb9f33ff494eb26fcf2d3/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf)
-* Handoff Datetime: 2016-11-05 05:49:39
-* Handoff Reason: Include
-* Archive File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/5cfd3ef7d096eb3334b8d08e6341c22bcfa53791/ol-archive/dotnet/docs.ru-ru/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf)
-* Archive Datetime: 2016-11-07 23:38:10
-* Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/64c7195e3e48e2666b5832cbd9212607a9431e68/ol-handback/dotnet/docs.ru-ru/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ru-ru.xlf)
-* Handback Datetime: 2016-11-10 13:00:45
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
