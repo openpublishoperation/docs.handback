@@ -2713,6 +2713,8 @@
 * Archive Datetime: 2016-11-07 23:38:41
 * Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/b578b72a20493c7d928dc350c516c94c00d8397d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf)
 * Handback Datetime: 2016-11-10 13:01:05
+* Bilingual File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/b578b72a20493c7d928dc350c516c94c00d8397d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-10 13:02:05
 * [Back to Top](#report-top)
 
 ##### <a name='9ab2f607e8ec5a24712ced5eec688894ca8ae39474'></a> Source: [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/index.md)
