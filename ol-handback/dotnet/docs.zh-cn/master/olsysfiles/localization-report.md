@@ -4048,6 +4048,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='fc8ffa269b4bb930023ed37daeb62aa8a52a5de4185'></a> Source: [docs\framework\docker\media\aspnetmvc\PublishConnection.png](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/media/aspnetmvc/PublishConnection.png)
@@ -4112,6 +4114,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [index.e9afc9d665a11b202a45e0f2a7a130b8582edcab.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.e9afc9d665a11b202a45e0f2a7a130b8582edcab.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [index.e9afc9d665a11b202a45e0f2a7a130b8582edcab.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.e9afc9d665a11b202a45e0f2a7a130b8582edcab.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='87b892da36a175b82c40d19ba09cf3c9354fd6a0190'></a> Source: [docs\fsharp\index.md](https://github.com/dotnet/docs/blob/21c924576dc056e77d69d2c5405756717092fc8c/docs/fsharp/index.md)
@@ -5986,6 +5990,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [assembly-format.28db1c2eee4969148649923b2c83a0f9d8295d92.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/assembly-format.28db1c2eee4969148649923b2c83a0f9d8295d92.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [assembly-format.28db1c2eee4969148649923b2c83a0f9d8295d92.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/assembly-format.28db1c2eee4969148649923b2c83a0f9d8295d92.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='39dc9e8599daea86b48d864179c13c5ae965876b347'></a> Source: [docs\standard\async.md](https://github.com/dotnet/docs/blob/9abc4879533074e6830a7343123b139e912d239b/docs/standard/async.md)
@@ -5998,6 +6004,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [async.3c115f3a785660b634cfc3d7818885703e4965aa.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/async.3c115f3a785660b634cfc3d7818885703e4965aa.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [async.3c115f3a785660b634cfc3d7818885703e4965aa.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/async.3c115f3a785660b634cfc3d7818885703e4965aa.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='6536a608a4ee1bb10f41907a28114193a300a52c346'></a> Source: [docs\standard\async-in-depth.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/async-in-depth.md)
@@ -6384,6 +6392,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='40a3d6f6984898f09b5f4ef8b3f22eae71026e9b379'></a> Source: [docs\standard\base-types\manipulating-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/manipulating-strings.md)
@@ -6504,6 +6514,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='cd243693a19500ac53fe6033cfe4ef5a36a9096a389'></a> Source: [docs\standard\base-types\performing-formatting-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/performing-formatting-operations.md)
@@ -6564,6 +6576,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='e9ae9cb47955fb926507be32afb875efd3260ce3394'></a> Source: [docs\standard\base-types\regular-expressions.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regular-expressions.md)
@@ -6732,6 +6746,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='44b4798a9b6f132d2fc8921bfffa24fa04202d43408'></a> Source: [docs\standard\clr.md](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/clr.md)
@@ -6756,6 +6772,8 @@
 * Archive Datetime: 2016-11-07 23:38:18
 * Handback File: [commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.zh-cn.xlf)
 * Handback Datetime: 2016-11-10 17:47:17
+* Bilingual File: [commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/ae3d24dd82bb48d54b421614dc8cd3d9c6fb9bae/ol-handback/dotnet/docs.zh-cn/master/ht-p2/commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-10 17:47:55
 * [Back to Top](#report-top)
 
 ##### <a name='de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5410'></a> Source: [docs\standard\collections\comparisons-and-sorts-within-collections.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/comparisons-and-sorts-within-collections.md)
