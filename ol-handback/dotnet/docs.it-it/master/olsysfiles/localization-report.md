@@ -6514,6 +6514,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='cd243693a19500ac53fe6033cfe4ef5a36a9096a389'></a> Source: [docs\standard\base-types\performing-formatting-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/performing-formatting-operations.md)
@@ -6574,6 +6576,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='e9ae9cb47955fb926507be32afb875efd3260ce3394'></a> Source: [docs\standard\base-types\regular-expressions.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regular-expressions.md)
@@ -6742,6 +6746,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/class-libraries.7dadda8f3a69f2786b36b28fcabb59abbadd8677.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='44b4798a9b6f132d2fc8921bfffa24fa04202d43408'></a> Source: [docs\standard\clr.md](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/clr.md)
@@ -6766,6 +6772,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/commonly-used-collection-types.87b05596cbab370816c5e11832c8858aeaa2d9a1.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5410'></a> Source: [docs\standard\collections\comparisons-and-sorts-within-collections.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/comparisons-and-sorts-within-collections.md)
@@ -7162,6 +7170,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='5b87ddfcfc66ebc05e2e559517180f93813a0806443'></a> Source: [docs\standard\frameworks.md](https://github.com/dotnet/docs/blob/246d381246e78a27b7097d6b8126f421b52014de/docs/standard/frameworks.md)
@@ -7271,6 +7281,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.it-it.xlf)
 * Handback Datetime: 2016-11-10 20:01:22
+* Bilingual File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.it-it.xlf](https://github.com/dotnet/docs.handback/blob/5487853adf1c902ede0c25f4949d4c5691bbdef3/ol-handback/dotnet/docs.it-it/master/ht-p2/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.it-it.xlf)
+* Bilingual Datetime: 2016-11-10 20:01:49
 * [Back to Top](#report-top)
 
 ##### <a name='51655742b8975c84eae3f58c4ef0f7381a0bed6b452'></a> Source: [docs\standard\garbagecollection\using-objects.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/using-objects.md)
