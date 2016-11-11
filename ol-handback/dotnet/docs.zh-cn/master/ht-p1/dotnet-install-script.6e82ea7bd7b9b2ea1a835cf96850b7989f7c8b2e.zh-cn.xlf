@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">30e969c55d08b3ac276c6e7786fa96985dbb0a6b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\dotnet-install-script.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">309ef69562f8d794816953ff6a631f53d018246c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4c14f98f188c8eb0520e972e82e406bd8f87d2bd</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>dotnet-install scripts | .NET Core SDK</source>
+          <target state="translated">dotnet-install 脚本 | .NET Core SDK</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime.</source>
+          <target state="translated">了解用于安装 .NET Core CLI 工具和共享运行时的 dotnet-install 脚本。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>dotnet-install, dotnet-install scripts, .NET Core</source>
+          <target state="translated">dotnet-install, dotnet-install 脚本, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>dotnet-install scripts reference</source>
+          <target state="translated">dotnet-install 脚本引用</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">名称</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>dotnet-install.ps1 | dotnet-install.sh - script used to install the Command Line Interface (CLI) tools and the shared runtime</source>
+          <target state="translated">dotnet-install.ps1 | dotnet-install.sh - 用于安装命令行接口 (CLI) 工具和共享运行时的脚本</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synopsis</source>
+          <target state="translated">摘要</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Windows:</source>
+          <target state="translated">Windows：</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>macOS/Linux:</source>
+          <target state="translated">macOS/Linux：</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet-install`</ph> scripts are used to perform a non-admin install of the CLI toolchain and the shared runtime.</source>
+          <target state="translated"><ph id="ph1">`dotnet-install`</ph> 脚本用于执行 CLI 工具链和共享运行时的非管理员安装。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can download the scripts from our <bpt id="p1">[</bpt>CLI GitHub repo<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/scripts/obtain)</ept>.</source>
+          <target state="translated">可以从 <bpt id="p1">[</bpt>CLI GitHub 存储库<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/scripts/obtain)</ept>下载脚本。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Their main use case is to help with automation scenarios and non-admin installations.</source>
+          <target state="translated">其主要用例是帮助执行自动化方案和非管理员安装。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>There are two scripts, one for PowerShell that works on Windows and a bash script that works on Linux/OS X. They both have the same behavior.</source>
+          <target state="translated">有两个脚本，一个适用于在 Windows 上工作的 PowerShell，另一个是在 Linux/OS X 上运行的 bash 脚本。它们具有相同的行为。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Bash script also "understands" PowerShell switches so you can use them across the board.</source>
+          <target state="translated">Bash 脚本还“了解” PowerShell 切换，因此你可以纵观全局地使用它们。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Installation scripts will download the ZIP/tarball file from the CLI build drops and will proceed to install it in either the default location or in a location specified by <ph id="ph1">`--install-dir`</ph>.</source>
+          <target state="translated">安装脚本将从 CLI 生成放置下载 ZIP/tarball 文件，并将其安装在默认位置或 <ph id="ph1">`--install-dir`</ph> 所指定的位置。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the installation script will download the SDK and install it; if you want to get just the shared runtime, you can specify the <ph id="ph1">`--shared-runtime`</ph> argument.</source>
+          <target state="translated">默认情况下，安装脚本将下载并安装 SDK；如果仅希望获取共享进行时，可以指定 <ph id="ph1">`--shared-runtime`</ph> 参数。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>By default, the script will add the install location to the $PATH for the current session.</source>
+          <target state="translated">默认情况下，该脚本会将安装位置添加到当前会话的 $PATH。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This can be overridden if the <ph id="ph1">`--no-path`</ph> argument is used.</source>
+          <target state="translated">如果使用 <ph id="ph1">`--no-path`</ph> 参数，则可以替代此位置。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Before running the script, please install all the required <bpt id="p1">[</bpt>dependencies<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</source>
+          <target state="translated">运行脚本前，请安装所有必需<bpt id="p1">[</bpt>依赖项<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can install a specific version using the <ph id="ph1">`--version`</ph> argument.</source>
+          <target state="translated">可以使用 <ph id="ph1">`--version`</ph> 参数安装特定版本。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The version needs to be specified as 3-part version (for example, 1.0.0-13232).</source>
+          <target state="translated">需要将该版本指定为 3 部分构成的版本（例如，1.0.0-13232）。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If omitted, it will default to the first <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept> file found in the hierarchy above the folder where the script was invoked that contains the <ph id="ph1">`version`</ph> property.</source>
+          <target state="translated">如果省略，则将默认为层次结构中找到的第一个 <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept> 文件（内附 <ph id="ph1">`version`</ph> 属性），且该结构位于调用脚本的文件夹上方。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If that is not present, it will use Latest.</source>
+          <target state="translated">如果不存在，则将使用最新版。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can also use this script to get the SDK or shared runtime debug binaries with debug symbols by using the <ph id="ph1">`--debug`</ph> argument.</source>
+          <target state="translated">还可以使用 <ph id="ph1">`--debug`</ph> 参数运行此脚本，以获取 SDK 或含有调试符号的共享运行时调试二进制文件。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you do not do this on first install and realize you do need debug symbols later on, you can re-run the script with this argument and the version of the bits you installed.</source>
+          <target state="translated">如果在首次安装时未执行此操作，并且在之后意识到需要调试符号，则可以使用此参数和安装的位版本重新运行该脚本。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated">选项</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Options are different between script implementations.</source>
+          <target state="translated">脚本实现之间的选项有所不同。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>PowerShell (Windows)</source>
+          <target state="translated">PowerShell (Windows)</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Which channel (for example, <ph id="ph1">`future`</ph>, <ph id="ph2">`preview`</ph>, <ph id="ph3">`production`</ph>) to install from.</source>
+          <target state="translated">安装时所用的通道（例如，<ph id="ph1">`future`</ph>、<ph id="ph2">`preview`</ph>、<ph id="ph3">`production`</ph>）。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`production`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`production`</ph>。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232).</source>
+          <target state="translated">要安装的 CLI 版本；需要将该版本指定为 3 部分构成的版本（例如，1.0.0-13232）。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If omitted, it will default to the first <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept> that contains the <ph id="ph1">`version`</ph> property; if that is not present, it will use Latest.</source>
+          <target state="translated">如果省略，则将默认为包含 <ph id="ph1">`version`</ph> 属性的 <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept>；如果不存在，则将使用最新版。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Path to install to.</source>
+          <target state="translated">安装到的路径。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The directory is created if it doesn't exist.</source>
+          <target state="translated">如果不存在，则会创建该目录。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The default value is <bpt id="p1">*</bpt>%LocalAppData%<ph id="ph1">\.</ph>dotnet<ept id="p1">*</ept>.</source>
+          <target state="translated">默认值为 <bpt id="p1">*</bpt>%LocalAppData%<ph id="ph1">\.</ph>dotnet<ept id="p1">*</ept>。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to indicate that larger packages containing debugging symbols should be used; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">若指示应使用带调用符号的较大包，则为 <ph id="ph1">`true`</ph>；否则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to indicate that the prefix/installdir are not exported to the path for the current session; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">若指示不将 prefix/installdir 导出到当前会话的路径，则为 <ph id="ph1">`true`</ph>；否则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>, that is, the PATH is modified.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>，即已修改该路径。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>This makes the CLI tools available immediately after install.</source>
+          <target state="translated">这使得 CLI 工具可在安装后立即使用。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to install just the shared runtime bits; <ph id="ph2">`false`</ph> to install the entire SDK.</source>
+          <target state="translated">若仅安装共享运行时位，则为 <ph id="ph1">`true`</ph>；若安装完整 SDK，则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Bash (macOS/Linux)</source>
+          <target state="translated">Bash (macOS/Linux)</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Which channel (for example "future", "preview", "production") to install from.</source>
+          <target state="translated">安装是所用的通道（例如“future”、“preview”或“production”）。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The default value is "Production".</source>
+          <target state="translated">默认值为“Production”。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Which version of CLI to install; you need to specify the version as 3-part version (for example, 1.0.0-13232).</source>
+          <target state="translated">要安装的 CLI 版本；需要将该版本指定为 3 部分构成的版本（例如，1.0.0-13232）。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If omitted, it will default to the first <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept> that contains the <ph id="ph1">`version`</ph> property; if that is not present, it will use Latest.</source>
+          <target state="translated">如果省略，则将默认为包含 <ph id="ph1">`version`</ph> 属性的 <bpt id="p1">[</bpt>global.json<ept id="p1">](global-json.md)</ept>；如果不存在，则将使用最新版。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Path to where to install.</source>
+          <target state="translated">安装到的路径。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The directory is created if it doesn't exist.</source>
+          <target state="translated">如果不存在，则会创建该目录。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`$HOME/.dotnet`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`$HOME/.dotnet`</ph>。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to indicate that larger packages containing debugging symbols should be used; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">若指示应使用带调用符号的较大包，则为 <ph id="ph1">`true`</ph>；否则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to indicate that the prefix/installdir are not exported to the path for the current session; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">若指示不将 prefix/installdir 导出到当前会话的路径，则为 <ph id="ph1">`true`</ph>；否则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>, that is, the PATH is modified.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>，即已修改该路径。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This makes the CLI tools available immediately after install.</source>
+          <target state="translated">这使得 CLI 工具可在安装后立即使用。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to install just the shared runtime bits; <ph id="ph2">`false`</ph> to install the entire SDK.</source>
+          <target state="translated">若仅安装共享运行时位，则为 <ph id="ph1">`true`</ph>；若安装完整 SDK，则为 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">默认值为 <ph id="ph1">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Install the dev latest version to the default location:</source>
+          <target state="translated">将 dev 的最新版本安装到默认位置：</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Windows:</source>
+          <target state="translated">Windows：</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>macOS/Linux:</source>
+          <target state="translated">macOS/Linux：</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Install the latest preview to the specified location:</source>
+          <target state="translated">将最新预览版安装到指定位置：</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Windows:</source>
+          <target state="translated">Windows：</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>macOS/Linux:</source>
+          <target state="translated">macOS/Linux：</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">82b82dc2387834b9a4d0351c2c12da6e7595eb6c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\creating-nuget-packages.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7c39f0e3f60ca0f18f61039965109663a3454702</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7668e5a2325c2519156e3bb5b2beae7a73a752a9</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Creating a NuGet Package with Cross Platform Tools</source>
+          <target state="translated">使用跨平台工具创建 NuGet 包</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Creating a NuGet Package with Cross Platform Tools</source>
+          <target state="translated">使用跨平台工具创建 NuGet 包</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, NuGet</source>
+          <target state="translated">.NET、.NET Core、NuGet</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to Create a NuGet Package with Cross Platform Tools</source>
+          <target state="translated">如何使用跨平台工具创建 NuGet 包</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The following shows command-line samples using Unix.</source>
+          <target state="translated">下例是关于使用 Unix 的命令行。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet pack`</ph> command as shown here works the same way on Windows.</source>
+          <target state="translated">此处显示的 <ph id="ph1">`dotnet pack`</ph> 命令工作方式与在 Windows 上相同。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For .NET Core 1.0, libraries are expected to be distributed as NuGet packages.</source>
+          <target state="translated">对于 .NET Core 1.0，所有库都应以 NuGet 包方式发布。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This is in fact how all of the .NET Standard libraries are distributed and consumed.</source>
+          <target state="translated">实际上，这是所有 .NET 标准库的发布和使用方式。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This is most easily done with the <ph id="ph1">`dotnet pack`</ph> command.</source>
+          <target state="translated">可以使用 <ph id="ph1">`dotnet pack`</ph> 命令轻松实现此操作。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Imagine that you just wrote an awesome new library that you would like to distribute over NuGet.</source>
+          <target state="translated">假设你刚编写了一个很棒的新库，并想通过 NuGet 发布。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can create a NuGet package with cross platform tools to do exactly that!</source>
+          <target state="translated">你就可以使用跨平台工具创建一个 NuGet 包，完全照做就行！</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example assumes a library called <bpt id="p1">**</bpt>SuperAwesomeLibrary<ept id="p1">**</ept> which targets <ph id="ph1">`netstandard1.0`</ph>.</source>
+          <target state="translated">下例假定使用一个名为 <bpt id="p1">**</bpt>SuperAwesomeLibrary<ept id="p1">**</ept> 的库，该库以 <ph id="ph1">`netstandard1.0`</ph> 为目标。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If you have transitive dependencies; that is, a project which depends on another project, you'll need to make sure to restore packages for your entire solution with the <ph id="ph1">`dotnet restore`</ph> command before creating a NuGet package.</source>
+          <target state="translated">如果存在可传递的依赖项，也就是说，如果一个项目依赖于另一个项目，在创建 NuGet 包前，则需要确保使用 <ph id="ph1">`dotnet restore`</ph> 还原整个解决方案的包。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Failing to do so will result in the <ph id="ph1">`dotnet pack`</ph> command to not work properly.</source>
+          <target state="translated">否则将导致 <ph id="ph1">`dotnet pack`</ph> 命令不能正常运行。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>After ensuring packages are restored, you can navigate to the directory where a library lives:</source>
+          <target state="translated">确认包已还原后，可以导航到库所在的目录：</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Then it's just a single command from the command line:</source>
+          <target state="translated">然后，只需在命令行中输入一个命令：</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`/bin/Debug`</ph> folder will now look like this:</source>
+          <target state="translated"><ph id="ph1">`/bin/Debug`</ph> 文件夹现在如下所示：</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Note that this will produce a package which is capable of being debugged.</source>
+          <target state="translated">请注意，这将生成能够进行调试的包。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you want to build a NuGet package with release binaries, all you need to do is add the <ph id="ph1">`-c`</ph><ph id="ph2">/</ph><ph id="ph3">`--configuration`</ph> switch and use <ph id="ph4">`release`</ph> as the argument.</source>
+          <target state="translated">如果想要生成二进制文件版本的 NuGet 包，只需添加 <ph id="ph1">`-c`</ph><ph id="ph2">/</ph><ph id="ph3">`--configuration`</ph> 开关并使用 <ph id="ph4">`release`</ph> 作为参数。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`/bin`</ph> folder will now have a <ph id="ph2">`release`</ph> folder containing your NuGet package with release binaries:</source>
+          <target state="translated"><ph id="ph1">`/bin`</ph> 文件夹现在将包含一个 <ph id="ph2">`release`</ph> 文件夹，后者包含的 NuGet 包为二进制文件版本：</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>And now you have the necessary files to publish a NuGet package!</source>
+          <target state="translated">因此，现在可以使用此必需的文件发布 NuGet 包了！</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Don't confuse <ph id="ph1">`dotnet pack`</ph> with <ph id="ph2">`dotnet publish`</ph></source>
+          <target state="translated">不要混淆 <ph id="ph1">`dotnet pack`</ph> 和 <ph id="ph2">`dotnet publish`</ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>It is important to note that at no point is the <ph id="ph1">`dotnet publish`</ph> command involved.</source>
+          <target state="translated">务必注意，不是任何时候都涉及 <ph id="ph1">`dotnet publish`</ph> 命令。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet publish`</ph> command is for deploying applications with all of their dependencies in the same bundle -  not for generating a NuGet package to be distributed and consumed via NuGet.</source>
+          <target state="translated"><ph id="ph1">`dotnet publish`</ph> 命令用于在同一个包中部署具有所有依赖项的应用程序 - 而不是用于生成通过 NuGet 发布和使用的 NuGet 包。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

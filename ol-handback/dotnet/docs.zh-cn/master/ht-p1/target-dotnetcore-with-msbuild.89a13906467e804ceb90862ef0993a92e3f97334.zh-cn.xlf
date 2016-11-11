@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5d37e78be88828d6c82777f96b6334903aecbe53</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\target-dotnetcore-with-msbuild.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9d67f3601a3cb1048712a906cf656953435abf39</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2108c62291854c71e99819295eadae00d8e08f9e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">使用 MSBuild 生成 .NET Core 项目</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">使用 MSBuild 生成 .NET Core 项目</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">使用 MSBuild 生成 .NET Core 项目</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The .NET Core tooling is going to <bpt id="p1">[</bpt>move from project.json to MSBuild based projects<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept>.</source>
+          <target state="translated">.NET Core 工具将<bpt id="p1">[</bpt>从 project.json 移动到基于 MSBuild 的项目<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept>。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>We expect the first version of the .NET Core tools that use MSBuild to ship along with the next version of Visual Studio.</source>
+          <target state="translated">我们希望使用 MSBuild 的初版 .NET Core 工具随下一版本的 Visual Studio 一起提供。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, it is possible to use MSBuild for .NET Core projects today, and this page shows how.</source>
+          <target state="translated">但是，现在可以将 MSBuild 用于 .NET Core 项目，此页面显示了相关方法。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We recommend that most people targeting .NET Core with <bpt id="p1">*</bpt>new<ept id="p1">*</ept> projects today use the default tooling experience with project.json because of the following reasons:</source>
+          <target state="translated">我们建议现在使用新项目面向 .NET Core 的大多数用户使用 project.json 的默认工具体验，原因如下：</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>MSBuild doesn't yet support a lot of the benefits of project.json</source>
+          <target state="translated">MSBuild 尚不支持 project.json 的大量优点</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A lot of the ASP.NET based tooling doesn't currently work with MSBuild projects</source>
+          <target state="translated">许多基于 ASP.NET 的工具当前无法与 MSBuild 项目一起使用</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When we do release the .NET Core tooling that uses MSBuild, it will be able to automatically convert from project.json to MSBuild projects</source>
+          <target state="translated">在确实发布了使用 MSBuild 的 .NET Core 工具后，它将能够自动从 project.json 转换为 MSBuild 项目</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You may want to use MSBuild to target .NET Core for existing projects that already use MSBuild that you want to port to .NET Core, or if you are using MSBuild's extensibility in your build for scenarios that are not well supported for project.json projects.</source>
+          <target state="translated">对要移植到 .NET Core、已使用 MSBuild 的现有项目，或者如果在生成中对 project.json 项目不是十分支持的方案使用 MSBuild 可扩展性，你可能会想要使用 MSBuild 面向 .NET Core。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">先决条件</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Visual Studio 2015 Update 3<ept id="p1">](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs)</ept> or higher</source>
+          <target state="translated"><bpt id="p1">[</bpt>Visual Studio 2015 Update 3<ept id="p1">](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs)</ept> 或更高版本</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core tools for Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/download-visual-studio-vs)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>适用于 Visual Studio 的 .NET Core 工具<ept id="p1">](https://www.visualstudio.com/downloads/download-visual-studio-vs)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>NuGet Visual Studio extension <bpt id="p1">[</bpt>v3.5.0-beta<ept id="p1">](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix)</ept> or later</source>
+          <target state="translated">NuGet Visual Studio 扩展 <bpt id="p1">[</bpt>v3.5.0-beta<ept id="p1">](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix)</ept> 或更高版本</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Creating a library targeting .NET Core</source>
+          <target state="translated">创建面向 .NET Core 的库</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept> and select <bpt id="p4">**</bpt>Class Library (Portable)<ept id="p4">**</ept></source>
+          <target state="translated">在 Visual Studio 菜单栏中，选择“文件”<ph id="ph1"> | </ph>“新建”<ph id="ph2"> | </ph>“项目”，然后选择“类库(可移植)”</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>New Project</source>
+          <target state="translated">新建项目</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Choose a name and location for your project and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></source>
+          <target state="translated">为项目选择名称和位置，并单击“确定”</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The "Add Portable Class Library" dialog will appear.</source>
+          <target state="translated">将出现"添加可移植类库"对话框。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>.NET Framework 4.6<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ASP.NET Core 1.0<ept id="p2">**</ept> as targets and click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept></source>
+          <target state="translated">选择“.NET Framework 4.6”和“ASP.NET Core 1.0”作为目标，然后单击“确定”</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Portable targets dialog</source>
+          <target state="translated">“可移植目标”对话框</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on your project and choose <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept></source>
+          <target state="translated">在解决方案资源管理器中，右键单击项目，然后选择“属性”</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Library<ept id="p1">**</ept> tab of the project properties, click on the <bpt id="p2">**</bpt>Target .NET Platform Standard<ept id="p2">**</ept> link, and click <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept> in the dialog that is shown</source>
+          <target state="translated">在项目属性的“库”选项卡中，单击“面向 .NET Platform Standard” 链接，然后在显示的对话框中单击“确定”</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file in your project, and make the following changes:</source>
+          <target state="translated">在项目中打开 <ph id="ph1">`project.json`</ph> 文件，进行以下更改：</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Change the version number of the <ph id="ph1">`NETStandard.Library`</ph> package to <ph id="ph2">`1.6.0`</ph> (this is the .NET Core 1.0 version of the package)</source>
+          <target state="translated">将 <ph id="ph1">`NETStandard.Library`</ph> 包的版本号更改为 <ph id="ph2">`1.6.0`</ph>（这是包的 .NET Core 1.0 版本）</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Add the below <ph id="ph1">`imports`</ph> definition inside the <ph id="ph2">`netstandard1.6`</ph> framework definition.</source>
+          <target state="translated">将以下 <ph id="ph1">`imports`</ph> 定义添加到 <ph id="ph2">`netstandard1.6`</ph> 框架定义中。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This will allow your project to reference .NET Core compatible NuGet packages that haven't been updated to target .NET Standard</source>
+          <target state="translated">这将允许项目引用与 .NET Core 兼容、尚未更新到目标 .NET Standard 的 NuGet 包</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Creating a .NET Core console application</source>
+          <target state="translated">创建 .NET Core 控制台应用程序</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Building a console application for .NET Core requires some customization of the MSBuild build process.</source>
+          <target state="translated">生成用于 .NET Core 的控制台应用程序需要自定义 MSBuild 生成过程。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can find a sample project for a .NET Core console application called <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> in the <bpt id="p2">[</bpt>corefxlab<ept id="p2">](https://github.com/dotnet/corefxlab)</ept> repo.</source>
+          <target state="translated">可在 <bpt id="p2">[</bpt>corefxlab<ept id="p2">](https://github.com/dotnet/corefxlab)</ept> 存储库中找到名为 <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> 的 .NET Core 控制台应用程序示例项目。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Another good option is to start with <bpt id="p1">[</bpt>coretemplate<ept id="p1">](https://github.com/mellinoe/coretemplate)</ept>, which uses separate MSBuild targets files to target .NET Core instead of putting the changes directly in the project file.</source>
+          <target state="translated">另一个不错的选择是从使用 <bpt id="p1">[</bpt>coretemplate<ept id="p1">](https://github.com/mellinoe/coretemplate)</ept> 开始，它使用单独的 MSBuild 目标文件面向 .NET Core，而不是将更改直接置于项目文件。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is also possible to start by creating a project in Visual Studio and modifying it to target .NET Core.</source>
+          <target state="translated">还可首先在 Visual Studio 中创建项目，将其修改为面向 .NET Core。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The instructions below show the minimal steps to get this working.</source>
+          <target state="translated">以下说明介绍了实现此目标的最少步骤。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In contrast to <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> or <bpt id="p2">[</bpt>coretemplate<ept id="p2">](https://github.com/mellinoe/coretemplate)</ept>, a project created this way won't include configurations for targeting Linux and macOS.</source>
+          <target state="translated">与 <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> 或 <bpt id="p2">[</bpt>coretemplate<ept id="p2">](https://github.com/mellinoe/coretemplate)</ept> 相比，通过此方式创建的项目不会包含针对 Linux 和 macOS 的配置。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept> and select <bpt id="p4">**</bpt>Console Application<ept id="p4">**</ept></source>
+          <target state="translated">在 Visual Studio 菜单栏中，选择“文件”<ph id="ph1"> | </ph>“新建”<ph id="ph2"> | </ph>“项目”，然后选择“控制台应用程序”</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Choose a name and location for your project and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></source>
+          <target state="translated">为项目选择名称和位置，并单击“确定”</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on your project, choose <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>, and then go to the <bpt id="p2">**</bpt>Build<ept id="p2">**</ept> tab</source>
+          <target state="translated">在解决方案资源管理器中，右键单击项目，选择“属性”，然后转到“生成”选项卡</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept> dropdown (at the top of the properties page), select <bpt id="p2">**</bpt>All Configurations<ept id="p2">**</ept>, and then change the <bpt id="p3">**</bpt>Platform Target<ept id="p3">**</ept> to <bpt id="p4">**</bpt>x64<ept id="p4">**</ept></source>
+          <target state="translated">在“配置”下拉列表（位于属性页面顶部）中，选择“所有配置”，然后将“平台目标”更改为“x64”</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Delete the <ph id="ph1">`app.config`</ph> file from the project</source>
+          <target state="translated">从项目删除 <ph id="ph1">`app.config`</ph> 文件</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Add a <ph id="ph1">`project.json`</ph> file to the project with the following contents:</source>
+          <target state="translated">使用以下内容将 <ph id="ph1">`project.json`</ph> 文件添加到项目：</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on the project, choose <bpt id="p1">**</bpt>Unload Project<ept id="p1">**</ept>, then right click again and choose <bpt id="p2">**</bpt>Edit <bpt id="p3">_</bpt>MyProj.csproj<ept id="p3">_</ept><ept id="p2">**</ept>, and make the following changes</source>
+          <target state="translated">在解决方案资源管理器中，右键单击项目，选择“上传项目”，然后再次右键单击，选择“编辑<bpt id="p3">_</bpt>MyProj.csproj<ept id="p3">_</ept>”，然后进行以下更改</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Remove all the default <ph id="ph1">`Reference`</ph> items (to <ph id="ph2">`System`</ph>, <ph id="ph3">`System.Core`</ph>, etc.)</source>
+          <target state="translated">删除所有默认 <ph id="ph1">`Reference`</ph> 项（对于 <ph id="ph2">`System`</ph>、<ph id="ph3">`System.Core`</ph> 等）</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Add the following properties to the first <ph id="ph1">`PropertyGroup`</ph> in the project:</source>
+          <target state="translated">将以下属性添加到项目中的第一个 <ph id="ph1">`PropertyGroup`</ph>：</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Add the following at the end of the file (after the import of <ph id="ph1">`Microsoft.CSharp.Targets`</ph>):</source>
+          <target state="translated">在文件末尾添加以下内容（导入 <ph id="ph1">`Microsoft.CSharp.Targets`</ph> 后）：</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Close the .csproj file, and reload the project in Visual Studio</source>
+          <target state="translated">关闭 .csproj 文件，在 Visual Studio 中重新加载项目</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You should be able to run your program with F5 in Visual Studio, or from the command line in the output folder with <ph id="ph1">`dotnet MyApp.exe`</ph></source>
+          <target state="translated">应可以通过以下方法运行程序：在 Visual Studio 中使用 F5 或从输出文件夹中的命令行使用 <ph id="ph1">`dotnet MyApp.exe`</ph></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
