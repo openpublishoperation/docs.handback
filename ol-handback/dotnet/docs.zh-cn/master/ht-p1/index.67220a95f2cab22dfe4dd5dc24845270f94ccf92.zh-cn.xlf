@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">96eb2cc7ca948b3e372fa1363b1741624d791d27</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">416c430ca40031e61bb4d28a92a500ba0a77d0f4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b625f18872df0485c35b16060966c4c5bef9d288</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core 应用程序部署</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core 应用程序部署</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Core deployment</source>
+          <target state="translated">.NET、.NET Core、.NET Core 部署</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core 应用程序部署</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can create two types of deployments for .NET Core applications:</source>
+          <target state="translated">可以为 .NET Core 应用程序创建两种部署：</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployment.</source>
+          <target state="translated">依赖框架的部署。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system.</source>
+          <target state="translated">顾名思义，依赖框架的部署 (FDD) 依赖目标系统上存在共享系统级版本的 .NET Core。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is already present, your app is also portable between installations of .NET Core.</source>
+          <target state="translated">由于已存在 .NET Core，因此应用在 .NET Core 安装程序间也是可移植的。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries.</source>
+          <target state="translated">应用仅包含其自己的代码和任何位于 .NET Core 库外的第三方依赖项。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>FDDs contain .dll files that can be launched by using the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line.</source>
+          <target state="translated">FDD 包含可通过在命令行中使用 <bpt id="p1">[</bpt>dotnet 实用程序<ept id="p1">](../tools/dotnet.md)</ept>启动的 .dll 文件。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`dotnet app.dll`</ph> runs an application named <ph id="ph2">`app`</ph>.</source>
+          <target state="translated">例如，<ph id="ph1">`dotnet app.dll`</ph> 就可以运行一个名为 <ph id="ph2">`app`</ph> 的应用程序。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Self-contained deployment.</source>
+          <target state="translated">独立部署。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Unlike FDD, a self-contained deployment (SCD) does not rely on any shared components to be present on the target system.</source>
+          <target state="translated">与 FDD 不同，独立部署 (SCD) 不依赖目标系统上存在的任何共享组件。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications.</source>
+          <target state="translated">所有组件，包括 .NET Core 库和 .NET Core 运行时，都包含在应用程序中，并且独立于其他 .NET Core 应用程序。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>SCDs include an executable (such as <ph id="ph1">`app.exe`</ph> on Windows platforms for an application named <ph id="ph2">`app`</ph>), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as <ph id="ph3">`app.dll`</ph>), which is the actual application.</source>
+          <target state="translated">SCD 包括一个可执行文件（如 Windows 平台上名为 <ph id="ph2">`app`</ph> 的应用程序的 <ph id="ph1">`app.exe`</ph>），它是特定于平台的 .NET Core 主机的重命名版本，还包括一个 .dll 文件（如 <ph id="ph3">`app.dll`</ph>），而它是实际的应用程序。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployments (FDD)</source>
+          <target state="translated">依赖框架的部署 (FDD)</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For an FDD, you deploy only your app and any third-party dependencies.</source>
+          <target state="translated">对于 FDD，仅部署应用和任何第三方依赖项。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You do not have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system.</source>
+          <target state="translated">不需要部署 .NET Core，因为应用将使用目标系统上存在的 .NET Core 版本。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This is the default deployment model for .NET Core apps.</source>
+          <target state="translated">这是 .NET Core 应用的默认部署模型。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Why create a framework-dependent deployment?</source>
+          <target state="translated">为什么创建依赖框架的部署？</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Deploying an FDD has a number of advantages:</source>
+          <target state="translated">部署 FDD 具有很多有点：</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You do not have to define the target operating systems that your .NET Core app will run on in advance.</source>
+          <target state="translated">不需要提前定义 .NET Core 应用将在其上运行的目标操作系统。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system.</source>
+          <target state="translated">因为无论什么操作系统，.NET Core 的可执行文件和库都是用通用的 PE 文件格式，因此，无论什么基础操作系统，.NET Core 都可执行应用。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information on the PE file format, see <bpt id="p1">[</bpt>.NET Assembly File Format<ept id="p1">](../../standard/assembly-format.md)</ept>.</source>
+          <target state="translated">有关 PE 文件格式的详细信息，请参阅 <bpt id="p1">[</bpt>.NET 程序集文件格式<ept id="p1">](../../standard/assembly-format.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is small.</source>
+          <target state="translated">部署包很小。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You only have to deploy your app and its dependencies, not .NET Core itself.</source>
+          <target state="translated">只需部署应用及其依赖项，而无需部署 .NET Core 本身。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.</source>
+          <target state="translated">许多应用都可使用相同的 .NET Core 安装，从而降低了主机系统上磁盘空间和内存使用量。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>There are also a few disadvantages:</source>
+          <target state="translated">也有几个缺点：</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.</source>
+          <target state="translated">仅当主机系统上已安装你设为目标的 .NET Core 版本或更高版本时，应用才能运行。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It is possible for the .NET Core runtime and libraries to change without your knowledge in future releases.</source>
+          <target state="translated">.NET Core 运行时和库在没有将来版本的知识的情况下发生更改是可能的。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In rare cases, this may change the behavior of your app.</source>
+          <target state="translated">在极少数情况下，这可能会更改应用的行为。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment</source>
+          <target state="translated">部署依赖框架的部署</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app.</source>
+          <target state="translated">如果不使用第三方依赖项，部属依赖框架的部署只包括生成、测试和发布应用。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">一个用 C# 编写的简单示例可说明此过程。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example uses the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">该示例使用命令行中的 <bpt id="p1">[</bpt>dotnet 实用程序<ept id="p1">](../tools/dotnet.md)</ept>但是，仍可使用部署环境（如 Visual Studio Code）编译、测试和发布该示例。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <bpt id="p1">[</bpt>dotnet new<ept id="p1">](../tools/dotnet-new.md)</ept> to create a new C# console project.</source>
+          <target state="translated">为项目创建目录，然后在命令栏中，键入 <bpt id="p1">[</bpt>dotnet new<ept id="p1">](../tools/dotnet-new.md)</ept> 创建新的 C# 控制台项目。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">在编辑器中打开 <ph id="ph1">`Program.cs`</ph> 文件，然后使用下列代码替换自动生成的代码。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">它会提示用户输入文本，然后显示用户输入的个别词。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">它使用正则表达式 <ph id="ph1">`\w+`</ph> 来将输入文本中的词分开。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">[</bpt>dotnet restore<ept id="p1">](../tools/dotnet-restore.md)</ept> command to restore the dependencies specified in your project.</source>
+          <target state="translated">运行 <bpt id="p1">[</bpt>dotnet 还原<ept id="p1">](../tools/dotnet-restore.md)</ept>命令，以还原项目中指定的依赖项。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create a debug build of your app by using the <bpt id="p1">[</bpt>dotnet build<ept id="p1">](../tools/dotnet-build.md)</ept> command.</source>
+          <target state="translated">使用 <bpt id="p1">[</bpt>dotnet 生成<ept id="p1">](../tools/dotnet-build.md)</ept> 命令为应用生成调试。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app by using the <ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph> command.</source>
+          <target state="translated">调试并测试该程序后，可以使用 <ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph> 命令创建要与应用一起部署的文件。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app.</source>
+          <target state="translated">这将创建一个应用的发行版（而不是调试版）。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a directory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph> subdirectory.</source>
+          <target state="translated">生成的文件位于名为 <ph id="ph1">`publish`</ph> 的目录中，该目录位于项目的 <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph> 子目录的子目录中。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The complete set of application  files can be deployed in any way you'd like.</source>
+          <target state="translated">可以以任何喜欢的方式部署完整的应用程序文件集。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">例如，可以使用简单的 <ph id="ph1">`copy`</ph> 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.</source>
+          <target state="translated">除应用程序二进制文件外，安装程序还应打包共享框架安装程序，或作为应用程序安装的部分内容，将其作为必备组件进行检查。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Installation of the shared framework requires Administrator/root access since it is machine-wide.</source>
+          <target state="translated">安装共享框架需要管理员/根访问权限，因为它属于计算机范围。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with third-party dependencies</source>
+          <target state="translated">部署包含第三方依赖项的依赖框架的部署</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with one or more third-party dependencies involves three additional steps before you can run the <ph id="ph1">`dotnet restore`</ph> command:</source>
+          <target state="translated">要运行 <ph id="ph1">`dotnet restore`</ph> 命令，必须先完成部署依赖框架的部署（包含一个或多个第三方依赖项）所涉及的其他三个步骤：</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">将对任何第三方库的引用添加到 <ph id="ph2">`project.json`</ph> 文件的 <ph id="ph1">`dependencies`</ph> 部分。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">以下 <ph id="ph1">`dependencies`</ph> 部分使用 Json.NET 作为第三方库。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency.</source>
+          <target state="translated">如果尚未安装，请下载包含第三方依赖项的 NuGet 包。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To download the package, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">若要下载该包，请在添加依赖项后执行 <ph id="ph1">`dotnet restore`</ph> 命令。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">因为依赖项在发布时已从本地 NuGet 缓存解析出来，因此它一定适用于你的系统。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies.</source>
+          <target state="translated">注意，具有第三方依赖项的依赖框架的部署只具有与第三方依赖项一样的可移植性。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, if a third-party library only supports macOS, the app will not be portable to Windows systems.</source>
+          <target state="translated">例如，如果第三方库只支持 macOS，该应用将无法移植到 Windows 系统。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This can happen if the third-party dependency itself depends on native code.</source>
+          <target state="translated">当第三方依赖项本身取决于本机代码时，也可能发生此情况。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A good example of this is Kestrel server.</source>
+          <target state="translated">Kestrel 服务器就是一个很好的示例。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> that the native dependency supports (and that exists in its NuGet package).</source>
+          <target state="translated">当为具有此类第三方依赖项的应用程序创建 FDD 时，已发布的输出会针对每个本机依赖项支持（存在于 NuGet 包）的<bpt id="p1">[</bpt>运行时标识符 (RID)<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> 包含一个文件夹。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Self-contained deployments (SCD)</source>
+          <target state="translated">独立部署 (SCD)</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with.</source>
+          <target state="translated">对于独立部署，部署的不只是应用，还有生成应用所使用的 .NET Core 版本。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Creating an SCD does not, however, include the <bpt id="p1">[</bpt>native dependencies of .NET Core<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept> itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application.</source>
+          <target state="translated">但是，创建 SCD 不包括各种平台上的 <bpt id="p1">[</bpt>.NET Core 的本机依赖项<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>本身（例如，macOS 上的 OpenSSL），因此运行应用程序前需要安装这些依赖项。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Why deploy a Self-contained deployment?</source>
+          <target state="translated">为什么要部署独立部署？</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Deploying a Self-contained deployment has two major advantages:</source>
+          <target state="translated">部署独立部署主要有两个优点：</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You have sole control of the version of .NET Core that is deployed with your app.</source>
+          <target state="translated">可以对与应用一起部署的 .NET Core 版本具有单独的控制权。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>.NET Core can be serviced only by you.</source>
+          <target state="translated">只有你才能维护 .NET Core。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can be assured that the target system can run your .NET Core app, since you're providing the version of .NET Core that it will run on.</source>
+          <target state="translated">请放心，目标系统可以运行你的 .NET Core 应用，因为你提供的是应用将在其上运行的 .NET Core 版本。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>It also has a number of disadvantages:</source>
+          <target state="translated">它也有几个缺点：</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.</source>
+          <target state="translated">由于 .NET Core 包含在部署包中，因此必须提前选择为其生成部署包的目标平台。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.</source>
+          <target state="translated">部署包相对较大，因为需要将 .NET Core 和应用及其第三方依赖项包括在内。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.</source>
+          <target state="translated">向系统部署大量独立的 .NET Core 应用可能会使用大量磁盘空间，因为每个应用都会复制 .NET Core 文件。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><g id="p1" ctype="x-a" name="simpleSelf" /> Deploying a simple self-contained deployment</source>
+          <target state="translated"><g id="p1" ctype="x-a" name="simpleSelf"></g> 部署简单的独立部署</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.</source>
+          <target state="translated">部署没有第三方依赖项的独立部署包括创建项目、修改 project.json 文件、生成、测试以及发布应用。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">一个用 C# 编写的简单示例可说明此过程。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The example uses the <ph id="ph1">`dotnet`</ph> utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">该示例使用命令行中的 <ph id="ph1">`dotnet`</ph> 实用程序。但是，仍可使用部署环境（如 Visual Studio Code）编译、测试和发布该示例。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <ph id="ph1">`dotnet new`</ph> to create a new C# console project.</source>
+          <target state="translated">为项目创建目录，然后在命令栏中，键入 <ph id="ph1">`dotnet new`</ph> 创建新的 C# 控制台项目。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">在编辑器中打开 <ph id="ph1">`Program.cs`</ph> 文件，然后使用下列代码替换自动生成的代码。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">它会提示用户输入文本，然后显示用户输入的个别词。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">它使用正则表达式 <ph id="ph1">`\w+`</ph> 来将输入文本中的词分开。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and in the <ph id="ph2">`frameworks`</ph> section, remove the following line:</source>
+          <target state="translated">打开 <ph id="ph1">`project.json`</ph> 文件，然后在 <ph id="ph2">`frameworks`</ph> 部分中，删除以下行：</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The Framework section should appear as follows after you've modified it:</source>
+          <target state="translated">修改框架后，框架部分应显示如下：</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Removing the <ph id="ph1">`"type": "platform"`</ph> attribute indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated">删除 <ph id="ph1">`"type": "platform"`</ph> 属性意指将框架作为一套本地组件提供给应用，而不是作为系统范围内的平台包。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated">在 <ph id="ph2">`project.json`</ph> 文件中创建 <ph id="ph1">`runtimes`</ph> 部分，该文件定义应用要作为目标的平台，并指定应用要作为目标的每个平台的运行时标识符。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">请查看<bpt id="p1">[</bpt>运行时标识符目录<ept id="p1">](../rid-catalog.md)</ept>，获取运行时标识符列表。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">例如，以下 <ph id="ph1">`runtimes`</ph> 部分表明应用在 64 位 Windows 10 操作系统和 64 位 OS X 10.10 版本的操作系统上运行。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">请注意，还需要添加一个逗号将 <ph id="ph1">`runtimes`</ph> 部分与上一节分开。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">本节后面部分将显示完整的示例 <ph id="ph1">`project.json`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated">运行 <ph id="ph1">`dotnet restore`</ph> 命令，以还原项目中指定的依赖项。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated">使用 <ph id="ph1">`dotnet build`</ph> 命令为每个目标平台上的应用创建调试版本。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">除非指定想要生成的运行时标识符，否则 <ph id="ph1">`dotnet build`</ph> 命令将创建仅适用于当前系统运行时 ID 的版本。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">可使用以下命令生成两个目标平台都适用的应用：</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The debug builds of your app for each platform will be found in the project's <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">可在项目的 <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> 子目录中找到针对每个平台应用的调试版本。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">调试并测试该程序后，可以通过对两个目标平台使用 <ph id="ph1">`dotnet publish`</ph> 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">这将为每个目标平台创建一个应用的发行版（而不是调试版）。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">生成的文件位于名为 <ph id="ph1">`publish`</ph> 的子目录中，该目录位于项目的 <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> 子目录的子目录中。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">可以以任何喜欢的方式部署已发布的文件。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">例如，可以使用简单的 <ph id="ph1">`copy`</ph> 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">下面是此项目的完整 <ph id="ph1">`project.json`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with third-party dependencies</source>
+          <target state="translated">部署具有第三方依赖项的独立部署</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with one or more third-party dependencies involves adding the third party dependency:</source>
+          <target state="translated">部署具有一个或多个第三方依赖项的独立部署包括添加第三方依赖项：</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">将对任何第三方库的引用添加到 <ph id="ph2">`project.json`</ph> 文件的 <ph id="ph1">`dependencies`</ph> 部分。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">以下 <ph id="ph1">`dependencies`</ph> 部分使用 Json.NET 作为第三方库。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency to your system.</source>
+          <target state="translated">如果尚未安装，请将包含第三方依赖项的 NuGet 包下载到系统。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To make the dependency available to your app, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">若要使依赖项对应用适用，请在添加依赖项后执行 <ph id="ph1">`dotnet restore`</ph> 命令。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">因为依赖项在发布时已从本地 NuGet 缓存解析出来，因此它一定适用于你的系统。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following is the complete project.json file for this project:</source>
+          <target state="translated">下面是此项目的完整 project.json 文件：</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>When you deploy your application, any third-party dependencies used in your app are also contained with your application files.</source>
+          <target state="translated">部署应用程序时，应用中使用的任何第三方依赖项也包含在应用程序文件中。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Third-party libraries do not already have to be present on the system on which the app is running.</source>
+          <target state="translated">第三方库已不需要在该应用运行的系统上存在。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library.</source>
+          <target state="translated">请注意，可以只将具有一个第三方库的独立部署部署到该库支持的平台。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment.</source>
+          <target state="translated">这与依赖框架的部署中具有本机依赖项的第三方依赖项类似。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with a smaller footprint</source>
+          <target state="translated">部署内存占用较小的独立部署</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components.</source>
+          <target state="translated">目标系统上是否有足够可用的存储空间很可能是个问题，可以通过排除某些系统组件减小总体的内存占用。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To do this, you explicitly define the .NET Core components that your app includes in your project.json file.</source>
+          <target state="translated">若要执行此操作，显式定义应用包括在 project.json 文件中的 .NET Core 组件。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment.</source>
+          <target state="translated">若要创建内存占用较小的独立部署，请从按照创建独立部署的前两个步骤着手。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Once you've run the <ph id="ph1">`dotnet new`</ph> command and added the C# source code to your app, do the following:</source>
+          <target state="translated">运行 <ph id="ph1">`dotnet new`</ph> 命令并在向应用添加 C# 源代码后，执行以下操作：</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and replace the <ph id="ph2">`frameworks`</ph> section with the following:</source>
+          <target state="translated">打开 <ph id="ph1">`project.json`</ph> 文件，然后将 <ph id="ph2">`frameworks`</ph> 部分替换为以下内容：</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>This does two things:</source>
+          <target state="translated">这有两个用途：</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>It indicates that, instead of using the entire <ph id="ph1">`netcoreapp1.0`</ph> framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.</source>
+          <target state="translated">它表明，没有使用整个 <ph id="ph1">`netcoreapp1.0`</ph> 框架，该框架包括 .NET Core CLR、.NET Core 库和大量其他系统组件，应用只使用 .NET 标准库。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>By removing the <ph id="ph1">`"type": "platform"`</ph> attribute, it indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated">删除 <ph id="ph1">`"type": "platform"`</ph> 属性即表示将框架作为一套本地组件提供给应用，而不是作为系统范围内的平台包。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Replace the <ph id="ph1">`dependencies`</ph> section with the following:</source>
+          <target state="translated">将 <ph id="ph1">`dependencies`</ph> 部分替换为以下内容：</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>This defines the system components used by our app.</source>
+          <target state="translated">这将定义应用使用的系统组件。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host.</source>
+          <target state="translated">与应用一起打包的系统组件包括 .NET 标准库、.NET Core 运行时和 .NET Core 主机。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>This produces a self-contained deployment with a smaller footprint.</source>
+          <target state="translated">这将生成内存占用较小的独立部署。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>As you did in the <bpt id="p1">[</bpt>Deploying a simple self-contained deployment<ept id="p1">](#simpleSelf)</ept> example, create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated">正如在<bpt id="p1">[</bpt>部署简单独立部署<ept id="p1">](#simpleSelf)</ept>示例中执行的操作，在定义应用作为目标的平台的 <ph id="ph2">`project.json`</ph> 文件中创建 <ph id="ph1">`runtimes`</ph> 部分，然后指定该应用作为目标的每个平台的运行时标识符。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">请查看<bpt id="p1">[</bpt>运行时标识符目录<ept id="p1">](../rid-catalog.md)</ept>，获取运行时标识符列表。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">例如，以下 <ph id="ph1">`runtimes`</ph> 部分表明应用在 64 位 Windows 10 操作系统和 64 位 OS X 10.10 版本的操作系统上运行。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">请注意，还需要添加一个逗号将 <ph id="ph1">`runtimes`</ph> 部分与上一节分开。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">本节后面部分将显示完整的示例 <ph id="ph1">`project.json`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated">运行 <ph id="ph1">`dotnet restore`</ph> 命令，以还原项目中指定的依赖项。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated">使用 <ph id="ph1">`dotnet build`</ph> 命令为每个目标平台上的应用创建调试版本。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">除非指定想要生成的运行时标识符，否则 <ph id="ph1">`dotnet build`</ph> 命令将创建仅适用于当前系统运行时 ID 的版本。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">可使用以下命令生成两个目标平台都适用的应用：</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">调试并测试该程序后，可以通过对两个目标平台使用 <ph id="ph1">`dotnet publish`</ph> 命令来为每个作为目标的平台创建要与应用一起部署的文件，如下所示：</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">这将为每个目标平台创建一个应用的发行版（而不是调试版）。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">生成的文件位于名为 <ph id="ph1">`publish`</ph> 的子目录中，该目录位于项目的 <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph> 子目录的子目录中。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">请注意，每个子目录中都包含完整的启动应用所需的文件集（既有应用文件，也有所有 .NET Core 文件）。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">与应用程序的文件一起，发布过程将发出包含应用调试信息的程序数据库 (.pdb) 文件。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">该文件主要用于调试异常；可以选择不使用应用程序文件打包该文件。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">可以以任何喜欢的方式部署已发布的文件。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">例如，可以使用简单的 <ph id="ph1">`copy`</ph> 命令将其打包为 zip 文件，或者使用选择的安装包进行部署。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">下面是此项目的完整 <ph id="ph1">`project.json`</ph> 文件。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

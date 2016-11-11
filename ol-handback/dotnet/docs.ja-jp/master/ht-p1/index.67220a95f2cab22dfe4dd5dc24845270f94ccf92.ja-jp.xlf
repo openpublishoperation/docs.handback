@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">96eb2cc7ca948b3e372fa1363b1741624d791d27</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">416c430ca40031e61bb4d28a92a500ba0a77d0f4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b625f18872df0485c35b16060966c4c5bef9d288</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core アプリケーション展開</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core アプリケーション展開</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Core deployment</source>
+          <target state="translated">.NET, .NET Core, .NET Core 展開</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">.NET Core アプリケーション展開</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can create two types of deployments for .NET Core applications:</source>
+          <target state="translated">.NET Core アプリケーションに対して、次の 2 種類の展開を作成できます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployment.</source>
+          <target state="translated">フレームワークに依存する展開。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system.</source>
+          <target state="translated">名前が示すように、フレームワークに依存する展開 (FDD) は、ターゲット システムに存在する .NET Core のシステム全体の共有バージョンに依存します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is already present, your app is also portable between installations of .NET Core.</source>
+          <target state="translated">.NET Core は既に存在するので、アプリは .NET Core のインストール間で移植することもできます。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries.</source>
+          <target state="translated">アプリには、それ自体のコード、および .NET Core ライブラリの外部にあるサードパーティの依存関係のみが含まれています。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>FDDs contain .dll files that can be launched by using the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line.</source>
+          <target state="translated">FDD には、コマンドラインから <bpt id="p1">[</bpt>dotnet ユーティリティ<ept id="p1">](../tools/dotnet.md)</ept>を使用して起動できる .dll ファイルが含まれています。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`dotnet app.dll`</ph> runs an application named <ph id="ph2">`app`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`dotnet app.dll`</ph> は <ph id="ph2">`app`</ph> という名前のアプリケーションを実行します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Self-contained deployment.</source>
+          <target state="translated">自己完結型の展開。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Unlike FDD, a self-contained deployment (SCD) does not rely on any shared components to be present on the target system.</source>
+          <target state="translated">FDD とは異なり、自己完結型の展開 (SCD) は、ターゲット システムに存在するいずれの共有コンポーネントにも依存しません。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications.</source>
+          <target state="translated">.NET Core ライブラリと .NET Core ランタイムの両方を含むすべてのコンポーネントがアプリケーションに含まれており、他の .NET Core アプリケーションから分離されています。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>SCDs include an executable (such as <ph id="ph1">`app.exe`</ph> on Windows platforms for an application named <ph id="ph2">`app`</ph>), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as <ph id="ph3">`app.dll`</ph>), which is the actual application.</source>
+          <target state="translated">SCD には、プラットフォーム固有の .NET Core ホストの名前変更後のバージョンである実行可能ファイル (<ph id="ph2">`app`</ph> という名前のアプリケーション用の Windows プラットフォーム上の <ph id="ph1">`app.exe`</ph> など)、および実際のアプリケーションである .dll ファイル (<ph id="ph3">`app.dll`</ph> など) が含まれています。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployments (FDD)</source>
+          <target state="translated">フレームワークに依存する展開 (FDD)</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For an FDD, you deploy only your app and any third-party dependencies.</source>
+          <target state="translated">FDD では、アプリ、およびサードパーティの依存関係のみを展開します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You do not have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system.</source>
+          <target state="translated">アプリは、ターゲット システムに存在する .NET Core のバージョンを使用するので、.NET Core を展開する必要はありません。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This is the default deployment model for .NET Core apps.</source>
+          <target state="translated">これは、.NET Core アプリの既定の展開モデルです。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Why create a framework-dependent deployment?</source>
+          <target state="translated">フレームワークに依存する展開を作成する理由</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Deploying an FDD has a number of advantages:</source>
+          <target state="translated">FDD の展開には、次のいくつかの利点があります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You do not have to define the target operating systems that your .NET Core app will run on in advance.</source>
+          <target state="translated">.NET Core アプリが実行されるターゲットのオペレーティング システムを事前に定義する必要はありません。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system.</source>
+          <target state="translated">.NET Core は、オペレーティング システムに関係なく実行可能ファイルとライブラリに共通の PE ファイル形式を使用するので、.NET Core は、基になるオペレーティング システムに関係なくアプリを実行できます。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information on the PE file format, see <bpt id="p1">[</bpt>.NET Assembly File Format<ept id="p1">](../../standard/assembly-format.md)</ept>.</source>
+          <target state="translated">PE ファイル形式の詳細については、「<bpt id="p1">[</bpt>.NET Assembly File Format<ept id="p1">](../../standard/assembly-format.md)</ept>」 (.NET アセンブリのファイル形式) を参照してください。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is small.</source>
+          <target state="translated">展開パッケージは小サイズです。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You only have to deploy your app and its dependencies, not .NET Core itself.</source>
+          <target state="translated">.NET Core 自体ではなく、アプリとその依存関係のみを展開する必要があります。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.</source>
+          <target state="translated">複数のアプリが、同じ .NET Core インストールを使用します。これにより、ホスト システム上のディスク領域とメモリ使用量の両方が削減されます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>There are also a few disadvantages:</source>
+          <target state="translated">次のいくつかの短所もあります。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.</source>
+          <target state="translated">ターゲットとする .NET Core のバージョンまたはそれ以降のバージョンがホスト システムに既にインストールされている場合にのみ、アプリを実行できます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It is possible for the .NET Core runtime and libraries to change without your knowledge in future releases.</source>
+          <target state="translated">将来のリリースでは、ユーザーの認識なしに .NET Core ランタイムおよびライブラリが変更される場合があります。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In rare cases, this may change the behavior of your app.</source>
+          <target state="translated">まれなケースでは、アプリのビヘイビアーが変更される可能性があります。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment</source>
+          <target state="translated">フレームワークに依存する展開を展開する</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app.</source>
+          <target state="translated">サードパーティの依存関係を含まない、フレームワークに依存する展開を展開するプロセスには、アプリのビルド、テスト、および発行が含まれます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">C# で記述された次の単純な例は、このプロセスを示しています。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example uses the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">この例では、コマンドラインの <bpt id="p1">[</bpt>dotnet ユーティリティ<ept id="p1">](../tools/dotnet.md)</ept>を使用しますが、Visual Studio や Visual Studio Code などの開発環境を使用して、この例をコンパイル、テスト、および発行することもできます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <bpt id="p1">[</bpt>dotnet new<ept id="p1">](../tools/dotnet-new.md)</ept> to create a new C# console project.</source>
+          <target state="translated">プロジェクトのディレクトリを作成し、コマンドラインから <bpt id="p1">[</bpt>dotnet new<ept id="p1">](../tools/dotnet-new.md)</ept> と入力して、新しい C# コンソール プロジェクトを作成します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">エディターで <ph id="ph1">`Program.cs`</ph> ファイルを開き、自動生成されたコードを次のコードに置き換えます。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">テキストの入力を求めるプロンプトが表示されてから、ユーザーが入力した個々の単語が表示されます。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">正規表現 <ph id="ph1">`\w+`</ph> を使用して、入力テキストの単語を分離します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">[</bpt>dotnet restore<ept id="p1">](../tools/dotnet-restore.md)</ept> command to restore the dependencies specified in your project.</source>
+          <target state="translated"><bpt id="p1">[</bpt>dotnet restore<ept id="p1">](../tools/dotnet-restore.md)</ept> コマンドを実行して、プロジェクトで指定された依存関係を復元します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create a debug build of your app by using the <bpt id="p1">[</bpt>dotnet build<ept id="p1">](../tools/dotnet-build.md)</ept> command.</source>
+          <target state="translated"><bpt id="p1">[</bpt>dotnet build<ept id="p1">](../tools/dotnet-build.md)</ept> コマンドを使用して、アプリのデバッグ ビルドを作成します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app by using the <ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph> command.</source>
+          <target state="translated">プログラムをデバッグしてテストしたら、<ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph> コマンドを使用して、アプリで展開するファイルを作成できます。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app.</source>
+          <target state="translated">これにより、リリース (デバッグではなく) バージョンのアプリが作成されます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a directory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph> subdirectory.</source>
+          <target state="translated">作成されたファイルは、プロジェクトの <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph> サブディレクトリのサブディレクトリ内にある、<ph id="ph1">`publish`</ph> という名前のディレクトリに配置されます。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">アプリケーションのファイルと共に、発行プロセスは、アプリに関するデバッグ情報を含むプログラム データベース (.pdb) ファイルを出力します。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">このファイルは、主に例外のデバッグに役立ちます。アプリケーションのファイルと共にパッケージ化しないように選択することもできます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The complete set of application  files can be deployed in any way you'd like.</source>
+          <target state="translated">アプリケーション ファイルの完全なセットを任意の方法で展開できます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">たとえば、zip ファイル内にパッケージ化したり、単純な <ph id="ph1">`copy`</ph> コマンドを使用したり、任意のインストール パッケージで展開したりできます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.</source>
+          <target state="translated">また、アプリケーション インストールの一環として、インストーラーはアプリケーション バイナリに加えて、共有フレームワーク インストーラーをバンドルするか、または前提条件として共有フレームワークがあるか確認する必要があります。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Installation of the shared framework requires Administrator/root access since it is machine-wide.</source>
+          <target state="translated">共有フレームワークのインストールは、コンピューター全体が対象なので、管理者/ルート アクセスを必要とします。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with third-party dependencies</source>
+          <target state="translated">サードパーティの依存関係を含む、フレームワークに依存する展開を展開する</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with one or more third-party dependencies involves three additional steps before you can run the <ph id="ph1">`dotnet restore`</ph> command:</source>
+          <target state="translated">1 つまたは複数のサードパーティの依存関係を含む、フレームワークに依存する展開を展開するプロセスでは、<ph id="ph1">`dotnet restore`</ph> コマンドを実行できるようにするために、次の 3 つの追加手順を実行します。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">任意のサードパーティ ライブラリへの参照を <ph id="ph2">`project.json`</ph> ファイルの <ph id="ph1">`dependencies`</ph> セクションに追加します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">次の <ph id="ph1">`dependencies`</ph> セクションは、サードパーティ ライブラリとして Json.NET を使用します。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency.</source>
+          <target state="translated">サードパーティの依存関係を含む NuGet パッケージをまだダウンロードしていない場合は、ダウンロードします。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To download the package, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">パッケージをダウンロードするには、依存関係を追加した後で <ph id="ph1">`dotnet restore`</ph> コマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">発行時に依存関係はローカルの NuGet キャッシュからが解決されるので、システムで使用可能になる必要があります。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies.</source>
+          <target state="translated">サードパーティの依存関係を含む、フレームワークに依存する展開は、サードパーティの依存関係と同じ移植性を持つことに注意してください。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, if a third-party library only supports macOS, the app will not be portable to Windows systems.</source>
+          <target state="translated">たとえば、サードパーティ ライブラリが macOS のみをサポートする場合、アプリを Windows システムに移植することはできません。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This can happen if the third-party dependency itself depends on native code.</source>
+          <target state="translated">この状況は、サードパーティの依存関係自体がネイティブ コードに依存する場合に生じる可能性があります。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A good example of this is Kestrel server.</source>
+          <target state="translated">この好例は Kestrel サーバーです。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> that the native dependency supports (and that exists in its NuGet package).</source>
+          <target state="translated">このようなサードパーティの依存関係を含むアプリケーションに対して FDD が作成されると、発行された出力には、ネイティブの依存関係がサポートする (そして、その NuGet パッケージ内に存在する) 各<bpt id="p1">[</bpt>ランタイム識別子 (RID)<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> のフォルダーが含まれます。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Self-contained deployments (SCD)</source>
+          <target state="translated">自己完結型の展開 (SCD)</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with.</source>
+          <target state="translated">自己完結型の展開では、アプリおよびすべてのサードパーティの依存関係だけでなく、アプリのビルドに使用する .NET Core のバージョンも展開します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Creating an SCD does not, however, include the <bpt id="p1">[</bpt>native dependencies of .NET Core<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept> itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application.</source>
+          <target state="translated">ただし、SCD の作成には、さまざまなプラットフォーム上の <bpt id="p1">[</bpt>.NET Core のネイティブの依存関係<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>自体 (たとえば、macOS 上の OpenSSL) は含まれないので、アプリケーションを実行する前にこれらの依存関係をインストールする必要があります。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Why deploy a Self-contained deployment?</source>
+          <target state="translated">自己完結型の展開を展開する理由</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Deploying a Self-contained deployment has two major advantages:</source>
+          <target state="translated">自己完結型の展開を展開するのには、次の 2 つの主な利点があります。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You have sole control of the version of .NET Core that is deployed with your app.</source>
+          <target state="translated">アプリで展開されている .NET Core のバージョンは、あなただけがコントロールできます。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>.NET Core can be serviced only by you.</source>
+          <target state="translated">.NET Core を操作できるのはあなただけです。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can be assured that the target system can run your .NET Core app, since you're providing the version of .NET Core that it will run on.</source>
+          <target state="translated">ターゲット システムが実行できる .NET Core のバージョンを提供しているので、ターゲット システムで .NET Core アプリを確実に実行できます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>It also has a number of disadvantages:</source>
+          <target state="translated">また、次のいくつかの短所もあります。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.</source>
+          <target state="translated">.NET Core が展開パッケージに含まれているので、展開パッケージをビルドするターゲット プラットフォームを事前に選択する必要があります。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.</source>
+          <target state="translated">.NET Core だけでなくアプリおよびそのサードパーティの依存関係を含める必要があるので、展開パッケージは比較的大きくなります。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.</source>
+          <target state="translated">多数の自己完結型の .NET Core アプリをシステムに展開すると、各アプリが .NET Core ファイルを複製するので、非常に多くのディスク領域を使用する可能性があります。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><g id="p1" ctype="x-a" name="simpleSelf" /> Deploying a simple self-contained deployment</source>
+          <target state="translated"><g id="p1" ctype="x-a" name="simpleSelf"></g>単純な自己完結型の展開を展開する</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.</source>
+          <target state="translated">サードパーティの依存関係を含まない自己完結型の展開を展開するプロセスには、プロジェクトの作成、project.json ファイルの変更、アプリのビルド、テスト、および発行が含まれます。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">C# で記述された次の単純な例は、このプロセスを示しています。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The example uses the <ph id="ph1">`dotnet`</ph> utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">この例では、コマンドラインの <ph id="ph1">`dotnet`</ph> ユーティリティを使用します。ただし、Visual Studio や Visual Studio Code などの開発環境を使用して、この例をコンパイル、テスト、および発行することもできます。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <ph id="ph1">`dotnet new`</ph> to create a new C# console project.</source>
+          <target state="translated">プロジェクトのディレクトリを作成し、コマンドラインから <ph id="ph1">`dotnet new`</ph> と入力して、新しい C# コンソール プロジェクトを作成します。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">エディターで <ph id="ph1">`Program.cs`</ph> ファイルを開き、自動生成されたコードを次のコードに置き換えます。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">テキストの入力を求めるプロンプトが表示されてから、ユーザーが入力した個々の単語が表示されます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">正規表現 <ph id="ph1">`\w+`</ph> を使用して、入力テキストの単語を分離します。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and in the <ph id="ph2">`frameworks`</ph> section, remove the following line:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> ファイルを開き、<ph id="ph2">`frameworks`</ph> セクションで次の行を削除します。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The Framework section should appear as follows after you've modified it:</source>
+          <target state="translated">フレームワーク セクションは、変更後に次のように表示されます。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Removing the <ph id="ph1">`"type": "platform"`</ph> attribute indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated"><ph id="ph1">`"type": "platform"`</ph> 属性を削除すると、システム全体にわたるプラットフォーム パッケージではなく、アプリに対してローカルのコンポーネントのセットとして、フレームワークが提供されることを示します。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated"><ph id="ph2">`project.json`</ph> ファイルで、アプリがターゲットとするプラットフォームを定義する <ph id="ph1">`runtimes`</ph> セクションを作成し、ターゲットとする各プラットフォームのランタイム識別子を指定します。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">ランタイム識別子の一覧については、「<bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept>」 (ランタイム識別子のカタログ) を参照してください。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">たとえば、次の <ph id="ph1">`runtimes`</ph> セクションは、アプリが 64 ビット Windows 10 オペレーティング システムおよび 64 ビット OS X バージョン 10.10 オペレーティング システムで実行されることを示します。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">また、前のセクションから <ph id="ph1">`runtimes`</ph> セクションを区切るコンマを追加する必要もあります。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">完全なサンプル <ph id="ph1">`project.json`</ph> ファイルについては、このセクションの後の部分に示されています。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph> コマンドを実行して、プロジェクトで指定された依存関係を復元します。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated"><ph id="ph1">`dotnet build`</ph> コマンドを使用して、各ターゲット プラットフォーム上のアプリのデバッグ ビルドを作成します。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">ビルドするランタイム識別子を指定しない限り、<ph id="ph1">`dotnet build`</ph> コマンドは、現在のシステムのランタイム ID のみのビルドを作成します。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">次のコマンドを使用して、両方のターゲット プラットフォームに対してアプリをビルドできます。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The debug builds of your app for each platform will be found in the project's <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">各プラットフォームのアプリのデバッグ ビルドは、プロジェクトの <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> サブディレクトリ内にあります。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">プログラムをテストしてデバッグしたら、次のように両方のターゲット プラットフォームに対して <ph id="ph1">`dotnet publish`</ph> コマンドを使用して、ターゲット プラットフォームごとにアプリで展開するファイルを作成できます。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">これにより、各ターゲット プラットフォームに対してアプリのリリース (デバッグではなく) バージョンが作成されます。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">作成されたファイルは、プロジェクトの <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> サブディレクトリのサブディレクトリ内にある、<ph id="ph1">`publish`</ph> という名前のサブディレクトリに配置されます。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">各サブディレクトリには、アプリの起動に必要なファイルの完全なセット (アプリ ファイルとすべての .NET Core ファイルの両方) が含まれています。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">アプリケーションのファイルと共に、発行プロセスは、アプリに関するデバッグ情報を含むプログラム データベース (.pdb) ファイルを出力します。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">このファイルは、主に例外のデバッグに役立ちます。アプリケーションのファイルと共にパッケージ化しないように選択することもできます。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">発行されたファイルは、任意の方法で展開できます。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">たとえば、zip ファイル内にパッケージ化したり、単純な <ph id="ph1">`copy`</ph> コマンドを使用したり、任意のインストール パッケージで展開したりできます。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">このプロジェクトの完全な <ph id="ph1">`project.json`</ph> ファイルを次に示します。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with third-party dependencies</source>
+          <target state="translated">サードパーティの依存関係を含む自己完結型の展開を展開する</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with one or more third-party dependencies involves adding the third party dependency:</source>
+          <target state="translated">1 つまたは複数のサードパーティの依存関係を含む自己完結型の展開を展開するプロセスには、サードパーティの依存関係の追加が含まれます。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">任意のサードパーティ ライブラリへの参照を <ph id="ph2">`project.json`</ph> ファイルの <ph id="ph1">`dependencies`</ph> セクションに追加します。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">次の <ph id="ph1">`dependencies`</ph> セクションは、サードパーティ ライブラリとして Json.NET を使用します。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency to your system.</source>
+          <target state="translated">サードパーティの依存関係を含む NuGet パッケージをシステムにまだダウンロードしていない場合は、ダウンロードします。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To make the dependency available to your app, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">依存関係をアプリで使用できるようにするには、依存関係を追加してから、<ph id="ph1">`dotnet restore`</ph> コマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">発行時に依存関係はローカルの NuGet キャッシュからが解決されるので、システムで使用可能になる必要があります。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following is the complete project.json file for this project:</source>
+          <target state="translated">このプロジェクトの完全な project.json ファイルを次に示します。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>When you deploy your application, any third-party dependencies used in your app are also contained with your application files.</source>
+          <target state="translated">アプリケーションを展開すると、アプリで使用されるすべてのサードパーティの依存関係も、アプリケーション ファイルに含まれています。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Third-party libraries do not already have to be present on the system on which the app is running.</source>
+          <target state="translated">アプリが実行されているシステム上にサードパーティ ライブラリが既に存在している必要はありません。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library.</source>
+          <target state="translated">サードパーティ ライブラリを含む自己完結型の展開は、そのライブラリでサポートされるプラットフォームにのみ展開できます。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment.</source>
+          <target state="translated">これは、フレームワークに依存する展開でネイティブの依存関係と共にサードパーティの依存関係を含む場合に似ています。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with a smaller footprint</source>
+          <target state="translated">フットプリントがより小さい自己完結型の展開を展開する</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components.</source>
+          <target state="translated">ターゲット システムで十分な記憶域の可用性が問題になる可能性がある場合は、一部のシステム コンポーネントを除外することで、アプリの全体的なフットプリントを削減できます。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To do this, you explicitly define the .NET Core components that your app includes in your project.json file.</source>
+          <target state="translated">このためには、アプリによって project.json ファイルに含まれる .NET Core コンポーネントを明示的に定義します。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment.</source>
+          <target state="translated">フットプリントがより小さい自己完結型の展開を作成するには、まず次の 2 つの手順に従って自己完結型の展開を作成します。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Once you've run the <ph id="ph1">`dotnet new`</ph> command and added the C# source code to your app, do the following:</source>
+          <target state="translated"><ph id="ph1">`dotnet new`</ph> コマンドを実行し、C# ソース コードをアプリに追加したら、次の手順を実行します。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and replace the <ph id="ph2">`frameworks`</ph> section with the following:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> ファイルを開き、<ph id="ph2">`frameworks`</ph> セクションを次のコードに置き換えます。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>This does two things:</source>
+          <target state="translated">これにより、次の 2 つのことが行われます。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>It indicates that, instead of using the entire <ph id="ph1">`netcoreapp1.0`</ph> framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> フレームワーク全体 (.NET Core CLR, .NET Core ライブラリ、およびその他の多数のシステム コンポーネントを含む) を使用する代わりに、アプリが .NET 標準ライブラリのみを使用することを示します。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>By removing the <ph id="ph1">`"type": "platform"`</ph> attribute, it indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated"><ph id="ph1">`"type": "platform"`</ph> 属性を削除すると、システム全体にわたるプラットフォーム パッケージではなく、アプリに対してローカルのコンポーネントのセットとして、フレームワークが提供されることを示します。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Replace the <ph id="ph1">`dependencies`</ph> section with the following:</source>
+          <target state="translated"><ph id="ph1">`dependencies`</ph> セクションを次のコードに置き換えます。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>This defines the system components used by our app.</source>
+          <target state="translated">これにより、アプリで使用されるシステム コンポーネントが定義されます。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host.</source>
+          <target state="translated">アプリでパッケージ化されたシステム コンポーネントには、.NET 標準ライブラリ、.NET Core ランタイム、および .NET Core ホストが含まれています。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>This produces a self-contained deployment with a smaller footprint.</source>
+          <target state="translated">これにより、フットプリントがより小さい自己完結型の展開が生成されます。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>As you did in the <bpt id="p1">[</bpt>Deploying a simple self-contained deployment<ept id="p1">](#simpleSelf)</ept> example, create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated">「<bpt id="p1">[</bpt>単純な自己完結型の展開を展開する<ept id="p1">](#simpleSelf)</ept>」で行ったように、<ph id="ph2">`project.json`</ph> ファイルで、アプリがターゲットとするプラットフォームを定義する <ph id="ph1">`runtimes`</ph> セクションを作成し、ターゲットとする各プラットフォームのランタイム識別子を指定します。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">ランタイム識別子の一覧については、「<bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept>」 (ランタイム識別子のカタログ) を参照してください。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">たとえば、次の <ph id="ph1">`runtimes`</ph> セクションは、アプリが 64 ビット Windows 10 オペレーティング システムおよび 64 ビット OS X バージョン 10.10 オペレーティング システムで実行されることを示します。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">また、前のセクションから <ph id="ph1">`runtimes`</ph> セクションを区切るコンマを追加する必要もあります。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">完全なサンプル <ph id="ph1">`project.json`</ph> ファイルについては、このセクションの後の部分に示されています。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph> コマンドを実行して、プロジェクトで指定された依存関係を復元します。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated"><ph id="ph1">`dotnet build`</ph> コマンドを使用して、各ターゲット プラットフォーム上のアプリのデバッグ ビルドを作成します。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">ビルドするランタイム識別子を指定しない限り、<ph id="ph1">`dotnet build`</ph> コマンドは、現在のシステムのランタイム ID のみのビルドを作成します。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">次のコマンドを使用して、両方のターゲット プラットフォームに対してアプリをビルドできます。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">プログラムをテストしてデバッグしたら、次のように両方のターゲット プラットフォームに対して <ph id="ph1">`dotnet publish`</ph> コマンドを使用して、ターゲット プラットフォームごとにアプリで展開するファイルを作成できます。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">これにより、各ターゲット プラットフォームに対してアプリのリリース (デバッグではなく) バージョンが作成されます。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">作成されたファイルは、プロジェクトの <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph> サブディレクトリのサブディレクトリ内にある、<ph id="ph1">`publish`</ph> という名前のサブディレクトリに配置されます。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">各サブディレクトリには、アプリの起動に必要なファイルの完全なセット (アプリ ファイルとすべての .NET Core ファイルの両方) が含まれています。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">アプリケーションのファイルと共に、発行プロセスは、アプリに関するデバッグ情報を含むプログラム データベース (.pdb) ファイルを出力します。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">このファイルは、主に例外のデバッグに役立ちます。アプリケーションのファイルと共にパッケージ化しないように選択することもできます。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">発行されたファイルは、任意の方法で展開できます。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">たとえば、zip ファイル内にパッケージ化したり、単純な <ph id="ph1">`copy`</ph> コマンドを使用したり、任意のインストール パッケージで展開したりできます。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">このプロジェクトの完全な <ph id="ph1">`project.json`</ph> ファイルを次に示します。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

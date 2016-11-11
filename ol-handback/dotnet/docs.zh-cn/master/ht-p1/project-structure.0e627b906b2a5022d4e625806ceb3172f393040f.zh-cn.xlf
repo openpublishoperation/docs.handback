@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca63b25bb5f5e98167aaa8b74a7204fcd77b3523</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\project-structure.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e42ed4d3466e439f8e86e8c6644058bd8161a30</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">24a8963905ade2ea04b56ee1dd45f22772f5f721</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Organizing Your Project to Support .NET Framework and .NET Core</source>
+          <target state="translated">组织项目以支持 .NET Framework 和 .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Organizing Your Project to Support .NET Framework and .NET Core</source>
+          <target state="translated">组织项目以支持 .NET Framework 和 .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Organizing Your Project to Support .NET Framework and .NET Core</source>
+          <target state="translated">组织项目以支持 .NET Framework 和 .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article is to help project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.</source>
+          <target state="translated">本文旨在帮助希望针对 .NET Framework 和 .NET Core 并行编译解决方案的项目所有者。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It provides several options to organize projects to help developers achieve this goal.</source>
+          <target state="translated">它提供了多个可组织项目的选项以帮助开发人员实现此目标。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Here are some typical scenarios to consider when you are deciding how to setup your project layout with .NET Core.</source>
+          <target state="translated">以下是一些在决定如何使用 .NET Core 设置项目时需考虑的典型方案。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>They may not cover everything you want; prioritize based on your project's needs.</source>
+          <target state="translated">这些方案可能无法涵盖所有要求；这些方案的优先级具体取决于项目需求。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt>Combine existing projects and .NET Core projects into single projects<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>option-xproj<ept id="p3">]</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><bpt id="p2">**</bpt>将现有项目和 .NET Core 项目合并为单个项目<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>option-xproj<ept id="p3">]</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>What this is good for:<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>此方案的好处：<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.</source>
+          <target state="translated">通过编译单个项目（而非多个项目）简化生成过程，每个项目针对不同的 .NET Framework 版本或平台。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Simplifying source file management for multi-targeted projects because you have to manage a single project file.</source>
+          <target state="translated">由于需要管理单个项目文件，因此简化了多目标项目的源文件管理。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When adding/removing source files, the alternatives require you to manually sync these with your other projects.</source>
+          <target state="translated">添加/删除源文件时，需要手动将备用文件与其他项目进行同步。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Easily generating a NuGet package for consumption.</source>
+          <target state="translated">轻松生成可供使用的 NuGet 包。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.</source>
+          <target state="translated">允许通过使用编译器指令为库中特定的 .NET Framework 版本编写代码。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Unsupported scenarios:<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>不支持的方案：<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Does not allow developers without Visual Studio 2015 to open existing projects.</source>
+          <target state="translated">不允许开发人员在不使用 Visual Studio 2015 的情况下打开现有项目。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To support older versions of Visual Studio, <bpt id="p1">[</bpt>keeping your project files in different folders<ept id="p1">](#support-vs)</ept> is a better option.</source>
+          <target state="translated">若要支持 Visual Studio 的早期版本，建议<bpt id="p1">[</bpt>将项目文件保存在不同的文件夹中<ept id="p1">](#support-vs)</ept>。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Does not allow you to share your .NET Core library across different project types in the same solution file.</source>
+          <target state="translated">不允许在同一解决方案文件中不同的项目类型之间共享 .NET Core 库。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To support this, <bpt id="p1">[</bpt>creating a Portable Class Library<ept id="p1">](#support-pcl)</ept> is a better option.</source>
+          <target state="translated">若要支持此操作，建议<bpt id="p1">[</bpt>创建可移植类库<ept id="p1">](#support-pcl)</ept>。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Does not allow for project build or load modifications that are supported by MSBuild Targets and Tasks.</source>
+          <target state="translated">不允许生成项目或加载 MSBuild 目标和任务所支持的修改。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To support this, <bpt id="p1">[</bpt>creating a Portable Class Library<ept id="p1">](#support-pcl)</ept> is a better option.</source>
+          <target state="translated">若要支持此操作，建议<bpt id="p1">[</bpt>创建可移植类库<ept id="p1">](#support-pcl)</ept>。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><g id="p1" ctype="x-a" name="support-vs" /><bpt id="p2">[</bpt><bpt id="p3">**</bpt>Keep existing projects and new .NET Core projects separate<ept id="p3">**</ept><ept id="p2">]</ept><bpt id="p4">[</bpt>option-xproj-folder<ept id="p4">]</ept></source>
+          <target state="translated"><g id="p1" ctype="x-a" name="support-vs"></g><bpt id="p2">[</bpt><bpt id="p3">**</bpt>将现有项目和新的 .NET Core 项目相分隔<ept id="p3">**</ept><ept id="p2">]</ept><bpt id="p4">[</bpt>option-xproj-folder<ept id="p4">]</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>What this is good for:<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>此方案的好处：<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2015.</source>
+          <target state="translated">继续支持现有项目的开发，而无需为没有安装 Visual Studio 2015 的开发人员/参与者进行升级。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Decreasing the possibility in creating new bugs in existing projects because no code churn is required in those projects.</source>
+          <target state="translated">减少现有项目中出现新 bug 的可能性，因为这些项目中不需要进行任何代码改动。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><g id="p1" ctype="x-a" name="support-pcl" /><bpt id="p2">[</bpt><bpt id="p3">**</bpt>Keep existing projects and create Portable Class Libraries (PCLs) targeting .NET Core<ept id="p3">**</ept><ept id="p2">]</ept><bpt id="p4">[</bpt>option-pcl<ept id="p4">]</ept></source>
+          <target state="translated"><g id="p1" ctype="x-a" name="support-pcl"></g><bpt id="p2">[</bpt><bpt id="p3">**</bpt>保留现有项目并创建针对 .NET Core 的可移植类库 (PCL)<ept id="p3">**</ept><ept id="p2">]</ept><bpt id="p4">[</bpt>option-pcl<ept id="p4">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>What this is good for:<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>此方案的好处：<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Referencing your .NET Core libraries in desktop and/or web projects targeting the full .NET Framework in the same solution.</source>
+          <target state="translated">引用同一解决方案中针对完整 .NET Framework 的桌面和/或 Web 项目中的 .NET Core 库。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Supporting modifications in the project build or load process.</source>
+          <target state="translated">支持在项目生成或加载过程中进行修改。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>These modifications could be the inclusion of MSBuild Tasks and Targets in your <ph id="ph1">`*.csproj`</ph> file.</source>
+          <target state="translated">这些修改可能包含 <ph id="ph1">`*.csproj`</ph> 文件中的 MSBuild 任务和目标。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Unsupported scenarios:<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>不支持的方案：<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Does not allow you to write code for a specific .NET Framework version because the <bpt id="p1">[</bpt>predefined preprocessor symbols<ept id="p1">]</ept><bpt id="p2">[</bpt>how-to-multitarget<ept id="p2">]</ept> are not supported.</source>
+          <target state="translated">不允许编写特定 .NET Framework 版本的代码，因为不支持<bpt id="p1">[</bpt>预定义的预处理器符号<ept id="p1">]</ept><bpt id="p2">[</bpt>how-to-multitarget<ept id="p2">]</ept>。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Consider the repository below:</source>
+          <target state="translated">请考虑以下存储库：</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Existing project</source>
+          <target state="translated">现有项目</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt>Source Code<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-initial-project-code<ept id="p3">]</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><bpt id="p2">**</bpt>源代码<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-initial-project-code<ept id="p3">]</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>There are several different ways to add support for .NET Core for this repository depending on the constraints and complexity of existing projects which are described below.</source>
+          <target state="translated">根据以下所述的现有项目的约束和复杂性，有几种不同的方法可为此存储库添加对 .NET Core 的支持。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Replace Existing Projects with a Multi-targeted .NET Core Project (xproj)</source>
+          <target state="translated">将现有项目替换为多目标的 .NET Core 项目 (xproj)</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The repository can be reorganized so that any existing <ph id="ph1">`*.csproj`</ph> files are removed and a single <ph id="ph2">`*.xproj`</ph> file is created that targets multiple frameworks.</source>
+          <target state="translated">可以重新组织存储库，以便删除任何现有的 <ph id="ph1">`*.csproj`</ph> 文件并创建以多个框架为目标的单一 <ph id="ph2">`*.xproj`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>This is a great option because a single project is able to compile for different frameworks.</source>
+          <target state="translated">这是一项不错的选择，因为单个项目可以编译不同的框架。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>It also has the power to handle different compilation options, dependencies, etc.</source>
+          <target state="translated">它还可以处理每个目标框架的不同编译选项、</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>per targeted framework.</source>
+          <target state="translated">依赖项等等。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Create an xproj that targets multiple frameworks</source>
+          <target state="translated">创建以多个框架为目标的 xproj</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt>Source Code<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-xproj-code<ept id="p3">]</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><bpt id="p2">**</bpt>源代码<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-xproj-code<ept id="p3">]</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Changes to note are:</source>
+          <target state="translated">需注意的更改：</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Addition of <ph id="ph1">`global.json`</ph></source>
+          <target state="translated">添加了 <ph id="ph1">`global.json`</ph></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Replacement of <ph id="ph1">`packages.config`</ph> and <ph id="ph2">`*.csproj`</ph> with <ph id="ph3">`project.json`</ph> and <ph id="ph4">`*.xproj`</ph></source>
+          <target state="translated">将 <ph id="ph1">`packages.config`</ph> 和 <ph id="ph2">`*.csproj`</ph> 替换为 <ph id="ph3">`project.json`</ph> 和 <ph id="ph4">`*.xproj`</ph></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Changes in the <bpt id="p1">[</bpt>Car's project.json<ept id="p1">]</ept><bpt id="p2">[</bpt>example-xproj-projectjson<ept id="p2">]</ept> and its <bpt id="p3">[</bpt>test project<ept id="p3">]</ept><bpt id="p4">[</bpt>example-xproj-projectjson-test<ept id="p4">]</ept> to support building for the existing .NET Framework as well as others</source>
+          <target state="translated">对 <bpt id="p1">[</bpt>Car 的 project.json<ept id="p1">]</ept><bpt id="p2">[</bpt>example-xproj-projectjson<ept id="p2">]</ept>及其<bpt id="p3">[</bpt>测试项目<ept id="p3">]</ept><bpt id="p4">[</bpt>example-xproj-projectjson-test<ept id="p4">]</ept> 进行了更改以支持生成现有的 .NET Framework 以及其他框架</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Create a Portable Class Library (PCL) to target .NET Core</source>
+          <target state="translated">创建以 .NET Core 为目标的可移植类库 (PCL)</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If existing projects contain complex build operations or properties in their <ph id="ph1">`*.csproj`</ph> file, it may be easier to create a PCL.</source>
+          <target state="translated">如果现有项目的 <ph id="ph1">`*.csproj`</ph> 文件中包含复杂的生成操作或属性，则可能更易于创建 PCL。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt>Source Code<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-pcl-code<ept id="p3">]</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><bpt id="p2">**</bpt>源代码<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-pcl-code<ept id="p3">]</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Changes to note are:</source>
+          <target state="translated">需注意的更改：</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Renaming <ph id="ph1">`project.json`</ph> to <ph id="ph2">`{project-name}.project.json`</ph></source>
+          <target state="translated">将 <ph id="ph1">`project.json`</ph> 重命名为 <ph id="ph2">`{project-name}.project.json`</ph></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This prevents potential conflict in Visual Studio when trying to restore packages for the libraries in the same directory.</source>
+          <target state="translated">尝试在同一目录中还原库的包时，这可防止 Visual Studio 中出现潜在的冲突。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>NuGet FAQ<ept id="p1">](https://docs.nuget.org/consume/nuget-faq#working-with-packages)</ept> under "<bpt id="p2">_</bpt>I have multiple projects in the same folder, how can I use separate packages.config or project.json files for each project?<ept id="p2">_</ept>".</source>
+          <target state="translated">有关详细信息，请参阅“<bpt id="p2">_</bpt>如果同一文件夹中有多个项目，如何使用每个项目单独的 packages.config 或 project.json 文件？<ept id="p2">_</ept>”下的 <bpt id="p1">[</bpt>NuGet FAQ<ept id="p1">](https://docs.nuget.org/consume/nuget-faq#working-with-packages)</ept>。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Alternative<ept id="p1">**</ept>: Create the PCL in another folder and reference the original source code to avoid this issue.</source>
+          <target state="translated"><bpt id="p1">**</bpt>备用方案<ept id="p1">**</ept>：在其他文件夹中创建 PCL 并引用原始源代码以避免此问题。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Placing the PCL in another folder has an added benefit that users who do not have Visual Studio 2015 can still work on the older projects without loading the new solution.</source>
+          <target state="translated">将 PCL 放置在其他文件中的另一个优点是未安装 Visual Studio 2015 的用户仍然可以在不加载新解决方案的情况下处理较早项目。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>To target .NET Standard after creating the PCL, in Visual Studio, open the <bpt id="p1">**</bpt>Project's Properties<ept id="p1">**</ept>.</source>
+          <target state="translated">在 Visual Studio 中，若要在创建 PCL 之后使其以 .NET 标准为目标，请打开“项目的属性”。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Under the <bpt id="p1">**</bpt>Targets<ept id="p1">**</ept> section, click on the link <bpt id="p2">**</bpt>"Target .NET Platform Standard"<ept id="p2">**</ept>.</source>
+          <target state="translated">在“目标”部分下，单击链接“以 .NET 平台标准为目标”。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This change can be reversed by repeating the same steps.</source>
+          <target state="translated">通过重复相同的步骤，可以撤销此更改。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Keep Existing Projects and Create a .NET Core Project</source>
+          <target state="translated">保留现有项目并创建 .NET Core 项目</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If there are existing projects that target older frameworks, you may want to leave these projects untouched and use a .NET Core project to target future frameworks.</source>
+          <target state="translated">如果存在以较旧框架为目标的现有项目，可能需要保留这些项目并将 .NET Core 项目用作将来框架的目标。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>.NET Core project with existing PCL in different folder</source>
+          <target state="translated">不同文件夹中包含现有 PCL 的 .NET Core 项目</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><bpt id="p2">**</bpt>Source Code<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-xproj-different-code<ept id="p3">]</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><bpt id="p2">**</bpt>源代码<ept id="p2">**</ept><ept id="p1">]</ept><bpt id="p3">[</bpt>example-xproj-different-code<ept id="p3">]</ept></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Changes to note are:</source>
+          <target state="translated">需注意的更改：</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The .NET Core and existing projects are kept in separate folders.</source>
+          <target state="translated">将 .NET Core 项目和现有项目保存在不同的文件夹中。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This avoids the package restore issue that was mentioned above due to multiple project.json/package.config files being in the same folder.</source>
+          <target state="translated">这可以避免上述因多个 project.json/package.config 文件位于同一文件夹中所引起的包还原问题。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Keeping projects in separate folders avoids forcing you to have Visual Studio 2015 (due to project.json).</source>
+          <target state="translated">将项目保存在不同的文件夹中可以避免强制使用 Visual Studio 2015（因project.json）。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can create a separate solution that only opens the old projects.</source>
+          <target state="translated">可以创建仅打开旧项目的单独解决方案。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">请参阅</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Please see <bpt id="p1">[</bpt>.NET Core porting documentation<ept id="p1">]</ept><bpt id="p2">[</bpt>porting-doc<ept id="p2">]</ept> for more guidance on moving to project.json and xproj.</source>
+          <target state="translated">有关移动到 project.json 和 xproj 的详细指南，请参阅 <bpt id="p1">[</bpt>.NET Core 移植文档<ept id="p1">]</ept><bpt id="p2">[</bpt>porting-doc<ept id="p2">]</ept>。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>porting-doc<ept id="p1">]: index.md</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>porting-doc<ept id="p1">]: index.md</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-initial-project<ept id="p1">]: media/project-structure/project.png</ept><bpt id="p2"> "</bpt>Existing project<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-initial-project<ept id="p1">]: media/project-structure/project.png</ept><bpt id="p2"> "</bpt>现有项目<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-initial-project-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library/</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-initial-project-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library/</ept></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj<ept id="p1">]: media/project-structure/project.xproj.png</ept><bpt id="p2"> "</bpt>Create an xproj that targets multiple frameworks<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj<ept id="p1">]: media/project-structure/project.xproj.png</ept><bpt id="p2"> "</bpt>创建以多个框架为目标的 xproj<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/</ept></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj-projectjson<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/src/Car/project.json</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj-projectjson<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/src/Car/project.json</ept></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj-projectjson-test<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/tests/Car.Tests/project.json</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj-projectjson-test<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj/tests/Car.Tests/project.json</ept></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj-different-folder<ept id="p1">]: media/project-structure/project.xproj.different.png</ept><bpt id="p2"> "</bpt>.NET Core project with existing PCL in different folder<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj-different-folder<ept id="p1">]: media/project-structure/project.xproj.different.png</ept><bpt id="p2"> "</bpt>不同文件夹中包含现有 PCL 的 .NET Core 项目<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-xproj-different-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-xproj-different-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-xproj-keep-csproj/</ept></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-pcl<ept id="p1">]: media/project-structure/project.pcl.png</ept><bpt id="p2"> "</bpt>PCL Targeting .NET Core<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-pcl<ept id="p1">]: media/project-structure/project.pcl.png</ept><bpt id="p2"> "</bpt> .NET Core 为目标的 PCL<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>example-pcl-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-pcl</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>example-pcl-code<ept id="p1">]: https://github.com/dotnet/docs/tree/master/samples/framework/libraries/migrate-library-pcl</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>option-xproj<ept id="p1">]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>option-xproj<ept id="p1">]: #replace-existing-projects-with-a-multi-targeted-net-core-project-xproj</ept></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>option-pcl<ept id="p1">]: #create-a-portable-class-library-pcl-to-target-net-core</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>option-pcl<ept id="p1">]: #create-a-portable-class-library-pcl-to-target-net-core</ept></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>option-xproj-folder<ept id="p1">]: #keep-existing-projects-and-create-a-net-core-project</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>option-xproj-folder<ept id="p1">]: #keep-existing-projects-and-create-a-net-core-project</ept></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>how-to-multitarget<ept id="p1">]: ../tutorials/libraries.md#how-to-multitarget</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>how-to-multitarget<ept id="p1">]: ../tutorials/libraries.md#how-to-multitarget</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
