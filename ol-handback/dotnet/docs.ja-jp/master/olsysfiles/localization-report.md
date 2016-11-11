@@ -2172,8 +2172,8 @@
 * Archive Datetime: 2016-11-11 03:13:37
 * Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/febde4352ff14a3b8612042be1ed11361cb9fe41/ol-handback/dotnet/docs.ja-jp/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf)
 * Handback Datetime: 2016-11-11 10:54:20
-* Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/0992d94d5cbaebf547312475ce59d3cdd2118e35/ol-handback/dotnet/docs.ja-jp/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-11 05:39:19
+* Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/febde4352ff14a3b8612042be1ed11361cb9fe41/ol-handback/dotnet/docs.ja-jp/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-11 10:54:54
 * [Back to Top](#report-top)
 
 ##### <a name='1c4179fe9d219bf6580e4792959da64364a6607c28'></a> Source: [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md)
