@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc43c319f2ec8055073da4749cbfb7c56b825df9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\weak-references.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">74ee65cabb35b067b7c71eb39e3f79e7364848da</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b528e9e221e8e3373f6bf61ae040e935c316df98</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">Referencias parciales</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">Referencias parciales</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">Referencias parciales</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The garbage collector cannot collect an object in use by an application while the application's code can reach that object.</source>
+          <target state="translated">El recolector de elementos no utilizados no puede recopilar un objeto que está siendo usado por una aplicación mientras el código de aplicación pueda llegar a ese objeto.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The application is said to have a strong reference to the object.</source>
+          <target state="translated">En este caso, se dice que la aplicación tiene una referencia segura al objeto.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A weak reference permits the garbage collector to collect the object while still allowing the application to access the object.</source>
+          <target state="translated">Una referencia débil permite que el recolector de elementos no utilizados recopile el objeto mientras sigue permitiendo que la aplicación tenga acceso al objeto.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A weak reference is valid only during the indeterminate amount of time until the object is collected when no strong references exist.</source>
+          <target state="translated">Una referencia débil es válida solo durante un período indeterminado de tiempo, hasta que el objeto se recopila cuando no existe ninguna referencia segura.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When you use a weak reference, the application can still obtain a strong reference to the object, which prevents it from being collected.</source>
+          <target state="translated">Cuando se usa una referencia débil, la aplicación todavía puede obtener una referencia segura al objeto, lo que evita que se recopile.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, there is always the risk that the garbage collector will get to the object first before a strong reference is reestablished.</source>
+          <target state="translated">Pero, siempre existe el riesgo de que el recolector de elementos no utilizados llegue al objeto antes de que se restablezca una referencia segura.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Weak references are useful for objects that use a lot of memory, but can be recreated easily if they are reclaimed by garbage collection.</source>
+          <target state="translated">Las referencias débiles son útiles para objetos que usan mucha memoria, pero que pueden volverse a crear fácilmente si los reclama la recolección de elementos no utilizados.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Suppose a tree view displays a complex hierarchical choice of options to the user.</source>
+          <target state="translated">Imagine una vista de árbol que muestra una jerarquía compleja de opciones al usuario.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If the underlying data is large, keeping the tree in memory is inefficient when the user is involved with something else in the application.</source>
+          <target state="translated">Si la cantidad de datos subyacentes es grande, mantener el árbol en memoria es ineficaz cuando el usuario está ocupado en otra parte de la aplicación.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>When the user switches away to another part of the application, you can use the <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> or <bpt id="p2">[</bpt>WeakReference<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.WeakReference%601)</ept> class to create a weak reference to the tree and destroy all strong references.</source>
+          <target state="translated">Cuando el usuario cambia a otra parte de la aplicación, se pueden usar las clases <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> o <bpt id="p2">[</bpt>WeakReference<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.WeakReference%601)</ept> para crear una referencia débil al árbol y destruir todas las referencias seguras.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When the user switches back to the tree, the application attempts to obtain a strong reference to the tree and, if successful, avoids reconstructing the tree.</source>
+          <target state="translated">Cuando el usuario vuelve al árbol, la aplicación intenta obtener una referencia segura al árbol y, si la obtiene, evita tener que reconstruir el árbol.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>To establish a weak reference with an object, you create a <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> using the instance of the object to be tracked.</source>
+          <target state="translated">Para establecer una referencia débil a un objeto, se crea un elemento <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> usando la instancia del objeto que se debe seguir.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You then set the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property to that object and set the original reference to the object to null.</source>
+          <target state="translated">Después, se establece la propiedad <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> como ese objeto y se establece la referencia original al objeto como null.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Short and Long Weak References</source>
+          <target state="translated">Referencias débiles cortas y largas</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You can create a short weak reference or a long weak reference:</source>
+          <target state="translated">Puede crear una referencia débil corta o una referencia débil larga:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Short</source>
+          <target state="translated">Short</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The target of a short weak reference becomes <ph id="ph1">`null`</ph> when the object is reclaimed by garbage collection.</source>
+          <target state="translated">El destino de una referencia débil corta se convierte en <ph id="ph1">`null`</ph> cuando el objeto es reclamado por la recolección de elementos no utilizados.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.</source>
+          <target state="translated">La referencia débil es, en sí, un objeto administrado y está sujeta a la recolección de elementos no utilizados igual que cualquier otro objeto administrado.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A short weak reference is the default constructor for <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept>.</source>
+          <target state="translated">Una referencia débil corta es el constructor predeterminado para <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Long</source>
+          <target state="translated">Long</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>A long weak reference is retained after the object's <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method has been called.</source>
+          <target state="translated">Una referencia débil larga se conserva después de que se llame al método <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> del objeto.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This allows the object to be recreated, but the state of the object remains unpredictable.</source>
+          <target state="translated">Esto permite que el objeto se vuelva a crear, pero el estado del objeto sigue siendo imprevisible.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use a long reference, specify <ph id="ph1">`true`</ph> in the <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> constructor.</source>
+          <target state="translated">Para usar una referencia larga, especifique <ph id="ph1">`true`</ph> en el constructor <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If the object's type does not have a <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method, the short weak reference functionality applies and the weak reference is valid only until the target is collected, which can occur anytime after the finalizer is run.</source>
+          <target state="translated">Si el tipo de objeto no tiene un método <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>, se aplica la funcionalidad de referencia débil corta y la referencia débil es válida solo hasta que se recopile el destino, lo que puede ocurrir en cualquier momento después de que se ejecute el finalizador.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>To establish a strong reference and use the object again, cast the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property of a <bpt id="p2">[</bpt>WeakReference<ept id="p2">](xref:System.WeakReference)</ept> to the type of the object.</source>
+          <target state="translated">Para establecer una referencia segura y usar el objeto de nuevo, convierta la propiedad <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> de <bpt id="p2">[</bpt>WeakReference<ept id="p2">](xref:System.WeakReference)</ept> en el tipo del objeto.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property returns <ph id="ph1">`null`</ph>, the object was collected; otherwise, you can continue to use the object because the application has regained a strong reference to it.</source>
+          <target state="translated">Si la propiedad <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> devuelve <ph id="ph1">`null`</ph>, el objeto se ha recopilado; en caso contrario, aún puede usar el objeto, porque la aplicación ha obtenido una referencia segura a este.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Guidelines for Using Weak References</source>
+          <target state="translated">Directrices para usar referencias débiles</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Use long weak references only when necessary as the state of the object is unpredictable after finalization.</source>
+          <target state="translated">Use referencias débiles largas solo cuando sea necesario, ya que el estado del objeto es imprevisible después de la finalización.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Avoid using weak references to small objects because the pointer itself may be as large or larger.</source>
+          <target state="translated">Evite usar referencias débiles a objetos pequeños porque el propio puntero puede ser igual de grande o mayor.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Avoid using weak references as an automatic solution to memory management problems.</source>
+          <target state="translated">Evite usar referencias débiles como solución automática para problemas de administración de memoria.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Instead, develop an effective caching policy for handling your application's objects.</source>
+          <target state="translated">En su lugar, desarrolle una directiva eficaz de almacenamiento en caché para controlar los objetos de la aplicación.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Recolección de elementos no utilizados en .NET<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

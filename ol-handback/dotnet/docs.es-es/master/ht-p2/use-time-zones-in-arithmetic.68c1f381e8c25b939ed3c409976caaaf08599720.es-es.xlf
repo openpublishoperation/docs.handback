@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">735ae2f1d11ddf6b88b40c7b89083a45d1f07523</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\use-time-zones-in-arithmetic.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ea6ee3915696553ec04138b2d77fd1d244753e97</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b06e0b78dae4786aa8c075d2ffb8e9109bba1bdf</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">Cómo usar zonas horarias en operaciones aritméticas de fecha y hora</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to use time zones in date and time arithmetic</source>
+          <target state="translated">Cómo usar zonas horarias en operaciones aritméticas de fecha y hora</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">Cómo usar zonas horarias en operaciones aritméticas de fecha y hora</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Ordinarily, when you perform date and time arithmetic using <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the result does not reflect any time zone adjustment rules.</source>
+          <target state="translated">Normalmente, cuando se realizan operaciones aritméticas de fecha y hora mediante valores <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>, el resultado no refleja ninguna regla de ajuste de zona horaria.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is true even when the time zone of the date and time value is clearly identifiable.</source>
+          <target state="translated">Esto ocurre incluso cuando la zona horaria del valor de fecha y hora es claramente identificable.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how to perform arithmetic operations on date and time values that belong to a particular time zone.</source>
+          <target state="translated">Este artículo muestra cómo realizar operaciones aritméticas en valores de fecha y hora que pertenecen a una zona horaria determinada.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The results of the arithmetic operations will reflect the time zone's adjustment rules.</source>
+          <target state="translated">Los resultados de las operaciones aritméticas reflejarán las reglas de ajuste de la zona horaria.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To apply adjustment rules to date and time arithmetic</source>
+          <target state="translated">Para aplicar las reglas de ajuste a la fecha y hora aritmético</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Implement some method of closely coupling a date and time value with the time zone to which it belongs.</source>
+          <target state="translated">Implemente algún método para acoplar estrechamente un valor de fecha y hora con la zona horaria a la que pertenece.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, declare a structure that includes both the date and time value and its time zone.</source>
+          <target state="translated">Por ejemplo, declare una estructura que incluya tanto el valor de fecha y hora como su zona horaria.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example uses this approach to link a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value with its time zone.</source>
+          <target state="translated">En el ejemplo siguiente se usa este enfoque para vincular un valor <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> con su zona horaria.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Convert a time to Coordinated Universal Time (UTC) by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Convierta una hora en hora universal coordinada (UTC) llamando al método <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime (DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Perform the arithmetic operation on the UTC time.</source>
+          <target state="translated">Realice la operación aritmética en la hora UTC.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Convert the time from UTC to the original time's associated time zone by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Convierta la hora de la hora UTC a la zona horaria asociada a la hora original llamando al método <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Ejemplo</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example adds two hours and thirty minutes to March 9, 2008, at 1:30 A.M.</source>
+          <target state="translated">En el ejemplo siguiente se agregan dos horas y treinta minutos al 9 de marzo de 2008, a la 1:30 A.M.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Central Standard Time.</source>
+          <target state="translated">zona horaria estándar central.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The time zone's transition to daylight saving time occurs thirty minutes later, at 2:00 A.M.</source>
+          <target state="translated">La transición de esa zona horaria al horario de verano se produce treinta minutos más tarde, a las 2:00 A.M.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 de marzo de 2008.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Because the example follows the four steps listed in the previous section, it correctly reports the resulting time as 5:00 A.M.</source>
+          <target state="translated">Puesto que el ejemplo sigue los cuatro pasos indicados en la sección anterior, se notifica correctamente la hora resultante como las 5:00 A.M.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 de marzo de 2008.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Note that if this addition is simply performed on the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value without first converting it to UTC, the result reflects the correct point in time but its offset does not reflect that of the designated time zone for that time.</source>
+          <target state="translated">Tenga en cuenta que, si esta suma se realiza simplemente en el valor <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> sin convertirlo antes a UTC, el resultado reflejará el punto en el tiempo correcto, pero su desplazamiento no reflejará el de la zona horaria designada para esa hora.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are disassociated from any time zone to which they might belong.</source>
+          <target state="translated">Los valores <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> están desasociados de cualquier zona horaria a la que puedan pertenecer.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic in a way that automatically applies a time zone's adjustment rules, the time zone to which any date and time value belongs must be immediately identifiable.</source>
+          <target state="translated">Para realizar operaciones aritméticas de fecha y hora de tal manera que apliquen automáticamente las reglas de ajuste de una zona horaria, la zona horaria a la que pertenezca cualquier valor de fecha y hora debe ser identificable de forma inmediata.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This means that a date and time and its associated time zone must be tightly coupled.</source>
+          <target state="translated">Esto significa que un valor de fecha y hora y su zona horaria asociada deben estar estrechamente acoplados.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>There are several ways to do this, which include the following:</source>
+          <target state="translated">Hay varias maneras de hacer esto, que incluyen las siguientes:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Assume that all times used in an application belong to a particular time zone.</source>
+          <target state="translated">Suponer que todas las horas usadas en una aplicación pertenecen a una zona horaria determinada.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Although appropriate in some cases, this approach offers limited flexibility and possibly limited portability.</source>
+          <target state="translated">Aunque es adecuado en algunos casos, este enfoque tiene una flexibilidad limitada y posiblemente, una portabilidad limitada.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Define a type that tightly couples a date and time with its associated time zone by including both as fields of the type.</source>
+          <target state="translated">Definir un tipo que acople estrechamente una fecha y hora con su zona horaria asociada, incluyendo ambas como campos del tipo.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This approach is used in the code example, which defines a structure to store the date and time and the time zone in two member fields.</source>
+          <target state="translated">Este enfoque es el que se usa en el ejemplo de código, que define una estructura para almacenar la fecha y hora y la zona horaria en dos campos de miembro.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Fechas, horas y zonas horarias<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Efectuar operaciones aritméticas con fechas y horas<ept id="p1">](performing-arithmetic-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
