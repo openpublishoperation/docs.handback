@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5d37e78be88828d6c82777f96b6334903aecbe53</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\target-dotnetcore-with-msbuild.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9d67f3601a3cb1048712a906cf656953435abf39</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2108c62291854c71e99819295eadae00d8e08f9e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">Création de projets .NET Core à l’aide de MSBuild</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">Création de projets .NET Core à l’aide de MSBuild</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using MSBuild to build .NET Core projects</source>
+          <target state="translated">Création de projets .NET Core à l’aide de MSBuild</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The .NET Core tooling is going to <bpt id="p1">[</bpt>move from project.json to MSBuild based projects<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept>.</source>
+          <target state="translated">Les outils .NET Core vont <bpt id="p1">[</bpt>passer de projets basés sur project.json à des projets basés sur MSBuild<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>We expect the first version of the .NET Core tools that use MSBuild to ship along with the next version of Visual Studio.</source>
+          <target state="translated">Nous prévoyons de fournir la première version des outils .NET Core utilisant MSBuild lors de la prochaine version de Visual Studio.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, it is possible to use MSBuild for .NET Core projects today, and this page shows how.</source>
+          <target state="translated">Toutefois, il est d’ores et déjà possible d’utiliser MSBuild pour les projets .NET Core. Cette page montre comment procéder.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>We recommend that most people targeting .NET Core with <bpt id="p1">*</bpt>new<ept id="p1">*</ept> projects today use the default tooling experience with project.json because of the following reasons:</source>
+          <target state="translated">Nous recommandons à la plupart des personnes qui ciblent .NET Core avec de <bpt id="p1">*</bpt>nouveaux<ept id="p1">*</ept> projets d’utiliser l’expérience des outils par défaut avec project.json pour les raisons suivantes :</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>MSBuild doesn't yet support a lot of the benefits of project.json</source>
+          <target state="translated">MSBuild ne prend pas encore en charge un grand nombre des avantages de project.json</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A lot of the ASP.NET based tooling doesn't currently work with MSBuild projects</source>
+          <target state="translated">De nombreux outils basés sur ASP.NET ne fonctionnent pas encore avec les projets MSBuild</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When we do release the .NET Core tooling that uses MSBuild, it will be able to automatically convert from project.json to MSBuild projects</source>
+          <target state="translated">Quand nous publierons les outils .NET Core qui utilisent MSBuild, project.json sera automatiquement converti en projets MSBuild</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You may want to use MSBuild to target .NET Core for existing projects that already use MSBuild that you want to port to .NET Core, or if you are using MSBuild's extensibility in your build for scenarios that are not well supported for project.json projects.</source>
+          <target state="translated">Vous pouvez utiliser MSBuild pour cibler .NET Core pour des projets existants qui utilisent déjà MSBuild et que vous voulez porter vers .NET Core, ou bien si vous utilisez l’extensibilité de MSBuild dans votre build pour les scénarios qui ne sont pas bien pris en charge pour les projets project.json.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Prérequis</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Visual Studio 2015 Update 3<ept id="p1">](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs)</ept> or higher</source>
+          <target state="translated"><bpt id="p1">[</bpt>Visual Studio 2015 Update 3<ept id="p1">](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs)</ept> ou version ultérieure</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core tools for Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/download-visual-studio-vs)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Outils .NET Core pour Visual Studio 2015<ept id="p1">](https://www.visualstudio.com/downloads/download-visual-studio-vs)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>NuGet Visual Studio extension <bpt id="p1">[</bpt>v3.5.0-beta<ept id="p1">](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix)</ept> or later</source>
+          <target state="translated">Extension Visual Studio NuGet <bpt id="p1">[</bpt>v3.5.0 bêta<ept id="p1">](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix)</ept> ou version ultérieure</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Creating a library targeting .NET Core</source>
+          <target state="translated">Création d’une bibliothèque ciblant .NET Core</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept> and select <bpt id="p4">**</bpt>Class Library (Portable)<ept id="p4">**</ept></source>
+          <target state="translated">Dans la barre de menus Visual Studio, choisissez <bpt id="p1">**</bpt>Fichier<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>Nouveau<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Projet<ept id="p3">**</ept>, puis sélectionnez <bpt id="p4">**</bpt>Bibliothèque de classes (Portable)<ept id="p4">**</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>New Project</source>
+          <target state="translated">Nouveau projet</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Choose a name and location for your project and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></source>
+          <target state="translated">Choisissez un nom et un emplacement pour votre projet, puis cliquez sur <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The "Add Portable Class Library" dialog will appear.</source>
+          <target state="translated">La boîte de dialogue « Ajouter la bibliothèque de classes portables » s’affiche.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>.NET Framework 4.6<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ASP.NET Core 1.0<ept id="p2">**</ept> as targets and click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept></source>
+          <target state="translated">Sélectionnez <bpt id="p1">**</bpt>.NET Framework 4.6<ept id="p1">**</ept> et <bpt id="p2">**</bpt>ASP.NET Core 1.0<ept id="p2">**</ept> comme cibles, puis cliquez sur <bpt id="p3">**</bpt>OK<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Portable targets dialog</source>
+          <target state="translated">Boîte de dialogue des cibles portables</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on your project and choose <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept></source>
+          <target state="translated">Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet, puis choisissez <bpt id="p1">**</bpt>Propriétés<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Library<ept id="p1">**</ept> tab of the project properties, click on the <bpt id="p2">**</bpt>Target .NET Platform Standard<ept id="p2">**</ept> link, and click <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept> in the dialog that is shown</source>
+          <target state="translated">Sous l’onglet <bpt id="p1">**</bpt>Bibliothèque<ept id="p1">**</ept> des propriétés du projet, cliquez sur le lien <bpt id="p2">**</bpt>Cibler .NET Platform Standard<ept id="p2">**</ept>, puis cliquez sur <bpt id="p3">**</bpt>Oui<ept id="p3">**</ept> dans la boîte de dialogue qui s’affiche</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file in your project, and make the following changes:</source>
+          <target state="translated">Ouvrez le fichier <ph id="ph1">`project.json`</ph> dans votre projet, puis apportez les modifications suivantes :</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Change the version number of the <ph id="ph1">`NETStandard.Library`</ph> package to <ph id="ph2">`1.6.0`</ph> (this is the .NET Core 1.0 version of the package)</source>
+          <target state="translated">Remplacez le numéro de version du package <ph id="ph1">`NETStandard.Library`</ph> par <ph id="ph2">`1.6.0`</ph> (il s’agit de la version .NET Core 1.0 du package)</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Add the below <ph id="ph1">`imports`</ph> definition inside the <ph id="ph2">`netstandard1.6`</ph> framework definition.</source>
+          <target state="translated">Ajoutez la définition <ph id="ph1">`imports`</ph> ci-dessous à l’intérieur de la définition du framework <ph id="ph2">`netstandard1.6`</ph>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This will allow your project to reference .NET Core compatible NuGet packages that haven't been updated to target .NET Standard</source>
+          <target state="translated">Cette opération permet à votre projet de référencer des packages NuGet compatibles .NET Core qui n’ont pas été mis à jour pour cibler .NET Standard</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Creating a .NET Core console application</source>
+          <target state="translated">Création d’une application console .NET Core</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Building a console application for .NET Core requires some customization of the MSBuild build process.</source>
+          <target state="translated">La création d’une application console pour .NET Core nécessite de personnaliser le processus de génération MSBuild.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can find a sample project for a .NET Core console application called <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> in the <bpt id="p2">[</bpt>corefxlab<ept id="p2">](https://github.com/dotnet/corefxlab)</ept> repo.</source>
+          <target state="translated">Un exemple de projet pour une application console .NET Core appelée <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> est disponible dans le dépôt <bpt id="p2">[</bpt>corefxlab<ept id="p2">](https://github.com/dotnet/corefxlab)</ept>.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Another good option is to start with <bpt id="p1">[</bpt>coretemplate<ept id="p1">](https://github.com/mellinoe/coretemplate)</ept>, which uses separate MSBuild targets files to target .NET Core instead of putting the changes directly in the project file.</source>
+          <target state="translated">Commencer avec <bpt id="p1">[</bpt>coretemplate<ept id="p1">](https://github.com/mellinoe/coretemplate)</ept>, qui utilise des fichiers cibles MSBuild distincts pour cibler .NET Core, au lieu de placer les modifications directement dans le fichier projet constitue une autre bonne option.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is also possible to start by creating a project in Visual Studio and modifying it to target .NET Core.</source>
+          <target state="translated">Il est également possible de commencer par créer un projet dans Visual Studio, puis de le modifier pour cibler .NET Core.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The instructions below show the minimal steps to get this working.</source>
+          <target state="translated">Les instructions ci-dessous indiquent les étapes de base pour que cela fonctionne correctement.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In contrast to <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> or <bpt id="p2">[</bpt>coretemplate<ept id="p2">](https://github.com/mellinoe/coretemplate)</ept>, a project created this way won't include configurations for targeting Linux and macOS.</source>
+          <target state="translated">Contrairement à <bpt id="p1">[</bpt>CoreApp<ept id="p1">](https://github.com/dotnet/corefxlab/tree/master/samples/NetCoreSample/CoreApp)</ept> ou <bpt id="p2">[</bpt>coretemplate<ept id="p2">](https://github.com/mellinoe/coretemplate)</ept>, un projet créé de cette manière n’inclut pas de configurations pour cibler Linux et macOS.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>New<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Project<ept id="p3">**</ept> and select <bpt id="p4">**</bpt>Console Application<ept id="p4">**</ept></source>
+          <target state="translated">Dans la barre de menus Visual Studio, choisissez <bpt id="p1">**</bpt>Fichier<ept id="p1">**</ept><ph id="ph1"> | </ph><bpt id="p2">**</bpt>Nouveau<ept id="p2">**</ept><ph id="ph2"> | </ph><bpt id="p3">**</bpt>Projet<ept id="p3">**</ept>, puis sélectionnez <bpt id="p4">**</bpt>Application console<ept id="p4">**</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Choose a name and location for your project and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></source>
+          <target state="translated">Choisissez un nom et un emplacement pour votre projet, puis cliquez sur <bpt id="p1">**</bpt>OK<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on your project, choose <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>, and then go to the <bpt id="p2">**</bpt>Build<ept id="p2">**</ept> tab</source>
+          <target state="translated">Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet, choisissez <bpt id="p1">**</bpt>Propriétés<ept id="p1">**</ept>, puis accédez à l’onglet <bpt id="p2">**</bpt>Générer<ept id="p2">**</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept> dropdown (at the top of the properties page), select <bpt id="p2">**</bpt>All Configurations<ept id="p2">**</ept>, and then change the <bpt id="p3">**</bpt>Platform Target<ept id="p3">**</ept> to <bpt id="p4">**</bpt>x64<ept id="p4">**</ept></source>
+          <target state="translated">Dans la liste déroulante <bpt id="p1">**</bpt>Configuration<ept id="p1">**</ept> (en haut de la page de propriétés), sélectionnez <bpt id="p2">**</bpt>Toutes les configurations<ept id="p2">**</ept>, puis remplacez la valeur <bpt id="p3">**</bpt>Plateforme cible<ept id="p3">**</ept> par <bpt id="p4">**</bpt>x64<ept id="p4">**</ept></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Delete the <ph id="ph1">`app.config`</ph> file from the project</source>
+          <target state="translated">Supprimez le fichier <ph id="ph1">`app.config`</ph>du projet</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Add a <ph id="ph1">`project.json`</ph> file to the project with the following contents:</source>
+          <target state="translated">Ajoutez un fichier <ph id="ph1">`project.json`</ph> au projet avec le contenu suivant :</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, right click on the project, choose <bpt id="p1">**</bpt>Unload Project<ept id="p1">**</ept>, then right click again and choose <bpt id="p2">**</bpt>Edit <bpt id="p3">_</bpt>MyProj.csproj<ept id="p3">_</ept><ept id="p2">**</ept>, and make the following changes</source>
+          <target state="translated">Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet, choisissez <bpt id="p1">**</bpt>Décharger le projet<ept id="p1">**</ept>, recliquez avec le bouton droit, choisissez <bpt id="p2">**</bpt>Modifier <bpt id="p3">_</bpt>MyProj.csproj<ept id="p3">_</ept><ept id="p2">**</ept>, puis apportez les modifications suivantes</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Remove all the default <ph id="ph1">`Reference`</ph> items (to <ph id="ph2">`System`</ph>, <ph id="ph3">`System.Core`</ph>, etc.)</source>
+          <target state="translated">Supprimez touts les éléments <ph id="ph1">`Reference`</ph> par défaut (pour <ph id="ph2">`System`</ph>, <ph id="ph3">`System.Core`</ph>, etc.)</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Add the following properties to the first <ph id="ph1">`PropertyGroup`</ph> in the project:</source>
+          <target state="translated">Ajoutez les propriétés suivantes au premier <ph id="ph1">`PropertyGroup`</ph> du projet :</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Add the following at the end of the file (after the import of <ph id="ph1">`Microsoft.CSharp.Targets`</ph>):</source>
+          <target state="translated">Ajoutez le code suivant à la fin du fichier (après l’importation de <ph id="ph1">`Microsoft.CSharp.Targets`</ph>) :</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Close the .csproj file, and reload the project in Visual Studio</source>
+          <target state="translated">Fermez le fichier .csproj, puis rechargez le projet dans Visual Studio</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You should be able to run your program with F5 in Visual Studio, or from the command line in the output folder with <ph id="ph1">`dotnet MyApp.exe`</ph></source>
+          <target state="translated">Vous êtes normalement en mesure d’exécuter votre programme avec la touche F5 dans Visual Studio ou à partir de la ligne de commande dans le dossier de sortie avec<ph id="ph1">`dotnet MyApp.exe`</ph></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
