@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">63a59dbcc323f392e3bf2991b1439aa062382623</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\how-to-add-bounding-and-blocking.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5d05399faa5a13525ed4dd05d350d637919cf372</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0983205f98308963f424bd9d704b620fa4c37739</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Add Bounding and Blocking Functionality to a Collection</source>
+          <target state="translated">Cómo: Agregar la funcionalidad de límite y bloqueo a una colección</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Add Bounding and Blocking Functionality to a Collection</source>
+          <target state="translated">Cómo: Agregar la funcionalidad de límite y bloqueo a una colección</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: Add Bounding and Blocking Functionality to a Collection</source>
+          <target state="translated">Cómo: Agregar la funcionalidad de límite y bloqueo a una colección</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This example shows how to add bounding and blocking functionality to a custom collection class by implementing the <bpt id="p1">[</bpt>System.Collections.Concurrent.IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept> interface in the class, and then using a class instance as the internal storage mechanism for a <bpt id="p2">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept>.</source>
+          <target state="translated">Este ejemplo muestra cómo agregar la funcionalidad de límite y bloqueo a una clase de colección personalizada implementando la interfaz <bpt id="p1">[</bpt>System.Collections.Concurrent.IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept> en la clase y, después, usando una instancia de clase como mecanismo de almacenamiento interno para <bpt id="p2">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For more information about bounding and blocking, see <bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de la funcionalidad de límite y bloqueo, consulte <bpt id="p1">[</bpt>Información general sobre BlockingCollection<ept id="p1">](blockingcollection-overview.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Ejemplo</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The custom collection class is a basic priority queue in which the priority levels are represented as an array of <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> objects.</source>
+          <target state="translated">La clase de colección personalizada es una cola de prioridad básica en la que los niveles de prioridad se representan como una matriz de objetos <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>No additional ordering is performed within each queue.</source>
+          <target state="translated">No se realiza ningún orden adicional en cada cola.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In the client code, three tasks are started.</source>
+          <target state="translated">En el código de cliente, se inician tres tareas.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The first task just polls for keyboard strokes to enable cancellation at any point during execution.</source>
+          <target state="translated">La primera tarea se limita a sondear las pulsaciones de teclado para habilitar la cancelación en cualquier momento durante la ejecución.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The second task is the producer thread; it adds new items to the blocking collection and gives each item a priority based on a random value.</source>
+          <target state="translated">La segunda tarea es el subproceso de productor que agrega nuevos elementos a la colección de bloqueo y proporciona a cada elemento una prioridad basándose en un valor aleatorio.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The third task removes items from the collection as they become available.</source>
+          <target state="translated">La tercera tarea quita elementos de la colección en cuanto estén disponibles.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You can adjust the behavior of the application by making one of the threads run faster than the other.</source>
+          <target state="translated">Puede ajustar el comportamiento de la aplicación haciendo que uno de los subprocesos se ejecute más rápido que el otro.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If the producer runs faster, you will notice the bounding functionality as the blocking collection prevents items from being added if it already contains the number of items that is specified in the constructor.</source>
+          <target state="translated">Si el productor se ejecuta más rápido, observará la funcionalidad de límite porque la colección de bloqueo impide que los elementos se agreguen si ya contiene el número de elementos que se especifican en el constructor.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If the consumer runs faster, you will notice the blocking functionality as the consumer waits for a new item to be added.</source>
+          <target state="translated">Si el consumidor se ejecuta más rápido, observará la funcionalidad de bloqueo porque el consumidor espera que se agregue un nuevo elemento.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the storage for a <bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> is <bpt id="p2">[</bpt>ConcurrentQueue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept>.</source>
+          <target state="translated">De forma predeterminada, el almacenamiento de <bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> es <bpt id="p2">[</bpt>ConcurrentQueue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Colecciones seguras para subprocesos<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Información general sobre BlockingCollection<ept id="p1">](blockingcollection-overview.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
