@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">421d46585b5d83f5772fa6596ad581c8c6acbf71</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14340bf45b632d11191dd628b665f7cfa0d4bf70</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b8ad89ac8fce389696323eeabe11a589ce92ed39</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">Потокобезопасные коллекции</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">Потокобезопасные коллекции</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">Потокобезопасные коллекции</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace includes several collection classes that are both thread-safe and scalable.</source>
+          <target state="translated">Пространство имен <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> содержит несколько классов коллекций, которые являются потокобезопасными и масштабируемыми.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code.</source>
+          <target state="translated">Несколько потоков могут безопасно и эффективно добавлять и удалять элементы из таких коллекций, не требуя при этом дополнительной синхронизации в пользовательском коде.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently.</source>
+          <target state="translated">При написании нового кода следует использовать классы параллельных коллекций каждый раз, когда коллекция будет записывать одновременно для нескольких потоков.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you are only reading from a shared collection, then you can use the classes in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">Если выполняется только чтение из общей коллекции, можно использовать классы в пространстве имен <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>We recommend that you do not use <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.</source>
+          <target state="translated">Не рекомендуется использовать классы коллекций <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept>, если в качестве целевой среды выполнения не требуется платформа .NET Framework версии 1.1 или более ранней версии.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Fine-Grained Locking and Lock-Free Mechanisms</source>
+          <target state="translated">Механизм блокировки мелких фрагментов данных и механизм, свободный от блокировки</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Some of the concurrent collection types use lightweight synchronization mechanisms such as <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>, <bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>, <bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept>, and <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>.</source>
+          <target state="translated">Отдельные из типов параллельных коллекций используют механизмы упрощенной синхронизации, например <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>, <bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>, <bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept> и <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>These synchronization types typically use busy spinning for brief periods before they put the thread into a true <ph id="ph1">`Wait`</ph> state.</source>
+          <target state="translated">Эти типы синхронизации обычно используют цикличную работу для коротких промежутков перед помещением потока в фактическое состояние <ph id="ph1">`Wait`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition.</source>
+          <target state="translated">При условии, что время ожидания предполагается очень коротким, цикличность требует значительно меньших затрат компьютерных ресурсов, чем ожидание, которое включает в себя переход в режим ядра, требующий больших затрат компьютерных ресурсов.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate.</source>
+          <target state="translated">Для классов коллекций, которые используют цикличность, эта эффективность означает, что множество потоков могут добавлять и удалять большое количество элементов.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> and <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> classes do not use locks at all.</source>
+          <target state="translated">Классы <bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> и <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> вообще не используют блокировки.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, they rely on Interlocked operations to achieve thread-safety.</source>
+          <target state="translated">Вместо этого для достижения потокобезопасности они используют операции Interlocked.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Because the concurrent collections classes support <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>, they provide implementations for the <ph id="ph1">`IsSynchronized`</ph> and <ph id="ph2">`SyncRoot`</ph> properties, even though these properties are irrelevant.</source>
+          <target state="translated">Так как классы параллельных коллекций поддерживают интерфейс <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>, они предоставляют реализации для свойств <ph id="ph1">`IsSynchronized`</ph> и <ph id="ph2">`SyncRoot`</ph>, даже если эти свойства не имеют значения.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IsSynchronized`</ph> always returns <ph id="ph2">`false`</ph> and <ph id="ph3">`SyncRoot`</ph> is always null.</source>
+          <target state="translated"><ph id="ph1">`IsSynchronized`</ph> всегда возвращает значение <ph id="ph2">`false`</ph>, а свойство <ph id="ph3">`SyncRoot`</ph> всегда имеет значение NULL.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following table lists the collection types in the <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace.</source>
+          <target state="translated">В следующей таблице перечислены типы коллекций в пространстве имен <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="translated">Тип</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Provides bounding and blocking functionality for any type that implements <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>.</source>
+          <target state="translated">Предоставляет возможности блокировки и ограничения для всех типов, которые реализуют интерфейс <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept>.</source>
+          <target state="translated">Дополнительные сведения см. в разделе <bpt id="p1">[</bpt>Общие сведения о коллекции BlockingCollection<ept id="p1">](blockingcollection-overview.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of an unordered collection of elements.</source>
+          <target state="translated">Потокобезопасная реализация неупорядоченной коллекции элементов.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a dictionary of key-value pairs.</source>
+          <target state="translated">Потокобезопасная реализация словаря пар "ключ-значение".</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a FIFO (first-in, first-out) queue.</source>
+          <target state="translated">Потокобезопасная реализация очереди с типом "первым поступил — первым обслужен" (FIFO).</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a LIFO (last-in, first-out) stack.</source>
+          <target state="translated">Потокобезопасная реализация стека с типом "последним поступил — первым обслужен" (LIFO).</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The interface that a type must implement to be used in a <ph id="ph1">`BlockingCollection`</ph>.</source>
+          <target state="translated">Это интерфейс, тип которого должен быть реализован для использования в классе <ph id="ph1">`BlockingCollection`</ph>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Thread Synchronization in the .NET Framework version 1.0 and 2.0 Collections</source>
+          <target state="translated">Синхронизация потоков в пространстве имен Collections на платформах .NET Framework версий 1.0 и 2.0</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The collections first introduced in the .NET Framework version 1.0 are found in the <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> namespace.</source>
+          <target state="translated">Доступные на платформе .NET Framework 1.0 коллекции находятся в пространстве имен <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>These collections, which include the commonly used <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> and <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept>, provide some thread-safety through the <ph id="ph1">`Synchronized`</ph> property, which returns a thread-safe wrapper around the collection.</source>
+          <target state="translated">Эти коллекции, которые содержат часто используемые класс <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> и класс <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept>, предоставляют некоторую потокобезопасность посредством свойства <ph id="ph1">`Synchronized`</ph>, которое возвращает потокобезопасную программу-оболочку вокруг коллекции.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The wrapper works by locking the entire collection on every add or remove operation.</source>
+          <target state="translated">Работа программы оболочки заключается в блокировке всей коллекции при каждой операции добавления или удаления.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock.</source>
+          <target state="translated">Поэтому каждый поток, который пытается получить доступ к коллекции, должен ждать своей очереди для получения блокировки.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This is not scalable and can cause significant performance degradation for large collections.</source>
+          <target state="translated">Такой подход не является масштабируемым и может привести к значительному снижению производительности для больших коллекций.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Also, the design is not completely protected from race conditions.</source>
+          <target state="translated">Также такой подход не защищен полностью от состояния гонки.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The collection classes first introduced in the .NET Framework version 2.0 are found in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">Доступные на платформе .NET Framework 2.0 классы коллекций находятся в пространстве имен <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>These include <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>, <bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept>, and so on.</source>
+          <target state="translated">Они включают классы <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>, <bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> и так далее.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These classes provide improved type safety and performance compared to the <ph id="ph1">`System.Collections`</ph> classes.</source>
+          <target state="translated">Эти классы предоставляют улучшенную безопасность типа и производительность по сравнению с классами <ph id="ph1">`System.Collections`</ph>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, the <ph id="ph1">`System.Collections.Generic`</ph> collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.</source>
+          <target state="translated">Однако классы коллекций <ph id="ph1">`System.Collections.Generic`</ph> не обеспечивают синхронизацию потоков. Пользовательский код должен обеспечивать всю синхронизацию при параллельном добавлении элементов в несколько потоков или удалении элементов из них.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>We recommend the <ph id="ph1">`System.Collections.Concurrent`</ph> collection classes because they provide not only the type safety of the <ph id="ph2">`System.Collections.Generic`</ph> collection classes, but also more efficient and more complete thread safety than the <ph id="ph3">`System.Collections`</ph> collections provide.</source>
+          <target state="translated">Рекомендуются классы параллельных коллекций <ph id="ph1">`System.Collections.Concurrent`</ph>, так как они предоставляют не только безопасность типа классов коллекций <ph id="ph2">`System.Collections.Generic`</ph>, но и большую эффективность, более полную потокобезопасность по сравнению с коллекциями <ph id="ph3">`System.Collections`</ph>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Related Topics</source>
+          <target state="translated">Связанные разделы</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Заголовок</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Общие сведения о коллекции BlockingCollection<ept id="p1">](blockingcollection-overview.md)</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Describes the functionality provided by the <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> type.</source>
+          <target state="translated">Приводится описание функциональных возможностей, которые предоставляются типом <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>When to Use a Thread-Safe Collection<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Преимущества использования потокобезопасных коллекций<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Explains when is it appropriate to use a thread-safe collection.</source>
+          <target state="translated">Приводится описание ситуаций, когда лучше всего использовать потокобезопасную коллекцию.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Remove Items from a ConcurrentDictionary<ept id="p1">](how-to-add-and-remove-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Добавление элементов в коллекцию ConcurrentDictionary и их удаление из нее<ept id="p1">](how-to-add-and-remove-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Describes how to add and remove elements from a <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>.</source>
+          <target state="translated">Приводится описание порядка добавления и удаления элементов из класса <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Take Items Individually from a BlockingCollection<ept id="p1">](how-to-add-and-take-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Добавление и удаление отдельных элементов коллекции BlockingCollection<ept id="p1">](how-to-add-and-take-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.</source>
+          <target state="translated">Приводится описание порядка добавления и получения элементов из заблокированной коллекции без использования перечислителя, доступного только для чтения.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add Bounding and Blocking Functionality to a Collection<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Добавление функций границы и блокировки в коллекцию<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Describes how to use any collection class as the underlying storage mechanism for an <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph> collection.</source>
+          <target state="translated">Приводится описание порядка использования всех классов коллекций в качестве базового механизма хранения для коллекции <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use ForEach to Remove Items in a BlockingCollection<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Использование оператора ForEach для удаления элементов в коллекции BlockingCollection<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Describes how to use <ph id="ph1">`foreach`</ph> to remove all items in a blocking collection.</source>
+          <target state="translated">Приводится описание порядка использования оператора <ph id="ph1">`foreach`</ph> для удаления всех элементов в заблокированной коллекции.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use Arrays of Blocking Collections in a Pipeline<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Использование массивов для блокировки коллекций в конвейере<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Describes how to use multiple blocking collections at the same time to implement a pipeline.</source>
+          <target state="translated">Приводится описание порядка одновременного использования нескольких заблокированных коллекций для реализации конвейера.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Create an Object Pool by Using a ConcurrentBag<ept id="p1">](how-to-create-an-object-pool.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Создание пула объектов с помощью класса ConcurrentBag<ept id="p1">](how-to-create-an-object-pool.md)</ept></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.</source>
+          <target state="translated">Показано, как применить параллельный контейнер для повышения производительности в сценариях, где можно повторно использовать объекты вместо постоянного создания новых.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">Ссылка</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
