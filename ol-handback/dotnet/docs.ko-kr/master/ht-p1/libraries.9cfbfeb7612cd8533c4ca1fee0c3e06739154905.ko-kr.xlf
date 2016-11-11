@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">caf72bec4a5d3276d1fdeafc4fa3816e5f00c296</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\libraries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6f2b04e8d5c448a63da146c4d53652c491dd6280</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9d8a57eb4f090a82df9620ac4487c2e4050e2b40</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">플랫폼 간 도구로 라이브러리 개발</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">플랫폼 간 도구로 라이브러리 개발</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">플랫폼 간 도구로 라이브러리 개발</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Some details are subject to change as the toolchain evolves.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>도구 체인이 발전함에 따라 몇 가지 세부 정보는 변경될 수 있습니다.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article covers how to write libraries for .NET using cross-platform CLI tools.</source>
+          <target state="translated">이 문서에서는 플랫폼 간 CLI 도구를 사용하여 .NET용 라이브러리를 작성하는 방법을 다룹니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The CLI provides an efficient and low-level experience that works across any supported OS.</source>
+          <target state="translated">CLI는 지원되는 운영 체제에서 작동하는 효율적인 하위 수준 환경을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can still build libraries with Visual Studio, and if that is your preferred experience <bpt id="p1">[</bpt>refer to the Visual Studio guide<ept id="p1">](libraries-with-vs.md)</ept>.</source>
+          <target state="translated">Visual Studio로 라이브러리를 빌드할 수 있습니다. 그러한 환경을 선호하는 경우 <bpt id="p1">[</bpt>Visual Studio 설명서를 참조하세요<ept id="p1">](libraries-with-vs.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">필수 조건</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You need <bpt id="p1">[</bpt>the .NET Core SDK and CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept> installed on your machine.</source>
+          <target state="translated">컴퓨터에 <bpt id="p1">[</bpt>.NET Core SDK 및 CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept>를 설치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For the sections of this document dealing with .NET Framework versions or Portable Class Libraries (PCL), you need the <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept> installed on a Windows machine.</source>
+          <target state="translated">.NET Framework 버전 또는 PCL(Portable Class Libraries)을 다루는 이 문서의 섹션에서는 <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept>가 설치된 Windows 컴퓨터가 필요합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the <bpt id="p1">[</bpt>.NET target platforms page<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>.</source>
+          <target state="translated">또한 이전.NET Framework 대상을 지원하려는 경우 <bpt id="p1">[</bpt>.NET 대상 플랫폼 페이지<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>에서 이전 프레임워크 버전용 타기팅/개발자 팩을 설치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Refer to this table:</source>
+          <target state="translated">다음 표를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>.NET Framework Version</source>
+          <target state="translated">.NET Framework 버전</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>What to download</source>
+          <target state="translated">다운로드할 파일</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6.1 Targeting Pack</source>
+          <target state="translated">.NET Framework 4.6.1 타기팅 팩</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6 Targeting Pack</source>
+          <target state="translated">.NET framework 4.6 타기팅 팩</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>4.5.2</source>
+          <target state="translated">4.5.2</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.2 Developer Pack</source>
+          <target state="translated">.NET framework 4.5.2 개발자 팩</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.1 Developer Pack</source>
+          <target state="translated">.NET framework 4.5.1 개발자 팩</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Windows Software Development Kit for Windows 8</source>
+          <target state="translated">Windows 8용 Windows 소프트웨어 개발 키트</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>4.0</source>
+          <target state="translated">4.0</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Windows SDK for Windows 7 and .NET Framework 4</source>
+          <target state="translated">Windows 7 및 .NET Framework 4용 Windows SDK</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>2.0, 3.0, and 3.5</source>
+          <target state="translated">2.0, 3.0 및 3.5</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>.NET Framework 3.5 SP1 Runtime (or Windows 8+ version)</source>
+          <target state="translated">.NET Framework 3.5 SP1 런타임(또는 Windows 8 이상 버전)</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Standard</source>
+          <target state="translated">.NET 표준을 대상으로 지정하는 방법</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you're not quite familiar with the .NET Standard, refer to <bpt id="p1">[</bpt>the .NET Standard Library<ept id="p1">](../../standard/library.md)</ept> to learn more.</source>
+          <target state="translated">.NET 표준에 익숙하지 않은 경우 자세한 내용은 <bpt id="p1">[</bpt>.NET 표준 라이브러리<ept id="p1">](../../standard/library.md)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In that article, there is a table which maps .NET Standard versions to various implementations:</source>
+          <target state="translated">이 문서에는 .NET 표준을 다양한 구현에 매핑하는 표가 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Platform Name</source>
+          <target state="translated">플랫폼 이름</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Alias</source>
+          <target state="translated">Alias</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>.NET Standard</source>
+          <target state="translated">.NET 표준</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>netstandard</source>
+          <target state="translated">netstandard</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>1.1</source>
+          <target state="translated">1.1</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>1.2</source>
+          <target state="translated">1.2</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>1.3</source>
+          <target state="translated">1.3</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>1.4</source>
+          <target state="translated">1.4</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>1.5</source>
+          <target state="translated">1.5</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>1.6</source>
+          <target state="translated">1.6</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>.NET Core</source>
+          <target state="translated">.NET Core</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>netcoreapp</source>
+          <target state="translated">netcoreapp</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>.NET Framework</source>
+          <target state="translated">.NET Framework</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>net</source>
+          <target state="translated">net</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>4.6.2</source>
+          <target state="translated">4.6.2</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>4.6.3</source>
+          <target state="translated">4.6.3</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Mono/Xamarin Platforms</source>
+          <target state="translated">Mono/Xamarin 플랫폼</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Universal Windows Platform</source>
+          <target state="translated">범용 Windows 플랫폼</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>uap</source>
+          <target state="translated">uap</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>10.0</source>
+          <target state="translated">10.0</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <target state="translated">창</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>win</source>
+          <target state="translated">win</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Windows Phone</source>
+          <target state="translated">Windows Phone</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>wpa</source>
+          <target state="translated">wpa</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Windows Phone Silverlight</source>
+          <target state="translated">Windows Phone Silverlight</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>wp</source>
+          <target state="translated">wp</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Here's what this table means for the purposes of creating a library:</source>
+          <target state="translated">라이브러리 만들기 작업에서 이 표의 의미는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.</source>
+          <target state="translated">선택한 .NET 플랫폼 표준 버전에 따라 최신 API에 대한 액세스와 더 많은 .NET 플랫폼 및 Framework 버전을 대상으로 하는 기능 간에 균형을 유지하게 됩니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You control the range of targetable platforms and versions by picking a version of <ph id="ph1">`netstandardX.X`</ph> (Where <ph id="ph2">`X.X`</ph> is a version number) and adding it to your <ph id="ph3">`project.json`</ph> file.</source>
+          <target state="translated"><ph id="ph1">`netstandardX.X`</ph>의 버전을 선택하고(여기서 <ph id="ph2">`X.X`</ph>는 버전 번호) 이를 <ph id="ph3">`project.json`</ph> 파일에 추가하여 대상 지정이 가능한 플랫폼과 버전의 범위를 제어합니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Additionally, the corresponding <bpt id="p1">[</bpt>NuGet package to depend on<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept> is <ph id="ph1">`NETStandard.Library`</ph> version <ph id="ph2">`1.6.0`</ph>.</source>
+          <target state="translated">또한 <bpt id="p1">[</bpt>사용할 해당 NuGet 패키지<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept>는 <ph id="ph1">`NETStandard.Library`</ph> 버전 <ph id="ph2">`1.6.0`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although there's nothing preventing you from depending on <ph id="ph1">`Microsoft.NETCore.App`</ph> like with console apps, it's generally not recommended.</source>
+          <target state="translated">콘솔 앱에서처럼 <ph id="ph1">`Microsoft.NETCore.App`</ph>의 사용을 방해하는 것은 아무것도 없지만, 일반적으로 권장되지는 않습니다.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If you need APIs from a package not specified in <ph id="ph1">`NETStandard.Library`</ph>, you can always specify that package in addition to <ph id="ph2">`NETStandard.Library`</ph> in the <ph id="ph3">`dependencies`</ph> section of your <ph id="ph4">`project.json`</ph> file.</source>
+          <target state="translated"><ph id="ph1">`NETStandard.Library`</ph>에 지정되지 않은 패키지의 API가 필요한 경우 <ph id="ph4">`project.json`</ph> 파일의 <ph id="ph3">`dependencies`</ph> 섹션에서 <ph id="ph2">`NETStandard.Library`</ph> 외에 해당 패키지를 항상 지정해야 합니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You have three primary options when targeting the .NET Standard, depending on your needs.</source>
+          <target state="translated">.NET 표준을 대상으로 할 때 요구에 따라 세 가지 기본 옵션이 있습니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can use the latest version of the .NET Standard - <ph id="ph1">`netstandard1.6`</ph> - which is for when you want access to the most APIs and don't mind if you have less reach across implementations.</source>
+          <target state="translated">.NET 표준의 최신 버전 <ph id="ph1">`netstandard1.6`</ph>을 사용할 수 있습니다. 대부분의 API에 액세스하고자 하며 전체 구현에서 도달률이 떨어져도 괜찮은 경우 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can use a lower version of the .NET Standard to target earlier .NET implementations.</source>
+          <target state="translated">이전 .NET 구현을 대상으로 하려면 .NET 표준의 하위 버전을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The cost here is not having access to some of the latest APIs.</source>
+          <target state="translated">이때의 문제는 일부 최신 API에 액세스하지 못한다는 것입니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, if you wanted to have guaranteed compatibility with .NET Framework 4.6 and higher, you would pick <ph id="ph1">`netstandard1.3`</ph>:</source>
+          <target state="translated">예를 들어 .NET Framework 4.6 이상과의 호환성을 보장하려는 경우 <ph id="ph1">`netstandard1.3`</ph>을 선택할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>.NET Standard versions are backward compatible.</source>
+          <target state="translated">.NET 표준 버전은 이전 버전과 호환됩니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>That means that <ph id="ph1">`netstandard1.0`</ph> libraries run on <ph id="ph2">`netstandard1.1`</ph> platforms and higher.</source>
+          <target state="translated">즉, <ph id="ph1">`netstandard1.0`</ph> 라이브러리는 <ph id="ph2">`netstandard1.1`</ph> 플랫폼 이상에서 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.</source>
+          <target state="translated">그러나 이후 버전과는 호환되지 않습니다. 더 낮은 .NET 표준 플랫폼은 더 높은 버전을 참조할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This means that <ph id="ph1">`netstandard1.0`</ph> libraries cannot reference libraries targeting <ph id="ph2">`netstandard1.1`</ph> or higher.</source>
+          <target state="translated">즉, <ph id="ph1">`netstandard1.0`</ph> 라이브러리는 <ph id="ph2">`netstandard1.1`</ph> 이상을 대상으로 하는 라이브러리를 참조할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Select the Standard version that has the right mix of APIs and platform support for your needs.</source>
+          <target state="translated">요구에 맞게 API와 플랫폼 지원이 올바르게 혼합된 표준 버전을 선택하세요.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, <ph id="ph1">`System.Drawing`</ph>), read the following sections and learn how to multitarget.</source>
+          <target state="translated">.NET Framework 버전 4.0 이하를 대상으로 하거나 .NET Framework에서는 사용 가능하지만 .NET 표준에서는 사용할 수 없는 API를 사용하려는 경우(예: <ph id="ph1">`System.Drawing`</ph>) 다음 섹션을 읽어보고 멀티 타기팅 방법을 알아보세요.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Framework</source>
+          <target state="translated">.NET Framework를 대상으로 지정하는 방법</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">다음 지침은 컴퓨터에 .NET Framework가 설치된 것으로 가정합니다.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">설치된 종속성을 알아보려면 <bpt id="p1">[</bpt>필수 조건<ept id="p1">](#prerequisites)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Keep in mind that some of the .NET Framework versions used here are no longer in support.</source>
+          <target state="translated">여기서 사용된 .NET Framework 버전 중 일부는 더 이상 지원되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>.NET Framework Support Lifecycle Policy FAQ<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept> about unsupported versions.</source>
+          <target state="translated">지원되지 않는 버전은 <bpt id="p1">[</bpt>.NET Framework Support Lifecycle Policy FAQ(.NET Framework 지원 수명 주기 정책 FAQ)<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you want to reach the maximum number of developers and projects, use the .NET Framework 4 as your baseline target.</source>
+          <target state="translated">가장 많은 수의 개발자 및 프로젝트에 도달하려면 기본 대상으로 .NET Framework 4를 사용하세요.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.</source>
+          <target state="translated">.NET Framework를 대상으로 하려면 지원할 .NET Framework 버전에 해당하는 올바른 TFM(Target Framework Moniker)을 사용하여 시작해야 합니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For example, here's how you would write a library which targets the .NET Framework 4:</source>
+          <target state="translated">예를 들어 .NET Framework 4를 대상으로 하는 라이브러리의 작성 방법을 같습니다.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">됐습니다!</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Although this compiled only for the .NET Framework 4, you can use the library on newer versions of the .NET Framework.</source>
+          <target state="translated">이는 .NET Framework 4에 대해서만 컴파일되지만 이후 버전의 .NET Framework에서 라이브러리를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>How to target a Portable Class Library (PCL)</source>
+          <target state="translated">PCL(이식 가능한 클래스 라이브러리) 대상 지정 방법</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">다음 지침은 컴퓨터에 .NET Framework가 설치된 것으로 가정합니다.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">설치된 종속성을 알아보려면 <bpt id="p1">[</bpt>필수 조건<ept id="p1">](#prerequisites)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.</source>
+          <target state="translated">PCL 프로필을 대상으로 하는 것은 .NET 표준 또는 .NET Framework를 대상으로 하는 것보다 좀 더 까다롭습니다.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For starters, <bpt id="p1">[</bpt>reference this list of PCL profiles<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> to find the NuGet target which corresponds to the PCL profile you are targeting.</source>
+          <target state="translated">우선 대상으로 지정하는 PCL 프로필에 해당하는 NuGet 대상을 찾으려면 <bpt id="p1">[</bpt>이 PCL 프로필 목록을 참조<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept>하세요.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Then, you need to do the following:</source>
+          <target state="translated">다음을 수행해야 합니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Create a new entry under <ph id="ph1">`frameworks`</ph> in your <ph id="ph2">`project.json`</ph>, named <ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph>, where <ph id="ph4">`{version}`</ph> and <ph id="ph5">`{profile}`</ph> correspond to a PCL version number and Profile number, respectively.</source>
+          <target state="translated"><ph id="ph2">`project.json`</ph>의 <ph id="ph1">`frameworks`</ph>에 아래에 새 항목(<ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph>)을 만듭니다. 여기서 <ph id="ph4">`{version}`</ph> 및 <ph id="ph5">`{profile}`</ph>은 각각 PCL 버전 번호와 프로필 번호에 해당합니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>In this new entry, list every single assembly used for that target under a <ph id="ph1">`frameworkAssemblies`</ph> entry.</source>
+          <target state="translated">이 새 항목에서, <ph id="ph1">`frameworkAssemblies`</ph> 항목 아래에 해당 대상에 사용되는 모든 단일 어셈블리를 나열합니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This includes <ph id="ph1">`mscorlib`</ph>, <ph id="ph2">`System`</ph>, and <ph id="ph3">`System.Core`</ph>.</source>
+          <target state="translated">여기에는 <ph id="ph1">`mscorlib`</ph>, <ph id="ph2">`System`</ph> 및 <ph id="ph3">`System.Core`</ph>가 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting (see the next section), you must explicitly list dependencies for each target under their target entries.</source>
+          <target state="translated">멀티 타기팅하는 경우(다음 섹션 참조), 대상 항목 아래에서 각 대상에 대한 종속성을 명시적으로 나열해야 합니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You won't be able to use a global <ph id="ph1">`dependencies`</ph> entry anymore.</source>
+          <target state="translated">전역 <ph id="ph1">`dependencies`</ph> 항목은 더 이상 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following is an example targeting PCL Profile 328.</source>
+          <target state="translated">다음은 PCL Profile 328을 대상으로 하는 예제입니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Profile 328 supports: .NET Standard 1.4, .NET Framework 4, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8.1, and Silverlight 5.</source>
+          <target state="translated">프로필 328은 .NET 표준 1.4, .NET Framework 4, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8.1 및 Silverlight 5를 지원합니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 as a framework in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have this subfolder in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated"><bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 파일의 프레임워크로 PCL Profile 328을 포함하는 프로젝트를 빌드할 경우 <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 폴더에 다음의 하위 폴더가 생깁니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This folder contains the <ph id="ph1">`.dll`</ph> files necessary to run your library.</source>
+          <target state="translated">이 폴더에는 라이브러리를 실행하는 데 필요한 <ph id="ph1">`.dll`</ph> 파일이 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>How to Multitarget</source>
+          <target state="translated">멀티 타기팅 방법</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">다음 지침에서는 컴퓨터에 .NET Framework가 설치된 것으로 가정합니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> section to learn which dependencies you need to install and where to download them from.</source>
+          <target state="translated">설치해야 할 종속성 및 다운로드할 위치에 대해 알아보려면 <bpt id="p1">[</bpt>필수 조건<ept id="p1">](#prerequisites)</ept> 섹션을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core.</source>
+          <target state="translated">프로젝트가 .NET Framework 및 .NET Core를 모두 지원하는 경우 이전 버전의 .NET Framework를 대상으로 해야 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In this scenario, if you want to use newer APIs and language constructs for the newer targets, use <ph id="ph1">`#if`</ph> directives in your code.</source>
+          <target state="translated">이 시나리오에서, 최신 대상에 최신 API 및 언어 구조를 사용하려는 경우 코드에 <ph id="ph1">`#if`</ph> 지시문을 사용하세요.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You also might need to add different packages and dependencies in your <ph id="ph1">`project.json file`</ph> for each platform you're targeting to include the different APIs needed for each case.</source>
+          <target state="translated">각각의 경우에 필요한 서로 다른 API를 추가하려면 대상으로 지정하는 각 플랫폼에 대해 <ph id="ph1">`project.json file`</ph>에서 서로 다른 패키지와 종속성을 추가해야 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For example, let's say you have a library that performs networking operations over HTTP.</source>
+          <target state="translated">예를 들어 HTTP를 통해 네트워킹 작업을 수행하는 라이브러리가 있다고 가정해 보겠습니다.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>For .NET Standard and the .NET Framework versions 4.5 or higher, you can use the <ph id="ph1">`HttpClient`</ph> class from the <ph id="ph2">`System.Net.Http`</ph> namespace.</source>
+          <target state="translated">.NET 표준 및 .NET Framework 버전 4.5 이상 경우 <ph id="ph2">`System.Net.Http`</ph> 네임스페이스의 <ph id="ph1">`HttpClient`</ph> 클래스를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>However, earlier versions of the .NET Framework don't have the <ph id="ph1">`HttpClient`</ph> class, so you could use the <ph id="ph2">`WebClient`</ph> class from the <ph id="ph3">`System.Net`</ph> namespace for those instead.</source>
+          <target state="translated">그러나 이전 버전의 .NET Framework에는 <ph id="ph1">`HttpClient`</ph> 클래스가 없으므로, 이에 대해 <ph id="ph3">`System.Net`</ph> 네임스페이스의 <ph id="ph2">`WebClient`</ph> 클래스를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>So, the <ph id="ph1">`project.json`</ph> file could look like this:</source>
+          <target state="translated">따라서는 <ph id="ph1">`project.json`</ph> 파일은 다음과 같이 표시될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Note that the .NET Framework assemblies need to be referenced explicitly in the <ph id="ph1">`net40`</ph> and <ph id="ph2">`net452`</ph> target, and NuGet references are also explicitly listed in the <ph id="ph3">`netstandard1.6`</ph> target.</source>
+          <target state="translated">.NET Framework 어셈블리는 <ph id="ph1">`net40`</ph> 및 <ph id="ph2">`net452`</ph> 대상에서 명시적으로 참조되어야 하며, NuGet 참조도 <ph id="ph3">`netstandard1.6`</ph> 대상에 명시적으로 나열되어야 합니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This is required in multitargeting scenarios.</source>
+          <target state="translated">멀티 타기팅 시나리오에서 필요합니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Next, the <ph id="ph1">`using`</ph> statements in your source file can be adjusted like this:</source>
+          <target state="translated">이제 소스 파일의 <ph id="ph1">`using`</ph> 문에서 다음과 같이 조정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The build system is aware of the following preprocessor symbols used in <ph id="ph1">`#if`</ph> directives:</source>
+          <target state="translated">빌드 시스템은 <ph id="ph1">`#if`</ph> 지시문에 사용된 다음의 전처리기 기호를 인식합니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>And in the middle of the source, you can use <ph id="ph1">`#if`</ph> directives to use those libraries conditionally.</source>
+          <target state="translated">소스 중간에 <ph id="ph1">`#if`</ph> 지시문을 사용하여 조건부로 해당 라이브러리를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes <ph id="ph1">`net40`</ph>, <ph id="ph2">`net45`</ph>, and <ph id="ph3">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated"><ph id="ph1">`net40`</ph>, <ph id="ph2">`net45`</ph> 및 <ph id="ph3">`netstandard1.6`</ph>을 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 파일에 프레임워크로 포함하는 프로젝트를 빌드하면, <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 폴더에 이러한 하위 폴더가 생성됩니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>But What about Multitargeting with Portable Class Libraries?</source>
+          <target state="translated">하지만 이식 가능한 클래스 라이브러리를 이용한 멀티 타기팅은 어떻습니까?</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>If you want to cross-compile with a PCL target, you must add a build definition in your <ph id="ph1">`project.json`</ph> file under <ph id="ph2">`buildOptions`</ph> in your PCL target.</source>
+          <target state="translated">PCL 대상과 교차 컴파일을 수행하려는 경우 PCL 대상의 <ph id="ph2">`buildOptions`</ph> 아래에 있는 <ph id="ph1">`project.json`</ph> 파일에 빌드 정의를 추가해야 합니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You can then use <ph id="ph1">`#if`</ph> directives in the source which use the build definition as a preprocessor symbol.</source>
+          <target state="translated">그러면 전처리 기호로 빌드 정의를 사용하는 <ph id="ph1">`#if`</ph> 지시문을 소스에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>For example, if you want to target <bpt id="p1">[</bpt>PCL profile 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> (The .NET Framework 4, Windows 8, Windows Phone Silverlight 8, Windows Phone 8.1, Silverlight 5), you could to refer to it to as "PORTABLE328" when cross-compiling.</source>
+          <target state="translated">예를 들어 <bpt id="p1">[</bpt>PCL Profile 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept>(.NET Framework 4, Windows 8, Windows Phone Silverlight 8, Windows Phone 8.1, Silverlight 5)을 대상으로 지정하려는 경우, 교차 컴파일 시 이를 "PORTABLE328"로 참조할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Simply add it to the <ph id="ph1">`project.json`</ph> file as a <ph id="ph2">`buildOptions`</ph> attribute:</source>
+          <target state="translated">간단히 이를 <ph id="ph1">`project.json`</ph> 파일에 <ph id="ph2">`buildOptions`</ph> 특성으로 추가할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Now you can conditionally compile against that target:</source>
+          <target state="translated">이제 해당 대상에 대해 조건부로 컴파일할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`PORTABLE328`</ph> is now recognized by the compiler, the PCL Profile 328 library generated by a compiler will not include <ph id="ph2">`System.Net.Http`</ph> or <ph id="ph3">`System.Threading.Tasks`</ph>.</source>
+          <target state="translated">이제 컴파일러에서 <ph id="ph1">`PORTABLE328`</ph>을 인식하므로, 컴파일러에 의해 생성된 PCL Profile 328 라이브러리에 <ph id="ph2">`System.Net.Http`</ph> 또는 <ph id="ph3">`System.Threading.Tasks`</ph>가 포함되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 and <ph id="ph1">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated">PCL Profile 328 및 <ph id="ph1">`netstandard1.6`</ph>을 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 파일에 프레임워크로 포함하는 프로젝트를 빌드하면 <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 폴더에 이러한 하위 폴더가 생성됩니다.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>How to use native dependencies</source>
+          <target state="translated">기본 종속성 사용 방법</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>You may wish to write a library which depends on a native <ph id="ph1">`.dll`</ph> file.</source>
+          <target state="translated">기본 <ph id="ph1">`.dll`</ph> 파일에 종속된 라이브러리를 작성할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>If you're writing such a library, you have have two options:</source>
+          <target state="translated">이러한 라이브러리를 작성하는 경우 두 가지 옵션이 있습니다.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Reference the native <ph id="ph1">`.dll`</ph> directly in your <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated"><ph id="ph1">`.dll`</ph>을 <ph id="ph2">`project.json`</ph>에서 직접 참조합니다.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Package that <ph id="ph1">`.dll`</ph> into its own NuGet package and depend on that package.</source>
+          <target state="translated"><ph id="ph1">`.dll`</ph>을 자체 NuGet 패키지에 패키지하고 이에 종속됩니다.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For the first option, you'll need to include the following in your <ph id="ph1">`project.json`</ph> file:</source>
+          <target state="translated">첫 번째 옵션에서는 <ph id="ph1">`project.json`</ph> 파일에 다음을 포함해야 합니다.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Setting <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in a <ph id="ph3">`buildOptions`</ph> section.</source>
+          <target state="translated"><ph id="ph3">`buildOptions`</ph> 섹션에서 <ph id="ph1">`allowUnsafe`</ph>를 <ph id="ph2">`true`</ph>로 설정합니다.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Specifying a <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md)</ept> in a <ph id="ph1">`runtimes`</ph> section.</source>
+          <target state="translated"><ph id="ph1">`runtimes`</ph> 섹션에서 <bpt id="p1">[</bpt>RID(런타임 식별자)<ept id="p1">](../rid-catalog.md)</ept>를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Specifying the path to the native <ph id="ph1">`.dll`</ph> file(s) that you are referencing.</source>
+          <target state="translated">참조하는 기본 <ph id="ph1">`.dll`</ph> 파일에 대한 경로를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Here's an example <ph id="ph1">`project.json`</ph> for a native <ph id="ph2">`.dll`</ph> file in the root directory of the project which runs on Windows:</source>
+          <target state="translated">다음은 Windows에서 실행되는 프로젝트의 루트 디렉터리에 있는 기본 <ph id="ph2">`.dll`</ph> 파일에 대한 <ph id="ph1">`project.json`</ph> 예제입니다.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you're distributing your library as a package, it's recommended that you place the <ph id="ph1">`.dll`</ph> file at the root level of your project.</source>
+          <target state="translated">라이브러리를 패키지로 배포하는 경우 <ph id="ph1">`.dll`</ph> 파일을 프로젝트의 루트 수준에 두는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For the second option, you'll need to build a NuGet package out of your <ph id="ph1">`.dll`</ph> file(s), host on a NuGet or MyGet feed, and depend on it directly.</source>
+          <target state="translated">두 번째 옵션에서는 <ph id="ph1">`.dll`</ph> 파일에서 NuGet 패키지를 빌드하고, NuGet 또는 MyGet 피드에 호스트하고, 이에 직접 종속되어야 합니다.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You'll still need to set <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in the <ph id="ph3">`buildOptions`</ph> section of your <ph id="ph4">`project.json`</ph>.</source>
+          <target state="translated">여전히 <ph id="ph4">`project.json`</ph>의 <ph id="ph3">`buildOptions`</ph> 섹션에서 <ph id="ph1">`allowUnsafe`</ph>를 <ph id="ph2">`true`</ph>로 설정해야 합니다.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Here's an example (assuming <ph id="ph1">`MyNativeLib`</ph> is a Nuget package at version <ph id="ph2">`1.2.0`</ph>):</source>
+          <target state="translated">다음은 이에 대한 예제입니다(<ph id="ph1">`MyNativeLib`</ph>가 버전 <ph id="ph2">`1.2.0`</ph>의 NuGet 패키지라고 가정).</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To see an example of packaging up cross-platform native binaries, check out the <bpt id="p1">[</bpt>ASP.NET Libuv Package<ept id="p1">](https://github.com/aspnet/libuv-package)</ept> and the <bpt id="p2">[</bpt>corresponding reference in KestrelHttpServer<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>.</source>
+          <target state="translated">플랫폼 간 기본 바이너리를 패키지하는 예제를 보려면 <bpt id="p1">[</bpt>ASP.NET Libuv 패키지<ept id="p1">](https://github.com/aspnet/libuv-package)</ept> 및 <bpt id="p2">[</bpt>KestrelHttpServer의 해당 참조<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>를 확인하세요.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>How to test libraries on .NET Core</source>
+          <target state="translated">.NET Core에서 라이브러리를 테스트하는 방법</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>It's important to be able to test across platforms.</source>
+          <target state="translated">플랫폼 간에 테스트할 수 있는 기능이 중요합니다.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It's easiest to use <bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept>, which is also the testing tool used by .NET Core projects.</source>
+          <target state="translated">.NET Core 프로젝트에도 사용되는 테스트 도구인 <bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept>을 사용하는 것이 가장 쉬운 방법입니다.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>How you set up your solution with test projects will depend on the <bpt id="p1">[</bpt>structure of your solution<ept id="p1">](#structuring-a-solution)</ept>.</source>
+          <target state="translated">테스트 프로젝트로 솔루션을 설정하는 방법은 <bpt id="p1">[</bpt>솔루션 구조<ept id="p1">](#structuring-a-solution)</ept>에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The following example assumes that all source projects are under a top-level <ph id="ph1">`/src`</ph> folder and all test projects are under a top-level <ph id="ph2">`/test`</ph> folder.</source>
+          <target state="translated">다음 예제에서는 모든 소스 프로젝트가 최상위 <ph id="ph1">`/src`</ph> 폴더에 있고 모든 테스트 프로젝트가 최상위 <ph id="ph2">`/test`</ph> 폴더에 있는 것으로 가정합니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Ensure you have a <ph id="ph1">`global.json`</ph> file at the solution level which understands where the test projects are:</source>
+          <target state="translated">테스트 프로젝트가 어디에 있는지를 아는 솔루션 수준에 <ph id="ph1">`global.json`</ph> 파일이 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Your solution folder structure should then look like this:</source>
+          <target state="translated">그러면 솔루션 폴더 구조가 다음과 같이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Create a new test project by creating a project folder under your <ph id="ph1">`/test`</ph> folder, and a <ph id="ph2">`project.json`</ph> file in the new project folder.</source>
+          <target state="translated"><ph id="ph1">`/test`</ph> 폴더 아래에 프로젝트 폴더를 만들고, 새 프로젝트 폴더에 <ph id="ph2">`project.json`</ph> 파일을 만들어 새 테스트 프로젝트를 만듭니다.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>To create the <ph id="ph1">`project.json`</ph> file you can run the <ph id="ph2">`dotnet new`</ph> command and modify the <ph id="ph3">`project.json`</ph> file afterwards.</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> 파일을 만들려면 <ph id="ph2">`dotnet new`</ph> 명령을 실행하고 그 이후에 <ph id="ph3">`project.json`</ph> 파일을 수정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The file should have the following:</source>
+          <target state="translated">파일에 다음이 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`netcoreapp1.0`</ph> listed as the only entry under <ph id="ph2">`frameworks`</ph>.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> - <ph id="ph2">`frameworks`</ph> 아래에 유일한 항목으로 나열</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`Microsoft.NETCore.App`</ph> version <ph id="ph2">`1.0.0`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Microsoft.NETCore.App`</ph> 버전 <ph id="ph2">`1.0.0`</ph>에 대한 참조</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>A reference to xUnit version <ph id="ph1">`2.2.0-beta2-build3300`</ph>.</source>
+          <target state="translated">XUnit 버전 <ph id="ph1">`2.2.0-beta2-build3300`</ph>에 대한 참조</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph> version <ph id="ph2">`2.2.0-preview2-build1029`</ph></source>
+          <target state="translated"><ph id="ph1">`dotnet-test-xunit`</ph> 버전에 대한 참조<ph id="ph2">`2.2.0-preview2-build1029`</ph></target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>A project reference to the library being tested.</source>
+          <target state="translated">테스트 중인 라이브러리에 대한 프로젝트 참조</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The entry <ph id="ph1">`"testRunner":"xunit"`</ph>.</source>
+          <target state="translated"><ph id="ph1">`"testRunner":"xunit"`</ph> 항목</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Here's an example (<ph id="ph1">`LibraryUnderTest`</ph> version <ph id="ph2">`1.0.0`</ph> is the library being tested):</source>
+          <target state="translated">다음은 이에 대한 예제입니다(<ph id="ph1">`LibraryUnderTest`</ph> 버전 <ph id="ph2">`1.0.0`</ph>은 테스트 중인 라이브러리).</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Restore packages by running <ph id="ph1">`dotnet restore`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph>를 실행하여 패키지를 복원합니다.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You should do this at the solution level if you haven't restored packages yet.</source>
+          <target state="translated">아직 패키지를 복원하지 않은 경우 솔루션 수준에서 이를 수행해야 합니다.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Navigate to your test project and run tests with <ph id="ph1">`dotnet test`</ph>:</source>
+          <target state="translated">테스트 프로젝트로 이동하여 <ph id="ph1">`dotnet test`</ph>로 테스트를 실행합니다.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">됐습니다!</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can now test your library across all platforms using command line tools.</source>
+          <target state="translated">이제 명령줄 도구를 사용하여 모든 플랫폼 라이브러리를 테스트할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>To continue testing now that you have everything set up, testing your library is very simple:</source>
+          <target state="translated">이제 모든 것이 설정되어 계속해서 테스트하려는 경우 라이브러리 테스트는 매우 간단합니다.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Make changes to your library.</source>
+          <target state="translated">라이브러리를 변경합니다.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Run tests from the command line, in your test directory, with <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated">명령줄의 테스트 디렉터리에서 <ph id="ph1">`dotnet test`</ph> 명령으로 테스트를 실행합니다.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Your code will be automatically rebuilt when you invoke <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph> 명령을 호출하면 자동으로 코드가 다시 빌드됩니다.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Just remember to run <ph id="ph1">`dotnet restore`</ph> from the command line any time you add a new dependency and you'll be good to go!</source>
+          <target state="translated">새 종속성을 추가할 때 언제든지 명령줄에서 <ph id="ph1">`dotnet restore`</ph>를 실행하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>How to use multiple projects</source>
+          <target state="translated">여러 프로젝트를 사용하는 방법</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>A common need for larger libraries is to place functionality in different projects.</source>
+          <target state="translated">더 큰 라이브러리의 경우 일반적으로 서로 다른 프로젝트에 기능을 배치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Imagine you wished to build a library which could be consumed in idiomatic C# and F#.</source>
+          <target state="translated">자연스러운 C# 및 F#에 사용할 수 있는 라이브러리를 빌드하려 한다고 가정해 보겠습니다.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>That would mean that consumers of your library consume them in ways which are natural to C# or F#.</source>
+          <target state="translated">즉, 라이브러리의 소비자가 C# 및 F#에 자연스러운 방식으로 라이브러리를 사용한다는 의미입니다.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>For example, in C# you might consume the library like this:</source>
+          <target state="translated">예를 들어 C#에서 다음과 같이 라이브러리를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>In F#, it might look like this:</source>
+          <target state="translated">F#에서는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.</source>
+          <target state="translated">이와 같은 사용 시나리오는, 액세스하는 API가 C# 및 F#에 대해 다른 구조를 가지고 있어야 한다는 뜻입니다.</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.</source>
+          <target state="translated">이를 수행하는 일반적인 방법은 Core 프로젝트로 호출하는 API 계층을 정의하는 C# 및 F# 프로젝트에서 라이브러리의 모든 논리를 해당 Core 프로젝트로 팩터링하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The rest of the section will use the following names:</source>
+          <target state="translated">섹션의 나머지 부분에서는 다음 이름을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - A core project which contains all logic for the library</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - 라이브러리에 대한 모든 논리를 포함하는 Core 프로젝트</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in C</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - C에서 사용하기 위한 공용 API가 포함된 프로젝트</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in F</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - F에서 사용하기 위한 공용 API가 포함된 프로젝트</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Project-to-project referencing</source>
+          <target state="translated">프로젝트 간 참조</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The best way to reference a project is to do the following:</source>
+          <target state="translated">프로젝트를 참조하는 가장 좋은 방법은 다음을 수행하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Make sure the project you wish to reference has a good name for its containing folder on disk.</source>
+          <target state="translated">참조할 프로젝트가 디스크의 상위 폴더에 대해 올바른 이름을 가지고 있는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This will be the name used to reference your project.</source>
+          <target state="translated">이 이름은 프로젝트를 참조하는 데 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Reference the name from (1) in the <ph id="ph1">`project.json`</ph> file of the consuming project specifying <ph id="ph2">`"target":"project"`</ph>.</source>
+          <target state="translated"><ph id="ph2">`"target":"project"`</ph>를 지정하는 사용 프로젝트의 <ph id="ph1">`project.json`</ph> 파일에서 (1)의 이름을 참조합니다.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.json`</ph> files for both <bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> and <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> now need to reference <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept> as a <ph id="ph2">`project`</ph> target.</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> 및 <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> 모두에 대한 <ph id="ph1">`project.json`</ph> 파일은 이제 <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept>를 <ph id="ph2">`project`</ph> 대상으로 참조해야 합니다.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If you aren't multitargeting, you can use the global <ph id="ph1">`dependencies`</ph> entry:</source>
+          <target state="translated">멀티 타기팅하지 않는 경우 전역 <ph id="ph1">`dependencies`</ph> 항목을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting, you may not be able to use a global <ph id="ph1">`dependencies`</ph> entry and may have to reference <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> in a target-level <ph id="ph2">`dependencies`</ph> entry.</source>
+          <target state="translated">멀티 타기팅하는 경우 전역 <ph id="ph1">`dependencies`</ph> 항목을 사용하지 못할 수 있으며, 대상 수준 <ph id="ph2">`dependencies`</ph> 항목에서 <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept>를 참조해야 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>For example, if you were targeting <ph id="ph1">`netstandard1.6`</ph>, you could do so like this:</source>
+          <target state="translated"><ph id="ph1">`netstandard1.6`</ph>을 대상으로 지정하는 경우 다음과 같이 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Structuring a Solution</source>
+          <target state="translated">솔루션 구성</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Another important aspect of multi-project solutions is establishing a good overall project structure.</source>
+          <target state="translated">다중 프로젝트 솔루션의 또 다른 중요한 측면은 전체 프로젝트 구조를 올바르게 설정하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>To structure a multi-project library, you must use top-level <ph id="ph1">`/src`</ph> and <ph id="ph2">`/test`</ph> folders:</source>
+          <target state="translated">다중 프로젝트 라이브러리를 구성하려면 최상위 <ph id="ph1">`/src`</ph> 및 <ph id="ph2">`/test`</ph> 폴더를 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file for this solution would look like this:</source>
+          <target state="translated">이 솔루션의 <ph id="ph1">`global.json`</ph> 파일은 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>This approach follows the same pattern established by project templates in the <ph id="ph1">`dotnet new`</ph> command establish, where all projects are placed under a <ph id="ph2">`/src`</ph> directory and all tests are placed under a <ph id="ph3">`/test`</ph> directory.</source>
+          <target state="translated">이 방법은 <ph id="ph1">`dotnet new`</ph> 명령에서 프로젝트 템플릿에 의해 설정된 것과 동일한 패턴을 따릅니다. 여기서 모든 프로젝트는 <ph id="ph2">`/src`</ph> 디렉터리에 배치되고 모든 테스트는 <ph id="ph3">`/test`</ph> 디렉터리에 배치됩니다.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Here's how you could restore packages, build, and test your entire project:</source>
+          <target state="translated">다음은 패키지를 복원하고 전체 프로젝트를 빌드 및 테스트하는 방법입니다.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">됐습니다!</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

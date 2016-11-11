@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">421d46585b5d83f5772fa6596ad581c8c6acbf71</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14340bf45b632d11191dd628b665f7cfa0d4bf70</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b8ad89ac8fce389696323eeabe11a589ce92ed39</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">스레드로부터 안전한 컬렉션</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">스레드로부터 안전한 컬렉션</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">스레드로부터 안전한 컬렉션</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace includes several collection classes that are both thread-safe and scalable.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> 네임스페이스는 스레드로부터 안전하면서 확장 가능한 몇 가지 컬렉션 클래스를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code.</source>
+          <target state="translated">여러 스레드는 사용자 코드에서 추가로 동기화할 필요없이 이러한 컬렉션으로부터 안전하고 효율적으로 항목을 추가하거나 제거할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently.</source>
+          <target state="translated">새 코드를 작성하는 경우 컬렉션이 여러 스레드를 동시에 작성할 때마다 동시 컬렉션 클래스를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you are only reading from a shared collection, then you can use the classes in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">공유 컬렉션에서 읽기만 하는 경우에 <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> 네임스페이스에서 클래스를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>We recommend that you do not use <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.</source>
+          <target state="translated">.NET Framework 1.1 또는 이전 런타임을 대상으로 해야 하는 경우가 아니면 <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> 컬렉션 클래스를 사용하지 않는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Fine-Grained Locking and Lock-Free Mechanisms</source>
+          <target state="translated">세부적인 잠금 및 잠금 해제 메커니즘</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Some of the concurrent collection types use lightweight synchronization mechanisms such as <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>, <bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>, <bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept>, and <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>.</source>
+          <target state="translated">동시 컬렉션 형식의 일부에서는 <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>, <bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>, <bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept> 및 <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>와 같은 간단한 동기화 메커니즘을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>These synchronization types typically use busy spinning for brief periods before they put the thread into a true <ph id="ph1">`Wait`</ph> state.</source>
+          <target state="translated">실제로 이러한 동기화 형식이 스레드를 <ph id="ph1">`Wait`</ph> 상태로 전환하기 전 짧은 기간 동안에는 일반적으로 사용 중인 회전을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition.</source>
+          <target state="translated">대기 시간이 매우 짧을 경우 회전은 비용이 많이 드는 커널 전환을 포함하는 대기보다 훨씬 계산 비용이 적습니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate.</source>
+          <target state="translated">회전을 사용하는 컬렉션 클래스의 경우 이 효율성 덕분에 여러 스레드가 매우 빠른 속도로 항목을 추가하고 제거할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> and <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> classes do not use locks at all.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> 및 <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> 클래스는 잠금을 사용하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, they rely on Interlocked operations to achieve thread-safety.</source>
+          <target state="translated">대신, 스레드로부터의 안전성을 달성하기 위해 연동 작업을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Because the concurrent collections classes support <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>, they provide implementations for the <ph id="ph1">`IsSynchronized`</ph> and <ph id="ph2">`SyncRoot`</ph> properties, even though these properties are irrelevant.</source>
+          <target state="translated">동시 컬렉션 클래스가 <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>를 지원하기 때문에 이러한 속성이 관련되지 않은 경우에도 <ph id="ph1">`IsSynchronized`</ph> 및 <ph id="ph2">`SyncRoot`</ph> 속성에 대한 구현을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IsSynchronized`</ph> always returns <ph id="ph2">`false`</ph> and <ph id="ph3">`SyncRoot`</ph> is always null.</source>
+          <target state="translated"><ph id="ph1">`IsSynchronized`</ph>는 항상 <ph id="ph2">`false`</ph>를 반환하고 <ph id="ph3">`SyncRoot`</ph>는 항상 null입니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following table lists the collection types in the <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace.</source>
+          <target state="translated">다음 테이블에서는 <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> 네임스페이스의 컬렉션 형식을 나열합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="translated">형식</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Provides bounding and blocking functionality for any type that implements <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>을 구현하는 모든 형식에 대해 경계 및 차단 기능을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>BlockingCollection 개요<ept id="p1">](blockingcollection-overview.md)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of an unordered collection of elements.</source>
+          <target state="translated">요소의 순서 없는 컬렉션을 스레드로부터 안전하게 구현합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a dictionary of key-value pairs.</source>
+          <target state="translated">키-값 쌍의 사전을 스레드로부터 안전하게 구현합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a FIFO (first-in, first-out) queue.</source>
+          <target state="translated">FIFO(선입선출) 큐를 스레드로부터 안전하게 구현합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a LIFO (last-in, first-out) stack.</source>
+          <target state="translated">LIFO(후입선출) 스택을 스레드로부터 안전하게 구현합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The interface that a type must implement to be used in a <ph id="ph1">`BlockingCollection`</ph>.</source>
+          <target state="translated">형식이 <ph id="ph1">`BlockingCollection`</ph>에 사용하도록 구현해야 하는 인터페이스입니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Thread Synchronization in the .NET Framework version 1.0 and 2.0 Collections</source>
+          <target state="translated">.NET Framework 버전 1.0 및 2.0 컬렉션에서 스레드 동기화</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The collections first introduced in the .NET Framework version 1.0 are found in the <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> namespace.</source>
+          <target state="translated">.NET Framework 버전 1.0에서 처음 도입된 컬렉션은 <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> 네임스페이스에 위치합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>These collections, which include the commonly used <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> and <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept>, provide some thread-safety through the <ph id="ph1">`Synchronized`</ph> property, which returns a thread-safe wrapper around the collection.</source>
+          <target state="translated">일반적으로 사용되는 <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> 및 <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept>를 포함하는 이러한 컬렉션은 컬렉션 주변에서 스레드로부터 안전한 래퍼를 반환하는 <ph id="ph1">`Synchronized`</ph> 속성을 통해 어느 정도 스레드로부터의 안전성을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The wrapper works by locking the entire collection on every add or remove operation.</source>
+          <target state="translated">래퍼는 모든 추가 또는 제거 작업에서 전체 컬렉션을 잠그는 방식으로 작동합니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock.</source>
+          <target state="translated">따라서 컬렉션에 액세스하려고 하는 각 스레드는 잠금을 사용하기 위해 차례를 기다려야 합니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This is not scalable and can cause significant performance degradation for large collections.</source>
+          <target state="translated">이것은 확장할 수 없고 큰 컬렉션에 상당한 성능 저하가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Also, the design is not completely protected from race conditions.</source>
+          <target state="translated">또한 디자인은 경합 조건에서 완전히 보호되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The collection classes first introduced in the .NET Framework version 2.0 are found in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">.NET Framework 버전 2.0에서 처음 도입된 컬렉션 클래스는 <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> 네임스페이스에 위치합니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>These include <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>, <bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept>, and so on.</source>
+          <target state="translated">여기에는 <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>, <bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> 등이 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These classes provide improved type safety and performance compared to the <ph id="ph1">`System.Collections`</ph> classes.</source>
+          <target state="translated">이러한 클래스는 <ph id="ph1">`System.Collections`</ph> 클래스에 비해 형식 안정성 및 성능을 향상시킵니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, the <ph id="ph1">`System.Collections.Generic`</ph> collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.</source>
+          <target state="translated">그러나 <ph id="ph1">`System.Collections.Generic`</ph> 컬렉션 클래스는 스레드 동기화를 제공하지 않습니다. 여러 스레드에서 동시에 항목이 추가되거나 제거되는 경우 사용자 코드에서는 모든 동기화를 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>We recommend the <ph id="ph1">`System.Collections.Concurrent`</ph> collection classes because they provide not only the type safety of the <ph id="ph2">`System.Collections.Generic`</ph> collection classes, but also more efficient and more complete thread safety than the <ph id="ph3">`System.Collections`</ph> collections provide.</source>
+          <target state="translated"><ph id="ph1">`System.Collections.Concurrent`</ph> 컬렉션 클래스가 <ph id="ph2">`System.Collections.Generic`</ph> 컬렉션 클래스의 형식 안전성을 제공할 뿐만 아니라 <ph id="ph3">`System.Collections`</ph> 컬렉션이 제공하는 스레드로부터의 안전성보다 효율적이고 완전하기 때문에 해당 컬렉션 클래스를 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Related Topics</source>
+          <target state="translated">관련 항목</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">제목</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection 개요<ept id="p1">](blockingcollection-overview.md)</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Describes the functionality provided by the <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> type.</source>
+          <target state="translated"><ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> 형식에서 제공하는 기능에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>When to Use a Thread-Safe Collection<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>스레드로부터 안전한 컬렉션 사용 시기<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Explains when is it appropriate to use a thread-safe collection.</source>
+          <target state="translated">스레드로부터 안전한 컬렉션을 사용하는 적절한 시기에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Remove Items from a ConcurrentDictionary<ept id="p1">](how-to-add-and-remove-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: ConcurrentDictionary에서 항목 추가 및 제거<ept id="p1">](how-to-add-and-remove-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Describes how to add and remove elements from a <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>.</source>
+          <target state="translated"><ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>에서 요소를 추가하고 제거하는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Take Items Individually from a BlockingCollection<ept id="p1">](how-to-add-and-take-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: BlockingCollection에서 개별적으로 항목 추가 및 가져오기<ept id="p1">](how-to-add-and-take-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.</source>
+          <target state="translated">읽기 전용 열거자를 사용하지 않고 차단 컬렉션에서 항목을 추가하고 검색하는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add Bounding and Blocking Functionality to a Collection<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: 컬렉션에 경계 및 차단 기능 추가<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Describes how to use any collection class as the underlying storage mechanism for an <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph> collection.</source>
+          <target state="translated">컬렉션 클래스를 <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph> 컬렉션에 대한 기본 저장소 메커니즘으로 사용하는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use ForEach to Remove Items in a BlockingCollection<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: ForEach를 사용하여 BlockingCollection의 항목 제거<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Describes how to use <ph id="ph1">`foreach`</ph> to remove all items in a blocking collection.</source>
+          <target state="translated"><ph id="ph1">`foreach`</ph>을 사용하여 차단 컬렉션에서 모든 항목을 제거하는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use Arrays of Blocking Collections in a Pipeline<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: 파이프라인에서 차단 컬렉션 배열 사용<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Describes how to use multiple blocking collections at the same time to implement a pipeline.</source>
+          <target state="translated">파이프라인을 구현하는 동시에 여러 차단 컬렉션을 사용하는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Create an Object Pool by Using a ConcurrentBag<ept id="p1">](how-to-create-an-object-pool.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>방법: ConcurrentBag을 사용하여 개체 풀 만들기<ept id="p1">](how-to-create-an-object-pool.md)</ept></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.</source>
+          <target state="translated">개체를 끊임없이 새로 만드는 대신 다시 사용할 수 있는 시나리오에서 동시 모음을 사용하고 성능을 향상시키는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">참조</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
