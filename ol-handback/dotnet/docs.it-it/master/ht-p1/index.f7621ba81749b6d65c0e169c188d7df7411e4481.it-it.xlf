@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">677fe36a17b56aae0198140d82a2bfdd0d6e8224</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9e65fb3bf8212b0c7557068eace3ae564c64734e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d63998b6387ac39953f32ed510ab90375710225</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">Portabilità in .NET Core da .NET Framework</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">Portabilità in .NET Core da .NET Framework</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">Portabilità in .NET Core da .NET Framework</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core 1.0.</source>
+          <target state="translated">Se si dispone di codice in esecuzione su .NET Framework, può risultare interessante eseguire il codice in .NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article covers an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.</source>
+          <target state="translated">Questo articolo illustra una panoramica del processo di trasferimento e un elenco degli strumenti che possono risultare utili durante il trasferimento in .NET Core.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview of the Porting Process</source>
+          <target state="translated">Panoramica del processo di trasferimento</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The recommended process for porting follows the following series of steps.</source>
+          <target state="translated">Il processo consigliato per la portabilità fa riferimento alla serie di passaggi seguenti.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Each of these parts of the process are covered in more detail in further articles.</source>
+          <target state="translated">Ogni parte del processo è descritta più dettagliatamente in ulteriori articoli.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Identify and account for your third-party dependencies.</source>
+          <target state="translated">Identificare e spiegare le dipendenze di terze parti.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This will involve understanding what your third-party dependencies are, how you depend on them, how to see if they also run on .NET Core, and steps you can take if they don't.</source>
+          <target state="translated">Questo passaggio comporterà la comprensione delle dipendenze di terze parti, della dipendenza dell'utente da queste ultime, di come verificare se vengono eseguite anche su .NET Core e dei passaggi da eseguire in caso contrario.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Retarget all projects you wish to port to target .NET Framework 4.6.2.</source>
+          <target state="translated">Ridefinire le destinazioni di tutti i progetti che si vuole portare a .NET Framework 4.6.2.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This ensures that you can use API alternatives for .NET Framework-specific targets in the cases where .NET Core can't support a particular API.</source>
+          <target state="translated">Questo passaggio garantisce che si possano usare le alternative di API per le destinazioni specifiche di .NET Framework nei casi in cui .NET Core non supporta un'API specifica.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>API Portability Analyzer tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/)</ept> to analyze your assemblies and develop a plan to port based on its results.</source>
+          <target state="translated">Usare lo <bpt id="p1">[</bpt>strumento API Portability Analyzer<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/)</ept> per analizzare gli assembly e sviluppare un piano per eseguire il trasferimento in base ai risultati ottenuti.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The API Portability Analyzer tool will analyze your compiled assemblies and generate a report which shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core.</source>
+          <target state="translated">Lo strumento API Portability Analyzer analizza gli assembly compilati e genera un report che mostra un riepilogo a elevato livello di portabilità e un'analisi dettagliata di ogni API in uso non disponibile in .NET Core.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can use this report alongside an analysis of your codebase to develop a plan for how you'll port your code over.</source>
+          <target state="translated">È possibile usare questo report insieme a un'analisi della base di codici per sviluppare un piano per il trasferimento del codice.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Port your tests code.</source>
+          <target state="translated">Trasferire il codice di test.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port code over.</source>
+          <target state="translated">Poiché la portabilità in .NET Core è una modifica di rilievo per la base di codici, è consigliabile effettuare la portabilità dei test in modo da eseguirli durante il trasferimento del codice.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>MSTest, xUnit, and NUnit all support .NET Core 1.0 today.</source>
+          <target state="translated">Attualmente MSTest, xUnit e NUnit supportano .NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Execute your plan for porting!</source>
+          <target state="translated">Eseguire il piano di portabilità.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Tools to help</source>
+          <target state="translated">Strumenti utili</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Here's a short list of the tools you'll find helpful:</source>
+          <target state="translated">Di seguito è riportato un breve elenco degli strumenti che possono risultare utili:</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>NuGet - <bpt id="p1">[</bpt>Nuget Client<ept id="p1">](https://dist.nuget.org/index.html)</ept> or <bpt id="p2">[</bpt>NuGet Package Explorer<ept id="p2">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept>, Microsoft's package manager for the .NET Platform.</source>
+          <target state="translated">NuGet: <bpt id="p1">[</bpt>Nuget Client<ept id="p1">](https://dist.nuget.org/index.html)</ept> o <bpt id="p2">[</bpt>NuGet Package Explorer<ept id="p2">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept>, gestione di pacchetti Microsoft per la piattaforma .NET.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Api Portability Analyzer - <bpt id="p1">[</bpt>command line tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/releases)</ept> or <bpt id="p2">[</bpt>Visual Studio Extension<ept id="p2">](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)</ept>, a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.</source>
+          <target state="translated">API Portability Analyzer: <bpt id="p1">[</bpt>strumento da riga di comando<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/releases)</ept> o <bpt id="p2">[</bpt>estensione di Visual Studio<ept id="p2">](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)</ept>, una toolchain in grado di generare un report sulla portabilità del codice tra .NET Framework e .NET Core, con un'analisi dettagliata dei problemi basata sugli assembly.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Tooling to help you on the process<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> for more information.</source>
+          <target state="translated">Per altre informazioni, vedere <bpt id="p1">[</bpt>Tooling to help you on the process<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> (Strumenti utili per il processo).</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Reverse Package Search - A <bpt id="p1">[</bpt>useful web service<ept id="p1">](https://packagesearch.azurewebsites.net)</ept> that allows you to search for a type and find packages containing that type.</source>
+          <target state="translated">Reverse Package Search: un <bpt id="p1">[</bpt>servizio Web utile<ept id="p1">](https://packagesearch.azurewebsites.net)</ept> che consente di eseguire le ricerche in base al tipo e di trovare pacchetti contenenti tale tipo.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="translated">Passaggi successivi</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Analyzing your third-party dependencies.<ept id="p1">](third-party-deps.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Analyzing your third-party dependencies<ept id="p1">](third-party-deps.md)</ept> (Analisi delle dipendenze di terze parti)</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
