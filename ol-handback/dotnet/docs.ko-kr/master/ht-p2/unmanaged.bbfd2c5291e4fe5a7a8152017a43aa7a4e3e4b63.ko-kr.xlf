@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">692916bc5a9afd55dc4e3d0249386d2e3750895f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\unmanaged.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f24afcc5d03776195e2a0871ffacc3da8df6e696</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">19a2bb7df3a9573ffd2ca00bf5181e0d368e3656</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">관리되지 않는 리소스 정리</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">관리되지 않는 리소스 정리</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">관리되지 않는 리소스 정리</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For the majority of the objects that your app creates, you can rely on the .NET garbage collector to handle memory management.</source>
+          <target state="translated">사용자 응용 프로그램에서 만들어지는 대부분의 개체에 대해 .NET 가비지 수집기를 사용하여 메모리 관리를 처리할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them in your app.</source>
+          <target state="translated">그러나 관리되지 않는 리소스를 포함하는 개체를 만든 경우에는 응용 프로그램에서 해당 개체의 사용을 마치면 이러한 리소스를 명시적으로 해제해야 합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The most common types of unmanaged resource are objects that wrap operating system resources, such as files, windows, network connections, or database connections.</source>
+          <target state="translated">가장 일반적인 형태의 관리되지 않는 리소스로는 파일, 창, 네트워크 연결 또는 데이터베이스 연결 등의 운영 체제 리소스를 래핑하는 개체를 들 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.</source>
+          <target state="translated">가비지 수집기에서는 관리되지 않는 리소스를 캡슐화하는 개체의 수명을 추적할 수 있지만, 관리되지 않는 리소스를 해제하고 정리하는 방법에 대해서는 알 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If your types use unmanaged resources, you should do the following:</source>
+          <target state="translated">형식이 관리되지 않는 리소스를 사용하는 경우 다음을 수행해야 합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Implement the dispose pattern.</source>
+          <target state="translated">삭제 패턴을 구현합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This requires that you provide an <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation to enable the deterministic release of unmanaged resources.</source>
+          <target state="translated">이를 수행하려면 관리되지 않는 리소스의 명확한 해제를 활성화하기 위해 <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 구현을 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A consumer of your type calls <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> when the object (and the resources it uses) is no longer needed.</source>
+          <target state="translated">개체 및 해당 개체에서 사용하는 리소스가 더 이상 필요하지 않은 경우 형식의 소비자가 <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>를 호출합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method immediately releases the unmanaged resources.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 메서드가 관리되지 않는 리소스를 즉시 해제합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Provide for your unmanaged resources to be released in the event that a consumer of your type forgets to call <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>.</source>
+          <target state="translated">형식의 소비자가 실수로 <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>를 호출하지 않은 경우 해제되는 관리되지 않는 리소스를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>There are two ways to do this:</source>
+          <target state="translated">여기에는 두 가지 방법이 있습니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Use a safe handle to wrap your unmanaged resource.</source>
+          <target state="translated">SafeHandle을 사용하여 관리되지 않는 리소스를 래핑합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This is the recommended technique.</source>
+          <target state="translated">이것이 권장되는 방법입니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Safe handles are derived from the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class and include a robust <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">SafeHandle은 <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 클래스에서 파생되고 강력한 <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> 메서드를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When you use a safe handle, you simply implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and call your safe handle's <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> method in your <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated">SafeHandle을 사용하면 <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 인터페이스를 간단하게 구현하고 <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> 구현에서 SafeHandle의 <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> 메서드를 호출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The safe handle's finalizer is called automatically by the garbage collector if its <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method is not called.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 메서드가 호출되지 않는 경우 가비지 수집기에 의해 SafeHandle의 종료자가 자동으로 호출됩니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>—or—</source>
+          <target state="translated">또는</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> 메서드를 재정의합니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> to dispose of them deterministically.</source>
+          <target state="translated">종료를 사용하면 형식의 소비자가 명확하게 삭제할 수 있도록 <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>를 호출하지 못한 경우 관리되지 않는 리소스가 명확하지 않게 해제됩니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, because object finalization can be a complex and error-prone operation, we recommend that you use a safe handle instead of providing your own finalizer.</source>
+          <target state="translated">그러나 개체 종료가 복잡하고 오류가 발생하기 쉬운 작업일 수 있기 때문에 고유한 종료자를 제공하는 대신 SafeHandle을 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Consumers of your type can then call your <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation directly to free memory used by unmanaged resources.</source>
+          <target state="translated">그러면 형식의 소비자가 <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 구현을 직접 호출하여 관리되지 않는 리소스가 사용하는 메모리를 확보할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>When you properly implement a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method, either your safe handle's <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method or your own override of the <bpt id="p3">[</bpt>Object.Finalize<ept id="p3">](xref:System.Object.Finalize)</ept> method becomes a safeguard to clean up resources in the event that the <bpt id="p4">[</bpt>Dispose<ept id="p4">](xref:System.IDisposable.Dispose)</ept> method is not called.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 메서드를 제대로 구현하면 SafeHandle의 <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> 메서드 또는 <bpt id="p3">[</bpt>Object.Finalize<ept id="p3">](xref:System.Object.Finalize)</ept> 메서드의 고유한 재정의가 <bpt id="p4">[</bpt>Dispose<ept id="p4">](xref:System.IDisposable.Dispose)</ept> 메서드가 호출되지 않는 경우 리소스를 정리하는 보호 기능이 됩니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In This Section</source>
+          <target state="translated">단원 내용</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Implementing a dispose method<ept id="p1">](implementing-dispose.md)</ept> - Describes how to implement the dispose pattern for releasing unmanaged resources.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Dispose 메서드 구현<ept id="p1">](implementing-dispose.md)</ept> - 관리되지 않는 리소스를 해제하기 위해 삭제 패턴을 구현하는 방법을 설명합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using objects that implement IDisposable<ept id="p1">](using-objects.md)</ept> - Describes how consumers of a type ensure that its Dispose implementation is called.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable을 구현하는 개체 사용<ept id="p1">](using-objects.md)</ept> - 형식의 소비자가 해당 Dispose 구현이 호출되도록 확인하는 방법을 설명합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>We recommend using the C# using statement or the Visual Basic Using statement to do this.</source>
+          <target state="translated">이를 수행하는 경우 C# using 문 또는 Visual Basic Using 문을 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">참조</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IDisposable<ept id="p1">](xref:System.IDisposable)</ept> - Defines the <ph id="ph1">`Dispose`</ph> method for releasing unmanaged resources.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IDisposable<ept id="p1">](xref:System.IDisposable)</ept> - 관리되지 않은 리소스 해제를 위한 <ph id="ph1">`Dispose`</ph> 메서드를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> - Provides for object finalization if unmanaged resources are not released by the <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> - 관리되지 않는 리소스가 <ph id="ph1">`Dispose`</ph> 메서드에 의해 해제되지 않은 경우 개체 종료 기능을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC#System_GC_SuppressFinalize_System_Object_)</ept> - Suppresses finalization.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC#System_GC_SuppressFinalize_System_Object_)</ept> - 종료를 표시하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This method is customarily called from a <ph id="ph1">`Dispose`</ph> method to prevent a finalizer from executing.</source>
+          <target state="translated">이 메서드는 종료자가 실행되지 않도록 방지하기 위해 통상 <ph id="ph1">`Dispose`</ph> 메서드에서 호출됩니다.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
