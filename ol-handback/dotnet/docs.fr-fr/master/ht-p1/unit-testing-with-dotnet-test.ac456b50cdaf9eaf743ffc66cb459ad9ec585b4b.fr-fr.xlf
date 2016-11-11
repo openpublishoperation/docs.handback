@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a941a7e1bcafa4f342907f3160dbbf8e6ff4bac9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\testing\unit-testing-with-dotnet-test.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0b4524e861b4ecf8137e207d600c2404d0db001e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f069bf13a0c0508f4334776c12f670a09056f90b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Unit Testing in .NET Core using dotnet test</source>
+          <target state="translated">Effectuer des tests unitaires dans .NET Core à l’aide de dotnet test</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Unit Testing in .NET Core using dotnet test</source>
+          <target state="translated">Effectuer des tests unitaires dans .NET Core à l’aide de dotnet test</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Unit Testing in .NET Core using dotnet test</source>
+          <target state="translated">Effectuer des tests unitaires dans .NET Core à l’aide de dotnet test</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>By <bpt id="p1">[</bpt>Steve Smith<ept id="p1">](http://ardalis.com)</ept> and <bpt id="p2">[</bpt>Bill Wagner<ept id="p2">](https://github.com/BillWagner)</ept></source>
+          <target state="translated">Article rédigé par <bpt id="p1">[</bpt>Steve Smith<ept id="p1">](http://ardalis.com)</ept> et <bpt id="p2">[</bpt>Bill Wagner<ept id="p2">](https://github.com/BillWagner)</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>View or download sample code<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Afficher ou télécharger l’exemple de code<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Creating the Projects</source>
+          <target state="translated">Création des projets</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Writing Libraries with Cross Platform Tools<ept id="p1">](../tutorials/libraries.md)</ept> has information on organizing multi-project solutions for both the source and the tests.</source>
+          <target state="translated">L’article relatif à l’<bpt id="p1">[</bpt>écriture de bibliothèques avec des outils multiplateformes<ept id="p1">](../tutorials/libraries.md)</ept> donne des indications sur l’organisation de solutions multiprojets pour la source et les tests.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article follows those conventions.</source>
+          <target state="translated">Cet article suit ces conventions.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The final project structure will be something like this:</source>
+          <target state="translated">La structure de projet finale se présentera comme suit :</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the root directory, you'll need to create a <ph id="ph1">`global.json`</ph> that contains the names of your <ph id="ph2">`src`</ph> and <ph id="ph3">`test`</ph> directories:</source>
+          <target state="translated">Dans le répertoire racine, vous devez créer un fichier <ph id="ph1">`global.json`</ph> qui contienne le nom de vos répertoires <ph id="ph2">`src`</ph> et <ph id="ph3">`test`</ph> :</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Creating the source project</source>
+          <target state="translated">Création du projet source</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Then, in the <ph id="ph1">`src`</ph> directory, create the <ph id="ph2">`PrimeService`</ph> directory.</source>
+          <target state="translated">Ensuite, dans le répertoire <ph id="ph1">`src`</ph>, créez le répertoire <ph id="ph2">`PrimeService`</ph>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>CD into that directory, and run <ph id="ph1">`dotnet new -t lib`</ph> to create the source project.</source>
+          <target state="translated">À l’aide de la commande CD, accédez à ce répertoire, puis exécutez <ph id="ph1">`dotnet new -t lib`</ph> pour créer le projet source.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Rename <ph id="ph1">`Library.cs`</ph> as <ph id="ph2">`PrimeService.cs`</ph>.</source>
+          <target state="translated">Renommez <ph id="ph1">`Library.cs`</ph> <ph id="ph2">`PrimeService.cs`</ph>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>To use test-driven development (TDD), you'll create a failing implementation of the <ph id="ph1">`PrimeService`</ph> class:</source>
+          <target state="translated">Pour utiliser le développement piloté par les tests (TDD), vous devez créer une implémentation défaillante de la classe <ph id="ph1">`PrimeService`</ph> :</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Creating the test project</source>
+          <target state="translated">Création du projet de test</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Next, cd into the 'test' directory, and create the <ph id="ph1">`PrimeServices.Tests`</ph> directory.</source>
+          <target state="translated">Ensuite, à l’aide de la commande CD, accédez au répertoire « test », puis créez le répertoire <ph id="ph1">`PrimeServices.Tests`</ph>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>CD into the <ph id="ph1">`PrimeServices.Tests`</ph> directory and create a new project using <ph id="ph2">`dotnet new -t xunittest`</ph>.</source>
+          <target state="translated">Toujours à l’aide de la commande CD, accédez au répertoire <ph id="ph1">`PrimeServices.Tests`</ph>, puis créez un projet à l’aide de <ph id="ph2">`dotnet new -t xunittest`</ph>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet new -t xunittest`</ph> creates a test project that uses xunit as the test library.</source>
+          <target state="translated"><ph id="ph1">`dotnet new -t xunittest`</ph> crée un projet de test qui utilise xunit comme bibliothèque de test.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The generated template configured the test runner at the root of <ph id="ph1">`project.json`</ph>:</source>
+          <target state="translated">Le modèle généré a configuré Test Runner à la racine de <ph id="ph1">`project.json`</ph> :</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The template also sets the framework node to use <ph id="ph1">`netcoreapp1.0`</ph>, and include the required imports to get xUnit.net to work with .NET Core RTM:</source>
+          <target state="translated">Le modèle définit aussi le nœud frameworks pour utiliser <ph id="ph1">`netcoreapp1.0`</ph> et comprend les importations nécessaires pour permettre à xUnit.net de fonctionner avec la version finale de .NET Core :</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The test project requires other packages to create and run unit tests.</source>
+          <target state="translated">Le projet de test a besoin d’autres packages pour créer et exécuter des tests unitaires.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet new`</ph> added xunit, and the xunit runner.</source>
+          <target state="translated"><ph id="ph1">`dotnet new`</ph> a ajouté xunit et le runner xunit.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You need to add the PrimeService package as another dependency to the project:</source>
+          <target state="translated">Vous devez ajouter au projet le package PrimeService comme autre dépendance :</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Notice that the <ph id="ph1">`PrimeService`</ph> project does not include any directory path information.</source>
+          <target state="translated">Notez que le projet <ph id="ph1">`PrimeService`</ph> ne contient pas d’informations de chemin de répertoire.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Because you created the project structure to match the expected organization of <ph id="ph1">`src`</ph> and <ph id="ph2">`test`</ph>, and the <ph id="ph3">`global.json`</ph> file indicates that, the build system will find the correct location for the project.</source>
+          <target state="translated">Comme vous avez créé la structure de projet en fonction de l’organisation attendue de <ph id="ph1">`src`</ph> et <ph id="ph2">`test`</ph>, et que le fichier <ph id="ph3">`global.json`</ph> indique cela, le système de build trouve l’emplacement correct du projet.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You add the <ph id="ph1">`"target": "project"`</ph> element to inform NuGet that it should look in project directories, not in the NuGet feed.</source>
+          <target state="translated">Vous ajoutez l’élément <ph id="ph1">`"target": "project"`</ph> pour informer NuGet qu’il doit regarder dans les répertoires du projet, et non dans le flux NuGet.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Without this key, you might download a package with the same name as your internal library.</source>
+          <target state="translated">Sans cette clé, vous risquez de télécharger un package ayant le même nom que votre bibliothèque interne.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can see the entire file in the <bpt id="p1">[</bpt>samples repository<ept id="p1">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/project.json)</ept> on GitHub.</source>
+          <target state="translated">Vous pouvez consulter le fichier dans son intégralité dans le <bpt id="p1">[</bpt>dépôt d’exemples<ept id="p1">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/project.json)</ept> sur GitHub.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>After this initial structure is in place, you can write your first test.</source>
+          <target state="translated">Vous pouvez écrire votre premier test dès lors que cette structure initiale est en place.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Once you verify that first unit test, everything is configured and should run smoothly as you add features and tests.</source>
+          <target state="translated">Une fois que vous avez vérifié ce premier test unitaire, tout est configuré et doit s’exécuter correctement à mesure que vous ajoutez des fonctionnalités et des tests.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Creating the first test</source>
+          <target state="translated">Création du premier test</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The TDD approach calls for writing one failing test, then making it pass, then repeating the process.</source>
+          <target state="translated">L’approche TDD impose d’écrire un test défaillant, de le corriger pour qu’il réussisse, puis de répéter le processus.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>So, let's write that one failing test.</source>
+          <target state="translated">Par conséquent, écrivons ce test défaillant.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Remove <ph id="ph1">`program.cs`</ph> from the <ph id="ph2">`PrimeService.Tests`</ph> directory, and create a new C# file with the following content:</source>
+          <target state="translated">Supprimez <ph id="ph1">`program.cs`</ph> du répertoire <ph id="ph2">`PrimeService.Tests`</ph>, puis créez un fichier C# avec le contenu suivant :</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`[Fact]`</ph> attribute denotes a method as a single test.</source>
+          <target state="translated">L’attribut <ph id="ph1">`[Fact]`</ph> désigne une méthode en tant que test unique.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Save this file, then run <ph id="ph1">`dotnet build`</ph> to build the test project.</source>
+          <target state="translated">Enregistrez ce fichier, puis exécutez <ph id="ph1">`dotnet build`</ph> pour générer le projet de test.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you have not already built the <ph id="ph1">`PrimeService`</ph> project, the build system will detect that and build it because it is a dependency of the test project.</source>
+          <target state="translated">Si vous n’avez pas déjà généré le projet <ph id="ph1">`PrimeService`</ph>, le système de génération le détecte et le génère, car il s’agit d’une dépendance du projet de test.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Now, execute <ph id="ph1">`dotnet test`</ph> to run the tests from the console.</source>
+          <target state="translated">À présent, exécutez <ph id="ph1">`dotnet test`</ph> pour exécuter les tests à partir de la console.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The xunit test runner has the program entry point to run your tests from the Console.</source>
+          <target state="translated">Le Test Runner xunit dispose du point d’entrée de programme pour exécuter vos tests à partir de la console.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> starts the test runner, and provides a command line argument to the testrunner indicating the assembly that contains your tests.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph> démarre Test Runner et lui transmet un argument de ligne de commande désignant l’assembly qui contient vos tests.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Your test fails.</source>
+          <target state="translated">Votre test échoue.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You haven't created the implementation yet.</source>
+          <target state="translated">Vous n’avez pas encore créé l’implémentation.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Write the simplest code to make this one test pass:</source>
+          <target state="translated">Écrivez le code le plus simple pour faire en sorte que ce test réussisse :</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Adding More Features</source>
+          <target state="translated">Ajout de fonctionnalités supplémentaires</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Now, that you've made one test pass, it's time to write more.</source>
+          <target state="translated">Maintenant que vous avez fait réussir un test, le moment est venu d’écrire plus de code.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>There are a few other simple cases for prime numbers: 0, -1.</source>
+          <target state="translated">Il existe quelques autres cas simples pour des nombres premiers : 0, -1.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You could add those as new tests, with the <ph id="ph1">`[Fact]`</ph> attribute, but that quickly becomes tedious.</source>
+          <target state="translated">Vous pouvez les ajouter en tant que nouveaux tests, avec l’attribut <ph id="ph1">`[Fact]`</ph>, mais cela devient vite fastidieux.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>There are other xunit attributes that enable you to write a suite of similar tests.</source>
+          <target state="translated">D’autres attributs xunit vous permettent d’écrire une suite de tests similaires.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Theory`</ph> represents a suite of tests that execute the same code, but have different input arguments.</source>
+          <target state="translated">L’attribut <ph id="ph1">`Theory`</ph> représente une suite de tests qui exécutent le même code, mais qui ont des arguments d’entrée différents.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">`[InlineData]`</ph> attribute to specify values for those inputs.</source>
+          <target state="translated">Vous pouvez utiliser l’attribut <ph id="ph1">`[InlineData]`</ph> pour spécifier des valeurs pour ces entrées.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Instead of creating new tests, leverage these two attributes to create a single theory that tests some values less than 2, which is the lowest prime number:</source>
+          <target state="translated">Au lieu de créer de nouveaux tests, servez-vous de ces deux attributs pour créer une théorie unique qui teste des valeurs inférieures à 2, qui est le nombre premier le plus petit :</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Run <ph id="ph1">`dotnet test`</ph> and you'll see that two of these tests fail.</source>
+          <target state="translated">Si vous exécutez <ph id="ph1">`dotnet test`</ph>, vous constaterez que deux de ces tests échouent.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can make them pass by changing the service.</source>
+          <target state="translated">Vous pouvez les faire réussir en changeant de service.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You need to change the <ph id="ph1">`if`</ph> clause at the beginning of the method:</source>
+          <target state="translated">Vous devez modifier la clause <ph id="ph1">`if`</ph> au début de la méthode :</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Now, these tests all pass.</source>
+          <target state="translated">À présent, ces tests réussissent tous.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You continue to iterate by adding more tests, more theories, and more code in the main library.</source>
+          <target state="translated">Poursuivez l’itération en ajoutant plus de tests, plus de théories et plus de code dans la bibliothèque principale.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You'll quickly end up with the <bpt id="p1">[</bpt>finished version of the tests<ept id="p1">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)</ept> and the <bpt id="p2">[</bpt>complete implementation of the library<ept id="p2">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs)</ept>.</source>
+          <target state="translated">Vous parviendrez rapidement à la <bpt id="p1">[</bpt>version finale des tests<ept id="p1">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/test/PrimeService.Tests/PrimeServie_IsPrimeShould.cs)</ept> et à l’<bpt id="p2">[</bpt>implémentation complète de la bibliothèque<ept id="p2">](https://github.com/dotnet/docs/blob/master/samples/core/getting-started/unit-testing-using-dotnet-test/src/PrimeService/PrimeService.cs)</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>You've built a small library and a set of unit tests for that library.</source>
+          <target state="translated">Vous avez créé une petite bibliothèque et un ensemble de tests unitaires pour cette bibliothèque.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You've structured this solution so that adding new packages and tests will be seamless, and you can concentrate on the problem at hand.</source>
+          <target state="translated">Vous avez structuré cette solution de façon à simplifier l’ajout de nouveaux packages et tests, et vous pouvez vous concentrer sur le problème en cours.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The tools will run automatically.</source>
+          <target state="translated">Les outils s’exécuteront automatiquement.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>On Windows platform you can use MSTest.</source>
+          <target state="translated">Sur la plateforme Windows, vous pouvez utiliser MSTest.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Find out more in the <bpt id="p1">[</bpt>Using MSTest on Windows document<ept id="p1">](./using-mstest-on-windows.md)</ept>.</source>
+          <target state="translated">Pour en savoir plus, consultez le document sur l’<bpt id="p1">[</bpt>utilisation de MSTest sur Windows<ept id="p1">](./using-mstest-on-windows.md)</ept>.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
