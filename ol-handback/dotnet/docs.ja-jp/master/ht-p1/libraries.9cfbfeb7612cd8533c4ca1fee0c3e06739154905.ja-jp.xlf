@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">caf72bec4a5d3276d1fdeafc4fa3816e5f00c296</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\libraries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6f2b04e8d5c448a63da146c4d53652c491dd6280</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9d8a57eb4f090a82df9620ac4487c2e4050e2b40</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">クロス プラットフォーム ツールによるライブラリの開発</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">クロス プラットフォーム ツールによるライブラリの開発</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">クロス プラットフォーム ツールによるライブラリの開発</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Some details are subject to change as the toolchain evolves.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>ツールチェーンの進化に伴って、詳細な点が変わる可能性があります。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article covers how to write libraries for .NET using cross-platform CLI tools.</source>
+          <target state="translated">この記事では、クロスプラットフォーム CLI ツールを使用して .NET 用ライブラリを作成する方法について説明します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The CLI provides an efficient and low-level experience that works across any supported OS.</source>
+          <target state="translated">CLI は、サポートされる任意の OS で動作する効率的で低レベルのエクスペリエンスを提供します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can still build libraries with Visual Studio, and if that is your preferred experience <bpt id="p1">[</bpt>refer to the Visual Studio guide<ept id="p1">](libraries-with-vs.md)</ept>.</source>
+          <target state="translated">Visual Studio でライブラリを構築することもできます。Visual Studio で構築する場合は、<bpt id="p1">[</bpt>Visual Studio ガイドを参照<ept id="p1">](libraries-with-vs.md)</ept>してください。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You need <bpt id="p1">[</bpt>the .NET Core SDK and CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept> installed on your machine.</source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core SDK と CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept> がコンピューターにインストールされている必要があります。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For the sections of this document dealing with .NET Framework versions or Portable Class Libraries (PCL), you need the <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept> installed on a Windows machine.</source>
+          <target state="translated">このドキュメントで <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept> バージョンまたはポータブル クラス ライブラリ (PCL) について扱うセクションでは、.NET Framework が Windows コンピューターにインストールされている必要があります。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the <bpt id="p1">[</bpt>.NET target platforms page<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>.</source>
+          <target state="translated">また、古い .NET Framework ターゲットをサポートする場合、<bpt id="p1">[</bpt>.NET ターゲット プラットフォーム ページ<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>から古い .NET Framework バージョンの Targeting/Developer Pack をインストールする必要があります。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Refer to this table:</source>
+          <target state="translated">次の表を参照してください。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>.NET Framework Version</source>
+          <target state="translated">.NET Framework のバージョン</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>What to download</source>
+          <target state="translated">ダウンロードするもの</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6.1 Targeting Pack</source>
+          <target state="translated">.NET Framework 4.6.1 Targeting Pack</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6 Targeting Pack</source>
+          <target state="translated">.NET Framework 4.6 Targeting Pack</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>4.5.2</source>
+          <target state="translated">4.5.2</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.2 Developer Pack</source>
+          <target state="translated">.NET Framework 4.5.2 Developer Pack</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.1 Developer Pack</source>
+          <target state="translated">.NET Framework 4.5.1 Developer Pack</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Windows Software Development Kit for Windows 8</source>
+          <target state="translated">Windows 8 用 Windows ソフトウェア開発キット</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>4.0</source>
+          <target state="translated">4.0</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Windows SDK for Windows 7 and .NET Framework 4</source>
+          <target state="translated">Windows SDK for Windows 7 および .NET Framework 4</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>2.0, 3.0, and 3.5</source>
+          <target state="translated">2.0、3.0、および 3.5</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>.NET Framework 3.5 SP1 Runtime (or Windows 8+ version)</source>
+          <target state="translated">.NET Framework 3.5 SP1 Runtime (または Windows 8 以降のバージョン)</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Standard</source>
+          <target state="translated">.NET Standard をターゲット設定する方法</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you're not quite familiar with the .NET Standard, refer to <bpt id="p1">[</bpt>the .NET Standard Library<ept id="p1">](../../standard/library.md)</ept> to learn more.</source>
+          <target state="translated">.NET Standard にあまりなじみがない場合、詳細については、「<bpt id="p1">[</bpt>.NET Standard Library<ept id="p1">](../../standard/library.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In that article, there is a table which maps .NET Standard versions to various implementations:</source>
+          <target state="translated">この記事には、.NET Standard バージョンを多様な実装にマップする表が掲載されています。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Platform Name</source>
+          <target state="translated">プラットフォーム名</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Alias</source>
+          <target state="translated">Alias</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>.NET Standard</source>
+          <target state="translated">.NET Standard</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>netstandard</source>
+          <target state="translated">netstandard</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>1.1</source>
+          <target state="translated">1.1</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>1.2</source>
+          <target state="translated">1.2</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>1.3</source>
+          <target state="translated">1.3</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>1.4</source>
+          <target state="translated">1.4</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>1.5</source>
+          <target state="translated">1.5</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>1.6</source>
+          <target state="translated">1.6</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>.NET Core</source>
+          <target state="translated">.NET Core</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>netcoreapp</source>
+          <target state="translated">netcoreapp</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>.NET Framework</source>
+          <target state="translated">.NET Framework</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>net</source>
+          <target state="translated">net</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>4.6.2</source>
+          <target state="translated">4.6.2</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>4.6.3</source>
+          <target state="translated">4.6.3</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Mono/Xamarin Platforms</source>
+          <target state="translated">Mono/Xamarin プラットフォーム</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Universal Windows Platform</source>
+          <target state="translated">ユニバーサル Windows プラットフォーム</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>uap</source>
+          <target state="translated">uap</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>10.0</source>
+          <target state="translated">10.0</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <target state="translated">Windows</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>win</source>
+          <target state="translated">win</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Windows Phone</source>
+          <target state="translated">Windows Phone</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>wpa</source>
+          <target state="translated">wpa</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Windows Phone Silverlight</source>
+          <target state="translated">Windows Phone Silverlight</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>wp</source>
+          <target state="translated">wp</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Here's what this table means for the purposes of creating a library:</source>
+          <target state="translated">ライブラリを作成する目的でこの表の意味について説明します。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.</source>
+          <target state="translated">選択する .NET Platform Standard のバージョンは、最新の API にアクセスできることと、より多くの .NET プラットフォームと Framework バージョンをターゲット設定できることのトレードオフで決まります。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You control the range of targetable platforms and versions by picking a version of <ph id="ph1">`netstandardX.X`</ph> (Where <ph id="ph2">`X.X`</ph> is a version number) and adding it to your <ph id="ph3">`project.json`</ph> file.</source>
+          <target state="translated">ターゲット設定可能なプラットフォームとバージョンの範囲は、<ph id="ph1">`netstandardX.X`</ph> のバージョンを選択し (<ph id="ph2">`X.X`</ph> はバージョン番号です)、<ph id="ph3">`project.json`</ph> ファイルに追加することで制御します。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Additionally, the corresponding <bpt id="p1">[</bpt>NuGet package to depend on<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept> is <ph id="ph1">`NETStandard.Library`</ph> version <ph id="ph2">`1.6.0`</ph>.</source>
+          <target state="translated">さらに、<bpt id="p1">[</bpt>依存する NuGet パッケージ<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept>に対応するのは <ph id="ph1">`NETStandard.Library`</ph> バージョン <ph id="ph2">`1.6.0`</ph> です。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although there's nothing preventing you from depending on <ph id="ph1">`Microsoft.NETCore.App`</ph> like with console apps, it's generally not recommended.</source>
+          <target state="translated">コンソール アプリなど、<ph id="ph1">`Microsoft.NETCore.App`</ph> への依存を妨げるものは何もありませんが、一般的には推奨されません。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If you need APIs from a package not specified in <ph id="ph1">`NETStandard.Library`</ph>, you can always specify that package in addition to <ph id="ph2">`NETStandard.Library`</ph> in the <ph id="ph3">`dependencies`</ph> section of your <ph id="ph4">`project.json`</ph> file.</source>
+          <target state="translated"><ph id="ph1">`NETStandard.Library`</ph> で指定されていないパッケージの API が必要な場合は、<ph id="ph2">`NETStandard.Library`</ph> に加え、<ph id="ph4">`project.json`</ph> ファイルの <ph id="ph3">`dependencies`</ph> セクションにそのバージョンを指定できます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You have three primary options when targeting the .NET Standard, depending on your needs.</source>
+          <target state="translated">.NET Standard をターゲット設定する場合、ニーズに応じて主に 3 つのオプションがあります。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can use the latest version of the .NET Standard - <ph id="ph1">`netstandard1.6`</ph> - which is for when you want access to the most APIs and don't mind if you have less reach across implementations.</source>
+          <target state="translated">最新バージョンの .NET Standard である <ph id="ph1">`netstandard1.6`</ph> を使用できます。最新の API にアクセスできることを重視し、対応する実装が少なくなることが気にならない場合にお勧めです。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can use a lower version of the .NET Standard to target earlier .NET implementations.</source>
+          <target state="translated">古いバージョンの .NET Standard を使用すると、以前の .NET 実装をターゲットに設定することができます。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The cost here is not having access to some of the latest APIs.</source>
+          <target state="translated">この場合、一部の最新の API にアクセスできないという欠点があります。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, if you wanted to have guaranteed compatibility with .NET Framework 4.6 and higher, you would pick <ph id="ph1">`netstandard1.3`</ph>:</source>
+          <target state="translated">たとえば、.NET Framework 4.6 以降との互換性を保証する場合は、<ph id="ph1">`netstandard1.3`</ph> を選択します。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>.NET Standard versions are backward compatible.</source>
+          <target state="translated">.NET Standard バージョンは下位互換性があります。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>That means that <ph id="ph1">`netstandard1.0`</ph> libraries run on <ph id="ph2">`netstandard1.1`</ph> platforms and higher.</source>
+          <target state="translated">つまり、<ph id="ph1">`netstandard1.0`</ph> ライブラリは、<ph id="ph2">`netstandard1.1`</ph> プラットフォーム以降で実行されます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.</source>
+          <target state="translated">ただし、上位互換性はないため、古い .NET Standard プラットフォームは新しいプラットフォームを参照できません。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This means that <ph id="ph1">`netstandard1.0`</ph> libraries cannot reference libraries targeting <ph id="ph2">`netstandard1.1`</ph> or higher.</source>
+          <target state="translated">つまり、<ph id="ph1">`netstandard1.0`</ph> ライブラリは、<ph id="ph2">`netstandard1.1`</ph> 以降をターゲットとするライブラリを参照できません。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Select the Standard version that has the right mix of APIs and platform support for your needs.</source>
+          <target state="translated">API とプラットフォームを適切に組み合わせ、ニーズに対応できる Standard バージョンを選択してください。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, <ph id="ph1">`System.Drawing`</ph>), read the following sections and learn how to multitarget.</source>
+          <target state="translated">.NET Framework バージョン 4.0 以前をターゲットにする場合、または .NET Framework では利用できて .NET Standard では利用できない API (<ph id="ph1">`System.Drawing`</ph> など) を使用する場合は、マルチターゲットの方法について次のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Framework</source>
+          <target state="translated">.NET Framework をターゲット設定する方法</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">次の手順では、.NET Framework がコンピューターにインストールされていると想定しています。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">依存関係のインストールについては、「<bpt id="p1">[</bpt>前提条件<ept id="p1">](#prerequisites)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Keep in mind that some of the .NET Framework versions used here are no longer in support.</source>
+          <target state="translated">ここで使用されている .NET Framework バージョンには、現在サポートされていないものもあります。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>.NET Framework Support Lifecycle Policy FAQ<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept> about unsupported versions.</source>
+          <target state="translated">サポートされないバージョンについては、「<bpt id="p1">[</bpt>.NET Framework Support Lifecycle Policy FAQ<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept>」(.NET Framework のサポート ライフサイクル ポリシーについてよく寄せられる質問) を参照してください。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you want to reach the maximum number of developers and projects, use the .NET Framework 4 as your baseline target.</source>
+          <target state="translated">最大数の開発者とプロジェクトを対象にしたい場合、基準となるターゲットは .NET Framework 4 です。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.</source>
+          <target state="translated">.NET Framework をターゲット設定するには、まず、サポートしたい .NET Framework バージョンに対応する正しいターゲット フレームワーク モニカー (TFM) を使用します。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For example, here's how you would write a library which targets the .NET Framework 4:</source>
+          <target state="translated">.NET Framework 4 をターゲットとするライブラリを作成する例を次に示します。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">以上です。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Although this compiled only for the .NET Framework 4, you can use the library on newer versions of the .NET Framework.</source>
+          <target state="translated">これは .NET Framework 4 向けにのみコンパイルされていますが、新しいバージョンの .NET Framework のライブラリを使用できます。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>How to target a Portable Class Library (PCL)</source>
+          <target state="translated">ポータブル クラス ライブラリ (PCL) をターゲット設定する方法</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">次の手順では、.NET Framework がコンピューターにインストールされていると想定しています。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">依存関係のインストールについては、「<bpt id="p1">[</bpt>前提条件<ept id="p1">](#prerequisites)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.</source>
+          <target state="translated">PCL プロファイルのターゲット設定は、.NET Standard や .NET Framework のターゲット設定よりも少し複雑です。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For starters, <bpt id="p1">[</bpt>reference this list of PCL profiles<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> to find the NuGet target which corresponds to the PCL profile you are targeting.</source>
+          <target state="translated">初心者の場合は、<bpt id="p1">[</bpt>この PCL プロファイル一覧を参照<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept>して、ターゲットとする PCL プロファイルに対応する NuGet ターゲットを見つけてください。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Then, you need to do the following:</source>
+          <target state="translated">次に、以下の手順を実行します。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Create a new entry under <ph id="ph1">`frameworks`</ph> in your <ph id="ph2">`project.json`</ph>, named <ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph>, where <ph id="ph4">`{version}`</ph> and <ph id="ph5">`{profile}`</ph> correspond to a PCL version number and Profile number, respectively.</source>
+          <target state="translated"><ph id="ph2">`project.json`</ph> の <ph id="ph1">`frameworks`</ph> に <ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph> という新しいエントリを作成します。この <ph id="ph4">`{version}`</ph> と <ph id="ph5">`{profile}`</ph> は、それぞれ PCL バージョン番号とプロファイル番号に対応します。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>In this new entry, list every single assembly used for that target under a <ph id="ph1">`frameworkAssemblies`</ph> entry.</source>
+          <target state="translated">この新しいエントリに、<ph id="ph1">`frameworkAssemblies`</ph> エントリ以下のそのターゲットに使用する各アセンブリを列挙します。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This includes <ph id="ph1">`mscorlib`</ph>, <ph id="ph2">`System`</ph>, and <ph id="ph3">`System.Core`</ph>.</source>
+          <target state="translated">これには、<ph id="ph1">`mscorlib`</ph>、<ph id="ph2">`System`</ph>、<ph id="ph3">`System.Core`</ph> が含まれます。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting (see the next section), you must explicitly list dependencies for each target under their target entries.</source>
+          <target state="translated">マルチターゲット設定の場合 (次のセクションを参照してください)、ターゲット エントリ以下に各ターゲットの依存関係を明示的に列挙する必要があります。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You won't be able to use a global <ph id="ph1">`dependencies`</ph> entry anymore.</source>
+          <target state="translated">グローバル <ph id="ph1">`dependencies`</ph> エントリを使用できなくなります。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following is an example targeting PCL Profile 328.</source>
+          <target state="translated">次に、PCL Profile 328 をターゲット設定する例を次に示します。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Profile 328 supports: .NET Standard 1.4, .NET Framework 4, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8.1, and Silverlight 5.</source>
+          <target state="translated">Profile 328 は、.NET Standard 1.4、.NET Framework 4、Windows 8、Windows Phone 8.1、Windows Phone Silverlight 8.1、Silverlight 5 をサポートしています。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 as a framework in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have this subfolder in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated"><bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> ファイルのフレームワークとして PCL Profile 328 を含むプロジェクトをビルドすると、<bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> フォルダーにこのサブフォルダーが作成されます。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This folder contains the <ph id="ph1">`.dll`</ph> files necessary to run your library.</source>
+          <target state="translated">このフォルダーには、ライブラリの実行に必要な <ph id="ph1">`.dll`</ph> ファイルが含まれています。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>How to Multitarget</source>
+          <target state="translated">マルチターゲットを設定する方法</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">次の手順では、.NET Framework がコンピューターにインストールされている想定です。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> section to learn which dependencies you need to install and where to download them from.</source>
+          <target state="translated">インストールする必要がある依存関係と、そのダウンロードできる場所については、「<bpt id="p1">[</bpt>前提条件<ept id="p1">](#prerequisites)</ept>」セクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core.</source>
+          <target state="translated">プロジェクトが .NET Framework と .NET Core の両方をサポートしている場合、状況によっては古いバージョンの .NET Framework をターゲットにする必要があります。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In this scenario, if you want to use newer APIs and language constructs for the newer targets, use <ph id="ph1">`#if`</ph> directives in your code.</source>
+          <target state="translated">このシナリオで、新しい API と新しいターゲット向けの言語構成を使用する場合、コードで <ph id="ph1">`#if`</ph> ディレクティブを使用します。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You also might need to add different packages and dependencies in your <ph id="ph1">`project.json file`</ph> for each platform you're targeting to include the different APIs needed for each case.</source>
+          <target state="translated">また、必要に応じて、ターゲットにする各プラットフォームの <ph id="ph1">`project.json file`</ph> に異なるパッケージと依存関係追加して、それぞれに異なる必要な API を含めます。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For example, let's say you have a library that performs networking operations over HTTP.</source>
+          <target state="translated">たとえば、HTTP 上でネットワークキング操作を行うライブラリがあるとします。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>For .NET Standard and the .NET Framework versions 4.5 or higher, you can use the <ph id="ph1">`HttpClient`</ph> class from the <ph id="ph2">`System.Net.Http`</ph> namespace.</source>
+          <target state="translated">.NET Standard と .NET Framework バージョン 4.5 以降の場合、<ph id="ph2">`System.Net.Http`</ph> 名前空間の <ph id="ph1">`HttpClient`</ph> クラスを使用できます。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>However, earlier versions of the .NET Framework don't have the <ph id="ph1">`HttpClient`</ph> class, so you could use the <ph id="ph2">`WebClient`</ph> class from the <ph id="ph3">`System.Net`</ph> namespace for those instead.</source>
+          <target state="translated">ただし、それより前のバージョンの .NET Framework に <ph id="ph1">`HttpClient`</ph> クラスはないので、代わりに <ph id="ph3">`System.Net`</ph> 名前空間の <ph id="ph2">`WebClient`</ph> クラスを使用できます。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>So, the <ph id="ph1">`project.json`</ph> file could look like this:</source>
+          <target state="translated">そこで <ph id="ph1">`project.json`</ph> ファイルは次のようになります。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Note that the .NET Framework assemblies need to be referenced explicitly in the <ph id="ph1">`net40`</ph> and <ph id="ph2">`net452`</ph> target, and NuGet references are also explicitly listed in the <ph id="ph3">`netstandard1.6`</ph> target.</source>
+          <target state="translated">.NET Framework アセンブリは、<ph id="ph1">`net40`</ph> および <ph id="ph2">`net452`</ph> ターゲットで明示的に参照する必要があり、NuGet 参照も <ph id="ph3">`netstandard1.6`</ph> ターゲットに明示的に列挙する必要があります。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This is required in multitargeting scenarios.</source>
+          <target state="translated">これはマルチターゲット シナリオで必要です。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Next, the <ph id="ph1">`using`</ph> statements in your source file can be adjusted like this:</source>
+          <target state="translated">次に、ソース ファイルの <ph id="ph1">`using`</ph> ステートメントは次のように調整できます。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The build system is aware of the following preprocessor symbols used in <ph id="ph1">`#if`</ph> directives:</source>
+          <target state="translated">ビルド システムは <ph id="ph1">`#if`</ph> ディレクティブで使用される次のプリプロセッサ シンボルを認識します。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>And in the middle of the source, you can use <ph id="ph1">`#if`</ph> directives to use those libraries conditionally.</source>
+          <target state="translated">また、ソースの中で <ph id="ph1">`#if`</ph> を使用して、そのライブラリを条件付きで使用することができます。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例:</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes <ph id="ph1">`net40`</ph>, <ph id="ph2">`net45`</ph>, and <ph id="ph3">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated"><bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> ファイルのフレームワークとして <ph id="ph1">`net40`</ph>、<ph id="ph2">`net45`</ph>、<ph id="ph3">`netstandard1.6`</ph> を含むプロジェクトをビルドすると、<bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> フォルダーにこれらのサブフォルダーが作成されます。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>But What about Multitargeting with Portable Class Libraries?</source>
+          <target state="translated">ポータブル クラス ライブラリを使用したマルチターゲットの概要</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>If you want to cross-compile with a PCL target, you must add a build definition in your <ph id="ph1">`project.json`</ph> file under <ph id="ph2">`buildOptions`</ph> in your PCL target.</source>
+          <target state="translated">PCL ターゲットでクロスコンパイルする場合、PCL ターゲットの <ph id="ph2">`buildOptions`</ph> の <ph id="ph1">`project.json`</ph> ファイルにビルド定義を追加する必要があります。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You can then use <ph id="ph1">`#if`</ph> directives in the source which use the build definition as a preprocessor symbol.</source>
+          <target state="translated">ソースに、プリプロセッサ シンボルとしてビルド定義を使用する <ph id="ph1">`#if`</ph> ディレクティブを使用できます。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>For example, if you want to target <bpt id="p1">[</bpt>PCL profile 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> (The .NET Framework 4, Windows 8, Windows Phone Silverlight 8, Windows Phone 8.1, Silverlight 5), you could to refer to it to as "PORTABLE328" when cross-compiling.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>PCL profile 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> をターゲット設定する場合 (.NET Framework 4、Windows 8、Windows Phone Silverlight 8、Windows Phone 8.1、Silverlight 5)、クロスコンパイル時にこれを "PORTABLE328" として参照することができます。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Simply add it to the <ph id="ph1">`project.json`</ph> file as a <ph id="ph2">`buildOptions`</ph> attribute:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> ファイルを <ph id="ph2">`buildOptions`</ph> 属性として追加するだけの処理です。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Now you can conditionally compile against that target:</source>
+          <target state="translated">これで、そのターゲットに対して条件付きでコンパイルできるようになりました。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`PORTABLE328`</ph> is now recognized by the compiler, the PCL Profile 328 library generated by a compiler will not include <ph id="ph2">`System.Net.Http`</ph> or <ph id="ph3">`System.Threading.Tasks`</ph>.</source>
+          <target state="translated"><ph id="ph1">`PORTABLE328`</ph> はコンパイラから認識されるようになったので、コンパイラで生成される PCL Profile 328 ライブラリに <ph id="ph2">`System.Net.Http`</ph> または <ph id="ph3">`System.Threading.Tasks`</ph> は含まれません。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 and <ph id="ph1">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated"><bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> ファイルのフレームワークとして PCL Profile 328 と <ph id="ph1">`netstandard1.6`</ph> を含むプロジェクトをビルドすると、<bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> フォルダーにこれらのサブフォルダーが作成されます。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>How to use native dependencies</source>
+          <target state="translated">ネイティブの依存関係を使用する方法</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>You may wish to write a library which depends on a native <ph id="ph1">`.dll`</ph> file.</source>
+          <target state="translated">ネイティブの <ph id="ph1">`.dll`</ph> ファイルに依存するライブラリを作成する場合があります。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>If you're writing such a library, you have have two options:</source>
+          <target state="translated">このようなライブラリを作成する場合、2 つの選択肢があります。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Reference the native <ph id="ph1">`.dll`</ph> directly in your <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated"><ph id="ph2">`project.json`</ph> で <ph id="ph1">`.dll`</ph> を直接参照します。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Package that <ph id="ph1">`.dll`</ph> into its own NuGet package and depend on that package.</source>
+          <target state="translated">その <ph id="ph1">`.dll`</ph> を独自の NuGet パッケージにパッケージ化し、そのパッケージに依存します。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For the first option, you'll need to include the following in your <ph id="ph1">`project.json`</ph> file:</source>
+          <target state="translated">1 つ目の選択肢では、<ph id="ph1">`project.json`</ph> ファイルに次を含める必要があります。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Setting <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in a <ph id="ph3">`buildOptions`</ph> section.</source>
+          <target state="translated"><ph id="ph3">`buildOptions`</ph> セクションの <ph id="ph1">`allowUnsafe`</ph> を <ph id="ph2">`true`</ph> に設定に設定します。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Specifying a <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md)</ept> in a <ph id="ph1">`runtimes`</ph> section.</source>
+          <target state="translated"><ph id="ph1">`runtimes`</ph> セクションで<bpt id="p1">[</bpt>ランタイム識別子 (RID)<ept id="p1">](../rid-catalog.md)</ept> を指定します。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Specifying the path to the native <ph id="ph1">`.dll`</ph> file(s) that you are referencing.</source>
+          <target state="translated">参照しているネイティブの <ph id="ph1">`.dll`</ph> ファイルのパスを指定します。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Here's an example <ph id="ph1">`project.json`</ph> for a native <ph id="ph2">`.dll`</ph> file in the root directory of the project which runs on Windows:</source>
+          <target state="translated">Windows で実行されているプロジェクトのルート ディレクトリにあるネイティブの <ph id="ph2">`.dll`</ph> ファイルの <ph id="ph1">`project.json`</ph> の例を次に示します。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you're distributing your library as a package, it's recommended that you place the <ph id="ph1">`.dll`</ph> file at the root level of your project.</source>
+          <target state="translated">ライブラリをパッケージとして配布する場合、<ph id="ph1">`.dll`</ph> ファイルをプロジェクトのルート レベルに配置することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For the second option, you'll need to build a NuGet package out of your <ph id="ph1">`.dll`</ph> file(s), host on a NuGet or MyGet feed, and depend on it directly.</source>
+          <target state="translated">2 つ目の選択肢では、<ph id="ph1">`.dll`</ph> ファイルから NuGet パッケージをビルドし、NuGet または MyGet フィードでホストし、直接依存する必要があります。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You'll still need to set <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in the <ph id="ph3">`buildOptions`</ph> section of your <ph id="ph4">`project.json`</ph>.</source>
+          <target state="translated">この場合も、<ph id="ph4">`project.json`</ph> の <ph id="ph3">`buildOptions`</ph> セクションで <ph id="ph1">`allowUnsafe`</ph> を <ph id="ph2">`true`</ph> に設定する必要があります。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Here's an example (assuming <ph id="ph1">`MyNativeLib`</ph> is a Nuget package at version <ph id="ph2">`1.2.0`</ph>):</source>
+          <target state="translated">次に例を示します (<ph id="ph1">`MyNativeLib`</ph> はバージョン <ph id="ph2">`1.2.0`</ph> の NuGet パッケージという想定です)。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To see an example of packaging up cross-platform native binaries, check out the <bpt id="p1">[</bpt>ASP.NET Libuv Package<ept id="p1">](https://github.com/aspnet/libuv-package)</ept> and the <bpt id="p2">[</bpt>corresponding reference in KestrelHttpServer<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>.</source>
+          <target state="translated">クロスプラットフォームのネイティブ バイナリをパッケージ化する例については、<bpt id="p1">[</bpt>ASP.NET Libuv パッケージ<ept id="p1">](https://github.com/aspnet/libuv-package)</ept>と、<bpt id="p2">[</bpt>KestrelHttpServer の対応するリファレンス<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>を参照してください。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>How to test libraries on .NET Core</source>
+          <target state="translated">.NET Core でライブラリをテストする方法</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>It's important to be able to test across platforms.</source>
+          <target state="translated">プラットフォーム全体でテストできることが重要です。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It's easiest to use <bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept>, which is also the testing tool used by .NET Core projects.</source>
+          <target state="translated"><bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept> を使用するのが最も簡単です。xUnit は、.NET Core プロジェクトで使用されるテスト ツールでもあります。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>How you set up your solution with test projects will depend on the <bpt id="p1">[</bpt>structure of your solution<ept id="p1">](#structuring-a-solution)</ept>.</source>
+          <target state="translated">テスト プロジェクトでソリューションをセットアップする方法は、<bpt id="p1">[</bpt>ソリューションの構造<ept id="p1">](#structuring-a-solution)</ept>によって異なります。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The following example assumes that all source projects are under a top-level <ph id="ph1">`/src`</ph> folder and all test projects are under a top-level <ph id="ph2">`/test`</ph> folder.</source>
+          <target state="translated">次の例では、すべてのソース プロジェクトが最上位レベルの <ph id="ph1">`/src`</ph> フォルダー以下にあり、すべてのテスト プロジェクトが最上位レベルの <ph id="ph2">`/test`</ph> フォルダー以下にあるという想定です。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Ensure you have a <ph id="ph1">`global.json`</ph> file at the solution level which understands where the test projects are:</source>
+          <target state="translated">テスト プロジェクトがある場所がわかるソリューション レベルに <ph id="ph1">`global.json`</ph> ファイルを配置してください。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Your solution folder structure should then look like this:</source>
+          <target state="translated">ソリューション フォルダーの構造は次のようになります。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Create a new test project by creating a project folder under your <ph id="ph1">`/test`</ph> folder, and a <ph id="ph2">`project.json`</ph> file in the new project folder.</source>
+          <target state="translated"><ph id="ph1">`/test`</ph> フォルダー以下にプロジェクト フォルダーを作成し、その新しいプロジェクト フォルダーに新しいテスト プロジェクトの <ph id="ph2">`project.json`</ph> ファイルを作成します。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>To create the <ph id="ph1">`project.json`</ph> file you can run the <ph id="ph2">`dotnet new`</ph> command and modify the <ph id="ph3">`project.json`</ph> file afterwards.</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> ファイルを作成するには、<ph id="ph2">`dotnet new`</ph> コマンドを実行し、後で <ph id="ph3">`project.json`</ph> ファイルを変更します。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The file should have the following:</source>
+          <target state="translated">ファイルは次のようになります。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`netcoreapp1.0`</ph> listed as the only entry under <ph id="ph2">`frameworks`</ph>.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> は <ph id="ph2">`frameworks`</ph> 以下のエントリとしてのみ列挙されます。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`Microsoft.NETCore.App`</ph> version <ph id="ph2">`1.0.0`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Microsoft.NETCore.App`</ph> バージョン <ph id="ph2">`1.0.0`</ph> の参照。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>A reference to xUnit version <ph id="ph1">`2.2.0-beta2-build3300`</ph>.</source>
+          <target state="translated">xUnit バージョン <ph id="ph1">`2.2.0-beta2-build3300`</ph> の参照。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph> version <ph id="ph2">`2.2.0-preview2-build1029`</ph></source>
+          <target state="translated"><ph id="ph1">`dotnet-test-xunit`</ph> バージョン <ph id="ph2">`2.2.0-preview2-build1029`</ph> の参照。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>A project reference to the library being tested.</source>
+          <target state="translated">テスト対象のライブラリのプロジェクト参照。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The entry <ph id="ph1">`"testRunner":"xunit"`</ph>.</source>
+          <target state="translated">エントリ <ph id="ph1">`"testRunner":"xunit"`</ph>。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Here's an example (<ph id="ph1">`LibraryUnderTest`</ph> version <ph id="ph2">`1.0.0`</ph> is the library being tested):</source>
+          <target state="translated">次に例を示します (<ph id="ph1">`LibraryUnderTest`</ph> バージョン <ph id="ph2">`1.0.0`</ph> はテスト対象のライブラリです)。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Restore packages by running <ph id="ph1">`dotnet restore`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph> を実行してパッケージを復元します。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You should do this at the solution level if you haven't restored packages yet.</source>
+          <target state="translated">パッケージをまだ復元したことがない場合は、この操作をソリューション レベルで実行することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Navigate to your test project and run tests with <ph id="ph1">`dotnet test`</ph>:</source>
+          <target state="translated">テスト プロジェクトに移動し、<ph id="ph1">`dotnet test`</ph> でテストを実行します。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">以上です。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can now test your library across all platforms using command line tools.</source>
+          <target state="translated">コマンド ライン ツールを使用して、すべてのプラットフォームでライブラリをテストできるようになりました。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>To continue testing now that you have everything set up, testing your library is very simple:</source>
+          <target state="translated">すべてをセットアップしてテストに進む場合、ライブラリのテストはとても単純です。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Make changes to your library.</source>
+          <target state="translated">ライブラリに変更を加えます。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Run tests from the command line, in your test directory, with <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated">コマンド ラインから、<ph id="ph1">`dotnet test`</ph> コマンドを使用してテスト ディレクトリでテストを実行します。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Your code will be automatically rebuilt when you invoke <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph> コマンドを呼び出すと、コードは自動的にリビルドされます。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Just remember to run <ph id="ph1">`dotnet restore`</ph> from the command line any time you add a new dependency and you'll be good to go!</source>
+          <target state="translated">新しい以下を追加するたびに、忘れずにコマンド ラインから <ph id="ph1">`dotnet restore`</ph> を実行するだけで完了です。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>How to use multiple projects</source>
+          <target state="translated">複数のプロジェクトを使用する方法</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>A common need for larger libraries is to place functionality in different projects.</source>
+          <target state="translated">大規模なライブラリで一般的なニーズは、複数のプロジェクトに機能を配置することです。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Imagine you wished to build a library which could be consumed in idiomatic C# and F#.</source>
+          <target state="translated">たとえば、慣用的な C# や F# で使用できるライブラリをビルドするとします。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>That would mean that consumers of your library consume them in ways which are natural to C# or F#.</source>
+          <target state="translated">これは、ライブラリのユーザーは、C# または F# に対して自然な方法で使用することを意味します。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>For example, in C# you might consume the library like this:</source>
+          <target state="translated">たとえば、C# の場合、次のようにライブラリを使用できます。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>In F#, it might look like this:</source>
+          <target state="translated">F# の場合は次のようになります。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.</source>
+          <target state="translated">このような使用シナリオは、アクセスされる API が C# と F# 用に異なる構造を持つ必要があることを示します。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.</source>
+          <target state="translated">これを実現する一般的なアプローチとして、ライブラリのすべてのロジックをコア プロジェクトに取り入れ、C# および F# プロジェクトでコア プロジェクトに呼び出す API レイヤーを定義する方法があります。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The rest of the section will use the following names:</source>
+          <target state="translated">以降のセクションでは、次の名前を使用します。</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - A core project which contains all logic for the library</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - ライブラリのすべてのロジックを含むコア プロジェクト</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in C</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - C で使用するためのパブリック API を含むプロジェクト</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in F</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - F で使用するためのパブリック API を含むプロジェクト</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Project-to-project referencing</source>
+          <target state="translated">プロジェクト間参照</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The best way to reference a project is to do the following:</source>
+          <target state="translated">プロジェクトを参照する最適な方法は次のとおりです。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Make sure the project you wish to reference has a good name for its containing folder on disk.</source>
+          <target state="translated">参照するプロジェクトを、ディスクに含まれるフォルダーに適した名前にする必要があります。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This will be the name used to reference your project.</source>
+          <target state="translated">これは、プロジェクトの参照に使用される名前になります。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Reference the name from (1) in the <ph id="ph1">`project.json`</ph> file of the consuming project specifying <ph id="ph2">`"target":"project"`</ph>.</source>
+          <target state="translated"><ph id="ph2">`"target":"project"`</ph> を指定して、使用するプロジェクトの <ph id="ph1">`project.json`</ph> ファイルの (1) から名前を参照します。</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.json`</ph> files for both <bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> and <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> now need to reference <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept> as a <ph id="ph2">`project`</ph> target.</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> と <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> の両方の <ph id="ph1">`project.json`</ph> ファイルは、<ph id="ph2">`project`</ph> ターゲットとして <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept> を参照する必要があります。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If you aren't multitargeting, you can use the global <ph id="ph1">`dependencies`</ph> entry:</source>
+          <target state="translated">マルチターゲット設定していない場合、グローバル <ph id="ph1">`dependencies`</ph> エントリを使用できます。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting, you may not be able to use a global <ph id="ph1">`dependencies`</ph> entry and may have to reference <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> in a target-level <ph id="ph2">`dependencies`</ph> entry.</source>
+          <target state="translated">マルチターゲット設定している場合、グローバル <ph id="ph1">`dependencies`</ph> エントリを使用できない場合があります。また、必要に応じて、ターゲットレベルの <ph id="ph2">`dependencies`</ph> エントリで <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> を参照します。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>For example, if you were targeting <ph id="ph1">`netstandard1.6`</ph>, you could do so like this:</source>
+          <target state="translated">たとえば、<ph id="ph1">`netstandard1.6`</ph> をターゲット設定している場合は、次のように実行できます。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Structuring a Solution</source>
+          <target state="translated">ソリューションの構築</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Another important aspect of multi-project solutions is establishing a good overall project structure.</source>
+          <target state="translated">マルチプロジェクト ソリューションのもう 1 つの重要な側面は、全体のプロジェクト構造を適切に構築することです。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>To structure a multi-project library, you must use top-level <ph id="ph1">`/src`</ph> and <ph id="ph2">`/test`</ph> folders:</source>
+          <target state="translated">マルチプロジェクト ライブラリを構築するには、最上位レベルの <ph id="ph1">`/src`</ph> フォルダーと <ph id="ph2">`/test`</ph> フォルダーを使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file for this solution would look like this:</source>
+          <target state="translated">このソリューションの <ph id="ph1">`global.json`</ph> ファイルは次のようになります。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>This approach follows the same pattern established by project templates in the <ph id="ph1">`dotnet new`</ph> command establish, where all projects are placed under a <ph id="ph2">`/src`</ph> directory and all tests are placed under a <ph id="ph3">`/test`</ph> directory.</source>
+          <target state="translated">このアプローチは、<ph id="ph1">`dotnet new`</ph> コマンドのプロジェクト テンプレートで確立された同じパターンに従います。すべてのプロジェクトは <ph id="ph2">`/src`</ph> ディレクトリに配置され、すべてのテストは <ph id="ph3">`/test`</ph> ディレクトリに配置されます。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Here's how you could restore packages, build, and test your entire project:</source>
+          <target state="translated">パッケージを復元し、プロジェクト全体をビルドし、テストする方法は次のとおりです。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">以上です。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

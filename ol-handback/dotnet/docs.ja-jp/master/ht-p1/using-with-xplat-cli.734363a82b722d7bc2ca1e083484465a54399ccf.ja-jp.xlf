@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aafa0c110dc3a2820f7e050d70b9450af1db35d8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\using-with-xplat-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ad728e8551de1a665eaf4799620996b7afda6d0</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1cc7baffec32a9306cc56315ec41e6862db64d33</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line</source>
+          <target state="translated">Windows/Linux/macOS の .NET Core でのコマンド ラインの使用に関する概要</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)</source>
+          <target state="translated">Windows、Linux、または macOS の .NET Core での、.NET Core コマンド ライン インターフェイス (CLI) の使用に関する概要</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line</source>
+          <target state="translated">Windows/Linux/macOS の .NET Core でのコマンド ラインの使用に関する概要</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.</source>
+          <target state="translated">このガイドでは、.NET Core CLI ツールを使用してクロスプラットフォーム コンソール アプリを作成する方法を説明します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It will start with the most basic console app and eventually span multiple projects, including testing.</source>
+          <target state="translated">最も基本的なコンソール アプリから始めて、最終的にテストを含む複数プロジェクトまで拡張します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You'll add these features step-by-step, building on what you've already seen and built.</source>
+          <target state="translated">既に作成してあるものを基にして、これらの機能を追加していきます。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you're unfamiliar with the .NET Core CLI toolset, read <bpt id="p1">[</bpt>the .NET Core SDK overview<ept id="p1">](../sdk.md)</ept>.</source>
+          <target state="translated">.NET Core CLI ツールセットに慣れていない場合は、「<bpt id="p1">[</bpt>.NET Core SDK overview<ept id="p1">](../sdk.md)</ept>」(.NET Core SDK の概要) を参照してください。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Before you begin, ensure you have the <bpt id="p1">[</bpt>latest .NET Core CLI tooling<ept id="p1">](https://www.microsoft.com/net/core)</ept>.</source>
+          <target state="translated">始める前に、<bpt id="p1">[</bpt>最新の .NET Core CLI ツール<ept id="p1">](https://www.microsoft.com/net/core)</ept>があることを確認します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You'll also need a text editor.</source>
+          <target state="translated">テキスト エディターも必要です。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Hello, Console App!</source>
+          <target state="translated">Hello コンソール アプリ</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>First, navigate to or create a new folder with a name you like.</source>
+          <target state="translated">最初に、適切な名前のフォルダーに移動するか、新しく作成します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>"Hello" is the name chosen for the sample code, which can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>.</source>
+          <target state="translated">サンプル コードでは "Hello" という名前を使用しています (<bpt id="p1">[</bpt>こちら<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>を参照)。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Open up a command prompt and type the following:</source>
+          <target state="translated">コマンド プロンプトを開いて次のように入力します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Let's do a quick walkthrough:</source>
+          <target state="translated">簡単に説明します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> creates an up-to-date <ph id="ph2">`project.json`</ph> file with NuGet dependencies necessary to build a console app.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> は、コンソール アプリのビルドに必要な NuGet 依存関係を含む最新の <ph id="ph2">`project.json`</ph> ファイルを作成します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>It also creates a <ph id="ph1">`Program.cs`</ph>, a basic file containing the entry point for the application.</source>
+          <target state="translated">また、アプリケーションのエントリ ポイントを含む基本的なファイルである <ph id="ph1">`Program.cs`</ph> も作成します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> calls into NuGet to restore the tree of dependencies.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> は、NuGet を参照して依存関係のツリーを復元します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>NuGet analyzes the <ph id="ph1">`project.json`</ph> file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">NuGet は、<ph id="ph1">`project.json`</ph> ファイルを分析し、ファイルに記載されている依存関係をダウンロードして (またはコンピューターのキャッシュから取得して)、<ph id="ph2">`project.lock.json`</ph> ファイルを書き込みます。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.lock.json`</ph> file is necessary to be able to compile and run.</source>
+          <target state="translated"><ph id="ph1">`project.lock.json`</ph> ファイルをコンパイルして実行できる必要があります。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.lock.json`</ph> file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.</source>
+          <target state="translated"><ph id="ph1">`project.lock.json`</ph> ファイルは、NuGet の依存関係およびアプリについて記述するその他の情報のグラフの永続的で完全なセットです。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This file is read by other tools, such as <ph id="ph1">`dotnet build`</ph> and <ph id="ph2">`dotnet run`</ph>, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.</source>
+          <target state="translated">このファイルは、<ph id="ph1">`dotnet build`</ph> や <ph id="ph2">`dotnet run`</ph> などの他のツールによって読み取られ、これらのツールが NuGet の依存関係とバインド解決の正しいセットでソース コードを処理できるようにします。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> calls <ph id="ph2">`dotnet build`</ph> to ensure that the build targets have been built, and then calls <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> to run the target application.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> は、<ph id="ph2">`dotnet build`</ph> を呼び出してビルド ターゲットがビルドされていることを確認した後、<ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> を呼び出してターゲット アプリケーションを実行します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can also execute <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> to compile the code without running the build console applications.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> を実行し、ビルド コンソール アプリケーションを実行しないでコードをコンパイルすることもできます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Building a self-contained application</source>
+          <target state="translated">自己完結型アプリケーションのビルド</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Let's try compiling a self-contained application instead of a portable application.</source>
+          <target state="translated">ポータブル アプリケーションではなく自己完結型アプリケーションをコンパイルします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can read more about the <bpt id="p1">[</bpt>types of portability in .NET Core<ept id="p1">](../deploying/index.md)</ept> to learn about the different application types, and how they are deployed.</source>
+          <target state="translated">異なる種類のアプリケーションとその展開方法については、<bpt id="p1">[</bpt>.NET Core での移植性の種類についての記事<ept id="p1">](../deploying/index.md)</ept>を参照してください。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You need to make some changes to your <ph id="ph1">`project.json`</ph> file to direct the tools to build a self-contained application.</source>
+          <target state="translated">自己完結型アプリケーションを構築するようツールに指示するには、<ph id="ph1">`project.json`</ph> ファイルを変更する必要があります。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can see these in the <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> project in the samples directory.</source>
+          <target state="translated">これについては、サンプル ディレクトリの <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> プロジェクトを参照してください。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The first change is to remove the <ph id="ph1">`"type": "platform"`</ph> element from all dependencies.</source>
+          <target state="translated">最初の変更として、すべての依存関係から <ph id="ph1">`"type": "platform"`</ph> 要素を削除します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This project's only dependency so far is <ph id="ph1">`"Microsoft.NETCore.App"`</ph>.</source>
+          <target state="translated">今のところ、このプロジェクトの依存関係は <ph id="ph1">`"Microsoft.NETCore.App"`</ph> だけです。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dependencies`</ph> section should look like this:</source>
+          <target state="translated"><ph id="ph1">`dependencies`</ph> セクションは次のようになります。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Next, you need to add a <ph id="ph1">`runtimes`</ph> node to specify all the target execution environments.</source>
+          <target state="translated">次に、<ph id="ph1">`runtimes`</ph> ノードを追加してすべてのターゲット実行環境を指定する必要があります。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> node instructs the build system to create executables for the 64 bit version of Windows 10 and the 64 bit version of Mac OS X version 10.11.</source>
+          <target state="translated">たとえば、次の <ph id="ph1">`runtimes`</ph> ノードは、64 ビット版 Windows 10 および 64 ビット版 Mac OS X バージョン 10.11 用の実行可能ファイルを作成するようビルド システムに指示します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The build system will generate native executables for the current environment.</source>
+          <target state="translated">ビルド システムは、現在の環境のネイティブ実行可能ファイルを生成します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you are following these steps on a Windows machine, you'll build a Windows executable.</source>
+          <target state="translated">Windows コンピューターでこの手順に従うと、Windows の実行可能ファイルがビルドされます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you are following these steps on a Mac, you'll build the OS X executable.</source>
+          <target state="translated">Mac でこの手順に従うと、OS X の実行可能ファイルがビルドされます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>See the full list of supported runtimes in the <bpt id="p1">[</bpt>RID catalog<ept id="p1">](../rid-catalog.md)</ept>.</source>
+          <target state="translated">サポートされているランタイムの完全な一覧は、<bpt id="p1">[</bpt>RID カタログ<ept id="p1">](../rid-catalog.md)</ept>を参照してください。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After making those two changes you execute <ph id="ph1">`dotnet restore`</ph>, followed by <ph id="ph2">`dotnet build`</ph> to create the native executable.</source>
+          <target state="translated">これら 2 つの変更を行った後、<ph id="ph1">`dotnet restore`</ph> を実行し、次に <ph id="ph2">`dotnet build`</ph> を実行してネイティブな実行可能ファイルを作成します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Then, you can run the generated native executable.</source>
+          <target state="translated">その後、生成されたネイティブ実行可能ファイルを実行できます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The following example shows the commands for Windows.</source>
+          <target state="translated">次の例では Windows の場合のコマンドを示します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The example shows where the native executable gets generated and assumes that the project directory is named HelloNative.</source>
+          <target state="translated">この例では、ネイティブ実行可能ファイルが生成される場所が示されており、プロジェクト ディレクトリの名前は HelloNative です。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You may notice that the native application takes slightly longer to build, but executes slightly faster.</source>
+          <target state="translated">ネイティブ アプリケーションは、ビルドに要する時間は少し長くなりますが、実行は若干速くなります。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This behavior becomes more noticeable as the application grows.</source>
+          <target state="translated">この現象は、アプリケーションが大きくなるほど顕著になります。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The build process generates several more files when your <ph id="ph1">`project.json`</ph> creates a native build.</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> がネイティブ ビルドを作成するときは、ビルド プロセスで生成されるファイルが増えます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>These files are created in <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph> where <ph id="ph2">`&lt;platform&gt;`</ph> is the RID chosen.</source>
+          <target state="translated">これらのファイルは <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph> に作成されます。<ph id="ph2">`&lt;platform&gt;`</ph> は選択された RID です。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In addition to the project's <ph id="ph1">`HelloNative.dll`</ph> there is a <ph id="ph2">`HelloNative.exe`</ph> that loads the runtime and starts the application.</source>
+          <target state="translated">プロジェクトの <ph id="ph1">`HelloNative.dll`</ph> に加えて、ランタイムを読み込んでアプリケーションを開始する <ph id="ph2">`HelloNative.exe`</ph> があります。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Note that the name of the generated application changed because the project directory's name has changed.</source>
+          <target state="translated">プロジェクト ディレクトリの名前を変更したので、生成されるアプリケーションの名前が変わっていることに注意してください。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You may want to package this application to execute it on a machine that does not include the .NET runtime.</source>
+          <target state="translated">このアプリケーションをパッケージ化し、.NET ランタイムが含まれないコンピューターで実行することができます。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You do that using the <ph id="ph1">`dotnet publish`</ph> command.</source>
+          <target state="translated">そのためには、<ph id="ph1">`dotnet publish`</ph> コマンドを使用します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet publish`</ph> command creates a new subdirectory under the <ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> directory called <ph id="ph3">`publish`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dotnet publish`</ph> コマンドは、<ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> ディレクトリの下に <ph id="ph3">`publish`</ph> という名前の新しいサブディレクトリを作成します。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>It copies the executable, all dependent DLLs and the framework to this sub directory.</source>
+          <target state="translated">実行可能ファイル、依存するすべての DLL、およびフレームワークが、このサブディレクトリにコピーされます。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can package that directory to another machine (or a container) and execute the application there.</source>
+          <target state="translated">そのディレクトリを別のコンピューター (またはコンテナー) にパッケージ化し、そこでアプリケーションを実行できます。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Let's contrast that with the behavior of <ph id="ph1">`dotnet publish`</ph> in the first Hello World sample.</source>
+          <target state="translated">そのアプリケーションを、最初の Hello World サンプルでの <ph id="ph1">`dotnet publish`</ph> の動作と比較してみます。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>That application is a <bpt id="p1">*</bpt>portable application<ept id="p1">*</ept>, which is the default type of application for .NET Core.</source>
+          <target state="translated">そのアプリケーションは "<bpt id="p1">*</bpt>ポータブル アプリケーション<ept id="p1">*</ept>" であり、これは .NET Core 用アプリケーションの既定の種類です。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>A portable application requires that .NET Core is installed on the target machine.</source>
+          <target state="translated">ポータブル アプリケーションを実行するには、ターゲット コンピューターに .NET Core がインストールされている必要があります。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Portable applications can be built on one machine and executed anywhere.</source>
+          <target state="translated">ポータブル アプリケーションは、ビルドしたコンピューターとは別のコンピューターで実行できます。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Native applications must be built separately for each target machine.</source>
+          <target state="translated">ネイティブ アプリケーションは、ターゲット マシンごとに個別に作成する必要があります。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet publish`</ph> creates a directory that has the application's DLL, and any dependent dlls that are not part of the platform installation.</source>
+          <target state="translated"><ph id="ph1">`dotnet publish`</ph>が作成するディレクトリには、アプリケーションの DLL と、プラットフォームのインストールに含まれないすべての依存 DLL が格納されます。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Augmenting the program</source>
+          <target state="translated">プログラムの拡張</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Let's change the file just a little bit.</source>
+          <target state="translated">ファイルを少し変更してみます。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Fibonacci numbers are fun, so let's try that out (using the native version):</source>
+          <target state="translated">フィボナッチ数列を作ります (ネイティブのバージョンを使用します)。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):</source>
+          <target state="translated">プログラムを実行します (Windows を使用し、プロジェクト ディレクトリの名前を Fibonacci に変更してあるものとします)。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">以上です。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can augment <ph id="ph1">`Program.cs`</ph> any way you like.</source>
+          <target state="translated">自由に <ph id="ph1">`Program.cs`</ph> を拡張できます。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Adding some new files</source>
+          <target state="translated">新しいファイルの追加</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.</source>
+          <target state="translated">1 個限りの簡単なプログラムの場合は単一のファイルが便利ですが、複数のコンポーネントがあるものを作成する場合は複数のファイルに分割することが必要になる可能性があります。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Multiple files are a way to do that.</source>
+          <target state="translated">複数のファイルはそのための方法です。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Create a new file and give it a unique namespace:</source>
+          <target state="translated">新しいファイルを作成し、固有の名前空間を設定します。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Next, include it in your <ph id="ph1">`Program.cs`</ph> file:</source>
+          <target state="translated">次に、それを <ph id="ph1">`Program.cs`</ph> ファイルに含めます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>And finally, you can build it:</source>
+          <target state="translated">最後にビルドします。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Now the fun part: making the new file do something!</source>
+          <target state="translated">新しいファイルの機能を作成します。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Example: A Fibonacci Sequence Generator</source>
+          <target state="translated">例: フィボナッチ シーケンス ジェネレーター</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Let's say you want to build off of the previous <bpt id="p1">[</bpt>Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept> by caching some Fibonacci values and add some recursive flair.</source>
+          <target state="translated">前の<bpt id="p1">[</bpt>フィボナッチの例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept>を利用し、フィボナッチ数をいくつかキャッシュして再帰的な処理を加えます。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Your code for a <bpt id="p1">[</bpt>better Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept> might look something like this:</source>
+          <target state="translated"><bpt id="p1">[</bpt>改良版フィボナッチの例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept>のコードは次のようになります。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Note that the use of <ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> and <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> means incorporating the <ph id="ph3">`System.Collections`</ph> namespace.</source>
+          <target state="translated"><ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> および <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> を使用して <ph id="ph3">`System.Collections`</ph> 名前空間を組み込んでいることに注意してください。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Microsoft.NetCore.App`</ph> package is a <bpt id="p1">*</bpt>metapackage<ept id="p1">*</ept> that contains many of the core assemblies from the .NET Framework.</source>
+          <target state="translated"><ph id="ph1">`Microsoft.NetCore.App`</ph> パッケージは "<bpt id="p1">*</bpt>メタパッケージ<ept id="p1">*</ept>" であり、.NET Framework の多くのコア アセンブリを含みます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>By including this metapackage, you've already included the <ph id="ph1">`System.Collections.dll`</ph> assembly as part of your project.</source>
+          <target state="translated">このメタパッケージを含めることで、プロジェクトに <ph id="ph1">`System.Collections.dll`</ph> アセンブリが組み込まれます。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You can verify this by running <ph id="ph1">`dotnet publish`</ph> and examining the files that are part of the installed package.</source>
+          <target state="translated">このことを確認するには、<ph id="ph1">`dotnet publish`</ph> を実行し、インストールされたパッケージに含まれるファイルを調べます。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>You'll see <ph id="ph1">`System.Collections.dll`</ph> in the list.</source>
+          <target state="translated"><ph id="ph1">`System.Collections.dll`</ph> が一覧に含まれることがわかります。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Now adjust the <ph id="ph1">`Main()`</ph> method in your <ph id="ph2">`Program.cs`</ph> file as shown below.</source>
+          <target state="translated">次に、以下に示すように、<ph id="ph2">`Program.cs`</ph>  ファイルの <ph id="ph1">`Main()`</ph> メソッドを変更します。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The example assumes that <ph id="ph1">`Program.cs`</ph> has a <ph id="ph2">`using System;`</ph> statement.</source>
+          <target state="translated">この例では、<ph id="ph1">`Program.cs`</ph> に <ph id="ph2">`using System;`</ph> ステートメントがあるものと想定しています。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>If you have a <ph id="ph1">`using static System.Console;`</ph> statement, remove <ph id="ph2">`Console.`</ph> from <ph id="ph3">`Console.WriteLine`</ph>.</source>
+          <target state="translated"><ph id="ph1">`using static System.Console;`</ph> ステートメントがある場合は、<ph id="ph2">`Console.`</ph> を <ph id="ph3">`Console.WriteLine`</ph> から削除します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Finally, run it!</source>
+          <target state="translated">最後に実行します。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">以上です。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Using folders to organize code</source>
+          <target state="translated">フォルダーを使用してコードを整理する</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Say you wanted to introduce some new types to do work on.</source>
+          <target state="translated">新しい種類の作業を導入したいものとします。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>You can do this by adding more files and making sure to give them namespaces you can include in your <ph id="ph1">`Program.cs`</ph> file.</source>
+          <target state="translated">そのためには、ファイルを追加し、<ph id="ph1">`Program.cs`</ph> ファイルに含めることができる名前空間を割り当てます。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This works great when the size of your project is relatively small.</source>
+          <target state="translated">プロジェクトのサイズが比較的小さい場合に適しています。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.</source>
+          <target state="translated">しかし、多くの異なる種類のデータを含み、複数レイヤーになる可能性のある大規模なアプリケーションでは、論理的な整理が必要になります。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>This is where folders come into play.</source>
+          <target state="translated">その場合はフォルダーを使用します。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>You can either follow along with <bpt id="p1">[</bpt>the NewTypes sample project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept> that this guide covers, or create your own files and folders.</source>
+          <target state="translated">このガイドで説明する <bpt id="p1">[</bpt>NewTypes サンプル プロジェクト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>に従うことも、独自のファイルとフォルダーを作成することもできます。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>To begin, create a new folder under the root of your project.</source>
+          <target state="translated">最初に、プロジェクトのルートの下に新しいフォルダーを作成します。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`/Model`</ph> is chosen here.</source>
+          <target state="translated"><ph id="ph1">`/Model`</ph>がここでは選択されています。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Now add some new types to the folder:</source>
+          <target state="translated">フォルダーに新しい種類をいくつか追加します。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your <ph id="ph1">`Program.cs`</ph>.</source>
+          <target state="translated">同じディレクトリ内のファイルであった場合と同じように、すべてを同じ名前空間にするので、<ph id="ph1">`Program.cs`</ph> に含めることができます。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Example: Pet Types</source>
+          <target state="translated">例: ペットの種類</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This example creates two new types, <ph id="ph1">`Dog`</ph> and <ph id="ph2">`Cat`</ph>, and has them implement an interface, <ph id="ph3">`IPet`</ph>.</source>
+          <target state="translated">この例では、2 つの新しい種類 <ph id="ph1">`Dog`</ph> と <ph id="ph2">`Cat`</ph> を作成し、インターフェイス <ph id="ph3">`IPet`</ph> を実装します。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Folder Structure:</source>
+          <target state="translated">フォルダーの構造:</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IPet.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`IPet.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Dog.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Dog.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Cat.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Cat.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>And if you run this:</source>
+          <target state="translated">これを実行すると次のようになります。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>New pet types can be added (such as a <ph id="ph1">`Bird`</ph>), extending this project.</source>
+          <target state="translated">新しいペットの種類 (<ph id="ph1">`Bird`</ph> など) を追加して、このプロジェクトを拡張できます。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Testing your Console App</source>
+          <target state="translated">コンソール アプリのテスト</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>You'll probably be wanting to test your projects at some point.</source>
+          <target state="translated">どこかの時点でプロジェクトをテストする必要があります。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Here's a good way to do it:</source>
+          <target state="translated">次に適切な方法を示します。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Move any source of your existing project into a new <ph id="ph1">`src`</ph> folder.</source>
+          <target state="translated">既存プロジェクトのすべてのソースを、新しい <ph id="ph1">`src`</ph> フォルダーに移動します。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`/test`</ph> directory.</source>
+          <target state="translated"><ph id="ph1">`/test`</ph> ディレクトリを作成します。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Create a new <ph id="ph1">`global.json`</ph> file:</source>
+          <target state="translated">新しい <ph id="ph1">`global.json`</ph> ファイルを作成します。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`global.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`global.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>This file tells the build system that this is a multi-project system, which allows it to look for dependencies in more than just the current folder it happens to be executing in.</source>
+          <target state="translated">このファイルは、これがマルチプロジェクト システムであることをビルド システムに伝えます。これにより、ビルド システムは現在実行しているフォルダー以外でも依存関係を検索します。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>This is important because it allows you to place a dependency on the code under test in your test project.</source>
+          <target state="translated">これは、テスト プロジェクトのテスト対象コードに依存関係を配置できるので重要です。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Example: Extending the NewTypes project</source>
+          <target state="translated">例: NewTypes プロジェクトの拡張</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Now that the project system is in place, you can create your test project and start writing tests!</source>
+          <target state="translated">プロジェクト システムを設定したので、テスト プロジェクトを作成し、テストの作成を始めることができます。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>From here on out, this guide will use and extend <bpt id="p1">[</bpt>the sample Types project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>.</source>
+          <target state="translated">これ以降このガイドでは、<bpt id="p1">[</bpt>サンプルの Types プロジェクト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>を使用して拡張します。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Additionally, it will use the <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> test framework.</source>
+          <target state="translated">さらに、<bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> テスト フレームワークを使用します。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Feel free to follow along or create your own multi-project system with tests.</source>
+          <target state="translated">この手順に従っても、独自のマルチプロジェクト システムを作成してもかまいません。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The whole project structure should look like this:</source>
+          <target state="translated">プロジェクト全体の構造は、次のようになります。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>There are two new things to make sure you have in your test project:</source>
+          <target state="translated">テスト プロジェクトに必要な 2 つの新しい要素があります。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>A correct <ph id="ph1">`project.json`</ph> with the following:</source>
+          <target state="translated">以下のものを含む正しい <ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`xunit`</ph></source>
+          <target state="translated">次のものへの参照:<ph id="ph1">`xunit`</ph></target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph></source>
+          <target state="translated">次のものへの参照:<ph id="ph1">`dotnet-test-xunit`</ph></target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>A reference to the namespace corresponding to the code under test</source>
+          <target state="translated">テスト対象コードに対応する名前空間への参照</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>An Xunit test class.</source>
+          <target state="translated">Xunit テスト クラス。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NewTypesTests/project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`NewTypesTests/project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PetTests.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`PetTests.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Now you can run tests!</source>
+          <target state="translated">これでテストを実行することができます。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> command runs the test runner you have specified in your project.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> コマンドは、プロジェクトで指定したテスト ランナーを実行します。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Make sure you start at the top-level directory.</source>
+          <target state="translated">最上位レベルのディレクトリで開始します。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Output should look like this:</source>
+          <target state="translated">出力は次のようになります。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">まとめ</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.</source>
+          <target state="translated">このガイドでは、.NET Core コンソール アプリの作成方法について、基礎からマルチプロジェクト システムと単体テストまで説明しました。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The next step is to create awesome console apps of your own!</source>
+          <target state="translated">次は、あなた自身が優れたコンソール アプリを作る番です。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>If a more advanced example of a console app interests you, check out the next tutorial: <bpt id="p1">[</bpt>Using the CLI tools to write console apps: An advanced step-by-step guide<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>.</source>
+          <target state="translated">さらに高度なコンソール アプリの例に興味がある場合は、「<bpt id="p1">[</bpt>Writing .NET Core console apps using the CLI tools: An advanced step-by-step guide<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>」(CLI ツールを用いた .NET Core コンソール アプリの作成: 高度なステップ バイ ステップ ガイド) をご覧ください。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

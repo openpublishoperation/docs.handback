@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3c6c651aebfac0c27f340021d7779d37aa8bfe38</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\dotnet-restore.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5f50ca3fa78ebddf50e80cd2ab1f1582669f74b3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">03f419d20d1acf7204479d174da1f8ce9271243b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>dotnet-restore command | .NET Core SDK</source>
+          <target state="translated">dotnet-restore コマンド | .NET Core SDK</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to restore dependencies and project-specific tools with the dotnet restore command</source>
+          <target state="translated">dotnet restore コマンドを使用して、依存関係とプロジェクト固有のツールを復元する方法について説明します</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>dotnet-restore, CLI, CLI command, .NET Core</source>
+          <target state="translated">dotnet-restore, CLI, CLI コマンド, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>dotnet-restore</source>
+          <target state="translated">dotnet-restore</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Name</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet-restore`</ph> - Restores the dependencies and tools of a project</source>
+          <target state="translated"><ph id="ph1">`dotnet-restore`</ph>- プロジェクトの依存関係とツールを復元します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synopsis</source>
+          <target state="translated">構文</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet restore`</ph> command uses NuGet to restore dependencies as well as project-specific tools that are specified in the <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> file.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph> コマンドでは NuGet を使用して、依存関係と、<bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> ファイルに指定されているプロジェクト固有のツールを復元します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>By default, the restoration of dependencies and tools are done in parallel.</source>
+          <target state="translated">既定では、依存関係とツールの復元は並列に実行されます。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In order to restore the dependencies, NuGet needs the feeds where the packages are located.</source>
+          <target state="translated">依存関係を復元するには、NuGet で、パッケージを配置するフィードが必要になります。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Feeds are usually provided via the NuGet.config configuration file; a default one is present when the CLI tools are installed.</source>
+          <target state="translated">フィードは、通常、NuGet.config 構成ファイルを通じて提供されます。CLI ツールがインストールされている場合は、既定のものがあります。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can specify more feeds by creating your own NuGet.config file in the project directory.</source>
+          <target state="translated">プロジェクト ディレクトリに独自の NuGet.config ファイルを作成することで、さらにフィードを指定できます。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Feeds can also be specified per invocation on the command prompt.</source>
+          <target state="translated">フィードは、コマンド プロンプトでの呼び出しごとに指定することもできます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For dependencies, you can specify where the restored packages are placed during the restore operation using the <ph id="ph1">`--packages`</ph> argument.</source>
+          <target state="translated">依存関係については、<ph id="ph1">`--packages`</ph> 引数を使用して復元操作中に復元されたパッケージの配置場所を指定することができます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If not specified, the default NuGet package cache is used.</source>
+          <target state="translated">指定しない場合は、既定の NuGet パッケージ キャッシュが使用されます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is found in the <ph id="ph1">`.nuget/packages`</ph> directory in the user's home directory on all operating systems (for example, <bpt id="p1">*</bpt>/home/user1<ept id="p1">*</ept> on Linux or <bpt id="p2">*</bpt>C:\Users\user1<ept id="p2">*</ept> on Windows).</source>
+          <target state="translated">すべてのオペレーティング システムのユーザーのホーム ディレクトリ内の <ph id="ph1">`.nuget/packages`</ph> ディレクトリにあります (たとえば、Linux の場合は <bpt id="p1">*</bpt>/home/user1<ept id="p1">*</ept>、Windows の場合は <bpt id="p2">*</bpt>C:\Users\user1<ept id="p2">*</ept>)。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For project-specific tooling, <ph id="ph1">`dotnet restore`</ph> first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept>.</source>
+          <target state="translated">プロジェクト固有のツールについては、<ph id="ph1">`dotnet restore`</ph> はまず、ツールがパックされているパッケージを復元し、<bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> に指定されているツールの依存関係の復元に進みます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated">オプション</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>A list of projects or project folders to restore.</source>
+          <target state="translated">復元するプロジェクトまたはプロジェクト フォルダーのリストです。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Each value can be a path to a <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> or <bpt id="p2">[</bpt>global.json<ept id="p2">](global-json.md)</ept> file, or to a folder.</source>
+          <target state="translated">各値として、<bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> または <bpt id="p2">[</bpt>global.json<ept id="p2">](global-json.md)</ept> ファイルへのパス、あるいはフォルダーへのパスを指定できます。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If a folder is specified, the restore operation will recursively search for a <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> file in all subdirectories and restores for each <bpt id="p2">[</bpt>project.json<ept id="p2">](project-json.md)</ept> file found.</source>
+          <target state="translated">フォルダーが指定されている場合、復元操作ではすべてのサブディレクトリ内の <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> ファイルを再帰的に検索し、見つかった各 <bpt id="p2">[</bpt>project.json<ept id="p2">](project-json.md)</ept> ファイルに対して復元します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Prints out a short help for the command.</source>
+          <target state="translated">コマンドの短いヘルプを印刷します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Forces the application to run using an invariant, English-based culture.</source>
+          <target state="translated">インバリアントの英語ベースのカルチャを使用して、アプリケーションの実行を強制します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Specifies a NuGet package source to use during the restore operation.</source>
+          <target state="translated">復元操作時に使用する NuGet パッケージのソースを指定します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This overrides all of the sources specified in the NuGet.config file(s).</source>
+          <target state="translated">これにより、NuGet.config ファイルに指定されているすべてのソースがオーバーライドされます。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Multiple sources can be provided by specifying this option multiple times.</source>
+          <target state="translated">このオプションを複数回指定することによって、複数のソースを指定できます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Specifies the directory to place the restored packages in.</source>
+          <target state="translated">復元されたパッケージを配置するディレクトリを指定します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Disables restoring multiple projects in parallel.</source>
+          <target state="translated">複数プロジェクトの並行復元を無効にします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Specifies a list of packages sources to use as a fallback in the restore operation if all other sources fail.</source>
+          <target state="translated">他のすべてのソースが失敗した場合に復元操作でフォールバックとして使用するパッケージ ソースのリストを指定します。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>All valid feed formats are allowed.</source>
+          <target state="translated">すべての有効なフィード形式を使用できます。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Multiple fallback sources can be provided by specifying this option multiple times.</source>
+          <target state="translated">このオプションを複数回指定することによって、複数のフォールバック ソースを指定できます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The NuGet configuration file (NuGet.config) to use for the restore operation.</source>
+          <target state="translated">復元操作で使用する NuGet 構成ファイル (NuGet.config) です。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Specifies to not cache packages and HTTP requests.</source>
+          <target state="translated">パッケージとの HTTP 要求をキャッシュしないように指定します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Temporary option to allow NuGet to infer Runtime Identifiers (RIDs) for legacy repositories.</source>
+          <target state="translated">NuGet でレガシ リポジトリのランタイム識別子 (RID) を推測できるようにするための一時オプションです。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The verbosity of logging to use.</source>
+          <target state="translated">使用するログの詳細度です。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Allowed values: <ph id="ph1">`Debug`</ph>, <ph id="ph2">`Verbose`</ph>, <ph id="ph3">`Information`</ph>, <ph id="ph4">`Minimal`</ph>, <ph id="ph5">`Warning`</ph>, or <ph id="ph6">`Error`</ph>.</source>
+          <target state="translated">指定できる値は、<ph id="ph1">`Debug`</ph>、<ph id="ph2">`Verbose`</ph>、<ph id="ph3">`Information`</ph>、<ph id="ph4">`Minimal`</ph>、<ph id="ph5">`Warning`</ph>、<ph id="ph6">`Error`</ph> です。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Only warn about failed sources if there are packages meeting version requirement.</source>
+          <target state="translated">バージョン要件を満たしているパッケージがある場合は、失敗したソースに関する警告のみです。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the project in the current directory:</source>
+          <target state="translated">現在のディレクトリでプロジェクトの依存関係とツールを復元します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the <ph id="ph1">`app1`</ph> project found in the given path:</source>
+          <target state="translated">指定されたパスで見つかった <ph id="ph1">`app1`</ph> プロジェクトの依存関係とツールを復元します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:</source>
+          <target state="translated">フォールバック ソースとして指定されたファイル パスを使用して、現在のディレクトリでプロジェクトの依存関係とツールを復元します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Restore the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources:</source>
+          <target state="translated">フォールバック ソースとして指定された 2 つのファイル パスを使用して、現在のディレクトリでプロジェクトの依存関係とツールを復元します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the project in the current directory and shows only errors in the output:</source>
+          <target state="translated">現在のディレクトリでプロジェクトの依存関係とツールを復元し、出力にエラーのみを表示します。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
