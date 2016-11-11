@@ -7314,6 +7314,8 @@
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d8ef90544ceaaadf87d84007121382811bd2e881/ol-handback/dotnet/docs.de-de/master/ht-p2/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.de-de.xlf)
 * Handback Datetime: 2016-11-11 11:43:07
+* Bilingual File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d8ef90544ceaaadf87d84007121382811bd2e881/ol-handback/dotnet/docs.de-de/master/ht-p2/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.de-de.xlf)
+* Bilingual Datetime: 2016-11-11 11:43:43
 * [Back to Top](#report-top)
 
 ##### <a name='51655742b8975c84eae3f58c4ef0f7381a0bed6b452'></a> Source: [docs\standard\garbagecollection\using-objects.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/using-objects.md)
