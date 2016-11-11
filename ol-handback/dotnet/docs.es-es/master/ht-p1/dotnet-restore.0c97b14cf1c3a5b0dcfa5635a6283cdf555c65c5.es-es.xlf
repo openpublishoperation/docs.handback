@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3c6c651aebfac0c27f340021d7779d37aa8bfe38</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\dotnet-restore.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5f50ca3fa78ebddf50e80cd2ab1f1582669f74b3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">03f419d20d1acf7204479d174da1f8ce9271243b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>dotnet-restore command | .NET Core SDK</source>
+          <target state="translated">Comando dotnet-restore | SDK de .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to restore dependencies and project-specific tools with the dotnet restore command</source>
+          <target state="translated">Aprenda a restaurar dependencias y herramientas específicas del proyecto con el comando dotnet restore.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>dotnet-restore, CLI, CLI command, .NET Core</source>
+          <target state="translated">dotnet-restore, CLI, comando de la CLI, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>dotnet-restore</source>
+          <target state="translated">dotnet-restore</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Name</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet-restore`</ph> - Restores the dependencies and tools of a project</source>
+          <target state="translated"><ph id="ph1">`dotnet-restore`</ph>- Restaura las dependencias y las herramientas de un proyecto.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synopsis</source>
+          <target state="translated">Sinopsis</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descripción</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet restore`</ph> command uses NuGet to restore dependencies as well as project-specific tools that are specified in the <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> file.</source>
+          <target state="translated">El comando <ph id="ph1">`dotnet restore`</ph> usa NuGet para restaurar las dependencias, así como las herramientas específicas del proyecto que se especifican en el archivo <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>By default, the restoration of dependencies and tools are done in parallel.</source>
+          <target state="translated">De forma predeterminada, la restauración de dependencias y herramientas se realizan en paralelo.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In order to restore the dependencies, NuGet needs the feeds where the packages are located.</source>
+          <target state="translated">Para restaurar las dependencias, NuGet necesita las fuentes donde se encuentran los paquetes.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Feeds are usually provided via the NuGet.config configuration file; a default one is present when the CLI tools are installed.</source>
+          <target state="translated">Normalmente se proporcionan fuentes mediante el archivo de configuración NuGet.config; hay uno predeterminado cuando se instalan las herramientas de la CLI.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can specify more feeds by creating your own NuGet.config file in the project directory.</source>
+          <target state="translated">Puede especificar más fuentes creando su propio archivo NuGet.config en el directorio del proyecto.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Feeds can also be specified per invocation on the command prompt.</source>
+          <target state="translated">También se pueden especificar fuentes por invocación en el símbolo del sistema.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For dependencies, you can specify where the restored packages are placed during the restore operation using the <ph id="ph1">`--packages`</ph> argument.</source>
+          <target state="translated">Para las dependencias, puede especificar dónde se colocan los paquetes restaurados durante la operación de restauración mediante el argumento <ph id="ph1">`--packages`</ph>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If not specified, the default NuGet package cache is used.</source>
+          <target state="translated">Si no se especifica, se usa la caché del paquete de NuGet predeterminada.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is found in the <ph id="ph1">`.nuget/packages`</ph> directory in the user's home directory on all operating systems (for example, <bpt id="p1">*</bpt>/home/user1<ept id="p1">*</ept> on Linux or <bpt id="p2">*</bpt>C:\Users\user1<ept id="p2">*</ept> on Windows).</source>
+          <target state="translated">Se encuentra en el directorio <ph id="ph1">`.nuget/packages`</ph> en el directorio del directorio principal del usuario en todos los sistemas operativos (por ejemplo, <bpt id="p1">*</bpt>/home/user1<ept id="p1">*</ept> en Linux o <bpt id="p2">*</bpt>C:\Users\user1<ept id="p2">*</ept> en Windows).</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For project-specific tooling, <ph id="ph1">`dotnet restore`</ph> first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept>.</source>
+          <target state="translated">Para herramientas específicas del proyecto, <ph id="ph1">`dotnet restore`</ph> restaura primero el paquete en el que se empaqueta la herramienta y, a continuación, continúa con la restauración de las dependencias de la herramienta especificadas en su <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated">Opciones</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>A list of projects or project folders to restore.</source>
+          <target state="translated">Una lista de proyectos o carpetas de proyecto para restaurar.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Each value can be a path to a <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> or <bpt id="p2">[</bpt>global.json<ept id="p2">](global-json.md)</ept> file, or to a folder.</source>
+          <target state="translated">Cada valor puede ser una ruta de acceso a un archivo <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> o <bpt id="p2">[</bpt>global.json<ept id="p2">](global-json.md)</ept>, o a una carpeta.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If a folder is specified, the restore operation will recursively search for a <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> file in all subdirectories and restores for each <bpt id="p2">[</bpt>project.json<ept id="p2">](project-json.md)</ept> file found.</source>
+          <target state="translated">Si se especifica una carpeta, la operación de restauración busca de forma recursiva un archivo <bpt id="p1">[</bpt>project.json<ept id="p1">](project-json.md)</ept> en todos los subdirectorios y restauraciones de cada archivo <bpt id="p2">[</bpt>project.json<ept id="p2">](project-json.md)</ept> encontrado.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Prints out a short help for the command.</source>
+          <target state="translated">Imprime una corta ayuda para el comando.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Forces the application to run using an invariant, English-based culture.</source>
+          <target state="translated">Fuerza la ejecución de la aplicación mediante una referencia cultural en inglés invariable.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Specifies a NuGet package source to use during the restore operation.</source>
+          <target state="translated">Especifica un origen de paquetes de NuGet que se usará durante la operación de restauración.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This overrides all of the sources specified in the NuGet.config file(s).</source>
+          <target state="translated">Esto invalida todos los orígenes especificados en los archivos NuGet.config.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Multiple sources can be provided by specifying this option multiple times.</source>
+          <target state="translated">Al especificar esta opción varias veces, se pueden proporcionar varios orígenes.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Specifies the directory to place the restored packages in.</source>
+          <target state="translated">Especifica el directorio donde colocar los paquetes restaurados.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Disables restoring multiple projects in parallel.</source>
+          <target state="translated">Deshabilita la restauración de varios proyectos en paralelo.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Specifies a list of packages sources to use as a fallback in the restore operation if all other sources fail.</source>
+          <target state="translated">Especifica una lista de orígenes de paquetes para usar como reserva en la operación de restauración si se produce un error en todos los demás orígenes.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>All valid feed formats are allowed.</source>
+          <target state="translated">Se permiten todos los formatos de fuente válidos.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Multiple fallback sources can be provided by specifying this option multiple times.</source>
+          <target state="translated">Al especificar esta opción varias veces, se pueden proporcionar varios orígenes de reserva.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The NuGet configuration file (NuGet.config) to use for the restore operation.</source>
+          <target state="translated">El archivo de configuración (NuGet.config) que se usará para la operación de restauración.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Specifies to not cache packages and HTTP requests.</source>
+          <target state="translated">Especifica que no se almacenen en caché los paquetes y las solicitudes HTTP.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Temporary option to allow NuGet to infer Runtime Identifiers (RIDs) for legacy repositories.</source>
+          <target state="translated">Opción temporal para permitir que NuGet deduzca los identificadores de tiempo de ejecución (RID) para repositorios heredados.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The verbosity of logging to use.</source>
+          <target state="translated">El nivel de detalle del registro que se usará.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Allowed values: <ph id="ph1">`Debug`</ph>, <ph id="ph2">`Verbose`</ph>, <ph id="ph3">`Information`</ph>, <ph id="ph4">`Minimal`</ph>, <ph id="ph5">`Warning`</ph>, or <ph id="ph6">`Error`</ph>.</source>
+          <target state="translated">Valores permitidos: <ph id="ph1">`Debug`</ph>, <ph id="ph2">`Verbose`</ph>, <ph id="ph3">`Information`</ph>, <ph id="ph4">`Minimal`</ph>, <ph id="ph5">`Warning`</ph> o <ph id="ph6">`Error`</ph>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Only warn about failed sources if there are packages meeting version requirement.</source>
+          <target state="translated">Solo se advierte sobre los orígenes con error si hay paquetes que satisfacen el requisito de versión.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">Ejemplos</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the project in the current directory:</source>
+          <target state="translated">Restauración de dependencias y herramientas para el proyecto en el directorio actual:</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the <ph id="ph1">`app1`</ph> project found in the given path:</source>
+          <target state="translated">Restauración de dependencias y herramientas para el proyecto <ph id="ph1">`app1`</ph> encontrado en la ruta de acceso dada:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:</source>
+          <target state="translated">Restauración de dependencias y herramientas para el proyecto en el directorio actual con la ruta de acceso de archivo proporcionada como origen de reserva:</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Restore the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources:</source>
+          <target state="translated">Restauración de dependencias y herramientas para el proyecto en el directorio actual, con las dos rutas de acceso de archivo proporcionadas como orígenes de reserva:</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Restore dependencies and tools for the project in the current directory and shows only errors in the output:</source>
+          <target state="translated">Restauración de dependencias y herramientas para el proyecto en el directorio actual y visualización únicamente de los errores en la salida:</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
