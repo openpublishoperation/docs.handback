@@ -6,17 +6,17 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/bb2f36cd305bf5a06bc9ac10cd49b6d27fe0d4c0/index.md) | ArchivedSuccess | [Details](#6cd4a74e4c1e93b2db8f3080fdd90ae04192b278515)
+ [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md) | ArchivedSuccess | [Details](#a0b4e21367244d0c72e05499c62e354fce9179e7515)
 
 ## Item Details
-##### <a name='6cd4a74e4c1e93b2db8f3080fdd90ae04192b278515'></a> Source: [index.md](https://github.com/dotnet/docs/blob/bb2f36cd305bf5a06bc9ac10cd49b6d27fe0d4c0/index.md)
+##### <a name='a0b4e21367244d0c72e05499c62e354fce9179e7515'></a> Source: [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md)
 * Status: ArchivedSuccess
 * Target File: 
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/cb5e87a2b4519afe67fd76515ce67f122e2e7136/ol-handoff/dotnet/docs.es-es/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
-* Handoff Datetime: 2016-11-12 01:35:59
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/84bb6387e669d62ebdc5553e5fad997deea9b258/ol-handoff/dotnet/docs.es-es/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Handoff Datetime: 2016-11-12 23:37:01
 * Handoff Reason: Include
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/e86b0b6260535e76db1f192b48f3e2639a36f14f/ol-archive/dotnet/docs.es-es/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
-* Archive Datetime: 2016-11-12 01:35:59
+* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/2424a18f994c780a70536ca743666c072a741e3a/ol-archive/dotnet/docs.es-es/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Archive Datetime: 2016-11-12 23:37:02
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Current Target File: [index.md](https://github.com/dotnet/docs.es-es/blob/44e48a1f092923100fe9f46d4516182c9c8e2830/index.md)
