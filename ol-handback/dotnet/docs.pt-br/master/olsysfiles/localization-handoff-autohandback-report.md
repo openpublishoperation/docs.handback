@@ -22,5 +22,5 @@
 
 | Handoff Xliff | Archived Reason | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.pt-br\master\ht-p1\index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/d492288919d6d68a4523f41b0c940d9f6b94e58c/ol-handoff/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf) | Archived when 16/11/11 03:13 | 
+| [ol-handoff\dotnet\docs.pt-br\master\ht-p1\index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/aed9c44e9bde819ef850ce279253708602b4ef17/ol-handoff/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf) | Archived when 16/11/11 03:13 | 
 
