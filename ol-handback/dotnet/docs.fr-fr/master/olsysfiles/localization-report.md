@@ -8275,9 +8275,9 @@
 * Archive Datetime: 2016-11-12 23:36:43
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [index.md](https://github.com/dotnet/docs.fr-fr/blob/b41f3187ff253714094ad731790878e093d16879/index.md)
-* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/cb6df7ab0f510357f888f7cb7db53a75e9a015bd/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-09 00:42:47
+* Current Target File: [index.md](https://github.com/dotnet/docs.fr-fr/blob/7ac4970587c7db66d34b43fd66a5ab04c51f3a80/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/bba91b6ecd2d62b94a8127c621a6a28c983bb7d9/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf)
+* Current Handback Datetime: 2016-11-14 14:39:07
 * Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/cb6df7ab0f510357f888f7cb7db53a75e9a015bd/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf)
 * Bilingual Datetime: 2016-11-09 00:44:01
 * [Back to Top](#report-top)
