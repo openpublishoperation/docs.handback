@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6080f5fa12a2391dd138828e0afc2219f1e3a11b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\character-encoding.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b73b5b21b030d4950c1041bdd0f07aeb8388b963</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b89d9393d89c8fce047b1cd8084fad9c34b4671d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Character encoding in .NET</source>
+          <target state="translated">.NET での文字エンコード</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Character encoding in .NET</source>
+          <target state="translated">.NET での文字エンコード</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Character encoding in .NET</source>
+          <target state="translated">.NET での文字エンコード</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Characters are abstract entities that can be represented in many different ways.</source>
+          <target state="translated">文字は、さまざまな方法で表現できる抽象エンティティです。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>A character encoding is a system that pairs each character in a supported character set with some value that represents that character.</source>
+          <target state="translated">文字エンコーディングとは、サポートされている文字セットの各文字を、その文字を表す値と組み合わせる体系です。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines.</source>
+          <target state="translated">たとえばモールス符号は、ローマ字の各文字を、電信線での送信に適したドットとダッシュのパターンと組み合わせる文字エンコーディングです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character.</source>
+          <target state="translated">コンピューターの文字エンコーディングは、サポートされている文字セットの各文字を、その文字を表す数値と組み合わせます。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A character encoding has two distinct components:</source>
+          <target state="translated">文字エンコーディングには、次の 2 つの異なるコンポーネントがあります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>An encoder, which translates a sequence of characters into a sequence of numeric values (bytes).</source>
+          <target state="translated">エンコーダー。文字シーケンスを数値 (バイト) シーケンスに変換します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A decoder, which translates a sequence of bytes into a sequence of characters.</source>
+          <target state="translated">デコーダー。バイト シーケンスを文字シーケンスに変換します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Character encoding describes the rules by which an encoder and a decoder operate.</source>
+          <target state="translated">文字エンコーディングは、エンコーダーとデコーダーの動作を決める規則を表します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> class describes the rules for encoding to, and decoding from, 8-bit Unicode Transformation Format (UTF-8), which uses one to four bytes to represent a single Unicode character.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> クラスは、1 ～ 4 バイトを使用して 1 つの Unicode 文字を表現する UTF-8 (8-bit Unicode Transformation Format) をエンコードおよびデコードするための規則を表します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Encoding and decoding can also include validation.</source>
+          <target state="translated">エンコードとデコードに検証を含めることもできます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept> class checks all surrogates to make sure they constitute valid surrogate pairs.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept> クラスは、すべてのサロゲートを検証して、有効なサロゲート ペアが構成されていることを確認します </target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>(A surrogate pair consists of a character with a code point that ranges from U+D800 to U+DBFF followed by a character with a code point that ranges from U+DC00 to U+DFFF.) A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.</source>
+          <target state="translated">(サロゲート ペアは、U+D800 ～ U+DBFF の範囲のコード ポイントを持つ文字と、それに続く U+DC00 ～ U+DFFF の範囲のコード ポイントを持つ文字で構成されます)。エンコーダーが無効な文字を処理する方法や、デコーダーが無効なバイトを処理する方法は、フォールバック ストラテジによって決まります。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The .NET encoding classes provide a way to store and convert character data.</source>
+          <target state="translated">.NET のエンコーディング クラスは、文字データを格納および変換するためのものです。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>They should not be used to store binary data in string form.</source>
+          <target state="translated">バイナリ データを文字列形式で格納する目的では使用しないでください。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Depending on the encoding used, converting binary data to string format with the encoding classes can introduce unexpected behavior and produce inaccurate or corrupted data.</source>
+          <target state="translated">エンコーディング クラスを使用してバイナリ データを文字列形式に変換すると、使用されているエンコーディングによっては、予期しない動作が発生したり、不正確なデータや破損したデータが生成されたりする可能性があります。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To convert binary data to a string form, use the <bpt id="p1">[</bpt>Convert.ToBase64String<ept id="p1">](xref:System.Convert.ToBase64String(System.Byte[]))</ept> method.</source>
+          <target state="translated">バイナリ データを文字列形式に変換するには、<bpt id="p1">[</bpt>Convert.ToBase64String<ept id="p1">](xref:System.Convert.ToBase64String(System.Byte[]))</ept> メソッドを使用します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>.NET uses the UTF-16 encoding (represented by the <bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept> class) to represent characters and strings.</source>
+          <target state="translated">.NET では (<bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept> クラスによって表される) UTF-16 エンコーディングを使用して、文字と文字列を表します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Applications that target the common language runtime use encoders to map Unicode character representations supported by the common language runtime to other encoding schemes.</source>
+          <target state="translated">共通言語ランタイムをターゲットとするアプリケーションは、エンコーダーを使用して、共通言語ランタイムによってサポートされている Unicode 文字表現を他のエンコーディング方式に変換し、</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>They use decoders to map characters from non-Unicode encodings to Unicode.</source>
+          <target state="translated">デコーダーを使用して、Unicode 以外のエンコーディングの文字を Unicode に変換します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This topic consists of the following sections:</source>
+          <target state="translated">このトピックは、次のセクションで構成されています。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Encodings in .NET<ept id="p1">](#encodings-in-net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET でのエンコード<ept id="p1">](#encodings-in-net)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Selecting an encoding class<ept id="p1">](#selecting-an-encoding-class)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>エンコーディング クラスの選択<ept id="p1">](#selecting-an-encoding-class)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using an encoding object<ept id="p1">](#using-an-encoding-object)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>エンコーディング オブジェクトの使用<ept id="p1">](#using-an-encoding-object)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Choosing a fallback strategy<ept id="p1">](#choosing-a-fallback-strategy)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>フォールバック ストラテジの選択<ept id="p1">](#choosing-a-fallback-strategy)</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Implementing a custom fallback strategy<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム フォールバック ストラテジの実装<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Encodings in .NET</source>
+          <target state="translated">.NET でのエンコード</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>All character encoding classes in .NET inherit from the <bpt id="p1">[</bpt>System.Text.Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> class, which is an abstract class that defines the functionality common to all character encodings.</source>
+          <target state="translated">.NET のすべての文字エンコーディング クラスは、すべての文字エンコーディングに共通の機能を定義する抽象クラスの <bpt id="p1">[</bpt>System.Text.Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> クラスを継承します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To access the individual encoding objects implemented in .NET, do the following:</source>
+          <target state="translated">.NET に実装されている個々のエンコーディング オブジェクトにアクセスするには次の方法があります。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Use the static properties of the <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32).</source>
+          <target state="translated"><bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> クラスの静的プロパティを使用します。これらのプロパティは、.NET で使用できる標準の文字エンコーディング (ASCII、UTF-7、UTF-8、UTF-16、および UTF-32) を表すオブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>Encoding.Unicode<ept id="p1">](xref:System.Text.Encoding.Unicode)</ept> property returns a <bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept> object.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>Encoding.Unicode<ept id="p1">](xref:System.Text.Encoding.Unicode)</ept> プロパティは <bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode.</source>
+          <target state="translated">各オブジェクトでは、エンコードできない文字列とデコードできないバイトを処理するために、置換フォールバックが使用されます </target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>(For more information, see the <bpt id="p1">[</bpt>Replacement fallback<ept id="p1">](#replacement-fallback)</ept> section.)</source>
+          <target state="translated">(詳細については、「<bpt id="p1">[</bpt>置換フォールバック<ept id="p1">](#replacement-fallback)</ept>」を参照してください)。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Call the encoding's class constructor.</source>
+          <target state="translated">エンコーディングのクラス コンストラクターを呼び出します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way.</source>
+          <target state="translated">ASCII、UTF-7、UTF-8、UTF-16、および UTF-32 の各エンコーディングのオブジェクトは、この方法でインスタンス化できます。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead.</source>
+          <target state="translated">既定では、各オブジェクトはエンコードできない文字列とデコードできないバイトを処理するために置換フォールバックを使用します。ただし、代わりに例外がスローされるように指定することもできます </target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>(For more information, see the <bpt id="p1">[</bpt>Replacement fallback<ept id="p1">](#replacement-fallback)</ept> and <bpt id="p2">[</bpt>Exception fallback<ept id="p2">](#exception-fallback)</ept> sections.)</source>
+          <target state="translated">(詳細については、「<bpt id="p1">[</bpt>置換フォールバック<ept id="p1">](#replacement-fallback)</ept>」と「<bpt id="p2">[</bpt>例外フォールバック<ept id="p2">](#exception-fallback)</ept>」を参照してください)。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>Encoding.Encoding(Int32)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> constructor and pass it an integer that represents the encoding.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Encoding.Encoding(Int32)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> コンストラクターを呼び出して、エンコーディングを表す整数を渡します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode.</source>
+          <target state="translated">エンコードできない文字列とデコードできないバイトの処理には、標準エンコーディングのエンコーディング オブジェクトでは置換フォールバックが、コード ページ エンコーディングと 2 バイト文字セット (DBCS) エンコーディングのエンコーディング オブジェクトでは最適フォールバックが使用されます </target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>(For more information, see the <bpt id="p1">[</bpt>Best-Fit fallback<ept id="p1">](#best-fit-fallback)</ept> section.)</source>
+          <target state="translated">(詳細については、「<bpt id="p1">[</bpt>最適フォールバック<ept id="p1">](#best-fit-fallback)</ept>」を参照してください)。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>Encoding.GetEncoding<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> method, which returns any standard, code page, or DBCS encoding available in .NET.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Encoding.GetEncoding<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> メソッドを呼び出します。このメソッドは、.NET で使用できる任意のエンコーディング (標準、コード ページ、または DBCS) を返します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Overloads let you specify a fallback object for both the encoder and the decoder.</source>
+          <target state="translated">オーバーロードを使用すると、エンコーダーおよびデコーダーの両方のフォールバック オブジェクトを指定できます。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The Unicode Standard assigns a code point (a number) and a name to each character in every supported script.</source>
+          <target state="translated">Unicode 規格では、サポートされるすべてのスクリプトについて、各文字にコード ポイント (数値) と名前を割り当てています。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A".</source>
+          <target state="translated">たとえば、文字 "A" は U+0041 というコード ポイントと、"LATIN CAPITAL LETTER A" という名前で表されます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes.</source>
+          <target state="translated">UTF (Unicode Transformation Format) エンコーディングは、そのコード ポイントを 1 つ以上のバイトのシーケンスにエンコードする方法を定義します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding.</source>
+          <target state="translated">Unicode エンコーディング方式を使用すると、任意の文字セットの文字を 1 つのエンコーディング方式で表現できるため、国際対応アプリケーションの開発が簡素化されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.</source>
+          <target state="translated">これにより、アプリケーション開発者が、特定の言語または書記体系の文字を表すために使用されるエンコーディング方式を追跡する必要はなくなります。また、データを破損することなく、各国のシステム間でデータを共有できます。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>.NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32.</source>
+          <target state="translated">.NET では、Unicode 規格によって定義されている UTF-8、UTF-16、および UTF-32 の 3 つのエンコーディングをサポートしています。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For more information, see The Unicode Standard at the <bpt id="p1">[</bpt>Unicode<ept id="p1">](http://www.unicode.org/)</ept> home page.</source>
+          <target state="translated">詳細については、<bpt id="p1">[</bpt>Unicode<ept id="p1">](http://www.unicode.org/)</ept> ホーム ページの Unicode 標準を参照してください。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>.NET supports the character encoding systems listed in the following table.</source>
+          <target state="translated">.NET でサポートされている文字エンコーディング システムを次の表に示します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Encoding</source>
+          <target state="translated">エンコード</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Class</source>
+          <target state="translated">クラス</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Advantages/disadvantages</source>
+          <target state="translated">長所/短所</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>ASCII</source>
+          <target state="translated">ASCII</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept></target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Encodes a limited range of characters by using the lower seven bits of a byte.</source>
+          <target state="translated">バイトの下位 7 ビットを使用して、限られた範囲の文字をエンコードします。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Because this encoding only supports character values from U+0000 through U+007F, in most cases it is inadequate for internationalized applications.</source>
+          <target state="translated">ASCII エンコーディングでは、U+0000 から U+007F までの文字値しかサポートされていないため、ほとんどの場合、国際対応アプリケーションでは ASCII エンコーディングの使用は不適切です。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>UTF-7</source>
+          <target state="translated">UTF-7</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UTF7Encoding<ept id="p1">](xref:System.Text.UTF7Encoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UTF7Encoding<ept id="p1">](xref:System.Text.UTF7Encoding)</ept></target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Represents characters as sequences of 7-bit ASCII characters.</source>
+          <target state="translated">文字を 7 ビット ASCII 文字のシーケンスとして表します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Non-ASCII Unicode characters are represented by an escape sequence of ASCII characters.</source>
+          <target state="translated">ASCII 以外の Unicode 文字は、ASCII 文字のエスケープ シーケンスによって表します。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>UTF-7 supports protocols such as e-mail and newsgroup protocols.</source>
+          <target state="translated">UTF-7 は、電子メールやニュースグループなどのプロトコルをサポートします。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>However, UTF-7 is not particularly secure or robust.</source>
+          <target state="translated">ただし、UTF-7 は特に安全でも堅牢でもありません。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In some cases, changing one bit can radically alter the interpretation of an entire UTF-7 string.</source>
+          <target state="translated">場合によっては、1 ビットの変更により、UTF-7 文字列全体の解釈が完全に変わる場合があります。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>In other cases, different UTF-7 strings can encode the same text.</source>
+          <target state="translated">他の場合には、異なる UTF-7 文字列がエンコードによって同じテキストになる可能性もあります。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For sequences that include non-ASCII characters, UTF-7 requires more space than UTF-8, and encoding/decoding is slower.</source>
+          <target state="translated">ASCII 以外の文字を含むシーケンスの場合、UTF-7 は UTF-8 よりも多くの空間を必要とし、エンコードとデコードに時間がかかります。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Consequently, you should use UTF-8 instead of UTF-7 if possible.</source>
+          <target state="translated">したがって、可能であれば、UTF-7 ではなく UTF-8 を使用してください。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>UTF-8</source>
+          <target state="translated">UTF-8</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Represents each Unicode code point as a sequence of one to four bytes.</source>
+          <target state="translated">各 Unicode コード ポイントが、1 バイトから 4 バイトのシーケンスとして表現されます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>UTF-8 supports 8-bit data sizes and works well with many existing operating systems.</source>
+          <target state="translated">UTF-8 では、8 ビット データ サイズがサポートされており、既存の多くのオペレーティング システムに対応できます。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For the ASCII range of characters, UTF-8 is identical to ASCII encoding and allows a broader set of characters.</source>
+          <target state="translated">ASCII 範囲の文字については、UTF-8 は ASCII エンコーディングと一致し、より広範な文字を提供します。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>However, for Chinese-Japanese-Korean (CJK) scripts, UTF-8 can require three bytes for each character, and can potentially cause larger data sizes than UTF-16.</source>
+          <target state="translated">ただし、CJK (中国語、日本語、韓国語) スクリプトでは、UTF-8 の各文字に 3 バイトが必要となることがあり、データ サイズが UTF-16 より大きくなる可能性があります。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Note that sometimes the amount of ASCII data, such as HTML tags, justifies the increased size for the CJK range.</source>
+          <target state="translated">ただし、CJK 範囲によるサイズの増加が HTML タグなどの ASCII データのサイズによって相殺されることもあります。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>UTF-16</source>
+          <target state="translated">UTF-16</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UnicodeEncoding<ept id="p1">](xref:System.Text.UnicodeEncoding)</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Represents each Unicode code point as a sequence of one or two 16-bit integers.</source>
+          <target state="translated">各 Unicode コード ポイントが、1 つまたは 2 つの 16 ビット整数のシーケンスとして表現されます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Most common Unicode characters require only one UTF-16 code point, although Unicode supplementary characters (U+10000 and greater) require two UTF-16 surrogate code points.</source>
+          <target state="translated">ほとんどの一般的な Unicode 文字で必要とされる UTF-16 コード ポイントは 1 つだけです。ただし、Unicode の補助文字 (U+10000 以上) には 2 つの UTF-16 サロゲート コード ポイントが必要です。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Both little-endian and big-endian byte orders are supported.</source>
+          <target state="translated">リトル エンディアンとビッグ エンディアンの両方のバイト順をサポートしています。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>UTF-16 encoding is used by the common language runtime to represent Char and String values, and it is used by the Windows operating system to represent WCHAR values.</source>
+          <target state="translated">UTF-16 エンコーディングは、共通言語ランタイムでは Char および String の値を表現するために、Windows オペレーティング システムでは WCHAR の値を表現するために使用されています。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>UTF-32</source>
+          <target state="translated">UTF-32</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UTF32Encoding<ept id="p1">](xref:System.Text.UTF32Encoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UTF32Encoding<ept id="p1">](xref:System.Text.UTF32Encoding)</ept></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Represents each Unicode code point as a 32-bit integer.</source>
+          <target state="translated">各 Unicode コード ポイントが 32 ビット整数として表現されます。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Both little-endian and big-endian byte orders are supported.</source>
+          <target state="translated">リトル エンディアンとビッグ エンディアンの両方のバイト順をサポートしています。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>UTF-32 encoding is used when applications want to avoid the surrogate code point behavior of UTF-16 encoding on operating systems for which encoded space is too important.</source>
+          <target state="translated">UTF-32 エンコーディングは、エンコードされた空白がきわめて重要な意味を持つオペレーティング システムで、アプリケーションが UTF-16 エンコーディングのサロゲート コード ポイント動作を回避する必要がある場合に使用します。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Single glyphs rendered on a display can still be encoded with more than one UTF-32 character.</source>
+          <target state="translated">ディスプレイ上でレンダリングされる 1 つのグリフも複数の UTF-32 文字でエンコードされることがあります。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>These encodings enable you to work with Unicode characters as well as with encodings that are most commonly used in legacy applications.</source>
+          <target state="translated">これらのエンコーディングを使用することにより、Unicode 文字だけでなく、レガシ アプリケーションで最もよく使用されているエンコーディングにも対応できます。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In addition, you can create a custom encoding by defining a class that derives from <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> and overriding its members.</source>
+          <target state="translated">また、<bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> から派生するクラスを定義し、そのメンバーをオーバーライドして、カスタム エンコーディングを作成することもできます。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16.</source>
+          <target state="translated">既定で、.NET Core では、コード ページ 28591 以外のコード ページ エンコーディングや Unicode エンコーディング (UTF-8 や UTF-16 など) を使用できません。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>However, you can add the code page encodings found in standard Windows apps that target the .NET Framework to your app.</source>
+          <target state="translated">ただし、使用するアプリに、.NET Framework を対象とする標準の Windows アプリに含まれているコード ページ エンコーディングを追加できます。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>For complete information, see the <bpt id="p1">[</bpt>EncodingProvider<ept id="p1">](xref:System.Text.EncodingProvider)</ept> topic.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>EncodingProvider<ept id="p1">](xref:System.Text.EncodingProvider)</ept>」のトピックを参照してください。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Selecting an Encoding class</source>
+          <target state="translated">エンコーディング クラスの選択</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>If you have the opportunity to choose the encoding to be used by your application, you should use a Unicode encoding, preferably either <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> or <bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept>.</source>
+          <target state="translated">アプリケーションで使用するエンコーディングを選択できる場合は、Unicode エンコーディング (できれば <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> または <bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept>) を使用するようにしてください </target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>(.NET also supports a third Unicode encoding, <bpt id="p1">[</bpt>UTF32Encoding<ept id="p1">](xref:System.Text.UTF32Encoding)</ept>.)</source>
+          <target state="translated">(.NET でサポートされている Unicode エンコーディングには、そのほかに <bpt id="p1">[</bpt>UTF32Encoding<ept id="p1">](xref:System.Text.UTF32Encoding)</ept> もあります)。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>If you are planning to use an ASCII encoding (<bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept>), choose <bpt id="p2">[</bpt>UTF8Encoding<ept id="p2">](xref:System.Text.UTF8Encoding)</ept> instead.</source>
+          <target state="translated">ASCII エンコーディング (<bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept>) を使用しようとしている場合は、代わりに <bpt id="p2">[</bpt>UTF8Encoding<ept id="p2">](xref:System.Text.UTF8Encoding)</ept> を選択してください。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The two encodings are identical for the ASCII character set, but <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> has the following advantages:</source>
+          <target state="translated">この 2 つのエンコーディングは、ASCII 文字セットに対する動作は変わりませんが、<bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> には次のような利点があります。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>It can represent every Unicode character, whereas <bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> supports only the Unicode character values between U+0000 and U+007F.</source>
+          <target state="translated">すべての Unicode 文字を表現できます (<bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> でサポートされているのは U+0000 ～ U+007F の Unicode 文字値だけです)。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It provides error detection and better security.</source>
+          <target state="translated">エラー検出に対応しており、セキュリティも強化されます。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>It has been tuned to be as fast as possible and should be faster than any other encoding.</source>
+          <target state="translated">できるだけ高速になるように調整されているため、他のエンコーディングよりも高速です。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Even for content that is entirely ASCII, operations performed with <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> are faster than operations performed with <bpt id="p2">[</bpt>ASCIIEncoding<ept id="p2">](xref:System.Text.ASCIIEncoding)</ept>.</source>
+          <target state="translated">全体が ASCII のコンテンツの場合でも、<bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> で実行される演算は、<bpt id="p2">[</bpt>ASCIIEncoding<ept id="p2">](xref:System.Text.ASCIIEncoding)</ept> で実行される演算よりも高速になります。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>You should consider using <bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> only for legacy applications.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> は、レガシ アプリケーションの場合にのみ使用を検討するようにしてください。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>However, even for legacy applications, <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> might be a better choice for the following reasons (assuming default settings):</source>
+          <target state="translated">ただし、レガシ アプリケーションでも、次のような理由で <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> の方が適していることもあります (既定の設定の場合)。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If your application has content that is not strictly ASCII and encodes it with <bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept>, each non-ASCII character encodes as a question mark (?).</source>
+          <target state="translated">厳密には ASCII でないコンテンツがアプリケーションに含まれている場合、それを <bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> でエンコードすると、ASCII 以外の各文字は疑問符 (?) としてエンコードされます。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>If the application then decodes this data, the information is lost.</source>
+          <target state="translated">アプリケーションがこのデータをデコードすると、情報は失われます。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>If your application has content that is not strictly ASCII and encodes it with <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept>, the result seems unintelligible if interpreted as ASCII.</source>
+          <target state="translated">厳密には ASCII でないコンテンツがアプリケーションに含まれている場合、それを <bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept> でエンコードすると、結果を ASCII として解釈しようとしても一見理解不能になります。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>However, if the application then uses a UTF-8 decoder to decode this data, the data performs a round trip successfully.</source>
+          <target state="translated">ただし、アプリケーションがこのデータを UTF-8 デコーダーを使用してデコードすると、データのラウンド トリップが正常に行われます。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>In a web application, characters sent to the client in response to a web request should reflect the encoding used on the client.</source>
+          <target state="translated">Web アプリケーションでは、Web 要求への応答としてクライアントに送信される文字に、クライアントで使用されているエンコーディングが反映されるようにする必要があります。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In most cases, you should set the <bpt id="p1">[</bpt>HttpResponse.ContentEncoding<ept id="p1">](xref:System.Net.HttpResponseHeader.ContentEncoding)</ept> property to the value returned by the <bpt id="p2">[</bpt>HttpRequestHeader.ContentEncoding<ept id="p2">](xref:System.Net.HttpRequestHeader.ContentEncoding)</ept> property to display text in the encoding that the user expects.</source>
+          <target state="translated">ほとんどの場合は、ユーザーが期待するエンコーディングでテキストを表示するために、<bpt id="p1">[</bpt>HttpResponse.ContentEncoding<ept id="p1">](xref:System.Net.HttpResponseHeader.ContentEncoding)</ept> プロパティを <bpt id="p2">[</bpt>HttpRequestHeader.ContentEncoding<ept id="p2">](xref:System.Net.HttpRequestHeader.ContentEncoding)</ept> プロパティの戻り値に設定する必要があります。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Using an encoding object</source>
+          <target state="translated">エンコーディング オブジェクトの使用</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>An encoder converts a string of characters (most commonly, Unicode characters) to its numeric (byte) equivalent.</source>
+          <target state="translated">エンコーダーは、文字列 (通常は Unicode 文字) を対応する数値 (バイト) に変換します。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For example, you might use an ASCII encoder to convert Unicode characters to ASCII so that they can be displayed at the console.</source>
+          <target state="translated">たとえば、ASCII エンコーダーを使用すると、Unicode 文字を ASCII に変換してコンソールに表示することができます。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>To perform the conversion, you call the <bpt id="p1">[</bpt>Encoding.GetBytes<ept id="p1">](xref:System.Text.Encoding.GetBytes(System.Char[]))</ept> method.</source>
+          <target state="translated">この変換を実行するには、<bpt id="p1">[</bpt>Encoding.GetBytes<ept id="p1">](xref:System.Text.Encoding.GetBytes(System.Char[]))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>If you want to determine how many bytes are needed to store the encoded characters before performing the encoding, you can call the <bpt id="p1">[</bpt>GetByteCount<ept id="p1">](xref:System.Text.Encoding.GetByteCount(System.Char[]))</ept> method.</source>
+          <target state="translated">エンコードされた文字列を格納するために必要なバイト数をエンコードの実行前に確認するには、<bpt id="p1">[</bpt>GetByteCount<ept id="p1">](xref:System.Text.Encoding.GetByteCount(System.Char[]))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following example uses a single byte array to encode strings in two separate operations.</source>
+          <target state="translated">次の例では、1 つのバイト配列を使用して、文字列を 2 つの個別の操作でエンコードしています。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>It maintains an index that indicates the starting position in the byte array for the next set of ASCII-encoded bytes.</source>
+          <target state="translated">バイト配列内の次の ASCII エンコード済みバイト セットの開始位置を示すインデックスが保持されています。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>It calls the <bpt id="p1">[</bpt>ASCIIEncoding.GetByteCount(String)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetByteCount(System.String))</ept> method to ensure that the byte array is large enough to accommodate the encoded string.</source>
+          <target state="translated">この例では、<bpt id="p1">[</bpt>ASCIIEncoding.GetByteCount(String)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetByteCount(System.String))</ept> メソッドを呼び出して、エンコードされた文字列を格納するために十分な大きさがバイト配列にあるかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>It then calls the <bpt id="p1">[</bpt>ASCIIEncoding.GetBytes(String, Int32, Int32, Byte[], Int32)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32))</ept> method to encode the characters in the string.</source>
+          <target state="translated">次に、<bpt id="p1">[</bpt>ASCIIEncoding.GetBytes(String, Int32, Int32, Byte[], Int32)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32))</ept> メソッドを呼び出して、文字列内の文字をエンコードします。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>A decoder converts a byte array that reflects a particular character encoding into a set of characters, either in a character array or in a string.</source>
+          <target state="translated">デコーダーは、特定の文字エンコーディングが反映されたバイト配列を、文字配列または文字列の一連の文字に変換します。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>To decode a byte array into a character array, you call the <bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> method.</source>
+          <target state="translated">バイト配列を文字配列にデコードするには、<bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>To decode a byte array into a string, you call the <bpt id="p1">[</bpt>GetString<ept id="p1">](xref:System.Text.Encoding.GetString(System.Byte[]))</ept> method.</source>
+          <target state="translated">バイト配列を文字列にデコードするには、<bpt id="p1">[</bpt>GetString<ept id="p1">](xref:System.Text.Encoding.GetString(System.Byte[]))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>If you want to determine how many characters are needed to store the decoded bytes before performing the decoding, you can call the <bpt id="p1">[</bpt>GetCharCount<ept id="p1">](xref:System.Text.Encoding.GetCharCount(System.Byte[]))</ept> method.</source>
+          <target state="translated">デコードされたバイトを格納するために必要な文字数をデコードの実行前に確認するには、<bpt id="p1">[</bpt>GetCharCount<ept id="p1">](xref:System.Text.Encoding.GetCharCount(System.Byte[]))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The following example encodes three strings and then decodes them into a single array of characters.</source>
+          <target state="translated">次の例では、3 つの文字列をエンコードした後、1 つの文字配列にデコードしています。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>It maintains an index that indicates the starting position in the character array for the next set of decoded characters.</source>
+          <target state="translated">文字配列内の次のデコード済み文字セットの開始位置を示すインデックスが保持されています。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>It calls the <bpt id="p1">[</bpt>GetCharCount<ept id="p1">](xref:System.Text.Encoding.GetCharCount(System.Byte[]))</ept> method to ensure that the character array is large enough to accommodate all the decoded characters.</source>
+          <target state="translated">この例では、<bpt id="p1">[</bpt>GetCharCount<ept id="p1">](xref:System.Text.Encoding.GetCharCount(System.Byte[]))</ept> メソッドを呼び出して、デコードされたすべての文字を格納するために十分な大きさが文字配列にあるかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>It then calls the <bpt id="p1">[</bpt>ASCIIEncoding.GetChars(Byte[], Int32, Int32, Char[], Int32)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> method to decode the byte array.</source>
+          <target state="translated">次に、<bpt id="p1">[</bpt>ASCIIEncoding.GetChars(Byte[], Int32, Int32, Char[], Int32)<ept id="p1">](xref:System.Text.ASCIIEncoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> メソッドを呼び出して、バイト配列をデコードします。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The encoding and decoding methods of a class derived from <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> are designed to work on a complete set of data; that is, all the data to be encoded or decoded is supplied in a single method call.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> から派生するクラスのエンコード メソッドとデコード メソッドは、データ全体を処理するように設計されています。つまり、エンコードまたはデコードするすべてのデータが 1 回のメソッド呼び出しで渡されます。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>However, in some cases, data is available in a stream, and the data to be encoded or decoded may be available only from separate read operations.</source>
+          <target state="translated">ただし、場合によっては、データがストリームで提供され、エンコードまたはデコードするデータを複数の読み取り操作で取得しなければならないこともあります。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>This requires the encoding or decoding operation to remember any saved state from its previous invocation.</source>
+          <target state="translated">このような場合は、エンコード操作またはデコード操作で、前回の実行時に保存した状態を呼び出す必要があります。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Methods of classes derived from <bpt id="p1">[</bpt>Encoder<ept id="p1">](xref:System.Text.Encoder)</ept> and <bpt id="p2">[</bpt>Decoder<ept id="p2">](xref:System.Text.Decoder)</ept> are able to handle encoding and decoding operations that span multiple method calls.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Encoder<ept id="p1">](xref:System.Text.Encoder)</ept> および <bpt id="p2">[</bpt>Decoder<ept id="p2">](xref:System.Text.Decoder)</ept> から派生するクラスのメソッドでは、複数のメソッド呼び出しにまたがるエンコード操作とデコード操作を処理できます。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">[</bpt>Encoder<ept id="p1">](xref:System.Text.Encoder)</ept> object for a particular encoding is available from that encoding's <bpt id="p2">[</bpt>Encoding.GetEncoder<ept id="p2">](xref:System.Text.Encoding.GetEncoder)</ept> property.</source>
+          <target state="translated">特定のエンコーディングの <bpt id="p1">[</bpt>Encoder<ept id="p1">](xref:System.Text.Encoder)</ept> オブジェクトは、そのエンコーディングの <bpt id="p2">[</bpt>Encoding.GetEncoder<ept id="p2">](xref:System.Text.Encoding.GetEncoder)</ept> プロパティから取得できます。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>Decoder<ept id="p1">](xref:System.Text.Decoder)</ept> object for a particular encoding is available from that encoding's <bpt id="p2">[</bpt>Encoding.GetDecoder<ept id="p2">](xref:System.Text.Encoding.GetDecoder)</ept> property.</source>
+          <target state="translated">特定のエンコーディングの <bpt id="p1">[</bpt>Decoder<ept id="p1">](xref:System.Text.Decoder)</ept> オブジェクトは、そのエンコーディングの <bpt id="p2">[</bpt>Encoding.GetDecoder<ept id="p2">](xref:System.Text.Encoding.GetDecoder)</ept> プロパティから取得できます。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>For decoding operations, note that classes derived from <bpt id="p1">[</bpt>Decoder<ept id="p1">](xref:System.Text.Decoder)</ept> include a <bpt id="p2">[</bpt>Decoder.GetChars<ept id="p2">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> method, but they do not have a method that corresponds to <bpt id="p3">[</bpt>Encoding.GetString<ept id="p3">](xref:System.Text.Encoding.GetString(System.Byte[]))</ept>.</source>
+          <target state="translated">デコード操作の場合、<bpt id="p1">[</bpt>Decoder<ept id="p1">](xref:System.Text.Decoder)</ept> から派生するクラスに含まれるのは <bpt id="p2">[</bpt>Decoder.GetChars<ept id="p2">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> メソッドで、<bpt id="p3">[</bpt>Encoding.GetString<ept id="p3">](xref:System.Text.Encoding.GetString(System.Byte[]))</ept> に対応するメソッドはありません。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the difference between using the <bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> and <bpt id="p2">[</bpt>Decoder.GetChars<ept id="p2">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> methods for decoding a Unicode byte array.</source>
+          <target state="translated">次の例は、Unicode のバイト配列のデコードに <bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> メソッドを使用する場合と <bpt id="p2">[</bpt>Decoder.GetChars<ept id="p2">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> メソッドを使用する場合の違いを示しています。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The example encodes a string that contains some Unicode characters to a file, and then uses the two decoding methods to decode them ten bytes at a time.</source>
+          <target state="translated">この例では、いくつかの Unicode 文字を含む文字列をファイルにエンコードした後、この 2 つのデコード メソッドを使用して一度に 10 バイトずつデコードしています。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Because a surrogate pair occurs in the tenth and eleventh bytes, it is decoded in separate method calls.</source>
+          <target state="translated">10 番目と 11 番目のバイトに出現するサロゲート ペアは、別のメソッド呼び出しでデコードされます。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>As the output shows, the <bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> method is not able to correctly decode the bytes and instead replaces them with U+FFFD (REPLACEMENT CHARACTER).</source>
+          <target state="translated">出力を見るとわかるように、<bpt id="p1">[</bpt>Encoding.GetChars<ept id="p1">](xref:System.Text.Encoding.GetChars(System.Byte[]))</ept> メソッドではこれらのバイトが正しくデコードされず、U+FFFD (REPLACEMENT CHARACTER) に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>On the other hand, the <bpt id="p1">[</bpt>Decoder.GetChars<ept id="p1">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> method is able to successfully decode the byte array to get the original string.</source>
+          <target state="translated">一方、<bpt id="p1">[</bpt>Decoder.GetChars<ept id="p1">](xref:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32))</ept> メソッドでは、このバイト配列が正しくデコードされて、元の文字列を取得できます。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Choosing a fallback strategy</source>
+          <target state="translated">フォールバック ストラテジの選択</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>When a method tries to encode or decode a character but no mapping exists, it must implement a fallback strategy that determines how the failed mapping should be handled.</source>
+          <target state="translated">メソッドから文字のエンコードまたはデコードを行おうとしたときにマッピングが存在しない場合は、失敗したマッピングの処理方法を決めるフォールバック ストラテジを実装する必要があります。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>There are three types of fallback strategies:</source>
+          <target state="translated">次の 3 種類のフォールバック ストラテジがあります。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Best-fit fallback</source>
+          <target state="translated">最適フォールバック</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Replacement fallback</source>
+          <target state="translated">置換フォールバック</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Exception fallback</source>
+          <target state="translated">例外フォールバック</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The most common problems in encoding operations occur when a Unicode character cannot be mapped to a particular code page encoding.</source>
+          <target state="translated">エンコード操作で最も一般的な問題は、Unicode 文字を特定のコード ページ エンコーディングにマップできない場合に発生します。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The most common problems in decoding operations occur when invalid byte sequences cannot be translated into valid Unicode characters.</source>
+          <target state="translated">デコード操作で最も一般的な問題は、無効なバイト シーケンスを有効な Unicode 文字に変換できない場合に発生します。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>For these reasons, you should know which fallback strategy a particular encoding object uses.</source>
+          <target state="translated">そのため、個々のエンコーディング オブジェクトで使用されるフォールバック ストラテジを把握しておく必要があります。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Whenever possible, you should specify the fallback strategy used by an encoding object when you instantiate the object.</source>
+          <target state="translated">エンコーディング オブジェクトをインスタンス化するときには、可能な限り、そのオブジェクトで使用されるフォールバック ストラテジを指定するようにしてください。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Best-fit fallback</source>
+          <target state="translated">最適フォールバック</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>When a character does not have an exact match in the target encoding, the encoder can try to map it to a similar character.</source>
+          <target state="translated">ターゲット エンコード内に厳密な一致がない文字について、エンコーダーは類似した文字へのマッピングを試みることができます </target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>(Best-fit fallback is mostly an encoding rather than a decoding issue.</source>
+          <target state="translated">(最適フォールバックは主にエンコード時の問題であり、デコード時の問題ではありません。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>There are very few code pages that contain characters that cannot be successfully mapped to Unicode.) Best-fit fallback is the default for code page and double-byte character set encodings that are retrieved by the <bpt id="p1">[</bpt>Encoding.GetEncoding(Int32)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> and <bpt id="p2">[</bpt>Encoding.GetEncoding(String)<ept id="p2">](xref:System.Text.Encoding.GetEncoding(System.String))</ept> overloads.</source>
+          <target state="translated">Unicode に正常にマッピングできない文字を含むコード ページはほとんどありません)。最適フォールバックは、<bpt id="p1">[</bpt>Encoding.GetEncoding(Int32)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> および <bpt id="p2">[</bpt>Encoding.GetEncoding(String)<ept id="p2">](xref:System.Text.Encoding.GetEncoding(System.String))</ept> の各オーバーロードによって取得されるコード ページ エンコーディングと 2 バイト文字セット エンコーディングの既定のフォールバック ストラテジです。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>In theory, the Unicode encoding classes provided in .NET (<bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept>, <bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept>, and <bpt id="p3">[</bpt>UTF32Encoding<ept id="p3">](xref:System.Text.UTF32Encoding)</ept>) support every character in every character set, so they can be used to eliminate best-fit fallback issues.</source>
+          <target state="translated">.NET の Unicode エンコーディング クラス (<bpt id="p1">[</bpt>UTF8Encoding<ept id="p1">](xref:System.Text.UTF8Encoding)</ept>、<bpt id="p2">[</bpt>UnicodeEncoding<ept id="p2">](xref:System.Text.UnicodeEncoding)</ept>、および <bpt id="p3">[</bpt>UTF32Encoding<ept id="p3">](xref:System.Text.UTF32Encoding)</ept>) では、理論上すべての文字セットのすべての文字がサポートされているため、これらのクラスを使用すると最適フォールバックの問題を解消できます。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Best-fit strategies vary for different code pages, and they are not documented in detail.</source>
+          <target state="translated">最適なストラテジはコード ページごとに異なるため、詳細には文書化されていません。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For example, for some code pages, full-width Latin characters map to the more common half-width Latin characters.</source>
+          <target state="translated">たとえば、全角のアルファベットがより一般的な半角のアルファベットにマッピングされるコード ページもあれば、</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>For other code pages, this mapping is not made.</source>
+          <target state="translated">そのようなマッピングが行われないコード ページもあります。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Even under an aggressive best-fit strategy, there is no imaginable fit for some characters in some encodings.</source>
+          <target state="translated">積極的な最適ストラテジでも、一部のエンコーディングの一部の文字には可能な対応がない場合があります。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example, a Chinese ideograph has no reasonable mapping to code page 1252.</source>
+          <target state="translated">たとえば、中国語の漢字からコード ページ 1252 への適切なマッピングはありません。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>In this case, a replacement string is used.</source>
+          <target state="translated">その場合は、置換文字列が使用されます。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>By default, this string is just a single QUESTION MARK (U+003F).</source>
+          <target state="translated">既定では、この文字列は単一の QUESTION MARK (疑問符) (U+003F) です。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The following example uses code page 1252 (the Windows code page for Western European languages) to illustrate best-fit mapping and its drawbacks.</source>
+          <target state="translated">次の例では、コード ページ 1252 (西ヨーロッパ言語の Windows コード ページ) を使用して、最適マッピングとその欠点を示しています。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Encoding.GetEncoding(Int32<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> method is used to retrieve an encoding object for code page 1252.</source>
+          <target state="translated">まず、<bpt id="p1">[</bpt>Encoding.GetEncoding(Int32<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.Int32))</ept> メソッドを使用して、コード ページ 1252 のエンコーディング オブジェクトを取得します。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>By default, it uses a best-fit mapping for Unicode characters that it does not support.</source>
+          <target state="translated">このエンコーディング オブジェクトは、サポートされていない Unicode 文字に対して既定で最適マッピングを使用します。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The example instantiates a string that contains three non-ASCII characters - CIRCLED LATIN CAPITAL LETTER S (U+24C8), SUPERSCRIPT FIVE (U+2075), and INFINITY (U+221E) - separated by spaces.</source>
+          <target state="translated">次に、スペースで区切られた 3 つの非 ASCII 文字 (CIRCLED LATIN CAPITAL LETTER S (U+24C8)、SUPERSCRIPT FIVE (U+2075)、および INFINITY (U+221E)) を含む文字列をインスタンス化します。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, when the string is encoded, the three original non-space characters are replaced by QUESTION MARK (U+003F), DIGIT FIVE (U+0035), and DIGIT EIGHT (U+0038).</source>
+          <target state="translated">出力を見るとわかるように、この文字列をエンコードすると、スペースを除く元の 3 つの文字が、QUESTION MARK (U+003F)、DIGIT FIVE (U+0035)、および DIGIT EIGHT (U+0038) に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>DIGIT EIGHT is a particularly poor replacement for the unsupported INFINITY character, and QUESTION MARK indicates that no mapping was available for the original character.</source>
+          <target state="translated">DIGIT EIGHT は、サポートされていない INFINITY 文字の代替として最適とは言えません。QUESTION MARK は、元の文字に対応するマッピングがなかったことを示します。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Best-fit mapping is the default behavior for an <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> object that encodes Unicode data into code page data, and there are legacy applications that rely on this behavior.</source>
+          <target state="translated">最適マッピングは、Unicode データをコード ページ データにエンコードする <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> オブジェクトの既定の動作です。レガシ アプリケーションの中には、この動作に依存するものがあります。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>However, most new applications should avoid best-fit behavior for security reasons.</source>
+          <target state="translated">ただし、ほとんどの新しいアプリケーションでは、セキュリティ上の理由から、最適動作の使用を避ける必要があります。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>For example, applications should not put a domain name through a best-fit encoding.</source>
+          <target state="translated">たとえば、アプリケーションで、最適エンコードを使用してドメイン名を付けないでください。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>You can also implement a custom best-fit fallback mapping for an encoding.</source>
+          <target state="translated">エンコーディングに対してカスタムの最適フォールバック マッピングを実装することもできます。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Implementing a custom fallback strategy<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>カスタム フォールバック ストラテジの実装<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>If best-fit fallback is the default for an encoding object, you can choose another fallback strategy when you retrieve an <bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> object by calling the <bpt id="p2">[</bpt>Encoding.GetEncoding(Int32, EncoderFallback, DecoderFallback)<ept id="p2">](xref:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> or <bpt id="p3">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p3">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> overload.</source>
+          <target state="translated">エンコーディング オブジェクトの既定値が最適フォールバックである場合、<bpt id="p1">[</bpt>Encoding<ept id="p1">](xref:System.Text.Encoding)</ept> オブジェクトを取得するときに別のフォールバック ストラテジを選択することもできます。そのためには、<bpt id="p2">[</bpt>Encoding.GetEncoding(Int32, EncoderFallback, DecoderFallback)<ept id="p2">](xref:System.Text.Encoding.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> または <bpt id="p3">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p3">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> のオーバーロードを呼び出します。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The following section includes an example that replaces each character that cannot be mapped to code page 1252 with an asterisk (<ph id="ph1">\*</ph>).</source>
+          <target state="translated">次のセクションでは、コード ページ 1252 にマップできない文字をアスタリスク (<ph id="ph1">\*</ph>) に置き換える例を紹介します。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Replacement fallback</source>
+          <target state="translated">置換フォールバック</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>When a character does not have an exact match in the target scheme, but there is no appropriate character that it can be mapped to, the application can specify a replacement character or string.</source>
+          <target state="translated">ターゲット スキームに厳密な一致がなく、マップできる適切な文字もない文字について、アプリケーションで置換文字または置換文字列を指定することができます。</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>This is the default behavior for the Unicode decoder, which replaces any two-byte sequence that it cannot decode with REPLACEMENT_CHARACTER (U+FFFD).</source>
+          <target state="translated">これは Unicode デコーダーの既定の動作です。Unicode デコーダーでは、デコードできない 2 バイトのシーケンスが REPLACEMENT_CHARACTER (U+FFFD) に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>It is also the default behavior of the <bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> class, which replaces each character that it cannot encode or decode with a question mark.</source>
+          <target state="translated">また、<bpt id="p1">[</bpt>ASCIIEncoding<ept id="p1">](xref:System.Text.ASCIIEncoding)</ept> クラスの既定の動作でもあり、その場合はエンコードまたはデコードできない文字が疑問符に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The following example illustrates character replacement for the Unicode string from the previous example.</source>
+          <target state="translated">次の例は、前の例の Unicode 文字列に対する文字置換を示しています。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>As the output shows, each character that cannot be decoded into an ASCII byte value is replaced by 0x3F, which is the ASCII code for a question mark.</source>
+          <target state="translated">出力を見るとわかるように、ASCII バイト値にデコードできない文字は 0x3F (疑問符に対応する ASCII コード) に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>.NET includes the <bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> and <bpt id="p2">[</bpt>DecoderReplacementFallback<ept id="p2">](xref:System.Text.DecoderReplacementFallback)</ept> classes, which substitute a replacement string if a character does not map exactly in an encoding or decoding operation.</source>
+          <target state="translated">.NET には、エンコード操作またはデコード操作で正確にマップできない文字を置換文字列に置き換える <bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> クラスと <bpt id="p2">[</bpt>DecoderReplacementFallback<ept id="p2">](xref:System.Text.DecoderReplacementFallback)</ept> クラスが含まれています。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>By default, this replacement string is a question mark, but you can call a class constructor overload to choose a different string.</source>
+          <target state="translated">この置換文字列は、既定では疑問符ですが、クラス コンストラクターのオーバーロードを呼び出して別の文字列を選択することもできます。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Typically, the replacement string is a single character, although this is not a requirement.</source>
+          <target state="translated">通常は単一の文字を使用しますが、単一でなくてもかまいません。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The following example changes the behavior of the code page 1252 encoder by instantiating an <bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> object that uses an asterisk (<ph id="ph1">\*</ph>) as a replacement string.</source>
+          <target state="translated">次の例では、置換文字列としてアスタリスク (<ph id="ph1">\*</ph>) を使用する <bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> オブジェクトをインスタンス化して、コード ページ 1252 のエンコーダーの動作を変更しています。</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>You can also implement a replacement class for an encoding.</source>
+          <target state="translated">エンコーディング用の置換クラスを実装することもできます。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Implementing a custom fallback strategy<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>カスタム フォールバック ストラテジの実装<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>In addition to QUESTION MARK (U+003F), the Unicode REPLACEMENT CHARACTER (U+FFFD) is commonly used as a replacement string, particularly when decoding byte sequences that cannot be successfully translated into Unicode characters.</source>
+          <target state="translated">置換文字列としては、QUESTION MARK (U+003F) のほか、特に Unicode 文字列に正しく変換できないバイト シーケンスをデコードする場合に、Unicode REPLACEMENT CHARACTER (U+FFFD) がよく使用されます。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>However, you are free to choose any replacement string, and it can contain multiple characters.</source>
+          <target state="translated">ただし、置換文字列は自由に選択できます。置換文字列に複数の文字を含めることもできます。</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Exception fallback</source>
+          <target state="translated">例外フォールバック</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Instead of providing a best-fit fallback or a replacement string, an encoder can throw an <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> if it is unable to encode a set of characters, and a decoder can throw a <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> if it is unable to decode a byte array.</source>
+          <target state="translated">最適フォールバックや置換文字列を提供する代わりに、エンコーダーで一連の文字をエンコードできない場合に <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> をスローしたり、デコーダーでバイト配列をデコードできない場合に <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> をスローしたりすることもできます。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>To throw an exception in encoding and decoding operations, you supply an <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> object and a <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> object, respectively, to the <bpt id="p3">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p3">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> method.</source>
+          <target state="translated">エンコードおよびデコード操作で例外をスローするには、<bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> オブジェクトと <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> オブジェクトをそれぞれ <bpt id="p3">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p3">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> メソッドに指定します。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The following example illustrates exception fallback with the ASCIIEncoding class.</source>
+          <target state="translated">次の例は、ASCIIEncoding クラスによる例外フォールバックを示しています。</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>You can also implement a custom exception handler for an encoding operation.</source>
+          <target state="translated">エンコード操作用のカスタム例外ハンドラーを実装することもできます。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Implementing a custom fallback strategy<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>カスタム フォールバック ストラテジの実装<ept id="p1">](#implementing-a-custom-fallback-strategy)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> and <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> objects provide the following information about the condition that caused the exception:</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> オブジェクトと <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> オブジェクトは、例外を引き起こした状況について以下の情報を提供します。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> object includes an <bpt id="p2">[</bpt>IsUnknownSurrogate<ept id="p2">](xref:System.Text.EncoderFallbackException.IsUnknownSurrogate)</ept> method, which indicates whether the character or characters that cannot be encoded represent an unknown surrogate pair (in which case, the method returns <ph id="ph1">`true`</ph>) or an unknown single character (in which case, the method returns <ph id="ph2">`false`</ph>).</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> オブジェクトに含まれている <bpt id="p2">[</bpt>IsUnknownSurrogate<ept id="p2">](xref:System.Text.EncoderFallbackException.IsUnknownSurrogate)</ept> メソッドにより、エンコードできない文字が不明なサロゲート ペアか (この場合は <ph id="ph1">`true`</ph> が返されます)、不明な単一文字か (この場合は <ph id="ph2">`false`</ph> が返されます) が示されます。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The characters in the surrogate pair are available from the <bpt id="p1">[</bpt>EncoderFallbackException.CharUnknownHigh<ept id="p1">](xref:System.Text.EncoderFallbackException.CharUnknownHigh)</ept> and <bpt id="p2">[</bpt>EncoderFallbackException.CharUnknownLow<ept id="p2">](xref:System.Text.EncoderFallbackException.CharUnknownLow)</ept> properties.</source>
+          <target state="translated">サロゲート ペアの文字は、<bpt id="p1">[</bpt>EncoderFallbackException.CharUnknownHigh<ept id="p1">](xref:System.Text.EncoderFallbackException.CharUnknownHigh)</ept> プロパティと <bpt id="p2">[</bpt>EncoderFallbackException.CharUnknownLow<ept id="p2">](xref:System.Text.EncoderFallbackException.CharUnknownLow)</ept> プロパティから取得できます。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The unknown single character is available from the <bpt id="p1">[</bpt>EncoderFallbackException.CharUnknown<ept id="p1">](xref:System.Text.EncoderFallbackException.CharUnknown)</ept> property.</source>
+          <target state="translated">不明な単一文字は、<bpt id="p1">[</bpt>EncoderFallbackException.CharUnknown<ept id="p1">](xref:System.Text.EncoderFallbackException.CharUnknown)</ept> プロパティから取得できます。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackException.Index<ept id="p1">](xref:System.Text.EncoderFallbackException.Index)</ept> property indicates the position in the string at which the first character that could not be encoded was found.</source>
+          <target state="translated">また、<bpt id="p1">[</bpt>EncoderFallbackException.Index<ept id="p1">](xref:System.Text.EncoderFallbackException.Index)</ept> プロパティにより、エンコードできない最初の文字が見つかった文字列内の位置が示されます。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DecoderFallbackException<ept id="p1">](xref:System.Text.DecoderFallbackException)</ept> object includes a <bpt id="p2">[</bpt>BytesUnknown<ept id="p2">](xref:System.Text.DecoderFallbackException.BytesUnknown)</ept> property that returns an array of bytes that cannot be decoded.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DecoderFallbackException<ept id="p1">](xref:System.Text.DecoderFallbackException)</ept> オブジェクトに含まれている <bpt id="p2">[</bpt>BytesUnknown<ept id="p2">](xref:System.Text.DecoderFallbackException.BytesUnknown)</ept> プロパティにより、デコードできないバイト配列が返されます。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DecoderFallbackException.Index<ept id="p1">](xref:System.Text.DecoderFallbackException.Index)</ept> property indicates the starting position of the unknown bytes.</source>
+          <target state="translated">また、<bpt id="p1">[</bpt>DecoderFallbackException.Index<ept id="p1">](xref:System.Text.DecoderFallbackException.Index)</ept> プロパティにより、不明なバイトの開始位置が示されます。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Although the <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> and <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> objects provide adequate diagnostic information about the exception, they do not provide access to the encoding or decoding buffer.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> オブジェクトと <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> オブジェクトでは、例外に関する診断情報は十分に入手できますが、エンコード バッファーやデコード バッファーにアクセスすることはできません。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Therefore, they do not allow invalid data to be replaced or corrected within the encoding or decoding method.</source>
+          <target state="translated">したがって、エンコード メソッド内またはデコード メソッド内で無効なデータを置換したり修正したりすることはできません。</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Implementing a custom fallback strategy</source>
+          <target state="translated">カスタム フォールバック ストラテジの実装</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>In addition to the best-fit mapping that is implemented internally by code pages, .NET includes the following classes for implementing a fallback strategy:</source>
+          <target state="translated">.NET には、コード ページによって内部的に実装される最適マッピングに加えて、フォールバック ストラテジを実装するための次のクラスが含まれています。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> and <bpt id="p2">[</bpt>EncoderFallbackBuffer<ept id="p2">](xref:System.Text.EncoderFallbackBuffer)</ept> to replace characters in encoding operations.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderReplacementFallback<ept id="p1">](xref:System.Text.EncoderReplacementFallback)</ept> および <bpt id="p2">[</bpt>EncoderFallbackBuffer<ept id="p2">](xref:System.Text.EncoderFallbackBuffer)</ept>。エンコード操作中に文字を置換します。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>DecoderReplacementFallback<ept id="p1">](xref:System.Text.DecoderReplacementFallback)</ept> and <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> to replace characters in decoding operations.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DecoderReplacementFallback<ept id="p1">](xref:System.Text.DecoderReplacementFallback)</ept> および <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept>。デコード操作中に文字を置換します。</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>EncoderExceptionFallback<ept id="p1">](xref:System.Text.EncoderExceptionFallback)</ept> and <bpt id="p2">[</bpt>EncoderFallbackBuffer<ept id="p2">](xref:System.Text.EncoderFallbackBuffer)</ept> to throw an <bpt id="p3">[</bpt>EncoderFallbackException<ept id="p3">](xref:System.Text.EncoderFallbackException)</ept> when a character cannot be encoded.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderExceptionFallback<ept id="p1">](xref:System.Text.EncoderExceptionFallback)</ept> および <bpt id="p2">[</bpt>EncoderFallbackBuffer<ept id="p2">](xref:System.Text.EncoderFallbackBuffer)</ept>。文字をエンコードできない場合に <bpt id="p3">[</bpt>EncoderFallbackException<ept id="p3">](xref:System.Text.EncoderFallbackException)</ept> をスローします。</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>DecoderExceptionFallback<ept id="p1">](xref:System.Text.DecoderExceptionFallback)</ept> and <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> to throw a <bpt id="p3">[</bpt>DecoderFallbackException<ept id="p3">](xref:System.Text.DecoderFallbackException)</ept> when a character cannot be decoded.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DecoderExceptionFallback<ept id="p1">](xref:System.Text.DecoderExceptionFallback)</ept> および <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept>。文字をエンコードできない場合に <bpt id="p3">[</bpt>DecoderFallbackException<ept id="p3">](xref:System.Text.DecoderFallbackException)</ept> をスローします。</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>In addition, you can implement a custom solution that uses best-fit fallback, replacement fallback, or exception fallback, by following these steps:</source>
+          <target state="translated">さらに、次の手順に従って、最適フォールバック、置換フォールバック、または例外フォールバックを使用するカスタム ソリューションを実装できます。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Derive a class from <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> for encoding operations, and from <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> for decoding operations.</source>
+          <target state="translated">エンコード操作の場合は <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept>、デコード操作の場合は <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> の派生クラスを作成します。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Derive a class from <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> for encoding operations, and from <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> for decoding operations.</source>
+          <target state="translated">エンコード操作の場合は <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept>、デコード操作の場合は <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> の派生クラスを作成します。</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>For exception fallback, if the predefined <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> and <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> classes do not meet your needs, derive a class from an exception object such as <bpt id="p3">[</bpt>Exception<ept id="p3">](xref:System.Exception)</ept> or <bpt id="p4">[</bpt>ArgumentException<ept id="p4">](xref:System.ArgumentException)</ept>.</source>
+          <target state="translated">例外フォールバックにおいて、あらかじめ定義されている <bpt id="p1">[</bpt>EncoderFallbackException<ept id="p1">](xref:System.Text.EncoderFallbackException)</ept> クラスと <bpt id="p2">[</bpt>DecoderFallbackException<ept id="p2">](xref:System.Text.DecoderFallbackException)</ept> クラスが目的に合わない場合は、<bpt id="p3">[</bpt>Exception<ept id="p3">](xref:System.Exception)</ept> や <bpt id="p4">[</bpt>ArgumentException<ept id="p4">](xref:System.ArgumentException)</ept> などの例外オブジェクトから派生クラスを作成します。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Deriving from EncoderFallback or DecoderFallback</source>
+          <target state="translated">EncoderFallback または DecoderFallback からの派生</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>To implement a custom fallback solution, you must create a class that inherits from <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> for encoding operations, and from <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> for decoding operations.</source>
+          <target state="translated">カスタム フォールバック ソリューションを実装するには、エンコード操作の場合は <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept>、デコード操作の場合は <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> を継承するクラスを作成する必要があります。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Instances of these classes are passed to the <bpt id="p1">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> method and serve as the intermediary between the encoding class and the fallback implementation.</source>
+          <target state="translated">これらのクラスのインスタンスは <bpt id="p1">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> メソッドに渡され、エンコーディング クラスとフォールバックの実装の仲介役として機能します。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>When you create a custom fallback solution for an encoder or decoder, you must implement the following members:</source>
+          <target state="translated">エンコーダーまたはデコーダーのカスタム フォールバック ソリューションを作成するときには、次のメンバーを実装する必要があります。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallback.MaxCharCount<ept id="p1">](xref:System.Text.EncoderFallback.MaxCharCount)</ept> or <bpt id="p2">[</bpt>DecoderFallback.MaxCharCount<ept id="p2">](xref:System.Text.DecoderFallback.MaxCharCount)</ept> property, which returns the maximum possible number of characters that the best-fit, replacement, or exception fallback can return to replace a single character.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallback.MaxCharCount<ept id="p1">](xref:System.Text.EncoderFallback.MaxCharCount)</ept> プロパティまたは <bpt id="p2">[</bpt>DecoderFallback.MaxCharCount<ept id="p2">](xref:System.Text.DecoderFallback.MaxCharCount)</ept> プロパティ。最適、置換、例外の各フォールバックで単一の文字を置き換えるために返すことのできる文字の最大数を返します。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>For a custom exception fallback, its value is zero.</source>
+          <target state="translated">カスタム例外フォールバックの場合は 0 になります。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallback.CreateFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallback.CreateFallbackBuffer)</ept> or <bpt id="p2">[</bpt>DecoderFallback.CreateFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallback.CreateFallbackBuffer)</ept> method, which returns your custom <bpt id="p3">[</bpt>EncoderFallbackBuffer<ept id="p3">](xref:System.Text.EncoderFallbackBuffer)</ept> or <bpt id="p4">[</bpt>DecoderFallbackBuffer<ept id="p4">](xref:System.Text.DecoderFallbackBuffer)</ept> implementation.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallback.CreateFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallback.CreateFallbackBuffer)</ept> メソッドまたは <bpt id="p2">[</bpt>DecoderFallback.CreateFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallback.CreateFallbackBuffer)</ept> メソッド。<bpt id="p3">[</bpt>EncoderFallbackBuffer<ept id="p3">](xref:System.Text.EncoderFallbackBuffer)</ept> または <bpt id="p4">[</bpt>DecoderFallbackBuffer<ept id="p4">](xref:System.Text.DecoderFallbackBuffer)</ept> のカスタム実装を返します。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The method is called by the encoder when it encounters the first character that it is unable to successfully encode, or by the decoder when it encounters the first byte that it is unable to successfully decode.</source>
+          <target state="translated">このメソッドは、エンコーダーで正しくエンコードできない文字が初めて検出されたとき、またはデコーダーで正しくデコードできないバイトが初めて検出されたときに呼び出されます。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Deriving from EncoderFallbackBuffer or DecoderFallbackBuffer</source>
+          <target state="translated">EncoderFallbackBuffer または DecoderFallbackBuffer からの派生</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>To implement a custom fallback solution, you must also create a class that inherits from <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> for encoding operations, and from <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> for decoding operations.</source>
+          <target state="translated">カスタム フォールバック ソリューションを実装するには、エンコード操作の場合は <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept>、デコード操作の場合は <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> を継承するクラスも作成する必要があります。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Instances of these classes are returned by the <ph id="ph1">`CreateFallbackBuffer`</ph> method of the <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> and <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> classes.</source>
+          <target state="translated">これらのクラスのインスタンスは、<bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> クラスおよび <bpt id="p2">[</bpt>DecoderFallback<ept id="p2">](xref:System.Text.DecoderFallback)</ept> クラスの <ph id="ph1">`CreateFallbackBuffer`</ph> メソッドによって返されます。</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallback.CreateFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallback.CreateFallbackBuffer)</ept> method is called by the encoder when it encounters the first character that it is not able to encode, and the <bpt id="p2">[</bpt>DecoderFallback.CreateFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallback.CreateFallbackBuffer)</ept> method is called by the decoder when it encounters one or more bytes that it is not able to decode.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallback.CreateFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallback.CreateFallbackBuffer)</ept> メソッドは、エンコーダーでエンコードできない文字が初めて検出されたときに呼び出され、<bpt id="p2">[</bpt>DecoderFallback.CreateFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallback.CreateFallbackBuffer)</ept> メソッドは、デコーダーでデコードできないバイトが検出されたときに呼び出されます。</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> and <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> classes provide the fallback implementation.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> クラスと<bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> クラスは、フォールバックの実装を提供します。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Each instance represents a buffer that contains the fallback characters that will replace the character that cannot be encoded or the byte sequence that cannot be decoded.</source>
+          <target state="translated">各インスタンスは、エンコードできない文字またはデコードできないバイト シーケンスを置き換えるフォールバック文字を含むバッファーを表します。</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>When you create a custom fallback solution for an encoder or decoder, you must implement the following members:</source>
+          <target state="translated">エンコーダーまたはデコーダーのカスタム フォールバック ソリューションを作成するときには、次のメンバーを実装する必要があります。</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.%23ctor)</ept> or <bpt id="p2">[</bpt>DecoderFallbackBuffer.Fallback<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Fallback(System.Byte[],System.Int32))</ept> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.%23ctor)</ept> メソッドまたは <bpt id="p2">[</bpt>DecoderFallbackBuffer.Fallback<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Fallback(System.Byte[],System.Int32))</ept> メソッド。</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>EncoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Fallback(System.Char,System.Char,System.Int32))</ept> is called by the encoder to provide the fallback buffer with information about the character that it cannot encode.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Fallback(System.Char,System.Char,System.Int32))</ept> は、エンコーダーによって呼び出され、エンコードできない文字に関する情報をフォールバック バッファーに提供します。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Because the character to be encoded may be a surrogate pair, this method is overloaded.</source>
+          <target state="translated">エンコードされる文字はサロゲート ペアである場合もあるため、このメソッドはオーバーロードされます。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>One overload is passed the character to be encoded and its index in the string.</source>
+          <target state="translated">最初のオーバーロードには、エンコードされる文字と、その文字列内のインデックスが渡されます。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The second overload is passed the high and low surrogate along with its index in the string.</source>
+          <target state="translated">2 番目のオーバーロードには、上位および下位のサロゲートと、その文字列内のインデックスが渡されます。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DecoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.DecoderFallbackBuffer.Fallback(System.Byte[],System.Int32))</ept> method is called by the decoder to provide the fallback buffer with information about the bytes that it cannot decode.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DecoderFallbackBuffer.Fallback<ept id="p1">](xref:System.Text.DecoderFallbackBuffer.Fallback(System.Byte[],System.Int32))</ept> メソッドは、デコーダーによって呼び出され、デコードできないバイトに関する情報をフォールバック バッファーに提供します。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>This method is passed an array of bytes that it cannot decode, along with the index of the first byte.</source>
+          <target state="translated">このメソッドには、デコードできないバイト配列と、最初のバイトのインデックスが渡されます。</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The fallback method should return <ph id="ph1">`true`</ph> if the fallback buffer can supply a best-fit or replacement character or characters; otherwise, it should return <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">フォールバック メソッドは、フォールバック バッファーが最適な文字または置換文字を提供できる場合は <ph id="ph1">`true`</ph>、それ以外の場合は <ph id="ph2">`false`</ph> を返します。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>For an exception fallback, the fallback method should throw an exception.</source>
+          <target state="translated">例外フォールバックの場合は例外をスローします。</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer.GetNextChar<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.GetNextChar)</ept> or <bpt id="p2">[</bpt>DecoderFallbackBuffer.GetNextChar<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.GetNextChar)</ept> method, which is called repeatedly by the encoder or decoder to get the next character from the fallback buffer.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.GetNextChar<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.GetNextChar)</ept> メソッドまたは <bpt id="p2">[</bpt>DecoderFallbackBuffer.GetNextChar<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.GetNextChar)</ept> メソッド。フォールバック バッファーから次の文字を取得するために、エンコーダーまたはデコーダーによって繰り返し呼び出されます。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>When all fallback characters have been returned, the method should return U+0000.</source>
+          <target state="translated">すべてのフォールバック文字を返し終わったら、このメソッドは U+0000 を返す必要があります。</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer.Remaining<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Remaining)</ept> or <bpt id="p2">[</bpt>DecoderFallbackBuffer.Remaining<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Remaining)</ept> property, which returns the number of characters remaining in the fallback buffer.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.Remaining<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Remaining)</ept> プロパティまたは <bpt id="p2">[</bpt>DecoderFallbackBuffer.Remaining<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Remaining)</ept> プロパティ。フォールバック バッファー内の残りの文字数を返します。</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer.MovePrevious<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.MovePrevious)</ept> or <bpt id="p2">[</bpt>DecoderFallbackBuffer.MovePrevious<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.MovePrevious)</ept> method, which moves the current position in the fallback buffer to the previous character.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.MovePrevious<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.MovePrevious)</ept> メソッドまたは <bpt id="p2">[</bpt>DecoderFallbackBuffer.MovePrevious<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.MovePrevious)</ept> メソッド。フォールバック バッファー内の現在の位置を前の文字に移動します。</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>EncoderFallbackBuffer.Reset<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Reset)</ept> or <bpt id="p2">[</bpt>DecoderFallbackBuffer.Reset<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Reset)</ept> method, which reinitializes the fallback buffer.</source>
+          <target state="translated"><bpt id="p1">[</bpt>EncoderFallbackBuffer.Reset<ept id="p1">](xref:System.Text.EncoderFallbackBuffer.Reset)</ept> メソッドまたは <bpt id="p2">[</bpt>DecoderFallbackBuffer.Reset<ept id="p2">](xref:System.Text.DecoderFallbackBuffer.Reset)</ept> メソッド。フォールバック バッファーを再初期化します。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>If the fallback implementation is a best-fit fallback or a replacement fallback, the classes derived from <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> and <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> also maintain two private instance fields: the exact number of characters in the buffer; and the index of the next character in the buffer to return.</source>
+          <target state="translated">フォールバックの実装が最適フォールバックまたは置換フォールバックの場合は、<bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> と <bpt id="p2">[</bpt>DecoderFallbackBuffer<ept id="p2">](xref:System.Text.DecoderFallbackBuffer)</ept> の派生クラスで、2 つのプライベート インスタンス フィールド (バッファー内の正確な文字数と、次に返される文字のインデックス) も保持します。</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>An EncoderFallback example</source>
+          <target state="translated">EncoderFallback の例</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>An earlier example used replacement fallback to replace Unicode characters that did not correspond to ASCII characters with an asterisk (<ph id="ph1">\*</ph>).</source>
+          <target state="translated">前の例では、置換フォールバックを使用して、対応する ASCII 文字がない Unicode 文字をアスタリスク (<ph id="ph1">\*</ph>) に置き換えました。</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>The following example uses a custom best-fit fallback implementation instead to provide a better mapping of non-ASCII characters.</source>
+          <target state="translated">次の例では、代わりに最適フォールバックのカスタム実装を使用して、非 ASCII 文字のマッピングを改善しています。</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The following code defines a class named <ph id="ph1">`CustomMapper`</ph> that is derived from <bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> to handle the best-fit mapping of non-ASCII characters.</source>
+          <target state="translated">次のコードでは、<bpt id="p1">[</bpt>EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept> から派生する <ph id="ph1">`CustomMapper`</ph> という名前のクラスを定義して、非 ASCII 文字の最適マッピングを処理します。</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Its <ph id="ph1">`CreateFallbackBuffer`</ph> method returns a <ph id="ph2">`CustomMapperFallbackBuffer`</ph> object, which provides the <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> implementation.</source>
+          <target state="translated">このクラスの <ph id="ph1">`CreateFallbackBuffer`</ph> メソッドは、<bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> の実装を提供する <ph id="ph2">`CustomMapperFallbackBuffer`</ph> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CustomMapper`</ph> class uses a <bpt id="p1">[</bpt>Dictionary<ph id="ph2">&amp;lt;</ph>TKey, TValue<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Collections.Generic.Dictionary%602)</ept> object to store the mappings of unsupported Unicode characters (the key value) and their corresponding 8-bit characters (which are stored in two consecutive bytes in a 64-bit integer).</source>
+          <target state="translated"><ph id="ph1">`CustomMapper`</ph> クラスは、<bpt id="p1">[</bpt>Dictionary<ph id="ph2">&amp;lt;</ph>TKey, TValue<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Collections.Generic.Dictionary%602)</ept> オブジェクトを使用して、サポートされていない Unicode 文字 (キー値) と、それらに対応する 8 ビット文字とのマッピングを格納します (64 ビット整数の 2 つの連続するバイトに格納されます)。</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>To make this mapping available to the fallback buffer, the <ph id="ph1">`CustomMapper`</ph> instance is passed as a parameter to the <ph id="ph2">`CustomMapperFallbackBuffer`</ph> class constructor.</source>
+          <target state="translated">このマッピングをフォールバック バッファーで使用できるようにするには、<ph id="ph1">`CustomMapper`</ph> のインスタンスを <ph id="ph2">`CustomMapperFallbackBuffer`</ph> のクラス コンストラクターにパラメーターとして渡します。</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Because the longest mapping is the string "INF" for the Unicode character U+221E, the <ph id="ph1">`MaxCharCount`</ph> property returns 3.</source>
+          <target state="translated">最も長いマッピングは Unicode 文字 U+221E に対応する文字列 "INF" なので、<ph id="ph1">`MaxCharCount`</ph> プロパティは 3 を返します。</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>The following code defines the <ph id="ph1">`CustomMapperFallbackBuffer`</ph> class, which is derived from <bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept>.</source>
+          <target state="translated">次のコードでは、<bpt id="p1">[</bpt>EncoderFallbackBuffer<ept id="p1">](xref:System.Text.EncoderFallbackBuffer)</ept> から派生する <ph id="ph1">`CustomMapperFallbackBuffer`</ph> クラスを定義しています。</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>The dictionary that contains best-fit mappings and that is defined in the <ph id="ph1">`CustomMapper`</ph> instance is available from its class constructor.</source>
+          <target state="translated"><ph id="ph1">`CustomMapper`</ph> インスタンスで定義されている、最適マッピングを含むディクショナリは、クラス コンストラクターから取得できます。</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Its <ph id="ph1">`Fallback`</ph> method returns <ph id="ph2">`true`</ph> if any of the Unicode characters that the ASCII encoder cannot encode are defined in the mapping dictionary; otherwise, it returns <ph id="ph3">`false`</ph>.</source>
+          <target state="translated">このクラスの <ph id="ph1">`Fallback`</ph> メソッドは、ASCII エンコーダーでエンコードできない Unicode 文字がマッピング ディクショナリで定義されている場合は <ph id="ph2">`true`</ph> を返し、それ以外の場合は <ph id="ph3">`false`</ph> を返します。</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>For each fallback, the private <ph id="ph1">`count`</ph> variable indicates the number of characters that remain to be returned, and the private <ph id="ph2">`index`</ph> variable indicates the position in the string buffer, <ph id="ph3">`charsToReturn`</ph>, of the next character to return.</source>
+          <target state="translated">フォールバックのたびに、プライベート変数 <ph id="ph1">`count`</ph> は返される残りの文字数を示し、プライベート変数 <ph id="ph2">`index`</ph> は次に返される文字の文字列バッファー内 (<ph id="ph3">`charsToReturn`</ph> 内) の位置を示します。</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>The following code then instantiates the <ph id="ph1">`CustomMapper`</ph> object and passes an instance of it to the <bpt id="p1">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> method.</source>
+          <target state="translated">次のコードでは、<ph id="ph1">`CustomMapper`</ph> オブジェクトをインスタンス化して、そのインスタンスを <bpt id="p1">[</bpt>Encoding.GetEncoding(String, EncoderFallback, DecoderFallback)<ept id="p1">](xref:System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback))</ept> メソッドに渡しています。</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>The output indicates that the best-fit fallback implementation successfully handles the three non-ASCII characters in the original string.</source>
+          <target state="translated">出力を見るとわかるように、この最適フォールバックの実装では、元の文字列の 3 つの非 ASCII 文字が正しく処理されます。</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.Encoder<ept id="p1">](xref:System.Text.Encoder)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.Encoder<ept id="p1">](xref:System.Text.Encoder)</ept></target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.EncoderFallback<ept id="p1">](xref:System.Text.EncoderFallback)</ept></target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.Decoder<ept id="p1">](xref:System.Text.Decoder)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.Decoder<ept id="p1">](xref:System.Text.Decoder)</ept></target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.DecoderFallback<ept id="p1">](xref:System.Text.DecoderFallback)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.DecoderFallback<ept id="p1">](xref:System.Text.DecoderFallback)</ept></target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.Encoding<ept id="p1">](xref:System.Text.Encoding)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.Encoding<ept id="p1">](xref:System.Text.Encoding)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

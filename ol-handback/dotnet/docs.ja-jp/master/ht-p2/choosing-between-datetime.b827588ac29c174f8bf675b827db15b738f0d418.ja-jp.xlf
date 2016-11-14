@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e5b709cb82c680edf454d0a8fc9ff27e6d26c138</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\choosing-between-datetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2520616ec19791376d71c88023904683fab2909a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">86fbcaed1a36e8bbfc1915f2596d6f5ac54867d2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">DateTime、DateTimeOffset、TimeSpan、および TimeZoneInfo の使い分け</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">DateTime、DateTimeOffset、TimeSpan、および TimeZoneInfo の使い分け</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">DateTime、DateTimeOffset、TimeSpan、および TimeZoneInfo の使い分け</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET applications that use date and time information are very diverse and can use that information in several ways.</source>
+          <target state="translated">日時情報を使用する .NET アプリケーションは非常に多様であり、その情報をさまざまな方法で使用できます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The more common uses of date and time information include one or more of the following:</source>
+          <target state="translated">より一般的な日時情報の用途には、次の 1 つ以上が含まれます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To reflect a date only, so that time information is not important.</source>
+          <target state="translated">日付のみを反映する (時刻情報は重要ではない)。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To reflect a time only, so that date information is not important.</source>
+          <target state="translated">時刻のみを反映する (日付情報は重要ではない)。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To reflect an abstract date and time that is not tied to a specific time and place (for example, most stores in an international chain open on weekdays at 9:00 A.M.).</source>
+          <target state="translated">特定の時刻と場所に関連付けられていない抽象日時を反映する (たとえば、国際的チェーンのほとんどのストアは週中の午前 9:00 にオープンする)。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To retrieve date and time information from sources outside of the .NET application, typically where date and time information is stored in a simple data type.</source>
+          <target state="translated">.NET アプリケーションの外部ソースから日時情報を取得する (通常、日時情報は単純なデータ型に格納される)。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">単一の時点を一意かつ明確に識別する。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Some applications require that a date and time be unambiguous only on the host system; others require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).</source>
+          <target state="translated">ホスト システムでのみ日付と時刻を明確にする必要があるアプリケーションもあれば、システム全体で明確にする必要があるアプリケーションもあります (つまり、1 つのシステムでシリアル化される日付は有意に逆シリアル化し、世界中のどの場所においても別のシステムで使用できます)。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To preserve multiple related times (such as the requestor's local time and the server's time of receipt for a Web request).</source>
+          <target state="translated">関連する複数の時刻を保持する (要求元の現地時刻やサーバーの Web 要求受信時刻など)。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.</source>
+          <target state="translated">日付と時刻の演算を実行する (これにより、おそらく単一時点が一意かつ明確に識別される)。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>.NET includes the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>, <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>, <bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept>, and <bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> types, all of which can be used to build applications that work with dates and times.</source>
+          <target state="translated">.NET には、<bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>、<bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>、<bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept>、<bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> の各型が含まれます。このすべては、日付と時刻を使用するアプリケーションを構築するために使用できます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This topic does not discuss the older <ph id="ph1">`TimeZone`</ph> type, because its functionality is almost entirely incorporated in the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class.</source>
+          <target state="translated">このトピックでは古い <ph id="ph1">`TimeZone`</ph> 型については説明されません。その機能は、<bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> クラスにほぼ完全に組み込まれているからです。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Whenever possible, developers should use the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class instead of the <ph id="ph1">`TimeZone`</ph> class.</source>
+          <target state="translated">開発者は可能な限り、<ph id="ph1">`TimeZone`</ph> クラスの代わりに <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> クラスを使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The DateTime structure</source>
+          <target state="translated">DateTime 構造体</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> value defines a particular date and time.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> 値は、特定の日付と時刻を定義します。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>It includes a <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property that provides limited information about the time zone to which that date and time belongs.</source>
+          <target state="translated">これには日付と時刻が属するタイム ゾーンに関する限られた情報を提供する <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> プロパティが含まれています。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> value returned by the <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property indicates whether the <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> value represents the local time <bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>), Coordinated Universal Time (UTC) <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>, or an unspecified time <bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>.</source>
+          <target state="translated"><bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> プロパティによって返される <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> 値は、<bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> 値が現地時刻 (<bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>)、世界協定時刻 (UTC) (<bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>)、指定されていない時刻 (<bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>) のうちのどれを表すかを示します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure is suitable for applications that do the following:</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 構造体は、次の操作を実行するアプリケーションに適しています。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Work with dates only.</source>
+          <target state="translated">日付のみを使用するアプリケーション。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Work with times only.</source>
+          <target state="translated">時刻のみを使用するアプリケーション。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Work with abstract dates and times.</source>
+          <target state="translated">抽象日時を使用するアプリケーション。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Work with dates and times for which time zone information is missing.</source>
+          <target state="translated">タイム ゾーン情報がない日時を使用するアプリケーション。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Work with UTC dates and times only.</source>
+          <target state="translated">UTC 日時のみを使用するアプリケーション。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Retrieve date and time information from sources outside the .NET Framework, such as SQL databases.</source>
+          <target state="translated">SQL データベースなど、.NET Framework の外部ソースから日時情報を取得します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Typically, these sources store date and time information in a simple format that is compatible with the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure.</source>
+          <target state="translated">通常、これらのソースは、<bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 構造体と互換性のある単純な形式で日時情報を格納します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Perform date and time arithmetic, but are concerned with general results.</source>
+          <target state="translated">日付と時刻の演算を実行しますが、これは一般的な結果に関するものです。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example, in an addition operation that adds six months to a particular date and time, it is often not important whether the result is adjusted for daylight saving time.</source>
+          <target state="translated">たとえば、6 カ月を特定の日付と時刻に加算する加算演算では、多くの場合、結果を夏時間に合わせて調整するかどうかは重要ではありません。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Unless a particular <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC, that date and time value is often ambiguous or limited in its portability.</source>
+          <target state="translated">特定の <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値が UTC を表さない場合、通常、その日付と時刻の値は、あいまいであるか、その移植性に限定されます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time).</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値が現地時刻を表す場合、そのローカル タイム ゾーン内で移植することができます (つまり、同じタイム ゾーンにある別のシステムで値が逆シリアル化されると、その値は明確に単一時点を識別します)。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Outside the local time zone, that <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value can have multiple interpretations.</source>
+          <target state="translated">ローカル タイム ゾーン外では、その <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値は複数の意味を持つ場合があります。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If the value's <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property is <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized.</source>
+          <target state="translated">値の <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> プロパティが <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept> の場合、移植性は低くなります。同じタイム ゾーン内であいまいになり、最初にシリアル化したのと同じシステムにおいてさえもあいまいになる可能性があります。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Only if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値が UTC を表す場合のみ、値が使用されるシステムまたはタイム ゾーンに関係なく、その値は明確に単一時点を識別します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When saving or sharing <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> data, UTC should be used and the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value's <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> property should be set to <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> データを保存または共有する際、UTC を使用する必要があり、<bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 値の <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> プロパティを <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept> に設定する必要があります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The DateTimeOffset structure</source>
+          <target state="translated">DateTimeOffset 構造体</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 構造体は、日付と時刻の値、およびその値と UTC との差異を示すオフセットを表します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Thus, the value always unambiguously identifies a single point in time.</source>
+          <target state="translated">そのため、値は常に明確に単一時点を識別します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type includes all of the functionality of the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> type along with time zone awareness.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 型には、<bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 型のすべての機能に加え、タイム ゾーンの処理機能が含まれます。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This makes it is suitable for applications that do the following:</source>
+          <target state="translated">そのため、次の操作を実行するアプリケーションに適しています。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">単一の時点を一意かつ明確に識別する。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 型を使用して、「現在」の意味を明確に定義し、トランザクションの時刻を記録し、システム イベントまたはアプリケーション イベントの時刻を記録し、ファイル作成時刻とファイル変更時刻を記録することができます。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Perform general date and time arithmetic.</source>
+          <target state="translated">一般的な日付と時刻の演算を実行する。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Preserve multiple related times, as long as those times are stored as two separate values or as two members of a structure.</source>
+          <target state="translated">その時刻が 2 つの別々の値または構造体の 2 つのメンバーである場合、関連する複数の時刻を保持する。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These uses for <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are much more common than those for <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値のこの用途は、<bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 値の用途と比べてはるかに一般的です。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>As a result, <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> should be considered the default date and time type for application development.</source>
+          <target state="translated">その結果、<bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> はアプリケーション開発の既定の日付時刻型と見なされます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value is not tied to a particular time zone, but can originate from any of a variety of time zones.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値は特定のタイム ゾーンと関連付けられていませんが、さまざまなタイム ゾーンから派生することができます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To illustrate this, the following example lists the time zones to which a number of <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values (including a local Pacific Standard Time) can belong.</source>
+          <target state="translated">これを説明するために、いくつかの <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値 (ローカルの太平洋標準時を含む) が属することができるタイム ゾーンの一覧を次の例に示します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The output shows that each date and time value in this example can belong to at least three different time zones.</source>
+          <target state="translated">この例の日付と時刻の値はそれぞれ少なくとも 3 つの異なるタイム ゾーンに属することができることを出力は示しています。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value of 6/10/2007 shows that if a date and time value represents a daylight saving time, its offset from UTC does not even necessarily correspond to the originating time zone's base UTC offset or to the offset from UTC found in its display name.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値の 6/10/2007 は、日付と時刻の値が夏時間を表す場合、UTC のそのオフセットは必ずしも元のタイム ゾーンの基本 UTC オフセット、またはその表示名から見つかる UTC のオフセットと一致しないことを示しています。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This means that, because a single <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>  value is not tightly coupled with its time zone, it cannot reflect a time zone's transition to and from daylight saving time.</source>
+          <target state="translated">これは、単一の <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値はそのタイム ゾーンと密接に関連していないために夏時間との間のタイム ゾーンの遷移を反映することができないことを意味しています。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This can be particularly problematic when date and time arithmetic is used to manipulate a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">これは特に、日付と時刻の演算を使用して <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 値を操作する際に問題となる可能性があります。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For a discussion of how to perform date and time arithmetic in a way that takes account of a time zone's adjustment rules, see <bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept>.</source>
+          <target state="translated">タイム ゾーンの調整規則を考慮に入れた日付と時刻の演算を実行する方法については、「<bpt id="p1">[</bpt>日付と時刻を使用した算術演算の実行<ept id="p1">](performing-arithmetic-operations.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The TimeSpan structure</source>
+          <target state="translated">TimeSpan 構造体</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure represents a time interval.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 構造体は、時間間隔を表します。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Its two typical uses are:</source>
+          <target state="translated">その 2 つの一般的な用途は、次のとおりです。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Reflecting the time interval between two date and time values.</source>
+          <target state="translated">2 つの日付と時刻の値の間の時間を反映する。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, subtracting one <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value from another returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value.</source>
+          <target state="translated">たとえば、ある値から <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値を減算すると、<bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> 値が返されます。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Measuring elapsed time.</source>
+          <target state="translated">経過時間を測定する。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> property returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value that reflects the time interval that has elapsed since the call to one of the <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept> methods that begins to measure elapsed time.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> プロパティは、経過時間の測定を開始する <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept> メソッドの 1 つを呼び出してから経過した時間間隔を反映する <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> 値を返します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value can also be used as a replacement for a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value when that value reflects a time without reference to a particular time of day.</source>
+          <target state="translated">値が特定時刻への参照がない値が時間を反映する際、<bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 値の代わりに <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 値を使用することもできます。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This usage is similar to the <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> and <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept> properties, which return a <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> value that represents the time without reference to a date.</source>
+          <target state="translated">この用途は <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> および <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept> プロパティと似ています。これらのプロパティは、日付への参照なしの時間を表す <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> 値を返します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure can be used to reflect a store's daily opening or closing time, or it can be used to represent the time at which any regular event occurs.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 構造体を使用して、ストアの開店時刻または閉店時刻を反映したり、標準イベントが発生したときの時刻を表したりするために使用できます。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`StoreInfo`</ph> structure that includes <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> objects for store opening and closing times, as well as a <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object that represents the store's time zone.</source>
+          <target state="translated">以下の例では、開店時刻と閉店時刻用の <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> オブジェクト、およびストアのタイム ゾーンを表す <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> オブジェクトを含む <ph id="ph1">`StoreInfo`</ph> 構造体を定義します。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The structure also includes two methods, <ph id="ph1">`IsOpenNow`</ph> and <ph id="ph2">`IsOpenAt`</ph>, that indicates whether the store is open at a time specified by the user, who is assumed to be in the local time zone.</source>
+          <target state="translated">構造体には、<ph id="ph1">`IsOpenNow`</ph>、<ph id="ph2">`IsOpenAt`</ph> という 2 つのメソッドも含まれます。これは、ローカル タイム ゾーンにいると想定されるユーザーによって指定された時刻にストアがオープンするかどうかを示します。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`StoreInfo`</ph> structure can then be used by client code like the following.</source>
+          <target state="translated"><ph id="ph1">`StoreInfo`</ph> 構造体をクライアント コードで次のように使用できます。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The TimeZoneInfo class</source>
+          <target state="translated">TimeZoneInfo クラス</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class represents any of the earth's time zones, and enables the conversion of any date and time in one time zone to its equivalent in another time zone.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> クラスは地球のタイム ゾーンを表し、1 つのタイム ゾーンの日付と時刻の値を、別のタイム ゾーンの日付と時刻の値に変換できるようにします。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class makes it possible to work with dates and times so that any date and time value unambiguously identifies a single point in time.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> クラスにより、日付と時刻を使用して、どの日付と時刻の値も明確に単一時点を識別できるようにすることができます。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In some cases, taking full advantage of the <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class may require further development work.</source>
+          <target state="translated">場合によっては、<bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> クラスをフル活用するために、開発作業をさらに実行する必要が生じることもあります。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Date and time values are not tightly coupled with the time zones to which they belong.</source>
+          <target state="translated">日付と時刻の値は、それが属するタイム ゾーンに密接に関連付けられていません。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>As a result, unless your application provides some mechanism for linking a date and time with its associated time zone, it is easy for a particular date and time value to become disassociated from its time zone.</source>
+          <target state="translated">結果として、アプリケーションが日付と時刻をその関連タイム ゾーンとリンクするメカニズムを提供していない場合、特定の日付と時刻の値とそのタイム ゾーンの関連付けは簡単に解除されます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>One method of linking this information is to define a class or structure that contains both the date and time value and its associated time zone object.</source>
+          <target state="translated">この情報をリンクする 1 つの方法は、日付と時刻の値とその関連タイム ゾーン オブジェクトの両方を含むクラスまたは構造体を定義するという方法です。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Taking advantage of time zone support in .NET is possible only if the time zone to which a date and time value belongs is known when that date and time object is instantiated.</source>
+          <target state="translated">日付と時刻のオブジェクトをインスタンスするときにその日付と時刻の値が属するタイム ゾーンがわかっている場合のみ、.NET でタイム ゾーンのサポートを利用できます。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is often not the case, particularly in Web or network applications.</source>
+          <target state="translated">特に Web またはネットワーク アプリケーションでは、これは該当しません。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>日付、時刻およびタイム ゾーン<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc43c319f2ec8055073da4749cbfb7c56b825df9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\weak-references.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">74ee65cabb35b067b7c71eb39e3f79e7364848da</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b528e9e221e8e3373f6bf61ae040e935c316df98</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">弱い参照</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">弱い参照</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Weak references</source>
+          <target state="translated">弱い参照</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The garbage collector cannot collect an object in use by an application while the application's code can reach that object.</source>
+          <target state="translated">ガベージ コレクターでは、アプリケーションのコードがオブジェクトにアクセスできる間、そのアプリケーションで使用中のオブジェクトを収集することはできません。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The application is said to have a strong reference to the object.</source>
+          <target state="translated">アプリケーションには、オブジェクトへの強い参照があると考えられます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A weak reference permits the garbage collector to collect the object while still allowing the application to access the object.</source>
+          <target state="translated">弱い参照は、アプリケーションからオブジェクトへのアクセスを許容したまま、そのオブジェクトをガベージ コレクターが収集できるようにします。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A weak reference is valid only during the indeterminate amount of time until the object is collected when no strong references exist.</source>
+          <target state="translated">弱い参照は、強い参照が存在しない場合に、オブジェクトが収集されるまでの不確定の期間中のみ有効です。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When you use a weak reference, the application can still obtain a strong reference to the object, which prevents it from being collected.</source>
+          <target state="translated">弱い参照を使用すると、該当オブジェクトが収集されるのを回避するため、アプリケーションで強い参照を取得できます。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, there is always the risk that the garbage collector will get to the object first before a strong reference is reestablished.</source>
+          <target state="translated">ただし、強い参照が再確立される前に、ガベージ コレクターが最初にオブジェクトにアクセスするリスクが常にあります。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Weak references are useful for objects that use a lot of memory, but can be recreated easily if they are reclaimed by garbage collection.</source>
+          <target state="translated">弱い参照は、多くのメモリを使用するが、ガベージ コレクションによって回収される場合、簡単に再作成できるオブジェクトに便利です。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Suppose a tree view displays a complex hierarchical choice of options to the user.</source>
+          <target state="translated">ツリー ビューに、複雑な階層形式のオプション選択がユーザーに示されているとします。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If the underlying data is large, keeping the tree in memory is inefficient when the user is involved with something else in the application.</source>
+          <target state="translated">基になるデータが大きければ、ユーザーがアプリケーションで他の操作を行っている場合、ツリーをメモリ内に保持しても効果的ではありません。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>When the user switches away to another part of the application, you can use the <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> or <bpt id="p2">[</bpt>WeakReference<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.WeakReference%601)</ept> class to create a weak reference to the tree and destroy all strong references.</source>
+          <target state="translated">ユーザーがアプリケーションの別の部分に切り替えている場合、<bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> または <bpt id="p2">[</bpt>WeakReference<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.WeakReference%601)</ept> クラスを使用して、ツリーへの弱い参照を作成し、すべての強い参照を破棄できます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When the user switches back to the tree, the application attempts to obtain a strong reference to the tree and, if successful, avoids reconstructing the tree.</source>
+          <target state="translated">ユーザーがツリーに戻ると、アプリケーションはツリーへの強い参照を取得しようとします。成功した場合、ツリーの再作成は回避されます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>To establish a weak reference with an object, you create a <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> using the instance of the object to be tracked.</source>
+          <target state="translated">オブジェクトで弱い参照を確立するには、追跡されるオブジェクトのインスタンスを使用して、<bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> を作成します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You then set the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property to that object and set the original reference to the object to null.</source>
+          <target state="translated">次に、そのオブジェクトの <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> プロパティを設定して、オブジェクトへの元の参照を null に設定します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Short and Long Weak References</source>
+          <target state="translated">短期間と長期間の弱い参照</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You can create a short weak reference or a long weak reference:</source>
+          <target state="translated">短期間の弱い参照または長期間の弱い参照を作成できます。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Short</source>
+          <target state="translated">Short</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The target of a short weak reference becomes <ph id="ph1">`null`</ph> when the object is reclaimed by garbage collection.</source>
+          <target state="translated">短期間の弱い参照の対象は、オブジェクトがガベージ コレクションによって回収されると、<ph id="ph1">`null`</ph> になります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.</source>
+          <target state="translated">弱い参照自体が管理オブジェクトであり、その他の管理オブジェクトと同じようにガベージ コレクションの対象です。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A short weak reference is the default constructor for <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept>.</source>
+          <target state="translated">短期間の弱い参照は、<bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> の既定のコンス トラクターです。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Long</source>
+          <target state="translated">Long</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>A long weak reference is retained after the object's <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method has been called.</source>
+          <target state="translated">長期間の弱い参照は、オブジェクトの <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> メソッドが呼び出された後も保持されます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This allows the object to be recreated, but the state of the object remains unpredictable.</source>
+          <target state="translated">これにより、オブジェクトが再作成されることを許可しますが、オブジェクトの状態は予測不可能なままです。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use a long reference, specify <ph id="ph1">`true`</ph> in the <bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> constructor.</source>
+          <target state="translated">長い参照を使用するには、<bpt id="p1">[</bpt>WeakReference<ept id="p1">](xref:System.WeakReference)</ept> コンストラクターに <ph id="ph1">`true`</ph> を指定します。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If the object's type does not have a <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method, the short weak reference functionality applies and the weak reference is valid only until the target is collected, which can occur anytime after the finalizer is run.</source>
+          <target state="translated">オブジェクトの型に <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> メソッドがない場合、短期間の弱い参照の機能が適用され、弱い参照はターゲットが収集されるまで有効です。これはファイナライザーを実行した後であれば、いつでも発生する可能性があります。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>To establish a strong reference and use the object again, cast the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property of a <bpt id="p2">[</bpt>WeakReference<ept id="p2">](xref:System.WeakReference)</ept> to the type of the object.</source>
+          <target state="translated">強い参照を確立して、もう一度オブジェクトを使用するには、オブジェクトの型に <bpt id="p2">[</bpt>WeakReference<ept id="p2">](xref:System.WeakReference)</ept> の <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> プロパティをキャストします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> property returns <ph id="ph1">`null`</ph>, the object was collected; otherwise, you can continue to use the object because the application has regained a strong reference to it.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Target<ept id="p1">](xref:System.WeakReference.Target)</ept> プロパティが <ph id="ph1">`null`</ph> を返す場合、オブジェクトが収集されます。それ以外の場合、アプリケーションがその強い参照を再取得するため、オブジェクトを使用し続けることができます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Guidelines for Using Weak References</source>
+          <target state="translated">弱い参照を使用するためのガイドライン</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Use long weak references only when necessary as the state of the object is unpredictable after finalization.</source>
+          <target state="translated">終了処理後のオブジェクトの状態が予測できないため、長期間の弱い参照は必要な場合にのみ使用します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Avoid using weak references to small objects because the pointer itself may be as large or larger.</source>
+          <target state="translated">ポインター自体が同程度の大きさか、より大きい場合があるため、小さなオブジェクトへの弱い参照を使用しないでください。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Avoid using weak references as an automatic solution to memory management problems.</source>
+          <target state="translated">メモリ管理の問題への自動的な解決方法として、弱い参照を使用しないでください。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Instead, develop an effective caching policy for handling your application's objects.</source>
+          <target state="translated">代わりに、アプリケーションのオブジェクトを処理するために、効果的なキャッシュ ポリシーを開発します。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET のガベージ コレクション<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

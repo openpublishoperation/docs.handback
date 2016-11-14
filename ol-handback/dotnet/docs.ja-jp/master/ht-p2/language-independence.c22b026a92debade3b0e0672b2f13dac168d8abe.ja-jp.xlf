@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">47a407d1c1e768a027aaca63ee7a668e992467b2</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\language-independence.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2cd82917b5829a18453fc14cb36b156bb7d01cb4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">53915650050c83efbb1f9ca1a95efbb9f2ee476c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Language independence and language-independent components</source>
+          <target state="translated">言語への非依存性、および言語非依存コンポーネント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Language independence and language-independent components</source>
+          <target state="translated">言語への非依存性、および言語非依存コンポーネント</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Language independence and language-independent components</source>
+          <target state="translated">言語への非依存性、および言語非依存コンポーネント</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The .NET platform is language independent.</source>
+          <target state="translated">.NET プラットフォームは言語に依存しません。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means that, as a developer, you can develop in one of the many languages that target the .NET platform, such as C#, F#, and Visual Basic.</source>
+          <target state="translated">つまり、開発者は、C#、F#、および Visual Basic などの .NET プラットフォームを対象とする多くの言語のいずれかで開発できることを意味します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can access the types and members of class libraries developed for the .NET platform without having to know the language in which they were originally written and without having to follow any of the original language's conventions.</source>
+          <target state="translated">.NET プラットフォーム用に開発されたクラス ライブラリの型とメンバーには、最初に記述された言語を知らなくてもアクセスできます。元の言語の規則に従う必要もありません。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you are a component developer, your component can be accessed by any .NET app regardless of its language.</source>
+          <target state="translated">コンポーネントを開発しているのであれば、コンポーネントの言語にかかわらず、すべての .NET アプリからそのコンポーネントにアクセスできます。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This first part of this article discusses creating language-independent components - that is, components that can be consumed by apps that are written in any language.</source>
+          <target state="translated">この記事の最初の部分では、言語に依存しないコンポーネント、つまり、どの言語で記述されたアプリからでも使用できるコンポーネントの作成について説明します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can also create a single component or app from source code written in multiple languages; see <bpt id="p1">[</bpt>Cross-Language Interoperability<ept id="p1">](#cross-language-interoperability)</ept> in the second part of this article.</source>
+          <target state="translated">また、複数の言語で記述されたソース コードから 1 つのコンポーネントまたはアプリを作成することもできます。この記事の 2 番目のパートにある「<bpt id="p1">[</bpt>言語間の相互運用性<ept id="p1">](#cross-language-interoperability)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To fully interact with other objects written in any language, objects must expose to callers only those features that are common to all languages.</source>
+          <target state="translated">任意の言語で記述された他のオブジェクトと完全に対話するには、すべての言語に共通の機能だけを呼び出し側に公開するようにオブジェクトを実装する必要があります。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This common set of features is defined by the Common Language Specification (CLS), which is a set of rules that apply to generated assemblies.</source>
+          <target state="translated">この共通の機能セットは、生成されたアセンブリに適用される規則のセットである、共通言語仕様 (CLS: Common Language Specification) によって定義されます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification is defined in Partition I, Clauses 7 through 11 of the <bpt id="p1">[</bpt>ECMA-335 Standard: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>.</source>
+          <target state="translated">共通言語仕様は、「<bpt id="p1">[</bpt>Standard ECMA-335: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>」(標準の ECMA-335: 共通言語基盤) の第 1 部の第 7 ～ 11 項で定義されています。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If your component conforms to the Common Language Specification, it is guaranteed to be CLS-compliant and can be accessed from code in assemblies written in any programming language that supports the CLS.</source>
+          <target state="translated">コンポーネントが共通言語仕様に準拠している場合は、CLS に準拠することが保証され、CLS をサポートするすべてのプログラミング言語で記述されたアセンブリのコードからアクセスできます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can determine whether your component conforms to the Common Language Specification at compile time by applying the <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute to your source code.</source>
+          <target state="translated">コンパイル時にコンポーネントが共通言語仕様に準拠しているかどうかを確認するには、<bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性をソース コードに適用します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For more information, see The <bpt id="p1">[</bpt>CLSCompliantAttribute attribute<ept id="p1">](#the-clscompliantattribute-attribute)</ept>.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>CLSCompliantAttribute 属性<ept id="p1">](#the-clscompliantattribute-attribute)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In this article:</source>
+          <target state="translated">この記事の内容:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CLS compliance rules<ept id="p1">](#cls-compliance-rules)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CLS 準拠の規則<ept id="p1">](#cls-compliance-rules)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Naming conventions<ept id="p1">](#naming-conventions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>名前付け規則<ept id="p1">](#naming-conventions)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type conversion<ept id="p1">](#type-conversion)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型変換<ept id="p1">](#type-conversion)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Arrays<ept id="p1">](#arrays)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>配列<ept id="p1">](#arrays)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interfaces<ept id="p1">](#interfaces)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>インターフェイス<ept id="p1">](#interfaces)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type members in general<ept id="p1">](#type-members-in-general)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>一般的な型メンバー<ept id="p1">](#type-members-in-general)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Member accessibility<ept id="p1">](#member-accessibility)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>メンバーのアクセシビリティ<ept id="p1">](#member-accessibility)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Constructors<ept id="p1">](#constructors)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>コンストラクター<ept id="p1">](#constructors)</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>プロパティ<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Overloads<ept id="p1">](#overloads)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>オーバーロード<ept id="p1">](#overloads)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Exceptions<ept id="p1">](#exceptions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>例外<ept id="p1">](#exceptions)</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Attributes<ept id="p1">](#attributes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>属性<ept id="p1">](#attributes)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CLSCompliantAttribute attribute<ept id="p1">](#the-clscompliantattribute-attribute)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CLSCompliantAttribute 属性<ept id="p1">](#the-clscompliantattribute-attribute)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cross-Language Interoperability<ept id="p1">](#cross-language-interoperability)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>言語間の相互運用性<ept id="p1">](#cross-language-interoperability)</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>CLS compliance rules</source>
+          <target state="translated">CLS 準拠の規則</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This section discusses the rules for creating a CLS-compliant component.</source>
+          <target state="translated">ここでは、CLS に準拠したコンポーネントを作成するための規則について説明します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For a complete list of rules, see Partition I, Clause 11 of the <bpt id="p1">[</bpt>ECMA-335 Standard: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>.</source>
+          <target state="translated">規則の一覧については、「<bpt id="p1">[</bpt>ECMA-335 Standard: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>」(標準の ECMA-335: 共通言語基盤) の第 1 部の第 11 項を参照してください。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification discusses each rule for CLS compliance as it applies to consumers (developers who are programmatically accessing a component that is CLS-compliant), frameworks (developers who are using a language compiler to create CLS-compliant libraries), and extenders (developers who are creating a tool such as a language compiler or a code parser that creates CLS-compliant components).</source>
+          <target state="translated">共通言語仕様では、コンシューマー (プログラムによって CLS 準拠のコンポーネントにアクセスする開発者)、フレームワーク (言語コンパイラを使用して CLS 準拠のライブラリを作成する開発者)、およびエクステンダー (CLS 準拠のコンポーネントを作成する言語コンパイラ、コード パーサーなどのツールを作成する開発者) に適用する、CLS 準拠の各規則について説明します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This article focuses on the rules as they apply to frameworks.</source>
+          <target state="translated">ここでは、フレームワークに適用するときの規則に焦点を当てます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note, though, that some of the rules that apply to extenders may also apply to assemblies that are created using <bpt id="p1">[</bpt>Reflection.Emit<ept id="p1">](xref:System.Reflection.Emit)</ept>.</source>
+          <target state="translated">エクステンダーに適用する一部の規則は、<bpt id="p1">[</bpt>Reflection.Emit<ept id="p1">](xref:System.Reflection.Emit)</ept> を使用して作成されたアセンブリに適用されることもあります。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>To design a component that is language independent, you only need to apply the rules for CLS compliance to your component's public interface.</source>
+          <target state="translated">言語に依存しないコンポーネントをデザインするには、コンポーネントのパブリック インターフェイスに CLS 準拠の規則を適用するだけです。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Your private implementation does not have to conform to the specification.</source>
+          <target state="translated">プライベートな実装は仕様に準拠する必要はありません。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The rules for CLS compliance apply only to a component's public interface, not to its private implementation.</source>
+          <target state="translated">CLS 準拠の規則は、コンポーネントのパブリック インターフェイスにのみ適用されます。プライベート実装には適用されません。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, unsigned integers other than <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept> are not CLS-compliant.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept> 以外の符号なし整数は CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Because the <ph id="ph1">`Person`</ph> class in the following example exposes an <ph id="ph2">`Age`</ph> property of type <bpt id="p1">[</bpt>UInt16<ept id="p1">](xref:System.UInt16)</ept>, the following code displays a compiler warning.</source>
+          <target state="translated">次の例の <ph id="ph1">`Person`</ph> クラスは型 <bpt id="p1">[</bpt>UInt16<ept id="p1">](xref:System.UInt16)</ept> の <ph id="ph2">`Age`</ph> プロパティを公開するので、次のコードではコンパイラの警告が表示されます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>You can make the Person class CLS-compliant by changing the type of <ph id="ph1">`Age`</ph> property from <ph id="ph2">`UInt16`</ph> to <bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept>, which is a CLS-compliant, 16-bit signed integer.</source>
+          <target state="translated">Person クラスを CLS 準拠にするには、<ph id="ph1">`Age`</ph> プロパティの型を <ph id="ph2">`UInt16`</ph> から、CLS 準拠の 16 ビット符号付き整数である <bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept> に変更します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You do not have to change the type of the private <ph id="ph1">`personAge`</ph> field.</source>
+          <target state="translated">プライベート <ph id="ph1">`personAge`</ph> フィールドの型を変更する必要はありません。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A library's public interface consists of the following:</source>
+          <target state="translated">ライブラリのパブリック インターフェイスは、次の要素で構成されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Definitions of public classes.</source>
+          <target state="translated">パブリック クラスの定義。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Definitions of the public members of public classes, and definitions of members accessible to derived classes (that is, protected members).</source>
+          <target state="translated">パブリック クラスのパブリック メンバーの定義、および派生クラスからアクセスできるメンバー (つまり、protected メンバー) の定義。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Parameters and return types of public methods of public classes, and parameters and return types of methods accessible to derived classes.</source>
+          <target state="translated">パブリック クラスのパブリック メソッドのパラメーターおよび戻り値の型、派生クラスからアクセスできるメソッドのパラメーターおよび戻り値の型。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The rules for CLS compliance are listed in the following table.</source>
+          <target state="translated">CLS 準拠の規則を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The text of the rules is taken verbatim from the <bpt id="p1">[</bpt>ECMA-335 Standard: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>, which is Copyright 2012 by Ecma International.</source>
+          <target state="translated">この規則は、「<bpt id="p1">[</bpt>ECMA-335 Standard: Common Language Infrastructure<ept id="p1">](http://www.ecma-international.org/publications/standards/Ecma-335.htm)</ept>」(標準の ECMA-335: 共通言語基盤) からの引用で、Ecma International が 2012 年の著作権を保有しています。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>More detailed information about these rules is found in the following sections.</source>
+          <target state="translated">これらの規則の詳細については、以降のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Category</source>
+          <target state="translated">カテゴリ</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>See</source>
+          <target state="translated">参照トピック</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Rule</source>
+          <target state="translated">ルール</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Rule Number</source>
+          <target state="translated">規則番号</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Accessibility</source>
+          <target state="translated">ユーザー補助</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Member accessibility<ept id="p1">](#member-accessibility)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>メンバーのアクセシビリティ<ept id="p1">](#member-accessibility)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Accessibility shall not be changed when overriding inherited methods, except when overriding a method inherited from a different assembly with accessibility <ph id="ph1">`family-or-assembly`</ph>.</source>
+          <target state="translated">継承されたメソッドをオーバーライドする場合、アクセシビリティは変更してはいけない。ただし、別のアセンブリから継承されたメソッドをアクセシビリティ <ph id="ph1">`family-or-assembly`</ph> でオーバーライドする場合は除く。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In this case, the override shall have accessibility <ph id="ph1">`family`</ph>.</source>
+          <target state="translated">この場合、アクセシビリティは <ph id="ph1">`family`</ph> にすること。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>10</source>
+          <target state="translated">10</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Accessibility</source>
+          <target state="translated">ユーザー補助</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Member accessibility<ept id="p1">](#member-accessibility)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>メンバーのアクセシビリティ<ept id="p1">](#member-accessibility)</ept></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The visibility and accessibility of types and members shall be such that types in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible.</source>
+          <target state="translated">型およびメンバーの可視性およびアクセシビリティについて、メンバーのシグネチャに指定されている型は、そのメンバーが可視でアクセス可能な場合、必ず可視でアクセス可能でなければいけない。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For example, a public method that is visible outside its assembly shall not have an argument whose type is visible only within the assembly.</source>
+          <target state="translated">たとえば、アセンブリ外部から参照できるパブリックなメソッドには、アセンブリ内部でだけ可視である型が引数として含まれていてはいけない。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The visibility and accessibility of types composing an instantiated generic type used in the signature of any member shall be visible and accessible whenever the member itself is visible and accessible.</source>
+          <target state="translated">メンバーのシグネチャに使用されているジェネリック型のインスタンスを構成する型の可視性およびアクセシビリティは、メンバーが可視でアクセス可能の場合、必ず可視でアクセス可能でなければいけない。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For example, an instantiated generic type present in the signature of a member that is visible outside its assembly shall not have a generic argument whose type is visible only within the assembly.</source>
+          <target state="translated">たとえば、アセンブリ外部から参照できるメンバーのシグネチャに指定されているジェネリック型のインスタンスに、アセンブリ内部でだけ可視である型の汎用引数が含まれていてはいけない。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>12</source>
+          <target state="translated">12</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Arrays</source>
+          <target state="translated">配列</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Arrays<ept id="p1">](#arrays)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>配列<ept id="p1">](#arrays)</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Arrays shall have elements with a CLS-compliant type, and all dimensions of the array shall have lower bounds of zero.</source>
+          <target state="translated">配列は、要素が CLS 準拠型で、すべての次元でインデックス番号が 0 から始まらなければならない。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Only the fact that an item is an array and the element type of the array shall be required to distinguish between overloads.</source>
+          <target state="translated">項目が配列の場合、オーバーロードどうしを区別するには配列要素の型を必要とする。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>When overloading is based on two or more array types the element types shall be named types.</source>
+          <target state="translated">オーバーロードが 2 つ以上の配列型に基づく場合、要素型は名前付きの型でなければいけない。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>16</source>
+          <target state="translated">16</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">属性</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Attributes<ept id="p1">](#attributes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>属性<ept id="p1">](#attributes)</ept></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Attributes shall be of type <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept>, or a type inheriting from it.</source>
+          <target state="translated">属性は型 <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept> であるか、それから継承する型である必要がある。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>41</source>
+          <target state="translated">41</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">属性</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Attributes<ept id="p1">](#attributes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>属性<ept id="p1">](#attributes)</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The CLS only allows a subset of the encodings of custom attributes.</source>
+          <target state="translated">CLS ではカスタム属性のエンコーディングのサブセットのみ使用できる。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The only types that shall appear in these encodings are (see Partition IV): <bpt id="p1">[</bpt>System.Type<ept id="p1">](xref:System.Type)</ept>, <bpt id="p2">[</bpt>System.String<ept id="p2">](xref:System.String)</ept>, <bpt id="p3">[</bpt>System.Char<ept id="p3">](xref:System.Char)</ept>, <bpt id="p4">[</bpt>System.Boolean<ept id="p4">](xref:System.Boolean)</ept>, <bpt id="p5">[</bpt>System.Byte<ept id="p5">](xref:System.Byte)</ept>, <bpt id="p6">[</bpt>System.Int16<ept id="p6">](xref:System.Int16)</ept>, <bpt id="p7">[</bpt>System.Int32<ept id="p7">](xref:System.Int32)</ept>, <bpt id="p8">[</bpt>System.Int64<ept id="p8">](xref:System.Int64)</ept>, <bpt id="p9">[</bpt>System.Single<ept id="p9">](xref:System.Single)</ept>, <bpt id="p10">[</bpt>System.Double<ept id="p10">](xref:System.Double)</ept>, and any enumeration type based on a CLS-compliant base integer type.</source>
+          <target state="translated">これらのエンコーディングに表示される型 (第 4 部を参照) は、<bpt id="p1">[</bpt>System.Type<ept id="p1">](xref:System.Type)</ept>、<bpt id="p2">[</bpt>System.String<ept id="p2">](xref:System.String)</ept>、<bpt id="p3">[</bpt>System.Char<ept id="p3">](xref:System.Char)</ept>、<bpt id="p4">[</bpt>System.Boolean<ept id="p4">](xref:System.Boolean)</ept>、<bpt id="p5">[</bpt>System.Byte<ept id="p5">](xref:System.Byte)</ept>、<bpt id="p6">[</bpt>System.Int16<ept id="p6">](xref:System.Int16)</ept>、<bpt id="p7">[</bpt>System.Int32<ept id="p7">](xref:System.Int32)</ept>、<bpt id="p8">[</bpt>System.Int64<ept id="p8">](xref:System.Int64)</ept>, <bpt id="p9">[</bpt>System.Single<ept id="p9">](xref:System.Single)</ept>、<bpt id="p10">[</bpt>System.Double<ept id="p10">](xref:System.Double)</ept>、および CLS 準拠の基底の整数型に基づく列挙型のみである。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>34</source>
+          <target state="translated">34</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">属性</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Attributes<ept id="p1">](#attributes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>属性<ept id="p1">](#attributes)</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The CLS does not allow publicly visible required modifiers (<ph id="ph1">`modreq`</ph>, see Partition II), but does allow optional modifiers (<ph id="ph2">`modopt`</ph>, see Partition II) it does not understand.</source>
+          <target state="translated">CLS では、公開参照される必須の修飾子 (<ph id="ph1">`modreq`</ph>、第 2 部を参照) は使用できない。ただし、認識しないオプションの修飾子 (<ph id="ph2">`modopt`</ph>、第 2 部を参照) は使用できる。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>35</source>
+          <target state="translated">35</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+          <target state="translated">コンストラクター</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Constructors<ept id="p1">](#constructors)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>コンストラクター<ept id="p1">](#constructors)</ept></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>An object constructor shall call some instance constructor of its base class before any access occurs to inherited instance data.</source>
+          <target state="translated">オブジェクト コンストラクターでは、継承しているインスタンス データへのアクセスが発生する前に、基底クラスのインスタンス コンストラクターを呼び出さなければいけない</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>(This does not apply to value types, which need not have constructors.)</source>
+          <target state="translated">(コンストラクターが不要である値型は除く)。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>21</source>
+          <target state="translated">21</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+          <target state="translated">コンストラクター</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Constructors<ept id="p1">](#constructors)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>コンストラクター<ept id="p1">](#constructors)</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>An object constructor shall not be called except as part of the creation of an object, and an object shall not be initialized twice.</source>
+          <target state="translated">オブジェクト コンストラクターがオブジェクトの作成時以外で呼び出されてはならず、またオブジェクトが 2 度初期化されてもいけない。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>22</source>
+          <target state="translated">22</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">列挙型</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The underlying type of an enum shall be a built-in CLS integer type, the name of the field shall be "value__", and that field shall be marked <ph id="ph1">`RTSpecialName`</ph>.</source>
+          <target state="translated">enum の基になる型は組み込みの CLS 整数型、フィールド名は "value__" であり、そのフィールドには <ph id="ph1">`RTSpecialName`</ph> のマークが付けられる。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>7</source>
+          <target state="translated">7</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">列挙型</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>There are two distinct kinds of enums, indicated by the presence or absence of the <bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> (see Partition IV Library) custom attribute.</source>
+          <target state="translated">enum には 2 種類あり、<bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> カスタム属性 (第 4 部のライブラリを参照) の有無で区別する。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>One represents named integer values; the other represents named bit flags that can be combined to generate an unnamed value.</source>
+          <target state="translated">片方は名前付き整数値を表し、もう片方は名前付きビット フラグを表す。名前付きビット フラグは、それを組み合わせて名前のない値を生成できる。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The value of an <ph id="ph1">`enum`</ph> is not limited to the specified values.</source>
+          <target state="translated"><ph id="ph1">`enum`</ph> の値は、指定した値に限定されない。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>8</source>
+          <target state="translated">9</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">列挙型</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Literal static fields of an enum shall have the type of the enum itself.</source>
+          <target state="translated">enum のリテラルな静的フィールドの型は、その enum 自体の型である。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>9</source>
+          <target state="translated">9</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The methods that implement an event shall be marked <ph id="ph1">`SpecialName`</ph> in the metadata.</source>
+          <target state="translated">イベントを実装するメソッドは、メタデータ内で <ph id="ph1">`SpecialName`</ph> のマークが付けられる。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>29</source>
+          <target state="translated">29</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The accessibility of an event and of its accessors shall be identical.</source>
+          <target state="translated">イベントとイベントのアクセサーのアクセシビリティは同一である。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>30</source>
+          <target state="translated">30</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`add`</ph> and <ph id="ph2">`remove`</ph> methods for an event shall both either be present or absent.</source>
+          <target state="translated">イベントの <ph id="ph1">`add`</ph> メソッドおよび <ph id="ph2">`remove`</ph> メソッドは、どちらもあってもなくてもよい。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>31</source>
+          <target state="translated">31</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`add`</ph>and <ph id="ph2">`remove`</ph> methods for an event shall each take one parameter whose type defines the type of the event and that shall be derived from <bpt id="p1">[</bpt>System.Delegate<ept id="p1">](xref:System.Delegate)</ept>.</source>
+          <target state="translated"><ph id="ph1">`add`</ph> メソッドおよび <ph id="ph2">`remove`</ph> メソッドは、それぞれパラメーターを 1 つ使用する。このパラメーターの型がイベントの型を規定する。また、パラメーターの型は <bpt id="p1">[</bpt>System.Delegate<ept id="p1">](xref:System.Delegate)</ept> の派生でなければいけない。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>32</source>
+          <target state="translated">32</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イベント<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Events shall adhere to a specific naming pattern.</source>
+          <target state="translated">イベントは、特定の名前付けパターンに従わなくてはいけない。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The SpecialName attribute referred to in CLS rule 29 shall be ignored in appropriate name comparisons and shall adhere to identifier rules.</source>
+          <target state="translated">CLS 規則 29 で触れられている SpecialName 属性は、適切な名前比較で無視され、識別子規則に従わなければいけない。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>33</source>
+          <target state="translated">33</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">例外</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Exceptions<ept id="p1">](#exceptions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>例外<ept id="p1">](#exceptions)</ept></target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Objects that are thrown shall be of type <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> or a type inheriting from it.</source>
+          <target state="translated">スローできるオブジェクト型は、<bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept>、またはそれを継承する型である。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Nonetheless, CLS-compliant methods are not required to block the propagation of other types of exceptions.</source>
+          <target state="translated">ただし、CLS 準拠のメソッドで他の型の例外のスローをブロックする必要はない。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>40</source>
+          <target state="translated">40</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="translated">全般</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CLS compliance rules<ept id="p1">](#cls-compliance-rules)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CLS 準拠の規則<ept id="p1">](#cls-compliance-rules)</ept></target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>CLS rules apply only to those parts of a type that are accessible or visible outsideof the defining assembly.</source>
+          <target state="translated">CLS 規則は、型の構成部分のうち、その型を定義しているアセンブリの外部からアクセスまたは参照できる部分にのみ適用される。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="translated">1</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="translated">全般</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CLS compliance rules<ept id="p1">](#cls-compliance-rules)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CLS 準拠の規則<ept id="p1">](#cls-compliance-rules)</ept></target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Members of non-CLS compliant types shall not be marked CLS-compliant.</source>
+          <target state="translated">CLS 非準拠型のメンバーを CLS 準拠と指定しない。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>2</source>
+          <target state="translated">2</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Nested types shall have at least as many generic parameters as the enclosing type.</source>
+          <target state="translated">入れ子になった型は、少なくともその外側の型と同じ数のジェネリック パラメーターを持つ。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Generic parameters in a nested type correspond by position to the generic parameters in its enclosing type.</source>
+          <target state="translated">入れ子にされた型のジェネリック パラメーターは、それを囲む型のジェネリック パラメーターと、位置によって対応します。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>42</source>
+          <target state="translated">42</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The name of a generic type shall encode the number of type parameters declared on the non-nested type, or newly introduced to the type if nested, according to the rules defined above.</source>
+          <target state="translated">ジェネリック型の名前は、入れ子にされない型で宣言される型パラメーターの数をエンコードする必要がある。入れ子にされる場合は、上記の規則に従って、型に新しく組み込まれる型パラメーターの数をエンコードする必要がある。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>43</source>
+          <target state="translated">43</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>A generic type shall redeclare sufficient constraints to guarantee that any constraints on the base type, or interfaces would be satisfied by the generic type constraints.</source>
+          <target state="translated">ジェネリック型は必要な制約を再宣言して、基本型またはインターフェイスの制約がジェネリック型の制約で確実に満たされるようにする必要がある。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>44</source>
+          <target state="translated">44</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Types used as constraints on generic parameters shall themselves be CLS-compliant.</source>
+          <target state="translated">ジェネリック パラメーターの制約として使用される型は CLS に準拠する必要がある。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>45</source>
+          <target state="translated">45</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The visibility and accessibility of members (including nested types) in an instantiated generic type shall be considered to be scoped to the specific instantiation rather than the generic type declaration as a whole.</source>
+          <target state="translated">インスタンス化されたジェネリック型のメンバー (入れ子になった型も含む) の可視性およびアクセシビリティは、ジェネリック型の全体の宣言ではなく、特定のインスタンス化に対してスコープが設定される必要がある。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Assuming this, the visibility and accessibility rules of CLS rule 12 still apply.</source>
+          <target state="translated">この場合でも、CLS 規則 12 の可視性規則とアクセシビリティ規則は同様に適用される。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>46</source>
+          <target state="translated">46</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Generics</source>
+          <target state="translated">ジェネリック</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generic types and members<ept id="p1">](#generic-types-and-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック型とメンバー<ept id="p1">](#generic-types-and-members)</ept></target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>For each abstract or virtual generic method, there shall be a default concrete (nonabstract) implementation</source>
+          <target state="translated">抽象メソッドまたは仮想ジェネリック メソッドごとに、既定の具体的な実装がある。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>47</source>
+          <target state="translated">47</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+          <target state="translated">インターフェイス</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interfaces<ept id="p1">](#interfaces)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>インターフェイス<ept id="p1">](#interfaces)</ept></target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>CLS-compliant interfaces shall not require the definition of non-CLS compliantmethods in order to implement them.</source>
+          <target state="translated">CLS 準拠のインターフェイスでは、CLS に準拠しないメソッドを実装するために、これらを定義する必要はない。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>18</source>
+          <target state="translated">18</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+          <target state="translated">インターフェイス</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interfaces<ept id="p1">](#interfaces)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>インターフェイス<ept id="p1">](#interfaces)</ept></target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>CLS-compliant interfaces shall not define static methods, nor shall they define fields.</source>
+          <target state="translated">CLS 準拠インターフェイスでは、静的メソッドを定義してはいけない。また、フィールドも定義してはいけない。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>19</source>
+          <target state="translated">19</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Members</source>
+          <target state="translated">メンバー</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type members in general<ept id="p1">](#type-members-in-general)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>一般的な型メンバー<ept id="p1">](#type-members-in-general)</ept></target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Global static fields and methods are not CLS-compliant.</source>
+          <target state="translated">グローバルで静的な (static) フィールドとメソッドは CLS 準拠ではありません。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>36</source>
+          <target state="translated">36</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Members</source>
+          <target state="translated">メンバー</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The value of a literal static is specified through the use of field initialization metadata.</source>
+          <target state="translated">静的リテラル値の指定には、フィールド初期化メタデータを使用する。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>A CLS-compliant literal must have a value specified in field initialization metadata that is of exactly the same type as the literal (or of the underlying type, if that literal is an <ph id="ph1">`enum`</ph>).</source>
+          <target state="translated">CLS 準拠のリテラルには、そのリテラルと同じ型 (または、そのリテラルが <ph id="ph1">`enum`</ph> の場合は基本型) の値がフィールド初期化メタデータに指定されている必要がある。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>13</source>
+          <target state="translated">13</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Members</source>
+          <target state="translated">メンバー</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type members in general<ept id="p1">](#type-members-in-general)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>一般的な型メンバー<ept id="p1">](#type-members-in-general)</ept></target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The vararg constraint is not part of the CLS, and the only calling convention supported by the CLS is the standard managed calling convention.</source>
+          <target state="translated">vararg 制約は CLS の一部ではなく、CLS でサポートする呼び出し規則だけが標準のマネージ呼び出し規則である。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>15</source>
+          <target state="translated">15</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Naming conventions</source>
+          <target state="translated">名前付け規則</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Naming conventions<ept id="p1">](#naming-conventions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>名前付け規則<ept id="p1">](#naming-conventions)</ept></target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Assemblies shall follow Annex 7 of Technical Report 15 of the Unicode Standard3.0 governing the set of characters permitted to start and be included in identifiers, available online at <bpt id="p1">[</bpt>Unicode Normalization Forms<ept id="p1">](http://www.unicode.org/unicode/reports/tr15/tr15-18.html)</ept>.</source>
+          <target state="translated">アセンブリは、識別子の頭文字および構成文字として使用できる文字セットを規定する Unicode Standard 3.0 の『Technical Report 15』の「Annex 7」に従う必要がある。詳細については、「<bpt id="p1">[</bpt>Unicode Normalization Forms<ept id="p1">](http://www.unicode.org/unicode/reports/tr15/tr15-18.html)</ept>」(Unicode 正規化形式) を参照。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Identifiers shall be in the canonical format defined by Unicode Normalization Form C. For CLS purposes, two identifiersare the same if their lowercase mappings (as specified by the Unicode locale-insensitive, one-to-one lowercase mappings) are the same.</source>
+          <target state="translated">識別子は、Unicode 正規形 C に定義されている標準形式で記述する必要がある。CLS で 2 つの識別子が同じと見なされるのは、小文字マッピング (Unicode のロケール非依存で 1 対 1 の小文字による対応付け) が同じ場合である。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>That is, for two identifiers to be considered different under the CLS they shall differ in more than simply their case.</source>
+          <target state="translated">つまり、CLS で 2 つの識別子が異なる場合、大文字小文字の違いだけではない。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>However, in order to override an inherited definition the CLI requires the precise encoding of the original declaration be used.</source>
+          <target state="translated">ただし、継承された定義をオーバーライドする場合、CLI では元の宣言と厳密に同じエンコーディングの使用が求められる。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>4</source>
+          <target state="translated">4</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">オーバーロード</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Naming conventions<ept id="p1">](#naming-conventions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>名前付け規則<ept id="p1">](#naming-conventions)</ept></target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>All names introduced in a CLS-compliant scope shall be distinct independent of kind, except where the names are identical and resolved via overloading.</source>
+          <target state="translated">CLS 準拠のスコープに導入されるすべての名前は、完全に独立した種類である必要があります。ただし、名前が同じでオーバーロードによって解決できる場合を除きます。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>That is, while the CTS allows a single type to use the same name for a method and a field, the CLS does not.</source>
+          <target state="translated">CTS では 1 つの型でメソッドとフィールドに同じ名前を使用できるが、CLS では使用できない。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>5</source>
+          <target state="translated">5</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">オーバーロード</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Naming conventions<ept id="p1">](#naming-conventions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>名前付け規則<ept id="p1">](#naming-conventions)</ept></target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Fields and nested types shall be distinct by identifier comparison alone, eventhough the CTS allows distinct signatures to be distinguished.</source>
+          <target state="translated">フィールドおよび入れ子になった型について、CTS ではシグネチャでの区別が可能だが、CLS では識別子の比較だけで区別できる必要がある。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events that have the same name (by identifier comparison) shall differ by more than just the return type,except as specified in CLS Rule 39</source>
+          <target state="translated">CLS 規則 39 の指定を除き、識別子の比較により名前が同じであるメソッド、プロパティ、およびイベントでは、相違点は戻り値の型だけに限定されない。</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>6</source>
+          <target state="translated">6</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">オーバーロード</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Overloads<ept id="p1">](#overloads)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>オーバーロード<ept id="p1">](#overloads)</ept></target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>Only properties and methods can be overloaded.</source>
+          <target state="translated">プロパティおよびメソッドのみオーバーロードできる。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>37</source>
+          <target state="translated">37</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">オーバーロード</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Overloads<ept id="p1">](#overloads)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>オーバーロード<ept id="p1">](#overloads)</ept></target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Properties and methods can be overloaded based only on the number and types of their parameters, except the conversion operators named <ph id="ph1">`op_Implicit`</ph> and <ph id="ph2">`op_Explicit`</ph>, which can also be overloaded based on their return type.</source>
+          <target state="translated">プロパティおよびメソッドは、パラメーターの数値と型にのみ基づいてオーバーロードできる。ただし、戻り値の型に基づいてオーバーロードできる変換演算子の <ph id="ph1">`op_Implicit`</ph> と o<ph id="ph2">`op_Explicit`</ph> は例外である。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>38</source>
+          <target state="translated">38</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">オーバーロード</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>If two or more CLS-compliant methods declared in a type have the same nameand, for a specific set of type instantiations, they have the same parameter and return types, then all these methods shall be semantically equivalent at those type instantiations.</source>
+          <target state="translated">型で宣言された複数の CLS 準拠のメソッドに同じ名前が指定されている場合、特定の一連の型のインスタンス化において、これらのメソッドのパラメーターと戻り値の型は同じである。また、これらの型のインスタンス化で、すべてのメソッドをセマンティクス レベルで等価にする必要がある。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>48</source>
+          <target state="translated">48</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>プロパティ<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>The methods that implement the getter and setter methods of a property shall be marked <ph id="ph1">`SpecialName`</ph> in the metadata.</source>
+          <target state="translated">プロパティの getter メソッドおよび setter メソッドを実装するメソッドは、メタデータで <ph id="ph1">`SpecialName`</ph> とマークする。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>24</source>
+          <target state="translated">24</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>プロパティ<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>A property’s accessors shall all be static, all be virtual, or all be instance.</source>
+          <target state="translated">プロパティ アクセサーはすべて静的、すべて仮想、またはすべてインスタンスになる。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>26</source>
+          <target state="translated">26</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>プロパティ<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The type of a property shall be the return type of the getter and the type of the last argument of the setter.</source>
+          <target state="translated">プロパティの型は、getter の戻り値の型であり、かつ setter の最後の引数の型でなければいけない。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The types of the parameters of the property shall be the types of the parameters to the getter and the types of all but the final parameter of the setter.</source>
+          <target state="translated">プロパティのパラメーターの型は、getter へのパラメーターの型であり、かつ setter の最後のパラメーター以外のすべての型でなければいけない。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>All of these types shall be CLS-compliant, and shall not be managed pointers (i.e., shall not be passed by reference).</source>
+          <target state="translated">すべての型は CLS 準拠でなければならない。また、マネージ ポインターであってはいけない。つまり、参照渡しではいけない。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>27</source>
+          <target state="translated">27</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>プロパティ<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Properties shall adhere to a specific naming pattern.</source>
+          <target state="translated">プロパティは、特定の名前付けパターンに従わなくてはいけない。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`SpecialName`</ph> attribute referred to in CLS rule 24 shall be ignored in appropriate name comparisons and shall adhere to identifier rules.</source>
+          <target state="translated">CLS 規則 24 で触れられている <ph id="ph1">`SpecialName`</ph> 属性は、適切な名前比較で無視され、識別子規則に従わなければいけない。</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>A property shall have a getter method, a setter method, or both.</source>
+          <target state="translated">プロパティには getter メソッド、setter メソッド、またはこの両方が必ずなければいけない。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>28</source>
+          <target state="translated">28</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Type conversion</source>
+          <target state="translated">型変換</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type conversion<ept id="p1">](#type-conversion)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型変換<ept id="p1">](#type-conversion)</ept></target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>If either op_Implicit or op_Explicit is provided, an alternate means of providing the coercion shall be provided.</source>
+          <target state="translated">op_Implicit または op_Explicit が指定されている場合は、強制変換のための別の方法を用意する必要がある。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>39</source>
+          <target state="translated">39</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Boxed value types are not CLS-compliant.</source>
+          <target state="translated">ボックス化された値型は CLS 準拠ではない。</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>3</source>
+          <target state="translated">3</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>All types appearing in a signature shall be CLS-compliant.</source>
+          <target state="translated">シグネチャに出現するすべての型は CLS 準拠でなければいけない。</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>All types composing an instantiated generic type shall be CLS-compliant.</source>
+          <target state="translated">ジェネリック型のインスタンスを構成するすべての型は CLS 準拠でなければいけない。</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>11</source>
+          <target state="translated">11</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Typed references are not CLS-compliant.</source>
+          <target state="translated">型指定された参照は CLS 準拠ではありません。</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>14</source>
+          <target state="translated">14</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>Unmanaged pointer types are not CLS-compliant.</source>
+          <target state="translated">アンマネージ ポインター型は CLS 準拠ではない。</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>17</source>
+          <target state="translated">17</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>CLS-compliant classes, value types, and interfaces shall not require the implementation of non-CLS-compliant members</source>
+          <target state="translated">CLS 準拠のクラス、値型、およびインターフェイスでは、CLS に準拠しないメンバーの実装は不要である。</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>20</source>
+          <target state="translated">20</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <target state="translated">種類</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types and type member signatures<ept id="p1">](#types-and-type-member-signatures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>型および型メンバーのシグネチャ<ept id="p1">](#types-and-type-member-signatures)</ept></target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> is CLS-compliant.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> は CLS 準拠である。</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Any other CLS-compliant class shall inherit from a CLS-compliant class.</source>
+          <target state="translated">これ以外のあらゆる CLS 準拠クラスは CLS 準拠クラスの継承でなければならない。</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>23</source>
+          <target state="translated">23</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Types and type member signatures</source>
+          <target state="translated">型および型メンバーのシグネチャ</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> type is CLS-compliant and is the base type of all object types in the .NET Framework type system.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 型は CLS に準拠しており、.NET Framework 型システムのすべてのオブジェクト型の基本型です。</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Inheritance in the .NET Framework is either implicit (for example, the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> class implicitly inherits from the <ph id="ph1">`Object`</ph> class) or explicit (for example, the <bpt id="p2">[</bpt>CultureNotFoundException<ept id="p2">](xref:System.Globalization.CultureNotFoundException)</ept> class explicitly inherits from the <bpt id="p3">[</bpt>ArgumentException<ept id="p3">](xref:System.ArgumentException)</ept> class, which explicitly inherits from the <bpt id="p4">[</bpt>Exception<ept id="p4">](xref:System.Exception)</ept> class.</source>
+          <target state="translated">.NET Framework の継承は暗黙的また明示的に行われます。たとえば、<bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> クラスは <ph id="ph1">`Object`</ph> クラスから暗黙的に継承します。また、<bpt id="p2">[</bpt>CultureNotFoundException<ept id="p2">](xref:System.Globalization.CultureNotFoundException)</ept> クラスは、<bpt id="p3">[</bpt>ArgumentException<ept id="p3">](xref:System.ArgumentException)</ept> クラスから明示的に継承し、これは <bpt id="p4">[</bpt>Exception<ept id="p4">](xref:System.Exception)</ept> クラスから明示的に継承します。</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>For a derived type to be CLS compliant, its base type must also be CLS-compliant.</source>
+          <target state="translated">派生型を CLS 準拠にするには、その基本型も CLS に準拠している必要があります。</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The following example shows a derived type whose base type is not CLS-compliant.</source>
+          <target state="translated">次の例は、基本型が CLS に準拠していない派生型を示しています。</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>It defines a base <ph id="ph1">`Counter`</ph> class that uses an unsigned 32-bit integer as a counter.</source>
+          <target state="translated">これは、符号なし 32 ビット整数をカウンターとして使用する <ph id="ph1">`Counter`</ph> 基底クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Because the class provides counter functionality by wrapping an unsigned integer, the class is marked as non-CLS-compliant.</source>
+          <target state="translated">クラスには、符号なし整数をラップすることでカウンター機能が用意されます。このため、クラスは CLS 非準拠としてマークされます。</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>As a result, a derived class, <ph id="ph1">`NonZeroCounter`</ph>, is also not CLS-compliant.</source>
+          <target state="translated">結果として、派生クラス <ph id="ph1">`NonZeroCounter`</ph> も CLS に準拠しなくなります。</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>All types that appear in member signatures, including a method's return type or a property type, must be CLS-compliant.</source>
+          <target state="translated">メソッドの戻り値の型、プロパティ型を含め、メンバー シグネチャに表示されるすべての型が CLS に準拠する必要があります。</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>In addition, for generic types:</source>
+          <target state="translated">さらに、ジェネリック型の場合は、次の要件もあります。</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>All types that compose an instantiated generic type must be CLS-compliant.</source>
+          <target state="translated">ジェネリック型のインスタンスを構成するすべての型が、CLS に準拠する必要があります。</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>All types used as constraints on generic parameters must be CLS-compliant.</source>
+          <target state="translated">ジェネリック パラメーターで制約として使用されるすべての型が、CLS に準拠する必要があります。</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>The .NET <bpt id="p1">[</bpt>common type system<ept id="p1">](common-type-system.md)</ept> includes a number of built-in types that are supported directly by the common language runtime and are specially encoded in an assembly's metadata.</source>
+          <target state="translated">.NET <bpt id="p1">[</bpt>共通型システム<ept id="p1">](common-type-system.md)</ept>には、共通言語ランタイムが直接サポートする組み込み型がいくつか含まれ、アセンブリのメタデータで特別にエンコードされています。</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Of these intrinsic types, the types listed in the following table are CLS-compliant.</source>
+          <target state="translated">これらの組み込み型のうち、次の表に示す型は CLS に準拠しています。</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>CLS-compliant type</source>
+          <target state="translated">CLS 準拠型</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>8-bit unsigned integer</source>
+          <target state="translated">8 ビット符号なし整数</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>16-bit signed integer</source>
+          <target state="translated">16 ビット符号付き整数</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>32-bit signed integer</source>
+          <target state="translated">32 ビット符号付き整数</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>64-bit signed integer</source>
+          <target state="translated">64 ビット符号付き整数</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>Single-precision floating-point value</source>
+          <target state="translated">単精度浮動小数点数値</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Double-precision floating-point value</source>
+          <target state="translated">倍精度浮動小数点数値</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>true or false value type</source>
+          <target state="translated">true または false 値型</target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>UTF-16 encoded code unit</source>
+          <target state="translated">UTF-16 でエンコードされたコード単位</target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept></target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>Non-floating-point decimal number</source>
+          <target state="translated">10 進浮動小数点数以外</target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IntPtr<ept id="p1">](xref:System.IntPtr)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IntPtr<ept id="p1">](xref:System.IntPtr)</ept></target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Pointer or handle of a platform-defined size</source>
+          <target state="translated">プラットフォーム定義サイズのポインターまたはハンドル</target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept></target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>Collection of zero, one, or more Char objects</source>
+          <target state="translated">0 個以上の Char オブジェクトのコレクション</target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>The intrinsic types listed in the following table are not CLS-Compliant.</source>
+          <target state="translated">次の表に示す組み込み型は CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>Non-compliant type</source>
+          <target state="translated">非準拠型</target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>CLS-compliant alternative</source>
+          <target state="translated">CLS に準拠する代替</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept></target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>8-bit signed integer data type</source>
+          <target state="translated">8 ビット符号付き整数データ型</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt16<ept id="p1">](xref:System.UInt16)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt16<ept id="p1">](xref:System.UInt16)</ept></target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>16-bit unsigned integer</source>
+          <target state="translated">16 ビット符号なし整数</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>32-bit unsigned integer</source>
+          <target state="translated">32 ビット符号なし整数</target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></target>       </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept></target>       </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>64-bit unsigned integer</source>
+          <target state="translated">64 ビット符号なし整数</target>       </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> (may overflow), <bpt id="p2">[</bpt>BigInteger<ept id="p2">](xref:System.Numerics.BigInteger)</ept>, or <bpt id="p3">[</bpt>Double<ept id="p3">](xref:System.Double)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> (オーバーフローの可能性あり)、<bpt id="p2">[</bpt>BigInteger<ept id="p2">](xref:System.Numerics.BigInteger)</ept>、または <bpt id="p3">[</bpt>Double<ept id="p3">](xref:System.Double)</ept></target>       </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UIntPtr<ept id="p1">](xref:System.UIntPtr)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UIntPtr<ept id="p1">](xref:System.UIntPtr)</ept></target>       </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Unsigned pointer or handle</source>
+          <target state="translated">符号なしポインターまたはハンドル</target>       </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IntPtr<ept id="p1">](xref:System.IntPtr)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IntPtr<ept id="p1">](xref:System.IntPtr)</ept></target>       </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>The .NET Framework Class Library or any other class library may include other types that aren't CLS-compliant; for example:</source>
+          <target state="translated">.NET Framework のクラス ライブラリまたはその他のクラス ライブラリには、CLS に準拠していない他の型が含まれる場合があります。次に例を示します。</target>       </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>Boxed value types.</source>
+          <target state="translated">ボックス化された値型。</target>       </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The following C# example creates a class that has a public property of type <ph id="ph1">`int`</ph><bpt id="p1">*</bpt> named <ph id="ph2">`Value`</ph>. Because an <ph id="ph3">`int`</ph><ept id="p1">*</ept> is a boxed value type, the compiler flags it as non-CLS-compliant.</source>
+          <target state="translated">次の C# コード例では、<ph id="ph2">`Value`</ph> という名前の型 <ph id="ph1">`int`</ph><bpt id="p1">*</bpt> のパブリック プロパティを持つクラスを作成します。<ph id="ph3">`int`</ph><ept id="p1">*</ept> はボックス化された値型であるため、コンパイラは CLS 非準拠としてフラグを設定します。</target>       </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>Typed references, which are special constructs that contain a reference to an object and a reference to a type.</source>
+          <target state="translated">型指定された参照。オブジェクトへの参照および型への参照を含む特別なコンストラクトです。</target>       </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>If a type is not CLS-compliant, you should apply the <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute with an <bpt id="p2">*</bpt>isCompliant<ept id="p2">*</ept> parameter with a value of <ph id="ph1">`false`</ph> to it.</source>
+          <target state="translated">型が CLS に準拠していない場合は、<bpt id="p2">*</bpt>isCompliant<ept id="p2">*</ept> パラメータの値が <ph id="ph1">`false`</ph> に指定された <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性をそれに適用する必要があります。</target>       </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>CLSCompliantAttribute attribute<ept id="p1">](#the-clscompliantattribute-attribute)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>CLSCompliantAttribute 属性<ept id="p1">](#the-clscompliantattribute-attribute)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the problem of CLS compliance in a method signature and in generic type instantiation.</source>
+          <target state="translated">次の例は、メソッド シグネチャとジェネリック型のインスタンス化で発生する CLS 準拠の問題を示しています。</target>       </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>It defines an <ph id="ph1">`InvoiceItem`</ph> class with a property of type <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept>, a property of type <bpt id="p2">[</bpt>Nullable(Of UInt32)<ept id="p2">](xref:System.Nullable%601)</ept>, and a constructor with parameters of type <ph id="ph2">`UInt32`</ph> and <ph id="ph3">`Nullable(Of UInt32)`</ph>.</source>
+          <target state="translated">ここでは、<ph id="ph1">`InvoiceItem`</ph> クラスを、型 <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> のプロパティ、型 <bpt id="p2">[</bpt>Nullable(Of UInt32)<ept id="p2">](xref:System.Nullable%601)</ept> のプロパティ、および型 <ph id="ph2">`UInt32`</ph> と <ph id="ph3">`Nullable(Of UInt32)`</ph> のパラメーターが指定されたコンストラクターで定義します。</target>       </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>You get four compiler warnings when you try to compile this example.</source>
+          <target state="translated">この例をコンパイルしようとすると、4 つのコンパイラの警告が表示されます。</target>       </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>To eliminate the compiler warnings, replace the non-CLS-compliant types in the <ph id="ph1">`InvoiceItem`</ph> public interface with compliant types:</source>
+          <target state="translated">コンパイラの警告が表示されないようにするには、<ph id="ph1">`InvoiceItem`</ph> パブリック インターフェイスの CLS 非準拠型を準拠型に置き換えます。</target>       </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>In addition to the specific types listed, some categories of types are not CLS compliant.</source>
+          <target state="translated">ここで示した特定の型以外にも、CLS に準拠していないカテゴリはいくつかあります。</target>       </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>These include unmanaged pointer types and function pointer types.</source>
+          <target state="translated">たとえば、アンマネージ ポインター型やアンマネージ関数ポインター型などです。</target>       </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>The following example generates a compiler warning because it uses a pointer to an integer to create an array of integers.</source>
+          <target state="translated">次の例では、整数へのポインターを使用して整数の配列を作成するので、コンパイラの警告が生成されます。</target>       </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>For CLS-compliant abstract classes (that is, classes marked as <ph id="ph1">`abstract`</ph> in C#), all members of the class must also be CLS-compliant.</source>
+          <target state="translated">CLS 準拠の抽象クラス (つまり、C# で <ph id="ph1">`abstract`</ph> とマークされたクラス) については、そのクラスのすべてのメンバーも CLS に準拠にする必要があります。</target>       </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>Naming conventions</source>
+          <target state="translated">名前付け規則</target>       </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Because some programming languages are case-insensitive, identifiers (such as the names of namespaces, types, and members) must differ by more than case.</source>
+          <target state="translated">一部のプログラミング言語は大文字と小文字が区別されるので、識別子 (名前空間、型、メンバーの名前など) は、大文字と小文字が違うだけで相違します。</target>       </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Two identifiers are considered equivalent if their lowercase mappings are the same.</source>
+          <target state="translated">2 つの識別子が同じと見なされるのは、小文字マッピングが同じ場合です。</target>       </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>The following C# example defines two public classes, <ph id="ph1">`Person`</ph> and <ph id="ph2">`person`</ph>.</source>
+          <target state="translated">次の C# コード例では、2 つのパブリック クラス、<ph id="ph1">`Person`</ph> および <ph id="ph2">`person`</ph> を定義します。</target>       </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Because they differ only by case, the C# compiler flags them as not CLS-compliant.</source>
+          <target state="translated">このクラスは大文字と小文字のみが異なるので、コンパイラは CLS 非準拠としてフラグを設定します。</target>       </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Programming language identifiers, such as the names of namespaces, types, and members, must conform to the <bpt id="p1">[</bpt>Unicode Standard 3.0, Technical Report 15, Annex 7<ept id="p1">](http://www.unicode.org/reports/tr15/tr15-18.html)</ept>.</source>
+          <target state="translated">名前空間、型、メンバーの名前など、プログラミング言語の識別子は <bpt id="p1">[</bpt>Unicode Standard 3.0 の Technical Report 15 の Annex 7<ept id="p1">](http://www.unicode.org/reports/tr15/tr15-18.html)</ept> に準拠する必要があります。</target>       </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>This means that:</source>
+          <target state="translated">これによって、次のことが起こります。</target>       </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>The first character of an identifier can be any Unicode uppercase letter, lowercase letter, title case letter, modifier letter, other letter, or letter number.</source>
+          <target state="translated">識別子の最初の文字は Unicode の大文字と小文字、大文字と小文字の組み合わせ、修飾子文字、その他の文字、または文字数の番号を指定できます。</target>       </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>For information on Unicode character categories, see the <bpt id="p1">[</bpt>System.Globalization.UnicodeCategory<ept id="p1">](xref:System.Globalization.UnicodeCategory)</ept> enumeration.</source>
+          <target state="translated">Unicode 文字のカテゴリの詳細については、「<bpt id="p1">[</bpt>System.Globalization.UnicodeCategory<ept id="p1">](xref:System.Globalization.UnicodeCategory)</ept> 列挙体」を参照してください。</target>       </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>Subsequent characters can be from any of the categories as the first character, and can also include non-spacing marks, spacing combining marks, decimal numbers, connector punctuations, and formatting codes.</source>
+          <target state="translated">2 文字目以降には、最初の文字で使用できる文字のほかに、非空白記号、空白結合記号、10 進数、接続符号、書式指定コードを使用できます。</target>       </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>Before you compare identifiers, you should filter out formatting codes and convert the identifiers to Unicode Normalization Form C, because a single character can be represented by multiple UTF-16-encoded code units.</source>
+          <target state="translated">識別子を比較する場合は、その前に書式設定コードを除外してから、識別子を Unicode 正規形 C に変換する必要があります。これは 1 つの文字を、UTF-16 でエンコードされた複数のコード単位で表すことができるからです。</target>       </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Character sequences that produce the same code units in Unicode Normalization Form C are not CLS-compliant.</source>
+          <target state="translated">同じコード単位を Unicode 正規形 C で生成する文字シーケンスは CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>The following example defines a property named <ph id="ph1">`Å`</ph>, which consists of the character ANGSTROM SIGN (U+212B), and a second property named <ph id="ph2">`Å`</ph> which consists of the character LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5).</source>
+          <target state="translated">次の例では、オングストローム文字 (U+212B) である <ph id="ph1">`Å`</ph> という名前のプロパティを定義し、次に、上に丸が付く LATIN の大文字 A (U+00C5) である <ph id="ph2">`Å`</ph> という名前のプロパティを定義します。</target>       </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>The C# compiler flags the source code as non-CLS-compliant.</source>
+          <target state="translated">C# コンパイラは、ソース コードを CLS 非準拠としてフラグします。</target>       </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Member names within a particular scope (such as the namespaces within an assembly, the types within a namespace, or the members within a type) must be unique except for names that are resolved through overloading.</source>
+          <target state="translated">特定のスコープ内のメンバー名 (アセンブリ内の名前空間、名前空間内の型、型内のメンバーなど) は一意である必要があります。ただし、オーバーロードによって解決される名前は除きます。</target>       </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>This requirement is more stringent than that of the common type system, which allows multiple members within a scope to have identical names as long as they are different kinds of members (for example, one is a method and one is a field).</source>
+          <target state="translated">この要件は、共通型システムの要件よりも厳格です。共通型システムでは、スコープ内のメンバーは種類が異なっていれば、たとえば、種類がメソッドのメンバーとフィールドのメンバーは、同じ名前を持つことができます。</target>       </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>In particular, for type members:</source>
+          <target state="translated">特に、型メンバーの場合は次の要件もあります。</target>       </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Fields and nested types are distinguished by name alone.</source>
+          <target state="translated">フィールドと入れ子になった型は名前でのみ識別されます。</target>       </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events that have the same name must differ by more than just return type.</source>
+          <target state="translated">名前が同じメソッド、プロパティ、およびイベントは、戻り値の型以外で区別できるようにする必要があります。</target>       </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the requirement that member names must be unique within their scope.</source>
+          <target state="translated">次の例は、メンバー名がスコープ内で一意でなければならない要件を示しています。</target>       </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>It defines a class named <ph id="ph1">`Converter`</ph> that includes four members named <ph id="ph2">`Conversion`</ph>.</source>
+          <target state="translated">ここでは、<ph id="ph1">`Converter`</ph> という名前の 4 つのメンバーを含む <ph id="ph2">`Conversion`</ph> という名前のクラスを定義します。</target>       </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>Three are methods, and one is a property.</source>
+          <target state="translated">3 つがメソッドで、1 つはプロパティです。</target>       </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>The method that includes an <ph id="ph1">`Int64`</ph> parameter is uniquely named, but the two methods with an <ph id="ph2">`Int32`</ph> parameter are not, because return value is not considered a part of a member's signature.</source>
+          <target state="translated"><ph id="ph1">`Int64`</ph> パラメーターを含むメソッドには一意の名前が付けられますが、<ph id="ph2">`Int32`</ph> パラメーターが指定された 2 つのメソッドには一意の名前は付けられません。これは戻り値がメンバーのシグネチャの一部と見なされないからです。</target>       </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Conversion`</ph> property also violates this requirement, because properties cannot have the same name as overloaded methods.</source>
+          <target state="translated">また、<ph id="ph1">`Conversion`</ph> プロパティもこの要件に違反しています。プロパティの名前は、オーバーロードされたメソッドと同じにできないからです。</target>       </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>Individual languages include unique keywords, so languages that target the common language runtime must also provide some mechanism for referencing identifiers (such as type names) that coincide with keywords.</source>
+          <target state="translated">個々の言語に一意のキーワードが含まれるので、共通言語ランタイムを対象にする言語も、キーワードと一致する識別子 (型名など) を参照するための機構を用意する必要があります。</target>       </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`case`</ph> is a keyword in both C# and Visual Basic.</source>
+          <target state="translated">たとえば、<ph id="ph1">`case`</ph> は、C# と Visual Basic のキーワードです。</target>       </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>However, the following Visual Basic example is able to disambiguate a class named <ph id="ph1">`case`</ph> from the <ph id="ph2">`case`</ph> keyword by using opening and closing braces.</source>
+          <target state="translated">ただし、次の Visual Basic コード例では、左右の中かっこを使用して、<ph id="ph1">`case`</ph> キーワードと <ph id="ph2">`case`</ph> という名前のクラスを明確に区別できます。</target>       </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>Otherwise, the example would produce the error message, "Keyword is not valid as an identifier," and fail to compile.</source>
+          <target state="translated">それ以外の場合は、エラー メッセージ "キーワードは、識別子として有効ではありません" が表示され、コンパイルできません。</target>       </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>The following C# example is able to instantiate the <ph id="ph1">`case`</ph> class by using the <ph id="ph2">@</ph> symbol to disambiguate the identifier from the language keyword.</source>
+          <target state="translated">次の C# コード例では、<ph id="ph1">`case`</ph> シンボルを使用して <ph id="ph2">@</ph> クラスをインスタンス化することで、識別子と言語キーワードを区別できます。</target>       </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Without it, the C# compiler would display two error messages, "Type expected" and "Invalid expression term 'case'."</source>
+          <target state="translated">これがないと、C# コンパイラによって 2 つのエラー メッセージ "型が必要です" および "'case' は無効です" が表示されます。</target>       </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>Type conversion</source>
+          <target state="translated">型変換</target>       </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification defines two conversion operators:</source>
+          <target state="translated">共通言語仕様では、次の 2 つの変換演算子が定義されます。</target>       </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`op_Implicit`</ph>, which is used for widening conversions that do not result in loss of data or precision.</source>
+          <target state="translated"><ph id="ph1">`op_Implicit`</ph>。データまたは精度の損失につながらない拡大変換に使用されます。</target>       </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept> structure includes an overloaded <ph id="ph1">`op_Implicit`</ph> operator to convert values of integral types and <bpt id="p2">[</bpt>Char<ept id="p2">](xref:System.Char)</ept> values to <ph id="ph2">`Decimal`</ph> values.</source>
+          <target state="translated">たとえば、<bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept> 構造体には、整数型の値と <bpt id="p2">[</bpt>Char<ept id="p2">](xref:System.Char)</ept> 値を <ph id="ph2">`Decimal`</ph> 値に変換できるように、オーバーロードされた <ph id="ph1">`op_Implicit`</ph> 演算子が含まれます。</target>       </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`op_Explicit`</ph>, which is used for narrowing conversions that can result in loss of magnitude (a value is converted to a value that has a smaller range) or precision.</source>
+          <target state="translated"><ph id="ph1">`op_Explicit`</ph>。絶対値 (狭い範囲の値に変換される値) または精度の損失につながる可能性がある縮小変換に使用されます。</target>       </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`Decimal`</ph> structure includes an overloaded <ph id="ph2">`op_Explicit`</ph> operator to convert <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> and <bpt id="p2">[</bpt>Single<ept id="p2">](xref:System.Single)</ept> values to <ph id="ph3">`Decimal`</ph> and to convert <ph id="ph4">`Decimal`</ph> values to integral values, <ph id="ph5">`Double`</ph>, <ph id="ph6">`Single`</ph>, and <ph id="ph7">`Char`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`Decimal`</ph> 構造体には、<bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> 値と <bpt id="p2">[</bpt>Single<ept id="p2">](xref:System.Single)</ept> 値を <ph id="ph3">`Decimal`</ph> に変換し、<ph id="ph4">`Decimal`</ph> 値を整数値、<ph id="ph5">`Double`</ph>、<ph id="ph6">`Single`</ph>、および <ph id="ph7">`Char`</ph> に変換できるように、オーバーロードされた <ph id="ph2">`op_Explicit`</ph> 演算子が含まれます。</target>       </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>However, not all languages support operator overloading or the definition of custom operators.</source>
+          <target state="translated">ただし、すべての言語で、演算子のオーバーロードまたはカスタム演算子の定義がサポートされているわけではありません。</target>       </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>If you choose to implement these conversion operators, you should also provide an alternate way to perform the conversion.</source>
+          <target state="translated">これらの変換演算子を実装する場合は、他の方法で変換を実行する方法も用意する必要があります。</target>       </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>We recommend that you provide <ph id="ph1">`From`</ph>Xxx and <ph id="ph2">`To`</ph>Xxx methods.</source>
+          <target state="translated">ここでは、<ph id="ph1">`From`</ph>Xxx メソッドおよび<ph id="ph2">`To`</ph>Xxx メソッドを用意することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>The following example defines CLS-compliant implicit and explicit conversions.</source>
+          <target state="translated">次の例では、CLS に準拠する暗黙的な変換と明示的な変換を定義します。</target>       </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>It creates a <ph id="ph1">`UDouble`</ph>class that represents an signed double-precision, floating-point number.</source>
+          <target state="translated">ここでは、符号付き倍精度浮動小数点数を表す <ph id="ph1">`UDouble`</ph> クラスを作成します。</target>       </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>It provides for implicit conversions from <ph id="ph1">`UDouble`</ph> to <ph id="ph2">`Double`</ph> and for explicit conversions from <ph id="ph3">`UDouble`</ph> to <ph id="ph4">`Single`</ph>, <ph id="ph5">`Double`</ph> to <ph id="ph6">`UDouble`</ph>, and <ph id="ph7">`Single`</ph> to <ph id="ph8">`UDouble`</ph>.</source>
+          <target state="translated">暗黙的な変換については、<ph id="ph1">`UDouble`</ph> から <ph id="ph2">`Double`</ph>、明示的な変換については、<ph id="ph3">`UDouble`</ph> から <ph id="ph4">`Single`</ph>、<ph id="ph5">`Double`</ph> から <ph id="ph6">`UDouble`</ph>、および <ph id="ph7">`Single`</ph> から <ph id="ph8">`UDouble`</ph> への例を示しています。</target>       </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>It also defines a <ph id="ph1">`ToDouble`</ph> method as an alternative to the implicit conversion operator and the <ph id="ph2">`ToSingle`</ph>, <ph id="ph3">`FromDouble`</ph>, and <ph id="ph4">`FromSingle`</ph> methods as alternatives to the explicit conversion operators.</source>
+          <target state="translated">また、暗黙的な変換演算子の代替として <ph id="ph1">`ToDouble`</ph> メソッドを、明示的な変換演算子の代替として <ph id="ph2">`ToSingle`</ph>、<ph id="ph3">`FromDouble`</ph>、<ph id="ph4">`FromSingle`</ph> の各メソッドを定義します。</target>       </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>Arrays</source>
+          <target state="translated">配列</target>       </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>CLS-compliant arrays conform to the following rules:</source>
+          <target state="translated">CLS 準拠の配列は、次の規則に従います。</target>       </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>All dimensions of an array must have a lower bound of zero.</source>
+          <target state="translated">配列の次元の下限値は 0 にする必要があります。</target>       </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>The following example creates a non-CLS-compliant array with a lower bound of one.</source>
+          <target state="translated">次の例では、下限が 1 の CLS 非準拠の配列を作成します。</target>       </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>Note that, despite the presence of the <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute, the compiler does not detect that the array returned by the <ph id="ph1">`Numbers.GetTenPrimes`</ph> method is not CLS-compliant.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性の有無に関係なく、コンパイラでは、<ph id="ph1">`Numbers.GetTenPrimes`</ph> メソッドによって返される配列が CLS に準拠していないことは検出されません。</target>       </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>All array elements must consist of CLS-compliant types.</source>
+          <target state="translated">すべての配列の要素が、CLS 準拠の型で構成されている必要があります。</target>       </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>The following example defines two methods that return non-CLS-compliant arrays.</source>
+          <target state="translated">次の例では、CLS 非準拠の配列を返す 2 つのメソッドを定義します。</target>       </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The first returns an array of <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> values.</source>
+          <target state="translated">最初のメソッドは、<bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> 値の配列を返します。</target>       </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>The second returns an <bpt id="p1">[</bpt>Object<ept id="p1">](xref:System.Object)</ept> array that includes <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept> and <ph id="ph1">`UInt32`</ph> values.</source>
+          <target state="translated">2 番目のメソッドは <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept> 値と <ph id="ph1">`UInt32`</ph> 値を含む<bpt id="p1">[</bpt>Object<ept id="p1">](xref:System.Object)</ept> 配列を返します。</target>       </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>Although the compiler identifies the first array as non-compliant because of its <ph id="ph1">`UInt32`</ph> type, it fails to recognize that the second array includes non-CLS-compliant elements.</source>
+          <target state="translated">最初の配列は <ph id="ph1">`UInt32`</ph> 型であるため、コンパイラによって非準拠として識別されますが、2 番目の配列に CLS 非準拠の要素が含まれていることは認識されません。</target>       </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Overload resolution for methods that have array parameters is based on the fact that they are arrays and on their element type.</source>
+          <target state="translated">配列パラメーターを持つメソッドのオーバーロードの解決は、配列であるという事実とその要素型に基づきます。</target>       </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>For this reason, the following definition of an overloaded <ph id="ph1">`GetSquares`</ph> method is CLS-compliant.</source>
+          <target state="translated">したがって、次のオーバーロードされた <ph id="ph1">`GetSquares`</ph> メソッドの定義は CLS に準拠しています。</target>       </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+          <target state="translated">インターフェイス</target>       </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>CLS-compliant interfaces can define properties, events, and virtual methods (methods with no implementation).</source>
+          <target state="translated">CLS 準拠のインターフェイスでは、プロパティ、イベント、および仮想メソッド (実装のないメソッド) を定義できます。</target>       </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>A CLS-compliant interface cannot have any of the following:</source>
+          <target state="translated">次の項目は、このインターフェイスには指定できません。</target>       </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>Static methods or static fields.</source>
+          <target state="translated">静的メソッドまたは静的フィールド。</target>       </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>The C# compiler generatse compiler errors if you define a static member in an interface.</source>
+          <target state="translated">インターフェイスで静的メンバーを定義すると、C# コンパイラでコンパイラ エラーが発生します。</target>       </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Fields.</source>
+          <target state="translated">フィールド。</target>       </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>The C# acompiler generates compiler errors if you define a field in an interface.</source>
+          <target state="translated">インターフェイスでフィールドを定義すると、C# コンパイラでコンパイラ エラーが発生します。</target>       </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Methods that are not CLS-compliant.</source>
+          <target state="translated">CLS に準拠していないメソッド。</target>       </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>For example, the following interface definition includes a method, <ph id="ph1">`INumber.GetUnsigned`</ph>, that is marked as non-CLS-compliant.</source>
+          <target state="translated">たとえば、次のインターフェイス定義には、CLS 非準拠とマークされているメソッド、<ph id="ph1">`INumber.GetUnsigned`</ph> が含まれています。</target>       </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>This example generates a compiler warning.</source>
+          <target state="translated">この例では、コンパイラの警告が生成されます。</target>       </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>Because of this rule, CLS-compliant types are not required to implement non-CLS-compliant members.</source>
+          <target state="translated">この規則のため、CLS に準拠している型は、CLS に準拠していないメンバーを実装する必要はありません。</target>       </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>If a CLS-compliant framework does expose a class that implements a non-CLS compliant interface, it should also provide concrete implementations of all non-CLS-compliant members.</source>
+          <target state="translated">CLS 準拠のフレームワークによって、CLS に非準拠のインターフェイスを実装するクラスが公開されている場合、そのフレームワークには、CLS 非準拠のすべてのメンバーの具象実装も用意する必要があります。</target>       </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>CLS-compliant language compilers must also allow a class to provide separate implementations of members that have the same name and signature in multiple interfaces.</source>
+          <target state="translated">CLS 準拠の言語コンパイラでは、クラスによって、複数のインターフェイスにある同じ名前およびシグネチャを持つメンバーを個別に実装できるようにすることも必要です。</target>       </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>C# supports explicit interface implementations to provide different implementations of identically named methods.</source>
+          <target state="translated">C# は明示的なインターフェイス実装をサポートしており、同じ名前を持つメソッドを別々に実装できます。</target>       </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>The following example illustrates this scenario by defining a <ph id="ph1">`Temperature`</ph> class that implements the <ph id="ph2">`ICelsius`</ph> and <ph id="ph3">`IFahrenheit`</ph> interfaces as explicit interface implementations.</source>
+          <target state="translated">次の例は、明示的なインターフェイス実装として <ph id="ph1">`Temperature`</ph> インターフェイスおよび <ph id="ph2">`ICelsius`</ph> インターフェイスを実装する <ph id="ph3">`IFahrenheit`</ph> クラスを定義することで、このシナリオを示しています。</target>       </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">列挙体</target>       </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>CLS-compliant enumerations must follow these rules:</source>
+          <target state="translated">CLS 準拠の列挙型は、次の規則に従う必要があります。</target>       </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>The underlying type of the enumeration must be an intrinsic CLS-compliant integer (<bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>, <bpt id="p2">[</bpt>Int16<ept id="p2">](xref:System.Int16)</ept>, <bpt id="p3">[</bpt>Int32<ept id="p3">](xref:System.Int32)</ept>, or <bpt id="p4">[</bpt>Int64<ept id="p4">](xref:System.Int64)</ept>).</source>
+          <target state="translated">列挙体の基になる型は、組み込みの CLS 準拠の整数 (<bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>、<bpt id="p2">[</bpt>Int16<ept id="p2">](xref:System.Int16)</ept>、<bpt id="p3">[</bpt>Int32<ept id="p3">](xref:System.Int32)</ept>、または <bpt id="p4">[</bpt>Int64<ept id="p4">](xref:System.Int64)</ept>) である必要があります。</target>       </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>For example, the following code tries to define an enumeration whose underlying type is <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> and generates a compiler warning.</source>
+          <target state="translated">たとえば、次のコードでは、基になる型が <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> の列挙体を定義しようとしますが、コンパイラの警告が生成されます。</target>       </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>An enumeration type must have a single instance field named <ph id="ph1">`Value__`</ph> that is marked with the <ph id="ph2">`FieldAttributes.RTSpecialName`</ph> attribute.</source>
+          <target state="translated">列挙型には、<ph id="ph1">`Value__`</ph> 属性でマークされた <ph id="ph2">`FieldAttributes.RTSpecialName`</ph> という名前の単一インスタンス フィールドが必要です。</target>       </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>This enables you to reference the field value implicitly.</source>
+          <target state="translated">これにより、フィールド値を暗黙的に参照できます。</target>       </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>An enumeration includes literal static fields whose types match the type of the enumeration itself.</source>
+          <target state="translated">列挙体には、その列挙体自体の型と同じ型を持つリテラルな静的フィールドが含まれます。</target>       </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>For example, if you define a <ph id="ph1">`State`</ph> enumeration with values of <ph id="ph2">`State.On`</ph> and <ph id="ph3">`State.Off`</ph>, <ph id="ph4">`State.On`</ph> and <ph id="ph5">`State.Off`</ph> are both literal static fields whose type is <ph id="ph6">`State`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`State`</ph> および <ph id="ph2">`State.On`</ph> の値を持つ <ph id="ph3">`State.Off`</ph> 列挙体を定義すると、<ph id="ph4">`State.On`</ph> と <ph id="ph5">`State.Off`</ph> は両方ともリテラルな静的フィールドで、その型は <ph id="ph6">`State`</ph> です。</target>       </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>There are two kinds of enumerations:</source>
+          <target state="translated">列挙体は 2 種類あります。</target>       </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>An enumeration that represents a set of mutually exclusive, named integer values.</source>
+          <target state="translated">同時に指定できない一連の名前付き整数値を表す列挙体。</target>       </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>This type of enumeration is indicated by the absence of the <bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> custom attribute.</source>
+          <target state="translated">この列挙体の型は、<bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> カスタム属性が存在しないことによって示されます。</target>       </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>An enumeration that represents a set of bit flags that can combine to generate an unnamed value.</source>
+          <target state="translated">名前のない値を生成するために結合できる一連のビット フラグを表す列挙体。</target>       </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>This type of enumeration is indicated by the presence of the <bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> custom attribute.</source>
+          <target state="translated">この列挙体の型は、 <bpt id="p1">[</bpt>System.FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> カスタム属性が存在することによって示されます。</target>       </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>For more information, see the documentation for the <bpt id="p1">[</bpt>Enum<ept id="p1">](xref:System.Enum)</ept> structure.</source>
+          <target state="translated">詳細については、<bpt id="p1">[</bpt>Enum<ept id="p1">](xref:System.Enum)</ept> 構造体のドキュメントを参照してください。</target>       </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>The value of an enumeration is not limited to the range of its specified values.</source>
+          <target state="translated">列挙体の値は、その列挙体の指定された値に限定されません。</target>       </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>In other words, the range of values in an enumeration is the range of its underlying value.</source>
+          <target state="translated">つまり、列挙体の値の範囲は、その列挙体の基になる値の範囲です。</target>       </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">`Enum.IsDefined`</ph> method to determine whether a specified value is a member of an enumeration.</source>
+          <target state="translated"><ph id="ph1">`Enum.IsDefined`</ph> メソッドを使用すると、指定された値が列挙体のメンバーかどうかを確認できます。</target>       </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Type members in general</source>
+          <target state="translated">一般的な型メンバー</target>       </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification requires all fields and methods to be accessed as members of a particular class.</source>
+          <target state="translated">共通言語仕様では、すべてのフィールドとメソッドに、特定のクラスのメンバーとしてアクセスする必要があります。</target>       </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Therefore, global static fields and methods (that is, static fields or methods that are defined apart from a type) are not CLS-compliant.</source>
+          <target state="translated">したがって、グローバルな静的フィールドおよび静的メソッド (つまり、型とは別に定義された静的フィールドまたは静的メソッド) は CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>If you try to include a global field or method in your source code, the C# compiler generates a compiler error.</source>
+          <target state="translated">グローバル フィールドまたはグローバル メソッドをソース コードに追加しようとすると、C# コンパイラでコンパイラ エラーが発生します。</target>       </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification supports only the standard managed calling convention.</source>
+          <target state="translated">共通言語仕様では、標準のマネージ呼び出し規則のみがサポートされます。</target>       </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>It doesn't support unmanaged calling conventions and methods with variable argument lists marked with the <ph id="ph1">`varargs`</ph> keyword.</source>
+          <target state="translated">アンマネージ呼び出し規約と、<ph id="ph1">`varargs`</ph> キーワードでマークされた可変個引数リストを持つメソッドはサポートされません。</target>       </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>For variable argument lists that are compatible with the standard managed calling convention, use the <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> attribute or the individual language's implementation, such as the <ph id="ph1">`params`</ph> keyword in C# and the <ph id="ph2">`ParamArray`</ph> keyword in Visual Basic.</source>
+          <target state="translated">標準のマネージ呼び出し規則と互換性がある可変個引数リストについては、<bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> 属性、または <ph id="ph1">`params`</ph> キーワード (C# の場合)、<ph id="ph2">`ParamArray`</ph> キーワード (Visual Basic の場合) などの個々の言語の実装を使用します。</target>       </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>Member accessibility</source>
+          <target state="translated">メンバーのアクセシビリティ</target>       </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>Overriding an inherited member cannot change the accessibility of that member.</source>
+          <target state="translated">継承されたメンバーをオーバーライドしても、そのメンバーのアクセシビリティは変更できません。</target>       </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>For example, a public method in a base class cannot be overridden by a private method in a derived class.</source>
+          <target state="translated">たとえば、基底クラスのパブリック メソッドは、派生クラスのプライベート メソッドではオーバーライドできません。</target>       </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>There is one exception: a <ph id="ph1">`protected internal`</ph> (in C#) or <ph id="ph2">`Protected Friend`</ph> (in Visual Basic) member in one assembly that is overridden by a type in a different assembly.</source>
+          <target state="translated">ただし例外が 1 つあります。あるアセンブリ内にある、別のアセンブリの型でオーバーライドされた <ph id="ph1">`protected internal`</ph> メンバー (C# の場合) または <ph id="ph2">`Protected Friend`</ph> メンバー (Visual Basic の場合) です。</target>       </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>In that case, the accessibility of the override is <ph id="ph1">`Protected`</ph>.</source>
+          <target state="translated">この場合、オーバーライドのアクセシビリティは <ph id="ph1">`Protected`</ph> です。</target>       </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the error that is generated when the <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute is set to <ph id="ph1">`true`</ph>, and <ph id="ph2">`Person`</ph>, which is a class derived from <ph id="ph3">`Animal`</ph>, tries to change the accessibility of the <ph id="ph4">`Species`</ph> property from public to private.</source>
+          <target state="translated">次の例は、<bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性が <ph id="ph1">`true`</ph> に設定されており、<ph id="ph3">`Animal`</ph> の派生クラス <ph id="ph2">`Person`</ph> が、<ph id="ph4">`Species`</ph> プロパティのアクセシビリティをパブリックからプライベートに変更しようとするときに発生するエラーを示しています。</target>       </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>The example compiles successfully if its accessibility is changed to public.</source>
+          <target state="translated">アクセシビリティがパブリックに変更されると、コンパイルが正常に行われます。</target>       </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Types in the signature of a member must be accessible whenever that member is accessible.</source>
+          <target state="translated">メンバーにアクセスできる場合は必ず、そのメンバーのシグネチャの型にアクセスできなければなりません。</target>       </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>For example, this means that a public member cannot include a parameter whose type is private, protected, or internal.</source>
+          <target state="translated">たとえば、これは、パブリック メンバーには、型がプライベート、プロテクト、または内部のパラメーターを含められないことを意味します。</target>       </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the compiler error that results when a <ph id="ph1">`StringWrapper`</ph> class constructor exposes an internal <ph id="ph2">`StringOperationType`</ph> enumeration value that determines how a string value should be wrapped.</source>
+          <target state="translated">次の例は、<ph id="ph1">`StringWrapper`</ph> クラス コンストラクターが、文字列値のラップ方法を決定する内部 <ph id="ph2">`StringOperationType`</ph> 列挙値を公開した場合に発生するコンパイラ エラーを示しています。</target>       </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Generic types and members</source>
+          <target state="translated">ジェネリック型とメンバー</target>       </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>Nested types always have at least as many generic parameters as their enclosing type.</source>
+          <target state="translated">入れ子になった型には、少なくともその外側の型と同じ数のジェネリック パラメーターが必要です。</target>       </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>These correspond by position to the generic parameters in the enclosing type.</source>
+          <target state="translated">このジェネリック パラメーターは、外側の型のジェネリック パラメーターに位置によって対応します。</target>       </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>The generic type can also include new generic parameters.</source>
+          <target state="translated">ジェネリック型に新しいジェネリック パラメーターを含めることもできます。</target>       </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>The relationship between the generic type parameters of a containing type and its nested types may be hidden by the syntax of individual languages.</source>
+          <target state="translated">外側の型のジェネリック型パラメーターと、その入れ子になった型の関係は、個別の言語構文によって非表示になっていることがあります。</target>       </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>In the following example, a generic type <ph id="ph1">`Outer&lt;T&gt;`</ph> contains two nested classes, <ph id="ph2">`Inner1A`</ph> and <ph id="ph3">`Inner1B&lt;U&gt;`</ph>.</source>
+          <target state="translated">次の例では、入れ子になった 2 つのクラス、<ph id="ph1">`Outer&lt;T&gt;`</ph> および <ph id="ph2">`Inner1A`</ph> が、ジェネリック型 <ph id="ph3">`Inner1B&lt;U&gt;`</ph> に含まれます。</target>       </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>The calls to the <ph id="ph1">`ToString`</ph> method, which each class inherits from <ph id="ph2">`Object.ToString`</ph>, show that each nested class includes the type parameters of its containing class.</source>
+          <target state="translated">各クラスが <ph id="ph2">`Object.ToString`</ph> から継承した <ph id="ph1">`ToString`</ph> メソッドへの呼び出しは、入れ子になった各クラスに、その外側のクラスの型パラメーターが含まれていることを示しています。</target>       </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>Generic type names are encoded in the form <bpt id="p1">*</bpt>name<ept id="p1">*</ept>'<bpt id="p2">*</bpt>n<ept id="p2">*</ept>, where <bpt id="p3">*</bpt>name<ept id="p3">*</ept> is the type name, <bpt id="p4">*</bpt><ph id="ph1">`</ph><ept id="p4">*</ept> is a character literal, and <bpt id="p5">*</bpt>n<ept id="p5">*</ept> is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters.</source>
+          <target state="translated">ジェネリック型の名前は、フォーム <bpt id="p1">*</bpt>name<ept id="p1">*</ept>'<bpt id="p2">*</bpt>n<ept id="p2">*</ept> でエンコードされます。ここで、<bpt id="p3">*</bpt>name<ept id="p3">*</ept> は型の名前、<bpt id="p4">*</bpt><ph id="ph1">`</ph><ept id="p4">*</ept> は文字リテラル、<bpt id="p5">*</bpt>n<ept id="p5">*</ept> は型で宣言されたパラメーターの数、入れ子になったジェネリック型の場合は、新しく導入された型パラメーターの数です。</target>       </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library.</source>
+          <target state="translated">ジェネリック型の名前のエンコーディングは、主に、リフレクションを使用してライブラリ内の CLS 準拠のジェネリック型にアクセスする開発者が使用します。</target>       </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>If constraints are applied to a generic type, any types used as constraints must also be CLS-compliant.</source>
+          <target state="translated">制約がジェネリック型に適用される場合は、制約として使用されるすべての型も CLS に準拠している必要があります。</target>       </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>The following example defines a class named <ph id="ph1">`BaseClass`</ph> that is not CLS-compliant and a generic class named <ph id="ph2">`BaseCollection`</ph> whose type parameter must derive from <ph id="ph3">`BaseClass`</ph>.</source>
+          <target state="translated">次の例では、CLS に準拠していない <ph id="ph1">`BaseClass`</ph> という名前のクラスと、型パラメーターが <ph id="ph2">`BaseCollection`</ph> から派生しなければならない <ph id="ph3">`BaseClass`</ph> という名前のジェネリック クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>But because <ph id="ph1">`BaseClass`</ph>is not CLS-compliant, the compiler emits a warning.</source>
+          <target state="translated">ただし、<ph id="ph1">`BaseClass`</ph> が CLS に準拠していないので、コンパイラによって警告が生成されます。</target>       </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>If a generic type is derived from a generic base type, it must redeclare any constraints so that it can guarantee that constraints on the base type are also satisfied.</source>
+          <target state="translated">ジェネリック型がジェネリック基本型から派生している場合、そのジェネリック型は、基本型に対する制約も必ず満たすように制約を再宣言する必要があります。</target>       </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`Number&lt;T&gt;`</ph> that can represent any numeric type.</source>
+          <target state="translated">次の例では、任意の数値型を表すことができる <ph id="ph1">`Number&lt;T&gt;`</ph> を定義します。</target>       </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>It also defines a <ph id="ph1">`FloatingPoint&lt;T&gt;`</ph> class that represents a floating point value.</source>
+          <target state="translated">また、浮動小数点値を表す <ph id="ph1">`FloatingPoint&lt;T&gt;`</ph> クラスも定義します。</target>       </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>However, the source code fails to compile, because it does not apply the constraint on <ph id="ph1">`Number&lt;T&gt;`</ph> (that T must be a value type) to <ph id="ph2">`FloatingPoint&lt;T&gt;`</ph>.</source>
+          <target state="translated">ただし、ソース コードはコンパイルされません。<ph id="ph1">`Number&lt;T&gt;`</ph> (T は値型) の制約は <ph id="ph2">`FloatingPoint&lt;T&gt;`</ph> に適用されないからです。</target>       </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>The example compiles successfully if the constraint is added to the <ph id="ph1">`FloatingPoint&lt;T&gt;`</ph> class.</source>
+          <target state="translated">制約が <ph id="ph1">`FloatingPoint&lt;T&gt;`</ph> クラスに追加されると、コンパイルが正常に行われます。</target>       </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification imposes a conservative per-instantiation model for nested types and protected members.</source>
+          <target state="translated">共通言語仕様では、入れ子になった型とプロテクト メンバーに対して従来のインスタンス化ごとのモデルが適用されます。</target>       </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>Open generic types cannot expose fields or members with signatures that contain a specific instantiation of a nested, protected generic type.</source>
+          <target state="translated">オープン ジェネリック型では、フィールドまたはメンバーのシグネチャに、入れ子になったプロテクト ジェネリック型の特定のインスタンス化が含まれている場合、これらのフィールドやメンバーは公開できません。</target>       </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>Non-generic types that extend a specific instantiation of a generic base class or interface cannot expose fields or members with signatures that contain a different instantiation of a nested, protected generic type.</source>
+          <target state="translated">ジェネリックの基底クラスやインターフェイスについて特定のインスタンス化を拡張する非ジェネリック型では、フィールドまたはメンバーのシグネチャに、入れ子になったプロテクト ジェネリック型の別のインスタンス化が含まれている場合、これらのフィールドやメンバーは公開できません。</target>       </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>The following example defines a generic type, <ph id="ph1">`C1&lt;T&gt;`</ph>, and a protected class, <ph id="ph2">`C1&lt;T&gt;.N`</ph>.</source>
+          <target state="translated">次の例では、ジェネリック型 <ph id="ph1">`C1&lt;T&gt;`</ph> およびプロテクト クラス <ph id="ph2">`C1&lt;T&gt;.N`</ph> を定義しています。</target>       </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`C1&lt;T&gt;`</ph> has two methods, <ph id="ph2">`M1`</ph> and <ph id="ph3">`M2`</ph>.</source>
+          <target state="translated"><ph id="ph1">`C1&lt;T&gt;`</ph> には、2 つのメソッド <ph id="ph2">`M1`</ph> と <ph id="ph3">`M2`</ph> があります。</target>       </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>However, <ph id="ph1">`M1`</ph> is not CLS-compliant because it tries to return a <ph id="ph2">`C1&lt;int&gt;.N`</ph> object from <ph id="ph3">`C1&lt;T&gt;`</ph>.</source>
+          <target state="translated">ただし、<ph id="ph1">`M1`</ph> は、<ph id="ph2">`C1&lt;int&gt;.N`</ph> オブジェクトを <ph id="ph3">`C1&lt;T&gt;`</ph> から返そうとするので、CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>A second class, <ph id="ph1">`C2`</ph>, is derived from <ph id="ph2">`C1&lt;long&gt;`</ph>.</source>
+          <target state="translated">2 番目の <ph id="ph1">`C2`</ph> クラスは、<ph id="ph2">`C1&lt;long&gt;`</ph> から派生しています。</target>       </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>It has two methods, <ph id="ph1">`M3`</ph> and <ph id="ph2">`M4`</ph>.</source>
+          <target state="translated">これには、<ph id="ph1">`M3`</ph> と <ph id="ph2">`M4`</ph> の 2 つのメソッドがあります。</target>       </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`M3`</ph> is not CLS-compliant because it tries to return a <ph id="ph2">`C1&lt;int&gt;.N`</ph> object from a subclass of <ph id="ph3">`C1&lt;long&gt;`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M3`</ph>は、<ph id="ph2">`C1&lt;int&gt;.N`</ph> オブジェクトを <ph id="ph3">`C1&lt;long&gt;`</ph> のサブクラスから返そうとするので、CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Note that language compilers can be even more restrictive.</source>
+          <target state="translated">言語コンパイラはさらに制限されている可能性があります。</target>       </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>In this example, Visual Basic displays an error when it tries to compile <ph id="ph1">`M4`</ph>.</source>
+          <target state="translated">この例では、Visual Basic で <ph id="ph1">`M4`</ph> をコンパイルしようとするとエラーが表示されます。</target>       </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+          <target state="translated">コンストラクター</target>       </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>Constructors in CLS-compliant classes and structures must follow these rules:</source>
+          <target state="translated">CLS 準拠のクラスと構造体のコンストラクターは、次の規則に従う必要があります。</target>       </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>A constructor of a derived class must call the instance constructor of its base class before it accesses inherited instance data.</source>
+          <target state="translated">派生クラスのコンストラクターは、継承されたインスタンス データにアクセスする前に、基底クラスのインスタンス コンストラクターを呼び出す必要があります。</target>       </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>This requirement is due to the fact that base class constructors are not inherited by their derived classes.</source>
+          <target state="translated">これは、基底クラスのコンストラクターは派生クラスには継承されないからです。</target>       </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>This rule does not apply to structures, which do not support direct inheritance.</source>
+          <target state="translated">この規則は、直接継承をサポートしない構造体に適用されません。</target>       </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>Typically, compilers enforce this rule independently of CLS compliance, as the following example shows.</source>
+          <target state="translated">次の例に示すように、コンパイラは、通常、CLS 準拠とは別にこの規則を適用します。</target>       </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>It creates a <ph id="ph1">`Doctor`</ph> class that is derived from a <ph id="ph2">`Person`</ph> class, but the <ph id="ph3">`Doctor`</ph>class fails to call the <ph id="ph4">`Person`</ph> class constructor to initialize inherited instance fields.</source>
+          <target state="translated">これにより、<ph id="ph2">`Person`</ph> クラスから派生した <ph id="ph1">`Doctor`</ph> クラスが作成されますが、<ph id="ph3">`Doctor`</ph> クラスでは、継承されたインスタンス フィールドを初期化するための <ph id="ph4">`Person`</ph> クラス コンストラクターは呼び出されません。</target>       </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>An object constructor cannot be called except to create an object.</source>
+          <target state="translated">オブジェクト作成以外の目的で、オブジェクト コンストラクターを呼び出すことはできません。</target>       </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>In addition, an object cannot be initialized twice.</source>
+          <target state="translated">また、オブジェクトを 2 度初期化することもできません。</target>       </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>For example, this means that <ph id="ph1">`Object.MemberwiseClone`</ph> must not call constructors.</source>
+          <target state="translated">たとえば、これは <ph id="ph1">`Object.MemberwiseClone`</ph> でコンストラクターを呼び出す必要はないことを意味します。</target>       </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>Properties in CLS-compliant types must follow these rules:</source>
+          <target state="translated">CLS 準拠型のプロパティは、次の規則に従う必要があります。</target>       </trans-unit>
+        <trans-unit id="587" translate="yes" xml:space="preserve">
+          <source>A property must have a setter, a getter, or both.</source>
+          <target state="translated">プロパティには setter、getter、またはこの両方が必ず必要です。</target>       </trans-unit>
+        <trans-unit id="588" translate="yes" xml:space="preserve">
+          <source>In an assembly, these are implemented as special methods, which means that they will appear as separate methods (the getter is named <ph id="ph1">`get`</ph><ph id="ph2">\_</ph><bpt id="p1">*</bpt>propertyname<ept id="p1">*</ept> and the setter is <ph id="ph3">`set*\_*propertyname*) marked as `</ph>SpecialName` in the assembly's metadata.</source>
+          <target state="translated">アセンブリでは、これらは特殊なメソッドとして実装されます。つまり、アセンブリのメタデータで "SpecialName" とマークされた個別のメソッドとして (getter は <ph id="ph1">`get`</ph><ph id="ph2">\_</ph><bpt id="p1">*</bpt>propertyname<ept id="p1">*</ept>、setter は <ph id="ph3">`set*\_*propertyname*) marked as `</ph> という名前で) 表示されます。</target>       </trans-unit>
+        <trans-unit id="589" translate="yes" xml:space="preserve">
+          <source>The C# compiler enforces this rule automatically without the need to apply the <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute.</source>
+          <target state="translated">C# コンパイラでは、この規則が自動的に適用されます。<bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性を適用する必要はありません。</target>       </trans-unit>
+        <trans-unit id="590" translate="yes" xml:space="preserve">
+          <source>A property's type is the return type of the property getter and the last argument of the setter.</source>
+          <target state="translated">プロパティの型は、プロパティ get アクセス操作子、および set アクセス操作子の最後の引数の戻り値の型です。</target>       </trans-unit>
+        <trans-unit id="591" translate="yes" xml:space="preserve">
+          <source>These types must be CLS compliant, and arguments cannot be assigned to the property by reference (that is, they cannot be managed pointers).</source>
+          <target state="translated">これらの型は CLS に準拠している必要があり、引数を参照によってプロパティに割り当てることはできません (つまり、マネージ ポインターにできません)。</target>       </trans-unit>
+        <trans-unit id="592" translate="yes" xml:space="preserve">
+          <source>If a property has both a getter and a setter, they must both be virtual, both static, or both instance.</source>
+          <target state="translated">プロパティに get アクセス操作子と set アクセス操作子の両方がある場合は、両方が仮想、両方が静的、または両方がインスタンスである必要があります。</target>       </trans-unit>
+        <trans-unit id="593" translate="yes" xml:space="preserve">
+          <source>The C# compiler automatically enforces this rule through property definition syntax.</source>
+          <target state="translated">C# コンパイラは、プロパティ定義構文によって、この規則を自動的に適用します。</target>       </trans-unit>
+        <trans-unit id="594" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">イベント</target>       </trans-unit>
+        <trans-unit id="595" translate="yes" xml:space="preserve">
+          <source>An event is defined by its name and its type.</source>
+          <target state="translated">イベントは、名前と型によって定義されます。</target>       </trans-unit>
+        <trans-unit id="596" translate="yes" xml:space="preserve">
+          <source>The event type is a delegate that is used to indicate the event.</source>
+          <target state="translated">イベントの型は、イベントの表示に使用されるデリゲートです。</target>       </trans-unit>
+        <trans-unit id="597" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`DbConnection.StateChange`</ph> event is of type <ph id="ph2">`StateChangeEventHandler`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`DbConnection.StateChange`</ph> イベントは <ph id="ph2">`StateChangeEventHandler`</ph> 型です。</target>       </trans-unit>
+        <trans-unit id="598" translate="yes" xml:space="preserve">
+          <source>In addition to the event itself, three methods with names based on the event name provide the event's implementation and are marked as <ph id="ph1">`SpecialName`</ph> in the assembly's metadata:</source>
+          <target state="translated">イベント自体のほか、イベント名に基づく名前の 3 つのメソッドがイベントの実装を提供し、アセンブリのメタデータで <ph id="ph1">`SpecialName`</ph> としてマークされています。</target>       </trans-unit>
+        <trans-unit id="599" translate="yes" xml:space="preserve">
+          <source>A method for adding an event handler, named <ph id="ph1">`add`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>.</source>
+          <target state="translated">イベント ハンドラーを追加するメソッド (<ph id="ph1">`add`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>)。</target>       </trans-unit>
+        <trans-unit id="600" translate="yes" xml:space="preserve">
+          <source>For example, the event subscription method for the <ph id="ph1">`DbConnection.StateChange`</ph> event is named <ph id="ph2">`add_StateChange`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`DbConnection.StateChange`</ph> イベントのイベント サブスクリプション メソッドの名前は <ph id="ph2">`add_StateChange`</ph> です。</target>       </trans-unit>
+        <trans-unit id="601" translate="yes" xml:space="preserve">
+          <source>A method for removing an event handler, named <ph id="ph1">`remove`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>.</source>
+          <target state="translated">イベント ハンドラーを削除するメソッド (<ph id="ph1">`remove`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>)。</target>       </trans-unit>
+        <trans-unit id="602" translate="yes" xml:space="preserve">
+          <source>For example, the removal method for the <ph id="ph1">`DbConnection.StateChange`</ph> event is named <ph id="ph2">`remove_StateChange`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`DbConnection.StateChange`</ph> イベントの削除メソッドの名前は <ph id="ph2">`remove_StateChange`</ph> です。</target>       </trans-unit>
+        <trans-unit id="603" translate="yes" xml:space="preserve">
+          <source>A method for indicating that the event has occurred, named <ph id="ph1">`raise`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>.</source>
+          <target state="translated">イベントが発生したことを示すメソッド (<ph id="ph1">`raise`</ph>_<bpt id="p1">*</bpt>EventName<ept id="p1">*</ept>)。</target>       </trans-unit>
+        <trans-unit id="604" translate="yes" xml:space="preserve">
+          <source>Most of the Common Language Specification's rules regarding events are implemented by language compilers and are transparent to component developers.</source>
+          <target state="translated">イベントに関する共通言語仕様の規則は、ほとんどが言語コンパイラによって実装され、コンポーネント開発者が意識せずに使用できます。</target>       </trans-unit>
+        <trans-unit id="605" translate="yes" xml:space="preserve">
+          <source>The methods for adding, removing, and raising the event must have the same accessibility.</source>
+          <target state="translated">イベントの追加、削除、発生の各メソッドには同じアクセシビリティが必要です。</target>       </trans-unit>
+        <trans-unit id="606" translate="yes" xml:space="preserve">
+          <source>They must also all be static, instance, or virtual.</source>
+          <target state="translated">また、すべてが、静的メソッド、インスタンス メソッド、仮想メソッドのいずれかでなければなりません。</target>       </trans-unit>
+        <trans-unit id="607" translate="yes" xml:space="preserve">
+          <source>The methods for adding and removing an event have one parameter whose type is the event delegate type.</source>
+          <target state="translated">イベントを追加および削除するメソッドには、イベント デリゲート型の型を持つパラメーターが 1 つあります。</target>       </trans-unit>
+        <trans-unit id="608" translate="yes" xml:space="preserve">
+          <source>The add and remove methods must both be present or both be absent.</source>
+          <target state="translated">追加メソッドおよび削除メソッドは両方とも存在するか、両方存在しないかのいずれかでなければなりません。</target>       </trans-unit>
+        <trans-unit id="609" translate="yes" xml:space="preserve">
+          <source>The following example defines a CLS-compliant class named <ph id="ph1">`Temperature`</ph> that raises a <ph id="ph2">`TemperatureChanged`</ph> event if the change in temperature between two readings equals or exceeds a threshold value.</source>
+          <target state="translated">次の例では、2 つのポイントの気温の差がしきい値と等しいか、それを超えた場合に <ph id="ph1">`Temperature`</ph> イベントを発生させる、<ph id="ph2">`TemperatureChanged`</ph> という名前の CLS 準拠クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="610" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Temperature`</ph> class explicitly defines a <ph id="ph2">`raise_TemperatureChanged`</ph> method so that it can selectively execute event handlers.</source>
+          <target state="translated"><ph id="ph1">`Temperature`</ph> クラスは、イベント ハンドラーを選択的に実行できるように、<ph id="ph2">`raise_TemperatureChanged`</ph> メソッドを明示的に定義します。</target>       </trans-unit>
+        <trans-unit id="611" translate="yes" xml:space="preserve">
+          <source>Overloads</source>
+          <target state="translated">Overloads</target>       </trans-unit>
+        <trans-unit id="612" translate="yes" xml:space="preserve">
+          <source>The Common Language Specification imposes the following requirements on overloaded members:</source>
+          <target state="translated">共通言語仕様では、次の要件がオーバーロード メンバーに適用されます。</target>       </trans-unit>
+        <trans-unit id="613" translate="yes" xml:space="preserve">
+          <source>Members can be overloaded based on the number of parameters and the type of any parameter.</source>
+          <target state="translated">メンバーは、パラメーターの数および型に基づいてオーバーロードできます。</target>       </trans-unit>
+        <trans-unit id="614" translate="yes" xml:space="preserve">
+          <source>Calling convention, return type, custom modifiers applied to the method or its parameter, and whether parameters are passed by value or by reference are not considered when differentiating between overloads.</source>
+          <target state="translated">オーバーロードを区別するときに、呼び出し規約、戻り値の型、メソッドまたはそのパラメーターに適用されているカスタム修飾子、およびパラメーターが値渡しか参照渡しかは考慮されません。</target>       </trans-unit>
+        <trans-unit id="615" translate="yes" xml:space="preserve">
+          <source>For an example, see the code for the requirement that names must be unique within a scope in the <bpt id="p1">[</bpt>Naming conventions<ept id="p1">](#naming-conventions)</ept> section.</source>
+          <target state="translated">例については、「<bpt id="p1">[</bpt>名前付け規則<ept id="p1">](#naming-conventions)</ept>」で、名前がスコープ内で一意であることを要求する要件のコードを参照してください。</target>       </trans-unit>
+        <trans-unit id="616" translate="yes" xml:space="preserve">
+          <source>Only properties and methods can be overloaded.</source>
+          <target state="translated">プロパティおよびメソッドのみオーバーロードできる。</target>       </trans-unit>
+        <trans-unit id="617" translate="yes" xml:space="preserve">
+          <source>Fields and events cannot be overloaded.</source>
+          <target state="translated">フィールドとイベントはオーバーロードできません。</target>       </trans-unit>
+        <trans-unit id="618" translate="yes" xml:space="preserve">
+          <source>Generic methods can be overloaded based on the number of their generic parameters.</source>
+          <target state="translated">ジェネリック メソッドは、ジェネリック パラメーターの数に基づいてオーバーロードできます。</target>       </trans-unit>
+        <trans-unit id="619" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`op_Explicit`</ph> and <ph id="ph2">`op_Implicit`</ph> operators are exceptions to the rule that return value is not considered part of a method signature for overload resolution.</source>
+          <target state="translated"><ph id="ph1">`op_Explicit`</ph> 演算子および <ph id="ph2">`op_Implicit`</ph> 演算子にはこの規則が適用されず、戻り値は、オーバーロード解決のためのメソッド シグネチャの一部として見なされません。</target>       </trans-unit>
+        <trans-unit id="620" translate="yes" xml:space="preserve">
+          <source>These two operators can be overloaded based on both their parameters and their return value.</source>
+          <target state="translated">この 2 つの演算子は、そのパラメーターと戻り値の両方に基づいてオーバーロードできます。</target>       </trans-unit>
+        <trans-unit id="621" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">例外</target>       </trans-unit>
+        <trans-unit id="622" translate="yes" xml:space="preserve">
+          <source>Exception objects must derive from <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> or from another type derived from <ph id="ph1">`System.Exception`</ph>.</source>
+          <target state="translated">例外オブジェクトは <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept>、または <ph id="ph1">`System.Exception`</ph> の別の派生型から派生する必要があります。</target>       </trans-unit>
+        <trans-unit id="623" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the compiler error that results when a custom class named <ph id="ph1">`ErrorClass`</ph> is used for exception handling.</source>
+          <target state="translated">次の例は、<ph id="ph1">`ErrorClass`</ph> というカスタム クラスを例外処理に使用したときに発生するコンパイラ エラーを示しています。</target>       </trans-unit>
+        <trans-unit id="624" translate="yes" xml:space="preserve">
+          <source>To correct this error, the <ph id="ph1">`ErrorClass`</ph> class must inherit from <ph id="ph2">`System.Exception`</ph>.</source>
+          <target state="translated">このエラーを修正するには、<ph id="ph1">`ErrorClass`</ph> から継承するように <ph id="ph2">`System.Exception`</ph> クラスを指定する必要があります。</target>       </trans-unit>
+        <trans-unit id="625" translate="yes" xml:space="preserve">
+          <source>In addition, the Message property must be overridden.</source>
+          <target state="translated">また、Message プロパティはオーバーライドする必要があります。</target>       </trans-unit>
+        <trans-unit id="626" translate="yes" xml:space="preserve">
+          <source>The following example corrects these errors to define an <ph id="ph1">`ErrorClass`</ph> class that is CLS-compliant.</source>
+          <target state="translated">次の例では、このエラーを修正して CLS 準拠の <ph id="ph1">`ErrorClass`</ph> クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="627" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">属性</target>       </trans-unit>
+        <trans-unit id="628" translate="yes" xml:space="preserve">
+          <source>In.NET Framework assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters.</source>
+          <target state="translated">.NET Framework アセンブリでは、カスタム属性に拡張可能機構が用意されており、そのカスタム属性を格納し、アセンブリ、型、メンバー、メソッド パラメーターなどのプログラミング オブジェクトに関するメタデータを取得します。</target>       </trans-unit>
+        <trans-unit id="629" translate="yes" xml:space="preserve">
+          <source>Custom attributes must derive from <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept> or from a type derived from <ph id="ph1">`System.Attribute`</ph>.</source>
+          <target state="translated">カスタム属性は <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept>、または <ph id="ph1">`System.Attribute`</ph> の派生型から派生する必要があります。</target>       </trans-unit>
+        <trans-unit id="630" translate="yes" xml:space="preserve">
+          <source>The following example violates this rule.</source>
+          <target state="translated">規則に違反する例を次に示します。</target>       </trans-unit>
+        <trans-unit id="631" translate="yes" xml:space="preserve">
+          <source>It defines a <ph id="ph1">`NumericAttribute`</ph> class that does not derive from <ph id="ph2">`System.Attribute`</ph>.</source>
+          <target state="translated">この例では、<ph id="ph1">`NumericAttribute`</ph> から派生していない <ph id="ph2">`System.Attribute`</ph> クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="632" translate="yes" xml:space="preserve">
+          <source>Note that a compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.</source>
+          <target state="translated">コンパイラ エラーは、CLS 非準拠の属性が適用されている場合にのみ発生します。クラスが定義されているときではありません。</target>       </trans-unit>
+        <trans-unit id="633" translate="yes" xml:space="preserve">
+          <source>The constructor or the properties of a CLS-compliant attribute can expose only the following types:</source>
+          <target state="translated">CLS 準拠の属性のコンストラクターまたはプロパティは、次の型のみを公開できます。</target>       </trans-unit>
+        <trans-unit id="634" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></target>       </trans-unit>
+        <trans-unit id="635" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></target>       </trans-unit>
+        <trans-unit id="636" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></target>       </trans-unit>
+        <trans-unit id="637" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></target>       </trans-unit>
+        <trans-unit id="638" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></target>       </trans-unit>
+        <trans-unit id="639" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></target>       </trans-unit>
+        <trans-unit id="640" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></target>       </trans-unit>
+        <trans-unit id="641" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></target>       </trans-unit>
+        <trans-unit id="642" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept></target>       </trans-unit>
+        <trans-unit id="643" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept></target>       </trans-unit>
+        <trans-unit id="644" translate="yes" xml:space="preserve">
+          <source>Any enumeration type whose underlying type is <ph id="ph1">`Byte`</ph>, <ph id="ph2">`Int16`</ph>, <ph id="ph3">`Int32`</ph>, or <ph id="ph4">`Int64`</ph>.</source>
+          <target state="translated">基になる型が <ph id="ph1">`Byte`</ph>、<ph id="ph2">`Int16`</ph>、<ph id="ph3">`Int32`</ph>、または <ph id="ph4">`Int64`</ph> である列挙体の型。</target>       </trans-unit>
+        <trans-unit id="645" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`DescriptionAttribute`</ph> class that derives from <bpt id="p1">[</bpt>Attribute<ept id="p1">](xref:System.Attribute)</ept>.</source>
+          <target state="translated">次の例では、<bpt id="p1">[</bpt>Attribute<ept id="p1">](xref:System.Attribute)</ept> から派生する <ph id="ph1">`DescriptionAttribute`</ph> クラスを定義します。</target>       </trans-unit>
+        <trans-unit id="646" translate="yes" xml:space="preserve">
+          <source>The class constructor has a parameter of type <ph id="ph1">`Descriptor`</ph>, so the class is not CLS-compliant.</source>
+          <target state="translated">クラス コンストラクターには型 <ph id="ph1">`Descriptor`</ph> のパラメーターがあるので、クラスは CLS に準拠していません。</target>       </trans-unit>
+        <trans-unit id="647" translate="yes" xml:space="preserve">
+          <source>Note that the C# compiler emits a warning but compiles successfully.</source>
+          <target state="translated">C# コンパイラが警告を生成しますが、コンパイルは成功することに注意してください。</target>       </trans-unit>
+        <trans-unit id="648" translate="yes" xml:space="preserve">
+          <source>The CLSCompliantAttribute attribute</source>
+          <target state="translated">CLSCompliantAttribute 属性</target>       </trans-unit>
+        <trans-unit id="649" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> attribute is used to indicate whether a program element complies with the Common Language Specification.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CLSCompliantAttribute<ept id="p1">](xref:System.CLSCompliantAttribute)</ept> 属性は、プログラム要素が共通言語仕様でコンパイルされているかどうかを示すために使用されます。</target>       </trans-unit>
+        <trans-unit id="650" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CLSCompliantAttribute.CLSCompliantAttribute(Boolean)`</ph> constructor includes a single required parameter, <bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept>, that indicates whether the program element is CLS-compliant.</source>
+          <target state="translated"><ph id="ph1">`CLSCompliantAttribute.CLSCompliantAttribute(Boolean)`</ph> コンストラクターには、プログラム要素が CLS に準拠しているかどうかを示す 1 つの必須パラメーター、<bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept> が含まれます。</target>       </trans-unit>
+        <trans-unit id="651" translate="yes" xml:space="preserve">
+          <source>At compile time, the compiler detects non-compliant elements that are presumed to be CLS-compliant and emits a warning.</source>
+          <target state="translated">コンパイル時に、CLS 準拠が前提とされる非準拠要素が検出され、警告が出力されます。</target>       </trans-unit>
+        <trans-unit id="652" translate="yes" xml:space="preserve">
+          <source>The compiler does not emit warnings for types or members that are explicitly declared to be non-compliant.</source>
+          <target state="translated">非準拠として明示的に宣言された型またはメンバーに対しては、警告は出力されません。</target>       </trans-unit>
+        <trans-unit id="653" translate="yes" xml:space="preserve">
+          <source>Component developers can use the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute in two ways:</source>
+          <target state="translated">コンポーネント開発者は、次の 2 とおりの目的で <ph id="ph1">`CLSCompliantAttribute`</ph> 属性を使用できます。</target>       </trans-unit>
+        <trans-unit id="654" translate="yes" xml:space="preserve">
+          <source>To define the parts of the public interface exposed by a component that are CLS-compliant and the parts that are not CLS-compliant.</source>
+          <target state="translated">コンポーネントによって公開されたパブリック インターフェイスの CLS 準拠部分と CLS 非準拠部分を定義する。</target>       </trans-unit>
+        <trans-unit id="655" translate="yes" xml:space="preserve">
+          <source>When the attribute is used to mark particular program elements as CLS-compliant, its use guarantees that those elements are accessible from all languages and tools that target the .NET Framework.</source>
+          <target state="translated">この属性を使用して特定のプログラム要素を CLS 準拠としてマークすると、.NET Framework を対象とするすべてのツールおよび言語から、これらの要素に必ずアクセスできるようになります。</target>       </trans-unit>
+        <trans-unit id="656" translate="yes" xml:space="preserve">
+          <source>To ensure that the component library's public interface exposes only program elements that are CLS-compliant.</source>
+          <target state="translated">コンポーネント ライブラリのパブリック インターフェイスが CLS に準拠するプログラム要素のみを公開するように保証する。</target>       </trans-unit>
+        <trans-unit id="657" translate="yes" xml:space="preserve">
+          <source>If elements are not CLS-compliant, compilers will generally issue a warning.</source>
+          <target state="translated">要素が CLS 非準拠の場合は、通常、警告が表示されます。</target>       </trans-unit>
+        <trans-unit id="658" translate="yes" xml:space="preserve">
+          <source>In some cases, language compilers enforce CLS-compliant rules regardless of whether the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute is used.</source>
+          <target state="translated">言語コンパイラでは、<ph id="ph1">`CLSCompliantAttribute`</ph> 属性が使用されているかどうかに関係なく、CLS 準拠の規則が適用される場合があります。</target>       </trans-unit>
+        <trans-unit id="659" translate="yes" xml:space="preserve">
+          <source>For example, defining a <ph id="ph1">`*static`</ph> member in an interface violates a CLS rule.</source>
+          <target state="translated">たとえば、インターフェイスに <ph id="ph1">`*static`</ph> メンバーを定義すると CLS の規則に違反します。</target>       </trans-unit>
+        <trans-unit id="660" translate="yes" xml:space="preserve">
+          <source>However, if you define a <ph id="ph1">`*static`</ph> member in an interface, the C# compiler displays an error message and fails to compile the app.</source>
+          <target state="translated">ただし、インターフェイスに <ph id="ph1">`*static`</ph> メンバーを定義した場合、C# コンパイラはエラー メッセージを表示し、アプリのコンパイルに失敗します。</target>       </trans-unit>
+        <trans-unit id="661" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CLSCompliantAttribute`</ph> attribute is marked with an <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept> attribute that has a value of <ph id="ph2">`AttributeTargets.All`</ph>.</source>
+          <target state="translated"><ph id="ph1">`CLSCompliantAttribute`</ph> 属性は、値 <ph id="ph2">`AttributeTargets.All`</ph> が指定された <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept> 属性でマークされます。</target>       </trans-unit>
+        <trans-unit id="662" translate="yes" xml:space="preserve">
+          <source>This value allows you to apply the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values.</source>
+          <target state="translated">この値を使用すると、<ph id="ph1">`CLSCompliantAttribute`</ph> 属性を、アセンブリ、モジュール、型 (クラス、構造体、列挙体、インターフェイス、およびデリゲート)、型パラメーター (コンストラクター、メソッド、プロパティ、フィールド、およびイベント)、パラメーター、ジェネリック パラメーター、戻り値など、すべてのプログラム要素に適用できます。</target>       </trans-unit>
+        <trans-unit id="663" translate="yes" xml:space="preserve">
+          <source>However, in practice, you should apply the attribute only to assemblies, types, and type members.</source>
+          <target state="translated">ただし、実際は、アセンブリ、型、および型メンバーだけに属性を適用することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="664" translate="yes" xml:space="preserve">
+          <source>Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.</source>
+          <target state="translated">そうしないと、属性は、コンパイラによってライブラリのパブリック インターフェイスで非準拠パラメーター、ジェネリック パラメーター、または戻り値が検出されたときに必ず無視され、コンパイラ警告が引き続き生成されます。</target>       </trans-unit>
+        <trans-unit id="665" translate="yes" xml:space="preserve">
+          <source>The value of the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute is inherited by contained program elements.</source>
+          <target state="translated"><ph id="ph1">`CLSCompliantAttribute`</ph> 属性の値は、内包型プログラム要素によって継承されます。</target>       </trans-unit>
+        <trans-unit id="666" translate="yes" xml:space="preserve">
+          <source>For example, if an assembly is marked as CLS-compliant, its types are also CLS-compliant.</source>
+          <target state="translated">たとえば、アセンブリが CLS 準拠としてマークされている場合は、その型も CLS に準拠します。</target>       </trans-unit>
+        <trans-unit id="667" translate="yes" xml:space="preserve">
+          <source>If a type is marked as CLS-compliant, its nested types and members are also CLS-compliant.</source>
+          <target state="translated">型が CLS 準拠としてマークされている場合は、その入れ子になった型とメンバーも CLS に準拠します。</target>       </trans-unit>
+        <trans-unit id="668" translate="yes" xml:space="preserve">
+          <source>You can explicitly override the inherited compliance by applying the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute to a contained program element.</source>
+          <target state="translated">継承された準拠状況を明示的にオーバーライドするには、<ph id="ph1">`CLSCompliantAttribute`</ph> 属性を、格納されているプログラム要素に適用します。</target>       </trans-unit>
+        <trans-unit id="669" translate="yes" xml:space="preserve">
+          <source>For example, you can use the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute with an <bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept> value of <ph id="ph2">`false`</ph> to define a non-compliant type in a compliant assembly, and you can use the attribute with an <bpt id="p2">*</bpt>isComplian<ept id="p2">*</ept> value of <ph id="ph3">`true`</ph> to define a compliant type in a non-compliant assembly.</source>
+          <target state="translated">たとえば、<bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept> 値が <ph id="ph2">`false`</ph> に指定された <ph id="ph1">`CLSCompliantAttribute`</ph> 属性を使用すると、準拠アセンブリで非準拠型を定義できます。また、<bpt id="p2">*</bpt>isComplian<ept id="p2">*</ept> 値が <ph id="ph3">`true`</ph> に指定された属性を使用すると、非準拠アセンブリで準拠型を定義できます。</target>       </trans-unit>
+        <trans-unit id="670" translate="yes" xml:space="preserve">
+          <source>You can also define non-compliant members in a compliant type.</source>
+          <target state="translated">準拠型で非準拠メンバーを定義することもできます。</target>       </trans-unit>
+        <trans-unit id="671" translate="yes" xml:space="preserve">
+          <source>However, a non-compliant type cannot have compliant members, so you cannot use the attribute with an <bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept> value of <ph id="ph1">`true`</ph> to override inheritance from a non-compliant type.</source>
+          <target state="translated">ただし、非準拠型は準拠メンバーを持つことができないので、<bpt id="p1">*</bpt>isCompliant<ept id="p1">*</ept> 値が <ph id="ph1">`true`</ph> に指定された属性では非準拠型から継承をオーバーライドできません。</target>       </trans-unit>
+        <trans-unit id="672" translate="yes" xml:space="preserve">
+          <source>When you are developing components, you should always use the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute to indicate whether your assembly, its types, and its members are CLS-compliant.</source>
+          <target state="translated">コンポーネントを開発するときは必ず、<ph id="ph1">`CLSCompliantAttribute`</ph> 属性を使用して、アセンブリ、その型、およびそのメンバーが CLS に準拠しているかどうかを指定することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="673" translate="yes" xml:space="preserve">
+          <source>To create CLS-compliant components:</source>
+          <target state="translated">CLS 準拠のコンポーネントを作成するには:</target>       </trans-unit>
+        <trans-unit id="674" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`CLSCompliantAttribute`</ph> to mark you assembly as CLS-compliant.</source>
+          <target state="translated"><ph id="ph1">`CLSCompliantAttribute`</ph> を使用して、CLS 準拠としてアセンブリをマークします。</target>       </trans-unit>
+        <trans-unit id="675" translate="yes" xml:space="preserve">
+          <source>Mark any publicly exposed types in the assembly that are not CLS-compliant as non-compliant.</source>
+          <target state="translated">アセンブリ内の CLS に準拠していない公開された型を、非準拠としてマークします。</target>       </trans-unit>
+        <trans-unit id="676" translate="yes" xml:space="preserve">
+          <source>Mark any publicly exposed members in CLS-compliant types as non-compliant.</source>
+          <target state="translated">CLS 準拠の型の公開されたメンバーを、非準拠としてマークします。</target>       </trans-unit>
+        <trans-unit id="677" translate="yes" xml:space="preserve">
+          <source>Provide a CLS-compliant alternative for non-CLS-compliant members.</source>
+          <target state="translated">CLS 非準拠メンバーの CLS 準拠の代替を指定します。</target>       </trans-unit>
+        <trans-unit id="678" translate="yes" xml:space="preserve">
+          <source>If you've successfully marked all your non-compliant types and members, your compiler should not emit any non-compliance warnings.</source>
+          <target state="translated">非準拠の型とメンバーすべてを正常にマークした場合、非準拠の警告は出力されません。</target>       </trans-unit>
+        <trans-unit id="679" translate="yes" xml:space="preserve">
+          <source>However, you should indicate which members are not CLS-compliant and list their CLS-compliant alternatives in your product documentation.</source>
+          <target state="translated">ただし、どのメンバーが CLS に準拠していないかを提示し、CLS 準拠の代替を製品ドキュメントに示すことをお勧めします。</target>       </trans-unit>
+        <trans-unit id="680" translate="yes" xml:space="preserve">
+          <source>The following example uses the <ph id="ph1">`CLSCompliantAttribute`</ph> attribute to define a CLS-compliant assembly and a type, <ph id="ph2">`CharacterUtilities`</ph>, that has two non-CLS-compliant members.</source>
+          <target state="translated">次の例では、<ph id="ph1">`CLSCompliantAttribute`</ph> 属性を使用して、CLS 準拠のアセンブリと、2 つの CLS 非準拠のメンバーを持つ型、<ph id="ph2">`CharacterUtilities`</ph> を定義します。</target>       </trans-unit>
+        <trans-unit id="681" translate="yes" xml:space="preserve">
+          <source>Because both members are tagged with the <ph id="ph1">`CLSCompliant(false)`</ph> attribute, the compiler produces no warnings.</source>
+          <target state="translated">両メンバーとも <ph id="ph1">`CLSCompliant(false)`</ph> 属性でタグ付けされているので、警告は生成されません。</target>       </trans-unit>
+        <trans-unit id="682" translate="yes" xml:space="preserve">
+          <source>The class also provides a CLS-compliant alternative for both methods.</source>
+          <target state="translated">また、クラスには、両方のメソッド用の CLS 準拠の代替も用意されています。</target>       </trans-unit>
+        <trans-unit id="683" translate="yes" xml:space="preserve">
+          <source>Ordinarily, we would just add two overloads to the <ph id="ph1">`ToUTF16`</ph> method to provide CLS-compliant alternatives.</source>
+          <target state="translated">通常、CLS 準拠の代替を用意するには、2 つのオーバーロードを <ph id="ph1">`ToUTF16`</ph> メソッドに追加するだけです。</target>       </trans-unit>
+        <trans-unit id="684" translate="yes" xml:space="preserve">
+          <source>However, because methods cannot be overloaded based on return value, the names of the CLS-compliant methods are different from the names of the non-compliant methods.</source>
+          <target state="translated">ただし、戻り値に基づいてメソッドをオーバーロードできないので、CLS 準拠のメソッドの名前は、非準拠のメソッドの名前とは異なります。</target>       </trans-unit>
+        <trans-unit id="685" translate="yes" xml:space="preserve">
+          <source>If you are developing an app rather than a library (that is, if you aren't exposing types or members that can be consumed by other app developers), the CLS compliance of the program elements that your app consumes are of interest only if your language does not support them.</source>
+          <target state="translated">ライブラリではなくアプリを開発している場合 (つまり、他のアプリ開発者が使用できる型またはメンバーを公開しない場合)、アプリが使用するプログラム要素は、そのプログラム要素が使用する言語でサポートされていない場合に CLS に準拠する必要があります。</target>       </trans-unit>
+        <trans-unit id="686" translate="yes" xml:space="preserve">
+          <source>In that case, your language compiler will generate an error when you try to use a non-CLS-compliant element.</source>
+          <target state="translated">この場合、CLS 非準拠の要素を使用しようとすると、言語コンパイラによってエラーが生成されます。</target>       </trans-unit>
+        <trans-unit id="687" translate="yes" xml:space="preserve">
+          <source>Cross-Language Interoperability</source>
+          <target state="translated">言語間の相互運用性</target>       </trans-unit>
+        <trans-unit id="688" translate="yes" xml:space="preserve">
+          <source>Language independence has a number of possible meanings.</source>
+          <target state="translated">言語に依存しないということは、いくつか意味があります。</target>       </trans-unit>
+        <trans-unit id="689" translate="yes" xml:space="preserve">
+          <source>One meaning involves seamlessly consuming types written in one language from an app written in another language.</source>
+          <target state="translated">1 つには、ある言語で記述された型を、別の言語で記述されたアプリからシームレスに使用できることを意味します。</target>       </trans-unit>
+        <trans-unit id="690" translate="yes" xml:space="preserve">
+          <source>A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET Framework assembly.</source>
+          <target state="translated">また、複数の言語で記述されたコードを 1 つの .NET .NET Framework アセンブリにまとめることもできます。ここでは、この点について焦点を当てて説明します。</target>       </trans-unit>
+        <trans-unit id="691" translate="yes" xml:space="preserve">
+          <source>The following example illustrates cross-language interoperability by creating a class library named Utilities.dll that includes two classes, <ph id="ph1">`NumericLib`</ph> and <ph id="ph2">`StringLib`</ph>.</source>
+          <target state="translated">次の例では、<ph id="ph1">`NumericLib`</ph> および <ph id="ph2">`StringLib`</ph> という 2 つのクラスを含む Utilities.dll という名前のクラス ライブラリを作成して言語間の相互運用性を示します。</target>       </trans-unit>
+        <trans-unit id="692" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`NumericLib`</ph> class is written in C#, and the <ph id="ph2">`StringLib`</ph> class is written in Visual Basic.</source>
+          <target state="translated"><ph id="ph1">`NumericLib`</ph> クラスは C# で記述され、<ph id="ph2">`StringLib`</ph> クラスは Visual Basic で記述されています。</target>       </trans-unit>
+        <trans-unit id="693" translate="yes" xml:space="preserve">
+          <source>Here's the source code for <ph id="ph1">`StringUtil.vb`</ph>, which includes a single member, <ph id="ph2">`ToTitleCase`</ph>, in its <ph id="ph3">`StringLib`</ph> class.</source>
+          <target state="translated">以下は <ph id="ph1">`StringUtil.vb`</ph> のソース コードで、<ph id="ph3">`StringLib`</ph> クラスに <ph id="ph2">`ToTitleCase`</ph> という単一のメンバーが含まれます。</target>       </trans-unit>
+        <trans-unit id="694" translate="yes" xml:space="preserve">
+          <source>Here's the source code for NumberUtil.cs, which defines a <ph id="ph1">`NumericLib`</ph> class that has two members, <ph id="ph2">`IsEven`</ph> and <ph id="ph3">`NearZero`</ph>.</source>
+          <target state="translated">以下は NumberUtil.cs のソース コードで、<ph id="ph1">`NumericLib`</ph> および <ph id="ph2">`IsEven`</ph> という 2 つのメンバーを持つ <ph id="ph3">`NearZero`</ph> クラスを定義しています。</target>       </trans-unit>
+        <trans-unit id="695" translate="yes" xml:space="preserve">
+          <source>To package the two classes in a single assembly, you must compile them into modules.</source>
+          <target state="translated">単一のアセンブリに 2 つのクラスをパッケージ化するには、モジュールにコンパイルする必要があります。</target>       </trans-unit>
+        <trans-unit id="696" translate="yes" xml:space="preserve">
+          <source>To compile the Visual Basic source code file into a module, use this command:</source>
+          <target state="translated">Visual Basic のソース コード ファイルをモジュールにコンパイルするには、次のコマンドを使用します。</target>       </trans-unit>
+        <trans-unit id="697" translate="yes" xml:space="preserve">
+          <source>To compile the C# source code file into a module, use this command:</source>
+          <target state="translated">C# のソース コード ファイルをモジュールにコンパイルするには、次のコマンドを使用します。</target>       </trans-unit>
+        <trans-unit id="698" translate="yes" xml:space="preserve">
+          <source>You then use the Link tool (Link.exe) to compile the two modules into an assembly:</source>
+          <target state="translated">次に、リンク ツール (Link.exe) を使用して 2 つのモジュールをアセンブリにコンパイルします。</target>       </trans-unit>
+        <trans-unit id="699" translate="yes" xml:space="preserve">
+          <source>The following example then calls the <ph id="ph1">`NumericLib.NearZero`</ph> and <ph id="ph2">`StringLib.ToTitleCase`</ph> methods.</source>
+          <target state="translated">次の例では、その後 <ph id="ph1">`NumericLib.NearZero`</ph> メソッドおよび <ph id="ph2">`StringLib.ToTitleCase`</ph> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="700" translate="yes" xml:space="preserve">
+          <source>Note that both the Visual Basic code and the C# code are able to access the methods in both classes.</source>
+          <target state="translated">Visual Basic コードと C# コードは、両方のクラスのメソッドにアクセスできることに注意してください。</target>       </trans-unit>
+        <trans-unit id="701" translate="yes" xml:space="preserve">
+          <source>To compile the Visual Basic code, use this command:</source>
+          <target state="translated">Visual Basic コードをコンパイルするには、次のコマンドを使用します。</target>       </trans-unit>
+        <trans-unit id="702" translate="yes" xml:space="preserve">
+          <source>To compile with C#, change the name of the compiler from vbc to csc, and change the file extension from .vb to .cs:</source>
+          <target state="translated">C# でコンパイルするには、コンパイラの名前を vbc から csc に変更し、ファイル拡張子を .vb から .cs に変更します。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

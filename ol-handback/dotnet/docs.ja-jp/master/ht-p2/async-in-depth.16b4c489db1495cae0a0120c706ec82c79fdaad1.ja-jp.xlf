@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6536a608a4ee1bb10f41907a28114193a300a52c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\async-in-depth.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4a59cc5bc6b7d68b057f06623b3cc2f09799a72f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0300c978d5652352126d5e8e8e0c9370ad283890</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Async in depth</source>
+          <target state="translated">非同期の詳細</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>In-depth explanation of how asynchronous code works in .NET</source>
+          <target state="translated">.NET での非同期コードの動作についての詳細な説明</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Standard</source>
+          <target state="translated">.NET, .NET Core, .NET の標準</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Async in depth</source>
+          <target state="translated">非同期の詳細</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.</source>
+          <target state="translated">I/O および CPU バインドの非同期コードは、.NET のタスクベース非同期モデルを使用して簡単に記述できます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The model is exposed by the <ph id="ph1">`Task`</ph> and <ph id="ph2">`Task&lt;T&gt;`</ph> types and the <ph id="ph3">`async`</ph> and <ph id="ph4">`await`</ph> language keywords.</source>
+          <target state="translated">このモデルは、<ph id="ph1">`Task`</ph> および <ph id="ph2">`Task&lt;T&gt;`</ph> 型と、<ph id="ph3">`async`</ph> および <ph id="ph4">`await`</ph> 言語キーワードによって公開されます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article explains how to use .NET async and provides insight into the async framework used under the covers.</source>
+          <target state="translated">この記事では、.NET 非同期を使用する方法について説明し、背後で使用される非同期フレームワークを把握するための情報を示します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Task and Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
+          <target state="translated">Task と Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Tasks are constructs used to implement what is known as the <bpt id="p1">[</bpt>Promise Model of Concurrency<ept id="p1">](https://en.wikipedia.org/wiki/Futures_and_promises)</ept>.</source>
+          <target state="translated">Task は、<bpt id="p1">[</bpt>Promise Model of Concurrency<ept id="p1">](https://en.wikipedia.org/wiki/Futures_and_promises)</ept> (並行性の Promise 型モデル) として知られるモデルを実装するために使用される構成体です。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In short, they offer you a "promise" that work will be completed at a later point, letting you coordinate with the promise with a clean API.</source>
+          <target state="translated">つまり、今後のある時点で作業が完了することを "約束" し、クリーン API を使用した約束の調整を可能にします。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task`</ph> represents a single operation which does not return a value.</source>
+          <target state="translated"><ph id="ph1">`Task`</ph> は、値を返さない 1 回の操作を表します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task&lt;T&gt;`</ph> represents a single operation which returns a value of type <ph id="ph2">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Task&lt;T&gt;`</ph> は、<ph id="ph2">`T`</ph> 型の値を返す 1 回の操作を表します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>It’s important to reason about tasks as abstractions of work happening asynchronously, and <bpt id="p1">*</bpt>not<ept id="p1">*</ept> an abstraction over threading.</source>
+          <target state="translated">作業の抽象化は非同期に発生し、スレッド処理の抽象化では<bpt id="p1">*</bpt>ない<ept id="p1">*</ept>ため、タスクについて判断することが重要です。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate.</source>
+          <target state="translated">既定では、タスクは現在のスレッドで実行され、必要に応じてオペレーティング システムに作業を委任します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Optionally, tasks can be be explicitly requested to run on a separate thread via the <ph id="ph1">`Task.Run`</ph> API.</source>
+          <target state="translated">必要に応じて、<ph id="ph1">`Task.Run`</ph> API を使用して、タスクを別のスレッドで実行することを明示的に要求できます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of <ph id="ph1">`Task&lt;T&gt;`</ph>) of a task.</source>
+          <target state="translated">タスクは、タスクの監視、待機、結果値へのアクセス (<ph id="ph1">`Task&lt;T&gt;`</ph> の場合) のための API プロトコルを公開しています。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Language integration, with the <ph id="ph1">`await`</ph> keyword, provides a higher-level abstraction for using tasks.</source>
+          <target state="translated"><ph id="ph1">`await`</ph> キーワードによる言語統合は、タスクを使用するための高度なレベルの抽象化を提供します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Using <ph id="ph1">`await`</ph> allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done.</source>
+          <target state="translated"><ph id="ph1">`await`</ph> を使用すると、アプリケーションまたはサービスで、タスク完了まで呼び出し元に制御を渡すことによって、タスクの実行中に有用な作業を実行できます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Your code does not need to rely on callbacks or events to continue execution after the task has been completed.</source>
+          <target state="translated">コードは、タスク完了後に実行を続けるために、コールバックまたはイベントに依存する必要はありません。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The language and task API integration does that for you.</source>
+          <target state="translated">言語とタスクの API 統合によって処理されます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you’re using <ph id="ph1">`Task&lt;T&gt;`</ph>, the <ph id="ph2">`await`</ph> keyword will additionally “unwrap” the value returned when the Task is complete.</source>
+          <target state="translated"><ph id="ph1">`Task&lt;T&gt;`</ph> を使用する場合、<ph id="ph2">`await`</ph> キーワードはさらに、タスク完了時に返された値を "ラップ解除" します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The details of how this works are explained further below.</source>
+          <target state="translated">この動作の詳細について次に詳しく説明します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can learn more about tasks and the different ways to interact with them in the <bpt id="p1">[</bpt>Task-based Asynchronous Pattern (TAP) Article<ept id="p1">](https://msdn.microsoft.com/library/hh873175.aspx)</ept>.</source>
+          <target state="translated">タスクと、タスクを処理するさまざまな方法について詳しく知るには、<bpt id="p1">[</bpt>タスクベースの非同期パターン (TAP) に関する記事<ept id="p1">](https://msdn.microsoft.com/library/hh873175.aspx)</ept>を参照してください。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Deeper Dive into Tasks for an I/O-Bound Operation</source>
+          <target state="translated">I/O バインド操作に関するタスクの詳細</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following section describes a 10,000 foot view of what happens with a typical async I/O call.</source>
+          <target state="translated">次のセクションでは、一般的な非同期 I/O 呼び出しで実行される処理の概要について説明します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Let's start with a couple examples.</source>
+          <target state="translated">はじめに例を 2 つ示します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The first example calls an async method and returns an active task, likely yet to complete.</source>
+          <target state="translated">最初の例では、非同期メソッドを呼び出し、未完了のアクティブなタスクを返します。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The second example adds the use of he <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> keywords to operate on the task.</source>
+          <target state="translated">2 番目の例では、タスクに対する処理に <ph id="ph1">`async`</ph> キーワードと <ph id="ph2">`await`</ph> キーワードを追加で使用しています。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`GetStringAsync()`</ph> calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library.</source>
+          <target state="translated"><ph id="ph1">`GetStringAsync()`</ph> を呼び出すと、ネイティブ ネットワーク ライブラリへの P/Invoke interop 呼び出しに到達するまで、下位レベルの .NET ライブラリ (おそらく他の非同期メソッドを呼び出す) を介して呼び出しが行われます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The native library may subsequently call into a System API call (such as <ph id="ph1">`write()`</ph> to a socket on Linux).</source>
+          <target state="translated">ネイティブ ライブラリはその後、システム API 呼び出し (Linux のソケットへの <ph id="ph1">`write()`</ph> など) を実行することがあります。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>A task object will be created at the native/managed boundary, possibly using <bpt id="p1">[</bpt>TaskCompletionSource<ept id="p1">](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600))</ept>.</source>
+          <target state="translated">ネイティブまたはマネージ境界にタスク オブジェクトが作成されます。作成には <bpt id="p1">[</bpt>TaskCompletionSource<ept id="p1">](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600))</ept> が使用される可能性があります。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller.</source>
+          <target state="translated">タスク オブジェクトは上位レイヤーに渡され、操作が実行される場合もあれば直接返される場合もありますが、最終的に最初の呼び出し元に戻されます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the second example above, a <ph id="ph1">`Task&lt;T&gt;`</ph> object will be returned from <ph id="ph2">`GetStringAsync`</ph>.</source>
+          <target state="translated">上記の 2 番目の例で、<ph id="ph1">`Task&lt;T&gt;`</ph> オブジェクトが <ph id="ph2">`GetStringAsync`</ph> から返されます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The use of the <ph id="ph1">`await`</ph> keyword causes the method to return a newly created task object.</source>
+          <target state="translated"><ph id="ph1">`await`</ph> キーワードを使用すると、メソッドは新しく作成したタスク オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Control returns to the caller from this location in the <ph id="ph1">`GetFirstCharactersCountAsync`</ph> method.</source>
+          <target state="translated"><ph id="ph1">`GetFirstCharactersCountAsync`</ph> メソッドのこの場所から呼び出し元に制御が戻ります。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The methods and properties of the <bpt id="p1">[</bpt>Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Threading.Tasks.Task%601)</ept> object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Threading.Tasks.Task%601)</ept> オブジェクトのメソッドとプロパティを使用すると、呼び出し元はタスクの進行状況を監視できます。タスクは、GetFirstCharactersCountAsync の残りのコードが実行されれば完了します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as <ph id="ph1">`/net`</ph> in the Linux Kernel).</source>
+          <target state="translated">システム API 呼び出しの後、要求はカーネル領域に入り、OS のネットワーク サブシステム (Linux カーネルの <ph id="ph1">`/net`</ph> など) に移ります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Here the OS will handle the networking request <bpt id="p1">*</bpt>asynchronously<ept id="p1">*</ept>.</source>
+          <target state="translated">ここで、OS はネットワーク要求を<bpt id="p1">*</bpt>非同期的に<ept id="p1">*</ept>処理します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Details may be different depending on the OS used (the device driver call may be scheduled as a signal sent back to the runtime, or a device driver call may be made and <bpt id="p1">*</bpt>then<ept id="p1">*</ept> a signal sent back), but eventually the runtime will be informed that the networking request is in progress.</source>
+          <target state="translated">詳細は使用する OS によって異なる場合がありますが (デバイス ドライバーの呼び出しが、ランタイムに返送されるシグナルとしてスケジュールされている場合や、デバイス ドライバー呼び出しが行われた<bpt id="p1">*</bpt>後<ept id="p1">*</ept>にシグナルが返送される場合があります)、最終的にはネットワーク要求が進行中であることがランタイムに通知されます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!</source>
+          <target state="translated">この時点で、デバイス ドライバーに関する処理はスケジュール済み、進行中、または既に完了済み (要求が既に "接続" されていない状態) のいずれかですが、すべてが非同期に発生するため、デバイス ドライバーはすぐに別の処理を実行できます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, in Windows an OS thread makes a call to the network device driver and asks it to perform the networking operation via an Interrupt Request Packet (IRP) which represents the operation.</source>
+          <target state="translated">たとえば、Windows で OS スレッドからネットワーク デバイス ドライバーに呼び出しを行い、操作を表す割り込み要求パケット (IRP) を通じてネットワーク操作の実行を依頼します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The device driver receives the IRP, makes the call to the network, marks the IRP as "pending", and returns back to the OS.</source>
+          <target state="translated">デバイス ドライバーは IRP を受信し、ネットワークへの呼び出しを行い、IRP を "保留中" とマークして OS に戻ります。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Because the OS thread now knows that the IRP is "pending", it doesn't have any more work to do for this job and "returns" back so that it can be used to perform other work.</source>
+          <target state="translated">OS スレッドは IRP が "保留中" であることがわかっているため、このジョブに対してそれ以上行う処理はなく、"戻る" ことによって他の作業を実行できるようになります。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.</source>
+          <target state="translated">要求が満たされ、データがデバイス ドライバーに戻ると、新しいデータの受信が割り込みを介して CPU に通知されます。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).</source>
+          <target state="translated">この割り込みが処理される方法は OS によって異なりますが、最終的にデータは OS に渡されてシステム interop 呼び出しに到達します (たとえば、Linux では割り込みハンドラーが IRQ の残り半分をスケジュールし、データを OS に非同期に渡します)。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Note that this <bpt id="p1">*</bpt>also<ept id="p1">*</ept> happens asynchronously!</source>
+          <target state="translated">これも<bpt id="p1">*</bpt>非同期に<ept id="p1">*</ept>行われることにご注意ください。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The result is queued up until the next available thread is able execute the async method and "unwrap" the result of the completed task.</source>
+          <target state="translated">結果は、次の使用可能なスレッドが非同期メソッドを実行して完了したタスクの結果を "ラップ解除" できるようになるまで、キューに置かれます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Throughout this entire process, a key takeaway is that <bpt id="p1">**</bpt>no thread is dedicated to running the task<ept id="p1">**</ept>.</source>
+          <target state="translated">このプロセス全体を通じて、重要なことは、<bpt id="p1">**</bpt>タスクを実行する専用のスレッドは存在しない<ept id="p1">**</ept>ということです。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Although work is executed in some context (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to <bpt id="p1">*</bpt>waiting<ept id="p1">*</ept> for data from the request to come back.</source>
+          <target state="translated">作業は何らかのコンテキストで実行されますが (つまり、OS はデバイス ドライバーにデータを渡し、割り込みに応答する必要があります)、要求からデータが戻るのを<bpt id="p1">*</bpt>待機<ept id="p1">*</ept>する専用のスレッドは存在しません。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.</source>
+          <target state="translated">そのため、システムは I/O 呼び出しの完了を待機するのではなく、より大量の作業を処理できます。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work.</source>
+          <target state="translated">実測時間で考えると、上記の処理には実行する作業が多いように見えるかもしれませんが、実際の I/O 作業の実行にかかる時間に比較すればわずかです。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Although not at all precise, a potential timeline for such a call would look like this:</source>
+          <target state="translated">まったくの目安ですが、このような呼び出しの潜在的なタイムラインは次のようなります。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>0-1————————————————————————————————————————————————–2-3</source>
+          <target state="translated">0-1————————————————————————————————————————————————–2-3</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Time spent from points <ph id="ph1">`0`</ph> to <ph id="ph2">`1`</ph> is everything up until an async method yields control to its caller.</source>
+          <target state="translated"><ph id="ph1">`0`</ph> の時点から <ph id="ph2">`1`</ph> の時点までは、非同期メソッドが呼び出し元に制御を渡すまでにかかった時間です。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Time spent from points <ph id="ph1">`1`</ph> to <ph id="ph2">`2`</ph> is the time spent on I/O, with no CPU cost.</source>
+          <target state="translated"><ph id="ph1">`1`</ph> の時点から <ph id="ph2">`2`</ph> の時点までは、CPU に負荷をかけずに I/O に費やされた時間です。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Finally, time spent from points <ph id="ph1">`2`</ph> to <ph id="ph2">`3`</ph> is passing control back (and potentially a value) to the async method, at which point it is executing again.</source>
+          <target state="translated">最後に、<ph id="ph1">`2`</ph> の時点から <ph id="ph2">`3`</ph> の時点までは、非同期メソッドに制御 (および場合によっては値) を戻すまでの時間です。この時点でそのメソッドは再度実行されます。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>What does this mean for a server scenario?</source>
+          <target state="translated">サーバー側のシナリオ</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This model works well with a typical server scenario workload.</source>
+          <target state="translated">このモデルは、標準的なサーバー シナリオのワークロードで問題なく動作します。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Because there are no threads dedicated to blocking on unfinished tasks, the server threadpool can service a much higher volume of web requests.</source>
+          <target state="translated">未完了のタスクでのブロッキング専用のスレッドがないため、サーバー スレッドプールでより大量の Web 要求の処理ができます。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Consider two servers: one that runs async code, and one that does not.</source>
+          <target state="translated">2 種類のサーバーについて考えます。非同期コードを実行しているサーバーと、実行していないサーバーです。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For the purpose of this example, each server only has 5 threads available to service requests.</source>
+          <target state="translated">この例では、各サーバーには、サービス要求に使用できるスレッドが 5 つだけあります。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Note that these numbers are imaginarily small and serve only in a demonstrative context.</source>
+          <target state="translated">これは非現実的な少ない数であり、デモの目的に限って使用していることに注意してください。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Assume both servers receive 6 concurrent requests.</source>
+          <target state="translated">どちらのサーバーも 6 件の同時要求を受信したとします。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Each request performs an I/O operation.</source>
+          <target state="translated">各要求で I/O 操作を 1 回実行します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The server <bpt id="p1">*</bpt>without<ept id="p1">*</ept> async code has to queue up the 6th request until one of the 5 threads have finished the I/O-bound work and written a response.</source>
+          <target state="translated">非同期コードを<bpt id="p1">*</bpt>使用しない<ept id="p1">*</ept>サーバーは、5 つのスレッドのいずれかが I/O バインドの作業を完了して応答を書き込むまで、6 番目の要求をキューに入れておく必要があります。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>At the point that the 20th request comes in, the server might start to slow down, because the queue is getting too long.</source>
+          <target state="translated">サーバーに 20 番目の要求が到着すると、キューが長くなりすぎるため、サーバー速度が低下し始める可能性があります。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The server <bpt id="p1">*</bpt>with<ept id="p1">*</ept> async code running on it still queues up the 6th request, but because it uses <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph>, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes.</source>
+          <target state="translated">非同期コードを<bpt id="p1">*</bpt>実行している<ept id="p1">*</ept>サーバーでも、6 番目の要求はキューに入れられますが、<ph id="ph1">`async`</ph> と <ph id="ph2">`await`</ph> を使用しているため、各スレッドは I/O バインドの作業が完了した時点ではなく、開始した時点で解放されます。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>By the time the 20th request comes in, the queue for incoming requests will be far smaller (if it has anything in it at all), and the server won't slow down.</source>
+          <target state="translated">20 番目の要求が到着する時点までに受信要求のキューは大幅に短くなり (キューに何らかの要求が格納されている場合)、サーバーの速度低下は発生しません。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Although this is a contrived example, it works in a very similar fashion in the real world.</source>
+          <target state="translated">これは架空の例ですが、実際の動作にとても似ています。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In fact, you can expect a server to be able to handle an order of magnitude more requests using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> than if it were dedicating a thread for each request it receives.</source>
+          <target state="translated">実際には、<ph id="ph1">`async`</ph> と <ph id="ph2">`await`</ph> を使用すると、受信する要求ごとにスレッドを専用にした場合に比べ、1 桁以上多い数の要求をサーバーで処理できると期待できます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>What does this mean for client scenario?</source>
+          <target state="translated">クライアント側のシナリオ</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The biggest gain for using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> for a client app is an increase in responsiveness.</source>
+          <target state="translated">クライアント アプリに <ph id="ph1">`async`</ph> と <ph id="ph2">`await`</ph> を使用する最大のメリットは、応答性の向上です。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although you can make an app responsive by spawning threads manually, the act of spawning a thread is an expensive operation relative to just using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph>.</source>
+          <target state="translated">スレッドを手動で作成することによって、アプリの応答性を高めることができます。スレッドを作成することは、単に <ph id="ph1">`async`</ph> と <ph id="ph2">`await`</ph> を使用する場合に比べ、相対的に負荷の高い操作です。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Especially for something like a mobile game, impacting the UI thread as little as possible where I/O is concerned is crucial.</source>
+          <target state="translated">モバイル ゲームなどの場合は特に、I/O に関して UI スレッドへの影響をできるだけ少なくすることが重要です。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>More importantly, because I/O-bound work spends virtually no time on the CPU, dedicating an entire CPU thread to perform barely any useful work would be a poor use of resources.</source>
+          <target state="translated">さらに重要なことに、I/O バインドの作業に費やされる CPU 時間が実質的にゼロであるため、ほとんど有用性のない作業の実行に CPU スレッド全体を独占的に使用することは、リソースの使用方法として不適切です。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Additionally, dispatching work to the UI thread (such as updating a UI) is very simple with <ph id="ph1">`async`</ph> methods, and does not require extra work (such as calling a thread-safe delegate).</source>
+          <target state="translated">さらに、UI スレッドへの作業の処理依頼 (UI の更新など) は、<ph id="ph1">`async`</ph> メソッドを使用すればとても簡単で、余分な作業 (スレッドセーフ デリゲートの呼び出しなど) は必要ありません。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Deeper Dive into Task and Task<ph id="ph1">&lt;T&gt;</ph> for a CPU-Bound Operation</source>
+          <target state="translated">CPU バインド操作の Task と Task<ph id="ph1">&lt;T&gt;</ph> の詳細</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>CPU-bound <ph id="ph1">`async`</ph> code is a bit different than I/O-bound <ph id="ph2">`async`</ph> code.</source>
+          <target state="translated">CPU バインドの <ph id="ph1">`async`</ph> コードは、I/O バインドの <ph id="ph2">`async`</ph> コードとは少し異なります。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Because the work is done on the CPU, there's no way to get around dedicating a thread to the computation.</source>
+          <target state="translated">作業は CPU で実行されるため、スレッドを計算専用にすることを避ける方法はありません。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The use of <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> provides you with a clean way to interact with a background thread and keep the caller of the async method responsive.</source>
+          <target state="translated"><ph id="ph1">`async`</ph> と <ph id="ph2">`await`</ph> を使用すると、バックグラウンドのスレッドをクリーンな方法で使用でき、非同期メソッドの呼び出し元の応答性を維持できます。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Note that this does not provide any protection for shared data.</source>
+          <target state="translated">これにより共有データに対する保護は提供されないことに注意してください。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>If you are using shared data, you will still need to apply an appropriate synchronization strategy.</source>
+          <target state="translated">共有データを使用している場合は、適切な同期戦略を適用する必要があります。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Here's a 10,000 foot view of a CPU-bound async call:</source>
+          <target state="translated">CPU バインドの非同期呼び出しの概要を次に示します。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CalculateResult()`</ph> executes on the thread it was called on.</source>
+          <target state="translated"><ph id="ph1">`CalculateResult()`</ph> が、呼び出されたスレッドで実行されます。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>When it calls <ph id="ph1">`Task.Run`</ph>, it queues the expensive CPU-bound operation, <ph id="ph2">`DoExpensiveCalculation()`</ph>, on the thread pool and receives a <ph id="ph3">`Task&lt;int&gt;`</ph> handle.</source>
+          <target state="translated"><ph id="ph1">`Task.Run`</ph> の呼び出し時に、負荷の高い CPU バインド操作 <ph id="ph2">`DoExpensiveCalculation()`</ph> をスレッドプールでキューに入れ、<ph id="ph3">`Task&lt;int&gt;`</ph> ハンドルを受け取ります。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DoExpensiveCalculation()`</ph> is eventually run concurrently on the next available thread, likely on another CPU core.</source>
+          <target state="translated"><ph id="ph1">`DoExpensiveCalculation()`</ph> は最終的に次の使用可能なスレッドで (通常は別の CPU コアで) 同時に実行されます。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It's possible to do concurrent work while <ph id="ph1">`DoExpensiveCalculation()`</ph> is busy on another thread, because the thread which called <ph id="ph2">`CalculateResult()`</ph> is still executing.</source>
+          <target state="translated"><ph id="ph2">`CalculateResult()`</ph> を呼び出したスレッドがまだ実行中であるために、<ph id="ph1">`DoExpensiveCalculation()`</ph> が別のスレッドでビジー状態のときに、同時処理を行うことができます。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Once <ph id="ph1">`await`</ph> is encountered, the execution of <ph id="ph2">`CalculateResult()`</ph> is yielded to its caller, allowing other work to be done with the current thread while <ph id="ph3">`DoExpensiveCalculation()`</ph> is churning out a result.</source>
+          <target state="translated"><ph id="ph1">`await`</ph> が検出されると、<ph id="ph2">`CalculateResult()`</ph> の実行は呼び出し元に任され、<ph id="ph3">`DoExpensiveCalculation()`</ph> が結果を生成している間に、現在のスレッドで他の作業を実行できます。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Once it has finished, the result is queued up to run on the main thread.</source>
+          <target state="translated">その作業が完了すると、結果はキューに入れられ、メイン スレッドで実行されます。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Eventually, the main thread will return to executing <ph id="ph1">`CalculateResult()`</ph>, at which point it will have the result of <ph id="ph2">`DoExpensiveCalculation()`</ph>.</source>
+          <target state="translated">最終的に、メイン スレッドが <ph id="ph1">`CalculateResult()`</ph> の実行に戻り、その時点で <ph id="ph2">`DoExpensiveCalculation()`</ph> の結果が得られます。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Why does async help here?</source>
+          <target state="translated">async が役に立つ理由</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> are the best practice managing CPU-bound work when you need responsiveness.</source>
+          <target state="translated"><ph id="ph1">`async`</ph>と <ph id="ph2">`await`</ph> は、応答性を必要とする場合に CPU バインドの作業を管理する際のベスト プラクティスです。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>There are multiple patterns for using async with CPU-bound work.</source>
+          <target state="translated">CPU バインドの作業で async を使用するには、複数のパターンがあります。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>It's important to note that there is a small cost to using async and it's not recommended for tight loops.</source>
+          <target state="translated">async を使用すると小さいながらも負荷がかかるため、厳密なループ処理にはお勧めしません。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>It's up to you to determine how you write your code around this new capability.</source>
+          <target state="translated">この新しい機能を利用してコードを記述するかどうかは、ユーザーの判断に任されます。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4a5237fcb439999efe4454512b06444f129e7b4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\object-model.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">66edf357df3e0d5df6b12771b7660b647ad450ca</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bea53ff950c1842e54ef83b20c526751fda8cfa8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">正規表現のオブジェクト モデル</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">正規表現のオブジェクト モデル</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">正規表現のオブジェクト モデル</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic describes the object model used in working with.NET regular expressions.</source>
+          <target state="translated">ここでは、.NET の正規表現を扱うときに使用するオブジェクト モデルについて説明します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It contains the following sections:</source>
+          <target state="translated">このチュートリアルは、次のセクションで構成されています。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The regular expression engine<ept id="p1">](#the-regular-expression-engine)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>正規表現エンジン<ept id="p1">](#the-regular-expression-engine)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The MatchCollection and Match objects<ept id="p1">](#the-matchcollection-and-match-objects)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>MatchCollection オブジェクトと Match オブジェクト<ept id="p1">](#the-matchcollection-and-match-objects)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The Group collection<ept id="p1">](#the-group-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>GroupCollection<ept id="p1">](#the-group-collection)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The captured group<ept id="p1">](#the-captured-group)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>キャプチャ グループ<ept id="p1">](#the-captured-group)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The capture collection<ept id="p1">](#the-capture-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](#the-capture-collection)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The individual capture<ept id="p1">](#the-individual-capture)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>個々のキャプチャ<ept id="p1">](#the-individual-capture)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The regular expression engine</source>
+          <target state="translated">正規表現エンジン</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The regular expression engine in .NET is represented by the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class.</source>
+          <target state="translated">.NET の正規表現エンジンは、<bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> クラスによって表されます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string.</source>
+          <target state="translated">正規表現エンジンは、正規表現の解析とコンパイル、および正規表現パターンと入力文字列を照合する操作を実行します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The engine is the central component in .NET regular expression object model.</source>
+          <target state="translated">エンジンは、.NET 正規表現のオブジェクト モデルの中核となるコンポーネントです。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can use the regular expression engine in either of two ways:</source>
+          <target state="translated">正規表現エンジンは、次のいずれかの方法で使用できます。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>By calling the static methods of the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> クラスの静的メソッドを呼び出す。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The method parameters include the input string and the regular expression pattern.</source>
+          <target state="translated">メソッドのパラメーターには、入力文字列と正規表現パターンが含まれます。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The regular expression engine caches regular expressions that are used in static method calls, so repeated calls to static regular expression methods that use the same regular expression offer relatively good performance.</source>
+          <target state="translated">静的メソッド呼び出しで使用した正規表現は、正規表現エンジンによってキャッシュされるので、同じ正規表現を使用する静的正規表現メソッドを繰り返し呼び出す場合、パフォーマンスが比較的向上します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>By instantiating a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object, by passing a regular expression to the class constructor.</source>
+          <target state="translated">正規表現をクラス コンストラクターに渡して <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化する。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In this case, the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is immutable (read-only) and represents a regular expression engine that is tightly coupled with a single regular expression.</source>
+          <target state="translated">この場合、<bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトは変更不可 (読み取り専用) で、単一の正規表現と密に結合された正規表現エンジンを表します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because regular expressions used by Regex instances are not cached, you should not instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object multiple times with the same regular expression.</source>
+          <target state="translated">Regex インスタンスによって使用される正規表現はキャッシュされないので、同じ正規表現で <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトを複数回インスタンス化しないでください。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can call the methods of the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class to perform the following operations:</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> クラスのメソッドを呼び出すと、次のような処理を実行できます。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Determine whether a string matches a regular expression pattern.</source>
+          <target state="translated">文字列が正規表現パターンと一致するかどうかを確認する。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Extract a single match or the first match.</source>
+          <target state="translated">単一の一致または最初の一致を抽出する。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Extract all matches.</source>
+          <target state="translated">すべての一致を抽出する。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Replace a matched substring.</source>
+          <target state="translated">一致した部分文字列を置換する。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Split a single string into an array of strings.</source>
+          <target state="translated">単一の文字列を文字列配列に分割する。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>These operations are described in the following sections.</source>
+          <target state="translated">ここでは、これらの操作について説明します。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Matching a regular expression pattern</source>
+          <target state="translated">正規表現パターンの照合</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> method returns <ph id="ph1">`true`</ph> if the string matches the pattern, or <ph id="ph2">`false`</ph> if it does not.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> メソッドは、文字列がパターンと一致する場合は <ph id="ph1">`true`</ph> を返し、一致しない場合は <ph id="ph2">`false`</ph> を返します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> method is often used to validate string input.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> メソッドは、文字列入力を検証する場合によく使用されます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For example, the following code ensures that a string matches a valid social security number in the United States.</source>
+          <target state="translated">たとえば、次のコードでは、文字列は米国の有効な社会保障番号と一致します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^\d{3}-\d{2}-\d{4}$`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">この正規表現パターン <ph id="ph1">`^\d{3}-\d{2}-\d{4}$`</ph> の解釈を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Match the beginning of the input string.</source>
+          <target state="translated">入力文字列の先頭と一致します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Match three decimal digits.</source>
+          <target state="translated">3 個の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Match a hyphen.</source>
+          <target state="translated">ハイフンと一致します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">2 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Match a hyphen.</source>
+          <target state="translated">ハイフンと一致します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Match four decimal digits.</source>
+          <target state="translated">4 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Match the end of the input string.</source>
+          <target state="translated">入力文字列の末尾と一致します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Extracting a single match or the first match</source>
+          <target state="translated">単一の一致または最初の一致の抽出</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> method returns a <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object that contains information about the first substring that matches a regular expression pattern.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> メソッドは、正規表現パターンに一致する最初の部分文字列の情報を含む <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Match.Success`</ph> property returns <ph id="ph2">`true`</ph>, indicating that a match was found, you can retrieve information about subsequent matches by calling the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method.</source>
+          <target state="translated"><ph id="ph1">`Match.Success`</ph> プロパティが <ph id="ph2">`true`</ph> (一致する文字列が見つかったことを示す) を返す場合は、<bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを呼び出すと後続の一致する文字列の情報を取得できます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>These method calls can continue until the <ph id="ph1">`Match.Success`</ph> property returns <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">これらのメソッド呼び出しは、<ph id="ph1">`Match.Success`</ph> プロパティによって <ph id="ph2">`false`</ph> が返されるまで続行できます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For example, the following code uses the <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> method to find the first occurrence of a duplicated word in a string.</source>
+          <target state="translated">たとえば、次のコードでは、<bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> メソッドを使用して、重複する単語が文字列内で最初に出現する位置を検索します。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>It then calls the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method to find any additional occurrences.</source>
+          <target state="translated">次に、<bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを呼び出してその他の出現位置を検索します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The example examines the <ph id="ph1">`Match.Success`</ph> property after each method call to determine whether the current match was successful and whether a call to the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method should follow.</source>
+          <target state="translated">この例では、メソッドを呼び出すごとに <ph id="ph1">`Match.Success`</ph> プロパティを調べ、現在の一致が成功したかどうか、および続けて <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを呼び出す必要があるかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(\w+)\W+(\1)\b`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">この正規表現パターン <ph id="ph1">`\b(\w+)\W+(\1)\b`</ph> の解釈を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Begin the match on a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">これが最初のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Match one or more non-word characters.</source>
+          <target state="translated">1 個以上の単語文字に使用されない文字と一致します。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Match the first captured string.</source>
+          <target state="translated">最初にキャプチャされた文字列と一致します。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">これが 2 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>End the match on a word boundary.</source>
+          <target state="translated">ワード境界で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Extracting all matches</source>
+          <target state="translated">すべての一致の抽出</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method returns a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains information about all matches that the regular expression engine found in the input string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> メソッドは、入力文字列で正規表現エンジンによって検出されたすべての一致文字列の情報を含む <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For example, the previous example could be rewritten to call the <bpt id="p1">[</bpt>Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method instead of the <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> and <bpt id="p3">[</bpt>NextMatch<ept id="p3">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> methods.</source>
+          <target state="translated">たとえば、前の例を書き換えて、<bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> メソッドと <bpt id="p3">[</bpt>NextMatch<ept id="p3">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドではなく <bpt id="p1">[</bpt>Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> メソッドを呼び出すことができます。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Replacing a matched substring</source>
+          <target state="translated">一致した部分文字列の置換</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Replace<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String))</ept> method replaces each substring that matches the regular expression pattern with a specified string or regular expression pattern, and returns the entire input string with replacements.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Replace<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String))</ept> メソッドは、正規表現パターンに一致した各部分文字列を指定された文字列または正規表現パターンに置き換えて、置換が適用された入力文字列全体を返します。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example, the following code adds a U.S. currency symbol before a decimal number in a string.</source>
+          <target state="translated">たとえば、次のコードでは、文字列内の 10 進数の前に米国の通貨記号が追加されます。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d+\.\d{2}\b`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">この正規表現パターン <ph id="ph1">`\b\d+\.\d{2}\b`</ph> の解釈を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">1 個以上の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">ピリオドと一致します。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">2 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">ワード境界で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The replacement pattern <ph id="ph1">`$$$&amp;`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">置換パターン <ph id="ph1">`$$$&amp;`</ph> の解釈を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Replacement string</source>
+          <target state="translated">置換文字列</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The dollar sign (<bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept>) character.</source>
+          <target state="translated">ドル記号 (<bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept>) 文字。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The entire matched substring.</source>
+          <target state="translated">一致した部分文字列全体。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Splitting a single string into an array of strings</source>
+          <target state="translated">単一の文字列の文字列配列への分割</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Split<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Split(System.String))</ept> method splits the input string at the positions defined by a regular expression match.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Split<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Split(System.String))</ept> メソッドは、正規表現によって定義されている位置で、入力文字列を分割します。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For example, the following code places the items in a numbered list into a string array.</source>
+          <target state="translated">たとえば、次のコードでは、番号付きリストの項目を文字列配列に配置します。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d{1,2}\.\s`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">この正規表現パターン <ph id="ph1">`\b\d{1,2}\.\s`</ph> の解釈を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Match one or two decimal digits.</source>
+          <target state="translated">1 桁または 2 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">ピリオドと一致します。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">空白文字と一致します。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The MatchCollection and Match objects</source>
+          <target state="translated">MatchCollection オブジェクトと Match オブジェクト</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> methods return two objects that are part of the regular expression object model: the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object, and the <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> メソッドは、正規表現のオブジェクト モデルに含まれる <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> と <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> の 2 つのオブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The Match collection</source>
+          <target state="translated">MatchCollection</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method returns a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> メソッドは、正規表現エンジンによって検出されたすべての一致文字列を入力文字列に出現する順序で表す <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを含む <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If there are no matches, the method returns a <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains  <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object with no members.</source>
+          <target state="translated">一致がない場合、このメソッドは、メンバーのない <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを含む <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph1">`Item`</ph> property lets you access individual members of the collection by index, from zero to one less than the value of the <bpt id="p2">[</bpt>MatchCollection.Count<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> property.</source>
+          <target state="translated"><bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph1">`Item`</ph> プロパティを使用すると、コレクションの個々のメンバーに、0 から <bpt id="p2">[</bpt>MatchCollection.Count<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> プロパティの値より 1 小さい値までの範囲のインデックスでアクセスできます。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>'Item` is the collection's indexer (in C#) and default property (in Visual Basic)..</source>
+          <target state="translated">'Item` は、コレクションのインデクサー (C# の場合) および既定のプロパティ (Visual Basic の場合) です。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>By default, the call to the <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method uses lazy evaluation to populate the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object.</source>
+          <target state="translated">既定では、<bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> メソッドを呼び出すと、遅延評価を使用して <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトに値が設定されます。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Access to properties that require a fully populated collection, such as the <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> and <ph id="ph1">`Item`</ph> properties, may involve a performance penalty.</source>
+          <target state="translated">値の設定が完了しているコレクションを必要とするプロパティ (<bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> プロパティや <ph id="ph1">`Item`</ph> プロパティなど) にアクセスする場合は、パフォーマンスが低下する可能性があります。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>As a result, we recommend that you access the collection by using the <bpt id="p1">[</bpt>IEnumerator<ept id="p1">](xref:System.Collections.IEnumerator)</ept> object that is returned by the <bpt id="p2">[</bpt>MatchCollection.GetEnumerator<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator)</ept> method.</source>
+          <target state="translated">そのため、<bpt id="p2">[</bpt>MatchCollection.GetEnumerator<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator)</ept> メソッドによって返される <bpt id="p1">[</bpt>IEnumerator<ept id="p1">](xref:System.Collections.IEnumerator)</ept> オブジェクトを使用してコレクションにアクセスすることをお勧めします。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Individual languages provide constructs, such as <ph id="ph1">`foreach`</ph> in C# and `For Each' in Visual Basic, that wrap the collection's IEnumerator](xref:System.Collections.IEnumerator) interface.</source>
+          <target state="translated">個々の言語は、C# の <ph id="ph1">`foreach`</ph> やコレクションの IEnumerator](xref:System.Collections.IEnumerator) インターフェイスをラップする Visual Basic の `For Each' など、構成体を提供します。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Regex.Matches(String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method to populate a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object with all the matches found in an input string.</source>
+          <target state="translated">次の例では、<bpt id="p1">[</bpt>Regex.Matches(String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> メソッドを使用して、入力文字列の中で見つかったすべての一致を <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトに設定します。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The example enumerates the collection, copies the matches to a string array, and records the character positions in an integer array.</source>
+          <target state="translated">この例では、コレクションを列挙して一致文字列を文字列配列にコピーし、文字位置を整数配列に記録します。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The Match</source>
+          <target state="translated">Match</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class represents the result of a single regular expression match.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> クラスは、1 回の正規表現検索に一致した結果を表します。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You can access <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects in two ways:</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトには 2 つの方法でアクセスできます。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>By retrieving them from the <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that is returned by the Regex.Matches method.</source>
+          <target state="translated">Regex.Matches メソッドから返される <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトから取得する。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>To retrieve individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects, iterate the collection by using a <ph id="ph1">`foreach`</ph> (in C#) or <ph id="ph2">`For Each...Next`</ph> (in Visual Basic) construct, or use the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph3">`Item`</ph> property to retrieve a specific <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object either by index or by name.</source>
+          <target state="translated">個々の <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを取得するには、<ph id="ph1">`foreach`</ph> 構成体 (C# の場合) または <ph id="ph2">`For Each...Next`</ph> 構成体 (Visual Basic の場合) を使用してコレクションを反復処理するか、<bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph3">`Item`</ph> プロパティを使用してインデックスまたは名前で特定の <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを取得します。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can also retrieve individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects from the collection by iterating the collection by index, from zero to one less that the number of objects in the collection.</source>
+          <target state="translated">また、0 からコレクションのオブジェクト数より 1 小さい値までの範囲のインデックスでコレクションを反復処理して、コレクションから個々の <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを取得することもできます。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>However, this method does not take advantage of lazy evaluation, because it accesses the <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> property.</source>
+          <target state="translated">ただし、このメソッドは <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> プロパティにアクセスするので、遅延評価を活用できません。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The following example retrieves individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects from a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object by iterating the collection using the <ph id="ph1">`foreach`</ph> construct.</source>
+          <target state="translated">次の例では、<ph id="ph1">`foreach`</ph> 構成体を使用してコレクションを反復処理することで、個々の <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> オブジェクトから取得します。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The regular expression simply matches the string "abc" in the input string.</source>
+          <target state="translated">この正規表現は、単純に入力文字列内の文字列 "abc" と一致します。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>By calling the <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> method, which returns a <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object that represents the first match in a string or a portion of a string.</source>
+          <target state="translated">文字列または文字列の一部で最初に一致する文字列を表す <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを返す <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> メソッドを呼び出す。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You can determine whether the match has been found by retrieving the value of the <ph id="ph1">`Match.Success`</ph> property.</source>
+          <target state="translated"><ph id="ph1">`Match.Success`</ph> プロパティの値を取得すると、一致文字列が見つかったかどうかを確認できます。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To retrieve <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects that represent subsequent matches, call the <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method repeatedly, until the <ph id="ph1">`Success`</ph> property of the returned <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object is <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">後続の一致する文字列を表す <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを取得するには、返された <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトの <ph id="ph1">`Success`</ph> プロパティが <ph id="ph2">`false`</ph> になるまで <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを繰り返し呼び出します。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> and <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> methods to match the string "abc" in the input string.</source>
+          <target state="translated">次の例では、入力文字列内の文字列 "abc" と一致する <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> メソッドと <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを使用します。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Two properties of the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class return collection objects:</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> クラスの 2 つのプロパティによってコレクション オブジェクトが返されます。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property returns a <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object that contains information about the substrings that match capturing groups in the regular expression pattern.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> プロパティは、正規表現パターンのキャプチャ グループに一致する部分文字列の情報を含む <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Captures`</ph> property returns a <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object that is of limited use.</source>
+          <target state="translated"><ph id="ph1">`Match.Captures`</ph> プロパティは、用途が限定された <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The collection is not populated for a <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> object whose <ph id="ph1">`Success`</ph> property is <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトの <ph id="ph1">`Success`</ph> プロパティが <ph id="ph2">`false`</ph> の場合、コレクションに値は設定されません。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Otherwise, it contains a single <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> object that has the same information as the <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object.</source>
+          <target state="translated">それ以外の場合は、<bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトと同じ情報を含む単一の <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> オブジェクトが格納されます。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For more information about these objects, see the <bpt id="p1">[</bpt>The Group collection<ept id="p1">](#the-group-collection)</ept> and <bpt id="p2">[</bpt>The capture collection<ept id="p2">](#the-capture-collection)</ept> sections later in this topic.</source>
+          <target state="translated">これらのオブジェクトの詳細については、このトピックで後述する「<bpt id="p1">[</bpt>GroupCollection<ept id="p1">](#the-group-collection)</ept>」および「<bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](#the-capture-collection)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Two additional properties of the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class provide information about the match.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> クラスの 2 つの追加プロパティに、一致文字列の情報が保持されます。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Value`</ph> property returns the substring in the input string that matches the regular expression pattern.</source>
+          <target state="translated"><ph id="ph1">`Match.Value`</ph> プロパティは、正規表現パターンに一致する入力文字列内の部分文字列を返します。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Index`</ph> property returns the zero-based starting position of the matched string in the input string.</source>
+          <target state="translated"><ph id="ph1">`Match.Index`</ph> プロパティは、入力文字列内の一致する文字列の 0 から始まる開始位置を返します。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class also has two pattern-matching methods:</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> クラスには、2 つのパターン一致メソッドもあります。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method finds the match after the match represented by the current <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object, and returns a <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object that represents that match.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドは、現在の <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトで表される一致文字列の後の一致文字列を検索し、その一致文字列を表す <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method performs a specified replacement operation on the matched string and returns the result.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドは、一致した文字列に対して指定された置換操作を実行し、その結果を返します。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method to prepend a <bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept> symbol and a space before every number that includes two fractional digits.</source>
+          <target state="translated">次の例では、<bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> メソッドを使用して、2 桁の小数部を含むすべての数値の前に <bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept> 記号および空白を付加します。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d+(,\d{3})*\.\d{2}\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">正規表現パターン <ph id="ph1">`\b\d+(,\d{3})*\.\d{2}\b`</ph> は、次の表に示すように定義されています。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">1 個以上の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a comma followed by three decimal digits.</source>
+          <target state="translated">コンマの後に 3 桁の 10 進数字が続くパターンの 0 回以上の出現と一致します。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Match the decimal point character.</source>
+          <target state="translated">小数点文字と一致します。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>`\d{2}</source>
+          <target state="translated">`\d{2}</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">2 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">ワード境界で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The replacement pattern <bpt id="p1">**</bpt>$$ $&amp;<ept id="p1">**</ept> indicates that the matched substring should be replaced by a dollar sign (<bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept>) symbol (the <ph id="ph2">`$$`</ph> pattern), a space, and the value of the match (the <ph id="ph3">`$&amp;`</ph> pattern).</source>
+          <target state="translated">置換パターン <bpt id="p1">**</bpt>$$ $&amp;<ept id="p1">**</ept> は、一致した部分文字列がドル記号 (<bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept>) (<ph id="ph2">`$$`</ph> パターン)、空白、および一致文字列の値 (<ph id="ph3">`$&amp;`</ph> パターン) に置き換えられることを示します。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The Group collection</source>
+          <target state="translated">GroupCollection</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property returns a <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object that contains <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> objects that represent captured groups in a single match.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> プロパティは、単一の一致でキャプチャされたグループを表す <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトを含む <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> オブジェクトを返します。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The first <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object in the collection (at index 0) represents the entire match.</source>
+          <target state="translated">コレクション内の最初の <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクト (インデックス 0 の位置にあるオブジェクト) は、一致した文字列全体を表します。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Each object that follows represents the results of a single capturing group.</source>
+          <target state="translated">後続の各オブジェクトは、1 つのキャプチャ グループによるキャプチャの結果を表します。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>You can retrieve individual <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects in the collection by using the <bpt id="p2">[</bpt>GroupCollection.Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property.</source>
+          <target state="translated">コレクション内の個々の <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトを取得するには、<bpt id="p2">[</bpt>GroupCollection.Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> プロパティを使用します。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You can retrieve unnamed groups by their ordinal position in the collection, and retrieve named groups either by name or by ordinal position.</source>
+          <target state="translated">名前のないグループはコレクション内の順序位置で取得でき、名前付きグループは名前または順序位置で取得できます。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Unnamed captures appear first in the collection, and are indexed from left to right in the order in which they appear in the regular expression pattern.</source>
+          <target state="translated">名前のないキャプチャはコレクションの最初に位置し、正規表現パターンで定義されている順序で左から右にインデックスが付けられます。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Named captures are indexed after unnamed captures, from left to right in the order in which they appear in the regular expression pattern.</source>
+          <target state="translated">名前付きキャプチャは、名前のないキャプチャの後に、正規表現パターンで定義されている順序で左から右にインデックスが付けられます。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>To determine what numbered groups are available in the collection returned for a particular regular expression matching method, you can call the instance <bpt id="p1">[</bpt>Regex.GetGroupNumbers<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNumbers)</ept> method.</source>
+          <target state="translated">特定の正規表現一致メソッドで返されたコレクションで使用可能な番号付きグループを判別するには、インスタンス <bpt id="p1">[</bpt>Regex.GetGroupNumbers<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNumbers)</ept> メソッドを呼び出すことができます。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To determine what named groups are available in the collection, you can call the instance R<bpt id="p1">[</bpt>Regex.GetGroupNames<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNames)</ept> method.</source>
+          <target state="translated">コレクションで使用可能な名前付きグループを判別するには、インスタンス R<bpt id="p1">[</bpt>Regex.GetGroupNames<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNames)</ept> メソッドを呼び出すことができます。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Both methods are particularly useful in general-purpose routines that analyze the matches found by any regular expression.</source>
+          <target state="translated">どちらのメソッドも、正規表現によって検出された一致を分析する汎用ルーチンで特に役立ちます。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>GroupCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property is the indexer of the collection in C# and the collection object's default property in Visual Basic.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GroupCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> プロパティは、コレクションのインデクサー (C# の場合) およびコレクション オブジェクトの既定のプロパティ (Visual Basic の場合) です。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>This means that individual <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects can be accessed by index (or by name, in the case of named groups) as follows:</source>
+          <target state="translated">つまり、個々の <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトには、次のようにインデックスで (または名前付きグループの場合は名前で) アクセスできます。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The following example defines a regular expression that uses grouping constructs to capture the month, day, and year of a date.</source>
+          <target state="translated">次の例では、グループ化構成体を使用して日付の月、日、および年をキャプチャする正規表現を定義します。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(\w+)\s(\d{1,2}),\s(\d{4})\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">正規表現パターン <ph id="ph1">`\b(\w+)\s(\d{1,2}),\s(\d{4})\b`</ph> は、次の表に示すように定義されています。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">これが最初のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">空白文字と一致します。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Match one or two decimal digits.</source>
+          <target state="translated">1 桁または 2 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">これが 2 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Match a comma.</source>
+          <target state="translated">コンマに一致します。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">空白文字と一致します。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Match four decimal digits.</source>
+          <target state="translated">4 桁の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>This is the third capturing group.</source>
+          <target state="translated">これが 3 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>End the match on a word boundary.</source>
+          <target state="translated">ワード境界で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The captured group</source>
+          <target state="translated">キャプチャ グループ</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> class represents the result from a single capturing group.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> クラスは、1 つのキャプチャ グループによるキャプチャの結果を表します。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects that represent the capturing groups defined in a regular expression are returned by the <bpt id="p2">[</bpt>Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property of the <bpt id="p3">[</bpt>GroupCollection<ept id="p3">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object returned by the <bpt id="p4">[</bpt>Match.Groups<ept id="p4">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property.</source>
+          <target state="translated">正規表現で定義されているキャプチャ グループを表す <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトは、<bpt id="p4">[</bpt>Match.Groups<ept id="p4">](xref:System.Text.RegularExpressions.Match.Groups)</ept> プロパティによって返される <bpt id="p3">[</bpt>GroupCollection<ept id="p3">](xref:System.Text.RegularExpressions.GroupCollection)</ept> オブジェクトの <bpt id="p2">[</bpt>Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> プロパティによって返されます。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property is the indexer (in C#) and the default property (in Visual Basic) of the <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> class.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> プロパティは、<bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> クラスのインデクサー (C# の場合) および既定のプロパティ (Visual Basic の場合) です。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>You can also retrieve individual members by iterating the collection using the <ph id="ph1">`foreach`</ph> construct.</source>
+          <target state="translated"><ph id="ph1">`foreach`</ph> 構成体を使用してコレクションを反復処理することで、個々のメンバーを取得することもできます。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For an example, see the previous section.</source>
+          <target state="translated">例については、前のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The following example uses nested grouping constructs to capture substrings into groups.</source>
+          <target state="translated">次の例では、入れ子にしたグループ化構成体を使用して部分文字列をキャプチャし、グループ化します。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`(a(b))c`</ph> matches the string "abc".</source>
+          <target state="translated">正規表現パターン <ph id="ph1">`(a(b))c`</ph> は、文字列 "abc" と一致します。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>It assigns the substring "ab" to the first capturing group, and the substring "b" to the second capturing group.</source>
+          <target state="translated">部分文字列 "ab" を最初のキャプチャ グループに代入し、部分文字列 "b" を 2 番目のキャプチャ グループに代入します。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The following example uses named grouping constructs to capture substrings from a string that contains data in the format "DATANAME:VALUE", which the regular expression splits at the colon (:).</source>
+          <target state="translated">次の例では、名前付きグループ化構成体を使用して、"DATANAME:VALUE" 形式のデータを含む文字列から部分文字列をキャプチャします。この正規表現は、コロン (:) でデータを分割します。</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^(?&lt;name&gt;\w+):(?&lt;value&gt;\w+)`</ph> is defined as shown in the following table.</source>
+          <target state="translated">正規表現パターン <ph id="ph1">`^(?&lt;name&gt;\w+):(?&lt;value&gt;\w+)`</ph> は、次の表に示すように定義されています。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the input string.</source>
+          <target state="translated">入力文字列の先頭から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The name of this capturing group is name.</source>
+          <target state="translated">このキャプチャ グループの名前は name です。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Match a colon.</source>
+          <target state="translated">コロンと一致します。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The name of this capturing group is value.</source>
+          <target state="translated">このキャプチャ グループの名前は value です。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The properties of the <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> class provide information about the captured group: The <ph id="ph1">`Group.Value`</ph> property contains the captured substring, the <ph id="ph2">`Group.Index`</ph> property indicates the starting position of the captured group in the input text, the <ph id="ph3">`Group.Length`</ph> property contains the length of the captured text, and the <ph id="ph4">`Group.Success`</ph> property indicates whether a substring matched the pattern defined by the capturing group.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> クラスのプロパティには、キャプチャ グループの情報が保持されます。キャプチャされた部分文字列が <ph id="ph1">`Group.Value`</ph> プロパティに含まれ、キャプチャ グループの入力テキスト内での開始位置が <ph id="ph2">`Group.Index`</ph> プロパティによって示され、キャプチャされたテキストの長さが <ph id="ph3">`Group.Length`</ph> プロパティに含まれ、部分文字列がキャプチャ グループによって定義されたパターンと一致したかどうかが <ph id="ph4">`Group.Success`</ph> プロパティによって示されます。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Applying quantifiers to a group (for more information, see <bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept>) modifies the relationship of one capture per capturing group in two ways:</source>
+          <target state="translated">量指定子をグループに適用する場合 (詳細については、「<bpt id="p1">[</bpt>正規表現での量指定子<ept id="p1">](quantifiers.md)</ept>」を参照)、キャプチャ グループごとに 1 つのキャプチャという関係が 2 つの方法で変更されます。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept> or <bpt id="p2">__</bpt>*?<ept id="p2">__</ept></source>
+          <target state="translated"><bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept> または <bpt id="p2">__</bpt>*?<ept id="p2">__</ept></target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string.</source>
+          <target state="translated">量指定子 (0 回以上の一致を指定する) をグループに適用した場合、キャプチャ グループには入力文字列で一致した文字列が含まれない可能性があります。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>When there is no captured text, the properties of the <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object are set as shown in the following table.</source>
+          <target state="translated">キャプチャされたテキストがない場合、<bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトのプロパティは次の表に示すように設定されます。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Group property</source>
+          <target state="translated">Group プロパティ</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <target state="translated">[値]</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String.Empty<ept id="p1">](xref:System.String.Empty)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>String.Empty<ept id="p1">](xref:System.String.Empty)</ept></target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <target state="translated">0</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The following example provides an illustration.</source>
+          <target state="translated">具体的な例を次に示します。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>In the regular expression pattern <ph id="ph1">`aaa(bbb)*ccc`</ph>, the first capturing group (the substring "bbb") can be matched zero or more times.</source>
+          <target state="translated">正規表現パターン <ph id="ph1">`aaa(bbb)*ccc`</ph> では、最初のキャプチャ グループ (部分文字列 "bbb") は 0 回以上一致できます。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Because the input string "aaaccc" matches the pattern, the capturing group does not have a match.</source>
+          <target state="translated">入力文字列 "aaaccc" はパターンに一致するので、キャプチャ グループには一致文字列が含まれません。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Quantifiers can match multiple occurrences of a pattern that is defined by a capturing group.</source>
+          <target state="translated">量指定子は、キャプチャ グループによって定義されたパターンの複数回の出現と一致できます。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>In this case, the <ph id="ph1">`Value`</ph> and <ph id="ph2">`Length`</ph> properties of a <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object contain information only about the last captured substring.</source>
+          <target state="translated">この場合、<bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトの <ph id="ph1">`Value`</ph> プロパティと <ph id="ph2">`Length`</ph> プロパティには、最後にキャプチャされた部分文字列の情報のみが保持されます。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>For example, the following regular expression matches a single sentence that ends in a period.</source>
+          <target state="translated">たとえば、次の正規表現は、ピリオドで終わる 1 文と一致します。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>It uses two grouping constructs: The first captures individual words along with a white-space character; the second captures individual words.</source>
+          <target state="translated">この正規表現では 2 つのグループ化構成体が使用されています。最初のグループ化構成体は個々の単語および空白文字をキャプチャし、2 番目のグループ化構成体は個々の単語をキャプチャします。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, although the regular expression succeeds in capturing an entire sentence, the second capturing group captures only the last word.</source>
+          <target state="translated">この例の出力結果が示すように、正規表現では文全体が正常にキャプチャされますが、2 番目のキャプチャ グループでは最後の単語のみがキャプチャされます。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The capture collection</source>
+          <target state="translated">CaptureCollection</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object contains information only about the last capture.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトには、最後のキャプチャの情報のみが格納されます。</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>However, the entire set of captures made by a capturing group is still available from the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object that is returned by the <bpt id="p2">[</bpt>Group.Captures<ept id="p2">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property.</source>
+          <target state="translated">ただし、キャプチャ グループによって行われたキャプチャのセット全体は、<bpt id="p2">[</bpt>Group.Captures<ept id="p2">](xref:System.Text.RegularExpressions.Group.Captures)</ept> プロパティによって返される <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトから取得できます。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Each member of the collection is a <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string).</source>
+          <target state="translated">コレクションの各メンバーは、キャプチャ グループによって行われたキャプチャを表す <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> オブジェクトです。キャプチャされた順序 (したがって、キャプチャされた文字列が左から右に入力文字列と照合された順序) で並びます。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>You can retrieve individual <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> objects from the collection in either of two ways:</source>
+          <target state="translated">コレクション内の個々の <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> オブジェクトは、次のいずれかの方法で取得できます。</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>By iterating through the collection using a construct such as <ph id="ph1">`foreach`</ph> (in C#) or <ph id="ph2">`For Each`</ph> (in Visual Basic).</source>
+          <target state="translated"><ph id="ph1">`foreach`</ph> (C# の場合) や <ph id="ph2">`For Each`</ph> (Visual Basic の場合) などの構成体を使用してコレクションを反復処理する。</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>By using the <bpt id="p1">[</bpt>CaptureCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection.Item(System.Int32))</ept> property to retrieve a specific object by index.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CaptureCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection.Item(System.Int32))</ept> プロパティを使用して特定のオブジェクトをインデックスで取得する。</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>The Item property is the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object's default property (in Visual Basic) or indexer (in C#).</source>
+          <target state="translated">Item プロパティは、<bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトの既定のプロパティ (Visual Basic の場合) またはインデクサー (C# の場合) です。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>If a quantifier is not applied to a capturing group, the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object contains a single <bpt id="p2">[</bpt>Capture<ept id="p2">](xref:System.Text.RegularExpressions.Capture)</ept> object that is of little interest, because it provides information about the same match as its <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> object.</source>
+          <target state="translated">量指定子がキャプチャ グループに適用されない場合、<bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトには <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトと同じ一致文字列の情報が保持されるので、関心の低い単一の <bpt id="p2">[</bpt>Capture<ept id="p2">](xref:System.Text.RegularExpressions.Capture)</ept> オブジェクトが含まれます。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>If a quantifier is applied to a capturing group, the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object contains all captures made by the capturing group, and the last member of the collection represents the same capture as the <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> object.</source>
+          <target state="translated">量指定子がキャプチャ グループに適用される場合、<bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトにはキャプチャ グループによって行われたすべてのキャプチャが含まれ、コレクションの最後のメンバーは <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトと同じキャプチャを表します。</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>For example, if you use the regular expression pattern <ph id="ph1">`((a(b))c)+`</ph> (where the <ph id="ph2">`+`</ph> quantifier specifies one or more matches) to capture matches from the string "abcabcabc", the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object for each <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> object contains three members.</source>
+          <target state="translated">たとえば、正規表現パターン <ph id="ph1">`((a(b))c)+`</ph> (量指定子 <ph id="ph2">`+`</ph> は 1 つ以上の文字列が一致することを指定) を使用して文字列 "abcabcabc" から一致する文字列をキャプチャする場合、各 <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> オブジェクトの <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトには、3 個のメンバーが含まれることになります。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>The following example uses the regular expression <ph id="ph1">`(Abc)+`</ph> to find one or more consecutive runs of the string "Abc" in the string "XYZAbcAbcAbcXYZAbcAb".</source>
+          <target state="translated">次の例では、正規表現 <ph id="ph1">`(Abc)+`</ph> を使用して、文字列 "XYZAbcAbcAbcXYZAbcAb" の中から文字列 "Abc" の連続した出現を 1 つ以上検索します。</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The example illustrates the use of the <bpt id="p1">[</bpt>Group.Captures<ept id="p1">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property to return multiple groups of captured substrings.</source>
+          <target state="translated">この例は、<bpt id="p1">[</bpt>Group.Captures<ept id="p1">](xref:System.Text.RegularExpressions.Group.Captures)</ept> プロパティを使用して、キャプチャした部分文字列の複数のグループを返す方法を示しています。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The individual capture</source>
+          <target state="translated">個々のキャプチャ</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> class contains the results from a single subexpression capture.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> クラスには、単一の部分式キャプチャの結果が含まれます。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Capture.Value<ept id="p1">](xref:System.Text.RegularExpressions.Capture.Value)</ept> property contains the matched text, and the <bpt id="p2">[</bpt>Capture.Index<ept id="p2">](xref:System.Text.RegularExpressions.Capture.Index)</ept> property indicates the zero-based position in the input string at which the matched substring begins.</source>
+          <target state="translated">一致したテキストが <bpt id="p1">[</bpt>Capture.Value<ept id="p1">](xref:System.Text.RegularExpressions.Capture.Value)</ept> プロパティに含まれ、一致した部分文字列の入力文字列内での開始位置 (起点を 0 とする) が <bpt id="p2">[</bpt>Capture.Index<ept id="p2">](xref:System.Text.RegularExpressions.Capture.Index)</ept> プロパティによって示されます。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>The following example parses an input string for the temperature of selected cities.</source>
+          <target state="translated">次の例では、選択した都市の気温の入力文字列を解析します。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>A comma (",") is used to separate a city and its temperature, and a semicolon (";") is used to separate each city's data.</source>
+          <target state="translated">都市とその気温を区切るためにコンマ (",") が使用され、各都市のデータを区切るためにセミコロン (";") が使用されています。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The entire input string represents a single match.</source>
+          <target state="translated">入力文字列全体が単一の一致を表します。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>In the regular expression pattern <ph id="ph1">`((\w+(\s\w+)*),(\d+);)+`</ph>, which is used to parse the string, the city name is assigned to the second capturing group, and the temperature is assigned to the fourth capturing group.</source>
+          <target state="translated">文字列の解析に使用される正規表現パターン <ph id="ph1">`((\w+(\s\w+)*),(\d+);)+`</ph> では、都市名が 2 番目のキャプチャ グループに代入され、気温が 4 番目のキャプチャ グループに代入されます。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The regular expression is defined as shown in the following table.</source>
+          <target state="translated">正規表現は、次の表に示すように定義されています。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a white-space character followed by one or more word characters.</source>
+          <target state="translated">空白文字の後に 1 個以上の単語文字が続くパターンの 0 回以上の出現と一致します。</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>This pattern matches multi-word city names.</source>
+          <target state="translated">このパターンは、複数の単語で構成される都市名と一致します。</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>This is the third capturing group.</source>
+          <target state="translated">これが 3 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters followed by zero or more occurrences of a white-space character and one or more word characters.</source>
+          <target state="translated">1 個以上の単語文字の後に空白文字および 1 個以上の単語文字の 0 回以上の出現が続くパターンと一致します。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">これが 2 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Match a comma.</source>
+          <target state="translated">コンマに一致します。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Match one or more digits.</source>
+          <target state="translated">1 桁以上の数字と一致します。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>This is the fourth capturing group.</source>
+          <target state="translated">これが 4 番目のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Match a semicolon.</source>
+          <target state="translated">セミコロンと一致します。</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times.</source>
+          <target state="translated">単語、追加の単語、コンマ、1 桁以上の数字、およびセミコロンが 1 回以上続くパターンと一致します。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">これが最初のキャプチャ グループです。</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 正規表現<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>正規表現言語 - クイック リファレンス<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

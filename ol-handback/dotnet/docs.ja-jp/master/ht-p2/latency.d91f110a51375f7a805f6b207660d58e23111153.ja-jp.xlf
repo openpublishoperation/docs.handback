@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e063482aaa1fad01f8e0cd9e8552c87a0b247571</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\latency.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8dfaa3b99738dc0b9d32615df71fcb0f0cbb405c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">25cd4710b6d074787f18458d035182d8a911172c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Latency modes</source>
+          <target state="translated">待機モード</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Latency modes</source>
+          <target state="translated">待機モード</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Latency modes</source>
+          <target state="translated">待機モード</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To reclaim objects, the garbage collector must stop all the executing threads in an application.</source>
+          <target state="translated">オブジェクトを再利用するには、ガベージ コレクターはアプリケーションで実行中のすべてのスレッドを停止する必要があります。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance.</source>
+          <target state="translated">状況によっては、アプリケーションがデータの取得やコンテンツの表示を行うときなど、重要なときにフル ガベージ コレクションが発生し、パフォーマンスが低下することがあります。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can adjust the intrusiveness of the garbage collector by setting the <bpt id="p1">[</bpt>GCSettings.LatencyMode<ept id="p1">](xref:System.Runtime.GCSettings.LatencyMode)</ept> property to one of the <bpt id="p2">[</bpt>System.Runtime.GCLatencyMode<ept id="p2">](xref:System.Runtime.GCLatencyMode)</ept> values.</source>
+          <target state="translated">ガベージ コレクターが作業に悪影響を与える度合いを調整するには、<bpt id="p1">[</bpt>GCSettings.LatencyMode<ept id="p1">](xref:System.Runtime.GCSettings.LatencyMode)</ept> プロパティを <bpt id="p2">[</bpt>System.Runtime.GCLatencyMode<ept id="p2">](xref:System.Runtime.GCLatencyMode)</ept> 値のいずれかに設定します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Latency refers to the time that the garbage collector intrudes in your application.</source>
+          <target state="translated">Latency (待機時間) は、ガベージ コレクターが実行中のアプリケーションに割って入る時間を指します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>During low latency periods, the garbage collector is more conservative and less intrusive in reclaiming objects.</source>
+          <target state="translated">待機時間が短い場合、ガベージ コレクターがオブジェクトを再利用する処理は控えめになり、アプリケーションに悪影響を与える度合いが下がります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Runtime.GCLatencyMode<ept id="p1">](xref:System.Runtime.GCLatencyMode)</ept> enumeration provides two low latency settings:</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Runtime.GCLatencyMode<ept id="p1">](xref:System.Runtime.GCLatencyMode)</ept> 列挙により、2 つの短い待機時間設定を指定できます。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept> suppresses generation 2 collections and performs only generation 0 and 1 collections.</source>
+          <target state="translated"><bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept> では、ジェネレーション 2 のガベージ コレクションが停止し、ジェネレーション 0 および 1 のみガベージ コレクションが実行されます。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>It can be used only for short periods of time.</source>
+          <target state="translated">これは、短時間の場合にのみ使用できます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Over longer periods, if the system is under memory pressure, the garbage collector will trigger a collection, which can briefly pause the application and disrupt a time-critical operation.</source>
+          <target state="translated">この設定を長時間にわたって使用すると、システムのメモリが不足してガベージ コレクターがガベージ コレクションをトリガーした場合に、アプリケーションが少しの間停止したり、高速性を必要とする操作が中断されたりすることがあります。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This setting is available only for workstation garbage collection.</source>
+          <target state="translated">この設定は、ワークステーションのガベージ コレクションでのみ使用できます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SustainedLowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)</ept> suppresses foreground generation 2 collections and performs only generation 0, 1, and background generation 2 collections.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SustainedLowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)</ept> では、フォアグラウンドのジェネレーション 2 のガベージ コレクションが停止し、ジェネレーション 0 および 1 とバックグラウンドのジェネレーション 2 のガベージ コレクションのみが実行されます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>It can be used for longer periods of time, and is available for both workstation and server garbage collection.</source>
+          <target state="translated">これは長時間にわたって使用でき、ワークステーションとサーバーの両方のガベージ コレクションで使用できます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This setting cannot be used if <bpt id="p1">[</bpt>concurrent garbage collection<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept> is disabled.</source>
+          <target state="translated">この設定は、<bpt id="p1">[</bpt>同時実行ガベージ コレクション<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept>が無効の場合には使用できません。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>During low latency periods, generation 2 collections are suppressed unless the following occurs:</source>
+          <target state="translated">待機時間の短い設定になっている場合でも、次の状況ではジェネレーション 2 のガベージ コレクションの停止が解除されます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The system receives a low memory notification from the operating system.</source>
+          <target state="translated">システムがオペレーティング システムからメモリ不足の通知を受け取った場合。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Your application code induces a collection by calling the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect(System.Int32))</ept> method and specifying 2 for the generation parameter.</source>
+          <target state="translated">アプリケーション コードから <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect(System.Int32))</ept> メソッドを呼び出し、generation パラメーターに 2 を指定してガベージ コレクションを実行した場合。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following table lists the application scenarios for using the <bpt id="p1">[</bpt>GCLatencyMode<ept id="p1">](xref:System.Runtime.GCLatencyMode)</ept> values.</source>
+          <target state="translated">次の表に、<bpt id="p1">[</bpt>GCLatencyMode<ept id="p1">](xref:System.Runtime.GCLatencyMode)</ept> の各値を使用するアプリケーション シナリオを示します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Latency mode</source>
+          <target state="translated">待機時間モード</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Application scenarios</source>
+          <target state="translated">アプリケーション シナリオ</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Batch<ept id="p1">](xref:System.Runtime.GCLatencyMode.Batch)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Batch<ept id="p1">](xref:System.Runtime.GCLatencyMode.Batch)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For applications that have no UI or server-side operations.</source>
+          <target state="translated">UI 操作のないアプリケーションの場合、またはサーバー側の操作の場合に使用します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This is the default mode when <bpt id="p1">[</bpt>concurrent garbage collection<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept> is disabled.</source>
+          <target state="translated">これは、<bpt id="p1">[</bpt>同時実行ガベージ コレクション<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept>が無効の場合の既定モードです。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interactive<ept id="p1">](xref:System.Runtime.GCLatencyMode.Interactive)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Interactive<ept id="p1">](xref:System.Runtime.GCLatencyMode.Interactive)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For most applications that have a UI.</source>
+          <target state="translated">UI を持つほとんどのアプリケーションの場合に使用します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For applications that have no UI or server-side operations.</source>
+          <target state="translated">UI 操作のないアプリケーションの場合、またはサーバー側の操作の場合に使用します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This is the default mode when <bpt id="p1">[</bpt>concurrent garbage collection<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept> is enabled.</source>
+          <target state="translated">これは、<bpt id="p1">[</bpt>同時実行ガベージ コレクション<ept id="p1">](https://msdn.microsoft.com/library/yhwwzef8.aspx)</ept>が有効の場合の既定モードです。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive.</source>
+          <target state="translated">ガベージ コレクターからの割り込みにより重大な影響を受け、高速性を必要とする、短期間の操作を実行するアプリケーションの場合に使用します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, applications that do animation rendering or data acquisition functions.</source>
+          <target state="translated">たとえば、アニメーションのレンダリングやデータの取得機能を実行するアプリケーションなどがあります。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SustainedLowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SustainedLowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive.</source>
+          <target state="translated">ガベージ コレクターからの割り込みにより重大な影響を受け、高速性を必要とする、さほど処理時間を必要としないものの長時間になる可能性のある操作を実行するアプリケーションの場合に使用します。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, applications that need quick response times as market data changes during trading hours.</source>
+          <target state="translated">たとえば、取引時間中に市場データの変化に応じて迅速な応答時間を必要とするアプリケーションなどがあります。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This mode results in a larger managed heap size than other modes.</source>
+          <target state="translated">このモードでは、マネージ ヒープのサイズが他のモードより大きくなります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Because it does not compact the managed heap, higher fragmentation is possible.</source>
+          <target state="translated">マネージ ヒープは最適化されないため、断片化の割合が高くなる可能性があります。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Ensure that sufficient memory is available.</source>
+          <target state="translated">十分なメモリが使用可能であることを確認してください。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Guidelines for Using Low Latency</source>
+          <target state="translated">待機時間の短いモードの使用に関するガイドライン</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When you use <bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept> mode, consider the following guidelines:</source>
+          <target state="translated"><bpt id="p1">[</bpt>LowLatency<ept id="p1">](xref:System.Runtime.GCLatencyMode.LowLatency)</ept> モードを使用する場合は、次のガイドラインを検討してください。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Keep the period of time in low latency as short as possible.</source>
+          <target state="translated">待機時間を短くする期間は、できるだけ短くします。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Avoid allocating high amounts of memory during low latency periods.</source>
+          <target state="translated">待機時間を短くする期間中は、大量のメモリを割り当てないようにします。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Low memory notifications can occur because garbage collection reclaims fewer objects.</source>
+          <target state="translated">ガベージ コレクションによって再利用されるオブジェクトの数が少なくなるため、メモリ不足の通知が発生する可能性があります。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>While in the low latency mode, minimize the number of allocations you make, in particular allocations onto the Large Object Heap and pinned objects.</source>
+          <target state="translated">待機時間の短いモードの間は、割り当ての数、特に大きなオブジェクト ヒープや固定されたオブジェクトへの割り当ての数を最小限に抑えます。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Be aware of threads that could be allocating.</source>
+          <target state="translated">割り当てられる可能性のあるスレッドに注意します。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Because the <bpt id="p1">[</bpt>LatencyMode<ept id="p1">](xref:System.Runtime.GCSettings.LatencyMode)</ept> property setting is process-wide, you could generate an <bpt id="p2">[</bpt>OutOfMemoryException<ept id="p2">](xref:System.OutOfMemoryException)</ept> on any thread that may be allocating.</source>
+          <target state="translated"><bpt id="p1">[</bpt>LatencyMode<ept id="p1">](xref:System.Runtime.GCSettings.LatencyMode)</ept> プロパティの設定はプロセス全体に適用されるため、割り当てられた他のスレッドで <bpt id="p2">[</bpt>OutOfMemoryException<ept id="p2">](xref:System.OutOfMemoryException)</ept> が発生する可能性があります。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You can force generation 2 collections during a low latency period by calling the <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode))</ept> method.</source>
+          <target state="translated">待機時間を短くする期間中でも、<bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode))</ept> メソッドを呼び出せばジェネレーション 2 のガベージ コレクションを強制できます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Induced Collections<ept id="p1">](induced.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>発生したコレクション<ept id="p1">](induced.md)</ept></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET のガベージ コレクション<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

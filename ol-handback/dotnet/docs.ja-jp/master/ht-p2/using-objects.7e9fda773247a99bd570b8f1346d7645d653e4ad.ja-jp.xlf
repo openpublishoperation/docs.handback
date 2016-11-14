@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">51655742b8975c84eae3f58c4ef0f7381a0bed6b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\using-objects.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1161936b989bf247b72dd8b1cac32b7ae1e5b7c3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f79f29ab662e289abd0023cf979e39d9988af6c0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">IDisposable を実装するオブジェクトの使用</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">IDisposable を実装するオブジェクトの使用</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">IDisposable を実装するオブジェクトの使用</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface to allow this unmanaged memory to be reclaimed.</source>
+          <target state="translated">共通言語ランタイムのガベージ コレクターは、アンマネージ オブジェクトによって使用されているメモリを解放しますが、アンマネージ リソースを使用する型は、このアンマネージ メモリが解放されるように <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> インターフェイスを実装します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When you finish using an object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept>, you should call the object's <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> を実装するオブジェクトを使い終わったら、オブジェクトの <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> の実装を呼び出す必要があります。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can do this in one of two ways:</source>
+          <target state="translated">2 つの方法のいずれかでこれを行うことができます。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>With the C# <ph id="ph1">`using`</ph> statement or the Visual Basic <ph id="ph2">`Using`</ph> statement.</source>
+          <target state="translated">C# の <ph id="ph1">`using`</ph> ステートメントまたは Visual Basic の <ph id="ph2">`Using`</ph> ステートメントを使用します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>By implementing a <ph id="ph1">`try/finally`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`try/finally`</ph> ブロックを実装します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The using statement</source>
+          <target state="translated">using ステートメント</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`using`</ph> statement in C# and the <ph id="ph2">`Using`</ph> statement in Visual Basic simplify the code that you must write to create and clean up an object.</source>
+          <target state="translated">C# の <ph id="ph1">`using`</ph> ステートメントおよび Visual Basic の <ph id="ph2">`Using`</ph> ステートメントを使用すると、オブジェクトの作成時やクリーンアップ時に記述する必要のあるコードが簡略化されます。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`using`</ph> statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object.</source>
+          <target state="translated"><ph id="ph1">`using`</ph> ステートメントは、1 つ以上のリソースを取得し、指定されたステートメントを実行し、オブジェクトを自動的に破棄します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, the <ph id="ph1">`using`</ph> statement is useful only for objects that are used within the scope of the method in which they are constructed.</source>
+          <target state="translated">ただし、<ph id="ph1">`using`</ph> ステートメントは、オブジェクトが構築されるメソッドのスコープ内で使用されるオブジェクトに対してのみ有効です。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following example uses the <ph id="ph1">`using`</ph> statement to create and release a <bpt id="p1">[</bpt>System.IO.StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> object.</source>
+          <target state="translated">次の例では、<ph id="ph1">`using`</ph> ステートメントを使用して <bpt id="p1">[</bpt>System.IO.StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> オブジェクトを作成し解放します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Note that although the <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> class implements the <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept> interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the <bpt id="p3">[</bpt>StreamReader.Dispose<ept id="p3">](xref:System.IO.StreamReader.Dispose(System.Boolean))</ept> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> クラスは <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept> インターフェイスを実装し、これはアンマネージ リソースを使用することを示していますが、例では <bpt id="p3">[</bpt>StreamReader.Dispose<ept id="p3">](xref:System.IO.StreamReader.Dispose(System.Boolean))</ept> メソッドを明示的に呼び出していないことに注意してください。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When the C# or Visual Basic compiler encounters the <ph id="ph1">`using`</ph> statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a <ph id="ph2">`try/finally`</ph> block.</source>
+          <target state="translated">C# または Visual Basic コンパイラが <ph id="ph1">`using`</ph> ステートメントを見つけると、明示的に <ph id="ph2">`try/finally`</ph> ブロックを含む次のコードと同等の中間言語 (IL) を生成します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The C# <ph id="ph1">`using`</ph> statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested using statements.</source>
+          <target state="translated">また、C# の <ph id="ph1">`using`</ph> ステートメントでは、単一のステートメントで複数のリソースを取得できます。そのようなステートメントは、内部的には複数の using ステートメントを入れ子にした場合と同等です。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The following example instantiates two <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> objects to read the contents of two different files.</source>
+          <target state="translated">次の例では、2 つの異なるファイルの内容を読み取るために、<bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> の 2 つのオブジェクトをインスタンス化します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Try/finally block</source>
+          <target state="translated">Try/Finally ブロック</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Instead of wrapping a <ph id="ph1">`try/finally`</ph> block in a <ph id="ph2">`using`</ph> statement, you may choose to implement the <ph id="ph3">`try/finally`</ph> block directly.</source>
+          <target state="translated"><ph id="ph2">`using`</ph> ステートメントで <ph id="ph1">`try/finally`</ph> ブロックをラップする代わりに、<ph id="ph3">`try/finally`</ph> ブロックを直接実装することもできます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This may be your personal coding style, or you might want to do this for one of the following reasons:</source>
+          <target state="translated">これは、個人のコーディング スタイルであることも、次のいずれかの理由からそうすることもあります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To include a <ph id="ph1">`catch`</ph> block to handle any exceptions thrown in the <ph id="ph2">`try`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`catch`</ph> ブロックでスローされた例外をすべて処理する <ph id="ph2">`try`</ph> ブロックを含めるため。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Otherwise, any exceptions thrown by the <ph id="ph1">`using`</ph> statement are unhandled, as are any exceptions thrown within the <ph id="ph2">`using`</ph> block if a <ph id="ph3">`try/catch`</ph> block isn't present.</source>
+          <target state="translated">そうしないと、<ph id="ph3">`try/catch`</ph> ブロックがない場合に <ph id="ph2">`using`</ph> ブロック内でスローされた例外と同様に、<ph id="ph1">`using`</ph> ステートメントによってスローされた例外は処理されません。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To instantiate an object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> whose scope is not local to the block within which it is declared.</source>
+          <target state="translated">宣言されたブロックに対してスコープがローカルでない <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> を実装するオブジェクトをインスタンス化するため。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following example is similar to the previous example, except that it uses a <ph id="ph1">`try/catch/finally`</ph> block to instantiate, use, and dispose of a <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> object, and to handle any exceptions thrown by the <bpt id="p2">[</bpt>StreamReader<ept id="p2">](xref:System.IO.StreamReader)</ept> constructor and its <bpt id="p3">[</bpt>ReadToEnd<ept id="p3">](xref:System.IO.StreamReader.ReadToEnd)</ept> method.</source>
+          <target state="translated">次の例は前の例に似ていますが、<ph id="ph1">`try/catch/finally`</ph> ブロックを使用して、<bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> オブジェクトのインスタンス化、使用、破棄を実行し、<bpt id="p2">[</bpt>StreamReader<ept id="p2">](xref:System.IO.StreamReader)</ept> コンストラクターと <bpt id="p3">[</bpt>ReadToEnd<ept id="p3">](xref:System.IO.StreamReader.ReadToEnd)</ept> メソッドによってスローされた例外を処理しています。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Note that the code in the <ph id="ph1">`finally`</ph> block checks that the object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> isn't <ph id="ph2">`null`</ph> before it calls the <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> method.</source>
+          <target state="translated"><bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> メソッドを呼び出す前に <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> を実装するオブジェクトが <ph id="ph2">`null`</ph> でないことを <ph id="ph1">`finally`</ph> ブロックのコードがチェックしていることに注意してください。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Failure to do this can result in a <bpt id="p1">[</bpt>NullReferenceException<ept id="p1">](xref:System.NullReferenceException)</ept> exception at run time.</source>
+          <target state="translated">これを行わない場合、実行時に <bpt id="p1">[</bpt>NullReferenceException<ept id="p1">](xref:System.NullReferenceException)</ept> 例外が発生する可能性があります。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can follow this basic pattern if you choose to implement or must implement a <ph id="ph1">`try/finally`</ph> block, because your programming language doesn't support a <ph id="ph2">`using`</ph> statement but does allow direct calls to the <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method.</source>
+          <target state="translated">この基本パターンを利用できるのは、プログラミング言語で <ph id="ph2">`using`</ph> ステートメントがサポートされていないが、<bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> メソッドを直接呼び出すことはできるため、<ph id="ph1">`try/finally`</ph> ブロックの実装を選択した場合、または実装する必要がある場合です。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cleaning up unmanaged resources<ept id="p1">](unmanaged.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>アンマネージ リソースのクリーンアップ<ept id="p1">](unmanaged.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
