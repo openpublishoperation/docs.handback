@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">735ae2f1d11ddf6b88b40c7b89083a45d1f07523</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\use-time-zones-in-arithmetic.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ea6ee3915696553ec04138b2d77fd1d244753e97</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b06e0b78dae4786aa8c075d2ffb8e9109bba1bdf</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to use time zones in date and time arithmetic</source>
+          <target state="translated">Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Ordinarily, when you perform date and time arithmetic using <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the result does not reflect any time zone adjustment rules.</source>
+          <target state="translated">Обычно при выполнении арифметических действий над датами и временем с помощью значений <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> правила коррекции часовых поясов не учитываются в результате.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is true even when the time zone of the date and time value is clearly identifiable.</source>
+          <target state="translated">Это верно даже в том случае, когда часовой пояс даты и времени четко определен.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how to perform arithmetic operations on date and time values that belong to a particular time zone.</source>
+          <target state="translated">В этом разделе описывается порядок выполнения арифметических операций над значениями даты и времени, относящимися к определенному часовому поясу.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The results of the arithmetic operations will reflect the time zone's adjustment rules.</source>
+          <target state="translated">Результаты арифметических операций при этом будут учитывать правила коррекции часовых поясов.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To apply adjustment rules to date and time arithmetic</source>
+          <target state="translated">Применение правил коррекции в вычислениях с датами и временем</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Implement some method of closely coupling a date and time value with the time zone to which it belongs.</source>
+          <target state="translated">Необходимо каким-либо способом тесно связать значения даты и времени с соответствующим часовым поясом.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, declare a structure that includes both the date and time value and its time zone.</source>
+          <target state="translated">К примеру, можно объявить структуру, которая будет содержать значение даты и времени вместе с данными о часовом поясе.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example uses this approach to link a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value with its time zone.</source>
+          <target state="translated">В следующем примере для связывания значения <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> с соответствующим ему часовым поясом используется именно этот подход.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Convert a time to Coordinated Universal Time (UTC) by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Значение времени необходимо преобразовать во время в формате UTC с помощью вызова метода <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Perform the arithmetic operation on the UTC time.</source>
+          <target state="translated">Далее следует выполнить необходимые арифметические действия над временем UTC.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Convert the time from UTC to the original time's associated time zone by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Время из формата UTC необходимо преобразовать в часовой пояс, соответствующий исходному времени, с помощью метода <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Пример</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example adds two hours and thirty minutes to March 9, 2008, at 1:30 A.M.</source>
+          <target state="translated">В следующем примере к 9 марта 2008 г., 1:30</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Central Standard Time.</source>
+          <target state="translated">центрального стандартного времени прибавляется два часа и тридцать минут.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The time zone's transition to daylight saving time occurs thirty minutes later, at 2:00 A.M.</source>
+          <target state="translated">Переход на летнее время в этом часовом поясе происходит на 30 минут позже, в 2:00</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">9 марта, 2008 г.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Because the example follows the four steps listed in the previous section, it correctly reports the resulting time as 5:00 A.M.</source>
+          <target state="translated">Поскольку в этом примере выполнены четыре шага, описанные в предыдущем разделе, он правильно возвращает итоговое время, равное 5:00</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">9 марта, 2008 г.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Note that if this addition is simply performed on the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value without first converting it to UTC, the result reflects the correct point in time but its offset does not reflect that of the designated time zone for that time.</source>
+          <target state="translated">Обратите внимание, что в случае, если эта операция выполняется над значением <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> без предварительного преобразования в формат UTC, то результат будет соответствовать правильному моменту времени, но его смещение не будет отражать этот факт по отношению к часовому поясу, к которому принадлежит это время.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are disassociated from any time zone to which they might belong.</source>
+          <target state="translated">Значения <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> не имеют связи с часовыми поясами, к которым они могут относиться.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic in a way that automatically applies a time zone's adjustment rules, the time zone to which any date and time value belongs must be immediately identifiable.</source>
+          <target state="translated">Для того чтобы арифметические действия с датами и временем выполнялись таким образом, что правила коррекции часовых поясов учитывались бы автоматически, сведения о часовом поясе, к которому относятся значения даты и времени, должны быть известны и непосредственно доступны.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This means that a date and time and its associated time zone must be tightly coupled.</source>
+          <target state="translated">Это означает, что значения даты и времени должны быть тесно связаны с часовым поясом.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>There are several ways to do this, which include the following:</source>
+          <target state="translated">Для того, чтобы этого добиться, существует целый ряд способов, некоторые из них перечислены ниже.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Assume that all times used in an application belong to a particular time zone.</source>
+          <target state="translated">Предположим, что все значения времени, используемые в приложении, принадлежат к определенному часовому поясу.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Although appropriate in some cases, this approach offers limited flexibility and possibly limited portability.</source>
+          <target state="translated">Хотя этот подход вполне применим во многих случаях, его гибкость и, возможно, переносимость имеют ограничения.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Define a type that tightly couples a date and time with its associated time zone by including both as fields of the type.</source>
+          <target state="translated">Следует определить тип, в котором значение даты и времени тесно связано с часовым поясом, включив эти данные в состав типа в качестве полей.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This approach is used in the code example, which defines a structure to store the date and time and the time zone in two member fields.</source>
+          <target state="translated">Этот подход используется в примере кода — в нем определяется структура для хранения даты, времени и часового пояса в двух полях структуры.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Даты, время и часовые пояса<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Выполнение арифметических операций с датами и временем<ept id="p1">](performing-arithmetic-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

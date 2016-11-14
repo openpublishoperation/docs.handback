@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">889bc6dc85ca475b5adaf9ab6d15dfcabffe1370</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\let-users-resolve-ambiguous-times.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">07d37e001cb816af8cda46ffe49831aea5332587</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e8a78f5c312a3baa84b8669b12574dbacd7da78b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: let users resolve ambiguous times</source>
+          <target state="translated">Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to let users resolve ambiguous times</source>
+          <target state="translated">Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: let users resolve ambiguous times</source>
+          <target state="translated">Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An ambiguous time is a time that maps to more than one Coordinated Universal Time (UTC).</source>
+          <target state="translated">Неоднозначное время — это время, которое соответствует более чем одному значению времени в формате UTC.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It occurs when the clock time is adjusted back in time, such as during the transition from a time zone's daylight saving time to its standard time.</source>
+          <target state="translated">Это происходит, когда часы переводятся назад, как при переходе в одном часовом поясе с летнего времени на его стандартное время.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When handling an ambiguous time, you can do one of the following:</source>
+          <target state="translated">При обработке неоднозначного времени можно выполнить одно из следующих действий:</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If the ambiguous time is an item of data entered by the user, you can leave it to the user to resolve the ambiguity.</source>
+          <target state="translated">Если неоднозначное время является элементом данных, введенных пользователем, то можно предложить пользователю устранить неоднозначность.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Make an assumption about how the time maps to UTC.</source>
+          <target state="translated">Сделать предположение о том, насколько время соответствует времени в формате UTC.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For example, you can assume that an ambiguous time is always expressed in the time zone's standard time.</source>
+          <target state="translated">Например, можно предположить, что неоднозначное время всегда выражается в стандартном времени часового пояса.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article shows how to let a user resolve an ambiguous time.</source>
+          <target state="translated">В этом разделе показано, как предоставить пользователям возможность разрешать неоднозначность времени.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To let a user resolve an ambiguous time</source>
+          <target state="translated">Предоставление пользователю возможности разрешать неоднозначность времени</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Get the date and time input by the user.</source>
+          <target state="translated">Получите значение даты и времени, введенное пользователем.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>IsAmbiguousTime(DateTime)<ept id="p1">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime))</ept> or <bpt id="p2">[</bpt>IsAmbiguousTime(DateTimeOffset)<ept id="p2">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset))</ept> method to determine whether the time is ambiguous.</source>
+          <target state="translated">Вызовите метод <bpt id="p1">[</bpt>IsAmbiguousTime(DateTime)<ept id="p1">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime))</ept> или <bpt id="p2">[</bpt>IsAmbiguousTime(DateTimeOffset)<ept id="p2">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset))</ept>, чтобы определить, является ли время неоднозначным.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Let the user select the desired offset.</source>
+          <target state="translated">Предоставьте пользователю возможность выбрать нужное смещение.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Get the UTC date and time by subtracting the offset selected by the user from the local time.</source>
+          <target state="translated">Получите дату и время в формате UTC путем вычитания выбранного пользователем смещения из локального времени.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic ) <bpt id="p1">[</bpt>SpecifyKind<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept> method to set the UTC date and time value's <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property to <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">Вызовите метод <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> в Visual Basic ) <bpt id="p1">[</bpt>SpecifyKind<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept>, чтобы задать значение даты и времени в формате UTC для свойства <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> равным <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Пример</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following example prompts the user to enter a date and time and, if it is ambiguous, lets the user select the UTC time that the ambiguous time maps to.</source>
+          <target state="translated">В следующем примере пользователю предлагается ввести значение даты и времени и, если оно неоднозначно, выбрать время в формате UTC, которому сопоставлено неоднозначное время.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The example uses a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> object; you can substitute a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> object if desired.</source>
+          <target state="translated">В примере используется объект <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>, который при желании можно заменить на объект <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The core of the example code uses an array of <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> objects to indicate possible offsets of the ambiguous time from UTC.</source>
+          <target state="translated">В главной части примера используется массив объектов <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> для указания возможных смещений неоднозначного времени относительно времени UTC.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, these offsets are unlikely to be meaningful to the user.</source>
+          <target state="translated">Однако эти смещения скорее всего не будут иметь значения для пользователя.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To clarify the meaning of the offsets, the code also notes whether an offset represents the local time zone's standard time or its daylight saving time.</source>
+          <target state="translated">Для уточнения значений этих смещений в коде также учитывается, представляет ли смещение стандартное время местного часового пояса или его летнее время.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The code determines which time is standard and which time is daylight by comparing the offset with the value of the <bpt id="p1">[</bpt>BaseUtcOffset<ept id="p1">](xref:System.TimeZoneInfo.BaseUtcOffset)</ept> property.</source>
+          <target state="translated">Код определяет, какое время является стандартным, а какое летним, сравнивая смещение со значением свойства <bpt id="p1">[</bpt>BaseUtcOffset<ept id="p1">](xref:System.TimeZoneInfo.BaseUtcOffset)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This property indicates the difference between the UTC and the time zone's standard time.</source>
+          <target state="translated">Это свойство указывает разницу между временем UTC и стандартным временем часового пояса.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In this example, all references to the local time zone are made through the <bpt id="p1">[</bpt>TimeZoneInfo.Local<ept id="p1">](xref:System.TimeZoneInfo.Local)</ept> property; the local time zone is never assigned to an object variable.</source>
+          <target state="translated">В этом примере все ссылки на местный часовой пояс выполняются через свойство <bpt id="p1">[</bpt>TimeZoneInfo.Local<ept id="p1">](xref:System.TimeZoneInfo.Local)</ept>. Местный часовой пояс никогда не назначается в качестве переменной объекта.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This is a recommended practice because another call could clear the cached data and invalidate any objects that the local time zone is assigned to.</source>
+          <target state="translated">Это рекомендуется, поскольку вызов другого метода приведет к сбросу кэшированных данных и внесет изменения во все объекты, которым назначен этот часовой пояс, после чего они станут недействительны.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Даты, время и часовые пояса<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: resolve ambiguous times<ept id="p1">](resolve-ambiguous-times.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Практическое руководство. Разрешение проблемы неоднозначности времени<ept id="p1">](resolve-ambiguous-times.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

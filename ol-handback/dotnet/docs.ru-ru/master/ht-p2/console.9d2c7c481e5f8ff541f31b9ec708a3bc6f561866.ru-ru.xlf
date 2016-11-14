@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fd610bdba56679dd522149d8e91dc91858c7f7ed</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\framework\docker\console.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">02fa0bc4ba65f75936d48f81291b670aaf3252bd</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">162574602fe8f99a96301753884af51f1a88574c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Running Console applications in Docker</source>
+          <target state="translated">Запуск консольных приложений в Docker</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.</source>
+          <target state="translated">Узнайте, как запускать существующее консольное приложение .NET Framework в контейнере Windows Docker/</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, Container, Console, Applications</source>
+          <target state="translated">.NET, контейнер, консольный, приложения</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Running console applications in Windows containers</source>
+          <target state="translated">Запуск консольных приложений в контейнерах Windows</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Console applications are used for many purposes; from simple querying of a status to long running document image processing tasks.</source>
+          <target state="translated">Консольные приложения используются во многих целях: от простых запросов состояния до затратных по времени задач по обработке изображений документов.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In any case, the ability to start up and scale these applications are met with limitations of hardware acquisitions, startup times or running multiple instances.</source>
+          <target state="translated">В любом случае возможность запуска и масштабирования этих приложений сопряжена с определенными ограничениями, связанными с необходимым оборудованием, временем запуска или запуском нескольких экземпляров.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Moving your console applications to use Docker and Windows Server containers allows for starting these applications from a clean state, enabling them to perform the operation and then shutdown cleanly.</source>
+          <target state="translated">Перевод консольных приложений в контейнеры Docker и Windows Server обеспечивает запуск приложений в чистом состоянии, что позволяет им выполнять заданные операции и чисто завершать работу.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic will show the steps needed to move a console application to a Windows based container and start it using a PowerShell script.</source>
+          <target state="translated">В этом разделе показаны действия, которые нужно выполнить для перемещения консольного приложения в контейнер Windows и его запуска с помощью скрипта PowerShell.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The sample console application is a simple example which takes an argument, a question in this case, and returns a random answer.</source>
+          <target state="translated">Используемый пример — это простое консольное приложение, которое принимает аргумент (в данном случае вопрос) и возвращает случайный ответ.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This could take a <ph id="ph1">`customer_id`</ph> and process their taxes, or create a thumbnail for an <ph id="ph2">`image_url`</ph> argument.</source>
+          <target state="translated">Оно может принимать идентификатор клиента <ph id="ph1">`customer_id`</ph> и обрабатывать его налоги или создавать эскиз для аргумента <ph id="ph2">`image_url`</ph>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In addition to the answer, the <ph id="ph1">`Environment.MachineName`</ph> has been added to the response to show the difference between running the application locally and in a Windows container.</source>
+          <target state="translated">Помимо самого ответа к нему было добавлено имя <ph id="ph1">`Environment.MachineName`</ph>, чтобы продемонстрировать разницу между запуском приложения в локальной среде и в контейнере Windows.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.</source>
+          <target state="translated">При запуске приложения в локальной среде должно возвращаться имя вашего локального компьютера, а при запуске в контейнере Windows — идентификатор сеанса контейнера.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The complete example is available in the <bpt id="p1">[</bpt>dotnet/core-docs repository on GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)</ept>.</source>
+          <target state="translated">Полный пример доступен в репозитории <bpt id="p1">[</bpt>dotnet/core-docs в службе GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need to be familiar with some Docker terms before you begin working on moving your application to a container.</source>
+          <target state="translated">Перед началом перемещения приложения в контейнер необходимо знать некоторые термины Docker.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>Docker image<ept id="p1">*</ept> is a read-only template that defines the environment for a running container, including the operating system (OS), system components, and application(s).</source>
+          <target state="translated"><bpt id="p1">*</bpt>Образ Docker<ept id="p1">*</ept> — это шаблон только для чтения, который определяет среду для запуска контейнера, включая операционную систему (ОС), системные компоненты и приложения.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>One important feature of Docker images is that images are composed from a base image.</source>
+          <target state="translated">Одной из важных особенностей образов Docker является то, что они формируются из базового образа.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Each new image adds a small set of features to an existing image.</source>
+          <target state="translated">Каждый новый образ включает небольшой набор компонентов в дополнение к существующему образу.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>Docker container<ept id="p1">*</ept> is a running instance of an image.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Контейнер Docker<ept id="p1">*</ept> — это запущенный экземпляр образа.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You scale an application by running the same image in many containers.</source>
+          <target state="translated">Масштабирование приложения осуществляется путем запуска одного образа в нескольких контейнерах.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Conceptually, this is similar to running the same application in multiple hosts.</source>
+          <target state="translated">По существу, это похоже на запуск одного приложения на нескольких узлах.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can learn more about the Docker architecture by reading the <bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept> on the Docker site.</source>
+          <target state="translated">Дополнительные сведения об архитектуре Docker можно найти в <bpt id="p1">[</bpt>Обзоре Docker<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept> на сайте Docker.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Moving your console application is a matter of a few steps.</source>
+          <target state="translated">Перемещение консольного приложения происходит буквально за пару действий.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Build the application<ept id="p1">](#building-the-application)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Сборка приложения<ept id="p1">](#building-the-application)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a Dockerfile for the image<ept id="p1">](#creating-the-dockerfile)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Создание Dockerfile для образа<ept id="p1">](#creating-the-dockerfile)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Process to build and run the Docker container<ept id="p1">](#creating-the-image)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Сборка и запуск контейнера Docker<ept id="p1">](#creating-the-image)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Предварительные требования</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Windows containers are supported on <bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> or <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept>.</source>
+          <target state="translated">Контейнеры Windows поддерживаются в <bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> и <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature.</source>
+          <target state="translated">При использовании Windows Server 2016 контейнеры необходимо включить вручную, так как установщик Docker для Windows этот компонент не включает.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Make sure all updates have run for the OS and then follow the instructions from the <bpt id="p1">[</bpt>Container Host Deployment<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept> article to install the containers and Docker features.</source>
+          <target state="translated">Убедитесь, что в операционной системе применены все обновления, и выполните инструкции из статьи <bpt id="p1">[</bpt>Развертывание узла контейнера<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept>, чтобы установить контейнеры и компоненты Docker.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers.</source>
+          <target state="translated">Контейнеры Windows поддерживаются в Docker для Windows 1.12 Beta 26 или более поздней версии.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept>.</source>
+          <target state="translated">По умолчанию Docker включает контейнеры Linux. Переключитесь на контейнеры Windows. Для этого щелкните правой кнопкой мыши значок Docker в панели задач и выберите <bpt id="p1">**</bpt>Переключиться на контейнеры Windows<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Docker will run the process to change and a restart may be required.</source>
+          <target state="translated">Docker запустит процесс изменения и, возможно, потребуется перезагрузить компьютер.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Windows-Containers</source>
+          <target state="translated">Контейнеры Windows</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Building the application</source>
+          <target state="translated">Построение приложения</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Typically console applications are distributed through an installer, FTP, or File Share deployment.</source>
+          <target state="translated">Обычно консольные приложения распространяются с помощью установщика, через FTP или в рамках развертывания через общую папку.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.</source>
+          <target state="translated">При развертывании в контейнер необходимо скомпилировать ресурсы и поместить их в промежуточное расположение, которое можно будет использовать при создании образа Docker.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept>, the script uses <bpt id="p2">[</bpt>MSBuild<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd393574.aspx)</ept> to compile the application to complete the task of building the assets.</source>
+          <target state="translated">В скрипте <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept> приложение компилируется с помощью <bpt id="p2">[</bpt>MSBuild<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd393574.aspx)</ept>, чем завершается этап сборки ресурсов.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>There are a few parameters passed to MSBuild to finalize the needed assets.</source>
+          <target state="translated">Для окончательного включения нужных ресурсов в MSBuild передаются некоторые параметры.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).</source>
+          <target state="translated">Имя файла компилируемого проекта или решения, расположение выходных данных и, наконец, конфигурация (окончательная или отладочная).</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the call to <ph id="ph1">`Invoke-MSBuild`</ph> the <ph id="ph2">`OutputPath`</ph> is set to <bpt id="p1">**</bpt>publish<ept id="p1">**</ept> and  <ph id="ph3">`Configuration`</ph> set to <bpt id="p2">**</bpt>Release<ept id="p2">**</ept>.</source>
+          <target state="translated">В вызове <ph id="ph1">`Invoke-MSBuild`</ph> <ph id="ph2">`OutputPath`</ph> имеет значение <bpt id="p1">**</bpt>publish<ept id="p1">**</ept>, а <ph id="ph3">`Configuration`</ph> — значение <bpt id="p2">**</bpt>Release<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Creating the Dockerfile</source>
+          <target state="translated">Создание Dockerfile</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The base image used for a console .NET Framework application is <ph id="ph1">`microsoft/windowsservercore`</ph>, publicly available on <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/windowsservercore/)</ept>.</source>
+          <target state="translated">Базовым образом, который используется для консольного приложения .NET Framework, является <ph id="ph1">`microsoft/windowsservercore`</ph>, доступный в <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/windowsservercore/)</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The base image contains a minimal installation of Windows Server 2016, .NET Framework 4.6.2 and serves as the base OS image for Windows Containers.</source>
+          <target state="translated">Базовый образ содержит минимальную установку Windows Server 2016 .NET Framework 4.6.2 и выступает в роли основного образа операционной системы для контейнеров Windows.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The first line in the Dockerfile designates the base image using the <bpt id="p1">[</bpt><ph id="ph1">`FROM`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/from)</ept> instruction.</source>
+          <target state="translated">В первой строке Dockerfile с помощью инструкции <bpt id="p1">[</bpt><ph id="ph1">`FROM`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/from)</ept> определяется базовый образ.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Next, <bpt id="p1">[</bpt><ph id="ph1">`ADD`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/add)</ept> in the file copies the application assets from the <bpt id="p2">**</bpt>publish<ept id="p2">**</ept> folder to root folder of the container and last; setting the <bpt id="p3">[</bpt><ph id="ph2">`ENTRYPOINT`</ph><ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> of the image states that this is the command or application that will run when the container starts.</source>
+          <target state="translated">Следующая инструкция файла, <bpt id="p1">[</bpt><ph id="ph1">`ADD`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/add)</ept>, копирует ресурсы приложения из папки <bpt id="p2">**</bpt>publish<ept id="p2">**</ept> в корневую папку контейнера, и, наконец, параметр <bpt id="p3">[</bpt><ph id="ph2">`ENTRYPOINT`</ph><ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> образа объявляет, что этот образ является командой или приложением, которое будет запускаться при запуске контейнера.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Creating the image</source>
+          <target state="translated">Создание образа</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In order to create the Docker image, the following code is added to the <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept> script.</source>
+          <target state="translated">Чтобы создать образ Docker, в скрипт <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept> добавляется следующий код.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When the script is run, the <ph id="ph1">`console-random-answer-generator`</ph> image is created using the assets compiled from MSBuild defined in the <bpt id="p1">[</bpt>Building the application<ept id="p1">](#building-the-application)</ept> section.</source>
+          <target state="translated">При запуске скрипта создается образ <ph id="ph1">`console-random-answer-generator`</ph> с использованием ресурсов, скомпилированных MSBuild (см. раздел <bpt id="p1">[</bpt>Построение приложения<ept id="p1">](#building-the-application)</ept>).</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Run the script using <ph id="ph1">`.\build.ps1`</ph> from the PowerShell command prompt.</source>
+          <target state="translated">Запустите скрипт, выполнив команду <ph id="ph1">`.\build.ps1`</ph> в командной строке PowerShell.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>When the build is complete, using the <ph id="ph1">`docker images`</ph> command from a command line or PowerShell prompt; you'll see that the image is created and ready to be run.</source>
+          <target state="translated">По завершении построения выполните команду <ph id="ph1">`docker images`</ph> в командной строке или в командной строке PowerShell. Вы увидите, что образ создан и готов к запуску.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Running the container</source>
+          <target state="translated">Запуск контейнера</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can start the container from the command line using the Docker commands.</source>
+          <target state="translated">Контейнер можно запустить из командной строки с помощью команд Docker.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The output is</source>
+          <target state="translated">Выходные данные:</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If you run the <ph id="ph1">`docker ps -a`</ph> command from PowerShell, you can see that the container still exists.</source>
+          <target state="translated">При запуске команды <ph id="ph1">`docker ps -a`</ph> в PowerShell видно, что контейнер по-прежнему существует.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The STATUS column shows at "About a minute ago", the application was complete and could be shut down.</source>
+          <target state="translated">В столбце STATUS указывается, что приложение завершило работу "About a minute ago" (около минуты назад) и может быть закрыто.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If the command was run a hundred times, there would be a hundred containers left static with no work to do.</source>
+          <target state="translated">Если команда была выполнена сто раз, в наличии будет иметься сто статических контейнеров, не выполняющих никакую работу.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In the beginning scenario the ideal operation was to do the work and shutdown or cleanup.</source>
+          <target state="translated">В обучающем сценарии оптимальным вариантом действий является выполнение работы и завершение работы или проведение очистки.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To accomplish that workflow, adding the <ph id="ph1">`--rm`</ph> option to the <ph id="ph2">`docker run`</ph> command will remove the container as soon as the <ph id="ph3">`Exited`</ph> signal is received.</source>
+          <target state="translated">Для этого добавьте параметр <ph id="ph1">`--rm`</ph> в команду <ph id="ph2">`docker run`</ph>, чтобы удалить контейнер сразу же после получения сигнала <ph id="ph3">`Exited`</ph>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Running the command with this option and then looking at the output of <ph id="ph1">`docker ps -a`</ph> command; notice that the container id (the <ph id="ph2">`Environment.MachineName`</ph>) is not in the list.</source>
+          <target state="translated">Выполните команду с этим параметром и посмотрите на выходные данные команды <ph id="ph1">`docker ps -a`</ph>. Обратите внимание, что идентификатор контейнера (<ph id="ph2">`Environment.MachineName`</ph>) в списке отсутствует.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Running the container using PowerShell</source>
+          <target state="translated">Запуск контейнера с помощью PowerShell</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the sample project files there is also a <bpt id="p1">*</bpt>run.ps1<ept id="p1">*</ept> which is an example of how to use PowerShell to run the application accepting the arguments.</source>
+          <target state="translated">В файлах примера проекта также есть скрипт <bpt id="p1">*</bpt>run.ps1<ept id="p1">*</ept>, который демонстрирует использование PowerShell для запуска приложения с указанием аргументов.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>To run, open PowerShell and use the following command:</source>
+          <target state="translated">Чтобы запустить его, откройте PowerShell и выполните следующую команду:</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">Сводка</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Just by adding a Dockerfile and publishing the application, you can containerize your .NET Framework console applications and now take the advantage of running multiple instances, clean start and stop and more Windows Server 2016 capabilities without making any changes to the application code at all.</source>
+          <target state="translated">С помощью простого добавления Dockerfile и публикации консольное приложение .NET Framework можно поместить в контейнер и запускать несколько экземпляров, выполнять чистые запуск и завершение работы и использовать многие другие возможности Windows Server 2016 без какого-либо изменения кода приложения.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

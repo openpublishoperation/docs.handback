@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4a5237fcb439999efe4454512b06444f129e7b4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\object-model.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">66edf357df3e0d5df6b12771b7660b647ad450ca</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bea53ff950c1842e54ef83b20c526751fda8cfa8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">Объектная модель регулярных выражений</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">Объектная модель регулярных выражений</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The regular expression object model</source>
+          <target state="translated">Объектная модель регулярных выражений</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic describes the object model used in working with.NET regular expressions.</source>
+          <target state="translated">В этом разделе описывается объектная модель, используемая при работе с регулярными выражениями в .NET.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It contains the following sections:</source>
+          <target state="translated">Он содержит следующие подразделы:</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The regular expression engine<ept id="p1">](#the-regular-expression-engine)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Механизм регулярных выражений<ept id="p1">](#the-regular-expression-engine)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The MatchCollection and Match objects<ept id="p1">](#the-matchcollection-and-match-objects)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Объекты MatchCollection и Match<ept id="p1">](#the-matchcollection-and-match-objects)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The Group collection<ept id="p1">](#the-group-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Коллекция Group<ept id="p1">](#the-group-collection)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The captured group<ept id="p1">](#the-captured-group)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Захватываемая группа<ept id="p1">](#the-captured-group)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The capture collection<ept id="p1">](#the-capture-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Коллекция Capture<ept id="p1">](#the-capture-collection)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The individual capture<ept id="p1">](#the-individual-capture)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Отдельный захват<ept id="p1">](#the-individual-capture)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The regular expression engine</source>
+          <target state="translated">Механизм регулярных выражений</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The regular expression engine in .NET is represented by the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class.</source>
+          <target state="translated">Механизм регулярных выражений в .NET представлен классом <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string.</source>
+          <target state="translated">Механизм отвечает за синтаксический анализ и компиляцию регулярного выражение, а также выполнение операций, которые сопоставляют шаблон регулярного выражения с входной строкой.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The engine is the central component in .NET regular expression object model.</source>
+          <target state="translated">Данный механизм — центральный компонент объектной модели регулярных выражений .NET.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can use the regular expression engine in either of two ways:</source>
+          <target state="translated">Вы можете использовать механизм регулярных выражений одним из двух способов:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>By calling the static methods of the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class.</source>
+          <target state="translated">Вызывая статичные методы класса <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The method parameters include the input string and the regular expression pattern.</source>
+          <target state="translated">Параметры метода включают в себя входную строку и шаблон регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The regular expression engine caches regular expressions that are used in static method calls, so repeated calls to static regular expression methods that use the same regular expression offer relatively good performance.</source>
+          <target state="translated">Механизм регулярных выражений кэширует регулярные выражения, которые используются в вызовах статичных методов, чтобы повторные вызовы статичных методов регулярных выражений, применяющие одно и то же регулярное выражение, выполнялись относительно быстро.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>By instantiating a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object, by passing a regular expression to the class constructor.</source>
+          <target state="translated">Создавая экземпляр объекта <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>, передавая регулярное выражение конструктору класса.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In this case, the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is immutable (read-only) and represents a regular expression engine that is tightly coupled with a single regular expression.</source>
+          <target state="translated">В этом случае объект <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> не изменяется (доступен только для чтения) и представляет механизм регулярных выражений, который тесно связана с одним регулярным выражением.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because regular expressions used by Regex instances are not cached, you should not instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object multiple times with the same regular expression.</source>
+          <target state="translated">Так как регулярные выражения, используемые экземплярами Regex, не кэшируются, не следует создавать экземпляр объекта <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> несколько раз с одним и тем же регулярным выражением.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can call the methods of the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class to perform the following operations:</source>
+          <target state="translated">Вы можете вызывать методы класса <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>, чтобы выполнить следующие операции:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Determine whether a string matches a regular expression pattern.</source>
+          <target state="translated">определить, соответствует ли строка шаблону регулярного выражения;</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Extract a single match or the first match.</source>
+          <target state="translated">извлечь одно сопоставление или первое сопоставление;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Extract all matches.</source>
+          <target state="translated">извлечь все сопоставления;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Replace a matched substring.</source>
+          <target state="translated">заменить сопоставленную подстроку;</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Split a single string into an array of strings.</source>
+          <target state="translated">разделить одну строку на массив строк.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>These operations are described in the following sections.</source>
+          <target state="translated">Эти операции описаны в следующих разделах.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Matching a regular expression pattern</source>
+          <target state="translated">Сопоставление с шаблоном регулярного выражения</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> method returns <ph id="ph1">`true`</ph> if the string matches the pattern, or <ph id="ph2">`false`</ph> if it does not.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> возвращает значение <ph id="ph2">`false`</ph>, если строка соответствует шаблону; в противном случае возвращается значение <ph id="ph1">`true`</ph>.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> method is often used to validate string input.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String))</ept> часто используется для проверки входной строки.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For example, the following code ensures that a string matches a valid social security number in the United States.</source>
+          <target state="translated">Например, следующий код проверяет, содержит ли строка допустимый номер социального страхования для США.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^\d{3}-\d{2}-\d{4}$`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">Возможные интерпретации шаблона регулярного выражения <ph id="ph1">`^\d{3}-\d{2}-\d{4}$`</ph> показаны в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Match the beginning of the input string.</source>
+          <target state="translated">Выделение начала входной строки.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Match three decimal digits.</source>
+          <target state="translated">Совпадение с тремя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Match a hyphen.</source>
+          <target state="translated">Выделение дефиса.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">Совпадение с двумя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Match a hyphen.</source>
+          <target state="translated">Выделение дефиса.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Match four decimal digits.</source>
+          <target state="translated">Выделяются 4 десятичные цифры.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Match the end of the input string.</source>
+          <target state="translated">Соответствует концу входной строки.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Extracting a single match or the first match</source>
+          <target state="translated">Извлечение одного соответствия или первого соответствия</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> method returns a <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object that contains information about the first substring that matches a regular expression pattern.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> возвращает объект <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept>, который содержит сведения о первой подстроке, соответствующей шаблону регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Match.Success`</ph> property returns <ph id="ph2">`true`</ph>, indicating that a match was found, you can retrieve information about subsequent matches by calling the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method.</source>
+          <target state="translated">Если свойство <ph id="ph1">`Match.Success`</ph> возвращает значение <ph id="ph2">`true`</ph> (найдено соответствие), вы можете получить информацию о последующих соответствиях, вызвав метод <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>These method calls can continue until the <ph id="ph1">`Match.Success`</ph> property returns <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">Этот метод можно вызывать, пока свойство <ph id="ph1">`Match.Success`</ph> не вернет значение <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For example, the following code uses the <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> method to find the first occurrence of a duplicated word in a string.</source>
+          <target state="translated">Например, следующий код использует метод <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> для поиска первого вхождения повторяющегося слова в строке.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>It then calls the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method to find any additional occurrences.</source>
+          <target state="translated">Затем вызывается метод <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> для поиска других вхождений.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The example examines the <ph id="ph1">`Match.Success`</ph> property after each method call to determine whether the current match was successful and whether a call to the <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method should follow.</source>
+          <target state="translated">В примере демонстрируется просмотр свойства <ph id="ph1">`Match.Success`</ph> после каждого вызова метода, чтобы определить, было ли текущее сопоставление успешным и следует ли вызывать метод <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(\w+)\W+(\1)\b`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">Возможные интерпретации шаблона регулярного выражения <ph id="ph1">`\b(\w+)\W+(\1)\b`</ph> показаны в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Begin the match on a word boundary.</source>
+          <target state="translated">Сопоставление начинается на границе слова.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Совпадение с одним или несколькими символами слова.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">Это первая группа записи.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Match one or more non-word characters.</source>
+          <target state="translated">Совпадение с одним или большим числом несловообразующих символов.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Match the first captured string.</source>
+          <target state="translated">Выделение первой захватываемой строки.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">Это вторая группа записи.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>End the match on a word boundary.</source>
+          <target state="translated">Сопоставление заканчивается на границе слова.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Extracting all matches</source>
+          <target state="translated">Извлечение всех соответствий</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method returns a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains information about all matches that the regular expression engine found in the input string.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> возвращает объект <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept>, содержащий сведения о всех сопоставлениях, найденных механизмом регулярных выражений во входной строке.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For example, the previous example could be rewritten to call the <bpt id="p1">[</bpt>Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method instead of the <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> and <bpt id="p3">[</bpt>NextMatch<ept id="p3">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> methods.</source>
+          <target state="translated">Например, предыдущий пример можно изменить, чтобы вызывать метод <bpt id="p1">[</bpt>Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> вместо методов <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> и <bpt id="p3">[</bpt>NextMatch<ept id="p3">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept>.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Replacing a matched substring</source>
+          <target state="translated">Замена найденной подстроки</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Replace<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String))</ept> method replaces each substring that matches the regular expression pattern with a specified string or regular expression pattern, and returns the entire input string with replacements.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.Replace<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String))</ept> заменяет каждую подстроку, соответствующую шаблону регулярного выражения, на указанную строку или шаблон регулярного выражения и возвращает всю замененную входную строку.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example, the following code adds a U.S. currency symbol before a decimal number in a string.</source>
+          <target state="translated">Например, следующий код добавляет обозначение денежной единицы США перед десятичным числом в строке.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d+\.\d{2}\b`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">Возможные интерпретации шаблона регулярного выражения <ph id="ph1">`\b\d+\.\d{2}\b`</ph> показаны в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Совпадение должно начинаться на границе слова.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">Совпадение с одной или несколькими десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">Сопоставляется точка.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">Совпадение с двумя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">Совпадение должно заканчиваться на границе слова.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The replacement pattern <ph id="ph1">`$$$&amp;`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">Шаблон замены <ph id="ph1">`$$$&amp;`</ph> интерпретируется, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Replacement string</source>
+          <target state="translated">Строка замены</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The dollar sign (<bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept>) character.</source>
+          <target state="translated">Символ доллара (<bpt id="p1">**</bpt><ph id="ph1">$</ph><ept id="p1">**</ept>).</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The entire matched substring.</source>
+          <target state="translated">Вся сопоставленная подстрока.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Splitting a single string into an array of strings</source>
+          <target state="translated">Разделение одной строки на массив строк</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Split<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Split(System.String))</ept> method splits the input string at the positions defined by a regular expression match.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.Split<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Split(System.String))</ept> разделяет входную строку в позициях, заданных соответствием регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For example, the following code places the items in a numbered list into a string array.</source>
+          <target state="translated">Например, следующий код помещает элементы нумерованного списка в массив строк.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d{1,2}\.\s`</ph> is interpreted as shown in the following table.</source>
+          <target state="translated">Возможные интерпретации шаблона регулярного выражения <ph id="ph1">`\b\d{1,2}\.\s`</ph> показаны в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Совпадение должно начинаться на границе слова.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Match one or two decimal digits.</source>
+          <target state="translated">Совпадение с одной или двумя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">Сопоставляется точка.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">Соответствует пробелу.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The MatchCollection and Match objects</source>
+          <target state="translated">Объекты MatchCollection и Match</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> methods return two objects that are part of the regular expression object model: the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object, and the <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object.</source>
+          <target state="translated">Методы <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> возвращают два объекта, входящие в объектную модель регулярного выражения: объект <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> и объект <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept>.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The Match collection</source>
+          <target state="translated">Коллекция Match</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method returns a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> возвращает объект <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept>, содержащий объекты <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept>, которые представляют все сопоставления, найденные механизмом регулярных выражений, в том порядке, в котором они присутствуют во входной строке.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If there are no matches, the method returns a <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that contains  <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object with no members.</source>
+          <target state="translated">Если соответствий нет, метод возвращает объект <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept>, содержащий объект <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> без членов.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph1">`Item`</ph> property lets you access individual members of the collection by index, from zero to one less than the value of the <bpt id="p2">[</bpt>MatchCollection.Count<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> property.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph1">`Item`</ph> позволяет получить доступ к отдельным членам коллекции по индексу (от нуля до значения свойства <bpt id="p2">[</bpt>MatchCollection.Count<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> минус 1).</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>'Item` is the collection's indexer (in C#) and default property (in Visual Basic)..</source>
+          <target state="translated">Item — это индексатор коллекции (для C#) и свойство по умолчанию (для Visual Basic).</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>By default, the call to the <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method uses lazy evaluation to populate the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object.</source>
+          <target state="translated">По умолчанию вызов метода <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> использует отложенные вычисления для заполнения объекта <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept>.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Access to properties that require a fully populated collection, such as the <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> and <ph id="ph1">`Item`</ph> properties, may involve a performance penalty.</source>
+          <target state="translated">Доступ к свойствам, которым требуется полностью заполненная коллекция, например свойства <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> и <ph id="ph1">`Item`</ph>, может быть связан с дополнительными затратами.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>As a result, we recommend that you access the collection by using the <bpt id="p1">[</bpt>IEnumerator<ept id="p1">](xref:System.Collections.IEnumerator)</ept> object that is returned by the <bpt id="p2">[</bpt>MatchCollection.GetEnumerator<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator)</ept> method.</source>
+          <target state="translated">Поэтому мы рекомендуем обращаться к коллекции, используя объект <bpt id="p1">[</bpt>IEnumerator<ept id="p1">](xref:System.Collections.IEnumerator)</ept>, возвращаемый методом <bpt id="p2">[</bpt>MatchCollection.GetEnumerator<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator)</ept>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Individual languages provide constructs, such as <ph id="ph1">`foreach`</ph> in C# and `For Each' in Visual Basic, that wrap the collection's IEnumerator](xref:System.Collections.IEnumerator) interface.</source>
+          <target state="translated">Отдельные языки предоставляют конструкции, такие как <ph id="ph1">`foreach`</ph> в C# и For Each в Visual Basic, которые создают оболочку для интерфейса IEnumerator](xref:System.Collections.IEnumerator) коллекции.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Regex.Matches(String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method to populate a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object with all the matches found in an input string.</source>
+          <target state="translated">В следующем примере используется метод <bpt id="p1">[</bpt>Regex.Matches(String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> для заполнения объекта <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> всеми соответствиями, найденными во входной строке.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The example enumerates the collection, copies the matches to a string array, and records the character positions in an integer array.</source>
+          <target state="translated">Пример перечисляет коллекцию, копирует соответствия в массив строк и записывает позиции символов в целочисленный массив.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The Match</source>
+          <target state="translated">Класс Match</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class represents the result of a single regular expression match.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> представляет результат одного сопоставления регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You can access <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects in two ways:</source>
+          <target state="translated">Доступ к объектам <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> можно получить двумя указанными далее способами.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>By retrieving them from the <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object that is returned by the Regex.Matches method.</source>
+          <target state="translated">Извлекая их из объекта <bpt id="p1">[</bpt>MatchCollection<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection)</ept>, который возвращается методом Matches.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>To retrieve individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects, iterate the collection by using a <ph id="ph1">`foreach`</ph> (in C#) or <ph id="ph2">`For Each...Next`</ph> (in Visual Basic) construct, or use the <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph3">`Item`</ph> property to retrieve a specific <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object either by index or by name.</source>
+          <target state="translated">Для извлечения отдельных объектов <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> выполните итерацию коллекции, воспользовавшись конструкцией <ph id="ph1">`foreach`</ph> (в C#) или <ph id="ph2">`For Each...Next`</ph> (в Visual Basic), либо используйте свойство <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> <ph id="ph3">`Item`</ph> для извлечения конкретного объекта <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> по индексу или по имени.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can also retrieve individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects from the collection by iterating the collection by index, from zero to one less that the number of objects in the collection.</source>
+          <target state="translated">Вы также можете получить отдельные объекты <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> из коллекции, циклически проходя по коллекции по индексу (от нуля до числа объектов в коллекции минус 1).</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>However, this method does not take advantage of lazy evaluation, because it accesses the <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept> property.</source>
+          <target state="translated">Однако этот метод не использует отложенные вычисления, так как он обращается к свойству <bpt id="p1">[</bpt>MatchCollection.Count<ept id="p1">](xref:System.Text.RegularExpressions.MatchCollection.Count)</ept>.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The following example retrieves individual <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects from a <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> object by iterating the collection using the <ph id="ph1">`foreach`</ph> construct.</source>
+          <target state="translated">Следующий пример извлекает отдельные объекты <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> из объекта <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept>, циклически перебирая коллекцию с помощью конструкции <ph id="ph1">`foreach`</ph>.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The regular expression simply matches the string "abc" in the input string.</source>
+          <target state="translated">Регулярное выражение просто сопоставляет строку "abc" во входной строке.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>By calling the <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept> method, which returns a <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object that represents the first match in a string or a portion of a string.</source>
+          <target state="translated">Вызывая метод <bpt id="p1">[</bpt>Regex.Match<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String))</ept>, который возвращает объект <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept>, представляющий первое соответствие в строке или ее части.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You can determine whether the match has been found by retrieving the value of the <ph id="ph1">`Match.Success`</ph> property.</source>
+          <target state="translated">Вы можете определить, найдено ли соответствие, получив значение свойства <ph id="ph1">`Match.Success`</ph>.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To retrieve <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> objects that represent subsequent matches, call the <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method repeatedly, until the <ph id="ph1">`Success`</ph> property of the returned <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object is <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">Чтобы извлечь объекты <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept>, представляющие последующие соответствия, вызывайте метод <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept>, пока свойство <ph id="ph1">`Success`</ph> полученного объекта <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> не будет иметь значение <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> and <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> methods to match the string "abc" in the input string.</source>
+          <target state="translated">В следующем примере используются методы <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> и <bpt id="p2">[</bpt>Match.NextMatch<ept id="p2">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> для сопоставления строки "abc" во входной строке.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Two properties of the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class return collection objects:</source>
+          <target state="translated">Два свойства класса <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> возвращают объекты коллекции:</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property returns a <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object that contains information about the substrings that match capturing groups in the regular expression pattern.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> возвращает объект <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept>, который содержит сведения о подстроках, соответствующих захватываемым группам в шаблоне регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Captures`</ph> property returns a <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object that is of limited use.</source>
+          <target state="translated">Свойство <ph id="ph1">`Match.Captures`</ph> возвращает объект <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> с ограниченным применением.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The collection is not populated for a <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> object whose <ph id="ph1">`Success`</ph> property is <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">Коллекция не заполняется для объекта <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept>, свойство <ph id="ph1">`Success`</ph> которого имеет значение <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Otherwise, it contains a single <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> object that has the same information as the <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object.</source>
+          <target state="translated">В противном случае она содержит один объект <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept>, содержащий такие же данные, что и объект <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept>.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For more information about these objects, see the <bpt id="p1">[</bpt>The Group collection<ept id="p1">](#the-group-collection)</ept> and <bpt id="p2">[</bpt>The capture collection<ept id="p2">](#the-capture-collection)</ept> sections later in this topic.</source>
+          <target state="translated">Дополнительные сведения об этих объектах см. в разделах <bpt id="p1">[</bpt>Коллекция Group<ept id="p1">](#the-group-collection)</ept> и <bpt id="p2">[</bpt>Коллекция Capture<ept id="p2">](#the-capture-collection)</ept> далее в этой статье.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Two additional properties of the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class provide information about the match.</source>
+          <target state="translated">Два дополнительных свойства класса <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> предоставляют сведения о соответствии.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Value`</ph> property returns the substring in the input string that matches the regular expression pattern.</source>
+          <target state="translated">Свойство <ph id="ph1">`Match.Value`</ph> возвращает подстроку из входной строки, соответствующую шаблону регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Match.Index`</ph> property returns the zero-based starting position of the matched string in the input string.</source>
+          <target state="translated">Свойства <ph id="ph1">`Match.Index`</ph> возвращает начальную позицию сопоставленной подстроки во входной строке с основанием ноль.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> class also has two pattern-matching methods:</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> также содержит два метода сопоставления шаблона:</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method finds the match after the match represented by the current <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept> object, and returns a <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept> object that represents that match.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Match.NextMatch<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> ищет совпадение после соответствия, представленного текущим объектом <bpt id="p2">[</bpt>Match<ept id="p2">](xref:System.Text.RegularExpressions.Match)</ept>, и возвращает объект <bpt id="p3">[</bpt>Match<ept id="p3">](xref:System.Text.RegularExpressions.Match)</ept>, представляющий соответствие.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method performs a specified replacement operation on the matched string and returns the result.</source>
+          <target state="translated">Метод <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> выполняет указанную замену в сопоставленной строке и возвращает результат.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> method to prepend a <bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept> symbol and a space before every number that includes two fractional digits.</source>
+          <target state="translated">В следующем примере метод <bpt id="p1">[</bpt>Match.Result<ept id="p1">](xref:System.Text.RegularExpressions.Match.NextMatch)</ept> используется для добавления символа <bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept> и пробела перед каждым числом из двух дробных разрядов.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b\d+(,\d{3})*\.\d{2}\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">Шаблон регулярного выражения <ph id="ph1">`\b\d+(,\d{3})*\.\d{2}\b`</ph> определяется, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Совпадение должно начинаться на границе слова.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">Совпадение с одной или несколькими десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a comma followed by three decimal digits.</source>
+          <target state="translated">Совпадение с нулем или несколькими вхождениями запятой, за которыми следуют три десятичные цифры.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Match the decimal point character.</source>
+          <target state="translated">Совпадение с символом десятичной точки.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>`\d{2}</source>
+          <target state="translated">\d{2}</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Match two decimal digits.</source>
+          <target state="translated">Совпадение с двумя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">Совпадение должно заканчиваться на границе слова.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The replacement pattern <bpt id="p1">**</bpt>$$ $&amp;<ept id="p1">**</ept> indicates that the matched substring should be replaced by a dollar sign (<bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept>) symbol (the <ph id="ph2">`$$`</ph> pattern), a space, and the value of the match (the <ph id="ph3">`$&amp;`</ph> pattern).</source>
+          <target state="translated">Шаблон замены <bpt id="p1">**</bpt>$$ $&amp;<ept id="p1">**</ept> указывает, что сопоставленную подстроку следует заменить на символ доллара (<bpt id="p2">**</bpt><ph id="ph1">$</ph><ept id="p2">**</ept>) (шаблон <ph id="ph2">`$$`</ph>), пробел и значение соответствия (шаблон <ph id="ph3">`$&amp;`</ph>).</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The Group collection</source>
+          <target state="translated">Коллекция Group</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property returns a <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object that contains <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> objects that represent captured groups in a single match.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>Match.Groups<ept id="p1">](xref:System.Text.RegularExpressions.Match.Groups)</ept> возвращает объект <bpt id="p2">[</bpt>GroupCollection<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection)</ept>, содержащий объекты <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept>, которые представляют захватываемые группы в одном соответствии.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The first <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object in the collection (at index 0) represents the entire match.</source>
+          <target state="translated">Первый объект <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> в коллекции (объект с нулевым индексом) представляет все сопоставление.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Each object that follows represents the results of a single capturing group.</source>
+          <target state="translated">Каждый последующий объект представляет результаты одной захватываемой группы.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>You can retrieve individual <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects in the collection by using the <bpt id="p2">[</bpt>GroupCollection.Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property.</source>
+          <target state="translated">Вы можете извлечь отдельные объекты <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> из коллекции, используя свойство <bpt id="p2">[</bpt>GroupCollection.Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept>.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You can retrieve unnamed groups by their ordinal position in the collection, and retrieve named groups either by name or by ordinal position.</source>
+          <target state="translated">Неименованные группы можно извлечь по их номеру в коллекции, а именованные группы — по имени или номеру.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Unnamed captures appear first in the collection, and are indexed from left to right in the order in which they appear in the regular expression pattern.</source>
+          <target state="translated">Неименованные выделения идут в коллекции первыми и индексируются слева направо в том порядке, в котором они указаны в шаблоне регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Named captures are indexed after unnamed captures, from left to right in the order in which they appear in the regular expression pattern.</source>
+          <target state="translated">Именованные выделения индексируются после неименованных слева направо в том порядке, в котором они указаны в шаблоне регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>To determine what numbered groups are available in the collection returned for a particular regular expression matching method, you can call the instance <bpt id="p1">[</bpt>Regex.GetGroupNumbers<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNumbers)</ept> method.</source>
+          <target state="translated">Чтобы определить, какие нумерованные группы доступны в коллекции, возвращаемой для определенного метода сопоставления регулярного выражения, вызовите метод <bpt id="p1">[</bpt>Regex.GetGroupNumbers<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNumbers)</ept> экземпляра.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To determine what named groups are available in the collection, you can call the instance R<bpt id="p1">[</bpt>Regex.GetGroupNames<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNames)</ept> method.</source>
+          <target state="translated">Чтобы определить, какие именованные группы доступны в коллекции, вызовите метод <bpt id="p1">[</bpt>Regex.GetGroupNames<ept id="p1">](xref:System.Text.RegularExpressions.Regex.GetGroupNames)</ept> экземпляра.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Both methods are particularly useful in general-purpose routines that analyze the matches found by any regular expression.</source>
+          <target state="translated">Оба метода полезны в процедурах общего назначения, которые анализируют соответствия, найденные любым регулярным выражением.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>GroupCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property is the indexer of the collection in C# and the collection object's default property in Visual Basic.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>GroupCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> — это индексатор коллекции для C# и свойство объекта по умолчанию для Visual Basic.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>This means that individual <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects can be accessed by index (or by name, in the case of named groups) as follows:</source>
+          <target state="translated">Это значит, что доступ к отдельным объектам <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> можно получить по индексу (или, для именованных групп, по имени) следующим образом:</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The following example defines a regular expression that uses grouping constructs to capture the month, day, and year of a date.</source>
+          <target state="translated">В следующем примере определяется регулярное выражение, которое использует конструкции группировки для выделения месяца, дня и года из даты.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(\w+)\s(\d{1,2}),\s(\d{4})\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">Шаблон регулярного выражения <ph id="ph1">`\b(\w+)\s(\d{1,2}),\s(\d{4})\b`</ph> определяется, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Совпадение должно начинаться на границе слова.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Совпадение с одним или несколькими символами слова.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">Это первая группа записи.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">Соответствует пробелу.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Match one or two decimal digits.</source>
+          <target state="translated">Совпадение с одной или двумя десятичными цифрами.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">Это вторая группа записи.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Match a comma.</source>
+          <target state="translated">Сопоставление запятой.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Match a white-space character.</source>
+          <target state="translated">Соответствует пробелу.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Match four decimal digits.</source>
+          <target state="translated">Выделяются 4 десятичные цифры.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>This is the third capturing group.</source>
+          <target state="translated">Это третья группа записи.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>End the match on a word boundary.</source>
+          <target state="translated">Сопоставление заканчивается на границе слова.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The captured group</source>
+          <target state="translated">Захватываемая группа</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> class represents the result from a single capturing group.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> представляет результат одной захватываемой группы.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> objects that represent the capturing groups defined in a regular expression are returned by the <bpt id="p2">[</bpt>Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property of the <bpt id="p3">[</bpt>GroupCollection<ept id="p3">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object returned by the <bpt id="p4">[</bpt>Match.Groups<ept id="p4">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property.</source>
+          <target state="translated">Объекты <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept>, представляющие захватываемые группы, заданные в регулярном выражении, возвращаются свойством <bpt id="p2">[</bpt>Item<ept id="p2">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> объекта <bpt id="p3">[</bpt>GroupCollection<ept id="p3">](xref:System.Text.RegularExpressions.GroupCollection)</ept>, который возвращается свойством <bpt id="p4">[</bpt>Match.Groups<ept id="p4">](xref:System.Text.RegularExpressions.Match.Groups)</ept>.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> property is the indexer (in C#) and the default property (in Visual Basic) of the <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> class.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>Item<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection.Item(System.Int32))</ept> — это индексатор (для C#) и свойство по умолчанию (для Visual Basic) класса <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept>.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>You can also retrieve individual members by iterating the collection using the <ph id="ph1">`foreach`</ph> construct.</source>
+          <target state="translated">Вы можете извлечь отдельные члены, циклически перебирая коллекцию с помощью конструкции <ph id="ph1">`foreach`</ph>.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For an example, see the previous section.</source>
+          <target state="translated">Пример см. в предыдущем разделе.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The following example uses nested grouping constructs to capture substrings into groups.</source>
+          <target state="translated">В следующем примере вложенные конструкции группировки используются для записи подстрок в группы.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`(a(b))c`</ph> matches the string "abc".</source>
+          <target state="translated">Шаблон регулярного выражения <ph id="ph1">`(a(b))c`</ph> сопоставляет строку "abc".</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>It assigns the substring "ab" to the first capturing group, and the substring "b" to the second capturing group.</source>
+          <target state="translated">Он назначает подстроку "ab" первой захватываемой группе, а подстроку "b" — второй захватываемой группе.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The following example uses named grouping constructs to capture substrings from a string that contains data in the format "DATANAME:VALUE", which the regular expression splits at the colon (:).</source>
+          <target state="translated">В следующем примере именованные конструкции группировки используются для выделения подстрок из строки, содержащей данные в формате "DATANAME:VALUE", которые регулярное выражение разделяет в позиции двоеточия (:).</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^(?&lt;name&gt;\w+):(?&lt;value&gt;\w+)`</ph> is defined as shown in the following table.</source>
+          <target state="translated">Шаблон регулярного выражения <ph id="ph1">`^(?&lt;name&gt;\w+):(?&lt;value&gt;\w+)`</ph> определяется, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the input string.</source>
+          <target state="translated">Начало совпадения в начале входной строки.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Совпадение с одним или несколькими символами слова.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The name of this capturing group is name.</source>
+          <target state="translated">Имя захватываемой группы — name.</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Match a colon.</source>
+          <target state="translated">Сопоставление двоеточия.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Совпадение с одним или несколькими символами слова.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The name of this capturing group is value.</source>
+          <target state="translated">Имя захватываемой группы — value.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The properties of the <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> class provide information about the captured group: The <ph id="ph1">`Group.Value`</ph> property contains the captured substring, the <ph id="ph2">`Group.Index`</ph> property indicates the starting position of the captured group in the input text, the <ph id="ph3">`Group.Length`</ph> property contains the length of the captured text, and the <ph id="ph4">`Group.Success`</ph> property indicates whether a substring matched the pattern defined by the capturing group.</source>
+          <target state="translated">Свойства класса <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> предоставляют сведения о захватываемой группе: свойство <ph id="ph1">`Group.Value`</ph> содержит выделенную подстроку, свойство <ph id="ph2">`Group.Index`</ph> указывает начальную позицию захватываемой группы во входном тексте, свойство <ph id="ph3">`Group.Length`</ph> содержит длину выделенного текста, а свойство <ph id="ph4">`Group.Success`</ph> указывает, соответствует ли подстрока шаблону, заданному захватываемой группой.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Applying quantifiers to a group (for more information, see <bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept>) modifies the relationship of one capture per capturing group in two ways:</source>
+          <target state="translated">При применении квантификаторов к группе (дополнительные сведения см. в статье <bpt id="p1">[</bpt>Квантификаторы в регулярных выражениях<ept id="p1">](quantifiers.md)</ept>) поведение "один захват на захватываемую группу" изменяется двумя способами:</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept> or <bpt id="p2">__</bpt>*?<ept id="p2">__</ept></source>
+          <target state="translated">Если квантификатор <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept> или <bpt id="p2">__</bpt>*?<ept id="p2">__</ept></target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string.</source>
+          <target state="translated">(который указывает ноль или больше соответствий) применен к группе, во входной строке может отсутствовать соответствие захватываемой группе.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>When there is no captured text, the properties of the <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object are set as shown in the following table.</source>
+          <target state="translated">Если выделенного текста нет, свойства объекта <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> задаются, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Group property</source>
+          <target state="translated">Свойство объекта Group</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <target state="translated">Значение</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String.Empty<ept id="p1">](xref:System.String.Empty)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>String.Empty<ept id="p1">](xref:System.String.Empty)</ept></target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <target state="translated">0</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The following example provides an illustration.</source>
+          <target state="translated">Ниже приведен пример.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>In the regular expression pattern <ph id="ph1">`aaa(bbb)*ccc`</ph>, the first capturing group (the substring "bbb") can be matched zero or more times.</source>
+          <target state="translated">В шаблоне регулярного выражения <ph id="ph1">`aaa(bbb)*ccc`</ph> первая захватываемая группа (подстрока "bbb") может быть сопоставлена ноль или больше раз.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Because the input string "aaaccc" matches the pattern, the capturing group does not have a match.</source>
+          <target state="translated">Так как входная строка "aaaccc" соответствует шаблону, захватываемая группа не имеет соответствия.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Quantifiers can match multiple occurrences of a pattern that is defined by a capturing group.</source>
+          <target state="translated">Квантификаторы могут сопоставлять множество вхождений шаблона, заданного захватываемой группой.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>In this case, the <ph id="ph1">`Value`</ph> and <ph id="ph2">`Length`</ph> properties of a <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object contain information only about the last captured substring.</source>
+          <target state="translated">В этом случае свойства <ph id="ph1">`Value`</ph> и <ph id="ph2">`Length`</ph> объекта <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> содержат сведения только о последней выделенной подстроке.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>For example, the following regular expression matches a single sentence that ends in a period.</source>
+          <target state="translated">Например, следующее регулярное выражение сопоставляет предложение, заканчивающееся на точку.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>It uses two grouping constructs: The first captures individual words along with a white-space character; the second captures individual words.</source>
+          <target state="translated">Оно использует две конструкции группировки: первая выделяет отдельные слова вместе с пробелом, вторая выделяет отдельные слова.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, although the regular expression succeeds in capturing an entire sentence, the second capturing group captures only the last word.</source>
+          <target state="translated">Как видно из результата выполнения примера, хотя регулярное выражение успешно выделяет все предложение, вторая захватываемая группа выделяет только последнее слово.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The capture collection</source>
+          <target state="translated">Коллекция Capture</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> object contains information only about the last capture.</source>
+          <target state="translated">Объект <bpt id="p1">[</bpt>Group<ept id="p1">](xref:System.Text.RegularExpressions.Group)</ept> содержит сведения только о последнем выделении.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>However, the entire set of captures made by a capturing group is still available from the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object that is returned by the <bpt id="p2">[</bpt>Group.Captures<ept id="p2">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property.</source>
+          <target state="translated">Однако весь набор выделений, созданный захватываемой группой, по-прежнему доступен из объекта <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept>, возвращаемого свойством <bpt id="p2">[</bpt>Group.Captures<ept id="p2">](xref:System.Text.RegularExpressions.Group.Captures)</ept>.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Each member of the collection is a <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string).</source>
+          <target state="translated">Каждый член коллекции — это объект <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept>, представляющий выделение этой захватываемой группы в порядке захвата (и, следовательно, в порядке сопоставления выделенных строк слева направо во входной строке).</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>You can retrieve individual <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> objects from the collection in either of two ways:</source>
+          <target state="translated">Вы можете извлечь отдельные объекты <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> из коллекции одним из двух способов:</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>By iterating through the collection using a construct such as <ph id="ph1">`foreach`</ph> (in C#) or <ph id="ph2">`For Each`</ph> (in Visual Basic).</source>
+          <target state="translated">циклически перебирая коллекцию с помощью конструкции <ph id="ph1">`foreach`</ph> (для C#) или <ph id="ph2">`For Each`</ph> (для Visual Basic);</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>By using the <bpt id="p1">[</bpt>CaptureCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection.Item(System.Int32))</ept> property to retrieve a specific object by index.</source>
+          <target state="translated">используя свойство <bpt id="p1">[</bpt>CaptureCollection.Item<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection.Item(System.Int32))</ept> для извлечения определенного объекта по индексу.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>The Item property is the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object's default property (in Visual Basic) or indexer (in C#).</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> — это свойство по умолчанию (для Visual Basic) или индексатор (для C#).</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>If a quantifier is not applied to a capturing group, the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object contains a single <bpt id="p2">[</bpt>Capture<ept id="p2">](xref:System.Text.RegularExpressions.Capture)</ept> object that is of little interest, because it provides information about the same match as its <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept> object.</source>
+          <target state="translated">Если квантификатор не применен к захватываемой группе, объект <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> содержит один объект <bpt id="p2">[</bpt>Capture<ept id="p2">](xref:System.Text.RegularExpressions.Capture)</ept>, который не представляет особого интереса, так как содержит сведения о том же соответствии, что и объект <bpt id="p3">[</bpt>Group<ept id="p3">](xref:System.Text.RegularExpressions.Group)</ept>.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>If a quantifier is applied to a capturing group, the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object contains all captures made by the capturing group, and the last member of the collection represents the same capture as the <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> object.</source>
+          <target state="translated">Если к захватываемой группе применен квантификатор, объект <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> содержит все выделения захватываемой группы, а последний член коллекции представляет то же выделение, что и объект <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept>.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>For example, if you use the regular expression pattern <ph id="ph1">`((a(b))c)+`</ph> (where the <ph id="ph2">`+`</ph> quantifier specifies one or more matches) to capture matches from the string "abcabcabc", the <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object for each <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> object contains three members.</source>
+          <target state="translated">Например, если использовать шаблон регулярного выражения <ph id="ph1">`((a(b))c)+`</ph> (где квантификатор <ph id="ph2">`+`</ph> указывает одно или несколько соответствий) для выделения соответствий из строки "abcabcabc", объект <bpt id="p1">[</bpt>CaptureCollection<ept id="p1">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> для каждого объекта <bpt id="p2">[</bpt>Group<ept id="p2">](xref:System.Text.RegularExpressions.Group)</ept> содержит три члена.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>The following example uses the regular expression <ph id="ph1">`(Abc)+`</ph> to find one or more consecutive runs of the string "Abc" in the string "XYZAbcAbcAbcXYZAbcAb".</source>
+          <target state="translated">Следующий пример использует регулярное выражение <ph id="ph1">`(Abc)+`</ph> для поиска одного или нескольких последовательных вхождений строки "Abc" в строке "XYZAbcAbcAbcXYZAbcAb".</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The example illustrates the use of the <bpt id="p1">[</bpt>Group.Captures<ept id="p1">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property to return multiple groups of captured substrings.</source>
+          <target state="translated">Этот пример демонстрирует использование свойства <bpt id="p1">[</bpt>Group.Captures<ept id="p1">](xref:System.Text.RegularExpressions.Group.Captures)</ept> для получения нескольких групп выделенных подстрок.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The individual capture</source>
+          <target state="translated">Отдельный захват</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> class contains the results from a single subexpression capture.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>Capture<ept id="p1">](xref:System.Text.RegularExpressions.Capture)</ept> содержит результаты одного выделения части выражения.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Capture.Value<ept id="p1">](xref:System.Text.RegularExpressions.Capture.Value)</ept> property contains the matched text, and the <bpt id="p2">[</bpt>Capture.Index<ept id="p2">](xref:System.Text.RegularExpressions.Capture.Index)</ept> property indicates the zero-based position in the input string at which the matched substring begins.</source>
+          <target state="translated">Свойство <bpt id="p1">[</bpt>Capture.Value<ept id="p1">](xref:System.Text.RegularExpressions.Capture.Value)</ept> содержит сопоставленный текст, а свойство <bpt id="p2">[</bpt>Capture.Index<ept id="p2">](xref:System.Text.RegularExpressions.Capture.Index)</ept> указывает начальную позицию сопоставленной подстроки во входной строке с основанием ноль.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>The following example parses an input string for the temperature of selected cities.</source>
+          <target state="translated">Следующий пример ищет во входной строке температуру выбранных городов.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>A comma (",") is used to separate a city and its temperature, and a semicolon (";") is used to separate each city's data.</source>
+          <target state="translated">Запятая (",") используется для разделения города и температуры, а точка с запятой (";") — для разделения данных каждого города.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The entire input string represents a single match.</source>
+          <target state="translated">Вся входная строка представляет одно соответствие.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>In the regular expression pattern <ph id="ph1">`((\w+(\s\w+)*),(\d+);)+`</ph>, which is used to parse the string, the city name is assigned to the second capturing group, and the temperature is assigned to the fourth capturing group.</source>
+          <target state="translated">В шаблоне регулярного выражения <ph id="ph1">`((\w+(\s\w+)*),(\d+);)+`</ph>, который используется для анализа строки, название города назначается второй захватываемой группе, а температура — четвертой захватываемой группе.</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The regular expression is defined as shown in the following table.</source>
+          <target state="translated">Определение регулярного выражения показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Шаблон</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Описание</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Совпадение с одним или несколькими символами слова.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a white-space character followed by one or more word characters.</source>
+          <target state="translated">Сопоставляется ноль или несколько экземпляров пробела, за которыми следует один или несколько словообразующих символов.</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>This pattern matches multi-word city names.</source>
+          <target state="translated">Этот шаблон выделяет названия городов из нескольких слов.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>This is the third capturing group.</source>
+          <target state="translated">Это третья группа записи.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters followed by zero or more occurrences of a white-space character and one or more word characters.</source>
+          <target state="translated">Сопоставляется один или несколько словообразующих символов, за которыми следует ноль или несколько пробелов и один или несколько словообразующих символов.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>This is the second capturing group.</source>
+          <target state="translated">Это вторая группа записи.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Match a comma.</source>
+          <target state="translated">Сопоставление запятой.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Match one or more digits.</source>
+          <target state="translated">Сопоставление с одной или несколькими цифрами.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>This is the fourth capturing group.</source>
+          <target state="translated">Это четвертая группа записи.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Match a semicolon.</source>
+          <target state="translated">Сопоставление точки с запятой.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Match the pattern of a word followed by any additional words followed by a comma, one or more digits, and a semicolon, one or more times.</source>
+          <target state="translated">Шаблона из слова, за которым следуют другие слова, запятая, одна или несколько цифр и точка запятая сопоставляется один или более раз.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">Это первая группа записи.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Регулярные выражения .NET<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Элементы языка регулярных выражений — краткий справочник<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dfe2cebfbcf1f4c2697683ebda8c1e11567fd015</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\implementing-dispose.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9c767e094bcc0eeef3aa68e876ddf7c6b336dc37</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a104a3574d5165774f427301e61a67f85eb2407f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">Реализация метода dispose</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">Реализация метода dispose</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">Реализация метода dispose</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You implement a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method to release unmanaged resources used by your application.</source>
+          <target state="translated">Вы реализуете метод <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> для выпуска неуправляемых ресурсов, которые используются вашим приложением.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The .NET garbage collector does not allocate or release unmanaged memory.</source>
+          <target state="translated">Сборщик мусора .NET не выделяет и не выпускает неуправляемую память.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The pattern for disposing an object, referred to as a dispose pattern, imposes order on the lifetime of an object.</source>
+          <target state="translated">Шаблон удаления объекта упорядочивает жизненный цикл этого объекта.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory.</source>
+          <target state="translated">Шаблон удаления используется только для объектов, осуществляющих доступ к неуправляемым ресурсам, таких как дескрипторы файлов и канала, дескрипторы реестра, дескрипторы ожидания и указатели на блоки неуправляемой памяти.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.</source>
+          <target state="translated">Это вызвано тем, что сборщик мусора очень эффективно удаляет неиспользуемые управляемые объекты, но не может удалить неуправляемые объекты.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The dispose pattern has two variations:</source>
+          <target state="translated">Существует два варианта шаблона удаления:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>).</source>
+          <target state="translated">Заключение в оболочку каждого неуправляемого ресурса, используемого типом в безопасном дескрипторе (то есть в классе, производном от <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>).</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In this case, you implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and an additional <ph id="ph1">`Dispose(Boolean)`</ph> method.</source>
+          <target state="translated">В этом случае необходимо реализовать интерфейс <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> и дополнительный метод <ph id="ph1">`Dispose(Boolean)`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This is the recommended variation and doesn't require overriding the <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">Это рекомендуемый вариант, не требующий переопределения метода <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> namespace provides a set of classes derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept>, which are listed in the <bpt id="p3">[</bpt>Using safe handles<ept id="p3">](#using-safe-handles)</ept> section.</source>
+          <target state="translated">Пространство имен The <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> содержит набор классов, производный от <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept>; эти классы перечислены в разделе <bpt id="p3">[</bpt>Использование безопасных дескрипторов<ept id="p3">](#using-safe-handles)</ept>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</source>
+          <target state="translated">Если не удается найти класс, способный освободить неуправляемый ресурс, можно реализовать собственный подкласс <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and an additional <ph id="ph1">`Dispose(Boolean`</ph>) method, and you also override the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">Реализация интерфейса <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> и дополнительного метода <ph id="ph1">`Dispose(Boolean`</ph>, а также переопределение метода <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You must override <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> to ensure that unmanaged resources are disposed of if your <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> implementation is not called by a consumer of your type.</source>
+          <target state="translated">Необходимо переопределить метод <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>, чтобы убедиться, что неуправляемые ресурсы удаляются, если реализация <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> не вызывается объектом-получателем типа.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you use the recommended technique discussed in the previous bullet, the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class does this on your behalf.</source>
+          <target state="translated">При использовании рекомендуемого метода, описанного в предыдущем пункте, класс <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> делает это от вашего имени.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To help ensure that resources are always cleaned up appropriately, a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method should be callable multiple times without throwing an exception.</source>
+          <target state="translated">Чтобы обеспечить соответствующую очистку ресурсов, метод <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> должен быть доступен для многократного вызова без выдачи исключения.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The code example provided for the <bpt id="p1">[</bpt>GC.KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> method shows how aggressive garbage collection can cause a finalizer to run while a member of the reclaimed object is still executing.</source>
+          <target state="translated">В приведенном для метода <bpt id="p1">[</bpt>GC.KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> примере показано, как чрезмерно активная сборка мусора может привести к выполнению финализатора до завершения выполнения утилизируемого объекта.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It is a good idea to call the <bpt id="p1">[</bpt>KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> method at the end of a lengthy <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">Рекомендуется вызывать метод <bpt id="p1">[</bpt>KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> в конце большого метода <ph id="ph1">`Dispose`</ph>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Dispose() and Dispose(Boolean)</source>
+          <target state="translated">Dispose() и Dispose(Boolean)</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface requires the implementation of a single parameterless method, <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept>.</source>
+          <target state="translated">Интерфейс <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> требует реализации одного метода <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> без параметров.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, the dispose pattern requires two <ph id="ph1">`Dispose`</ph> methods to be implemented:</source>
+          <target state="translated">Однако шаблон удаления требует реализации двух методов <ph id="ph1">`Dispose`</ph>:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>A public non-virtual (<ph id="ph1">`NonInheritable`</ph> in Visual Basic) <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation that has no parameters.</source>
+          <target state="translated">Реализация открытого невиртуального (в Visual Basic — <ph id="ph1">`NonInheritable`</ph>) метода <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> без параметров.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>A protected virtual (<ph id="ph1">`Overridable`</ph> in Visual Basic) <ph id="ph2">`Dispose`</ph> method whose signature is:</source>
+          <target state="translated">Защищенный виртуальный (в Visual Basic — <ph id="ph1">`Overridable`</ph>) метод <ph id="ph2">`Dispose`</ph> со следующей подписью:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The Dispose() overload</source>
+          <target state="translated">Перегрузка Dispose()</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Because the public, non-virtual (<ph id="ph1">`NonInheritable`</ph> in Visual Basic), parameterless <ph id="ph2">`Dispose`</ph> method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run.</source>
+          <target state="translated">Поскольку открытый невиртуальный (<ph id="ph1">`NonInheritable`</ph> в Visual Basic) метод <ph id="ph2">`Dispose`</ph> без параметров вызывается объектом-получателем типа, его назначение состоит в том, чтобы освободить неуправляемые ресурсы и указать, что метод завершения, если он задан, не должен выполняться.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Because of this, it has a standard implementation:</source>
+          <target state="translated">Он имеет стандартную реализацию:</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Dispose`</ph> method performs all object cleanup, so the garbage collector no longer needs to call the objects' <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> override.</source>
+          <target state="translated">Метод <ph id="ph1">`Dispose`</ph> полностью выполняет очистку объектов, поэтому сборщику мусора не требуется вызывать переопределенный метод <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> объекта.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Therefore, the call to the <bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> method prevents the garbage collector from running the finalizer.</source>
+          <target state="translated">Таким образом, вызов метода <bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> не позволит сборщику мусора запустить метод завершения.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the type has no finalizer, the call to <bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> has no effect.</source>
+          <target state="translated">Если тип не имеет метода завершения, вызов метода <bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> не имеет силы.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Note that the actual work of releasing unmanaged resources is performed by the second overload of the <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">Обратите внимание, что фактическая работа по освобождению неуправляемых ресурсов выполняется вторым перегруженным методом <ph id="ph1">`Dispose`</ph>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The Dispose(Boolean) overload</source>
+          <target state="translated">Перегрузка Dispose(Boolean)</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the second overload, the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> parameter is a <bpt id="p2">[</bpt>Boolean<ept id="p2">](xref:System.Boolean)</ept> that indicates whether the method call comes from a <bpt id="p3">[</bpt>Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> method (its value is <ph id="ph1">`true`</ph>) or from a finalizer (its value is <ph id="ph2">`false`</ph>).</source>
+          <target state="translated">Во второй перегрузке параметр <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> типа <bpt id="p2">[</bpt>Boolean<ept id="p2">](xref:System.Boolean)</ept> указывает, откуда осуществляется вызов метода: из метода <bpt id="p3">[</bpt>Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> (значение <ph id="ph1">`true`</ph>) или из метода завершения (значение <ph id="ph2">`false`</ph>).</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The body of the method consists of two blocks of code:</source>
+          <target state="translated">Тело метода состоит из двух блоков кода:</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A block that frees unmanaged resources.</source>
+          <target state="translated">Блок, который освобождает неуправляемые ресурсы.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This block executes regardless of the value of the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> parameter.</source>
+          <target state="translated">Этот блок выполняется вне зависимости от значения параметра <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A conditional block that frees managed resources.</source>
+          <target state="translated">Условный блок, который освобождает управляемые ресурсы.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This block executes if the value of <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">Этот блок выполняется, если параметр <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> имеет значение <ph id="ph1">`true`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The managed resources that it frees can include:</source>
+          <target state="translated">К управляемым ресурсам, которые он освобождает, могут относиться:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Managed objects that implement IDisposable<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Управляемые объекты, реализующие интерфейс IDisposable<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The conditional block can be used to call their <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated">Условный блок может использоваться для вызова реализации <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you have used a safe handle to wrap your unmanaged resource, you should call the <bpt id="p1">[</bpt>SafeHandle.Dispose(Boolean<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean))</ept> implementation here.</source>
+          <target state="translated">При использовании безопасного дескриптора в качестве оболочки для неуправляемого ресурса необходимо вызвать реализацию <bpt id="p1">[</bpt>SafeHandle.Dispose(Boolean)<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean))</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Managed objects that consume large amounts of memory or consume scarce resources.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Управляемые объекты, которые используют большие объемы памяти или дефицитные ресурсы<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Freeing these objects explicitly in the <ph id="ph1">`Dispose`</ph> method releases them faster than if they were reclaimed non-deterministically by the garbage collector.</source>
+          <target state="translated">При использовании метода <ph id="ph1">`Dispose`</ph> эти объекты освобождаются быстрее, чем при недетерминированной очистке сборщиком мусора.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If the method call comes from a finalizer (that is, if <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> is <ph id="ph1">`false`</ph>), only the code that frees unmanaged resources executes.</source>
+          <target state="translated">Если метод вызывается из метода завершения (т. е. если свойство <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> имеет значение <ph id="ph1">`false`</ph>), выполняется только тот код, который освобождает неуправляемые ресурсы.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this <ph id="ph1">`Dispose`</ph> overload with a value of <ph id="ph2">`false`</ph> prevents the finalizer from trying to release managed resources that may have already been reclaimed.</source>
+          <target state="translated">Поскольку порядок уничтожения управляемых объектов сборщиком мусора во время завершения не определен, вызов этой перегрузки <ph id="ph1">`Dispose`</ph> со значением <ph id="ph2">`false`</ph> предотвращает попытки метода завершения освободить управляемые ресурсы, которые уже могли быть освобождены.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Implementing the dispose pattern for a base class</source>
+          <target state="translated">Реализация шаблона удаления для базового класса</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you implement the dispose pattern for a base class, you must provide the following:</source>
+          <target state="translated">При реализации шаблона удаления для базового класса необходимо следующее:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You should implement this pattern for all base classes that implement <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> and are not <ph id="ph1">`sealed`</ph>.</source>
+          <target state="translated">Вам следует реализовать этот шаблон для всех базовых классов, которые реализуют <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> и не являются <ph id="ph1">`sealed`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation that calls the <ph id="ph1">`Dispose(Boolean)`</ph> method.</source>
+          <target state="translated">Реализация <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>, которая вызывает метод <ph id="ph1">`Dispose(Boolean)`</ph>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Dispose(Boolean)`</ph> method that performs the actual work of releasing resources.</source>
+          <target state="translated">Метод <ph id="ph1">`Dispose(Boolean)`</ph>, который выполняет фактическую работу по освобождению ресурсов.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Either a class derived from <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> that wraps your unmanaged resource (recommended), or an override to the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">Любой класс, производный от класса <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>, который создает оболочку для неуправляемого ресурс (рекомендуется), или переопределенный метод <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept>.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>SafeHandle class provides a finalizer that frees you from having to code one.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> содержит метод завершения, что освобождает разработчика от необходимости создавать его вручную.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle.</source>
+          <target state="translated">Вот общий шаблон реализации шаблона удаления для базового класса, который использует безопасный дескриптор.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The previous example uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to illustrate the pattern; any object derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> could be used instead.</source>
+          <target state="translated">В предыдущем примере используется объект <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> для иллюстрации шаблона. Вместо него может использоваться любой объект, производный от <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that the example does not properly instantiate its <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object.</source>
+          <target state="translated">Обратите внимание, что в этом примере неправильно создаются экземпляры объекта <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a base class that overrides <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>.</source>
+          <target state="translated">Вот общий шаблон реализации шаблона удаления для базового класса, который переопределяет метод <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In C#, you override <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> by defining a <ph id="ph1">`destructor`</ph>.</source>
+          <target state="translated">В C# переопределение метода <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> осуществляется путем определения <ph id="ph1">`destructor`</ph>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Implementing the dispose pattern for a derived class</source>
+          <target state="translated">Реализация шаблона удаления для производного класса</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>A class derived from a class that implements the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface shouldn't implement <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept>, because the base class implementation of <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> is inherited by its derived classes.</source>
+          <target state="translated">Класс, производный от класса, реализующего интерфейс <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept>, не должен реализовывать интерфейс <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept>, поскольку реализация метода <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> базового класса наследуется производными классами.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Instead, to implement the dispose pattern for a derived class, you provide the following:</source>
+          <target state="translated">Вместо этого, чтобы реализовать шаблон удаления для базового класса, необходимо следующее:</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`protected Dispose(Boolean)`</ph> method that overrides the base class method and performs the actual work of releasing the resources of the derived class.</source>
+          <target state="translated">Метод <ph id="ph1">`protected Dispose(Boolean)`</ph>, который переопределяет метод базового класса и выполняет фактическую работу по освобождению ресурсов производного класса.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This method should also call the <ph id="ph1">`Dispose(Boolean)`</ph> method of the base class and pass it a value of <ph id="ph2">`true`</ph> for the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> argument.</source>
+          <target state="translated">Этот метод должен также вызывать метод <ph id="ph1">`Dispose(Boolean)`</ph> базового класса и передавать в него значение <ph id="ph2">`true`</ph> для аргумента <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Either a class derived from <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> that wraps your unmanaged resource (recommended), or an override to the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">Любой класс, производный от класса <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>, который создает оболочку для неуправляемого ресурс (рекомендуется), или переопределенный метод <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept>.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class provides a finalizer that frees you from having to code one.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> содержит метод завершения, что освобождает разработчика от необходимости создавать его вручную.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>If you do provide a finalizer, it should call the <ph id="ph1">`Dispose(Boolean)`</ph> overload with a <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> argument of <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">Если есть метод завершения, он должен вызывать перегруженный метод <ph id="ph1">`Dispose(Boolean)`</ph>, указывая при этом аргумент <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> со значением <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:</source>
+          <target state="translated">Вот общий шаблон реализации шаблона удаления для производного класса, который использует безопасный дескриптор:</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The previous example uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to illustrate the pattern; any object derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> could be used instead.</source>
+          <target state="translated">В предыдущем примере используется объект <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> для иллюстрации шаблона. Вместо него может использоваться любой объект, производный от <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Note that the example does not properly instantiate its <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object.</source>
+          <target state="translated">Обратите внимание, что в этом примере неправильно создаются экземпляры объекта <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a derived class that overrides <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>:</source>
+          <target state="translated">Вот общий шаблон реализации шаблона удаления для производного класса, который переопределяет метод <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>:</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In C#, you override <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> by defining a <ph id="ph1">`destructor`</ph>.</source>
+          <target state="translated">В C# переопределение метода <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> осуществляется путем определения <ph id="ph1">`destructor`</ph>.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Using safe handles</source>
+          <target state="translated">Использование безопасных дескрипторов</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Writing code for an object's finalizer is a complex task that can cause problems if not done correctly.</source>
+          <target state="translated">Написание кода для метода завершения объекта является сложной задачей, которая может вызвать проблемы при неправильном выполнении.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Therefore, we recommend that you construct <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> objects instead of implementing a finalizer.</source>
+          <target state="translated">Поэтому вместо реализации метода завершения рекомендуется создавать объекты <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Classes derived from the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class simplify object lifetime issues by assigning and releasing handles without interruption.</source>
+          <target state="translated">Классы, производные от класса <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>, упрощают проблемы времени существования объекта путем назначения и освобождения дескрипторов без прерываний.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>They contain a critical finalizer that is guaranteed to run while an application domain is unloading.</source>
+          <target state="translated">Они содержат критический метод завершения, который обязательно выполняется во время выгрузки домена приложения.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The following derived classes in the <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> namespace provide safe handles:</source>
+          <target state="translated">Безопасные дескрипторы предоставляются следующими производными классами в пространстве имен <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept>:</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>, <bpt id="p2">[</bpt>SafeMemoryMappedFileHandle<ept id="p2">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle)</ept>, and <bpt id="p3">[</bpt>SafePipeHandle<ept id="p3">](xref:Microsoft.Win32.SafeHandles.SafePipeHandle)</ept> class, for files, memory mapped files, and pipes.</source>
+          <target state="translated">Классы <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>, <bpt id="p2">[</bpt>SafeMemoryMappedFileHandle<ept id="p2">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle)</ept> и <bpt id="p3">[</bpt>SafePipeHandle<ept id="p3">](xref:Microsoft.Win32.SafeHandles.SafePipeHandle)</ept> для файлов, сопоставленных в памяти файлов и каналов.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeMemoryMappedViewHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle)</ept> class, for memory views.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>SafeMemoryMappedViewHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle)</ept> для представлений памяти.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeNCryptKeyHandle<ept id="p1">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx)</ept>, <bpt id="p2">[</bpt>SafeNCryptProviderHandle<ept id="p2">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx)</ept>, and <bpt id="p3">[</bpt>SafeNCryptSecretHandle<ept id="p3">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx)</ept> classes, for cryptography constructs.</source>
+          <target state="translated">Классы <bpt id="p1">[</bpt>SafeNCryptKeyHandle<ept id="p1">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx)</ept>, <bpt id="p2">[</bpt>SafeNCryptProviderHandle<ept id="p2">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx)</ept> и <bpt id="p3">[</bpt>SafeNCryptSecretHandle<ept id="p3">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx)</ept> для конструкций шифрования.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeRegistryHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle)</ept> class, for registry keys.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>SafeRegistryHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle)</ept> для разделов реестра.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeWaitHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeWaitHandle)</ept> class, for wait handles.</source>
+          <target state="translated">Класс <bpt id="p1">[</bpt>SafeWaitHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeWaitHandle)</ept> для дескрипторов ожидания.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Using a safe handle to implement the dispose pattern for a base class</source>
+          <target state="translated">Использование безопасного дескриптора для реализации шаблона удаления для базового класса</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the dispose pattern for a base class, <ph id="ph1">`DisposableStreamResource`</ph>, that uses a safe handle to encapsulate unmanaged resources.</source>
+          <target state="translated">В следующем примере показан шаблон удаления для базового класса <ph id="ph1">`DisposableStreamResource`</ph>, который использует безопасный дескриптор для инкапсуляции неуправляемых ресурсов.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It defines a <ph id="ph1">`DisposableResource`</ph> class that uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> to wrap a <bpt id="p2">[</bpt>Stream<ept id="p2">](xref:System.IO.Stream)</ept> object that represents an open file.</source>
+          <target state="translated">Он определяет класс <ph id="ph1">`DisposableResource`</ph>, который использует <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> для создания экземпляра объекта <bpt id="p2">[</bpt>Stream<ept id="p2">](xref:System.IO.Stream)</ept>, который представляет открытый файл.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`DisposableResource`</ph> method also includes a single property, <ph id="ph2">`Size`</ph>, that returns the total number of bytes in the file stream.</source>
+          <target state="translated">Метод <ph id="ph1">`DisposableResource`</ph> также включает свойство <ph id="ph2">`Size`</ph>, которое возвращает общее количество байтов в файловом потоке.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Using a safe handle to implement the dispose pattern for a derived class</source>
+          <target state="translated">Использование безопасного дескриптора для реализации шаблона удаления для производного класса</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the dispose pattern for a derived class, <ph id="ph1">`DisposableStreamResource2`</ph>, that inherits from the <ph id="ph2">`DisposableStreamResource`</ph> class presented in the previous example.</source>
+          <target state="translated">В следующем примере показан шаблон удаления для производного класса <ph id="ph1">`DisposableStreamResource2`</ph>, унаследованного от класса <ph id="ph2">`DisposableStreamResource`</ph>, представленного в предыдущем примере.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The class adds an additional method, <ph id="ph1">`WriteFileInfo`</ph>, and uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to wrap the handle of the writable file.</source>
+          <target state="translated">Класс добавляет дополнительный метод <ph id="ph1">`WriteFileInfo`</ph> и использует объект <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> для создания экземпляра дескриптора записываемого файла.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
