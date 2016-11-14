@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bde267042883d2f25848747047845a16b181e549</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\framework\docker\aspnetmvc.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d07b3b2ff157cf9feabe08643edcb147384bc21a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b6d2cfb63697630ce8752af5c0909647acac386f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">将 ASP.NET MVC 应用程序迁移到 Windows 容器</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container</source>
+          <target state="translated">了解如何利用现有 ASP.NET MVC 应用程序并在 Windows Docker 容器中运行它</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Windows Containers, Docker, ASP.NET MVC</source>
+          <target state="translated">Windows 容器, Docker, ASP.NET MVC</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">将 ASP.NET MVC 应用程序迁移到 Windows 容器</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Running an existing .NET Framework-based application in a Windows container requires creating the Docker image that contains your application, and starting one or more containers to run that image.</source>
+          <target state="translated">要在 Windows 容器中运行基于 .NET Framework 的现有应用程序，需要创建包含应用程序的 Docker 映像，然后启动一个或多个容器运行该映像。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic explains the tasks you must perform to take an existing <bpt id="p1">[</bpt>ASP.NET MVC application<ept id="p1">](http://www.asp.net/mvc)</ept> and deploy it in a Windows container.</source>
+          <target state="translated">本主题介绍利用现有 <bpt id="p1">[</bpt>ASP.NET MVC 应用程序<ept id="p1">](http://www.asp.net/mvc)</ept>并在 Windows 容器中部署它需要执行的任务。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You'll start with an existing ASP.NET MVC application.</source>
+          <target state="translated">先以现有 ASP.NET MVC 应用程序开始。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Then build the published assets using Visual Studio.</source>
+          <target state="translated">然后，使用 Visual Studio 生成已发布资产。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You'll use Docker to create the image that contains your application, and runs that application when it is started.</source>
+          <target state="translated">使用 Docker 创建包含应用程序的映像，并在映像启动时运行该应用程序。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When you've finished, you can connect a browser to the site running in a Windows container and verify the application is running.</source>
+          <target state="translated">完成后便可以将浏览器连接到在 Windows 容器中运行的站点，然后验证应用程序是否正在运行。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article assumes a basic understanding of Docker.</source>
+          <target state="translated">本文可确保基本了解 Docker。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can learn more about the Docker architecture by reading the <bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept> on the Docker site, if these concepts are new.</source>
+          <target state="translated">有关 Docker 体系结构的详细信息，请参阅 Docker 站点上的 <bpt id="p1">[</bpt>Docker 概述<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>（如果这些概念是全新概念）。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The application you'll run in a container is a simple website that answers questions randomly.</source>
+          <target state="translated">要在容器中运行的应用程序是一个随机回答问题的简单网站。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This application is a basic MVC application with no authentication support, or database storage, letting you focus on moving the web tier to a container.</source>
+          <target state="translated">此应用程序是一款不具备身份验证支持或数据库存储的基本 MVC 应用程序，让用户可以专注于将 Web 层移动到容器。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Future topics will show how to move and manage persistent storage in containerized applications.</source>
+          <target state="translated">后续主题将演示如何在容器化应用程序中移动和管理永久性存储。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Moving your application involves these steps:</source>
+          <target state="translated">移动应用程序涉及以下步骤：</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a publish task to build the assets for an image.<ept id="p1">](#publish-script)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>创建发布任务以生成映像资产。<ept id="p1">](#publish-script)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Building a Docker image that will run your application.<ept id="p1">](#build-the-image)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>生成将运行应用程序的 Docker 映像。<ept id="p1">](#build-the-image)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Starting a Docker container that runs your image.<ept id="p1">](#start-a-container)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>启动用于运行映像的 Docker 容器。<ept id="p1">](#start-a-container)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Verifying the application using your browser.<ept id="p1">](#verify-in-the-browser)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>使用浏览器验证应用程序。<ept id="p1">](#verify-in-the-browser)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The finished application is located in the <bpt id="p1">[</bpt>dotnet/core-docs repository on GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept>.</source>
+          <target state="translated">完成的应用程序位于 <bpt id="p1">[</bpt>GitHub 上的 dotnet/core-docs 存储库<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept>。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">先决条件</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>At a minimum, your development machine must be running <bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> or <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept>.</source>
+          <target state="translated">开发计算机最低需运行 <bpt id="p1">[</bpt>Windows 10 周年更新<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> 或 <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Before starting, you need to install <bpt id="p1">[</bpt>Docker for Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept>, version 1.12 Beta 26, or newer.</source>
+          <target state="translated">开始之前，需要安装 <bpt id="p1">[</bpt>Docker for Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept> 1.12 Beta 26 版或更高版本。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Windows Container support is only available in the Beta channel at this time.</source>
+          <target state="translated">此次，Windows 容器支持仅在 Beta 通道中可用。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you are using Windows Server 2016, you need to follow the instructions for <bpt id="p1">[</bpt>Container Host Deployment - Windows Server<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept> before you can run Docker containers.</source>
+          <target state="translated">如果正使用的是 Windows Server 2016，需先按照<bpt id="p1">[</bpt>容器主机部署 - Windows Server<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept>中的说明操作才能运行 Docker 容器。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>After installing and starting Docker, you'll need to right-click on the tray icon and select <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept> in order to run Docker images based on Windows.</source>
+          <target state="translated">安装并启动 Docker 后，需要右键单击托盘图标并选择“切换到 Windows 容器”才能基于 Windows 运行 Docker 映像。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This command takes a few seconds to execute:</source>
+          <target state="translated">此命令需要几秒钟执行：</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Windows Container</source>
+          <target state="translated">Windows 容器</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Publish script</source>
+          <target state="translated">发布脚本</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The first step is to get all the assets that you'll need to load into a Docker image in one place.</source>
+          <target state="translated">第一步是获取需要加载到同一位置中 Docker 映像中的所有资产。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Fortunately, you can use the Visual Studio <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> command to create a publish profile for your application.</source>
+          <target state="translated">幸运地是，可以使用 Visual Studio 的“发布”命令来创建应用程序的发布配置文件。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This profile will put all the assets in one directory tree that you will copy to your target image later in this tutorial.</source>
+          <target state="translated">此配置文件会将所有资产置于同一目录树中，本教程后面会将该目录树复制到目标映像。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Publish Steps<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>发布步骤<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Right click on the web project in Visual Studio, and select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.</source>
+          <target state="translated">在 Visual Studio 中右键单击 Web 项目，然后选择“发布”。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Custom profile button, and then select <ept id="p1">**</ept>File System** as the method.</source>
+          <target state="translated">单击“自定义配置文件”按钮，然后选择“文件系统”作为方法。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Choose the directory.</source>
+          <target state="translated">选择该目录。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>By convention, the downloaded sample uses <ph id="ph1">`bin/PublishOutput`</ph>.</source>
+          <target state="translated">按照约定，已下载示例将使用 <ph id="ph1">`bin/PublishOutput`</ph>。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Publish Connection</source>
+          <target state="translated">发布连接</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Next, open the <bpt id="p1">**</bpt>File Publish Options<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> tab.</source>
+          <target state="translated">接下来，打开“设置”选项卡上的“文件发布选项”部分。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Precompile during publishing<ept id="p1">**</ept>.</source>
+          <target state="translated">选择“在发布期间预编译”。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This optimization means that you be compiling views in the Docker container, you are copying the precompiled views.</source>
+          <target state="translated">这种优化意味着在 Docker 容器中编译视图的同时也将复制该预编译视图。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Publish Settings</source>
+          <target state="translated">发布设置</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>, and Visual Studio will copy all the needed assets to the destination folder.</source>
+          <target state="translated">单击“发布”，Visual Studio 会将所有所需资产复制到目标文件夹。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Build the image</source>
+          <target state="translated">生成映像</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You define your Docker image in a Dockerfile that contains instructions for the base image, any additional components, the application you want to run, and other configuration image.</source>
+          <target state="translated">在 Dockerfile 中定义 Docker 映像，Dockerfile 包含有关基本映像、任何其他组件、要运行的应用程序和其他配置映像的说明。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The Dockerfile is the input to the <ph id="ph1">`docker build`</ph> command, which creates the image.</source>
+          <target state="translated">Dockerfile 是用于创建该映像的 <ph id="ph1">`docker build`</ph> 命令的输入。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>You will build an image based on the <ph id="ph1">`microsft/aspnet`</ph> image located on <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept>.</source>
+          <target state="translated">根据位于 <bpt id="p1">[</bpt>Docker 中心<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept> 的 <ph id="ph1">`microsft/aspnet`</ph> 映像生成映像。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The base image, <ph id="ph1">`microsoft/aspnet`</ph>, is a Windows Server image.</source>
+          <target state="translated">基本映像 <ph id="ph1">`microsoft/aspnet`</ph> 为 Windows Server 映像。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In addition to the Windows Server Core, it has IIS and ASP.NET 4.6.2 installed and enabled.</source>
+          <target state="translated">除 Windows Server Core 外，还安装并启用了 IIS 和 ASP.NET 4.6.2。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>When you run this image in a container, it will automatically start IIS and any installed websites will be active.</source>
+          <target state="translated">在容器中运行此映像时，它将自动启动 IIS，任何已安装的网站也将处于活动状态。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The Dockerfile that creates your image looks like this:</source>
+          <target state="translated">创建映像的 Dockerfile 如下所示：</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>There is no <ph id="ph1">`ENTRYPOINT`</ph> command in this Dockerfile.</source>
+          <target state="translated">此 Dockerfile 中不含 <ph id="ph1">`ENTRYPOINT`</ph> 命令。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You don't need one.</source>
+          <target state="translated">不需要该命令。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The base image ensures that IIS starts when the container starts.</source>
+          <target state="translated">基本映像可确保容器启动时 IIS 也随之启动。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Next, you will need run a Docker build command to create the image that will run your ASP.NET application.</source>
+          <target state="translated">接下来，需要运行 Docker 生成命令，创建用于运行 ASP.NET 应用程序的映像。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>To do this, open a PowerShell window, and type the following command in the solution directory:</source>
+          <target state="translated">为此，请打开 PowerShell 窗口，然后在解决方案目录中键入以下命令：</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This command will build the new image by following the instructions in your Dockerfile.</source>
+          <target state="translated">此命令将按照 Dockerfile 中的说明生成新映像。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This may include pulling the base image from <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](http://hub.docker.com)</ept>, Then it will add your application to that image.</source>
+          <target state="translated">这可能包括从 <bpt id="p1">[</bpt>Docker 中心<ept id="p1">](http://hub.docker.com)</ept>拉取基本映像，然后命令会将应用程序添加到该映像。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Once that command completes, you can run the <ph id="ph1">`docker images`</ph> command to see information on the new image:</source>
+          <target state="translated">命令完成后，便可以运行 <ph id="ph1">`docker images`</ph> 命令，查看有关新映像的信息：</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The IMAGE ID will be different on your machine.</source>
+          <target state="translated">计算机上的 IMAGE ID 会所不同。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Now, let's run the application.</source>
+          <target state="translated">现在，运行应用程序。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Start a container</source>
+          <target state="translated">启动容器</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You start a container by executing the following <ph id="ph1">`docker run`</ph> command:</source>
+          <target state="translated">通过执行以下 <ph id="ph1">`docker run`</ph> 命令来启动容器：</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-d`</ph> argument tells Docker to start the image in detached mode.</source>
+          <target state="translated"><ph id="ph1">`-d`</ph> 参数告知 Docker 在分离模式下启动映像。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>That means the Docker image runs disconnected from the current shell.</source>
+          <target state="translated">这意味着 Docker 映像会以断开连接当前 shell 的状态运行。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-p 8000:8000`</ph> argument tells Docker how to map incoming ports.</source>
+          <target state="translated"><ph id="ph1">`-p 8000:8000`</ph> 参数告知 Docker 如何映射传入端口。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In this example, we're using port 8000 on both the host and the container.</source>
+          <target state="translated">在此示例中，在主机和容器上使用的都是端口 8000。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`--name randomanswers`</ph> gives a name to the running container.</source>
+          <target state="translated"><ph id="ph1">`--name randomanswers`</ph> 为运行中容器命名。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can use this name instead of the container ID in most commands.</source>
+          <target state="translated">可在大多数命令中使用此名称，而不是容器 ID。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`mvcrandomanswers`</ph> is the name of the image to start.</source>
+          <target state="translated"><ph id="ph1">`mvcrandomanswers`</ph> 是要启动的映像名称。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Verify in the browser</source>
+          <target state="translated">在浏览器中验证</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>With the current release, you can't use <ph id="ph1">`http://localhost`</ph> to browse to your site.</source>
+          <target state="translated">借助当前版本，无法使用 <ph id="ph1">`http://localhost`</ph> 浏览到站点。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This is because of a known behavior in WinNAT, and it will be resolved in the future.</source>
+          <target state="translated">这是由于 WinNAT 中某已知行为的原因，后续版本将解决此问题。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Until that is addressed, you need to use the IP address of the container.</source>
+          <target state="translated">问题得到解决前，需要使用容器的 IP 地址。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Once the container starts, you'll need to find its IP address so that you can connect to your running container from a browser:</source>
+          <target state="translated">启动容器后，需要查找其 IP 地址，以便可从浏览器连接到正在运行的容器：</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can connect to the running container using the IPv4 address and the configured port (8000), <ph id="ph1">`http://172.31.194.61:8000`</ph> in the example shown.</source>
+          <target state="translated">可以使用 IPv4 地址和配置的端口 (8000)（所示的示例中为 <ph id="ph1">`http://172.31.194.61:8000`</ph>）连接到正在运行的容器。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Type that URL into your browser, and you should see the running site.</source>
+          <target state="translated">在浏览器中键入该 URL，应该可看到正在运行的站点。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Some VPN or proxy software may prevent you from navigating to your site.</source>
+          <target state="translated">某 VPN 或代理软件可能会阻止你导航到站点。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>You can temporarily disable it to make sure your container is working.</source>
+          <target state="translated">可以暂时禁用它，确保容器正常工作。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The sample directory on GitHub contains a <bpt id="p1">[</bpt>PowerShell script<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept> that executes these commands for you.</source>
+          <target state="translated">GitHub 上的示例目录包含为你执行这些命令的 <bpt id="p1">[</bpt>PowerShell 脚本<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept>。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Open a PowerShell window, change directory to your solution directory, and type:</source>
+          <target state="translated">打开 PowerShell 窗口，将目录更改为解决方案目录，然后键入：</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>It builds the image, displays the list of images on your machine, starts a container, and displays the IP address for that container.</source>
+          <target state="translated">这将生成映像、在计算机上显示映像列表、启动容器，并显示该容器的 IP 地址。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>When you are done, and you want to stop your container, issue a <ph id="ph1">`docker
+stop`</ph> command:</source>
+          <target state="translated">完成后，若要停止容器，可发出 <ph id="ph1">`docker
+stop`</ph> 命令：</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>To remove the container, issue a <ph id="ph1">`docker rm`</ph> command:</source>
+          <target state="translated">若要删除该容器，可发出 <ph id="ph1">`docker rm`</ph> 命令：</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">摘要</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In this topic, you've seen the steps to move and run an existing ASP.NET MVC application in a Windows Server container.</source>
+          <target state="translated">在本主题中，已了解在 Windows Server 容器中移动和运行现有 ASP.NET MVC 应用程序的步骤。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Running an existing application does not require any changes to your application.</source>
+          <target state="translated">运行现有应用程序不需要对其进行任何更改。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You need to run the tasks to publish your application, build a Docker image, and start that image in a new container.</source>
+          <target state="translated">需要运行任务才能发布应用程序、生成 Docker 映像以及在新容器中启动映像。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Leveraging Windows Server Containers are the easiest path to migrate your existing applications to this environment.</source>
+          <target state="translated">利用 Windows Server 容器是将现有应用程序迁移到此环境的最简单途径。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>windows-container<ept id="p1">]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>Switch to Windows Container<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>windows-container<ept id="p1">]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>切换到 Windows 容器<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>publish-connection<ept id="p1">]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>Publish to File System<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>publish-connection<ept id="p1">]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>发布到文件系统<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>publish-settings<ept id="p1">]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>Publish Settings<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>publish-settings<ept id="p1">]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>发布设置<ept id="p2">"</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

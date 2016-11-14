@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf16330afe6b8415c3480322069e88132bef1082</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\how-to-create-an-object-pool.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">390dddd88f77096d8569641f6328113556cbd515</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9bbd7a079f16413da7ac03a66af030d8626e8402</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Create an Object Pool by Using a ConcurrentBag</source>
+          <target state="translated">如何：使用 ConcurrentBag 创建目标池</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Create an Object Pool by Using a ConcurrentBag</source>
+          <target state="translated">如何：使用 ConcurrentBag 创建目标池</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: Create an Object Pool by Using a ConcurrentBag</source>
+          <target state="translated">如何：使用 ConcurrentBag 创建目标池</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This example shows how to use a concurrent bag to implement an object pool.</source>
+          <target state="translated">本示例演示如何使用并发包来实现对象池。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Object pools can improve application performance in situations where you require multiple instances of a class and the class is expensive to create or destroy.</source>
+          <target state="translated">在需要某个类的多个实例并且创建或销毁该类的成本很高的情况下，对象池可以改进应用程序性能。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When a client program requests a new object, the object pool first attempts to provide one that has already been created and returned to the pool.</source>
+          <target state="translated">客户端程序请求新对象时，对象池先尝试提供一个已创建并返回到该池的对象。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If none is available, only then is a new object created.</source>
+          <target state="translated">仅在没有可用对象时，才会创建一个新对象。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> is used to store the objects because it supports fast insertion and removal, especially when the same thread is both adding and removing items.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> 用于存储对象，因为它支持快速插入和移除，特别是在同一线程既添加又移除项时。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This example could be further augmented to be built around a <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>, which the bag data structure implements, as do <bpt id="p2">[</bpt>ConcurrentQueue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> and <bpt id="p3">[</bpt>ConcurrentStack<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept>.</source>
+          <target state="translated">可将此示例进一步扩充，以围绕包数据结构实现的 <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept> 来生成，与 <bpt id="p2">[</bpt>ConcurrentQueue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> 和 <bpt id="p3">[</bpt>ConcurrentStack<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> 相似。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>线程安全集合<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

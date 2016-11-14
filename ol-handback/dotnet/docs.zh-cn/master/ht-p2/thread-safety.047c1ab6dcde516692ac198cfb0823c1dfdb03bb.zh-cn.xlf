@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6b410da1982519fd9ff137bd38f1d074ce08d39b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\thread-safety.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f925a396a6f476908af070bb8302871d93b2c400</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">807e7b6e081ec71446c28db296c3fafcf55ae73b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread safety in regular expressions</source>
+          <target state="translated">正则表达式中的线程安全</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread safety in regular expressions</source>
+          <target state="translated">正则表达式中的线程安全</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Thread safety in regular expressions</source>
+          <target state="translated">正则表达式中的线程安全</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class itself is thread safe and immutable (read-only).</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> 类本身是线程安全且不可变的（只读）。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>That is, <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> objects can be created on any thread and shared between threads; matching methods can be called from any thread and never alter any global state.</source>
+          <target state="translated">也就是说，可以在任何线程上创建 <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> 对象并在线程间共享；可以从任何线程调用匹配方法并且始终不会更改全局状态。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, result objects (<bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> and <bpt id="p2">[</bpt>MatchCollection)<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept> returned by <bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept> should be used on a single thread.</source>
+          <target state="translated">但是，应在单个线程上使用由 <bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept> 返回的结果对象（<bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> 和 <bpt id="p2">[</bpt>MatchCollection<ept id="p2">](xref:System.Text.RegularExpressions.MatchCollection)</ept>）。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Although many of these objects are logically immutable, their implementations could delay computation of some results to improve performance, and as a result, callers must serialize access to them.</source>
+          <target state="translated">尽管其中许多对象在逻辑上是不可变的，但其实现可以延迟某些结果的计算以提高性能，因此，调用方必须序列化对这些对象的访问。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If there is a need to share <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> result objects on multiple threads, these objects can be converted to thread-safe instances by calling their synchronized methods.</source>
+          <target state="translated">如果需要在多个线程上共享 <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> 结果对象，则通过调用对象的同步方法，可以将这些对象转换成线程安全的实例。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>With the exception of enumerators, all regular expression classes are thread safe or can be converted into thread-safe objects by a synchronized method.</source>
+          <target state="translated">除枚举器外，所有正则表达式类都是线程安全的或者可以通过同步方法转换成线程安全对象。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Enumerators are the only exception.</source>
+          <target state="translated">枚举器是唯一例外。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>An application must serialize calls to collection enumerators.</source>
+          <target state="translated">应用程序必须序列化对集合枚举器的调用。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The rule is that if a collection can be enumerated on more than one thread simultaneously, you should synchronize enumerator methods on the root object of the collection traversed by the enumerator.</source>
+          <target state="translated">规则为，如果可以在多个线程上同时枚举一个集合，则应该同步枚举器所遍历集合的根对象上的枚举器方法。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 正则表达式<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

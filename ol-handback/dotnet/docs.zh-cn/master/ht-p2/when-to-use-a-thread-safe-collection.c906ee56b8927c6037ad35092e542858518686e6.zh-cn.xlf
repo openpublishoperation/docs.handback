@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">098df41a5c9d3bf053e5ec0a9b66a8b09370dce9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">034c347f9f958dcea9ed516407642c3f80cd0b2f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">何时使用线程安全集合</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">何时使用线程安全集合</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">何时使用线程安全集合</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ConcurrentQueue`</ph>, <ph id="ph2">`ConcurrentStack`</ph>, <ph id="ph3">`ConcurrentDictionary`</ph>, <ph id="ph4">`ConcurrentBag`</ph>, and <ph id="ph5">`BlockingCollection`</ph> collection types are specially designed to support multi-threaded add and remove operations.</source>
+          <target state="translated"><ph id="ph1">`ConcurrentQueue`</ph>、<ph id="ph2">`ConcurrentStack`</ph>、<ph id="ph3">`ConcurrentDictionary`</ph>、<ph id="ph4">`ConcurrentBag`</ph> 和 <ph id="ph5">`BlockingCollection`</ph> 集合类型专门为支持多线程添加和删除操作而设计。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms.</source>
+          <target state="translated">为了实现线程安全性，这些新类型使用多种高效的锁定和免锁定同步机制。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synchronization adds overhead to an operation.</source>
+          <target state="translated">同步会增加操作的开销。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.</source>
+          <target state="translated">开销数取决于所用的同步类型、执行的操作类型和其他因素，例如尝试并行访问该集合的线程数。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock.</source>
+          <target state="translated">在某些方案中，同步开销可忽略不计，使多线程类型的执行速度和缩放水平远远超过其受外部锁保护的非线程安全同等类型。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.</source>
+          <target state="translated">在其他方案中，开销可能会导致线程安全类型的执行速度和缩放水平与该类型外部锁定的非线程安全版本相同，甚至更差。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following sections provide general guidance about when to use a thread-safe collection versus its non-thread-safe equivalent that has a user-provided lock around its read and write operations.</source>
+          <target state="translated">以下部分提供有关何时使用线程安全集合与其非线程安全同等集合（其读写操作受用户提供的锁定保护）的通用指南。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because performance may vary depending on many factors, the guidance is not specific and is not necessarily valid in all circumstances.</source>
+          <target state="translated">由于性能可能因多种因素而异，所以本指南并不针对某特定情况且不一定对所有情况都有效。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If performance is very important, then the best way to determine which collection type to use is to measure performance based on representative computer configurations and loads.</source>
+          <target state="translated">如果性能非常重要，那么确定要使用的集合类型的最佳方式是基于典型计算机配置和负载衡量性能。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This document uses the following terms:</source>
+          <target state="translated">本文档使用以下术语：</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Pure producer-consumer scenario:<ept id="p1">*</ept> Any given thread is either adding or removing elements, but not both.</source>
+          <target state="translated">纯制造者-使用者方案：任何给定线程添加或删除元素，但二者不同时进行。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Mixed producer-consumer scenario:<ept id="p1">*</ept> Any given thread is both adding and removing elements.</source>
+          <target state="translated">混合制造者-使用者方案：任何给定线程同时添加和删除元素。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Speedup:<ept id="p1">*</ept> Faster algorithmic performance relative to another type in the same scenario.</source>
+          <target state="translated">加速：相对于同一方案中其他类型更快的算法性能。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Scalability:<ept id="p1">*</ept> The increase in performance that is proportional to the number of cores on the computer.</source>
+          <target state="translated">可伸缩性：与计算机上的内核数成正比的性能提升。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>An algorithm that scales performs faster on eight cores than it does on two cores.</source>
+          <target state="translated">一种可伸缩的算法，相比两个内核，八个内核上的执行速度更快。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> vs. Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></source>
+          <target state="translated">ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> 与 Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, where the processing time for each element is very small (a few instructions), then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> can offer modest performance benefits over a <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept> that has an external lock.</source>
+          <target state="translated">在纯制造者-使用者方案中，每个元素的处理时间都非常短（几条指令），而 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> 相比带有外部锁的 <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept> 可提供适度的性能优势。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In this scenario, <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> performs best when one dedicated thread is queuing and one dedicated thread is de-queuing.</source>
+          <target state="translated">在此方案中，当某一专用线程排队，而另一专用线程取消排队时，<ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> 的性能最佳。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you do not enforce this rule, then <ph id="ph1">`Queue&lt;T&gt;`</ph> might even perform slightly faster than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> on computers that have multiple cores.</source>
+          <target state="translated">如果不强制执行此规则，那么 <ph id="ph1">`Queue&lt;T&gt;`</ph> 在多内核计算机上的执行速度甚至可能稍快于 <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS (floating point operations) or more, then the two-thread rule does not apply to <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>, which then has very good scalability.</source>
+          <target state="translated">处理时间大约为 500 FLOPS（浮点运算）或更长时，该双线程规则不适用于 <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>，这将具有很好的可伸缩性。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Queue&lt;T&gt;`</ph> does not scale well in this scenario.</source>
+          <target state="translated"><ph id="ph1">`Queue&lt;T&gt;`</ph> 在此情况下无法正常伸缩。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, when the processing time is very small, a <ph id="ph1">`Queue&lt;T&gt;`</ph> that has an external lock scales better than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> does.</source>
+          <target state="translated">在混合制造者-使用者方案中，处理时间非常短时，带外部锁的 <ph id="ph1">`Queue&lt;T&gt;`</ph> 的伸缩性优于 <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph>。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>However, when processing time is around 500 FLOPS or more, then the <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> scales better.</source>
+          <target state="translated">但是，处理时间大约为 500 FLOPS 或更长时，<ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> 的伸缩性更佳。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>ConcurrentStack vs. Stack</source>
+          <target state="translated">ConcurrentStack 与堆栈</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, when processing time is very small, then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> and <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept> that has an external lock will probably perform about the same with one dedicated pushing thread and one dedicated popping thread.</source>
+          <target state="translated">在纯制造者-使用者方案中，当处理时间非常短时，<bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> 和带外部锁的 <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept> 在使用一个专用推送线程和一个专用弹出线程时的执行性能可能大致相同。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, as the number of threads increases, both types slow down because of increased contention, and <ph id="ph1">`Stack&lt;T&gt;`</ph> might perform better than <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>.</source>
+          <target state="translated">但是，随着线程数的增加，这两种类型的执行性能会因争用增加而降低，并且 <ph id="ph1">`Stack&lt;T&gt;`</ph> 的执行性能可能优于 <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS or more, then both types scale at about the same rate.</source>
+          <target state="translated">处理时间大约为 500 FLOPS 或更长时，这两种类型的伸缩速率大致相同。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph> is faster for both small and large workloads.</source>
+          <target state="translated">在混合制造者-使用者方案中，对于小型和大型工作负荷，<ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph> 的速度更快。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The use of the <ph id="ph1">`PushRange`</ph> and <ph id="ph2">`TryPopRange`</ph> may greatly speed up access times.</source>
+          <target state="translated">使用 <ph id="ph1">`PushRange`</ph> 和 <ph id="ph2">`TryPopRange`</ph> 可能会大大加快访问速度。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>ConcurrentDictionary vs. Dictionary</source>
+          <target state="translated">ConcurrentDictionary 与词典</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In general, use a <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> in any scenario where you are adding and updating keys or values concurrently from multiple threads.</source>
+          <target state="translated">通常，在从多个线程中并行添加和更新键或值的任何方案中，会使用 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates and relatively few reads, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally offers modest benefits.</source>
+          <target state="translated">在涉及频繁更新和相对较少读取操作的方案中，<ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 通常具备一些优势。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve many reads and many updates, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally is significantly faster on computers that have any number of cores.</source>
+          <target state="translated">在涉及许多读取和更新操作的方案中，<ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 通常在具备任意数量内核的计算机上运行速度更快。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates, you can increase the degree of concurrency in the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> and then measure to see whether performance increases on computers that have more cores.</source>
+          <target state="translated">在涉及频繁更新的方案中，可以提高 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 中的并发度，然后进行衡量，查看含有多个内核的计算机的性能是否有所提升。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you change the concurrency level, avoid global operations as much as possible.</source>
+          <target state="translated">如果更改并发级别，请尽可能避免全局操作。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you are only reading key or values, the <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> is faster because no synchronization is required if the dictionary is not being modified by any threads.</source>
+          <target state="translated">如果仅读取键或值，则 <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> 的速度更快，因为如果字典未经任何线程修改，则不需要进行同步。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>ConcurrentBag</source>
+          <target state="translated">ConcurrentBag</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> will probably perform more slowly than the other concurrent collection types.</source>
+          <target state="translated">在纯制造者-使用者方案中，<bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> 的执行速度可能慢于其他并发集合类型。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph> is generally much faster and more scalable than any other concurrent collection type for both large and small workloads.</source>
+          <target state="translated">在混合制造者-使用者方案中，对于大型和小型工作负荷，相比其他任何并发集合类型，往往 <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph> 的执行速度更快且伸缩性更佳。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>BlockingCollection</source>
+          <target state="translated">BlockingCollection</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When bounding and blocking semantics are required, <bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> will probably perform faster than any custom implementation.</source>
+          <target state="translated">需要限制和阻止语义时，<bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> 的执行速度可能优于任何自定义实现。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It also supports rich cancellation, enumeration, and exception handling.</source>
+          <target state="translated">它还支持诸多取消、枚举和异常处理操作。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>线程安全集合<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
