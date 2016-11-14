@@ -2326,8 +2326,8 @@
 * Archive Datetime: 2016-11-11 03:13:37
 * Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/9e00564130ca8350041659146e8ff503cc12d653/ol-handback/dotnet/docs.ja-jp/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf)
 * Handback Datetime: 2016-11-14 06:01:36
-* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/0992d94d5cbaebf547312475ce59d3cdd2118e35/ol-handback/dotnet/docs.ja-jp/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-11 05:39:19
+* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/9e00564130ca8350041659146e8ff503cc12d653/ol-handback/dotnet/docs.ja-jp/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-14 06:02:06
 * [Back to Top](#report-top)
 
 ##### <a name='af6c83755068cc311b59c1a337898c177cc6d53738'></a> Source: [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md)
@@ -8278,8 +8278,8 @@
 * Current Target File: [index.md](https://github.com/dotnet/docs.ja-jp/blob/24671cc2656a35500aa17c47b0b3a1ec4a44d1d1/index.md)
 * Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/9e00564130ca8350041659146e8ff503cc12d653/ol-handback/dotnet/docs.ja-jp/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
 * Current Handback Datetime: 2016-11-14 06:01:36
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/215c903d95c0da93dbd6fae86300373c1e5a30f2/ol-handback/dotnet/docs.ja-jp/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-09 00:44:28
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/9e00564130ca8350041659146e8ff503cc12d653/ol-handback/dotnet/docs.ja-jp/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-14 06:02:06
 * [Back to Top](#report-top)
 
 ##### <a name='0c553782ab1214f1b64906387c1296275ffc2eaf518'></a> Source: [license.txt](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/license.txt)
