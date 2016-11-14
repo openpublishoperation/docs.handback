@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
 
 ## Item Details
-##### <a name='be658d2c660aff736eceffe23757c13154e7858226'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs.fr-fr/blob/c16aa73451adbdca8f3f64748c4af221cd3d7f4c/docs/core/docker/building-net-docker-images.md)
-* Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/6766173e3c75c347523efdc5e66dbef019de3f72/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
-* Handoff Datetime: 2016-11-09 07:52:30
-* Handoff Reason: Include
-* Archive File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8df4e0343f02f68138650a27ee49d0357a06dd00/ol-archive/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
-* Archive Datetime: 2016-11-11 03:13:06
-* Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/08fc2e67537fa7ff881d894962e6a5f74e5078a4/ol-handback/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
-* Handback Datetime: 2016-11-14 09:19:46
-* Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
