@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 11
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 186
+[ Archive Success Files ](#archive-success-list)| 185
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 64
+[ In Sync Handback Files ](#insync-handback-success-list)| 65
 [ Ignored Files ](#ignored-list)| 1547
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -36,7 +36,6 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [api\index.md](https://github.com/dotnet/docs/blob/8ded62f288b0d4f62168d5f41b4886c6adc67da1/api/index.md) | ArchivedSuccess | [Details](#032f2bf45c35e0a9a1d28d5fb32f865fe8f431297)
- [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | ArchivedSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
  [docs\core\docker\media\building-net-docker-images\debugging_debugicon.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/debugging_debugicon.png) | ArchivedSuccess | [Details](#ce68010ce277e8ef98e65e3655ccd70a3461236f28)
  [docs\core\docker\media\building-net-docker-images\docker-tools-vscode-f5.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/docker-tools-vscode-f5.png) | ArchivedSuccess | [Details](#189cb2d082ff1bd55e0b05320498c6b4201bc36029)
  [docs\core\docker\media\visual-studio-tools-for-docker\project-add-docker-support.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/project-add-docker-support.png) | ArchivedSuccess | [Details](#9db7d54dcdbd9eb8bd9c6f04a192ebfded70470930)
@@ -234,6 +233,7 @@
  [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/300a0304e316cfa265634a3faf74c81c7a8a5e08/docs/core/deploying/creating-nuget-packages.md) | InSyncHandedBackSuccess | [Details](#82b82dc2387834b9a4d0351c2c12da6e7595eb6c23)
  [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md) | InSyncHandedBackSuccess | [Details](#96eb2cc7ca948b3e372fa1363b1741624d791d2724)
  [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/core/deploying/reducing-dependencies.md) | InSyncHandedBackSuccess | [Details](#caae9f0a32c4378488329fd6d88c1dc7bf96ae9a25)
+ [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
  [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md) | InSyncHandedBackSuccess | [Details](#1c4179fe9d219bf6580e4792959da64364a6607c27)
  [docs\core\docker\visual-studio-tools-for-docker.md](https://github.com/dotnet/docs/blob/03193513706967a46f74bccdba08a56946dd67df/docs/core/docker/visual-studio-tools-for-docker.md) | InSyncHandedBackSuccess | [Details](#f2792154a2f231fffc8e6f79c32b96e05edc71fa33)
  [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/bfba7f8c3af791fcf0f1a6438214d3318a6d329c/docs/core/getting-started.md) | InSyncHandedBackSuccess | [Details](#1537efe3e1ad2b0fbfe4765696ea85b5d040b43d34)
@@ -2169,18 +2169,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='be658d2c660aff736eceffe23757c13154e7858226'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs.fr-fr/blob/c16aa73451adbdca8f3f64748c4af221cd3d7f4c/docs/core/docker/building-net-docker-images.md)
 * Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/6766173e3c75c347523efdc5e66dbef019de3f72/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
 * Handoff Datetime: 2016-11-09 07:52:30
 * Handoff Reason: Include
 * Archive File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8df4e0343f02f68138650a27ee49d0357a06dd00/ol-archive/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
 * Archive Datetime: 2016-11-11 03:13:06
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/docker/building-net-docker-images.md)
-* Current Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-11 13:11:11
+* Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/08fc2e67537fa7ff881d894962e6a5f74e5078a4/ol-handback/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
+* Handback Datetime: 2016-11-14 09:19:46
 * Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.fr-fr.xlf)
 * Bilingual Datetime: 2016-11-11 13:11:55
 * [Back to Top](#report-top)
