@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b217b59874ceafbb0e5e410878cc434974c5a863</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\regex-behavior.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4487a8a5971b0098f55c989ab3c345500350eaad</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">60535d382114cc1115acfe7627c2b5711cc18ad0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">規則運算式行為的詳細資訊</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">規則運算式行為的詳細資訊</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">規則運算式行為的詳細資訊</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The .NET regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl.</source>
+          <target state="translated">.NET 規則運算式引擎是回溯規則運算式比對器，它結合了傳統的非決定性有限自動化 (NFA) 引擎，例如 Perl、Python、Emacs 和 Tcl 所使用的引擎。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex.</source>
+          <target state="translated">這使得它與較快速、但限制較多的純規則運算式決定性有限自動化 (DFA) 引擎有所區別，例如 awk、egrep 或 lex 中的引擎。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This also distinguishes it from standardized, but slower, POSIX NFAs.</source>
+          <target state="translated">這也和標準的但較緩慢的 POSIX NFA 有差異。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following section describes the three types of regular expression engines, and explains why regular expressions in .NET are implemented by using a traditional NFA engine.</source>
+          <target state="translated">下節描述三種規則運算式引擎，並且說明在 .NET 中為何使用傳統 NFA 引擎來實作規則運算式。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Benefits of the NFA Engine</source>
+          <target state="translated">NFA 引擎的優點</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When DFA engines perform pattern matching, their processing order is driven by the input string.</source>
+          <target state="translated">當 DFA 引擎執行模式比對時，其處理順序是由輸入字串所驅動。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The engine begins at the beginning of the input string and proceeds sequentially to determine whether the next character matches the regular expression pattern.</source>
+          <target state="translated">引擎會從輸入字串的開頭開始執行，並循序地繼續判斷下一個字元是否符合規則運算式模式。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>They can guarantee to match the longest string possible.</source>
+          <target state="translated">它們可以保證比對可能最長的字串。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Because they never test the same character twice, DFA engines do not support backtracking.</source>
+          <target state="translated">因為 DFA 引擎絕不會測試相同的字元兩次，所以不支援回溯。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>However, because a DFA engine contains only finite state, it cannot match a pattern with backreferences, and because it does not construct an explicit expansion, it cannot capture subexpressions.</source>
+          <target state="translated">但因為 DFA 引擎只包含有限狀態，它不能以反向參考比對模式，並且因為它不建構明確的展開，所以不能擷取子運算式。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Unlike DFA engines, when traditional NFA engines perform pattern matching, their processing order is driven by the regular expression pattern.</source>
+          <target state="translated">和 DFA 引擎不同，傳統 NFA 引擎在執行模式比對時，其處理順序是由規則運算式模式所驅動。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>As it processes a particular language element, the engine uses greedy matching; that is, it matches as much of the input string as it possibly can.</source>
+          <target state="translated">在處理某特定 language 元素時，引擎會使用 Greedy (窮盡) 比對，亦即盡可能比對輸入字串的最多內容。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>But it also saves its state after successfully matching a subexpression.</source>
+          <target state="translated">但是，它也會在成功比對子運算式之後儲存其狀態。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If a match eventually fails, the engine can return to a saved state so it can try additional matches.</source>
+          <target state="translated">如果比對最終失敗，此引擎可以回到儲存的狀態，以便嘗試其他比對。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This process of abandoning a successful subexpression match so that later language elements in the regular expression can also match is known as backtracking.</source>
+          <target state="translated">放棄成功的子運算式比對，以便比對規則運算式中後續的 language 元素，這個程序稱之為回溯。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>NFA engines use backtracking to test all possible expansions of a regular expression in a specific order and accept the first match.</source>
+          <target state="translated">NFA 引擎會使用回溯依特定順序測試規則運算式的所有可能展開，並接受第一個符合項目。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Because a traditional NFA engine constructs a specific expansion of the regular expression for a successful match, it can capture subexpression matches and matching backreferences.</source>
+          <target state="translated">因為傳統 NFA 引擎會為成功的比對建構規則運算式的特定展開，所以可以擷取子運算式符合項目和比對的反向參考。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, because a traditional NFA backtracks, it can visit the same state multiple times if it arrives at the state over different paths.</source>
+          <target state="translated">但因為傳統 NFA 會回溯，所以可多次造訪相同的狀態，如果此狀態是經由不同的路徑到達。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>As a result, it can run exponentially slowly in the worst case.</source>
+          <target state="translated">結果最壞的情況是，它可以指數方式緩慢執行。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Because a traditional NFA engine accepts the first match it finds, it can also leave other (possibly longer) matches undiscovered.</source>
+          <target state="translated">因為傳統 NFA 引擎接受找到的第一個符合項目，所以也可能發現不了其他 (可能是更長的) 符合項目。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>POSIX NFA engines are like traditional NFA engines, except that they continue to backtrack until they can guarantee that they have found the longest match possible.</source>
+          <target state="translated">POSIX NFA 引擎很像傳統 NFA 引擎，只是它們會繼續回溯直到能夠保證已經找到最長的可能符合項目。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As a result, a POSIX NFA engine is slower than a traditional NFA engine, and when you use a POSIX NFA engine, you cannot favor a shorter match over a longer one by changing the order of the backtracking search.</source>
+          <target state="translated">結果，POSIX NFA 引擎比傳統 NFA 引擎更緩慢，而且當您使用 POSIX NFA 引擎時，您不能變更回溯搜尋的順序，讓較短的符合項目優先於較長的符合項目。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Traditional NFA engines are favored by programmers because they offer greater control over string matching than either DFA or POSIX NFA engines.</source>
+          <target state="translated">程式設計人員偏愛傳統 NFA 引擎，因為它們比 DFA 或 POSIX NFA 引擎更能夠掌控字串比對。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Although, in the worst case, they can run slowly, you can steer them to find matches in linear or polynomial time by using patterns that reduce ambiguities and limit backtracking.</source>
+          <target state="translated">雖然最壞的情況是它們可能執行緩慢，但您可以使用減低模稜兩可並限制回溯的模式，操縱它們以線性或多項式時間尋找符合項目。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In other words, although NFA engines trade performance for power and flexibility, in most cases they offer good to acceptable performance if a regular expression is well-written and avoids cases in which backtracking degrades performance exponentially.</source>
+          <target state="translated">換言之，雖然 NFA 引擎是以效能換取功效和彈性，但是在大多數情況下，如果規則運算式撰寫得宜並可避免回溯指數衰減效能的話，它們所提供的效能還不錯。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see <bpt id="p1">[</bpt>Backtracking in Regular Expressions<ept id="p1">](backtracking.md)</ept>.</source>
+          <target state="translated">如需大量回溯所造成效能影響的詳細資訊，以及撰寫規則運算式來解決問題的方式，請參閱<bpt id="p1">[</bpt>規則運算式中的回溯<ept id="p1">](backtracking.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>.NET Framework Engine Capabilities</source>
+          <target state="translated">.NET framework 引擎功能</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To take advantage of the benefits of a traditional NFA engine, the .NET regular expression engine includes a complete set of constructs to enable programmers to steer the backtracking engine.</source>
+          <target state="translated">為利用傳統 NFA 引擎的優點，.NET 規則運算式引擎包含了完整的建構集合，讓程式設計人員可以操縱回溯引擎。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>These constructs can be used to find matches faster or to favor specific expansions over others.</source>
+          <target state="translated">這些建構可用於更快速尋找符合項目，或讓特定展開優先於其他展開。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Other features of the .NET regular expression engine include the following:</source>
+          <target state="translated">.NET 規則運算式引擎包含下列其他功能：</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Lazy quantifiers</source>
+          <target state="translated">Lazy (最少) 數量詞</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Lazy quantifiers: <bpt id="p1">**</bpt>??<ept id="p1">**</ept>, <bpt id="p2">__</bpt>*?<ept id="p2">__</ept>, <bpt id="p3">**</bpt>+?<ept id="p3">**</ept>, <bpt id="p4">**</bpt>{<ept id="p4">**</ept><bpt id="p5">_</bpt>n<ept id="p5">_</ept><bpt id="p6">**</bpt>,<ept id="p6">**</ept><bpt id="p7">_</bpt>m<ept id="p7">_</ept><bpt id="p8">**</bpt>}?<ept id="p8">**</ept>.</source>
+          <target state="translated">Lazy (最少) 數量詞：<bpt id="p1">**</bpt>??<ept id="p1">**</ept>、<bpt id="p2">__</bpt>*?<ept id="p2">__</ept>、<bpt id="p3">**</bpt>+?<ept id="p3">**</ept>、<bpt id="p4">**</bpt>{<ept id="p4">**</ept><bpt id="p5">_</bpt>n<ept id="p5">_</ept><bpt id="p6">**</bpt>,<ept id="p6">**</ept><bpt id="p7">_</bpt>m<ept id="p7">_</ept><bpt id="p8">**</bpt>}?<ept id="p8">**</ept>。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>These constructs tell the backtracking engine to search the minimum number of repetitions first.</source>
+          <target state="translated">這些建構告訴回溯引擎要先搜尋最小數目的重複。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In contrast, ordinary greedy quantifiers try to match the maximum number of repetitions first.</source>
+          <target state="translated">相反地，一般 Greedy (窮盡) 數量詞會先嘗試比對最多的重複 項目。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the difference between the two.</source>
+          <target state="translated">下例會說明兩者間的差異。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A regular expression matches a sentence that ends in a number, and a capturing group is intended to extract that number.</source>
+          <target state="translated">規則運算式會比對以數字結尾的句子，以及用來擷取該數字的擷取群組。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`.+(\d+)\.`</ph> includes the greedy quantifier <ph id="ph2">`.+`</ph>, which causes the regular expression engine to capture only the last digit of the number.</source>
+          <target state="translated">規則運算式 <ph id="ph1">`.+(\d+)\.`</ph> 包含 Greedy (窮盡) 數量詞 <ph id="ph2">`.+`</ph>，這導致規則運算式引擎只會擷取數字的最後一個位數。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In contrast, the regular expression <ph id="ph1">`.+?(\d+)\.`</ph> includes the lazy quantifier <ph id="ph2">`.+?`</ph>, which causes the regular expression engine to capture the entire number.</source>
+          <target state="translated">相反地，規則運算式 <ph id="ph1">`.+?(\d+)\.`</ph> 包含 Lazy (最少) 數量詞 <ph id="ph2">`.+?`</ph>，這導致規則運算式引擎會擷取整個數字。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The greedy and lazy versions of this regular expression are defined as shown in the following table.</source>
+          <target state="translated">此規則運算式的 Greedy (窮盡) 與 Lazy (最少) 版本定義如下表所示。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">模式</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`.+`</ph> (greedy quantifier)</source>
+          <target state="translated"><ph id="ph1">`.+`</ph> (Greedy (窮盡) 數量詞)</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Match at least one occurrence of any character.</source>
+          <target state="translated">比對至少出現一次的任何字元。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This causes the regular expression engine to match the entire string, and then to backtrack as needed to match the remainder of the pattern.</source>
+          <target state="translated">這會導致規則運算式引擎比對整個字串，然後視需要進行回溯，以比對模式的其餘部分。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`.+?`</ph> (lazy quantifier)</source>
+          <target state="translated"><ph id="ph1">`.+?`</ph> (Lazy (最少) 數量詞)</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Match at least one occurrence of any character, but match as few as possible.</source>
+          <target state="translated">出現的任何字元至少比對一次，但比對愈少愈好。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Match at least one numeric character, and assign it to the first capturing group.</source>
+          <target state="translated">比對至少一個數值字元，並將它指派給第一個擷取群組。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">比對句點。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For more information about lazy quantifiers, see <bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept>.</source>
+          <target state="translated">如需 Lazy (最少) 數量詞的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的數量詞<ept id="p1">](quantifiers.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Positive lookahead</source>
+          <target state="translated">右合樣 (Positive Lookahead)</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Positive lookahead: <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">右合樣︰<bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This feature allows the backtracking engine to return to the same spot in the text after matching a subexpression.</source>
+          <target state="translated">此功能允許回溯引擎在比對子運算式之後返回到文字的相同地方。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It is useful for searching throughout the text by verifying multiple patterns that start from the same position.</source>
+          <target state="translated">這對自相同位置開始驗證多個模式，以全面搜尋文字，很有用處。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>It also allows the engine to verify that a substring exists at the end of the match without including the substring in the matched text.</source>
+          <target state="translated">它也可以讓引擎驗證子字串是否存在於符合項目的結尾，而不需在相符的文字中包含該子字串。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following example uses positive lookahead to extract the words in a sentence that are not followed by punctuation symbols.</source>
+          <target state="translated">下例使用右合樣在句子中擷取後面未接標點符號的文字。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`\b[A-Z]+\b(?=\P{P})`</ph> is defined as shown in the following table.</source>
+          <target state="translated">規則運算式 <ph id="ph1">`\b[A-Z]+\b(?=\P{P})`</ph> 的定義如下表所示。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">模式</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">開始字緣比對。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Match any alphabetic character one or more times.</source>
+          <target state="translated">比對任何字母字元一或多次。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Because the <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option, the comparison is case-insensitive.</source>
+          <target state="translated">因為 <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> 方法是用 <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> 選項呼叫，所以比較不區分大小寫。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">結束字緣比對。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Look ahead to determine whether the next character is a punctuation symbol.</source>
+          <target state="translated">向右合樣以判斷下一個字元是否為標點符號。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>If it is not, the match succeeds.</source>
+          <target state="translated">如果不是，則比對成功。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For more information about positive lookahead assertions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">如需右合樣判斷提示的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的群組建構<ept id="p1">](grouping.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Negative lookahead</source>
+          <target state="translated">右不合樣 (Negative Lookahead)</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Negative lookahead: <bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">右不合樣︰<bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>This feature adds the ability to match an expression only if a subexpression fails to match.</source>
+          <target state="translated">此功能加入了只有子運算式無法比對時才會比對運算式的功能。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This is particularly powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included.</source>
+          <target state="translated">這在刪除搜尋時特別有功用，因為提供應該排除情況的運算式通常會比指供必須包含情況的運算式簡單。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, it is difficult to write an expression for words that do not begin with "non".</source>
+          <target state="translated">例如，針對開頭不是 "non" 的單字撰寫運算式很困難。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The following example uses negative lookahead to exclude them.</source>
+          <target state="translated">下例使用右不合樣進行排除。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(?!non)\w+\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">規則運算式模式 <ph id="ph1">`\b(?!non)\w+\b`</ph> 的定義如下表所示。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">模式</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">開始字緣比對。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Look ahead to ensure that the current string does not begin with "non".</source>
+          <target state="translated">向右合樣以確定目前的字串不是以 "non" 開頭。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If it does, the match fails.</source>
+          <target state="translated">如果是，則比對失敗。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">比對一個或多個文字字元。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">結束字緣比對。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For more information about negative lookahead assertions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">如需右不合樣判斷提示的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的群組建構<ept id="p1">](grouping.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Conditional evaluation</source>
+          <target state="translated">條件式評估</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Conditional evaluation: <bpt id="p1">**</bpt>(?(<ept id="p1">**</ept><bpt id="p2">_</bpt>expression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept><bpt id="p4">_</bpt>yes<ept id="p4">_</ept>&amp;#124;<bpt id="p5">_</bpt>no<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> and<bpt id="p7">**</bpt>(?(<ept id="p7">**</ept><bpt id="p8">_</bpt>name<ept id="p8">_</ept><bpt id="p9">**</bpt>)<ept id="p9">**</ept><bpt id="p10">_</bpt>yes<ept id="p10">_</ept>&amp;#124;<bpt id="p11">_</bpt>no<ept id="p11">_</ept><bpt id="p12">**</bpt>)<ept id="p12">**</ept>, where <bpt id="p13">*</bpt>expression<ept id="p13">*</ept> is a subexpression to match, <bpt id="p14">*</bpt>name<ept id="p14">*</ept> is the name of a capturing group, <bpt id="p15">*</bpt>yes<ept id="p15">*</ept> is the string to match if <bpt id="p16">*</bpt>expression<ept id="p16">*</ept> is matched or <bpt id="p17">*</bpt>name<ept id="p17">*</ept> is a valid, non-empty captured group, and <bpt id="p18">*</bpt>no<ept id="p18">*</ept> is the subexpression to match if <bpt id="p19">*</bpt>expression<ept id="p19">*</ept> is not matched or <bpt id="p20">*</bpt>name<ept id="p20">*</ept> is not a valid, non-empty captured group.</source>
+          <target state="translated">條件式評估︰<bpt id="p1">**</bpt>(?(<ept id="p1">**</ept><bpt id="p2">_</bpt>expression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept><bpt id="p4">_</bpt>yes<ept id="p4">_</ept>&amp;#124;<bpt id="p5">_</bpt>no<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> 和 <bpt id="p7">**</bpt>(?(<ept id="p7">**</ept><bpt id="p8">_</bpt>name<ept id="p8">_</ept><bpt id="p9">**</bpt>)<ept id="p9">**</ept><bpt id="p10">_</bpt>yes<ept id="p10">_</ept>&amp;#124;<bpt id="p11">_</bpt>no<ept id="p11">_</ept><bpt id="p12">**</bpt>)<ept id="p12">**</ept>，其中 <bpt id="p13">*</bpt>expression<ept id="p13">*</ept> 是要比對的子運算式，<bpt id="p14">*</bpt>name<ept id="p14">*</ept> 是擷取群組的名稱，<bpt id="p15">*</bpt>yes<ept id="p15">*</ept> 是要比對的字串，如果 <bpt id="p16">*</bpt>expression<ept id="p16">*</ept> 相符或 <bpt id="p17">*</bpt>name<ept id="p17">*</ept> 是有效的非空白擷取群組；而 <bpt id="p18">*</bpt>no<ept id="p18">*</ept> 是要比對的子運算式，如果 <bpt id="p19">*</bpt>expression<ept id="p19">*</ept> 不相符或 <bpt id="p20">*</bpt>name<ept id="p20">*</ept> 不是有效的非空白擷取群組。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This feature allows the engine to search by using more than one alternate pattern, depending on the result of a previous subexpression match or the result of a zero-width assertion.</source>
+          <target state="translated">此功能可讓引擎根據前一個子運算式比對的結果或零寬度判斷提示的結果，使用一個以上的替代模式進行搜尋。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This allows a more powerful form of backreference that permits, for example, matching a subexpression based on whether a previous subexpression was matched.</source>
+          <target state="translated">這允許更強大的反向參考形式，例如允許根據前一個子運算式是否相符來比對子運算式。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The regular expression in the following example matches paragraphs that are intended for both public and internal use.</source>
+          <target state="translated">下例中的規則運算式會比對同時可供公用和內部使用的段落。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Paragraphs intended only for internal use begin with a <ph id="ph1">`&lt;PRIVATE&gt;`</ph> tag.</source>
+          <target state="translated">僅供內部使用的段落會以 <ph id="ph1">`&lt;PRIVATE&gt;`</ph> 標記開頭。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^(?&lt;Pvt&gt;\&lt;PRIVATE\&gt;\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$`</ph> uses conditional evaluation to assign the contents of paragraphs intended for public and for internal use to separate capturing groups.</source>
+          <target state="translated">規則運算式模式 <ph id="ph1">`^(?&lt;Pvt&gt;\&lt;PRIVATE\&gt;\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$`</ph> 會使用條件式評估，將可供公用和內部使用的段落內容指派給個別的擷取群組。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>These paragraphs can then be handled differently.</source>
+          <target state="translated">再以不同的方式來處理這些段落。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern is defined as shown in the following table.</source>
+          <target state="translated">規則運算式模式的定義如下表所示。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">模式</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of a line.</source>
+          <target state="translated">在一行的開頭開始比對。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Match zero or one occurrence of the string <ph id="ph1">`&lt;PRIVATE&gt;`</ph> followed by a white-space character.</source>
+          <target state="translated">比對出現零次或一次且後面接著空白字元的字串 <ph id="ph1">`&lt;PRIVATE&gt;`</ph>。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Assign the match to a capturing group named Pvt.</source>
+          <target state="translated">將相符項目指派給名為 Pvt 的擷取群組。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Pvt`</ph> capturing group exists, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character.</source>
+          <target state="translated">如果 <ph id="ph1">`Pvt`</ph> 擷取群組存在，則比對出現一或多次的一或多個單字字元，且該字元後面接著零或一個標點分隔符號和一個空白字元。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Assign the substring to the first capturing group.</source>
+          <target state="translated">將子字串指派給第一個擷取群組。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Pvt`</ph> capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character.</source>
+          <target state="translated">如果 <ph id="ph1">`Pvt`</ph> 擷取群組不存在，則比對出現一或多次的一或多個單字字元，且該字元後面接著零或一個標點分隔符號和一個空白字元。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Assign the substring to the third capturing group.</source>
+          <target state="translated">將子字串指派給第三個擷取群組。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Match the end of a line or the end of the string.</source>
+          <target state="translated">比對行尾或字串結尾。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For more information about conditional evaluation, see <bpt id="p1">[</bpt>Alternation constructs in regular expressions<ept id="p1">](alternation.md)</ept>.</source>
+          <target state="translated">如需條件式評估的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的替代建構<ept id="p1">](alternation.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Balancing group definitions</source>
+          <target state="translated">平衡群組定義</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Balancing group definitions: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name1-name2<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept> <bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept>.</source>
+          <target state="translated">平衡群組定義︰<bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name1-name2<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept> <bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept>。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets.</source>
+          <target state="translated">此功能可讓規則運算式引擎追蹤巢狀建構，例如括號或左右中括弧。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">如需範例，請參閱<bpt id="p1">[</bpt>規則運算式中的群組建構<ept id="p1">](grouping.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpressions</source>
+          <target state="translated">非回溯子運算式</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpressions (also known as greedy subexpressions): <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">非回溯子運算式 (也稱為 Greedy (窮盡) 子運算式)：<bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>This feature allows the backtracking engine to guarantee that a subexpression matches only the first match found for that subexpression, as if the expression were running independent of its containing expression.</source>
+          <target state="translated">此功能可讓回溯引擎保證子運算式只比對為該子運算式找到的第一個相符項目，就好像運算式的執行不受其包含運算式的影響。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If you do not use this construct, backtracking searches from the larger expression can change the behavior of a subexpression.</source>
+          <target state="translated">如果不使用此建構，較大型運算式中的回溯搜尋可以變更子運算式的行為。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`(a+)\w`</ph> matches one or more "a" characters, along with a word character that follows the sequence of "a" characters, and assigns the sequence of "a" characters to the first capturing group, However, if the final character of the input string is also an "a", it is matched by the <ph id="ph2">`\w`</ph> language element and is not included in the captured group.</source>
+          <target state="translated">例如，規則運算式 <ph id="ph1">`(a+)\w`</ph> 會比對一或多個 "a" 字元，以及緊接在 "a" 字元序列後面的單字字元，並將 "a" 字元序列指派給第一個擷取群組。但是，如果輸入字串的最後一個字元也是 "a"，則以 <ph id="ph2">`\w`</ph> language 元素比對，且不包含在擷取的群組中。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`((?&gt;a+))\w`</ph> prevents this behavior.</source>
+          <target state="translated">規則運算式 <ph id="ph1">`((?&gt;a+))\w`</ph> 可防止此行為發生。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Because all consecutive "a" characters are matched without backtracking, the first capturing group includes all consecutive "a" characters.</source>
+          <target state="translated">因為不需要回溯，所有連續的 "a" 字元便已相符，所以第一個擷取群組會包含所有連續的 "a" 字元。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>If the "a" characters are not followed by at least one more character other than "a", the match fails.</source>
+          <target state="translated">如果 "a" 字元後面未再接著至少一個 "a" 以外的字元，則比對失敗。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For more information about nonbacktracking subexpressions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">如需非回溯子運算式的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的群組建構<ept id="p1">](grouping.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Right-to-left matching</source>
+          <target state="translated">從右至左比對</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Right-to-left matching, which is specified by supplying the <bpt id="p1">[</bpt>RegexOptions.RightToLeft<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft)</ept> option to a <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> class constructor or static instance matching method.</source>
+          <target state="translated">從右至左比對，將 <bpt id="p1">[</bpt>RegexOptions.RightToLeft<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft)</ept> 選項提供給 <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> 類別建構函式或靜態執行個體比對方法，即可指定此種比對。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left.</source>
+          <target state="translated">當從右至左搜尋取代從左至右搜尋時，或在從右邊部分 (而非自左邊) 開始比對模式較有效率的情況中，這項功能很有用處。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers.</source>
+          <target state="translated">如下例所示，使用由右至左比對會變更 Greedy (窮盡) 數量詞的行為。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The example conducts two searches for a sentence that ends in a number.</source>
+          <target state="translated">此範例會搜尋兩次以數字結尾的句子。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The left-to-right search that uses the greedy quantifier <ph id="ph1">`+`</ph> matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits.</source>
+          <target state="translated">使用 Greedy (窮盡) 數量詞 <ph id="ph1">`+`</ph> 的由左至右搜尋，會比對句子中的六個數字其中一個，而由右至左搜尋會比對全部六個數字。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.</source>
+          <target state="translated">如需規則運算式模式的說明，請參閱本節前文說明 Lazy (最少) 數量詞的範例。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>For more information about right-to-left matching, see <bpt id="p1">[</bpt>Regular expression options<ept id="p1">](options.md)</ept>.</source>
+          <target state="translated">如需由右至左比對的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式選項<ept id="p1">](options.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind</source>
+          <target state="translated">左合樣和左不合樣</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> for positive lookbehind, and <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> for negative lookbehind.</source>
+          <target state="translated">左合樣和左不合樣：<bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 適用於左合樣，而 <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> 適用於左不合樣。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>This feature is similar to lookahead, which is discussed earlier in this topic.</source>
+          <target state="translated">此功能類似於本主題前文中所討論的向右合樣。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds.</source>
+          <target state="translated">因為規則運算式引擎允許完整的由右至左比對，規則運算式允許無限制的向左合樣。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression.</source>
+          <target state="translated">當巢狀子運算式為外部運算式的超集時，左合樣和左不合樣也可以用來避免產生巢狀數量詞。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Regular expressions with such nested quantifiers often offer poor performance.</source>
+          <target state="translated">具有此種巢狀數量詞的規則運算式通常效能不佳。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset.</source>
+          <target state="translated">例如，下例會驗證字串是否以英數字元開頭和結尾，以及字串中的任何其他字元是否為較大子集之一。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>It forms a portion of the regular expression used to validate e-mail addresses; for more information, see <bpt id="p1">[</bpt>How to: Verify that Strings Are in Valid Email Format<ept id="p1">](verify-format.md)</ept>.</source>
+          <target state="translated">它會構成用來驗證電子郵件地址的規則運算式的一部分；如需詳細資訊，請參閱<bpt id="p1">[</bpt>如何：確認字串是否為有效的電子郵件格式<ept id="p1">](verify-format.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`^[A-Z0-9]([-!#$%&amp;'.*+/=?^`</ph>{}|~\w])*(?&lt;=[A-Z0-9])$` is defined as shown in the following table.</source>
+          <target state="translated">規則運算式 <ph id="ph1">`^[A-Z0-9]([-!#$%&amp;'.*+/=?^`</ph>{}|~\w])*(?&lt;=[A-Z0-9])$` 的定義如下表所示。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">模式</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the string.</source>
+          <target state="translated">從字串的開頭開始比對。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Match any numeric or alphanumeric character.</source>
+          <target state="translated">比對任何數值或英數字元。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>(The comparison is case-insensitive.)</source>
+          <target state="translated">(此比較不區分大小寫。)</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`([-!#$%&amp;'.*+/=?^`</ph>{}&amp;#124;~\w])*`</source>
+          <target state="translated"><ph id="ph1">`([-!#$%&amp;'.*+/=?^`</ph>{}&amp;#124;~\w])*`</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of any word character, or any of the following characters: -, !, #, $, %, &amp;, ', ., *, +, /, =, ?, ^, `, {, }, &amp;#124;, or ~.</source>
+          <target state="translated">比對出現零次或多次的任何文字字元，或下列任一字元：-、!、#、$、%、&amp;、'、.、*、+、/、=、?、^、`、{、}、&amp;#124; 或 ~。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Look behind to the previous character, which must be numeric or alphanumeric.</source>
+          <target state="translated">向左合樣前一個字元，而該字元必須是數值或英數字元。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>(The comparison is case-insensitive.)</source>
+          <target state="translated">(此比較不區分大小寫。)</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the string.</source>
+          <target state="translated">在字串的結尾結束比對。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>For more information about positive and negative lookbehind, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">如需左合樣及左不合樣的詳細資訊，請參閱<bpt id="p1">[</bpt>規則運算式中的群組建構<ept id="p1">](grouping.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Related Topics</source>
+          <target state="translated">相關主題</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">標題</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking<ept id="p1">](backtracking.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>回溯<ept id="p1">](backtracking.md)</ept></target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Provides information about how regular expression backtracking branches to find alternative matches.</source>
+          <target state="translated">提供規則運算式回溯如何擴展以尋找替代符合項目的相關資訊。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Compilation and reuse<ept id="p1">](compilation.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>編譯及重複使用<ept id="p1">](compilation.md)</ept></target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Provides information about compiling and reusing regular expressions to increase performance.</source>
+          <target state="translated">提供編譯和重複使用規則運算式以提升效能的相關資訊。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread safety<ept id="p1">](thread-safety.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>執行緒安全<ept id="p1">](thread-safety.md)</ept></target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.</source>
+          <target state="translated">提供規則運算式執行緒安全的相關資訊，並說明何時應該同步處理規則運算式物件的存取。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 規則運算式<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Provides an overview of the programming language aspect of regular expressions.</source>
+          <target state="translated">提供規則運算式的程式設計語言方面的概觀。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The regular expression Object Model<ept id="p1">](object-model.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>規則運算式物件模型<ept id="p1">](object-model.md)</ept></target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Provides information and code examples illustrating how to use the regular expression classes.</source>
+          <target state="translated">提供說明規則運算式類別使用方式的資訊和程式碼範例。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression examples<ept id="p1">](regex-examples.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>規則運算式範例<ept id="p1">](regex-examples.md)</ept></target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Contains code examples that illustrate the use of regular expressions in common applications.</source>
+          <target state="translated">包含程式碼範例，說明規則運算式在常見應用程式中的使用方式。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>規則運算式語言 - 快速參考<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.</source>
+          <target state="translated">提供您可以用來定義規則運算式之字元、運算子和建構組合的資訊。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">參考資料</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
