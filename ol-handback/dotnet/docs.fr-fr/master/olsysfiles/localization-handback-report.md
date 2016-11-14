@@ -6,21 +6,19 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
+ [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | InSyncHandedBackSuccess | [Details](#62c70ffdd25af909f110b3173231d436060ba38372)
 
 ## Item Details
-##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
+##### <a name='62c70ffdd25af909f110b3173231d436060ba38372'></a> Source: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.fr-fr/blob/f40641bddf8d5337006a71d0e94573adeb4b3445/docs/core/migrating-from-dnx.md)
-* Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/90c51dbcc04bc792685826fe3e3bb199edbe12f6/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Handoff Datetime: 2016-11-08 23:53:36
+* Target File: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs.fr-fr/blob/78116dec4008de11179a9824510bb7e79234fc41/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
+* Handoff File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a3a757e5fa4798cfd951d22e9d98a561c5b3ab31/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
+* Handoff Datetime: 2016-11-05 05:40:26
 * Handoff Reason: Include
-* Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8df4e0343f02f68138650a27ee49d0357a06dd00/ol-archive/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Archive Datetime: 2016-11-11 03:13:06
-* Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/7ce87ce748af006d67a2957b3c835d39546f331d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Handback Datetime: 2016-11-14 11:08:35
-* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
+* Archive File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/9fda82569c180347de441b02135668c33e28681f/ol-archive/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
+* Archive Datetime: 2016-11-07 23:37:41
+* Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/acd66334ac292a9644c7dcfce7c0f340670814d7/ol-handback/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
+* Handback Datetime: 2016-11-14 11:39:54
 * [Back to Top](#report-top)
 
 
