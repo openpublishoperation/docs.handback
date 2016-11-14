@@ -2122,6 +2122,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='82b82dc2387834b9a4d0351c2c12da6e7595eb6c23'></a> Source: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/300a0304e316cfa265634a3faf74c81c7a8a5e08/docs/core/deploying/creating-nuget-packages.md)
@@ -2148,6 +2150,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='caae9f0a32c4378488329fd6d88c1dc7bf96ae9a25'></a> Source: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/core/deploying/reducing-dependencies.md)
@@ -2433,6 +2437,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='ca63b25bb5f5e98167aaa8b74a7204fcd77b352346'></a> Source: [docs\core\porting\project-structure.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/porting/project-structure.md)
@@ -2445,6 +2451,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [project-structure.0e627b906b2a5022d4e625806ceb3172f393040f.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/project-structure.0e627b906b2a5022d4e625806ceb3172f393040f.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [project-structure.0e627b906b2a5022d4e625806ceb3172f393040f.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/project-structure.0e627b906b2a5022d4e625806ceb3172f393040f.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='3e75ad86a42b9c8ecc23fe1303830b463a24c3bf47'></a> Source: [docs\core\porting\third-party-deps.md](https://github.com/dotnet/docs/blob/46061efa8e33c6a73befa5181eb33b8deb2fa637/docs/core/porting/third-party-deps.md)
@@ -2808,6 +2816,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='9ab2f607e8ec5a24712ced5eec688894ca8ae39473'></a> Source: [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/index.md)
@@ -2848,6 +2858,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='77e1f5484c0f55ae3989dbbea9bdbf2fb58f792676'></a> Source: [docs\core\tutorials\managing-package-dependency-versions.md](https://github.com/dotnet/docs/blob/dd32f1dd4d17ab1bb01b5578237cc950b147898c/docs/core/tutorials/managing-package-dependency-versions.md)
@@ -2983,6 +2995,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='04018ec65272745ef98a2a96eb30009bcf44cb2e86'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/130b94a745b0e3222e205d8af26194239130ec9c/docs/core/windows-prerequisites.md)
@@ -2995,6 +3009,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
 * Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='11de6461cd4d25cab767d9c2828043e81a0c6d6987'></a> Source: [docs\csharp\async.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/csharp/async.md)
@@ -8135,6 +8151,8 @@
 * Current Target File: [docs\toc.md](https://github.com/dotnet/docs.it-it/blob/ab02647dc38e97186cf743d4691478991be11657/docs/toc.md)
 * Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf)
 * Current Handback Datetime: 2016-11-14 11:21:11
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e0b32634fd35b7c642e255d159c73b306953de67/ol-handback/dotnet/docs.it-it/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 11:21:40
 * [Back to Top](#report-top)
 
 ##### <a name='dae44e522534ff64cc765530a27f2e3543212f94508'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/welcome.md)
