@@ -1,11 +1,46 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
+ [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md) | ArchivedSuccess | [Details](#a0b4e21367244d0c72e05499c62e354fce9179e7517)
 
 ## Item Details
+##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.ko-kr/blob/c4b37007627e69a0fc0b0ccc01d7078408fd7eaa/docs/core/migrating-from-dnx.md)
+* Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/b9cc2781af990db05572e6a19c872ba84fe28019/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf)
+* Handoff Datetime: 2016-11-08 23:54:12
+* Handoff Reason: Include
+* Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/e11618fc2a0a5d823421544f247d2d42711bab79/ol-archive/dotnet/docs.ko-kr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf)
+* Archive Datetime: 2016-11-11 03:13:42
+* Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/8b4922efa15691517a26003b98eb60faa318747d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf)
+* Handback Datetime: 2016-11-14 09:06:33
+* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/24c33dcc825ae0651ad6600567e54d2cd8d3c122/ol-handback/dotnet/docs.ko-kr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-11 09:53:33
+* [Back to Top](#report-top)
+
+##### <a name='a0b4e21367244d0c72e05499c62e354fce9179e7517'></a> Source: [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/a525d15091dba727f196df8f6657109f37af3d10/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Handoff Datetime: 2016-11-12 23:37:25
+* Handoff Reason: Include
+* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/c47ffecbf6704eb9de37bec21066b4e7645637a2/ol-archive/dotnet/docs.ko-kr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Archive Datetime: 2016-11-12 23:37:26
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [index.md](https://github.com/dotnet/docs.ko-kr/blob/c4b37007627e69a0fc0b0ccc01d7078408fd7eaa/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/8b4922efa15691517a26003b98eb60faa318747d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-14 09:06:33
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/8b55cee6e1f54baae6595f7d04f1388596a961d9/ol-handback/dotnet/docs.ko-kr/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-09 00:44:32
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
