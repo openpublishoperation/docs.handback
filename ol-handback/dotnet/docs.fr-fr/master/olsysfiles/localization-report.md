@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 11
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 185
+[ Archive Success Files ](#archive-success-list)| 184
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 65
+[ In Sync Handback Files ](#insync-handback-success-list)| 66
 [ Ignored Files ](#ignored-list)| 1547
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -42,7 +42,6 @@
  [docs\core\docker\media\visual-studio-tools-for-docker\right-click-add-docker-support.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/right-click-add-docker-support.png) | ArchivedSuccess | [Details](#aed5653490165632bdcb86d4d7a385d1c471c6d731)
  [docs\core\docker\media\visual-studio-tools-for-docker\settings-shared-drives-win.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/settings-shared-drives-win.png) | ArchivedSuccess | [Details](#54ecb50f76e95ee3440541fa0642375c680aa2c632)
  [docs\core\media\packages\package-framework.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/media/packages/package-framework.png) | ArchivedSuccess | [Details](#56bd387874a315cb6da9a292adfb81d95a6bb76e36)
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | ArchivedSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
  [docs\core\porting\media\project-structure\project.pcl.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.pcl.png) | ArchivedSuccess | [Details](#b8076d6effa23eac989ed463b108ab609d72ee8141)
  [docs\core\porting\media\project-structure\project.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.png) | ArchivedSuccess | [Details](#53c2807b4930672a4dca14af87586093931c40a742)
  [docs\core\porting\media\project-structure\project.xproj.different.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.xproj.different.png) | ArchivedSuccess | [Details](#e8df3c3cca65bf169a014f30b97869a420065f6143)
@@ -238,6 +237,7 @@
  [docs\core\docker\visual-studio-tools-for-docker.md](https://github.com/dotnet/docs/blob/03193513706967a46f74bccdba08a56946dd67df/docs/core/docker/visual-studio-tools-for-docker.md) | InSyncHandedBackSuccess | [Details](#f2792154a2f231fffc8e6f79c32b96e05edc71fa33)
  [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/bfba7f8c3af791fcf0f1a6438214d3318a6d329c/docs/core/getting-started.md) | InSyncHandedBackSuccess | [Details](#1537efe3e1ad2b0fbfe4765696ea85b5d040b43d34)
  [docs\core\index.md](https://github.com/dotnet/docs/blob/8ada0e4c57febd4068be69330e7f9633517ce7ff/docs/core/index.md) | InSyncHandedBackSuccess | [Details](#8b6b38aa7f59002dcfbb229ce6522df67b61102835)
+ [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
  [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md) | InSyncHandedBackSuccess | [Details](#af6c83755068cc311b59c1a337898c177cc6d53738)
  [docs\core\porting\index.md](https://github.com/dotnet/docs/blob/ba6907f0054c3f4cdbaa687277ad70554670f0bb/docs/core/porting/index.md) | InSyncHandedBackSuccess | [Details](#677fe36a17b56aae0198140d82a2bfdd0d6e822439)
  [docs\core\porting\libraries.md](https://github.com/dotnet/docs/blob/46061efa8e33c6a73befa5181eb33b8deb2fa637/docs/core/porting/libraries.md) | InSyncHandedBackSuccess | [Details](#051c8d46abdafe722eec77a440e384efbae0e70a40)
@@ -2317,18 +2317,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.fr-fr/blob/f40641bddf8d5337006a71d0e94573adeb4b3445/docs/core/migrating-from-dnx.md)
 * Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/90c51dbcc04bc792685826fe3e3bb199edbe12f6/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
 * Handoff Datetime: 2016-11-08 23:53:36
 * Handoff Reason: Include
 * Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8df4e0343f02f68138650a27ee49d0357a06dd00/ol-archive/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
 * Archive Datetime: 2016-11-11 03:13:06
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/migrating-from-dnx.md)
-* Current Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-11 13:11:11
+* Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/7ce87ce748af006d67a2957b3c835d39546f331d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
+* Handback Datetime: 2016-11-14 11:08:35
 * Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
 * Bilingual Datetime: 2016-11-11 13:11:55
 * [Back to Top](#report-top)
