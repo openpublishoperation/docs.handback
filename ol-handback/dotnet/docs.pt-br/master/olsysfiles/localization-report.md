@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 11
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 250
+[ Archive Success Files ](#archive-success-list)| 248
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 0
+[ In Sync Handback Files ](#insync-handback-success-list)| 2
 [ Ignored Files ](#ignored-list)| 1547
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -41,7 +41,6 @@
  [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/300a0304e316cfa265634a3faf74c81c7a8a5e08/docs/core/deploying/creating-nuget-packages.md) | ArchivedSuccess | [Details](#82b82dc2387834b9a4d0351c2c12da6e7595eb6c23)
  [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md) | ArchivedSuccess | [Details](#96eb2cc7ca948b3e372fa1363b1741624d791d2724)
  [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/core/deploying/reducing-dependencies.md) | ArchivedSuccess | [Details](#caae9f0a32c4378488329fd6d88c1dc7bf96ae9a25)
- [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | ArchivedSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
  [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md) | ArchivedSuccess | [Details](#1c4179fe9d219bf6580e4792959da64364a6607c27)
  [docs\core\docker\media\building-net-docker-images\debugging_debugicon.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/debugging_debugicon.png) | ArchivedSuccess | [Details](#ce68010ce277e8ef98e65e3655ccd70a3461236f28)
  [docs\core\docker\media\building-net-docker-images\docker-tools-vscode-f5.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/docker-tools-vscode-f5.png) | ArchivedSuccess | [Details](#189cb2d082ff1bd55e0b05320498c6b4201bc36029)
@@ -52,7 +51,6 @@
  [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/bfba7f8c3af791fcf0f1a6438214d3318a6d329c/docs/core/getting-started.md) | ArchivedSuccess | [Details](#1537efe3e1ad2b0fbfe4765696ea85b5d040b43d34)
  [docs\core\index.md](https://github.com/dotnet/docs/blob/8ada0e4c57febd4068be69330e7f9633517ce7ff/docs/core/index.md) | ArchivedSuccess | [Details](#8b6b38aa7f59002dcfbb229ce6522df67b61102835)
  [docs\core\media\packages\package-framework.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/media/packages/package-framework.png) | ArchivedSuccess | [Details](#56bd387874a315cb6da9a292adfb81d95a6bb76e36)
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | ArchivedSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
  [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md) | ArchivedSuccess | [Details](#af6c83755068cc311b59c1a337898c177cc6d53738)
  [docs\core\porting\index.md](https://github.com/dotnet/docs/blob/ba6907f0054c3f4cdbaa687277ad70554670f0bb/docs/core/porting/index.md) | ArchivedSuccess | [Details](#677fe36a17b56aae0198140d82a2bfdd0d6e822439)
  [docs\core\porting\libraries.md](https://github.com/dotnet/docs/blob/46061efa8e33c6a73befa5181eb33b8deb2fa637/docs/core/porting/libraries.md) | ArchivedSuccess | [Details](#051c8d46abdafe722eec77a440e384efbae0e70a40)
@@ -291,6 +289,10 @@
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
 
 ## <a name='insync-handback-success-list'></a> In Sync Handback File Success List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
+ [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
 
 ## <a name='ignored-list'></a> Ignored File List
  Source File | Status | Details 
@@ -2157,15 +2159,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='be658d2c660aff736eceffe23757c13154e7858226'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs.pt-br/blob/6fc580d0882d03aa033053add21da9508eb4e705/docs/core/docker/building-net-docker-images.md)
 * Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/cbcadd157f89c6c47f04470e226018e315116575/ol-handoff/dotnet/docs.pt-br/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf)
 * Handoff Datetime: 2016-11-09 07:53:08
 * Handoff Reason: Include
 * Archive File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8261488ee11012600c9438dfe8e390ca7f8ee543/ol-archive/dotnet/docs.pt-br/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf)
 * Archive Datetime: 2016-11-11 03:13:46
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf)
+* Handback Datetime: 2016-11-14 12:12:06
 * [Back to Top](#report-top)
 
 ##### <a name='1c4179fe9d219bf6580e4792959da64364a6607c27'></a> Source: [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md)
@@ -2295,15 +2297,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.pt-br/blob/6fc580d0882d03aa033053add21da9508eb4e705/docs/core/migrating-from-dnx.md)
 * Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/a91c283780ef35cf855c79da80fd4b60a8525167/ol-handoff/dotnet/docs.pt-br/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf)
 * Handoff Datetime: 2016-11-08 23:54:16
 * Handoff Reason: Include
 * Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8261488ee11012600c9438dfe8e390ca7f8ee543/ol-archive/dotnet/docs.pt-br/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf)
 * Archive Datetime: 2016-11-11 03:13:46
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf)
+* Handback Datetime: 2016-11-14 12:12:06
 * [Back to Top](#report-top)
 
 ##### <a name='af6c83755068cc311b59c1a337898c177cc6d53738'></a> Source: [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md)
@@ -8116,6 +8118,9 @@
 * Archive Datetime: 2016-11-12 23:37:31
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [index.md](https://github.com/dotnet/docs.pt-br/blob/6fc580d0882d03aa033053add21da9508eb4e705/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Current Handback Datetime: 2016-11-14 12:12:06
 * [Back to Top](#report-top)
 
 ##### <a name='0c553782ab1214f1b64906387c1296275ffc2eaf518'></a> Source: [license.txt](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/license.txt)
