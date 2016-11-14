@@ -7229,6 +7229,8 @@
 * Archive Datetime: 2016-11-07 23:38:26
 * Handback File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.zh-tw.xlf)
 * Handback Datetime: 2016-11-14 11:40:23
+* Bilingual File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-14 11:41:05
 * [Back to Top](#report-top)
 
 ##### <a name='ff1eef78985f9b5b428f3b696fb267b59f3cb283427'></a> Source: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quick-ref.md)
@@ -7241,6 +7243,8 @@
 * Archive Datetime: 2016-11-07 23:38:26
 * Handback File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.zh-tw.xlf)
 * Handback Datetime: 2016-11-14 11:40:23
+* Bilingual File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-14 11:41:05
 * [Back to Top](#report-top)
 
 ##### <a name='b217b59874ceafbb0e5e410878cc434974c5a863428'></a> Source: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md)
@@ -7253,6 +7257,8 @@
 * Archive Datetime: 2016-11-07 23:38:26
 * Handback File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.zh-tw.xlf)
 * Handback Datetime: 2016-11-14 11:40:23
+* Bilingual File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/00581a08a62d5b37d911b6ef659ff8d21a469a1e/ol-handback/dotnet/docs.zh-tw/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-14 11:41:05
 * [Back to Top](#report-top)
 
 ##### <a name='0a9d960a9a593890b184f6961a5980d53e817e70429'></a> Source: [docs\standard\base-types\regex-examples.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regex-examples.md)
