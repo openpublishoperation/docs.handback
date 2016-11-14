@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | InSyncHandedBackSuccess | [Details](#62c70ffdd25af909f110b3173231d436060ba38372)
 
 ## Item Details
-##### <a name='62c70ffdd25af909f110b3173231d436060ba38372'></a> Source: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs.fr-fr/blob/78116dec4008de11179a9824510bb7e79234fc41/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Handoff File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a3a757e5fa4798cfd951d22e9d98a561c5b3ab31/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
-* Handoff Datetime: 2016-11-05 05:40:26
-* Handoff Reason: Include
-* Archive File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/9fda82569c180347de441b02135668c33e28681f/ol-archive/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
-* Archive Datetime: 2016-11-07 23:37:41
-* Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/acd66334ac292a9644c7dcfce7c0f340670814d7/ol-handback/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
-* Handback Datetime: 2016-11-14 11:39:54
-* Bilingual File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/acd66334ac292a9644c7dcfce7c0f340670814d7/ol-handback/dotnet/docs.fr-fr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-14 11:40:47
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
