@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 11
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 196
+[ Archive Success Files ](#archive-success-list)| 193
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 54
+[ In Sync Handback Files ](#insync-handback-success-list)| 57
 [ Ignored Files ](#ignored-list)| 1547
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -56,11 +56,9 @@
  [docs\core\tools\media\test-protocol\dotnet-test-execute.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tools/media/test-protocol/dotnet-test-execute.png) | ArchivedSuccess | [Details](#63bf500252fc112edf2e2bf9293b7fdcf08cc83466)
  [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | ArchivedSuccess | [Details](#62c70ffdd25af909f110b3173231d436060ba38372)
  [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/libraries-with-vs.md) | ArchivedSuccess | [Details](#dfb2fa67b59d3da7ce8afc6dd1065d65bfb0e4d674)
- [docs\core\tutorials\managing-package-dependency-versions.md](https://github.com/dotnet/docs/blob/dd32f1dd4d17ab1bb01b5578237cc950b147898c/docs/core/tutorials/managing-package-dependency-versions.md) | ArchivedSuccess | [Details](#77e1f5484c0f55ae3989dbbea9bdbf2fb58f792676)
  [docs\core\tutorials\media\target-dotnetcore-with-msbuild\new-project-dialog-class-library-portable.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tutorials/media/target-dotnetcore-with-msbuild/new-project-dialog-class-library-portable.png) | ArchivedSuccess | [Details](#d990a7f1678d37de1e1278e6c7cbe72f68399ad977)
  [docs\core\tutorials\media\target-dotnetcore-with-msbuild\pcl-targets-dialog-net46-aspnetcore10.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tutorials/media/target-dotnetcore-with-msbuild/pcl-targets-dialog-net46-aspnetcore10.png) | ArchivedSuccess | [Details](#ff917d73261fd1657b3952873f3911c8ec9927f478)
  [docs\core\tutorials\media\using-on-macos\vscodedebugger.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tutorials/media/using-on-macos/vscodedebugger.png) | ArchivedSuccess | [Details](#80b1c027b9056ff4cdefb6c8730dbea2c523440479)
- [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs/blob/a04755da6417bb28bad5f28a18ead9feeba2d957/docs/core/tutorials/target-dotnetcore-with-msbuild.md) | ArchivedSuccess | [Details](#5d37e78be88828d6c82777f96b6334903aecbe5380)
  [docs\core\versions\servicing.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/versions/servicing.md) | ArchivedSuccess | [Details](#713bd9a7ead18d6ccf298ad781b0d95c508fb9b085)
  [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/130b94a745b0e3222e205d8af26194239130ec9c/docs/core/windows-prerequisites.md) | ArchivedSuccess | [Details](#04018ec65272745ef98a2a96eb30009bcf44cb2e86)
  [docs\csharp\getting-started\index.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/csharp/getting-started/index.md) | ArchivedSuccess | [Details](#fb9b80171d4d96443053b29ff5297401f058c3ff112)
@@ -230,7 +228,6 @@
  [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/8599be1eadcd6f005ef344bf173e8c06fce80725/docs/standard/portability-analyzer.md) | ArchivedSuccess | [Details](#479b141159de95c6a7e466220f935f9371b353db504)
  [docs\standard\using-linq.md](https://github.com/dotnet/docs/blob/6992d907b152d67c51f43ec517902fb2effc6db2/docs/standard/using-linq.md) | ArchivedSuccess | [Details](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8506)
  [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md) | ArchivedSuccess | [Details](#a0b4e21367244d0c72e05499c62e354fce9179e7517)
- [TOC.md](https://github.com/dotnet/docs/blob/3b0b086c1a95d6164b82e1a4dade0936ce5d262e/TOC.md) | ArchivedSuccess | [Details](#46f0f0189b1d7df4cb842a21abffd06dc9a7d2c11806)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
 
@@ -273,6 +270,8 @@
  [docs\core\tutorials\aspnet-core.md](https://github.com/dotnet/docs/blob/5870a3cf6d8d2abd4bd1851a8d00bb70adbda752/docs/core/tutorials/aspnet-core.md) | InSyncHandedBackSuccess | [Details](#cfb3a2ee49046f8a24c28c2b3f81cdcbe976086171)
  [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/index.md) | InSyncHandedBackSuccess | [Details](#9ab2f607e8ec5a24712ced5eec688894ca8ae39473)
  [docs\core\tutorials\libraries.md](https://github.com/dotnet/docs/blob/0882a5ca2f7814e2fd168dce40705d11b199f102/docs/core/tutorials/libraries.md) | InSyncHandedBackSuccess | [Details](#caf72bec4a5d3276d1fdeafc4fa3816e5f00c29675)
+ [docs\core\tutorials\managing-package-dependency-versions.md](https://github.com/dotnet/docs/blob/dd32f1dd4d17ab1bb01b5578237cc950b147898c/docs/core/tutorials/managing-package-dependency-versions.md) | InSyncHandedBackSuccess | [Details](#77e1f5484c0f55ae3989dbbea9bdbf2fb58f792676)
+ [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs/blob/a04755da6417bb28bad5f28a18ead9feeba2d957/docs/core/tutorials/target-dotnetcore-with-msbuild.md) | InSyncHandedBackSuccess | [Details](#5d37e78be88828d6c82777f96b6334903aecbe5380)
  [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/2339be6aef7e2ff942f1f1999a12f48ee4a77ee8/docs/core/tutorials/using-on-macos.md) | InSyncHandedBackSuccess | [Details](#12b7bed380db53aad04f0615c6efa6152b3035b781)
  [docs\core\tutorials\using-on-windows.md](https://github.com/dotnet/docs/blob/54da8aebd64e86c064214074bc261f72c3b0aedc/docs/core/tutorials/using-on-windows.md) | InSyncHandedBackSuccess | [Details](#299d479ce74a0e1f41ff42a0e6619f496478819482)
  [docs\core\tutorials\using-with-xplat-cli.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/core/tutorials/using-with-xplat-cli.md) | InSyncHandedBackSuccess | [Details](#aafa0c110dc3a2820f7e050d70b9450af1db35d883)
@@ -293,6 +292,7 @@
  [docs\standard\framework-libraries.md](https://github.com/dotnet/docs/blob/093b852fe1ed2307ebce914381fe47388b435c95/docs/standard/framework-libraries.md) | InSyncHandedBackSuccess | [Details](#7283ed099cefa4b0e137869724f8e87dda0d451a479)
  [docs\standard\garbagecollection\index.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/index.md) | InSyncHandedBackSuccess | [Details](#2406a03fa64eb02c70f05c1e8240e4bc5981e98d484)
  [docs\standard\garbagecollection\unmanaged.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/unmanaged.md) | InSyncHandedBackSuccess | [Details](#692916bc5a9afd55dc4e3d0249386d2e3750895f488)
+ [TOC.md](https://github.com/dotnet/docs/blob/3b0b086c1a95d6164b82e1a4dade0936ce5d262e/TOC.md) | InSyncHandedBackSuccess | [Details](#46f0f0189b1d7df4cb842a21abffd06dc9a7d2c11806)
 
 ## <a name='ignored-list'></a> Ignored File List
  Source File | Status | Details 
@@ -2854,15 +2854,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='77e1f5484c0f55ae3989dbbea9bdbf2fb58f792676'></a> Source: [docs\core\tutorials\managing-package-dependency-versions.md](https://github.com/dotnet/docs/blob/dd32f1dd4d17ab1bb01b5578237cc950b147898c/docs/core/tutorials/managing-package-dependency-versions.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\tutorials\managing-package-dependency-versions.md](https://github.com/dotnet/docs.it-it/blob/f091a66f463f84c74e2c3fddf9897a3707ec305d/docs/core/tutorials/managing-package-dependency-versions.md)
 * Handoff File: [managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/7841067c24fb9e79c1f2201387c9d7ba64876d75/ol-handoff/dotnet/docs.it-it/master/ht-p1/managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf)
 * Handoff Datetime: 2016-11-05 05:44:24
 * Handoff Reason: Include
 * Archive File: [managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/3a7b669f88bad60634bcfa3ca0e2a5e6592cf512/ol-archive/dotnet/docs.it-it/master/ht-p1/managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf)
 * Archive Datetime: 2016-11-07 23:37:48
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf)
+* Handback Datetime: 2016-11-14 08:34:26
 * [Back to Top](#report-top)
 
 ##### <a name='d990a7f1678d37de1e1278e6c7cbe72f68399ad977'></a> Source: [docs\core\tutorials\media\target-dotnetcore-with-msbuild\new-project-dialog-class-library-portable.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tutorials/media/target-dotnetcore-with-msbuild/new-project-dialog-class-library-portable.png)
@@ -2905,15 +2905,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5d37e78be88828d6c82777f96b6334903aecbe5380'></a> Source: [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs/blob/a04755da6417bb28bad5f28a18ead9feeba2d957/docs/core/tutorials/target-dotnetcore-with-msbuild.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs.it-it/blob/f091a66f463f84c74e2c3fddf9897a3707ec305d/docs/core/tutorials/target-dotnetcore-with-msbuild.md)
 * Handoff File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/7841067c24fb9e79c1f2201387c9d7ba64876d75/ol-handoff/dotnet/docs.it-it/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf)
 * Handoff Datetime: 2016-11-05 05:44:24
 * Handoff Reason: Include
 * Archive File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/3a7b669f88bad60634bcfa3ca0e2a5e6592cf512/ol-archive/dotnet/docs.it-it/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf)
 * Archive Datetime: 2016-11-07 23:37:48
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf)
+* Handback Datetime: 2016-11-14 08:34:26
 * [Back to Top](#report-top)
 
 ##### <a name='12b7bed380db53aad04f0615c6efa6152b3035b781'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/2339be6aef7e2ff942f1f1999a12f48ee4a77ee8/docs/core/tutorials/using-on-macos.md)
@@ -23720,15 +23720,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='46f0f0189b1d7df4cb842a21abffd06dc9a7d2c11806'></a> Source: [TOC.md](https://github.com/dotnet/docs/blob/3b0b086c1a95d6164b82e1a4dade0936ce5d262e/TOC.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [TOC.md](https://github.com/dotnet/docs.it-it/blob/f091a66f463f84c74e2c3fddf9897a3707ec305d/TOC.md)
 * Handoff File: [TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/7841067c24fb9e79c1f2201387c9d7ba64876d75/ol-handoff/dotnet/docs.it-it/master/ht-p1/TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf)
 * Handoff Datetime: 2016-11-05 05:44:24
 * Handoff Reason: Include
 * Archive File: [TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/3a7b669f88bad60634bcfa3ca0e2a5e6592cf512/ol-archive/dotnet/docs.it-it/master/ht-p1/TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf)
 * Archive Datetime: 2016-11-07 23:37:48
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf)
+* Handback Datetime: 2016-11-14 08:34:26
 * [Back to Top](#report-top)
 
 ##### <a name='2dfca115ba67d1b4486f830374b66f8043f045b61807'></a> Source: [toc.yml](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/toc.yml)
