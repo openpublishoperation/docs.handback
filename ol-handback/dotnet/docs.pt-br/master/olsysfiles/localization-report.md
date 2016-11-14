@@ -2168,6 +2168,8 @@
 * Archive Datetime: 2016-11-11 03:13:46
 * Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf)
 * Handback Datetime: 2016-11-14 12:12:06
+* Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.pt-br.xlf)
+* Bilingual Datetime: 2016-11-14 12:13:27
 * [Back to Top](#report-top)
 
 ##### <a name='1c4179fe9d219bf6580e4792959da64364a6607c27'></a> Source: [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md)
@@ -2306,6 +2308,8 @@
 * Archive Datetime: 2016-11-11 03:13:46
 * Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf)
 * Handback Datetime: 2016-11-14 12:12:06
+* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.pt-br.xlf)
+* Bilingual Datetime: 2016-11-14 12:13:27
 * [Back to Top](#report-top)
 
 ##### <a name='af6c83755068cc311b59c1a337898c177cc6d53738'></a> Source: [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md)
@@ -8121,6 +8125,8 @@
 * Current Target File: [index.md](https://github.com/dotnet/docs.pt-br/blob/6fc580d0882d03aa033053add21da9508eb4e705/index.md)
 * Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
 * Current Handback Datetime: 2016-11-14 12:12:06
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Bilingual Datetime: 2016-11-14 12:13:27
 * [Back to Top](#report-top)
 
 ##### <a name='0c553782ab1214f1b64906387c1296275ffc2eaf518'></a> Source: [license.txt](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/license.txt)
