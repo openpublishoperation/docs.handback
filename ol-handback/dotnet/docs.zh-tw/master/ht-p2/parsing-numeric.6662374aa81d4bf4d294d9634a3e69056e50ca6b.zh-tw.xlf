@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">65475fd2b42b832de8d65b0a2aa6d4ceb81d4487</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\parsing-numeric.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fb77fd1d811f74aba29543daa35b6c396627dcb4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b233fecfb1705d4790c077cc5bf333c2ea791960</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">在 .NET 中剖析數值字串</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">在 .NET 中剖析數值字串</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">在 .NET 中剖析數值字串</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>All numeric types have two static parsing methods, <ph id="ph1">`Parse`</ph> and <ph id="ph2">`TryParse`</ph>, that you can use to convert the string representation of a number into a numeric type.</source>
+          <target state="translated">所有數值類型皆有兩個靜態剖析方法：<ph id="ph1">`Parse`</ph> 和 <ph id="ph2">`TryParse`</ph>，可將數字的字串表示轉換成數值類型。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>These methods enable you to parse strings that were produced by using the format strings documented in <bpt id="p1">[</bpt>Standard Numeric Format Strings<ept id="p1">](standard-numeric.md)</ept> and <bpt id="p2">[</bpt>Custom Numeric Format Strings<ept id="p2">](custom-numeric.md)</ept>.</source>
+          <target state="translated">這些方法可讓您剖析使用<bpt id="p1">[</bpt>標準數值格式字串<ept id="p1">](standard-numeric.md)</ept>和<bpt id="p2">[</bpt>自訂數值格式字串<ept id="p2">](custom-numeric.md)</ept>中記錄的格式字串所產生的字串。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>By default, the <ph id="ph1">`Parse`</ph> and <ph id="ph2">`TryParse`</ph> methods can successfully convert strings that contain integral decimal digits only to integer values.</source>
+          <target state="translated">根據預設，<ph id="ph1">`Parse`</ph> 和 <ph id="ph2">`TryParse`</ph> 方法只能將包含十進位數字的字串成功轉換為整數值。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values.</source>
+          <target state="translated">它們可以將包含整數和小數的十進位數字、群組分隔符號，以及小數分隔符號的字串，成功轉換為浮點值。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Parse`</ph> method throws an exception if the operation fails, whereas the <ph id="ph2">`TryParse`</ph> method returns <ph id="ph3">`false`</ph>.</source>
+          <target state="translated">如果作業失敗，即 <ph id="ph2">`TryParse`</ph> 方法傳回 <ph id="ph3">`false`</ph>，則 <ph id="ph1">`Parse`</ph> 方法會擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Parsing and format providers</source>
+          <target state="translated">剖析及格式提供者</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Typically, the string representations of numeric values differ by culture.</source>
+          <target state="translated">數值的字串表示通常會隨文化特性而不同。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Elements of numeric strings such as currency symbols, group (or thousands) separators, and decimal separators all vary by culture.</source>
+          <target state="translated">數值字串的元素都會因文化特性而有所不同，包括貨幣符號、群組 (或千分位) 分隔符號以及小數分隔符號。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations.</source>
+          <target state="translated">剖析方法會隱含或明確使用能夠辨識這些特定文化特性變化的格式提供者。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If no format provider is specified in a call to the <ph id="ph1">`Parse`</ph> or <ph id="ph2">`TryParse`</ph> method, the format provider associated with the current thread culture (the <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> object returned by the <bpt id="p2">[</bpt>NumberFormatInfo.CurrentInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> property) is used.</source>
+          <target state="translated">如果在 <ph id="ph1">`Parse`</ph> 或 <ph id="ph2">`TryParse`</ph> 方法的叫中不指定格式提供者，則會使用與目前執行緒文化特性相關聯的格式提供者 (<bpt id="p2">[</bpt>NumberFormatInfo.CurrentInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> 屬性所傳回的 <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> 物件)。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A format provider is represented by an <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> implementation.</source>
+          <target state="translated">格式提供者是由 <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> 實作代表。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This interface has a single member, the <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> method, whose single parameter is a <bpt id="p2">[</bpt>Type<ept id="p2">](xref:System.Type)</ept> object that represents the type to be formatted.</source>
+          <target state="translated">此介面有單一成員 <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> 方法，其單一參數是表示要格式化類型的 <bpt id="p2">[</bpt>Type<ept id="p2">](xref:System.Type)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This method returns the object that provides formatting information.</source>
+          <target state="translated">此方法會傳回提供格式設定資訊的物件。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>.NET supports the following two <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> implementations for parsing numeric strings:</source>
+          <target state="translated">.NET 支援下列兩個剖析數值字串的 <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> 實作︰</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object whose <bpt id="p2">[</bpt>CultureInfo.GetFormat<ept id="p2">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> method returns a <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> object that provides culture-specific formatting information.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 物件，其 <bpt id="p2">[</bpt>CultureInfo.GetFormat<ept id="p2">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> 方法會傳回提供特定文化特性格式資訊的 <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> object whose <bpt id="p2">[</bpt>NumberFormatInfo.GetFormat<ept id="p2">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept> method returns itself.</source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> 物件，其 <bpt id="p2">[</bpt>NumberFormatInfo.GetFormat<ept id="p2">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept> 方法會傳回自己本身。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following example tries to convert each string in an array to a <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> value.</source>
+          <target state="translated">下例嘗試將陣列中的每個字串轉換成 <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>It first tries to parse the string by using a format provider that reflects the conventions of the English (United States) culture.</source>
+          <target state="translated">它會先嘗試使用反映英文 (美國) 文化特性慣例的格式提供者剖析字串。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If this operation throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>, it tries to parse the string by using a format provider that reflects the conventions of the French (France) culture.</source>
+          <target state="translated">如果此作業擲回 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>，它會嘗試使用來映法文 (法國) 文化特性慣例的格式提供者剖析字串。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Parsing and NumberStyles values</source>
+          <target state="translated">剖析及 NumberStyles 值</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The style elements (such as white space, group separators, and decimal separator) that the parse operation can handle are defined by a <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration value.</source>
+          <target state="translated">剖析作業可以處理的樣式項目 (例如空白字元、群組分隔符號和小數分隔符號)，是由 <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> 列舉值所定義。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>By default, strings that represent integer values are parsed by using the <bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept> value, which permits only numeric digits, leading and trailing white space, and a leading sign.</source>
+          <target state="translated">根據預設，代表整數值的字串是使用 <bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept> 值剖析，這僅允許數字、前置和後置空白字元和前置正負號。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Strings that represent floating-point values are parsed using a combination of the <bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept> and <bpt id="p2">[</bpt>NumberStyles.AllowThousands<ept id="p2">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> values; this composite style permits decimal digits along with leading and trailing white space, a leading sign, a decimal separator, a group separator, and an exponent.</source>
+          <target state="translated">表示浮點值的字串是使用 <bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept> 和 <bpt id="p2">[</bpt>NumberStyles.AllowThousands<ept id="p2">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> 的組合值剖析，此複合樣式允許十進位數字及前置和後置空白字元、前置正負號、小數分隔符號、群組分隔符號和指數。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>By calling an overload of the <ph id="ph1">`Parse`</ph> or <ph id="ph2">`TryParse`</ph> method that includes a parameter of type <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> and setting one or more <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> flags, you can control the style elements that can be present in the string for the parse operation to succeed.</source>
+          <target state="translated">藉由呼叫包含 <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> 類型參數的 <ph id="ph1">`Parse`</ph> 或 <ph id="ph2">`TryParse`</ph> 方法的多載，及設定一或多個 <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> 旗標，您可以控制字串得以顯示的樣式項目，成功進行利剖析作業。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For example, a string that contains a group separator cannot be converted to an <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept> value by using the <bpt id="p2">[</bpt>Int32.Parse(String)<ept id="p2">](xref:System.Int32.Parse(System.String))</ept> method.</source>
+          <target state="translated">例如，使用 <bpt id="p2">[</bpt>Int32.Parse(String)<ept id="p2">](xref:System.Int32.Parse(System.String))</ept> 方法無法將包含群組分隔符號的字串轉換為 <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, the conversion succeeds if you use the <bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> flag, as the following example illustrates.</source>
+          <target state="translated">但若使用 <bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> 旗標，則轉換會成功，如下列範例所示。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Warning<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>警告<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The parse operation always uses the formatting conventions of a particular culture.</source>
+          <target state="translated">剖析作業一律使用特定文化特性的格式化慣例。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If you do not specify a culture by passing a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> object, the culture associated with the current thread is used.</source>
+          <target state="translated">如果不藉由傳遞 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 或 <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> 物件來指定文化特性，就會使用與目前執行緒相關聯的文化特性。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following table lists the members of the <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration and describes the effect that they have on the parsing operation.</source>
+          <target state="translated">下表列出 <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> 列舉的成員，並說明它們對剖析作業的影響。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>NumberStyles value</source>
+          <target state="translated">NumberStyles 值</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Effect on the string to be parsed</source>
+          <target state="translated">對要剖析字串的影響</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.None<ept id="p1">](xref:System.Globalization.NumberStyles.None)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.None<ept id="p1">](xref:System.Globalization.NumberStyles.None)</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Only numeric digits are permitted.</source>
+          <target state="translated">只允許數字。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p1">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p1">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The decimal separator and fractional digits are permitted.</source>
+          <target state="translated">允許小數分隔符號和小數位。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For integer values, only zero is permitted as a fractional digit.</source>
+          <target state="translated">若為整數值，小數位只允許零。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Valid decimal separators are determined by the <bpt id="p1">[</bpt>NumberFormatInfo.NumberDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyDecimalSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept> property.</source>
+          <target state="translated">有效的十進位分隔符號由 <bpt id="p1">[</bpt>NumberFormatInfo.NumberDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator)</ept> 或 <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyDecimalSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept> 屬性決定。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The "e" or "E" character can be used to indicate exponential notation.</source>
+          <target state="translated">可以使用 "e" 或 "E" 字元表示指數標記法。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Leading white space is permitted.</source>
+          <target state="translated">可以使用前置空白字元。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Trailing white space is permitted.</source>
+          <target state="translated">可以使用後置空白字元。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowLeadingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowLeadingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>A positive or negative sign can precede numeric digits.</source>
+          <target state="translated">數字前面可以使用正負號。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowTrailingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowTrailingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>A positive or negative sign can follow numeric digits.</source>
+          <target state="translated">數字後面可以使用正負號。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowParentheses<ept id="p1">](xref:System.Globalization.NumberStyles.AllowParentheses)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowParentheses<ept id="p1">](xref:System.Globalization.NumberStyles.AllowParentheses)</ept></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Parentheses can be used to indicate negative values.</source>
+          <target state="translated">可以使用括號表示負數值。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The group separator is permitted.</source>
+          <target state="translated">允許群組分隔符號。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The group separator character is determined by the <bpt id="p1">[</bpt>NumberFormatInfo.NumberGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyGroupSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept> property.</source>
+          <target state="translated">群組分隔符號字元由 <bpt id="p1">[</bpt>NumberFormatInfo.NumberGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator)</ept> 或 <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyGroupSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept> 屬性決定。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowCurrencySymbol<ept id="p1">](xref:System.Globalization.NumberStyles.AllowCurrencySymbol)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowCurrencySymbol<ept id="p1">](xref:System.Globalization.NumberStyles.AllowCurrencySymbol)</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The currency symbol is permitted.</source>
+          <target state="translated">允許使用貨幣符號。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The currency symbol is defined by the <bpt id="p1">[</bpt>NumberFormatInfo.CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept> property.</source>
+          <target state="translated">根據貨幣符號是由 <bpt id="p1">[</bpt>NumberFormatInfo.CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept> 屬性定義。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The string to be parsed is interpreted as a hexadecimal number.</source>
+          <target state="translated">要剖析的字串會解譯為十六進位數字。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It can include the hexadecimal digits 0-9, A-F, and a-f.</source>
+          <target state="translated">它可以包含十六進位數字 0-9、A-F 和 a-f。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This flag can be used only to parse integer values.</source>
+          <target state="translated">這個旗標只能用於剖析整數值。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In addition, the <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration provides the following composite styles, which include multiple <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> flags.</source>
+          <target state="translated">此外，<bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> 列舉提供下列複合樣式，包括多個 <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> 旗標。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Composite NumberStyles value</source>
+          <target state="translated">複合的 NumberStyles 值</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Includes members</source>
+          <target state="translated">包含成員</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept></target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, and <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept> styles.</source>
+          <target state="translated">包含 <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>、<bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept> 和 <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept> 樣式。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This is the default style used to parse integer values.</source>
+          <target state="translated">這是用來剖析整數值的預設樣式。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Number<ept id="p1">](xref:System.Globalization.NumberStyles.Number)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Number<ept id="p1">](xref:System.Globalization.NumberStyles.Number)</ept></target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowTrailingSign<ept id="p4">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept>, <bpt id="p5">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p5">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept>, and <bpt id="p6">[</bpt>NumberStyles.AllowThousands<ept id="p6">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> styles.</source>
+          <target state="translated">包含 <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>、<bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>、<bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>、<bpt id="p4">[</bpt>NumberStyles.AllowTrailingSign<ept id="p4">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept>、<bpt id="p5">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p5">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept> 和 <bpt id="p6">[</bpt>NumberStyles.AllowThousands<ept id="p6">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> 樣式。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p4">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept>, and <bpt id="p5">[</bpt>NumberStyles.AllowExponent<ept id="p5">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> styles.</source>
+          <target state="translated">包含 <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>、<bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>、<bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>、<bpt id="p4">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p4">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept> 和 <bpt id="p5">[</bpt>NumberStyles.AllowExponent<ept id="p5">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> 樣式。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Currency<ept id="p1">](xref:System.Globalization.NumberStyles.Currency)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Currency<ept id="p1">](xref:System.Globalization.NumberStyles.Currency)</ept></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Includes all styles except <bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> and <bpt id="p2">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p2">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</source>
+          <target state="translated">包含所有樣式，但 <bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> 和 <bpt id="p2">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p2">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept> 除外。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Any<ept id="p1">](xref:System.Globalization.NumberStyles.Any)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Any<ept id="p1">](xref:System.Globalization.NumberStyles.Any)</ept></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Includes all styles except <bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</source>
+          <target state="translated">包含所有樣式，但 <bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept> 除外。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.HexNumber<ept id="p1">](xref:System.Globalization.NumberStyles.HexNumber)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.HexNumber<ept id="p1">](xref:System.Globalization.NumberStyles.HexNumber)</ept></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, and <bpt id="p3">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p3">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept> styles.</source>
+          <target state="translated">包含 <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>、<bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept> 和 <bpt id="p3">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p3">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept> 樣式。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Parsing and Unicode digits</source>
+          <target state="translated">剖析及 Unicode 數字</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The Unicode standard defines code points for digits in various writing systems.</source>
+          <target state="translated">Unicode 標準會定義各種書寫系統中數字的字碼指標。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For example, code points from U+0030 to U+0039 represent the basic Latin digits 0 through 9, code points from U+09E6 to U+09EF represent the Bangla digits 0 through 9, and code points from U+FF10 to U+FF19 represent the Fullwidth digits 0 through 9.</source>
+          <target state="translated">例如，U+0030 到 U+0039 的字碼指標表示基本拉丁文數字 0 到 9，U+09E6 到 U+09EF 字碼指標表示孟加拉文數字 0 到 9，而 U+FF10 到 U+FF19 字碼指數表示全形數字 0 到 9。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>However, the only numeric digits recognized by parsing methods are the basic Latin digits 0-9 with code points from U+0030 to U+0039.</source>
+          <target state="translated">不過，剖析方法唯一認識的數字是基本拉丁文數字 0-9 與 U+0030 到 U+0039 字碼指標。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If a numeric parsing method is passed a string that contains any other digits, the method throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">如果數值剖析方法傳遞的字串包含任何其他數字，則方法會擲回 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Int32.Parse<ept id="p1">](xref:System.Int32.Parse(System.String))</ept> method to parse strings that consist of digits in different writing systems.</source>
+          <target state="translated">下例使用 <bpt id="p1">[</bpt>Int32.Parse<ept id="p1">](xref:System.Int32.Parse(System.String))</ept> 方法剖析以不同書寫系統數字組成的字串。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the attempt to parse the basic Latin digits succeeds, but the attempt to parse the Fullwidth, Arabic-Indic, and Bangla digits fails.</source>
+          <target state="translated">如範例的輸出所示，嘗試剖析基本拉丁文數字會成功，而嘗試剖析全型、阿拉伯-印度文和孟加拉文數字則會失敗。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">請參閱</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Globalization.NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Globalization.NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Parsing strings in .NET<ept id="p1">](parsing-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>在 .NET 中剖析字串<ept id="p1">](parsing-strings.md)</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formatting types in .NET<ept id="p1">](formatting-types.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>在 .NET 中格式化類型<ept id="p1">](formatting-types.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

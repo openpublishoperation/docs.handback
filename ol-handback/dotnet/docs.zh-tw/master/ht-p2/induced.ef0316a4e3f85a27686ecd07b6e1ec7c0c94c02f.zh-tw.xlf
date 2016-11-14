@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a10822518f0687dc7bbb06dd0fb77f6d9a3196fb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\induced.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9baaf4b5ef4785d3ed2207e62d076e46e936925</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e9e40cc681a3ec063165539d4708e61996c678e4</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">引發的回收</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">引發的回收</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">引發的回收</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In most cases, the garbage collector can determine the best time to perform a collection, and you should let it run independently.</source>
+          <target state="translated">大部分情況下，記憶體回收行程會判斷執行回收的最佳時間，請讓記憶體回收行程獨立執行。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are rare situations when a forced collection might improve your application's performance.</source>
+          <target state="translated">在罕見的情況下，強制回收可能會改善您應用程式的效能。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In these cases, you can induce garbage collection by using the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method to force a garbage collection.</source>
+          <target state="translated">在這些情況下，您可以使用 <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> 方法強制進行記憶體回收，來引發記憶體回收。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> method when there is a significant reduction in the amount of memory being used at a specific point in your application's code.</source>
+          <target state="translated">在應用程式碼特定位置所使用的記憶體數量大幅下降時，請使用 <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, if your application uses a complex dialog box that has several controls, calling <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> when the dialog box is closed could improve performance by immediately reclaiming the memory used by the dialog box.</source>
+          <target state="translated">例如，如果您的應用程式使用具有數個控制項的複雜對話方塊，則在關閉對話方塊時呼叫 <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> 可透過立即回收對話方塊所使用的記憶體來改善效能。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Be sure that your application is not inducing garbage collection too frequently, because that can decrease performance if the garbage collector is trying to reclaim objects at non-optimal times.</source>
+          <target state="translated">請確定您的應用程式沒有太頻繁地進行記憶體回收，原因是如果記憶體回收行程嘗試在非最佳時間回收物件，則這樣可能會降低效能。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can supply a <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept> enumeration value to the <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept> method to collect only when collection would be productive, as discussed in the next section.</source>
+          <target state="translated">您可以將 <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept> 列舉值提供給 <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept> 方法，只在回收具備生產力時才進行回收 (如下節所討論)。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>GC collection mode</source>
+          <target state="translated">GC 收集模式</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can use one of the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method overloads that includes a <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> value to specify the behavior for a forced collection as follows.</source>
+          <target state="translated">您可以使用其中一個 <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> 方法多載，其包含 <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> 值來指定強制回收行為，如下所示。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>GCCollectionMode value</source>
+          <target state="translated">GCCollectionMode 值</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Default<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Default<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Uses the default garbage collection setting for the running version of the .NET Framework.</source>
+          <target state="translated">使用 .NET Framework 執行版本的預設記憶體回收設定。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Forces garbage collection to occur immediately.</source>
+          <target state="translated">強制立即進行記憶體回收。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This is equivalent to calling the <bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept> overload.</source>
+          <target state="translated">這等於呼叫 <bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept> 多載。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It results in a full blocking collection of all generations.</source>
+          <target state="translated">它會導致完整封鎖回收所有層代。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also compact the large object heap by setting the <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> property to <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept> before forcing an immediate full blocking garbage collection.</source>
+          <target state="translated">在強制立即完整封鎖記憶體回收之前，將 <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> 屬性設定為 <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept>，也可以壓縮大型物件堆積。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Enables the garbage collector to determine whether the current time is optimal to reclaim objects.</source>
+          <target state="translated">可讓記憶體回收行程判斷目前時間是否最適合回收物件。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The garbage collector could determine that a collection would not be productive enough to be justified, in which case it will return without reclaiming objects.</source>
+          <target state="translated">記憶體回收行程可能會判斷回收的生產力不足無法進行調整，在此情況下會返回，而不是回收物件。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Background or blocking collections</source>
+          <target state="translated">背景或封鎖回收</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can call the <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method overload to specify whether an induced collection is blocking or not.</source>
+          <target state="translated">您可以呼叫 <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 方法多載，來指定是否封鎖引發的回收。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The type of collection performed depends on a combination of the method's <bpt id="p1">*</bpt>mode<ept id="p1">*</ept> and <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept> parameters.</source>
+          <target state="translated">執行的回收類型取決於方法的 <bpt id="p1">*</bpt>mode<ept id="p1">*</ept> 與 <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept> 參數組合。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept> is a member of the <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> enumeration, and <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept> is a <bpt id="p4">[</bpt>Boolean<ept id="p4">](xref:System.Boolean)</ept> value.</source>
+          <target state="translated"><bpt id="p1">*</bpt>mode<ept id="p1">*</ept> 是 <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> 列舉的成員，而 <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept> 是 <bpt id="p4">[</bpt>Boolean<ept id="p4">](xref:System.Boolean)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following table summarizes the interaction of the mode and blocking arguments.</source>
+          <target state="translated">下表摘要說明模式和封鎖引數的互動。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>mode<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> or <bpt id="p2">[</bpt>Default<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> 或 <bpt id="p2">[</bpt>Default<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>A blocking collection is performed as soon as possible.</source>
+          <target state="translated">會盡快執行封鎖回收。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and generation is 0 or 1, the <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method immediately triggers a blocking collection and returns when the collection is finished.</source>
+          <target state="translated">如果正在進行背景回收，而且層代是 0 或 1，則 <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 方法會立即觸發封鎖回收，並在回收完成時返回。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and the generation parameter is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.</source>
+          <target state="translated">如果正在進行背景回收，而且 generation 參數是 2，則方法會等到背景回收完成，並觸發封鎖層代 2 回收，然後返回。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A collection is performed as soon as possible.</source>
+          <target state="translated">會盡快執行回收。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 方法會要求背景回收，但這不是必然；根據情況，可能仍然會執行封鎖回收。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">如果已在進行背景回收，則這個方法會立即返回。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A blocking collection may be performed, depending on the state of the garbage collector and the generation parameter.</source>
+          <target state="translated">根據記憶體回收行程的狀態和 generation 參數，可能會執行封鎖回收。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">記憶體回收行程會嘗試提供最佳效能。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A collection may be performed, depending on the state of the garbage collector.</source>
+          <target state="translated">根據記憶體回收行程的狀態，可能會執行回收。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 方法會要求背景回收，但這不是必然；根據情況，可能仍然會執行封鎖回收。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">記憶體回收行程會嘗試提供最佳效能。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">如果已在進行背景回收，則這個方法會立即返回。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Latency modes<ept id="p1">](latency.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>延遲模式<ept id="p1">](latency.md)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 中的記憶體回收<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

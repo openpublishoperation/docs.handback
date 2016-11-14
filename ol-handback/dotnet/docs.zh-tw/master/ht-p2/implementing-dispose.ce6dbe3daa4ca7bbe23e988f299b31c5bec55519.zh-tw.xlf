@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dfe2cebfbcf1f4c2697683ebda8c1e11567fd015</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\implementing-dispose.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9c767e094bcc0eeef3aa68e876ddf7c6b336dc37</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a104a3574d5165774f427301e61a67f85eb2407f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">實作 Dispose 方法</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">實作 Dispose 方法</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Implementing a dispose method</source>
+          <target state="translated">實作 Dispose 方法</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You implement a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method to release unmanaged resources used by your application.</source>
+          <target state="translated">您實作 <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 方法，以釋放您的應用程式所使用的 Unmanaged 資源。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The .NET garbage collector does not allocate or release unmanaged memory.</source>
+          <target state="translated">.NET 記憶體回收行程不會配置或釋放 Unmanaged 記憶體。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The pattern for disposing an object, referred to as a dispose pattern, imposes order on the lifetime of an object.</source>
+          <target state="translated">處置物件的模式稱為處置模式，會在物件的存留期上安排順序。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The dispose pattern is used only for objects that access unmanaged resources, such as file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory.</source>
+          <target state="translated">處置模式僅適用於存取 Unmanaged 資源的物件，例如檔案和管道控制碼、註冊控制代碼、等候控制代碼，或是 Unmanaged 記憶體區塊的指標。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This is because the garbage collector is very efficient at reclaiming unused managed objects, but it is unable to reclaim unmanaged objects.</source>
+          <target state="translated">這是因為記憶體回收行程在回收未使用的 Managed 物件方面相當有效率，但是它無法回收 Unmanaged 物件。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The dispose pattern has two variations:</source>
+          <target state="translated">處置模式有兩種：</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You wrap each unmanaged resource that a type uses in a safe handle (that is, in a class derived from <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>).</source>
+          <target state="translated">將類型使用的每一種 Unmanaged 資源包裝在安全控制代碼中 (也就是在衍生自 <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的類別中)。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In this case, you implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and an additional <ph id="ph1">`Dispose(Boolean)`</ph> method.</source>
+          <target state="translated">在這種情況下，請實作 <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 介面和額外的 <ph id="ph1">`Dispose(Boolean)`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This is the recommended variation and doesn't require overriding the <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">這是建議的做法，這種做法不需要覆寫 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> namespace provides a set of classes derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept>, which are listed in the <bpt id="p3">[</bpt>Using safe handles<ept id="p3">](#using-safe-handles)</ept> section.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> 命名空間會提供一組衍生自 <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的類別，<bpt id="p3">[</bpt>使用安全控制代碼<ept id="p3">](#using-safe-handles)</ept>一節將列出這些類別。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you can't find a class that is suitable for releasing your unmanaged resource, you can implement your own subclass of <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>.</source>
+          <target state="translated">如果您找不到適合釋放 Unmanaged 資源的類別，可以實作自有的 <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 子類別。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and an additional <ph id="ph1">`Dispose(Boolean`</ph>) method, and you also override the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">除了實作 <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 介面和額外的 <ph id="ph1">`Dispose(Boolean`</ph>) 方法之外，還要覆寫 <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You must override <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> to ensure that unmanaged resources are disposed of if your <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> implementation is not called by a consumer of your type.</source>
+          <target state="translated">您必須覆寫 <bpt id="p1">[</bpt>Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>，才能確保類型消費者未呼叫您的 <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> 實作時，Unmanaged 資源仍會獲得處置。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you use the recommended technique discussed in the previous bullet, the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class does this on your behalf.</source>
+          <target state="translated">如果您採用前一項所討論的建議技術，<bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 類別會自動為您完成這項作業。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To help ensure that resources are always cleaned up appropriately, a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method should be callable multiple times without throwing an exception.</source>
+          <target state="translated">若要確保資源永遠都能適當清除，<bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 方法應該能夠被呼叫多次而不會擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The code example provided for the <bpt id="p1">[</bpt>GC.KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> method shows how aggressive garbage collection can cause a finalizer to run while a member of the reclaimed object is still executing.</source>
+          <target state="translated">提供的 <bpt id="p1">[</bpt>GC.KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> 方法程式碼範例示範積極記憶體回收如何在被回收的物件仍在執行時，即讓完成項開始執行。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It is a good idea to call the <bpt id="p1">[</bpt>KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> method at the end of a lengthy <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">在冗長的 <ph id="ph1">`Dispose`</ph> 方法結尾處呼叫 <bpt id="p1">[</bpt>KeepAlive<ept id="p1">](xref:System.GC.KeepAlive(System.Object))</ept> 方法，這是個不錯的做法。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Dispose() and Dispose(Boolean)</source>
+          <target state="translated">Dispose() 和 Dispose(Boolean)</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface requires the implementation of a single parameterless method, <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 介面要求實作單一無參數方法 <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, the dispose pattern requires two <ph id="ph1">`Dispose`</ph> methods to be implemented:</source>
+          <target state="translated">不過，處置模式要求實作兩種 <ph id="ph1">`Dispose`</ph> 方法：</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>A public non-virtual (<ph id="ph1">`NonInheritable`</ph> in Visual Basic) <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation that has no parameters.</source>
+          <target state="translated">公用非虛擬 (在 Visual Basic 中為 <ph id="ph1">`NonInheritable`</ph>) 的 <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 實作，而且沒有任何參數。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>A protected virtual (<ph id="ph1">`Overridable`</ph> in Visual Basic) <ph id="ph2">`Dispose`</ph> method whose signature is:</source>
+          <target state="translated">受保護的虛擬 (Visual Basic 中為 <ph id="ph1">`Overridable`</ph>) <ph id="ph2">`Dispose`</ph> 方法，其簽章為：</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The Dispose() overload</source>
+          <target state="translated">Dispose() 多載</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Because the public, non-virtual (<ph id="ph1">`NonInheritable`</ph> in Visual Basic), parameterless <ph id="ph2">`Dispose`</ph> method is called by a consumer of the type, its purpose is to free unmanaged resources and to indicate that the finalizer, if one is present, doesn't have to run.</source>
+          <target state="translated">由於這個公用、非虛擬 (在 Visual Basic 中為 <ph id="ph1">`NonInheritable`</ph>)、無參數的 <ph id="ph2">`Dispose`</ph> 方法是由類型消費者所呼叫，其用途是釋放 Unmanaged 資源並指出完成項 (如果有的話) 不需要執行。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Because of this, it has a standard implementation:</source>
+          <target state="translated">因此，它擁有標準實作：</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Dispose`</ph> method performs all object cleanup, so the garbage collector no longer needs to call the objects' <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> override.</source>
+          <target state="translated"><ph id="ph1">`Dispose`</ph> 方法會執行所有物件清除，所以記憶體回收行程不需要再呼叫物件的 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> 覆寫。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Therefore, the call to the <bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> method prevents the garbage collector from running the finalizer.</source>
+          <target state="translated">因此，呼叫 <bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> 方法會防止記憶體回收行程執行完成項。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the type has no finalizer, the call to <bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> has no effect.</source>
+          <target state="translated">如果類型沒有完成項，則呼叫 <bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept> 沒有作用。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Note that the actual work of releasing unmanaged resources is performed by the second overload of the <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">請注意，實際釋放 Unmanaged 資源的工作是由 <ph id="ph1">`Dispose`</ph> 方法的第二個多載執行。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The Dispose(Boolean) overload</source>
+          <target state="translated">Dispose(Boolean) 多載</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the second overload, the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> parameter is a <bpt id="p2">[</bpt>Boolean<ept id="p2">](xref:System.Boolean)</ept> that indicates whether the method call comes from a <bpt id="p3">[</bpt>Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> method (its value is <ph id="ph1">`true`</ph>) or from a finalizer (its value is <ph id="ph2">`false`</ph>).</source>
+          <target state="translated">在第二個多載中，<bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 參數為 <bpt id="p2">[</bpt>Boolean<ept id="p2">](xref:System.Boolean)</ept>，它會指出方法呼叫是來自 <bpt id="p3">[</bpt>Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> 方法 (其值為 <ph id="ph1">`true`</ph>) 或是來自完成項 (其值為 <ph id="ph2">`false`</ph>)。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The body of the method consists of two blocks of code:</source>
+          <target state="translated">方法的主體是由兩個程式碼區塊所構成：</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A block that frees unmanaged resources.</source>
+          <target state="translated">釋放 Unmanaged 資源的區塊。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This block executes regardless of the value of the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> parameter.</source>
+          <target state="translated">不論 <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 參數的值為何，這個區塊都會執行。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A conditional block that frees managed resources.</source>
+          <target state="translated">釋放 Managed 資源的條件性區塊。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This block executes if the value of <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">如果 <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 的值為 <ph id="ph1">`true`</ph>，這個區塊就會執行。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The managed resources that it frees can include:</source>
+          <target state="translated">它所釋放的 Managed 資源可能包括：</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Managed objects that implement IDisposable<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>實作 IDisposable 的 Managed 物件<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The conditional block can be used to call their <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated">條件式區塊可以用來呼叫其 <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 實作。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you have used a safe handle to wrap your unmanaged resource, you should call the <bpt id="p1">[</bpt>SafeHandle.Dispose(Boolean<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean))</ept> implementation here.</source>
+          <target state="translated">如果您已使用安全控制代碼包裝 Unmanaged 資源，則應該在這裡呼叫 <bpt id="p1">[</bpt>SafeHandle.Dispose(Boolean<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean))</ept> 實作。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Managed objects that consume large amounts of memory or consume scarce resources.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>耗用大量記憶體或耗用少量資源的 Managed 物件。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Freeing these objects explicitly in the <ph id="ph1">`Dispose`</ph> method releases them faster than if they were reclaimed non-deterministically by the garbage collector.</source>
+          <target state="translated">如果它們是之非由記憶體回收行程，在 <ph id="ph1">`Dispose`</ph> 方法中明確釋放這些物件的速度，會比由記憶體回收行程以非決定性的方式回收來得快。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If the method call comes from a finalizer (that is, if <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> is <ph id="ph1">`false`</ph>), only the code that frees unmanaged resources executes.</source>
+          <target state="translated">如果方法呼叫來自完成項 (也就是如果 <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 為 <ph id="ph1">`false`</ph>)，則只會執行釋放 Unmanaged 資源的程式碼。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Because the order in which the garbage collector destroys managed objects during finalization is not defined, calling this <ph id="ph1">`Dispose`</ph> overload with a value of <ph id="ph2">`false`</ph> prevents the finalizer from trying to release managed resources that may have already been reclaimed.</source>
+          <target state="translated">由於記憶體回收行程在最終處理期間終結 Managed 物件的順序並未定義，使用 <ph id="ph1">`Dispose`</ph> 值呼叫此 <ph id="ph2">`false`</ph> 多載可防止完成項嘗試釋放可能已經回收的 Managed 資源。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Implementing the dispose pattern for a base class</source>
+          <target state="translated">實作基底類別的處置模式</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you implement the dispose pattern for a base class, you must provide the following:</source>
+          <target state="translated">如果您實作基底類別的處置模式，則必須提供下列項目：</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You should implement this pattern for all base classes that implement <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> and are not <ph id="ph1">`sealed`</ph>.</source>
+          <target state="translated">您應該針對實作 <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 並且不是 <ph id="ph1">`sealed`</ph> 的所有基底類別實作此模式。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation that calls the <ph id="ph1">`Dispose(Boolean)`</ph> method.</source>
+          <target state="translated">呼叫 <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> 方法的 <ph id="ph1">`Dispose(Boolean)`</ph> 實作。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Dispose(Boolean)`</ph> method that performs the actual work of releasing resources.</source>
+          <target state="translated">實際釋放資源的 <ph id="ph1">`Dispose(Boolean)`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Either a class derived from <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> that wraps your unmanaged resource (recommended), or an override to the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">衍生自包裝您的 Unmanaged 資源之 <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的類別 (建議使用)，或是 <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> 方法的覆寫。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>SafeHandle class provides a finalizer that frees you from having to code one.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 類別會提供完成項，讓您不必自行撰寫程式碼。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a base class that uses a safe handle.</source>
+          <target state="translated">以下一般模式將會實作使用安全控制代碼之基底類別的處置模式。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The previous example uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to illustrate the pattern; any object derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> could be used instead.</source>
+          <target state="translated">上一個範例使用 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 物件來說明模式；可改用任何衍生自 <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的物件。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that the example does not properly instantiate its <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object.</source>
+          <target state="translated">請注意，該範例未正確地執行個體化其 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a base class that overrides <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>.</source>
+          <target state="translated">以下一般模式將會實作覆寫 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> 之基底類別的處置模式。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In C#, you override <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> by defining a <ph id="ph1">`destructor`</ph>.</source>
+          <target state="translated">在 C# 中，您會透過定義 <ph id="ph1">`destructor`</ph> 來覆寫 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Implementing the dispose pattern for a derived class</source>
+          <target state="translated">實作衍生類別的處置模式</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>A class derived from a class that implements the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface shouldn't implement <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept>, because the base class implementation of <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> is inherited by its derived classes.</source>
+          <target state="translated">從實作 <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> 介面的類別衍生的類別不應該實作 <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept>，因為 <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> 的基底類別實作會由其衍生類別繼承。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Instead, to implement the dispose pattern for a derived class, you provide the following:</source>
+          <target state="translated">因此，若要實作衍生類別的處置模式，請改為提供下列項目：</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`protected Dispose(Boolean)`</ph> method that overrides the base class method and performs the actual work of releasing the resources of the derived class.</source>
+          <target state="translated">覆寫基底類別方法及實際釋放衍生類別之資源的 <ph id="ph1">`protected Dispose(Boolean)`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This method should also call the <ph id="ph1">`Dispose(Boolean)`</ph> method of the base class and pass it a value of <ph id="ph2">`true`</ph> for the <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> argument.</source>
+          <target state="translated">這個方法也應該呼叫基底類別的 <ph id="ph1">`Dispose(Boolean)`</ph> 方法，並且將 <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 引數的 <ph id="ph2">`true`</ph> 值傳遞給它。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Either a class derived from <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> that wraps your unmanaged resource (recommended), or an override to the <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">衍生自包裝您的 Unmanaged 資源之 <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的類別 (建議使用)，或是 <bpt id="p2">[</bpt>Object.Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> 方法的覆寫。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class provides a finalizer that frees you from having to code one.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 類別會提供完成項，讓您不必自行撰寫程式碼。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>If you do provide a finalizer, it should call the <ph id="ph1">`Dispose(Boolean)`</ph> overload with a <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> argument of <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">如果您提供完成項，則它應該呼叫 <ph id="ph1">`Dispose(Boolean)`</ph> 多載且 <bpt id="p1">*</bpt>disposing<ept id="p1">*</ept> 引數為 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a derived class that uses a safe handle:</source>
+          <target state="translated">以下一般模式將會實作使用安全控制代碼之衍生類別的處置模式：</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The previous example uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to illustrate the pattern; any object derived from <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> could be used instead.</source>
+          <target state="translated">上一個範例使用 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 物件來說明模式；可改用任何衍生自 <bpt id="p2">[</bpt>SafeHandle<ept id="p2">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 的物件。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Note that the example does not properly instantiate its <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object.</source>
+          <target state="translated">請注意，該範例未正確地執行個體化其 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Here's the general pattern for implementing the dispose pattern for a derived class that overrides <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>:</source>
+          <target state="translated">以下一般模式將會實作覆寫 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> 之衍生類別的處置模式：</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In C#, you override <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> by defining a <ph id="ph1">`destructor`</ph>.</source>
+          <target state="translated">在 C# 中，您會透過定義 <ph id="ph1">`destructor`</ph> 來覆寫 <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Using safe handles</source>
+          <target state="translated">使用安全控制代碼</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Writing code for an object's finalizer is a complex task that can cause problems if not done correctly.</source>
+          <target state="translated">撰寫物件完成項的程式碼是一項複雜的工作，若未正確撰寫，可能會造成問題。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Therefore, we recommend that you construct <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> objects instead of implementing a finalizer.</source>
+          <target state="translated">因此，建議您建構 <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 物件，而不要實作完成項。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Classes derived from the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class simplify object lifetime issues by assigning and releasing handles without interruption.</source>
+          <target state="translated">衍生自 <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> 類別的類別會在不受干擾的情況下，藉由指派和釋放控制代碼的方式簡化物件存留期的問題。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>They contain a critical finalizer that is guaranteed to run while an application domain is unloading.</source>
+          <target state="translated">這些類別包含重要的完成項，該完成項保證會在應用程式定義域卸載時執行。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The following derived classes in the <bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> namespace provide safe handles:</source>
+          <target state="translated"><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept> 命名空間中的下列衍生類別會提供安全控制代碼：</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>, <bpt id="p2">[</bpt>SafeMemoryMappedFileHandle<ept id="p2">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle)</ept>, and <bpt id="p3">[</bpt>SafePipeHandle<ept id="p3">](xref:Microsoft.Win32.SafeHandles.SafePipeHandle)</ept> class, for files, memory mapped files, and pipes.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept>、<bpt id="p2">[</bpt>SafeMemoryMappedFileHandle<ept id="p2">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle)</ept> 和 <bpt id="p3">[</bpt>SafePipeHandle<ept id="p3">](xref:Microsoft.Win32.SafeHandles.SafePipeHandle)</ept> 類別，適用於檔案、記憶體對應檔案和管道。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeMemoryMappedViewHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle)</ept> class, for memory views.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeMemoryMappedViewHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle)</ept> 類別，適用於記憶體檢視。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeNCryptKeyHandle<ept id="p1">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx)</ept>, <bpt id="p2">[</bpt>SafeNCryptProviderHandle<ept id="p2">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx)</ept>, and <bpt id="p3">[</bpt>SafeNCryptSecretHandle<ept id="p3">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx)</ept> classes, for cryptography constructs.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeNCryptKeyHandle<ept id="p1">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptkeyhandle(v=vs.110).aspx)</ept>、<bpt id="p2">[</bpt>SafeNCryptProviderHandle<ept id="p2">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptproviderhandle(v=vs.110).aspx)</ept> 和 <bpt id="p3">[</bpt>SafeNCryptSecretHandle<ept id="p3">](https://msdn.microsoft.com/en-us/library/microsoft.win32.safehandles.safencryptsecrethandle(v=vs.110).aspx)</ept> 類別，適用於加密建構。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeRegistryHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle)</ept> class, for registry keys.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeRegistryHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle)</ept> 類別，適用於登錄機碼。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>SafeWaitHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeWaitHandle)</ept> class, for wait handles.</source>
+          <target state="translated"><bpt id="p1">[</bpt>SafeWaitHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeWaitHandle)</ept> 類別，適用於等候控制代碼。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Using a safe handle to implement the dispose pattern for a base class</source>
+          <target state="translated">使用安全控制代碼實作基底類別的處置模式</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the dispose pattern for a base class, <ph id="ph1">`DisposableStreamResource`</ph>, that uses a safe handle to encapsulate unmanaged resources.</source>
+          <target state="translated">下列範例將說明使用安全控制代碼封裝 Unmanaged 資源之基底類別 <ph id="ph1">`DisposableStreamResource`</ph> 的處置模式。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It defines a <ph id="ph1">`DisposableResource`</ph> class that uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> to wrap a <bpt id="p2">[</bpt>Stream<ept id="p2">](xref:System.IO.Stream)</ept> object that represents an open file.</source>
+          <target state="translated">它會定義 <ph id="ph1">`DisposableResource`</ph> 類別，該類別使用 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 包裝代表開啟檔案的 <bpt id="p2">[</bpt>Stream<ept id="p2">](xref:System.IO.Stream)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`DisposableResource`</ph> method also includes a single property, <ph id="ph2">`Size`</ph>, that returns the total number of bytes in the file stream.</source>
+          <target state="translated"><ph id="ph1">`DisposableResource`</ph> 方法還包含單一屬性 <ph id="ph2">`Size`</ph>，該屬性會傳回檔案資料流中的位元組總數。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Using a safe handle to implement the dispose pattern for a derived class</source>
+          <target state="translated">使用安全控制代碼實作衍生類別的處置模式</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the dispose pattern for a derived class, <ph id="ph1">`DisposableStreamResource2`</ph>, that inherits from the <ph id="ph2">`DisposableStreamResource`</ph> class presented in the previous example.</source>
+          <target state="translated">下列範例將說明衍生類別 <ph id="ph1">`DisposableStreamResource2`</ph> 的處置模式，該類別繼承自上述範例中顯示的 <ph id="ph2">`DisposableStreamResource`</ph> 類別。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The class adds an additional method, <ph id="ph1">`WriteFileInfo`</ph>, and uses a <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> object to wrap the handle of the writable file.</source>
+          <target state="translated">這個類別會新增額外的方法 <ph id="ph1">`WriteFileInfo`</ph>，並使用 <bpt id="p1">[</bpt>SafeFileHandle<ept id="p1">](xref:Microsoft.Win32.SafeHandles.SafeFileHandle)</ept> 物件包裝可寫入檔案的控制代碼。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">請參閱</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SuppressFinalize<ept id="p1">](xref:System.GC.SuppressFinalize(System.Object))</ept></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Microsoft.Win32.SafeHandles<ept id="p1">](xref:Microsoft.Win32.SafeHandles)</ept></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

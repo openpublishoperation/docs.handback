@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3efd30bade564fe1b7dbf93237a9ff40c58c5f1e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\best-practices-strings.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e466b1fa40bcf6a82fdf2349f2b6346dd591d696</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">32d24a667cd981642c7344e4a4899a410e95b9f2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">使用字串的最佳做法</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">使用字串的最佳做法</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">使用字串的最佳做法</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET provides extensive support for developing localized and globalized applications, and makes it easy to apply the conventions of either the current culture or a specific culture when performing common operations such as sorting and displaying strings.</source>
+          <target state="translated">.NET 可廣泛支援當地語系化和全球化應用程式的開發作業，使您在執行一般作業 (例如排序和顯示字串) 時，可輕鬆套用目前的文化特性或特定文化特性的慣例。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>But sorting or comparing strings is not always a culture-sensitive operation.</source>
+          <target state="translated">但是，排序或比較字串並不一定是區分文化特性的作業。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, strings that are used internally by an application typically should be handled identically across all cultures.</source>
+          <target state="translated">例如，應用程式內部使用的字串，通常應該跨所有文化特性皆進行相同處理。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When culturally independent string data, such as XML tags, HTML tags, user names, file paths, and the names of system objects, are interpreted as if they were culture-sensitive, application code can be subject to subtle bugs, poor performance, and, in some cases, security issues.</source>
+          <target state="translated">若將與文化特性無關的字串資料 (例如 XML 標記、HTML 標記、使用者名稱、檔案路徑和系統物件的名稱) 進行區分文化特性的解譯時，應用程式程式碼可能會出現細微的 Bug、效能不佳，甚至在某些情況下，會產生安全性問題。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article examines the string sorting, comparison, and casing methods in .NET, presents recommendations for selecting an appropriate string-handling method, and provides additional information about string-handling methods.</source>
+          <target state="translated">本文會詳述 .NET 中的字串排序、比較和大小寫方法，並提供適當字串處理方法的選擇建議，以及字串處理方法的其他資訊。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It also examines how formatted data, such as numeric data and date and time data, is handled for display and for storage.</source>
+          <target state="translated">它也會說明如何處理數值資料和日期與時間資料之類的格式化資料，以供顯示及儲存。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article contains the following sections:</source>
+          <target state="translated">本文包含下列章節：</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Recommendations for string usage<ept id="p1">](#recommendations-for-string-usage)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>字串的使用建議<ept id="p1">](#recommendations-for-string-usage)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Specifying string comparisons explicitly<ept id="p1">](#specifying-string-comparisons-explicitly)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>明確指定字串比較<ept id="p1">](#specifying-string-comparisons-explicitly)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The details of string comparison<ept id="p1">](#the-details-of-string-comparison)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>字串比較的詳細資料<ept id="p1">](#the-details-of-string-comparison)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Choosing a StringComparison member for your method call<ept id="p1">](#choosing-a-stringcomparison-member-for-your-method-call)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>為您的方法呼叫選擇 StringComparison 成員<ept id="p1">](#choosing-a-stringcomparison-member-for-your-method-call)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Common string comparison methods<ept id="p1">](#common-string-comparison-methods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>常用的字串比較方法<ept id="p1">](#common-string-comparison-methods)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Methods that perform string comparison indirectly<ept id="p1">](#methods-that-perform-string-comparison-indirectly)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>間接執行字串比較的方法<ept id="p1">](#methods-that-perform-string-comparison-indirectly)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Displaying and persisting formatted data<ept id="p1">](#displaying-and-persisting-formatted-data)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>顯示及保存格式化的資料<ept id="p1">](#displaying-and-persisting-formatted-data)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Recommendations for string usage</source>
+          <target state="translated">字串的使用建議</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When you develop with .NET, follow these simple recommendations when you use strings:</source>
+          <target state="translated">當您使用 .NET 進行開發時，請遵循下列簡單的字串使用建議：</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use overloads that explicitly specify the string comparison rules for string operations.</source>
+          <target state="translated">使用明確指定字串比較規則的多載來進行字串作業。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Typically, this involves calling a method overload that has a parameter of type <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</source>
+          <target state="translated">一般而言，這需要呼叫具有 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 類型參數的方法多載。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> for comparisons as your safe default for culture-agnostic string matching.</source>
+          <target state="translated">將 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 或 <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 作為安全的無從驗證文化特性字串預設比對，來進行比較。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Use comparisons with <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> for better performance.</source>
+          <target state="translated">使用 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 或 <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 來比較以提升效能。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Use string operations that are based on <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> when you display output to the user.</source>
+          <target state="translated">向使用者顯示輸出時，您可以使用依據 <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> 的字串作業。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Use the non-linguistic <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> values instead of string operations based on <bpt id="p3">[</bpt>CultureInfo.InvariantCulture<ept id="p3">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> when the comparison is linguistically irrelevant (symbolic, for example).</source>
+          <target state="translated">在進行語言無關的比較 (如符號) 時，使用非語言式 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 或 <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 值，而不是依據 <bpt id="p3">[</bpt>CultureInfo.InvariantCulture<ept id="p3">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> 的字串作業。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> method instead of the <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> method when you normalize strings for comparison.</source>
+          <target state="translated">正規化字串以進行比較，使用 <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> 方法，而非 <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> method to test whether two strings are equal.</source>
+          <target state="translated">使用 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> 方法的多載，來測試兩個字串是否相等。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> and <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> methods to sort strings, not to check for equality.</source>
+          <target state="translated">使用 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> 和 <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> 方法的多載來排序字串，而不檢查是否相等。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface.</source>
+          <target state="translated">使用區分文化特性的格式來顯示使用者介面中的非字串資料，例如數字和日期。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Use formatting with the invariant culture to persist non-string data in string form.</source>
+          <target state="translated">使用不因文化特性而異的格式來保存字串形式的非字串資料。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Avoid the following practices when you use strings:</source>
+          <target state="translated">當您使用字串時，請避免下列作法：</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Do not use overloads that do not explicitly or implicitly specify the string comparison rules for string operations.</source>
+          <target state="translated">不要使用未明確或未隱含指定字串比較規則的多載來進行字串作業。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Do not use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> or <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> methods and test for a return value of zero to determine whether two strings are equal.</source>
+          <target state="translated">不要使用 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> 或 <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> 方法的多載以及傳回零值的測試，來判斷兩個字串是否相等。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.</source>
+          <target state="translated">不要使用區分文化特性的格式來保存數值資料或字串形式的日期和時間資料。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Specifying string comparisons explicitly</source>
+          <target state="translated">明確指定字串比較</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Most of the string manipulation methods in .NET are overloaded.</source>
+          <target state="translated">在 .NET 中的字串操作方法大多都是多載。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated.</source>
+          <target state="translated">一般而言，您可讓一或多個多載接受預設值，而其他不接受預設值的多載，則定義用來比較或操作字串的精確方式。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Most of the methods that do not rely on defaults include a parameter of type <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>, which is an enumeration that explicitly specifies rules for string comparison by culture and case.</source>
+          <target state="translated">大部分不依賴預設值的方法都會包含 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 類型的參數，其為一種列舉，可明確指定依據文化特性和大小寫進行字串比較的規則。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following table describes the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> enumeration members.</source>
+          <target state="translated">下表說明 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 列舉成員。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>StringComparison member</source>
+          <target state="translated">StringComparison 成員</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Performs a case-sensitive comparison using the current culture.</source>
+          <target state="translated">使用目前文化特性執行區分大小寫的比較。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CurrentCultureIgnoreCase<ept id="p1">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrentCultureIgnoreCase<ept id="p1">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Performs a case-insensitive comparison using the current culture.</source>
+          <target state="translated">使用目前文化特性執行不區分大小寫的比較。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Performs an ordinal comparison.</source>
+          <target state="translated">執行序數比較。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Performs a case-insensitive ordinal comparison.</source>
+          <target state="translated">執行不區分大小寫的序數比較。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> method, which returns the index of a substring in a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> object that matches either a character or a string, has nine overloads:</source>
+          <target state="translated">例如，<bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> 方法有下列九個多載，可傳回 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> 物件中符合某字元或某字串之子字串的索引：</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(Char)<ept id="p1">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p2">[</bpt>IndexOf(Char, Int32)<ept id="p2">](xref:System.String.IndexOf(System.Char,System.Int32))</ept>, and <bpt id="p3">[</bpt>IndexOf(Char, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.Char,System.Int32,System.Int32))</ept>, which by default perform an ordinal (case-sensitive and culture-insensitive) search for a character in the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(Char)<ept id="p1">](xref:System.String.IndexOf(System.Char))</ept>、<bpt id="p2">[</bpt>IndexOf(Char, Int32)<ept id="p2">](xref:System.String.IndexOf(System.Char,System.Int32))</ept> 和 <bpt id="p3">[</bpt>IndexOf(Char, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.Char,System.Int32,System.Int32))</ept> 預設會執行字串字元的序數 (區分大小寫且區分文化特性) 搜尋。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(String)<ept id="p1">](xref:System.String.IndexOf(System.String))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32))</ept>, and <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32))</ept>, which by default perform a case-sensitive and culture-sensitive search for a substring in the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(String)<ept id="p1">](xref:System.String.IndexOf(System.String))</ept>、<bpt id="p2">[</bpt>IndexOf(String, Int32)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32))</ept> 和 <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32))</ept> 預設會執行字串的子字串搜尋 (區分大小寫且區分文化特性)。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(String, StringComparison)<ept id="p1">](xref:System.String.IndexOf(System.String,System.StringComparison))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32, StringComparison)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32,System.StringComparison))</ept>, and <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32, StringComparison)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison))</ept>, which include a parameter of type StringComparison that allows the form of the comparison to be specified.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(String, StringComparison)<ept id="p1">](xref:System.String.IndexOf(System.String,System.StringComparison))</ept>、<bpt id="p2">[</bpt>IndexOf(String, Int32, StringComparison)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32,System.StringComparison))</ept> 和 <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32, StringComparison)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison))</ept>，包括 StringComparison 類型的參數，可指定比較形式。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>We recommend that you select an overload that does not use default values, for the following reasons:</source>
+          <target state="translated">基於下列原因，建議您選取不使用預設值的多載：</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Some overloads with default parameters (those that search for a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> in the string instance) perform an ordinal comparison, whereas others (those that search for a string in the string instance) are culture-sensitive.</source>
+          <target state="translated">有些使用預設參數的多載 (其會在字串執行個體中搜尋 <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept>) 會執行序數比較，而其他多載 (其會搜尋字串執行個體中的字串) 有區分文化特性。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It is difficult to remember which method uses which default value, and easy to confuse the overloads.</source>
+          <target state="translated">使用者很難記住哪一種方法使用預設值，也很容易混淆多載。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The intent of the code that relies on default values for method calls is not clear.</source>
+          <target state="translated">依賴預設值來執行方法呼叫的程式碼意圖並不清楚。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between <ph id="ph1">`protocol`</ph> and "http" might cause the test for equality to return <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">在下列依賴預設值的範例中，我們很難知道開發人員到底要進行兩個字串的序數或語言比較，也很難判斷 <ph id="ph1">`protocol`</ph> 和 "http" 之間的大小寫差異是否會造成相等測試傳回 <ph id="ph2">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In general, we recommend that you call a method that does not rely on defaults, because it makes the intent of the code unambiguous.</source>
+          <target state="translated">一般而言，我們建議您呼叫不依賴預設值的方法，因為它會讓程式碼的意圖不明確。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This, in turn, makes the code more readable and easier to debug and maintain.</source>
+          <target state="translated">不過，這可讓程式碼更容易閱讀也更容易偵錯與維護。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following example addresses the questions raised about the previous example.</source>
+          <target state="translated">下列範例將解決先前範例所引發的問題。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It makes it clear that ordinal comparison is used and that differences in case are ignored.</source>
+          <target state="translated">它會清楚指出使用序數比較，並且忽略大小寫差異。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The details of string comparison</source>
+          <target state="translated">字串比較的詳細資料</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>String comparison is the heart of many string-related operations, particularly sorting and testing for equality.</source>
+          <target state="translated">字串比較是許多字串相關作業的核心，尤其是排序和測試是否相等這類作業。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string".</source>
+          <target state="translated">字串依固定順序排序：在已排序的字串清單中，如果 "my" 在 "string" 之前出現，則 "my" 比較起來一定小於或等於 "string"。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Additionally, comparison implicitly defines equality.</source>
+          <target state="translated">此外，比較也隱含定義相等性。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The comparison operation returns zero for strings it deems equal.</source>
+          <target state="translated">比較作業會針對它認為相等的字串傳回零。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>A good interpretation is that neither string is less than the other.</source>
+          <target state="translated">明言之，就是沒有任一字串比另一個字串更小。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.</source>
+          <target state="translated">最有意義的字串作業包含下列一或兩個程序：和其他字串進行比較，並執行定義完善的排序作業。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings.</source>
+          <target state="translated">不過，評估兩個字串是否相等或決定排序順序不會產生單一的正確結果，而要取決於用來比較字串的準則而定。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.</source>
+          <target state="translated">特別是，如果字串比較是序數或根據目前文化特性或不因文化特性而異的大小寫與排序慣例 (根據英文語言的無從驗證地區設定文化特性)，則可能會產生不同的結果。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>String comparisons that use the current culture</source>
+          <target state="translated">使用目前之文化特性的字串比較</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>One criterion involves using the conventions of the current culture when comparing strings.</source>
+          <target state="translated">比較字串時，其中一個準則需使用目前文化特性的慣例。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Comparisons that are based on the current culture use the thread's current culture or locale.</source>
+          <target state="translated">如果比較是以目前文化特性為依據，就會使用執行緒的目前文化特性或地區設定。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You should always use comparisons that are based on the current culture when data is linguistically relevant, and when it reflects culture-sensitive user interaction.</source>
+          <target state="translated">當資料是語言相關資料，以及資料會反映區分文化特性的使用者互動時，請一律使用以目前文化特性為根據的比較。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>However, comparison and casing behavior in .NET changes when the culture changes.</source>
+          <target state="translated">不過，當文化特性變更時，.NET 中的比較和大小寫行為也會有所變更。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This happens when an application executes on a computer that has a different culture than the computer on which the application was developed, or when the executing thread changes its culture.</source>
+          <target state="translated">當執行應用程式的電腦其文化特性不同於開發應用程式的電腦時，或執行中的執行緒變更其文化特性時，會發生這種情況。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This behavior is intentional, but it remains non-obvious to many developers.</source>
+          <target state="translated">此種行為有其用意，但對許多開發人員來說並不容易注意到。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The following example illustrates differences in sort order between the U.S. English ("en-US") and Swedish ("sv-SE") cultures.</source>
+          <target state="translated">下列範例說明美國英文 ("en-US") 和瑞典文 ("sv-SE") 文化特性之間排序次序的差異。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Note that the words "ångström", "Windows", and "Visual Studio" appear in different positions in the sorted string arrays.</source>
+          <target state="translated">請注意單字 "ångström"、"Windows" 和 "Visual Studio" 出現在已排序的字串陣列中的不同位置。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons that use the current culture are the same as culture-sensitive comparisons, except that they ignore case as dictated by the thread's current culture.</source>
+          <target state="translated">如果比較是使用目前文化特性且不區分大小寫，這類比較和區分文化特性的比較相同 (除了這些比較會忽略執行緒目前文化特性的大小寫要求以外)。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This behavior may manifest itself in sort orders as well.</source>
+          <target state="translated">這種行為可能會以排序順序來呈現。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Comparisons that use current culture semantics are the default for the following methods:</source>
+          <target state="translated">下列方法預設為執行使用目前文化特性之語意的比較：</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> overloads that do not include a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">不含 <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> 參數的 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> 多載。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String.CompareTo<ept id="p1">](xref:System.String.CompareTo(System.String))</ept> overloads.</source>
+          <target state="translated"><bpt id="p1">[</bpt>String.CompareTo<ept id="p1">](xref:System.String.CompareTo(System.String))</ept> 多載。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The default <bpt id="p1">[</bpt>String.StartsWith(String)<ept id="p1">](xref:System.String.StartsWith(System.String))</ept> method.</source>
+          <target state="translated">預設 <bpt id="p1">[</bpt>String.StartsWith(String)<ept id="p1">](xref:System.String.StartsWith(System.String))</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The default <bpt id="p1">[</bpt>String.EndsWith(String)<ept id="p1">](xref:System.String.EndsWith(System.String))</ept> method.</source>
+          <target state="translated">預設 <bpt id="p1">[</bpt>String.EndsWith(String)<ept id="p1">](xref:System.String.EndsWith(System.String))</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> overloads that accept a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> as a search parameter and that do not have a <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">可接受 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> 作為搜尋參數且不含 <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> 參數的 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> 多載。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`LastIndexOf`</ph> overloads that accept a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> as a search parameter and that do not have a <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">可接受 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> 作為搜尋參數且不含 <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> 參數的 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`LastIndexOf`</ph> 多載。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In any case, we recommend that you call an overload that has a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter to make the intent of the method call clear.</source>
+          <target state="translated">在任何情況下，都建議您呼叫具有 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 參數的多載，以讓方法呼叫的目的更清晰。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Subtle and not so subtle bugs can emerge when non-linguistic string data is interpreted linguistically, or when string data from a particular culture is interpreted using the conventions of another culture.</source>
+          <target state="translated">若以語言方式解譯非語言式的字串資料，或使用其他文化特性的慣例解譯來自特定文化特性的字串資料時，可能會出現微妙或不太微妙的 Bug。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The canonical example is the Turkish-I problem.</source>
+          <target state="translated">標準範例是土耳其文 I 的問題。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>For nearly all Latin alphabets, including U.S. English, the character "i" (\u0069) is the lowercase version of the character "I" (\u0049).</source>
+          <target state="translated">對於幾乎所有拉丁字母 (包括美國英文)，字元 "i" (\u0069) 是字元 "I" (\u0049) 的小寫。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>This casing rule quickly becomes the default for someone programming in such a culture.</source>
+          <target state="translated">這種大小寫規則很快成為以這種文化特性進行程式設計的人所採用的預設規則。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>However, the Turkish ("tr-TR") alphabet includes an "I with a dot" character "İ" (\u0130), which is the capital version of "i".</source>
+          <target state="translated">不過，土耳其文 ("tr-TR") 字母包括「加上一點的 I」字元 "İ" (\u0130)，也就是 "i" 的大寫。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Turkish also includes a lowercase "i without a dot" character, "ı" (\u0131), which capitalizes to "I".</source>
+          <target state="translated">土耳其文中也包含「不含點的 i 」字元，"ı" (\u0131)，其大寫為 "I"。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>This behavior occurs in the Azerbaijani ("az") culture as well.</source>
+          <target state="translated">亞塞拜然 ("az") 文化特性中也會發生這種行為。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Therefore, assumptions made about capitalizing "i" or lowercasing "I" are not valid among all cultures.</source>
+          <target state="translated">因此，關於將 "i" 轉換成大寫或將 "I" 轉換成小寫的假設並不適用。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>If you use the default overloads for string comparison routines, they will be subject to variance between cultures.</source>
+          <target state="translated">如果您針對字串比較常式使用預設多載，就會受限於文化特性之間的差異。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If the data to be compared is non-linguistic, using the default overloads can produce undesirable results, as the following attempt to perform a case-insensitive comparison of the strings "file" and "FILE" illustrates.</source>
+          <target state="translated">如果要比較的資料為非語言式，使用預設多載可能產生非預期的結果，如下列嘗試執行字串 "file" 和 "FILE" 之不區分大小寫的比較範例所示。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This comparison could cause significant problems if the culture is inadvertently used in security-sensitive settings, as in the following example.</source>
+          <target state="translated">如果不小心將文化特性用於安全性相關設定 (如下列範例所示)，這項比較可能會造成重大的問題。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>A method call such as <ph id="ph1">`IsFileURI("file:")`</ph> returns <ph id="ph2">`true`</ph> if the current culture is U.S. English, but <ph id="ph3">`false`</ph> if the current culture is Turkish.</source>
+          <target state="translated">如果目前的文化特性是美國英文，方法呼叫 (如 <ph id="ph1">`IsFileURI("file:")`</ph>) 會傳回 <ph id="ph2">`true`</ph>；但若目前的文化特性為土耳其文，則傳回 <ph id="ph3">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Thus, on Turkish systems, someone could circumvent security measures that block access to case-insensitive URIs that begin with "FILE:".</source>
+          <target state="translated">因此，在土耳其文的系統中，有心人士可以使用開頭為 "FILE:" 的 URI，來規避封鎖存取不區分大小寫之 URI 的安全性措施。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In this case, because "file:" is meant to be interpreted as a non-linguistic, culture-insensitive identifier, the code should instead be written as shown in the following example.</source>
+          <target state="translated">在此情況下，由於 "file:" 應解譯為非語言式、不區分文化特性的識別項，因此程式碼應改為下列範例：</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Ordinal String Operations</source>
+          <target state="translated">序數字串作業</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Specifying the <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> value in a method call signifies a non-linguistic comparison in which the features of natural languages are ignored.</source>
+          <target state="translated">在方法呼叫中指定 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 或 <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 值意謂著非語言比較，其中忽略自然語言的特性。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Methods that are invoked with these <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> values base string operation decisions on simple byte comparisons instead of casing or equivalence tables that are parameterized by culture.</source>
+          <target state="translated">若使用這類 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 值來叫用方法，方法就會以簡單的位元組比較來進行字串作業決策，而不以文化特性參數化的大小寫或對等項目資料表為根據。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In most cases, this approach best fits the intended interpretation of strings while making code faster and more reliable.</source>
+          <target state="translated">在大部分情況下，這種方法非常適合預期的字串解譯，同時可讓程式碼更快速、可靠。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" does not match "Windows".</source>
+          <target state="translated">序數比較是一種字串比較，其會比較每個字串的每個位元組，而不進行語言解譯；例如，"windows" 不符合 "Windows"。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy.</source>
+          <target state="translated">如果內容指出字串應該完全相符，或要求保守的比對原則時，請使用這項比較。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.</source>
+          <target state="translated">此外，序數比較在決定結果時不會套用任何語言規則，因此是最快速的比較作業。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Strings in .NET can contain embedded null characters.</source>
+          <target state="translated">.NET 中的字串可以包含內嵌的 Null 字元。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string.</source>
+          <target state="translated">序數和區分文化特性的比較 (包括使用不因文化特性而異的比較) 其中一個最明顯差異在於，內嵌 Null 字元在字串中的處理方式。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>These characters are ignored when you use the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> and <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`Equals`</ph> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture).</source>
+          <target state="translated">當您使用 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> 和 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`Equals`</ph> 方法來執行區分文化特性的比較 (包括使用不因文化特性而異的比較) 時，會忽略這些字元。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.</source>
+          <target state="translated">如此一來，在區分文化特性的比較中，即可將包含內嵌 Null 字元的字串視為等於不含這類字元的字串。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Although string comparison methods disregard embedded null characters, string search methods such as <bpt id="p1">[</bpt>String.Contains<ept id="p1">](xref:System.String.Contains(System.String))</ept>, <bpt id="p2">[</bpt>String.EndsWith<ept id="p2">](xref:System.String.EndsWith(System.String))</ept>, <bpt id="p3">[</bpt>String.IndexOf<ept id="p3">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p4">[</bpt>String.LastIndexOf<ept id="p4">](xref:System.String.LastIndexOf(System.String))</ept>, and <bpt id="p5">[</bpt>String.StartsWith<ept id="p5">](xref:System.String.StartsWith(System.String))</ept> do not.</source>
+          <target state="translated">雖然字串比較方法可以忽略內嵌的 Null 字元，但 <bpt id="p1">[</bpt>String.Contains<ept id="p1">](xref:System.String.Contains(System.String))</ept>、<bpt id="p2">[</bpt>String.EndsWith<ept id="p2">](xref:System.String.EndsWith(System.String))</ept>、<bpt id="p3">[</bpt>String.IndexOf<ept id="p3">](xref:System.String.IndexOf(System.Char))</ept>、<bpt id="p4">[</bpt>String.LastIndexOf<ept id="p4">](xref:System.String.LastIndexOf(System.String))</ept> 和 <bpt id="p5">[</bpt>String.StartsWith<ept id="p5">](xref:System.String.StartsWith(System.String))</ept> 之類的字串搜尋方法就不能這麼做了。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following example performs a culture-sensitive comparison of the string "Aa" with a similar string that contains several embedded null characters between "A" and "a", and shows how the two strings are considered equal.</source>
+          <target state="translated">下列範例會針對字串 "Aa" 以及 "A" 和 "a" 之間包含數個內嵌 Null 字元的類似字串，執行區分文化特性比較，並示範如何讓兩個字串被視為相等。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>However, the strings are not considered equal when you use ordinal comparison, as the following example shows.</source>
+          <target state="translated">不過，當您使用序數比較時，字串就不會被視為相等，如下列範例所示。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Case-insensitive ordinal comparisons are the next most conservative approach.</source>
+          <target state="translated">第二種最保守的方式是不區分大小寫的序數比較。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>These comparisons ignore most casing; for example, "windows" matches "Windows".</source>
+          <target state="translated">這些比較會忽略大部分的大小寫；例如，"windows" 符合 "Windows"。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>When dealing with ASCII characters, this policy is equivalent to <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>, except that it ignores the usual ASCII casing.</source>
+          <target state="translated">當處理 ASCII 字元時，這項原則相當於 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>，不過它會忽略一般 ASCII 大小寫。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A).</source>
+          <target state="translated">因此，[A, Z] (\u0041-\u005A) 中的任何字元會符合 [a,z] (\u0061-\007A) 中的對應字元。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Casing outside the ASCII range uses the invariant culture's tables.</source>
+          <target state="translated">ASCII 範圍之外的大小寫會使用不因文化特性而異的資料表。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Therefore, the following comparison:</source>
+          <target state="translated">因此，下列比較：</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>is equivalent to (but faster than) this comparison:</source>
+          <target state="translated">相當於下列比較 (而且更快)：</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>These comparisons are still very fast.</source>
+          <target state="translated">這些比較仍非常快速。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Both <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> and <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> use the binary values directly, and are best suited for matching.</source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 和 <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 兩者都直接使用二進位值，最適合用來比對。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>When you are not sure about your comparison settings, use one of these two values.</source>
+          <target state="translated">當您不確定比較設定時，請使用這兩個值的其中一個。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order.</source>
+          <target state="translated">不過，因為它們是以位元組為單位逐一比較，所以不會依照語言排序次序來排序 (就像英文字典一樣)，而是採用二進位排序次序。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The results may look odd in most contexts if displayed to users.</source>
+          <target state="translated">因此，在大多數內容當中，使用者看到的結果可能很奇怪。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Ordinal semantics are the default for <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> overloads that do not include a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> argument (including the equality operator).</source>
+          <target state="translated">不包含 <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> 引數 (包括等號比較運算子) 的 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> 多載是以序數語意為預設。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In any case, we recommend that you call an overload that has a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">在任何情況下，我們建議您呼叫具有 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 參數的多載。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>String operations that use the invariant culture</source>
+          <target state="translated">使用文化特性不變的字串作業</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Comparisons with the invariant culture use the <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> property returned by the static <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property.</source>
+          <target state="translated">採用不因文化特性而異的比較會使用靜態 <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> 屬性傳回的 <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> 屬性。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters.</source>
+          <target state="translated">這種行為在所有系統上都相同，它會將其範圍之外的任何字元轉譯成它認為是相等非變異字元的字元。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.</source>
+          <target state="translated">這項原則很適合跨文化特性來維護一套字串行為，但通常會產生非預期的結果。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons with the invariant culture use the static <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> property returned by the static <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property for comparison information as well.</source>
+          <target state="translated">採用不因文化特性而異的不區分大小寫比較，也會使用靜態 <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> 屬性所傳回的靜態 <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> 屬性來取得比較資訊。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Any case differences among these translated characters are ignored.</source>
+          <target state="translated">這些轉譯的字元之間的任何大小寫差異都會被忽略。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CultureInfo.InvariantCulture<ept id="p1">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> object makes a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> method interpret certain sets of characters as equivalent.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CultureInfo.InvariantCulture<ept id="p1">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> 物件使 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> 方法將多組字元解譯成相等。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For example, the following equivalence is valid under the invariant culture:</source>
+          <target state="translated">例如，下列等式在不因國別而異的文化特性之下有效：</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>InvariantCulture: a + ̊ = å</source>
+          <target state="translated">InvariantCulture: a + ̊ = å</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The latin small lette A character "a" (\u0061), when it is next to the combining ring above character "+ " ̊" (\u030a), is interpreted as the latin small letter A with ring above character "å" (\u00e5).</source>
+          <target state="translated">拉丁小寫字母 A 字元 "a" (\u0061) 在緊鄰著結合上圓圈字元 "+ " ̊" (\u030a) 時，解譯成拉丁小寫字母 A 帶上圓圈字元 "å" (\u00e5)。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>As the following example shows, this behavior differs from ordinal comparison.</source>
+          <target state="translated">如下列範例如示，這種行為不同於序數比較。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>When interpreting file names, cookies, or anything else where a combination such as "å" can appear, ordinal comparisons still offer the most transparent and fitting behavior.</source>
+          <target state="translated">在解譯檔名、Cookie 或可能出現像 "å" 一樣的組合的其他任何字串時，序數比較仍然會展現最明確和最適當的行為。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>On balance, the invariant culture has very few properties that make it useful for comparison.</source>
+          <target state="translated">權衡來看，不因國別而異的文化特性只有非常少的屬性，因此適合用於比較。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture.</source>
+          <target state="translated">不過，它會以語言相關的方式進行比較，這樣無法保證符號完全相等，因而不適合在任何文化特性中顯示。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.</source>
+          <target state="translated">例如，如果包含已排序之顯示識別項清單的大型資料檔案伴隨一個應用程式，則加入這份清單需要插入非變異樣式排序。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Choosing a StringComparison member for your method call</source>
+          <target state="translated">為您的方法呼叫選擇 StringComparison 成員</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The following table outlines the mapping from semantic string context to a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> enumeration member.</source>
+          <target state="translated">下表列出語意字串內容與 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 列舉成員的對應。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Data</source>
+          <target state="translated">資料</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Behavior</source>
+          <target state="translated">行為</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Corresponding System.StringComparison value</source>
+          <target state="translated">對應的 System.StringComparison 值</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Case-sensitive internal identifiers, case-sensitive identifiers in standards such as XML and HTTP, or case-sensitive security-related settings.</source>
+          <target state="translated">區分大小寫的內部識別項、在標準中區分大小寫的識別項 (例如 XML 和 HTTP) 或區分大小寫的安全性相關設定。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>A non-linguistic identifier, where bytes match exactly.</source>
+          <target state="translated">位元組完全相符的非語言識別項。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Case-insensitive internal identifiers, case-insensitive identifiers in standards such as XML and HTTP, file paths, registry keys and values, environment variables, resource identifiers (for example, handle names), or case-insensitive security-related settings.</source>
+          <target state="translated">不區分大小寫的內部識別項、在標準中區分大小寫的識別項 (例如 XML 和 HTTP)、檔案路徑、登錄機碼和值、環境變數、資源識別項 (例如控制代碼名稱) 或不區分大小寫的安全性相關設定。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>A non-linguistic identifier, where case is irrelevant.</source>
+          <target state="translated">大小寫不重要的非語言識別項。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Data displayed to the user or most user input.</source>
+          <target state="translated">顯示給使用者的資料或大部分的使用者輸入。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Data that requires local linguistic customs.</source>
+          <target state="translated">需要當地語言自訂的資料。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> or <bpt id="p2">[</bpt>CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> 或 <bpt id="p2">[</bpt>CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Common string comparison methods</source>
+          <target state="translated">常用的字串比較方法</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The following sections describe the methods that are most commonly used for string comparison.</source>
+          <target state="translated">下列各節描述字串比較最常用的方法。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>String.Compare</source>
+          <target state="translated">String.Compare</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>As the operation most central to string interpretation, all instances of these method calls should be examined to determine whether strings should be interpreted according to the current culture, or dissociated from the culture (symbolically).</source>
+          <target state="translated">由於是字串解譯最主要的作業，這些方法呼叫的所有執行個體都應該經過檢查，以決定字串應該根據目前文化特性來解譯，還是與文化特性分開 (符號形式)。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Typically, it is the latter, and a <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> comparison should be used instead.</source>
+          <target state="translated">通常是後者，所以應該改用 <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> 比較。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Globalization.CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> class, which is returned by the <bpt id="p2">[</bpt>CultureInfo.CompareInfo<ept id="p2">](xref:System.Globalization.CultureInfo.CompareInfo)</ept> property, also includes a <bpt id="p3">[</bpt>Compare<ept id="p3">](xref:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32,System.Globalization.CompareOptions))</ept> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <bpt id="p4">[</bpt>CompareOptions<ept id="p4">](xref:System.Globalization.CompareOptions)</ept> flag enumeration.</source>
+          <target state="translated">由 <bpt id="p2">[</bpt>CultureInfo.CompareInfo<ept id="p2">](xref:System.Globalization.CultureInfo.CompareInfo)</ept> 屬性傳回的 <bpt id="p1">[</bpt>System.Globalization.CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> 類別也包含 <bpt id="p3">[</bpt>Compare<ept id="p3">](xref:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32,System.Globalization.CompareOptions))</ept> 方法，這個方法透過 <bpt id="p4">[</bpt>CompareOptions<ept id="p4">](xref:System.Globalization.CompareOptions)</ept> 旗標列舉，提供大量比對選項 (序數、忽略空白字元、忽略假名類型等)。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>String.CompareTo</source>
+          <target state="translated">String.CompareTo</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>This method does not currently offer an overload that specifies a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">這個方法目前未提供任何指定 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 類型的多載。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>It is usually possible to convert this method to the recommended <bpt id="p1">[</bpt>String.Compare(String, String, StringComparison)<ept id="p1">](xref:System.String.Compare(System.String,System.String,System.StringComparison))</ept> form.</source>
+          <target state="translated">通常可以將這個方法轉換成建議的 <bpt id="p1">[</bpt>String.Compare(String, String, StringComparison)<ept id="p1">](xref:System.String.Compare(System.String,System.String,System.StringComparison))</ept> 形式。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Types that implement the <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> interfaces implement this method.</source>
+          <target state="translated">實作 <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> 和 <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> 介面的類型會實作這個方法。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Because it does not offer the option of a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter, implementing types often let the user specify a <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> in their constructor.</source>
+          <target state="translated">由於它不提供 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 參數的選項，所以實作這些類型通常可讓使用者在建構函式中指定 <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept>。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`FileName`</ph> class whose class constructor includes a <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> parameter.</source>
+          <target state="translated">下列範例定義 <ph id="ph1">`FileName`</ph> 類別，該類別的類別建構函式包含 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 參數。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is then used in the <ph id="ph1">`FileName.CompareTo`</ph> method.</source>
+          <target state="translated">然後在 <ph id="ph1">`FileName.CompareTo`</ph> 方法中使用這個 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>String.Equals</source>
+          <target state="translated">String.Equals</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> class lets you test for equality by calling either the static or instance <ph id="ph1">`Equals`</ph> method overloads, or by using the static equality operator.</source>
+          <target state="translated"><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> 類別可讓您呼叫靜態或執行個體 <ph id="ph1">`Equals`</ph> 方法多載，或使用靜態等號比較運算子，以測試是否相等。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The overloads and operator use ordinal comparison by default.</source>
+          <target state="translated">多載和運算子預設會使用序數比較。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>However, we still recommend that you call an overload that explicitly specifies the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type even if you want to perform an ordinal comparison; this makes it easier to search code for a certain string interpretation.</source>
+          <target state="translated">然而，即使您想要執行序數比較，我們還是建議您呼叫明確指定 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 類型的多載，這樣可以很輕鬆在程式碼中搜尋特定的字串解譯。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>String.ToUpper and String.ToLower</source>
+          <target state="translated">String.ToUpper 和 String.ToLower</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>You should be careful when you use these methods, because forcing a string to a uppercase or lowercase is often used as a small normalization for comparing strings regardless of case.</source>
+          <target state="translated">請小心使用這些方法，因為強制將字串轉換為大寫或小寫，通常是做為比較不區分大小寫字串時的輕微正規化。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>If so, consider using a case-insensitive comparison.</source>
+          <target state="translated">如果是這樣，請考慮使用不區分大小寫的比較。</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> and <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> methods are also available.</source>
+          <target state="translated">您也可以使用 <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> 和 <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> is the standard way to normalize case.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> 是將大小寫正規化的標準方式。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Comparisons made using <bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> are behaviorally the composition of two calls: calling <bpt id="p2">[</bpt>ToUpperInvariant<ept id="p2">](xref:System.String.ToUpperInvariant)</ept> on both string arguments, and doing a comparison using <bpt id="p3">[</bpt>StringComparison.Ordinal<ept id="p3">](xref:System.StringComparison.Ordinal)</ept>.</source>
+          <target state="translated">使用 <bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> 進行的比較在行為上由兩次呼叫所構成：在兩個字串引數上都呼叫 <bpt id="p2">[</bpt>ToUpperInvariant<ept id="p2">](xref:System.String.ToUpperInvariant)</ept>，然後使用 <bpt id="p3">[</bpt>StringComparison.Ordinal<ept id="p3">](xref:System.StringComparison.Ordinal)</ept> 進行比較。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Overloads are also available for converting to uppercase and lowercase in a specific culture, by passing a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that represents that culture to the method.</source>
+          <target state="translated">特定文化特性中，也可以使用多載將表示該文化特性的 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 物件傳遞至這個方法，以轉換為大寫和小寫。</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Char.ToUpper and Char.ToLower</source>
+          <target state="translated">Char.ToUpper 和 Char.ToLower</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>These methods work similarly to the <bpt id="p1">[</bpt>String.ToUpper<ept id="p1">](xref:System.String.ToUpper)</ept> and <bpt id="p2">[</bpt>String.ToLower<ept id="p2">](xref:System.String.ToLower)</ept> methods described in the previous section.</source>
+          <target state="translated">這些方法的運作類似於上一節描述的 <bpt id="p1">[</bpt>String.ToUpper<ept id="p1">](xref:System.String.ToUpper)</ept> 和 <bpt id="p2">[</bpt>String.ToLower<ept id="p2">](xref:System.String.ToLower)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>String.StartsWith and String.EndsWith</source>
+          <target state="translated">String.StartsWith 和 String.EndsWith</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>By default, both of these methods perform a culture-sensitive comparison.</source>
+          <target state="translated">根據預設，這兩個方法都會執行區分文化特性的比較。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>String.IndexOf and String.LastIndexOf</source>
+          <target state="translated">String.IndexOf 和 String.LastIndexOf</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>There is a lack of consistency in how the default overloads of these methods perform comparisons.</source>
+          <target state="translated">這些方法的預設多載在執行比較時，作法並不一致。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>All <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> and <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`LastIndexOf`</ph> methods that include a <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept> parameter perform an ordinal comparison, but the default <bpt id="p4">[</bpt>String<ept id="p4">](xref:System.String)</ept> <ph id="ph3">`IndexOf`</ph> and [String<ph id="ph4">`](xref:System.String) `</ph>LastIndexOf` methods that include a <bpt id="p5">[</bpt>String<ept id="p5">](xref:System.String)</ept> parameter perform a culture-sensitive comparison.</source>
+          <target state="translated">所有包含 <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept> 參數的 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> 和 <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`LastIndexOf`</ph> 方法都執行序數比較，但包含 <bpt id="p5">[</bpt>String<ept id="p5">](xref:System.String)</ept> 參數的預設 <bpt id="p4">[</bpt>String<ept id="p4">](xref:System.String)</ept> <ph id="ph3">`IndexOf`</ph> 和 [String<ph id="ph4">`](xref:System.String) `</ph>LastIndexOf` 方法會執行區分文化特性的比較。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>If you call <ph id="ph1">` `</ph>IndexOf<ph id="ph2">` or `</ph>LastIndexOf` method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">如果您呼叫 <ph id="ph1">` `</ph>IndexOf<ph id="ph2">` or `</ph>LastIndexOf` 方法，並將要在目前執行個體中尋找的字串傳遞至這個方法，我們建議您呼叫明確指定 <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> 類型的多載。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The overloads that include a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> argument do not allow you to specify a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">包含 <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> 引數的多載不允許您指定 <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> 類型。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Methods that perform string comparison indirectly</source>
+          <target state="translated">間接執行字串比較的方法</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Some non-string methods that have string comparison as a central operation use the <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> type.</source>
+          <target state="translated">有一些以字串比較為主要作業的非字串方法會使用 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 類型。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> class includes four static properties that return <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> instances whose <ph id="ph1">`Compare`</ph> methods perform the following types of string comparisons:</source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 類別包含六個靜態屬性，這些屬性會傳回 <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> 執行個體，而這些執行個體的 <ph id="ph1">`Compare`</ph> 方法可以執行下列類型的字串比較：</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Culture-sensitive string comparisons using the current culture.</source>
+          <target state="translated">使用目前文化特性的區分文化特性字串比較。</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.CurrentCulture<ept id="p2">](xref:System.StringComparer.CurrentCulture)</ept> property.</source>
+          <target state="translated">這個 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 物件是由 <bpt id="p2">[</bpt>StringComparer.CurrentCulture<ept id="p2">](xref:System.StringComparer.CurrentCulture)</ept> 屬性傳回。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons using the current culture.</source>
+          <target state="translated">使用目前文化特性的不區分大小寫比較。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparer.CurrentCultureIgnoreCase)</ept> property.</source>
+          <target state="translated">這個 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 物件是由 <bpt id="p2">[</bpt>StringComparer.CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparer.CurrentCultureIgnoreCase)</ept> 屬性傳回。</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Ordinal comparison.</source>
+          <target state="translated">序數比較。</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.Ordinal<ept id="p2">](xref:System.StringComparer.Ordinal)</ept> property.</source>
+          <target state="translated">這個 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 物件是由 <bpt id="p2">[</bpt>StringComparer.Ordinal<ept id="p2">](xref:System.StringComparer.Ordinal)</ept> 屬性傳回。</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Case-insensitive ordinal comparison.</source>
+          <target state="translated">不區分大小寫的序數比較。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> property.</source>
+          <target state="translated">這個 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 物件是由 <bpt id="p2">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> 屬性傳回。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Array.Sort and Array.BinarySearch</source>
+          <target state="translated">Array.Sort 和 Array.BinarySearch</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">預設解譯：<bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>When you store any data in a collection, or read persisted data from a file or database into a collection, switching the current culture can invalidate the invariants in the collection.</source>
+          <target state="translated">當您將任何資料儲存在集合中，或從檔案或資料庫將保存的資料讀入集合時，切換目前文化特性會使集合中的非變異失效。</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Array.BinarySearch<ept id="p1">](xref:System.Array.BinarySearch(System.Array,System.Object))</ept> method assumes that the elements in the array to be searched are already sorted.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Array.BinarySearch<ept id="p1">](xref:System.Array.BinarySearch(System.Array,System.Object))</ept> 方法假設要搜尋之陣列中的項目已排序。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>To sort any string element in the array, the <bpt id="p1">[</bpt>Array.Sort<ept id="p1">](xref:System.Array.Sort(System.Array))</ept> method calls the [String] <ph id="ph1">`Compare`</ph> method to order individual elements.</source>
+          <target state="translated">若要排序陣列中的任何字串項目，<bpt id="p1">[</bpt>Array.Sort<ept id="p1">](xref:System.Array.Sort(System.Array))</ept> 方法會呼叫 [String] <ph id="ph1">`Compare`</ph> 方法來排序個別項目。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Using a culture-sensitive comparer can be dangerous if the culture changes between the time that the array is sorted and its contents are searched.</source>
+          <target state="translated">從排序陣列到搜尋其內容這段時間當中，如果文化特性變更，則使用區分文化特性的比較子可能會有危險。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>For example, in the following code, storage and retrieval operate on the comparer that is provided implicitly by the <ph id="ph1">`Thread.CurrentThread.CurrentCulture`</ph> property.</source>
+          <target state="translated">例如，在下列程式碼中，儲存和擷取作業在 <ph id="ph1">`Thread.CurrentThread.CurrentCulture`</ph> 屬性所隱含提供的比較子上執行。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>If the culture can change between the calls to <ph id="ph1">`StoreNames`</ph> and <ph id="ph2">`DoesNameExist`</ph>, and especially if the array contents are persisted somewhere between the two method calls, the binary search may fail.</source>
+          <target state="translated">如果文化特性在呼叫 <ph id="ph1">`StoreNames`</ph> 和 <ph id="ph2">`DoesNameExist`</ph> 之間可能變更，尤其是如果陣列內容在這兩個方法呼叫之間保存在某處，則二進位搜尋可能會失敗。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>A recommended variation appears in the following example, which uses the same ordinal (culture-insensitive) comparison method both to sort and to search the array.</source>
+          <target state="translated">下列範例中顯示建議的變化，其中使用相同的序數 (不區分文化特性) 比較方法來排序和搜尋陣列。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The change code is reflected in the lines labeled <ph id="ph1">`Line A`</ph> and <ph id="ph2">`Line B`</ph> in the two examples.</source>
+          <target state="translated">在這兩個範例中，標記為 <ph id="ph1">`Line A`</ph> 和 <ph id="ph2">`Line B`</ph> 的程式碼行中反映程式碼變更。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>If this data is persisted and moved across cultures, and sorting is used to present this data to the user, you might consider using <ph id="ph1">`StringComparison.InvariantCulture`</ph>, which operates linguistically for better user output but is unaffected by changes in culture.</source>
+          <target state="translated">如果跨文化特性來保存和移動這項資料，且使用排序向使用者呈現這項資料，則您可以考慮使用 <ph id="ph1">`StringComparison.InvariantCulture`</ph>，這在語言上的表現會提供較佳的使用者輸出，且不受未來文化特性變更所影響。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The following example modifies the two previous examples to use the invariant culture for sorting and searching the array.</source>
+          <target state="translated">下列範例修改前兩個範例，改用不因國別而異的文化特性來排序和搜尋陣列。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Collections Example: Hashtable Constructor</source>
+          <target state="translated">集合範例：Hashtable 建構函式</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Hashing strings provides a second example of an operation that is affected by the way in which strings are compared.</source>
+          <target state="translated">第二個受到字串比較方式而影響作業的範例是雜湊字串。</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The following example instantiates a <bpt id="p1">[</bpt>Hashtable<ept id="p1">](xref:System.Collections.Hashtable)</ept> object by passing it the <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> object that is returned by the <bpt id="p3">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p3">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> property.</source>
+          <target state="translated">下列範例將 <bpt id="p3">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p3">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> 屬性所傳回的 <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> 物件傳遞至 <bpt id="p1">[</bpt>Hashtable<ept id="p1">](xref:System.Collections.Hashtable)</ept> 物件，以將後者物件執行個體化。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Because a class <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> that is derived from <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> implements the <bpt id="p3">[</bpt>IEqualityComparer<ept id="p3">](xref:System.Collections.IEqualityComparer)</ept> interface, its <bpt id="p4">[</bpt>GetHashCode<ept id="p4">](xref:System.Collections.IEqualityComparer)</ept> method is used to compute the hash code of strings in the hash table.</source>
+          <target state="translated">因為衍生自 <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> 的類別 <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> 實作 <bpt id="p3">[</bpt>IEqualityComparer<ept id="p3">](xref:System.Collections.IEqualityComparer)</ept> 介面，所以其 <bpt id="p4">[</bpt>GetHashCode<ept id="p4">](xref:System.Collections.IEqualityComparer)</ept> 方法會用於計算雜湊表中之字串的雜湊碼。</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Displaying and persisting formatted data</source>
+          <target state="translated">顯示及保存格式化的資料</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings.</source>
+          <target state="translated">當您向使用者顯示非字串資料 (例如數字及日期和時間) 時，請採用使用者的文化特性設定進行格式化。</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>By default, the <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> method and the <ph id="ph1">`ToString`</ph> methods of the numeric types and the date and time types use the current thread culture for formatting operations.</source>
+          <target state="translated">根據預設，<bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> 方法和 <ph id="ph1">`ToString`</ph> 方法 (數字類型與日期和時間類型) 會使用目前執行緒的文化特性進行格式化作業。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a provider parameter, such as <bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> or <bpt id="p2">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.IFormatProvider))</ept>, and pass it the <bpt id="p3">[</bpt>CultureInfo.CurrentCulture<ept id="p3">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> property.</source>
+          <target state="translated">若要明確指定格式化方法應該使用目前的文化特性，您可以呼叫具有 provider 參數之格式化方法的多載，例如 <bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> 或 <bpt id="p2">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.IFormatProvider))</ept>，並將 <bpt id="p3">[</bpt>CultureInfo.CurrentCulture<ept id="p3">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> 屬性傳遞給它。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>You can persist non-string data either as binary data or as formatted data.</source>
+          <target state="translated">您可將非字串資料保存為二進位資料或格式化的資料。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>If you choose to save it as formatted data, you should call a formatting method overload that includes a <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> parameter and pass it the <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property.</source>
+          <target state="translated">如果您選擇將它儲存為格式化的資料，您應該呼叫包含 <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> 參數之格式化方法的多載，並將 <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> 屬性傳遞給它。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The invariant culture provides a consistent format for formatted data that is independent of culture and machine.</source>
+          <target state="translated">針對獨立於文化特性和機器的格式化資料，不因國別而異的文化特性可提供一致的格式。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:</source>
+          <target state="translated">相較之下，如果資料並非使用不因國別而異的文化特性，而是使用其他文化特性來進行格式化，這類資料的保存會有許多限制：</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The data is likely to be unusable if it is retrieved on a system that has a different culture, or if the user of the current system changes the current culture and tries to retrieve the data.</source>
+          <target state="translated">如果在具有不同文化特性的系統上擷取資料，或者，目前系統的使用者變更目前的文化特性，並嘗試擷取資料時，該資料可能會無法使用。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The properties of a culture on a specific computer can differ from standard values.</source>
+          <target state="translated">特定電腦上的文化特性屬性可能不同於標準值。</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>At any time, a user can customize culture-sensitive display settings.</source>
+          <target state="translated">使用者可以隨時自訂區分文化特性的顯示設定。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Because of this, formatted data that is saved on a system may not be readable after the user customizes cultural settings.</source>
+          <target state="translated">因為這個緣故，使用者自訂文化特性設定之後，可能無法讀取系統上儲存的格式化資料。</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The portability of formatted data across computers is likely to be even more limited.</source>
+          <target state="translated">格式化資料在電腦之間的可攜性可能會有更多限制。</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>International, regional, or national standards that govern the formatting of numbers or dates and times change over time, and these changes are incorporated into operating system updates.</source>
+          <target state="translated">當數字或日期和時間格式的規範標準 (不論國際、地區或國家標準) 隨著時間變更時，這些變更會併入作業系統更新當中。</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>When formatting conventions change, data that was formatted by using the previous conventions may become unreadable.</source>
+          <target state="translated">當格式化慣例改變時，使用先前慣例來格式化的資料可能會變成無法讀取。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the limited portability that results from using culture-sensitive formatting to persist data.</source>
+          <target state="translated">下列範例說明使用區分文化特性的格式來保存資料時產生的可攜性限制。</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The example saves an array of date and time values to a file.</source>
+          <target state="translated">此範例會將日期和時間值陣列儲存至檔案。</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>These are formatted by using the conventions of the English (United States) culture.</source>
+          <target state="translated">這些值是使用英文 (美國) 文化特性的慣例來進行格式化。</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>After the application changes the current thread culture to French (Switzerland), it tries to read the saved values by using the formatting conventions of the current culture.</source>
+          <target state="translated">當應用程式將目前執行緒文化特性變更為法文 (瑞士) 後，它會嘗試使用目前文化特性的格式化慣例來讀取儲存的值。</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The attempt to read two of the data items throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> exception, and the array of dates now contains two incorrect elements that are equal to <bpt id="p2">[</bpt>MinValue<ept id="p2">](xref:System.DateTime.MinValue)</ept>.</source>
+          <target state="translated">嘗試讀取這兩樣資料項目後，會擲回 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> 例外狀況，且日期陣列現在會包含兩個等於 <bpt id="p2">[</bpt>MinValue<ept id="p2">](xref:System.DateTime.MinValue)</ept> 的不正確項目。</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>However, if you replace the <bpt id="p1">[</bpt>CultureInfo.CurrentCulture<ept id="p1">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> property with <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> in the calls to <bpt id="p3">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p3">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> and <bpt id="p4">[</bpt>DateTime.Parse(String, IFormatProvider)<ept id="p4">](xref:System.DateTime.Parse(System.String,System.IFormatProvider))</ept>, the persisted date and time data is successfully restored, as the following output shows.</source>
+          <target state="translated">不過，如果您在 <bpt id="p3">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p3">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> 和 <bpt id="p4">[</bpt>DateTime.Parse(String, IFormatProvider)<ept id="p4">](xref:System.DateTime.Parse(System.String,System.IFormatProvider))</ept> 的呼叫中將 <bpt id="p1">[</bpt>CultureInfo.CurrentCulture<ept id="p1">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> 屬性取代為 <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept>，則保存的日期和時間資料將會成功還原，如下列輸出所示。</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">請參閱</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Manipulating strings<ept id="p1">](manipulating-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>操作字串<ept id="p1">](manipulating-strings.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5dcb9d10aeded8c5e8956c4b99ba9675311a787a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\generics.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6add02984958edc8aa861bdfb8f07b4b4937a581</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6729a11618466d24dc9d2cf7a2e0e7ee42e60884</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">泛型型別 (泛型) 概觀</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">泛型型別 (泛型) 概觀</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">泛型型別 (泛型) 概觀</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>We use generics all the time in C#, whether implicitly or explicitly.</source>
+          <target state="translated">我們經常會在 C# 中使用泛型，不論是隱含使用或明確使用。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When you use LINQ in C#, did you ever notice that you are working with IEnumerable<ph id="ph1">&lt;T&gt;</ph>?</source>
+          <target state="translated">當您在 C# 中使用 LINQ 時，您是否曾注意到您正在使用 IEnumerable<ph id="ph1">&lt;T&gt;</ph>？</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Or if you ever saw an online sample of a “generic repository” for talking to databases using Entity Framework, did you see that most methods return IQueryable<ph id="ph1">&lt;T&gt;</ph>?</source>
+          <target state="translated">如果您曾經看過使用 Entity Framework 與資料庫通訊的「一般儲存機制」線上範例，您是否注意到大部分的方法會傳回 IQueryable<ph id="ph1">&lt;T&gt;</ph>？</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You may have wondered what the <bpt id="p1">**</bpt>T<ept id="p1">**</ept> is in these examples and why is it in there?</source>
+          <target state="translated">您可能想知道這些範例中的 <bpt id="p1">**</bpt>T<ept id="p1">**</ept> 為何，以及它出現在這裡的原因。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR).</source>
+          <target state="translated">泛型是在 .NET Framework 2.0 中第一次引入，需要變更 C# 語言和 Common Language Runtime (CLR)。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Generics<ept id="p1">**</ept> are essentially a “code template” that allows developers to define <bpt id="p2">[</bpt>type-safe<ept id="p2">](https://msdn.microsoft.com/library/hbzz1a9a.aspx)</ept> data structures without committing to an actual data type.</source>
+          <target state="translated"><bpt id="p1">**</bpt>泛型<ept id="p1">**</ept>基本上是「程式碼範本」，可讓開發人員定義<bpt id="p2">[</bpt>型別安全<ept id="p2">](https://msdn.microsoft.com/library/hbzz1a9a.aspx)</ept>資料結構，而不需要認可至實際資料類型。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`List&lt;T&gt;`</ph> is a <bpt id="p1">[</bpt>Generic Collection<ept id="p1">](https://msdn.microsoft.com/library/System.Collections.Generic.aspx)</ept> that can be declared and used with any type: <ph id="ph2">`List&lt;int&gt;`</ph>, <ph id="ph3">`List&lt;string&gt;`</ph>, <ph id="ph4">`List&lt;Person&gt;`</ph>, etc.</source>
+          <target state="translated">例如，<ph id="ph1">`List&lt;T&gt;`</ph> 是可宣告的<bpt id="p1">[</bpt>泛型集合<ept id="p1">](https://msdn.microsoft.com/library/System.Collections.Generic.aspx)</ept>，並可搭配任何類型使用：<ph id="ph2">`List&lt;int&gt;`</ph>、<ph id="ph3">`List&lt;string&gt;`</ph>、<ph id="ph4">`List&lt;Person&gt;`</ph> 等等。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>So, what’s the point?</source>
+          <target state="translated">重點到底是什麼？</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Why are generics useful?</source>
+          <target state="translated">為什麼泛型很有用？</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In order to understand this, we need to take a look at a specific class before and after adding generics.</source>
+          <target state="translated">若要了解這一點，我們必須看看加入泛型前後的特定類別。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Let’s look at the <ph id="ph1">`ArrayList`</ph>.</source>
+          <target state="translated">以 <ph id="ph1">`ArrayList`</ph> 為例。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In C# 1.0, the <ph id="ph1">`ArrayList`</ph> elements were of type <ph id="ph2">`object`</ph>.</source>
+          <target state="translated">在 C# 1.0 中，<ph id="ph1">`ArrayList`</ph> 項目的類型是 <ph id="ph2">`object`</ph>。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This meant that any element that was added was silently converted into an <ph id="ph1">`object`</ph>; same thing happens on reading the elements from the list (this process is known as <bpt id="p1">[</bpt>boxing<ept id="p1">](https://msdn.microsoft.com/library/yz2be5wk.aspx)</ept> and unboxing respectively).</source>
+          <target state="translated">這表示任何加入的項目都會以無訊息模式轉換成 <ph id="ph1">`object`</ph>；讀取清單中的項目時也會發生相同的情況 (此程序分別稱為 <bpt id="p1">[</bpt>Boxing<ept id="p1">](https://msdn.microsoft.com/library/yz2be5wk.aspx)</ept> 和 Unboxing)。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Boxing and unboxing have an impact of performance.</source>
+          <target state="translated">Boxing 和 Unboxing 會影響效能。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>More than that, however, there is no way to tell at compile time what is the actual type of the data in the list.</source>
+          <target state="translated">此外，您無法在編譯時期判斷清單中資料的實際類型。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This makes for some fragile code.</source>
+          <target state="translated">因此很容易產生一些易損壞的程式碼。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Generics solve this problem by providing additional information the type of data each instance of list will contain.</source>
+          <target state="translated">泛型可以解決這個問題，它提供額外的資訊，也就是每個清單執行個體將包含之資料的類型。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Put simply, you can only add integers to <ph id="ph1">`List&lt;int&gt;`</ph> and only add Persons to <ph id="ph2">`List&lt;Person&gt;`</ph>, etc.</source>
+          <target state="translated">簡單來說，您只能將整數加入 <ph id="ph1">`List&lt;int&gt;`</ph>、只能將 Persons 加入 <ph id="ph2">`List&lt;Person&gt;`</ph>，依此類推。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Generics are also available at runtime, or <bpt id="p1">**</bpt>reified<ept id="p1">**</ept>.</source>
+          <target state="translated">泛型也可用於執行階段，或加以<bpt id="p1">**</bpt>具體化<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This means the runtime knows what type of data structure you are using and can store it in memory more efficiently.</source>
+          <target state="translated">這表示執行階段知道您要使用的資料結構類型，因此可更有效率地將它儲存在記憶體中。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Here is a small program that illustrates the efficiency of knowing the data structure type at runtime:</source>
+          <target state="translated">以下是一個小程式，說明如何有效率地得知執行階段的資料結構類型：</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This program yields the following output:</source>
+          <target state="translated">此程式會產生下列輸出：</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The first thing you notice here is that sorting the generic list is significantly faster than for the non-generic list.</source>
+          <target state="translated">您在此首先會注意到，泛型清單的排序速度比非泛型清單的排序速度明顯更快。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You might also notice that the type for the generic list is distinct ([System.Int32]) whereas the type for the non-generic list is generalized.</source>
+          <target state="translated">您也可能注意到，泛型清單的類型是獨特的 ([System.Int32])，而非泛型清單的類型則是一般化。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Because the runtime knows the generic <ph id="ph1">`List&lt;int&gt;`</ph> is of type int, it can store the list elements in an underlying integer array in memory while the non-generic <ph id="ph2">`ArrayList`</ph> has to cast each list element as an object as stored in an object array in memory.</source>
+          <target state="translated">因為執行階段知道泛型 <ph id="ph1">`List&lt;int&gt;`</ph> 的類型是 int，所以它可以將清單項目儲存為記憶體中的基礎整數陣列，但非泛型 <ph id="ph2">`ArrayList`</ph> 則必須將每個清單項目轉換成物件，再儲存為記憶體中的物件陣列。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>As shown through this example, the extra castings take up time and slow down the list sort.</source>
+          <target state="translated">如此範例所示，額外的轉換需要時間，因此會使清單排序速度變慢。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The last useful thing about the runtime knowing the type of your generic is a better debugging experience.</source>
+          <target state="translated">有關執行階段知道您的泛型類型的最後一個用處是改進偵錯體驗。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>When you are debugging a generic in C#, you know what type each element is in your data structure.</source>
+          <target state="translated">當您偵錯 C# 中的泛型時，您知道資料結構中的每個項目是何種類型。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Without generics, you would have no idea what type each element was.</source>
+          <target state="translated">如果沒有泛型，您就無法得知每個項目是何種類型。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Further reading and resources</source>
+          <target state="translated">延伸閱讀和資源</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>An Introduction to C# Generics<ept id="p1">](https://msdn.microsoft.com/library/ms379564.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>C# 泛型簡介<ept id="p1">](https://msdn.microsoft.com/library/ms379564.aspx)</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>C# Programming Guide - Generics<ept id="p1">](https://msdn.microsoft.com/library/512aeb7t.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>C# 程式設計手冊 - 泛型<ept id="p1">](https://msdn.microsoft.com/library/512aeb7t.aspx)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

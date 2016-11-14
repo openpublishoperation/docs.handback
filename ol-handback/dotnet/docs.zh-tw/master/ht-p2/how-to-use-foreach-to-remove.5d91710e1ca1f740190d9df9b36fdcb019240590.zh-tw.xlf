@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">618b5c7c1b8219f4e9225277064ff3c498ff3382</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\how-to-use-foreach-to-remove.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d3755e57a8a6dcf2dae1b9ea0dff6404ea6d6466</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">51ea7de7f7b1da9deeb42d64769c73ce9340ea7e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Use ForEach to Remove Items in a BlockingCollection</source>
+          <target state="translated">如何：使用 ForEach 來移除 BlockingCollection 中的項目</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Use ForEach to Remove Items in a BlockingCollection</source>
+          <target state="translated">如何：使用 ForEach 來移除 BlockingCollection 中的項目</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: Use ForEach to Remove Items in a BlockingCollection</source>
+          <target state="translated">如何：使用 ForEach 來移除 BlockingCollection 中的項目</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In addition to taking items from a <bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> by using the <ph id="ph3">`Take`</ph> and <ph id="ph4">`TryTake`</ph> methods, you can also use a <ph id="ph5">`foreach`</ph> loop to remove items until adding is completed and the collection is empty.</source>
+          <target state="translated">除了使用 <ph id="ph3">`Take`</ph> 和 <ph id="ph4">`TryTake`</ph> 方法從 <bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> 擷取項目之外，您也可以使用 <ph id="ph5">`foreach`</ph> 迴圈來移除項目，直到新增完成，而且集合是空的。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is called a mutating enumeration or consuming enumeration because, unlike a typical <ph id="ph1">`foreach`</ph> loop, this enumerator modifies the source collection by removing items.</source>
+          <target state="translated">這稱為變動列舉或使用列舉，原因是，與一般 <ph id="ph1">`foreach`</ph> 迴圈不同，這個列舉值會透過移除項目來修改來源集合。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">範例</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following example shows how to remove all the items in a <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> by using a <ph id="ph2">`foreach`</ph> loop.</source>
+          <target state="translated">下列範例示範如何使用 <ph id="ph2">`foreach`</ph> 迴圈來移除 <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> 中的所有項目。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This example uses a <ph id="ph1">`foreach`</ph> loop with the <ph id="ph2">`BlockingCollection&lt;T&gt;.GetConsumingEnumerable`</ph> method in the consuming thread, which causes each item to be removed from the collection as it is enumerated.</source>
+          <target state="translated">本範例在使用執行緒中搭配使用 <ph id="ph1">`foreach`</ph> 迴圈與 <ph id="ph2">`BlockingCollection&lt;T&gt;.GetConsumingEnumerable`</ph> 方法，這樣會移除所列舉集合中的每個項目。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> limits the maximum number of items that are in the collection at any time.</source>
+          <target state="translated"><ph id="ph1">`BlockingCollection&lt;T&gt;`</ph>會限制集合中任何時間項目的最大數量。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Enumerating the collection in this way blocks the consumer thread if no items are available or if the collection is empty.</source>
+          <target state="translated">列舉集合，以在沒有項目可用或集合是空的時封鎖消費者執行緒。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In this example blocking is not a concern because the producer thread adds items faster than they can be consumed.</source>
+          <target state="translated">在此範例中，封鎖不是問題，因為生產者執行緒新增項目的速度比使用項目還要快。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>There is no guarantee that the items are enumerated in the same order in which they are added by the producer threads.</source>
+          <target state="translated">不保證項目的列舉順序與生產者執行緒新增它們的順序相同。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To enumerate the collection without modifying it, just use <ph id="ph1">`foreach`</ph> without the <ph id="ph2">`GetConsumingEnumerable`</ph> method.</source>
+          <target state="translated">若要列舉集合，而不修改集合，則只要使用 <ph id="ph1">`foreach`</ph>，而不要使用 <ph id="ph2">`GetConsumingEnumerable`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, it is important to understand that this kind of enumeration represents a snapshot of the collection at a precise point in time.</source>
+          <target state="translated">不過，請務必了解這種列舉代表集合在精確時間點的快照集。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If other threads are adding or removing items concurrently while you are executing the loop, then the loop might not represent the actual state of the collection.</source>
+          <target state="translated">如果其他執行緒在您執行迴圈時同時新增或移除項目，則迴圈可能不會代表集合的實際狀態。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
