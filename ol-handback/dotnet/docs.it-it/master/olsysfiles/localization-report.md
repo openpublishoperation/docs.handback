@@ -2863,6 +2863,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf)
 * Handback Datetime: 2016-11-14 08:34:26
+* Bilingual File: [managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/managing-package-dependency-versions.106313d312f08157767943a637cbc902d4a5d092.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 08:34:51
 * [Back to Top](#report-top)
 
 ##### <a name='d990a7f1678d37de1e1278e6c7cbe72f68399ad977'></a> Source: [docs\core\tutorials\media\target-dotnetcore-with-msbuild\new-project-dialog-class-library-portable.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tutorials/media/target-dotnetcore-with-msbuild/new-project-dialog-class-library-portable.png)
@@ -2914,6 +2916,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf)
 * Handback Datetime: 2016-11-14 08:34:26
+* Bilingual File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 08:34:51
 * [Back to Top](#report-top)
 
 ##### <a name='12b7bed380db53aad04f0615c6efa6152b3035b781'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/2339be6aef7e2ff942f1f1999a12f48ee4a77ee8/docs/core/tutorials/using-on-macos.md)
@@ -23729,6 +23733,8 @@
 * Archive Datetime: 2016-11-07 23:37:48
 * Handback File: [TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf)
 * Handback Datetime: 2016-11-14 08:34:26
+* Bilingual File: [TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e27a4b33071ea1914c95891d7f116be024becef6/ol-handback/dotnet/docs.it-it/master/ht-p1/TOC.c5e56b4d05e38e466c0192461b6c26065f810c46.it-it.xlf)
+* Bilingual Datetime: 2016-11-14 08:34:51
 * [Back to Top](#report-top)
 
 ##### <a name='2dfca115ba67d1b4486f830374b66f8043f045b61807'></a> Source: [toc.yml](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/toc.yml)
