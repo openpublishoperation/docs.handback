@@ -6,24 +6,21 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md) | ArchivedSuccess | [Details](#a0b4e21367244d0c72e05499c62e354fce9179e7517)
+ [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
 
 ## Item Details
-##### <a name='a0b4e21367244d0c72e05499c62e354fce9179e7517'></a> Source: [index.md](https://github.com/dotnet/docs/blob/edc4d3d1de452f4acf3eeae2bcc618311351cae0/index.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/9522d57130594df4f8b30be9f45e8d7675c0ffeb/ol-handoff/dotnet/docs.it-it/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf)
-* Handoff Datetime: 2016-11-12 23:36:48
+##### <a name='be658d2c660aff736eceffe23757c13154e7858226'></a> Source: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs.it-it/blob/98f94dc8a6eb8dc86d0e598ef9837e003281c913/docs/core/docker/building-net-docker-images.md)
+* Handoff File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/b11214e5a2dd26f293ed64f22614c69bc67d9114/ol-handoff/dotnet/docs.it-it/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf)
+* Handoff Datetime: 2016-11-09 07:52:34
 * Handoff Reason: Include
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/a43c6f930f3473c22271ac410e0d85023cfbe812/ol-archive/dotnet/docs.it-it/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf)
-* Archive Datetime: 2016-11-12 23:36:48
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [index.md](https://github.com/dotnet/docs.it-it/blob/d611b2e8b1cfeb784551c60fc8c176c2b10aa5f9/index.md)
-* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf](https://github.com/dotnet/docs.handback/blob/f679834dda3119a7633ff8f035b2daf43fd1f0b5/ol-handback/dotnet/docs.it-it/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf)
-* Current Handback Datetime: 2016-11-14 08:53:07
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf](https://github.com/dotnet/docs.handback/blob/38bc5c803281a471eee2ed5711569c01e75622bb/ol-handback/dotnet/docs.it-it/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.it-it.xlf)
-* Bilingual Datetime: 2016-11-09 00:44:06
+* Archive File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/bde1a54f651247b9e9047ce9d038ca07dea8b3cc/ol-archive/dotnet/docs.it-it/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf)
+* Archive Datetime: 2016-11-11 03:13:11
+* Handback File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf](https://github.com/dotnet/docs.handback/blob/01431e4e734edcf954c4175cb0a45741b031eed0/ol-handback/dotnet/docs.it-it/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf)
+* Handback Datetime: 2016-11-14 09:06:03
+* Bilingual File: [building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf](https://github.com/dotnet/docs.handback/blob/1ff93182a47cf5a4437b7e69a72027b46284b588/ol-handback/dotnet/docs.it-it/master/ht-p1/building-net-docker-images.243cc28898b1a68000245cc04d6177ebc2106744.it-it.xlf)
+* Bilingual Datetime: 2016-11-11 15:04:24
 * [Back to Top](#report-top)
 
 
