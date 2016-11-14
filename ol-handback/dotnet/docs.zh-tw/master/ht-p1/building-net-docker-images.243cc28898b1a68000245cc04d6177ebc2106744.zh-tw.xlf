@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">be658d2c660aff736eceffe23757c13154e78582</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\docker\building-net-docker-images.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ed453aeba7aa4e4a4396090ec77d1f55f235a9b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e1df0dafafc7833a932db712f78375cf052264e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Building .NET Core Docker Images</source>
+          <target state="translated">建置 .NET Core Docker 映像</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understanding Docker images and .NET Core</source>
+          <target state="translated">了解 Docker 映像和 .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, Docker</source>
+          <target state="translated">.NET、.NET Core、Docker</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Building Docker Images for .NET Core Applications</source>
+          <target state="translated">建置 .NET Core 應用程式的 Docker 映像</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In order to get an understanding of how to use .NET Core and Docker together, we must first get to know the different Docker images that are offered and when is the right use case for them.</source>
+          <target state="translated">為了解如何同時使用 .NET Core 和 Docker，我們必須先了解取得的不同 Docker 映像，以及正確的使用時機。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Here we will walk through the variations offered, build an ASP.NET Core Web API, use the Yeoman Docker tools to create a debuggable container as well as peek at how Visual Studio Code can assist in the process.</source>
+          <target state="translated">在此，我們會逐步解說所獲得的變化、建置 ASP.NET Core Web API、使用 Yeoman Docker 工具建立可偵錯的容器，以及預覽 Visual Studio Code 如何在程序中提供協助。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Docker Image Optimizations</source>
+          <target state="translated">Docker 映像最佳化</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When building Docker images for developers, we focused on three main scenarios:</source>
+          <target state="translated">在建置開發人員的 Docker 映像時，我們會著重在三個主要案例︰</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Images used to develop .NET Core apps</source>
+          <target state="translated">用來開發 .NET Core 應用程式的映像</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Images used to build .NET Core apps</source>
+          <target state="translated">用來建置 .NET Core 應用程式的映像</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Images used to run .NET Core apps</source>
+          <target state="translated">用來執行 .NET Core 應用程式的映像</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Why three images?</source>
+          <target state="translated">為何是三個映像？</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When developing, building and running containerized applications, we have different priorities.</source>
+          <target state="translated">在開發、建置及執行放入容器的應用程式時，我們有不同的優先考量。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Development:<ept id="p1">**</ept>  How fast can you iterate changes, and the ability to debug the changes.</source>
+          <target state="translated"><bpt id="p1">**</bpt>開發︰<ept id="p1">**</ept>逐一查看變更的速度以及偵錯變更的能力。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The size of the image isn't as important, rather can you make changes to your code and see them quickly.</source>
+          <target state="translated">映像大小不那麼重要，而是變更及查看程式碼的速度。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Some of our tools, like <bpt id="p1">[</bpt>yo docker<ept id="p1">](https://aka.ms/yodocker)</ept> for use in VS Code use this image during development time.</source>
+          <target state="translated">我們有些工具，像是用於 VS Code 的 <bpt id="p1">[</bpt>yo docker<ept id="p1">](https://aka.ms/yodocker)</ept>，會在開發期間使用此映像。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Build:<ept id="p1">**</ept> What's needed to compile your app.</source>
+          <target state="translated"><bpt id="p1">**</bpt>建置︰<ept id="p1">**</ept>編譯應用程式需要的內容。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This includes the compiler and any other dependencies to optimize the binaries.</source>
+          <target state="translated">這包括編譯器和任何其他可最佳化二進位檔的相依性。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This image isn't the image you deploy, rather it's an image you use to build the content you place into a production image.</source>
+          <target state="translated">此映像不是您部署的映像，而是您用來建置實際執行映像內容的映像。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This image would be used in your continuous integration, or build environment.</source>
+          <target state="translated">此映像可用於連續整合或建置環境。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For instance, rather than installing all the dependencies directly on a build agent, the build agent would instance a build image to compile the application with all the dependencies required to build the app contained within the image.</source>
+          <target state="translated">例如，不是直接在組建代理程式上安裝所有相依性，組建代理程式會引證建置映像，使用有建置映像內含應用程式所需的全部相依性，來編譯應用程式。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Your build agent only needs to know how to run this Docker image.</source>
+          <target state="translated">組建代理程式只需要知道如何執行此 Docker 映像。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Production:<ept id="p1">**</ept> How fast you can deploy and start your image.</source>
+          <target state="translated"><bpt id="p1">**</bpt>生產環境︰<ept id="p1">**</ept>多快可以部署及啟動映像。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This image is small so it can quickly travel across the network from your Docker Registry to your Docker hosts.</source>
+          <target state="translated">此映像很小，因此它可以快速地從 Docker 登錄到 Docker 主機在網路上傳輸。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The contents are ready to run enabling the fastest time from Docker run to processing results.</source>
+          <target state="translated">準備好執行的內容可用最短的時間完成 Docker 執行到處理結果。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the immutable Docker model, there's no need for dynamic compilation of code.</source>
+          <target state="translated">在不可變的 Docker 模型中，沒必要動態編譯程式碼。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The content you place in this image would be limited to the binaries and content needed to run the application.</source>
+          <target state="translated">您放置在此映像中的內容會限於執行應用程式所需的二進位檔和內容。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For example, the published output using <ph id="ph1">`dotnet publish`</ph> which contains the compiled binaries, images, .js and .css files.</source>
+          <target state="translated">例如，已發行輸出使用的 <ph id="ph1">`dotnet publish`</ph> 包含已編譯的二進位檔、映像、.js 和 .css 檔案。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Over time, you'll see images that contain pre-jitted packages.</source>
+          <target state="translated">經過一段時間，您會看到包含預先 JIT 編譯封裝的映像。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Though there are multiple versions of the .NET Core image, they all share one or more layers.</source>
+          <target state="translated">雖然有多種版本的 .NET Core 映像，但它們全都共用一或多個圖層。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The amount of disk space needed to store or the delta to pull from your registry is much smaller than the whole because all of the images share the same base layer and potentially others.</source>
+          <target state="translated">儲存所需的磁碟空間量，或從登錄提取的差異，遠小於整體，因為所有的映像共用相同的基底層，可能還有其他層。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Docker image variations</source>
+          <target state="translated">Docker 映像變化</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To achieve the goals above, we provide image variants under <bpt id="p1">[</bpt>microsoft/dotnet<ept id="p1">](https://hub.docker.com/r/microsoft/dotnet/)</ept>.</source>
+          <target state="translated">為達成上述目標，我們在 <bpt id="p1">[</bpt>microsoft/dotnet<ept id="p1">](https://hub.docker.com/r/microsoft/dotnet/)</ept> 下提供映像變體。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-sdk`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p1">**</ept>, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI).</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-sdk`</ph>：也就是 <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p1">**</ept>，此映像包含具有 .NET Core 及命令列工具 (CLI) 的 .NET Core SDK。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This image maps to the <bpt id="p1">**</bpt>development scenario<ept id="p1">**</ept>.</source>
+          <target state="translated">此映像會對應至<bpt id="p1">**</bpt>開發案例<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You would use this image for local development, debugging and unit testing.</source>
+          <target state="translated">您可以使用此映像處理本機開發、偵錯和單元測試。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, all the development you do, before you check in your code.</source>
+          <target state="translated">例如，所有的開發都要先於簽入程式碼。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This image can also be used for your <bpt id="p1">**</bpt>build<ept id="p1">**</ept> scenarios.</source>
+          <target state="translated">此映像也可用於<bpt id="p1">**</bpt>建置<ept id="p1">**</ept>案例。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p1">**</ept>, image which runs <bpt id="p2">[</bpt>portable .NET Core applications<ept id="p2">](../deploying/index.md)</ept> and it is optimized for running your application in <bpt id="p3">**</bpt>production<ept id="p3">**</ept>.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core`</ph>︰也就是 <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p1">**</ept>，此映像會執行<bpt id="p2">[</bpt>可攜式 .NET Core 應用程式<ept id="p2">](../deploying/index.md)</ept>，並為了在<bpt id="p3">**</bpt>生產環境<ept id="p3">**</ept>中執行應用程式而經過最佳化。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>It does not contain the SDK, and is meant to take the optimized output of <ph id="ph1">`dotnet publish`</ph>.</source>
+          <target state="translated">它不包含 SDK，且表示要採用最佳化的 <ph id="ph1">`dotnet publish`</ph> 輸出。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The portable runtime is well suited for Docker container scenarios as running multiple containers benefit from shared image layers.</source>
+          <target state="translated">可攜式執行階段非常適合 Docker 容器案例，因為執行多個容器可從共用的映像圖層中得益。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Alternative images</source>
+          <target state="translated">替代的映像</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In addition to the optimized scenarios of development, build and production, we provide additional images:</source>
+          <target state="translated">除了開發、建置和生產環境的最佳化案例，我們還提供其他映像︰</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-onbuild`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-onbuild<ept id="p1">**</ept>, contains <bpt id="p2">[</bpt>ONBUILD<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/onbuild)</ept> triggers.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-onbuild`</ph>︰也就是 <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-onbuild<ept id="p1">**</ept>，包含 <bpt id="p2">[</bpt>ONBUILD<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/onbuild)</ept> 觸發程序。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The build will <bpt id="p1">[</bpt>COPY<ept id="p1">](https://docs.docker.com/engine/reference/builder/#/copy)</ept> your application, run <ph id="ph1">`dotnet restore`</ph> and create an <bpt id="p2">[</bpt>ENTRYPOINT<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> <ph id="ph2">`dotnet run`</ph> instruction to run the application when the Docker image is run.</source>
+          <target state="translated">組建會<bpt id="p1">[</bpt>複製<ept id="p1">](https://docs.docker.com/engine/reference/builder/#/copy)</ept>應用程式，執行 <ph id="ph1">`dotnet restore`</ph> 並建立 <bpt id="p2">[</bpt>進入點<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> <ph id="ph2">`dotnet run`</ph> 指示，在執行 Docker 映像時執行應用程式。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it.</source>
+          <target state="translated">至於未最佳化的生產環境映像，有些人可能會覺得它很有用，因為只要將原始程式碼複製到映像並執行即可。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core-deps`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core-deps<ept id="p1">**</ept>, if you wish to run self-contained applications use this image.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core-deps`</ph>︰也就是 <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core-deps<ept id="p1">**</ept>，如果想要執行自封式應用程式，請使用此映像。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>It contains the operating system with all of the native dependencies needed by .NET Core.</source>
+          <target state="translated">它包含作業系統及 .NET Core 所需的所有原生相依性。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This image can also be used as a base image for your own custom CoreFX or CoreCLR builds.</source>
+          <target state="translated">此映像也可用為您自己自訂的 CoreFX 或 CoreCLR 組建的基礎映像。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>While the <bpt id="p1">**</bpt>onbuild<ept id="p1">**</ept> variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application.</source>
+          <target state="translated">雖然 <bpt id="p1">**</bpt>onbuild<ept id="p1">**</ept> 變體經過最佳化後，只需將程式碼放入映像並執行即可，但此映像經過最佳化後，只讓所需的作業系統相依性執行將 .NET 執行階段和應用程式封裝在一起的 .NET Core 應用程式。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.</source>
+          <target state="translated">此映像通常不會為在相同的主機上執行多個 .NET Core 容器而最佳化，因為每個映像在應用程式內都會攜帶 .NET Core 執行階段，而您不會得益於映像圖層。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Latest versions of each variant:</source>
+          <target state="translated">每個變體的最新版本︰</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet`</ph> or <ph id="ph2">`microsoft/dotnet:latest`</ph> (includes SDK)</source>
+          <target state="translated"><ph id="ph2">`microsoft/dotnet:latest`</ph> 或 <ph id="ph1">`microsoft/dotnet`</ph> (包括 SDK)</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Here is a list of the images after a <ph id="ph1">`docker pull &lt;imagename&gt;`</ph> on a development machine to show the various sizes.</source>
+          <target state="translated">以下是開發電腦上的 <ph id="ph1">`docker pull &lt;imagename&gt;`</ph> 顯示各種大小後的映像清單。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Notice, the development/build variant, <ph id="ph1">`microsoft/dotnet:1.0.0-preview2-sdk`</ph> is larger as it contains the SDK to develop and build your application.</source>
+          <target state="translated">請注意，開發/建置變體 <ph id="ph1">`microsoft/dotnet:1.0.0-preview2-sdk`</ph> 較大，因為它包含開發和建置應用程式的 SDK。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The production variant, <ph id="ph1">`microsoft/dotnet:core`</ph> is smaller, as it only contains the .NET Core runtime.</source>
+          <target state="translated">生產環境變體 <ph id="ph1">`microsoft/dotnet:core`</ph> 較小，因為它只包含 .NET Core 執行階段。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The minimal image capable of being used on Linux, <ph id="ph1">`core-deps`</ph>, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it.</source>
+          <target state="translated">能夠在 Linux 上使用的最小映像 <ph id="ph1">`core-deps`</ph> 相當小，但您的應用程式需要用它複製 .NET 執行階段的私用複本。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers.</source>
+          <target state="translated">因為容器已經是私人的隔離障礙，所以在執行多個 dotnet 型的容器時會遺失最佳化。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要條件</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To build and run, you'll need a few things installed:</source>
+          <target state="translated">若要建置並執行，您需要安裝幾個項目︰</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core<ept id="p1">](http://dot.net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core<ept id="p1">](http://dot.net)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Docker<ept id="p1">](https://www.docker.com/products/docker)</ept> to run your Docker containers locally</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker<ept id="p1">](https://www.docker.com/products/docker)</ept>：在本機執行 Docker 容器</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Yeoman generator for ASP.NET<ept id="p1">](https://github.com/omnisharp/generator-aspnet)</ept> for creating the Web API application</source>
+          <target state="translated"><bpt id="p1">[</bpt>ASP.NET Yeoman 產生器<ept id="p1">](https://github.com/omnisharp/generator-aspnet)</ept>：建立 Web API 應用程式</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Yeoman generator for Docker<ept id="p1">](http://aka.ms/yodocker)</ept> from Microsoft</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker Yeoman 產生器<ept id="p1">](http://aka.ms/yodocker)</ept>：來自 Microsoft</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Install the Yeoman generators for ASP.NET Core and Docker using npm</source>
+          <target state="translated">使用 npm 安裝 ASP.NET Core 和 Docker 的 Yeoman 產生器</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This sample will be using <bpt id="p1">[</bpt>Visual Studio Code<ept id="p1">](http://code.visualstudio.com)</ept> for the editor.</source>
+          <target state="translated">這個範例會使用 <bpt id="p1">[</bpt>Visual Studio Code<ept id="p1">](http://code.visualstudio.com)</ept> 當作編輯器。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Creating the Web API application</source>
+          <target state="translated">建立 Web API 應用程式</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For a reference point, before we containerize the application, first run the application locally.</source>
+          <target state="translated">針對參考點，在將應用程式放入容器前，要先在本機執行應用程式。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The finished application is located in the <bpt id="p1">[</bpt>dotnet/core-docs repository on GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images)</ept>.</source>
+          <target state="translated">完成的應用程式位於 <bpt id="p1">[</bpt>GitHub 上的 dotnet/core-docs 儲存機制<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images)</ept>。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Create a directory for your application.</source>
+          <target state="translated">建立應用程式的目錄。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Open a command or terminal session in that directory and use the ASP.NET Yeoman generator by typing the following:</source>
+          <target state="translated">在該目錄中開啟命令或終端機工作階段，並輸入下列內容使用 ASP.NET Yeoman 產生器︰</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Web API Application<ept id="p1">**</ept> and type <bpt id="p2">**</bpt>api<ept id="p2">**</ept> for the name of the app and tap enter.</source>
+          <target state="translated">選取 [Web API 應用程式] 並在應用程式名稱輸入 <bpt id="p2">**</bpt>api<ept id="p2">**</ept>，然後點選 Enter。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Once the application is scaffolded, change to the <ph id="ph1">`/api`</ph> directory and restore the NuGet dependencies using <ph id="ph2">`dotnet restore`</ph>.</source>
+          <target state="translated">應用程式建立結構後，請變更至 <ph id="ph1">`/api`</ph> 目錄，並使用 <ph id="ph2">`dotnet restore`</ph> 還原 NuGet 相依性。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Test the application using <ph id="ph1">`dotnet run`</ph> and browsing to <bpt id="p1">**</bpt>http://localhost:5000/api/values<ept id="p1">**</ept></source>
+          <target state="translated">使用 <ph id="ph1">`dotnet run`</ph> 並瀏覽至 <bpt id="p1">**</bpt>http://localhost:5000/api/values<ept id="p1">**</ept> 測試應用程式</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`Ctrl+C`</ph> to stop the application.</source>
+          <target state="translated">使用 <ph id="ph1">`Ctrl+C`</ph> 停止應用程式。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Adding Docker support</source>
+          <target state="translated">新增 Docker 支援</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Adding Docker support to the project is achieved using the Yeoman generator from Microsoft.</source>
+          <target state="translated">使用來自 Microsoft 的 Yeoman 產生器可將 Docker 支援加入專案。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>It currently supports .NET Core, Node.js and Go projects by creating a Dockerfile and scripts that help build and run projects inside containers.</source>
+          <target state="translated">目前，它透過建立協助在容器內建置和執行專案的 Dockerfile 和指令碼，支援 .NET Core、Node.js 和 Go 專案。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Visual Studio Code specific files are also added (launch.json, tasks.json) for editor debugging and command palette support.</source>
+          <target state="translated">也會加入 Visual Studio Code 特定檔案 (launch.json、tasks.json) 供編輯器偵錯和命令調色盤支援。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Select <ph id="ph1">`.NET Core`</ph> as the project type</source>
+          <target state="translated">選取 <ph id="ph1">`.NET Core`</ph> 作為專案類型</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`rtm`</ph> for the version of .NET Core</source>
+          <target state="translated"><ph id="ph1">`rtm`</ph> 為 .NET Core 版本</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Y`</ph> the project uses a web server</source>
+          <target state="translated"><ph id="ph1">`Y`</ph> 是使用網頁伺服器的專案</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`5000`</ph> is the port the Web API application is listening on (http://localhost:5000)</source>
+          <target state="translated"><ph id="ph1">`5000`</ph> 是 Web API 應用程式接聽中的連接埠 (http://localhost:5000/)</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the image name</source>
+          <target state="translated"><ph id="ph1">`api`</ph> 為映像名稱</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the service name</source>
+          <target state="translated"><ph id="ph1">`api`</ph> 為服務名稱</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the compose project</source>
+          <target state="translated"><ph id="ph1">`api`</ph> 為撰寫專案</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Y`</ph> to overwrite the current Dockerfile</source>
+          <target state="translated"><ph id="ph1">`Y`</ph> 會覆寫目前的 Dockerfile</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>When the generator is complete, the following files are added to the project</source>
+          <target state="translated">產生器完成時，下列檔案會加入專案中</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>.vscode/launch.json</source>
+          <target state="translated">.vscode/launch.json</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Dockerfile.debug</source>
+          <target state="translated">Dockerfile.debug</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Dockerfile</source>
+          <target state="translated">Dockerfile</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>docker-compose.debug.yml</source>
+          <target state="translated">docker-compose.debug.yml</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>docker-compose.yml</source>
+          <target state="translated">docker-compose.yml</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>dockerTask.ps1</source>
+          <target state="translated">dockerTask.ps1</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>dockerTask.sh</source>
+          <target state="translated">dockerTask.sh</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>.vscode/tasks.json</source>
+          <target state="translated">.vscode/tasks.json</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The generator creates two Dockerfiles.</source>
+          <target state="translated">產生器會建立兩個 Dockerfile。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dockerfile.debug<ept id="p1">**</ept> - this file is based on the <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p2">**</ept> image which if you note from the list of image variants, includes the SDK, CLI and .NET Core and will be the image used for development and debugging (F5).</source>
+          <target state="translated"><bpt id="p1">**</bpt>Dockerfile.debug<ept id="p1">**</ept>：這個檔案是以 <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p2">**</ept> 映像為基礎，如果您注意到，它是出自映像變體清單，包括 SDK、CLI 和 .NET Core，而且會是開發和偵錯 (F5) 所用的映像。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Including all of these components produces a larger image with a size roughly of 540MB.</source>
+          <target state="translated">包括所有這些元件會產生較大的映像，大小約為 540 MB。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dockerfile<ept id="p1">**</ept> - this image is the release image based on <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p2">**</ept> and should be used for production.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Dockerfile<ept id="p1">**</ept>：此映像是以 <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p2">**</ept> 為基礎的發行映像，應該用於生產環境。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This image when built is approximately 253 MB.</source>
+          <target state="translated">此映像在建置時約為 253 MB。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Creating the Docker images</source>
+          <target state="translated">建立 Docker 映像</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Using the <ph id="ph1">`dockerTask.sh`</ph> or <ph id="ph2">`dockerTask.ps1`</ph> script, we can build or compose the image and container for the <bpt id="p1">**</bpt>api<ept id="p1">**</ept> application for a specific environment.</source>
+          <target state="translated">使用 <ph id="ph1">`dockerTask.sh`</ph> 或 <ph id="ph2">`dockerTask.ps1`</ph> 指令碼，我們可以針對特定的環境建置或撰寫 <bpt id="p1">**</bpt>api<ept id="p1">**</ept> 應用程式的映像和容器。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Build the <bpt id="p1">**</bpt>debug<ept id="p1">**</ept> image by running the following command.</source>
+          <target state="translated">執行下列命令以建置<bpt id="p1">**</bpt>偵錯<ept id="p1">**</ept>映像。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The image will build the ASP.NET application, run <ph id="ph1">`dotnet restore`</ph>, add the debugger to the image, set an <ph id="ph2">`ENTRYPOINT`</ph> and finally copy the app to the image.</source>
+          <target state="translated">此映像會建置 ASP.NET 應用程式、執行 <ph id="ph1">`dotnet restore`</ph>、將偵錯工具加入映像、設定 <ph id="ph2">`ENTRYPOINT`</ph>，最後將應用程式複製到映像。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The result is a Docker image named <bpt id="p1">*</bpt>api<ept id="p1">*</ept> with a <ph id="ph1">`TAG`</ph> of <bpt id="p2">*</bpt>debug<ept id="p2">*</ept>.</source>
+          <target state="translated">結果是名為 <bpt id="p1">*</bpt>api<ept id="p1">*</ept> 的 Docker 映像，附帶「偵錯」的 <ph id="ph1">`TAG`</ph>。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>See the images on the machine using <ph id="ph1">`docker images`</ph>.</source>
+          <target state="translated">請使用 <ph id="ph1">`docker images`</ph> 查看電腦上的映像。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Another way to generate the image and run the application within the Docker container is to open the application in Visual Studio Code and use the debugging tools.</source>
+          <target state="translated">產生映像並在 Docker 容器內執行應用程式的另一個方法，是在 Visual Studio Code 中開啟應用程式，並使用偵錯工具。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Select the debugging icon in the View Bar on the left side of VS Code.</source>
+          <target state="translated">在 VS Code 左側的 [檢視] 列中選取偵錯圖示。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>vscode debugging icon</source>
+          <target state="translated">vscode 偵錯圖示</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Then tap the play icon or F5 to generate the image and start the application within the container.</source>
+          <target state="translated">然後點選播放圖示或 F5 產生映像，在容器內啟動應用程式。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The Web API will be launched using your default web browser at http://localhost:5000.</source>
+          <target state="translated">Web API 會使用您在 http://localhost:5000 的預設網頁瀏覽器啟動。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>VSCode Docker Tools Debug</source>
+          <target state="translated">VSCode Docker 工具偵錯</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You may set break points in your application, step through, etc. just as if the application was running locally on your development machine as opposed to inside the container.</source>
+          <target state="translated">您可在應用程式、逐步執行等等設定中斷點，就像在開發電腦本機執行應用程式，而不是在容器內。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The benefit to debugging within the container is this is the same image that would be deployed to a production environment.</source>
+          <target state="translated">在容器內偵錯的優點是，這是會部署到生產環境的同一映像。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Creating the release or production image requires simply running the command from the terminal passing the <ph id="ph1">`release`</ph> environment name.</source>
+          <target state="translated">建立發行或生產環境映像，只需要從終端機執行命令，傳遞 <ph id="ph1">`release`</ph> 環境名稱。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The command creates the image based on the smaller <bpt id="p1">**</bpt>microsoft/dotnet:core<ept id="p1">**</ept> base image, <bpt id="p2">[</bpt>EXPOSE<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/expose)</ept> port 5000, sets the <bpt id="p3">[</bpt>ENTRYPOINT<ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> for <ph id="ph1">`dotnet api.dll`</ph> and copies it to the <ph id="ph2">`/app`</ph> directory.</source>
+          <target state="translated">此命令會根據較小的 <bpt id="p1">**</bpt>microsoft/dotnet:core<ept id="p1">**</ept> 基礎映像建立映像、<bpt id="p2">[</bpt>EXPOSE<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/expose)</ept> 連接埠 5000、設定 <ph id="ph1">`dotnet api.dll`</ph> 的 <bpt id="p3">[</bpt>ENTRYPOINT<ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept>，再將它複製到 <ph id="ph2">`/app`</ph> 目錄。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>There is no debugger, SDK or <ph id="ph1">`dotnet restore`</ph> resulting in a much smaller image.</source>
+          <target state="translated">不會有任何偵錯工具、SDK 或 <ph id="ph1">`dotnet restore`</ph> 產生更小的映像。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The image is named <bpt id="p1">**</bpt>api<ept id="p1">**</ept> with a <ph id="ph1">`TAG`</ph> of <bpt id="p2">**</bpt>latest<ept id="p2">**</ept>.</source>
+          <target state="translated">此映像名為 <bpt id="p1">**</bpt>api<ept id="p1">**</ept>，附帶<bpt id="p2">**</bpt>最新的<ept id="p2">**</ept>的 <ph id="ph1">`TAG`</ph>。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">總結</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Using the Docker generator to add the necessary files to our Web API application made the process simple to create the development and production versions of the images.</source>
+          <target state="translated">使用 Docker 產生器將必要的檔案新增至 Web API 應用程式，曾經讓建立開發和生產環境版本映像的程序變得簡單。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration providing step through debugging of the application within the container.</source>
+          <target state="translated">這項工具之所以能夠跨平台，是因為它也提供 PowerShell 指令碼來達成，在提供於容器內逐步偵錯應用程式的 Windows 和 Visual Studio 整合中達到相同的結果。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>By understanding the image variants and the target scenarios, you can optimize your inner-loop development process, while achieving optimized images for production deployments.</source>
+          <target state="translated">透過了解映像變體和目標案例，您可以最佳化內部迴圈開發程序，同時達到最佳化生產環境部署的映像。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
