@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
 
 ## Item Details
-##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.fr-fr/blob/f40641bddf8d5337006a71d0e94573adeb4b3445/docs/core/migrating-from-dnx.md)
-* Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/90c51dbcc04bc792685826fe3e3bb199edbe12f6/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Handoff Datetime: 2016-11-08 23:53:36
-* Handoff Reason: Include
-* Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8df4e0343f02f68138650a27ee49d0357a06dd00/ol-archive/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Archive Datetime: 2016-11-11 03:13:06
-* Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/7ce87ce748af006d67a2957b3c835d39546f331d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Handback Datetime: 2016-11-14 11:08:35
-* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/7ce87ce748af006d67a2957b3c835d39546f331d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-14 11:08:54
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
