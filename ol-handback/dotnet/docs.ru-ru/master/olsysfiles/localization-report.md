@@ -2322,8 +2322,8 @@
 * Archive Datetime: 2016-11-11 03:13:25
 * Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/d41686c930c6939032a3cc90f7149a3ba9d99940/ol-handback/dotnet/docs.ru-ru/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf)
 * Handback Datetime: 2016-11-14 10:08:58
-* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/791daedda0274a4e274361b54c76d50785d56a44/ol-handback/dotnet/docs.ru-ru/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-11 15:47:16
+* Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/d41686c930c6939032a3cc90f7149a3ba9d99940/ol-handback/dotnet/docs.ru-ru/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.ru-ru.xlf)
+* Bilingual Datetime: 2016-11-14 10:09:48
 * [Back to Top](#report-top)
 
 ##### <a name='af6c83755068cc311b59c1a337898c177cc6d53738'></a> Source: [docs\core\packages.md](https://github.com/dotnet/docs/blob/cb2e83b35b5a4aae14c89bcbdf26b064885a477a/docs/core/packages.md)
