@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">be658d2c660aff736eceffe23757c13154e78582</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\docker\building-net-docker-images.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ed453aeba7aa4e4a4396090ec77d1f55f235a9b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e1df0dafafc7833a932db712f78375cf052264e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Building .NET Core Docker Images</source>
+          <target state="translated">Criando imagens do Docker do .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understanding Docker images and .NET Core</source>
+          <target state="translated">Noções básicas de imagens do Docker e do .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, Docker</source>
+          <target state="translated">.NET, .NET Core, Docker</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Building Docker Images for .NET Core Applications</source>
+          <target state="translated">Criando imagens do Docker para .NET Core Applications</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In order to get an understanding of how to use .NET Core and Docker together, we must first get to know the different Docker images that are offered and when is the right use case for them.</source>
+          <target state="translated">Para entender como usar o .NET Core e o Docker juntos, precisamos primeiro conhecer as diferentes imagens do Docker que são oferecidas e quando é o caso de uso ideal para usá-las.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Here we will walk through the variations offered, build an ASP.NET Core Web API, use the Yeoman Docker tools to create a debuggable container as well as peek at how Visual Studio Code can assist in the process.</source>
+          <target state="translated">Percorreremos aqui as variações oferecidas, compilaremos uma API Web do ASP.NET Core, usaremos as ferramentas do Yeoman Docker para criar um contêiner depurável e veremos como o Visual Studio Code pode ajudar no processo.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Docker Image Optimizations</source>
+          <target state="translated">Otimizações de imagem de Docker</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When building Docker images for developers, we focused on three main scenarios:</source>
+          <target state="translated">Ao criar imagens do Docker para desenvolvedores, nos concentramos em três cenários principais:</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Images used to develop .NET Core apps</source>
+          <target state="translated">Imagens usadas para desenvolver aplicativos .NET Core</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Images used to build .NET Core apps</source>
+          <target state="translated">Imagens usadas para compilar aplicativos .NET Core</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Images used to run .NET Core apps</source>
+          <target state="translated">Imagens usadas para executar aplicativos .NET Core</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Why three images?</source>
+          <target state="translated">Por que três imagens?</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When developing, building and running containerized applications, we have different priorities.</source>
+          <target state="translated">Ao desenvolver, compilar e executar aplicativos em contêineres, temos prioridades diferentes.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Development:<ept id="p1">**</ept>  How fast can you iterate changes, and the ability to debug the changes.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Desenvolvimento:<ept id="p1">**</ept> quanto tempo você leva para iterar alterações e a capacidade de depurá-las.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The size of the image isn't as important, rather can you make changes to your code and see them quickly.</source>
+          <target state="translated">O tamanho da imagem não é tão importante, pois você pode fazer alterações em seu código e observá-las rapidamente.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Some of our tools, like <bpt id="p1">[</bpt>yo docker<ept id="p1">](https://aka.ms/yodocker)</ept> for use in VS Code use this image during development time.</source>
+          <target state="translated">Algumas das nossas ferramentas, como o <bpt id="p1">[</bpt>yo docker<ept id="p1">](https://aka.ms/yodocker)</ept> para uso no VS Code, usam essa imagem durante o tempo de desenvolvimento.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Build:<ept id="p1">**</ept> What's needed to compile your app.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Compilação:<ept id="p1">**</ept> o que é necessário para compilar seu aplicativo.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This includes the compiler and any other dependencies to optimize the binaries.</source>
+          <target state="translated">Isso inclui o compilador e as outras dependências para otimizar os binários.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This image isn't the image you deploy, rather it's an image you use to build the content you place into a production image.</source>
+          <target state="translated">Essa imagem não é aquela que você implanta, mas sim uma imagem que você usa para compilar o conteúdo incluído em uma imagem de produção.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This image would be used in your continuous integration, or build environment.</source>
+          <target state="translated">Essa imagem deve ser usada na integração contínua ou no ambiente de build.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For instance, rather than installing all the dependencies directly on a build agent, the build agent would instance a build image to compile the application with all the dependencies required to build the app contained within the image.</source>
+          <target state="translated">Por exemplo, em vez de instalar todas as dependências diretamente em um agente de build, este criaria instâncias de uma imagem para compilar o aplicativo com todas as dependências necessárias para compilar o aplicativo contido na imagem.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Your build agent only needs to know how to run this Docker image.</source>
+          <target state="translated">O agente de build precisa saber apenas como executar essa imagem do Docker.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Production:<ept id="p1">**</ept> How fast you can deploy and start your image.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Produção:<ept id="p1">**</ept> em quanto tempo você pode implantar e iniciar sua imagem.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This image is small so it can quickly travel across the network from your Docker Registry to your Docker hosts.</source>
+          <target state="translated">Essa imagem é pequena, por isso ela pode trafegar rapidamente pela rede do seu Registro do Docker para os hosts do Docker.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The contents are ready to run enabling the fastest time from Docker run to processing results.</source>
+          <target state="translated">O conteúdo está pronto para ser executado e habilitar o tempo mais rápido possível da execução do Docker até o processamento de resultados.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the immutable Docker model, there's no need for dynamic compilation of code.</source>
+          <target state="translated">A compilação dinâmica do código não é necessária no modelo de Docker imutável.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The content you place in this image would be limited to the binaries and content needed to run the application.</source>
+          <target state="translated">O conteúdo colocado nesta imagem ficaria limitado aos binários e conteúdos necessários para executar o aplicativo.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For example, the published output using <ph id="ph1">`dotnet publish`</ph> which contains the compiled binaries, images, .js and .css files.</source>
+          <target state="translated">Por exemplo, a saída publicada usa <ph id="ph1">`dotnet publish`</ph>, que contém os binários compilados, imagens, arquivos e arquivos.js e .css.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Over time, you'll see images that contain pre-jitted packages.</source>
+          <target state="translated">Com o passar do tempo, você verá imagens que contém pacotes pré-compilados com JIT.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Though there are multiple versions of the .NET Core image, they all share one or more layers.</source>
+          <target state="translated">Embora haja várias versões da imagem do .NET Core, todas elas compartilham uma ou mais camadas.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The amount of disk space needed to store or the delta to pull from your registry is much smaller than the whole because all of the images share the same base layer and potentially others.</source>
+          <target state="translated">A quantidade de espaço em disco necessário para armazenar ou para o delta obter o Registro é muito menor do que no todo, pois todas as imagens compartilham a mesma camada base e potencialmente outras.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Docker image variations</source>
+          <target state="translated">Variações de imagem do Docker</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To achieve the goals above, we provide image variants under <bpt id="p1">[</bpt>microsoft/dotnet<ept id="p1">](https://hub.docker.com/r/microsoft/dotnet/)</ept>.</source>
+          <target state="translated">Para atingir os objetivos descritos acima, fornecemos variantes de imagem em <bpt id="p1">[</bpt>microsoft/dotnet<ept id="p1">](https://hub.docker.com/r/microsoft/dotnet/)</ept>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-sdk`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p1">**</ept>, this image contains the .NET Core SDK which includes the .NET Core and Command Line Tools (CLI).</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-sdk`</ph>: isto é, <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p1">**</ept>, essa imagem contém o SDK do .NET Core que inclui o .NET Core e a CLI (Ferramentas de Linha de Comando).</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This image maps to the <bpt id="p1">**</bpt>development scenario<ept id="p1">**</ept>.</source>
+          <target state="translated">Essa imagem é mapeada para o <bpt id="p1">**</bpt>cenário de desenvolvimento<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You would use this image for local development, debugging and unit testing.</source>
+          <target state="translated">Ela seria usada para o desenvolvimento, depuração e teste de unidade local.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For example, all the development you do, before you check in your code.</source>
+          <target state="translated">Por exemplo, todo o desenvolvimento realizado antes de inserir o código.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This image can also be used for your <bpt id="p1">**</bpt>build<ept id="p1">**</ept> scenarios.</source>
+          <target state="translated">Essa imagem também pode ser usada para cenários <bpt id="p1">**</bpt>de build<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p1">**</ept>, image which runs <bpt id="p2">[</bpt>portable .NET Core applications<ept id="p2">](../deploying/index.md)</ept> and it is optimized for running your application in <bpt id="p3">**</bpt>production<ept id="p3">**</ept>.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core`</ph>: isto é, <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p1">**</ept>, a imagem que executa <bpt id="p2">[</bpt>aplicativos .NET Core portáteis<ept id="p2">](../deploying/index.md)</ept> e é otimizada para executar seu aplicativo em <bpt id="p3">**</bpt>produção<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>It does not contain the SDK, and is meant to take the optimized output of <ph id="ph1">`dotnet publish`</ph>.</source>
+          <target state="translated">Ela não contém o SDK e tem por objetivo levar a saída otimizada do <ph id="ph1">`dotnet publish`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The portable runtime is well suited for Docker container scenarios as running multiple containers benefit from shared image layers.</source>
+          <target state="translated">O tempo de execução portátil é adequado para cenários de contêiner Docker, pois a execução de vários contêineres tira vantagem das camas de imagem compartilhadas.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Alternative images</source>
+          <target state="translated">Imagens alternativas</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In addition to the optimized scenarios of development, build and production, we provide additional images:</source>
+          <target state="translated">Além dos cenários otimizados de desenvolvimento, build e produção, fornecemos imagens adicionais:</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-onbuild`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-onbuild<ept id="p1">**</ept>, contains <bpt id="p2">[</bpt>ONBUILD<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/onbuild)</ept> triggers.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-onbuild`</ph>: isto é, <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-preview2-onbuild<ept id="p1">**</ept>, contém gatilhos <bpt id="p2">[</bpt>ONBUILD<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/onbuild)</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The build will <bpt id="p1">[</bpt>COPY<ept id="p1">](https://docs.docker.com/engine/reference/builder/#/copy)</ept> your application, run <ph id="ph1">`dotnet restore`</ph> and create an <bpt id="p2">[</bpt>ENTRYPOINT<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> <ph id="ph2">`dotnet run`</ph> instruction to run the application when the Docker image is run.</source>
+          <target state="translated">O build realizará a <bpt id="p1">[</bpt>COPY<ept id="p1">](https://docs.docker.com/engine/reference/builder/#/copy)</ept> do seu aplicativo, executará <ph id="ph1">`dotnet restore`</ph> e criará uma instrução <bpt id="p2">[</bpt>ENTRYPOINT<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> <ph id="ph2">`dotnet run`</ph> para executar o aplicativo quando a imagem do Docker for executada.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>While not an optimized image for production, some may find it useful to simply copy their source code into an image and run it.</source>
+          <target state="translated">Embora não seja uma imagem otimizada para produção, ela pode ser útil para alguns simplesmente para copiar seu código-fonte em uma imagem e executá-lo.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core-deps`</ph> : that is <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core-deps<ept id="p1">**</ept>, if you wish to run self-contained applications use this image.</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet:&lt;version&gt;-core-deps`</ph>: isto é, <bpt id="p1">**</bpt>microsoft/dotnet:1.0.0-core-deps<ept id="p1">**</ept>, use essa imagem se você desejar executar os aplicativos autocontidos.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>It contains the operating system with all of the native dependencies needed by .NET Core.</source>
+          <target state="translated">Ela contém o sistema operacional com todas as dependências nativas exigidas pelo .NET Core.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This image can also be used as a base image for your own custom CoreFX or CoreCLR builds.</source>
+          <target state="translated">Essa imagem também pode ser usada como uma imagem-base para suas próprias compilações CoreFX ou CoreCLR personalizadas.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>While the <bpt id="p1">**</bpt>onbuild<ept id="p1">**</ept> variant is optimized to simply place your code in an image and run it, this image is optimized to have only the operating system dependencies required to run .NET Core apps that have the .NET Runtime packaged with the application.</source>
+          <target state="translated">Enquanto a variante <bpt id="p1">**</bpt>onbuild<ept id="p1">**</ept> é otimizada para simplesmente colocar seu código em uma imagem e executá-lo, essa imagem é otimizada para ter apenas as dependências do sistema operacional necessárias para executar aplicativos .NET Core com o Tempo de Execução .NET empacotado com o aplicativo.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This image isn't generally optimized for running multiple .NET Core containers on the same host, as each image carries the .NET Core runtime within the application, and you will not benefit from image layering.</source>
+          <target state="translated">Essa imagem geralmente não é otimizada para executar vários contêineres .NET Core no mesmo host, visto que cada imagem traz o tempo de execução do .NET Core dentro do aplicativo e as camadas de imagem não trazem qualquer benefício.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Latest versions of each variant:</source>
+          <target state="translated">Versões mais recentes de cada variante:</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`microsoft/dotnet`</ph> or <ph id="ph2">`microsoft/dotnet:latest`</ph> (includes SDK)</source>
+          <target state="translated"><ph id="ph1">`microsoft/dotnet`</ph> ou <ph id="ph2">`microsoft/dotnet:latest`</ph> (inclui o SDK)</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Here is a list of the images after a <ph id="ph1">`docker pull &lt;imagename&gt;`</ph> on a development machine to show the various sizes.</source>
+          <target state="translated">Veja aqui uma lista das imagens após um <ph id="ph1">`docker pull &lt;imagename&gt;`</ph> em um computador de desenvolvimento para mostrar os diversos tamanhos.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Notice, the development/build variant, <ph id="ph1">`microsoft/dotnet:1.0.0-preview2-sdk`</ph> is larger as it contains the SDK to develop and build your application.</source>
+          <target state="translated">Observe que a variante de desenvolvimento/compilação, <ph id="ph1">`microsoft/dotnet:1.0.0-preview2-sdk`</ph>, é maior, pois contém o SDK para desenvolver e compilar seu aplicativo.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The production variant, <ph id="ph1">`microsoft/dotnet:core`</ph> is smaller, as it only contains the .NET Core runtime.</source>
+          <target state="translated">A variante de produção, <ph id="ph1">`microsoft/dotnet:core`</ph>, é menor, pois contém apenas o tempo de execução do .NET Core.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The minimal image capable of being used on Linux, <ph id="ph1">`core-deps`</ph>, is quite smaller, however your application will need to copy a private copy of the .NET Runtime with it.</source>
+          <target state="translated">A imagem mínima capaz de ser usada no Linux, <ph id="ph1">`core-deps`</ph>, é muito menor, mas seu aplicativo precisará trazer uma cópia particular do Tempo de Execução .NET consigo.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Since containers are already private isolation barriers, you will lose that optimization when running multiple dotnet based containers.</source>
+          <target state="translated">Como os contêineres já são barreiras de isolamento particular, você perderá essa otimização ao executar vários dotnet baseados em contêineres.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Pré-requisitos</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To build and run, you'll need a few things installed:</source>
+          <target state="translated">Para compilar e executar, você precisará de alguns itens instalados:</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core<ept id="p1">](http://dot.net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core<ept id="p1">](http://dot.net)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Docker<ept id="p1">](https://www.docker.com/products/docker)</ept> to run your Docker containers locally</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker<ept id="p1">](https://www.docker.com/products/docker)</ept> para executar seus contêineres Docker localmente</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Yeoman generator for ASP.NET<ept id="p1">](https://github.com/omnisharp/generator-aspnet)</ept> for creating the Web API application</source>
+          <target state="translated"><bpt id="p1">[</bpt>Gerador Yeoman para ASP.NET<ept id="p1">](https://github.com/omnisharp/generator-aspnet)</ept> para criar o aplicativo da API Web</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Yeoman generator for Docker<ept id="p1">](http://aka.ms/yodocker)</ept> from Microsoft</source>
+          <target state="translated"><bpt id="p1">[</bpt>Gerador Yeoman para Docker<ept id="p1">](http://aka.ms/yodocker)</ept> da Microsoft</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Install the Yeoman generators for ASP.NET Core and Docker using npm</source>
+          <target state="translated">Instale os geradores Yeoman para ASP.NET Core e Docker usando npm</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>This sample will be using <bpt id="p1">[</bpt>Visual Studio Code<ept id="p1">](http://code.visualstudio.com)</ept> for the editor.</source>
+          <target state="translated">Este exemplo usará o <bpt id="p1">[</bpt>Visual Studio Code<ept id="p1">](http://code.visualstudio.com)</ept> como editor.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Creating the Web API application</source>
+          <target state="translated">Criando o aplicativo da API Web</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For a reference point, before we containerize the application, first run the application locally.</source>
+          <target state="translated">Para um ponto de referência, antes de colocarmos o aplicativo em contêineres, primeiro devemos executá-lo localmente.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The finished application is located in the <bpt id="p1">[</bpt>dotnet/core-docs repository on GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images)</ept>.</source>
+          <target state="translated">O aplicativo concluído está localizado no <bpt id="p1">[</bpt>repositório dotnet/core-docs no GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images)</ept>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Create a directory for your application.</source>
+          <target state="translated">Crie um diretório para seu aplicativo.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Open a command or terminal session in that directory and use the ASP.NET Yeoman generator by typing the following:</source>
+          <target state="translated">Abra um comando ou sessão de terminal nesse diretório e use o gerador Yeoman do ASP.NET digitando o seguinte:</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Web API Application<ept id="p1">**</ept> and type <bpt id="p2">**</bpt>api<ept id="p2">**</ept> for the name of the app and tap enter.</source>
+          <target state="translated">Selecione <bpt id="p1">**</bpt>Aplicativo da API Web<ept id="p1">**</ept> e digite <bpt id="p2">**</bpt>api<ept id="p2">**</ept> para o nome do aplicativo e pressione Enter.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Once the application is scaffolded, change to the <ph id="ph1">`/api`</ph> directory and restore the NuGet dependencies using <ph id="ph2">`dotnet restore`</ph>.</source>
+          <target state="translated">Depois que o aplicativo é esboçado, mude para o diretório <ph id="ph1">`/api`</ph> e restaure as dependências NuGet usando <ph id="ph2">`dotnet restore`</ph>.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Test the application using <ph id="ph1">`dotnet run`</ph> and browsing to <bpt id="p1">**</bpt>http://localhost:5000/api/values<ept id="p1">**</ept></source>
+          <target state="translated">Teste o aplicativo usando <ph id="ph1">`dotnet run`</ph> e navegando até <bpt id="p1">**</bpt>http://localhost:5000/api/values<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`Ctrl+C`</ph> to stop the application.</source>
+          <target state="translated">Use <ph id="ph1">`Ctrl+C`</ph> para interromper o aplicativo.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Adding Docker support</source>
+          <target state="translated">Adicionando suporte ao Docker</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Adding Docker support to the project is achieved using the Yeoman generator from Microsoft.</source>
+          <target state="translated">A adição de suporte ao Docker para o projeto é realizada usando o gerador Yeoman da Microsoft.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>It currently supports .NET Core, Node.js and Go projects by creating a Dockerfile and scripts that help build and run projects inside containers.</source>
+          <target state="translated">No momento, ele dá suporte a projetos do .NET Core, Node.js e Go criando um Dockerfile e scripts que ajudam a criar e executar projetos dentro de contêineres.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Visual Studio Code specific files are also added (launch.json, tasks.json) for editor debugging and command palette support.</source>
+          <target state="translated">Arquivos específicos do Visual Studio Code também são adicionados (launch.json, tasks.json) para depuração do editor e suporte à paleta de comandos.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Select <ph id="ph1">`.NET Core`</ph> as the project type</source>
+          <target state="translated">Selecione <ph id="ph1">`.NET Core`</ph> como o tipo de projeto</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`rtm`</ph> for the version of .NET Core</source>
+          <target state="translated"><ph id="ph1">`rtm`</ph> para a versão do .NET Core</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Y`</ph> the project uses a web server</source>
+          <target state="translated"><ph id="ph1">`Y`</ph> o projeto usa um servidor Web</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`5000`</ph> is the port the Web API application is listening on (http://localhost:5000)</source>
+          <target state="translated"><ph id="ph1">`5000`</ph> é a porta que o aplicativo da API Web está escutando em (http://localhost:5000)</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the image name</source>
+          <target state="translated"><ph id="ph1">`api`</ph> para o nome da imagem</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the service name</source>
+          <target state="translated"><ph id="ph1">`api`</ph> para o nome do serviço</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`api`</ph> for the compose project</source>
+          <target state="translated"><ph id="ph1">`api`</ph> para o projeto de composição</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Y`</ph> to overwrite the current Dockerfile</source>
+          <target state="translated"><ph id="ph1">`Y`</ph> para substituir o Dockerfile atual</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>When the generator is complete, the following files are added to the project</source>
+          <target state="translated">Quando o gerador estiver concluído, os seguintes arquivos são adicionados ao projeto</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>.vscode/launch.json</source>
+          <target state="translated">.vscode/launch.json</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Dockerfile.debug</source>
+          <target state="translated">Dockerfile.debug</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Dockerfile</source>
+          <target state="translated">Dockerfile</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>docker-compose.debug.yml</source>
+          <target state="translated">docker-compose.debug.yml</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>docker-compose.yml</source>
+          <target state="translated">docker-compose.yml</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>dockerTask.ps1</source>
+          <target state="translated">dockerTask.ps1</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>dockerTask.sh</source>
+          <target state="translated">dockerTask.sh</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>.vscode/tasks.json</source>
+          <target state="translated">.vscode/tasks.json</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The generator creates two Dockerfiles.</source>
+          <target state="translated">O gerador cria dois Dockerfiles.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dockerfile.debug<ept id="p1">**</ept> - this file is based on the <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p2">**</ept> image which if you note from the list of image variants, includes the SDK, CLI and .NET Core and will be the image used for development and debugging (F5).</source>
+          <target state="translated"><bpt id="p1">**</bpt>Dockerfile.Debug<ept id="p1">**</ept> – Este arquivo se baseia na imagem <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-preview2-sdk<ept id="p2">**</ept>, a qual podemos observar na lista de variantes que inclui o SDK, a CLI e o .NET Core, e será a imagem usada para desenvolvimento e depuração (F5).</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Including all of these components produces a larger image with a size roughly of 540MB.</source>
+          <target state="translated">Incluir todos esses componentes gera uma imagem maior com um tamanho de aproximadamente 540 MB.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Dockerfile<ept id="p1">**</ept> - this image is the release image based on <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p2">**</ept> and should be used for production.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Dockerfile<ept id="p1">**</ept> – Essa é a imagem de lançamento baseada em <bpt id="p2">**</bpt>microsoft/dotnet:1.0.0-core<ept id="p2">**</ept> e deve ser usada para produção.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This image when built is approximately 253 MB.</source>
+          <target state="translated">Essa imagem compilada tem aproximadamente 253 MB.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Creating the Docker images</source>
+          <target state="translated">Criar as imagens do Docker</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Using the <ph id="ph1">`dockerTask.sh`</ph> or <ph id="ph2">`dockerTask.ps1`</ph> script, we can build or compose the image and container for the <bpt id="p1">**</bpt>api<ept id="p1">**</ept> application for a specific environment.</source>
+          <target state="translated">Usando o script <ph id="ph1">`dockerTask.sh`</ph> ou <ph id="ph2">`dockerTask.ps1`</ph>, podemos criar ou compor a imagem e o contêiner para o aplicativo <bpt id="p1">**</bpt>api<ept id="p1">**</ept> para um ambiente específico.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Build the <bpt id="p1">**</bpt>debug<ept id="p1">**</ept> image by running the following command.</source>
+          <target state="translated">Crie a imagem de <bpt id="p1">**</bpt>depuração<ept id="p1">**</ept> executando o comando a seguir.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The image will build the ASP.NET application, run <ph id="ph1">`dotnet restore`</ph>, add the debugger to the image, set an <ph id="ph2">`ENTRYPOINT`</ph> and finally copy the app to the image.</source>
+          <target state="translated">A imagem compilará o aplicativo ASP.NET, executará <ph id="ph1">`dotnet restore`</ph>, adicionará o depurador à imagem, definirá um <ph id="ph2">`ENTRYPOINT`</ph> e, por fim, copiará o aplicativo para a imagem.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The result is a Docker image named <bpt id="p1">*</bpt>api<ept id="p1">*</ept> with a <ph id="ph1">`TAG`</ph> of <bpt id="p2">*</bpt>debug<ept id="p2">*</ept>.</source>
+          <target state="translated">O resultado é uma imagem do Docker chamada <bpt id="p1">*</bpt>api<ept id="p1">*</ept> com um <ph id="ph1">`TAG`</ph> de <bpt id="p2">*</bpt>depuração<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>See the images on the machine using <ph id="ph1">`docker images`</ph>.</source>
+          <target state="translated">Veja as imagens no computador usando <ph id="ph1">`docker images`</ph>.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Another way to generate the image and run the application within the Docker container is to open the application in Visual Studio Code and use the debugging tools.</source>
+          <target state="translated">Outra maneira de gerar a imagem e executar o aplicativo dentro do contêiner Docker é abrir o aplicativo no Visual Studio Code e usar as ferramentas de depuração.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Select the debugging icon in the View Bar on the left side of VS Code.</source>
+          <target state="translated">Selecione o ícone de depuração na Barra de Exibição no lado esquerdo do VS Code.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>vscode debugging icon</source>
+          <target state="translated">ícone de depuração vscode</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Then tap the play icon or F5 to generate the image and start the application within the container.</source>
+          <target state="translated">Em seguida, toque no ícone de reprodução ou F5 para gerar a imagem e iniciar o aplicativo dentro do contêiner.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The Web API will be launched using your default web browser at http://localhost:5000.</source>
+          <target state="translated">A API Web será iniciada usando seu navegador da Web padrão em http://localhost:5000.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>VSCode Docker Tools Debug</source>
+          <target state="translated">Depuração de Ferramentas do VSCode Docker</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You may set break points in your application, step through, etc. just as if the application was running locally on your development machine as opposed to inside the container.</source>
+          <target state="translated">Você pode definir pontos de interrupção em seu aplicativo, percorrê-los, etc., como se o aplicativo fosse executado localmente em seu computador de desenvolvimento em vez de dentro do contêiner.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The benefit to debugging within the container is this is the same image that would be deployed to a production environment.</source>
+          <target state="translated">A vantagem da depuração dentro do contêiner é que essa é a mesma imagem que seria implantada em um ambiente de produção.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Creating the release or production image requires simply running the command from the terminal passing the <ph id="ph1">`release`</ph> environment name.</source>
+          <target state="translated">Criar a imagem de lançamento ou de produção requer simplesmente executar o comando do terminal passando o nome do ambiente do <ph id="ph1">`release`</ph>.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The command creates the image based on the smaller <bpt id="p1">**</bpt>microsoft/dotnet:core<ept id="p1">**</ept> base image, <bpt id="p2">[</bpt>EXPOSE<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/expose)</ept> port 5000, sets the <bpt id="p3">[</bpt>ENTRYPOINT<ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> for <ph id="ph1">`dotnet api.dll`</ph> and copies it to the <ph id="ph2">`/app`</ph> directory.</source>
+          <target state="translated">O comando cria a imagem com base na menor imagem de base <bpt id="p1">**</bpt>microsoft / dotnet:core<ept id="p1">**</ept>, <bpt id="p2">[</bpt>EXPÕE<ept id="p2">](https://docs.docker.com/engine/reference/builder/#/expose)</ept> a porta 5000, define o <bpt id="p3">[</bpt>PONTO DE ENTRADA<ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> para <ph id="ph1">`dotnet api.dll`</ph> e o copia para o diretório <ph id="ph2">`/app`</ph>.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>There is no debugger, SDK or <ph id="ph1">`dotnet restore`</ph> resulting in a much smaller image.</source>
+          <target state="translated">Não há nenhum depurador, o SDK ou <ph id="ph1">`dotnet restore`</ph>, resultando em uma imagem muito menor.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The image is named <bpt id="p1">**</bpt>api<ept id="p1">**</ept> with a <ph id="ph1">`TAG`</ph> of <bpt id="p2">**</bpt>latest<ept id="p2">**</ept>.</source>
+          <target state="translated">A imagem é denominada <bpt id="p1">**</bpt>api<ept id="p1">**</ept> com um <ph id="ph1">`TAG`</ph> de <bpt id="p2">**</bpt>mais recente<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">Resumo</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Using the Docker generator to add the necessary files to our Web API application made the process simple to create the development and production versions of the images.</source>
+          <target state="translated">Usando o gerador de Docker para adicionar os arquivos necessários ao aplicativo da API Web simplificou o processo de criar as versões de desenvolvimento e produção das imagens.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The tooling is cross platform by also providing a PowerShell script to accomplish the same results on Windows and Visual Studio Code integration providing step through debugging of the application within the container.</source>
+          <target state="translated">As ferramentas são plataforma cruzada, fornecendo também um script do PowerShell para obter os mesmos resultados no Windows, enquanto a integração do Visual Studio Code fornece um passo a passo de depuração do aplicativo dentro do contêiner.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>By understanding the image variants and the target scenarios, you can optimize your inner-loop development process, while achieving optimized images for production deployments.</source>
+          <target state="translated">Compreendendo as variantes de imagem e os cenários de destino, você pode otimizar seu processo de desenvolvimento de loop interno, obtendo imagens otimizadas para implantações de produção.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

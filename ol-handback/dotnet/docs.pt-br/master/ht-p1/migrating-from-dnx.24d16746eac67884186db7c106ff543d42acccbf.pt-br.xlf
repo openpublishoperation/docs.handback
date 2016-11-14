@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e79746734c179c3f7797a10bdcd79606b818afea</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\migrating-from-dnx.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">af9834f73c6bad720e15657c3a6c7e0cbd0acc0f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ab59c0c8fb9f0b2bd16f38c348258f1aa2dff5b1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Migrating from DNX to .NET Core CLI</source>
+          <target state="translated">Migrando do DNX para a CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Migrating from DNX to .NET Core CLI</source>
+          <target state="translated">Migrando do DNX para a CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrating from DNX to .NET Core CLI</source>
+          <target state="translated">Migrando do DNX para a CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Visão geral</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The RC1 release of .NET Core and ASP.NET Core 1.0 introduced DNX tooling.</source>
+          <target state="translated">A versão RC1 do .NET Core e ASP.NET Core 1.0 introduziu ferramentas DNX.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The RC2 release of .NET Core and ASP.NET Core 1.0 moved from DNX to the .NET Core CLI.</source>
+          <target state="translated">A versão RC2 do .NET Core e ASP.NET Core 1.0 mudou do DNX para a CLI do .NET Core.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>As a slight refresher, let's recap what DNX was about.</source>
+          <target state="translated">Como um ligeiro lembrete, vamos recapitular o que foi o DNX.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>DNX was a runtime and a toolset used to build .NET Core and, more specifically, ASP.NET Core 1.0 applications.</source>
+          <target state="translated">O DNX era um tempo de execução e um conjunto de ferramentas usado para criar aplicativos do .NET Core e, mais especificamente, do ASP.NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It consisted of 3 main pieces:</source>
+          <target state="translated">Ele era composto por 3 partes principais:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>DNVM - an install script for obtaining DNX</source>
+          <target state="translated">DNVM – um script de instalação para obter o DNX</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>DNX (Dotnet Execution Runtime) - the runtime that executes your code</source>
+          <target state="translated">DNX (Dotnet Execution Runtime) – o tempo de execução que executa o código</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>DNU (Dotnet Developer Utility) - tooling for managing dependencies, building and publishing your applications</source>
+          <target state="translated">DNU (Dotnet Developer Utility) – ferramentas para gerenciar dependências, criar e publicar seus aplicativos</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>With the introduction of the CLI, all of the above are now part of a single toolset.</source>
+          <target state="translated">Com a introdução da CLI, todos os itens acima agora fazem parte de um único conjunto de ferramentas.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, since DNX was available in RC1 timeframe, you might have projects that were built using it that you would want to move off to the new CLI tooling.</source>
+          <target state="translated">No entanto, como o DNX estava disponível na época do RC1, você poderá ter projetos que foram criados usando com ele, os quais terão que ser movidos para as novas ferramentas da CLI.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This migration guide will cover the essentials on how to migrate projects off of DNX and onto .NET Core CLI.</source>
+          <target state="translated">Este guia de migração abordará os princípios básicos de como migrar projetos do DNX para a CLI do .NET Core.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you are just starting a project on .NET Core from scratch, you can freely skip this document.</source>
+          <target state="translated">Se você estiver começando um projeto no .NET Core do zero, poderá ignorar totalmente este documento.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Main changes in the tooling</source>
+          <target state="translated">Principais mudanças nas ferramentas</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>There are some general changes in the tooling that should be outlined first.</source>
+          <target state="translated">Há algumas das mudanças gerais nas ferramentas que devem ser descritas primeiro.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>No more DNVM</source>
+          <target state="translated">Não há mais DNVM</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>DNVM, short for <bpt id="p1">*</bpt>DotNet Version Manager<ept id="p1">*</ept> was a bash/PowerShell script used to install a DNX on your machine.</source>
+          <target state="translated">DNVM, abreviação de <bpt id="p1">*</bpt>DotNet Version Manager<ept id="p1">*</ept> foi um script do bash/PowerShell usado para instalar um DNX em seu computador.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>It helped users get the DNX they need from the feed they specified (or default ones) as well as mark a certain DNX "active", which would put it on the $PATH for the given session.</source>
+          <target state="translated">Ele ajudou os usuários a obter o DNX necessário do feed especificado (ou padrão), bem como marcar um determinado DNX como "ativo", que o colocaria no $PATH de determinada sessão.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This would allow you to use the various tools.</source>
+          <target state="translated">Isso permitiria que você usasse as várias ferramentas.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>DNVM was discontinued because its feature set was made redundant by changes coming in the .NET Core CLI tools.</source>
+          <target state="translated">O DNVM foi descontinuado porque o conjunto de recursos tornou-se redundante devido às mudanças planejadas para as ferramentas da CLI do .NET Core.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The CLI tools come packaged in two main ways, as was explained in the <bpt id="p1">[</bpt>overview document<ept id="p1">](tools/index.md#installation)</ept>:</source>
+          <target state="translated">As ferramentas da CLI são fornecidas de duas maneiras principais, como explicado no <bpt id="p1">[</bpt>documento de visão geral<ept id="p1">](tools/index.md#installation)</ept>:</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Native installers for a given platform</source>
+          <target state="translated">Instaladores nativos para uma determinada plataforma</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Install script for other situations (like CI servers)</source>
+          <target state="translated">Instalam o script em outras situações (como servidores CI)</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Given this, the DNVM install features are not needed.</source>
+          <target state="translated">Devido a isso, os recursos de instalação do DNVM não são necessários.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>But what about the runtime selection features?</source>
+          <target state="translated">Mas e quanto aos recursos de seleção de tempo de execução?</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You reference a runtime in your <ph id="ph1">`project.json`</ph> by adding a package of a certain version to your dependencies.</source>
+          <target state="translated">Um tempo de execução é referenciado em seu <ph id="ph1">`project.json`</ph> adicionando um pacote de uma determinada versão às suas dependências.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>With this change, your application will be able to use the new runtime bits.</source>
+          <target state="translated">Com essa alteração, seu aplicativo poderá usar os novos bits de tempo de execução.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Getting these bits to your machine is the same as with the CLI: you install the runtime via one of the native installers it supports or via its install script.</source>
+          <target state="translated">Levar esses bits para seu computador é o mesmo que na CLI: você instala o tempo de execução por meio de um dos instaladores nativos com suporte ou por meio do script de instalação.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Different commands</source>
+          <target state="translated">Comandos diferentes</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If you were using DNX, you used some commands from one of its three parts (DNX, DNU or DNVM).</source>
+          <target state="translated">Se você estivesse usando o DNX, teria usado comandos de uma das suas três partes (DNX, DNU ou DNVM).</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>With the CLI, some of these commands change, some are not available and some are the same but have slightly different semantics.</source>
+          <target state="translated">Com a CLI, alguns desses comandos mudaram, outros não estão disponíveis e outros ainda permaneceram os mesmos, mas têm semântica ligeiramente diferente.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The table below shows the mapping between the DNX/DNU commands and their CLI counterparts.</source>
+          <target state="translated">A tabela a seguir mostra o mapeamento entre os comandos DNX/DNU e seus equivalentes da CLI.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>DNX command</source>
+          <target state="translated">Comando do DNX</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>CLI command</source>
+          <target state="translated">Comando da CLI</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>dnx run</source>
+          <target state="translated">dnx run</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>dotnet run</source>
+          <target state="translated">dotnet run</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Run code from source.</source>
+          <target state="translated">Execute o código da origem.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>dnu build</source>
+          <target state="translated">dnu build</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>dotnet build</source>
+          <target state="translated">dotnet build</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Build an IL binary of your code.</source>
+          <target state="translated">Crie um binário IL do seu código.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>dnu pack</source>
+          <target state="translated">dnu pack</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>dotnet pack</source>
+          <target state="translated">dotnet pack</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Package up a NuGet package of your code.</source>
+          <target state="translated">Empacote um pacote NuGet do seu código.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>dnx <ph id="ph1">\[</ph>command] (for example, "dnx web")</source>
+          <target state="translated">dnx <ph id="ph1">\[</ph>comando] (por exemplo, "dnx web")</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>N/A<ph id="ph1">\*</ph></source>
+          <target state="translated">N/D<ph id="ph1">\*</ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In DNX world, run a command as defined in the project.json.</source>
+          <target state="translated">No mundo DNX, execute um comando conforme definido no project.json.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>dnu install</source>
+          <target state="translated">dnu install</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>N/A<ph id="ph1">\*</ph></source>
+          <target state="translated">N/D<ph id="ph1">\*</ph></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the DNX world, install a package as a dependency.</source>
+          <target state="translated">No mundo DNX, instale um pacote como uma dependência.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>dnu restore</source>
+          <target state="translated">dnu restore</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>dotnet restore</source>
+          <target state="translated">dotnet restore</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Restore dependencies specified in your project.json.</source>
+          <target state="translated">Restaure as dependências especificadas no seu project.json.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>dnu publish</source>
+          <target state="translated">dnu publish</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>dotnet publish</source>
+          <target state="translated">dotnet publish</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Publish your application for deployment in one of the three forms (portable, portable with native and standalone).</source>
+          <target state="translated">Publica seu aplicativo para implantação em uma das três formas (portátil, portátil com nativo e autônomo).</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>dnu wrap</source>
+          <target state="translated">dnu wrap</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>N/A<ph id="ph1">\*</ph></source>
+          <target state="translated">N/D<ph id="ph1">\*</ph></target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In DNX world, wrap a project.json in csproj.</source>
+          <target state="translated">No mundo DNX, encapsule um project.json em csproj.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>dnu commands</source>
+          <target state="translated">dnu commands</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>N/A<ph id="ph1">\*</ph></source>
+          <target state="translated">N/D<ph id="ph1">\*</ph></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In DNX world, manage the globally installed commands.</source>
+          <target state="translated">No mundo DNX, gerencie os comandos instalados globalmente.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>(<ph id="ph1">\*</ph>) - these features are not supported in the CLI by design.</source>
+          <target state="translated">(<ph id="ph1">\*</ph>) – esses recursos não têm suporte na CLI por padrão.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>DNX features that are not supported</source>
+          <target state="translated">Recursos DNX sem suporte</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>As the table above shows, there are features from the DNX world that we decided not to support in the CLI, at least for the time being.</source>
+          <target state="translated">Como mostrado na tabela acima, há recursos do mundo DNX aos quais decidimos não dar suporte na CLI, pelo menos por enquanto.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This section will go through the most important ones and outline the rationale behind not supporting them as well as workarounds if you do need them.</source>
+          <target state="translated">Esta seção abordará os mais importantes deles e descreverá os motivos para não dar suporte a eles, bem como soluções alternativas caso você precise deles.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Global commands</source>
+          <target state="translated">Comandos globais</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>DNU came with a concept called "global commands".</source>
+          <target state="translated">O DNU vinha com um conceito chamado "comandos globais".</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>These were, essentially, console applications packaged up as NuGet packages with a shell script that would invoke the DNX you specified to run the application.</source>
+          <target state="translated">Eles eram, essencialmente, aplicativos de console empacotados como NuGet com um script de shell que invocaria o DNX especificado para executar o aplicativo.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The CLI does not support this concept.</source>
+          <target state="translated">A CLI não dá suporte a esse conceito.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It does, however, support the concept of adding per-project commands that can be invoked using the familiar <ph id="ph1">`dotnet &lt;command&gt;`</ph> syntax.</source>
+          <target state="translated">Contudo, ela dá suporte ao conceito de adição de comandos por projeto, os quais podem ser invocados usando a sintaxe familiar do <ph id="ph1">`dotnet &lt;command&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>More about this can be found in the <bpt id="p1">[</bpt>extensibility overview<ept id="p1">](tools/index.md#extensibility)</ept>.</source>
+          <target state="translated">Veja mais sobre isso na <bpt id="p1">[</bpt>visão geral de extensibilidade<ept id="p1">](tools/index.md#extensibility)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Installing dependencies</source>
+          <target state="translated">Instalando dependências</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>As of v1, the .NET Core CLI tools don't have an <ph id="ph1">`install`</ph> command for installing dependencies.</source>
+          <target state="translated">A partir do v1, as ferramentas da CLI do .NET Core não têm um comando <ph id="ph1">`install`</ph> para instalar dependências.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In order to install a package from NuGet, you would need to add it as a dependency to your <ph id="ph1">`project.json`</ph> file and then run <ph id="ph2">`dotnet restore`</ph>.</source>
+          <target state="translated">Para instalar um pacote NuGet, você precisaria adicioná-lo como uma dependência ao seu arquivo <ph id="ph1">`project.json`</ph> e então executar <ph id="ph2">`dotnet restore`</ph>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Running your code</source>
+          <target state="translated">Execução do código</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>There are two main ways to run your code.</source>
+          <target state="translated">Há duas maneiras principais de executar o código.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>One is from source, with <ph id="ph1">`dotnet run`</ph>.</source>
+          <target state="translated">Uma delas é da origem, com <ph id="ph1">`dotnet run`</ph>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Unlike <ph id="ph1">`dnx run`</ph>, this will not do any in-memory compilation.</source>
+          <target state="translated">Diferente do <ph id="ph1">`dnx run`</ph>, isso não gerará nenhuma compilação na memória.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>It will actually invoke <ph id="ph1">`dotnet build`</ph> to build your code and then run the built binary.</source>
+          <target state="translated">Na verdade, isso invocará <ph id="ph1">`dotnet build`</ph> para compilar seu código e executar o binário compilado.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Another way is using the <ph id="ph1">`dotnet`</ph> itself to run your code.</source>
+          <target state="translated">Outra maneira é usar o <ph id="ph1">`dotnet`</ph> para executar seu código.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>This is done by providing a path to your assembly: <ph id="ph1">`dotnet path/to/an/assembly.dll`</ph>.</source>
+          <target state="translated">Isso é feito fornecendo um caminho para o assembly: <ph id="ph1">`dotnet path/to/an/assembly.dll`</ph>.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Migrating your DNX project to .NET Core CLI</source>
+          <target state="translated">Migrando seu projeto DNX para a CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>In addition to using new commands when working with your code, there are three major things left in migrating from DNX:</source>
+          <target state="translated">Além de usar os novos comandos ao trabalhar com seu código, há três coisas principais que ainda faltam para migrar do DNX:</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Migrate the <ph id="ph1">`global.json`</ph> file if you have it to be able to use CLI.</source>
+          <target state="translated">Migrar o arquivo <ph id="ph1">`global.json`</ph> se você quiser que ele possa usar a CLI.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Migrating the project file (<ph id="ph1">`project.json`</ph>) itself to the CLI tooling.</source>
+          <target state="translated">Migrar o próprio arquivo de projeto (<ph id="ph1">`project.json`</ph>) para as ferramentas da CLI.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Migrating off of any DNX APIs to their BCL counterparts.</source>
+          <target state="translated">Migrar as APIs DNX para seus equivalentes de BCL.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Changing the global.json file</source>
+          <target state="translated">Alterar o arquivo global.json</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file acts like a solution file for both the RC1 and RC2 (or later) projects.</source>
+          <target state="translated">O arquivo <ph id="ph1">`global.json`</ph> funciona como um arquivo de solução para projetos RC1 e RC2 (ou posterior).</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In order for the CLI tools (as well as Visual Studio) to differentiate between RC1 and later versions, they use the <ph id="ph1">`"sdk": { "version" }`</ph> property to make the distinction which project is RC1 or later.</source>
+          <target state="translated">Para que as ferramentas CLI (e do Visual Studio) diferenciem entre RC1 e versões posteriores, elas usam a propriedade <ph id="ph1">`"sdk": { "version" }`</ph> para fazer a distinção de qual projeto é RC1 ou posterior.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`global.json`</ph> doesn't have this node at all, it is assumed to be the latest.</source>
+          <target state="translated">Se <ph id="ph1">`global.json`</ph> não tiver esse nó, ele será considerado o mais recente.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In order to update the <ph id="ph1">`global.json`</ph> file, either remove the property or set it to the exact version of the tools that you wish to use, in this case <bpt id="p1">**</bpt>1.0.0-preview2-003121<ept id="p1">**</ept>:</source>
+          <target state="translated">Para atualizar o arquivo <ph id="ph1">`global.json`</ph>, remova a propriedade ou defina-a para a versão exata das ferramentas que você deseja usar, neste caso <bpt id="p1">**</bpt>1.0.0-preview2-003121<ept id="p1">**</ept>:</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Migrating the project file</source>
+          <target state="translated">Migrando o arquivo de projeto</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The CLI and DNX both use the same basic project system based on <ph id="ph1">`project.json`</ph> file.</source>
+          <target state="translated">A CLI e o DNX usam o mesmo sistema de projeto básico com base no arquivo <ph id="ph1">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The syntax and the semantics of the project file are pretty much the same, with small differences based on the scenarios.</source>
+          <target state="translated">A sintaxe e a semântica do arquivo de projeto são praticamente as mesmas, com pequenas diferenças dependendo dos cenários.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>There are also some changes to the schema which you can see in the <bpt id="p1">[</bpt>schema file<ept id="p1">](http://json.schemastore.org/project)</ept> or in a more friendly <bpt id="p2">[</bpt>project.json reference<ept id="p2">](tools/project-json.md)</ept>.</source>
+          <target state="translated">Também há algumas alterações no esquema, que podem ser vistas no <bpt id="p1">[</bpt>arquivo de esquema<ept id="p1">](http://json.schemastore.org/project)</ept> ou em uma <bpt id="p2">[</bpt>referência project.json<ept id="p2">](tools/project-json.md)</ept> mais amigável.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If you are building a console application, you need to add the following snippet to your project file:</source>
+          <target state="translated">Se você estiver criando um aplicativo de console, precisará adicionar o trecho de código a seguir ao arquivo de projeto:</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This instructs <ph id="ph1">`dotnet build`</ph> to emit an entry point for your application, effectively making your code runnable.</source>
+          <target state="translated">Isso instrui o <ph id="ph1">`dotnet build`</ph> a emitir um ponto de entrada para seu aplicativo, tornando o código efetivamente executável.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>If you are building a class library, simply omit the above section.</source>
+          <target state="translated">Se você estiver criando uma biblioteca de classes, basta omita a seção acima.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Of course, once you add the above snippet to your <ph id="ph1">`project.json`</ph> file, you need to add a static entry point.</source>
+          <target state="translated">É claro que, uma vez adicionado o trecho de código acima ao <ph id="ph1">`project.json`</ph> arquivo, você precisa adicionar um ponto de entrada estático.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>With the move off DNX, the DI services it provided are no longer available and thus this needs to be a basic .NET entry point: <ph id="ph1">`static void Main()`</ph>.</source>
+          <target state="translated">Ao deixar de usar o DNX, os serviços de DI fornecidos por ele não estão mais disponíveis e, portanto, esse deve ser um ponto de entrada .NET básico: <ph id="ph1">`static void Main()`</ph>.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>If you have a "commands" section in your <ph id="ph1">`project.json`</ph>, you can remove it.</source>
+          <target state="translated">Se você tiver uma seção "commands" em seu <ph id="ph1">`project.json`</ph>, poderá removê-la.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Some of the commands that used to exist as DNU commands, such as Entity Framework CLI commands, are being ported to be per-project extensions to the CLI.</source>
+          <target state="translated">Alguns dos comandos que existiam como comandos DNU, como comandos da CLI do Entity Framework, estão sendo portados para extensões por projeto para a CLI.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>If you built your own commands that you are using in your projects, you need to replace them with CLI extensions.</source>
+          <target state="translated">Se você compilou seus próprios comandos que estão sendo usados em seus projetos, será necessário substituí-los por extensões CLI.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In this case, the <ph id="ph1">`commands`</ph> node in <ph id="ph2">`project.json`</ph> needs to be replaced by the <ph id="ph3">`tools`</ph> node and it needs to list the tools dependencies as explained in the <bpt id="p1">[</bpt>CLI extensibility section<ept id="p1">](tools/index.md#extensibility)</ept>.</source>
+          <target state="translated">Nesse caso, o nó <ph id="ph1">`commands`</ph> em <ph id="ph2">`project.json`</ph> precisa ser substituído pelo nó <ph id="ph3">`tools`</ph> e ele precisa listar as dependências de ferramentas conforme explicado na <bpt id="p1">[</bpt>seção de extensibilidade da CLI<ept id="p1">](tools/index.md#extensibility)</ept>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>After these things are done, you need to decide which type of portability you wish for you app.</source>
+          <target state="translated">Depois de concluir essas coisas, você precisará decidir qual tipo de portabilidade deseja para seu aplicativo.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>With .NET Core, we have invested into providing a spectrum of portability options that you can choose from.</source>
+          <target state="translated">Com o .NET Core, investimos em fornecer uma variedade de opções de portabilidade à sua escolha.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>For instance, you may want to have a fully <bpt id="p1">*</bpt>portable<ept id="p1">*</ept> application or you may want to have a <bpt id="p2">*</bpt>self-contained<ept id="p2">*</ept> application.</source>
+          <target state="translated">Por exemplo, você pode escolher um aplicativo totalmente <bpt id="p1">*</bpt>portátil<ept id="p1">*</ept> ou <bpt id="p2">*</bpt>autocontido<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The portable application option is more like .NET Framework applications work: it needs a shared component to execute it on the target machine (.NET Core).</source>
+          <target state="translated">A opção de aplicativo portátil parece-se com a maneira como os aplicativos do .NET Framework funcionam: ele precisa de um componente compartilhado para executá-lo no computador de destino (.NET Core).</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The self-contained application doesn't require .NET Core to be installed on the target, but you have to produce one application for each OS you wish to support.</source>
+          <target state="translated">O aplicativo autocontido não requer que o .NET Core seja instalado no destino, mas você deve produzir um aplicativo para cada sistema operacional ao qual você deseja dar suporte.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>These portability types and more are discussed in the <bpt id="p1"> [</bpt>application portability type<ept id="p1">](deploying/index.md)</ept> document.</source>
+          <target state="translated">Esses tipos de portabilidade e muito mais é discutido no documento <bpt id="p1"> [</bpt>tipo de portabilidade do aplicativo<ept id="p1">](deploying/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Once you make a call on what type of portability you want, you need to change your targeted framework(s).</source>
+          <target state="translated">Depois de escolher qual tipo de portabilidade você deseja, será necessário alterar as estruturas de destino.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>If you were writing applications for .NET Core, you were most likely using <ph id="ph1">`dnxcore50`</ph> as  your targeted framework.</source>
+          <target state="translated">Se estivesse criando aplicativos para .NET Core, você provavelmente usaria <ph id="ph1">`dnxcore50`</ph> como sua estrutura de destino.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>With the CLI and the changes that the new <bpt id="p1">[</bpt>.NET Standard Library<ept id="p1">](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)</ept> brought, the framework needs to be one of the following:</source>
+          <target state="translated">Com a CLI e as mudanças trazidas pela nova <bpt id="p1">[</bpt>.NET Standard Library<ept id="p1">](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)</ept>, a estrutura precisa ser uma das seguintes:</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`netcoreapp1.0`</ph> - if you are writing applications on .NET Core (including ASP.NET Core applications)</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> – Se você estiver criando aplicativos no .NET Core (incluindo aplicativos ASP.NET Core)</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`netstandard1.6`</ph> - if you are writing class libraries for .NET Core</source>
+          <target state="translated"><ph id="ph1">`netstandard1.6`</ph> – Se você estiver criando bibliotecas de classes para .NET Core</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If you are using other <ph id="ph1">`dnx`</ph> targets, like <ph id="ph2">`dnx451`</ph> you will need to change those as well.</source>
+          <target state="translated">Se você estiver usando outros destinos <ph id="ph1">`dnx`</ph> como o <ph id="ph2">`dnx451`</ph>, será necessário alterá-los também.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dnx451`</ph> should be changed to <ph id="ph2">`net451`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dnx451`</ph> deve ser alterado para <ph id="ph2">`net451`</ph>.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Please refer to the <bpt id="p1">[</bpt>.NET Standard Library document<ept id="p1">](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)</ept> for more information.</source>
+          <target state="translated">Consulte o <bpt id="p1">[</bpt>documento da .NET Standard Library<ept id="p1">](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/net-platform-standard.md)</ept> para obter mais informações.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`project.json`</ph> is now mostly ready.</source>
+          <target state="translated">Seu <ph id="ph1">`project.json`</ph> agora está quase pronto.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>You need to go through your dependencies list and update the dependencies to their newer versions, especially if you are using ASP.NET Core dependencies.</source>
+          <target state="translated">Você precisa examinar a lista de dependências e atualizá-las para suas versões mais recentes, especialmente se estiver usando dependências ASP.NET Core.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If you were using separate packages for BCL APIs, you can use the runtime package as explained in the <bpt id="p1">[</bpt>application portability type<ept id="p1">](deploying/index.md)</ept> document.</source>
+          <target state="translated">Se estiver usando pacotes separados para as APIs BCL, poderá usar o pacote de tempo de execução, conforme explicado no documento <bpt id="p1">[</bpt>tipo de portabilidade do aplicativo<ept id="p1">](deploying/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Once you are ready, you can try restoring with <ph id="ph1">`dotnet restore`</ph>.</source>
+          <target state="translated">Quando estiver pronto, você pode tentar restaurar com <ph id="ph1">`dotnet restore`</ph>.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Depending on the version of your dependencies, you may encounter errors if NuGet cannot resolve the dependencies for one of the targeted frameworks above.</source>
+          <target state="translated">Dependendo da versão das suas dependências, você poderá encontrar erros se o NuGet não puder resolvê-las para um das estruturas de destino acima.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>This is a "point-in-time" problem; as time progresses, more and more packages will include support for these frameworks.</source>
+          <target state="translated">Este é um problema “pontual”, pois à medida que o tempo passa, cada vez mais pacotes incluirão suporte a essas estruturas.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>For now, if you run into this, you can use the <ph id="ph1">`imports`</ph> statement within the <ph id="ph2">`framework`</ph> node to specify to NuGet that it can restore the packages targeting the framework within the "imports" statement.</source>
+          <target state="translated">Por enquanto, se você enfrentar isso, poderá usar a instrução <ph id="ph1">`imports`</ph> dentro do nó <ph id="ph2">`framework`</ph> para especificar para o NuGet que ele pode restaurar os pacotes direcionando a estrutura dentro da instrução "imports".</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The restoring errors you get in this case should provide enough information to tell you which frameworks you need to import.</source>
+          <target state="translated">Os erros de restauração obtidos nesse caso devem fornecer informações suficientes para indicar quais estruturas você precisa importar.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>If you are slightly lost or new to this, in general, specifying <ph id="ph1">`dnxcore50`</ph> and <ph id="ph2">`portable-net45+win8`</ph> in the <ph id="ph3">`imports`</ph> statement should do the trick.</source>
+          <target state="translated">Se você ficar um pouco confuso ou não tiver experiência nisso, especificar <ph id="ph1">`dnxcore50`</ph> e <ph id="ph2">`portable-net45+win8`</ph> na instrução <ph id="ph3">`imports`</ph> geralmente é suficiente.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The JSON snippet below shows how this looks like:</source>
+          <target state="translated">O trecho de código JSON a seguir mostra como isso se parece:</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Running <ph id="ph1">`dotnet build`</ph> will show any eventual build errors, though there shouldn't be too many of them.</source>
+          <target state="translated">Executar <ph id="ph1">`dotnet build`</ph> mostrará os eventuais erros de build, porém não deve haver muitos.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>After your code is building and running properly, you can test it out with the runner.</source>
+          <target state="translated">Depois de o código ser criado e executado corretamente, você poderá testá-lo com o executor.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Execute <ph id="ph1">`dotnet &lt;path-to-your-assembly&gt;`</ph> and see it run.</source>
+          <target state="translated">Execute <ph id="ph1">`dotnet &lt;path-to-your-assembly&gt;`</ph> e observe a execução.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
