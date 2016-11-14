@@ -8281,8 +8281,8 @@
 * Current Target File: [index.md](https://github.com/dotnet/docs.de-de/blob/187af2d6741adc77f4fc1c63e7b3f3f5af38d76a/index.md)
 * Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf](https://github.com/dotnet/docs.handback/blob/87886609a5d6640eddbe69fcc2bec4a184f7875c/ol-handback/dotnet/docs.de-de/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf)
 * Current Handback Datetime: 2016-11-14 16:58:20
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf](https://github.com/dotnet/docs.handback/blob/984d1b4ac4734c4c68cc3ba7338642cc26295de8/ol-handback/dotnet/docs.de-de/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf)
-* Bilingual Datetime: 2016-11-09 00:44:09
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf](https://github.com/dotnet/docs.handback/blob/87886609a5d6640eddbe69fcc2bec4a184f7875c/ol-handback/dotnet/docs.de-de/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.de-de.xlf)
+* Bilingual Datetime: 2016-11-14 16:58:46
 * [Back to Top](#report-top)
 
 ##### <a name='0c553782ab1214f1b64906387c1296275ffc2eaf518'></a> Source: [license.txt](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/license.txt)
