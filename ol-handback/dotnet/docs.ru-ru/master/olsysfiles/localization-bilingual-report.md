@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/11f0979ab18b708fb775a54736ecd06f388557cf/index.md) | InSyncHandedBackSuccess | [Details](#1c9bafe53583478b382e3e068150f1e692664c48524)
 
 ## Item Details
-##### <a name='1c9bafe53583478b382e3e068150f1e692664c48524'></a> Source: [index.md](https://github.com/dotnet/docs/blob/11f0979ab18b708fb775a54736ecd06f388557cf/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [index.md](https://github.com/dotnet/docs.ru-ru/blob/3aa7443808a40b3c27495ff595a24246e7adcfc6/index.md)
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/323e63791069318bef09a4051646e5f919717a05/ol-handoff/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Handoff Datetime: 2016-11-15 04:13:42
-* Handoff Reason: Include
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/23959fa3bc8c16d927576728f2de6c729f355636/ol-archive/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Archive Datetime: 2016-11-15 04:20:54
-* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/93ebc9d0786524f38673f2d257226ce6b2ca928f/ol-handback/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Handback Datetime: 2016-11-15 13:22:34
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/93ebc9d0786524f38673f2d257226ce6b2ca928f/ol-handback/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-15 13:23:23
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
