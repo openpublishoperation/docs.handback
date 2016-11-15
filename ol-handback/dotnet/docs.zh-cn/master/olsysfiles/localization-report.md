@@ -2511,8 +2511,8 @@
 * Archive Datetime: 2016-11-15 04:20:59
 * Handback File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/8270cf0141164706a73294a7de9b12ca41107f06/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf)
 * Handback Datetime: 2016-11-15 10:39:49
-* Bilingual File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/f269b2c78d44bbd52eb36d6109bb79f1350166c2/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-09 00:44:20
+* Bilingual File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/8270cf0141164706a73294a7de9b12ca41107f06/ol-handback/dotnet/docs.zh-cn/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-15 10:41:08
 * [Back to Top](#report-top)
 
 ##### <a name='a941a7e1bcafa4f342907f3160dbbf8e6ff4bac951'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/testing/unit-testing-with-dotnet-test.md)
