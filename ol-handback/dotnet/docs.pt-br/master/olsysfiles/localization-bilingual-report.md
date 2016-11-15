@@ -1,43 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\framework\docker\index.md](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/index.md) | InSyncHandedBackSuccess | [Details](#b9037eb4d21651378989024c4f47ecc8db223c04188)
- [docs\standard\base-types\index.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/index.md) | InSyncHandedBackSuccess | [Details](#a9801663b3be2d07c767bc263936212d985e370e421)
 
 ## Item Details
-##### <a name='b9037eb4d21651378989024c4f47ecc8db223c04188'></a> Source: [docs\framework\docker\index.md](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\framework\docker\index.md](https://github.com/dotnet/docs.pt-br/blob/9c4ad21554b4f2e8b0e361fef5b2fed2a70542fb/docs/framework/docker/index.md)
-* Handoff File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5059272e8bd2e12736fe32b9c6d67b196a627708/ol-handoff/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
-* Handoff Datetime: 2016-11-15 04:14:13
-* Handoff Reason: Include
-* Archive File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5050a3167a0720ff4d7f0a6bba36d872d90d5d3c/ol-archive/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
-* Archive Datetime: 2016-11-15 04:21:20
-* Handback File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
-* Handback Datetime: 2016-11-15 09:26:03
-* Bilingual File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
-* Bilingual Datetime: 2016-11-15 09:27:01
-* [Back to Top](#report-top)
-
-##### <a name='a9801663b3be2d07c767bc263936212d985e370e421'></a> Source: [docs\standard\base-types\index.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\index.md](https://github.com/dotnet/docs.pt-br/blob/9c4ad21554b4f2e8b0e361fef5b2fed2a70542fb/docs/standard/base-types/index.md)
-* Handoff File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5059272e8bd2e12736fe32b9c6d67b196a627708/ol-handoff/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
-* Handoff Datetime: 2016-11-15 04:14:13
-* Handoff Reason: Include
-* Archive File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5050a3167a0720ff4d7f0a6bba36d872d90d5d3c/ol-archive/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
-* Archive Datetime: 2016-11-15 04:21:20
-* Handback File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
-* Handback Datetime: 2016-11-15 09:26:03
-* Bilingual File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
-* Bilingual Datetime: 2016-11-15 09:27:01
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
