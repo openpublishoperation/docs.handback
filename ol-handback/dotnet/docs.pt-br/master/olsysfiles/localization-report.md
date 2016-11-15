@@ -8217,8 +8217,8 @@
 * Archive Datetime: 2016-11-15 04:21:20
 * Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/aa5f5d70e83f2730d7d3e680e18b8e096eaa4865/ol-handback/dotnet/docs.pt-br/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
 * Handback Datetime: 2016-11-15 13:22:48
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/b259602f481fd0996a46c19c0a3e0a428888e8f9/ol-handback/dotnet/docs.pt-br/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
-* Bilingual Datetime: 2016-11-14 12:13:27
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/aa5f5d70e83f2730d7d3e680e18b8e096eaa4865/ol-handback/dotnet/docs.pt-br/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Bilingual Datetime: 2016-11-15 13:23:36
 * [Back to Top](#report-top)
 
 ##### <a name='0c553782ab1214f1b64906387c1296275ffc2eaf525'></a> Source: [license.txt](https://github.com/dotnet/docs/blob/579f8f0085c3c4683e7f5c0812761b335a2f79b8/license.txt)
