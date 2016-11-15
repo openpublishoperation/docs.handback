@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5dcb9d10aeded8c5e8956c4b99ba9675311a787a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\generics.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6add02984958edc8aa861bdfb8f07b4b4937a581</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6729a11618466d24dc9d2cf7a2e0e7ee42e60884</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">Generische Typen (Generika) – Übersicht</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">Generische Typen (Generika) – Übersicht</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Generic Types (Generics) Overview</source>
+          <target state="translated">Generische Typen (Generika) – Übersicht</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>We use generics all the time in C#, whether implicitly or explicitly.</source>
+          <target state="translated">Generika werden andauernd in C# verwendet, entweder implizit oder explizit.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When you use LINQ in C#, did you ever notice that you are working with IEnumerable<ph id="ph1">&lt;T&gt;</ph>?</source>
+          <target state="translated">Wenn Sie LINQ in C# verwenden, haben Sie schon einmal bemerkt, dass Sie mit IEnumerable<ph id="ph1">&lt;T&gt;</ph> arbeiten?</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Or if you ever saw an online sample of a “generic repository” for talking to databases using Entity Framework, did you see that most methods return IQueryable<ph id="ph1">&lt;T&gt;</ph>?</source>
+          <target state="translated">Oder haben Sie in einem Onlinebeispiel eines „generischen Repositorys“ zur Kommunikation mit Datenbanken über Entity Framework festgestellt, dass die meisten Methoden IQueryable<ph id="ph1">&lt;T&gt;</ph> zurückgeben?</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You may have wondered what the <bpt id="p1">**</bpt>T<ept id="p1">**</ept> is in these examples and why is it in there?</source>
+          <target state="translated">Haben Sie sich gefragt, wofür das <bpt id="p1">**</bpt>T<ept id="p1">**</ept> in diesen Beispielen steht und warum es dort ist?</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>First introduced to the .NET Framework 2.0, generics involved changes to both the C# language and the Common Language Runtime (CLR).</source>
+          <target state="translated">Generika wurden zum ersten Mal in .NET Framework 2.0 eingeführt und umfassten Änderungen sowohl an der Sprache C# als auch an der Common Language Runtime (CLR).</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Generics<ept id="p1">**</ept> are essentially a “code template” that allows developers to define <bpt id="p2">[</bpt>type-safe<ept id="p2">](https://msdn.microsoft.com/library/hbzz1a9a.aspx)</ept> data structures without committing to an actual data type.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Generika<ept id="p1">**</ept> sind im Grunde eine „Codevorlage“, mit der Entwickler <bpt id="p2">[</bpt>typsichere<ept id="p2">](https://msdn.microsoft.com/library/hbzz1a9a.aspx)</ept> Datenstrukturen definieren können, ohne sich tatsächlich auf einen Datentyp festlegen zu müssen.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`List&lt;T&gt;`</ph> is a <bpt id="p1">[</bpt>Generic Collection<ept id="p1">](https://msdn.microsoft.com/library/System.Collections.Generic.aspx)</ept> that can be declared and used with any type: <ph id="ph2">`List&lt;int&gt;`</ph>, <ph id="ph3">`List&lt;string&gt;`</ph>, <ph id="ph4">`List&lt;Person&gt;`</ph>, etc.</source>
+          <target state="translated"><ph id="ph1">`List&lt;T&gt;`</ph> ist beispielsweise eine <bpt id="p1">[</bpt>generische Auflistung<ept id="p1">](https://msdn.microsoft.com/library/System.Collections.Generic.aspx)</ept>, die deklariert und mit beliebigen Typen verwendet werden kann: <ph id="ph2">`List&lt;int&gt;`</ph>, <ph id="ph3">`List&lt;string&gt;`</ph>, <ph id="ph4">`List&lt;Person&gt;`</ph> usw.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>So, what’s the point?</source>
+          <target state="translated">Worum liegt also der Sinn?</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Why are generics useful?</source>
+          <target state="translated">Warum sind Generika nützlich?</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In order to understand this, we need to take a look at a specific class before and after adding generics.</source>
+          <target state="translated">Um dies zu verstehen, müssen wir uns eine bestimmte Klasse ansehen, und zwar vor und nach dem Hinzufügen von Generika.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Let’s look at the <ph id="ph1">`ArrayList`</ph>.</source>
+          <target state="translated">Wir sehen uns <ph id="ph1">`ArrayList`</ph> an.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In C# 1.0, the <ph id="ph1">`ArrayList`</ph> elements were of type <ph id="ph2">`object`</ph>.</source>
+          <target state="translated">In C# 1.0 wiesen die <ph id="ph1">`ArrayList`</ph>-Elemente den Typ <ph id="ph2">`object`</ph> auf.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This meant that any element that was added was silently converted into an <ph id="ph1">`object`</ph>; same thing happens on reading the elements from the list (this process is known as <bpt id="p1">[</bpt>boxing<ept id="p1">](https://msdn.microsoft.com/library/yz2be5wk.aspx)</ept> and unboxing respectively).</source>
+          <target state="translated">Dies bedeutete, dass jedes hinzugefügte Element im Hintergrund in ein <ph id="ph1">`object`</ph> konvertiert wurde. Das Gleiche passierte beim Lesen der Elemente aus der Liste (dieser Prozess wird als <bpt id="p1">[</bpt>Boxing<ept id="p1">](https://msdn.microsoft.com/library/yz2be5wk.aspx)</ept> bzw. Unboxing bezeichnet).</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Boxing and unboxing have an impact of performance.</source>
+          <target state="translated">Boxing und Unboxing wirken sich auf die Leistung aus.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>More than that, however, there is no way to tell at compile time what is the actual type of the data in the list.</source>
+          <target state="translated">Schlimmer noch: Zum Zeitpunkt der Kompilierung lässt sich nicht mitteilen, welchen Typ die Daten in der Liste tatsächlich aufweisen.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This makes for some fragile code.</source>
+          <target state="translated">Dies beeinträchtigt die Stabilität des Codes.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Generics solve this problem by providing additional information the type of data each instance of list will contain.</source>
+          <target state="translated">Generika lösen dieses Problem, indem sie zusätzliche Informationen zum Datentyp bereitstellen, die in jeder Instanz der Liste enthalten sind.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Put simply, you can only add integers to <ph id="ph1">`List&lt;int&gt;`</ph> and only add Persons to <ph id="ph2">`List&lt;Person&gt;`</ph>, etc.</source>
+          <target state="translated">Einfach gesagt: Zu <ph id="ph1">`List&lt;int&gt;`</ph> können Sie nur Ganzzahlen hinzufügen, zu <ph id="ph2">`List&lt;Person&gt;`</ph> nur Personen usw.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Generics are also available at runtime, or <bpt id="p1">**</bpt>reified<ept id="p1">**</ept>.</source>
+          <target state="translated">Generika sind auch zur Laufzeit verfügbar und werden <bpt id="p1">**</bpt>konkretisiert<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This means the runtime knows what type of data structure you are using and can store it in memory more efficiently.</source>
+          <target state="translated">Dies bedeutet, dass die Runtime weiß, welche Art Datenstruktur Sie verwenden, und die Daten effizienter im Arbeitsspeicher speichern kann.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Here is a small program that illustrates the efficiency of knowing the data structure type at runtime:</source>
+          <target state="translated">Das folgende Programm zeigt, wie effizient es ist, wenn die Art der Datenstruktur zur Laufzeit bekannt ist:</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This program yields the following output:</source>
+          <target state="translated">Das Programm erzeugt die folgende Ausgabe:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The first thing you notice here is that sorting the generic list is significantly faster than for the non-generic list.</source>
+          <target state="translated">Als erstes bemerken Sie, dass das Sortieren der generischen Liste erheblich schneller ist als bei der nicht generischen Liste.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You might also notice that the type for the generic list is distinct ([System.Int32]) whereas the type for the non-generic list is generalized.</source>
+          <target state="translated">Sie stellen vermutlich auch fest, dass der Typ für die generische Liste eindeutig ([System.Int32]), der Typ für die nicht generische Liste dagegen generalisiert ist.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Because the runtime knows the generic <ph id="ph1">`List&lt;int&gt;`</ph> is of type int, it can store the list elements in an underlying integer array in memory while the non-generic <ph id="ph2">`ArrayList`</ph> has to cast each list element as an object as stored in an object array in memory.</source>
+          <target state="translated">Da der Runtime bekannt ist, dass die generische <ph id="ph1">`List&lt;int&gt;`</ph> den Typ „int“ aufweist, kann sie die Listenelemente in einem zugrunde liegenden ganzzahligen Array im Arbeitsspeicher speichern. Die nicht generische <ph id="ph2">`ArrayList`</ph> dagegen muss jedes Listenelement in ein Objekt umwandeln, das in einem Objektarray im Arbeitsspeicher gespeichert wird.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>As shown through this example, the extra castings take up time and slow down the list sort.</source>
+          <target state="translated">Wie in diesem Beispiel gezeigt, beanspruchen die Umwandlungen Zeit und verlangsamen den Sortiervorgang für die Liste.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The last useful thing about the runtime knowing the type of your generic is a better debugging experience.</source>
+          <target state="translated">Ein weiterer nützlicher Vorteil: Wenn die Runtime den Typ der Generika kennt, wird das Debuggen vereinfacht.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>When you are debugging a generic in C#, you know what type each element is in your data structure.</source>
+          <target state="translated">Wenn Sie Generika in C# debuggen, wissen Sie, welchen Typ jedes Element in Ihrer Datenstruktur aufweist.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Without generics, you would have no idea what type each element was.</source>
+          <target state="translated">Ohne Generika wüssten Sie dies nicht.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Further reading and resources</source>
+          <target state="translated">Weitere Informationen und Ressourcen</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>An Introduction to C# Generics<ept id="p1">](https://msdn.microsoft.com/library/ms379564.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Einführung in Generika in C#<ept id="p1">](https://msdn.microsoft.com/library/ms379564.aspx)</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>C# Programming Guide - Generics<ept id="p1">](https://msdn.microsoft.com/library/512aeb7t.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>C#-Programmierhandbuch – Generika<ept id="p1">](https://msdn.microsoft.com/library/512aeb7t.aspx)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

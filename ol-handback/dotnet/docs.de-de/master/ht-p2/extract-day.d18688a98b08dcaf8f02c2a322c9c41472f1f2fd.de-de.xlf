@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\extract-day.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3ac3eaa9a4a3cfd2dbd9c3e9a8a959f3dbc5a230</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9b95a58045a5261fd11b8fcb8af7e8563e903bb3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: extract the day of the week from a specific date</source>
+          <target state="translated">Gewusst wie: Extrahieren des Wochentags aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to extract the day of the week from a specific date</source>
+          <target state="translated">Extrahieren des Wochentags aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: extract the day of the week from a specific date</source>
+          <target state="translated">Gewusst wie: Extrahieren des Wochentags aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date.</source>
+          <target state="translated">Mit .NET ist es einfach, den Wochentag für ein bestimmtes Datum zu ermitteln und den lokalisierten Namen eines Wochentags für ein bestimmtes Datum anzuzeigen.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An enumerated value that indicates the day of the week corresponding to a particular date is available from the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> or <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> property.</source>
+          <target state="translated">Ein Aufzählungswert, der den einem bestimmten Datum entsprechenden Wochentag anzeigt, ist über die Eigenschaften <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> oder <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> verfügbar.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's <ph id="ph1">`ToString`</ph> method or the <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> method.</source>
+          <target state="translated">Dagegen ist das Abrufen des Namens eines Wochentags ein Formatierungsvorgang, der durch das Aufrufen einer Formatierungsmethode ausgeführt werden kann, wie z.B. der <ph id="ph1">`ToString`</ph>-Methode eines Datums- und Uhrzeitwerts oder der <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept>-Methode.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic shows how to perform these formatting operations.</source>
+          <target state="translated">In diesem Thema wird gezeigt, wie diese Formatierungsvorgänge ausgeführt werden.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To extract a number indicating the day of the week from a specific date</source>
+          <target state="translated">Extrahieren einer Zahl, die den Wochentag anzeigt, aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">Wenn Sie mit der Zeichenfolgendarstellung eines Datums arbeiten, konvertieren Sie das Datum in einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- oder einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert, indem Sie die statischen Methoden <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> oder <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> verwenden.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> or <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> property to retrieve a <bpt id="p3">[</bpt>DayOfWeek<ept id="p3">](xref:System.DayOfWeek)</ept> value that indicates the day of the week.</source>
+          <target state="translated">Verwenden Sie die <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept>- oder die <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept>-Eigenschaft, um einen <bpt id="p3">[</bpt>DayOfWeek<ept id="p3">](xref:System.DayOfWeek)</ept>-Wert abzurufen, der den Wochentag angibt.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If necessary, cast the <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> value to an integer.</source>
+          <target state="translated">Wandeln Sie den <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept>-Wert bei Bedarf in einen Ganzzahlwert um.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following example displays an integer that represents the day of the week of a specific date.</source>
+          <target state="translated">Das folgende Beispiel zeigt eine Ganzzahl, die den Wochentag eines bestimmten Datums anzeigt.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name from a specific date</source>
+          <target state="translated">Extrahieren des abgekürzten Wochentagsnamens aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">Wenn Sie mit der Zeichenfolgendarstellung eines Datums arbeiten, konvertieren Sie das Datum in einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- oder einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert, indem Sie die statischen Methoden <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> oder <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> verwenden.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can extract the abbreviated weekday name of the current culture or of a specific culture:</source>
+          <target state="translated">Sie können den abgekürzten Wochentagsnamen der aktuellen Kultur oder einer bestimmten Kultur extrahieren:</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> instance method, and pass the string "ddd" as the <bpt id="p2">*</bpt>format<ept id="p2">*</ept> parameter.</source>
+          <target state="translated">Um den abgekürzten Wochentagsnamen für die aktuelle Kultur zu extrahieren, rufen Sie die [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String)-Methode oder die <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept>-Instanzmethode des Datums- und Uhrzeitwerts auf, und übergeben Sie die Zeichenfolge „ddd“ als <bpt id="p2">*</bpt>format<ept id="p2">*</ept>-Parameter.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the call to the <ph id="ph1">`ToString(String)`</ph> method.</source>
+          <target state="translated">Im folgenden Beispiel wird das Aufrufen der <ph id="ph1">`ToString(String)`</ph>-Methode veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">b.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name for a specific culture, call the date and time value’s <bpt id="p1">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> or <bpt id="p2">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> instance method.</source>
+          <target state="translated">Um den abgekürzten Wochentagsnamen für eine bestimmte Kultur zu extrahieren, rufen Sie die <bpt id="p1">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept>-Methode oder die <bpt id="p2">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept>-Instanzmethode des Datums- und Uhrzeitwerts ab.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Pass the string "ddd" as the <bpt id="p1">*</bpt>format<ept id="p1">*</ept> parameter.</source>
+          <target state="translated">Übergeben Sie die Zeichenfolge „ddd“ als <bpt id="p1">*</bpt>format<ept id="p1">*</ept>-Parameter.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Pass either a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> or a <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> object that represents the culture whose weekday name you want to retrieve as the <bpt id="p3">*</bpt>provider<ept id="p3">*</ept> parameter.</source>
+          <target state="translated">Übergeben Sie als <bpt id="p3">*</bpt>provider<ept id="p3">*</ept>-Parameter entweder ein <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>- oder ein <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekt, das die Kultur darstellt, deren Wochentagsnamen Sie abrufen möchten.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following code illustrates a call to the <bpt id="p1">[</bpt>ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> method using a <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept> object that represents the fr-FR culture.</source>
+          <target state="translated">Der folgende Code veranschaulicht einen Aufruf der <bpt id="p1">[</bpt>ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept>-Methode mit einem <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept>-Objekt, das die fr-FR-Kultur darstellt.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To extract the full weekday name from a specific date</source>
+          <target state="translated">Extrahieren des vollen Wochentagsnamens aus einem bestimmten Datum</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">Wenn Sie mit der Zeichenfolgendarstellung eines Datums arbeiten, konvertieren Sie das Datum in einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- oder einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert, indem Sie die statischen Methoden <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> oder <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> verwenden.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can extract the abbreviated weekday name of the current culture or of a specific culture:</source>
+          <target state="translated">Sie können den abgekürzten Wochentagsnamen der aktuellen Kultur oder einer bestimmten Kultur extrahieren:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> instance method, and pass the string "dddd" as the <bpt id="p2">*</bpt>format<ept id="p2">*</ept> parameter.</source>
+          <target state="translated">Um den abgekürzten Wochentagsnamen für die aktuelle Kultur zu extrahieren, rufen Sie die [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String)-Methode oder die <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept>-Instanzmethode des Datums- und Uhrzeitwerts auf, und übergeben Sie die Zeichenfolge „dddd“ als <bpt id="p2">*</bpt>format<ept id="p2">*</ept>-Parameter.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the call to the <ph id="ph1">`ToString(String)`</ph> method.</source>
+          <target state="translated">Im folgenden Beispiel wird das Aufrufen der <ph id="ph1">`ToString(String)`</ph>-Methode veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">b.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To extract the weekday name for a specific culture, call the date and time value’s <bpt id="p1">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> or <bpt id="p2">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> instance method.</source>
+          <target state="translated">Um den Wochentagsnamen für eine bestimmte Kultur zu extrahieren, rufen Sie die <bpt id="p1">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept>-Methode oder die <bpt id="p2">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept>-Instanzmethode des Datums- und Uhrzeitwerts ab.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Pass the string "dddd" as the <bpt id="p1">*</bpt>format<ept id="p1">*</ept> parameter.</source>
+          <target state="translated">Übergeben Sie die Zeichenfolge „dddd“ als <bpt id="p1">*</bpt>format<ept id="p1">*</ept>-Parameter.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Pass either a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> or a <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> object that represents the culture whose weekday name you want to retrieve as the <bpt id="p3">*</bpt>provider<ept id="p3">*</ept> parameter.</source>
+          <target state="translated">Übergeben Sie als <bpt id="p3">*</bpt>provider<ept id="p3">*</ept>-Parameter entweder ein <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>- oder ein <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekt, das die Kultur darstellt, deren Wochentagsnamen Sie abrufen möchten.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following code illustrates a call to the <bpt id="p1">[</bpt>ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> method using a <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept> object that represents the es-ES  culture.</source>
+          <target state="translated">Der folgende Code veranschaulicht einen Aufruf der <bpt id="p1">[</bpt>ToString(String, IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept>-Methode mit einem <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept>-Objekt, das die es-ES-Kultur darstellt.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Beispiel</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The example illustrates calls to the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> and <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> properties and the [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String) or <bpt id="p3">[</bpt>DateTimeOffset.ToString(String)<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.</source>
+          <target state="translated">Das Beispiel veranschaulicht Aufrufe der Eigenschaften <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> und <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> sowie der Methoden „[DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)“ oder <bpt id="p3">[</bpt>DateTimeOffset.ToString(String)<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept>, um die Zahl, die den Wochentag darstellt, sowie den abgekürzten und den vollständigen Wochentagsnamen für ein bestimmtes Datum abzurufen.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Individual languages may provide functionality that duplicates or supplements the functionality provided by .NET.</source>
+          <target state="translated">Einzelne Sprachen verfügen möglicherweise über Funktionen, die die von .NET zur Verfügung gestellte Funktionalität duplizieren oder ergänzen.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For example, Visual Basic includes two such functions:</source>
+          <target state="translated">Visual Basic verfügt beispielsweise über zwei solcher Funktionen:</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Weekday`</ph>, which returns a number that indicates the day of the week of a particular date.</source>
+          <target state="translated"><ph id="ph1">`Weekday`</ph>, die eine Zahl zurückgibt, die den Wochentag eines bestimmten Datums anzeigt.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>It considers the ordinal value of the first day of the week to be one, whereas the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> property considers it to be zero.</source>
+          <target state="translated">Sie betrachtet den Ordinalwert des ersten Wochentags als eins, während die <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept>-Eigenschaft ihn als null betrachtet.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`WeekdayName`</ph>, which returns the name of the week in the current culture that corresponds to a particular weekday number.</source>
+          <target state="translated"><ph id="ph1">`WeekdayName`</ph>, die den Namen des Wochentags in der aktuellen Kultur zurückgibt, der der Nummer eines bestimmten Wochentags entspricht.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the use of the Visual Basic <ph id="ph1">`Weekday`</ph> and <ph id="ph2">`WeekdayName`</ph> functions.</source>
+          <target state="translated">Das folgende Beispiel veranschaulicht die Verwendung der <ph id="ph1">`Weekday`</ph>- und <ph id="ph2">`WeekdayName`</ph>-Funktionen in Visual Basic.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You can also use the value returned by the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> property to retrieve the weekday name of a particular date.</source>
+          <target state="translated">Sie können auch den von der <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept>-Eigenschaft zurückgegebenen Wert verwenden, um den Wochentagsnamen eines bestimmten Datums abzurufen.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This requires only a call to the <bpt id="p1">[</bpt>Enum.ToString<ept id="p1">](xref:System.Enum.ToString(System.String))</ept> method on the <bpt id="p2">[</bpt>DayOfWeek<ept id="p2">](xref:System.DayOfWeek)</ept> value returned by the property.</source>
+          <target state="translated">Dies erfordert lediglich einen Aufruf der <bpt id="p1">[</bpt>Enum.ToString<ept id="p1">](xref:System.Enum.ToString(System.String))</ept>-Methode für den von der Eigenschaft zurückgegebenen <bpt id="p2">[</bpt>DayOfWeek<ept id="p2">](xref:System.DayOfWeek)</ept>-Wert.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates.</source>
+          <target state="translated">Diese Vorgehensweise erzeugt jedoch nicht den lokalisierten Wochentagsnamen für die aktuelle Kultur, wie das folgende Beispiel zeigt.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Durchführen von Formatierungsvorgängen<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Standardformatzeichenfolgen für Datum und Uhrzeit<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom date and time format strings<ept id="p1">](custom-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit<ept id="p1">](custom-datetime.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
