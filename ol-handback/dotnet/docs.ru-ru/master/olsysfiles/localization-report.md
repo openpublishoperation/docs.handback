@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 106
+[ Archive Success Files ](#archive-success-list)| 105
 [ Handback Failed Files ](#handback-failed-list)| 4
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 151
+[ In Sync Handback Files ](#insync-handback-success-list)| 152
 [ Ignored Files ](#ignored-list)| 1554
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -127,7 +127,6 @@
  [docs\standard\tour.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/tour.md) | ArchivedSuccess | [Details](#dd3331ac9be61b9a69ac4fd82cb68eb92ca917b2512)
  [docs\toc.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/toc.md) | ArchivedSuccess | [Details](#d93f2ca1cffd632f0827bac59f879e8f1f647888514)
  [docs\welcome.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/welcome.md) | ArchivedSuccess | [Details](#dae44e522534ff64cc765530a27f2e3543212f94515)
- [index.md](https://github.com/dotnet/docs/blob/11f0979ab18b708fb775a54736ecd06f388557cf/index.md) | ArchivedSuccess | [Details](#1c9bafe53583478b382e3e068150f1e692664c48524)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
  Source File | Status | Details 
@@ -292,6 +291,7 @@
  [docs\standard\numerics.md](https://github.com/dotnet/docs/blob/d5c7a18af16b4f3416e84b6cf86f0f78f28948da/docs/standard/numerics.md) | InSyncHandedBackSuccess | [Details](#6d14668e643c2451f4ace2119006f442ed4dee15510)
  [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/8599be1eadcd6f005ef344bf173e8c06fce80725/docs/standard/portability-analyzer.md) | InSyncHandedBackSuccess | [Details](#479b141159de95c6a7e466220f935f9371b353db511)
  [docs\standard\using-linq.md](https://github.com/dotnet/docs/blob/6992d907b152d67c51f43ec517902fb2effc6db2/docs/standard/using-linq.md) | InSyncHandedBackSuccess | [Details](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8513)
+ [index.md](https://github.com/dotnet/docs/blob/11f0979ab18b708fb775a54736ecd06f388557cf/index.md) | InSyncHandedBackSuccess | [Details](#1c9bafe53583478b382e3e068150f1e692664c48524)
  [TOC.md](https://github.com/dotnet/docs/blob/3b0b086c1a95d6164b82e1a4dade0936ce5d262e/TOC.md) | InSyncHandedBackSuccess | [Details](#46f0f0189b1d7df4cb842a21abffd06dc9a7d2c11813)
 
 ## <a name='ignored-list'></a> Ignored File List
@@ -8567,18 +8567,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='1c9bafe53583478b382e3e068150f1e692664c48524'></a> Source: [index.md](https://github.com/dotnet/docs/blob/11f0979ab18b708fb775a54736ecd06f388557cf/index.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [index.md](https://github.com/dotnet/docs.ru-ru/blob/3aa7443808a40b3c27495ff595a24246e7adcfc6/index.md)
 * Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/323e63791069318bef09a4051646e5f919717a05/ol-handoff/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
 * Handoff Datetime: 2016-11-15 04:13:42
 * Handoff Reason: Include
 * Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/23959fa3bc8c16d927576728f2de6c729f355636/ol-archive/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
 * Archive Datetime: 2016-11-15 04:20:54
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [index.md](https://github.com/dotnet/docs.ru-ru/blob/6b598fa92b2473bbb8f015627179f3d29b9e719c/index.md)
-* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/de897c65ecbaa0cf10b792503b9e0d8682699184/ol-handback/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Current Handback Datetime: 2016-11-14 12:37:47
+* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/93ebc9d0786524f38673f2d257226ce6b2ca928f/ol-handback/dotnet/docs.ru-ru/master/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
+* Handback Datetime: 2016-11-15 13:22:34
 * Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/de897c65ecbaa0cf10b792503b9e0d8682699184/ol-handback/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
 * Bilingual Datetime: 2016-11-14 12:38:14
 * [Back to Top](#report-top)
