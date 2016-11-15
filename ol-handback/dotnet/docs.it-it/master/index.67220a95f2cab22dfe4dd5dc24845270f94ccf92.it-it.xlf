@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">96eb2cc7ca948b3e372fa1363b1741624d791d27</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">416c430ca40031e61bb4d28a92a500ba0a77d0f4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b625f18872df0485c35b16060966c4c5bef9d288</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">Distribuzione di applicazioni .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">Distribuzione di applicazioni .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Core deployment</source>
+          <target state="translated">.NET, .NET Core, distribuzione di .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core Application Deployment</source>
+          <target state="translated">Distribuzione di applicazioni .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can create two types of deployments for .NET Core applications:</source>
+          <target state="translated">È possibile creare due tipi di distribuzioni per le applicazioni .NET Core:</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployment.</source>
+          <target state="translated">Distribuzione dipendente dal framework.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>As the name implies, framework-dependent deployment (FDD) relies on a shared system-wide version of .NET Core to be present on the target system.</source>
+          <target state="translated">Come suggerisce il nome, la distribuzione dipendente dal framework si basa su una versione condivisa a livello di sistema di .NET Core che deve essere presente nel sistema di destinazione.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is already present, your app is also portable between installations of .NET Core.</source>
+          <target state="translated">Poiché .NET Core è già presente, l'app è anche portabile tra le installazioni di .NET Core.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries.</source>
+          <target state="translated">L'app contiene solo il proprio codice e le dipendenze di terze parti non sono comprese nelle librerie di .NET Core.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>FDDs contain .dll files that can be launched by using the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line.</source>
+          <target state="translated">Le distribuzioni dipendenti dal framework contengono i file con estensione dll che possono essere avviati dalla riga di comando tramite l'<bpt id="p1">[</bpt>utilità dotnet<ept id="p1">](../tools/dotnet.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`dotnet app.dll`</ph> runs an application named <ph id="ph2">`app`</ph>.</source>
+          <target state="translated">Ad esempio, <ph id="ph1">`dotnet app.dll`</ph> esegue un'applicazione denominata <ph id="ph2">`app`</ph>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Self-contained deployment.</source>
+          <target state="translated">Distribuzione autonoma.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Unlike FDD, a self-contained deployment (SCD) does not rely on any shared components to be present on the target system.</source>
+          <target state="translated">A differenza delle distribuzioni dipendenti dal framework, una distribuzione autonoma non si basa su tutti i componenti condivisi presenti nel sistema di destinazione.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>All components, including both .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications.</source>
+          <target state="translated">Tutti i componenti, inclusi librerie e runtime di .NET Core, sono inclusi nell'applicazione e isolati dalle altre applicazioni .NET Core.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>SCDs include an executable (such as <ph id="ph1">`app.exe`</ph> on Windows platforms for an application named <ph id="ph2">`app`</ph>), which is  a renamed version of the platform-specific .NET Core host, and a .dll file (such as <ph id="ph3">`app.dll`</ph>), which is the actual application.</source>
+          <target state="translated">Le distribuzioni autonome includono un file eseguibile (ad esempio <ph id="ph1">`app.exe`</ph> su piattaforme Windows per un'applicazione denominata <ph id="ph2">`app`</ph>), che è una versione rinominata dell'host .NET Core specifico della piattaforma, e un file con estensione dll (ad esempio <ph id="ph3">`app.dll`</ph>), che indica l'applicazione.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Framework-dependent deployments (FDD)</source>
+          <target state="translated">Distribuzioni dipendenti dal framework</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For an FDD, you deploy only your app and any third-party dependencies.</source>
+          <target state="translated">Per una distribuzione dipendente dal framework, viene distribuita solo l'app e le dipendenze di terze parti.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You do not have to deploy .NET Core, since your app will use the version of .NET Core that's present on the target system.</source>
+          <target state="translated">Non è necessario distribuire .NET Core, poiché l'app userà la versione di .NET Core presente nel sistema di destinazione.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This is the default deployment model for .NET Core apps.</source>
+          <target state="translated">Si tratta del modello di distribuzione predefinito per le app .NET Core.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Why create a framework-dependent deployment?</source>
+          <target state="translated">Perché creare una distribuzione dipendente dal framework?</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Deploying an FDD has a number of advantages:</source>
+          <target state="translated">Una distribuzione dipendente dal framework offre numerosi vantaggi:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You do not have to define the target operating systems that your .NET Core app will run on in advance.</source>
+          <target state="translated">Non è necessario definire in anticipo i sistemi operativi di destinazione in cui verrà eseguita l'app .NET Core.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system.</source>
+          <target state="translated">Poiché .NET Core usa un formato di file PE comune per gli eseguibili e le librerie indipendentemente dal sistema operativo, .NET Core può eseguire l'app indipendentemente dal sistema operativo sottostante.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information on the PE file format, see <bpt id="p1">[</bpt>.NET Assembly File Format<ept id="p1">](../../standard/assembly-format.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sul formato di file PE, vedere <bpt id="p1">[</bpt>.NET Assembly File Format<ept id="p1">](../../standard/assembly-format.md)</ept> (Formato del file di assembly .NET).</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is small.</source>
+          <target state="translated">La dimensione del pacchetto di distribuzione è ridotta.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You only have to deploy your app and its dependencies, not .NET Core itself.</source>
+          <target state="translated">È sufficiente distribuire l'app e le relative dipendenze, non .NET Core.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.</source>
+          <target state="translated">Più app usano la stessa installazione di .NET Core, in questo modo si riduce sia lo spazio su disco sia l'utilizzo della memoria nei sistemi host.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>There are also a few disadvantages:</source>
+          <target state="translated">Sono presenti anche alcuni svantaggi:</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Your app can run only if the version of .NET Core that you target, or a later version, is already installed on the host system.</source>
+          <target state="translated">L'app può essere eseguita solo se la versione di .NET Core di destinazione, o una versione successiva, è già installata nel sistema host.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It is possible for the .NET Core runtime and libraries to change without your knowledge in future releases.</source>
+          <target state="translated">Nelle versioni successive è possibile che il runtime e le librerie di .NET Core vengano modificate senza notificare l'utente.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In rare cases, this may change the behavior of your app.</source>
+          <target state="translated">In rari casi, questo scenario può comportare la modifica del comportamento dell'app.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment</source>
+          <target state="translated">Pubblicazione di una distribuzione dipendente dal framework</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app.</source>
+          <target state="translated">Una distribuzione dipendente dal framework senza dipendenze di terze parti richiede la compilazione, il testing e la pubblicazione dell'app.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">Il processo viene illustrato da un semplice esempio scritto in C#.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example uses the <bpt id="p1">[</bpt>dotnet utility<ept id="p1">](../tools/dotnet.md)</ept> from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">L'esempio usa l'<bpt id="p1">[</bpt>utilità dotnet<ept id="p1">](../tools/dotnet.md)</ept> dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <bpt id="p1">[</bpt>dotnet new<ept id="p1">](../tools/dotnet-new.md)</ept> to create a new C# console project.</source>
+          <target state="translated">Creare una directory per il progetto e, dalla riga di comando, digitare <bpt id="p1">[</bpt>dotnet-new<ept id="p1">](../tools/dotnet-new.md)</ept> per creare un nuovo progetto console C#.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">Aprire il file <ph id="ph1">`Program.cs`</ph> in un editor e sostituire il codice generato automaticamente con il codice seguente.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">Usa l'espressione regolare <ph id="ph1">`\w+`</ph> per separare le parole nel testo di input.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Run the <bpt id="p1">[</bpt>dotnet restore<ept id="p1">](../tools/dotnet-restore.md)</ept> command to restore the dependencies specified in your project.</source>
+          <target state="translated">Eseguire il comando <bpt id="p1">[</bpt>dotnet-restore<ept id="p1">](../tools/dotnet-restore.md)</ept> per ripristinare le dipendenze specificate nel progetto.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Create a debug build of your app by using the <bpt id="p1">[</bpt>dotnet build<ept id="p1">](../tools/dotnet-build.md)</ept> command.</source>
+          <target state="translated">Creare una build di debug dell'app usando il comando <bpt id="p1">[</bpt>dotnet-build<ept id="p1">](../tools/dotnet-build.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app by using the <ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph> command.</source>
+          <target state="translated">Dopo aver eseguito il debug e aver testato il programma, è possibile creare i file da distribuire con l'app usando il comando <ph id="ph1">`dotnet publish -f netcoreapp1.0 -c release`</ph>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app.</source>
+          <target state="translated">In questo modo, viene creata la versione finale dell'app (anziché un debug).</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a directory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph> subdirectory.</source>
+          <target state="translated">I file risultanti vengono inseriti in una directory denominata <ph id="ph1">`publish`</ph> che si trova in una sottodirectory della sottodirectory del progetto <ph id="ph2">`.\bin\release\netcoreapp1.0`</ph>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The complete set of application  files can be deployed in any way you'd like.</source>
+          <target state="translated">Il set completo dei file dell'applicazione può essere distribuito in qualsiasi modo.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">Ad esempio, è possibile inserirli in un file zip, usare un semplice comando <ph id="ph1">`copy`</ph> o distribuirli con qualsiasi pacchetto di installazione di propria scelta.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In addition to the application binaries, the installer should also either bundle the shared framework installer or check for it as a prerequisite as part of the application installation.</source>
+          <target state="translated">Oltre ai file binari dell'applicazione, il programma di installazione deve anche aggregare il programma di installazione di framework condiviso oppure cercarlo come prerequisito come parte dell'installazione dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Installation of the shared framework requires Administrator/root access since it is machine-wide.</source>
+          <target state="translated">L'installazione del framework condiviso richiede l'accesso amministratore o alla radice perché è a livello di computer.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with third-party dependencies</source>
+          <target state="translated">Pubblicazione di una distribuzione dipendente dal framework con dipendenze di terze parti</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Deploying a framework-dependent deployment with one or more third-party dependencies involves three additional steps before you can run the <ph id="ph1">`dotnet restore`</ph> command:</source>
+          <target state="translated">Una distribuzione dipendente dal framework con una o più dipendenze di terze parti prevede tre passaggi aggiuntivi prima di poter eseguire il comando <ph id="ph1">`dotnet restore`</ph>:</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">Aggiungere i riferimenti alle librerie di terze parti alla sezione <ph id="ph1">`dependencies`</ph> del file <ph id="ph2">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">La sezione <ph id="ph1">`dependencies`</ph> seguente usa Json.NET come libreria di terze parti.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency.</source>
+          <target state="translated">Se non lo si è già fatto, scaricare il pacchetto NuGet contenente la dipendenza di terze parti.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>To download the package, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">Per scaricare il pacchetto, eseguire il comando <ph id="ph1">`dotnet restore`</ph> dopo l'aggiunta della dipendenza.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">Poiché la dipendenza viene risolta dalla cache NuGet locale in fase di pubblicazione, deve essere disponibile nel sistema.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Note that a framework-dependent deployment with third-party dependencies will only be as portable as its third-party dependencies.</source>
+          <target state="translated">Si noti che la portabilità di una distribuzione dipendente dal framework con dipendenze di terze parti dipenderà dalle relative dipendenze.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, if a third-party library only supports macOS, the app will not be portable to Windows systems.</source>
+          <target state="translated">Ad esempio, se una libreria di terze parti supporta solo macOS, l'app non sarà portabile in sistemi Windows.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This can happen if the third-party dependency itself depends on native code.</source>
+          <target state="translated">Questa situazione può verificarsi se la dipendenza di terze parti stessa dipende dal codice nativo.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A good example of this is Kestrel server.</source>
+          <target state="translated">Un esempio valido è il server Kestrel.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>When an FDD is created for an application with this kind of third-party dependency, the published output will contain a folder for each <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> that the native dependency supports (and that exists in its NuGet package).</source>
+          <target state="translated">Quando viene creata una distribuzione dipendente dal framework per un'applicazione con questo tipo di dipendenze di terze parti, l'output pubblicato conterrà una cartella per ogni <bpt id="p1">[</bpt>identificatore di runtime<ept id="p1">](../rid-catalog.md#what-are-rids)</ept> supportato dalla dipendenza nativa. Quest'ultimo si trova nel relativo pacchetto NuGet.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Self-contained deployments (SCD)</source>
+          <target state="translated">Distribuzioni autonome</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For a self-contained deployment, you deploy not only your app and any third-party dependencies, but the version of .NET Core that you build your app with.</source>
+          <target state="translated">Per una distribuzione autonoma, si distribuisce non solo l'app e le dipendenze di terze parti, ma la versione di .NET Core con cui si compila l'app.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Creating an SCD does not, however, include the <bpt id="p1">[</bpt>native dependencies of .NET Core<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept> itself on various platforms (for example, OpenSSL on macOS) so these need to be installed before running the application.</source>
+          <target state="translated">Tuttavia, la creazione di una distribuzione autonoma non include le <bpt id="p1">[</bpt>dipendenze native di .NET Core<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept> su più piattaforme (ad esempio, OpenSSL in macOS), pertanto queste devono essere installate prima di eseguire l'applicazione.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Why deploy a Self-contained deployment?</source>
+          <target state="translated">Perché distribuire una distribuzione autonoma?</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Deploying a Self-contained deployment has two major advantages:</source>
+          <target state="translated">Una distribuzione autonoma offre due vantaggi principali:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You have sole control of the version of .NET Core that is deployed with your app.</source>
+          <target state="translated">Si dispone del controllo esclusivo della versione di .NET Core che viene distribuita con l'app.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>.NET Core can be serviced only by you.</source>
+          <target state="translated">.NET Core può essere usato solo dall'utente.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can be assured that the target system can run your .NET Core app, since you're providing the version of .NET Core that it will run on.</source>
+          <target state="translated">È possibile garantire che il sistema di destinazione esegua l'app .NET Core, poiché viene specificata la versione di .NET Core in cui verrà eseguita.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>It also has a number of disadvantages:</source>
+          <target state="translated">Sono presenti anche alcuni svantaggi:</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.</source>
+          <target state="translated">Poiché .NET Core è incluso nel pacchetto di distribuzione, è necessario selezionare in anticipo le piattaforme di destinazione per cui vengono creati i pacchetti di distribuzione.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.</source>
+          <target state="translated">La dimensione del pacchetto di distribuzione è relativamente elevata, poiché è necessario includere .NET Core, nonché l'app e le relative dipendenze di terze parti.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.</source>
+          <target state="translated">La distribuzione di numerose app .NET Core autonome a un sistema comporta l'utilizzo di quantità significative di spazio su disco, poiché ogni app duplica i file di .NET Core.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><g id="p1" ctype="x-a" name="simpleSelf" /> Deploying a simple self-contained deployment</source>
+          <target state="translated"><g id="p1" ctype="x-a" name="simpleSelf"></g> Pubblicazione di una semplice distribuzione autonoma</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with no third-party dependencies involves creating the project, modifying the project.json file, building, testing, and publishing the app.</source>
+          <target state="translated">Una distribuzione autonoma senza dipendenze di terze parti comporta la creazione del progetto, la modifica del file project.json, la compilazione, il testing e la pubblicazione dell'app.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>A simple example written in C# illustrates the process.</source>
+          <target state="translated">Il processo viene illustrato da un semplice esempio scritto in C#.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The example uses the <ph id="ph1">`dotnet`</ph> utility from the command line; however, you can also use a development environment, such as Visual Studio or Visual Studio Code, to compile, test, and publish the example.</source>
+          <target state="translated">L'esempio usa l'utilità <ph id="ph1">`dotnet`</ph> dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Create a directory for your project, and from the command line, type <ph id="ph1">`dotnet new`</ph> to create a new C# console project.</source>
+          <target state="translated">Creare una directory per il progetto e, dalla riga di comando, digitare <ph id="ph1">`dotnet new`</ph> per creare un nuovo progetto console C#.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file in an editor, and replace the auto-generated code with the following code.</source>
+          <target state="translated">Aprire il file <ph id="ph1">`Program.cs`</ph> in un editor e sostituire il codice generato automaticamente con il codice seguente.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It prompts the user to enter text, and then displays the individual words entered by the user.</source>
+          <target state="translated">Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>It uses the regular expression <ph id="ph1">`\w+`</ph> to separate the words in the input text.</source>
+          <target state="translated">Usa l'espressione regolare <ph id="ph1">`\w+`</ph> per separare le parole nel testo di input.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and in the <ph id="ph2">`frameworks`</ph> section, remove the following line:</source>
+          <target state="translated">Aprire il file <ph id="ph1">`project.json`</ph> e, nella sezione <ph id="ph2">`frameworks`</ph>, rimuovere la riga seguente:</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The Framework section should appear as follows after you've modified it:</source>
+          <target state="translated">Dopo la modifica, la sezione Framework sarà simile alla seguente:</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Removing the <ph id="ph1">`"type": "platform"`</ph> attribute indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated">La rimozione dell'attributo <ph id="ph1">`"type": "platform"`</ph> indica che il framework viene fornito come set di componenti locali dell'app, anziché come pacchetto di piattaforma a livello di sistema.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets, and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated">Creare una sezione <ph id="ph1">`runtimes`</ph> nel file <ph id="ph2">`project.json`</ph> che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">Per un elenco degli identificatori di runtime, vedere <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> (Catalogo degli identificatori di runtime).</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">Ad esempio, la sezione <ph id="ph1">`runtimes`</ph> seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.10 a 64 bit.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">Si noti che è inoltre necessario aggiungere una virgola per separare la sezione <ph id="ph1">`runtimes`</ph> dalla sezione precedente.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">Un file di esempio completo <ph id="ph1">`project.json`</ph> viene presentato più avanti in questa sezione.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated">Eseguire il comando <ph id="ph1">`dotnet restore`</ph> per ripristinare le dipendenze specificate nel progetto.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated">Creare le build di debug dell'app in ciascuna delle piattaforme di destinazione usando il comando <ph id="ph1">`dotnet build`</ph>.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">A meno che non si specifichi l'identificatore di runtime che si vuole compilare, il comando <ph id="ph1">`dotnet build`</ph> crea una compilazione solo per l'ID di runtime del sistema corrente.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">È possibile compilare l'app per entrambe le piattaforme di destinazione con i comandi:</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The debug builds of your app for each platform will be found in the project's <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">Le build di debug dell'app per ogni piattaforma verranno trovate nella sottodirectory del progetto <ph id="ph1">`.\bin\Debug\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando <ph id="ph1">`dotnet publish`</ph> per entrambe le piattaforme di destinazione, come indicato di seguito:</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug).</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">I file risultanti vengono inseriti in una sottodirectory denominata <ph id="ph1">`publish`</ph> che si trova in una sottodirectory della sottodirectory del progetto <ph id="ph2">`.\bin\release\netcoreapp1.0\&lt;runtime_identifier&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">I file pubblicati possono essere distribuiti nel modo desiderato.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">Ad esempio, è possibile inserirli in un file zip, usare un semplice comando <ph id="ph1">`copy`</ph> o distribuirli con qualsiasi pacchetto di installazione di propria scelta.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">Di seguito è riportato il file <ph id="ph1">`project.json`</ph> completo per questo progetto.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with third-party dependencies</source>
+          <target state="translated">Pubblicazione di una distribuzione autonoma con dipendenze di terze parti</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with one or more third-party dependencies involves adding the third party dependency:</source>
+          <target state="translated">Una distribuzione autonoma con una o più dipendenze di terze parti comporta l'aggiunta della dipendenza di terze parti:</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Add references to any third-party libraries to the <ph id="ph1">`dependencies`</ph> section of your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">Aggiungere i riferimenti alle librerie di terze parti alla sezione <ph id="ph1">`dependencies`</ph> del file <ph id="ph2">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The following  <ph id="ph1">`dependencies`</ph> section uses Json.NET as a third-party library.</source>
+          <target state="translated">La sezione <ph id="ph1">`dependencies`</ph> seguente usa Json.NET come libreria di terze parti.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>If you haven't already, download the NuGet package containing the third-party dependency to your system.</source>
+          <target state="translated">Se non lo si è già fatto, scaricare nel sistema il pacchetto NuGet contenente la dipendenza di terze parti.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>To make the dependency available to your app, execute the <ph id="ph1">`dotnet restore`</ph> command after adding the dependency.</source>
+          <target state="translated">Per rendere la dipendenza disponibile per l'app, eseguire il comando <ph id="ph1">`dotnet restore`</ph> dopo l'aggiunta della dipendenza.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Because the dependency is resolved out of the local NuGet cache at publish time, it must be available on your system.</source>
+          <target state="translated">Poiché la dipendenza viene risolta dalla cache NuGet locale in fase di pubblicazione, deve essere disponibile nel sistema.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following is the complete project.json file for this project:</source>
+          <target state="translated">Di seguito è presentato il file project.json completo per questo progetto:</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>When you deploy your application, any third-party dependencies used in your app are also contained with your application files.</source>
+          <target state="translated">Quando si distribuisce l'applicazione, anche le dipendenze di terze parti usate nell'app sono contenute nei file dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Third-party libraries do not already have to be present on the system on which the app is running.</source>
+          <target state="translated">Le librerie di terze parti non devono essere già presenti nel sistema in cui l'app viene eseguita.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library.</source>
+          <target state="translated">Si noti che è possibile distribuire una distribuzione autonoma solo con una libreria di terze parti alle piattaforme supportate da tale libreria.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment.</source>
+          <target state="translated">Questo scenario è simile a quello in cui nella distribuzione dipendente dal framework sono disponibili dipendenze di terze parti con dipendenze native.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Deploying a self-contained deployment with a smaller footprint</source>
+          <target state="translated">Pubblicazione di una distribuzione autonoma con impatto ridotto</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>If the availability of adequate storage space on target systems is likely to be an issue, you can reduce the overall footprint of your app by excluding some system components.</source>
+          <target state="translated">Se la disponibilità di spazio di archiviazione adeguato sui sistemi di destinazione può rappresentare un problema, è possibile ridurre l'impatto generale dell'app escludendo alcuni componenti di sistema.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To do this, you explicitly define the .NET Core components that your app includes in your project.json file.</source>
+          <target state="translated">A tale scopo, definire in modo esplicito i componenti di .NET Core che l'app include nel file project.json.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment.</source>
+          <target state="translated">Per creare una distribuzione autonoma con un impatto ridotto, seguire i primi due passaggi per la creazione di una distribuzione autonoma.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Once you've run the <ph id="ph1">`dotnet new`</ph> command and added the C# source code to your app, do the following:</source>
+          <target state="translated">Dopo aver eseguito il comando <ph id="ph1">`dotnet new`</ph> e aggiunto il codice sorgente C# all'app, seguire questa procedura:</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`project.json`</ph> file and replace the <ph id="ph2">`frameworks`</ph> section with the following:</source>
+          <target state="translated">Aprire il file <ph id="ph1">`project.json`</ph> e sostituire la sezione <ph id="ph2">`frameworks`</ph> con quanto segue:</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>This does two things:</source>
+          <target state="translated">Questa operazione consente di ottenere due risultati:</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>It indicates that, instead of using the entire <ph id="ph1">`netcoreapp1.0`</ph> framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, our app uses only the .NET Standard Library.</source>
+          <target state="translated">Indica che, anziché usare l'intero framework <ph id="ph1">`netcoreapp1.0`</ph>, che include .NET Core CLR, la libreria di .NET Core e un numero di altri componenti del sistema, l'app usa solo la libreria .NET Standard.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>By removing the <ph id="ph1">`"type": "platform"`</ph> attribute, it indicates that the framework is provided as a set of components local to our app, rather than as a system-wide platform package.</source>
+          <target state="translated">La rimozione dell'attributo <ph id="ph1">`"type": "platform"`</ph> indica che il framework viene fornito come set di componenti locali dell'app, anziché come pacchetto di piattaforma a livello di sistema.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Replace the <ph id="ph1">`dependencies`</ph> section with the following:</source>
+          <target state="translated">Sostituire la sezione <ph id="ph1">`dependencies`</ph> con il codice seguente:</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>This defines the system components used by our app.</source>
+          <target state="translated">In questo modo, vengono definiti i componenti di sistema usati dall'app.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The system components packaged with our app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host.</source>
+          <target state="translated">I componenti di sistema forniti con l'app includono la libreria .NET Standard, il runtime e l'host di .NET Core.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>This produces a self-contained deployment with a smaller footprint.</source>
+          <target state="translated">In questo modo, si ottiene una distribuzione autonoma con impatto ridotto.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>As you did in the <bpt id="p1">[</bpt>Deploying a simple self-contained deployment<ept id="p1">](#simpleSelf)</ept> example, create a <ph id="ph1">`runtimes`</ph> section in your <ph id="ph2">`project.json`</ph> file that defines the platforms your app targets and specify the runtime identifier of each platform that you target.</source>
+          <target state="translated">Come nell'esempio <bpt id="p1">[</bpt>Pubblicazione di una semplice distribuzione autonoma<ept id="p1">](#simpleSelf)</ept>, creare una sezione <ph id="ph1">`runtimes`</ph> nel file <ph id="ph2">`project.json`</ph> che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> for a list of runtime identifiers.</source>
+          <target state="translated">Per un elenco degli identificatori di runtime, vedere <bpt id="p1">[</bpt>Runtime IDentifier catalog<ept id="p1">](../rid-catalog.md)</ept> (Catalogo degli identificatori di runtime).</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.10 operating system.</source>
+          <target state="translated">Ad esempio, la sezione <ph id="ph1">`runtimes`</ph> seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.10 a 64 bit.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Note that you also need to add a comma to separate the <ph id="ph1">`runtimes`</ph> section from the previous section.</source>
+          <target state="translated">Si noti che è inoltre necessario aggiungere una virgola per separare la sezione <ph id="ph1">`runtimes`</ph> dalla sezione precedente.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A complete sample <ph id="ph1">`project.json`</ph> file appears later in this section.</source>
+          <target state="translated">Un file di esempio completo <ph id="ph1">`project.json`</ph> viene presentato più avanti in questa sezione.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Run the <ph id="ph1">`dotnet restore`</ph> command to restore the dependencies specified in your project.</source>
+          <target state="translated">Eseguire il comando <ph id="ph1">`dotnet restore`</ph> per ripristinare le dipendenze specificate nel progetto.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Create debug builds of your app on each of the target platforms by using the <ph id="ph1">`dotnet build`</ph> command.</source>
+          <target state="translated">Creare le build di debug dell'app in ciascuna delle piattaforme di destinazione usando il comando <ph id="ph1">`dotnet build`</ph>.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Unless you specify the runtime identifier you'd like to build, the <ph id="ph1">`dotnet build`</ph> command creates a build only for the current system's runtime ID.</source>
+          <target state="translated">A meno che non si specifichi l'identificatore di runtime che si vuole compilare, il comando <ph id="ph1">`dotnet build`</ph> crea una compilazione solo per l'ID di runtime del sistema corrente.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>You can build your app for both target platforms with the commands:</source>
+          <target state="translated">È possibile compilare l'app per entrambe le piattaforme di destinazione con i comandi:</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>After you've debugged and tested the program, you can create the files to be deployed with your app for each platform that it targets by using the <ph id="ph1">`dotnet publish`</ph> command for both target platforms as follows:</source>
+          <target state="translated">Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando <ph id="ph1">`dotnet publish`</ph> per entrambe le piattaforme di destinazione, come indicato di seguito:</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This creates a release (rather than a debug) version of your app for each target platform.</source>
+          <target state="translated">In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug).</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The resulting files are placed in a subdirectory named <ph id="ph1">`publish`</ph> that is in a subdirectory of your project's <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph> subdirectory.</source>
+          <target state="translated">I file risultanti vengono inseriti in una sottodirectory denominata <ph id="ph1">`publish`</ph> che si trova in una sottodirectory della sottodirectory del progetto <ph id="ph2">`.\bin\release\netstandard1.6\&lt;runtime_identifier&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.</source>
+          <target state="translated">Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app.</source>
+          <target state="translated">Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The file is useful primarily for debugging exceptions; you can choose not to package it with your application's files.</source>
+          <target state="translated">Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>The published files can be deployed in any way you'd like.</source>
+          <target state="translated">I file pubblicati possono essere distribuiti nel modo desiderato.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example, you can package them in a zip file, use a simple <ph id="ph1">`copy`</ph> command, or deploy them with any installation package of your choice.</source>
+          <target state="translated">Ad esempio, è possibile inserirli in un file zip, usare un semplice comando <ph id="ph1">`copy`</ph> o distribuirli con qualsiasi pacchetto di installazione di propria scelta.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following is the complete <ph id="ph1">`project.json`</ph> file for this project.</source>
+          <target state="translated">Di seguito è riportato il file <ph id="ph1">`project.json`</ph> completo per questo progetto.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

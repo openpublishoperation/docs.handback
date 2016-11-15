@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">677fe36a17b56aae0198140d82a2bfdd0d6e8224</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9e65fb3bf8212b0c7557068eace3ae564c64734e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d63998b6387ac39953f32ed510ab90375710225</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">.NET Framework から .NET Core への移植</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">.NET Framework から .NET Core への移植</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core from .NET Framework</source>
+          <target state="translated">.NET Framework から .NET Core への移植</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you've got code running on the .NET Framework, you may be interested in running your code on .NET Core 1.0.</source>
+          <target state="translated">.NET Framework で実行されているコードがある場合は、.NET Core 1.0 でコードを実行することに関心があるかもしれません。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article covers an overview of the porting process and a list of the tools you may find helpful when porting to .NET Core.</source>
+          <target state="translated">この記事では、移植プロセスの概要と、.NET Core に移植するときに役立つツールの一覧を示します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview of the Porting Process</source>
+          <target state="translated">移植プロセスの概要</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The recommended process for porting follows the following series of steps.</source>
+          <target state="translated">移植の推奨プロセスでは、次の一連の手順に従います。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Each of these parts of the process are covered in more detail in further articles.</source>
+          <target state="translated">プロセスのこれらの各部分については、他の記事で詳しく説明します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Identify and account for your third-party dependencies.</source>
+          <target state="translated">サードパーティの依存関係を識別し、理解します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This will involve understanding what your third-party dependencies are, how you depend on them, how to see if they also run on .NET Core, and steps you can take if they don't.</source>
+          <target state="translated">このプロセスでは、サードパーティの依存関係がどのようなものか、それらにどのように依存しているか、それらが .NET Core でも実行されるかどうかを確認する方法、および実行されない場合に従う手順について理解します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Retarget all projects you wish to port to target .NET Framework 4.6.2.</source>
+          <target state="translated">ターゲットの .NET Framework 4.6.2 に移植するすべてのプロジェクトをターゲットとして再指定します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This ensures that you can use API alternatives for .NET Framework-specific targets in the cases where .NET Core can't support a particular API.</source>
+          <target state="translated">これにより、.NET Core が特定の API をサポートできない場合に、.NET Framework 固有のターゲットに対して API の代替を確実に使用できます。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>API Portability Analyzer tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/)</ept> to analyze your assemblies and develop a plan to port based on its results.</source>
+          <target state="translated"><bpt id="p1">[</bpt>API Portability Analyzer ツール<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/)</ept>使用して、アセンブリを分析し、その結果に基づいて移植を行う計画を作成します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The API Portability Analyzer tool will analyze your compiled assemblies and generate a report which shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core.</source>
+          <target state="translated">API Portability Analyzer ツールは、コンパイル済みアセンブリを分析し、レポートを生成します。このレポートには、移植性の概要と、.NET Core ではサポートされていない使用中の各 API の内訳が示されます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can use this report alongside an analysis of your codebase to develop a plan for how you'll port your code over.</source>
+          <target state="translated">このレポートをコードベースの分析と共に使用して、コードを移植する方法の計画を作成します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Port your tests code.</source>
+          <target state="translated">テスト コードを移植します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Because porting to .NET Core is such a big change to your codebase, it's highly recommended to get your tests ported so that you can run tests as you port code over.</source>
+          <target state="translated">.NET Core への移植はコードベースにとって大きな変更となるため、コードの移植時にテストを実行できるように、テスト コードを移植することが推奨されます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>MSTest, xUnit, and NUnit all support .NET Core 1.0 today.</source>
+          <target state="translated">現在、MSTest、xUnit、および NUnit は .NET Core 1.0 をサポートしています。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Execute your plan for porting!</source>
+          <target state="translated">移植の計画を実行します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Tools to help</source>
+          <target state="translated">役立つツール</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Here's a short list of the tools you'll find helpful:</source>
+          <target state="translated">役立つツールの簡単な一覧を次に示します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>NuGet - <bpt id="p1">[</bpt>Nuget Client<ept id="p1">](https://dist.nuget.org/index.html)</ept> or <bpt id="p2">[</bpt>NuGet Package Explorer<ept id="p2">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept>, Microsoft's package manager for the .NET Platform.</source>
+          <target state="translated">NuGet - <bpt id="p1">[</bpt>Nuget クライアント<ept id="p1">](https://dist.nuget.org/index.html)</ept>または <bpt id="p2">[</bpt>NuGet パッケージ エクスプローラー<ept id="p2">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept>。.NET プラットフォーム用の Microsoft のパッケージ マネージャー。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Api Portability Analyzer - <bpt id="p1">[</bpt>command line tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/releases)</ept> or <bpt id="p2">[</bpt>Visual Studio Extension<ept id="p2">](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)</ept>, a toolchain that can generate a report of how portable your code is between .NET Framework and .NET Core, with an assembly-by-assembly breakdown of issues.</source>
+          <target state="translated">Api Portability Analyzer - <bpt id="p1">[</bpt>コマンドライン ツール<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/releases)</ept>または <bpt id="p2">[</bpt>Visual Studio 拡張機能<ept id="p2">](https://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)</ept>。アセンブリごとの問題の内訳を含む、.NET Framework と .NET Core の間のコードの移植性に関するレポートを生成できるツール チェーンです。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>Tooling to help you on the process<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> for more information.</source>
+          <target state="translated">「<bpt id="p1">[</bpt>Tooling to help you on the process<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>」 (作業に役立つツール) を参照してください。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Reverse Package Search - A <bpt id="p1">[</bpt>useful web service<ept id="p1">](https://packagesearch.azurewebsites.net)</ept> that allows you to search for a type and find packages containing that type.</source>
+          <target state="translated">Reverse Package Search - 型を検索し、その型を含むパッケージを検索するための<bpt id="p1">[</bpt>便利な Web サービス<ept id="p1">](https://packagesearch.azurewebsites.net)</ept>。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="translated">次のステップ</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Analyzing your third-party dependencies.<ept id="p1">](third-party-deps.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>サードパーティの依存関係の分析<ept id="p1">](third-party-deps.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

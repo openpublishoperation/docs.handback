@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">421d46585b5d83f5772fa6596ad581c8c6acbf71</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14340bf45b632d11191dd628b665f7cfa0d4bf70</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b8ad89ac8fce389696323eeabe11a589ce92ed39</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">安全執行緒集合</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">安全執行緒集合</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Thread-Safe Collections</source>
+          <target state="translated">安全執行緒集合</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace includes several collection classes that are both thread-safe and scalable.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept>命名空間包含數個具備安全執行緒且可擴充的集合類別。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code.</source>
+          <target state="translated">多個執行緒可以安全且有效率地新增或移除這些集合中的項目，而不需要利用使用者程式碼進行額外同步處理。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When you write new code, use the concurrent collection classes whenever the collection will be writing to multiple threads concurrently.</source>
+          <target state="translated">當您撰寫新的程式碼時，只要集合同時寫入多個執行緒，就使用並行集合類別。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you are only reading from a shared collection, then you can use the classes in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">如果您僅讀取共用集合，則可以使用 <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> 命名空間中的類別。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>We recommend that you do not use <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> collection classes unless you are required to target the .NET Framework 1.1 or earlier runtime.</source>
+          <target state="translated">除非您需要將目標設為 .NET Framework 1.1 或舊版本的執行階段，否則建議您不要使用 <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> 集合類別。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Fine-Grained Locking and Lock-Free Mechanisms</source>
+          <target state="translated">更細緻的鎖定和無鎖定機制</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Some of the concurrent collection types use lightweight synchronization mechanisms such as <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>, <bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>, <bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept>, and <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>.</source>
+          <target state="translated">有些並行集合類型會使用輕量型同步處理機制 (例如 <bpt id="p1">[</bpt>SpinLock<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinLock)</ept>、<bpt id="p2">[</bpt>SpinWait<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SpinWait)</ept>、<bpt id="p3">[</bpt>SemaphoreSlim<ept id="p3">](https://docs.microsoft.com/dotnet/core/api/System.Threading.SemaphoreSlim)</ept> 和 <bpt id="p4">[</bpt>CountdownEvent<ept id="p4">](https://docs.microsoft.com/dotnet/core/api/System.Threading.CountdownEvent)</ept>)。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>These synchronization types typically use busy spinning for brief periods before they put the thread into a true <ph id="ph1">`Wait`</ph> state.</source>
+          <target state="translated">這些同步處理類型一般會先使用短期間的忙碌旋轉，再讓執行緒進入真正 <ph id="ph1">`Wait`</ph> 狀態。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>When wait times are expected to be very short, spinning is far less computationally expensive than waiting, which involves an expensive kernel transition.</source>
+          <target state="translated">預期等候時間很短時，旋轉的費用遠低於等待，這包含昂貴的核心轉換。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For collection classes that use spinning, this efficiency means that multiple threads can add and remove items at a very high rate.</source>
+          <target state="translated">針對使用旋轉的集合類別，這個效率表示多個執行緒可以使用極高的速率來新增和移除項目。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> and <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> classes do not use locks at all.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> 和 <bpt id="p2">[</bpt>ConcurrentStack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> 類別根本不會使用鎖定。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, they rely on Interlocked operations to achieve thread-safety.</source>
+          <target state="translated">相反地，它們依賴連鎖作業來達成執行緒安全。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Because the concurrent collections classes support <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>, they provide implementations for the <ph id="ph1">`IsSynchronized`</ph> and <ph id="ph2">`SyncRoot`</ph> properties, even though these properties are irrelevant.</source>
+          <target state="translated">因為並行集合類別支援 <bpt id="p1">[</bpt>ICollection<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ICollection)</ept>，所以會提供 <ph id="ph1">`IsSynchronized`</ph> 和 <ph id="ph2">`SyncRoot`</ph> 屬性的實作，即使這些屬性無關也是一樣。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IsSynchronized`</ph> always returns <ph id="ph2">`false`</ph> and <ph id="ph3">`SyncRoot`</ph> is always null.</source>
+          <target state="translated"><ph id="ph3">`SyncRoot`</ph> 一律會傳回 <ph id="ph1">`IsSynchronized`</ph>，而 <ph id="ph2">`false`</ph> 一律為 null。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following table lists the collection types in the <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> namespace.</source>
+          <target state="translated">下表列出 <bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept> 命名空間中的集合類型。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="translated">類型</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Provides bounding and blocking functionality for any type that implements <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept>.</source>
+          <target state="translated">提供任何可實作 <bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept> 之類型的界限和封鎖功能。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱 <bpt id="p1">[</bpt>BlockingCollection 概觀<ept id="p1">](blockingcollection-overview.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of an unordered collection of elements.</source>
+          <target state="translated">未排序元素集合的安全執行緒實作。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a dictionary of key-value pairs.</source>
+          <target state="translated">索引鍵/值組字典的安全執行緒實作。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a FIFO (first-in, first-out) queue.</source>
+          <target state="translated">FIFO (先進先出) 佇列的安全執行緒實作。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Thread-safe implementation of a LIFO (last-in, first-out) stack.</source>
+          <target state="translated">LIFO (後進先出) 堆疊的安全執行緒實作。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IProducerConsumerCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.IProducerConsumerCollection-1)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The interface that a type must implement to be used in a <ph id="ph1">`BlockingCollection`</ph>.</source>
+          <target state="translated">類型必須實作以在 <ph id="ph1">`BlockingCollection`</ph> 中使用的介面。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Thread Synchronization in the .NET Framework version 1.0 and 2.0 Collections</source>
+          <target state="translated">.NET Framework 1.0 和 2.0 版集合中的執行緒同步處理</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The collections first introduced in the .NET Framework version 1.0 are found in the <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> namespace.</source>
+          <target state="translated">集合是在 .NET Framework 1.0 版首次引進，並位在 <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> 命名空間中。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>These collections, which include the commonly used <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> and <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept>, provide some thread-safety through the <ph id="ph1">`Synchronized`</ph> property, which returns a thread-safe wrapper around the collection.</source>
+          <target state="translated">這些包括常用 <bpt id="p1">[</bpt>ArrayList<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList)</ept> 和 <bpt id="p2">[</bpt>Hashtable<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable)</ept> 的集合透過 <ph id="ph1">`Synchronized`</ph> 屬性提供某種安全執行緒，而這個屬性會傳回集合的安全執行緒包裝函式。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The wrapper works by locking the entire collection on every add or remove operation.</source>
+          <target state="translated">包裝函式的運作方式是針對每個新增或移除作業鎖定整個集合。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Therefore, each thread that is attempting to access the collection must wait for its turn to take the one lock.</source>
+          <target state="translated">因此，嘗試存取集合的每個執行緒都必須等待，直到輪到它取得一個鎖定。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This is not scalable and can cause significant performance degradation for large collections.</source>
+          <target state="translated">這無法進行擴充，而且可能會造成大型集合的重大效能下降。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Also, the design is not completely protected from race conditions.</source>
+          <target state="translated">此外，設計未完全保護競爭情形。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The collection classes first introduced in the .NET Framework version 2.0 are found in the <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> namespace.</source>
+          <target state="translated">集合類別是在 .NET Framework 2.0 版首次引進，並位在 <bpt id="p1">[</bpt>System.Collections.Generic<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic)</ept> 命名空間中。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>These include <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>, <bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept>, and so on.</source>
+          <target state="translated">這些包含 <bpt id="p1">[</bpt>List<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1)</ept>、<bpt id="p2">[</bpt>Dictionary<ph id="ph3">&amp;lt;</ph>TKey, TValue<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> 等。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These classes provide improved type safety and performance compared to the <ph id="ph1">`System.Collections`</ph> classes.</source>
+          <target state="translated">這些類別提供 <ph id="ph1">`System.Collections`</ph> 類別的改良類型安全和效能。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, the <ph id="ph1">`System.Collections.Generic`</ph> collection classes do not provide any thread synchronization; user code must provide all synchronization when items are added or removed on multiple threads concurrently.</source>
+          <target state="translated">不過，<ph id="ph1">`System.Collections.Generic`</ph> 集合類別不會提供任何執行緒同步處理；在多個執行緒上同時新增或移除項目時，使用者程式碼必須提供所有同步處理。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>We recommend the <ph id="ph1">`System.Collections.Concurrent`</ph> collection classes because they provide not only the type safety of the <ph id="ph2">`System.Collections.Generic`</ph> collection classes, but also more efficient and more complete thread safety than the <ph id="ph3">`System.Collections`</ph> collections provide.</source>
+          <target state="translated">建議使用 <ph id="ph1">`System.Collections.Concurrent`</ph> 集合類別，原因是它們不僅提供 <ph id="ph2">`System.Collections.Generic`</ph> 集合類別的型別安全，而且效率和安全執行緒也會比 <ph id="ph3">`System.Collections`</ph> 集合所提供的效率和安全執行緒更高且完整。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Related Topics</source>
+          <target state="translated">相關主題</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">標題</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>BlockingCollection Overview<ept id="p1">](blockingcollection-overview.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>BlockingCollection 概觀<ept id="p1">](blockingcollection-overview.md)</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Describes the functionality provided by the <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> type.</source>
+          <target state="translated">描述 <ph id="ph1">`BlockingCollection&lt;T&gt;`</ph> 類型所提供的功能。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>When to Use a Thread-Safe Collection<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>使用安全執行緒集合的時機<ept id="p1">](when-to-use-a-thread-safe-collection.md)</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Explains when is it appropriate to use a thread-safe collection.</source>
+          <target state="translated">說明何時適合使用安全執行緒集合。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Remove Items from a ConcurrentDictionary<ept id="p1">](how-to-add-and-remove-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：在 ConcurrentDictionary 中新增和移除項目<ept id="p1">](how-to-add-and-remove-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Describes how to add and remove elements from a <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>.</source>
+          <target state="translated">描述如何新增和移除 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 中的元素。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add and Take Items Individually from a BlockingCollection<ept id="p1">](how-to-add-and-take-items.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：從 BlockingCollection 個別新增和擷取項目<ept id="p1">](how-to-add-and-take-items.md)</ept></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Describes how to add and retrieve items from a blocking collection without using the read-only enumerator.</source>
+          <target state="translated">描述在未使用唯讀列舉值的情況下，如何新增和擷取封鎖回收中的項目。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Add Bounding and Blocking Functionality to a Collection<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：將界限和封鎖功能新增至集合<ept id="p1">](how-to-add-bounding-and-blocking.md )</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Describes how to use any collection class as the underlying storage mechanism for an <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph> collection.</source>
+          <target state="translated">描述如何使用任何集合類別作為 <ph id="ph1">`IProducerConsumerCollection&lt;T&gt;;`</ph> 集合的基礎儲存機制。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use ForEach to Remove Items in a BlockingCollection<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：使用 ForEach 來移除 BlockingCollection 中的項目<ept id="p1">](how-to-use-foreach-to-remove.md )</ept></target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Describes how to use <ph id="ph1">`foreach`</ph> to remove all items in a blocking collection.</source>
+          <target state="translated">描述如何使用 <ph id="ph1">`foreach`</ph> 來移除封鎖回收中的所有項目。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Use Arrays of Blocking Collections in a Pipeline<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：在管線中使用封鎖集合的陣列<ept id="p1">](how-to-use-arrays-of-blockingcollections.md)</ept></target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Describes how to use multiple blocking collections at the same time to implement a pipeline.</source>
+          <target state="translated">描述如何同時使用多個封鎖回收來實作管線。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Create an Object Pool by Using a ConcurrentBag<ept id="p1">](how-to-create-an-object-pool.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：使用 ConcurrentBag 建立物件集區<ept id="p1">](how-to-create-an-object-pool.md)</ept></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Shows how to use a concurrent bag to improve performance in scenarios where you can reuse objects instead of continually creating new ones.</source>
+          <target state="translated">示範在您可以重複使用物件而非持續建立新物件的情況下，如何使用並行資料包改善效能。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">參考資料</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
