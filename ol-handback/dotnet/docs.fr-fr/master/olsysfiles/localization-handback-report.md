@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md) | InSyncHandedBackSuccess | [Details](#96eb2cc7ca948b3e372fa1363b1741624d791d2724)
 
 ## Item Details
-##### <a name='96eb2cc7ca948b3e372fa1363b1741624d791d2724'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.fr-fr/blob/006c4a7144a74e6f940bdb05a7bbfb2189755ba5/docs/core/deploying/index.md)
-* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/63a0c02e76520a9270ce9d954ec431abb7ca32f1/ol-handoff/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Handoff Datetime: 2016-11-15 04:13:16
-* Handoff Reason: Include
-* Archive File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a7ee856c3d65e90500e4fcfecb4a9bf1fe200ae1/ol-archive/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Archive Datetime: 2016-11-15 04:20:35
-* Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/22b5932f21482c48ea112497466bfaad4073fd9a/ol-handback/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Handback Datetime: 2016-11-15 11:31:17
-* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
