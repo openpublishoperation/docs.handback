@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3efd30bade564fe1b7dbf93237a9ff40c58c5f1e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\best-practices-strings.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e466b1fa40bcf6a82fdf2349f2b6346dd591d696</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">32d24a667cd981642c7344e4a4899a410e95b9f2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">Procedure consigliate per l'uso delle stringhe</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">Procedure consigliate per l'uso delle stringhe</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Best practices for using strings</source>
+          <target state="translated">Procedure consigliate per l'uso delle stringhe</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET provides extensive support for developing localized and globalized applications, and makes it easy to apply the conventions of either the current culture or a specific culture when performing common operations such as sorting and displaying strings.</source>
+          <target state="translated">.NET offre un ampio supporto per lo sviluppo di applicazioni localizzate e globalizzate e semplifica l'applicazione delle convenzioni relative alle impostazioni cultura correnti o alle impostazioni cultura specifiche quando si eseguono operazioni comuni come l'ordinamento e la visualizzazione delle stringhe.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>But sorting or comparing strings is not always a culture-sensitive operation.</source>
+          <target state="translated">Tuttavia, l'ordinamento o il confronto delle stringhe non è sempre un'operazione con distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, strings that are used internally by an application typically should be handled identically across all cultures.</source>
+          <target state="translated">Ad esempio, le stringhe usate internamente da un'applicazione in genere devono essere gestite in modo identico in tutte le impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When culturally independent string data, such as XML tags, HTML tags, user names, file paths, and the names of system objects, are interpreted as if they were culture-sensitive, application code can be subject to subtle bugs, poor performance, and, in some cases, security issues.</source>
+          <target state="translated">Quando i dati di stringa indipendenti dalle impostazioni cultura, ad esempio i tag XML, i tag HTML, i nomi utente, i percorsi di file e i nomi degli oggetti di sistema, vengono interpretati come dati con distinzione delle impostazioni cultura, nel codice dell'applicazione possono verificarsi bug complessi, riduzioni delle prestazioni e, in alcuni casi, problemi di sicurezza.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article examines the string sorting, comparison, and casing methods in .NET, presents recommendations for selecting an appropriate string-handling method, and provides additional information about string-handling methods.</source>
+          <target state="translated">Questo articolo esamina i metodi di ordinamento, confronto e utilizzo di maiuscole e minuscole nelle stringhe in .NET, offre delle raccomandazioni per selezionare il metodo di gestione delle stringhe appropriato e fornisce informazioni aggiuntive sui metodi di gestione delle stringhe.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It also examines how formatted data, such as numeric data and date and time data, is handled for display and for storage.</source>
+          <target state="translated">Inoltre, esamina come vengono gestiti i file formattati, ad esempio i dati numerici e i dati relativi a data e ora, per la visualizzazione e l'archiviazione.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article contains the following sections:</source>
+          <target state="translated">In questo articolo sono contenute le sezioni seguenti:</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Recommendations for string usage<ept id="p1">](#recommendations-for-string-usage)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Suggerimenti per l'uso delle stringhe<ept id="p1">](#recommendations-for-string-usage)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Specifying string comparisons explicitly<ept id="p1">](#specifying-string-comparisons-explicitly)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Specifica esplicita per il confronto tra stringhe<ept id="p1">](#specifying-string-comparisons-explicitly)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The details of string comparison<ept id="p1">](#the-details-of-string-comparison)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Dettagli sul confronto tra stringhe<ept id="p1">](#the-details-of-string-comparison)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Choosing a StringComparison member for your method call<ept id="p1">](#choosing-a-stringcomparison-member-for-your-method-call)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Scelta di un membro StringComparison per la chiamata al metodo<ept id="p1">](#choosing-a-stringcomparison-member-for-your-method-call)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Common string comparison methods<ept id="p1">](#common-string-comparison-methods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Metodi comuni per il confronto tra stringhe<ept id="p1">](#common-string-comparison-methods)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Methods that perform string comparison indirectly<ept id="p1">](#methods-that-perform-string-comparison-indirectly)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Metodi che eseguono indirettamente il confronto tra stringhe<ept id="p1">](#methods-that-perform-string-comparison-indirectly)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Displaying and persisting formatted data<ept id="p1">](#displaying-and-persisting-formatted-data)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Visualizzazione e conservazione dei dati formattati<ept id="p1">](#displaying-and-persisting-formatted-data)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Recommendations for string usage</source>
+          <target state="translated">Suggerimenti per l'uso delle stringhe</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When you develop with .NET, follow these simple recommendations when you use strings:</source>
+          <target state="translated">Quando si sviluppa con .NET, seguire queste semplici raccomandazione quando si usano le stringhe:</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use overloads that explicitly specify the string comparison rules for string operations.</source>
+          <target state="translated">Usare gli overload che specificano esplicitamente le regole di confronto tra stringhe per le operazioni di stringa.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Typically, this involves calling a method overload that has a parameter of type <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</source>
+          <target state="translated">In genere, questo implica chiamare un overload del metodo con un parametro di tipo <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Use <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> for comparisons as your safe default for culture-agnostic string matching.</source>
+          <target state="translated">Usare <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> o <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> per i confronti come valore predefinito sicuro per una corrispondenza tra stringhe indipendente dalla cultura.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Use comparisons with <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> for better performance.</source>
+          <target state="translated">Usare i confronti con <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> o <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> per ottenere prestazioni migliori.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Use string operations that are based on <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> when you display output to the user.</source>
+          <target state="translated">Usare operazioni di stringa basate su <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> quando si visualizza l'output all'utente.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Use the non-linguistic <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> values instead of string operations based on <bpt id="p3">[</bpt>CultureInfo.InvariantCulture<ept id="p3">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> when the comparison is linguistically irrelevant (symbolic, for example).</source>
+          <target state="translated">Usare i valori non linguistici <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> o <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> anziché le operazioni di stringa basate su <bpt id="p3">[</bpt>CultureInfo.InvariantCulture<ept id="p3">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> quando il confronto non è rilevante linguisticamente, ad esempio è simbolico.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> method instead of the <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> method when you normalize strings for comparison.</source>
+          <target state="translated">Usare il metodo <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> anziché il metodo <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> quando si normalizzano le stringhe per il confronto.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> method to test whether two strings are equal.</source>
+          <target state="translated">Usare un overload del metodo <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> per controllare se due stringhe sono uguali.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> and <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> methods to sort strings, not to check for equality.</source>
+          <target state="translated">Usare un overload dei metodi <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> e <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> per ordinare le stringhe senza controllare se sono uguali.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Use culture-sensitive formatting to display non-string data, such as numbers and dates, in a user interface.</source>
+          <target state="translated">Usare la formattazione con distinzione delle impostazioni cultura per visualizzare i dati non di tipo stringa, ad esempio numeri e dati, in un'interfaccia utente.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Use formatting with the invariant culture to persist non-string data in string form.</source>
+          <target state="translated">Usare la formattazione con la lingua inglese per conservare i dati non di tipo stringa in formato stringa.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Avoid the following practices when you use strings:</source>
+          <target state="translated">Evitare le operazioni seguenti quando si usano le stringhe:</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Do not use overloads that do not explicitly or implicitly specify the string comparison rules for string operations.</source>
+          <target state="translated">Non usare overload che non specificano in modo esplicito o implicito le regole di confronto tra stringhe per le operazioni di stringa.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Do not use an overload of the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> or <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> methods and test for a return value of zero to determine whether two strings are equal.</source>
+          <target state="translated">Non usare un overload del metodo <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> o <bpt id="p2">[</bpt>String.CompareTo<ept id="p2">](xref:System.String.CompareTo(System.String))</ept> ed eseguire un test per il valore restituito zero per determinare se due stringhe sono uguali.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.</source>
+          <target state="translated">Non usare la formattazione con distinzione delle impostazioni cultura per conservare i dati numerici o di data e ora in formato stringa.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Specifying string comparisons explicitly</source>
+          <target state="translated">Specifica esplicita per il confronto tra stringhe</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Most of the string manipulation methods in .NET are overloaded.</source>
+          <target state="translated">Molti dei metodi di modifica delle stringhe in .NET sono di tipo overload.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated.</source>
+          <target state="translated">In genere, uno o più overload accettano le impostazioni predefinite, mentre altri accettano le impostazioni non predefinite, specificando invece una determinata procedura di confronto o modifica delle stringhe.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Most of the methods that do not rely on defaults include a parameter of type <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>, which is an enumeration that explicitly specifies rules for string comparison by culture and case.</source>
+          <target state="translated">La maggior parte dei metodi che non si basano sulle impostazioni predefinite include un parametro di tipo <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>, che corrisponde a un'enumerazione che specifica in modo esplicito le regole per il confronto tra stringhe in base alle impostazioni cultura e alle maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following table describes the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> enumeration members.</source>
+          <target state="translated">La tabella seguente descrive i membri dell'enumerazione <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>StringComparison member</source>
+          <target state="translated">Membro StringComparison</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Performs a case-sensitive comparison using the current culture.</source>
+          <target state="translated">Esegue un confronto con distinzione tra maiuscole e minuscole usando le impostazioni cultura correnti.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CurrentCultureIgnoreCase<ept id="p1">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrentCultureIgnoreCase<ept id="p1">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Performs a case-insensitive comparison using the current culture.</source>
+          <target state="translated">Esegue un confronto senza distinzione tra maiuscole e minuscole usando le impostazioni cultura correnti.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Performs an ordinal comparison.</source>
+          <target state="translated">Esegue un confronto ordinale.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Performs a case-insensitive ordinal comparison.</source>
+          <target state="translated">Esegue un confronto ordinale senza distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> method, which returns the index of a substring in a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> object that matches either a character or a string, has nine overloads:</source>
+          <target state="translated">Ad esempio, il metodo <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph>, che restituisce l'indice di una sottostringa in un oggetto <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> che corrisponde a un carattere o a una stringa, ha nove overload:</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(Char)<ept id="p1">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p2">[</bpt>IndexOf(Char, Int32)<ept id="p2">](xref:System.String.IndexOf(System.Char,System.Int32))</ept>, and <bpt id="p3">[</bpt>IndexOf(Char, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.Char,System.Int32,System.Int32))</ept>, which by default perform an ordinal (case-sensitive and culture-insensitive) search for a character in the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(Char)<ept id="p1">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p2">[</bpt>IndexOf(Char, Int32)<ept id="p2">](xref:System.String.IndexOf(System.Char,System.Int32))</ept> e <bpt id="p3">[</bpt>IndexOf(Char, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.Char,System.Int32,System.Int32))</ept>, che per impostazione predefinita eseguono una ricerca ordinale (con distinzione tra maiuscole e minuscole e senza distinzione delle impostazioni cultura) per un carattere nella stringa.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(String)<ept id="p1">](xref:System.String.IndexOf(System.String))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32))</ept>, and <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32))</ept>, which by default perform a case-sensitive and culture-sensitive search for a substring in the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(String)<ept id="p1">](xref:System.String.IndexOf(System.String))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32))</ept> e <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32))</ept>, che per impostazione predefinita eseguono una ricerca con distinzione tra maiuscole e minuscole e con distinzione delle impostazioni cultura per una sottostringa nella stringa.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IndexOf(String, StringComparison)<ept id="p1">](xref:System.String.IndexOf(System.String,System.StringComparison))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32, StringComparison)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32,System.StringComparison))</ept>, and <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32, StringComparison)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison))</ept>, which include a parameter of type StringComparison that allows the form of the comparison to be specified.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IndexOf(String, StringComparison)<ept id="p1">](xref:System.String.IndexOf(System.String,System.StringComparison))</ept>, <bpt id="p2">[</bpt>IndexOf(String, Int32, StringComparison)<ept id="p2">](xref:System.String.IndexOf(System.String,System.Int32,System.StringComparison))</ept> e <bpt id="p3">[</bpt>IndexOf(String, Int32, Int32, StringComparison)<ept id="p3">](xref:System.String.IndexOf(System.String,System.Int32,System.Int32,System.StringComparison))</ept>, che includono un parametro di tipo StringComparison che consente di specificare il tipo di confronto.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>We recommend that you select an overload that does not use default values, for the following reasons:</source>
+          <target state="translated">Si consiglia di selezione un overload che non uso i valori predefiniti, per i seguenti motivi:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Some overloads with default parameters (those that search for a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> in the string instance) perform an ordinal comparison, whereas others (those that search for a string in the string instance) are culture-sensitive.</source>
+          <target state="translated">Alcuni overload con parametri predefiniti (quelli che cercano <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> nell'istanza della stringa) eseguono un confronto ordinale, mentre altri (quelli che cercano una stringa nell'istanza della stringa) applicano la distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It is difficult to remember which method uses which default value, and easy to confuse the overloads.</source>
+          <target state="translated">È difficile ricordare quale valore predefinito viene usato dai diversi metodi ed è facile confondere gli overload.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The intent of the code that relies on default values for method calls is not clear.</source>
+          <target state="translated">Lo scopo del codice basato sui valori predefiniti per le chiamate al metodo non è chiaro.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In the following example, which relies on defaults, it is difficult to know whether the developer actually intended an ordinal or a linguistic comparison of two strings, or whether a case difference between <ph id="ph1">`protocol`</ph> and "http" might cause the test for equality to return <ph id="ph2">`false`</ph>.</source>
+          <target state="translated">Nell'esempio seguente, che si basa su impostazioni predefinite, è difficile capire se lo sviluppatore intendeva eseguire un confronto ordinale o linguistico tra due stringhe o se la differenza tra maiuscole e minuscole tra <ph id="ph1">`protocol`</ph> e "http" può causare la restituzione di <ph id="ph2">`false`</ph> nel test di uguaglianza.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In general, we recommend that you call a method that does not rely on defaults, because it makes the intent of the code unambiguous.</source>
+          <target state="translated">In generale, si consiglia di chiamare un metodo non basato sulle impostazioni predefinite perché disambigua lo scopo del codice.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This, in turn, makes the code more readable and easier to debug and maintain.</source>
+          <target state="translated">In questo modo, anche il codice diventa più leggibile ed è più facile eseguirne il debug e la manutenzione.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following example addresses the questions raised about the previous example.</source>
+          <target state="translated">L'esempio seguente riguarda le domande relative all'esempio precedente.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It makes it clear that ordinal comparison is used and that differences in case are ignored.</source>
+          <target state="translated">Viene specificato che viene utilizzato il confronto ordinale e che le differenze tra maiuscole e minuscole vengono ignorate.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The details of string comparison</source>
+          <target state="translated">Dettagli sul confronto tra stringhe</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>String comparison is the heart of many string-related operations, particularly sorting and testing for equality.</source>
+          <target state="translated">Il confronto tra stringhe è la base di molte operazioni relative alle stringhe, in particolare l'ordinamento e il test di uguaglianza.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Strings sort in a determined order: If "my" appears before "string" in a sorted list of strings, "my" must compare less than or equal to "string".</source>
+          <target state="translated">L'ordinamento delle stringhe viene eseguito in un modo specifico: se "my" compare prima di "string" in un elenco ordinato di stringhe, nel confronto "my" deve essere minore o uguale a "string".</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Additionally, comparison implicitly defines equality.</source>
+          <target state="translated">Inoltre, il confronto definisce implicitamente l'uguaglianza.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The comparison operation returns zero for strings it deems equal.</source>
+          <target state="translated">L'operazione di confronto restituisce zero per le stringhe che considera uguali.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>A good interpretation is that neither string is less than the other.</source>
+          <target state="translated">In altre parole, nessuna stringa viene considerata minore delle altre.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Most meaningful operations involving strings include one or both of these procedures: comparing with another string, and executing a well-defined sort operation.</source>
+          <target state="translated">Le operazioni più significative relative alle stringhe includono una o più delle seguenti procedure: confronto con un'altra stringa ed esecuzione di un'operazione di ordinamento definita correttamente.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>However, evaluating two strings for equality or sort order does not yield a single, correct result; the outcome depends on the criteria used to compare the strings.</source>
+          <target state="translated">Tuttavia, la valutazione di due stringhe per l'uguaglianza e l'ordinamento non produce un unico risultato corretto; l'esito dipende dai criteri usati per il confronto delle stringhe.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In particular, string comparisons that are ordinal or that are based on the casing and sorting conventions of the current culture or the invariant culture (a locale-agnostic culture based on the English language) may produce different results.</source>
+          <target state="translated">In particolare, i confronti tra stringhe ordinali o basati sulle convenzioni di utilizzo di maiuscole e minuscole e di ordinamento delle impostazioni cultura correnti o della lingua inglese (impostazioni indipendenti dalle impostazioni cultura basate sulla lingua inglese) possono produrre risultati diversi.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>String comparisons that use the current culture</source>
+          <target state="translated">Confronti tra stringhe che usano le impostazioni cultura correnti</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>One criterion involves using the conventions of the current culture when comparing strings.</source>
+          <target state="translated">Un criterio prevede l'uso delle convenzioni delle impostazioni cultura correnti quando si confrontano le stringhe.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Comparisons that are based on the current culture use the thread's current culture or locale.</source>
+          <target state="translated">I confronti basati sulle impostazioni cultura correnti usano le impostazioni cultura o le impostazioni locali correnti del thread.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You should always use comparisons that are based on the current culture when data is linguistically relevant, and when it reflects culture-sensitive user interaction.</source>
+          <target state="translated">È necessario usare sempre i confronti basati sulle impostazioni cultura correnti quando i dati sono linguisticamente rilevanti e quando riflettono un'interazione utente con distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>However, comparison and casing behavior in .NET changes when the culture changes.</source>
+          <target state="translated">Tuttavia, il comportamento di confronto e di utilizzo di maiuscole e minuscole in .NET cambia quando vengono modificate le impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This happens when an application executes on a computer that has a different culture than the computer on which the application was developed, or when the executing thread changes its culture.</source>
+          <target state="translated">Ciò accade quando un'applicazione viene eseguita in un computer con impostazioni cultura diverse da quelle del computer in cui è stata sviluppata oppure quando il thread di esecuzione modifica le proprie impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This behavior is intentional, but it remains non-obvious to many developers.</source>
+          <target state="translated">Questo comportamento è intenzionale, tuttavia resta poco chiaro per molti sviluppatori.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The following example illustrates differences in sort order between the U.S. English ("en-US") and Swedish ("sv-SE") cultures.</source>
+          <target state="translated">L'esempio seguente illustra le differenze nell'ordinamento tra le impostazioni cultura della lingua inglese per gli Stati Uniti ("en-US") e di quella svedese ("sv-SE").</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Note that the words "ångström", "Windows", and "Visual Studio" appear in different positions in the sorted string arrays.</source>
+          <target state="translated">Si noti che le parole "ångström", "Windows" e "Visual Studio" vengono visualizzate in posizioni diverse nelle matrici di stringhe ordinate.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons that use the current culture are the same as culture-sensitive comparisons, except that they ignore case as dictated by the thread's current culture.</source>
+          <target state="translated">I confronti senza distinzione tra maiuscole e minuscole che usano le impostazioni cultura correnti sono uguali a quelli con distinzione delle impostazioni cultura, ma ignorano la distinzione tra maiuscole e minuscole come indicato dalle impostazioni cultura correnti del thread.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This behavior may manifest itself in sort orders as well.</source>
+          <target state="translated">Questo comportamento può manifestarsi anche negli ordinamenti.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Comparisons that use current culture semantics are the default for the following methods:</source>
+          <target state="translated">I confronti che usano la semantica delle impostazioni cultura correnti sono i confronti predefiniti per i seguenti metodi:</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> overloads that do not include a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">Overload di <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> che non includono un parametro <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String.CompareTo<ept id="p1">](xref:System.String.CompareTo(System.String))</ept> overloads.</source>
+          <target state="translated">Overload di <bpt id="p1">[</bpt>String.CompareTo<ept id="p1">](xref:System.String.CompareTo(System.String))</ept>.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The default <bpt id="p1">[</bpt>String.StartsWith(String)<ept id="p1">](xref:System.String.StartsWith(System.String))</ept> method.</source>
+          <target state="translated">Metodo <bpt id="p1">[</bpt>String.StartsWith(String)<ept id="p1">](xref:System.String.StartsWith(System.String))</ept> predefinito.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The default <bpt id="p1">[</bpt>String.EndsWith(String)<ept id="p1">](xref:System.String.EndsWith(System.String))</ept> method.</source>
+          <target state="translated">Metodo <bpt id="p1">[</bpt>String.EndsWith(String)<ept id="p1">](xref:System.String.EndsWith(System.String))</ept> predefinito.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> overloads that accept a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> as a search parameter and that do not have a <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">Overload di <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> che accettano <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> come parametro di ricerca e non includono un parametro <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`LastIndexOf`</ph> overloads that accept a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> as a search parameter and that do not have a <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">Overload di <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`LastIndexOf`</ph> che accettano <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> come parametro di ricerca e non includono un parametro <bpt id="p3">[</bpt>StringComparison<ept id="p3">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>In any case, we recommend that you call an overload that has a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter to make the intent of the method call clear.</source>
+          <target state="translated">In ogni caso, si consiglia di chiamare un overload con il parametro <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> per rendere chiaro lo scopo della chiamata al metodo.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Subtle and not so subtle bugs can emerge when non-linguistic string data is interpreted linguistically, or when string data from a particular culture is interpreted using the conventions of another culture.</source>
+          <target state="translated">È possibile che vengano generati bug complessi e meno complessi quando i dati non linguistici della stringa vengono interpretati linguisticamente oppure quando i dati della stringa di specifiche impostazioni cultura vengono interpretati usando le convenzioni di altre impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The canonical example is the Turkish-I problem.</source>
+          <target state="translated">L'esempio canonico è il problema della I turca.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>For nearly all Latin alphabets, including U.S. English, the character "i" (\u0069) is the lowercase version of the character "I" (\u0049).</source>
+          <target state="translated">Per quasi tutti gli alfabeti latini, incluso l'inglese (Stati Uniti), il carattere "i" (\u0069) corrisponde alla versione minuscola del carattere "I" (\u0049).</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>This casing rule quickly becomes the default for someone programming in such a culture.</source>
+          <target state="translated">Questa regola di utilizzo di maiuscole e minuscole diventa rapidamente l'impostazione predefinita per chi programma queste impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>However, the Turkish ("tr-TR") alphabet includes an "I with a dot" character "İ" (\u0130), which is the capital version of "i".</source>
+          <target state="translated">Tuttavia, l'alfabeto turco ("tr-TR") include una "I con punto", "İ" (\u0130), che è la versione maiuscola di "i".</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Turkish also includes a lowercase "i without a dot" character, "ı" (\u0131), which capitalizes to "I".</source>
+          <target state="translated">L'alfabeto turco include anche una "i senza punto" minuscola, "ı" (\u0131), la cui versione maiuscola è "I".</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>This behavior occurs in the Azerbaijani ("az") culture as well.</source>
+          <target state="translated">Questo comportamento si verifica anche con le impostazioni cultura azera ("az").</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Therefore, assumptions made about capitalizing "i" or lowercasing "I" are not valid among all cultures.</source>
+          <target state="translated">Pertanto, i presupposti relativi all'uso della maiuscola per "i" o della minuscola per "I" non sono validi in tutte le impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>If you use the default overloads for string comparison routines, they will be subject to variance between cultures.</source>
+          <target state="translated">Se si usano gli overload predefiniti per le routine di confronto tra stringhe, questi saranno soggetti a variazioni tra le diverse impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If the data to be compared is non-linguistic, using the default overloads can produce undesirable results, as the following attempt to perform a case-insensitive comparison of the strings "file" and "FILE" illustrates.</source>
+          <target state="translated">Se i dati da confrontare sono di tipo non linguistico, l'uso degli overload predefiniti può produrre risultati indesiderati, come illustrato in questo tentativo di eseguire un confronto senza distinzione tra maiuscole e minuscole delle stringhe "file" e "FILE".</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>This comparison could cause significant problems if the culture is inadvertently used in security-sensitive settings, as in the following example.</source>
+          <target state="translated">Questo confronto può causare problemi significativi se le impostazioni cultura vengono usate inavvertitamente in impostazioni relative alla sicurezza, come nel seguente esempio.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>A method call such as <ph id="ph1">`IsFileURI("file:")`</ph> returns <ph id="ph2">`true`</ph> if the current culture is U.S. English, but <ph id="ph3">`false`</ph> if the current culture is Turkish.</source>
+          <target state="translated">Una chiamata al metodo come <ph id="ph1">`IsFileURI("file:")`</ph> restituisce <ph id="ph2">`true`</ph>, se le impostazioni cultura correnti sono per la lingua inglese (Stati Uniti) oppure <ph id="ph3">`false`</ph> se le impostazioni cultura correnti sono per la lingua turca.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Thus, on Turkish systems, someone could circumvent security measures that block access to case-insensitive URIs that begin with "FILE:".</source>
+          <target state="translated">Quindi, nei sistemi turchi, qualcuno potrebbe aggirare le misure di sicurezza che bloccano l'accesso agli URI senza distinzione tra maiuscole e minuscole che iniziano con "FILE:".</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In this case, because "file:" is meant to be interpreted as a non-linguistic, culture-insensitive identifier, the code should instead be written as shown in the following example.</source>
+          <target state="translated">In questo caso, poiché "file:" deve essere interpretato come un identificatore non linguistico e senza distinzione delle impostazioni cultura, il codice deve essere scritto come mostrato nell'esempio seguente.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Ordinal String Operations</source>
+          <target state="translated">Operazioni di stringa ordinali</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Specifying the <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> or <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> value in a method call signifies a non-linguistic comparison in which the features of natural languages are ignored.</source>
+          <target state="translated">La specifica del valore <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> o <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> in una chiamata al metodo indica un confronto non linguistico in cui le funzionalità dei linguaggi naturali vengono ignorate.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Methods that are invoked with these <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> values base string operation decisions on simple byte comparisons instead of casing or equivalence tables that are parameterized by culture.</source>
+          <target state="translated">I metodi richiamati con questi valori <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> basano le decisioni relative alle operazioni di stringa su confronti di byte semplici invece che sull'utilizzo di maiuscole e minuscole o di tabelle di equivalenza parametrizzate dalle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In most cases, this approach best fits the intended interpretation of strings while making code faster and more reliable.</source>
+          <target state="translated">In molti casi, questo approccio risulta più adatto per l'interpretazione desiderata delle stringhe e rende il codice più veloce e affidabile.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" does not match "Windows".</source>
+          <target state="translated">I confronti ordinali sono confronti tra stringhe in cui ogni byte di ogni stringa viene confrontato senza interpretazione linguistica, ad esempio "windows" non corrisponde a "Windows".</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy.</source>
+          <target state="translated">Usare questo confronto quando il contesto impone l'esatta corrispondenza delle stringhe o richiede un criterio di corrispondenza conservativo.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.</source>
+          <target state="translated">Inoltre, il confronto ordinale è l'operazione di confronto più rapida perché non applica regole linguistiche quando determina un risultato.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Strings in .NET can contain embedded null characters.</source>
+          <target state="translated">Le stringhe in .NET possono contenere caratteri null incorporati.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string.</source>
+          <target state="translated">Una delle differenze più evidenti tra il confronto ordinale e quello con distinzione delle impostazioni cultura (inclusi i confronti che usano la lingua inglese) riguarda la gestione dei caratteri null incorporati in una stringa.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>These characters are ignored when you use the <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> and <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`Equals`</ph> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture).</source>
+          <target state="translated">Questi caratteri vengono ignorati quando si usano i metodi <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> e <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`Equals`</ph> per eseguire confronti con distinzione delle impostazioni cultura, inclusi i confronti che usano le impostazioni cultura per la lingua inglese.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.</source>
+          <target state="translated">Di conseguenza, nei confronti con distinzione delle impostazioni cultura, le stringhe che contengono caratteri null incorporati e quelle che non li contengono possono essere considerate uguali.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Although string comparison methods disregard embedded null characters, string search methods such as <bpt id="p1">[</bpt>String.Contains<ept id="p1">](xref:System.String.Contains(System.String))</ept>, <bpt id="p2">[</bpt>String.EndsWith<ept id="p2">](xref:System.String.EndsWith(System.String))</ept>, <bpt id="p3">[</bpt>String.IndexOf<ept id="p3">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p4">[</bpt>String.LastIndexOf<ept id="p4">](xref:System.String.LastIndexOf(System.String))</ept>, and <bpt id="p5">[</bpt>String.StartsWith<ept id="p5">](xref:System.String.StartsWith(System.String))</ept> do not.</source>
+          <target state="translated">Sebbene i metodi di confronto tra stringhe ignorino i caratteri null incorporati, i metodi di ricerca delle stringhe, ad esempio <bpt id="p1">[</bpt>String.Contains<ept id="p1">](xref:System.String.Contains(System.String))</ept>, <bpt id="p2">[</bpt>String.EndsWith<ept id="p2">](xref:System.String.EndsWith(System.String))</ept>, <bpt id="p3">[</bpt>String.IndexOf<ept id="p3">](xref:System.String.IndexOf(System.Char))</ept>, <bpt id="p4">[</bpt>String.LastIndexOf<ept id="p4">](xref:System.String.LastIndexOf(System.String))</ept> e <bpt id="p5">[</bpt>String.StartsWith<ept id="p5">](xref:System.String.StartsWith(System.String))</ept> non li ignorano.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following example performs a culture-sensitive comparison of the string "Aa" with a similar string that contains several embedded null characters between "A" and "a", and shows how the two strings are considered equal.</source>
+          <target state="translated">L'esempio successivo esegue un confronto con distinzione delle impostazioni cultura della stringa "Aa" con una stringa simile che contiene diversi caratteri null incorporati tra "A" e "a" e mostra in che modo le due stringhe vengono considerate uguali..</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>However, the strings are not considered equal when you use ordinal comparison, as the following example shows.</source>
+          <target state="translated">Tuttavia, le stringhe non sono considerate uguali quando si usa il confronto ordinale, come mostrato nell'esempio seguente.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Case-insensitive ordinal comparisons are the next most conservative approach.</source>
+          <target state="translated">I confronti ordinali senza distinzione tra maiuscole e minuscole rappresentano il secondo approccio più conservativo.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>These comparisons ignore most casing; for example, "windows" matches "Windows".</source>
+          <target state="translated">Questi confronti ignorano quasi del tutto l'utilizzo di maiuscole e minuscole, ad esempio "windows" corrisponde a "Windows".</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>When dealing with ASCII characters, this policy is equivalent to <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>, except that it ignores the usual ASCII casing.</source>
+          <target state="translated">Quando si usano i caratteri ASCII, questo criterio è equivalente a <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>, ma ignora il normale utilizzo di maiuscole e minuscole ASCII.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Therefore, any character in [A, Z] (\u0041-\u005A) matches the corresponding character in [a,z] (\u0061-\007A).</source>
+          <target state="translated">Quindi, qualsiasi carattere in [A, Z] (\u0041-\u005A) corrisponde al carattere corrispondente in [a,z] (\u0061-\007A).</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Casing outside the ASCII range uses the invariant culture's tables.</source>
+          <target state="translated">L'utilizzo di maiuscole e minuscole al di fuori dell'intervallo ASCII usa le tabelle in lingua inglese.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Therefore, the following comparison:</source>
+          <target state="translated">Pertanto, il confronto seguente:</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>is equivalent to (but faster than) this comparison:</source>
+          <target state="translated">è equivalente (ma più rapido) rispetto al confronto:</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>These comparisons are still very fast.</source>
+          <target state="translated">Questi confronti sono comunque molto rapidi.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Both <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> and <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> use the binary values directly, and are best suited for matching.</source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> e <bpt id="p2">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> usano entrambi direttamente i valori binari e sono più adatti per la corrispondenza.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>When you are not sure about your comparison settings, use one of these two values.</source>
+          <target state="translated">Se non si è sicuri delle impostazioni di confronto, usare uno di questi due valori.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>However, because they perform a byte-by-byte comparison, they do not sort by a linguistic sort order (like an English dictionary) but by a binary sort order.</source>
+          <target state="translated">Tuttavia, poiché eseguono un confronto byte per byte, l'ordinamento non viene eseguito linguisticamente (come in un dizionario inglese), ma in modo binario.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The results may look odd in most contexts if displayed to users.</source>
+          <target state="translated">Se visualizzati dagli utenti, i risultati possono sembrare strani in molti contesti.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Ordinal semantics are the default for <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> overloads that do not include a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> argument (including the equality operator).</source>
+          <target state="translated">La semantica ordinale è l'impostazione predefinita per gli overload <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`Equals`</ph> che non includono un argomento <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> (incluso l'operatore di uguaglianza).</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In any case, we recommend that you call an overload that has a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter.</source>
+          <target state="translated">In ogni caso, si consiglia di chiamare un overload con un parametro <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>String operations that use the invariant culture</source>
+          <target state="translated">Operazioni di stringa che usano impostazioni cultura non dipendenti da paese/area geografica</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Comparisons with the invariant culture use the <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> property returned by the static <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property.</source>
+          <target state="translated">I confronti con le impostazioni cultura per la lingua inglese usano la proprietà <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> restituita dalla proprietà statica <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This behavior is the same on all systems; it translates any characters outside its range into what it believes are equivalent invariant characters.</source>
+          <target state="translated">Questo comportamento è uguale in tutti i sistemi. Converte i caratteri al di fuori dell'intervallo in quelli che considera caratteri equivalenti in lingua inglese.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>This policy can be useful for maintaining one set of string behavior across cultures, but it often provides unexpected results.</source>
+          <target state="translated">Questo criterio può essere utile per gestire il comportamento di un set di stringhe nelle impostazioni cultura, ma spesso produce risultati imprevisti.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons with the invariant culture use the static <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> property returned by the static <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property for comparison information as well.</source>
+          <target state="translated">I confronti senza distinzione tra maiuscole e minuscole con le impostazioni cultura per la lingua inglese usano la proprietà statica <bpt id="p1">[</bpt>CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> restituita dalla proprietà statica <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> anche per le informazioni sul confronto.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Any case differences among these translated characters are ignored.</source>
+          <target state="translated">Le differenze tra maiuscole e minuscole in questi caratteri convertiti vengono ignorate.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CultureInfo.InvariantCulture<ept id="p1">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> object makes a <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> method interpret certain sets of characters as equivalent.</source>
+          <target state="translated">L'oggetto <bpt id="p1">[</bpt>CultureInfo.InvariantCulture<ept id="p1">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> fa sì che il metodo <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph1">`Compare`</ph> interpreti alcuni set di caratteri come equivalenti.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For example, the following equivalence is valid under the invariant culture:</source>
+          <target state="translated">Ad esempio, la seguente equivalenza è valida in lingua inglese:</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>InvariantCulture: a + ̊ = å</source>
+          <target state="translated">InvariantCulture: a + ̊ = å</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The latin small lette A character "a" (\u0061), when it is next to the combining ring above character "+ " ̊" (\u030a), is interpreted as the latin small letter A with ring above character "å" (\u00e5).</source>
+          <target state="translated">La lettera A minuscola latina "a" (\u0061) quando si trova accanto al carattere cerchio in alto "+ " ̊" (\u030a) viene interpretata come lettera A minuscola latina con il carattere cerchio in alto "å" (\u00e5).</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>As the following example shows, this behavior differs from ordinal comparison.</source>
+          <target state="translated">Come mostrato nell'esempio seguente, questo comportamento è diverso dal confronto ordinale.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>When interpreting file names, cookies, or anything else where a combination such as "å" can appear, ordinal comparisons still offer the most transparent and fitting behavior.</source>
+          <target state="translated">Quando si interpretano i nomi di file, i cookie o qualsiasi altro elemento che può contenere un carattere come "å", i confronti ordinali offrono il comportamento più trasparente e appropriato.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>On balance, the invariant culture has very few properties that make it useful for comparison.</source>
+          <target state="translated">In realtà la lingua inglese ha poche proprietà che la rendono utile per il confronto.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture.</source>
+          <target state="translated">Esegue il confronto in un modo linguisticamente rilevante, che non assicura un'equivalenza simbolica completa, ma non rappresenta la scelta ottimale per la visualizzazione nelle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.</source>
+          <target state="translated">Ad esempio, se un file di dati di grandi dimensioni che contiene un elenco di identificatori ordinati per la visualizzazione viene associato a un'applicazione, per aggiungere elementi all'elenco è necessario l'inserimento con un ordinamento in lingua inglese.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Choosing a StringComparison member for your method call</source>
+          <target state="translated">Scelta di un membro StringComparison per la chiamata al metodo</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The following table outlines the mapping from semantic string context to a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> enumeration member.</source>
+          <target state="translated">La tabella seguente mostra il mapping da un contesto di stringhe semantico a un membro dell'enumerazione <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Data</source>
+          <target state="translated">Dati</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Behavior</source>
+          <target state="translated">Comportamento</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Corresponding System.StringComparison value</source>
+          <target state="translated">Valore System.StringComparison corrispondente</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Case-sensitive internal identifiers, case-sensitive identifiers in standards such as XML and HTTP, or case-sensitive security-related settings.</source>
+          <target state="translated">Identificatori interni con distinzione tra maiuscole e minuscole, identificatori con distinzione tra maiuscole e minuscole in standard come XML e HTTP o impostazioni di sicurezza con distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>A non-linguistic identifier, where bytes match exactly.</source>
+          <target state="translated">Identificatore non linguistico, con una corrispondenza esatta dei byte.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept></target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Case-insensitive internal identifiers, case-insensitive identifiers in standards such as XML and HTTP, file paths, registry keys and values, environment variables, resource identifiers (for example, handle names), or case-insensitive security-related settings.</source>
+          <target state="translated">Identificatori interni senza distinzione tra maiuscole e minuscole, identificatori senza distinzione tra maiuscole e minuscole in standard come XML e HTTP, percorsi di file, chiavi e valori del Registro di sistema, variabili di ambiente, identificatori di risorse, ad esempio nomi di handle o impostazioni di sicurezza senza distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>A non-linguistic identifier, where case is irrelevant.</source>
+          <target state="translated">Identificatore non linguistico, indipendente dalla distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Data displayed to the user or most user input.</source>
+          <target state="translated">Dati visualizzati all'utente o maggior parte dell'input utente.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Data that requires local linguistic customs.</source>
+          <target state="translated">Dati che richiedono personalizzazioni linguistiche locali.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> or <bpt id="p2">[</bpt>CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept> o <bpt id="p2">[</bpt>CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparison.CurrentCultureIgnoreCase)</ept></target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Common string comparison methods</source>
+          <target state="translated">Metodi comuni per il confronto tra stringhe</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The following sections describe the methods that are most commonly used for string comparison.</source>
+          <target state="translated">Le sezioni seguenti descrivono i metodi più comuni per il confronto tra stringhe.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>String.Compare</source>
+          <target state="translated">String.Compare</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>As the operation most central to string interpretation, all instances of these method calls should be examined to determine whether strings should be interpreted according to the current culture, or dissociated from the culture (symbolically).</source>
+          <target state="translated">Poiché si tratta dell'operazione più importante per l'interpretazione della stringa, tutte le istanze di queste chiamate al metodo devono essere esaminate per determinare se le stringhe devono essere interpretate in base alle impostazioni cultura correnti o devono essere dissociate dalle impostazioni cultura (simbolicamente).</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Typically, it is the latter, and a <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept> comparison should be used instead.</source>
+          <target state="translated">In genere, si tratta del secondo caso e deve pertanto essere usato un confronto <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Globalization.CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept> class, which is returned by the <bpt id="p2">[</bpt>CultureInfo.CompareInfo<ept id="p2">](xref:System.Globalization.CultureInfo.CompareInfo)</ept> property, also includes a <bpt id="p3">[</bpt>Compare<ept id="p3">](xref:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32,System.Globalization.CompareOptions))</ept> method that provides a large number of matching options (ordinal, ignoring white space, ignoring kana type, and so on) by means of the <bpt id="p4">[</bpt>CompareOptions<ept id="p4">](xref:System.Globalization.CompareOptions)</ept> flag enumeration.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>System.Globalization.CompareInfo<ept id="p1">](xref:System.Globalization.CompareInfo)</ept>, restituita dalla proprietà <bpt id="p2">[</bpt>CultureInfo.CompareInfo<ept id="p2">](xref:System.Globalization.CultureInfo.CompareInfo)</ept>, include anche un metodo <bpt id="p3">[</bpt>Compare<ept id="p3">](xref:System.Globalization.CompareInfo.Compare(System.String,System.Int32,System.String,System.Int32,System.Globalization.CompareOptions))</ept> che offre numerose opzioni di corrispondenza (ordinale, con esclusione degli spazi vuoti, con esclusione del tipo Kana e così via) mediante l'enumerazione flag <bpt id="p4">[</bpt>CompareOptions<ept id="p4">](xref:System.Globalization.CompareOptions)</ept>.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>String.CompareTo</source>
+          <target state="translated">String.CompareTo</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>This method does not currently offer an overload that specifies a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">Questo metodo attualmente non offre un overload che specifica un tipo <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>It is usually possible to convert this method to the recommended <bpt id="p1">[</bpt>String.Compare(String, String, StringComparison)<ept id="p1">](xref:System.String.Compare(System.String,System.String,System.StringComparison))</ept> form.</source>
+          <target state="translated">In genere è possibile convertire questo metodo nel tipo consigliato <bpt id="p1">[</bpt>String.Compare(String, String, StringComparison)<ept id="p1">](xref:System.String.Compare(System.String,System.String,System.StringComparison))</ept>.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Types that implement the <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> interfaces implement this method.</source>
+          <target state="translated">I tipi che implementano le interfacce <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> e <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> implementano questo metodo.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Because it does not offer the option of a <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> parameter, implementing types often let the user specify a <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> in their constructor.</source>
+          <target state="translated">Poiché non offre l'opzione di un parametro <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>, l'implementazione dei tipi spesso lascia specificare all'utente <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> nel proprio costruttore.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`FileName`</ph> class whose class constructor includes a <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> parameter.</source>
+          <target state="translated">L'esempio seguente definisce una classe <ph id="ph1">`FileName`</ph> il cui costruttore include un parametro <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept>.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is then used in the <ph id="ph1">`FileName.CompareTo`</ph> method.</source>
+          <target state="translated">L'oggetto <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> viene quindi usato nel metodo <ph id="ph1">`FileName.CompareTo`</ph>.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>String.Equals</source>
+          <target state="translated">String.Equals</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.Ordinal<ept id="p1">](xref:System.StringComparison.Ordinal)</ept>.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> class lets you test for equality by calling either the static or instance <ph id="ph1">`Equals`</ph> method overloads, or by using the static equality operator.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> consente di eseguire un test di uguaglianza chiamando gli overload del metodo <ph id="ph1">`Equals`</ph> dell'istanza o statici oppure usando l'operatore di uguaglianza statico.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The overloads and operator use ordinal comparison by default.</source>
+          <target state="translated">Gli overload e l'operatore usano il confronto ordinale per impostazione predefinita.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>However, we still recommend that you call an overload that explicitly specifies the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type even if you want to perform an ordinal comparison; this makes it easier to search code for a certain string interpretation.</source>
+          <target state="translated">Tuttavia, si consiglia di chiamare comunque un overload che specifichi esplicitamente il tipo <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> anche se si vuole eseguire un confronto ordinale; questo semplifica la ricerca di codice per una determinata interpretazione della stringa.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>String.ToUpper and String.ToLower</source>
+          <target state="translated">String.ToUpper e String.ToLower</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>You should be careful when you use these methods, because forcing a string to a uppercase or lowercase is often used as a small normalization for comparing strings regardless of case.</source>
+          <target state="translated">Prestare attenzione quando si usano questi metodi perché l'utilizzo forzato di maiuscole o minuscole in una stringa è una procedura usata spesso come normalizzazione minore per confrontare stringhe indipendentemente dalla distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>If so, consider using a case-insensitive comparison.</source>
+          <target state="translated">In questo caso, valutare l'uso di un confronto senza distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> and <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept> methods are also available.</source>
+          <target state="translated">Sono anche disponibili i metodi <bpt id="p1">[</bpt>String.ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> e <bpt id="p2">[</bpt>String.ToLowerInvariant<ept id="p2">](xref:System.String.ToLowerInvariant)</ept>.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> is the standard way to normalize case.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ToUpperInvariant<ept id="p1">](xref:System.String.ToUpperInvariant)</ept> è la modalità standard di normalizzazione dei caratteri maiuscoli e minuscoli.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Comparisons made using <bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> are behaviorally the composition of two calls: calling <bpt id="p2">[</bpt>ToUpperInvariant<ept id="p2">](xref:System.String.ToUpperInvariant)</ept> on both string arguments, and doing a comparison using <bpt id="p3">[</bpt>StringComparison.Ordinal<ept id="p3">](xref:System.StringComparison.Ordinal)</ept>.</source>
+          <target state="translated">A livello di comportamento, i confronti eseguiti usando <bpt id="p1">[</bpt>StringComparison.OrdinalIgnoreCase<ept id="p1">](xref:System.StringComparison.OrdinalIgnoreCase)</ept> corrispondono alla composizione di due chiamate: la chiamata a <bpt id="p2">[</bpt>ToUpperInvariant<ept id="p2">](xref:System.String.ToUpperInvariant)</ept> in entrambi gli argomenti di stringa e l'esecuzione di un confronto con <bpt id="p3">[</bpt>StringComparison.Ordinal<ept id="p3">](xref:System.StringComparison.Ordinal)</ept>.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Overloads are also available for converting to uppercase and lowercase in a specific culture, by passing a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that represents that culture to the method.</source>
+          <target state="translated">Sono disponibili anche overload per la conversione in maiuscole e minuscole in determinate impostazioni cultura, passando un oggetto <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> che rappresenta le specifiche impostazioni cultura al metodo.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Char.ToUpper and Char.ToLower</source>
+          <target state="translated">Char.ToUpper e Char.ToLower</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>These methods work similarly to the <bpt id="p1">[</bpt>String.ToUpper<ept id="p1">](xref:System.String.ToUpper)</ept> and <bpt id="p2">[</bpt>String.ToLower<ept id="p2">](xref:System.String.ToLower)</ept> methods described in the previous section.</source>
+          <target state="translated">Questi metodi funzionano in modo simile ai metodi <bpt id="p1">[</bpt>String.ToUpper<ept id="p1">](xref:System.String.ToUpper)</ept> e <bpt id="p2">[</bpt>String.ToLower<ept id="p2">](xref:System.String.ToLower)</ept> descritti nella sezione precedente.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>String.StartsWith and String.EndsWith</source>
+          <target state="translated">String.StartsWith e String.EndsWith</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>By default, both of these methods perform a culture-sensitive comparison.</source>
+          <target state="translated">Per impostazione predefinita, entrambi i metodi eseguono un confronto con distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>String.IndexOf and String.LastIndexOf</source>
+          <target state="translated">String.IndexOf e String.LastIndexOf</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>There is a lack of consistency in how the default overloads of these methods perform comparisons.</source>
+          <target state="translated">La modalità di esecuzione dei confronti con gli overload predefiniti di questi metodi manca di coerenza.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>All <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> and <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`LastIndexOf`</ph> methods that include a <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept> parameter perform an ordinal comparison, but the default <bpt id="p4">[</bpt>String<ept id="p4">](xref:System.String)</ept> <ph id="ph3">`IndexOf`</ph> and [String<ph id="ph4">`](xref:System.String) `</ph>LastIndexOf` methods that include a <bpt id="p5">[</bpt>String<ept id="p5">](xref:System.String)</ept> parameter perform a culture-sensitive comparison.</source>
+          <target state="translated">Tutti i metodi <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> <ph id="ph1">`IndexOf`</ph> e <bpt id="p2">[</bpt>String<ept id="p2">](xref:System.String)</ept> <ph id="ph2">`LastIndexOf`</ph> che includono un parametro <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept> eseguono un confronto ordinale, ma i metodi predefiniti <bpt id="p4">[</bpt>String<ept id="p4">](xref:System.String)</ept> <ph id="ph3">`IndexOf`</ph> e [String<ph id="ph4">`](xref:System.String) `</ph>LastIndexOf` che includono un parametro <bpt id="p5">[</bpt>String<ept id="p5">](xref:System.String)</ept> eseguono un confronto con distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>If you call <ph id="ph1">` `</ph>IndexOf<ph id="ph2">` or `</ph>LastIndexOf` method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">Se si chiama il metodo <ph id="ph1">` `</ph>IndexOf<ph id="ph2">` or `</ph>LastIndexOf` e si passa una stringa da individuare nell'istanza corrente, si consiglia di chiamare un overload che specifichi esplicitamente il tipo <bpt id="p1">[</bpt>StringComparison<ept id="p1">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The overloads that include a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> argument do not allow you to specify a <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept> type.</source>
+          <target state="translated">Gli overload che includono un argomento <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept> non consentono di specificare un tipo <bpt id="p2">[</bpt>StringComparison<ept id="p2">](xref:System.StringComparison)</ept>.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Methods that perform string comparison indirectly</source>
+          <target state="translated">Metodi che eseguono indirettamente il confronto tra stringhe</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Some non-string methods that have string comparison as a central operation use the <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> type.</source>
+          <target state="translated">Alcuni metodi non di tipo stringa in cui il confronto tra stringhe rappresenta l'operazione più importante usano il tipo <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept>.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> class includes four static properties that return <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> instances whose <ph id="ph1">`Compare`</ph> methods perform the following types of string comparisons:</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> include quattro proprietà statiche che restituiscono istanze <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> i cui metodi <ph id="ph1">`Compare`</ph> eseguono i tipi di confronto tra stringhe seguenti:</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Culture-sensitive string comparisons using the current culture.</source>
+          <target state="translated">Confronti tra stringhe con distinzione delle impostazioni cultura usando le impostazioni cultura correnti.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.CurrentCulture<ept id="p2">](xref:System.StringComparer.CurrentCulture)</ept> property.</source>
+          <target state="translated">Questo oggetto <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> è restituito dalla proprietà <bpt id="p2">[</bpt>StringComparer.CurrentCulture<ept id="p2">](xref:System.StringComparer.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Case-insensitive comparisons using the current culture.</source>
+          <target state="translated">Confronti senza distinzione tra maiuscole e minuscole usando le impostazioni cultura correnti.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparer.CurrentCultureIgnoreCase)</ept> property.</source>
+          <target state="translated">Questo oggetto <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> è restituito dalla proprietà <bpt id="p2">[</bpt>StringComparer.CurrentCultureIgnoreCase<ept id="p2">](xref:System.StringComparer.CurrentCultureIgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Ordinal comparison.</source>
+          <target state="translated">Confronto ordinale.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.Ordinal<ept id="p2">](xref:System.StringComparer.Ordinal)</ept> property.</source>
+          <target state="translated">Questo oggetto <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> è restituito dalla proprietà <bpt id="p2">[</bpt>StringComparer.Ordinal<ept id="p2">](xref:System.StringComparer.Ordinal)</ept>.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Case-insensitive ordinal comparison.</source>
+          <target state="translated">Confronto ordinale senza distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> object is returned by the <bpt id="p2">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> property.</source>
+          <target state="translated">Questo oggetto <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> è restituito dalla proprietà <bpt id="p2">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p2">](xref:System.StringComparer.OrdinalIgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Array.Sort and Array.BinarySearch</source>
+          <target state="translated">Array.Sort e Array.BinarySearch</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Default interpretation: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</source>
+          <target state="translated">Interpretazione predefinita: <bpt id="p1">[</bpt>StringComparison.CurrentCulture<ept id="p1">](xref:System.StringComparison.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>When you store any data in a collection, or read persisted data from a file or database into a collection, switching the current culture can invalidate the invariants in the collection.</source>
+          <target state="translated">Quando si archiviano dati in una raccolta o si leggono dati persistenti da un file o da un database nella raccolta, la modifica delle impostazioni cultura correnti può invalidare le invarianti nella raccolta.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Array.BinarySearch<ept id="p1">](xref:System.Array.BinarySearch(System.Array,System.Object))</ept> method assumes that the elements in the array to be searched are already sorted.</source>
+          <target state="translated">Il metodo <bpt id="p1">[</bpt>Array.BinarySearch<ept id="p1">](xref:System.Array.BinarySearch(System.Array,System.Object))</ept> presuppone che gli elementi nella matrice da cercare siano già ordinati.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>To sort any string element in the array, the <bpt id="p1">[</bpt>Array.Sort<ept id="p1">](xref:System.Array.Sort(System.Array))</ept> method calls the [String] <ph id="ph1">`Compare`</ph> method to order individual elements.</source>
+          <target state="translated">Per ordinare qualsiasi elemento di tipo stringa nella matrice, il metodo <bpt id="p1">[</bpt>Array.Sort<ept id="p1">](xref:System.Array.Sort(System.Array))</ept> chiama il metodo [String] <ph id="ph1">`Compare`</ph> per ordinare i singoli elementi.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Using a culture-sensitive comparer can be dangerous if the culture changes between the time that the array is sorted and its contents are searched.</source>
+          <target state="translated">L'uso di un operatore di confronto con distinzione delle impostazioni cultura può essere pericoloso se le impostazioni cultura vengono modificate tra l'ordinamento della matrice e la ricerca dei contenuti.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>For example, in the following code, storage and retrieval operate on the comparer that is provided implicitly by the <ph id="ph1">`Thread.CurrentThread.CurrentCulture`</ph> property.</source>
+          <target state="translated">Nel codice seguente, ad esempio, le operazioni di archiviazione e recupero vengono eseguite nell'operatore di confronto fornito in modo implicito dalla proprietà <ph id="ph1">`Thread.CurrentThread.CurrentCulture`</ph>.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>If the culture can change between the calls to <ph id="ph1">`StoreNames`</ph> and <ph id="ph2">`DoesNameExist`</ph>, and especially if the array contents are persisted somewhere between the two method calls, the binary search may fail.</source>
+          <target state="translated">Se le impostazioni cultura possono cambiare tra le chiamate a <ph id="ph1">`StoreNames`</ph> e <ph id="ph2">`DoesNameExist`</ph> e, in particolare, se il contenuto della matrice viene conservato tra le due chiamate al metodo, è possibile che la ricerca binaria non riesca.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>A recommended variation appears in the following example, which uses the same ordinal (culture-insensitive) comparison method both to sort and to search the array.</source>
+          <target state="translated">L'esempio seguente mostra una variazione consigliata che usa lo stesso metodo di confronto ordinale (senza distinzione delle impostazioni cultura) sia per l'ordinamento che per la ricerca nella matrice.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The change code is reflected in the lines labeled <ph id="ph1">`Line A`</ph> and <ph id="ph2">`Line B`</ph> in the two examples.</source>
+          <target state="translated">Il codice modificato si riflette nelle righe identificate con <ph id="ph1">`Line A`</ph> e <ph id="ph2">`Line B`</ph> nei due esempi.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>If this data is persisted and moved across cultures, and sorting is used to present this data to the user, you might consider using <ph id="ph1">`StringComparison.InvariantCulture`</ph>, which operates linguistically for better user output but is unaffected by changes in culture.</source>
+          <target state="translated">Se i dati vengono conservati e spostati nelle impostazioni cultura e l'ordinamento viene usato per presentare i dati all'utente, potrebbe esser opportuno usare <ph id="ph1">`StringComparison.InvariantCulture`</ph>, che garantisce un output utente migliore dal punto di vista linguistico ma non viene interessato dalle modifiche nelle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The following example modifies the two previous examples to use the invariant culture for sorting and searching the array.</source>
+          <target state="translated">L'esempio seguente modifica i due esempi precedenti per usare la lingua inglese per l'ordinamento e la ricerca della matrice.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Collections Example: Hashtable Constructor</source>
+          <target state="translated">Esempio di raccolte: costruttore Hashtable</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Hashing strings provides a second example of an operation that is affected by the way in which strings are compared.</source>
+          <target state="translated">L'esecuzione dell'hashing nelle stringhe fornisce un secondo esempio di operazione interessata dal modo in cui vengono confrontate le stringhe.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The following example instantiates a <bpt id="p1">[</bpt>Hashtable<ept id="p1">](xref:System.Collections.Hashtable)</ept> object by passing it the <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> object that is returned by the <bpt id="p3">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p3">](xref:System.StringComparer.OrdinalIgnoreCase)</ept> property.</source>
+          <target state="translated">L'esempio seguente crea un'istanza dell'oggetto <bpt id="p1">[</bpt>Hashtable<ept id="p1">](xref:System.Collections.Hashtable)</ept> passando l'oggetto <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> restituito dalla proprietà <bpt id="p3">[</bpt>StringComparer.OrdinalIgnoreCase<ept id="p3">](xref:System.StringComparer.OrdinalIgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Because a class <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> that is derived from <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> implements the <bpt id="p3">[</bpt>IEqualityComparer<ept id="p3">](xref:System.Collections.IEqualityComparer)</ept> interface, its <bpt id="p4">[</bpt>GetHashCode<ept id="p4">](xref:System.Collections.IEqualityComparer)</ept> method is used to compute the hash code of strings in the hash table.</source>
+          <target state="translated">Poiché una classe <bpt id="p1">[</bpt>StringComparer<ept id="p1">](xref:System.StringComparer)</ept> derivata da <bpt id="p2">[</bpt>StringComparer<ept id="p2">](xref:System.StringComparer)</ept> implementa l'interfaccia <bpt id="p3">[</bpt>IEqualityComparer<ept id="p3">](xref:System.Collections.IEqualityComparer)</ept>, il metodo <bpt id="p4">[</bpt>GetHashCode<ept id="p4">](xref:System.Collections.IEqualityComparer)</ept> viene usato per calcolare il codice hash delle stringhe nella tabella hash.</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Displaying and persisting formatted data</source>
+          <target state="translated">Visualizzazione e conservazione dei dati formattati</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings.</source>
+          <target state="translated">Quando si consente agli utenti di visualizzare dati non di tipo stringa, come numeri e date e ore, formattarli usando le impostazioni cultura dell'utente.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>By default, the <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> method and the <ph id="ph1">`ToString`</ph> methods of the numeric types and the date and time types use the current thread culture for formatting operations.</source>
+          <target state="translated">Per impostazione predefinita, il metodo <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> e i metodi <ph id="ph1">`ToString`</ph> dei tipi numerici e dei tipi data e ora usano le impostazioni cultura del thread corrente per le operazioni di formattazione.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a provider parameter, such as <bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> or <bpt id="p2">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.IFormatProvider))</ept>, and pass it the <bpt id="p3">[</bpt>CultureInfo.CurrentCulture<ept id="p3">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> property.</source>
+          <target state="translated">Per specificare esplicitamente che il metodo di formattazione deve usare le impostazioni cultura correnti, è possibile chiamare un overload di un metodo di formattazione con un parametro provider, ad esempio <bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> o <bpt id="p2">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> e passare la proprietà <bpt id="p3">[</bpt>CultureInfo.CurrentCulture<ept id="p3">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>You can persist non-string data either as binary data or as formatted data.</source>
+          <target state="translated">È possibile conservare i dati non di tipo stringa come dati binari o formattati.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>If you choose to save it as formatted data, you should call a formatting method overload that includes a <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> parameter and pass it the <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> property.</source>
+          <target state="translated">Se si sceglie di salvarli come dati formattati, è necessario chiamare un overload del metodo di formattazione che include un parametro <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> e passare la proprietà <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept>.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The invariant culture provides a consistent format for formatted data that is independent of culture and machine.</source>
+          <target state="translated">La lingua inglese fornisce un formato coerente per i dati formattati, indipendente dalle impostazioni cultura e dal computer.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:</source>
+          <target state="translated">Al contrario, conservare i dati formattati con impostazioni cultura diverse dalla lingua inglese presenta diverse limitazioni:</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The data is likely to be unusable if it is retrieved on a system that has a different culture, or if the user of the current system changes the current culture and tries to retrieve the data.</source>
+          <target state="translated">È probabile che i dati non saranno utilizzabili se vengono recuperati in un sistema con impostazioni cultura diverse oppure se l'utente del sistema corrente modifica le impostazioni cultura correnti e prova a recuperare i dati.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The properties of a culture on a specific computer can differ from standard values.</source>
+          <target state="translated">Le proprietà delle impostazioni cultura in uno specifico computer possono essere diverse rispetto ai valori standard.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>At any time, a user can customize culture-sensitive display settings.</source>
+          <target state="translated">Un utente può personalizzare in qualsiasi momento le impostazioni di visualizzazione con distinzione delle impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Because of this, formatted data that is saved on a system may not be readable after the user customizes cultural settings.</source>
+          <target state="translated">Per questo motivo, i dati formattati salvati in un sistema potrebbero non essere leggibili dopo che un utente personalizza le impostazioni cultura.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The portability of formatted data across computers is likely to be even more limited.</source>
+          <target state="translated">La portabilità dei dati formattati tra i vari computer potrebbe risultare ancora più limitata.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>International, regional, or national standards that govern the formatting of numbers or dates and times change over time, and these changes are incorporated into operating system updates.</source>
+          <target state="translated">Gli standard internazionali, regionali o nazionali che regolano la formattazione dei numeri o delle date e delle ore cambiano nel tempo e queste modifiche vengono incorporate negli aggiornamenti del sistema operativo.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>When formatting conventions change, data that was formatted by using the previous conventions may become unreadable.</source>
+          <target state="translated">Quando le convenzioni di formattazione vengono modificate, i dati formattati con le convenzioni precedenti possono diventare illeggibili.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the limited portability that results from using culture-sensitive formatting to persist data.</source>
+          <target state="translated">L'esempio seguente illustra la limitazione della portabilità causata dall'uso della formattazione con distinzione delle impostazioni cultura per la persistenza dei dati.</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The example saves an array of date and time values to a file.</source>
+          <target state="translated">L'esempio salva una matrice di valori di data e ora in un file.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>These are formatted by using the conventions of the English (United States) culture.</source>
+          <target state="translated">Questi vengono formattati usando le convenzioni delle impostazioni cultura per la lingua inglese (Stati Uniti) .</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>After the application changes the current thread culture to French (Switzerland), it tries to read the saved values by using the formatting conventions of the current culture.</source>
+          <target state="translated">Quando l'applicazione modifica le impostazioni cultura del thread corrente in francese (Svizzera), tenta di leggere i valori salvati usando le convenzioni di formattazione delle impostazioni cultura correnti.</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The attempt to read two of the data items throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> exception, and the array of dates now contains two incorrect elements that are equal to <bpt id="p2">[</bpt>MinValue<ept id="p2">](xref:System.DateTime.MinValue)</ept>.</source>
+          <target state="translated">Il tentativo di lettura di due elementi di dati genera un'eccezione <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>, quindi la matrice di date conterrà due elementi non corretti uguali a <bpt id="p2">[</bpt>MinValue<ept id="p2">](xref:System.DateTime.MinValue)</ept>.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>However, if you replace the <bpt id="p1">[</bpt>CultureInfo.CurrentCulture<ept id="p1">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> property with <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> in the calls to <bpt id="p3">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p3">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> and <bpt id="p4">[</bpt>DateTime.Parse(String, IFormatProvider)<ept id="p4">](xref:System.DateTime.Parse(System.String,System.IFormatProvider))</ept>, the persisted date and time data is successfully restored, as the following output shows.</source>
+          <target state="translated">Tuttavia, se si sostituisce la proprietà <bpt id="p1">[</bpt>CultureInfo.CurrentCulture<ept id="p1">](xref:System.Globalization.CultureInfo.CurrentCulture)</ept> con <bpt id="p2">[</bpt>CultureInfo.InvariantCulture<ept id="p2">](xref:System.Globalization.CultureInfo.InvariantCulture)</ept> nelle chiamate a <bpt id="p3">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p3">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> e <bpt id="p4">[</bpt>DateTime.Parse(String, IFormatProvider)<ept id="p4">](xref:System.DateTime.Parse(System.String,System.IFormatProvider))</ept>, i dati di data e ora persistenti vengono ripristinati come illustrato nell'output seguente.</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Manipulating strings<ept id="p1">](manipulating-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Modifica di stringhe<ept id="p1">](manipulating-strings.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

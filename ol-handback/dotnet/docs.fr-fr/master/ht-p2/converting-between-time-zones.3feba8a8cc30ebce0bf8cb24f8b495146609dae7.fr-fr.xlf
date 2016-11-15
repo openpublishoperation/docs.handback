@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">051a4891336470e79bda9d7b9bb1be4e2c9187b8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\converting-between-time-zones.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2011e2c06a6d5b968ea9c02c1fd25b901d4f6f78</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">73df6fe9ba2d0e7b8a5c6e3c3b4b7cfd835a0739</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">Conversion d’heures entre fuseaux horaires</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">Conversion d’heures entre fuseaux horaires</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">Conversion d’heures entre fuseaux horaires</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>It is becoming increasingly important for any application that works with dates and times to handle differences between time zones.</source>
+          <target state="translated">Il devient de plus en plus important pour une application qui fonctionne avec des dates et des heures de gérer les différences entre les fuseaux horaires.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An application can no longer assume that all times can be expressed in the local time, which is the time available from the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> structure.</source>
+          <target state="translated">Une application ne peut plus supposer que toutes les heures puissent être exprimées selon l’heure locale, qui est l’heure disponible à partir de la structure <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, a Web page that displays the current time in the eastern part of the United States will lack credibility to a customer in eastern Asia.</source>
+          <target state="translated">Par exemple, une page web qui affiche l’heure actuelle dans la partie Est des États-Unis ne sera pas crédible pour un client d’Asie orientale.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic explains how to convert times from one time zone to another, as well as how to convert <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values that have limited time zone awareness.</source>
+          <target state="translated">Cette rubrique explique comment convertir des heures d’un fuseau horaire vers un autre, et comment convertir des valeurs <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> qui ne prennent pas complètement en charge les fuseaux horaires.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Converting to Coordinated Universal Time</source>
+          <target state="translated">Conversion en heure UTC</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Coordinated Universal Time (UTC) is a high-precision, atomic time standard.</source>
+          <target state="translated">Le temps universel coordonné (UTC) est une norme d’heure atomique de haute précision.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The world’s time zones are expressed as positive or negative offsets from UTC.</source>
+          <target state="translated">Les fuseaux horaires du monde sont exprimés comme décalages positifs ou négatifs par rapport à l’heure UTC.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Thus, UTC provides a kind of time-zone free or time-zone neutral time.</source>
+          <target state="translated">Par conséquent, l’heure UTC fournit une sorte d’heure neutre du point de vue des fuseaux horaires.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The use of UTC time is recommended when a date and time's portability across computers is important.</source>
+          <target state="translated">L’utilisation de l’heure UTC est recommandée lorsque la portabilité de la date et de l’heure entre les ordinateurs est importante.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Converting individual time zones to UTC makes time comparisons easy.</source>
+          <target state="translated">La conversion de fuseaux horaires individuels en heure UTC facilite les comparaisons d’heures.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can also serialize a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure to unambiguously represent a single point in time.</source>
+          <target state="translated">Vous pouvez également sérialiser une structure <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> pour représenter de façon non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Because <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> objects store a date and time value along with its offset from UTC, they always represent a particular point in time in relationship to UTC.</source>
+          <target state="translated">Étant donné que les objets <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> stockent une valeur de date et d’heure, ainsi que son décalage par rapport à l’heure UTC, ils représentent toujours un point particulier dans le temps, associé à l’heure UTC.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The easiest way to convert a time to UTC is to call the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic) <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method.</source>
+          <target state="translated">Pour convertir une heure en heure UTC, le plus simple consiste à appeler la méthode <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> en Visual Basic) <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TimeZoneInfo.ConvertTimeToUtc(DateTime)`</ph> method isn't currently available in .NET Core.</source>
+          <target state="translated">La méthode <ph id="ph1">`TimeZoneInfo.ConvertTimeToUtc(DateTime)`</ph> n’est pas disponible dans .NET Core.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The exact conversion performed by the method depends on the value of the <ph id="ph1">`DateTime`</ph> parameter's <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property, as the following table shows.</source>
+          <target state="translated">La conversion exacte effectuée par cette méthode dépend de la valeur de la propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> du paramètre <ph id="ph1">`DateTime`</ph>, comme illustré dans le tableau ci-dessous.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> property</source>
+          <target state="translated">Propriété <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="translated">Conversion</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Converts local time to UTC.</source>
+          <target state="translated">Convertit l’heure locale en heure UTC.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Assumes the <ph id="ph1">`DateTime`</ph> parameter is local time and converts local time to UTC.</source>
+          <target state="translated">Suppose que le paramètre <ph id="ph1">`DateTime`</ph> est l’heure locale et convertit l’heure locale en heure UTC.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Returns the <ph id="ph1">`DateTime`</ph> parameter unchanged.</source>
+          <target state="translated">Retourne le paramètre <ph id="ph1">`DateTime`</ph> inchangé.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The following code converts the current local time to UTC and displays the result to the console.</source>
+          <target state="translated">Le code suivant convertit l’heure locale actuelle en heure UTC et affiche le résultat dans la console.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method does not necessarily produce results that are identical to the <bpt id="p2">[</bpt>TimeZone.ToUniversalTime<ept id="p2">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> and <bpt id="p3">[</bpt>DateTime.ToUniversalTime<ept id="p3">](xref:System.DateTime.ToUniversalTime)</ept> methods.</source>
+          <target state="translated">La méthode <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> ne produit pas nécessairement les mêmes résultats que les méthodes <bpt id="p2">[</bpt>TimeZone.ToUniversalTime<ept id="p2">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> et <bpt id="p3">[</bpt>DateTime.ToUniversalTime<ept id="p3">](xref:System.DateTime.ToUniversalTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the host system's local time zone includes multiple adjustment rules, <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ConvertTimeToUtc(v=vs.110).aspx)</ept> applies the appropriate rule to a particular date and time.</source>
+          <target state="translated">Si le fuseau horaire local du système hôte inclut plusieurs règles d’ajustement, <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ConvertTimeToUtc(v=vs.110).aspx)</ept> applique la règle appropriée à une date et une heure particulières.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The other two methods always apply the latest adjustment rule.</source>
+          <target state="translated">Les deux autres méthodes appliquent toujours la dernière règle d’ajustement.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the date and time value does not represent either the local time or UTC, the <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> method will likely return an erroneous result.</source>
+          <target state="translated">Si la valeur de date et d’heure ne représente pas l’heure locale ni l’heure UTC, la méthode <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> retournera probablement un résultat erroné.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>However, you can use the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method to convert the date and time from a specified time zone.</source>
+          <target state="translated">Toutefois, vous pouvez utiliser la méthode <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> pour convertir la date et l’heure d’un fuseau horaire spécifié.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>(For details on retrieving a TimeZoneInfo object that represents the destination time zone, see <bpt id="p1">[</bpt>Finding the time zones defined on a local system<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept>.</source>
+          <target state="translated">(Pour plus d’informations sur la récupération d’un objet TimeZoneInfo qui représente le fuseau horaire de destination, consultez <bpt id="p1">[</bpt>Recherche des fuseaux horaires définis sur un système Local<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following code uses the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method to convert Eastern Standard Time to UTC.</source>
+          <target state="translated">Le code suivant utilise la méthode <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> pour convertir l’heure du fuseau horaire Est en heure UTC.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Note that this method throws an <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> if the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> object's <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTimeKind)</ept> property and the time zone are mismatched.</source>
+          <target state="translated">Notez que cette méthode lève une exception <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> si la propriété <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTimeKind)</ept> de l’objet <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> et le fuseau horaire ne correspondent pas.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A mismatch occurs if the Kind property is <bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept> but the <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object does not represent the local time zone, or if the Kind property is <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> but the <bpt id="p4">[</bpt>TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> object does not equal <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">Une incompatibilité se produit si la propriété Kind a la valeur <bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept> mais que l’objet <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> ne représente pas le fuseau horaire local, ou si la propriété Kind a la valeur <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> mais que l’objet <bpt id="p4">[</bpt>TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> n’est pas égal à <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>All of these methods take <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values as parameters and return a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value.</source>
+          <target state="translated">Toutes ces méthodes prennent des valeurs <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> comme paramètres et retournent une valeur <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> structure has a <bpt id="p3">[</bpt>ToUniversalTime<ept id="p3">](xref:System.DateTimeOffset.ToUniversalTime)</ept> instance method that converts the date and time of the current instance to UTC.</source>
+          <target state="translated">Pour les valeurs <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>, la structure <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> a une méthode d’instance <bpt id="p3">[</bpt>ToUniversalTime<ept id="p3">](xref:System.DateTimeOffset.ToUniversalTime)</ept> qui convertit la date et l’heure de l’instance actuelle en heure UTC.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following example calls the <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](xref:System.DateTimeOffset.ToUniversalTime)</ept> method to convert a local time and several other times to Coordinated Universal Time (UTC).</source>
+          <target state="translated">L’exemple suivant appelle la méthode <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](xref:System.DateTimeOffset.ToUniversalTime)</ept> pour convertir une heure locale et plusieurs autres heures en temps universel coordonné (UTC).</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Converting UTC to a designated time zone</source>
+          <target state="translated">Conversion de l’heure UTC dans un fuseau horaire désigné</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>To convert UTC to local time, see the <bpt id="p1">[</bpt>Converting UTC to local time<ept id="p1">](#converting-utc-to-local-time)</ept> section that follows.</source>
+          <target state="translated">Pour convertir l’heure UTC en heure locale, consultez la section <bpt id="p1">[</bpt>Conversion de l’heure UTC en heure locale<ept id="p1">](#converting-utc-to-local-time)</ept> qui suit.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To convert UTC to the time in any time zone that you designate, call the <bpt id="p1">[</bpt>ConvertTimeFromUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZoneInfo.converttimefromutc(v=vs.110).aspx)</ept> method.</source>
+          <target state="translated">Pour convertir l’heure UTC en heure propre à un fuseau horaire que vous désignez, appelez la méthode <bpt id="p1">[</bpt>ConvertTimeFromUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZoneInfo.converttimefromutc(v=vs.110).aspx)</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The `TimeZoneInfo.ConvertTimeFromUtc' method isn't currently available in .NET Core.</source>
+          <target state="translated">La méthode « TimeZoneInfo.ConvertTimeFromUtc » n’est pas disponible actuellement dans .NET Core.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The method takes two parameters:</source>
+          <target state="translated">Cette méthode accepte deux paramètres :</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The UTC to convert.</source>
+          <target state="translated">L’heure UTC à convertir.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This must be a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value whose <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property is set to <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> or <bpt id="p4">[</bpt>DateTimeKind.Unspecified<ept id="p4">](xref:System.DateTimeKind.Unspecified)</ept>.</source>
+          <target state="translated">Ce doit être une valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> dont la propriété <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> a pour valeur <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> ou <bpt id="p4">[</bpt>DateTimeKind.Unspecified<ept id="p4">](xref:System.DateTimeKind.Unspecified)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The time zone to convert the UTC to.</source>
+          <target state="translated">Le fuseau horaire vers lequel convertir l’heure UTC.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following code converts UTC to Central Standard Time.</source>
+          <target state="translated">Le code suivant convertit l’heure UTC en heure propre au fuseau horaire Centre.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Converting UTC to local time</source>
+          <target state="translated">Conversion de l’heure UTC en heure locale</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>To convert UTC to local time, call the <bpt id="p1">[</bpt>DateTime.ToLocalTime<ept id="p1">](xref:System.DateTime)</ept> method of the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> object whose time you want to convert.</source>
+          <target state="translated">Pour convertir une heure UTC en heure locale, appelez la méthode <bpt id="p1">[</bpt>DateTime.ToLocalTime<ept id="p1">](xref:System.DateTime)</ept> de l’objet <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> dont vous souhaitez convertir l’heure.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The exact behavior of the method depends on the value of the object’s <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property, as the following table shows.</source>
+          <target state="translated">Le comportement exact de cette méthode dépend de la valeur de la propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> de l’objet, comme illustré dans le tableau ci-dessous.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> property</source>
+          <target state="translated">Propriété <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="translated">Conversion</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Returns the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value unchanged.</source>
+          <target state="translated">Retourne la valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> inchangée.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Assumes that the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value is UTC and converts the UTC to local time.</source>
+          <target state="translated">Suppose que la valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> est une heure UTC et convertit l’heure UTC en heure locale.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Converts the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value to local time.</source>
+          <target state="translated">Convertit la valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> en heure locale.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Converting between any two time zones</source>
+          <target state="translated">Conversion entre deux fuseaux horaires quelconques</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You can convert between any two time zones by using the static <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Vous pouvez convertir une heure entre deux fuseaux horaires quelconques à l’aide de la méthode static <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This method's parameters are the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value to convert, a <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object that represents the time zone of the date and time value, and a <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> object that represents the time zone to convert the date and time value to.</source>
+          <target state="translated">Les paramètres de cette méthode sont la valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> à convertir, un objet <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> qui représente le fuseau horaire de la valeur de date et d’heure, et un objet <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> qui représente le fuseau horaire vers lequel convertir la valeur de date et d’heure.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The method requires that the <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property of the date and time value to convert and the <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object or time zone identifier that represents its time zone correspond to one another.</source>
+          <target state="translated">La méthode exige que la propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> de la valeur de date et d’heure à convertir et l’objet <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> ou l’identificateur de fuseau horaire qui représente son fuseau horaire correspondent l’une à l’autre.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Otherwise, an <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> is thrown.</source>
+          <target state="translated">Sinon, une exception <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> est levée.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>For example, if the <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property of the date and time value is <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>, an exception is thrown if the <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> object passed as a parameter to the method is not equal to <bpt id="p4">[</bpt>TimeZoneInfo.Local<ept id="p4">](xref:System.TimeZoneInfo.Local)</ept>.</source>
+          <target state="translated">Par exemple, si la propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> de la valeur de date et d’heure est <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>, une exception est levée si l’objet <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> transmis comme paramètre à la méthode n’est pas égal à <bpt id="p4">[</bpt>TimeZoneInfo.Local<ept id="p4">](xref:System.TimeZoneInfo.Local)</ept>.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>An exception is also thrown if the identifier passed as a parameter to the method is not equal to <bpt id="p1">[</bpt>TimeZoneInfo.Id<ept id="p1">](xref:System.TimeZoneInfo.Id)</ept>.</source>
+          <target state="translated">Une exception est également levée si l’identificateur transmis comme paramètre à la méthode n’est pas égal à <bpt id="p1">[</bpt>TimeZoneInfo.Id<ept id="p1">](xref:System.TimeZoneInfo.Id)</ept>.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method to convert from Hawaiian Standard Time to local time.</source>
+          <target state="translated">L’exemple suivant utilise la méthode <bpt id="p1">[</bpt>ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> pour convertir l’heure d’Hawaï en heure locale.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Converting DateTimeOffset values</source>
+          <target state="translated">Conversion de valeurs DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Date and time values represented by <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> objects are not fully time-zone aware because the object is disassociated from its time zone at the time it is instantiated.</source>
+          <target state="translated">Les valeurs de date et d’heure représentées par des objets <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> ne prennent pas complètement en charge les fuseaux horaires, car l’objet est dissocié de son fuseau horaire au moment où il est instancié.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>However, in many cases an application simply needs to convert a date and time based on two different offsets from UTC rather than on the time in particular time zones.</source>
+          <target state="translated">Toutefois, dans de nombreux cas, une application doit simplement convertir une date et une heure en fonction de deux décalages différents par rapport à l’heure UTC plutôt qu’en fonction de l’heure dans des fuseaux horaires particuliers.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>To perform this conversion, you can call the current instance's <bpt id="p1">[</bpt>ToOffset<ept id="p1">](xref:System.DateTimeOffset.ToOffset(System.TimeSpan))</ept> method.</source>
+          <target state="translated">Pour effectuer cette conversion, vous pouvez appeler la méthode <bpt id="p1">[</bpt>ToOffset<ept id="p1">](xref:System.DateTimeOffset.ToOffset(System.TimeSpan))</ept> de l’instance actuelle.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The method's single parameter is <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> representing the offset of the new date and time value that the method is to return.</source>
+          <target state="translated">Le seul paramètre de la méthode est <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept>, qui représente le décalage de la nouvelle valeur de date et d’heure que la méthode doit retourner.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, if the date and time of a user request for a Web page is known and is serialized as a string in the format MM/dd/yyyy hh:mm:ss zzzz, the following <ph id="ph1">`ReturnTimeOnServer`</ph> method converts this date and time value to the date and time on the Web server.</source>
+          <target state="translated">Par exemple, si la date et l’heure d’une demande de page web de l’utilisateur sont connues et sont sérialisées comme chaîne au format MM/jj/aaaa hh:mm:ss zzzz, la méthode <ph id="ph1">`ReturnTimeOnServer`</ph> qui suit convertit cette valeur de date et d’heure en date et heure sur le serveur web.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If the method is passed the string "9/1/2007 5:32:07 -05:00", which represents the date and time in a time zone five hours earlier than UTC, it returns 9/1/2007 3:32:07 AM -07:00 for a server located in the U.S. Pacific Standard Time zone.</source>
+          <target state="translated">Si la chaîne « 1/9/2007 5:32:07 -05:00 » est transmise à la méthode, représentant la date et l’heure dans un fuseau horaire en retard de cinq heures par rapport à l’heure UTC, elle retourne 1/9/2007 3:32:07 AM -07:00 pour un serveur situé dans le fuseau horaire Pacifique.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class also includes an overloaded <bpt id="p2">[</bpt>TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p2">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> method that performs time zone conversions with <bpt id="p3">[</bpt>System.DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> values.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> inclut également une méthode surchargée <bpt id="p2">[</bpt>TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p2">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> qui effectue des conversions de fuseau horaire avec des valeurs <bpt id="p3">[</bpt>System.DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The method's parameters are a <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value and a reference to the time zone to which the time is to be converted.</source>
+          <target state="translated">Les paramètres de la méthode sont une valeur <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> et une référence au fuseau horaire vers lequel l’heure doit être convertie.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The method call returns a <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">L’appel de la méthode retourne une valeur <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`ReturnTimeOnServer`</ph> method in the previous example could be rewritten as follows to call the <bpt id="p1">[</bpt>ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">Par exemple, la méthode <ph id="ph1">`ReturnTimeOnServer`</ph> de l’exemple précédent peut être réécrite comme suit pour appeler la méthode <bpt id="p1">[</bpt>ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Voir aussi</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Dates, heures et fuseaux horaires<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Finding the time zones defined on a local system<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Recherche des fuseaux horaires définis sur un système local<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

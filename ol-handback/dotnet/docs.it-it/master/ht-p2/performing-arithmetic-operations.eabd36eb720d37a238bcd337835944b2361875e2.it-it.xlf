@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">64fbb3b25d5959ac1dd781d2076775560d926e1a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\performing-arithmetic-operations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d80d7928d05ecea67c5630986d9c128198c5aaa</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00b504a857a28024aa6e947f2df4b97e5e728a4b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Performing arithmetic operations with dates and times</source>
+          <target state="translated">Esecuzione di operazioni aritmetiche con date e ore</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Performing arithmetic operations with dates and times</source>
+          <target state="translated">Esecuzione di operazioni aritmetiche con date e ore</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Performing arithmetic operations with dates and times</source>
+          <target state="translated">Esecuzione di operazioni aritmetiche con date e ore</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Although both the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> and the <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> structures provide members that perform arithmetic operations on their values, the results of arithmetic operations are very different.</source>
+          <target state="translated">Sebbene le strutture <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> e <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> contengano entrambe membri che eseguono operazioni aritmetiche sui propri valori, i risultati delle operazioni aritmetiche sono molto diversi.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article examines those differences, relates them to degrees of time zone awareness in date and time data, and discusses how to perform fully time zone aware operations using date and time data.</source>
+          <target state="translated">In questo articolo vengono esaminate tali differenze, in relazione alla presenza del fuso orario nei dati di data e ora, e viene descritto come eseguire operazioni completamente compatibili con il fuso orario usando i dati di data e ora.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Comparisons and Arithmetic Operations with DateTime Values</source>
+          <target state="translated">Confronti e operazioni aritmetiche con i valori DateTime</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> values possess a limited degree of time zone awareness.</source>
+          <target state="translated">I valori <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> sono caratterizzati da un livello limitato di riferimenti al fuso orario.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property allows a <bpt id="p2">[</bpt>System.DateTimeKind<ept id="p2">](xref:System.DateTimeKind)</ept> value to be assigned to the date and time to indicate whether it represents local time, Coordinated Universal Time (UTC), or the time in an unspecified time zone.</source>
+          <target state="translated">La proprietà <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> consente di assegnare un valore <bpt id="p2">[</bpt>System.DateTimeKind<ept id="p2">](xref:System.DateTimeKind)</ept> a data e ora per indicare se rappresenta l'ora locale, l'ora UTC (Coordinated Universal Time) o l'ora in un fuso orario non specificato.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, this limited time zone information is ignored when comparing or performing date and time arithmetic on <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Queste informazioni limitate sul fuso orario vengono tuttavia ignorate durante il confronto o l'esecuzione di operazioni aritmetiche con data e ora per i valori <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following example, which compares the current local time with the current UTC time, illustrates this.</source>
+          <target state="translated">Questa condizione è illustrata nell'esempio seguente, in cui si confronta l'ora locale corrente con l'ora UTC corrente.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime.CompareTo(DateTime, DateTime)<ept id="p1">](xref:System.DateTime.Compare(System.DateTime,System.DateTime))</ept> method reports that the local time is earlier than (or less than) the UTC time, and the subtraction operation indicates that the difference between UTC and the local time for a system in the U.S. Pacific Standard Time zone is seven hours.</source>
+          <target state="translated">Il metodo <bpt id="p1">[</bpt>DateTime.CompareTo(DateTime, DateTime)<ept id="p1">](xref:System.DateTime.Compare(System.DateTime,System.DateTime))</ept> indica che l'ora locale è più indietro rispetto all'ora UTC e l'operazione di sottrazione indica che la differenza tra l'ora UTC e l'ora locale per un sistema nel fuso orario standard del Pacifico (Stati Uniti) è sette ore.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>But because these two values provide different representations of a single point in time, it is clear in this case that this time interval is completely attributable to the local time zone's offset from UTC.</source>
+          <target state="translated">Ma poiché questi due valori indicano rappresentazioni diverse di un singolo momento, è chiaro in questo caso che l'intervallo di tempo è completamente attribuibile all'offset del fuso orario locale rispetto all'ora UTC.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>More generally, the <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> property does not affect the results returned by <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> comparison and arithmetic methods (as the comparison of two identical points in time indicates), although it can affect the interpretation of those results.</source>
+          <target state="translated">Più in generale, la proprietà <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> non influisce sui risultati restituiti dai metodi di confronto e aritmetici <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> (come indica il confronto tra due identici momenti), anche se può influire sull'interpretazione dei risultati.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Ad esempio:</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The result of any arithmetic operation performed on two date and time values whose <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> properties both equal <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept> reflects the actual time interval between the two values.</source>
+          <target state="translated">Il risultato di qualsiasi operazione aritmetica eseguita su due valori di data e ora le cui proprietà <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> sono entrambe uguali a <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept> riflette l'intervallo di tempo effettivo tra i due valori.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Similarly, the comparison of two such date and time values accurately reflects the relationship between times.</source>
+          <target state="translated">Analogamente, il confronto di due valori di data e ora di questo tipo riflette esattamente la relazione tra le ore.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The result of any arithmetic or comparison operation performed on two date and time values whose <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> properties both equal <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept> or on two date and time values with different <bpt id="p3">[</bpt>DateTimeKind<ept id="p3">](xref:System.DateTimeKind)</ept> property values reflects the difference in clock time between the two values.</source>
+          <target state="translated">Il risultato di qualsiasi operazione aritmetica o di confronto eseguita su due valori di data e ora le cui proprietà <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> sono entrambe uguali a <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept> su due valori di data e ora con valori della proprietà <bpt id="p3">[</bpt>DateTimeKind<ept id="p3">](xref:System.DateTimeKind)</ept> diversi riflette la differenza di ora tra i due valori.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Arithmetic or comparison operations on local date and time values do not consider whether a particular value is ambiguous or invalid, nor do they take account of the effect of any adjustment rules that result from the local time zone's transition to or from daylight saving time.</source>
+          <target state="translated">Le operazioni aritmetiche o di confronto sui valori locali di data e ora non considerano se un particolare valore è ambiguo o non valido e non tengono conto dell'effetto di eventuali regole di regolazione risultanti dalla transizione del fuso orario locale a o dall'ora legale.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Any operation that compares or calculates the difference between UTC and a local time includes a time interval equal to the local time zone's offset from UTC in the result.</source>
+          <target state="translated">Qualsiasi operazione che confronta o calcola la differenza tra ora UTC e ora locale include un intervallo di tempo uguale all'offset del fuso orario locale rispetto all'ora UTC nel risultato.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Any operation that compares or calculates the difference between an unspecified time and either UTC or the local time reflects simple clock time.</source>
+          <target state="translated">Qualsiasi operazione che confronta o calcola la differenza tra un'ora non specificata e l'ora UTC o l'ora locale riflette l'ora dell'orologio.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Time zone differences are not considered, and the result does not reflect the application of time zone adjustment rules.</source>
+          <target state="translated">Le differenze di fuso orario non vengono considerate e il risultato non riflette l'applicazione delle regole di regolazione del fuso orario.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.</source>
+          <target state="translated">Qualsiasi operazione che confronta o calcola la differenza tra due ore non specificate può includere un intervallo sconosciuto che riflette la differenza di orario in due fusi orari diversi.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>There are many scenarios in which time zone differences do not affect date and time calculations or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.</source>
+          <target state="translated">Esistono molti scenari in cui le differenze di fuso orario non influiscono sui calcoli di data e ora o in cui il contesto dei dati di data e ora definisce il significato delle operazioni aritmetiche o di confronto.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For a discussion of some of these, see <bpt id="p1">[</bpt>Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo<ept id="p1">](choosing-between-datetime.md)</ept>.</source>
+          <target state="translated">Per una discussione su alcuni di questi elementi, vedere <bpt id="p1">[</bpt>Scelta tra DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo<ept id="p1">](choosing-between-datetime.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Comparisons and Arithmetic Operations with DateTimeOffset Values</source>
+          <target state="translated">Confronti e operazioni aritmetiche con i valori DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value includes not only a date and time, but also an offset that unambiguously defines that date and time relative to UTC.</source>
+          <target state="translated">Un valore <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> include non solo una data e un'ora, ma anche un offset che definisce in modo univoco tale data e ora rispetto all'ora UTC.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This makes it possible to define equality somewhat differently than for <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">In questo modo è possibile definire l'uguaglianza in modo diverso rispetto ai valori <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Whereas <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values are equal if they have the same date and time value, <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values are equal if they both refer to the same point in time.</source>
+          <target state="translated">Mentre i valori <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> sono uguali se hanno lo stesso valore di data e ora, i valori <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> sono uguali se si riferiscono entrambi allo stesso momento.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This makes a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value more accurate and less in need of interpretation when used in comparisons and in most arithmetic operations that determine the interval between two dates and times.</source>
+          <target state="translated">Un valore <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> è quindi più preciso e meno soggetto a interpretazione quando viene usato nei confronti e nella maggior parte delle operazioni aritmetiche che determinano l'intervallo tra due date e ore.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The following example, which is the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> equivalent to the previous example that compared local and UTC DateTime values, illustrates this difference in behavior.</source>
+          <target state="translated">L'esempio seguente, identico a quello precedente in cui si confrontano i valori DateTime locali e UTC ma con <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>, illustra questa differenza di comportamento.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In this example, the <bpt id="p1">[</bpt>DateTimeOffset.CompareTo<ept id="p1">](xref:System.DateTimeOffset.CompareTo(System.DateTimeOffset))</ept> method indicates that the current local time and the current UTC time are equal, and subtraction of <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values indicates that the difference between the two times is <bpt id="p3">[</bpt>TimeSpan.Zero<ept id="p3">](xref:System.TimeSpan.Zero)</ept>.</source>
+          <target state="translated">In questo esempio il metodo <bpt id="p1">[</bpt>DateTimeOffset.CompareTo<ept id="p1">](xref:System.DateTimeOffset.CompareTo(System.DateTimeOffset))</ept> indica che l'ora locale corrente e l'ora UTC corrente sono uguali e la sottrazione dei valori <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> indica che la differenza tra i due orari è <bpt id="p3">[</bpt>TimeSpan.Zero<ept id="p3">](xref:System.TimeSpan.Zero)</ept>.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The chief limitation of using <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values in date and time arithmetic is that although <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values have some time zone awareness, they are not fully time zone aware.</source>
+          <target state="translated">La limitazione principale dell'uso dei valori <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> nelle operazioni aritmetiche con data e ora è che il fuso orario non è completamente rappresentato, benché i valori <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> contengano riferimenti al fuso orario.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Although the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value's offset reflects a time zone's offset from UTC when a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> variable is first assigned a value, it becomes disassociated from the time zone thereafter.</source>
+          <target state="translated">Sebbene il valore <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> rifletta l'offset del fuso orario rispetto all'ora UTC quando a una variabile <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> viene assegnato per la prima volta un valore, in un secondo tempo l'associazione al fuso orario viene annullata.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Because it is no longer directly associated with an identifiable time, the addition and subtraction of date and time intervals does not consider a time zone's adjustment rules.</source>
+          <target state="translated">Poiché non è più associato direttamente a un'ora identificabile, l'aggiunta e la sottrazione degli intervalli di data e ora non considerano le regole di regolazione del fuso orario.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To illustrate, the transition to daylight saving time in the U.S. Central Standard Time zone occurs at 2:00 A.M.</source>
+          <target state="translated">A titolo esemplificativo, la transizione all'ora legale negli Stati Uniti, ora solare fuso centrale, avviene alle 2.00</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 marzo 2008.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>This means that adding a two and a half hour interval to a Central Standard time of 1:30 A.M.</source>
+          <target state="translated">Ciò significa che l'aggiunta di un intervallo di due ore e mezzo all'1.30</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008, should produce a date and time of 5:00 A.M.</source>
+          <target state="translated">del 9 marzo 2008 nel fuso orario standard centrale deve generare una data e un'ora equivalente alle 5.00</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 marzo 2008.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>However, as the following example shows, the result of the addition is 4:00 A.M.</source>
+          <target state="translated">Tuttavia, come mostrato nell'esempio seguente, il risultato dell'addizione è 4.00</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 marzo 2008.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Note that this result of this operation does represent the correct point in time, although it is not the time in the time zone in which we are interested (that is, it does not have the expected time zone offset).</source>
+          <target state="translated">Si noti che il risultato di questa operazione rappresenta il momento corretto, sebbene non sia l'ora nel fuso orario che interessa (ovvero, non presenta l'offset previsto per il fuso orario).</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Arithmetic Operations with Times in Time Zones</source>
+          <target state="translated">Operazioni aritmetiche con ore in fusi orari</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class does not provide any methods that automatically apply adjustment rules when you perform date and time arithmetic.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> non offre metodi che applicano automaticamente regole di regolazione quando si eseguono operazioni aritmetiche con data e ora.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>However, you can do this by converting the time in a time zone to UTC, performing the arithmetic operation, and then converting from UTC back to the time in the time zone.</source>
+          <target state="translated">Tuttavia, è possibile convertire l'ora in un fuso orario in ora UTC, eseguendo l'operazione aritmetica, e quindi convertirla di nuovo da ora UTC a ora nel fuso orario.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For details, see <bpt id="p1">[</bpt>How to: Use Time Zones in Date and Time Arithmetic<ept id="p1">](use-time-zones-in-arithmetic.md)</ept>.</source>
+          <target state="translated">Per i dettagli, vedere <bpt id="p1">[</bpt>Procedura: Usare fusi orari nell'aritmetica di data e ora<ept id="p1">](use-time-zones-in-arithmetic.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For example, the following code is similar to the previous code that added two-and-a-half hours to 2:00 A.M.</source>
+          <target state="translated">Ad esempio, il codice seguente è simile al codice precedente che ha aggiunto due ore e mezzo alle 2.00</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">del 9 marzo 2008.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>However, because it converts a Central Standard time to UTC before it performs date and time arithmetic, and then converts the result from UTC back to Central Standard time, the resulting time reflects the Central Standard Time Zone's transition to daylight saving time.</source>
+          <target state="translated">Tuttavia, perché il codice converte un'ora solare nel fuso orario centrale in ora UTC prima di eseguire un'operazione aritmetica con data e ora e quindi converte di nuovo il risultato da ora UTC in ora solare nel fuso orario centrale, l'ora risultante riflette la transizione dell'ora solare nel fuso orario centrale all'ora legale.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Date, ore e fusi orari<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: use time zones in date and time arithmetic<ept id="p1">](use-time-zones-in-arithmetic.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Procedura: Usare fusi orari nell'aritmetica di data e ora<ept id="p1">](use-time-zones-in-arithmetic.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

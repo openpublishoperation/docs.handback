@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e5b709cb82c680edf454d0a8fc9ff27e6d26c138</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\choosing-between-datetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2520616ec19791376d71c88023904683fab2909a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">86fbcaed1a36e8bbfc1915f2596d6f5ac54867d2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">Choisir entre DateTime, DateTimeOffset, TimeSpan et TimeZoneInfo</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">Choisir entre DateTime, DateTimeOffset, TimeSpan et TimeZoneInfo</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">Choisir entre DateTime, DateTimeOffset, TimeSpan et TimeZoneInfo</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET applications that use date and time information are very diverse and can use that information in several ways.</source>
+          <target state="translated">Les applications .NET qui utilisent des informations de date et d’heure sont très diverses et peuvent utiliser ces informations de plusieurs façons.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The more common uses of date and time information include one or more of the following:</source>
+          <target state="translated">Les utilisations les plus courantes des informations de date et d'heure sont une ou plusieurs parmi les suivantes :</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To reflect a date only, so that time information is not important.</source>
+          <target state="translated">Pour refléter seulement une date, les informations d'heure n'étant pas importantes.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To reflect a time only, so that date information is not important.</source>
+          <target state="translated">Pour refléter seulement une heure, les informations de date n'étant pas importantes.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To reflect an abstract date and time that is not tied to a specific time and place (for example, most stores in an international chain open on weekdays at 9:00 A.M.).</source>
+          <target state="translated">Pour refléter une date et une heure abstraites, qui ne sont pas liées à un moment et un endroit spécifiques (par exemple, la plupart des magasins d'une chaîne internationale ouvrent en semaine à 9h00).</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To retrieve date and time information from sources outside of the .NET application, typically where date and time information is stored in a simple data type.</source>
+          <target state="translated">Pour récupérer des informations de date et d’heure à partir de sources externes à l’application .NET, en général lorsque les informations de date et d’heure sont stockées dans un type de données simple.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">Pour identifier de façon univoque et non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Some applications require that a date and time be unambiguous only on the host system; others require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).</source>
+          <target state="translated">Certaines applications requièrent qu'une date/heure soit ambiguë seulement sur le système hôte. D'autres requièrent qu'elle soit non ambiguë entre les systèmes (autrement dit, une date sérialisée sur un système peut être désérialisée de manière significative et utilisée sur un autre système n'importe où dans le monde).</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To preserve multiple related times (such as the requestor's local time and the server's time of receipt for a Web request).</source>
+          <target state="translated">Pour conserver plusieurs dates/heures ayant un lien les unes avec les autres (comme la date/heure locale du demandeur et la date/heure de réception par le serveur d'une demande web).</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.</source>
+          <target state="translated">Pour effectuer des calculs de date et d'heure, éventuellement avec un résultat qui identifie de façon univoque et non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>.NET includes the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>, <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>, <bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept>, and <bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> types, all of which can be used to build applications that work with dates and times.</source>
+          <target state="translated">.NET inclut les types <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>, <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>, <bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> et <bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept>, qui permettent tous de créer des applications qui fonctionnent avec des dates et des heures.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This topic does not discuss the older <ph id="ph1">`TimeZone`</ph> type, because its functionality is almost entirely incorporated in the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class.</source>
+          <target state="translated">Cette rubrique ne traite pas du type <ph id="ph1">`TimeZone`</ph> plus ancien, car ses fonctionnalités sont presque totalement intégrées dans la classe <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Whenever possible, developers should use the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class instead of the <ph id="ph1">`TimeZone`</ph> class.</source>
+          <target state="translated">Chaque fois que possible, les développeurs doivent utiliser la classe <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> à la place de la classe <ph id="ph1">`TimeZone`</ph>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The DateTime structure</source>
+          <target state="translated">La structure DateTime</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> value defines a particular date and time.</source>
+          <target state="translated">Une valeur <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> définit une date et une heure spécifiques.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>It includes a <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property that provides limited information about the time zone to which that date and time belongs.</source>
+          <target state="translated">Elle inclut une propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> qui fournit des informations limitées sur le fuseau horaire auquel appartiennent cette date et cette heure.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> value returned by the <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property indicates whether the <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> value represents the local time <bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>), Coordinated Universal Time (UTC) <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>, or an unspecified time <bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>.</source>
+          <target state="translated">La valeur <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> retournée par la propriété <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> indique si la valeur <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> représente l’heure locale <bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>, le temps universel coordonné (UTC) <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept> ou une heure non spécifiée <bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure is suitable for applications that do the following:</source>
+          <target state="translated">La structure <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> convient pour les applications qui :</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Work with dates only.</source>
+          <target state="translated">Utilisent seulement des dates.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Work with times only.</source>
+          <target state="translated">Utilisent seulement des heures.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Work with abstract dates and times.</source>
+          <target state="translated">Utilisent des dates et des heures abstraites.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Work with dates and times for which time zone information is missing.</source>
+          <target state="translated">Utilisent des dates et des heures pour lesquelles les informations de fuseau horaire sont manquantes.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Work with UTC dates and times only.</source>
+          <target state="translated">Utilisent seulement des dates et des heures UTC.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Retrieve date and time information from sources outside the .NET Framework, such as SQL databases.</source>
+          <target state="translated">Récupèrent des informations de date et d’heure auprès de sources externes au .NET Framework, comme des bases de données SQL.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Typically, these sources store date and time information in a simple format that is compatible with the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure.</source>
+          <target state="translated">En règle générale, ces sources stockent les informations de date et d’heure dans un format simple qui est compatible avec la structure <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Perform date and time arithmetic, but are concerned with general results.</source>
+          <target state="translated">Effectuent des calculs de dates et d'heures, mais sont surtout concernées par des résultats d'ordre général.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example, in an addition operation that adds six months to a particular date and time, it is often not important whether the result is adjusted for daylight saving time.</source>
+          <target state="translated">Par exemple, dans une opération d'addition qui ajoute six mois à une date/heure, il n'est souvent pas important que le résultat soit ajusté pour l'heure d'été.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Unless a particular <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC, that date and time value is often ambiguous or limited in its portability.</source>
+          <target state="translated">Sauf si une valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> particulière représente le temps UTC, cette valeur de date et d’heure est souvent ambiguë ou limitée en termes de portabilité.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time).</source>
+          <target state="translated">Par exemple, si une valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> représente l’heure locale, elle est portable dans ce fuseau horaire local (c’est-à-dire que si la valeur est désérialisée sur un autre système dans le même fuseau horaire, cette valeur continue d’identifier de façon non ambiguë un point unique dans le temps).</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Outside the local time zone, that <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value can have multiple interpretations.</source>
+          <target state="translated">En dehors du fuseau horaire local, cette valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> peut être interprétée de plusieurs façons.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If the value's <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property is <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized.</source>
+          <target state="translated">Si la propriété <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> de la valeur est <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>, elle est encore moins portable : elle est maintenant ambiguë dans le même fuseau horaire, voire même sur le système où elle a été sérialisée pour la première fois.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Only if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.</source>
+          <target state="translated">Seulement dans le cas où une valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> représente le temps UTC, celle-ci identifie de façon non ambiguë un point unique dans le temps, indépendamment du système ou du fuseau horaire où la valeur est utilisée.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When saving or sharing <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> data, UTC should be used and the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value's <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> property should be set to <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">Lors de l’enregistrement ou du partage de données <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>, le temps UTC doit être utilisé et la propriété <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> de la valeur <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> doit être définie sur <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The DateTimeOffset structure</source>
+          <target state="translated">La structure DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC.</source>
+          <target state="translated">La structure <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> représente une valeur de date et d’heure, ainsi qu’un décalage qui indique de combien cette valeur diffère du temps UTC.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Thus, the value always unambiguously identifies a single point in time.</source>
+          <target state="translated">Ainsi, la valeur toujours identifie toujours de façon non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type includes all of the functionality of the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> type along with time zone awareness.</source>
+          <target state="translated">Le type <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> comprend toutes les fonctionnalités du type <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>, ainsi que la gestion des fuseaux horaires.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This makes it is suitable for applications that do the following:</source>
+          <target state="translated">Il convient donc pour les applications qui :</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">Identifient de façon univoque et non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.</source>
+          <target state="translated">Le type <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> peut être utilisé pour définir de façon non ambiguë la signification de « maintenant », pour consigner les dates/heures des transactions, pour consigner les dates/heures des événements système ou des événements d’une application, et pour enregistrer les dates/heures de création et de modification des fichiers.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Perform general date and time arithmetic.</source>
+          <target state="translated">Effectuent des calculs de date et d'heure.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Preserve multiple related times, as long as those times are stored as two separate values or as two members of a structure.</source>
+          <target state="translated">Conservent plusieurs dates/heures ayant un lien entre elles, comme les dates/heures qui sont stockées sous la forme de deux valeurs distinctes ou de deux membres d'une structure.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These uses for <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are much more common than those for <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Ces utilisations pour des valeurs <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> sont beaucoup plus courantes que celles pour les valeurs <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>As a result, <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> should be considered the default date and time type for application development.</source>
+          <target state="translated">Par conséquent, <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> doit être considéré comme le type de date et d’heure par défaut pour le développement d’applications.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value is not tied to a particular time zone, but can originate from any of a variety of time zones.</source>
+          <target state="translated">Une valeur <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> n’est pas liée à un fuseau horaire particulier, mais peut provenir de n’importe quel fuseau horaire.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To illustrate this, the following example lists the time zones to which a number of <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values (including a local Pacific Standard Time) can belong.</source>
+          <target state="translated">Pour illustrer cela, l’exemple suivant répertorie les fuseaux horaires auxquels plusieurs valeurs <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> (y compris une heure locale du Pacifique) peuvent appartenir.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The output shows that each date and time value in this example can belong to at least three different time zones.</source>
+          <target state="translated">La sortie montre que chaque valeur de date et d'heure de cet exemple peut appartenir à au moins trois fuseaux horaires différents.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value of 6/10/2007 shows that if a date and time value represents a daylight saving time, its offset from UTC does not even necessarily correspond to the originating time zone's base UTC offset or to the offset from UTC found in its display name.</source>
+          <target state="translated">La valeur <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> de 6/10/2007 indique que si une valeur de date/heure représente une heure d’été, son décalage par rapport à l’heure UTC ne correspond pas nécessairement au décalage UTC de base du fuseau horaire d’origine ni au décalage par rapport à l’heure UTC indiquée dans son nom d’affichage.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This means that, because a single <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>  value is not tightly coupled with its time zone, it cannot reflect a time zone's transition to and from daylight saving time.</source>
+          <target state="translated">Cela signifie que, comme une valeur <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> individuelle n’est pas fortement couplée avec son fuseau horaire, elle ne peut pas refléter la transition d’un fuseau horaire vers et depuis l’heure d’été.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This can be particularly problematic when date and time arithmetic is used to manipulate a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">Ceci peut être particulièrement problématique quand des calculs de date et d’heure sont utilisés pour manipuler une valeur <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For a discussion of how to perform date and time arithmetic in a way that takes account of a time zone's adjustment rules, see <bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept>.</source>
+          <target state="translated">(Pour une présentation de la façon d’effectuer des opérations arithmétiques avec des dates et des heures en prenant en compte les règles d’ajustement d’un fuseau horaire, consultez <bpt id="p1">[</bpt>Exécution d’opérations arithmétiques avec des dates et heures<ept id="p1">](performing-arithmetic-operations.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The TimeSpan structure</source>
+          <target state="translated">La structure TimeSpan</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure represents a time interval.</source>
+          <target state="translated">La structure <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> représente un intervalle de temps.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Its two typical uses are:</source>
+          <target state="translated">Ses deux utilisations courantes sont :</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Reflecting the time interval between two date and time values.</source>
+          <target state="translated">Refléter un intervalle de temps entre deux valeurs de date/heure.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, subtracting one <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value from another returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value.</source>
+          <target state="translated">Par exemple, la soustraction d’une valeur <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> d’une autre retourne une valeur <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Measuring elapsed time.</source>
+          <target state="translated">Mesurer un temps écoulé.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> property returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value that reflects the time interval that has elapsed since the call to one of the <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept> methods that begins to measure elapsed time.</source>
+          <target state="translated">Par exemple, la propriété <bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> retourne une valeur <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> qui reflète l’intervalle de temps écoulé depuis l’appel à l’une des méthodes <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept>, qui commence à mesurer le temps écoulé.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value can also be used as a replacement for a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value when that value reflects a time without reference to a particular time of day.</source>
+          <target state="translated">Une valeur <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> peut également être utilisée en remplacement d’une valeur <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> quand cette valeur reflète un moment sans référence à une heure précise de la journée.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This usage is similar to the <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> and <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept> properties, which return a <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> value that represents the time without reference to a date.</source>
+          <target state="translated">Cette utilisation est similaire aux propriétés <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> et <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept>, qui retournent une valeur <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> représentant l’heure sans référence à une date.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure can be used to reflect a store's daily opening or closing time, or it can be used to represent the time at which any regular event occurs.</source>
+          <target state="translated">Par exemple, la structure <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> peut être utilisée pour refléter les heures d’ouverture ou de fermeture quotidiennes d’un magasin, ou elle peut être utilisée pour représenter l’heure où se produit un événement régulier.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`StoreInfo`</ph> structure that includes <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> objects for store opening and closing times, as well as a <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object that represents the store's time zone.</source>
+          <target state="translated">L’exemple suivant définit une structure <ph id="ph1">`StoreInfo`</ph> qui inclut des objets <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> pour les heures d’ouverture et de fermeture d’un magasin, ainsi qu’un objet <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> qui représente le fuseau horaire du magasin.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The structure also includes two methods, <ph id="ph1">`IsOpenNow`</ph> and <ph id="ph2">`IsOpenAt`</ph>, that indicates whether the store is open at a time specified by the user, who is assumed to be in the local time zone.</source>
+          <target state="translated">La structure comprend également deux méthodes, <ph id="ph1">`IsOpenNow`</ph> et <ph id="ph2">`IsOpenAt`</ph>, qui indiquent si le magasin est ouvert à une heure spécifiée par l'utilisateur, qui est supposé être dans le fuseau horaire local.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`StoreInfo`</ph> structure can then be used by client code like the following.</source>
+          <target state="translated">La structure <ph id="ph1">`StoreInfo`</ph> peut ensuite être utilisée par le code du client comme ce qui suit.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The TimeZoneInfo class</source>
+          <target state="translated">La classe TimeZoneInfo</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class represents any of the earth's time zones, and enables the conversion of any date and time in one time zone to its equivalent in another time zone.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> représente les fuseaux horaires de la terre et permet la conversion de toute date/heure dans un fuseau horaire en son équivalent dans un autre fuseau horaire.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class makes it possible to work with dates and times so that any date and time value unambiguously identifies a single point in time.</source>
+          <target state="translated">La classe <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> permet de travailler avec des dates et des heures de façon à ce qu’une valeur de date/heure identifie d’une manière non ambiguë un point unique dans le temps.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In some cases, taking full advantage of the <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class may require further development work.</source>
+          <target state="translated">Dans certains cas, tirer parti de la classe <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> peut nécessiter des efforts de développement supplémentaires.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Date and time values are not tightly coupled with the time zones to which they belong.</source>
+          <target state="translated">Les valeurs de date et d’heure ne sont pas étroitement couplées avec les fuseaux horaires auxquels elles appartiennent.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>As a result, unless your application provides some mechanism for linking a date and time with its associated time zone, it is easy for a particular date and time value to become disassociated from its time zone.</source>
+          <target state="translated">Par conséquent, à moins que votre application ne fournisse un mécanisme permettant de lier une date/heure avec son fuseau horaire associé, une valeur de date/heure peut être facilement dissociée de son fuseau horaire.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>One method of linking this information is to define a class or structure that contains both the date and time value and its associated time zone object.</source>
+          <target state="translated">Une méthode pour lier ces informations consiste à définir une classe ou une structure qui contient à la fois la date/heure et son objet de fuseau horaire associé.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Taking advantage of time zone support in .NET is possible only if the time zone to which a date and time value belongs is known when that date and time object is instantiated.</source>
+          <target state="translated">Tirer parti de la prise en charge des fuseaux horaires dans .NET est possible seulement si le fuseau horaire auquel appartient une valeur de date/heure est connu quand cet objet de date/heure est instancié.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is often not the case, particularly in Web or network applications.</source>
+          <target state="translated">Ce n'est pas souvent le cas, en particulier dans les applications web ou réseau.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Voir aussi</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Dates, heures et fuseaux horaires<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
