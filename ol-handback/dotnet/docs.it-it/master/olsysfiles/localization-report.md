@@ -7,8 +7,8 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 196
-[ Handback Failed Files ](#handback-failed-list)| 0
+[ Archive Success Files ](#archive-success-list)| 195
+[ Handback Failed Files ](#handback-failed-list)| 1
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 65
 [ Ignored Files ](#ignored-list)| 1554
@@ -30,7 +30,6 @@
  [docs\core\docker\media\visual-studio-tools-for-docker\right-click-add-docker-support.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/right-click-add-docker-support.png) | ArchivedSuccess | [Details](#aed5653490165632bdcb86d4d7a385d1c471c6d731)
  [docs\core\docker\media\visual-studio-tools-for-docker\settings-shared-drives-win.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/settings-shared-drives-win.png) | ArchivedSuccess | [Details](#54ecb50f76e95ee3440541fa0642375c680aa2c632)
  [docs\core\media\packages\package-framework.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/media/packages/package-framework.png) | ArchivedSuccess | [Details](#56bd387874a315cb6da9a292adfb81d95a6bb76e36)
- [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | ArchivedSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
  [docs\core\porting\media\project-structure\project.pcl.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.pcl.png) | ArchivedSuccess | [Details](#b8076d6effa23eac989ed463b108ab609d72ee8141)
  [docs\core\porting\media\project-structure\project.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.png) | ArchivedSuccess | [Details](#53c2807b4930672a4dca14af87586093931c40a742)
  [docs\core\porting\media\project-structure\project.xproj.different.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.xproj.different.png) | ArchivedSuccess | [Details](#e8df3c3cca65bf169a014f30b97869a420065f6143)
@@ -220,6 +219,9 @@
  [docs\welcome.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/welcome.md) | ArchivedSuccess | [Details](#dae44e522534ff64cc765530a27f2e3543212f94515)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | HandedBackFailed | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
 
@@ -2322,7 +2324,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37'></a> Source: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/7d1dcad51e34f59fa6aca9c2795ba1aef221a3ba/ol-handoff/dotnet/docs.it-it/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf)
 * Handoff Datetime: 2016-11-08 23:53:41
@@ -2330,10 +2332,8 @@
 * Archive File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/bde1a54f651247b9e9047ce9d038ca07dea8b3cc/ol-archive/dotnet/docs.it-it/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf)
 * Archive Datetime: 2016-11-11 03:13:11
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs.it-it/blob/242f6d9c4b108f0d77351b382a44df138568d8d5/docs/core/migrating-from-dnx.md)
-* Current Handback File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf](https://github.com/dotnet/docs.handback/blob/1ff93182a47cf5a4437b7e69a72027b46284b588/ol-handback/dotnet/docs.it-it/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf)
-* Current Handback Datetime: 2016-11-11 15:03:39
+* Handback Datetime: 2016-11-15 11:24:56
+* Handback Error: [handback_file_rejected](#e79746734c179c3f7797a10bdcd79606b818afea37handback_file_rejected)
 * Bilingual File: [migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf](https://github.com/dotnet/docs.handback/blob/1ff93182a47cf5a4437b7e69a72027b46284b588/ol-handback/dotnet/docs.it-it/master/ht-p1/migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf)
 * Bilingual Datetime: 2016-11-11 15:04:24
 * [Back to Top](#report-top)
@@ -23852,5 +23852,11 @@
 
 
 ## Error Details
+##### <a name='e79746734c179c3f7797a10bdcd79606b818afea37handback_file_rejected'></a> Source: [docs\core\migrating-from-dnx.md](#e79746734c179c3f7797a10bdcd79606b818afea37)
+* Error Code: handback_file_rejected
+* Error Message: file migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file migrating-from-dnx.24d16746eac67884186db7c106ff543d42acccbf.it-it.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
 
 Generated by OpenLocalization.
