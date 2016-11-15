@@ -4138,6 +4138,8 @@
 * Archive Datetime: 2016-11-15 04:21:20
 * Handback File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
 * Handback Datetime: 2016-11-15 09:26:03
+* Bilingual File: [index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.e068a173b9e0c4eb4561e3c8ef11a0ad3f5fe9d7.pt-br.xlf)
+* Bilingual Datetime: 2016-11-15 09:27:01
 * [Back to Top](#report-top)
 
 ##### <a name='fc8ffa269b4bb930023ed37daeb62aa8a52a5de4189'></a> Source: [docs\framework\docker\media\aspnetmvc\PublishConnection.png](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/media/aspnetmvc/PublishConnection.png)
@@ -6971,6 +6973,8 @@
 * Archive Datetime: 2016-11-15 04:21:20
 * Handback File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
 * Handback Datetime: 2016-11-15 09:26:03
+* Bilingual File: [index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/a9031899917a745a3aa61b2880d0985e80fe5157/ol-handback/dotnet/docs.pt-br/master/index.56cd399d5b6f858a76bd66ca94d84e5ab5c28ba1.pt-br.xlf)
+* Bilingual Datetime: 2016-11-15 09:27:01
 * [Back to Top](#report-top)
 
 ##### <a name='40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422'></a> Source: [docs\standard\base-types\manipulating-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/manipulating-strings.md)
