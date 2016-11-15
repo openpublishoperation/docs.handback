@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 194
+[ Archive Success Files ](#archive-success-list)| 193
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 67
+[ In Sync Handback Files ](#insync-handback-success-list)| 68
 [ Ignored Files ](#ignored-list)| 1554
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -23,7 +23,6 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [api\index.md](https://github.com/dotnet/docs/blob/8ded62f288b0d4f62168d5f41b4886c6adc67da1/api/index.md) | ArchivedSuccess | [Details](#032f2bf45c35e0a9a1d28d5fb32f865fe8f431297)
- [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md) | ArchivedSuccess | [Details](#96eb2cc7ca948b3e372fa1363b1741624d791d2724)
  [docs\core\docker\media\building-net-docker-images\debugging_debugicon.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/debugging_debugicon.png) | ArchivedSuccess | [Details](#ce68010ce277e8ef98e65e3655ccd70a3461236f28)
  [docs\core\docker\media\building-net-docker-images\docker-tools-vscode-f5.png](https://github.com/dotnet/docs/blob/ac78556c1eba50638fac9b4cedb12981b200e677/docs/core/docker/media/building-net-docker-images/docker-tools-vscode-f5.png) | ArchivedSuccess | [Details](#189cb2d082ff1bd55e0b05320498c6b4201bc36029)
  [docs\core\docker\media\visual-studio-tools-for-docker\project-add-docker-support.png](https://github.com/dotnet/docs/blob/b3dd9bdc2fac27879513394a7018b1f97af28cb1/docs/core/docker/media/visual-studio-tools-for-docker/project-add-docker-support.png) | ArchivedSuccess | [Details](#9db7d54dcdbd9eb8bd9c6f04a192ebfded70470930)
@@ -227,6 +226,7 @@
  [docs\core\app-types.md](https://github.com/dotnet/docs/blob/aeb199a9aeb1584570ad2a2942e2f22c75a59616/docs/core/app-types.md) | InSyncHandedBackSuccess | [Details](#18c8d35184407c09525b4926f70677c02ed4ec8e21)
  [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/deploying/applications.md) | InSyncHandedBackSuccess | [Details](#df8a31244a4cf1e86df58132402a329320900dbd22)
  [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/300a0304e316cfa265634a3faf74c81c7a8a5e08/docs/core/deploying/creating-nuget-packages.md) | InSyncHandedBackSuccess | [Details](#82b82dc2387834b9a4d0351c2c12da6e7595eb6c23)
+ [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md) | InSyncHandedBackSuccess | [Details](#96eb2cc7ca948b3e372fa1363b1741624d791d2724)
  [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/core/deploying/reducing-dependencies.md) | InSyncHandedBackSuccess | [Details](#caae9f0a32c4378488329fd6d88c1dc7bf96ae9a25)
  [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
  [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/8eee2127f80736f6f2adb0924a4668f81c4285ad/docs/core/docker/index.md) | InSyncHandedBackSuccess | [Details](#1c4179fe9d219bf6580e4792959da64364a6607c27)
@@ -2146,15 +2146,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='96eb2cc7ca948b3e372fa1363b1741624d791d2724'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/663f4102b82512e64ab39d8046c7298a7cf37de7/docs/core/deploying/index.md)
-* Status: ArchivedSuccess
-* Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/deploying/index.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.fr-fr/blob/006c4a7144a74e6f940bdb05a7bbfb2189755ba5/docs/core/deploying/index.md)
 * Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/63a0c02e76520a9270ce9d954ec431abb7ca32f1/ol-handoff/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
 * Handoff Datetime: 2016-11-15 04:13:16
 * Handoff Reason: Include
 * Archive File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a7ee856c3d65e90500e4fcfecb4a9bf1fe200ae1/ol-archive/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
 * Archive Datetime: 2016-11-15 04:20:35
-* Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Handback Datetime: 2016-11-11 13:11:11
+* Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/22b5932f21482c48ea112497466bfaad4073fd9a/ol-handback/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Handback Datetime: 2016-11-15 11:31:17
 * Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
 * Bilingual Datetime: 2016-11-11 13:11:55
 * [Back to Top](#report-top)
