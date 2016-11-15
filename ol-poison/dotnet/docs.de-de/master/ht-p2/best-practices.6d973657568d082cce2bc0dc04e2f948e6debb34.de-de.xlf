@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00c7228c5cb906f41df5e60a318721008ecf0bb7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\best-practices.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">29a81bfee1bf49fb6b417139448a333398f8a0b0</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">616dc0adea465d5634c737b35d49368088354910</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">Empfohlene Vorgehensweisen für die Verwendung von regulären Ausdrücken</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">Empfohlene Vorgehensweisen für die Verwendung von regulären Ausdrücken</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">Empfohlene Vorgehensweisen für die Verwendung von regulären Ausdrücken</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text.</source>
+          <target state="translated">Das Modul für reguläre Ausdrücke in .NET ist ein leistungsstarkes Tool mit vollem Funktionsumfang, das Texte auf Grundlage von Musterübereinstimmungen verarbeitet, anstatt Literaltext zu vergleichen und nach Übereinstimmungen mit diesem zu suchen.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In most cases, it performs pattern matching rapidly and efficiently.</source>
+          <target state="translated">In den meisten Fällen wird die Suche nach Musterabgleichen schnell und effizient ausgeführt.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, in some cases, the regular expression engine can appear to be very slow.</source>
+          <target state="translated">Gelegentlich kann das Modul für reguläre Ausdrücke jedoch sehr langsam wirken.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.</source>
+          <target state="translated">In Extremfällen kann auch der Eindruck entstehen, dass das Modul nicht mehr reagiert, wenn für die Verarbeitung relativ kleiner Eingaben mehrere Stunden oder sogar Tage benötigt werden.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance.</source>
+          <target state="translated">In diesem Thema werden einige Best Practices erläutert, mit denen Entwickler sicherstellen können, dass ihre regulären Ausdrücke optimale Leistung erzielen.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It contains the following sections:</source>
+          <target state="translated">Es enthält die folgenden Abschnitte:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Consider the input source<ept id="p1">](#consider-the-input-source)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Bedenken der Eingabequelle<ept id="p1">](#consider-the-input-source)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Handle object instantiation appropriately<ept id="p1">](#handle-object-instantiation-appropriately)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Angemessene Behandlung der Objektinstanziierung<ept id="p1">](#handle-object-instantiation-appropriately)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Take charge of backtracking<ept id="p1">](#take-charge-of-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Steuern der Rückverfolgung<ept id="p1">](#take-charge-of-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Use time-out values<ept id="p1">](#use-time-out-values)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Verwenden von Timeoutwerten<ept id="p1">](#use-time-out-values)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Capture only when necessary<ept id="p1">](#capture-only-when-necessary)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Erfassungen nur bei Bedarf<ept id="p1">](#capture-only-when-necessary)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Related topics<ept id="p1">](#related-topics)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Verwandte Themen<ept id="p1">](#related-topics)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Consider the input source</source>
+          <target state="translated">Bedenken der Eingabequelle</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In general, regular expressions can accept two types of input: constrained or unconstrained.</source>
+          <target state="translated">Im Allgemeinen können reguläre Ausdrücke zwei Arten von Eingaben annehmen: eingeschränkte und nicht eingeschränkte.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Constrained input is text that originates from a known or reliable source and follows a predefined format.</source>
+          <target state="translated">Bei eingeschränkten Eingaben handelt es sich um Text, der aus einer bekannten oder verlässlichen Quelle stammt und einem vordefinierten Format folgt.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Unconstrained input is text that originates from an unreliable source, such as a web user, and may not follow a predefined or expected format.</source>
+          <target state="translated">Eine nicht eingeschränkte Eingabe ist Text, der aus einer unzuverlässigen Quelle stammt, z. B. von einem Webbenutzer, und keinem vordefinierten oder erwarteten Format folgt.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns are typically written to match valid input.</source>
+          <target state="translated">Muster regulärer Ausdrücke werden in der Regel für die Übereinstimmung mit gültigen Eingaben konzipiert.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>That is, developers examine the text that they want to match and then write a regular expression pattern that matches it.</source>
+          <target state="translated">Das bedeutet, dass ein Entwickler den Text überprüft, mit dem eine Übereinstimmung erzielt werden soll, und anschließend ein entsprechendes Muster für reguläre Ausdrücke erstellt.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Developers then determine whether this pattern requires correction or further elaboration by testing it with multiple valid input items.</source>
+          <target state="translated">Dann ermittelt der Entwickler, ob dieses Muster Korrekturen oder Ausarbeitungen erfordert, indem er es mit mehreren gültigen Eingabeelementen testet.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When the pattern matches all presumed valid inputs, it is declared to be production-ready and can be included in a released application.</source>
+          <target state="translated">Wenn das Muster mit allen als gültig geltenden Eingaben übereinstimmt, gilt es als einsatzbereit und kann in eine veröffentlichte Anwendung eingeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This makes a regular expression pattern suitable for matching constrained input.</source>
+          <target state="translated">Somit ist das Muster für reguläre Ausdrücke geeignet für Übereinstimmungen mit eingeschränkten Eingaben.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>However, it does not make it suitable for matching unconstrained input.</source>
+          <target state="translated">Allerdings ist es nicht geeignet für die Übereinstimmung mit nicht eingeschränkten Eingaben.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To match unconstrained input, a regular expression must be able to efficiently handle three kinds of text:</source>
+          <target state="translated">Für Übereinstimmungen mit nicht eingeschränkten Eingaben muss ein regulärer Ausdruck drei Arten von Text effizient verarbeiten können:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>• Text that matches the regular expression pattern.</source>
+          <target state="translated">• Text, der mit dem Muster eines regulären Ausdrucks übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>• Text that does not match the regular expression pattern.</source>
+          <target state="translated">• Text, der nicht mit dem Muster eines regulären Ausdrucks übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>• Text that nearly matches the regular expression pattern.</source>
+          <target state="translated">• Text, der fast mit dem Muster eines regulären Ausdrucks übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The last text type is especially problematic for a regular expression that has been written to handle constrained input.</source>
+          <target state="translated">Der letzte Texttyp ist besonders problematisch für reguläre Ausdrücke, die für die Behandlung eingeschränkter Eingaben vorgesehen sind.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If that regular expression also relies on extensive <bpt id="p1">[</bpt>backtracking<ept id="p1">](backtracking.md)</ept>, the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text.</source>
+          <target state="translated">Wenn ein solcher regulärer Ausdruck zudem auf umfangreicher <bpt id="p1">[</bpt>Rückverfolgung<ept id="p1">](backtracking.md)</ept> beruht, kann das Modul für reguläre Ausdrücke für die Verarbeitung von scheinbar harmlosem Text übermäßig lange Zeit brauchen (in manchen Fällen mehrere Stunden oder Tage).</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses.</source>
+          <target state="translated">Im folgenden Beispiel wird ein regulärer Ausdruck verwendet, der für übermäßige Rückverfolgung anfällig ist und wahrscheinlich gültige E-Mail-Adressen zurückweisen wird.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You should not use it in an email validation routine.</source>
+          <target state="translated">Er sollte nicht in einer E-Mail-Validierungsroutine nicht verwendet werden.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If you would like a regular expression that validates email addresses, see <bpt id="p1">[</bpt>How to: Verify that strings are in valid email format<ept id="p1">](verify-format.md)</ept>.</source>
+          <target state="translated">Wenn Sie einen regulären Ausdruck zur Überprüfung von E-Mail-Adressen verwenden möchten, finden Sie entsprechende Informationen unter <bpt id="p1">[</bpt>Gewusst wie: Überprüfen, ob Zeichenfolgen ein gültiges E-Mail-Format aufweisen<ept id="p1">](verify-format.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, consider a very commonly used but extremely problematic regular expression for validating the alias of an email address.</source>
+          <target state="translated">Als Beispiel dient hier ein sehr häufig verwendeter, jedoch äußerst problematischer regulärer Ausdruck zum Überprüfen des Alias einer E-Mail-Adresse.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*$`</ph> is written to process what is considered to be a valid email address, which consists of an alphanumeric character, followed by zero or more characters that can be alphanumeric, periods, or hyphens.</source>
+          <target state="translated">Der reguläre Ausdruck <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*$`</ph> wird konzipiert, um eine als gültig angenommene E-Mail-Adresse zu verarbeiten, die aus einem alphanumerischen Zeichen gefolgt von keinem oder weiteren Zeichen besteht, bei denen es sich um alphanumerische Zeichen, Punkte oder Bindestriche handeln kann.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The regular expression must end with an alphanumeric character.</source>
+          <target state="translated">Der reguläre Ausdruck muss mit einem alphanumerischen Zeichen enden.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, as the following example shows, although this regular expression handles valid input easily, its performance is very inefficient when it is processing nearly valid input.</source>
+          <target state="translated">Die Verarbeitung von gültigen Eingaben durch diesen regulären Ausdruck erfolgt zwar reibungslos, aber das folgende Beispiel zeigt, dass die Leistung bei der Verarbeitung von fast gültigen Eingaben sehr schlecht ist.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the regular expression engine processes the valid email alias in about the same time interval regardless of its length.</source>
+          <target state="translated">Die Ausgabe im Beispiel zeigt, dass das Modul für reguläre Ausdrücke den gültigen E-Mail-Alias in etwa demselben Zeitintervall verarbeitet, unabhängig von dessen Länge.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>On the other hand, when the nearly valid email address has more than five characters, processing time approximately doubles for each additional character in the string.</source>
+          <target state="translated">Wenn die fast gültige E-Mail-Adresse andererseits mehr als fünf Zeichen aufweist, wird die Verarbeitungszeit für jedes weitere Zeichen in der Zeichenfolge nahezu verdoppelt.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This means that a nearly valid 28-character string would take over an hour to process, and a nearly valid 33-character string would take nearly a day to process.</source>
+          <target state="translated">Dies bedeutet, dass die Verarbeitung einer fast gültigen Zeichenfolge mit 28 Zeichen mehr als eine Stunde und die einer fast gültigen Zeichenfolge mit 33 Zeichen ungefähr einen Tag dauern würde.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Because this regular expression was developed solely by considering the format of input to be matched, it fails to take account of input that does not match the pattern.</source>
+          <target state="translated">Da dieser reguläre Ausdruck ausschließlich im Hinblick auf das Format der Eingaben entwickelt wurde, für die eine Übereinstimmung gefunden werden sollte, werden Eingaben, die nicht mit dem Muster übereinstimmen, nicht berücksichtigt.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This, in turn, can allow unconstrained input that nearly matches the regular expression pattern to significantly degrade performance.</source>
+          <target state="translated">Dies kann wiederum dazu führen, dass nicht eingeschränkte Eingaben, die fast mit dem Muster für reguläre Ausdrücke übereinstimmen, die Leistung erheblich beeinträchtigen.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>To solve this problem, you can do the following:</source>
+          <target state="translated">Um dieses Problem zu beheben, können Sie wie folgt vorgehen:</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input.</source>
+          <target state="translated">Beim Erstellen eines Musters sollten Sie berücksichtigen, wie sich das Zurückverfolgen auf die Leistung des Moduls für reguläre Ausdrücke auswirken könnte. Dies gilt insbesondere, wenn ein regulärer Ausdruck für die Verarbeitung nicht eingeschränkter Eingaben vorgesehen ist.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Take charge of backtracking<ept id="p1">](#take-charge-of-backtracking)</ept> section.</source>
+          <target state="translated">Weitere Informationen finden Sie im Abschnitt <bpt id="p1">[</bpt>Steuern der Rückverfolgung<ept id="p1">](#take-charge-of-backtracking)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Thoroughly test your regular expression using invalid and near-valid input as well as valid input.</source>
+          <target state="translated">Testen Sie den regulären Ausdruck sowohl mit ungültigen und fast gültigen Eingaben als auch mit gültigen Eingaben gründlich.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>To generate input for a particular regular expression randomly, you can use <bpt id="p1">[</bpt>Rex<ept id="p1">](http://research.microsoft.com/en-us/projects/rex/)</ept>, which is a regular expression exploration tool from Microsoft Research.</source>
+          <target state="translated">Um Eingaben für einen bestimmten regulären Ausdruck zufällig zu generieren, können Sie <bpt id="p1">[</bpt>Rex<ept id="p1">](http://research.microsoft.com/en-us/projects/rex/)</ept> verwenden, ein Tool für das Untersuchen von regulären Ausdrücken von Microsoft Research.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Handle object instantiation appropriately</source>
+          <target state="translated">Angemessene Behandlung der Objektinstanziierung</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>At the heart of .NET’s regular expression object model is the <bpt id="p1">[</bpt>System.Text.RegularExpressions.Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class, which represents the regular expression engine.</source>
+          <target state="translated">Den Kern des .NET-Objektmodells für reguläre Ausdrücke bildet die <bpt id="p1">[</bpt>System.Text.RegularExpressions.Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Klasse, die das Modul für reguläre Ausdrücke darstellt.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Often, the single greatest factor that affects regular expression performance is the way in which the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> engine is used.</source>
+          <target state="translated">Häufig ist die einzige Hauptursache für Leistungsbeeinträchtigungen bei regulären Ausdrücken die Art, wie das <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Modul verwendet wird.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern.</source>
+          <target state="translated">Das Definieren eines regulären Ausdrucks beinhaltet das enge Verbinden des Moduls für reguläre Ausdrücke mit einem Muster für reguläre Ausdrücke.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>That coupling process, whether it involves instantiating a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.</source>
+          <target state="translated">Hierzu wird ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt durch Übergeben des Konstruktors an ein reguläres Ausdrucksmuster instanziiert, oder eine statische Methode wird aufgerufen, indem das reguläre Ausdrucksmuster zusammen mit der zu analysierenden Zeichenfolge an sie übergeben wird. Somit ist dieser Verbindungsprozess zwangsläufig aufwändig.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can couple the regular expression engine with a particular regular expression pattern and then use the engine to match text in several ways:</source>
+          <target state="translated">Sie können das Modul für reguläre Ausdrücke mit einem bestimmten Muster für reguläre Ausdrücke verknüpfen und das Modul dann verwenden, um Textübereinstimmungen auf verschiedene Weise zu suchen:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can call a static pattern-matching method, such as <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept>.</source>
+          <target state="translated">Sie können eine statische Methode für Musterübereinstimmungen aufrufen, z.B. <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept>.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This does not require instantiation of a regular expression object.</source>
+          <target state="translated">Hierfür ist keine Instanziierung des Objekts eines regulären Ausdrucks erforderlich.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You can instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object and call an instance pattern-matching method of an interpreted regular expression.</source>
+          <target state="translated">Sie können ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt instanziieren und eine Instanzmethode für Musterübereinstimmungen eines interpretierten regulären Ausdrucks aufrufen.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This is the default method for binding the regular expression engine to a regular expression pattern.</source>
+          <target state="translated">Dies ist die Standardmethode zum Binden des Moduls für reguläre Ausdrücke an ein Muster für reguläre Ausdrücke.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>It results when a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is instantiated without an options argument that includes the <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> flag.</source>
+          <target state="translated">Sie ist das Resultat, wenn ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt ohne Optionsargument instanziiert wird, das das <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>-Flag enthält.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object and call an instance pattern-matching method of a compiled regular expression.</source>
+          <target state="translated">Sie können ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt instanziieren und eine Instanzmethode für Musterübereinstimmungen eines kompilierten regulären Ausdrucks aufrufen.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Regular expression objects represent compiled patterns when a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is instantiated with an options argument that includes the <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> flag.</source>
+          <target state="translated">Objekte regulärer Ausdrücke stellen kompilierte Muster dar, wenn ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt mit einem Optionsargument instanziiert wird, das das <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>-Flag enthält.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.</source>
+          <target state="translated">Die Art des Methodenaufrufs (statisch, interpretiert, kompiliert) wirkt sich auf die Leistung aus, wenn ein regulärer Ausdruck wiederholt in Methodenaufrufen verwendet wird oder wenn eine Anwendung umfassenden Gebrauch von Objekten regulärer Ausdrücke macht.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Static regular expressions</source>
+          <target state="translated">Statische reguläre Ausdrücke</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression.</source>
+          <target state="translated">Statische Methoden für reguläre Ausdrücke werden als Alternative zum wiederholten Instanziieren eines Objekts für reguläre Ausdrücke mit demselben regulären Ausdruck empfohlen.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled Microsoft intermediate language (MSIL) from patterns used in instance method calls is cached internally by the regular expression engine.</source>
+          <target state="translated">Im Gegensatz zu Mustern regulärer Ausdrücke, die von Objekten regulärer Ausdrücke verwendet werden, werden die Vorgangscodes oder die kompilierte Microsoft Intermediate Language (MSIL) von in Instanzmethoden aufgerufenen Mustern vom Modul für reguläre Ausdrücke intern zwischengespeichert.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example, you might call a method to validate user input.</source>
+          <target state="translated">Beispielsweise könnten Sie eine Methode zum Überprüfen von Benutzereingaben aufrufen.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In this example, a method named <ph id="ph1">`IsValidCurrency`</ph> checks whether the user has entered a currency symbol followed by at least one decimal digit.</source>
+          <target state="translated">In diesem Beispiel überprüft eine Methode mit dem Namen <ph id="ph1">`IsValidCurrency`</ph>, ob der Benutzer ein Währungssymbol gefolgt von mindestens einer Dezimalziffer eingegeben hat.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>A very inefficient implementation of the <ph id="ph1">`IsValidCurrency`</ph> method is shown in the following example.</source>
+          <target state="translated">Eine sehr ineffiziente Implementierung der <ph id="ph1">`IsValidCurrency`</ph>-Methode wird im folgenden Beispiel gezeigt.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Note that each method call reinstantiates a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object with the same pattern.</source>
+          <target state="translated">Beachten Sie, dass jeder Methodenaufruf ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt mit dem gleichen Muster erneut instanziiert.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>This, in turn, means that the regular expression pattern must be recompiled each time the method is called.</source>
+          <target state="translated">Dies bedeutet wiederum, dass das Muster für reguläre Ausdrücke bei jedem Aufruf der Methode erneut kompiliert werden muss.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You should replace this inefficient code with a call to the static <bpt id="p1">[</bpt>Regex.IsMatch(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String))</ept> method.</source>
+          <target state="translated">Sie sollten diesen ineffizienten Code durch einen Aufruf der statischen <bpt id="p1">[</bpt>Regex.IsMatch(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String))</ept>-Methode ersetzen.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This eliminates the need to instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object each time you want to call a pattern-matching method, and enables the regular expression engine to retrieve a compiled version of the regular expression from its cache.</source>
+          <target state="translated">Dadurch entfällt die Notwendigkeit, jedes Mal ein <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt zu instanziieren, wenn Sie eine Methode für Musterübereinstimmungen aufrufen möchten. Außerdem kann das Modul für reguläre Ausdrücke eine kompilierte Version des regulären Ausdrucks aus dem Cache abrufen.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>By default, the last 15 most recently used static regular expression patterns are cached.</source>
+          <target state="translated">Standardmäßig werden die letzten 15 zuletzt verwendeten statischen Muster für reguläre Ausdrücke zwischengespeichert.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept> property.</source>
+          <target state="translated">Für Anwendungen, die eine größere Anzahl von zwischengespeicherten statischen regulären Ausdrücken benötigen, kann die Größe des Caches durch Festlegen der <bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept>-Eigenschaft angepasst werden.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`\p{Sc}+\s*\d+`</ph> that is used in this example verifies that the input string consists of a currency symbol and at least one decimal digit.</source>
+          <target state="translated">Der in diesem Beispiel verwendete reguläre Ausdruck <ph id="ph1">`\p{Sc}+\s*\d+`</ph> überprüft, ob die Eingabezeichenfolge ein Währungssymbol und mindestens eine Dezimalziffer enthält.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The pattern is defined as shown in the following table.</source>
+          <target state="translated">Das Muster wird entsprechend der folgenden Tabelle definiert.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Muster</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Match one or more characters in the Unicode Symbol, Currency category.</source>
+          <target state="translated">Übereinstimmung mit mindestens einem Zeichen aus der Unicode-Kategorie Symbol, Währung.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Match zero or more white-space characters.</source>
+          <target state="translated">Sucht nach 0 (null) oder mehr Leerzeichen.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">Entsprechung für mindestens eine Dezimalstelle finden.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Interpreted vs. compiled regular expressions</source>
+          <target state="translated">Interpretierte im Vergleich zu kompilierten regulären Ausdrücken</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns that are not bound to the regular expression engine through the specification of the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option are interpreted.</source>
+          <target state="translated">Muster für reguläre Ausdrücke, die nicht durch Angabe der <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>-Option an das Modul für reguläre Ausdrücke gebunden sind, werden interpretiert.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes.</source>
+          <target state="translated">Wenn ein Objekt für reguläre Ausdrücke instanziiert wird, konvertiert das Modul für reguläre Ausdrücke den regulären Ausdruck in einen Satz von Operationscodes.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>When an instance method is called, the operation codes are converted to MSIL and executed by the JIT compiler.</source>
+          <target state="translated">Beim Aufrufen einer Instanzmethode werden die Operationscodes in MSIL konvertiert und vom JIT-Compiler ausgeführt.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Similarly, when a static regular expression method is called and the regular expression cannot be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache.</source>
+          <target state="translated">Wenn eine statische Methode für reguläre Ausdrücke aufgerufen und der reguläre Ausdruck nicht im Cache gefunden wird, konvertiert das Modul für reguläre Ausdrücke den regulären Ausdruck ebenfalls in einen Satz von Operationscodes und speichert diese im Cache.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>It then converts these operation codes to MSIL so that the JIT compiler can execute them.</source>
+          <target state="translated">Dann werden diese Operationscodes in MSIL konvertiert, damit der JIT-Compiler sie ausführen kann.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Interpreted regular expressions reduce startup time at the cost of slower execution time.</source>
+          <target state="translated">Interpretierte reguläre Ausdrücke reduzieren die Ladezeit, führen aber zu einer langsameren Ausführungszeit.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Because of this, they are best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small.</source>
+          <target state="translated">Ihre Verwendung empfiehlt sich daher vor allem dann, wenn der reguläre Ausdruck in einer kleinen Anzahl von Methodenaufrufen verwendet wird oder wenn die genaue Anzahl von Aufrufen der Methoden mit regulären Ausdrücken zwar unbekannt, jedoch erwartungsgemäß niedrig ist.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.</source>
+          <target state="translated">Wenn die Anzahl der Methodenaufrufe zunimmt, wird die durch die kürzere Startzeit erzielte Leistungssteigerung durch die langsamere Ausführungsgeschwindigkeit wieder ausgeglichen.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns that are bound to the regular expression engine through the specification of the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option are compiled.</source>
+          <target state="translated">Muster für reguläre Ausdrücke, die durch Angabe der <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>-Option an das Modul für reguläre Ausdrücke gebunden sind, werden kompiliert.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This means that, when a regular expression object is instantiated, or when a static regular expression method is called and the regular expression cannot be found in the cache, the regular expression engine converts the regular expression to an intermediary set of operation codes, which it then converts to MSIL.</source>
+          <target state="translated">Wenn also ein Objekt für reguläre Ausdrücke instanziiert oder eine statische Methode mit regulären Ausdrücken aufgerufen wird und der reguläre Ausdruck nicht im Cache gefunden wird, konvertiert das Modul für reguläre Ausdrücke den regulären Ausdruck in einen vorläufigen Satz von Operationscodes, der wiederum in MSIL konvertiert wird.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>When a method is called, the JIT compiler executes the MSIL.</source>
+          <target state="translated">Wenn eine Methode aufgerufen wird, führt der JIT-Compiler die MSIL aus.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>In contrast to interpreted regular expressions, compiled regular expressions increase startup time but execute individual pattern-matching methods faster.</source>
+          <target state="translated">Im Gegensatz zu interpretierten regulären Ausdrücken erhöhen kompilierte reguläre Ausdrücke die Startzeit. Einzelne Methoden für Musterübereinstimmungen werden aber schneller ausgeführt.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>As a result, the performance benefit that results from compiling the regular expression increases in proportion to the number of regular expression methods called.</source>
+          <target state="translated">Dadurch vergrößert sich der Leistungsvorteil, der sich aus dem Kompilieren eines regulären Ausdrucks ergibt, relativ zur Anzahl der aufgerufenen Methoden für reguläre Ausdrücke.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>To summarize, we recommend that you use interpreted regular expressions when you call regular expression methods with a specific regular expression relatively infrequently.</source>
+          <target state="translated">Zusammenfassend wird empfohlen, interpretierte reguläre Ausdrücke dann zu verwenden, wenn Sie relativ selten Methoden für reguläre Ausdrücke mit einem bestimmten regulären Ausdruck aufrufen.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>You should use compiled regular expressions when you call regular expression methods with a specific regular expression relatively frequently.</source>
+          <target state="translated">Kompilierte reguläre Ausdrücke sollten Sie verwenden, wenn Sie relativ häufig Methoden für reguläre Ausdrücke mit einem bestimmten regulären Ausdruck aufrufen.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The exact threshold at which the slower execution speeds of interpreted regular expressions outweigh gains from their reduced startup time, or the threshold at which the slower startup times of compiled regular expressions outweigh gains from their faster execution speeds, is difficult to determine.</source>
+          <target state="translated">Der genaue Schwellenwert, an dem die langsamere Ausführungsgeschwindigkeit interpretierter regulärer Ausdrücke die Vorteile der kürzen Startzeit aufhebt bzw. an dem die langsamere Startzeit kompilierter regulärer Ausdrücke die Vorteile der schnelleren Ausführungszeit aufhebt, ist schwer festzulegen.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>It depends on a variety of factors, including the complexity of the regular expression and the specific data that it processes.</source>
+          <target state="translated">Diese Schwellenwerte hängen von verschiedenen Faktoren ab, z. B. der Komplexität des regulären Ausdrucks und den spezifischen verarbeiteten Daten.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>To determine whether interpreted or compiled regular expressions offer the best performance for your particular application scenario, you can use the <bpt id="p1">[</bpt>Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> class to compare their execution times.</source>
+          <target state="translated">Um zu bestimmen, ob interpretierte oder kompilierte reguläre Ausdrücke die optimale Leistung für Ihr spezifisches Anwendungsszenario bieten, können Sie die <bpt id="p1">[</bpt>Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept>-Klasse verwenden, um die jeweiligen Ausführungszeiten zu vergleichen.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The following example compares the performance of compiled and interpreted regular expressions when reading the first ten sentences and when reading all the sentences in the text of Theodore Dreiser's The Financier.</source>
+          <target state="translated">Im folgenden Beispiel wird die Leistung von kompilierten und interpretierten regulären Ausdrücken beim Lesen der ersten zehn Sätze und beim Lesen aller Sätze im Text „The Financier“ von Theodore Dreiser verglichen.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, when only ten calls are made to regular expression matching methods, an interpreted regular expression offers better performance than a compiled regular expression.</source>
+          <target state="translated">Die Ausgabe im Beispiel zeigt: Wenn nur zehn Aufrufe von Methoden für Übereinstimmungen mit regulären Ausdrücken erfolgen, bietet ein interpretierter regulärer Ausdruck eine bessere Leistung als ein kompilierter regulärer Ausdruck.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) are made.</source>
+          <target state="translated">Ein kompilierter regulärer Ausdruck bietet jedoch die bessere Leistung bei vielen Aufrufen (in diesem Fall über 13.000).</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern used in the example, <ph id="ph1">`\b(\w+((\r?\n)|,?\s))*\w+[.?:;!]`</ph>, is defined as shown in the following table.</source>
+          <target state="translated">Das im Beispiel verwendete Muster für reguläre Ausdrücke, <ph id="ph1">`\b(\w+((\r?\n)|,?\s))*\w+[.?:;!]`</ph>, wird entsprechend der folgenden Tabelle definiert.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Muster</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Der Vergleich beginnt an einer Wortgrenze.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Übereinstimmung mit mindestens einem Wortzeichen.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>`(\r?\n)</source>
+          <target state="translated">`(\r?\n)</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>,?\s)`</source>
+          <target state="translated">,?\s)`</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Match either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.</source>
+          <target state="translated">Übereinstimmung mit entweder keinem oder einem Wagenrücklaufzeichen gefolgt von einem Zeilenumbruchzeichen oder mit keinem oder einem Komma gefolgt von einem Leerzeichen.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>`(\w+((\r?\n)</source>
+          <target state="translated">`(\w+((\r?\n)</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>,?\s))*`</source>
+          <target state="translated">,?\s))*`</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.</source>
+          <target state="translated">Übereinstimmung mit keinem oder mehreren Vorkommen eines oder mehrerer Wortzeichen gefolgt von entweder keinem oder einem Wagenrücklaufzeichen und einem Zeilenumbruchzeichen oder von keinem oder einem Komma gefolgt von einem Leerzeichen.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Übereinstimmung mit mindestens einem Wortzeichen.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Match a period, question mark, colon, semicolon, or exclamation point.</source>
+          <target state="translated">Übereinstimmung mit einem Punkt, Fragezeichen, Doppelpunkt, Semikolon oder Ausrufezeichen.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Take charge of backtracking</source>
+          <target state="translated">Steuern der Rückverfolgung</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern.</source>
+          <target state="translated">Normalerweise bewegt sich das Modul für reguläre Ausdrücke für den Vergleich mit einem regulären Ausdrucksmuster linear durch eine Eingabezeichenfolge.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>However, when indeterminate quantifiers such as <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept>, <bpt id="p2">**</bpt><ph id="ph2">+</ph><ept id="p2">**</ept>, and <bpt id="p3">**</bpt>?<ept id="p3">**</ept></source>
+          <target state="translated">Wenn jedoch unbestimmte Quantifizierer, z.B. <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept>, <bpt id="p2">**</bpt><ph id="ph2">+</ph><ept id="p2">**</ept> und <bpt id="p3">**</bpt>?<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern.</source>
+          <target state="translated">in einem Muster für reguläre Ausdrücke verwendet werden, gibt das Modul für reguläre Ausdrücke möglicherweise einen Teil der erfolgreichen Teilübereinstimmungen auf und kehrt zu einem zuvor gespeicherten Zustand zurück, um nach einer erfolgreichen Übereinstimmung mit dem gesamten Muster zu suchen.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This process is known as backtracking.</source>
+          <target state="translated">Dieser Prozess wird als Rückverfolgung bezeichnet.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For more information on backtracking, see <bpt id="p1">[</bpt>Details of regular expression behavior<ept id="p1">](regex-behavior.md)</ept> and <bpt id="p2">[</bpt>Backtracking in regular expressions<ept id="p2">](backtracking.md)</ept>.</source>
+          <target state="translated">Weitere Informationen zur Rückverfolgung finden Sie unter <bpt id="p1">[</bpt>Einzelheiten zum Verhalten regulärer Ausdrücke<ept id="p1">](regex-behavior.md)</ept> und <bpt id="p2">[</bpt>Rückverfolgung in regulären Ausdrücken<ept id="p2">](backtracking.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Support for backtracking gives regular expressions power and flexibility.</source>
+          <target state="translated">Durch die Unterstützung des Zurückverfolgens werden reguläre Ausdrücke leistungsstark und flexibel.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers.</source>
+          <target state="translated">Außerdem wird die Steuerung der Ausführung des Moduls für reguläre Ausdrücke in die Hände der Entwickler von regulären Ausdrücken gelegt.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance.</source>
+          <target state="translated">Entwickler sind sich dieser Verantwortung oft nicht bewusst und verwenden die Rückverfolgung falsch oder übermäßig. Dies ist einer der Hauptfaktoren für die Beeinträchtigung der Leistung von regulären Ausdrücken.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In a worst-case scenario, execution time can double for each additional character in the input string.</source>
+          <target state="translated">Im ungünstigsten Fall kann sich die Ausführungszeit für jedes zusätzliche Zeichen in der Eingabezeichenfolge verdoppeln.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In fact, by using backtracking excessively, it is easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern; the regular expression engine may take hours or even days to process a relatively short input string.</source>
+          <target state="translated">Durch Verwendung der Rückverfolgung ist es tatsächlich leicht, eine programmatische Entsprechung einer Endlosschleife zu erstellen, wenn die Eingabe fast mit dem Muster für reguläre Ausdrücke übereinstimmt. Für die Verarbeitung einer relativ kurzen Eingabezeichenfolge kann das Modul mehrere Stunden oder sogar Tage brauchen.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Often, applications pay a performance penalty for using backtracking despite the fact that backtracking is not essential for a match.</source>
+          <target state="translated">Leistungseinbußen bei Anwendungen kommen häufig vor, wenn die Rückverfolgung verwendet wird, obwohl diese für eine Übereinstimmung nicht erforderlich ist.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`\b\p{Lu}\w*\b`</ph> matches all words that begin with an uppercase character, as the following table shows.</source>
+          <target state="translated">Beispielsweise stimmt der reguläre Ausdruck <ph id="ph1">`\b\p{Lu}\w*\b`</ph> mit allen Wörtern überein, die mit einem Großbuchstaben beginnen, wie in der folgenden Tabelle dargestellt.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Muster</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Der Vergleich beginnt an einer Wortgrenze.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Match an uppercase character.</source>
+          <target state="translated">Übereinstimmung mit einem Großbuchstaben.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Match zero or more word characters.</source>
+          <target state="translated">Übereinstimmung mit keinem oder mehreren Wortzeichen.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">Der Vergleich endet an einer Wortgrenze.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Because a word boundary is not the same as, or a subset of, a word character, there is no possibility that the regular expression engine will cross a word boundary when matching word characters.</source>
+          <target state="translated">Da eine Wortgrenze weder mit einem Wortzeichen identisch noch eine Teilmenge eines Wortzeichens ist, ist es nicht möglich, dass das Modul für reguläre Ausdrücke beim Abgleichen von Wortzeichen eine Wortgrenze überschreitet.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>This means that for this regular expression, backtracking can never contribute to the overall success of any match -- it can only degrade performance, because the regular expression engine is forced to save its state for each successful preliminary match of a word character.</source>
+          <target state="translated">Das bedeutet, dass das Zurückverfolgen für diesen regulären Ausdruck nie zum Gesamterfolg von Übereinstimmungen beitragen kann – lediglich die Leistung kann beeinträchtigt werden, da das Modul für reguläre Ausdrücke gezwungen wird, den Zustand für jede erfolgreiche vorläufige Übereinstimmung eines Wortzeichens zu speichern.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>If you determine that backtracking is not necessary, you can disable it by using the <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element.</source>
+          <target state="translated">Wenn Sie feststellen, dass das Zurückverfolgen nicht notwendig ist, können Sie es mithilfe des Sprachelements <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> deaktivieren.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The following example parses an input string by using two regular expressions.</source>
+          <target state="translated">Im folgenden Beispiel wird eine Eingabezeichenfolge unter Verwendung von zwei regulären Ausdrücken analysiert.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The first, <ph id="ph1">`\b\p{Lu}\w*\b`</ph>, relies on backtracking.</source>
+          <target state="translated">Der erste, <ph id="ph1">`\b\p{Lu}\w*\b`</ph>, beruht auf Rückverfolgung.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The second, <ph id="ph1">`\b\p{Lu}(?&gt;\w*)\b`</ph>, disables backtracking.</source>
+          <target state="translated">Der zweite, <ph id="ph1">`\b\p{Lu}(?&gt;\w*)\b`</ph>, deaktiviert die Rückverfolgung.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, they both produce the same result.</source>
+          <target state="translated">Wie die Ausgabe im Beispiel zeigt, liefern beide dasselbe Ergebnis.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In many cases, backtracking is essential for matching a regular expression pattern to input text.</source>
+          <target state="translated">In vielen Fällen ist das Zurückverfolgen wichtig, um ein Muster für reguläre Ausdrücke mit dem Eingabetext abzugleichen.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding.</source>
+          <target state="translated">Eine übermäßige Rückverfolgung kann jedoch die Leistung erheblich beeinträchtigen und den Eindruck erwecken, dass eine Anwendung nicht mehr reagiert.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>In particular, this happens when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression.</source>
+          <target state="translated">Dies geschieht insbesondere dann, wenn Quantifizierer geschachtelt sind und der Text, der dem äußeren Teilausdruck entspricht, eine Teilmenge des Texts ist, der dem inneren Teilausdruck entspricht.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking does not severely degrade regular expression performance.</source>
+          <target state="translated">Vermeiden Sie übermäßige Rückverfolgung, und verwenden Sie außerdem die Timeoutfunktion, um sicherzustellen, dass eine übermäßige Rückverfolgung die Leistung von regulären Ausdrücken nicht zu sehr beeinträchtigt.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Use time-out values<ept id="p1">](#use-time-out-values)</ept> section.</source>
+          <target state="translated">Weitere Informationen finden Sie im Abschnitt <bpt id="p1">[</bpt>Verwenden von Timeoutwerten<ept id="p1">](#use-time-out-values)</ept>.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression pattern <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$`</ph> is intended to match a part number that consists of at least one alphanumeric character.</source>
+          <target state="translated">Beispielsweise soll das Muster für reguläre Ausdrücke <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$`</ph> einer Teilenummer entsprechen, die aus mindestens einem alphanumerischen Zeichen besteht.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Any additional characters can consist of an alphanumeric character, a hyphen, an underscore, or a period, though the last character must be alphanumeric.</source>
+          <target state="translated">Alle zusätzlichen Zeichen können aus einem alphanumerischen Zeichen, einem Bindestrich, einem Unterstrich oder einem Punkt bestehen. Das letzte Zeichen muss jedoch alphanumerisch sein.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>A dollar sign terminates the part number.</source>
+          <target state="translated">Ein Dollarzeichen beendet die Teilenummer.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>In some cases, this regular expression pattern can exhibit extremely poor performance because quantifiers are nested, and because the subexpression <ph id="ph1">`[0-9A-Z]`</ph> is a subset of the subexpression <ph id="ph2">`[-.\w]*`</ph>.</source>
+          <target state="translated">In einigen Fällen kann dieses Muster für reguläre Ausdrücke eine sehr schlechte Leistung aufweisen, da die Quantifizierer geschachtelt sind und der Teilausdruck <ph id="ph1">`[0-9A-Z]`</ph> eine Teilmenge des Teilausdrucks <ph id="ph2">`[-.\w]*`</ph> ist.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In these cases, you can optimize regular expression performance by removing the nested quantifiers and replacing the outer subexpression with a zero-width lookahead or lookbehind assertion.</source>
+          <target state="translated">In diesen Fällen können Sie die Leistung regulärer Ausdrücke optimieren, indem Sie die geschachtelten Quantifizierer entfernen und den äußeren Teilausdruck durch eine Lookahead- oder Lookbehindassertion mit einer Breite von 0 ersetzen.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Lookahead and lookbehind assertions are anchors; they do not move the pointer in the input string, but instead look ahead or behind to check whether a specified condition is met.</source>
+          <target state="translated">Lookahead- und Lookbehindassertionen sind Anker, d. h., sie bewegen nicht den Mauszeiger in der Eingabezeichenfolge, sondern überprüfen in Vorwärts- bzw. Rückwärtsrichtung, ob eine bestimmte Bedingung erfüllt ist.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>For example, the part number regular expression can be rewritten as <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])\$$`</ph>.</source>
+          <target state="translated">Beispielsweise kann der reguläre Ausdruck für die Teilenummer wie folgt umgeschrieben werden: <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])\$$`</ph>.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>This regular expression pattern is defined as shown in the following table.</source>
+          <target state="translated">Dieses Muster für den regulären Ausdruck wird entsprechend der folgenden Tabelle definiert.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Muster</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the input string.</source>
+          <target state="translated">Beginnt den Vergleich am Anfang der Eingabezeichenfolge.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">Übereinstimmung mit einem alphanumerischen Zeichen.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The part number must consist of at least this character.</source>
+          <target state="translated">Die Teilenummer muss aus mindestens diesem Zeichen bestehen.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of any word character, hyphen, or period.</source>
+          <target state="translated">Übereinstimmung mit keinem oder mehreren Vorkommen eines beliebigen Wortzeichens, eines Bindestrichs oder eines Punkts.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`</ph><ph id="ph2">\$</ph>]</source>
+          <target state="translated"><ph id="ph1">`</ph><ph id="ph2">\$</ph>]</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Match a dollar sign.</source>
+          <target state="translated">Übereinstimmung mit einem Dollarzeichen.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Look ahead of the ending dollar sign to ensure that the previous character is alphanumeric.</source>
+          <target state="translated">Lookahead-Überprüfung am beendenden Dollarzeichen, um sicherzustellen, dass das vorherige Zeichen alphanumerisch ist.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`$`</ph> End the match at the end of the input string.</source>
+          <target state="translated"><ph id="ph1">`$`</ph> Ende des Abgleichs am Ende der Eingabezeichenfolge.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the use of this regular expression to match an array containing possible part numbers.</source>
+          <target state="translated">Im folgenden Beispiel wird die Verwendung dieses regulären Ausdrucks veranschaulicht, um ein Array abzugleichen, das mögliche Teilenummern enthält.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers.</source>
+          <target state="translated">Die Sprache für reguläre Ausdrücke in .NET beinhaltet die folgenden Sprachelemente, die Sie verwenden können, um geschachtelte Quantifizierer zu vermeiden.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Gruppierungskonstrukte in regulären Ausdrücken<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Language element</source>
+          <target state="translated">Sprachelement</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Zero-width positive lookahead.</source>
+          <target state="translated">Positives Lookahead mit einer Breite von 0.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Look ahead of the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> matches the input string.</source>
+          <target state="translated">Lookahead-Überprüfung für die aktuelle Position, um zu ermitteln, ob <bpt id="p1">*</bpt>Teilausdruck<ept id="p1">*</ept> mit der Eingabezeichenfolge übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Zero-width negative lookahead.</source>
+          <target state="translated">Negatives Lookahead mit einer Breite von 0.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Look ahead of the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> does not match the input string.</source>
+          <target state="translated">Lookahead-Überprüfung für die aktuelle Position, um zu ermitteln, ob <bpt id="p1">*</bpt>Teilausdruck<ept id="p1">*</ept> nicht mit der Eingabezeichenfolge übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Zero-width positive lookbehind.</source>
+          <target state="translated">Positives Lookbehind mit einer Breite von 0.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Look behind the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> matches the input string.</source>
+          <target state="translated">Lookbehind-Überprüfung für die aktuelle Position, um zu ermitteln, ob <bpt id="p1">*</bpt>Teilausdruck<ept id="p1">*</ept> mit der Eingabezeichenfolge übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Zero-width negative lookbehind.</source>
+          <target state="translated">Negatives Lookbehind mit einer Breite von 0.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Look behind the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> does not match the input string.</source>
+          <target state="translated">Lookbehind-Überprüfung für die aktuelle Position, um zu ermitteln, ob <bpt id="p1">*</bpt>Teilausdruck<ept id="p1">*</ept> nicht mit der Eingabezeichenfolge übereinstimmt.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Use time-out values</source>
+          <target state="translated">Verwenden von Timeoutwerten</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly.</source>
+          <target state="translated">Wenn Ihre regulären Ausdrücke Eingaben verarbeiten, die annähernd mit dem Muster des regulären Ausdrucks übereinstimmen, wird häufig übermäßige Rückverfolgung verwendet. Dies beeinträchtigt die Leistung signifikant.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.</source>
+          <target state="translated">Sie sollten die Verwendung der Rückverfolgung sorgfältig abwägen und den regulären Ausdruck mit annähernd übereinstimmenden Eingaben testen. Legen Sie darüber hinaus einen Timeoutwert fest, um ggf. die Beeinträchtigung durch übermäßige Rückverfolgung zu minimieren.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out.</source>
+          <target state="translated">Das Timeoutintervall des regulären Ausdrucks definiert den Zeitraum bis zum Timeout, für den das Modul für reguläre Ausdrücke nach einer einzelnen Übereinstimmung sucht.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The default time-out interval is <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept>, which means that the regular expression will not time out.</source>
+          <target state="translated">Das Standardtimeoutintervall ist <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept>. Dies bedeutet, dass für den regulären Ausdruck kein Timeout erfolgt.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>You can override this value and define a time-out interval as follows:</source>
+          <target state="translated">Sie können diesen Wert folgendermaßen überschreiben und ein Timeoutintervall definieren:</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>By providing a time-out value when you instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object by calling the <bpt id="p2">[</bpt>Regex(String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> constructor.</source>
+          <target state="translated">Stellen Sie beim Instanziieren eines <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekts einen Timeoutwert bereit, indem Sie den <bpt id="p2">[</bpt>Regex(String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept>-Konstruktor aufrufen.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>By calling a static pattern matching method, such as <bpt id="p1">[</bpt>Regex.Match(String, String, RegexOptions, TimeSpan)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> or <bpt id="p2">[</bpt>Regex.Replace(String, String, String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept>, that includes a <bpt id="p3">*</bpt>matchTimeout<ept id="p3">*</ept> parameter.</source>
+          <target state="translated">Durch Aufrufen einer statischen Mustervergleichsmethode, z.B. <bpt id="p1">[</bpt>Regex.Match(String, String, RegexOptions, TimeSpan)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> oder <bpt id="p2">[</bpt>Regex.Replace(String, String, String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept>, die einen <bpt id="p3">*</bpt>matchTimeout<ept id="p3">*</ept>-Parameter enthält.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>If you have defined a time-out interval and a match is not found at the end of that interval, the regular expression method throws a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> exception.</source>
+          <target state="translated">Wenn Sie ein Timeoutintervall definiert haben und am Ende dieses Intervalls keine Übereinstimmung gefunden wird, löst die Methode des regulären Ausdrucks eine <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>-Ausnahme aus.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there is no match, or abandon the match attempt and log the exception information for future analysis.</source>
+          <target state="translated">In Ihrem Ausnahmehandler können Sie auswählen, dass erneut ein Abgleich mit einem längeren Timeoutintervall versucht wird, dass der Versuch abgebrochen und davon ausgegangen wird, dass keine Übereinstimmung vorhanden ist, oder dass der Versuch abgebrochen und die Ausnahmeinformationen für eine zukünftige Analyse protokolliert werden.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`GetWordData`</ph> method that instantiates a regular expression with a time-out interval of 350 milliseconds to calculate the number of words and average number of characters in a word in a text document.</source>
+          <target state="translated">Im folgenden Beispiel wird eine <ph id="ph1">`GetWordData`</ph>-Methode definiert, die einen regulären Ausdruck mit einem Timeoutintervall von 350 Millisekunden instanziiert, um für ein Textdokument die Anzahl der Wörter und die durchschnittliche Anzahl der Zeichen pro Wort zu berechnen.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>If the matching operation times out, the time-out interval is increased by 350 milliseconds and the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is re-instantiated.</source>
+          <target state="translated">Wenn ein Timout für den entsprechenden Vorgang erfolgt, wird das Timeoutintervall um 350 Millisekunden erhöht und das <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>-Objekt erneut instanziiert.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If the new time-out interval exceeds 1 second, the method re-throws the exception to the caller.</source>
+          <target state="translated">Wenn das neue Timeoutintervall 1 Sekunde übersteigt, löst die Methode für den Aufrufer erneut eine Ausnahme aus.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Capture only when necessary</source>
+          <target state="translated">Erfassungen nur bei Bedarf</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Regular expressions in .NET support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions.</source>
+          <target state="translated">Reguläre Ausdrücke in .NET unterstützen eine Reihe von Gruppierungskonstrukten, mit denen Sie ein Muster für reguläre Ausdrücke in einen Teilausdruck oder in mehrere Teilausdrücke gruppieren können.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The most commonly used grouping constructs in .NET regular expression language are <bpt id="p1">**</bpt>(<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>, which defines a numbered capturing group, and <bpt id="p4">*</bpt><bpt id="p5">*</bpt>(?&lt;<ept id="p5">*</ept><bpt id="p6">_</bpt>name<ept id="p6">_</ept><ept id="p4">*</ept><bpt id="p7">*</bpt><ph id="ph1">&gt;</ph><ept id="p7">*</ept><bpt id="p8">*</bpt><bpt id="p9">_</bpt>subexpression<ept id="p9">_</ept><ept id="p8">*</ept><bpt id="p10">*</bpt>)<ept id="p10">*</ept>*, which defines a named capturing group.</source>
+          <target state="translated">Die am häufigsten verwendeten Gruppierungskonstrukte in der .NET-Sprache für reguläre Ausdrücke sind <bpt id="p1">**</bpt>(<ept id="p1">**</ept><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> zum Definieren einer nummerierten Erfassungsgruppe und <bpt id="p4">*</bpt><bpt id="p5">*</bpt>(?&lt;<ept id="p5">*</ept><bpt id="p6">_</bpt>Name<ept id="p6">_</ept><ept id="p4">*</ept><bpt id="p7">*</bpt><ph id="ph1">&gt;</ph><ept id="p7">*</ept><bpt id="p8">*</bpt><bpt id="p9">_</bpt>Teilausdruck<ept id="p9">_</ept><ept id="p8">*</ept><bpt id="p10">*</bpt>)<ept id="p10">*</ept>* zum Definieren einer benannten Erfassungsgruppe.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.</source>
+          <target state="translated">Gruppierungskonstrukte sind wichtig für das Erstellen von Rückverweisen und für das Definieren eines Teilausdrucks, auf den ein Quantifizierer angewendet wird.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>However, the use of these language elements has a cost.</source>
+          <target state="translated">Die Verwendung dieser Sprachelemente hat jedoch auch Nachteile.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>They cause the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object returned by the <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property to be populated with the most recent unnamed or named captures, and if a single grouping construct has captured multiple substrings in the input string, they also populate the <bpt id="p3">[</bpt>CaptureCollection<ept id="p3">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object returned by the <bpt id="p4">[</bpt>Group.Captures<ept id="p4">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property of a particular capturing group with multiple <bpt id="p5">[</bpt>Capture<ept id="p5">](xref:System.Text.RegularExpressions.Capture)</ept> objects.</source>
+          <target state="translated">Sie führen dazu, dass das von der <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept>-Eigenschaft zurückgegebene <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept>-Objekt mit den neuesten unbenannten oder benannten Erfassungen aufgefüllt wird. Wenn ein einzelnes Gruppierungskonstrukt mehrere Teilzeichenfolgen in der Eingabezeichenfolge erfasst hat, wird auch das von der <bpt id="p4">[</bpt>Group.Captures<ept id="p4">](xref:System.Text.RegularExpressions.Group.Captures)</ept>-Eigenschaft einer bestimmten Erfassungsgruppe zurückgegebene <bpt id="p3">[</bpt>CaptureCollection<ept id="p3">](xref:System.Text.RegularExpressions.CaptureCollection)</ept>-Objekt mit mehreren <bpt id="p5">[</bpt>Capture<ept id="p5">](xref:System.Text.RegularExpressions.Capture)</ept>-Objekten aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them, and the groups captured by these subexpressions are not subsequently used.</source>
+          <target state="translated">Gruppierungskonstrukte werden häufig nur in einem regulären Ausdruck verwendet, damit Quantifizierer auf sie angewendet werden können. Die von diesen Teilausdrücken erfassten Gruppen werden später nicht verwendet.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`\b(\w+[;,]?\s?)+[.?!]`</ph> is designed to capture an entire sentence.</source>
+          <target state="translated">Beispielsweise soll der reguläre Ausdruck <ph id="ph1">`\b(\w+[;,]?\s?)+[.?!]`</ph> einen vollständigen Satz erfassen.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The following table describes the language elements in this regular expression pattern and their effect on the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> object's <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> and <bpt id="p3">[</bpt>Group.Captures<ept id="p3">](xref:System.Text.RegularExpressions.Group.Captures)</ept> collections.</source>
+          <target state="translated">In der folgenden Tabelle werden die Sprachelemente in diesem regulären Ausdrucksmuster und ihre Auswirkungen auf die <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept>-Auflistung und die <bpt id="p3">[</bpt>Group.Captures<ept id="p3">](xref:System.Text.RegularExpressions.Group.Captures)</ept>-Auflistung des <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept>-Objekts beschrieben.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Muster</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Der Vergleich beginnt an einer Wortgrenze.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Übereinstimmung mit mindestens einem Wortzeichen.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Match zero or one comma or semicolon.</source>
+          <target state="translated">Übereinstimmung mit keinem oder einem Komma oder Semikolon.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Match zero or one white-space character.</source>
+          <target state="translated">Übereinstimmung mit keinem oder einem Leerzeichen.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Match one or more occurrences of one or more word characters followed by an optional comma or semicolon followed by an optional white-space character.</source>
+          <target state="translated">Übereinstimmung mit einem oder mehreren Vorkommen eines oder mehrerer Wortzeichen, gefolgt von einem optionalen Komma oder Semikolon, gefolgt von einem optionalen Leerzeichen.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This defines the first capturing group, which is necessary so that the combination of multiple word characters (that is, a word) followed by an optional punctuation symbol will be repeated until the regular expression engine reaches the end of a sentence.</source>
+          <target state="translated">Hiermit wird die erste Erfassungsgruppe definiert. Dies ist erforderlich, damit die Kombination mehrerer Wortzeichen (d. h. ein Wort) gefolgt von einem optionalen Interpunktionssymbol wiederholt wird, bis das Modul für reguläre Ausdrücke das Ende eines Satzes erreicht.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Match a period, question mark, or exclamation point.</source>
+          <target state="translated">Übereinstimmung mit einem Punkt, Fragezeichen oder Ausrufezeichen.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>As the following example shows, when a match is found, both the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> and <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> objects are populated with captures from the match.</source>
+          <target state="translated">Wie im folgenden Beispiel gezeigt, werden das <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept>-Objekt und das <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept>-Objekt mit Erfassungen aus der Übereinstimmungssuche aufgefüllt, wenn eine Übereinstimmung gefunden wird.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>In this case, the capturing group <ph id="ph1">`(\w+[;,]?\s?)`</ph> exists so that the <bpt id="p1">**</bpt><ph id="ph2">+</ph><ept id="p1">**</ept> quantifier can be applied to it, which enables the regular expression pattern to match each word in a sentence.</source>
+          <target state="translated">In diesem Fall wird die Erfassungsgruppe <ph id="ph1">`(\w+[;,]?\s?)`</ph> angegeben, damit der <bpt id="p1">**</bpt><ph id="ph2">+</ph><ept id="p1">**</ept>-Quantifizierer darauf angewendet werden kann, wodurch das Muster für reguläre Ausdrücke Übereinstimmungen für jedes Wort in einem Satz erfassen kann.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Otherwise, it would match the last word in a sentence.</source>
+          <target state="translated">Andernfalls würde es mit dem letzten Wort in einem Satz abgeglichen werden.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>When you use subexpressions only to apply quantifiers to them, and you are not interested in the captured text, you should disable group captures.</source>
+          <target state="translated">Wenn Sie Teilausdrücke nur verwenden, um Quantifizierer darauf anzuwenden, und den erfassten Text nicht benötigen, sollten Sie Gruppenerfassungen deaktivieren.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element prevents the group to which it applies from capturing matched substrings.</source>
+          <target state="translated">Zum Beispiel verhindert das Sprachelement <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>, dass die Gruppe, auf die es angewendet wird, übereinstimmende Teilzeichenfolgen erfasst.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>In the following example, the regular expression pattern from the previous example is changed to <ph id="ph1">`\b(?:\w+[;,]?\s?)+[.?!]`</ph>.</source>
+          <target state="translated">Im folgenden Beispiel wird das Muster eines regulären Ausdrucks aus dem vorherigen Beispiel in <ph id="ph1">`\b(?:\w+[;,]?\s?)+[.?!]`</ph> geändert.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>As the output shows, it prevents the regular expression engine from populating the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> and <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> collections.</source>
+          <target state="translated">Hiermit wird verhindert, dass das Modul für reguläre Ausdrücke die <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept>-Auflistung und die <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept>-Auflistung auffüllt, wie die Ausgabe im Beispiel zeigt.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>You can disable captures in one of the following ways:</source>
+          <target state="translated">Erfassungen können Sie auf eine der folgenden Arten deaktivieren:</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element.</source>
+          <target state="translated">Verwenden des Sprachelements <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>Teilausdruck<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>This element prevents the capture of matched substrings in the group to which it applies.</source>
+          <target state="translated">Dieses Element verhindert die Erfassung übereinstimmender Teilzeichenfolge in der Gruppe, auf die es angewendet wird.</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>It does not disable substring captures in any nested groups.</source>
+          <target state="translated">Die Erfassung von Teilzeichenfolgen in geschachtelten Gruppen wird nicht deaktiviert.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>RegexOptions.ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> option.</source>
+          <target state="translated">Verwenden der Option <bpt id="p1">[</bpt>RegexOptions.ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept>.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>It disables all unnamed or implicit captures in the regular expression pattern.</source>
+          <target state="translated">Diese Option deaktiviert alle unbenannten oder impliziten Erfassungen im Muster für reguläre Ausdrücke.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>When you use this option, only substrings that match named groups defined with the <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept><bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept> language element can be captured.</source>
+          <target state="translated">Wenn Sie diese Option verwenden, können nur Teilzeichenfolgen erfasst werden, die mit benannten Gruppen übereinstimmen, die mit dem Sprachelement <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>Name<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept><bpt id="p4">_</bpt>Teilausdruck<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept> definiert wurden.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> flag can be passed to the options parameter of a <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> class constructor or to the options parameter of a <bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept> static matching method.</source>
+          <target state="translated">Das <bpt id="p1">[</bpt>ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept>-Flag kann dem Optionsparameter eines <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept>-Klassenkonstruktors oder dem Optionsparameter einer statischen <bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept>-Methode für Übereinstimmung übergeben werden.</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>n<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>(?imnsx)<ept id="p2">**</ept> language element.</source>
+          <target state="translated">Verwenden Sie die <bpt id="p1">**</bpt>n<ept id="p1">**</ept>-Option im Sprachelement <bpt id="p2">**</bpt>(?imnsx)<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears.</source>
+          <target state="translated">Diese Option deaktiviert alle unbenannten oder impliziten Erfassungen ab dem Punkt im Muster für reguläre Ausdrücke, an dem das Element erscheint.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Captures are disabled either until the end of the pattern or until the <bpt id="p1">**</bpt>(-n)<ept id="p1">**</ept> option enables unnamed or implicit captures.</source>
+          <target state="translated">Erfassungen werden entweder bis zum Ende des Musters oder so lange deaktiviert, bis die <bpt id="p1">**</bpt>(-n)<ept id="p1">**</ept>-Option unbenannte oder implizite Erfassungen aktiviert.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Miscellaneous constructs in regular expressions<ept id="p1">](miscellaneous.md)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Verschiedene Konstrukte in regulären Ausdrücken<ept id="p1">](miscellaneous.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>n<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>(?imnsx:<ept id="p2">**</ept><bpt id="p3">_</bpt>subexpression<ept id="p3">_</ept><bpt id="p4">**</bpt>)<ept id="p4">**</ept> language element.</source>
+          <target state="translated">Verwenden Sie die <bpt id="p1">**</bpt>n<ept id="p1">**</ept>-Option im Sprachelement <bpt id="p2">**</bpt>(?imnsx:<ept id="p2">**</ept><bpt id="p3">_</bpt>subexpression<ept id="p3">_</ept><bpt id="p4">**</bpt>)<ept id="p4">**</ept>.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>This option disables all unnamed or implicit captures in <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>.</source>
+          <target state="translated">Diese Option deaktiviert alle unbenannten oder impliziten Erfassungen in <bpt id="p1">*</bpt>Teilausdruck<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Captures by any unnamed or implicit nested capturing groups are disabled as well.</source>
+          <target state="translated">Erfassungen von allen unbenannten oder impliziten geschachtelten Erfassungsgruppen werden ebenfalls deaktiviert.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Related topics</source>
+          <target state="translated">Verwandte Themen</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Titel</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Details of regular expression behavior<ept id="p1">](regex-behavior.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Einzelheiten zum Verhalten regulärer Ausdrücke<ept id="p1">](regex-behavior.md)</ept></target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Examines the implementation of the regular expression engine in .NET.</source>
+          <target state="translated">Überprüft die Implementierung des Moduls für reguläre Ausdrücke in .NET.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.</source>
+          <target state="translated">Schwerpunkt dieses Themas ist die Flexibilität regulärer Ausdrücke. Außerdem wird die Verantwortung des Entwicklers erläutert, das effiziente und stabile Ausführen des Moduls für reguläre Ausdrücke sicherzustellen.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking in regular expressions<ept id="p1">](backtracking.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Backtracking in regulären Ausdrücken<ept id="p1">](backtracking.md)</ept></target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Explains what backtracking is and how it affects regular expression performance, and examines language elements that provide alternatives to backtracking.</source>
+          <target state="translated">Erläutert die Rückverfolgung und deren Auswirkungen auf die Leistung von regulären Ausdrücken. Zudem werden Sprachelemente beschrieben, die Alternativen zum Zurückverfolgen bieten.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Sprachelemente für reguläre Ausdrücke – Kurzübersicht<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.</source>
+          <target state="translated">Beschreibt die Elemente der Sprache für reguläre Ausdrücke in .NET und enthält Links zu ausführlichen Dokumentationen für jedes Sprachelement.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

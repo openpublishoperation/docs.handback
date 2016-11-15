@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d7415b10d6f247c30b3da508eb8fc9e0007f824</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\native-interop.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0350b8bceb01c1f5eed3e52a53eadd29fd462567</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9ea9e719c5c83ae17dca2a2dd106197ba1772cfe</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Native interoperability</source>
+          <target state="translated">Native Interoperabilität</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Native interoperability</source>
+          <target state="translated">Native Interoperabilität</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Native Interoperability</source>
+          <target state="translated">Native Interoperabilität</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this document, we will dive a little bit deeper into all three ways of doing “native interoperability” that are available on the .NET platform.</source>
+          <target state="translated">In diesem Dokument werden alle drei Möglichkeiten für „native Interoperabilität“ im Detail untersucht, die auf der .NET-Plattform verfügbar sind.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are a few of reasons why you would want to call into native code:</source>
+          <target state="translated">Es gibt einige Gründe für das Aufrufen von nativem Code:</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Operating Systems come with a large volume of APIs that are not present in the managed class libraries.</source>
+          <target state="translated">Im Lieferumfang von Betriebssystemen ist eine große Anzahl von APIs enthalten, die in den verwalteten Klassenbibliotheken nicht vorhanden sind.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A prime example for this would be access to hardware or operating system management functions.</source>
+          <target state="translated">Ein gutes Beispiel hierfür ist der Zugriff auf Hardware- oder Betriebssystem-Verwaltungsfunktionen.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Communicating with other components that have or can produce C-style ABIs (native ABIs).</source>
+          <target state="translated">Die Kommunikation mit anderen Komponenten, die über ABIs im C-Format (native ABIs) verfügen oder diese erstellen können.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This covers, for example, Java code that is exposed via <bpt id="p1">[</bpt>Java Native Interface (JNI)<ept id="p1">](http://docs.oracle.com/javase/8/docs/technotes/guides/jni/)</ept> or any other managed language that could produce a native component.</source>
+          <target state="translated">Hierzu gehört beispielsweise Java-Code, der über die <bpt id="p1">[</bpt>Java Native Interface (JNI)<ept id="p1">](http://docs.oracle.com/javase/8/docs/technotes/guides/jni/)</ept> verfügbar gemacht wird, oder eine beliebige andere verwaltete Sprache, die eine native Komponente erstellen kann.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>On Windows, most of the software that gets installed, such as Microsoft Office suite, registers COM components that represent their programs and allow developers to automate them or use them.</source>
+          <target state="translated">Unter Windows werden für den Großteil der installierten Software (z.B. Microsoft Office-Suite) COM-Komponenten registriert, die ihre Programme darstellen und den Entwicklern deren Automatisierung oder Verwendung ermöglichen.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This also requires native interoperability.</source>
+          <target state="translated">Auch hierfür ist native Interoperabilität erforderlich.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Of course, the list above does not cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components.</source>
+          <target state="translated">Natürlich deckt die obige Liste nicht alle möglichen Situationen und Szenarios ab, in denen ein Entwickler eine Schnittstelle mit nativen Komponenten benötigt.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>.NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others.</source>
+          <target state="translated">Die .NET-Klassenbibliothek verwendet zum Beispiel die Unterstützung für native Interoperabilität, um eine große Anzahl ihrer APIs zu implementieren, z.B. die Unterstützung und Bearbeitung der Konsole, Dateisystemzugriff und mehr.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, it is important to note that there is an option, should one need it.</source>
+          <target state="translated">Es ist jedoch unbedingt zu beachten, dass es eine Option gibt, wenn man sie benötigen sollte.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux and macOS).</source>
+          <target state="translated">Die meisten Beispiele in diesem Dokument werden für alle drei unterstützten Plattformen für .NET Core (Windows, Linux und macOS) aufgeführt.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, “dll” for libraries).</source>
+          <target state="translated">Bei einigen kurzen und anschaulichen Beispielen wird allerdings nur ein Beispiel gezeigt, das Windows-Dateinamen und -Erweiterungen (d.h. „DLL“ für Bibliotheken) verwendet.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This does not mean that those features are not available on Linux or macOS, it was done merely for convenience sake.</source>
+          <target state="translated">Dies wurde nur der Einfachheit halber so gehandhabt und bedeutet nicht, dass diese Funktionen unter Linux oder macOS nicht verfügbar sind.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Platform Invoke (P/Invoke)</source>
+          <target state="translated">Plattformaufruf (P/Invoke)</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>P/Invoke is a technology that allows you to access structs, callbacks and functions in unmanaged libraries from your managed code.</source>
+          <target state="translated">P/Invoke ist eine Technologie, die Ihnen den Zugriff auf Strukturen, Rückrufe und Funktionen in nicht verwalteten Bibliotheken von verwaltetem Code aus ermöglicht.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Most of the P/Invoke API is contained in two namespaces: <ph id="ph1">`System`</ph> and <ph id="ph2">`System.Runtime.InteropServices`</ph>.</source>
+          <target state="translated">Der Großteil der P/Invoke-API ist in zwei Namespaces enthalten: <ph id="ph1">`System`</ph> und <ph id="ph2">`System.Runtime.InteropServices`</ph>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Using these two namespaces will allow you access to the attributes that describe how you want to communicate with the native component.</source>
+          <target state="translated">Über diese beiden Namespaces können Sie auf die Attribute zugreifen, die beschreiben, wie Sie mit der nativen Komponente kommunizieren möchten.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Let’s start from the most common example, and that is calling unmanaged functions in your managed code.</source>
+          <target state="translated">Beginnen wir mit dem gängigsten Beispiel, dem Aufruf nicht verwalteter Funktionen im Ihrem verwalteten Code.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Let’s show a message box from a command-line application:</source>
+          <target state="translated">Wir zeigen ein Meldungsfeld aus einer Befehlszeilenanwendung:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The example above is pretty simple, but it does show off what is needed to invoke unmanaged functions from managed code.</source>
+          <target state="translated">Das obige Beispiel ist recht einfach, zeigt jedoch, was zum Aufrufen nicht verwalteter Funktionen von verwaltetem Code aus erforderlich ist.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Let’s step through the example:</source>
+          <target state="translated">Gehen wir das Beispiel schrittweise durch:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Line #1 shows the using statement for the <ph id="ph1">`System.Runtime.InteropServices`</ph> which is the namespace that holds all of the items we need.</source>
+          <target state="translated">Zeile 1 zeigt die using-Anweisung für <ph id="ph1">`System.Runtime.InteropServices`</ph>. Dies ist der Namespace, der alle benötigten Elemente enthält.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Line #5 introduces the <ph id="ph1">`DllImport`</ph> attribute.</source>
+          <target state="translated">In Zeile 5 wird das <ph id="ph1">`DllImport`</ph>-Attribut eingeführt.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This attribute is crucial, as it tells the runtime that it should load the unmanaged DLL.</source>
+          <target state="translated">Dieses Attribut ist äußerst wichtig, da es der Runtime mitteilt, dass die nicht verwaltete DLL geladen werden soll.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This is the DLL into which we wish to invoke.</source>
+          <target state="translated">Dabei handelt es sich um die DLL, in der der Aufruf erfolgen soll.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Line #6 is the crux of the P/Invoke work.</source>
+          <target state="translated">Zeile 6 ist der Kern der P/Invoke-Funktion.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>It defines a managed method that has the <bpt id="p1">**</bpt>exact same signature<ept id="p1">**</ept> as the unmanaged one.</source>
+          <target state="translated">Sie definiert eine verwaltete Methode, die <bpt id="p1">**</bpt>genau dieselbe Signatur<ept id="p1">**</ept> aufweist wie die nicht verwaltete Methode.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The declaration has a new keyword that you can notice, <ph id="ph1">`extern`</ph>, which tells the runtime this is an external method, and that when you invoke it, the runtime should find it in the DLL specified in <ph id="ph2">`DllImport`</ph> attribute.</source>
+          <target state="translated">Wie Sie sehen, enthält die Deklaration ein neues Schlüsselwort, <ph id="ph1">`extern`</ph>. Dieses teilt der Runtime mit, dass es sich um eine externe Methode handelt und dass die Runtime die Methode bei Aufruf in der im <ph id="ph2">`DllImport`</ph>-Attribut angegebenen DLL findet.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The rest of the example is just invoking the method as you would any other managed method.</source>
+          <target state="translated">Der Rest des Beispiels besteht nur aus dem Aufruf der Methode, der wie bei jeder anderen verwalteten Methode erfolgt.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The sample is similar for macOS.</source>
+          <target state="translated">Das Beispiel ist für macOS ähnlich.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>One thing that needs to change is, of course, the name of the library in the <ph id="ph1">`DllImport`</ph> attribute, as macOS has a different scheme of naming dynamic libraries.</source>
+          <target state="translated">Eine Sache, die geändert werden muss, ist natürlich der Name der Bibliothek im <ph id="ph1">`DllImport`</ph>-Attribut, da macOS ein anderes Schema für die Benennung dynamischer Bibliotheken verwendet.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The sample below uses the <ph id="ph1">`getpid(2)`</ph> function to get the process ID of the application and print it out to the console.</source>
+          <target state="translated">Das Beispiel unten verwendet die <ph id="ph1">`getpid(2)`</ph>-Funktion, um die Prozess-ID der Anwendung abzurufen und in der Konsole auszugeben.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It is similar on Linux, of course.</source>
+          <target state="translated">Unter Linux verhält es sich natürlich ähnlich.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The function name is same, since <ph id="ph1">`getpid(2)`</ph> is <bpt id="p1">[</bpt>POSIX<ept id="p1">](https://en.wikipedia.org/wiki/POSIX)</ept> system call.</source>
+          <target state="translated">Der Funktionsname ist identisch, da es sich bei <ph id="ph1">`getpid(2)`</ph> um einen <bpt id="p1">[</bpt>POSIX<ept id="p1">](https://en.wikipedia.org/wiki/POSIX)</ept>-Systemaufruf handelt.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Invoking managed code from unmanaged code</source>
+          <target state="translated">Aufrufen von verwaltetem Code von nicht verwaltetem Code aus</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Of course, the runtime allows communication to flow both ways which enables you to call into managed artifacts from native functions, using function pointers.</source>
+          <target state="translated">Selbstverständlich ermöglicht die Runtime die Kommunikation in beide Richtungen, sodass Sie verwaltete Artefakte über Funktionszeiger von nativen Funktionen aus aufrufen können.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The closest thing to a function pointer in managed code is a <bpt id="p1">**</bpt>delegate<ept id="p1">**</ept>, so this is what is used to allow callbacks from native code into managed code.</source>
+          <target state="translated">Einem Funktionszeiger in verwaltetem Code kommt ein <bpt id="p1">**</bpt>Delegat<ept id="p1">**</ept> am nächsten. Dieser wird verwendet, um Rückrufe von nativem Code an verwalteten Code zu ermöglichen.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The way to use this feature is similar to managed to native process described above.</source>
+          <target state="translated">Dieses Feature wird ähnlich dem oben beschriebenen Verfahren von verwaltetem zu nativem Code verwendet.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For a given callback, you define a delegate that matches the signature, and pass that into the external method.</source>
+          <target state="translated">Für einen bestimmten Rückruf definieren Sie einen Delegaten, der der Signatur entspricht, und übergeben Sie ihn an die externe Methode.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The runtime will take care of everything else.</source>
+          <target state="translated">Die Runtime übernimmt alles Weitere.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Before we walk through our example, it is good to go over the signatures of the unmanaged functions we need to work with.</source>
+          <target state="translated">Bevor wir unser Beispiel durchgehen, sollten wir die Signaturen der nicht verwalteten Funktionen betrachten, mit denen wir arbeiten müssen.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The function we want to call to enumerate all of the windows has the following signature: <ph id="ph1">`BOOL EnumWindows (WNDENUMPROC lpEnumFunc, LPARAM lParam);`</ph></source>
+          <target state="translated">Die Funktion, die wir zum Auflisten aller Fenster aufrufen möchten, weist folgende Signatur auf: <ph id="ph1">`BOOL EnumWindows (WNDENUMPROC lpEnumFunc, LPARAM lParam);`</ph></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The first parameter is a callback.</source>
+          <target state="translated">Der erste Parameter ist ein Rückruf.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The said callback has the following signature: <ph id="ph1">`BOOL CALLBACK EnumWindowsProc (HWND hwnd, LPARAM lParam);`</ph></source>
+          <target state="translated">Dieser Rückruf besitzt die folgende Signatur: <ph id="ph1">`BOOL CALLBACK EnumWindowsProc (HWND hwnd, LPARAM lParam);`</ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>With this in mind, let’s walk through the example:</source>
+          <target state="translated">In diesem Sinn betrachten wir das Beispiel:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Line #8 in the example defines a delegate that matches the signature of the callback from unmanaged code.</source>
+          <target state="translated">Zeile 8 im Beispiel definiert einen Delegaten, der der Signatur des Rückrufs von nicht verwaltetem Code aus entspricht.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Notice how the LPARAM and HWND types are represented using <ph id="ph1">`IntPtr`</ph> in the managed code.</source>
+          <target state="translated">Beachten Sie, wie die Typen LPARAM und HWND über <ph id="ph1">`IntPtr`</ph> im verwalteten Code dargestellt werden.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Lines #10 and #11 introduce the <ph id="ph1">`EnumWindows`</ph> function from the user32.dll library.</source>
+          <target state="translated">In den Zeilen 10 und 11 wird die <ph id="ph1">`EnumWindows`</ph>-Funktion über die user32.dll-Bibliothek eingeführt.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Lines #13 - 16 implement the delegate.</source>
+          <target state="translated">In den Zeilen 13 bis 16 wird der Delegat implementiert.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For this simple example, we just want to output the handle to the console.</source>
+          <target state="translated">In diesem einfachen Beispiel möchten wir nur das Handle an die Konsole ausgeben.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Finally, in line #19 we invoke the external method and pass in the delegate.</source>
+          <target state="translated">Abschließend wird in Zeile 19 die externe Methode aufgerufen und an den Delegaten übergeben.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The Linux and macOS examples are shown below.</source>
+          <target state="translated">Die Beispiele für Linux und macOS werden im Folgenden angezeigt.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For them, we use the <ph id="ph1">`ftw`</ph> function that can be found in <ph id="ph2">`libc`</ph>, the C library.</source>
+          <target state="translated">Hierfür verwenden wir die <ph id="ph1">`ftw`</ph>-Funktion, die in <ph id="ph2">`libc`</ph> zu finden ist, der C-Bibliothek.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This function is used to traverse directory hierarchies and it takes a pointer to a function as one of its parameters.</source>
+          <target state="translated">Anhand dieser Funktion werden die Verzeichnishierarchien durchlaufen. Sie verwendet einen Zeiger auf eine Funktion als einen ihrer Parameter.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The said function has the following signature: <ph id="ph1">`int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`</ph>.</source>
+          <target state="translated">Diese Funktion besitzt die folgende Signatur: <ph id="ph1">`int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`</ph>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>macOS example uses the same function, and the only difference is the argument to the <ph id="ph1">`DllImport`</ph> attribute, as macOS keeps <ph id="ph2">`libc`</ph> in a different place.</source>
+          <target state="translated">Im macOS-Beispiel wird die gleiche Funktion verwendet. Der einzige Unterschied ist das Argument für das <ph id="ph1">`DllImport`</ph>-Attribut, da macOS <ph id="ph2">`libc`</ph> an einer anderen Stelle speichert.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Both of the above examples depend on parameters, and in both cases, the parameters are given as managed types.</source>
+          <target state="translated">Beide oben aufgeführten Beispiele hängen von Parametern ab, und in beiden Fällen werden die Parameter als verwaltete Typen angegeben.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Runtime does the “right thing” and processes these into its equivalents on the other side.</source>
+          <target state="translated">Die Runtime reagiert demgemäß und verarbeitet diese in ihren Entsprechungen auf der anderen Seite.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Since this process is really important to writing quality native interop code, let’s take a look at what happens when the runtime <bpt id="p1">_</bpt>marshals<ept id="p1">_</ept> the types.</source>
+          <target state="translated">Da dieser Vorgang für das Schreiben von hochwertigem nativem Interopcode entscheidend ist, sehen wir uns an, was beim <bpt id="p1">_</bpt>Marshallen<ept id="p1">_</ept> der Typen durch die Runtime geschieht.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Type marshalling</source>
+          <target state="translated">Marshallen von Typen</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Marshalling<ept id="p1">**</ept> is the process of transforming types when they need to cross the managed boundary into native and vice versa.</source>
+          <target state="translated">Das <bpt id="p1">**</bpt>Marshallen<ept id="p1">**</ept> bezeichnet den Vorgang zum Umwandeln von Typen, wenn diese die verwaltete Grenze zu nativem Code und umgekehrt überschreiten.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The reason marshalling is needed is because the types in the managed and unmanaged code are different.</source>
+          <target state="translated">Das Marshallen ist erforderlich, weil sich die Typen in verwaltetem und nicht verwaltetem Code unterscheiden.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In managed code, for instance, you have a <ph id="ph1">`String`</ph>, while in the unmanaged world strings can be Unicode (“wide”), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/library/zah6xy75.aspx)</ept>.</source>
+          <target state="translated">In verwaltetem Code verwenden Sie z.B. einen <ph id="ph1">`String`</ph>-Typ, während Zeichenfolgen im nicht verwalteten Bereich Unicode (Breitzeichen), Nicht-Unicode, mit Null endend, ASCII usw. sein können. Standardmäßig versucht das P/Invoke-Subsystem, die richtige Aktion basierend auf dem Standardverhalten durchzuführen, das in <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/library/zah6xy75.aspx)</ept> beschrieben wird.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>However, for those situations where you need extra control, you can employ the <ph id="ph1">`MarshalAs`</ph> attribute to specify what is the expected type on the unmanaged side.</source>
+          <target state="translated">In Situationen, in denen Sie eine zusätzliche Kontrolle benötigen, können Sie jedoch das <ph id="ph1">`MarshalAs`</ph>-Attribut verwenden, um anzugeben, welcher Typ auf der nicht verwalteten Seite erwartet wird.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:</source>
+          <target state="translated">Wenn die Zeichenfolge beispielsweise als nicht mit Null endende ANSI-Zeichenfolge gesendet werden soll, können wir dies folgendermaßen erreichen:</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Marshalling classes and structs</source>
+          <target state="translated">Marshallen von Klassen und Strukturen</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Another aspect of type marshalling is how to pass in a struct to an unmanaged method.</source>
+          <target state="translated">Ein weiterer Aspekt des Marshallens von Typen ist die Übergabe einer Struktur an eine nicht verwaltete Methode.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For instance, some of the unmanaged methods require a struct as a parameter.</source>
+          <target state="translated">Einige der nicht verwalteten Methoden erfordern beispielsweise eine Struktur als Parameter.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter.</source>
+          <target state="translated">In diesen Fällen müssen wir eine entsprechende Struktur oder eine Klasse im verwalteten Bereich erstellen, um sie als Parameter zu verwenden.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>However, just defining the class is not enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct.</source>
+          <target state="translated">Allerdings reicht das Definieren der Klasse nicht aus, wir müssen dem Marshaller außerdem mitteilen, wie Felder in der Klasse der nicht verwalteten Struktur zuzuordnen sind.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This is where the <ph id="ph1">`StructLayout`</ph> attribute comes into play.</source>
+          <target state="translated">An dieser Stelle komm das <ph id="ph1">`StructLayout`</ph>-Attribut ins Spiel.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The example above shows off a simple example of calling into <ph id="ph1">`GetSystemTime()`</ph> function.</source>
+          <target state="translated">Das obige Beispiel zeigt ein einfaches Beispiel für einen Aufruf in der <ph id="ph1">`GetSystemTime()`</ph>-Funktion.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The interesting bit is on line 4<ph id="ph1">\.</ph> The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side.</source>
+          <target state="translated">Der interessante Teil befindet sich in Zeile 4<ph id="ph1">\.</ph> Das Attribut gibt an, dass die Felder der Klasse sequenziell der Struktur auf der anderen (nicht verwalteten) Seite zugeordnet werden sollen.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:</source>
+          <target state="translated">Dies bedeutet, dass die Benennung der Felder nicht wichtig ist, sondern nur deren Reihenfolge, da diese der nicht verwalteten Struktur entsprechen muss, wie unten gezeigt:</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>We already saw the Linux and macOS example for this in the previous example.</source>
+          <target state="translated">Das Linux- und macOS-Beispiel hierfür haben wir bereits im vorherigen Beispiel gesehen.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It is shown again below.</source>
+          <target state="translated">Es wird unten noch einmal aufgeführt.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`StatClass`</ph> class represents a structure that is returned by the <ph id="ph2">`stat`</ph> system call on UNIX systems.</source>
+          <target state="translated">Die <ph id="ph1">`StatClass`</ph>-Klasse stellt eine Struktur dar, die vom <ph id="ph2">`stat`</ph>-Systemaufruf auf UNIX-Systemen zurückgegeben wird.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>It represents information about a given file.</source>
+          <target state="translated">Sie stellt Informationen über eine bestimmte Datei dar.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The class above is the stat struct representation in managed code.</source>
+          <target state="translated">Die oben gezeigte Klasse ist die stat-Strukturdarstellung in verwaltetem Code.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Again, the fields in the class have to be in the same order as the native struct (you can find these by perusing man pages on your favorite UNIX implementation) and they have to be of the same underlying type.</source>
+          <target state="translated">Wiederum müssen die Felder in der Klasse derselben Reihenfolge entsprechen wie die native Struktur. (Sie finden diese über Manpages in Ihrer bevorzugten UNIX-Implementierung.) Zudem müssen Sie denselben zugrunde liegenden Typ aufweisen.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>More resources</source>
+          <target state="translated">Weitere Ressourcen</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>PInvoke.net wiki<ept id="p1">](http://www.pinvoke.net)</ept> an excellent Wiki with information on common Win32 APIs and how to call them.</source>
+          <target state="translated"><bpt id="p1">[</bpt>PInvoke.NET-Wiki<ept id="p1">](http://www.pinvoke.net)</ept> ist eine ausgezeichnete Wiki-Seite mit Informationen zu gängigen Win32-APIs und deren Aufruf.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>P/Invoke on MSDN<ept id="p1">](https://msdn.microsoft.com/library/zbz07712.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>P/Invoke auf MSDN<ept id="p1">](https://msdn.microsoft.com/library/zbz07712.aspx)</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Mono documentation on P/Invoke<ept id="p1">](http://www.mono-project.com/docs/advanced/pinvoke/)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Mono-Dokumentation zu P/Invoke<ept id="p1">](http://www.mono-project.com/docs/advanced/pinvoke/)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,1405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca7e486b07621269a617ae7542d389a78e4ab571</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\custom-datetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d939e2e2d0b06f463389752c3187c61cd15973d1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d1f126bfd37705c6ff82befe7f1297bad294de65</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>title: Custom date and time format strings description: Custom date and time format strings keywords: .NET, .NET Core author: stevehoag ms.author: shoag manager: wpickett ms.date: 07/25/2016 ms.topic: article ms.prod: .net-core ms.technology: .net-core-technologies ms.devlang: dotnet ms.assetid: 45f286f5-92c9-4150-957c-fa6d394bc29b</source>
+          <target state="translated">title: Custom date and time format strings description: Custom date and time format strings keywords: .NET, .NET Core author: stevehoag ms.author: shoag manager: wpickett ms.date: 07/25/2016 ms.topic: article ms.prod: .net-core ms.technology: .net-core-technologies ms.devlang: dotnet ms.assetid: 45f286f5-92c9-4150-957c-fa6d394bc29b</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Custom date and time format strings</source>
+          <target state="translated">Custom date and time format strings (Benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A date and time format string defines the text representation of a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value that results from a formatting operation .</source>
+          <target state="translated">Eine Formatzeichenfolge für Datum und Uhrzeit definiert die Textdarstellung eines <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werts oder eines <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts, der aus einem Formatierungsvorgang resultiert.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time.</source>
+          <target state="translated">Sie kann auch die Darstellung eines Datums- und Uhrzeitwerts definieren, der in einem Analysevorgang erforderlich ist, um die Zeichenfolge erfolgreich in ein Datum und eine Uhrzeit zu konvertieren.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>A custom format string consists of one or more custom date and time format specifiers.</source>
+          <target state="translated">Benutzerdefinierte Formatzeichenfolgen bestehen aus einem oder mehreren benutzerdefinierten Formatbezeichnern für Datum und Uhrzeit.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Any string that is not a <bpt id="p1">[</bpt>standard date and time format string<ept id="p1">](standard-datetime.md)</ept> is interpreted as a custom date and time format string.</source>
+          <target state="translated">Alle Zeichenfolgen, bei denen es sich nicht um <bpt id="p1">[</bpt>Standardformatzeichenfolgen für Datum und Uhrzeit<ept id="p1">](standard-datetime.md)</ept> handelt, werden als benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Custom date and time format strings can be used with both <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>  values.</source>
+          <target state="translated">Benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit können sowohl mit dem <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert als auch mit dem <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert verwendet werden.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In formatting operations, custom date and time format strings can be used either with the <ph id="ph1">`ToString`</ph> method of a date and time instance or with a method that supports composite formatting.</source>
+          <target state="translated">In Formatierungsvorgängen können benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit entweder mit der <ph id="ph1">`ToString`</ph>-Methode einer Datums- und Uhrzeitinstanz oder mit einer Methode verwendet werden, die die kombinierte Formatierung unterstützt.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following example illustrates both uses.</source>
+          <target state="translated">Das folgende Beispiel veranschaulicht beide Möglichkeiten.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In parsing operations, custom date and time format strings can be used with the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, and <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@))</ept> methods.</source>
+          <target state="translated">In Analysevorgängen können benutzerdefinierte Formatzeichenfolgen für Datum und Uhrzeit mit den Methoden <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> und <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@))</ept> verwendet werden.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>These methods require that an input string conform exactly to a particular pattern for the parse operation to succeed.</source>
+          <target state="translated">Bei diesen Methoden muss die Eingabezeichenfolge genau einem bestimmten Muster entsprechen, damit der Analysevorgang erfolgreich ausgeführt werden kann.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example illustrates a call to the <bpt id="p1">[</bpt>DateTimeOffset.ParseExact(String, String, IFormatProvider)<ept id="p1">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> method to parse a date that must include a day, a month, and a two-digit year.</source>
+          <target state="translated">Das folgende Beispiel veranschaulicht einen Aufruf der <bpt id="p1">[</bpt>DateTimeOffset.ParseExact(String, String, IFormatProvider)<ept id="p1">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>-Methode, um ein Datum zu analysieren, das einen Tag, einen Monat und eine zweistellige Jahresangabe enthalten muss.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following table describes the custom date and time format specifiers and displays a result string produced by each format specifier.</source>
+          <target state="translated">Die folgende Tabelle beschreibt die benutzerdefinierten Formatbezeichner für Datum und Uhrzeit und zeigt eine Ergebniszeichenfolge an, die von den einzelnen Formatbezeichnern erstellt wird.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By default, result strings reflect the formatting conventions of the en-US culture.</source>
+          <target state="translated">Standardmäßig entsprechen Ergebniszeichenfolgen den Formatierungskonventionen der Kultur "en-US".</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If a particular format specifier produces a localized result string, the example also notes the culture to which the result string applies.</source>
+          <target state="translated">Wenn ein bestimmter Formatbezeichner eine lokalisierte Ergebniszeichenfolge erzeugt, wird im Beispiel auch die Kultur angegeben, für die die Ergebniszeichenfolge gilt.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>See the Notes section for additional information about using custom date and time format strings.</source>
+          <target state="translated">Weitere Informationen zum Verwenden von benutzerdefinierten Formatzeichenfolgen für Datum und Uhrzeit finden Sie im Abschnitt Hinweise.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Format specifier</source>
+          <target state="translated">Formatbezeichner</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">Beispiele</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>"d"</source>
+          <target state="translated">"d"</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The day of the month, from 1 through 31.</source>
+          <target state="translated">Der Tag des Monats, von 1 bis 31.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>"dd"</source>
+          <target state="translated">"dd"</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The day of the month, from 01 through 31.</source>
+          <target state="translated">Der Tag des Monats, von 01 bis 31.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>"ddd"</source>
+          <target state="translated">"ddd"</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The abbreviated name of the day of the week.</source>
+          <target state="translated">Der abgekürzte Name des Tags der Woche.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Mon (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; Пн (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lun. (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Mon (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; Пн (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lun. (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>"dddd"</source>
+          <target state="translated">"dddd"</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The full name of the day of the week.</source>
+          <target state="translated">Der vollständige Name des Wochentags.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Monday (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; понедельник (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lundi (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Monday (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; понедельник (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lundi (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>"f"</source>
+          <target state="translated">"f"</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The tenths of a second in a date and time value.</source>
+          <target state="translated">Die Zehntelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.05 -&gt; 0`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.05 -&gt; 0`</ph></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>"ff"</source>
+          <target state="translated">"ff"</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The hundredths of a second in a date and time value.</source>
+          <target state="translated">Die Hundertstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; 00`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; 00`</ph></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>"fff"</source>
+          <target state="translated">"fff"</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The milliseconds in a date and time value.</source>
+          <target state="translated">Die Millisekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`6/15/2019 13:45:30.617 -&gt; 617`</ph>; <ph id="ph2">`6/15/2019 13:45:30.0005 -&gt; 000`</ph></source>
+          <target state="translated"><ph id="ph1">`6/15/2019 13:45:30.617 -&gt; 617`</ph>; <ph id="ph2">`6/15/2019 13:45:30.0005 -&gt; 000`</ph></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>"ffff"</source>
+          <target state="translated">"ffff"</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The ten thousandths of a second in a date and time value.</source>
+          <target state="translated">Die Zehntausendstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175000 -&gt; 6175`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; 0000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175000 -&gt; 6175`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; 0000`</ph></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>"fffff"</source>
+          <target state="translated">"fffff"</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">Die Hunderttausendstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`6/15/2019 13:45:30.000005 -&gt; 00000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`6/15/2019 13:45:30.000005 -&gt; 00000`</ph></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>"ffffff"</source>
+          <target state="translated">"ffffff"</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The millionths of a second in a date and time value.</source>
+          <target state="translated">Die Millionstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; 000000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; 000000`</ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>"fffffff"</source>
+          <target state="translated">"fffffff"</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The ten millionths of a second in a date and time value.</source>
+          <target state="translated">Die Zehnmillionstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>;<ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 0001150`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>;<ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 0001150`</ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>"F"</source>
+          <target state="translated">"F"</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If non-zero, the tenths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Zehntelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0500000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0500000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>"FF"</source>
+          <target state="translated">"FF"</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If non-zero, the hundredths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Hundertstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>"FFF"</source>
+          <target state="translated">"FFF"</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If non-zero, the milliseconds in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Millisekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 617`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0005000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 617`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0005000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>"FFFF"</source>
+          <target state="translated">"FFFF"</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If non-zero, the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Zehntausendstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.5275000 -&gt; 5275`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.5275000 -&gt; 5275`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>"FFFFF"</source>
+          <target state="translated">"FFFFF"</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If non-zero, the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Hunderttausendstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000050 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000050 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>"FFFFFF"</source>
+          <target state="translated">"FFFFFF"</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>If non-zero, the millionths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Millionstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>"FFFFFFF"</source>
+          <target state="translated">"FFFFFFF"</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>If non-zero, the ten millionths of a second in a date and time value.</source>
+          <target state="translated">Wenn ungleich 0 (null), die Zehnmillionstelsekunde in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 000115`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 000115`</ph></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>"g", "gg"</source>
+          <target state="translated">"g", "gg"</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The period or era.</source>
+          <target state="translated">Der Zeitraum.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>"h"</source>
+          <target state="translated">"h" </target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The hour, using a 12-hour clock from 1 to 12.</source>
+          <target state="translated">Die Stunde, von 1 bis 12 (12-Stunden-Format).</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 1`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 1`</ph></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>"hh"</source>
+          <target state="translated">"hh"</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The hour, using a 12-hour clock from 01 to 12.</source>
+          <target state="translated">Die Stunde, von 01 bis 12 (12-Stunden-Format).</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 01`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 01`</ph></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>"H"</source>
+          <target state="translated">"H"</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The hour, using a 24-hour clock from 0 to 23.</source>
+          <target state="translated">Die Stunde, von 0 bis 24 (23-Stunden-Format).</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>"HH"</source>
+          <target state="translated">"HH"</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The hour, using a 24-hour clock from 00 to 23.</source>
+          <target state="translated">Die Stunde, von 00 bis 23 (24-Stunden-Format).</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>"K"</source>
+          <target state="translated">"K"</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Time zone information.</source>
+          <target state="translated">Zeitzoneninformationen.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values: <ph id="ph1">`2019-06-15T13:45:30, Kind Unspecified -&gt;`</ph>; <ph id="ph2">`2019-06-15T13:45:30, Kind Utc -&gt; Z`</ph>; <ph id="ph3">`2019-06-15T13:45:30, Kind Local -&gt; -07:00 (depends on local computer settings)`</ph>; With <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values: <ph id="ph4">`2019-06-15T01:45:30-07:00 --&gt; -07:00`</ph>; <ph id="ph5">`2019-06-15T08:45:30+00:00 --&gt; +00:00`</ph></source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten: <ph id="ph1">`2019-06-15T13:45:30, Kind Unspecified -&gt;`</ph>; <ph id="ph2">`2019-06-15T13:45:30, Kind Utc -&gt; Z`</ph>; <ph id="ph3">`2019-06-15T13:45:30, Kind Local -&gt; -07:00 (depends on local computer settings)`</ph>; Mit <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werten: <ph id="ph4">`2019-06-15T01:45:30-07:00 --&gt; -07:00`</ph>; <ph id="ph5">`2019-06-15T08:45:30+00:00 --&gt; +00:00`</ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>"m"</source>
+          <target state="translated">"m"</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The minute, from 0 through 59.</source>
+          <target state="translated">Die Minute, von 0 bis 59.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:09:30 -&gt; 9`</ph>; <ph id="ph2">`2019-06-15T13:29:30 -&gt; 29`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:09:30 -&gt; 9`</ph>; <ph id="ph2">`2019-06-15T13:29:30 -&gt; 29`</ph></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>"mm"</source>
+          <target state="translated">"mm"</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The minute, from 00 through 59.</source>
+          <target state="translated">Die Minute, von 00 bis 59.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:09:30 -&gt; 09`</ph>; <ph id="ph2">`2019-06-15T01:45:30 -&gt; 45`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:09:30 -&gt; 09`</ph>; <ph id="ph2">`2019-06-15T01:45:30 -&gt; 45`</ph></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>"M"</source>
+          <target state="translated">"M"</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The month, from 1 through 12.</source>
+          <target state="translated">Der Monat, von 1 bis 12.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>"MM"</source>
+          <target state="translated">"MM"</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The month, from 01 through 12.</source>
+          <target state="translated">Der Monat, von 01 bis 12.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>"MMM"</source>
+          <target state="translated">"MMM"</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The abbreviated name of the month.</source>
+          <target state="translated">Der abgekürzte Name des Monats.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Jun (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juin (fr-FR)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; Jun (zu-ZA)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Jun (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juin (fr-FR)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; Jun (zu-ZA)`</ph></target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>"MMMM"</source>
+          <target state="translated">"MMMM"</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The full name of the month.</source>
+          <target state="translated">Der vollständige Name des Monats.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; June (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juni (da-DK)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; uJuni (zu-ZA)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; June (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juni (da-DK)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; uJuni (zu-ZA)`</ph></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>"s"</source>
+          <target state="translated">"s"</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The second, from 0 through 59.</source>
+          <target state="translated">Die Sekunde, von 0 bis 59.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>"ss"</source>
+          <target state="translated">"ss"</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The second, from 00 through 59.</source>
+          <target state="translated">Die Sekunde, von 00 bis 59.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>"t"</source>
+          <target state="translated">"t"</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The first character of the AM/PM designator.</source>
+          <target state="translated">Das erste Zeichen des AM/PM-Kennzeichners.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; P (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; P (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>"tt"</source>
+          <target state="translated">"tt"</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The AM/PM designator.</source>
+          <target state="translated">Der AM/PM-Kennzeichner.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; PM (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午後 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; PM (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午後 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>"y"</source>
+          <target state="translated">"y" </target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The year, from 0 to 99.</source>
+          <target state="translated">Das Jahr, von 0 bis 99.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 1`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 9`</ph>; <ph id="ph5">`2019-06-15T13:45:30 -&gt; 19`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 1`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 9`</ph>; <ph id="ph5">`2019-06-15T13:45:30 -&gt; 19`</ph></target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>"yy"</source>
+          <target state="translated">"yy"</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The year, from 00 to 99.</source>
+          <target state="translated">Das Jahr, von 00 bis 99.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 01`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 19`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 01`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 19`</ph></target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>"yyy"</source>
+          <target state="translated">"yyy"</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The year, with a minimum of three digits.</source>
+          <target state="translated">Das Jahr, mit einem Minimum von drei Ziffern.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>"yyyy"</source>
+          <target state="translated">"yyyy" </target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The year as a four-digit number.</source>
+          <target state="translated">Das Jahr als vierstellige Zahl.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 0001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 0001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>"yyyyy"</source>
+          <target state="translated">"yyyyy"</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The year as a five-digit number.</source>
+          <target state="translated">Das Jahr als fünfstellige Zahl.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 00001`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 02019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 00001`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 02019`</ph></target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>"z"</source>
+          <target state="translated">"z"</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Hours offset from UTC, with no leading zeros.</source>
+          <target state="translated">Offset von UTC in Stunden, ohne führende Nullen.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>"zz"</source>
+          <target state="translated">"zz"</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Hours offset from UTC, with a leading zero for a single-digit value.</source>
+          <target state="translated">Offset von UTC in Stunden, mit einer führenden Null für einen einstelligen Wert.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>"zzz"</source>
+          <target state="translated">"zzz"</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Hours and minutes offset from UTC.</source>
+          <target state="translated">Offset von UTC in Stunden und Minuten.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>":"</source>
+          <target state="translated">":"</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The time separator.</source>
+          <target state="translated">Das Zeittrennzeichen.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; : (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; . (it-IT)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; : (ja-JP)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; : (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; . (it-IT)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; : (ja-JP)`</ph></target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>"/"</source>
+          <target state="translated">"/"</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The date separator.</source>
+          <target state="translated">Das Datumstrennzeichen.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; / (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; - (ar-DZ)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; . (tr-TR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; / (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; - (ar-DZ)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; . (tr-TR)`</ph></target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>"string", 'string'</source>
+          <target state="translated">"string", 'string'</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Literal string delimiter.</source>
+          <target state="translated">Trennzeichen für Literalzeichenfolge.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 ("arr:" h:m t) -&gt; arr: 1:45 P`</ph>; <ph id="ph2">`2019-06-15T13:45:30 ('arr:' h:m t) -&gt; arr: 1:45 P`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 ("arr:" h:m t) -&gt; arr: 1:45 P`</ph>; <ph id="ph2">`2019-06-15T13:45:30 ('arr:' h:m t) -&gt; arr: 1:45 P`</ph></target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Defines the following character as a custom format specifier.</source>
+          <target state="translated">Definiert das nächste Zeichen als benutzerdefinierten Formatbezeichner.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The escape character.</source>
+          <target state="translated">Das Escapezeichen.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Any other character</source>
+          <target state="translated">Jedes andere Zeichen</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The character is copied to the result string unchanged.</source>
+          <target state="translated">Das Zeichen wird unverändert in die Ergebniszeichenfolge kopiert.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The following sections provide additional information about each custom date and time format specifier.</source>
+          <target state="translated">In den folgenden Abschnitten finden Sie weitere Informationen zu den einzelnen benutzerdefinierten Formatbezeichnern für Datum- und Uhrzeit.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Unless otherwise noted, each specifier produces an identical string representation regardless of whether it is used with a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">Sofern nicht anders angegeben, erzeugt jeder Bezeichner eine identische Zeichenfolgendarstellung, unabhängig davon, ob er mit einem <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert oder einem <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert verwendet wird.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The "d" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „d“</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The "d" custom format specifier represents the day of the month as a number from 1 through 31.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "d" stellt den Tag des Monats als Zahl zwischen 1 und 31 dar.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>A single-digit day is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Tage werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>If the "d" format specifier is used without other custom format specifiers, it is interpreted as the "d" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "d" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als d-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The following example includes the "d" custom format specifier in several format strings.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "d" in mehrere Formatzeichenfolgen ein.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The "dd" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „dd“</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The "dd" custom format string represents the day of the month as a number from 01 through 31.</source>
+          <target state="translated">Die benutzerdefinierte Formatzeichenfolge "dd" stellt den Tag des Monats als Zahl zwischen 01 und 31 dar.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>A single-digit day is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Tage werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The following example includes the "dd" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "dd" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The "ddd" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „ddd“</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The "ddd" custom format specifier represents the abbreviated name of the day of the week.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "ddd" stellt den abgekürzten Namen des Tags der Woche dar.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The localized abbreviated name of the day of the week is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">Der lokalisierte abgekürzte Name des Wochentags wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ddd" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "ddd" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The "dddd" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „dddd“</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "dddd" (plus einer beliebigen Anzahl zusätzlicher d-Bezeichner) stellt den vollständigen Namen des Tags der Woche dar.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The localized name of the day of the week is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.DayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.DayNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">Der lokalisierte Name des Wochentags wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.DayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.DayNames)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The following example includes the "dddd" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "dddd" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>The "f" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „f“</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>The "f" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "f" stellt die signifikanteste Ziffer des Sekundenbruchteils dar, d. h. die Zehntelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>If the "f" format specifier is used without other format specifiers, it is interpreted as the "f" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "f" allein verwendet wird, d. h. ohne andere Formatbezeichner, wird er als f-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>When you use "f" format specifiers as part of a format string supplied to the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, or <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> method, the number of "f" format specifiers indicates the number of most significant digits of the seconds fraction that must be present to successfully parse the string.</source>
+          <target state="translated">Wenn Sie den Formatbezeichner „f“ als Teil einer Formatzeichenfolge verwenden, die für die Methoden <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> oder <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> bereitgestellt wird, gibt die Anzahl der verwendeten Formatbezeichner „f“ die Anzahl der signifikantesten Ziffern des Sekundenbruchteils an, die vorhanden sein müssen, damit die Zeichenfolge erfolgreich analysiert wird.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The following example includes the "f" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "f" in mehrere benutzerdefinierte Formatzeichenfolgen ein.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The "ff" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „ff“</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The "ff" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "ff" stellt die zwei signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Hundertstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ff" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner „ff“ in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The "fff" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „fff“</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The "fff" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "fff" stellt die drei signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Millisekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The following example includes the "fff" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "fff" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The "ffff" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „ffff“</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The "ffff" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "ffff" stellt die vier signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Zehntausendstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Zehntausendstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The "fffff" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „fffff“</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The "fffff" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "fffff" stellt die fünf signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Hunderttausendstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the hundred thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Hunderttausendstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The "ffffff" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „ffffff“</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The "ffffff" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "ffffff" stellt die sechs signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Millionstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Millionstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The "fffffff" custom format specifier</source>
+          <target state="translated">Benutzerdefinierte Formatbezeichner „fffffff“</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>The "fffffff" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "fffffff" stellt die sieben signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Zehnmillionstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Zehnmillionstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The "F" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „F“</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The "F" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "F" stellt die signifikanteste Ziffer des Sekundenbruchteils dar, d. h. die Zehntelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Nothing is displayed if the digit is zero.</source>
+          <target state="translated">Es wird nichts angezeigt, wenn die Ziffer 0 (null) ist.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>If the "F" format specifier is used without other format specifiers, it is interpreted as the "F" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "F" allein verwendet wird, d. h. ohne andere Formatbezeichner, wird er als F-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The number of "F" format specifiers used with the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, or <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> method indicates the maximum number of most significant digits of the seconds fraction that can be present to successfully parse the string.</source>
+          <target state="translated">Die Anzahl der Formatbezeichner „F“, die mit den Methoden <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> oder <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> verwendet werden, gibt die maximale Anzahl der signifikantesten Ziffern des Sekundenbruchteils an, die vorhanden sein können, damit die Zeichenfolge erfolgreich analysiert wird.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The following example includes the "F" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "F" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>The "FF" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „FF“</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The "FF" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FF" stellt die zwei signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Hundertstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or two zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder zwei 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The following example includes the "FF" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "FF" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The "FFF" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „FFF“</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>The "FFF" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FFF" stellt die drei signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Millisekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or three zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder drei 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The following example includes the "FFF" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "FFF" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>The "FFFF" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „FFFF“</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The "FFFF" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FFFF" stellt die vier signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Zehntausendstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or four zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder vier 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Zehntausendstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>The "FFFFF" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „FFFFF“</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The "FFFFF" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FFFFF" stellt die fünf signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Hunderttausendstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or five zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder fünf 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the hundred thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Hunderttausendstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>The "FFFFFF" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „FFFFFF“</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The "FFFFFF" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FFFFFF" stellt die sechs signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Millionstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or six zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder sechs 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Millionstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The "FFFFFFF" custom format specifier</source>
+          <target state="translated">Benutzerdefinierte Formatbezeichner „FFFFFFF“</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The "FFFFFFF" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "FFFFFFF" stellt die sieben signifikantesten Ziffern des Sekundenbruchteils dar, d. h. die Zehnmillionstelsekunden in einem Datums- und Uhrzeitwert.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or seven zero digits are not displayed.</source>
+          <target state="translated">Nachfolgende Nullen (0) oder sieben 0-Ziffern werden jedoch nicht angezeigt.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">Auch wenn es möglich ist, die Zehnmillionstelsekundenkomponente eines Zeitwerts anzuzeigen, ist dieser Wert möglicherweise nicht sinnvoll.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">Die Genauigkeit der Datums- und Uhrzeitwerte hängt von der Auflösung der Systemuhr ab.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The "g" or "gg" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „g“ oder „gg“</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The "g" or "gg" custom format specifiers (plus any number of additional "g" specifiers) represents the period or era, such as A.D.</source>
+          <target state="translated">Die benutzerdefinierten Formatbezeichner "g" oder "gg (plus einer beliebigen Anzahl zusätzlicher g-Bezeichner)" stellen die Periode oder den Zeitraum dar, z. B. A.D.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The formatting operation ignores this specifier if the date to be formatted does not have an associated period or era string.</source>
+          <target state="translated">Dieser Bezeichner wird durch die Formatierung ignoriert, wenn dem zu formatierenden Datum keine Zeichenfolge für die Periode oder den Zeitraum zugeordnet ist.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>If the "g" format specifier is used without other custom format specifiers, it is interpreted as the "g" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "g" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als g-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The following example includes the "g" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "g" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The "h" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „h“</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "h" stellt die Stunde als Zahl von 1 bis 12 dar. Die Stunde wird dabei im 12-Stunden-Format dargestellt, bei dem die ganzen Stunden ab Mitternacht oder 12 Uhr mittags gezählt werden.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>A particular hour after midnight is indistinguishable from the same hour after noon.</source>
+          <target state="translated">Eine Stunde nach Mitternacht lässt nicht von derselben Stunde nach 12 Uhr mittags unterscheiden.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The hour is not rounded, and a single-digit hour is formatted without a leading zero.</source>
+          <target state="translated">Die Stunde wird nicht gerundet. Einstellige Stunden werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".</source>
+          <target state="translated">Beispielsweise zeigt dieser benutzerdefinierte Formatbezeichner um 5:43 Uhr morgens oder nachmittags "5" an.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>If the "h" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „h“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>The following example includes the "h" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "h" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>The "hh" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „hh“</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "hh" (plus einer beliebigen Anzahl zusätzlicher h-Bezeichner) stellt die Stunde als Zahl von 01 bis 12 dar. Die Stunde wird dabei im 12-Stunden-Format dargestellt, bei dem die ganzen Stunden ab Mitternacht oder 12 Uhr mittags gezählt werden.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>A particular hour after midnight is indistinguishable from the same hour after noon.</source>
+          <target state="translated">Eine Stunde nach Mitternacht lässt nicht von derselben Stunde nach 12 Uhr mittags unterscheiden.</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The hour is not rounded, and a single-digit hour is formatted with a leading zero.</source>
+          <target state="translated">Die Stunde wird nicht gerundet. Einstellige Stunden werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".</source>
+          <target state="translated">Beispielsweise zeigt dieser Formatbezeichner um 5:43 Uhr morgens oder nachmittags "05" an.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The following example includes the "hh" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "hh" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>The "H" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „H“</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "H" stellt die Stunde als Zahl von 0 bis 23 dar. Die Stunde wird dabei im nullbasierten 24-Stunden-Format dargestellt, bei dem die Stunden ab Mitternacht gezählt werden.</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>A single-digit hour is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Stunden werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>If the "H" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „H“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>The following example includes the "H" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "H" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The "HH" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „HH“</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "HH" (plus einer beliebigen Anzahl zusätzlicher H-Bezeichner) stellt die Stunde als Zahl von 00 bis 23 dar. Die Stunde wird dabei im nullbasierten 24-Stunden-Format dargestellt, bei dem die Stunden ab Mitternacht gezählt werden.</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>A single-digit hour is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Stunden werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>The following example includes the "HH" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "HH" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The "K" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „K“</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The "K" custom format specifier represents the time zone information of a date and time value.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "K" stellt die Zeitzoneninformationen eines Datums- und Uhrzeitwerts dar.</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>When this format specifier is used with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the result string is defined by the value of the <bpt id="p2">[</bpt>DateTime.Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property:</source>
+          <target state="translated">Bei Verwendung dieses Formatbezeichners mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten wird die Ergebniszeichenfolge durch den Wert der <bpt id="p2">[</bpt>DateTime.Kind<ept id="p2">](xref:System.DateTime.Kind)</ept>-Eigenschaft definiert:</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>For the local time zone (a <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property value of <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>, this specifier is equivalent to the "zzz" specifier and produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".</source>
+          <target state="translated">Für die lokale Zeitzone (ein <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaftswert von <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>) ist dieser Bezeichner gleich dem Bezeichner „zzz“ und erzeugt eine Ergebniszeichenfolge, die die lokale Abweichung von der koordinierten Weltzeit (Coordinated Universal Time, UTC) enthält, z.B. „-07:00“.</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>For a UTC time (a <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property value of <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept>), the result string includes a "Z" character to represent a UTC date.</source>
+          <target state="translated">Für eine UTC-Zeit (ein <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaftswert von <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept>) umfasst die Ergebniszeichenfolge ein Zeichen „Z“, um ein UTC-Datum darzustellen.</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>For a time from an unspecified time zone (a time whose <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property equals <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>), the result is equivalent to <bpt id="p3">[</bpt>String.Empty<ept id="p3">](xref:System.String#System_String_Empty)</ept>.</source>
+          <target state="translated">Für eine Zeit in einer nicht angegebenen Zeitzone (eine Zeit, deren <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft gleich <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept> ist), entspricht das Ergebnis <bpt id="p3">[</bpt>String.Empty<ept id="p3">](xref:System.String#System_String_Empty)</ept>.</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC.</source>
+          <target state="translated">Für <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werte ist der Formatbezeichner „K“ gleich dem Formatbezeichner „zz“ und erzeugt eine Ergebniszeichenfolge, die die Abweichung des <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts von der UTC enthält.</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>If the "K" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „K“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The following example displays the string that results from using the "K" custom format specifier with various <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values on a system in the U.S. Pacific Time zone.</source>
+          <target state="translated">Das folgende Beispiel zeigt die Zeichenfolge, die sich ergibt, wenn der benutzerdefinierte Formatbezeichner „K“ mit verschiedenen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten und <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werten in einem System in der Zeitzone Pacific verwendet wird.</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>The "m" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „m“</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The "m" custom format specifier represents the minute as a number from 0 through 59.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "m" stellt die Minute als Zahl von 0 bis 59 dar.</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The minute represents whole minutes that have passed since the last hour.</source>
+          <target state="translated">Die Minute stellt ganze Minuten dar, die seit der letzten Stunde vergangen sind.</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>A single-digit minute is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Minuten werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>If the "m" format specifier is used without other custom format specifiers, it is interpreted as the "m" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "m" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als m-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>The following example includes the "m" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "m" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>The "mm" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „mm“</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 through 59.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "mm" (plus einer beliebigem Anzahl zusätzlicher m-Bezeichner) stellt die Minute als Zahl von 00 bis 59 dar.</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>The minute represents whole minutes that have passed since the last hour.</source>
+          <target state="translated">Die Minute stellt ganze Minuten dar, die seit der letzten Stunde vergangen sind.</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>A single-digit minute is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Minuten werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>The following example includes the "mm" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "mm" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The "M" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „M“</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months).</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "M" stellt den Monat als Zahl von 1 bis 12 dar (oder von 1 bis 13 für Kalender mit 13 Monaten).</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>A single-digit month is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Monate werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>If the "M" format specifier is used without other custom format specifiers, it is interpreted as the "M" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "M" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als M-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>The following example includes the "M" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "M" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>The "MM" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „MM“</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>The "MM" custom format specifier represents the month as a number from 01 through 12 (or from 1 through 13 for calendars that have 13 months).</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "MM" stellt den Monat als Zahl von 01 bis 12 dar (oder von 1 bis 13 für Kalender mit 13 Monaten).</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>A single-digit month is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Monate werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MM" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "MM" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>The "MMM" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „MMM“</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>The "MMM" custom format specifier represents the abbreviated name of the month.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "MMM" stellt den abgekürzten Namen des Monats dar.</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The localized abbreviated name of the month is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedMonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">Der lokalisierte abgekürzte Name des Monats wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedMonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MMM" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "MMM" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>The "MMMM" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „MMMM“</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>The "MMMM" custom format specifier represents the full name of the month.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "MMMM" stellt den vollständigen Namen des Monats dar.</target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>The localized name of the month is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">Der lokalisierte Name des Monats wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MMMM" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "MMMM" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>The "s" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „s“</target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>The "s" custom format specifier represents the seconds as a number from 0 through 59.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "s" stellt die Sekunden als Zahl von 0 bis 59 dar.</target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>The result represents whole seconds that have passed since the last minute.</source>
+          <target state="translated">Das Ergebnis stellt ganze Sekunden dar, die seit der letzten Minute vergangen sind.</target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>A single-digit second is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Sekunden werden ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>If the "s" format specifier is used without other custom format specifiers, it is interpreted as the "s" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "s" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als s-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>The following example includes the "s" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "s" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>The "ss" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „ss“</target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 through 59.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "ss" (plus einer beliebigem Anzahl zusätzlicher s-Bezeichner) stellt die Minute als Zahl von 00 bis 59 dar.</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>The result represents whole seconds that have passed since the last minute.</source>
+          <target state="translated">Das Ergebnis stellt ganze Sekunden dar, die seit der letzten Minute vergangen sind.</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>A single-digit second is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Sekunden werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ss" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "ss" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>The "t" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „t“</target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>The "t" custom format specifier represents the first character of the AM/PM designator.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "t" stellt das erste Zeichen des AM/PM-Kennzeichners dar.</target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>The appropriate localized designator is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> or <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> property of the current or specific culture.</source>
+          <target state="translated">Der entsprechende lokalisierte Kennzeichner wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept>- oder der <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999.</source>
+          <target state="translated">Der AM-Kennzeichner wird für alle Zeitangaben von 0:00:00 (Mitternacht) bis 11:59:59.999 verwendet.</target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.</source>
+          <target state="translated">Der PM-Kennzeichner wird für alle Zeitangaben von 12:00:00 (Mittag) bis 23:59:59.999 verwendet.</target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>If the "t" format specifier is used without other custom format specifiers, it is interpreted as the "t" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "t" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als t-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>The following example includes the "t" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "t" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>The "tt" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „tt“</target>       </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "tt" (plus einer beliebigen Anzahl zusätzlicher t-Bezeichner) stellt den vollständigen AM/PM-Kennzeichner dar.</target>       </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>The appropriate localized designator is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> or <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> property of the current or specific culture.</source>
+          <target state="translated">Der entsprechende lokalisierte Kennzeichner wird aus der <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept>- oder der <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept>-Eigenschaft der aktuellen oder der angegebenen Kultur abgerufen.</target>       </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999.</source>
+          <target state="translated">Der AM-Kennzeichner wird für alle Zeitangaben von 0:00:00 (Mitternacht) bis 11:59:59.999 verwendet.</target>       </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.</source>
+          <target state="translated">Der PM-Kennzeichner wird für alle Zeitangaben von 12:00:00 (Mittag) bis 23:59:59.999 verwendet.</target>       </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Make sure to use the "tt" specifier for languages for which it is necessary to maintain the distinction between AM and PM.</source>
+          <target state="translated">Achten Sie darauf, dass Sie den Bezeichner "tt" für Sprachen verwenden, bei denen die Unterscheidung zwischen AM und PM beibehalten werden muss.</target>       </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.</source>
+          <target state="translated">Ein Beispiel hierfür ist die japanische Sprache, in der nicht das erste, sondern das zweite Zeichen des AM/PM-Bezeichners das Unterscheidungsmerkmal darstellt.</target>       </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The following example includes the "tt" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "tt" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>The "y" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „y“</target>       </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>The "y" custom format specifier represents the year as a one-digit or two-digit number.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "y" stellt das Jahr als einstellige oder zweistellige Zahl dar.</target>       </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>If the year has more than two digits, only the two low-order digits appear in the result.</source>
+          <target state="translated">Falls das Jahr mehr als zwei Ziffern umfasst, werden im Ergebnis nur die beiden niedrigwertigen Ziffern angezeigt.</target>       </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>If the first digit of a two-digit year begins with a zero (for example, 2008), the number is formatted without a leading zero.</source>
+          <target state="translated">Wenn die erste Ziffer eines zweistelligen Jahrs eine Null ist (z. B. 2008), wird die Zahl ohne führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>If the "y" format specifier is used without other custom format specifiers, it is interpreted as the "y" standard date and time format specifier.</source>
+          <target state="translated">Wenn der Formatbezeichner "y" allein verwendet wird, d. h. ohne andere benutzerdefinierte Formatbezeichner, wird er als y-Standardformatbezeichner für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>The following example includes the "y" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "y" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>The "yy" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „yy“</target>       </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>The "yy" custom format specifier represents the year as a two-digit number.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "yy" stellt das Jahr als zweistellige Zahl dar.</target>       </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>If the year has more than two digits, only the two low-order digits appear in the result.</source>
+          <target state="translated">Falls das Jahr mehr als zwei Ziffern umfasst, werden im Ergebnis nur die beiden niedrigwertigen Ziffern angezeigt.</target>       </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>If the two-digit year has fewer than two significant digits, the number is padded with leading zeros to produce two digits.</source>
+          <target state="translated">Umfasst das Jahr weniger als zwei signifikante Ziffern, wird die Zahl mit führenden Nullen auf eine zweistellige Jahresangabe aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>In a parsing operation, a two-digit year that is parsed using the "yy" custom format specifier is interpreted based on the <bpt id="p1">[</bpt>Calendar.TwoDigitYearMax<ept id="p1">](xref:System.Globalization.Calendar.TwoDigitYearMax)</ept> property of the format provider's current calendar.</source>
+          <target state="translated">Bei einem Analysevorgang wird eine mit dem benutzerdefinierten Formatbezeichner „yy“ analysierte zweistellige Jahresangabe auf Grundlage der <bpt id="p1">[</bpt>Calendar.TwoDigitYearMax<ept id="p1">](xref:System.Globalization.Calendar.TwoDigitYearMax)</ept>-Eigenschaft des aktuellen Kalenders des Formatanbieters interpretiert.</target>       </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>The following example parses the string representation of a date that has a two-digit year by using the default Gregorian calendar of the en-US culture, which, in this case, is the current culture.</source>
+          <target state="translated">Im folgenden Beispiel wird die Zeichenfolgendarstellung eines Datums mit einer zweistelligen Jahresangabe anhand des standardmäßigen gregorianischen Kalenders der Kultur en-US analysiert, die in diesem Fall die aktuelle Kultur ist.</target>       </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>It then changes the current culture's <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object to use a <bpt id="p2">[</bpt>GregorianCalendar<ept id="p2">](xref:System.Globalization.GregorianCalendar)</ept> object whose <bpt id="p3">[</bpt>TwoDigitYearMax<ept id="p3">](xref:System.Globalization.GregorianCalendar.TwoDigitYearMax)</ept> property has been modified.</source>
+          <target state="translated">Anschließend wird das <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt der aktuellen Kultur so geändert, dass ein <bpt id="p2">[</bpt>GregorianCalendar<ept id="p2">](xref:System.Globalization.GregorianCalendar)</ept>-Objekt verwendet wird, dessen <bpt id="p3">[</bpt>TwoDigitYearMax<ept id="p3">](xref:System.Globalization.GregorianCalendar.TwoDigitYearMax)</ept>-Eigenschaft geändert wurde.</target>       </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yy" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "yy" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>The "yyy" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „yyy“</target>       </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>The "yyy" custom format specifier represents the year with a minimum of three digits.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "yyy" stellt das Jahr mit mindestens drei Ziffern dar.</target>       </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>If the year has more than three significant digits, they are included in the result string.</source>
+          <target state="translated">Falls das Jahr mehr als drei signifikante Ziffern umfasst, werden diese in die Ergebniszeichenfolge aufgenommen.</target>       </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than three digits, the number is padded with leading zeros to produce three digits.</source>
+          <target state="translated">Umfasst das Jahr weniger als drei Ziffern, wird die Zahl mit führenden Nullen auf eine dreistellige Jahresangabe aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>For the Thai Buddhist calendar, which can have five-digit years, this format specifier displays all significant digits.</source>
+          <target state="translated">Für den buddhistischen Kalender Thailands, der fünfstellige Jahresangaben enthalten kann, zeigt dieser Bezeichner alle signifikanten Ziffern an.</target>       </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyy" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "yyy" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>The "yyyy" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „yyyy“</target>       </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>The "yyyy" custom format specifier represents the year with a minimum of four digits.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "yyyy" stellt das Jahr mit mindestens vier Ziffern dar.</target>       </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>If the year has more than four significant digits, they are included in the result string.</source>
+          <target state="translated">Falls das Jahr mehr als vier signifikante Ziffern umfasst, werden diese in die Ergebniszeichenfolge eingeschlossen.</target>       </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than four digits, the number is padded with leading zeros to produce four digits.</source>
+          <target state="translated">Umfasst das Jahr weniger als vier Ziffern, wird die Zahl mit führenden Nullen auf eine vierstellige Jahresangabe aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>For the Thai Buddhist calendar, which can have five-digit years, this format specifier displays all significant digits.</source>
+          <target state="translated">Für den buddhistischen Kalender Thailands, der fünfstellige Jahresangaben enthalten kann, zeigt dieser Bezeichner alle signifikanten Ziffern an.</target>       </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyyy" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "yyyy" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>The "yyyyy" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „yyyyy“</target>       </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>The "yyyyy" custom format specifier (plus any number of additional "y" specifiers) represents the year with a minimum of five digits.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "yyyyy" (plus einer beliebigen Anzahl zusätzlicher y-Bezeichner) stellt das Jahr mit mindestens fünf Ziffern dar.</target>       </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>If the year has more than five significant digits, they are included in the result string.</source>
+          <target state="translated">Falls das Jahr mehr als fünf signifikante Ziffern umfasst, werden diese in die Ergebniszeichenfolge eingeschlossen.</target>       </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than five digits, the number is padded with leading zeros to produce five digits.</source>
+          <target state="translated">Umfasst das Jahr weniger als fünf Ziffern, wird die Zahl mit führenden Nullen auf eine fünfstellige Jahresangabe aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>If there are additional "y" specifiers, the number is padded with as many leading zeros as necessary to produce the number of "y" specifiers.</source>
+          <target state="translated">Falls zusätzliche y-Bezeichner vorhanden sind, wird die Zahl mit der erforderlichen Anzahl an führenden Nullen auf die Anzahl der y-Bezeichner aufgefüllt.</target>       </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyyyy" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "yyyyy" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>The "z" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „z“</target>       </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "z" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten stellt der benutzerdefinierte Formatbezeichner „z“ die vorzeichenbehaftete Abweichung der Zeitzone des lokalen Betriebssystems von der koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, gemessen in Stunden.</target>       </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">Der Bezeichner reflektiert nicht den Wert der <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft einer Instanz.</target>       </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>For this reason, the "z" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Aus diesem Grund wird der Formatbezeichner „z“ nicht zur Verwendung mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten empfohlen.</target>       </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werten stellt dieser Formatbezeichner die Abweichung eines <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts von der UTC in Stunden dar.</target>       </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">Der Offset wird immer mit einem vorangestellten Plus- oder Minuszeichen angezeigt.</target>       </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">Ein Pluszeichen (+) gibt die Stunden vor UTC, ein Minuszeichen (-) die Stunden nach UTC an.</target>       </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted without a leading zero.</source>
+          <target state="translated">Einstellige Offset-Werte werden ohne eine führende Null formatiert.</target>       </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>If the "z" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „z“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>The following example includes the "z" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "z" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>The "zz" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „zz“</target>       </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "zz" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten stellt der benutzerdefinierte Formatbezeichner „zz“ die vorzeichenbehaftete Abweichung der Zeitzone des lokalen Betriebssystems von der koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, gemessen in Stunden.</target>       </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">Der Bezeichner reflektiert nicht den Wert der <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft einer Instanz.</target>       </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>For this reason, the "zz" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Aus diesem Grund wird der Formatbezeichner „zz“ nicht zur Verwendung mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten empfohlen.</target>       </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werten stellt dieser Formatbezeichner die Abweichung eines <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts von der UTC in Stunden dar.</target>       </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">Der Offset wird immer mit einem vorangestellten Plus- oder Minuszeichen angezeigt.</target>       </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">Ein Pluszeichen (+) gibt die Stunden vor UTC, ein Minuszeichen (-) die Stunden nach UTC an.</target>       </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Offset-Werte werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>The following example includes the "zz" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "zz" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>The "zzz" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „zzz“</target>       </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "zzz" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten stellt der benutzerdefinierte Formatbezeichner „zzz“ die vorzeichenbehaftete Abweichung der Zeitzone des lokalen Betriebssystems von der koordinierten Weltzeit (Coordinated Universal Time, UTC) dar, gemessen in Stunden.</target>       </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">Der Bezeichner reflektiert nicht den Wert der <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft einer Instanz.</target>       </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>For this reason, the "zzz" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Aus diesem Grund wird der Formatbezeichner „zzz“ nicht zur Verwendung mit <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werten empfohlen.</target>       </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werten stellt dieser Formatbezeichner die Abweichung eines <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts von der UTC in Stunden dar.</target>       </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">Der Offset wird immer mit einem vorangestellten Plus- oder Minuszeichen angezeigt.</target>       </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">Ein Pluszeichen (+) gibt die Stunden vor UTC, ein Minuszeichen (-) die Stunden nach UTC an.</target>       </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted with a leading zero.</source>
+          <target state="translated">Einstellige Offset-Werte werden mit einer führenden Null formatiert.</target>       </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The following example includes the "zzz" custom format specifier in a custom format string.</source>
+          <target state="translated">Das folgende Beispiel schließt den benutzerdefinierten Formatbezeichner "zzz" in eine benutzerdefinierte Formatzeichenfolge ein.</target>       </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>The ":" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „:“</target>       </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner ":" stellt das Trennzeichen für Zeitangaben dar, mit dem zwischen Stunden und Minuten unterschieden werden kann.</target>       </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>If the ":" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „:“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>The "/" custom format specifier</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner „/“</target>       </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days.</source>
+          <target state="translated">Der benutzerdefinierte Formatbezeichner "/" stellt das Datumstrennzeichen dar, mit dem zwischen Jahren, Monaten und Tagen unterschieden wird.</target>       </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>If the "/" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn der Formatbezeichner „/“ ohne weitere benutzerdefinierte Formatbezeichner verwendet wird, wird er als Standardformatbezeichner für Datum und Uhrzeit interpretiert, und es wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">Weitere Informationen zur Verwendung eines einzelnen Formatbezeichners finden Sie unter <bpt id="p1">[</bpt>Verwenden von einzelnen benutzerdefinierten Formatbezeichnern<ept id="p1">](#using-single-custom-format-specifiers)</ept> weiter unten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Character literals</source>
+          <target state="translated">Zeichenliterale</target>       </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of ", ', /, and <ph id="ph1">\,</ph> as special characters.</source>
+          <target state="translated">Die folgenden Zeichen in einer benutzerdefinierten Zeichenfolge für Datum und Uhrzeit sind reserviert und werden immer als Formatierungszeichen bzw. im Fall von ", ', / und <ph id="ph1">\,</ph> als Sonderzeichen interpretiert.</target>       </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>F</source>
+          <target state="translated">F</target>       </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>H</source>
+          <target state="translated">H</target>       </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>K</source>
+          <target state="translated">K</target>       </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>M</source>
+          <target state="translated">M</target>       </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>d</source>
+          <target state="translated">d</target>       </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>f</source>
+          <target state="translated">f</target>       </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>g</source>
+          <target state="translated">g</target>       </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>h</source>
+          <target state="translated">h</target>       </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>m</source>
+          <target state="translated">m</target>       </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>s</source>
+          <target state="translated">s</target>       </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>y</source>
+          <target state="translated">y</target>       </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>y</source>
+          <target state="translated">y</target>       </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>z</source>
+          <target state="translated">z</target>       </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>:</source>
+          <target state="translated">:</target>       </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>"</source>
+          <target state="translated">"</target>       </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>'</source>
+          <target state="translated">'</target>       </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.</source>
+          <target state="translated">Alle anderen Zeichen werden immer als Zeichenliterale interpretiert und bei einem Formatierungsvorgang unverändert in die Ergebniszeichenfolge übernommen.</target>       </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.</source>
+          <target state="translated">In einem Analysevorgang müssen die Zeichen exakt den Zeichen in der Eingabezeichenfolge entsprechen, beim Vergleich wird die Groß- und Kleinschreibung beachtet.</target>       </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>The following example includes the literal characters "PST" (for Pacific Standard Time) and "PDT" (for Pacific Daylight Time) to represent the local time zone in a format string.</source>
+          <target state="translated">Das folgende Beispiel enthält die Literalzeichen „PST“ (für Pacific Standard Time) und „PDT“ (für Pacific Daylight Time), um die lokale Zeitzone in einer Formatzeichenfolge darzustellen.</target>       </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>Note that the string is included in the result string, and that a string that includes the local time zone string also parses successfully.</source>
+          <target state="translated">Beachten Sie, dass die Zeichenfolge in der Ergebniszeichenfolge enthalten ist und dass eine Zeichenfolge, die die Zeichenfolge der lokalen Zeitzone enthält, ebenfalls erfolgreich analysiert wird.</target>       </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:</source>
+          <target state="translated">Es gibt zwei Möglichkeiten, um anzugeben, dass Zeichen nicht als reservierte Zeichen, sondern als Literalzeichen interpretiert werden sollen, damit sie in eine Ergebniszeichenfolge eingeschlossen oder in einer Eingabezeichenfolge erfolgreich analysiert werden können:</target>       </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>By escaping each reserved character.</source>
+          <target state="translated">Versehen Sie jedes reservierte Zeichen mit einem Escapezeichen.</target>       </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Using the escape character<ept id="p1">](#using-the-escape-character)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Verwenden des Escapezeichens<ept id="p1">](#using-the-escape-character)</ept>.</target>       </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string.</source>
+          <target state="translated">Das folgende Beispiel enthält die Literalzeichen „pst“ (für Pacific Standard Time), um die lokale Zeitzone in einer Formatzeichenfolge darzustellen.</target>       </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.</source>
+          <target state="translated">Da „s“ und „t“ benutzerdefinierte Formatzeichenfolgen sind, müssen beide Zeichen mit Escapezeichen versehen werden, damit sie als Zeichenliterale interpretiert werden können.</target>       </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>By enclosing the entire literal string in quotation marks or apostrophes.</source>
+          <target state="translated">Schließen Sie die gesamte Literalzeichenfolge in Anführungszeichen oder Apostrophe ein.</target>       </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>The following example is like the previous one, except that "pst" is enclosed in quotation marks to indicate that the entire delimited string should be interpreted as character literals.</source>
+          <target state="translated">Das folgende Beispiel ist das gleiche wie das vorherige, außer dass „pst“ in Anführungszeichen eingeschlossen ist, um anzugeben, dass die gesamte Zeichenfolge als Zeichenliterale interpretiert werden soll.</target>       </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Notes</source>
+          <target state="translated">Notizen</target>       </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Using single custom format specifiers</source>
+          <target state="translated">Verwenden von einzelnen benutzerdefinierten Formatbezeichnern</target>       </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>A custom date and time format string consists of two or more characters.</source>
+          <target state="translated">Eine benutzerdefinierte Formatzeichenfolge für Datum und Uhrzeit besteht aus zwei oder mehr Zeichen.</target>       </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>Date and time formatting methods interpret any single-character string as a standard date and time format string.</source>
+          <target state="translated">Formatierungsmethoden für Datum und Uhrzeit interpretieren einzelne Zeichenfolgen als Standardformatzeichenfolgen für Datum und Uhrzeit.</target>       </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>If they do not recognize the character as a valid format specifier, they throw a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn ein Zeichen nicht als gültiger Formatbezeichner erkannt wird, wird eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> ausgelöst.</target>       </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string.</source>
+          <target state="translated">Wenn die Formatzeichenfolge beispielsweise nur aus dem h-Bezeichner besteht, wird sie als Standardformatzeichenfolge für Datum und Uhrzeit interpretiert.</target>       </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>However, in this particular case, an exception is thrown because there is no "h" standard date and time format specifier.</source>
+          <target state="translated">In diesem speziellen Fall wird jedoch eine Ausnahme ausgelöst, weil kein Standardformatbezeichner „h“ für Datum und Uhrzeit vorhanden ist.</target>       </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before or after the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.</source>
+          <target state="translated">Wenn Sie einen benutzerdefinierten Formatbezeichner für Datum und Uhrzeit als einzigen Bezeichner in einer Formatierungszeichenfolge verwenden möchten, d. h. wenn Sie den benutzerdefinierten Formatbezeichner "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":" oder "/" ohne einen anderen Bezeichner verwenden möchten, müssen Sie ein Leerzeichen vor oder nach dem Bezeichner angeben, oder Sie stellen dem einzelnen benutzerdefinierten Bezeichner für Datum und Uhrzeit einen Prozentformatbezeichner (%) voran.</target>       </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>For example, "<ph id="ph1">`%h`</ph>" is interpreted as a custom date and time format string that displays the hour represented by the current date and time value.</source>
+          <target state="translated">Beispielsweise wird „<ph id="ph1">`%h`</ph>“ als benutzerdefinierte Formatzeichenfolge für Datum und Uhrzeit interpretiert, mit der die durch den aktuellen Datums- und Uhrzeitwert dargestellte Stunde angezeigt wird.</target>       </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>You can also use the " h" or "h " format string, although this includes a space in the result string along with the hour.</source>
+          <target state="translated">Sie können auch die Formatzeichenfolge " h" oder "h " verwenden, obwohl dadurch ein Leerzeichen zusammen mit der Stunde in die Ergebniszeichenfolge eingeschlossen wird.</target>       </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>The following example illustrates these three format strings.</source>
+          <target state="translated">Im folgenden Beispiel werden diese drei Formatzeichenfolgen veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Using the escape character</source>
+          <target state="translated">Verwenden des Escapezeichens</target>       </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" characters in a format string are interpreted as custom format specifiers rather than as literal characters.</source>
+          <target state="translated">Die Zeichen "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":" oder "/" in einer Formatzeichenfolge werden als benutzerdefinierte Formatbezeichner und nicht als Literalzeichen interpretiert.</target>       </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>To prevent a character from being interpreted as a format specifier, you can precede it with a backslash (<ph id="ph1">\)</ph>, which is the escape character.</source>
+          <target state="translated">Um zu verhindern, dass ein Zeichen als Formatbezeichner interpretiert wird, können Sie dem Zeichen einen umgekehrten Schrägstrich (<ph id="ph1">\)</ph> als Escapezeichen voranstellen.</target>       </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>The escape character signifies that the following character is a character literal that should be included in the result string unchanged.</source>
+          <target state="translated">Das Escapezeichen gibt an, dass das folgende Zeichen ein Zeichenliteral ist, das unverändert in der Ergebniszeichenfolge enthalten sein soll.</target>       </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>To include a backslash in a result string, you must escape it with another backslash (<ph id="ph1">`\\`</ph>).</source>
+          <target state="translated">Um einen umgekehrten Schrägstrich in eine Ergebniszeichenfolge einzuschließen, müssen Sie diesen mit einem weiteren umgekehrten Schrägstrich versehen, der als Escapezeichen dient (<ph id="ph1">`\\`</ph>).</target>       </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Some compilers, such as the C# compiler, may also interpret a single backslash character as an escape character.</source>
+          <target state="translated">Einige Compiler, wie z.B. der C#-Compiler, interpretieren möglicherweise auch einen einzelnen umgekehrten Schrägstrich als Escapezeichen.</target>       </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>To ensure that a string is interpreted correctly when formatting, you can use the verbatim string literal character (the <ph id="ph1">@</ph> character) before the string, or add another backslash character before each backslash.</source>
+          <target state="translated">Um sicherzustellen, dass eine Zeichenfolge bei der Formatierung ordnungsgemäß interpretiert wird, können Sie der Zeichenfolge das Literalzeichen für wörtliche Zeichenfolgen (<ph id="ph1">@</ph>-Zeichen) voranstellen, oder Sie können jedem umgekehrten Schrägstrich einen weiteren umgekehrten Schrägstrich voranstellen.</target>       </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>The following C# example illustrates both approaches.</source>
+          <target state="translated">Beide Verfahren werden im folgenden C#-Codebeispiel veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>The following example uses the escape character to prevent the formatting operation from interpreting the "h" and "m" characters as format specifiers.</source>
+          <target state="translated">Im folgenden Beispiel wird das Escapezeichen verwendet, um zu verhindern, dass der Formatierungsvorgang die Zeichen "h" und "m" als Formatbezeichner interpretiert.</target>       </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>DateTimeFormatInfo properties</source>
+          <target state="translated">DateTimeFormatInfo-Eigenschaften</target>       </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Formatting is influenced by properties of the current <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object, which is provided implicitly by the current thread culture or explicitly by the <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> parameter of the method that invokes formatting.</source>
+          <target state="translated">Die Formatierung wird durch die Eigenschaften des aktuellen <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekts beeinflusst, das implizit durch die aktuelle Threadkultur oder explizit durch den <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept>-Parameter der Methode bereitgestellt wird, die die Formatierung aufruft.</target>       </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>For the <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> parameter, you should specify a <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept> object, which represents a culture, or a <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> object.</source>
+          <target state="translated">Für den <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept>-Parameter sollten Sie ein <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept>-Objekt, das eine Kultur darstellt, oder ein <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekt angeben.</target>       </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>The result string produced by many of the custom date and time format specifiers also depends on properties of the current <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object.</source>
+          <target state="translated">Die von vielen der benutzerdefinierten Formatbezeichner für Datum und Uhrzeit erzeugte Ergebniszeichenfolge hängt auch von den Eigenschaften des aktuellen <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekts ab.</target>       </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>Your application can change the result produced by some custom date and time format specifiers by changing the corresponding <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> property.</source>
+          <target state="translated">Die Anwendung kann das von einigen Standardformatbezeichnern für Datum und Uhrzeit erzeugte Ergebnis ändern, indem sie die entsprechende <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Eigenschaft ändert.</target>       </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>For example, the "ddd" format specifier adds an abbreviated weekday name found in the <bpt id="p1">[</bpt>AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> string array to the result string.</source>
+          <target state="translated">So fügt beispielsweise der Formatbezeichner „ddd“ der Ergebniszeichenfolge einen abgekürzten Wochentagsnamen hinzu, der im <bpt id="p1">[</bpt>AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept>-Zeichenfolgenarray gefunden wird.</target>       </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Similarly, the "MMMM" format specifier adds a full month name found in the <bpt id="p1">[</bpt>MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> string array to the result string.</source>
+          <target state="translated">Ebenso fügt der Formatbezeichner „MMMM“ der Ergebniszeichenfolge einen vollständigen Monatsnamen hinzu, der im <bpt id="p1">[</bpt>MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept>-Zeichenfolgenarray gefunden wird.</target>       </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept></target>       </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></target>       </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formatting types<ept id="p1">](formatting-types.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Formatierung von Typen<ept id="p1">](formatting-types.md)</ept></target>       </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Standardformatzeichenfolgen für Datum und Uhrzeit<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
