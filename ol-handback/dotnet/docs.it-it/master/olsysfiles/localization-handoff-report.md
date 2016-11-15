@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/toc.md) | HandedOffSuccess | [Details](#d93f2ca1cffd632f0827bac59f879e8f1f647888507)
 
 ## Item Details
-##### <a name='d93f2ca1cffd632f0827bac59f879e8f1f647888507'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/toc.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/01eec2e2bc2fe169ce82091c146398e34613e8a0/ol-handoff/dotnet/docs.it-it/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.it-it.xlf)
-* Handoff Datetime: 2016-11-13 21:38:03
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
