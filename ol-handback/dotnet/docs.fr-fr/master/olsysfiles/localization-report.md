@@ -2155,8 +2155,8 @@
 * Archive Datetime: 2016-11-15 04:20:35
 * Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/22b5932f21482c48ea112497466bfaad4073fd9a/ol-handback/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
 * Handback Datetime: 2016-11-15 11:31:17
-* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
+* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/22b5932f21482c48ea112497466bfaad4073fd9a/ol-handback/dotnet/docs.fr-fr/master/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-15 11:32:26
 * [Back to Top](#report-top)
 
 ##### <a name='caae9f0a32c4378488329fd6d88c1dc7bf96ae9a25'></a> Source: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/core/deploying/reducing-dependencies.md)
