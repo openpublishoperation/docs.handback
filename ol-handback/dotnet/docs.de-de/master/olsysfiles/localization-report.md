@@ -7,8 +7,8 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 193
-[ Handback Failed Files ](#handback-failed-list)| 0
+[ Archive Success Files ](#archive-success-list)| 94
+[ Handback Failed Files ](#handback-failed-list)| 99
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 68
 [ Ignored Files ](#ignored-list)| 1554
@@ -44,8 +44,6 @@
  [docs\csharp\roslyn\index.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/csharp/roslyn/index.md) | ArchivedSuccess | [Details](#c5b207676294e25a0ee8e41d098bad049889d40a156)
  [docs\csharp\tour-of-csharp\index.md](https://github.com/dotnet/docs/blob/487f9831526f124ddd60dece21852da8c086b520/docs/csharp/tour-of-csharp/index.md) | ArchivedSuccess | [Details](#559c9f47c3a903f377514dfdaa5bc620c2186800165)
  [docs\csharp\tutorials\index.md](https://github.com/dotnet/docs/blob/924ef8f8bfe6771a6803eef25690cee5942f0bc8/docs/csharp/tutorials/index.md) | ArchivedSuccess | [Details](#fc38db9ddaab4ea3da13edaad6e2404518195acf180)
- [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/aspnetmvc.md) | ArchivedSuccess | [Details](#bde267042883d2f25848747047845a16b181e549186)
- [docs\framework\docker\console.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/console.md) | ArchivedSuccess | [Details](#fd610bdba56679dd522149d8e91dc91858c7f7ed187)
  [docs\framework\docker\media\aspnetmvc\PublishConnection.png](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/media/aspnetmvc/PublishConnection.png) | ArchivedSuccess | [Details](#fc8ffa269b4bb930023ed37daeb62aa8a52a5de4189)
  [docs\framework\docker\media\aspnetmvc\PublishSettings.png](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/media/aspnetmvc/PublishSettings.png) | ArchivedSuccess | [Details](#6d30410101dd7a9053461338a6fa44965dc97f97190)
  [docs\framework\docker\media\aspnetmvc\SwitchContainer.png](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/media/aspnetmvc/SwitchContainer.png) | ArchivedSuccess | [Details](#1ab1239352b9a3bf5a0b0d4d5ec5c6726507bccc191)
@@ -101,122 +99,126 @@
  [docs\images\hub\net-gs-7.svg](https://github.com/dotnet/docs/blob/bb2f36cd305bf5a06bc9ac10cd49b6d27fe0d4c0/docs/images/hub/net-gs-7.svg) | ArchivedSuccess | [Details](#80338b7cdc651982e3da9acc7d657b7a9b2dcfef378)
  [docs\images\IC393001.png](https://github.com/dotnet/docs/blob/579f8f0085c3c4683e7f5c0812761b335a2f79b8/docs/images/IC393001.png) | ArchivedSuccess | [Details](#84b281960c8a4c0a72074ed3e9de8b33803d4281379)
  [docs\standard\about.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/about.md) | ArchivedSuccess | [Details](#8f06ab3c7124020c5515faf015e017c4b4675ead387)
- [docs\standard\async-in-depth.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/async-in-depth.md) | ArchivedSuccess | [Details](#6536a608a4ee1bb10f41907a28114193a300a52c389)
- [docs\standard\base-types\alternation.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/alternation.md) | ArchivedSuccess | [Details](#05b72d6a3d8ebdfb3808ba2f9a47476942686de2391)
- [docs\standard\base-types\anchors.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/anchors.md) | ArchivedSuccess | [Details](#b2162a90d5cb6f3472a9d323a3e46e137c9edf82392)
- [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backreference.md) | ArchivedSuccess | [Details](#f55ea60d11abcfce4b5fb502e66c513646707bef393)
- [docs\standard\base-types\backtracking.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backtracking.md) | ArchivedSuccess | [Details](#00e324803cf5c57eab1cc71eb819949247131479394)
- [docs\standard\base-types\basic-manipulations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/basic-manipulations.md) | ArchivedSuccess | [Details](#120c97f323098a8c70e6f78e10e5a2fc40714b3e395)
- [docs\standard\base-types\best-practices.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices.md) | ArchivedSuccess | [Details](#00c7228c5cb906f41df5e60a318721008ecf0bb7398)
- [docs\standard\base-types\best-practices-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices-strings.md) | ArchivedSuccess | [Details](#3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397)
- [docs\standard\base-types\changing-case.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-case.md) | ArchivedSuccess | [Details](#a6f6f21daae79f752cfac0a70558778ae98d1a5d399)
- [docs\standard\base-types\changing-formats.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-formats.md) | ArchivedSuccess | [Details](#8b333db10f7dc9d0e4701899b7af46f45f60aa8e400)
- [docs\standard\base-types\character-encoding.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/character-encoding.md) | ArchivedSuccess | [Details](#6080f5fa12a2391dd138828e0afc2219f1e3a11b401)
- [docs\standard\base-types\classes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/classes.md) | ArchivedSuccess | [Details](#f8ebb1db670669e2e8666cd5ef90f72237c105e4402)
- [docs\standard\base-types\common-type-system.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/common-type-system.md) | ArchivedSuccess | [Details](#7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403)
- [docs\standard\base-types\comparing.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/comparing.md) | ArchivedSuccess | [Details](#10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404)
- [docs\standard\base-types\compilation.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/compilation.md) | ArchivedSuccess | [Details](#1832403174276e48dc1857be8ff11fba2b9a250c405)
- [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/composite-format.md) | ArchivedSuccess | [Details](#9bcf2ff74237f7e7faf2890849c2d68a0a602353406)
- [docs\standard\base-types\conversion-tables.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/conversion-tables.md) | ArchivedSuccess | [Details](#01e15d9dc3881c7e2e4ea17db666991d72aa1b84407)
- [docs\standard\base-types\creating-new.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/creating-new.md) | ArchivedSuccess | [Details](#43d6194afd948aeccbf051365e059794c74d2646408)
- [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-datetime.md) | ArchivedSuccess | [Details](#ca7e486b07621269a617ae7542d389a78e4ab571409)
- [docs\standard\base-types\custom-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-numeric.md) | ArchivedSuccess | [Details](#e36c0117f6f011589299fa59a8abd139870c2257410)
- [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-timespan.md) | ArchivedSuccess | [Details](#168bd497891ead884413fad4542943a24de7a7f4411)
- [docs\standard\base-types\define-custom.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/define-custom.md) | ArchivedSuccess | [Details](#926195e48e9653525a502cf9403ae9c205bd0fe3412)
- [docs\standard\base-types\display-dates.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-dates.md) | ArchivedSuccess | [Details](#783b51f3145d8b11e79b99cfdc4baefe127306e3413)
- [docs\standard\base-types\display-milliseconds.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-milliseconds.md) | ArchivedSuccess | [Details](#cc3d9e1df658b923c0006e4798e44bceba79da31414)
- [docs\standard\base-types\enumeration-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/enumeration-format.md) | ArchivedSuccess | [Details](#8cb811636ca2c7b207f7661e990567b5785bc994415)
- [docs\standard\base-types\escapes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/escapes.md) | ArchivedSuccess | [Details](#08a781be74120d26b8408ee8e9b12051b005ad54416)
- [docs\standard\base-types\extract-day.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/extract-day.md) | ArchivedSuccess | [Details](#f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417)
- [docs\standard\base-types\extract-protocol.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/extract-protocol.md) | ArchivedSuccess | [Details](#9c86a77271ac0b239e92f415bd7b26d51d762dd8418)
- [docs\standard\base-types\formatting-types.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/formatting-types.md) | ArchivedSuccess | [Details](#6c6ddfdbe288fe012adf31fd4d45af1b697d1132419)
- [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/grouping.md) | ArchivedSuccess | [Details](#d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420)
- [docs\standard\base-types\manipulating-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/manipulating-strings.md) | ArchivedSuccess | [Details](#40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422)
- [docs\standard\base-types\miscellaneous.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/miscellaneous.md) | ArchivedSuccess | [Details](#477332f4009790727686aa3d91e35509e3766903423)
- [docs\standard\base-types\object-model.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/object-model.md) | ArchivedSuccess | [Details](#e4a5237fcb439999efe4454512b06444f129e7b4424)
- [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md) | ArchivedSuccess | [Details](#21672e28d0e76b98f6dac698096fccb2ce4edd03425)
- [docs\standard\base-types\padding.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/padding.md) | ArchivedSuccess | [Details](#73452c1f432fb8cb50a36e739fb91962693f8e51427)
- [docs\standard\base-types\pad-number.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/pad-number.md) | ArchivedSuccess | [Details](#991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426)
- [docs\standard\base-types\parsing-datetime.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-datetime.md) | ArchivedSuccess | [Details](#ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428)
- [docs\standard\base-types\parsing-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/parsing-numeric.md) | ArchivedSuccess | [Details](#65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429)
- [docs\standard\base-types\parsing-other.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-other.md) | ArchivedSuccess | [Details](#3f26670dc9f4c6b6608599793352445d5665cf64430)
- [docs\standard\base-types\performing-formatting-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/performing-formatting-operations.md) | ArchivedSuccess | [Details](#cd243693a19500ac53fe6033cfe4ef5a36a9096a432)
  [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quantifiers.md) | ArchivedSuccess | [Details](#016ee9a4f05fdf36982c5b369780526296b53a7d433)
  [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quick-ref.md) | ArchivedSuccess | [Details](#ff1eef78985f9b5b428f3b696fb267b59f3cb283434)
  [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md) | ArchivedSuccess | [Details](#b217b59874ceafbb0e5e410878cc434974c5a863435)
- [docs\standard\base-types\regular-expressions.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regular-expressions.md) | ArchivedSuccess | [Details](#e9ae9cb47955fb926507be32afb875efd3260ce3437)
- [docs\standard\base-types\roundtrip.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/roundtrip.md) | ArchivedSuccess | [Details](#00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438)
- [docs\standard\base-types\scanning.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/scanning.md) | ArchivedSuccess | [Details](#8951e4ca82c0148bae7e8279681920ffabb523be439)
- [docs\standard\base-types\standard-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-datetime.md) | ArchivedSuccess | [Details](#1196459d74038edb1268c619dac3da69f38e7860440)
- [docs\standard\base-types\standard-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-numeric.md) | ArchivedSuccess | [Details](#5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441)
- [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/standard-timespan.md) | ArchivedSuccess | [Details](#a31f0da1f5b502d8b983f4d496c4b9a520b0309c442)
- [docs\standard\base-types\stringbuilder.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/stringbuilder.md) | ArchivedSuccess | [Details](#1e8453b78827d8c02f29135ddfb832956ab40f3c443)
- [docs\standard\base-types\strip-characters.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/strip-characters.md) | ArchivedSuccess | [Details](#062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444)
- [docs\standard\base-types\substitutions.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/substitutions.md) | ArchivedSuccess | [Details](#3e02d18d6566c67c7fff7003671f340f97b0dfce445)
- [docs\standard\base-types\thread-safety.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/thread-safety.md) | ArchivedSuccess | [Details](#6b410da1982519fd9ff137bd38f1d074ce08d39b446)
- [docs\standard\base-types\trimming.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/trimming.md) | ArchivedSuccess | [Details](#96cf08c0de8ba73d931d561187369ccf8b091651447)
- [docs\standard\base-types\type-conversion.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/type-conversion.md) | ArchivedSuccess | [Details](#ba4a356921cb43b88d3ad8e6ef7487699f442385448)
- [docs\standard\base-types\verify-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/verify-format.md) | ArchivedSuccess | [Details](#d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449)
- [docs\standard\clr.md](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/clr.md) | ArchivedSuccess | [Details](#44b4798a9b6f132d2fc8921bfffa24fa04202d43451)
- [docs\standard\collections\comparisons-and-sorts-within-collections.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/comparisons-and-sorts-within-collections.md) | ArchivedSuccess | [Details](#de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453)
- [docs\standard\collections\hashtable-and-dictionary-collection-types.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/hashtable-and-dictionary-collection-types.md) | ArchivedSuccess | [Details](#721f16154e1df4b7a075639ccce6bf2650b46c9b454)
- [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs/blob/cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b/docs/standard/collections/selecting-a-collection-class.md) | ArchivedSuccess | [Details](#f00fedb70bddc184e5c6ea71213b2beb78594792456)
- [docs\standard\collections\sorted-collection-types.md](https://github.com/dotnet/docs/blob/149086110d7470d97e1ab3e5969269626290b523/docs/standard/collections/sorted-collection-types.md) | ArchivedSuccess | [Details](#a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457)
- [docs\standard\collections\threadsafe\blockingcollection-overview.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/blockingcollection-overview.md) | ArchivedSuccess | [Details](#991b4b8389cc967881c2c39d29c387687047489f458)
- [docs\standard\collections\threadsafe\how-to-add-and-remove-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-remove-items.md) | ArchivedSuccess | [Details](#90ad4f1f0266d948937ed462be15a4d4948ce7f8459)
- [docs\standard\collections\threadsafe\how-to-add-and-take-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-take-items.md) | ArchivedSuccess | [Details](#4f73f3bf2000a0ff4cd600d72bb161206a58d23a460)
- [docs\standard\collections\threadsafe\how-to-add-bounding-and-blocking.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-bounding-and-blocking.md) | ArchivedSuccess | [Details](#63a59dbcc323f392e3bf2991b1439aa062382623461)
- [docs\standard\collections\threadsafe\how-to-create-an-object-pool.md](https://github.com/dotnet/docs/blob/2f8dede4c6f679466e8441b29cf778dc46059196/docs/standard/collections/threadsafe/how-to-create-an-object-pool.md) | ArchivedSuccess | [Details](#cf16330afe6b8415c3480322069e88132bef1082462)
- [docs\standard\collections\threadsafe\how-to-use-arrays-of-blockingcollections.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-arrays-of-blockingcollections.md) | ArchivedSuccess | [Details](#e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463)
- [docs\standard\collections\threadsafe\how-to-use-foreach-to-remove.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-foreach-to-remove.md) | ArchivedSuccess | [Details](#618b5c7c1b8219f4e9225277064ff3c498ff3382464)
- [docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md) | ArchivedSuccess | [Details](#74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466)
- [docs\standard\collections\when-to-use-generic-collections.md](https://github.com/dotnet/docs/blob/a5689b2da8b9877af67d46b3ff3f1c99c6899523/docs/standard/collections/when-to-use-generic-collections.md) | ArchivedSuccess | [Details](#0805bae19871f878806050a0c2bf954927894321467)
- [docs\standard\common-type-system.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/common-type-system.md) | ArchivedSuccess | [Details](#4ea3ae3471636c4833597520628e903999f35c0a468)
  [docs\standard\concepts.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/concepts.md) | ArchivedSuccess | [Details](#3682b5c48f1d3e88620eb7a53abe169b130724da469)
- [docs\standard\datetime\access-utc-and-local.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/access-utc-and-local.md) | ArchivedSuccess | [Details](#865e41ca544e8931d0a7037310387e077d8a5547470)
- [docs\standard\datetime\choosing-between-datetime.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/choosing-between-datetime.md) | ArchivedSuccess | [Details](#e5b709cb82c680edf454d0a8fc9ff27e6d26c138471)
- [docs\standard\datetime\converting-between-datetime-and-offset.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/converting-between-datetime-and-offset.md) | ArchivedSuccess | [Details](#312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472)
- [docs\standard\datetime\converting-between-time-zones.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/datetime/converting-between-time-zones.md) | ArchivedSuccess | [Details](#051a4891336470e79bda9d7b9bb1be4e2c9187b8473)
- [docs\standard\datetime\enumerate-time-zones.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/enumerate-time-zones.md) | ArchivedSuccess | [Details](#417a421f443f90e5f4ccd48bcabb3735dc5bc981474)
- [docs\standard\datetime\finding-the-time-zones-on-local-system.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/finding-the-time-zones-on-local-system.md) | ArchivedSuccess | [Details](#4f8913e3c193e7c76160ac45d576c4cf75d11fed475)
- [docs\standard\datetime\instantiate-time-zone-info.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiate-time-zone-info.md) | ArchivedSuccess | [Details](#5af479c40bb5db3213f45c0472dbdea99bbd5c21477)
- [docs\standard\datetime\instantiating-a-datetimeoffset-object.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiating-a-datetimeoffset-object.md) | ArchivedSuccess | [Details](#330371397d0ec258597e4e4f109f3f1bb35df6b7478)
- [docs\standard\datetime\let-users-resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/let-users-resolve-ambiguous-times.md) | ArchivedSuccess | [Details](#889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479)
- [docs\standard\datetime\performing-arithmetic-operations.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/performing-arithmetic-operations.md) | ArchivedSuccess | [Details](#64fbb3b25d5959ac1dd781d2076775560d926e1a480)
- [docs\standard\datetime\resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/resolve-ambiguous-times.md) | ArchivedSuccess | [Details](#e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481)
- [docs\standard\datetime\time-zone-overview.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/time-zone-overview.md) | ArchivedSuccess | [Details](#31a4582c28c208a7a3d86259b360e3472b851249482)
- [docs\standard\datetime\use-time-zones-in-arithmetic.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/use-time-zones-in-arithmetic.md) | ArchivedSuccess | [Details](#735ae2f1d11ddf6b88b40c7b89083a45d1f07523483)
- [docs\standard\delegates-lambdas.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/delegates-lambdas.md) | ArchivedSuccess | [Details](#0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484)
- [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | ArchivedSuccess | [Details](#0c73fb0a12092877ff5b54221f4a80693d1d1152485)
  [docs\standard\frameworks.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/frameworks.md) | ArchivedSuccess | [Details](#72022e09f7604c80b45c4aac001daaad41fe24af487)
- [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/fundamentals.md) | ArchivedSuccess | [Details](#53c3afbe0492d010f7864bb42e7b83836c10aa4a488)
  [docs\standard\garbagecollection\gc.md](https://github.com/dotnet/docs/blob/b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4/docs/standard/garbagecollection/gc.md) | ArchivedSuccess | [Details](#644fd73e79e0b6059991e1fb2e37c2d6bc812d7c489)
- [docs\standard\garbagecollection\implementing-dispose.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/implementing-dispose.md) | ArchivedSuccess | [Details](#dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490)
- [docs\standard\garbagecollection\induced.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/induced.md) | ArchivedSuccess | [Details](#a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492)
- [docs\standard\garbagecollection\latency.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/garbagecollection/latency.md) | ArchivedSuccess | [Details](#e063482aaa1fad01f8e0cd9e8552c87a0b247571493)
  [docs\standard\garbagecollection\media\fundamentals\393001.png](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/garbagecollection/media/fundamentals/393001.png) | ArchivedSuccess | [Details](#84b281960c8a4c0a72074ed3e9de8b33803d4281494)
- [docs\standard\garbagecollection\using-objects.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/using-objects.md) | ArchivedSuccess | [Details](#51655742b8975c84eae3f58c4ef0f7381a0bed6b496)
- [docs\standard\garbagecollection\weak-references.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/weak-references.md) | ArchivedSuccess | [Details](#cc43c319f2ec8055073da4749cbfb7c56b825df9497)
- [docs\standard\generics.md](https://github.com/dotnet/docs/blob/5b1a76c011b95db3ff5c4b4e01556f79c45fb369/docs/standard/generics.md) | ArchivedSuccess | [Details](#5dcb9d10aeded8c5e8956c4b99ba9675311a787a498)
  [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/getting-started.md) | ArchivedSuccess | [Details](#5633381fbbfecabe5be4e6a28df369e9b3006445499)
  [docs\standard\index.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/index.md) | ArchivedSuccess | [Details](#1620930743c86f3d77313e0ced64082f56dd5bcc500)
- [docs\standard\language-independence.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/language-independence.md) | ArchivedSuccess | [Details](#47a407d1c1e768a027aaca63ee7a668e992467b2501)
- [docs\standard\library.md](https://github.com/dotnet/docs/blob/f9ffbb2e300df2080276096095a7269736260ba1/docs/standard/library.md) | ArchivedSuccess | [Details](#ff61319f15fea4c838517ed209e8095b37186c2e502)
- [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/0013cf5604bfd1e8a16e5ca15577ac81fce49612/docs/standard/managed-code.md) | ArchivedSuccess | [Details](#f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503)
  [docs\standard\media\assembly-format\assembly-headers.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/assembly-format/assembly-headers.png) | ArchivedSuccess | [Details](#938b47878d90fc32819bbfbae2b5737eab1bf677504)
  [docs\standard\media\portability-analyzer\portability-report.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/portability-analyzer/portability-report.png) | ArchivedSuccess | [Details](#878751ec4663e23a4ea7b70da29e750e222e19fa505)
  [docs\standard\media\portability-analyzer\portability-screenshot.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/portability-analyzer/portability-screenshot.png) | ArchivedSuccess | [Details](#f8208a75ae262d5130b5031bc8562d5b396442ef506)
  [docs\standard\media\portability-analyzer\portability-solution-explorer.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/portability-analyzer/portability-solution-explorer.png) | ArchivedSuccess | [Details](#31af85325450edc2abc7ba8dadf618272e81efc4507)
  [docs\standard\media\using-linq\plinq-diagram.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/using-linq/plinq-diagram.png) | ArchivedSuccess | [Details](#e6b57c6b636d3d2d42299083d2b12eb049288e27508)
- [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/3aeaba5c8cf800c652941b5e6c2bc9f072849893/docs/standard/native-interop.md) | ArchivedSuccess | [Details](#0d7415b10d6f247c30b3da508eb8fc9e0007f824509)
- [docs\standard\numerics.md](https://github.com/dotnet/docs/blob/d5c7a18af16b4f3416e84b6cf86f0f78f28948da/docs/standard/numerics.md) | ArchivedSuccess | [Details](#6d14668e643c2451f4ace2119006f442ed4dee15510)
- [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/8599be1eadcd6f005ef344bf173e8c06fce80725/docs/standard/portability-analyzer.md) | ArchivedSuccess | [Details](#479b141159de95c6a7e466220f935f9371b353db511)
  [docs\standard\tour.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/tour.md) | ArchivedSuccess | [Details](#dd3331ac9be61b9a69ac4fd82cb68eb92ca917b2512)
- [docs\standard\using-linq.md](https://github.com/dotnet/docs/blob/6992d907b152d67c51f43ec517902fb2effc6db2/docs/standard/using-linq.md) | ArchivedSuccess | [Details](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8513)
  [docs\toc.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/toc.md) | ArchivedSuccess | [Details](#d93f2ca1cffd632f0827bac59f879e8f1f647888514)
  [docs\welcome.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/welcome.md) | ArchivedSuccess | [Details](#dae44e522534ff64cc765530a27f2e3543212f94515)
 
 ## <a name='handback-failed-list'></a> Handback Failed File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/aspnetmvc.md) | HandedBackFailed | [Details](#bde267042883d2f25848747047845a16b181e549186)
+ [docs\framework\docker\console.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/console.md) | HandedBackFailed | [Details](#fd610bdba56679dd522149d8e91dc91858c7f7ed187)
+ [docs\standard\async-in-depth.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/async-in-depth.md) | HandedBackFailed | [Details](#6536a608a4ee1bb10f41907a28114193a300a52c389)
+ [docs\standard\base-types\alternation.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/alternation.md) | HandedBackFailed | [Details](#05b72d6a3d8ebdfb3808ba2f9a47476942686de2391)
+ [docs\standard\base-types\anchors.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/anchors.md) | HandedBackFailed | [Details](#b2162a90d5cb6f3472a9d323a3e46e137c9edf82392)
+ [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backreference.md) | HandedBackFailed | [Details](#f55ea60d11abcfce4b5fb502e66c513646707bef393)
+ [docs\standard\base-types\backtracking.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backtracking.md) | HandedBackFailed | [Details](#00e324803cf5c57eab1cc71eb819949247131479394)
+ [docs\standard\base-types\basic-manipulations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/basic-manipulations.md) | HandedBackFailed | [Details](#120c97f323098a8c70e6f78e10e5a2fc40714b3e395)
+ [docs\standard\base-types\best-practices.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices.md) | HandedBackFailed | [Details](#00c7228c5cb906f41df5e60a318721008ecf0bb7398)
+ [docs\standard\base-types\best-practices-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices-strings.md) | HandedBackFailed | [Details](#3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397)
+ [docs\standard\base-types\changing-case.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-case.md) | HandedBackFailed | [Details](#a6f6f21daae79f752cfac0a70558778ae98d1a5d399)
+ [docs\standard\base-types\changing-formats.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-formats.md) | HandedBackFailed | [Details](#8b333db10f7dc9d0e4701899b7af46f45f60aa8e400)
+ [docs\standard\base-types\character-encoding.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/character-encoding.md) | HandedBackFailed | [Details](#6080f5fa12a2391dd138828e0afc2219f1e3a11b401)
+ [docs\standard\base-types\classes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/classes.md) | HandedBackFailed | [Details](#f8ebb1db670669e2e8666cd5ef90f72237c105e4402)
+ [docs\standard\base-types\common-type-system.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/common-type-system.md) | HandedBackFailed | [Details](#7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403)
+ [docs\standard\base-types\comparing.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/comparing.md) | HandedBackFailed | [Details](#10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404)
+ [docs\standard\base-types\compilation.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/compilation.md) | HandedBackFailed | [Details](#1832403174276e48dc1857be8ff11fba2b9a250c405)
+ [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/composite-format.md) | HandedBackFailed | [Details](#9bcf2ff74237f7e7faf2890849c2d68a0a602353406)
+ [docs\standard\base-types\conversion-tables.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/conversion-tables.md) | HandedBackFailed | [Details](#01e15d9dc3881c7e2e4ea17db666991d72aa1b84407)
+ [docs\standard\base-types\creating-new.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/creating-new.md) | HandedBackFailed | [Details](#43d6194afd948aeccbf051365e059794c74d2646408)
+ [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-datetime.md) | HandedBackFailed | [Details](#ca7e486b07621269a617ae7542d389a78e4ab571409)
+ [docs\standard\base-types\custom-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-numeric.md) | HandedBackFailed | [Details](#e36c0117f6f011589299fa59a8abd139870c2257410)
+ [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-timespan.md) | HandedBackFailed | [Details](#168bd497891ead884413fad4542943a24de7a7f4411)
+ [docs\standard\base-types\define-custom.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/define-custom.md) | HandedBackFailed | [Details](#926195e48e9653525a502cf9403ae9c205bd0fe3412)
+ [docs\standard\base-types\display-dates.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-dates.md) | HandedBackFailed | [Details](#783b51f3145d8b11e79b99cfdc4baefe127306e3413)
+ [docs\standard\base-types\display-milliseconds.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-milliseconds.md) | HandedBackFailed | [Details](#cc3d9e1df658b923c0006e4798e44bceba79da31414)
+ [docs\standard\base-types\enumeration-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/enumeration-format.md) | HandedBackFailed | [Details](#8cb811636ca2c7b207f7661e990567b5785bc994415)
+ [docs\standard\base-types\escapes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/escapes.md) | HandedBackFailed | [Details](#08a781be74120d26b8408ee8e9b12051b005ad54416)
+ [docs\standard\base-types\extract-day.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/extract-day.md) | HandedBackFailed | [Details](#f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417)
+ [docs\standard\base-types\extract-protocol.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/extract-protocol.md) | HandedBackFailed | [Details](#9c86a77271ac0b239e92f415bd7b26d51d762dd8418)
+ [docs\standard\base-types\formatting-types.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/formatting-types.md) | HandedBackFailed | [Details](#6c6ddfdbe288fe012adf31fd4d45af1b697d1132419)
+ [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/grouping.md) | HandedBackFailed | [Details](#d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420)
+ [docs\standard\base-types\manipulating-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/manipulating-strings.md) | HandedBackFailed | [Details](#40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422)
+ [docs\standard\base-types\miscellaneous.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/miscellaneous.md) | HandedBackFailed | [Details](#477332f4009790727686aa3d91e35509e3766903423)
+ [docs\standard\base-types\object-model.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/object-model.md) | HandedBackFailed | [Details](#e4a5237fcb439999efe4454512b06444f129e7b4424)
+ [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md) | HandedBackFailed | [Details](#21672e28d0e76b98f6dac698096fccb2ce4edd03425)
+ [docs\standard\base-types\padding.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/padding.md) | HandedBackFailed | [Details](#73452c1f432fb8cb50a36e739fb91962693f8e51427)
+ [docs\standard\base-types\pad-number.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/pad-number.md) | HandedBackFailed | [Details](#991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426)
+ [docs\standard\base-types\parsing-datetime.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-datetime.md) | HandedBackFailed | [Details](#ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428)
+ [docs\standard\base-types\parsing-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/parsing-numeric.md) | HandedBackFailed | [Details](#65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429)
+ [docs\standard\base-types\parsing-other.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-other.md) | HandedBackFailed | [Details](#3f26670dc9f4c6b6608599793352445d5665cf64430)
+ [docs\standard\base-types\performing-formatting-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/performing-formatting-operations.md) | HandedBackFailed | [Details](#cd243693a19500ac53fe6033cfe4ef5a36a9096a432)
+ [docs\standard\base-types\regular-expressions.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regular-expressions.md) | HandedBackFailed | [Details](#e9ae9cb47955fb926507be32afb875efd3260ce3437)
+ [docs\standard\base-types\roundtrip.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/roundtrip.md) | HandedBackFailed | [Details](#00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438)
+ [docs\standard\base-types\scanning.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/scanning.md) | HandedBackFailed | [Details](#8951e4ca82c0148bae7e8279681920ffabb523be439)
+ [docs\standard\base-types\standard-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-datetime.md) | HandedBackFailed | [Details](#1196459d74038edb1268c619dac3da69f38e7860440)
+ [docs\standard\base-types\standard-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-numeric.md) | HandedBackFailed | [Details](#5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441)
+ [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/standard-timespan.md) | HandedBackFailed | [Details](#a31f0da1f5b502d8b983f4d496c4b9a520b0309c442)
+ [docs\standard\base-types\stringbuilder.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/stringbuilder.md) | HandedBackFailed | [Details](#1e8453b78827d8c02f29135ddfb832956ab40f3c443)
+ [docs\standard\base-types\strip-characters.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/strip-characters.md) | HandedBackFailed | [Details](#062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444)
+ [docs\standard\base-types\substitutions.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/substitutions.md) | HandedBackFailed | [Details](#3e02d18d6566c67c7fff7003671f340f97b0dfce445)
+ [docs\standard\base-types\thread-safety.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/thread-safety.md) | HandedBackFailed | [Details](#6b410da1982519fd9ff137bd38f1d074ce08d39b446)
+ [docs\standard\base-types\trimming.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/trimming.md) | HandedBackFailed | [Details](#96cf08c0de8ba73d931d561187369ccf8b091651447)
+ [docs\standard\base-types\type-conversion.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/type-conversion.md) | HandedBackFailed | [Details](#ba4a356921cb43b88d3ad8e6ef7487699f442385448)
+ [docs\standard\base-types\verify-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/verify-format.md) | HandedBackFailed | [Details](#d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449)
+ [docs\standard\clr.md](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/clr.md) | HandedBackFailed | [Details](#44b4798a9b6f132d2fc8921bfffa24fa04202d43451)
+ [docs\standard\collections\comparisons-and-sorts-within-collections.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/comparisons-and-sorts-within-collections.md) | HandedBackFailed | [Details](#de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453)
+ [docs\standard\collections\hashtable-and-dictionary-collection-types.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/hashtable-and-dictionary-collection-types.md) | HandedBackFailed | [Details](#721f16154e1df4b7a075639ccce6bf2650b46c9b454)
+ [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs/blob/cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b/docs/standard/collections/selecting-a-collection-class.md) | HandedBackFailed | [Details](#f00fedb70bddc184e5c6ea71213b2beb78594792456)
+ [docs\standard\collections\sorted-collection-types.md](https://github.com/dotnet/docs/blob/149086110d7470d97e1ab3e5969269626290b523/docs/standard/collections/sorted-collection-types.md) | HandedBackFailed | [Details](#a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457)
+ [docs\standard\collections\threadsafe\blockingcollection-overview.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/blockingcollection-overview.md) | HandedBackFailed | [Details](#991b4b8389cc967881c2c39d29c387687047489f458)
+ [docs\standard\collections\threadsafe\how-to-add-and-remove-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-remove-items.md) | HandedBackFailed | [Details](#90ad4f1f0266d948937ed462be15a4d4948ce7f8459)
+ [docs\standard\collections\threadsafe\how-to-add-and-take-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-take-items.md) | HandedBackFailed | [Details](#4f73f3bf2000a0ff4cd600d72bb161206a58d23a460)
+ [docs\standard\collections\threadsafe\how-to-add-bounding-and-blocking.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-bounding-and-blocking.md) | HandedBackFailed | [Details](#63a59dbcc323f392e3bf2991b1439aa062382623461)
+ [docs\standard\collections\threadsafe\how-to-create-an-object-pool.md](https://github.com/dotnet/docs/blob/2f8dede4c6f679466e8441b29cf778dc46059196/docs/standard/collections/threadsafe/how-to-create-an-object-pool.md) | HandedBackFailed | [Details](#cf16330afe6b8415c3480322069e88132bef1082462)
+ [docs\standard\collections\threadsafe\how-to-use-arrays-of-blockingcollections.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-arrays-of-blockingcollections.md) | HandedBackFailed | [Details](#e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463)
+ [docs\standard\collections\threadsafe\how-to-use-foreach-to-remove.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-foreach-to-remove.md) | HandedBackFailed | [Details](#618b5c7c1b8219f4e9225277064ff3c498ff3382464)
+ [docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md) | HandedBackFailed | [Details](#74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466)
+ [docs\standard\collections\when-to-use-generic-collections.md](https://github.com/dotnet/docs/blob/a5689b2da8b9877af67d46b3ff3f1c99c6899523/docs/standard/collections/when-to-use-generic-collections.md) | HandedBackFailed | [Details](#0805bae19871f878806050a0c2bf954927894321467)
+ [docs\standard\common-type-system.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/common-type-system.md) | HandedBackFailed | [Details](#4ea3ae3471636c4833597520628e903999f35c0a468)
+ [docs\standard\datetime\access-utc-and-local.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/access-utc-and-local.md) | HandedBackFailed | [Details](#865e41ca544e8931d0a7037310387e077d8a5547470)
+ [docs\standard\datetime\choosing-between-datetime.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/choosing-between-datetime.md) | HandedBackFailed | [Details](#e5b709cb82c680edf454d0a8fc9ff27e6d26c138471)
+ [docs\standard\datetime\converting-between-datetime-and-offset.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/converting-between-datetime-and-offset.md) | HandedBackFailed | [Details](#312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472)
+ [docs\standard\datetime\converting-between-time-zones.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/datetime/converting-between-time-zones.md) | HandedBackFailed | [Details](#051a4891336470e79bda9d7b9bb1be4e2c9187b8473)
+ [docs\standard\datetime\enumerate-time-zones.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/enumerate-time-zones.md) | HandedBackFailed | [Details](#417a421f443f90e5f4ccd48bcabb3735dc5bc981474)
+ [docs\standard\datetime\finding-the-time-zones-on-local-system.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/finding-the-time-zones-on-local-system.md) | HandedBackFailed | [Details](#4f8913e3c193e7c76160ac45d576c4cf75d11fed475)
+ [docs\standard\datetime\instantiate-time-zone-info.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiate-time-zone-info.md) | HandedBackFailed | [Details](#5af479c40bb5db3213f45c0472dbdea99bbd5c21477)
+ [docs\standard\datetime\instantiating-a-datetimeoffset-object.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiating-a-datetimeoffset-object.md) | HandedBackFailed | [Details](#330371397d0ec258597e4e4f109f3f1bb35df6b7478)
+ [docs\standard\datetime\let-users-resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/let-users-resolve-ambiguous-times.md) | HandedBackFailed | [Details](#889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479)
+ [docs\standard\datetime\performing-arithmetic-operations.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/performing-arithmetic-operations.md) | HandedBackFailed | [Details](#64fbb3b25d5959ac1dd781d2076775560d926e1a480)
+ [docs\standard\datetime\resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/resolve-ambiguous-times.md) | HandedBackFailed | [Details](#e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481)
+ [docs\standard\datetime\time-zone-overview.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/time-zone-overview.md) | HandedBackFailed | [Details](#31a4582c28c208a7a3d86259b360e3472b851249482)
+ [docs\standard\datetime\use-time-zones-in-arithmetic.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/use-time-zones-in-arithmetic.md) | HandedBackFailed | [Details](#735ae2f1d11ddf6b88b40c7b89083a45d1f07523483)
+ [docs\standard\delegates-lambdas.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/delegates-lambdas.md) | HandedBackFailed | [Details](#0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484)
+ [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | HandedBackFailed | [Details](#0c73fb0a12092877ff5b54221f4a80693d1d1152485)
+ [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/fundamentals.md) | HandedBackFailed | [Details](#53c3afbe0492d010f7864bb42e7b83836c10aa4a488)
+ [docs\standard\garbagecollection\implementing-dispose.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/implementing-dispose.md) | HandedBackFailed | [Details](#dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490)
+ [docs\standard\garbagecollection\induced.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/induced.md) | HandedBackFailed | [Details](#a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492)
+ [docs\standard\garbagecollection\latency.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/garbagecollection/latency.md) | HandedBackFailed | [Details](#e063482aaa1fad01f8e0cd9e8552c87a0b247571493)
+ [docs\standard\garbagecollection\using-objects.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/using-objects.md) | HandedBackFailed | [Details](#51655742b8975c84eae3f58c4ef0f7381a0bed6b496)
+ [docs\standard\garbagecollection\weak-references.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/weak-references.md) | HandedBackFailed | [Details](#cc43c319f2ec8055073da4749cbfb7c56b825df9497)
+ [docs\standard\generics.md](https://github.com/dotnet/docs/blob/5b1a76c011b95db3ff5c4b4e01556f79c45fb369/docs/standard/generics.md) | HandedBackFailed | [Details](#5dcb9d10aeded8c5e8956c4b99ba9675311a787a498)
+ [docs\standard\language-independence.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/language-independence.md) | HandedBackFailed | [Details](#47a407d1c1e768a027aaca63ee7a668e992467b2501)
+ [docs\standard\library.md](https://github.com/dotnet/docs/blob/f9ffbb2e300df2080276096095a7269736260ba1/docs/standard/library.md) | HandedBackFailed | [Details](#ff61319f15fea4c838517ed209e8095b37186c2e502)
+ [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/0013cf5604bfd1e8a16e5ca15577ac81fce49612/docs/standard/managed-code.md) | HandedBackFailed | [Details](#f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503)
+ [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/3aeaba5c8cf800c652941b5e6c2bc9f072849893/docs/standard/native-interop.md) | HandedBackFailed | [Details](#0d7415b10d6f247c30b3da508eb8fc9e0007f824509)
+ [docs\standard\numerics.md](https://github.com/dotnet/docs/blob/d5c7a18af16b4f3416e84b6cf86f0f78f28948da/docs/standard/numerics.md) | HandedBackFailed | [Details](#6d14668e643c2451f4ace2119006f442ed4dee15510)
+ [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/8599be1eadcd6f005ef344bf173e8c06fce80725/docs/standard/portability-analyzer.md) | HandedBackFailed | [Details](#479b141159de95c6a7e466220f935f9371b353db511)
+ [docs\standard\using-linq.md](https://github.com/dotnet/docs/blob/6992d907b152d67c51f43ec517902fb2effc6db2/docs/standard/using-linq.md) | HandedBackFailed | [Details](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8513)
 
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
 
@@ -4204,7 +4206,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='bde267042883d2f25848747047845a16b181e549186'></a> Source: [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/aspnetmvc.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -4212,11 +4214,12 @@
 * Archive File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#bde267042883d2f25848747047845a16b181e549186handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='fd610bdba56679dd522149d8e91dc91858c7f7ed187'></a> Source: [docs\framework\docker\console.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/framework/docker/console.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -4224,7 +4227,8 @@
 * Archive File: [console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#fd610bdba56679dd522149d8e91dc91858c7f7ed187handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='b9037eb4d21651378989024c4f47ecc8db223c04188'></a> Source: [docs\framework\docker\index.md](https://github.com/dotnet/docs/blob/6b9ae37f4053d292c21b02f9e7f93ccd32a78976/docs/framework/docker/index.md)
@@ -6702,7 +6706,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='6536a608a4ee1bb10f41907a28114193a300a52c389'></a> Source: [docs\standard\async-in-depth.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/async-in-depth.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6710,11 +6714,12 @@
 * Archive File: [async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#6536a608a4ee1bb10f41907a28114193a300a52c389handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='05b72d6a3d8ebdfb3808ba2f9a47476942686de2391'></a> Source: [docs\standard\base-types\alternation.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/alternation.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6722,11 +6727,12 @@
 * Archive File: [alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#05b72d6a3d8ebdfb3808ba2f9a47476942686de2391handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='b2162a90d5cb6f3472a9d323a3e46e137c9edf82392'></a> Source: [docs\standard\base-types\anchors.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/anchors.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6734,11 +6740,12 @@
 * Archive File: [anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#b2162a90d5cb6f3472a9d323a3e46e137c9edf82392handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='f55ea60d11abcfce4b5fb502e66c513646707bef393'></a> Source: [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backreference.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6746,11 +6753,12 @@
 * Archive File: [backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#f55ea60d11abcfce4b5fb502e66c513646707bef393handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='00e324803cf5c57eab1cc71eb819949247131479394'></a> Source: [docs\standard\base-types\backtracking.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backtracking.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6758,11 +6766,12 @@
 * Archive File: [backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#00e324803cf5c57eab1cc71eb819949247131479394handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='120c97f323098a8c70e6f78e10e5a2fc40714b3e395'></a> Source: [docs\standard\base-types\basic-manipulations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/basic-manipulations.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6770,7 +6779,8 @@
 * Archive File: [basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#120c97f323098a8c70e6f78e10e5a2fc40714b3e395handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='23c32ef572086aa3bf5dd809a68c95197bd389e5396'></a> Source: [docs\standard\base-types\basic-string-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/basic-string-operations.md)
@@ -6788,7 +6798,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='00c7228c5cb906f41df5e60a318721008ecf0bb7398'></a> Source: [docs\standard\base-types\best-practices.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6796,11 +6806,12 @@
 * Archive File: [best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#00c7228c5cb906f41df5e60a318721008ecf0bb7398handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397'></a> Source: [docs\standard\base-types\best-practices-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/best-practices-strings.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6808,11 +6819,12 @@
 * Archive File: [best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='a6f6f21daae79f752cfac0a70558778ae98d1a5d399'></a> Source: [docs\standard\base-types\changing-case.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-case.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6820,11 +6832,12 @@
 * Archive File: [changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#a6f6f21daae79f752cfac0a70558778ae98d1a5d399handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='8b333db10f7dc9d0e4701899b7af46f45f60aa8e400'></a> Source: [docs\standard\base-types\changing-formats.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/changing-formats.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6832,11 +6845,12 @@
 * Archive File: [changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#8b333db10f7dc9d0e4701899b7af46f45f60aa8e400handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='6080f5fa12a2391dd138828e0afc2219f1e3a11b401'></a> Source: [docs\standard\base-types\character-encoding.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/character-encoding.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6844,11 +6858,12 @@
 * Archive File: [character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#6080f5fa12a2391dd138828e0afc2219f1e3a11b401handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='f8ebb1db670669e2e8666cd5ef90f72237c105e4402'></a> Source: [docs\standard\base-types\classes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/classes.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6856,11 +6871,12 @@
 * Archive File: [classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#f8ebb1db670669e2e8666cd5ef90f72237c105e4402handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403'></a> Source: [docs\standard\base-types\common-type-system.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/common-type-system.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6868,11 +6884,12 @@
 * Archive File: [common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404'></a> Source: [docs\standard\base-types\comparing.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/comparing.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6880,11 +6897,12 @@
 * Archive File: [comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='1832403174276e48dc1857be8ff11fba2b9a250c405'></a> Source: [docs\standard\base-types\compilation.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/compilation.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6892,11 +6910,12 @@
 * Archive File: [compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#1832403174276e48dc1857be8ff11fba2b9a250c405handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='9bcf2ff74237f7e7faf2890849c2d68a0a602353406'></a> Source: [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/composite-format.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6904,11 +6923,12 @@
 * Archive File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#9bcf2ff74237f7e7faf2890849c2d68a0a602353406handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='01e15d9dc3881c7e2e4ea17db666991d72aa1b84407'></a> Source: [docs\standard\base-types\conversion-tables.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/conversion-tables.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6916,11 +6936,12 @@
 * Archive File: [conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#01e15d9dc3881c7e2e4ea17db666991d72aa1b84407handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='43d6194afd948aeccbf051365e059794c74d2646408'></a> Source: [docs\standard\base-types\creating-new.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/creating-new.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6928,11 +6949,12 @@
 * Archive File: [creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#43d6194afd948aeccbf051365e059794c74d2646408handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='ca7e486b07621269a617ae7542d389a78e4ab571409'></a> Source: [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-datetime.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6940,11 +6962,12 @@
 * Archive File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#ca7e486b07621269a617ae7542d389a78e4ab571409handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e36c0117f6f011589299fa59a8abd139870c2257410'></a> Source: [docs\standard\base-types\custom-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-numeric.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6952,11 +6975,12 @@
 * Archive File: [custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e36c0117f6f011589299fa59a8abd139870c2257410handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='168bd497891ead884413fad4542943a24de7a7f4411'></a> Source: [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/custom-timespan.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6964,11 +6988,12 @@
 * Archive File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#168bd497891ead884413fad4542943a24de7a7f4411handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='926195e48e9653525a502cf9403ae9c205bd0fe3412'></a> Source: [docs\standard\base-types\define-custom.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/define-custom.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6976,11 +7001,12 @@
 * Archive File: [define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#926195e48e9653525a502cf9403ae9c205bd0fe3412handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='783b51f3145d8b11e79b99cfdc4baefe127306e3413'></a> Source: [docs\standard\base-types\display-dates.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-dates.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -6988,11 +7014,12 @@
 * Archive File: [display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#783b51f3145d8b11e79b99cfdc4baefe127306e3413handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='cc3d9e1df658b923c0006e4798e44bceba79da31414'></a> Source: [docs\standard\base-types\display-milliseconds.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/display-milliseconds.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7000,11 +7027,12 @@
 * Archive File: [display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#cc3d9e1df658b923c0006e4798e44bceba79da31414handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='8cb811636ca2c7b207f7661e990567b5785bc994415'></a> Source: [docs\standard\base-types\enumeration-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/enumeration-format.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7012,11 +7040,12 @@
 * Archive File: [enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#8cb811636ca2c7b207f7661e990567b5785bc994415handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='08a781be74120d26b8408ee8e9b12051b005ad54416'></a> Source: [docs\standard\base-types\escapes.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/escapes.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7024,11 +7053,12 @@
 * Archive File: [escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#08a781be74120d26b8408ee8e9b12051b005ad54416handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417'></a> Source: [docs\standard\base-types\extract-day.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/extract-day.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7036,11 +7066,12 @@
 * Archive File: [extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='9c86a77271ac0b239e92f415bd7b26d51d762dd8418'></a> Source: [docs\standard\base-types\extract-protocol.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/extract-protocol.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7048,11 +7079,12 @@
 * Archive File: [extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#9c86a77271ac0b239e92f415bd7b26d51d762dd8418handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='6c6ddfdbe288fe012adf31fd4d45af1b697d1132419'></a> Source: [docs\standard\base-types\formatting-types.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/formatting-types.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7060,11 +7092,12 @@
 * Archive File: [formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#6c6ddfdbe288fe012adf31fd4d45af1b697d1132419handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420'></a> Source: [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/grouping.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7072,7 +7105,8 @@
 * Archive File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='a9801663b3be2d07c767bc263936212d985e370e421'></a> Source: [docs\standard\base-types\index.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/index.md)
@@ -7090,7 +7124,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422'></a> Source: [docs\standard\base-types\manipulating-strings.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/manipulating-strings.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7098,11 +7132,12 @@
 * Archive File: [manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='477332f4009790727686aa3d91e35509e3766903423'></a> Source: [docs\standard\base-types\miscellaneous.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/miscellaneous.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7110,11 +7145,12 @@
 * Archive File: [miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#477332f4009790727686aa3d91e35509e3766903423handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e4a5237fcb439999efe4454512b06444f129e7b4424'></a> Source: [docs\standard\base-types\object-model.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/object-model.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7122,11 +7158,12 @@
 * Archive File: [object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e4a5237fcb439999efe4454512b06444f129e7b4424handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='21672e28d0e76b98f6dac698096fccb2ce4edd03425'></a> Source: [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7134,11 +7171,12 @@
 * Archive File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#21672e28d0e76b98f6dac698096fccb2ce4edd03425handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='73452c1f432fb8cb50a36e739fb91962693f8e51427'></a> Source: [docs\standard\base-types\padding.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/padding.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7146,11 +7184,12 @@
 * Archive File: [padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#73452c1f432fb8cb50a36e739fb91962693f8e51427handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426'></a> Source: [docs\standard\base-types\pad-number.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/pad-number.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7158,11 +7197,12 @@
 * Archive File: [pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428'></a> Source: [docs\standard\base-types\parsing-datetime.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-datetime.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7170,11 +7210,12 @@
 * Archive File: [parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429'></a> Source: [docs\standard\base-types\parsing-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/parsing-numeric.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7182,11 +7223,12 @@
 * Archive File: [parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='3f26670dc9f4c6b6608599793352445d5665cf64430'></a> Source: [docs\standard\base-types\parsing-other.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-other.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7194,7 +7236,8 @@
 * Archive File: [parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#3f26670dc9f4c6b6608599793352445d5665cf64430handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='61d1593b2d5271d69027658eef4c92da7c5542c8431'></a> Source: [docs\standard\base-types\parsing-strings.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/parsing-strings.md)
@@ -7212,7 +7255,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='cd243693a19500ac53fe6033cfe4ef5a36a9096a432'></a> Source: [docs\standard\base-types\performing-formatting-operations.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/performing-formatting-operations.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7220,7 +7263,8 @@
 * Archive File: [performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#cd243693a19500ac53fe6033cfe4ef5a36a9096a432handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='016ee9a4f05fdf36982c5b369780526296b53a7d433'></a> Source: [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quantifiers.md)
@@ -7274,7 +7318,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e9ae9cb47955fb926507be32afb875efd3260ce3437'></a> Source: [docs\standard\base-types\regular-expressions.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/regular-expressions.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7282,11 +7326,12 @@
 * Archive File: [regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e9ae9cb47955fb926507be32afb875efd3260ce3437handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438'></a> Source: [docs\standard\base-types\roundtrip.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/roundtrip.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7294,11 +7339,12 @@
 * Archive File: [roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='8951e4ca82c0148bae7e8279681920ffabb523be439'></a> Source: [docs\standard\base-types\scanning.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/scanning.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7306,11 +7352,12 @@
 * Archive File: [scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#8951e4ca82c0148bae7e8279681920ffabb523be439handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='1196459d74038edb1268c619dac3da69f38e7860440'></a> Source: [docs\standard\base-types\standard-datetime.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-datetime.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7318,11 +7365,12 @@
 * Archive File: [standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#1196459d74038edb1268c619dac3da69f38e7860440handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441'></a> Source: [docs\standard\base-types\standard-numeric.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/standard-numeric.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7330,11 +7378,12 @@
 * Archive File: [standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='a31f0da1f5b502d8b983f4d496c4b9a520b0309c442'></a> Source: [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/standard-timespan.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7342,11 +7391,12 @@
 * Archive File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#a31f0da1f5b502d8b983f4d496c4b9a520b0309c442handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='1e8453b78827d8c02f29135ddfb832956ab40f3c443'></a> Source: [docs\standard\base-types\stringbuilder.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/stringbuilder.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7354,11 +7404,12 @@
 * Archive File: [stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#1e8453b78827d8c02f29135ddfb832956ab40f3c443handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444'></a> Source: [docs\standard\base-types\strip-characters.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/strip-characters.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7366,11 +7417,12 @@
 * Archive File: [strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='3e02d18d6566c67c7fff7003671f340f97b0dfce445'></a> Source: [docs\standard\base-types\substitutions.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/substitutions.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7378,11 +7430,12 @@
 * Archive File: [substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#3e02d18d6566c67c7fff7003671f340f97b0dfce445handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='6b410da1982519fd9ff137bd38f1d074ce08d39b446'></a> Source: [docs\standard\base-types\thread-safety.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/thread-safety.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7390,11 +7443,12 @@
 * Archive File: [thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#6b410da1982519fd9ff137bd38f1d074ce08d39b446handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='96cf08c0de8ba73d931d561187369ccf8b091651447'></a> Source: [docs\standard\base-types\trimming.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/trimming.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7402,11 +7456,12 @@
 * Archive File: [trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#96cf08c0de8ba73d931d561187369ccf8b091651447handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='ba4a356921cb43b88d3ad8e6ef7487699f442385448'></a> Source: [docs\standard\base-types\type-conversion.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/type-conversion.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7414,11 +7469,12 @@
 * Archive File: [type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#ba4a356921cb43b88d3ad8e6ef7487699f442385448handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449'></a> Source: [docs\standard\base-types\verify-format.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/verify-format.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7426,7 +7482,8 @@
 * Archive File: [verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='8ed35197078e43f096931adb18c454004f83cccf450'></a> Source: [docs\standard\class-libraries.md](https://github.com/dotnet/docs/blob/62fdb3e60b206728d86220076867eb8fd68af82e/docs/standard/class-libraries.md)
@@ -7444,7 +7501,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='44b4798a9b6f132d2fc8921bfffa24fa04202d43451'></a> Source: [docs\standard\clr.md](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/clr.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7452,7 +7509,8 @@
 * Archive File: [clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#44b4798a9b6f132d2fc8921bfffa24fa04202d43451handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='063e43b156771ba0db7c6b8ef5823330a4405c2c452'></a> Source: [docs\standard\collections\commonly-used-collection-types.md](https://github.com/dotnet/docs/blob/d4e7ef84480aa9f735fb8d1ff03c9e8a61127c83/docs/standard/collections/commonly-used-collection-types.md)
@@ -7470,7 +7528,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453'></a> Source: [docs\standard\collections\comparisons-and-sorts-within-collections.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/comparisons-and-sorts-within-collections.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7478,11 +7536,12 @@
 * Archive File: [comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='721f16154e1df4b7a075639ccce6bf2650b46c9b454'></a> Source: [docs\standard\collections\hashtable-and-dictionary-collection-types.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/hashtable-and-dictionary-collection-types.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7490,7 +7549,8 @@
 * Archive File: [hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#721f16154e1df4b7a075639ccce6bf2650b46c9b454handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='3f2831f21654d9eb1523cd80166b674e7c41d8bb455'></a> Source: [docs\standard\collections\index.md](https://github.com/dotnet/docs/blob/cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b/docs/standard/collections/index.md)
@@ -7508,7 +7568,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='f00fedb70bddc184e5c6ea71213b2beb78594792456'></a> Source: [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs/blob/cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b/docs/standard/collections/selecting-a-collection-class.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7516,11 +7576,12 @@
 * Archive File: [selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#f00fedb70bddc184e5c6ea71213b2beb78594792456handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457'></a> Source: [docs\standard\collections\sorted-collection-types.md](https://github.com/dotnet/docs/blob/149086110d7470d97e1ab3e5969269626290b523/docs/standard/collections/sorted-collection-types.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7528,11 +7589,12 @@
 * Archive File: [sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='991b4b8389cc967881c2c39d29c387687047489f458'></a> Source: [docs\standard\collections\threadsafe\blockingcollection-overview.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/blockingcollection-overview.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7540,11 +7602,12 @@
 * Archive File: [blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#991b4b8389cc967881c2c39d29c387687047489f458handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='90ad4f1f0266d948937ed462be15a4d4948ce7f8459'></a> Source: [docs\standard\collections\threadsafe\how-to-add-and-remove-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-remove-items.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7552,11 +7615,12 @@
 * Archive File: [how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#90ad4f1f0266d948937ed462be15a4d4948ce7f8459handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='4f73f3bf2000a0ff4cd600d72bb161206a58d23a460'></a> Source: [docs\standard\collections\threadsafe\how-to-add-and-take-items.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-and-take-items.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7564,11 +7628,12 @@
 * Archive File: [how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#4f73f3bf2000a0ff4cd600d72bb161206a58d23a460handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='63a59dbcc323f392e3bf2991b1439aa062382623461'></a> Source: [docs\standard\collections\threadsafe\how-to-add-bounding-and-blocking.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-add-bounding-and-blocking.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7576,11 +7641,12 @@
 * Archive File: [how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#63a59dbcc323f392e3bf2991b1439aa062382623461handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='cf16330afe6b8415c3480322069e88132bef1082462'></a> Source: [docs\standard\collections\threadsafe\how-to-create-an-object-pool.md](https://github.com/dotnet/docs/blob/2f8dede4c6f679466e8441b29cf778dc46059196/docs/standard/collections/threadsafe/how-to-create-an-object-pool.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7588,11 +7654,12 @@
 * Archive File: [how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#cf16330afe6b8415c3480322069e88132bef1082462handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463'></a> Source: [docs\standard\collections\threadsafe\how-to-use-arrays-of-blockingcollections.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-arrays-of-blockingcollections.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7600,11 +7667,12 @@
 * Archive File: [how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='618b5c7c1b8219f4e9225277064ff3c498ff3382464'></a> Source: [docs\standard\collections\threadsafe\how-to-use-foreach-to-remove.md](https://github.com/dotnet/docs/blob/c15f2da15c6448cf1c36dea2d5fd53e734bb6608/docs/standard/collections/threadsafe/how-to-use-foreach-to-remove.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7612,7 +7680,8 @@
 * Archive File: [how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#618b5c7c1b8219f4e9225277064ff3c498ff3382464handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='421d46585b5d83f5772fa6596ad581c8c6acbf71465'></a> Source: [docs\standard\collections\threadsafe\index.md](https://github.com/dotnet/docs/blob/cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b/docs/standard/collections/threadsafe/index.md)
@@ -7630,7 +7699,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466'></a> Source: [docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md](https://github.com/dotnet/docs/blob/e07788926a995b41571be276379ad9285747951d/docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7638,11 +7707,12 @@
 * Archive File: [when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='0805bae19871f878806050a0c2bf954927894321467'></a> Source: [docs\standard\collections\when-to-use-generic-collections.md](https://github.com/dotnet/docs/blob/a5689b2da8b9877af67d46b3ff3f1c99c6899523/docs/standard/collections/when-to-use-generic-collections.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7650,11 +7720,12 @@
 * Archive File: [when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#0805bae19871f878806050a0c2bf954927894321467handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='4ea3ae3471636c4833597520628e903999f35c0a468'></a> Source: [docs\standard\common-type-system.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/common-type-system.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7662,7 +7733,8 @@
 * Archive File: [common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#4ea3ae3471636c4833597520628e903999f35c0a468handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='3682b5c48f1d3e88620eb7a53abe169b130724da469'></a> Source: [docs\standard\concepts.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/concepts.md)
@@ -7678,7 +7750,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='865e41ca544e8931d0a7037310387e077d8a5547470'></a> Source: [docs\standard\datetime\access-utc-and-local.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/access-utc-and-local.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7686,11 +7758,12 @@
 * Archive File: [access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#865e41ca544e8931d0a7037310387e077d8a5547470handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e5b709cb82c680edf454d0a8fc9ff27e6d26c138471'></a> Source: [docs\standard\datetime\choosing-between-datetime.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/choosing-between-datetime.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7698,11 +7771,12 @@
 * Archive File: [choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e5b709cb82c680edf454d0a8fc9ff27e6d26c138471handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472'></a> Source: [docs\standard\datetime\converting-between-datetime-and-offset.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/converting-between-datetime-and-offset.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7710,11 +7784,12 @@
 * Archive File: [converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='051a4891336470e79bda9d7b9bb1be4e2c9187b8473'></a> Source: [docs\standard\datetime\converting-between-time-zones.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/datetime/converting-between-time-zones.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7722,11 +7797,12 @@
 * Archive File: [converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#051a4891336470e79bda9d7b9bb1be4e2c9187b8473handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='417a421f443f90e5f4ccd48bcabb3735dc5bc981474'></a> Source: [docs\standard\datetime\enumerate-time-zones.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/enumerate-time-zones.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7734,11 +7810,12 @@
 * Archive File: [enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#417a421f443f90e5f4ccd48bcabb3735dc5bc981474handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='4f8913e3c193e7c76160ac45d576c4cf75d11fed475'></a> Source: [docs\standard\datetime\finding-the-time-zones-on-local-system.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/finding-the-time-zones-on-local-system.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7746,7 +7823,8 @@
 * Archive File: [finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#4f8913e3c193e7c76160ac45d576c4cf75d11fed475handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='a4d0a68ac32c3d722a1479ca2b067892fd88bf52476'></a> Source: [docs\standard\datetime\index.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/index.md)
@@ -7764,7 +7842,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5af479c40bb5db3213f45c0472dbdea99bbd5c21477'></a> Source: [docs\standard\datetime\instantiate-time-zone-info.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiate-time-zone-info.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7772,11 +7850,12 @@
 * Archive File: [instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#5af479c40bb5db3213f45c0472dbdea99bbd5c21477handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='330371397d0ec258597e4e4f109f3f1bb35df6b7478'></a> Source: [docs\standard\datetime\instantiating-a-datetimeoffset-object.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/instantiating-a-datetimeoffset-object.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7784,11 +7863,12 @@
 * Archive File: [instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#330371397d0ec258597e4e4f109f3f1bb35df6b7478handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479'></a> Source: [docs\standard\datetime\let-users-resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/let-users-resolve-ambiguous-times.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7796,11 +7876,12 @@
 * Archive File: [let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='64fbb3b25d5959ac1dd781d2076775560d926e1a480'></a> Source: [docs\standard\datetime\performing-arithmetic-operations.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/performing-arithmetic-operations.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7808,11 +7889,12 @@
 * Archive File: [performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#64fbb3b25d5959ac1dd781d2076775560d926e1a480handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481'></a> Source: [docs\standard\datetime\resolve-ambiguous-times.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/resolve-ambiguous-times.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7820,11 +7902,12 @@
 * Archive File: [resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='31a4582c28c208a7a3d86259b360e3472b851249482'></a> Source: [docs\standard\datetime\time-zone-overview.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/time-zone-overview.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7832,11 +7915,12 @@
 * Archive File: [time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#31a4582c28c208a7a3d86259b360e3472b851249482handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='735ae2f1d11ddf6b88b40c7b89083a45d1f07523483'></a> Source: [docs\standard\datetime\use-time-zones-in-arithmetic.md](https://github.com/dotnet/docs/blob/c40c28da09e8a122b542463c197196c82c81dd19/docs/standard/datetime/use-time-zones-in-arithmetic.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7844,11 +7928,12 @@
 * Archive File: [use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#735ae2f1d11ddf6b88b40c7b89083a45d1f07523483handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484'></a> Source: [docs\standard\delegates-lambdas.md](https://github.com/dotnet/docs/blob/9cf6022fc910bc5418c03c0fa81d9432d85be3b0/docs/standard/delegates-lambdas.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7856,11 +7941,12 @@
 * Archive File: [delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='0c73fb0a12092877ff5b54221f4a80693d1d1152485'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7868,7 +7954,8 @@
 * Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#0c73fb0a12092877ff5b54221f4a80693d1d1152485handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='7283ed099cefa4b0e137869724f8e87dda0d451a486'></a> Source: [docs\standard\framework-libraries.md](https://github.com/dotnet/docs/blob/093b852fe1ed2307ebce914381fe47388b435c95/docs/standard/framework-libraries.md)
@@ -7898,7 +7985,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='53c3afbe0492d010f7864bb42e7b83836c10aa4a488'></a> Source: [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/fundamentals.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7906,7 +7993,8 @@
 * Archive File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#53c3afbe0492d010f7864bb42e7b83836c10aa4a488handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='644fd73e79e0b6059991e1fb2e37c2d6bc812d7c489'></a> Source: [docs\standard\garbagecollection\gc.md](https://github.com/dotnet/docs/blob/b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4/docs/standard/garbagecollection/gc.md)
@@ -7922,7 +8010,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490'></a> Source: [docs\standard\garbagecollection\implementing-dispose.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/garbagecollection/implementing-dispose.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7930,7 +8018,8 @@
 * Archive File: [implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='2406a03fa64eb02c70f05c1e8240e4bc5981e98d491'></a> Source: [docs\standard\garbagecollection\index.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/index.md)
@@ -7948,7 +8037,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492'></a> Source: [docs\standard\garbagecollection\induced.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/induced.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7956,11 +8045,12 @@
 * Archive File: [induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='e063482aaa1fad01f8e0cd9e8552c87a0b247571493'></a> Source: [docs\standard\garbagecollection\latency.md](https://github.com/dotnet/docs/blob/de0dab146fc811e895dc32f98f877db5e757f82b/docs/standard/garbagecollection/latency.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -7968,7 +8058,8 @@
 * Archive File: [latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#e063482aaa1fad01f8e0cd9e8552c87a0b247571493handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='84b281960c8a4c0a72074ed3e9de8b33803d4281494'></a> Source: [docs\standard\garbagecollection\media\fundamentals\393001.png](https://github.com/dotnet/docs/blob/bb50b160a685d494ba47b3ca583f6fc35fa3ef3e/docs/standard/garbagecollection/media/fundamentals/393001.png)
@@ -7999,7 +8090,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='51655742b8975c84eae3f58c4ef0f7381a0bed6b496'></a> Source: [docs\standard\garbagecollection\using-objects.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/using-objects.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8007,11 +8098,12 @@
 * Archive File: [using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#51655742b8975c84eae3f58c4ef0f7381a0bed6b496handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='cc43c319f2ec8055073da4749cbfb7c56b825df9497'></a> Source: [docs\standard\garbagecollection\weak-references.md](https://github.com/dotnet/docs/blob/213ce098bcc2b5e31c55e759d895254d5ca33caa/docs/standard/garbagecollection/weak-references.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8019,11 +8111,12 @@
 * Archive File: [weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#cc43c319f2ec8055073da4749cbfb7c56b825df9497handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='5dcb9d10aeded8c5e8956c4b99ba9675311a787a498'></a> Source: [docs\standard\generics.md](https://github.com/dotnet/docs/blob/5b1a76c011b95db3ff5c4b4e01556f79c45fb369/docs/standard/generics.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8031,7 +8124,8 @@
 * Archive File: [generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#5dcb9d10aeded8c5e8956c4b99ba9675311a787a498handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='5633381fbbfecabe5be4e6a28df369e9b3006445499'></a> Source: [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/getting-started.md)
@@ -8064,7 +8158,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='47a407d1c1e768a027aaca63ee7a668e992467b2501'></a> Source: [docs\standard\language-independence.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/language-independence.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8072,11 +8166,12 @@
 * Archive File: [language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#47a407d1c1e768a027aaca63ee7a668e992467b2501handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='ff61319f15fea4c838517ed209e8095b37186c2e502'></a> Source: [docs\standard\library.md](https://github.com/dotnet/docs/blob/f9ffbb2e300df2080276096095a7269736260ba1/docs/standard/library.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8084,11 +8179,12 @@
 * Archive File: [library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#ff61319f15fea4c838517ed209e8095b37186c2e502handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503'></a> Source: [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/0013cf5604bfd1e8a16e5ca15577ac81fce49612/docs/standard/managed-code.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8096,7 +8192,8 @@
 * Archive File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='938b47878d90fc32819bbfbae2b5737eab1bf677504'></a> Source: [docs\standard\media\assembly-format\assembly-headers.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/standard/media/assembly-format/assembly-headers.png)
@@ -8165,7 +8262,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='0d7415b10d6f247c30b3da508eb8fc9e0007f824509'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/3aeaba5c8cf800c652941b5e6c2bc9f072849893/docs/standard/native-interop.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8173,11 +8270,12 @@
 * Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#0d7415b10d6f247c30b3da508eb8fc9e0007f824509handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='6d14668e643c2451f4ace2119006f442ed4dee15510'></a> Source: [docs\standard\numerics.md](https://github.com/dotnet/docs/blob/d5c7a18af16b4f3416e84b6cf86f0f78f28948da/docs/standard/numerics.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8185,11 +8283,12 @@
 * Archive File: [numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#6d14668e643c2451f4ace2119006f442ed4dee15510handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='479b141159de95c6a7e466220f935f9371b353db511'></a> Source: [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/8599be1eadcd6f005ef344bf173e8c06fce80725/docs/standard/portability-analyzer.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8197,7 +8296,8 @@
 * Archive File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#479b141159de95c6a7e466220f935f9371b353db511handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='dd3331ac9be61b9a69ac4fd82cb68eb92ca917b2512'></a> Source: [docs\standard\tour.md](https://github.com/dotnet/docs/blob/38561c2d25c6950d166bf706f4306c867e683b04/docs/standard/tour.md)
@@ -8213,7 +8313,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='4cb0c523a31faf319c1e07ceaa8a8122d3046be8513'></a> Source: [docs\standard\using-linq.md](https://github.com/dotnet/docs/blob/6992d907b152d67c51f43ec517902fb2effc6db2/docs/standard/using-linq.md)
-* Status: ArchivedSuccess
+* Status: HandedBackFailed
 * Target File: 
 * Handoff File: [using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/169a395cf3e5d92bca7adcd7bed200b9b306721d/ol-handoff/dotnet/docs.de-de/master/ht-p2/using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf)
 * Handoff Datetime: 2016-11-05 05:46:09
@@ -8221,7 +8321,8 @@
 * Archive File: [using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/07adfc38ecd7b2c02019771f7dc713e647cfb4f3/ol-archive/dotnet/docs.de-de/master/ht-p2/using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf)
 * Archive Datetime: 2016-11-07 23:37:56
 * Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback Datetime: 2016-11-15 14:11:47
+* Handback Error: [handback_file_rejected](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8513handback_file_rejected)
 * [Back to Top](#report-top)
 
 ##### <a name='d93f2ca1cffd632f0827bac59f879e8f1f647888514'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/1442cbafa04d57e7eb864c0697afef01413db168/docs/toc.md)
@@ -23852,5 +23953,599 @@
 
 
 ## Error Details
+##### <a name='bde267042883d2f25848747047845a16b181e549186handback_file_rejected'></a> Source: [docs\framework\docker\aspnetmvc.md](#bde267042883d2f25848747047845a16b181e549186)
+* Error Code: handback_file_rejected
+* Error Message: file aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='fd610bdba56679dd522149d8e91dc91858c7f7ed187handback_file_rejected'></a> Source: [docs\framework\docker\console.md](#fd610bdba56679dd522149d8e91dc91858c7f7ed187)
+* Error Code: handback_file_rejected
+* Error Message: file console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file console.9d2c7c481e5f8ff541f31b9ec708a3bc6f561866.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='6536a608a4ee1bb10f41907a28114193a300a52c389handback_file_rejected'></a> Source: [docs\standard\async-in-depth.md](#6536a608a4ee1bb10f41907a28114193a300a52c389)
+* Error Code: handback_file_rejected
+* Error Message: file async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file async-in-depth.16b4c489db1495cae0a0120c706ec82c79fdaad1.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='05b72d6a3d8ebdfb3808ba2f9a47476942686de2391handback_file_rejected'></a> Source: [docs\standard\base-types\alternation.md](#05b72d6a3d8ebdfb3808ba2f9a47476942686de2391)
+* Error Code: handback_file_rejected
+* Error Message: file alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file alternation.d53325d8b22222a052fbeb19994affe1399919ce.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='b2162a90d5cb6f3472a9d323a3e46e137c9edf82392handback_file_rejected'></a> Source: [docs\standard\base-types\anchors.md](#b2162a90d5cb6f3472a9d323a3e46e137c9edf82392)
+* Error Code: handback_file_rejected
+* Error Message: file anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file anchors.50a7162cb6a767810c7039d111f04386c7a19099.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='f55ea60d11abcfce4b5fb502e66c513646707bef393handback_file_rejected'></a> Source: [docs\standard\base-types\backreference.md](#f55ea60d11abcfce4b5fb502e66c513646707bef393)
+* Error Code: handback_file_rejected
+* Error Message: file backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='00e324803cf5c57eab1cc71eb819949247131479394handback_file_rejected'></a> Source: [docs\standard\base-types\backtracking.md](#00e324803cf5c57eab1cc71eb819949247131479394)
+* Error Code: handback_file_rejected
+* Error Message: file backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='120c97f323098a8c70e6f78e10e5a2fc40714b3e395handback_file_rejected'></a> Source: [docs\standard\base-types\basic-manipulations.md](#120c97f323098a8c70e6f78e10e5a2fc40714b3e395)
+* Error Code: handback_file_rejected
+* Error Message: file basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file basic-manipulations.d102cbb9f7d11f16d6766f1ccfdcca1e95240d69.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397handback_file_rejected'></a> Source: [docs\standard\base-types\best-practices-strings.md](#3efd30bade564fe1b7dbf93237a9ff40c58c5f1e397)
+* Error Code: handback_file_rejected
+* Error Message: file best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file best-practices-strings.50735b0812c811294bd39e6a00b0c9515fa4e629.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='00c7228c5cb906f41df5e60a318721008ecf0bb7398handback_file_rejected'></a> Source: [docs\standard\base-types\best-practices.md](#00c7228c5cb906f41df5e60a318721008ecf0bb7398)
+* Error Code: handback_file_rejected
+* Error Message: file best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file best-practices.6d973657568d082cce2bc0dc04e2f948e6debb34.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='a6f6f21daae79f752cfac0a70558778ae98d1a5d399handback_file_rejected'></a> Source: [docs\standard\base-types\changing-case.md](#a6f6f21daae79f752cfac0a70558778ae98d1a5d399)
+* Error Code: handback_file_rejected
+* Error Message: file changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file changing-case.fa58962aa94a58161fe498f5cd1ed35065300dec.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='8b333db10f7dc9d0e4701899b7af46f45f60aa8e400handback_file_rejected'></a> Source: [docs\standard\base-types\changing-formats.md](#8b333db10f7dc9d0e4701899b7af46f45f60aa8e400)
+* Error Code: handback_file_rejected
+* Error Message: file changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file changing-formats.6bfad65352ef2b819acfd18000fb0037012f6ff6.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='6080f5fa12a2391dd138828e0afc2219f1e3a11b401handback_file_rejected'></a> Source: [docs\standard\base-types\character-encoding.md](#6080f5fa12a2391dd138828e0afc2219f1e3a11b401)
+* Error Code: handback_file_rejected
+* Error Message: file character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file character-encoding.9f7c193d37ac8a4e5d5dc58d51e833684394535f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='f8ebb1db670669e2e8666cd5ef90f72237c105e4402handback_file_rejected'></a> Source: [docs\standard\base-types\classes.md](#f8ebb1db670669e2e8666cd5ef90f72237c105e4402)
+* Error Code: handback_file_rejected
+* Error Message: file classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file classes.172831ad7b296f14343dd80409cccfe1c978d640.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403handback_file_rejected'></a> Source: [docs\standard\base-types\common-type-system.md](#7d7f869b07d7cf00ffa69da117aa199d1b6e8f20403)
+* Error Code: handback_file_rejected
+* Error Message: file common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404handback_file_rejected'></a> Source: [docs\standard\base-types\comparing.md](#10c9ea3ebb50e8d8075d8a4e4ce007ddc29ff412404)
+* Error Code: handback_file_rejected
+* Error Message: file comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file comparing.7bb48c2aba18ab4532ffa02b5642c8210a2c4d9e.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='1832403174276e48dc1857be8ff11fba2b9a250c405handback_file_rejected'></a> Source: [docs\standard\base-types\compilation.md](#1832403174276e48dc1857be8ff11fba2b9a250c405)
+* Error Code: handback_file_rejected
+* Error Message: file compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file compilation.27191f9d6a714f50f84f3820d25cee49d425768b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='9bcf2ff74237f7e7faf2890849c2d68a0a602353406handback_file_rejected'></a> Source: [docs\standard\base-types\composite-format.md](#9bcf2ff74237f7e7faf2890849c2d68a0a602353406)
+* Error Code: handback_file_rejected
+* Error Message: file composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='01e15d9dc3881c7e2e4ea17db666991d72aa1b84407handback_file_rejected'></a> Source: [docs\standard\base-types\conversion-tables.md](#01e15d9dc3881c7e2e4ea17db666991d72aa1b84407)
+* Error Code: handback_file_rejected
+* Error Message: file conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file conversion-tables.9f1a09fb44837290f6c3ac4de136f46a7ca55ce7.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='43d6194afd948aeccbf051365e059794c74d2646408handback_file_rejected'></a> Source: [docs\standard\base-types\creating-new.md](#43d6194afd948aeccbf051365e059794c74d2646408)
+* Error Code: handback_file_rejected
+* Error Message: file creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file creating-new.51936498c5b799cbe489500f2681625eeede3985.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='ca7e486b07621269a617ae7542d389a78e4ab571409handback_file_rejected'></a> Source: [docs\standard\base-types\custom-datetime.md](#ca7e486b07621269a617ae7542d389a78e4ab571409)
+* Error Code: handback_file_rejected
+* Error Message: file custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e36c0117f6f011589299fa59a8abd139870c2257410handback_file_rejected'></a> Source: [docs\standard\base-types\custom-numeric.md](#e36c0117f6f011589299fa59a8abd139870c2257410)
+* Error Code: handback_file_rejected
+* Error Message: file custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file custom-numeric.b05787d4750260637cdf55f7b35d384d5199bf4a.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='168bd497891ead884413fad4542943a24de7a7f4411handback_file_rejected'></a> Source: [docs\standard\base-types\custom-timespan.md](#168bd497891ead884413fad4542943a24de7a7f4411)
+* Error Code: handback_file_rejected
+* Error Message: file custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='926195e48e9653525a502cf9403ae9c205bd0fe3412handback_file_rejected'></a> Source: [docs\standard\base-types\define-custom.md](#926195e48e9653525a502cf9403ae9c205bd0fe3412)
+* Error Code: handback_file_rejected
+* Error Message: file define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file define-custom.ce59d14f69e4f5241db50fd51b4bb0fac3aad46f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='783b51f3145d8b11e79b99cfdc4baefe127306e3413handback_file_rejected'></a> Source: [docs\standard\base-types\display-dates.md](#783b51f3145d8b11e79b99cfdc4baefe127306e3413)
+* Error Code: handback_file_rejected
+* Error Message: file display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file display-dates.321ea5db55b112d2d182adb5ef3ef903f4c81c1b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='cc3d9e1df658b923c0006e4798e44bceba79da31414handback_file_rejected'></a> Source: [docs\standard\base-types\display-milliseconds.md](#cc3d9e1df658b923c0006e4798e44bceba79da31414)
+* Error Code: handback_file_rejected
+* Error Message: file display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file display-milliseconds.a851554c036c513da75749a292abf6a7f8b80bb9.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='8cb811636ca2c7b207f7661e990567b5785bc994415handback_file_rejected'></a> Source: [docs\standard\base-types\enumeration-format.md](#8cb811636ca2c7b207f7661e990567b5785bc994415)
+* Error Code: handback_file_rejected
+* Error Message: file enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file enumeration-format.68f1bc2a193fbeabdd4a6881c8d71fd27106e2d4.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='08a781be74120d26b8408ee8e9b12051b005ad54416handback_file_rejected'></a> Source: [docs\standard\base-types\escapes.md](#08a781be74120d26b8408ee8e9b12051b005ad54416)
+* Error Code: handback_file_rejected
+* Error Message: file escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file escapes.fdf5ae214c4bbbb3e33499737c7065e83b3c3ebe.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417handback_file_rejected'></a> Source: [docs\standard\base-types\extract-day.md](#f7ae17ac6dbc23e18d18561d5e5ae7efc037c63e417)
+* Error Code: handback_file_rejected
+* Error Message: file extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='9c86a77271ac0b239e92f415bd7b26d51d762dd8418handback_file_rejected'></a> Source: [docs\standard\base-types\extract-protocol.md](#9c86a77271ac0b239e92f415bd7b26d51d762dd8418)
+* Error Code: handback_file_rejected
+* Error Message: file extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file extract-protocol.db04519facd7aaeb176727bbb096c1101fda6cc9.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='6c6ddfdbe288fe012adf31fd4d45af1b697d1132419handback_file_rejected'></a> Source: [docs\standard\base-types\formatting-types.md](#6c6ddfdbe288fe012adf31fd4d45af1b697d1132419)
+* Error Code: handback_file_rejected
+* Error Message: file formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file formatting-types.b9aca03e3ff151bde1e5f780e9a8accb15b62b16.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420handback_file_rejected'></a> Source: [docs\standard\base-types\grouping.md](#d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90420)
+* Error Code: handback_file_rejected
+* Error Message: file grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422handback_file_rejected'></a> Source: [docs\standard\base-types\manipulating-strings.md](#40a3d6f6984898f09b5f4ef8b3f22eae71026e9b422)
+* Error Code: handback_file_rejected
+* Error Message: file manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file manipulating-strings.c4458c2caef3406d8ba7807b0ee605894039d4d9.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='477332f4009790727686aa3d91e35509e3766903423handback_file_rejected'></a> Source: [docs\standard\base-types\miscellaneous.md](#477332f4009790727686aa3d91e35509e3766903423)
+* Error Code: handback_file_rejected
+* Error Message: file miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file miscellaneous.6c478fb8b93e1680dec923b6ba9d084f0c84f0c7.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e4a5237fcb439999efe4454512b06444f129e7b4424handback_file_rejected'></a> Source: [docs\standard\base-types\object-model.md](#e4a5237fcb439999efe4454512b06444f129e7b4424)
+* Error Code: handback_file_rejected
+* Error Message: file object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file object-model.3f5b5fa58173bef5cd2e5b8bcc3b7a8abfb726eb.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='21672e28d0e76b98f6dac698096fccb2ce4edd03425handback_file_rejected'></a> Source: [docs\standard\base-types\options.md](#21672e28d0e76b98f6dac698096fccb2ce4edd03425)
+* Error Code: handback_file_rejected
+* Error Message: file options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file options.65329b23b2caac128f3130b9180bba5a93dcbed5.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426handback_file_rejected'></a> Source: [docs\standard\base-types\pad-number.md](#991fd8a0e631b73a0a484ebbe71ac1189f37e1f6426)
+* Error Code: handback_file_rejected
+* Error Message: file pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file pad-number.8e3a58e56fa3fb48a70d9f586eef20e68e0fbebc.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='73452c1f432fb8cb50a36e739fb91962693f8e51427handback_file_rejected'></a> Source: [docs\standard\base-types\padding.md](#73452c1f432fb8cb50a36e739fb91962693f8e51427)
+* Error Code: handback_file_rejected
+* Error Message: file padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file padding.1bbe0be2e4555154d15c96b748b409820ff30b2a.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428handback_file_rejected'></a> Source: [docs\standard\base-types\parsing-datetime.md](#ad1976f44d8c4ec3a22c6156b4f6ad58f867908b428)
+* Error Code: handback_file_rejected
+* Error Message: file parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file parsing-datetime.700f119d6cf781f24d5d8eab901bc5daa244431e.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429handback_file_rejected'></a> Source: [docs\standard\base-types\parsing-numeric.md](#65475fd2b42b832de8d65b0a2aa6d4ceb81d4487429)
+* Error Code: handback_file_rejected
+* Error Message: file parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file parsing-numeric.6662374aa81d4bf4d294d9634a3e69056e50ca6b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='3f26670dc9f4c6b6608599793352445d5665cf64430handback_file_rejected'></a> Source: [docs\standard\base-types\parsing-other.md](#3f26670dc9f4c6b6608599793352445d5665cf64430)
+* Error Code: handback_file_rejected
+* Error Message: file parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file parsing-other.6a0025c3c5dbc15759ecb9a2a25a23b002aabb97.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='cd243693a19500ac53fe6033cfe4ef5a36a9096a432handback_file_rejected'></a> Source: [docs\standard\base-types\performing-formatting-operations.md](#cd243693a19500ac53fe6033cfe4ef5a36a9096a432)
+* Error Code: handback_file_rejected
+* Error Message: file performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file performing-formatting-operations.c65fc5f06063a1c3059886804cdd6de1b5e9a921.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e9ae9cb47955fb926507be32afb875efd3260ce3437handback_file_rejected'></a> Source: [docs\standard\base-types\regular-expressions.md](#e9ae9cb47955fb926507be32afb875efd3260ce3437)
+* Error Code: handback_file_rejected
+* Error Message: file regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file regular-expressions.650af38eb01fb720a48390548446abb693afa7bb.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438handback_file_rejected'></a> Source: [docs\standard\base-types\roundtrip.md](#00a09c8a60138a1828d4e8c62dd72b88abbf4bbe438)
+* Error Code: handback_file_rejected
+* Error Message: file roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file roundtrip.8e23fb6962ded915d55b369af952eba05cf6feef.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='8951e4ca82c0148bae7e8279681920ffabb523be439handback_file_rejected'></a> Source: [docs\standard\base-types\scanning.md](#8951e4ca82c0148bae7e8279681920ffabb523be439)
+* Error Code: handback_file_rejected
+* Error Message: file scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file scanning.29a0c116621a309330aff40d434e43948f24f6f3.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='1196459d74038edb1268c619dac3da69f38e7860440handback_file_rejected'></a> Source: [docs\standard\base-types\standard-datetime.md](#1196459d74038edb1268c619dac3da69f38e7860440)
+* Error Code: handback_file_rejected
+* Error Message: file standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file standard-datetime.ef5393377d82926ecf71189ae72bee0bae2c3b08.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441handback_file_rejected'></a> Source: [docs\standard\base-types\standard-numeric.md](#5f5ee73c7c9e0ecdce8aa0d75a630decea57704b441)
+* Error Code: handback_file_rejected
+* Error Message: file standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file standard-numeric.ce1f7a0dcd642ab33007207a3f0e734c2a0ee876.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='a31f0da1f5b502d8b983f4d496c4b9a520b0309c442handback_file_rejected'></a> Source: [docs\standard\base-types\standard-timespan.md](#a31f0da1f5b502d8b983f4d496c4b9a520b0309c442)
+* Error Code: handback_file_rejected
+* Error Message: file standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='1e8453b78827d8c02f29135ddfb832956ab40f3c443handback_file_rejected'></a> Source: [docs\standard\base-types\stringbuilder.md](#1e8453b78827d8c02f29135ddfb832956ab40f3c443)
+* Error Code: handback_file_rejected
+* Error Message: file stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file stringbuilder.1dd865f59d78a3f695223e04fca555d0e6ea6225.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444handback_file_rejected'></a> Source: [docs\standard\base-types\strip-characters.md](#062bb3ec3c5a3baac05af76b9d2d7bcc74fa2573444)
+* Error Code: handback_file_rejected
+* Error Message: file strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file strip-characters.39b81aed061683de580393719160ba5990401e0b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='3e02d18d6566c67c7fff7003671f340f97b0dfce445handback_file_rejected'></a> Source: [docs\standard\base-types\substitutions.md](#3e02d18d6566c67c7fff7003671f340f97b0dfce445)
+* Error Code: handback_file_rejected
+* Error Message: file substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file substitutions.693434ddb0586cddd5d04988aed7474d777a3246.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='6b410da1982519fd9ff137bd38f1d074ce08d39b446handback_file_rejected'></a> Source: [docs\standard\base-types\thread-safety.md](#6b410da1982519fd9ff137bd38f1d074ce08d39b446)
+* Error Code: handback_file_rejected
+* Error Message: file thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file thread-safety.047c1ab6dcde516692ac198cfb0823c1dfdb03bb.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='96cf08c0de8ba73d931d561187369ccf8b091651447handback_file_rejected'></a> Source: [docs\standard\base-types\trimming.md](#96cf08c0de8ba73d931d561187369ccf8b091651447)
+* Error Code: handback_file_rejected
+* Error Message: file trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file trimming.db63a3dcea6fcd00395923e44daee124b67414be.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='ba4a356921cb43b88d3ad8e6ef7487699f442385448handback_file_rejected'></a> Source: [docs\standard\base-types\type-conversion.md](#ba4a356921cb43b88d3ad8e6ef7487699f442385448)
+* Error Code: handback_file_rejected
+* Error Message: file type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file type-conversion.8357713d97819ff019510283827d6fb025b0ddf1.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449handback_file_rejected'></a> Source: [docs\standard\base-types\verify-format.md](#d04c77b2d7597371651f15ca4a7e203c9cbb8ccb449)
+* Error Code: handback_file_rejected
+* Error Message: file verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file verify-format.a687d23fccd26373711cdc2d437a774b5e21e5a1.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='44b4798a9b6f132d2fc8921bfffa24fa04202d43451handback_file_rejected'></a> Source: [docs\standard\clr.md](#44b4798a9b6f132d2fc8921bfffa24fa04202d43451)
+* Error Code: handback_file_rejected
+* Error Message: file clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file clr.c6c600ab4fa351d3f792801bca39ed7a8c4d4965.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453handback_file_rejected'></a> Source: [docs\standard\collections\comparisons-and-sorts-within-collections.md](#de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5453)
+* Error Code: handback_file_rejected
+* Error Message: file comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file comparisons-and-sorts-within-collections.a4814f345079fb61609f208213259d69dfd1affa.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='721f16154e1df4b7a075639ccce6bf2650b46c9b454handback_file_rejected'></a> Source: [docs\standard\collections\hashtable-and-dictionary-collection-types.md](#721f16154e1df4b7a075639ccce6bf2650b46c9b454)
+* Error Code: handback_file_rejected
+* Error Message: file hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file hashtable-and-dictionary-collection-types.726afc14b9c905ce623486d27942e828bf06348b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='f00fedb70bddc184e5c6ea71213b2beb78594792456handback_file_rejected'></a> Source: [docs\standard\collections\selecting-a-collection-class.md](#f00fedb70bddc184e5c6ea71213b2beb78594792456)
+* Error Code: handback_file_rejected
+* Error Message: file selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457handback_file_rejected'></a> Source: [docs\standard\collections\sorted-collection-types.md](#a5f6e2ef7f765dccf1fee0e2de60dea8aec003b9457)
+* Error Code: handback_file_rejected
+* Error Message: file sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file sorted-collection-types.ae3aa45904d5407b15dfeb115fbc50a6f2dbaff5.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='991b4b8389cc967881c2c39d29c387687047489f458handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\blockingcollection-overview.md](#991b4b8389cc967881c2c39d29c387687047489f458)
+* Error Code: handback_file_rejected
+* Error Message: file blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file blockingcollection-overview.47db7fe6b6dc98be9e5d8da6f1869eaa57afe519.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='90ad4f1f0266d948937ed462be15a4d4948ce7f8459handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-add-and-remove-items.md](#90ad4f1f0266d948937ed462be15a4d4948ce7f8459)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='4f73f3bf2000a0ff4cd600d72bb161206a58d23a460handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-add-and-take-items.md](#4f73f3bf2000a0ff4cd600d72bb161206a58d23a460)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-add-and-take-items.74998e2a4567c4ce2e7e8cf4dd3bee2d71a5a9c8.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='63a59dbcc323f392e3bf2991b1439aa062382623461handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-add-bounding-and-blocking.md](#63a59dbcc323f392e3bf2991b1439aa062382623461)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-add-bounding-and-blocking.d7e8e969f87f13bc8c0b4cb3105c65e5c49d1ed7.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='cf16330afe6b8415c3480322069e88132bef1082462handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-create-an-object-pool.md](#cf16330afe6b8415c3480322069e88132bef1082462)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-create-an-object-pool.67d4860ff587e91b4b30745bef2e52949e0b0972.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-use-arrays-of-blockingcollections.md](#e68ad58fecfe489cc26af02be7e4dbb4f7a8470c463)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-use-arrays-of-blockingcollections.d399298da2f3e4c3dbeb438b63d75649f72fdc70.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='618b5c7c1b8219f4e9225277064ff3c498ff3382464handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\how-to-use-foreach-to-remove.md](#618b5c7c1b8219f4e9225277064ff3c498ff3382464)
+* Error Code: handback_file_rejected
+* Error Message: file how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file how-to-use-foreach-to-remove.5d91710e1ca1f740190d9df9b36fdcb019240590.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466handback_file_rejected'></a> Source: [docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md](#74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8466)
+* Error Code: handback_file_rejected
+* Error Message: file when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file when-to-use-a-thread-safe-collection.c906ee56b8927c6037ad35092e542858518686e6.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='0805bae19871f878806050a0c2bf954927894321467handback_file_rejected'></a> Source: [docs\standard\collections\when-to-use-generic-collections.md](#0805bae19871f878806050a0c2bf954927894321467)
+* Error Code: handback_file_rejected
+* Error Message: file when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file when-to-use-generic-collections.ec8a7ec4f16e4f7bd1072115323826242604a56b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='4ea3ae3471636c4833597520628e903999f35c0a468handback_file_rejected'></a> Source: [docs\standard\common-type-system.md](#4ea3ae3471636c4833597520628e903999f35c0a468)
+* Error Code: handback_file_rejected
+* Error Message: file common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file common-type-system.12e59626ca0328f39e75154d0bc212bcbae5a464.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='865e41ca544e8931d0a7037310387e077d8a5547470handback_file_rejected'></a> Source: [docs\standard\datetime\access-utc-and-local.md](#865e41ca544e8931d0a7037310387e077d8a5547470)
+* Error Code: handback_file_rejected
+* Error Message: file access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file access-utc-and-local.9fb4d151206ca64ec3d0739ca9337271c96b45be.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e5b709cb82c680edf454d0a8fc9ff27e6d26c138471handback_file_rejected'></a> Source: [docs\standard\datetime\choosing-between-datetime.md](#e5b709cb82c680edf454d0a8fc9ff27e6d26c138471)
+* Error Code: handback_file_rejected
+* Error Message: file choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file choosing-between-datetime.b827588ac29c174f8bf675b827db15b738f0d418.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472handback_file_rejected'></a> Source: [docs\standard\datetime\converting-between-datetime-and-offset.md](#312ac8cb7e901c4ceeff2e428620c2c4c615ca3d472)
+* Error Code: handback_file_rejected
+* Error Message: file converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file converting-between-datetime-and-offset.116a149659e2d910f1ec05e921e73c6c7d3b203b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='051a4891336470e79bda9d7b9bb1be4e2c9187b8473handback_file_rejected'></a> Source: [docs\standard\datetime\converting-between-time-zones.md](#051a4891336470e79bda9d7b9bb1be4e2c9187b8473)
+* Error Code: handback_file_rejected
+* Error Message: file converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file converting-between-time-zones.3feba8a8cc30ebce0bf8cb24f8b495146609dae7.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='417a421f443f90e5f4ccd48bcabb3735dc5bc981474handback_file_rejected'></a> Source: [docs\standard\datetime\enumerate-time-zones.md](#417a421f443f90e5f4ccd48bcabb3735dc5bc981474)
+* Error Code: handback_file_rejected
+* Error Message: file enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file enumerate-time-zones.50189041f674cd11ff4c605b4f3c248c3da48436.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='4f8913e3c193e7c76160ac45d576c4cf75d11fed475handback_file_rejected'></a> Source: [docs\standard\datetime\finding-the-time-zones-on-local-system.md](#4f8913e3c193e7c76160ac45d576c4cf75d11fed475)
+* Error Code: handback_file_rejected
+* Error Message: file finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file finding-the-time-zones-on-local-system.8b491b0620ca73201e4a0977527fe9cc9a64789f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='5af479c40bb5db3213f45c0472dbdea99bbd5c21477handback_file_rejected'></a> Source: [docs\standard\datetime\instantiate-time-zone-info.md](#5af479c40bb5db3213f45c0472dbdea99bbd5c21477)
+* Error Code: handback_file_rejected
+* Error Message: file instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file instantiate-time-zone-info.a3d2e66836b8ec628767b0ba042e4d0a6935cc2b.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='330371397d0ec258597e4e4f109f3f1bb35df6b7478handback_file_rejected'></a> Source: [docs\standard\datetime\instantiating-a-datetimeoffset-object.md](#330371397d0ec258597e4e4f109f3f1bb35df6b7478)
+* Error Code: handback_file_rejected
+* Error Message: file instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file instantiating-a-datetimeoffset-object.47240fcad8ac16c3d5592a5c27eac106f3e9e06f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479handback_file_rejected'></a> Source: [docs\standard\datetime\let-users-resolve-ambiguous-times.md](#889bc6dc85ca475b5adaf9ab6d15dfcabffe1370479)
+* Error Code: handback_file_rejected
+* Error Message: file let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='64fbb3b25d5959ac1dd781d2076775560d926e1a480handback_file_rejected'></a> Source: [docs\standard\datetime\performing-arithmetic-operations.md](#64fbb3b25d5959ac1dd781d2076775560d926e1a480)
+* Error Code: handback_file_rejected
+* Error Message: file performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file performing-arithmetic-operations.eabd36eb720d37a238bcd337835944b2361875e2.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481handback_file_rejected'></a> Source: [docs\standard\datetime\resolve-ambiguous-times.md](#e4e62607fd1bd3b4cee3e23a5863e1ba9e25ab03481)
+* Error Code: handback_file_rejected
+* Error Message: file resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file resolve-ambiguous-times.7738c27c1e05e178250792f35e2125329087eae5.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='31a4582c28c208a7a3d86259b360e3472b851249482handback_file_rejected'></a> Source: [docs\standard\datetime\time-zone-overview.md](#31a4582c28c208a7a3d86259b360e3472b851249482)
+* Error Code: handback_file_rejected
+* Error Message: file time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file time-zone-overview.f5e295aadb8564da0c1517d70d08b716759d5318.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='735ae2f1d11ddf6b88b40c7b89083a45d1f07523483handback_file_rejected'></a> Source: [docs\standard\datetime\use-time-zones-in-arithmetic.md](#735ae2f1d11ddf6b88b40c7b89083a45d1f07523483)
+* Error Code: handback_file_rejected
+* Error Message: file use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484handback_file_rejected'></a> Source: [docs\standard\delegates-lambdas.md](#0d1dfc333f16acad44b1e276b75ff3c65a77e5aa484)
+* Error Code: handback_file_rejected
+* Error Message: file delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file delegates-lambdas.71df54ba57d186484393e6e83b7a0dca5d9c3a97.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='0c73fb0a12092877ff5b54221f4a80693d1d1152485handback_file_rejected'></a> Source: [docs\standard\exceptions.md](#0c73fb0a12092877ff5b54221f4a80693d1d1152485)
+* Error Code: handback_file_rejected
+* Error Message: file exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='53c3afbe0492d010f7864bb42e7b83836c10aa4a488handback_file_rejected'></a> Source: [docs\standard\garbagecollection\fundamentals.md](#53c3afbe0492d010f7864bb42e7b83836c10aa4a488)
+* Error Code: handback_file_rejected
+* Error Message: file fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490handback_file_rejected'></a> Source: [docs\standard\garbagecollection\implementing-dispose.md](#dfe2cebfbcf1f4c2697683ebda8c1e11567fd015490)
+* Error Code: handback_file_rejected
+* Error Message: file implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file implementing-dispose.ce6dbe3daa4ca7bbe23e988f299b31c5bec55519.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492handback_file_rejected'></a> Source: [docs\standard\garbagecollection\induced.md](#a10822518f0687dc7bbb06dd0fb77f6d9a3196fb492)
+* Error Code: handback_file_rejected
+* Error Message: file induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='e063482aaa1fad01f8e0cd9e8552c87a0b247571493handback_file_rejected'></a> Source: [docs\standard\garbagecollection\latency.md](#e063482aaa1fad01f8e0cd9e8552c87a0b247571493)
+* Error Code: handback_file_rejected
+* Error Message: file latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file latency.d91f110a51375f7a805f6b207660d58e23111153.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='51655742b8975c84eae3f58c4ef0f7381a0bed6b496handback_file_rejected'></a> Source: [docs\standard\garbagecollection\using-objects.md](#51655742b8975c84eae3f58c4ef0f7381a0bed6b496)
+* Error Code: handback_file_rejected
+* Error Message: file using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file using-objects.7e9fda773247a99bd570b8f1346d7645d653e4ad.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='cc43c319f2ec8055073da4749cbfb7c56b825df9497handback_file_rejected'></a> Source: [docs\standard\garbagecollection\weak-references.md](#cc43c319f2ec8055073da4749cbfb7c56b825df9497)
+* Error Code: handback_file_rejected
+* Error Message: file weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file weak-references.c984f7fa6f6e42f10789530bf304cf5780a8ba4d.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='5dcb9d10aeded8c5e8956c4b99ba9675311a787a498handback_file_rejected'></a> Source: [docs\standard\generics.md](#5dcb9d10aeded8c5e8956c4b99ba9675311a787a498)
+* Error Code: handback_file_rejected
+* Error Message: file generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file generics.1f8f95282e2b84cdfaeef3636a5944d55a152857.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='47a407d1c1e768a027aaca63ee7a668e992467b2501handback_file_rejected'></a> Source: [docs\standard\language-independence.md](#47a407d1c1e768a027aaca63ee7a668e992467b2501)
+* Error Code: handback_file_rejected
+* Error Message: file language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file language-independence.c22b026a92debade3b0e0672b2f13dac168d8abe.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='ff61319f15fea4c838517ed209e8095b37186c2e502handback_file_rejected'></a> Source: [docs\standard\library.md](#ff61319f15fea4c838517ed209e8095b37186c2e502)
+* Error Code: handback_file_rejected
+* Error Message: file library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file library.387c1e6b222531c2cedef18135a5fa775d5f0452.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503handback_file_rejected'></a> Source: [docs\standard\managed-code.md](#f05bd2e2344b4dd61d038278ad02e9c8f357b3a8503)
+* Error Code: handback_file_rejected
+* Error Message: file managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file managed-code.c074f35f86522ea606301f15657bc0ee24da87df.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='0d7415b10d6f247c30b3da508eb8fc9e0007f824509handback_file_rejected'></a> Source: [docs\standard\native-interop.md](#0d7415b10d6f247c30b3da508eb8fc9e0007f824509)
+* Error Code: handback_file_rejected
+* Error Message: file native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='6d14668e643c2451f4ace2119006f442ed4dee15510handback_file_rejected'></a> Source: [docs\standard\numerics.md](#6d14668e643c2451f4ace2119006f442ed4dee15510)
+* Error Code: handback_file_rejected
+* Error Message: file numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file numerics.3cae565a7bf0ad930aed72b463f8dc1f484efead.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='479b141159de95c6a7e466220f935f9371b353db511handback_file_rejected'></a> Source: [docs\standard\portability-analyzer.md](#479b141159de95c6a7e466220f935f9371b353db511)
+* Error Code: handback_file_rejected
+* Error Message: file portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
+##### <a name='4cb0c523a31faf319c1e07ceaa8a8122d3046be8513handback_file_rejected'></a> Source: [docs\standard\using-linq.md](#4cb0c523a31faf319c1e07ceaa8a8122d3046be8513)
+* Error Code: handback_file_rejected
+* Error Message: file using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf is out of handoff scope
+* Retriable: False
+* Error Details: {"internal_error_code":"handback_file_rejected","internal_error_message":"file using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf is out of handoff scope","internal_error_retriable":false,"exception_message":"file using-linq.9202ee2cc6a78e5d44a90dd7b156929a14f8fd86.de-de.xlf is out of handoff scope","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+
 
 Generated by OpenLocalization.
