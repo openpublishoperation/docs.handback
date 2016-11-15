@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 259
+[ Archive Success Files ](#archive-success-list)| 258
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 2
+[ In Sync Handback Files ](#insync-handback-success-list)| 3
 [ Ignored Files ](#ignored-list)| 1554
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -50,7 +50,6 @@
  [docs\core\porting\third-party-deps.md](https://github.com/dotnet/docs/blob/46061efa8e33c6a73befa5181eb33b8deb2fa637/docs/core/porting/third-party-deps.md) | ArchivedSuccess | [Details](#3e75ad86a42b9c8ecc23fe1303830b463a24c3bf47)
  [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/682b27c575e63c3a9efeba8fe14bad6288d02664/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#be3ada8eb885d341c03a004d16fb523281f1287048)
  [docs\core\sdk.md](https://github.com/dotnet/docs/blob/b7dbb80c16ca0d08ff6fe4c4f3a7b221f64c6608/docs/core/sdk.md) | ArchivedSuccess | [Details](#a1808cdc0efb9087ffbda0a1631cd08e6bde0b3f49)
- [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md) | ArchivedSuccess | [Details](#e055475200c55c2e2f890ac63b8b258aeacfae7550)
  [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/testing/unit-testing-with-dotnet-test.md) | ArchivedSuccess | [Details](#a941a7e1bcafa4f342907f3160dbbf8e6ff4bac951)
  [docs\core\testing\using-mstest-on-windows.md](https://github.com/dotnet/docs/blob/6795f1ace77e6f4d1b2fe07e6281f4acb6d21271/docs/core/testing/using-mstest-on-windows.md) | ArchivedSuccess | [Details](#c9d6bb1d45b9a6cb88334050669a4c064e53d54e52)
  [docs\core\tools\dotnet.md](https://github.com/dotnet/docs/blob/c6ee3f5663d0a3f62914e8de474cca4d15340c9d/docs/core/tools/dotnet.md) | ArchivedSuccess | [Details](#77c37ac3d4d0ba9ad1feac539debe40b0ee3116161)
@@ -291,6 +290,7 @@
  ----------- | ------ | ------- 
  [docs\core\docker\building-net-docker-images.md](https://github.com/dotnet/docs/blob/1cb9e19ec9c9c0764244aeec5f62b812cbd91aef/docs/core/docker/building-net-docker-images.md) | InSyncHandedBackSuccess | [Details](#be658d2c660aff736eceffe23757c13154e7858226)
  [docs\core\migrating-from-dnx.md](https://github.com/dotnet/docs/blob/956a0766fe0171052983627f2cf2e8264d6b0365/docs/core/migrating-from-dnx.md) | InSyncHandedBackSuccess | [Details](#e79746734c179c3f7797a10bdcd79606b818afea37)
+ [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md) | InSyncHandedBackSuccess | [Details](#e055475200c55c2e2f890ac63b8b258aeacfae7550)
 
 ## <a name='ignored-list'></a> Ignored File List
  Source File | Status | Details 
@@ -2466,15 +2466,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e055475200c55c2e2f890ac63b8b258aeacfae7550'></a> Source: [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\testing\index.md](https://github.com/dotnet/docs.pt-br/blob/9d7b20b4ed2b11d80c9502be00c58008f995e670/docs/core/testing/index.md)
 * Handoff File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5059272e8bd2e12736fe32b9c6d67b196a627708/ol-handoff/dotnet/docs.pt-br/master/index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf)
 * Handoff Datetime: 2016-11-15 04:14:13
 * Handoff Reason: Include
 * Archive File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5050a3167a0720ff4d7f0a6bba36d872d90d5d3c/ol-archive/dotnet/docs.pt-br/master/index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf)
 * Archive Datetime: 2016-11-15 04:21:20
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
+* Handback File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3ecc9c3e80c2ffd026896484245b032a960086dc/ol-handback/dotnet/docs.pt-br/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.pt-br.xlf)
+* Handback Datetime: 2016-11-15 09:05:42
 * [Back to Top](#report-top)
 
 ##### <a name='a941a7e1bcafa4f342907f3160dbbf8e6ff4bac951'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/testing/unit-testing-with-dotnet-test.md)
