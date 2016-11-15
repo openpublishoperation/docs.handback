@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 209
+[ Archive Success Files ](#archive-success-list)| 208
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 52
+[ In Sync Handback Files ](#insync-handback-success-list)| 53
 [ Ignored Files ](#ignored-list)| 1554
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -38,7 +38,6 @@
  [docs\core\porting\media\project-structure\project.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.png) | ArchivedSuccess | [Details](#53c2807b4930672a4dca14af87586093931c40a742)
  [docs\core\porting\media\project-structure\project.xproj.different.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.xproj.different.png) | ArchivedSuccess | [Details](#e8df3c3cca65bf169a014f30b97869a420065f6143)
  [docs\core\porting\media\project-structure\project.xproj.png](https://github.com/dotnet/docs/blob/b22b63ab472e34981982ba0065c7167cddf6c727/docs/core/porting/media/project-structure/project.xproj.png) | ArchivedSuccess | [Details](#9e5b560d111542f9e61b18cfd9143d0adb9325e544)
- [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md) | ArchivedSuccess | [Details](#e055475200c55c2e2f890ac63b8b258aeacfae7550)
  [docs\core\tools\index.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/core/tools/index.md) | ArchivedSuccess | [Details](#3a3326f96cf69d0ac466e52107597d80c2790b6264)
  [docs\core\tools\media\test-protocol\dotnet-test-discover.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tools/media/test-protocol/dotnet-test-discover.png) | ArchivedSuccess | [Details](#ef6d86dc7da862a2a61112c666acbd4fa48b22c865)
  [docs\core\tools\media\test-protocol\dotnet-test-execute.png](https://github.com/dotnet/docs/blob/a90e173972bec5eb60325c2285af569727b3cc4d/docs/core/tools/media/test-protocol/dotnet-test-execute.png) | ArchivedSuccess | [Details](#63bf500252fc112edf2e2bf9293b7fdcf08cc83466)
@@ -253,6 +252,7 @@
  [docs\core\porting\third-party-deps.md](https://github.com/dotnet/docs/blob/46061efa8e33c6a73befa5181eb33b8deb2fa637/docs/core/porting/third-party-deps.md) | InSyncHandedBackSuccess | [Details](#3e75ad86a42b9c8ecc23fe1303830b463a24c3bf47)
  [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/682b27c575e63c3a9efeba8fe14bad6288d02664/docs/core/rid-catalog.md) | InSyncHandedBackSuccess | [Details](#be3ada8eb885d341c03a004d16fb523281f1287048)
  [docs\core\sdk.md](https://github.com/dotnet/docs/blob/b7dbb80c16ca0d08ff6fe4c4f3a7b221f64c6608/docs/core/sdk.md) | InSyncHandedBackSuccess | [Details](#a1808cdc0efb9087ffbda0a1631cd08e6bde0b3f49)
+ [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md) | InSyncHandedBackSuccess | [Details](#e055475200c55c2e2f890ac63b8b258aeacfae7550)
  [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/testing/unit-testing-with-dotnet-test.md) | InSyncHandedBackSuccess | [Details](#a941a7e1bcafa4f342907f3160dbbf8e6ff4bac951)
  [docs\core\testing\using-mstest-on-windows.md](https://github.com/dotnet/docs/blob/6795f1ace77e6f4d1b2fe07e6281f4acb6d21271/docs/core/testing/using-mstest-on-windows.md) | InSyncHandedBackSuccess | [Details](#c9d6bb1d45b9a6cb88334050669a4c064e53d54e52)
  [docs\core\tools\dotnet.md](https://github.com/dotnet/docs/blob/c6ee3f5663d0a3f62914e8de474cca4d15340c9d/docs/core/tools/dotnet.md) | InSyncHandedBackSuccess | [Details](#77c37ac3d4d0ba9ad1feac539debe40b0ee3116161)
@@ -2503,18 +2503,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='e055475200c55c2e2f890ac63b8b258aeacfae7550'></a> Source: [docs\core\testing\index.md](https://github.com/dotnet/docs/blob/352d4a1fe96b701ebf9e0d60d006cfb9ed77977c/docs/core/testing/index.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\testing\index.md](https://github.com/dotnet/docs.de-de/blob/683abb0026040183331b099a5ce444377eefdf43/docs/core/testing/index.md)
 * Handoff File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/ccd9a48d7b8fb9c35a79b7404c58b9d068ca21ff/ol-handoff/dotnet/docs.de-de/master/index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf)
 * Handoff Datetime: 2016-11-15 04:13:29
 * Handoff Reason: Include
 * Archive File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/de964ca11f609893e42082bc1383d3168c947e2b/ol-archive/dotnet/docs.de-de/master/index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf)
 * Archive Datetime: 2016-11-15 04:20:45
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\testing\index.md](https://github.com/dotnet/docs.de-de/blob/a93a175be0d90069388b0cf85edf27cbad6cbb15/docs/core/testing/index.md)
-* Current Handback File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf](https://github.com/dotnet/docs.handback/blob/984d1b4ac4734c4c68cc3ba7338642cc26295de8/ol-handback/dotnet/docs.de-de/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf)
-* Current Handback Datetime: 2016-11-09 00:43:00
+* Handback File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf](https://github.com/dotnet/docs.handback/blob/9c87bcad62df289ab8e809329a13efe1091728fa/ol-handback/dotnet/docs.de-de/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf)
+* Handback Datetime: 2016-11-15 09:24:43
 * Bilingual File: [index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf](https://github.com/dotnet/docs.handback/blob/984d1b4ac4734c4c68cc3ba7338642cc26295de8/ol-handback/dotnet/docs.de-de/master/ht-p1/index.874b2218474cbbb7738dd697aef54bd275718c7c.de-de.xlf)
 * Bilingual Datetime: 2016-11-09 00:44:09
 * [Back to Top](#report-top)
