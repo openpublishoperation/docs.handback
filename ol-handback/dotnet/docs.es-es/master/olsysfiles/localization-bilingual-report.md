@@ -1,11 +1,49 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/deploying/applications.md) | HandedOffSuccess | [Details](#e3825b880ef73e176fb23618d9814e2d54f692c834)
+ [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/porting/nuget-packages.md) | HandedOffSuccess | [Details](#3726a5f833bb2fae18a918072c85316984d0d46757)
 
 ## Item Details
+##### <a name='e3825b880ef73e176fb23618d9814e2d54f692c834'></a> Source: [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/deploying/applications.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/aed8dcc4a6186931a91a77d033fb9f242977f27c/ol-handoff/dotnet/docs.es-es/master/ht-p1/applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf)
+* Handoff Datetime: 2016-11-16 11:16:21
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\deploying\applications.md](https://github.com/dotnet/docs.es-es/blob/017097ae9d68ff1d0c1c5cd3fcf7a30da7c72bcf/docs/core/deploying/applications.md)
+* Current Handback File: [applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf](https://github.com/dotnet/docs.handback/blob/360a4fd89db134419a1515048e94dbf3b4f52bb8/ol-handback/dotnet/docs.es-es/master/ht-p1/applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf)
+* Current Handback Datetime: 2016-11-16 09:49:22
+* Bilingual File: [applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf](https://github.com/dotnet/docs.handback/blob/360a4fd89db134419a1515048e94dbf3b4f52bb8/ol-handback/dotnet/docs.es-es/master/ht-p1/applications.d374cd8eaa4c46c0c4ff9c482cea20faef6f98af.es-es.xlf)
+* Bilingual Datetime: 2016-11-16 13:33:44
+* [Back to Top](#report-top)
+
+##### <a name='3726a5f833bb2fae18a918072c85316984d0d46757'></a> Source: [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/porting/nuget-packages.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/aed8dcc4a6186931a91a77d033fb9f242977f27c/ol-handoff/dotnet/docs.es-es/master/ht-p1/nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf)
+* Handoff Datetime: 2016-11-16 11:16:21
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs.es-es/blob/017097ae9d68ff1d0c1c5cd3fcf7a30da7c72bcf/docs/core/porting/nuget-packages.md)
+* Current Handback File: [nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf](https://github.com/dotnet/docs.handback/blob/360a4fd89db134419a1515048e94dbf3b4f52bb8/ol-handback/dotnet/docs.es-es/master/ht-p1/nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf)
+* Current Handback Datetime: 2016-11-16 09:49:22
+* Bilingual File: [nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf](https://github.com/dotnet/docs.handback/blob/360a4fd89db134419a1515048e94dbf3b4f52bb8/ol-handback/dotnet/docs.es-es/master/ht-p1/nuget-packages.c1fbecfdcae07425d6bd51166a44b8947680df59.es-es.xlf)
+* Bilingual Datetime: 2016-11-16 13:33:44
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
