@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/deploying/applications.md) | Ignored | [Details](#e3825b880ef73e176fb23618d9814e2d54f692c832)
+ [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/porting/nuget-packages.md) | Ignored | [Details](#3726a5f833bb2fae18a918072c85316984d0d46755)
 
 ## Item Details
+##### <a name='e3825b880ef73e176fb23618d9814e2d54f692c832'></a> Source: [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/deploying/applications.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='3726a5f833bb2fae18a918072c85316984d0d46755'></a> Source: [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/porting/nuget-packages.md)
+* Status: Ignored
+* Target File: 
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
