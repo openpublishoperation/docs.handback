@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">098df41a5c9d3bf053e5ec0a9b66a8b09370dce9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">034c347f9f958dcea9ed516407642c3f80cd0b2f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">스레드로부터 안전한 컬렉션 사용 시기</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">스레드로부터 안전한 컬렉션 사용 시기</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">스레드로부터 안전한 컬렉션 사용 시기</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ConcurrentQueue`</ph>, <ph id="ph2">`ConcurrentStack`</ph>, <ph id="ph3">`ConcurrentDictionary`</ph>, <ph id="ph4">`ConcurrentBag`</ph>, and <ph id="ph5">`BlockingCollection`</ph> collection types are specially designed to support multi-threaded add and remove operations.</source>
+          <target state="translated"><ph id="ph1">`ConcurrentQueue`</ph>, <ph id="ph2">`ConcurrentStack`</ph>, <ph id="ph3">`ConcurrentDictionary`</ph>, <ph id="ph4">`ConcurrentBag`</ph>, 및 <ph id="ph5">`BlockingCollection`</ph> 컬렉션 형식은 다중 스레드 추가 및 제거 작업을 지원하도록 특별히 디자인되었습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms.</source>
+          <target state="translated">이러한 새 형식은 스레드로부터의 안전성을 달성하기 위해 다양한 종류의 효율적인 잠금 및 잠금 해제 동기화 메커니즘을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synchronization adds overhead to an operation.</source>
+          <target state="translated">동기화로 인해 작업에 오버헤드가 더해집니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.</source>
+          <target state="translated">사용되는 동기화의 종류, 수행되는 작업의 종류 및 컬렉션에 동시에 액세스하려는 스레드의 수와 같은 기타 요인에 따라 오버헤드의 양이 달라집니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock.</source>
+          <target state="translated">일부 시나리오에서는 동기화 오버헤드가 거의 없고 다중 스레드 형식을 외부 잠금으로 보호하는 경우 스레드로부터 안전하지 않은 형식보다 훨씬 더 빠르게 수행하고 크기를 조정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.</source>
+          <target state="translated">다른 시나리오에서는 오버헤드로 인해 스레드로부터 안전한 형식이 외부에서 잠근 스레드로부터 안전하지 않은 버전의 형식보다 동일하거나 훨씬 더 느리게 수행하고 크기를 조정하게 될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following sections provide general guidance about when to use a thread-safe collection versus its non-thread-safe equivalent that has a user-provided lock around its read and write operations.</source>
+          <target state="translated">다음 섹션에서는 읽기 및 쓰기 작업에 사용자가 제공한 잠금이 있는 스레드로부터 안전한 컬렉션 및 스레드로부터 안전하지 않은 컬렉션을 사용하는 경우에 대한 일반적인 지침을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because performance may vary depending on many factors, the guidance is not specific and is not necessarily valid in all circumstances.</source>
+          <target state="translated">성능이 여러 요인에 따라 달라질 수 있기 때문에 지침은 구체적이지 않고 모든 상황에서 반드시 유효하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If performance is very important, then the best way to determine which collection type to use is to measure performance based on representative computer configurations and loads.</source>
+          <target state="translated">성능이 매우 중요한 경우 사용할 컬렉션 형식을 결정하는 가장 좋은 방법은 대표적인 컴퓨터 구성 및 부하에 따라 성능을 측정하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This document uses the following terms:</source>
+          <target state="translated">이 문서에서는 다음과 같은 용어를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Pure producer-consumer scenario:<ept id="p1">*</ept> Any given thread is either adding or removing elements, but not both.</source>
+          <target state="translated"><bpt id="p1">*</bpt>순수 생산자-소비자 시나리오:<ept id="p1">*</ept> 지정된 모든 스레드가 요소를 추가하거나 제거하는 작업 중 하나만 수행합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Mixed producer-consumer scenario:<ept id="p1">*</ept> Any given thread is both adding and removing elements.</source>
+          <target state="translated"><bpt id="p1">*</bpt>혼합 생산자-소비자 시나리오:<ept id="p1">*</ept> 지정된 모든 스레드가 요소를 추가하고 제거하는 작업을 모두 수행합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Speedup:<ept id="p1">*</ept> Faster algorithmic performance relative to another type in the same scenario.</source>
+          <target state="translated"><bpt id="p1">*</bpt>속도 향상:<ept id="p1">*</ept> 동일한 시나리오에서 다른 형식에 비해 더 빠른 알고리즘 성능입니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Scalability:<ept id="p1">*</ept> The increase in performance that is proportional to the number of cores on the computer.</source>
+          <target state="translated"><bpt id="p1">*</bpt>확장성:<ept id="p1">*</ept> 컴퓨터의 코어 수에 비례하는 성능의 증가입니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>An algorithm that scales performs faster on eight cores than it does on two cores.</source>
+          <target state="translated">배율이 두 개의 코어를 사용하는 경우보다 8개의 코어를 사용하는 경우 더 빠르게 수행하는 알고리즘입니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> vs. Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></source>
+          <target state="translated">ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> 및 Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, where the processing time for each element is very small (a few instructions), then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> can offer modest performance benefits over a <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept> that has an external lock.</source>
+          <target state="translated">각 요소에 대한 처리 시간이 매우 작은 순수 생산자-소비자 시나리오(몇 가지 지침)에서 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept>는 외부 잠금이 있는 <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept>를 통해 어느 정도의 성능 이점을 제공할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In this scenario, <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> performs best when one dedicated thread is queuing and one dedicated thread is de-queuing.</source>
+          <target state="translated">이 시나리오에서 <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>은 하나의 전용 스레드가 큐에 대기 중이고 다른 하나의 전용 스레드가 큐에서 해제되는 경우 최고의 성능을 발휘합니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you do not enforce this rule, then <ph id="ph1">`Queue&lt;T&gt;`</ph> might even perform slightly faster than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> on computers that have multiple cores.</source>
+          <target state="translated">이 규칙을 적용하지 않는 경우 <ph id="ph1">`Queue&lt;T&gt;`</ph>은 다중 코어인 컴퓨터의 <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph>보다 약간 더 빠르게 수행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS (floating point operations) or more, then the two-thread rule does not apply to <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>, which then has very good scalability.</source>
+          <target state="translated">처리 시간이 500FLOPS(부동 소수점 연산) 이상인 경우 매우 우수한 확장성을 가진 두 개의 스레드 규칙은 <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>에 적용되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Queue&lt;T&gt;`</ph> does not scale well in this scenario.</source>
+          <target state="translated"><ph id="ph1">`Queue&lt;T&gt;`</ph>는 이 시나리오에서 잘 확장되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, when the processing time is very small, a <ph id="ph1">`Queue&lt;T&gt;`</ph> that has an external lock scales better than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> does.</source>
+          <target state="translated">혼합 생산자-소비자 시나리오에서 처리 시간이 매우 작은 경우 <ph id="ph1">`Queue&lt;T&gt;`</ph>의 외부 잠금 배율은 <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph>에 비해 우수합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>However, when processing time is around 500 FLOPS or more, then the <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> scales better.</source>
+          <target state="translated">그러나 처리 시간이 500FLOPS 이상인 경우 <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>의 확장성이 더 우수합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>ConcurrentStack vs. Stack</source>
+          <target state="translated">ConcurrentStack 및 스택</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, when processing time is very small, then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> and <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept> that has an external lock will probably perform about the same with one dedicated pushing thread and one dedicated popping thread.</source>
+          <target state="translated">처리 시간이 매우 짧으면 순수 생산자-소비자 시나리오에서 외부 잠금이 있는 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> 및 <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept>은 하나의 전용 푸싱 스레드 및 하나의 전용 팝업 스레드에 대해 거의 동일하게 작동할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, as the number of threads increases, both types slow down because of increased contention, and <ph id="ph1">`Stack&lt;T&gt;`</ph> might perform better than <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>.</source>
+          <target state="translated">그러나 스레드가 증가하면 경합 증가로 인해 두 유형의 성능이 모두 저하되고 <ph id="ph1">`Stack&lt;T&gt;`</ph>이 <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>보다 우수한 결과를 수행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS or more, then both types scale at about the same rate.</source>
+          <target state="translated">처리 시간이 500FLOPS 이상인 경우 두 형식은 거의 동일한 속도로 확장합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph> is faster for both small and large workloads.</source>
+          <target state="translated">혼합 생산자-소비자 시나리오에서는 <ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph>이 소규모 및 대규모 워크로드를 빠르게 처리합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The use of the <ph id="ph1">`PushRange`</ph> and <ph id="ph2">`TryPopRange`</ph> may greatly speed up access times.</source>
+          <target state="translated"><ph id="ph1">`PushRange`</ph> 및 <ph id="ph2">`TryPopRange`</ph>를 사용하면 액세스 시간을 크게 절약할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>ConcurrentDictionary vs. Dictionary</source>
+          <target state="translated">ConcurrentDictionary 및 사전</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In general, use a <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> in any scenario where you are adding and updating keys or values concurrently from multiple threads.</source>
+          <target state="translated">일반적으로 여러 스레드에서 동시에 키 또는 값을 추가하고 업데이트 모든 시나리오에서 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates and relatively few reads, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally offers modest benefits.</source>
+          <target state="translated">잦은 업데이트 및 비교적 적은 읽기를 포함하는 시나리오에서 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>은 일반적으로 어느 정도 이점을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve many reads and many updates, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally is significantly faster on computers that have any number of cores.</source>
+          <target state="translated">많은 읽기 및 업데이트를 포함하는 시나리오에서 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>은 일반적으로 코어를 가진 컴퓨터에서 훨씬 빠릅니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates, you can increase the degree of concurrency in the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> and then measure to see whether performance increases on computers that have more cores.</source>
+          <target state="translated">잦은 업데이트를 포함하는 시나리오에서 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>의 동시성 수준을 증가시키고 더 많은 코어가 있는 컴퓨터에서 성능이 향상되는지를 측정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you change the concurrency level, avoid global operations as much as possible.</source>
+          <target state="translated">동시성 수준을 변경하면 가능한 한 글로벌 운영을 하지 마십시오.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you are only reading key or values, the <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> is faster because no synchronization is required if the dictionary is not being modified by any threads.</source>
+          <target state="translated">사전이 모든 스레드에서 수정되지 않은 경우 동기화가 필요하지 않기 때문에 키 또는 값을 읽기만 할 때는 <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept>가 더 빠릅니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>ConcurrentBag</source>
+          <target state="translated">ConcurrentBag</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> will probably perform more slowly than the other concurrent collection types.</source>
+          <target state="translated">순수 생산자-소비자 시나리오에서 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept>은 다른 동시 컬렉션 형식보다 더 느리게 작동할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph> is generally much faster and more scalable than any other concurrent collection type for both large and small workloads.</source>
+          <target state="translated">혼합 생산자-소비자 시나리오에서 <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph>은 일반적으로 크고 작은 작업에 대한 다른 동시 컬렉션 형식보다 훨씬 빠르고 확장성이 큽니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>BlockingCollection</source>
+          <target state="translated">BlockingCollection</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When bounding and blocking semantics are required, <bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> will probably perform faster than any custom implementation.</source>
+          <target state="translated">경계 및 차단 구문이 필요한 경우 <bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept>은 사용자 지정 구현을 보다 빠르게 수행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It also supports rich cancellation, enumeration, and exception handling.</source>
+          <target state="translated">또한 여러 가지 취소, 열거 및 예외 처리를 지원합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>스레드로부터 안전한 컬렉션<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

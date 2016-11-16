@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">53c3afbe0492d010f7864bb42e7b83836c10aa4a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\fundamentals.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85a4bd245b454c9539a05fdc0b6d548183dc1719</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b42d03d888b09d7d2bfa90bee0b8bfb144aeb38c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Fundamentals of garbage collection</source>
+          <target state="translated">가비지 수집 기본 사항</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Fundamentals of garbage collection</source>
+          <target state="translated">가비지 수집 기본 사항</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Fundamentals of garbage collection</source>
+          <target state="translated">가비지 수집 기본 사항</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In the Common Language Runtime (CLR), the garbage collector serves as an automatic memory manager.</source>
+          <target state="translated">CLR(공용 언어 런타임)에서 가비지 수집기는 자동 메모리 관리자 역할을 합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It provides the following benefits:</source>
+          <target state="translated">가비지 수집은 다음과 같은 이점을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Enables you to develop your application without having to free memory.</source>
+          <target state="translated">응용 프로그램을 개발할 때 메모리를 해제할 필요가 없습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Allocates objects on the managed heap efficiently.</source>
+          <target state="translated">관리되는 힙에 효율적으로 개체를 할당합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Reclaims objects that are no longer being used, clears their memory, and keeps the memory available for future allocations.</source>
+          <target state="translated">더 이상 사용되지 않는 개체를 회수하고 이러한 개체의 메모리를 비워 이후 할당에서 이 메모리를 사용할 수 있도록 합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Managed objects automatically get clean content to start with, so their constructors do not have to initialize every data field.</source>
+          <target state="translated">관리되는 개체는 자동으로 시작을 위한 정리된 콘텐츠를 받으므로 개체의 생성자가 모든 데이터 필드를 초기화할 필요가 없습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Provides memory safety by making sure that an object cannot use the content of another object.</source>
+          <target state="translated">개체에서 다른 개체의 콘텐츠를 사용할 수 없도록 하여 메모리 안전을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This topic describes the core concepts of garbage collection.</source>
+          <target state="translated">이 항목에서는 가비지 수집의 핵심 개념에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>It contains the following sections:</source>
+          <target state="translated">여기에는 다음 단원이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Fundamentals of memory<ept id="p1">](#fundamentals-of-memory)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>메모리 기본 사항<ept id="p1">](#fundamentals-of-memory)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Conditions for a garbage collection<ept id="p1">](#conditions-for-a-garbage-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>가비지 컬렉션 조건<ept id="p1">](#conditions-for-a-garbage-collection)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The managed heap<ept id="p1">](#the-managed-heap)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>관리되는 힙<ept id="p1">](#the-managed-heap)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generations<ept id="p1">](#generations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>세대<ept id="p1">](#generations)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>What happens during a garbage collection<ept id="p1">](#what-happens-during-a-garbage-collection)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>가비지 컬렉션 중 수행되는 작업<ept id="p1">](#what-happens-during-a-garbage-collection)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Manipulating unmanaged resources<ept id="p1">](#manipulating-unmanaged-resources)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>관리되지 않는 리소스 조작<ept id="p1">](#manipulating-unmanaged-resources)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Fundamentals of memory</source>
+          <target state="translated">메모리 기본 사항</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following list summarizes important CLR memory concepts.</source>
+          <target state="translated">다음 목록은 중요한 CLR 메모리 개념을 요약한 것입니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Each process has its own, separate virtual address space.</source>
+          <target state="translated">각 프로세스에는 고유한 개별 가상 주소 공간이 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>All processes on the same computer share the same physical memory, and share the page file if there is one.</source>
+          <target state="translated">동일 컴퓨터의 모든 프로세스는 동일한 실제 메모리를 공유하고 페이지 파일(있는 경우)을 공유합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>By default, on 32-bit computers, each process has a 2-GB user-mode virtual address space.</source>
+          <target state="translated">기본적으로 32비트 컴퓨터에서는 각 프로세스에 2GB 사용자 모드 가상 주소 공간이 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>As an application developer, you work only with virtual address space and never manipulate physical memory directly.</source>
+          <target state="translated">응용 프로그램 개발자는 가상 주소 공간만 사용하고 실제 메모리는 직접적으로 조작하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The garbage collector allocates and frees virtual memory for you on the managed heap.</source>
+          <target state="translated">가비지 컬렉션기는 관리되는 힙에서 사용자 대신 가상 메모리를 할당 및 해제합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Virtual memory can be in three states:</source>
+          <target state="translated">가상 메모리는 다음 세 가지 상태일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Free.</source>
+          <target state="translated">비어 있음.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The block of memory has no references to it and is available for allocation.</source>
+          <target state="translated">메모리 블록에 가상 메모리에 대한 참조가 없으며, 메모리 블록을 할당에 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Reserved.</source>
+          <target state="translated">예약됨.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The block of memory is available for your use and cannot be used for any other allocation request.</source>
+          <target state="translated">메모리 블록을 사용자의 작업에 사용할 수 있으며, 다른 할당 요청에는 메모리 블록을 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>However, you cannot store data to this memory block until it is committed.</source>
+          <target state="translated">하지만 커밋되기 전까지는 메모리 블록에 데이터를 저장할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Committed.</source>
+          <target state="translated">커밋됨.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The block of memory is assigned to physical storage.</source>
+          <target state="translated">메모리 블록이 실제 저장소에 할당되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Virtual address space can get fragmented.</source>
+          <target state="translated">가상 주소 공간은 조각화될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>This means that there are free blocks, also known as holes, in the address space.</source>
+          <target state="translated">즉, 주소 공간에 구멍이라고도 부르는 빈 블록이 존재합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When a virtual memory allocation is requested, the virtual memory manager has to find a single free block that is large enough to satisfy that allocation request.</source>
+          <target state="translated">가상 메모리 할당이 요청된 경우 가상 메모리 관리자는 할당 요청을 만족시킬 수 있도록 충분히 큰 단일 빈 블록을 찾아야 합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Even if you have 2 GB of free space, the allocation that requires 2 GB will be unsuccessful unless all of that space is in a single address block.</source>
+          <target state="translated">여유 공간이 2GB여도 모든 공간이 단일 주소 블록에 있지 않으면 2GB가 필요한 할당이 실패할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can run out of memory if you run out of virtual address space to reserve or physical space to commit.</source>
+          <target state="translated">예약할 가상 주소 공간이 부족하거나 커밋할 실제 공간이 부족한 경우 메모리 부족이 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Your page file is used even if physical memory pressure (that is, demand for physical memory) is low.</source>
+          <target state="translated">페이지 파일은 실제 메모리 압력(즉, 실제 메모리에 대한 요구)이 낮더라도 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file.</source>
+          <target state="translated">실제 메모리 압력이 처음으로 높아지면 운영 체제가 데이터를 저장하기 위해 실제 메모리에 공간을 만들어야 하며, 실제 메모리에 있는 데이터 중 일부를 페이지 파일로 백업합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low.</source>
+          <target state="translated">필요할 때까지는 데이터가 페이지 파일로 저장되지 않으므로 실제 메모리 압력이 매우 낮은 상황에서도 페이징이 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Conditions for a garbage collection</source>
+          <target state="translated">가비지 컬렉션 조건</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Garbage collection occurs when one of the following conditions is true:</source>
+          <target state="translated">가비지 수집은 다음 조건 중 하나가 충족될 경우 발생합니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The system has low physical memory.</source>
+          <target state="translated">시스템의 실제 메모리가 부족합니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold.</source>
+          <target state="translated">관리되는 힙의 할당된 개체에 사용되는 메모리가 허용되는 임계값을 초과합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This threshold is continuously adjusted as the process runs.</source>
+          <target state="translated">이 임계값은 프로세스가 실행됨에 따라 계속 조정됩니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method is called.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> 메서드가 호출됩니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In almost all cases, you do not have to call this method, because the garbage collector runs continuously.</source>
+          <target state="translated">가비지 컬렉션이 지속적으로 실행되므로 이 메서드를 호출해야 하는 경우는 거의 없습니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This method is primarily used for unique situations and testing.</source>
+          <target state="translated">이 메서드는 주로 특이한 상황 및 테스트에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The managed heap</source>
+          <target state="translated">관리되는 힙</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>After the garbage collector is initialized by the CLR, it allocates a segment of memory to store and manage objects.</source>
+          <target state="translated">CLR에 의해 가비지 수집기가 초기화되고 나면 가비지 수집기가 개체를 저장 및 관리하기 위해 메모리 세그먼트를 할당합니다.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This memory is called the managed heap, as opposed to a native heap in the operating system.</source>
+          <target state="translated">이 메모리를 관리되는 힙이라고 하며, 이는 운영 체제의 네이티브 힙과 대조됩니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>There is a managed heap for each managed process.</source>
+          <target state="translated">관리되는 각 프로세스마다 관리되는 힙이 있습니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>All threads in the process allocate memory for objects on the same heap.</source>
+          <target state="translated">프로세스의 모든 스레드는 같은 힙에 개체 메모리를 할당합니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates.</source>
+          <target state="translated">가비지 수집기에서 할당되는 세그먼트 크기는 구현에 따라 다르며 정기적인 업데이트를 포함하여 언제든지 변경될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.</source>
+          <target state="translated">앱에서 특정 세그먼트 크기를 가정하거나 의존해서는 안 되며, 세그먼트 할당에 사용할 수 있는 메모리 크기를 구성하려고 해서도 안 됩니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The fewer objects allocated on the heap, the less work the garbage collector has to do.</source>
+          <target state="translated">힙에 할당되는 개체의 수가 적을수록 가비지 수집기가 할 일도 줄어듭니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>When you allocate objects, do not use rounded-up values that exceed your needs, such as allocating an array of 32 bytes when you need only 15 bytes.</source>
+          <target state="translated">개체를 할당할 때는 15바이트만 필요한 상황에서 32바이트 배열을 할당하는 것처럼 필요 이상의 값을 사용하지 마세요.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>When a garbage collection is triggered, the garbage collector reclaims the memory that is occupied by dead objects.</source>
+          <target state="translated">가비지 수집이 트리거되면 가비지 수집기는 비활성 개체에 의해 점유된 메모리를 회수합니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The reclaiming process compacts live objects so that they are moved together, and the dead space is removed, thereby making the heap smaller.</source>
+          <target state="translated">회수 프로세스는 활성 개체를 압축하여 함께 이동하도록 하며, 비활성 공간이 제거되어 힙의 크기가 더 작아집니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This ensures that objects that are allocated together stay together on the managed heap, to preserve their locality.</source>
+          <target state="translated">이로써 함께 할당된 개체가 관리되는 힙에서 함께 유지되어 집약성을 계속 유지합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The intrusiveness (frequency and duration) of garbage collections is the result of the volume of allocations and the amount of survived memory on the managed heap.</source>
+          <target state="translated">가비지 수집의 개입 수준(빈도와 지속 시간)은 할당 규모 및 관리되는 힙에서 남은 메모리의 크기에 따라 결정됩니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The heap can be considered as the accumulation of two heaps: the large object heap and the small object heap.</source>
+          <target state="translated">힙은 두 힙(대형 개체 힙과 소형 개체 힙)의 누적으로 간주할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The large object heap contains very large objects that are 85,000 bytes and larger.</source>
+          <target state="translated">대형 개체 힙에는 85,000바이트 이상의 매우 큰 개체가 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The objects on the large object heap are usually arrays.</source>
+          <target state="translated">대형 개체 힙의 개체는 일반적으로 배열입니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>It is rare for an instance object to be extremely large.</source>
+          <target state="translated">인스턴스 개체의 크기가 상당히 커지는 경우는 거의 없습니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Generations</source>
+          <target state="translated">세대</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The heap is organized into generations so it can handle long-lived and short-lived objects.</source>
+          <target state="translated">힙은 수명이 긴 개체와 짧은 개체를 처리할 수 있도록 세대로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Garbage collection primarily occurs with the reclamation of short-lived objects that typically occupy only a small part of the heap.</source>
+          <target state="translated">가비지 수집은 주로 힙에서 작은 부분만 점유하는 수명이 짧은 개체의 회수와 함께 발생합니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>There are three generations of objects on the heap:</source>
+          <target state="translated">힙에는 세 가지 개체 세대가 있습니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Generation 0.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>0세대.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This is the youngest generation and contains short-lived objects.</source>
+          <target state="translated">가장 젊은 세대이며 수명이 짧은 개체를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>An example of a short-lived object is a temporary variable.</source>
+          <target state="translated">수명이 짧은 개체의 예로는 임시 변수가 있습니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Garbage collection occurs most frequently in this generation.</source>
+          <target state="translated">가비지 수집은 이 세대에서 가장 자주 발생합니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Newly allocated objects form a new generation of objects and are implicitly generation 0 collections, unless they are large objects, in which case they go on the large object heap in a generation 2 collection.</source>
+          <target state="translated">새로 할당된 개체는 새로운 개체 세대를 형성하며 대형 개체가 아닌 한 암시적으로 0세대입니다. 대형 개체인 경우 2세대 수집의 대형 개체 힙으로 이동합니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Most objects are reclaimed for garbage collection in generation 0 and do not survive to the next generation.</source>
+          <target state="translated">대부분의 개체는 0세대 가비지 컬렉션에서 회수되며 다음 세대까지 남아 있지 않습니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Generation 1.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>1세대.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This generation contains short-lived objects and serves as a buffer between short-lived objects and long-lived objects.</source>
+          <target state="translated">이 세대는 수명이 짧은 개체를 포함하며 수명이 짧은 개체와 수명이 긴 개체 사이에서 버퍼 역할을 합니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Generation 2.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>2세대.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This generation contains long-lived objects.</source>
+          <target state="translated">이 세대는 수명이 긴 개체를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>An example of a long-lived object is an object in a server application that contains static data that is live for the duration of the process.</source>
+          <target state="translated">수명이 긴 개체의 예로는 프로세스의 기간 동안 유지되는 정적 데이터가 포함된 서버 응용 프로그램의 개체가 있습니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Garbage collections occur on specific generations as conditions warrant.</source>
+          <target state="translated">가비지 수집은 조건이 충족될 때 특정 세대에서 발생합니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Collecting a generation means collecting objects in that generation and all its younger generations.</source>
+          <target state="translated">하나의 세대를 수집한다는 것은 해당 세대와 그보다 더 젊은 모든 세대의 개체를 수집한다는 것을 의미합니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>A generation 2 garbage collection is also known as a full garbage collection, because it reclaims all objects in all generations (that is, all objects in the managed heap).</source>
+          <target state="translated">2세대 가비지 수집은 모든 세대의 모든 개체(즉, 관리되는 힙의 모든 개체)를 회수하므로 전체 가비지 수집이라고도 합니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Survival and promotions</source>
+          <target state="translated">유지 및 승격</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Objects that are not reclaimed in a garbage collection are known as survivors, and are promoted to the next generation.</source>
+          <target state="translated">가비지 수집에서 회수되지 않는 개체는 남은 개체라고 하며 다음 세대로 승격됩니다.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Objects that survive a generation 0 garbage collection are promoted to generation 1; objects that survive a generation 1 garbage collection are promoted to generation 2; and objects that survive a generation 2 garbage collection remain in generation 2.</source>
+          <target state="translated">0세대 가비지 수집에서 남은 개체는 1세대로 승격되고, 1세대 가비지 수집에서 남은 개체는 2세대로 승격되며, 2세대 가비지 수집에서 남은 개체는 2세대에 그대로 있습니다.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation, so the next collection gets a substantial size of reclaimed memory.</source>
+          <target state="translated">가비지 수집기는 한 세대의 잔존율이 높음을 탐지하면 해당 세대에 대한 할당 임계값을 늘려 다음 수집에서 충분한 회수 메모리 크기가 확보되도록 합니다.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The CLR continually balances two priorities: not letting an application's working set get too big and not letting the garbage collection take too much time.</source>
+          <target state="translated">CLR은 응용 프로그램의 작업 집합이 너무 커지지 않도록 하는 것과 가비지 수집이 너무 많은 시간을 소요하지 않도록 하는 두 가지 우선 순위 사이에서 지속적으로 균형을 유지합니다.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Ephemeral generations and segments</source>
+          <target state="translated">임시 세대 및 세그먼트</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Because objects in generations 0 and 1 are short-lived, these generations are known as the ephemeral generations.</source>
+          <target state="translated">0세대와 1세대의 개체는 수명이 짧으므로 이러한 세대를 임시 세대라고 합니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Ephemeral generations must be allocated in the memory segment that is known as the ephemeral segment.</source>
+          <target state="translated">임시 세대는 임시 세그먼트라는 메모리 세그먼트에 할당되어야 합니다.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Each new segment acquired by the garbage collector becomes the new ephemeral segment and contains the objects that survived a generation 0 garbage collection.</source>
+          <target state="translated">가비지 수집기에서 획득하는 새로운 각 세그먼트는 새로운 임시 세그먼트가 되며 0세대 가비지 수집에서 남은 개체를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The old ephemeral segment becomes the new generation 2 segment.</source>
+          <target state="translated">이전의 임시 세그먼트는 새로운 2세대 세그먼트가 됩니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The ephemeral segment can include generation 2 objects.</source>
+          <target state="translated">임시 세그먼트에는 2세대 개체가 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Generation 2 objects can use multiple segments (as many as your process requires and memory allows for).</source>
+          <target state="translated">2세대 개체는 여러 세그먼트를 사용할 수 있습니다(프로세스에 필요하고 메모리가 허용하는 한도만큼).</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment.</source>
+          <target state="translated">임시 가비지 수집에서 해제된 메모리의 크기는 임시 세그먼트의 크기로 제한됩니다.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The amount of memory that is freed is proportional to the space that was occupied by the dead objects.</source>
+          <target state="translated">해제되는 메모리의 크기는 비활성 개체가 점유했던 공간에 비례합니다.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>What happens during a garbage collection</source>
+          <target state="translated">가비지 컬렉션 중 수행되는 작업</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>A garbage collection has the following phases:</source>
+          <target state="translated">가비지 수집은 다음 단계로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>A marking phase that finds and creates a list of all live objects.</source>
+          <target state="translated">모든 활성 개체를 찾아 목록을 만드는 표시 단계</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>A relocating phase that updates the references to the objects that will be compacted.</source>
+          <target state="translated">압축될 개체에 대한 참조를 업데이트하는 재배치 단계</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>A compacting phase that reclaims the space occupied by the dead objects and compacts the surviving objects.</source>
+          <target state="translated">비활성 개체에 의해 점유된 공간을 회수하고 남은 개체를 압축하는 압축 단계.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The compacting phase moves objects that have survived a garbage collection toward the older end of the segment.</source>
+          <target state="translated">압축 단계에서는 가비지 수집에서 남은 개체가 세그먼트의 오래된 쪽으로 이동됩니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment.</source>
+          <target state="translated">2세대 수집은 여러 세그먼트를 점유할 수 있으므로 2세대로 승격된 개체는 오래된 세그먼트로 이동될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2.</source>
+          <target state="translated">1세대 및 2세대 남은 개체는 2세대로 승격되므로 모두 다른 세그먼트로 이동될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty.</source>
+          <target state="translated">일반적으로 대형 개체를 복사하면 성능 저하가 발생하기 때문에 대형 개체 힙은 압축되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>However,  you can use the <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> property to compact the large object heap on demand.</source>
+          <target state="translated">하지만 <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> 속성을 사용하면 요구에 따라 대형 개체 힙을 압축할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The garbage collector uses the following information to determine whether objects are live:</source>
+          <target state="translated">가비지 수집기는 다음 정보를 사용하여 개체가 활성 개체인지 여부를 판단합니다.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Stack roots.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>스택 루트.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Stack variables provided by the just-in-time (JIT) compiler and stack walker.</source>
+          <target state="translated">JIT(Just-In-Time) 컴파일러 및 스택 워크에서 제공한 스택 변수</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Garbage collection handles.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>가비지 수집 핸들.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Handles that point to managed objects and that can be allocated by user code or by the Common Language Runtime.</source>
+          <target state="translated">관리되는 개체를 가리키며 사용자 코드 또는 공용 언어 런타임으로 할당할 수 있는 핸들입니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Static data.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>정적 데이터.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Static objects in application domains that could be referencing other objects.</source>
+          <target state="translated">다른 개체를 참조할 수 있는 응용 프로그램 도메인의 정적 개체입니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Each application domain keeps track of its static objects.</source>
+          <target state="translated">각 응용 프로그램 도메인은 해당 정적 개체를 추적합니다.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Before a garbage collection starts, all managed threads are suspended except for the thread that triggered the garbage collection.</source>
+          <target state="translated">가비지 수집이 시작되기 전에 가비지 수집을 트리거한 스레드를 제외한 모든 관리되는 스레드가 일시 중단됩니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.</source>
+          <target state="translated">다음 그림에서는 가비지 컬렉션을 트리거하여 다른 스레드가 일시 중단되도록 하는 스레드를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>When a thread triggers a garbage collection</source>
+          <target state="translated">스레드에서 가비지 수집을 트리거하는 시기</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Thread that triggers a garbage collection</source>
+          <target state="translated">가비지 컬렉션을 트리거하는 스레드</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Manipulating unmanaged resources</source>
+          <target state="translated">관리되지 않는 리소스 조작</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>If your managed objects reference unmanaged objects by using their native file handles, you have to explicitly free the unmanaged objects, because the garbage collector tracks memory only on the managed heap.</source>
+          <target state="translated">가비지 수집기는 관리되는 힙의 메모리만 추적하므로 관리되는 개체가 네이티브 파일 핸들을 사용하여 관리되지 않는 개체를 참조하는 경우에는 관리되지 않는 개체를 명시적으로 해제해야 합니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Users of your managed object may not dispose the native resources used by the object.</source>
+          <target state="translated">관리되는 개체의 사용자는 개체에 사용되는 네이티브 리소스를 삭제할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>To perform the cleanup, you can make your managed object finalizable.</source>
+          <target state="translated">정리 작업을 수행하려면 관리되는 개체를 종료 가능 개체로 만들면 됩니다.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Finalization consists of cleanup actions that you execute when the object is no longer in use.</source>
+          <target state="translated">종료는 개체가 더 이상 사용되지 않을 때 실행하는 정리 작업으로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>When your managed object dies, it performs cleanup actions that are specified in its finalizer method.</source>
+          <target state="translated">관리되는 개체가 소멸되면 해당 종료자 메서드에 지정된 정리 작업이 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When a finalizable object is discovered to be dead, its finalizer is put in a queue so that its cleanup actions are executed, but the object itself is promoted to the next generation.</source>
+          <target state="translated">종료 가능 개체가 소멸된 것으로 확인되는 경우 해당 종료자는 정리 작업이 실행되도록 큐에 저장되지만 개체 자체는 다음 세대로 승격됩니다.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Therefore, you have to wait until the next garbage collection that occurs on that generation (which is not necessarily the next garbage collection) to determine whether the object has been reclaimed.</source>
+          <target state="translated">따라서 개체가 회수되었는지 여부를 확인하려면 해당 세대에 발생하는 다음 가비지 컬렉션(바로 다음 가비지 컬렉션이 아닐 수도 있음)을 기다려야 합니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](gc.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET에서 가비지 수집<ept id="p1">](gc.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

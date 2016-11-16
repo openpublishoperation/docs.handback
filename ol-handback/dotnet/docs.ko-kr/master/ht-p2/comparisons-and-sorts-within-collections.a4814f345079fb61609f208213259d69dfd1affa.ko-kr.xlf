@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">de1fe3bb9b9a75561b4f28ec4609491d6f3c39f5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\comparisons-and-sorts-within-collections.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">05ee3b9871e6bcff8b3f00c293b0eb43a19df862</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf8ab67b97c90655620eee1218f047a75d1e1703</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Comparisons and Sorts Within Collections</source>
+          <target state="translated">컬렉션 내에서 비교 및 정렬</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Comparisons and Sorts Within Collections</source>
+          <target state="translated">컬렉션 내에서 비교 및 정렬</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Comparisons and Sorts Within Collections</source>
+          <target state="translated">컬렉션 내에서 비교 및 정렬</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections)</ept> 클래스는 제거할 요소 검색, 키-값 쌍의 값 반환 등 컬렉션 관리와 관련된 거의 모든 프로세스에서 비교 연산을 수행합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Collections typically utilize an equality comparer and/or an ordering comparer.</source>
+          <target state="translated">컬렉션은 일반적으로 같음 비교자 및/또는 순서 비교자를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Two constructs are used for comparisons.</source>
+          <target state="translated">비교에는 두 가지 구문이 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Checking for equality</source>
+          <target state="translated">같음 확인</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Methods such as <ph id="ph1">`Contains`</ph>, <ph id="ph2">`IndexOf`</ph>, <ph id="ph3">`LastIndexOf`</ph>, and <ph id="ph4">`Remove`</ph> use an equality comparer for the collection elements.</source>
+          <target state="translated"><ph id="ph1">`Contains`</ph>, <ph id="ph2">`IndexOf`</ph>, <ph id="ph3">`LastIndexOf`</ph>, <ph id="ph4">`Remove`</ph> 등의 메서드는 컬렉션 요소에 대해 같음 비교자를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If the collection is generic, items are compared for equality according to the following guidelines:</source>
+          <target state="translated">제네릭 컬렉션의 경우 다음 지침에 따라 동일한 항목인지를 비교합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If type T implements the <bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept> generic interface, then the equality comparer is the <ph id="ph3">`Equals`</ph> method of that interface.</source>
+          <target state="translated">T 형식이 <bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept> 제네릭 인터페이스를 구현하는 경우 같음 비교자는 해당 인터페이스의 <ph id="ph3">`Equals`</ph> 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If type T does not implement <ph id="ph1">`IEquatable&lt;T&gt;`</ph>, <ph id="ph2">`Object.Equals`</ph> is used.</source>
+          <target state="translated">T 형식이 <ph id="ph1">`IEquatable&lt;T&gt;`</ph>을 구현하지 않는 경우에는 <ph id="ph2">`Object.Equals`</ph>가 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In addition, some constructor overloads for dictionary collections accept an <bpt id="p1">[</bpt>IEqualityComparer<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEqualityComparer-1)</ept> implementation, which is used to compare keys for equality.</source>
+          <target state="translated">또한 사전 컬렉션의 일부 생성자 오버로드는 같은 키인지를 비교하는 데 사용되는 <bpt id="p1">[</bpt>IEqualityComparer<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEqualityComparer-1)</ept> 구현을 허용합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Determining sort order</source>
+          <target state="translated">정렬 순서 결정</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Methods such as <ph id="ph1">`BinarySearch`</ph> and <ph id="ph2">`Sort`</ph> use an ordering comparer for the collection elements.</source>
+          <target state="translated"><ph id="ph1">`BinarySearch`</ph> 및 <ph id="ph2">`Sort`</ph>와 같은 메서드는 컬렉션 요소에 대해 순서 비교자를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The comparisons can be between elements of the collection, or between an element and a specified value.</source>
+          <target state="translated">컬렉션의 요소를 비교할 수도 있고 특정 요소와 지정된 값을 비교할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For comparing objects, there is the concept of a default comparer and an explicit comparer.</source>
+          <target state="translated">개체를 비교하는 경우 기본 비교자 및 명시적 비교자의 개념이 적용됩니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The default comparer relies on at least one of the objects being compared to implement the <ph id="ph1">`IComparable`</ph> interface.</source>
+          <target state="translated">기본 비교자는 비교 대상 개체 중 하나 이상을 사용하여 <ph id="ph1">`IComparable`</ph> 인터페이스를 구현합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>It is a good practice to implement <ph id="ph1">`IComparable`</ph> on all classes are used as values in a list collection or as keys in a dictionary collection.</source>
+          <target state="translated">사용되는 모든 클래스에서 목록 컬렉션의 값 또는 사전 컬렉션의 키로서 <ph id="ph1">`IComparable`</ph>을 구현하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For a generic collection, equality comparison is determined according to the following:</source>
+          <target state="translated">제네릭 컬렉션의 경우 다음 기준에 따라 같음 비교를 결정합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If type T implements the <bpt id="p1">[</bpt>System.IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept> generic interface, then the default comparer is the <ph id="ph3">`CompareTo(T)`</ph> method of that interface.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept> 제네릭 인터페이스를 구현하는 T 형식인 경우 기본 비교자는 해당 인터페이스의 <ph id="ph3">`CompareTo(T)`</ph> 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If type T implements the non-generic <bpt id="p1">[</bpt>System.IComparable<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable)</ept> interface, then the default comparer is the <ph id="ph1">`CompareTo`</ph>(Object) method of that interface.</source>
+          <target state="translated">제네릭이 아닌 <bpt id="p1">[</bpt>System.IComparable<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable)</ept> 인터페이스를 구현하는 T 형식인 경우 기본 비교자는 해당 인터페이스의 <ph id="ph1">`CompareTo`</ph>(개체) 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If type T doesn’t implement either interface, then there is no default comparer, and a comparer or comparison delegate must be provided explicitly.</source>
+          <target state="translated">T 형식이 두 인터페이스를 모두 구현하지 않는 경우에는 기본 비교자가 없으며 비교자 또는 비교 대리자를 명시적으로 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To provide explicit comparisons, some methods accept an <ph id="ph1">`IComparer`</ph> implementation as a parameter.</source>
+          <target state="translated">일부 메서드에는 명시적 비교를 제공하기 위해 매개 변수로서 <ph id="ph1">`IComparer`</ph> 구현이 허용됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`List&lt;T&gt;.Sort`</ph> method accepts an <bpt id="p1">[</bpt>System.Collections.Generic.IComparer<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1)</ept> implementation.</source>
+          <target state="translated">예를 들어는 <ph id="ph1">`List&lt;T&gt;.Sort`</ph> 메서드에 <bpt id="p1">[</bpt>System.Collections.Generic.IComparer<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1)</ept> 구현이 허용됩니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Equality and sort example</source>
+          <target state="translated">같음 및 정렬 예제</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The following code demonstrates an implementation of <bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept> on a simple business object.</source>
+          <target state="translated">다음 코드에서는 <bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept> 및<bpt id="p2">[</bpt>IComparable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept>를 간단한 비즈니스 개체에 구현합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In addition, when the object is stored in a list and sorted, you will see that calling the <ph id="ph1">`Sort()`</ph> method results in the use of the default comparer for the 'Part' type, and the <ph id="ph2">`Sort(Comparison&lt;T&gt;)`</ph> method implemented by using an anonymous method.</source>
+          <target state="translated">또한 개체를 목록에 저장하고 정렬할 때 <ph id="ph1">`Sort()`</ph> 메서드를 호출하면 'Part' 형식의 기본 비교자가 사용되며, 무명 메서드를 사용하여 <ph id="ph2">`Sort(Comparison&lt;T&gt;)`</ph> 메서드가 구현됩니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IComparer<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.IComparer)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IComparer<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.IComparer)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IEquatable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IEquatable-1)</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IComparer<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IComparer<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IComparable<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IComparable<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

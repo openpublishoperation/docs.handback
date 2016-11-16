@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">783b51f3145d8b11e79b99cfdc4baefe127306e3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\display-dates.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">62f798ead5a51e7d5f98f9d6adfc897b6016b74f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4fc266e537897630706814731c7e752f6a24e0db</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">방법: 양력이 아닌 달력의 날짜 표시</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to display dates in non-gregorian calendars</source>
+          <target state="translated">양력이 아닌 달력의 날짜를 표시하는 방법</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">방법: 양력이 아닌 달력의 날짜 표시</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types use the Gregorian calendar as their default calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 및 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 형식은 양력을 기본 달력으로 사용합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means that calling a date and time value's <ph id="ph1">`ToString`</ph> method displays the string representation of that date and time in the Gregorian calendar, even if that date and time was created using another calendar.</source>
+          <target state="translated">즉, 날짜 및 시간 값의 <ph id="ph1">`ToString`</ph> 메서드를 호출하면 해당 날짜 및 시간이 다른 달력을 사용하여 생성된 경우에도 해당 날짜 및 시간의 문자열 표현을 양력 달력으로 표시합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This is illustrated in the following example, which uses two different ways to create a date and time value with the Persian calendar, but still displays those date and time values in the Gregorian calendar when it calls the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept> method.</source>
+          <target state="translated">이 내용은 두 가지 방법을 사용하여 페르시아력으로 날짜 및 시간 값을 만들지만 <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept> 메서드를 호출할 때 해당 날짜 및 시간 값을 여전히 양력으로 표시하는 다음 예제에 설명되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This example reflects two commonly used but incorrect techniques for displaying the date in a particular calendar.</source>
+          <target state="translated">이 예제에서는 특정 달력의 날짜를 표시하기 위해 자주 사용되지만 잘못된 두 가지 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Two different techniques can be used to display the date in a particular calendar.</source>
+          <target state="translated">두 가지 방법을 사용하여 특정 달력의 날짜를 표시할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The first requires that the calendar be the default calendar for a particular culture.</source>
+          <target state="translated">첫 번째 방법에서는 달력이 특정 문화권의 기본 달력이어야 합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The second can be used with any calendar.</source>
+          <target state="translated">두 번째 방법은 모든 달력에 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To display the date for a culture's default calendar</source>
+          <target state="translated">문화권의 기본 달력으로 날짜를 표시하려면</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">사용할 달력을 나타내는 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 클래스에서 파생된 달력 개체를 인스턴스화합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Instantiate a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object representing the culture whose formatting will be used to display the date.</source>
+          <target state="translated">날짜를 표시하는 데 사용할 형식 지정의 문화권을 나타내는 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 개체를 인스턴스화합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method to determine whether the calendar object is a member of the array returned by the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 메서드를 호출하여 달력 개체가 <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 속성에서 반환된 배열의 멤버인지 여부를 확인합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This indicates that the calendar can serve as the default calendar for the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object.</source>
+          <target state="translated">이는 달력이 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 개체의 기본 달력으로 사용될 수 있음을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If it is not a member of the array, follow the instructions in the "To Display the Date in Any Calendar" section.</source>
+          <target state="translated">배열의 멤버가 아닌 경우 "임의 달력의 날짜를 표시하려면" 섹션의 지침을 따르세요.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Assign the calendar object to the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property of the <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> object returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated"><bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> 속성에서 반환된 <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> 개체의 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 속성에 달력 개체를 할당합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> class also has a <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 클래스에도 <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept> 속성이 있습니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property.</source>
+          <target state="translated">그러나 이 속성은 읽기 전용이고 상수이므로 <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 속성에 할당된 새 기본 달력에 따라 변경되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Call either the <bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> or the <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> method, and pass it the <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept> object whose default calendar was modified in the previous step.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> 또는 <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> 메서드 중 하나를 호출하고 이전 단계에서 기본 달력이 수정된 <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept> 개체를 전달합니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To display the date in any calendar</source>
+          <target state="translated">임의 달력의 날짜를 표시하려면</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">사용할 달력을 나타내는 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 클래스에서 파생된 달력 개체를 인스턴스화합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine which date and time elements should appear in the string representation of the date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 문자열 표현에 표시할 날짜 및 시간 요소를 결정합니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For each date and time element that you want to display, call the calendar object's <ph id="ph1">`Get…`</ph> method.</source>
+          <target state="translated">표시할 각 날짜 및 시간 요소에 대해 달력 개체의 <ph id="ph1">`Get…`</ph> 메서드를 호출합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following methods are available:</source>
+          <target state="translated">다음 메서드를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept>, to display the year in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept> - 해당 달력의 연도를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept>, to display the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept> - 해당 달력의 월을 표시합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept>, to display the number of the day of the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept> - 해당 달력의 일을 표시합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept>, to display the hour of the day in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept> - 해당 달력의 시간을 표시합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept>, to display the minutes in the hour in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept> - 해당 달력의 분을 표시합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept>, to display the seconds in the minute in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept> - 해당 달력의 초를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept> , to display the milliseconds in the second in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept> - 해당 달력의 밀리초를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example displays a date using two different calendars.</source>
+          <target state="translated">예제에서는 두 가지 달력을 사용하여 날짜를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It displays the date after defining the Hijri calendar as the default calendar for the ar-JO culture, and displays the date using the Persian calendar, which is not supported as an optional calendar by the fa-IR culture.</source>
+          <target state="translated">회교식 달력을 ar-JO 문화권의 기본 달력으로 정의한 후 날짜를 표시하고, fa-IR 문화권에서 선택적 달력으로 지원되지 않는 페르시아력을 사용하여 날짜를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Each <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object can support one or more calendars, which are indicated by the <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated">각 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 개체는 <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 속성에 표시된 하나 이상의 달력을 지원할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>One of these is designated as the culture's default calendar and is returned by the read-only <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated">이러한 달력 중 하나가 문화권의 기본 달력으로 지정되며 읽기 전용 <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept> 속성에서 반환됩니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Another of the optional calendars can be designated as the default by assigning a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object that represents that calendar to the <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated"><bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> 속성에서 반환된 <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 속성에 해당 달력을 나타내는 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 개체를 할당하여 다른 선택적 달력을 기본값으로 지정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>However, some calendars, such as the Persian calendar represented by the <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept> class, do not serve as optional calendars for any culture.</source>
+          <target state="translated">그러나 <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept> 클래스가 나타내는 페르시아력과 같은 일부 달력은 특정 문화권의 선택적 달력으로 사용되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The example defines a reusable calendar utility class, <ph id="ph1">`CalendarUtility`</ph>, to handle many of the details of generating the string representation of a date using a particular calendar.</source>
+          <target state="translated">예제에서는 다시 사용할 수 있는 달력 유틸리티 클래스인 <ph id="ph1">`CalendarUtility`</ph>를 정의하여 날짜의 문자열 표현을 특정 달력으로 생성하는 작업의 많은 세부 정보를 처리합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CalendarUtility`</ph> class has the following members:</source>
+          <target state="translated"><ph id="ph1">`CalendarUtility`</ph> 클래스의 멤버는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A parameterized constructor whose single parameter is a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object in which a date is to be represented.</source>
+          <target state="translated">하나의 매개 변수가 날짜를 나타내는 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 개체인 매개 변수가 있는 생성자.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This is assigned to a private field of the class.</source>
+          <target state="translated">클래스의 전용 필드에 할당됩니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CalendarExists`</ph>, a private method that returns a Boolean value indicating whether the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object is supported by the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that is passed to the method as a parameter.</source>
+          <target state="translated"><ph id="ph1">`CalendarExists`</ph>는 <ph id="ph2">`CalendarUtility`</ph> 개체가 나타내는 달력이 메서드에 매개 변수로 전달되는 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 개체에서 지원되는지 여부를 나타내는 부울 값을 반환하는 전용 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The method wraps a call to the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method, to which it passes the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> array.</source>
+          <target state="translated">이 메서드는 <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 배열이 전달되는 <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 메서드 호출을 래핑합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`HasSameName`</ph>, a private method assigned to the <bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept> delegate that is passed as a parameter to the <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method.</source>
+          <target state="translated"><ph id="ph1">`HasSameName`</ph>은 <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 메서드에 매개 변수로 전달되는<bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept> 대리자에 할당할 전용 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Each member of the array is passed to the method until the method returns <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">메서드에서 <ph id="ph1">`true`</ph>가 반환될 때까지 배열의 각 멤버가 메서드에 전달됩니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The method determines whether the name of an optional calendar is the same as the calendar represented by the <ph id="ph1">`CalendarUtility`</ph> object.</source>
+          <target state="translated">이 메서드는 선택적 달력의 이름이 <ph id="ph1">`CalendarUtility`</ph> 개체가 나타내는 달력과 같은지 여부를 확인합니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DisplayDate`</ph>, an overloaded public method that is passed two parameters: either a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value to express in the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object; and the culture whose formatting rules are to be used.</source>
+          <target state="translated"><ph id="ph1">`DisplayDate`</ph>는 두 매개 변수, 즉 <ph id="ph2">`CalendarUtility`</ph> 개체가 나타내는 달력에 표시할 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값과 사용할 서식 지정 규칙의 문화권이 전달되는 오버로드된 공용 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.</source>
+          <target state="translated">날짜의 문자열 표현을 반환할 때의 해당 동작은 대상 달력이 사용할 형식 지정 규칙의 문화권에서 지원되는지 여부에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Regardless of the calendar used to create a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value in this example, that value is typically expressed as a Gregorian date.</source>
+          <target state="translated">이 예제에서 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값을 만드는 데 사용된 달력에 관계없이 해당 값은 일반적으로 양력 날짜로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This is because the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types do not preserve any calendar information.</source>
+          <target state="translated">이는 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 및 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 형식이 달력 정보를 유지하지 않기 때문입니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001.</source>
+          <target state="translated">내부적으로 두 값은 0001년 1월 1일 자정 이후에 경과된 틱 수로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The interpretation of that number depends on the calendar.</source>
+          <target state="translated">해당 숫자의 해석은 달력에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For most cultures, the default calendar is the Gregorian calendar.</source>
+          <target state="translated">대부분의 문화권에서 기본 달력은 양력입니다.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>서식 지정 작업 수행<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca7e486b07621269a617ae7542d389a78e4ab571</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\custom-datetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d939e2e2d0b06f463389752c3187c61cd15973d1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d1f126bfd37705c6ff82befe7f1297bad294de65</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>title: Custom date and time format strings description: Custom date and time format strings keywords: .NET, .NET Core author: stevehoag ms.author: shoag manager: wpickett ms.date: 07/25/2016 ms.topic: article ms.prod: .net-core ms.technology: .net-core-technologies ms.devlang: dotnet ms.assetid: 45f286f5-92c9-4150-957c-fa6d394bc29b</source>
+          <target state="translated">title: Custom date and time format strings description: Custom date and time format strings keywords: .NET, .NET Core author: stevehoag ms.author: shoag manager: wpickett ms.date: 07/25/2016 ms.topic: article ms.prod: .net-core ms.technology: .net-core-technologies ms.devlang: dotnet ms.assetid: 45f286f5-92c9-4150-957c-fa6d394bc29b</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Custom date and time format strings</source>
+          <target state="translated">사용자 지정 날짜 및 시간 서식 문자열</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A date and time format string defines the text representation of a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value that results from a formatting operation .</source>
+          <target state="translated">날짜 및 시간 형식 문자열은 형식 지정 작업에서 생성되는 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값의 텍스트 표현을 정의합니다.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time.</source>
+          <target state="translated">또한 문자열을 날짜 및 시간으로 성공적으로 변환하기 위해 구문 분석 작업에 필요한 날짜 및 시간 값의 표현을 정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>A custom format string consists of one or more custom date and time format specifiers.</source>
+          <target state="translated">사용자 지정 형식 문자열은 하나 이상의 사용자 지정 날짜 및 시간 형식 지정자로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Any string that is not a <bpt id="p1">[</bpt>standard date and time format string<ept id="p1">](standard-datetime.md)</ept> is interpreted as a custom date and time format string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>표준 날짜 및 시간 형식 문자열<ept id="p1">](standard-datetime.md)</ept>이 아닌 문자열은 사용자 지정 날짜 및 시간 형식 문자열로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Custom date and time format strings can be used with both <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>  values.</source>
+          <target state="translated">사용자 지정 날짜 및 시간 형식 문자열은 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 및 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 둘 다에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In formatting operations, custom date and time format strings can be used either with the <ph id="ph1">`ToString`</ph> method of a date and time instance or with a method that supports composite formatting.</source>
+          <target state="translated">형식 작업에서 사용자 지정 날짜 및 시간 형식 문자열은 날짜 및 시간 인스턴스의 <ph id="ph1">`ToString`</ph> 메서드 또는 복합 형식을 지원하는 메서드에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following example illustrates both uses.</source>
+          <target state="translated">다음 예제에서는 두 가지 사용 방법을 모두 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In parsing operations, custom date and time format strings can be used with the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, and <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@))</ept> methods.</source>
+          <target state="translated">구문 분석 작업에서 사용자 지정 날짜 및 시간 형식 문자열은 <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> 및 <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@))</ept> 메서드에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>These methods require that an input string conform exactly to a particular pattern for the parse operation to succeed.</source>
+          <target state="translated">이러한 메서드를 사용하려면 구문 분석 작업을 성공하기 위해 입력 문자열이 특정 패턴을 정확하게 따라야 합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example illustrates a call to the <bpt id="p1">[</bpt>DateTimeOffset.ParseExact(String, String, IFormatProvider)<ept id="p1">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> method to parse a date that must include a day, a month, and a two-digit year.</source>
+          <target state="translated">다음 예제에서는 <bpt id="p1">[</bpt>DateTimeOffset.ParseExact(String, String, IFormatProvider)<ept id="p1">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> 메서드를 호출하여 일, 월 및 두 자리 연도를 포함해야 하는 날짜를 구문 분석하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following table describes the custom date and time format specifiers and displays a result string produced by each format specifier.</source>
+          <target state="translated">다음 표에서는 사용자 지정 날짜 및 시간 형식 지정자 및 각 형식 지정자에 따라 생성되는 결과 문자열을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By default, result strings reflect the formatting conventions of the en-US culture.</source>
+          <target state="translated">기본적으로 결과 문자열은 en-US 문화권의 형식 규칙을 반영합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If a particular format specifier produces a localized result string, the example also notes the culture to which the result string applies.</source>
+          <target state="translated">특정 형식 지정자가 지역화된 결과 문자열을 생성하는 경우 결과 문자열에 적용되는 문화권의 예도 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>See the Notes section for additional information about using custom date and time format strings.</source>
+          <target state="translated">사용자 지정 날짜 및 시간 형식 문자열을 사용하는 방법에 대한 자세한 내용은 참고 단원을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Format specifier</source>
+          <target state="translated">형식 지정자</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>"d"</source>
+          <target state="translated">"d"</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The day of the month, from 1 through 31.</source>
+          <target state="translated">1부터 31까지의 일(월 기준)입니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>"dd"</source>
+          <target state="translated">"dd"</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The day of the month, from 01 through 31.</source>
+          <target state="translated">01부터 31까지의 일(월 기준)입니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-01T13:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 15`</ph></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>"ddd"</source>
+          <target state="translated">"ddd"</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The abbreviated name of the day of the week.</source>
+          <target state="translated">요일의 약식 이름입니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Mon (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; Пн (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lun. (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Mon (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; Пн (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lun. (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>"dddd"</source>
+          <target state="translated">"dddd"</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The full name of the day of the week.</source>
+          <target state="translated">요일의 전체 이름입니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Monday (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; понедельник (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lundi (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Monday (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; понедельник (ru-RU)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; lundi (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>"f"</source>
+          <target state="translated">"f"</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The tenths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값에서 1/10초입니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.05 -&gt; 0`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.05 -&gt; 0`</ph></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>"ff"</source>
+          <target state="translated">"ff"</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The hundredths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/100초입니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; 00`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; 00`</ph></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>"fff"</source>
+          <target state="translated">"fff"</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The milliseconds in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/1000초입니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`6/15/2019 13:45:30.617 -&gt; 617`</ph>; <ph id="ph2">`6/15/2019 13:45:30.0005 -&gt; 000`</ph></source>
+          <target state="translated"><ph id="ph1">`6/15/2019 13:45:30.617 -&gt; 617`</ph>; <ph id="ph2">`6/15/2019 13:45:30.0005 -&gt; 000`</ph></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>"ffff"</source>
+          <target state="translated">"ffff"</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The ten thousandths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/10000초입니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175000 -&gt; 6175`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; 0000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175000 -&gt; 6175`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; 0000`</ph></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>"fffff"</source>
+          <target state="translated">"fffff"</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/100000초입니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`6/15/2019 13:45:30.000005 -&gt; 00000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`6/15/2019 13:45:30.000005 -&gt; 00000`</ph></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>"ffffff"</source>
+          <target state="translated">"ffffff"</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The millionths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/1000000초입니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; 000000`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; 000000`</ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>"fffffff"</source>
+          <target state="translated">"fffffff"</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The ten millionths of a second in a date and time value.</source>
+          <target state="translated">날짜 및 시간 값의 1/10000000초입니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>;<ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 0001150`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>;<ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 0001150`</ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>"F"</source>
+          <target state="translated">"F"</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If non-zero, the tenths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/10초입니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0500000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 6`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0500000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>"FF"</source>
+          <target state="translated">"FF"</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If non-zero, the hundredths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/100초입니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 61`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0050000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>"FFF"</source>
+          <target state="translated">"FFF"</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If non-zero, the milliseconds in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/1000초입니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 617`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0005000 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6170000 -&gt; 617`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0005000 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>"FFFF"</source>
+          <target state="translated">"FFFF"</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If non-zero, the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/10000초입니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.5275000 -&gt; 5275`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.5275000 -&gt; 5275`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000500 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>"FFFFF"</source>
+          <target state="translated">"FFFFF"</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If non-zero, the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/100000초입니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000050 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175400 -&gt; 61754`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000050 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>"FFFFFF"</source>
+          <target state="translated">"FFFFFF"</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>If non-zero, the millionths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/1000000초입니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; (no output)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175420 -&gt; 617542`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0000005 -&gt; (no output)`</ph></target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>"FFFFFFF"</source>
+          <target state="translated">"FFFFFFF"</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>If non-zero, the ten millionths of a second in a date and time value.</source>
+          <target state="translated">0이 아닌 경우 날짜 및 시간 값의 1/10000000초입니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 000115`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30.6175425 -&gt; 6175425`</ph>; <ph id="ph2">`2019-06-15T13:45:30.0001150 -&gt; 000115`</ph></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>"g", "gg"</source>
+          <target state="translated">"g", "gg"</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The period or era.</source>
+          <target state="translated">서기 또는 연대입니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>"h"</source>
+          <target state="translated">"h"</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The hour, using a 12-hour clock from 1 to 12.</source>
+          <target state="translated">12시간 형식을 사용하는 1부터 12까지의 시간입니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 1`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 1`</ph></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>"hh"</source>
+          <target state="translated">"hh"</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The hour, using a 12-hour clock from 01 to 12.</source>
+          <target state="translated">12시간 형식을 사용하는 01부터 12까지의 시간입니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 01`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 01`</ph></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>"H"</source>
+          <target state="translated">"H"</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The hour, using a 24-hour clock from 0 to 23.</source>
+          <target state="translated">24시간 형식을 사용하는 0부터 23까지의 시간입니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 1`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>"HH"</source>
+          <target state="translated">"HH"</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The hour, using a 24-hour clock from 00 to 23.</source>
+          <target state="translated">24시간 형식을 사용하는 00부터 23까지의 시간입니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:45:30 -&gt; 01`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 13`</ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>"K"</source>
+          <target state="translated">"K"</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Time zone information.</source>
+          <target state="translated">표준 시간대 정보입니다.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values: <ph id="ph1">`2019-06-15T13:45:30, Kind Unspecified -&gt;`</ph>; <ph id="ph2">`2019-06-15T13:45:30, Kind Utc -&gt; Z`</ph>; <ph id="ph3">`2019-06-15T13:45:30, Kind Local -&gt; -07:00 (depends on local computer settings)`</ph>; With <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values: <ph id="ph4">`2019-06-15T01:45:30-07:00 --&gt; -07:00`</ph>; <ph id="ph5">`2019-06-15T08:45:30+00:00 --&gt; +00:00`</ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값 사용: <ph id="ph1">`2019-06-15T13:45:30, Kind Unspecified -&gt;`</ph>; <ph id="ph2">`2019-06-15T13:45:30, Kind Utc -&gt; Z`</ph>; <ph id="ph3">`2019-06-15T13:45:30, Kind Local -&gt; -07:00 (depends on local computer settings)`</ph>; <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 사용: <ph id="ph4">`2019-06-15T01:45:30-07:00 --&gt; -07:00`</ph>; <ph id="ph5">`2019-06-15T08:45:30+00:00 --&gt; +00:00`</ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>"m"</source>
+          <target state="translated">"m"</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The minute, from 0 through 59.</source>
+          <target state="translated">0부터 59까지의 분입니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:09:30 -&gt; 9`</ph>; <ph id="ph2">`2019-06-15T13:29:30 -&gt; 29`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:09:30 -&gt; 9`</ph>; <ph id="ph2">`2019-06-15T13:29:30 -&gt; 29`</ph></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>"mm"</source>
+          <target state="translated">"mm"</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The minute, from 00 through 59.</source>
+          <target state="translated">00부터 59까지의 분입니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T01:09:30 -&gt; 09`</ph>; <ph id="ph2">`2019-06-15T01:45:30 -&gt; 45`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T01:09:30 -&gt; 09`</ph>; <ph id="ph2">`2019-06-15T01:45:30 -&gt; 45`</ph></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>"M"</source>
+          <target state="translated">"M"</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The month, from 1 through 12.</source>
+          <target state="translated">1부터 12까지의 월입니다.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>"MM"</source>
+          <target state="translated">"MM"</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The month, from 01 through 12.</source>
+          <target state="translated">01부터 12까지의 월입니다.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>"MMM"</source>
+          <target state="translated">"MMM"</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The abbreviated name of the month.</source>
+          <target state="translated">월의 약식 이름입니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; Jun (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juin (fr-FR)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; Jun (zu-ZA)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; Jun (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juin (fr-FR)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; Jun (zu-ZA)`</ph></target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>"MMMM"</source>
+          <target state="translated">"MMMM"</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The full name of the month.</source>
+          <target state="translated">월의 전체 이름입니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; June (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juni (da-DK)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; uJuni (zu-ZA)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; June (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; juni (da-DK)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; uJuni (zu-ZA)`</ph></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>"s"</source>
+          <target state="translated">"s"</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The second, from 0 through 59.</source>
+          <target state="translated">0부터 59까지의 초입니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>"ss"</source>
+          <target state="translated">"ss"</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The second, from 00 through 59.</source>
+          <target state="translated">00부터 59까지의 초입니다.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>"t"</source>
+          <target state="translated">"t"</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The first character of the AM/PM designator.</source>
+          <target state="translated">AM/PM 지정자의 첫 문자입니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; P (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; P (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>"tt"</source>
+          <target state="translated">"tt"</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The AM/PM designator.</source>
+          <target state="translated">AM/PM 지정자입니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; PM (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午後 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; PM (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 午後 (ja-JP)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; (fr-FR)`</ph></target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>"y"</source>
+          <target state="translated">"y"</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The year, from 0 to 99.</source>
+          <target state="translated">0부터 99까지의 연도입니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 1`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 9`</ph>; <ph id="ph5">`2019-06-15T13:45:30 -&gt; 19`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 1`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 0`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 9`</ph>; <ph id="ph5">`2019-06-15T13:45:30 -&gt; 19`</ph></target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>"yy"</source>
+          <target state="translated">"yy"</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The year, from 00 to 99.</source>
+          <target state="translated">00부터 99까지의 연도입니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 01`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 19`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 01`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 00`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 19`</ph></target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>"yyy"</source>
+          <target state="translated">"yyy"</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The year, with a minimum of three digits.</source>
+          <target state="translated">최소 세 자리 숫자로 된 연도입니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>"yyyy"</source>
+          <target state="translated">"yyyy"</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The year as a four-digit number.</source>
+          <target state="translated">네 자리 숫자로 된 연도입니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 0001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 0001`</ph>; <ph id="ph2">`0900-01-01T00:00:00 -&gt; 0900`</ph>; <ph id="ph3">`1900-01-01T00:00:00 -&gt; 1900`</ph>; <ph id="ph4">`2019-06-15T13:45:30 -&gt; 2019`</ph></target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>"yyyyy"</source>
+          <target state="translated">"yyyyy"</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>The year as a five-digit number.</source>
+          <target state="translated">다섯 자리 숫자로 된 연도입니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`0001-01-01T00:00:00 -&gt; 00001`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 02019`</ph></source>
+          <target state="translated"><ph id="ph1">`0001-01-01T00:00:00 -&gt; 00001`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; 02019`</ph></target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>"z"</source>
+          <target state="translated">"z"</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Hours offset from UTC, with no leading zeros.</source>
+          <target state="translated">앞에 0이 표시되지 않는 UTC에서의 시간 오프셋입니다.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>"zz"</source>
+          <target state="translated">"zz"</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Hours offset from UTC, with a leading zero for a single-digit value.</source>
+          <target state="translated">한 자리 값의 경우 앞에 0이 표시되는 UTC에서의 시간 오프셋입니다.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>"zzz"</source>
+          <target state="translated">"zzz"</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Hours and minutes offset from UTC.</source>
+          <target state="translated">UTC에서의 시간 및 분 오프셋입니다.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>":"</source>
+          <target state="translated">":"</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The time separator.</source>
+          <target state="translated">시간 구분 기호입니다.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; : (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; . (it-IT)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; : (ja-JP)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; : (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; . (it-IT)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; : (ja-JP)`</ph></target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>"/"</source>
+          <target state="translated">"/"</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The date separator.</source>
+          <target state="translated">날짜 구분 기호입니다.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 -&gt; / (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; - (ar-DZ)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; . (tr-TR)`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 -&gt; / (en-US)`</ph>; <ph id="ph2">`2019-06-15T13:45:30 -&gt; - (ar-DZ)`</ph>; <ph id="ph3">`2019-06-15T13:45:30 -&gt; . (tr-TR)`</ph></target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>"string", 'string'</source>
+          <target state="translated">"string", 'string'</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Literal string delimiter.</source>
+          <target state="translated">리터럴 문자열 구분 기호입니다.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`2019-06-15T13:45:30 ("arr:" h:m t) -&gt; arr: 1:45 P`</ph>; <ph id="ph2">`2019-06-15T13:45:30 ('arr:' h:m t) -&gt; arr: 1:45 P`</ph></source>
+          <target state="translated"><ph id="ph1">`2019-06-15T13:45:30 ("arr:" h:m t) -&gt; arr: 1:45 P`</ph>; <ph id="ph2">`2019-06-15T13:45:30 ('arr:' h:m t) -&gt; arr: 1:45 P`</ph></target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Defines the following character as a custom format specifier.</source>
+          <target state="translated">뒤에 오는 문자를 사용자 지정 형식 지정자로 정의합니다.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The escape character.</source>
+          <target state="translated">이스케이프 문자입니다.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Any other character</source>
+          <target state="translated">기타 문자</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The character is copied to the result string unchanged.</source>
+          <target state="translated">문자가 변경되지 않은 상태로 결과 문자열에 복사됩니다.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The following sections provide additional information about each custom date and time format specifier.</source>
+          <target state="translated">다음 단원에서는 각 사용자 지정 날짜 및 시간 형식 지정자에 대한 추가 정보를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Unless otherwise noted, each specifier produces an identical string representation regardless of whether it is used with a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">다른 설명이 없는 한, 각 지정자는 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에 사용하든, <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값에 사용하든 관계없이 동일한 문자열을 생성합니다.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The "d" custom format specifier</source>
+          <target state="translated">"d" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The "d" custom format specifier represents the day of the month as a number from 1 through 31.</source>
+          <target state="translated">"d" 사용자 지정 형식 지정자는 일(월 기준)을 1부터 31까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>A single-digit day is formatted without a leading zero.</source>
+          <target state="translated">한 자리 일의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>If the "d" format specifier is used without other custom format specifiers, it is interpreted as the "d" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "d" 형식 지정자만 사용되면 "d" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The following example includes the "d" custom format specifier in several format strings.</source>
+          <target state="translated">다음 예제에서는 여러 개의 형식 문자열에 "d" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>The "dd" custom format specifier</source>
+          <target state="translated">"dd" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The "dd" custom format string represents the day of the month as a number from 01 through 31.</source>
+          <target state="translated">"dd" 사용자 지정 형식 문자열은 일(월 기준)을 01부터 31까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>A single-digit day is formatted with a leading zero.</source>
+          <target state="translated">한 자리 일의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The following example includes the "dd" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "dd" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The "ddd" custom format specifier</source>
+          <target state="translated">"ddd" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The "ddd" custom format specifier represents the abbreviated name of the day of the week.</source>
+          <target state="translated">"ddd" 사용자 지정 형식 지정자는 요일의 약식 이름을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The localized abbreviated name of the day of the week is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">지역화된 약식 요일 이름은 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ddd" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "ddd" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The "dddd" custom format specifier</source>
+          <target state="translated">"dddd" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week.</source>
+          <target state="translated">"dddd" 사용자 지정 형식 지정자는 임의 개수의 추가 "d" 지정자와 함께 요일의 전체 이름을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The localized name of the day of the week is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.DayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.DayNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">지역화된 요일 이름은 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.DayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.DayNames)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The following example includes the "dddd" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "dddd" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>The "f" custom format specifier</source>
+          <target state="translated">"f" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>The "f" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.</source>
+          <target state="translated">"f" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>If the "f" format specifier is used without other format specifiers, it is interpreted as the "f" standard date and time format specifier.</source>
+          <target state="translated">다른 형식 지정자 없이 "f" 형식 지정자만 사용되면 "f" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>When you use "f" format specifiers as part of a format string supplied to the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, or <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> method, the number of "f" format specifiers indicates the number of most significant digits of the seconds fraction that must be present to successfully parse the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> 또는 <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> 메서드에 제공되는 형식 문자열의 일부로 "f" 형식 지정자를 사용하는 경우 "f" 형식 지정자 수는 문자열을 구문 분석하는 데 필요한 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>The following example includes the "f" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "f" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The "ff" custom format specifier</source>
+          <target state="translated">"ff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The "ff" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.</source>
+          <target state="translated">"ff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 2개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ff" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "ff" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>The "fff" custom format specifier</source>
+          <target state="translated">"fff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The "fff" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.</source>
+          <target state="translated">"fff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 3개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The following example includes the "fff" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "fff" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>The "ffff" custom format specifier</source>
+          <target state="translated">"ffff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>The "ffff" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">"ffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 4개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/10000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The "fffff" custom format specifier</source>
+          <target state="translated">"fffff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The "fffff" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">"fffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 다섯 개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the hundred thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/100000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The "ffffff" custom format specifier</source>
+          <target state="translated">"ffffff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The "ffffff" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.</source>
+          <target state="translated">"ffffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 6개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/1000000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The "fffffff" custom format specifier</source>
+          <target state="translated">"fffffff" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>The "fffffff" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.</source>
+          <target state="translated">"fffffff" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 7개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/10000000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The "F" custom format specifier</source>
+          <target state="translated">"F" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The "F" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.</source>
+          <target state="translated">"F" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>Nothing is displayed if the digit is zero.</source>
+          <target state="translated">이 자릿수가 0이면 아무 것도 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>If the "F" format specifier is used without other format specifiers, it is interpreted as the "F" standard date and time format specifier.</source>
+          <target state="translated">다른 형식 지정자 없이 "F" 형식 지정자만 사용되면 "F" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>The number of "F" format specifiers used with the <bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, or <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> method indicates the maximum number of most significant digits of the seconds fraction that can be present to successfully parse the string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime.ParseExact<ept id="p1">](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider))</ept>, <bpt id="p2">[</bpt>DateTime.TryParseExact<ept id="p2">](xref:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ParseExact<ept id="p3">](xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider))</ept> 또는 <bpt id="p4">[</bpt>DateTimeOffset.TryParseExact<ept id="p4">](xref:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@) )</ept> 메서드와 함께 사용된 "F" 형식 지정자 수는 문자열을 구문 분석하는 데 사용할 수 있는 초의 소수 부분에 대한 최대 유효 자릿수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The following example includes the "F" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "F" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>The "FF" custom format specifier</source>
+          <target state="translated">"FF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The "FF" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.</source>
+          <target state="translated">"FF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 2개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or two zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 두 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>The following example includes the "FF" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "FF" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The "FFF" custom format specifier</source>
+          <target state="translated">"FFF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>The "FFF" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.</source>
+          <target state="translated">"FFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 3개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or three zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 세 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The following example includes the "FFF" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "FFF" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>The "FFFF" custom format specifier</source>
+          <target state="translated">"FFFF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>The "FFFF" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.</source>
+          <target state="translated">"FFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 4개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or four zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 네 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/10000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>The "FFFFF" custom format specifier</source>
+          <target state="translated">"FFFFF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The "FFFFF" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.</source>
+          <target state="translated">"FFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 5개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/100000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or five zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 다섯 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the hundred thousandths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/100000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>The "FFFFFF" custom format specifier</source>
+          <target state="translated">"FFFFFF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The "FFFFFF" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.</source>
+          <target state="translated">"FFFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 6개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/1000000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or six zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 여섯 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/1000000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The "FFFFFFF" custom format specifier</source>
+          <target state="translated">"FFFFFFF" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The "FFFFFFF" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.</source>
+          <target state="translated">"FFFFFFF" 사용자 지정 형식 지정자는 초의 소수 부분에 대한 최대 유효 자릿수 7개를 나타냅니다. 즉, 날짜 및 시간 값에서 1/10000000초까지 표시합니다.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>However, trailing zeros or seven zero digits are not displayed.</source>
+          <target state="translated">그러나 뒤에 0이 오거나 일곱 숫자가 0이면 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Although it is possible to display the ten millionths of a second component of a time value, that value may not be meaningful.</source>
+          <target state="translated">1/10000000초까지 표시하는 것이 가능하기는 하지만 이 값은 의미가 없을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The precision of date and time values depends on the resolution of the system clock.</source>
+          <target state="translated">날짜 및 시간 값의 자릿수는 시스템 시계의 정밀도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The "g" or "gg" custom format specifier</source>
+          <target state="translated">"g" 또는 "gg" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>The "g" or "gg" custom format specifiers (plus any number of additional "g" specifiers) represents the period or era, such as A.D.</source>
+          <target state="translated">"g" 또는 "gg" 사용자 지정 형식 지정자는 임의 개수의 추가 "g" 지정자와 함께 A.D. 같은 시대 또는 연대를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The formatting operation ignores this specifier if the date to be formatted does not have an associated period or era string.</source>
+          <target state="translated">형식을 지정할 날짜에 연관된 시대 또는 연대 문자열이 없으면 이 지정자는 무시됩니다.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>If the "g" format specifier is used without other custom format specifiers, it is interpreted as the "g" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "g" 형식 지정자만 사용되면 "g" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>The following example includes the "g" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "g" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The "h" custom format specifier</source>
+          <target state="translated">"h" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon.</source>
+          <target state="translated">"h" 사용자 지정 형식 지정자는 시간을 1부터 12까지의 숫자로 나타냅니다. 즉, 자정 또는 정오 이후의 총 시간을 계산하는 12시간 형식으로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>A particular hour after midnight is indistinguishable from the same hour after noon.</source>
+          <target state="translated">자정 이후의 시간과 정오 이후의 같은 시간을 구별할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The hour is not rounded, and a single-digit hour is formatted without a leading zero.</source>
+          <target state="translated">시간은 반올림되지 않으며 한 자리 시간의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".</source>
+          <target state="translated">예를 들어, 시간이 오전 또는 오후 5:43일 경우 이 사용자 지정 형식 지정자는 "5"를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>If the "h" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "h" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>The following example includes the "h" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "h" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>The "hh" custom format specifier</source>
+          <target state="translated">"hh" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon.</source>
+          <target state="translated">"hh" 사용자 지정 형식 지정자는 임의 개수의 추가 "h" 지정자와 함께 시간을 1부터 12까지의 숫자로 나타냅니다. 즉, 자정 또는 정오 이후의 총 시간을 계산하는 12시간 형식으로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>A particular hour after midnight is indistinguishable from the same hour after noon.</source>
+          <target state="translated">자정 이후의 시간과 정오 이후의 같은 시간을 구별할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The hour is not rounded, and a single-digit hour is formatted with a leading zero.</source>
+          <target state="translated">시간은 반올림되지 않으며 한 자리 시간의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".</source>
+          <target state="translated">예를 들어, 시간이 오전 또는 오후 5:43일 경우 이 형식 지정자는 "05"를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The following example includes the "hh" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "hh" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>The "H" custom format specifier</source>
+          <target state="translated">"H" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight.</source>
+          <target state="translated">"H" 사용자 지정 형식 지정자는 시간을 0부터 23까지의 숫자로 나타냅니다. 즉, 자정 이후의 시간을 계산하는 24시간(0부터 시작) 형식으로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>A single-digit hour is formatted without a leading zero.</source>
+          <target state="translated">한 자리 시간의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>If the "H" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "H" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>The following example includes the "H" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "H" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The "HH" custom format specifier</source>
+          <target state="translated">"HH" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight.</source>
+          <target state="translated">"HH" 사용자 지정 형식 지정자는 임의 개수의 추가 "H" 지정자와 함께 시간을 00부터 23까지의 숫자로 나타냅니다. 즉, 자정 이후의 시간을 계산하는 24시간(0부터 시작) 형식으로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>A single-digit hour is formatted with a leading zero.</source>
+          <target state="translated">한 자리 시간의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>The following example includes the "HH" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "HH" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>The "K" custom format specifier</source>
+          <target state="translated">"K" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>The "K" custom format specifier represents the time zone information of a date and time value.</source>
+          <target state="translated">"K" 사용자 지정 형식 지정자는 날짜 및 시간 값의 표준 시간대 정보를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>When this format specifier is used with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the result string is defined by the value of the <bpt id="p2">[</bpt>DateTime.Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property:</source>
+          <target state="translated">이 형식 지정자를 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값과 함께 사용할 경우 결과 문자열은 <bpt id="p2">[</bpt>DateTime.Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> 속성 값으로 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>For the local time zone (a <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property value of <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>, this specifier is equivalent to the "zzz" specifier and produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".</source>
+          <target state="translated">현지 표준 시간대(<bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성 값이 <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>임)의 경우 이 지정자는 "zzz" 지정자와 같으며 UTC(Coordinated Universal Time)에서의 로컬 오프셋(예: "-07:00")이 포함된 결과 문자열을 생성합니다.</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>For a UTC time (a <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property value of <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept>), the result string includes a "Z" character to represent a UTC date.</source>
+          <target state="translated">UTC 시간(<bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성 값이 <bpt id="p2">[</bpt>DateTimeKind.Utc<ept id="p2">](xref:System.DateTimeKind.Utc)</ept>임)의 경우 결과 문자열에 UTC 날짜를 나타내는 "Z" 문자가 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>For a time from an unspecified time zone (a time whose <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property equals <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>), the result is equivalent to <bpt id="p3">[</bpt>String.Empty<ept id="p3">](xref:System.String#System_String_Empty)</ept>.</source>
+          <target state="translated">지정되지 않은 표준 시간대 시간(<bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성이 <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>인 시간)의 경우 결과는 <bpt id="p3">[</bpt>String.Empty<ept id="p3">](xref:System.String#System_String_Empty)</ept>와 같습니다.</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값의 경우 "K" 형식 지정자는 "zz" 형식 지정자와 같으며 UTC에서의 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 오프셋이 포함된 결과 문자열을 생성합니다.</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>If the "K" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "K" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The following example displays the string that results from using the "K" custom format specifier with various <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> values on a system in the U.S. Pacific Time zone.</source>
+          <target state="translated">다음 예제에서는 미국 태평양 표준 시간대에 있는 시스템의 다양한 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 및 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값에 "K" 사용자 지정 형식 지정자를 사용하여 생성된 문자열을 표시합니다.</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>The "m" custom format specifier</source>
+          <target state="translated">"m" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The "m" custom format specifier represents the minute as a number from 0 through 59.</source>
+          <target state="translated">"m" 사용자 지정 형식 지정자는 분을 0부터 59까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The minute represents whole minutes that have passed since the last hour.</source>
+          <target state="translated">분은 마지막 시간 이후 경과한 총 분 수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>A single-digit minute is formatted without a leading zero.</source>
+          <target state="translated">한 자리 분의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>If the "m" format specifier is used without other custom format specifiers, it is interpreted as the "m" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "m" 형식 지정자만 사용되면 "m" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>The following example includes the "m" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "m" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>The "mm" custom format specifier</source>
+          <target state="translated">"mm" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 through 59.</source>
+          <target state="translated">"mm" 사용자 지정 형식 지정자는 임의 개수의 추가 "m" 지정자와 함께 분을 00부터 59까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>The minute represents whole minutes that have passed since the last hour.</source>
+          <target state="translated">분은 마지막 시간 이후 경과한 총 분 수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>A single-digit minute is formatted with a leading zero.</source>
+          <target state="translated">한 자리 분의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>The following example includes the "mm" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "mm" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The "M" custom format specifier</source>
+          <target state="translated">"M" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months).</source>
+          <target state="translated">"M" 사용자 지정 형식 지정자는 월을 1부터 12까지의 숫자(또는 13월까지 있는 역법의 경우 1부터 13까지의 숫자)로 표현합니다.</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>A single-digit month is formatted without a leading zero.</source>
+          <target state="translated">한 자리 월의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>If the "M" format specifier is used without other custom format specifiers, it is interpreted as the "M" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "M" 형식 지정자만 사용되면 "M" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>The following example includes the "M" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "M" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>The "MM" custom format specifier</source>
+          <target state="translated">"MM" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>The "MM" custom format specifier represents the month as a number from 01 through 12 (or from 1 through 13 for calendars that have 13 months).</source>
+          <target state="translated">"MM" 사용자 지정 형식 지정자는 월을 01부터 12까지의 숫자(또는 13월까지 있는 역법의 경우 01부터 13까지의 숫자)로 표현합니다.</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>A single-digit month is formatted with a leading zero.</source>
+          <target state="translated">한 자리 월의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MM" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "MM" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>The "MMM" custom format specifier</source>
+          <target state="translated">"MMM" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>The "MMM" custom format specifier represents the abbreviated name of the month.</source>
+          <target state="translated">"MMM" 사용자 지정 형식 지정자는 월의 약식 이름을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The localized abbreviated name of the month is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedMonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">지역화된 약식 월 이름은 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.AbbreviatedMonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MMM" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "MMM" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>The "MMMM" custom format specifier</source>
+          <target state="translated">"MMMM" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>The "MMMM" custom format specifier represents the full name of the month.</source>
+          <target state="translated">"MMMM" 사용자 지정 형식 지정자는 월의 전체 이름을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>The localized name of the month is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> property of the current or specified culture.</source>
+          <target state="translated">지역화된 월 이름은 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>The following example includes the "MMMM" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "MMMM" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>The "s" custom format specifier</source>
+          <target state="translated">"s" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>The "s" custom format specifier represents the seconds as a number from 0 through 59.</source>
+          <target state="translated">"s" 사용자 지정 형식 지정자는 초를 0부터 59까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>The result represents whole seconds that have passed since the last minute.</source>
+          <target state="translated">결과는 마지막 분 이후 경과한 총 초 수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>A single-digit second is formatted without a leading zero.</source>
+          <target state="translated">한 자리 초의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>If the "s" format specifier is used without other custom format specifiers, it is interpreted as the "s" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "s" 형식 지정자만 사용되면 "s" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>The following example includes the "s" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "s" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>The "ss" custom format specifier</source>
+          <target state="translated">"ss" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 through 59.</source>
+          <target state="translated">"ss" 사용자 지정 형식 지정자는 임의 개수의 추가 "s" 지정자와 함께 초를 00부터 59까지의 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>The result represents whole seconds that have passed since the last minute.</source>
+          <target state="translated">결과는 마지막 분 이후 경과한 총 초 수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>A single-digit second is formatted with a leading zero.</source>
+          <target state="translated">한 자리 초의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>The following example includes the "ss" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "ss" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>The "t" custom format specifier</source>
+          <target state="translated">"t" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>The "t" custom format specifier represents the first character of the AM/PM designator.</source>
+          <target state="translated">"t" 사용자 지정 형식 지정자는 AM/PM 지정자의 첫 문자를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>The appropriate localized designator is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> or <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> property of the current or specific culture.</source>
+          <target state="translated">적절한 지역화된 지정자는 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> 또는 <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999.</source>
+          <target state="translated">AM 지정자는 0:00:00(자정)부터 11:59:59.999까지의 모든 시간에 사용되고</target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.</source>
+          <target state="translated">PM 지정자는 12:00:00(정오)부터 23:59:59.999까지의 모든 시간에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>If the "t" format specifier is used without other custom format specifiers, it is interpreted as the "t" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "t" 형식 지정자만 사용되면 "t" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>The following example includes the "t" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "t" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>The "tt" custom format specifier</source>
+          <target state="translated">"tt" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator.</source>
+          <target state="translated">"tt" 사용자 지정 형식 지정자는 임의 개수의 추가 "t" 지정자와 함께 전체 AM/PM 지정자를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>The appropriate localized designator is retrieved from the <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> or <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> property of the current or specific culture.</source>
+          <target state="translated">적절한 지역화된 지정자는 현재 또는 지정된 문화권의 <bpt id="p1">[</bpt>DateTimeFormatInfo.AMDesignator<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AMDesignator)</ept> 또는 <bpt id="p2">[</bpt>DateTimeFormatInfo.PMDesignator<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.PMDesignator)</ept> 속성에서 검색됩니다.</target>       </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999.</source>
+          <target state="translated">AM 지정자는 0:00:00(자정)부터 11:59:59.999까지의 모든 시간에 사용되고</target>       </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.</source>
+          <target state="translated">PM 지정자는 12:00:00(정오)부터 23:59:59.999까지의 모든 시간에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Make sure to use the "tt" specifier for languages for which it is necessary to maintain the distinction between AM and PM.</source>
+          <target state="translated">"tt" 지정자는 AM과 PM을 구분해야 하는 언어에만 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source>An example is Japanese, for which the AM and PM designators differ in the second character instead of the first character.</source>
+          <target state="translated">예를 들어, 일본어 AM/PM 지정자의 경우 첫 번째 문자가 아니라 두 번째 문자가 서로 다릅니다.</target>       </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The following example includes the "tt" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "tt" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>The "y" custom format specifier</source>
+          <target state="translated">"y" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>The "y" custom format specifier represents the year as a one-digit or two-digit number.</source>
+          <target state="translated">"y" 사용자 지정 형식 지정자는 연도를 한 자리 또는 두 자리 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>If the year has more than two digits, only the two low-order digits appear in the result.</source>
+          <target state="translated">연도가 두 자리를 넘으면 마지막 두 자리 숫자만 결과에 나타납니다.</target>       </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source>If the first digit of a two-digit year begins with a zero (for example, 2008), the number is formatted without a leading zero.</source>
+          <target state="translated">2008과 같이 두 자리 연도의 첫 번째 숫자가 0으로 시작하면 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>If the "y" format specifier is used without other custom format specifiers, it is interpreted as the "y" standard date and time format specifier.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "y" 형식 지정자만 사용되면 "y" 표준 날짜 및 시간 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>The following example includes the "y" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "y" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>The "yy" custom format specifier</source>
+          <target state="translated">"yy" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source>The "yy" custom format specifier represents the year as a two-digit number.</source>
+          <target state="translated">"yy" 사용자 지정 형식 지정자는 연도를 두 자리 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>If the year has more than two digits, only the two low-order digits appear in the result.</source>
+          <target state="translated">연도가 두 자리를 넘으면 마지막 두 자리 숫자만 결과에 나타납니다.</target>       </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>If the two-digit year has fewer than two significant digits, the number is padded with leading zeros to produce two digits.</source>
+          <target state="translated">두 자리 연도의 유효 자릿수가 두 자리 미만인 경우 두 자리가 되도록 앞에 0이 채워집니다.</target>       </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>In a parsing operation, a two-digit year that is parsed using the "yy" custom format specifier is interpreted based on the <bpt id="p1">[</bpt>Calendar.TwoDigitYearMax<ept id="p1">](xref:System.Globalization.Calendar.TwoDigitYearMax)</ept> property of the format provider's current calendar.</source>
+          <target state="translated">구문 분석 작업에서 "yy" 사용자 지정 형식 지정자를 사용하여 구문 분석되는 2자리 연도는 형식 공급자의 현재 달력에 대한 <bpt id="p1">[</bpt>Calendar.TwoDigitYearMax<ept id="p1">](xref:System.Globalization.Calendar.TwoDigitYearMax)</ept> 속성을 기준으로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>The following example parses the string representation of a date that has a two-digit year by using the default Gregorian calendar of the en-US culture, which, in this case, is the current culture.</source>
+          <target state="translated">다음 예제에서는 en-US 문화권(이 경우 현재 문화권)의 기본 양력을 사용하여 두 자리 년도를 갖는 날짜의 문자열 표현을 구문 분석합니다.</target>       </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>It then changes the current culture's <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object to use a <bpt id="p2">[</bpt>GregorianCalendar<ept id="p2">](xref:System.Globalization.GregorianCalendar)</ept> object whose <bpt id="p3">[</bpt>TwoDigitYearMax<ept id="p3">](xref:System.Globalization.GregorianCalendar.TwoDigitYearMax)</ept> property has been modified.</source>
+          <target state="translated">그런 다음 <bpt id="p3">[</bpt>TwoDigitYearMax<ept id="p3">](xref:System.Globalization.GregorianCalendar.TwoDigitYearMax)</ept> 속성이 수정된 <bpt id="p2">[</bpt>GregorianCalendar<ept id="p2">](xref:System.Globalization.GregorianCalendar)</ept> 개체를 사용하도록 현재 문화권의 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 개체를 변경합니다.</target>       </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yy" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "yy" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>The "yyy" custom format specifier</source>
+          <target state="translated">"yyy" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>The "yyy" custom format specifier represents the year with a minimum of three digits.</source>
+          <target state="translated">"yyy" 사용자 지정 형식 지정자는 연도를 최소 세 자리 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>If the year has more than three significant digits, they are included in the result string.</source>
+          <target state="translated">연도의 유효 자릿수가 세 자리보다 많더라도 결과 문자열에 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than three digits, the number is padded with leading zeros to produce three digits.</source>
+          <target state="translated">연도가 세 자리 미만인 경우 세 자리가 되도록 앞에 0이 채워집니다.</target>       </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>For the Thai Buddhist calendar, which can have five-digit years, this format specifier displays all significant digits.</source>
+          <target state="translated">연도를 다섯 자리까지 표시할 수 있는 태국 불교식 달력의 경우 이 형식 지정자는 유효 자릿수를 모두 표시합니다.</target>       </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyy" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "yyy" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>The "yyyy" custom format specifier</source>
+          <target state="translated">"yyyy" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>The "yyyy" custom format specifier represents the year with a minimum of four digits.</source>
+          <target state="translated">"yyyy" 사용자 지정 형식 지정자는 연도를 최소 네 자리 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>If the year has more than four significant digits, they are included in the result string.</source>
+          <target state="translated">연도의 유효 자릿수가 네 자리보다 많더라도 결과 문자열에 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than four digits, the number is padded with leading zeros to produce four digits.</source>
+          <target state="translated">연도가 네 자리 미만인 경우 네 자리가 되도록 앞에 0이 채워집니다.</target>       </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>For the Thai Buddhist calendar, which can have five-digit years, this format specifier displays all significant digits.</source>
+          <target state="translated">연도를 다섯 자리까지 표시할 수 있는 태국 불교식 달력의 경우 이 형식 지정자는 유효 자릿수를 모두 표시합니다.</target>       </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyyy" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "yyyy" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>The "yyyyy" custom format specifier</source>
+          <target state="translated">"yyyyy" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>The "yyyyy" custom format specifier (plus any number of additional "y" specifiers) represents the year with a minimum of five digits.</source>
+          <target state="translated">"yyyyy" 사용자 지정 형식 지정자는 임의 개수의 추가 "y" 지정자와 함께 연도를 최소 다섯 자리 숫자로 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source>If the year has more than five significant digits, they are included in the result string.</source>
+          <target state="translated">연도의 유효 자릿수가 다섯 자리보다 많더라도 결과 문자열에 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source>If the year has fewer than five digits, the number is padded with leading zeros to produce five digits.</source>
+          <target state="translated">연도가 다섯 자리 미만인 경우 다섯 자리가 되도록 앞에 0이 채워집니다.</target>       </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>If there are additional "y" specifiers, the number is padded with as many leading zeros as necessary to produce the number of "y" specifiers.</source>
+          <target state="translated">추가 "y" 지정자가 있는 경우 "y" 지정자의 수에 맞도록 앞에 0이 필요한 만큼 채워집니다.</target>       </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>The following example includes the "yyyyy" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "yyyyy" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>The "z" custom format specifier</source>
+          <target state="translated">"z" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "z" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에 사용할 경우 "z" 사용자 지정 형식 지정자는 시간 단위로 측정된 UTC(Coordinated Universal Time)에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">이 형식 지정자는 인스턴스의 <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성 값을 반영하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>For this reason, the "z" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">따라서 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에는 "z" 형식 지정자를 사용하지 않는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값에 사용할 경우 이 형식 지정자는 시간 단위로 측정된 UTC에서의 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">오프셋은 항상 앞에 부호가 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">더하기 기호(+)는 UTC보다 앞선 시간을 나타내고 빼기 기호(-)는 UTC보다 늦은 시간을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted without a leading zero.</source>
+          <target state="translated">한 자리 오프셋의 경우 앞에 0이 표시되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>If the "z" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "z" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>The following example includes the "z" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "z" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>The "zz" custom format specifier</source>
+          <target state="translated">"zz" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "zz" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에 사용할 경우 "zz" 사용자 지정 형식 지정자는 시간 단위로 측정된 UTC(Coordinated Universal Time)에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">이 형식 지정자는 인스턴스의 <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성 값을 반영하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>For this reason, the "zz" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">따라서 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에는 "zz" 형식 지정자를 사용하지 않는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값에 사용할 경우 이 형식 지정자는 시간 단위로 측정된 UTC에서의 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">오프셋은 항상 앞에 부호가 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">더하기 기호(+)는 UTC보다 앞선 시간을 나타내고 빼기 기호(-)는 UTC보다 늦은 시간을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted with a leading zero.</source>
+          <target state="translated">한 자리 오프셋의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>The following example includes the "zz" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "zz" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>The "zzz" custom format specifier</source>
+          <target state="translated">"zzz" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the "zzz" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에 사용할 경우 "zzz" 사용자 지정 형식 지정자는 시간 단위로 측정된 UTC(Coordinated Universal Time)에서 로컬 운영 체제의 부호 있는 표준 시간대 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>It does not reflect the value of an instance's <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">이 형식 지정자는 인스턴스의 <bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 속성 값을 반영하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>For this reason, the "zzz" format specifier is not recommended for use with <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">따라서 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 값에는 "zzz" 형식 지정자를 사용하지 않는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>With <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, this format specifier represents the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value's offset from UTC in hours.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값에 사용할 경우 이 형식 지정자는 시간 단위로 측정된 UTC에서의 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값 오프셋을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>The offset is always displayed with a leading sign.</source>
+          <target state="translated">오프셋은 항상 앞에 부호가 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>A plus sign (+) indicates hours ahead of UTC, and a minus sign (-) indicates hours behind UTC.</source>
+          <target state="translated">더하기 기호(+)는 UTC보다 앞선 시간을 나타내고 빼기 기호(-)는 UTC보다 늦은 시간을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>A single-digit offset is formatted with a leading zero.</source>
+          <target state="translated">한 자리 오프셋의 경우 앞에 0이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The following example includes the "zzz" custom format specifier in a custom format string.</source>
+          <target state="translated">다음 예제에서는 사용자 지정 형식 문자열에 "zzz" 사용자 지정 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>The ":" custom format specifier</source>
+          <target state="translated">":" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds.</source>
+          <target state="translated">":" 사용자 지정 형식 지정자는 시, 분, 초를 구분하는 데 사용되는 시간 구분 기호를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>If the ":" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 ":" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>The "/" custom format specifier</source>
+          <target state="translated">"/" 사용자 지정 형식 지정자</target>       </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days.</source>
+          <target state="translated">"/" 사용자 지정 형식 지정자는 년, 월, 일을 구분하는 데 사용되는 날짜 구분 기호를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>If the "/" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">다른 사용자 지정 형식 지정자 없이 "/" 형식 지정자만 사용하면 표준 날짜 및 시간 형식 지정자로 해석되고 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>For more information about using a single format specifier, see <bpt id="p1">[</bpt>Using single custom format specifiers<ept id="p1">](#using-single-custom-format-specifiers)</ept> later in this topic.</source>
+          <target state="translated">단일 서식 지정자를 사용하는 방법에 대한 자세한 내용은 이 항목의 뒷부분에 있는 <bpt id="p1">[</bpt>단일 사용자 지정 서식 지정자 사용<ept id="p1">](#using-single-custom-format-specifiers)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Character literals</source>
+          <target state="translated">문자 리터럴</target>       </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of ", ', /, and <ph id="ph1">\,</ph> as special characters.</source>
+          <target state="translated">사용자 지정 날짜 및 시간 형식 문자열에서 다음 문자는 예약되었으며 항상 형식 지정 문자 또는 ", ', / 및 <ph id="ph1">\,</ph>의 경우 특수 문자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>F</source>
+          <target state="translated">F</target>       </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>H</source>
+          <target state="translated">H</target>       </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>K</source>
+          <target state="translated">K</target>       </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>M</source>
+          <target state="translated">M</target>       </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>d</source>
+          <target state="translated">일</target>       </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>f</source>
+          <target state="translated">f</target>       </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>g</source>
+          <target state="translated">g</target>       </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>h</source>
+          <target state="translated">h</target>       </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>m</source>
+          <target state="translated">분</target>       </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>s</source>
+          <target state="translated">s</target>       </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>y</source>
+          <target state="translated">y</target>       </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>y</source>
+          <target state="translated">y</target>       </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>z</source>
+          <target state="translated">z</target>       </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>:</source>
+          <target state="translated">:</target>       </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>"</source>
+          <target state="translated">"</target>       </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>'</source>
+          <target state="translated">'</target>       </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.</source>
+          <target state="translated">다른 모든 문자는 항상 문자 리터럴로 해석되며, 형식 지정 작업에서 변경되지 않고 결과 문자열에 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.</source>
+          <target state="translated">구문 분석 작업에서는 입력 문자열의 문자와 정확히 일치해야 하며, 비교 시 대/소문자를 구분합니다.</target>       </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>The following example includes the literal characters "PST" (for Pacific Standard Time) and "PDT" (for Pacific Daylight Time) to represent the local time zone in a format string.</source>
+          <target state="translated">다음 예제에는 형식 문자열에서 현지 표준 시간대를 나타내는 리터럴 문자 "PST"(태평양 표준시) 및 "PDT"(태평양 일광 절약 시간)가 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>Note that the string is included in the result string, and that a string that includes the local time zone string also parses successfully.</source>
+          <target state="translated">문자열이 결과 문자열에 포함되고, 현지 표준 시간대 문자열을 포함하는 문자열도 성공적으로 구문 분석되는 것을 확인합니다.</target>       </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>There are two ways to indicate that characters are to be interpreted as literal characters and not as reserve characters, so that they can be included in a result string or successfully parsed in an input string:</source>
+          <target state="translated">문자가 결과 문자열에 포함되거나 입력 문자열에서 성공적으로 구문 분석될 수 있도록 하기 위해 문자를 예약 문자가 아니라 리터럴 문자로 해석되도록 지정하는 두 가지 방법이 있습니다.</target>       </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>By escaping each reserved character.</source>
+          <target state="translated">각 예약된 문자를 이스케이프합니다.</target>       </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Using the escape character<ept id="p1">](#using-the-escape-character)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>이스케이프 문자 사용<ept id="p1">](#using-the-escape-character)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>The following example includes the literal characters "pst" (for Pacific Standard time) to represent the local time zone in a format string.</source>
+          <target state="translated">다음 예제에는 형식 문자열에서 현지 표준 시간대를 나타내는 리터럴 문자 "pst"(태평양 표준시)가 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Because both "s" and "t" are custom format strings, both characters must be escaped to be interpreted as character literals.</source>
+          <target state="translated">"s"와 "t"는 둘 다 사용자 지정 형식 문자열이므로 두 문자를 문자 리터럴로 해석되도록 이스케이프해야 합니다.</target>       </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>By enclosing the entire literal string in quotation marks or apostrophes.</source>
+          <target state="translated">전체 리터럴 문자열을 따옴표나 아포스트로피로 묶습니다.</target>       </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>The following example is like the previous one, except that "pst" is enclosed in quotation marks to indicate that the entire delimited string should be interpreted as character literals.</source>
+          <target state="translated">다음 예제는 "pst"가 따옴표로 묶여 구분된 전체 문자열을 문자 리터럴로 해석해야 한다는 점을 제외하고 이전 예제와 같습니다.</target>       </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>Notes</source>
+          <target state="translated">노트</target>       </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>Using single custom format specifiers</source>
+          <target state="translated">단일 사용자 지정 형식 지정자 사용</target>       </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>A custom date and time format string consists of two or more characters.</source>
+          <target state="translated">사용자 지정 날짜 및 시간 형식 문자열은 둘 이상의 문자로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>Date and time formatting methods interpret any single-character string as a standard date and time format string.</source>
+          <target state="translated">날짜 및 시간 형식 지정 메서드는 단일 문자 문자열을 표준 날짜 및 시간 형식 문자열로 해석합니다.</target>       </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>If they do not recognize the character as a valid format specifier, they throw a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">날짜 및 시간 형식 지정 메서드가 문자를 유효한 형식 지정자로 인식하지 못하면 <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>이 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string.</source>
+          <target state="translated">예를 들어, "h" 지정자로만 구성된 형식 문자열은 표준 날짜 및 시간 형식 문자열로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>However, in this particular case, an exception is thrown because there is no "h" standard date and time format specifier.</source>
+          <target state="translated">그러나 이 경우 "h" 표준 날짜 및 시간 형식 지정자가 없으므로 예외가 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before or after the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.</source>
+          <target state="translated">사용자 지정 날짜 및 시간 형식 지정자 중 하나를 형식 문자열의 유일한 지정자로 사용하려면(즉, "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":" 또는 "/" 사용자 지정 형식 지정자를 단독으로 사용하려면) 지정자 앞이나 뒤에 공백을 포함하거나 단일 사용자 지정 날짜 및 시간 지정자 앞에 백분율("%") 형식 지정자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>For example, "<ph id="ph1">`%h`</ph>" is interpreted as a custom date and time format string that displays the hour represented by the current date and time value.</source>
+          <target state="translated">예를 들어 "<ph id="ph1">`%h`</ph>"는 현재 날짜 및 시간 값이 나타내는 시간을 표시하는 사용자 지정 날짜 및 시간 형식 문자열로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>You can also use the " h" or "h " format string, although this includes a space in the result string along with the hour.</source>
+          <target state="translated">결과 문자열에 시간 외에 공백이 포함되기는 하지만 " h" 또는 "h " 형식 지정자를 사용할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>The following example illustrates these three format strings.</source>
+          <target state="translated">다음 예제에서는 이러한 세 가지 형식 문자열을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>Using the escape character</source>
+          <target state="translated">이스케이프 문자 사용</target>       </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" characters in a format string are interpreted as custom format specifiers rather than as literal characters.</source>
+          <target state="translated">형식 문자열의 "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":" 또는 "/" 문자는 리터럴 문자가 아닌 사용자 지정 형식 지정자로 해석됩니다.</target>       </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>To prevent a character from being interpreted as a format specifier, you can precede it with a backslash (<ph id="ph1">\)</ph>, which is the escape character.</source>
+          <target state="translated">문자가 형식 지정자로 해석되지 않도록 하려면 해당 문자 앞에 이스케이프 문자인 백슬래시(<ph id="ph1">\)</ph>)를 삽입하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>The escape character signifies that the following character is a character literal that should be included in the result string unchanged.</source>
+          <target state="translated">이스케이프 문자는 뒤에 오는 문자가 변경되지 않은 상태로 결과 문자열에 포함되어야 하는 문자 리터럴임을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>To include a backslash in a result string, you must escape it with another backslash (<ph id="ph1">`\\`</ph>).</source>
+          <target state="translated">결과 문자열에 백슬래시를 포함하려면 <ph id="ph1">`\\`</ph>처럼 두 개의 백슬래시를 연속해서 입력해야 합니다.</target>       </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>Some compilers, such as the C# compiler, may also interpret a single backslash character as an escape character.</source>
+          <target state="translated">C# 컴파일러 같은 일부 컴파일러에서는 하나의 백슬래시 문자가 이스케이프 문자로 해석될 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>To ensure that a string is interpreted correctly when formatting, you can use the verbatim string literal character (the <ph id="ph1">@</ph> character) before the string, or add another backslash character before each backslash.</source>
+          <target state="translated">형식을 지정할 때 문자열이 올바로 해석되도록 하려면 해당 문자열 앞에 축자 문자열 리터럴 문자(<ph id="ph1">@</ph> 문자)를 사용하거나 각 백슬래시 앞에 또 다른 백슬래시 문자를 추가하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>The following C# example illustrates both approaches.</source>
+          <target state="translated">다음 C# 예제에서는 이 두 가지 방법을 모두 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>The following example uses the escape character to prevent the formatting operation from interpreting the "h" and "m" characters as format specifiers.</source>
+          <target state="translated">다음 예제에서는 이스케이프 문자를 사용하여 형식 지정 작업에서 "h" 및 "m" 문자가 형식 지정자로 해석되지 않도록 합니다.</target>       </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>DateTimeFormatInfo properties</source>
+          <target state="translated">DateTimeFormatInfo 속성</target>       </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Formatting is influenced by properties of the current <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object, which is provided implicitly by the current thread culture or explicitly by the <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> parameter of the method that invokes formatting.</source>
+          <target state="translated">형식 지정은 현재 스레드 문화권에서 암시적으로 제공되거나 형식 지정을 호출하는 메서드의 <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> 매개 변수를 통해 명시적으로 제공되는 현재 <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> 개체의 속성에 따라 영향을 받습니다.</target>       </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>For the <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> parameter, you should specify a <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept> object, which represents a culture, or a <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> object.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> 매개 변수의 경우 문화권 또는 <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> 개체를 나타내는 <bpt id="p2">[</bpt>CultureInfo<ept id="p2">](xref:System.Globalization.CultureInfo)</ept> 개체를 지정해야 합니다.</target>       </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>The result string produced by many of the custom date and time format specifiers also depends on properties of the current <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object.</source>
+          <target state="translated">대부분의 사용자 지정 날짜 및 시간 형식 지정자로 생성되는 결과 문자열도 현재 <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> 개체의 속성에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>Your application can change the result produced by some custom date and time format specifiers by changing the corresponding <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> property.</source>
+          <target state="translated">따라서 응용 프로그램에서는 해당 <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> 속성을 변경하여 일부 사용자 지정 날짜 및 시간 형식 지정자에서 생성된 결과를 변경할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>For example, the "ddd" format specifier adds an abbreviated weekday name found in the <bpt id="p1">[</bpt>AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> string array to the result string.</source>
+          <target state="translated">예를 들어, "ddd" 형식 지정자는 <bpt id="p1">[</bpt>AbbreviatedDayNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames)</ept> 문자열 배열에서 찾은 약식 요일 이름을 결과 문자열에 추가합니다.</target>       </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>Similarly, the "MMMM" format specifier adds a full month name found in the <bpt id="p1">[</bpt>MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> string array to the result string.</source>
+          <target state="translated">마찬가지로 "MMMM" 형식 지정자는 <bpt id="p1">[</bpt>MonthNames<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.MonthNames)</ept> 문자열 배열에서 찾은 전체 월 이름을 결과 문자열에 추가합니다.</target>       </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept></target>       </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></target>       </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formatting types<ept id="p1">](formatting-types.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>형식 서식 지정<ept id="p1">](formatting-types.md)</ept></target>       </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>표준 날짜 및 시간 서식 문자열<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

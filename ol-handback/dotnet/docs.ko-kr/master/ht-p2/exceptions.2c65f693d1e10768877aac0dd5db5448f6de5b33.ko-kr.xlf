@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0c73fb0a12092877ff5b54221f4a80693d1d1152</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\exceptions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4039eb59d735cb586da4b617c06c78c4c56de430</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9296088cb345ca8e749cc7c98a39bacca0772227</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">.NET의 예외 처리 및 Throw</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understand how to use exceptions in .NET</source>
+          <target state="translated">.NET에서 예외를 사용하는 방법 이해</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">.NET의 예외 처리 및 Throw</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Applications must be able to handle errors that occur during execution in a consistent manner.</source>
+          <target state="translated">응용 프로그램은 실행 중에 발생하는 오류를 일관된 방식으로 처리할 수 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>.NET provides a model for notifying applications of errors in a uniform way: .NET operations indicate failure by throwing exceptions.</source>
+          <target state="translated">.NET에서는 일관된 방식으로 응용 프로그램에 오류를 알리기 위한 모델을 제공합니다. .NET 작업은 예외를 throw하여 오류를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">예외</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An exception is any error condition or unexpected behavior that is encountered by an executing program.</source>
+          <target state="translated">예외란 프로그램 실행 중 발생한 모든 오류 상태 또는 예기치 못한 동작입니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on.</source>
+          <target state="translated">예외는 사용 중인 코드 또는 호출한 코드(예: 공유 라이브러리)의 오류, 사용 불가능한 운영 체제 리소스, 런타임에서 발생한 예기치 못한 상황(예: 확인할 수 없는 코드) 등에 의해 throw될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Your application can recover from some of these conditions, but not from others.</source>
+          <target state="translated">사용 중인 응용 프로그램이 이러한 일부 상황으로부터 복구될 수 있지만 복구될 수 없는 경우도 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.</source>
+          <target state="translated">대부분의 응용 프로그램 예외로부터는 복구할 수 있지만 대부분의 런타임 예외로부터는 복구할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In .NET, an exception is an object that inherits from the <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> class.</source>
+          <target state="translated">.NET에서 예외는 <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> 클래스에서 상속받은 개체입니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>An exception is thrown from an area of code where a problem has occurred.</source>
+          <target state="translated">예외는 문제가 발생한 코드 영역에서 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The exception is passed up the stack until the application handles it or the program terminates.</source>
+          <target state="translated">예외는 응용 프로그램에서 해당 예외를 처리하거나 프로그램이 종료될 때까지 스택으로 전달됩니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Exceptions vs. traditional error-handling methods</source>
+          <target state="translated">예외 및 일반적인 오류 처리 방법</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system.</source>
+          <target state="translated">일반적으로 언어 오류 처리 모델은 오류를 감지하고 해당 오류 처리기를 찾는 언어 고유의 방식에 의존하거나 운영 체제에서 제공하는 오류 처리 메커니즘에 의존했습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The way .NET implements exception handling provides the following advantages:</source>
+          <target state="translated">.NET에서 예외 처리를 구현하는 방법에는 다음과 같은 이점이 있습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Exception throwing and handling works the same for .NET programming languages.</source>
+          <target state="translated">예외 throw 및 처리는 .NET 프로그래밍 언어에서 동일하게 작동합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.</source>
+          <target state="translated">예외 처리에 특정한 언어 구문이 필요하지는 않지만, 각 언어에서 고유한 구문을 정의할 수 있도록 허용합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown across process and even machine boundaries.</source>
+          <target state="translated">프로세스 및 컴퓨터 경계 간에도 예외가 throw될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Exception-handling code can be added to an application to increase program reliability.</source>
+          <target state="translated">예외 처리 코드를 응용 프로그램에 추가하여 프로그램 안정성을 높일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Exceptions offer advantages over other methods of error notification, such as return codes.</source>
+          <target state="translated">예외는 반환 코드 등의 다른 오류 알림 방법에 비해 이점을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Failures do not go unnoticed because if an exception is thrown and you don't handle it, the runtime terminates your application.</source>
+          <target state="translated">예외가 throw되고 사용자가 처리하지 않을 경우 런타임에서 응용 프로그램을 종료하기 때문에 오류가 발견되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Invalid values do not continue to propagate through the system as a result of code that fails to check for a failure return code.</source>
+          <target state="translated">오류 반환 코드를 검사하지 못한 코드의 결과로 잘못된 값이 시스템 전체에 계속 전파되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Exception class and properties</source>
+          <target state="translated">Exception 클래스 및 속성</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class is the base class from which exceptions inherit.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 클래스는 예외가 상속받는 기본 클래스입니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.InvalidCastException</ph> class hierarchy is as follows:</source>
+          <target state="translated">예를 들어 <ph id="ph1">@System.InvalidCastException</ph> 클래스 계층 구조는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class has the following properties that help make understanding an exception easier.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 클래스에는 예외를 보다 쉽게 이해할 수 있도록 하는 다음 속성이 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Property Name</source>
+          <target state="translated">속성 이름</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.Collections.IDictionary</ph> that holds arbitrary data in key-value pairs.</source>
+          <target state="translated">키-값 쌍의 임의의 데이터를 보유하는 <ph id="ph1">@System.Collections.IDictionary</ph>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.</source>
+          <target state="translated">예외의 원인에 대한 광범위한 정보를 제공하는 도움말 파일의 URL(또는 URN)을 포함할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This property can be used to create and preserve a series of exceptions during exception handling.</source>
+          <target state="translated">이 속성을 사용하여 예외 처리 중 일련의 예외를 만들고 유지할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use it to create a new exception that contains previously caught exceptions.</source>
+          <target state="translated">이전에 catch된 예외를 포함하는 새 예외를 만드는 데 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The original exception can be captured by the second exception in the <ph id="ph1">@System.Exception.InnerException</ph> property, allowing code that handles the second exception to examine the additional information.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.InnerException</ph> 속성의 두 번째 예외에서 원래 예외를 캡처하고 두 번째 예외를 처리하는 코드에서 추가 정보를 검사하도록 허용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a method that receives an argument that's improperly formatted.</source>
+          <target state="translated">예를 들어 부적절한 형식의 인수를 받는 메서드가 있다고 가정해봅시다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The code tries to read the argument, but an exception is thrown.</source>
+          <target state="translated">코드에서 인수를 읽으려고 하지만 예외가 throw됩니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The method catches the exception and throws a <ph id="ph1">@System.FormatException.</ph> To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred.</source>
+          <target state="translated">이 메서드는 예외를 catch하고 <ph id="ph1">@System.FormatException.</ph>을 throw합니다. 예외가 throw된 이유를 확인하는 호출자 기능을 개선하기 위해 때로는 메서드가 도우미 루틴에서 throw된 예외를 catch한 다음 발생한 오류를 자세히 나타내는 예외를 throw하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception.</source>
+          <target state="translated">보다 의미 있는 새 예외를 만들 수 있으며, 이 경우 내부 예외 참조를 원래 예외로 설정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This more meaningful exception can then be thrown to the caller.</source>
+          <target state="translated">그런 다음 보다 의미 있는 이 예외를 호출자에게 throw할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first.</source>
+          <target state="translated">이 기능을 사용하면 처음 throw된 예외로 끝나는 일련의 연결된 예외를 만들 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides details about the cause of an exception.</source>
+          <target state="translated">예외 원인에 대한 정보를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Gets or sets the name of the application or the object that causes the error.</source>
+          <target state="translated">오류를 발생시키는 응용 프로그램 또는 개체의 이름을 가져오거나 설정합니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Contains a stack trace that can be used to determine where an error occurred.</source>
+          <target state="translated">오류가 발생한 위치를 확인하는 데 사용할 수 있는 스택 추적을 포함합니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The stack trace includes the source file name and program line number if debugging information is available.</source>
+          <target state="translated">디버깅 정보를 사용할 수 있는 경우 스택 추적에는 소스 파일 이름과 프로그램 줄 번호가 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Most of the classes that inherit from <ph id="ph1">@System.Exception</ph> do not implement additional members or provide additional functionality; they simply inherit from <ph id="ph2">@System.Exception.</ph> Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph>에서 상속받는 대부분의 클래스는 추가 멤버를 구현하거나 추가 기능을 제공하지 않습니다. 단순히 <ph id="ph2">@System.Exception.</ph>에서 상속받습니다. 따라서 가장 중요한 예외 정보는 예외 클래스, 예외 이름 및 예외에 포함된 정보의 계층 구조에서 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>It is recommended to throw and catch only objects that derive from <ph id="ph1">@System.Exception,</ph> but you can throw any object that derives from the <ph id="ph2">@System.Object</ph> class as an exception.</source>
+          <target state="translated"><ph id="ph1">@System.Exception,</ph>에서 파생된 개체만 throw 및 catch하는 것이 좋지만 <ph id="ph2">@System.Object</ph> 클래스에서 파생된 모든 개체를 예외로 throw할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Note that not all languages support throwing and catching objects that do not derive from <ph id="ph1">@System.Exception.</ph></source>
+          <target state="translated">일부 언어는 <ph id="ph1">@System.Exception.</ph>에서 파생되지 않은 개체의 throw 및 catch를 지원하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Common Exceptions</source>
+          <target state="translated">일반적인 예외</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following table lists some common exceptions with examples of what can cause them.</source>
+          <target state="translated">다음 표에서는 몇 가지 일반적인 예외 및 예외가 발생할 수 있는 경우의 예를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Exception type</source>
+          <target state="translated">예외 형식</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Base type</source>
+          <target state="translated">기본 형식</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Base class for all exceptions.</source>
+          <target state="translated">모든 예외의 기본 클래스.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">없음(이 예외의 파생된 클래스 사용).</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when an array is indexed improperly.</source>
+          <target state="translated">배열이 올바르지 않게 인덱싱된 경우에만 런타임에서 발생됩니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Indexing an array outside its valid range: <ph id="ph1">`arr[arr.Length+1]`</ph></source>
+          <target state="translated">유효 범위를 벗어난 배열 인덱싱: <ph id="ph1">`arr[arr.Length+1]`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when a null object is referenced.</source>
+          <target state="translated">null 개체가 참조되는 경우에만 런타임에서 발생됩니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Thrown by methods when in an invalid state.</source>
+          <target state="translated">잘못된 상태에 있는 경우에 메서드에서 발생됩니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Calling <ph id="ph1">`Enumerator.GetNext()`</ph> after removing an Item from the underlying collection.</source>
+          <target state="translated">기본 컬렉션에서 Item을 제거한 후 <ph id="ph1">`Enumerator.GetNext()`</ph> 호출</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Base class for all argument exceptions.</source>
+          <target state="translated">모든 인수 예외에 대한 기본 클래스.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">없음(이 예외의 파생된 클래스 사용).</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that do not allow an argument to be null.</source>
+          <target state="translated">인수에 Null을 허용하지 않는 메서드에서 발생됩니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that verify that arguments are in a given range.</source>
+          <target state="translated">인수가 지정된 범위에 있는지 확인하는 메서드에서 발생됩니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>How to use the try/catch block to catch exceptions</source>
+          <target state="translated">try/catch 블록을 사용하여 예외를 catch하는 방법</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Place the sections of code that might throw exceptions in a <ph id="ph1">`try`</ph> block and place code that handles exceptions in a <ph id="ph2">`catch`</ph> block.</source>
+          <target state="translated">예외를 throw할 수 있는 코드 섹션을 <ph id="ph1">`try`</ph> 블록에 넣고 예외를 처리하는 코드를 <ph id="ph2">`catch`</ph> 블록에 넣습니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`catch`</ph> block is a series of statements beginning with the keyword <ph id="ph2">`catch`</ph>, followed by an exception type and an action to be taken.</source>
+          <target state="translated"><ph id="ph1">`catch`</ph> 블록은 <ph id="ph2">`catch`</ph> 키워드로 시작하고 예외 유형 및 수행할 작업으로 이루어진 일련의 문입니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible exception.</source>
+          <target state="translated">다음 코드 예제에서는 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 블록을 사용하여 가능한 예외를 catch합니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Main`</ph> method contains a <ph id="ph2">`try`</ph> block with a <ph id="ph3">@System.IO.StreamReader</ph> statement that opens a data file called <ph id="ph4">`data.txt`</ph> and writes a string from the file.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph> 메서드에는 <ph id="ph4">`data.txt`</ph>라는 데이터 파일을 열고 파일에서 문자열을 쓰는 <ph id="ph3">@System.IO.StreamReader</ph> 문이 포함된 <ph id="ph2">`try`</ph> 블록이 있습니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Following the <ph id="ph1">`try`</ph> block is a <ph id="ph2">`catch`</ph> block that catches any exception that results from the <ph id="ph3">`try`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`try`</ph> 블록 뒤에는 <ph id="ph3">`try`</ph> 블록에서 발생하는 예외를 catch하는 <ph id="ph2">`catch`</ph> 블록이 있습니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The common language runtime catches exceptions that are not caught by a catch block.</source>
+          <target state="translated">공용 언어 런타임은 catch 블록에서 catch되지 않은 예외를 catch합니다.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.</source>
+          <target state="translated">런타임의 구성 방법에 따라 디버그 대화 상자가 나타나거나, 프로그램 실행이 중단되고 예외 정보가 포함된 대화 상자가 나타나거나, 오류가 STDERR에 출력됩니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <ph id="ph1">@System.OutOfMemoryException.</ph> Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others.</source>
+          <target state="translated">거의 모든 코드 줄에서 예외, 특히 <ph id="ph1">@System.OutOfMemoryException.</ph>과 같은 공용 언어 런타임에서 throw된 예외가 발생할 수 있습니다. 대부분의 응용 프로그램은 이러한 예외를 처리할 필요가 없지만 다른 사용자가 사용할 라이브러리를 작성하는 경우 이러한 가능성에 유의해야 합니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For suggestions on when to set code in a Try block, see <bpt id="p1">[</bpt>Best Practices for Exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">Try 블록에서 코드를 설정하는 경우에 대한 제안 사항은 <bpt id="p1">[</bpt>예외에 대한 모범 사례<ept id="p1">](#best-practices-for-exceptions)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>How to use specific exceptions in a Catch block</source>
+          <target state="translated">Catch 블록에 특정 예외를 사용하는 방법</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The preceding code example illustrates a basic <ph id="ph1">`catch`</ph> statement that catches any exception.</source>
+          <target state="translated">앞의 코드 예제에서는 예외를 catch하는 기본 <ph id="ph1">`catch`</ph> 문에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In general, though, it's good programming practice to catch a specific type of exception rather than use a basic <ph id="ph1">`catch`</ph> statement.</source>
+          <target state="translated">하지만 일반적으로 기본 <ph id="ph1">`catch`</ph> 문을 사용하는 대신 특정 형식의 예외를 catch하는 것이 좋은 프로그래밍 방법입니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it.</source>
+          <target state="translated">예외가 발생하면 스택 위로 전달되며 각 catch 블록에 예외를 처리할 수 있는 기회가 제공됩니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The order of catch statements is important.</source>
+          <target state="translated">catch 문의 순서가 중요합니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error.</source>
+          <target state="translated">특정 예외를 대상으로 하는 catch 블록은 일반 예외 catch 블록 앞에 배치합니다. 그러지 않으면 컴파일러에서 오류가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block.</source>
+          <target state="translated">예외 형식을 catch 블록에 지정된 예외 이름과 비교하여 적절한 catch 블록을 확인합니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If there is no specific catch block, the exception is caught by a general catch block, if one exists.</source>
+          <target state="translated">특정 catch 블록이 없는 경우 일반 catch 블록(있는 경우)에서 예외를 catch합니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.InvalidCastException.</ph> The sample creates a class called <ph id="ph5">`Employee`</ph> with a single property, employee level (<ph id="ph6">`Emlevel`</ph>).</source>
+          <target state="translated">다음 코드 예제에서는 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 블록을 사용하여 <ph id="ph4">@System.InvalidCastException.</ph>을 catch합니다. 샘플에서는 직원 수준(<ph id="ph6">`Emlevel`</ph>)이라는 하나의 속성이 있는 <ph id="ph5">`Employee`</ph>라는 클래스를 만듭니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A method, <ph id="ph1">`PromoteEmployee`</ph>, takes an object and increments the employee level.</source>
+          <target state="translated"><ph id="ph1">`PromoteEmployee`</ph> 메서드는 개체를 사용하고 직원 수준을 증가시킵니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.InvalidCastException</ph> occurs when a <ph id="ph2">@System.DateTime</ph> instance is passed to the <ph id="ph3">`PromoteEmployee`</ph> method.</source>
+          <target state="translated"><ph id="ph2">@System.DateTime</ph> 인스턴스가 <ph id="ph3">`PromoteEmployee`</ph> 메서드로 전달될 때 <ph id="ph1">@System.InvalidCastException</ph>이 발생합니다.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>How to use finally blocks</source>
+          <target state="translated">Finally 블록을 사용하는 방법</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, execution stops and control is given to the appropriate exception handler.</source>
+          <target state="translated">예외가 발생하면 실행이 중단되고 해당 예외 처리기에 제어가 제공됩니다.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This often means that lines of code you expect to be executed are bypassed.</source>
+          <target state="translated">이 경우 대체로 실행될 것으로 예상한 코드 줄을 건너뜁니다.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown.</source>
+          <target state="translated">파일 닫기와 같은 일부 리소스 정리 작업은 예외가 throw된 경우에도 수행해야 합니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>To do this, you can use a <ph id="ph1">`finally`</ph> block.</source>
+          <target state="translated">이 작업을 위해 <ph id="ph1">`finally`</ph> 블록을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`finally`</ph> block always executes, regardless of whether an exception is thrown.</source>
+          <target state="translated"><ph id="ph1">`finally`</ph> 블록은 예외가 throw되었는지 여부에 관계없이 항상 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.ArgumentOutOfRangeException.</ph> The <ph id="ph5">`Main`</ph> method creates two arrays and attempts to copy one to the other.</source>
+          <target state="translated">다음 코드 예제에서는 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 블록을 사용하여 <ph id="ph4">@System.ArgumentOutOfRangeException.</ph>을 catch합니다. <ph id="ph5">`Main`</ph> 메서드는 두 개의 배열을 만들고 한 배열을 다른 배열에 복사하려고 합니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The action generates an <ph id="ph1">@System.ArgumentOutOfRangeException</ph> and the error is written to the console.</source>
+          <target state="translated">작업에서 <ph id="ph1">@System.ArgumentOutOfRangeException</ph>이 발생하고 콘솔에 오류가 기록됩니다.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`finally`</ph> block executes regardless of the outcome of the copy action.</source>
+          <target state="translated"><ph id="ph1">`finally`</ph> 블록은 복사 작업의 결과에 관계없이 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>How to explicitly throw exceptions</source>
+          <target state="translated">명시적으로 예외를 throw하는 방법</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>You can explicitly throw an exception using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated"><ph id="ph1">`throw`</ph> 문을 사용하여 명시적으로 예외를 throw할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can also throw a caught exception again using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated"><ph id="ph1">`throw`</ph> 문을 사용하여 catch된 예외를 다시 throw할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.</source>
+          <target state="translated">디버그 시 자세한 정보를 제공하기 위해 다시 throw되는 예외에 정보를 추가하는 것은 좋은 코딩 방법입니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible <ph id="ph4">@System.IO.FileNotFoundException.</ph> Following the <ph id="ph5">`try`</ph> block is a <ph id="ph6">`catch`</ph> block that catches the <ph id="ph7">@System.IO.FileNotFoundException</ph> and writes a message to the console if the data file is not found.</source>
+          <target state="translated">다음 코드 예제에서는 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 블록을 사용하여 가능한 <ph id="ph4">@System.IO.FileNotFoundException.</ph>을 catch합니다. <ph id="ph5">`try`</ph> 블록 뒤에는 <ph id="ph7">@System.IO.FileNotFoundException</ph>을 catch하고 데이터 파일을 찾을 수 없는 경우 콘솔에 메시지를 쓰는 <ph id="ph6">`catch`</ph> 블록이 있습니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The next statement is the <ph id="ph1">`throw`</ph> statement that throws a new <ph id="ph2">@System.IO.FileNotFoundException</ph> and adds text information to the exception.</source>
+          <target state="translated">다음 문은 새 <ph id="ph2">@System.IO.FileNotFoundException</ph>을 throw하고 예외에 텍스트 정보를 추가하는 <ph id="ph1">`throw`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>How to create user-defined exceptions</source>
+          <target state="translated">사용자 정의 예외를 만드는 방법</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>.NET provides a hierarchy of exception classes ultimately derived from the base class <ph id="ph1">@System.Exception.</ph> However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the <ph id="ph2">@System.Exception</ph> class.</source>
+          <target state="translated">.NET에서는 기본 클래스 <ph id="ph1">@System.Exception.</ph>에서 최종적으로 파생되는 예외 클래스의 계층 구조를 제공합니다. 그러나 사용자 요구를 충족하는 미리 정의된 예외가 없는 경우 <ph id="ph2">@System.Exception</ph> 클래스에서 파생하여 사용자 고유의 예외 클래스를 만들 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example.</source>
+          <target state="translated">사용자 고유의 예외를 만드는 경우 다음 예제와 같이 사용자 정의 예외의 클래스 이름을 "Exception" 단어로 끝내고 세 가지 공통 생성자를 구현합니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The example defines a new exception class named <ph id="ph1">`EmployeeListNotFoundException`</ph>.</source>
+          <target state="translated">예제에서는 <ph id="ph1">`EmployeeListNotFoundException`</ph>이라는 새 예외 클래스를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The class is derived from <ph id="ph1">@System.Exception</ph> and includes three constructors.</source>
+          <target state="translated">클래스는 <ph id="ph1">@System.Exception</ph>에서 파생되며 세 가지 생성자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller).</source>
+          <target state="translated">원격을 사용하는 경우 사용자 정의 예외에 대한 메타데이터를 서버(호출 수신자) 및 클라이언트(프록시 개체 또는 호출자)에서 사용할 수 있는지 확인해야 합니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Best practices for exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>예외에 대한 모범 사례<ept id="p1">](#best-practices-for-exceptions)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Best practices for exceptions</source>
+          <target state="translated">예외에 대한 모범 사례</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A well-designed app handles exceptions and errors to prevent app crashes.</source>
+          <target state="translated">잘 설계된 응용 프로그램이 응용 프로그램 충돌을 방지하기 위해 예외와 오류를 처리합니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This section describes best practices for handling and creating exceptions.</source>
+          <target state="translated">이 섹션에서는 예외를 처리하고 만들기 위한 모범 사례를 설명합니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Use try/catch/finally blocks</source>
+          <target state="translated">try/catch/finally 블록 사용</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> blocks around code that can potentially generate an exception.</source>
+          <target state="translated">잠재적으로 예외를 생성할 수 있는 코드 주변에서 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> 블록을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`catch`</ph> blocks, always order exceptions from the most specific to the least specific.</source>
+          <target state="translated"><ph id="ph1">`catch`</ph> 블록에서 항상 가장 특정한 예외부터 가장 일반적인 예외의 순서로 예외를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Use a <ph id="ph1">`finally`</ph> block to clean up resources, whether you can recover or not.</source>
+          <target state="translated">복구 가능 여부에 관계없이 <ph id="ph1">`finally`</ph> 블록을 사용하여 리소스를 정리합니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Handle common conditions without throwing exceptions</source>
+          <target state="translated">예외를 throw하지 않고 일반적인 조건 처리</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception.</source>
+          <target state="translated">발생할 가능성이 높지만 예외를 트리거할 수도 있는 조건의 경우 예외를 방지하는 방식으로 조건을 처리하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For example, if you try to close a connection that is already closed, you'll get an <ph id="ph1">`InvalidOperationException`</ph>.</source>
+          <target state="translated">예를 들어 이미 닫혀 있는 연결을 닫으려고 하면 <ph id="ph1">`InvalidOperationException`</ph>이 발생합니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You can avoid that by using an <ph id="ph1">`if`</ph> statement to check the connection state before trying to close it.</source>
+          <target state="translated">닫기 전에 <ph id="ph1">`if`</ph> 문을 사용하여 연결 상태를 확인하면 이 예외를 방지할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If you don't check connection state before closing, you can catch the <ph id="ph1">`InvalidOperationException`</ph> exception.</source>
+          <target state="translated">닫기 전에 연결 상태를 확인하지 않을 경우 <ph id="ph1">`InvalidOperationException`</ph> 예외를 catch할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The method to choose depends on how often you expect the event to occur.</source>
+          <target state="translated">어떤 방법을 선택할 것인지는 해당 이벤트의 예상 발생 빈도에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Use exception handling if the event doesn't occur very often, that is, if the event is truly exceptional and indicates an error (such as an unexpected end-of-file).</source>
+          <target state="translated">이벤트가 그다지 자주 발생하지 않으면(즉, 예상치 못한 파일 끝과 같은 이벤트가 실제로 예외이고 오류를 나타내는 경우) 예외 처리를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>When you use exception handling, less code is executed in normal conditions.</source>
+          <target state="translated">예외 처리를 사용하면 정상적인 조건에서 적은 수의 코드가 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Check for error conditions in code if the event happens routinely and could be considered part of normal execution.</source>
+          <target state="translated">이벤트가 일상적으로 발생하고 정상적인 실행의 일부로 간주될 수 있는 경우 코드에서 오류 조건을 확인합니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>When you check for common error conditions, less code is executed because you avoid exceptions.</source>
+          <target state="translated">일반적인 오류 조건을 확인하면 예외가 방지되기 때문에 실행되는 코드가 줄어듭니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Design classes so that exceptions can be avoided</source>
+          <target state="translated">예외를 방지할 수 있도록 클래스 디자인</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A class can provide methods or properties that enable you to avoid making a call that would trigger an exception.</source>
+          <target state="translated">클래스는 예외를 트리거하는 호출을 방지할 수 있도록 하는 메서드 또는 속성을 제공할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For example, a <ph id="ph1">@System.IO.FileStream</ph> class provides methods that help determine whether the end of the file has been reached.</source>
+          <target state="translated">예를 들어, <ph id="ph1">@System.IO.FileStream</ph> 클래스는 파일 끝에 도달했는지 확인하는 데 도움이 되는 메서드를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>These can be used to avoid the exception that is thrown if you read past the end of the file.</source>
+          <target state="translated">이러한 메서드를 사용하면 파일의 끝을 지나서 읽을 경우 throw되는 예외를 방지할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The following example shows how to read to the end of a file without triggering an exception.</source>
+          <target state="translated">다음 예제에서는 예외를 트리거하지 않고 파일의 끝까지 읽는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Another way to avoid exceptions is to return null for extremely common error cases instead of throwing an exception.</source>
+          <target state="translated">예외를 방지하는 또 다른 방법은 매우 일반적인 오류의 경우 예외를 throw하는 대신 null을 반환하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>An extremely common error case can be considered normal flow of control.</source>
+          <target state="translated">매우 흔한 오류 사례는 정상적인 제어 흐름으로 간주할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>By returning null in these cases, you minimize the performance impact to an app.</source>
+          <target state="translated">이러한 경우에 null을 반환함으로써, 응용 프로그램의 성능에 미치는 영향을 최소화합니다.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Throw exceptions instead of returning an error code</source>
+          <target state="translated">오류 코드를 반환하는 대신 예외 throw</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.</source>
+          <target state="translated">예외는 호출하는 코드에서 반환 코드를 확인하지 않아 오류가 발견되지 않는 것을 방지합니다.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Use the predefined .NET exception types</source>
+          <target state="translated">미리 정의된 .NET 예외 형식 사용</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Introduce a new exception class only when a predefined one doesn't apply.</source>
+          <target state="translated">새 예외 클래스는 미리 정의된 예외 클래스가 적용되지 않는 경우에만 도입합니다.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예를 들면 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.InvalidOperationException</ph> exception if a property set or method call is not appropriate given the object's current state.</source>
+          <target state="translated">개체의 현재 상태에서 속성 집합이나 메서드 호출이 적절하지 않을 경우 <ph id="ph1">@System.InvalidOperationException</ph> 예외를 throw합니다.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.ArgumentException</ph> exception or one of the predefined classes that derive from <ph id="ph2">@System.ArgumentException</ph> if invalid parameters are passed.</source>
+          <target state="translated">잘못된 매개 변수가 전달되면 <ph id="ph1">@System.ArgumentException</ph> 예외 또는 <ph id="ph2">@System.ArgumentException</ph>에서 파생된 미리 정의된 클래스 중 하나를 throw합니다.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>End exception class names with the word <ph id="ph1">`Exception`</ph></source>
+          <target state="translated">예외 클래스 이름 뒤에 단어 <ph id="ph1">`Exception`</ph> 추가</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>When a custom exception is necessary, name it appropriately and derive it from the <ph id="ph1">@System.Exception</ph> class.</source>
+          <target state="translated">사용자 지정 예외가 필요한 경우 적절한 이름을 지정하고 <ph id="ph1">@System.Exception</ph> 클래스에서 파생합니다.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예를 들면 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Include three constructors in custom exception classes</source>
+          <target state="translated">사용자 지정 예외 클래스에 세 가지 생성자 포함</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.</source>
+          <target state="translated">사용자 고유의 예외 클래스를 만들 때 최소한 다음 세 가지 일반 생성자를 사용합니다. 즉, 기본 생성자, 문자열 메시지를 사용하는 생성자, 문자열 메시지와 내부 예외를 사용하는 생성자입니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor,</ph> which uses default values.</source>
+          <target state="translated">기본값을 사용하는 <ph id="ph1">@System.Exception.%23ctor,</ph>.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String),</ph> which accepts a string message.</source>
+          <target state="translated">문자열 메시지를 수락하는 <ph id="ph1">@System.Exception.%23ctor(System.String),</ph>.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph> which accepts a string message and an inner exception.</source>
+          <target state="translated">문자열 메시지와 내부 예외를 허용하는 <ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph>.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>How to: Create User-Defined Exceptions<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>.</source>
+          <target state="translated">예를 들어 <bpt id="p1">[</bpt>방법: 사용자 정의 예외 만들기<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Ensure that exception data is available when code executes remotely</source>
+          <target state="translated">코드를 원격으로 실행하는 경우 예외 데이터를 사용할 수 있는지 확인</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.</source>
+          <target state="translated">사용자 정의 예외를 만드는 경우 원격으로 실행하는 코드에서 예외에 대한 메타데이터를 사용할 수 있는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains.</source>
+          <target state="translated">예를 들어 앱 도메인을 구현하는 .NET 런타임에서 앱 도메인 간에 예외가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Suppose App Domain A creates App Domain B, which executes code that throws an exception.</source>
+          <target state="translated">앱 도메인 A에서 앱 도메인 B를 만들고, 여기서 예외를 throw하는 코드를 실행한다고 가정해봅시다.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <ph id="ph1">@System.IO.FileNotFoundException</ph> exception.</source>
+          <target state="translated">앱 도메인 A에서 예외를 정확하게 catch하고 처리하려면 앱 도메인 B에서 throw된 예외를 포함하는 어셈블리를 찾을 수 있어야 합니다. 앱 도메인 B에서 앱 도메인 A의 응용 프로그램 기준 위치가 아니라 해당 응용 프로그램 기준 위치 아래의 어셈블리에 포함된 예외를 throw할 경우 앱 도메인 A는 예외를 찾을 수 없으며 공용 언어 런타임에서 <ph id="ph1">@System.IO.FileNotFoundException</ph> 예외를 throw합니다.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>To avoid this situation, you can deploy the assembly that contains the exception information in two ways:</source>
+          <target state="translated">이러한 상황을 방지하기 위해 예외 정보가 포함된 어셈블리를 다음과 같은 두 가지 방법으로 배포할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Put the assembly into a common application base shared by both app domains.</source>
+          <target state="translated">해당 어셈블리를 두 응용 프로그램 도메인이 공유하는 공통 응용 프로그램 기본 구조에 넣습니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\-</ph> or -</source>
+          <target state="translated"><ph id="ph1">\-</ph> 또는 -</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.</source>
+          <target state="translated">도메인이 공통 응용 프로그램 기반 구조를 공유하지 않을 경우, 예외 정보가 포함된 어셈블리를 강력한 이름으로 지정한 다음, 이 어셈블리를 전역 어셈블리 캐시에 배포합니다.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Include a localized description string in every exception</source>
+          <target state="translated">모든 예외에 지역화된 설명 문자열 포함</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The error message that the user sees is derived from the description string of the exception that was thrown, and not from the name of the exception class.</source>
+          <target state="translated">사용자에게 표시되는 오류 메시지는 예외 클래스 이름에서 파생된 메시지가 아니라 throw된 예외의 설명 문자열에서 파생된 메시지입니다.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Use grammatically correct error messages</source>
+          <target state="translated">문법적으로 올바른 오류 메시지 사용</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Write clear sentences and include ending punctuation.</source>
+          <target state="translated">명확한 문을 작성하고 종료 문장 부호를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Each sentence in a description string of an exception should end in a period.</source>
+          <target state="translated">설명 문자열의 각 문장의 뒤에는 마침표가 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>For example, "The log table has overflowed.”</source>
+          <target state="translated">예를 들어 "로그 테이블이 오버플로되었습니다."는</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>would be an appropriate description string.</source>
+          <target state="translated">적절한 설명 문자열입니다.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>In custom exceptions, provide additional properties as needed</source>
+          <target state="translated">필요에 따라 사용자 지정 예외에서 추가 속성 제공</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful.</source>
+          <target state="translated">추가 정보가 유용한 프로그래밍 시나리오에 대해서만 예외에 설명 문자열 이외의 추가 속성을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.IO.FileNotFoundException</ph> provides the <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> property.</source>
+          <target state="translated">예를 들어, <ph id="ph1">@System.IO.FileNotFoundException</ph>은 <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> 속성을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Place throw statements so that the stack trace will be helpful</source>
+          <target state="translated">스택 추적이 도움이 되도록 throw 문 포함</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The stack trace begins at the statement where the exception is thrown and ends at the <ph id="ph1">`catch`</ph> statement that catches the exception.</source>
+          <target state="translated">스택 추적은 예외가 throw되는 문에서 시작하여 예외를 catch하는 <ph id="ph1">`catch`</ph> 문까지 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Use exception builder methods</source>
+          <target state="translated">예외 작성기 메서드 사용</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>It is common for a class to throw the same exception from different places in its implementation.</source>
+          <target state="translated">클래스는 구현된 여러 위치에서 동일한 예외를 throw하는 것이 일반적입니다.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To avoid excessive code, use helper methods that create the exception and return it.</source>
+          <target state="translated">코드를 많이 사용하지 않으려면 예외를 만들어 반환하는 도우미 메서드를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In some cases, it's more appropriate to use the exception's constructor to build the exception.</source>
+          <target state="translated">예외의 생성자를 사용하여 예외를 작성하는 것이 더 적합한 경우도 있습니다.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>An example is a global exception class such as <ph id="ph1">@System.ArgumentException,</ph></source>
+          <target state="translated">예를 들어 <ph id="ph1">@System.ArgumentException,</ph>과 같은 전역 예외 클래스가 있습니다.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Clean up intermediate results when throwing an exception</source>
+          <target state="translated">예외를 throw할 때 중간 결과 정리</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Callers should be able to assume that there are no side effects when an exception is thrown from a method.</source>
+          <target state="translated">호출자가 메서드에서 예외가 throw될 때 의도하지 않은 결과가 발생하지 않는다고 가정할 수 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.</source>
+          <target state="translated">예를 들어 하나의 계좌에서 출금한 후 다른 계좌에 입금하여 돈을 이체하는 코드가 있고 입금을 실행하는 동안 예외가 발생할 경우 출금이 적용되기를 원하지 않을 것입니다.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.</source>
+          <target state="translated">이 상황을 처리하는 한 가지 방법은 입금 트랜잭션에서 throw된 예외를 catch하고 출금을 롤백하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This example illustrates the use of <ph id="ph1">`throw`</ph> to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <ph id="ph2">@System.Exception.InnerException</ph> property.</source>
+          <target state="translated">이 예제에서는 <ph id="ph1">`throw`</ph>를 사용하여 원래 예외를 다시 throw하는 방법을 보여 줍니다. 이렇게 하면 호출자가 <ph id="ph2">@System.Exception.InnerException</ph> 속성을 검사하지 않아도 문제의 실제 원인을 쉽게 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>An alternative is to throw a new exception and include the original exception as the inner exception:</source>
+          <target state="translated">또는 새 예외를 throw하고 원래 예외를 내부 예외로 포함할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>To learn more about how exceptions work in .NET, see <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>.</source>
+          <target state="translated">.NET에서 예외가 작동하는 방식을 자세히 알아보려면 <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>(모든 개발자가 런타임 예외에 대해 알아야 할 사항)을 참조하세요.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
