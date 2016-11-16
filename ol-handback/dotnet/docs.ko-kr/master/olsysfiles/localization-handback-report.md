@@ -1,11 +1,49 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/libraries-with-vs.md) | HandedOffSuccess | [Details](#1566fc3cca5ba03c95bd784c8ec4f898ed13a96786)
+ [docs\core\versions\servicing.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/versions/servicing.md) | HandedOffSuccess | [Details](#d0bf81844526a7ad5a45e6ec8eba0a94b0e3399897)
 
 ## Item Details
+##### <a name='1566fc3cca5ba03c95bd784c8ec4f898ed13a96786'></a> Source: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/libraries-with-vs.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
+* Handoff Datetime: 2016-11-16 11:18:33
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs.ko-kr/blob/5763d3621e4a6b18933cf9dfc2badaa7c73b4ef3/docs/core/tutorials/libraries-with-vs.md)
+* Current Handback File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-16 16:09:50
+* Bilingual File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/ee630809f6502ca87bcd41c4a1959d932e1ad70d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-11 11:57:31
+* [Back to Top](#report-top)
+
+##### <a name='d0bf81844526a7ad5a45e6ec8eba0a94b0e3399897'></a> Source: [docs\core\versions\servicing.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/versions/servicing.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Handoff Datetime: 2016-11-16 11:18:33
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\versions\servicing.md](https://github.com/dotnet/docs.ko-kr/blob/5763d3621e4a6b18933cf9dfc2badaa7c73b4ef3/docs/core/versions/servicing.md)
+* Current Handback File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-16 16:09:50
+* Bilingual File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/ee630809f6502ca87bcd41c4a1959d932e1ad70d/ol-handback/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-11 11:57:31
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
