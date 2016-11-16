@@ -1,29 +1,47 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md) | HandedOffSuccess | [Details](#85768f2b6d95c5b30c8667928d45eee8b1524a9384)
+ [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/libraries-with-vs.md) | HandedOffSuccess | [Details](#1566fc3cca5ba03c95bd784c8ec4f898ed13a96786)
+ [docs\core\versions\servicing.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/versions/servicing.md) | HandedOffSuccess | [Details](#d0bf81844526a7ad5a45e6ec8eba0a94b0e3399897)
 
 ## Item Details
-##### <a name='85768f2b6d95c5b30c8667928d45eee8b1524a9384'></a> Source: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
+##### <a name='1566fc3cca5ba03c95bd784c8ec4f898ed13a96786'></a> Source: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/tutorials/libraries-with-vs.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf)
+* Handoff File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
 * Handoff Datetime: 2016-11-16 11:18:33
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\tutorials\cli-console-app-tutorial-advanced.md](https://github.com/dotnet/docs.ko-kr/blob/c0e1953819605962912fe57cf668a0a2b410a378/docs/core/tutorials/cli-console-app-tutorial-advanced.md)
-* Current Handback File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/497a55cecaea00ad42fedfa5b14554ef9c7780a7/ol-handback/dotnet/docs.ko-kr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf)
-* Current Handback Datetime: 2016-11-16 14:52:49
-* Bilingual File: [cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/497a55cecaea00ad42fedfa5b14554ef9c7780a7/ol-handback/dotnet/docs.ko-kr/master/ht-p1/cli-console-app-tutorial-advanced.3f8c5ceafb1629abd38cbc215ac9732c5ffb3006.ko-kr.xlf)
-* Bilingual Datetime: 2016-11-16 14:54:01
+* Current Target File: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs.ko-kr/blob/5763d3621e4a6b18933cf9dfc2badaa7c73b4ef3/docs/core/tutorials/libraries-with-vs.md)
+* Current Handback File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-16 16:09:50
+* Bilingual File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-16 16:10:48
+* [Back to Top](#report-top)
+
+##### <a name='d0bf81844526a7ad5a45e6ec8eba0a94b0e3399897'></a> Source: [docs\core\versions\servicing.md](https://github.com/dotnet/docs/blob/15c55a87beb64f265a164db918c7721c7690fadf/docs/core/versions/servicing.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Handoff Datetime: 2016-11-16 11:18:33
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\versions\servicing.md](https://github.com/dotnet/docs.ko-kr/blob/5763d3621e4a6b18933cf9dfc2badaa7c73b4ef3/docs/core/versions/servicing.md)
+* Current Handback File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-16 16:09:50
+* Bilingual File: [servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a1de54b8f2ea93a56ea8f6bb15b31403f09ae3da/ol-handback/dotnet/docs.ko-kr/master/ht-p1/servicing.4d980e0c369581b2fc77fdb265b9abd6c912b1e2.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-16 16:10:48
 * [Back to Top](#report-top)
 
 
