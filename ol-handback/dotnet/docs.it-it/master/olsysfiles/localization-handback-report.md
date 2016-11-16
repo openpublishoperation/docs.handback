@@ -1,78 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 5
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/deploying/applications.md) | Ignored | [Details](#e3825b880ef73e176fb23618d9814e2d54f692c832)
- [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/porting/nuget-packages.md) | Ignored | [Details](#3726a5f833bb2fae18a918072c85316984d0d46755)
- [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/quantifiers.md) | Ignored | [Details](#79637972770d3ab5d954d40285dc4f07e58d233f3231)
- [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/quick-ref.md) | Ignored | [Details](#f4319de43043605da63f469b59a5dfdb28badc8e3232)
- [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/regex-behavior.md) | Ignored | [Details](#fa0513a5b450742995bd86fca495ba9904e7361b3233)
 
 ## Item Details
-##### <a name='e3825b880ef73e176fb23618d9814e2d54f692c832'></a> Source: [docs\core\deploying\applications.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/deploying/applications.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='3726a5f833bb2fae18a918072c85316984d0d46755'></a> Source: [docs\core\porting\nuget-packages.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/core/porting/nuget-packages.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='79637972770d3ab5d954d40285dc4f07e58d233f3231'></a> Source: [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/quantifiers.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='f4319de43043605da63f469b59a5dfdb28badc8e3232'></a> Source: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/quick-ref.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='fa0513a5b450742995bd86fca495ba9904e7361b3233'></a> Source: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/base-types/regex-behavior.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
