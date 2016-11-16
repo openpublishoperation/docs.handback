@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\frameworks.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/frameworks.md) | Ignored | [Details](#82ba6f4abe200dc48158eac1ad3e3609feeda2c93286)
- [docs\standard\garbagecollection\gc.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/garbagecollection/gc.md) | Ignored | [Details](#0734347048742657b8e33a1fffae15448ecad4f33288)
 
 ## Item Details
-##### <a name='82ba6f4abe200dc48158eac1ad3e3609feeda2c93286'></a> Source: [docs\standard\frameworks.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/frameworks.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='0734347048742657b8e33a1fffae15448ecad4f33288'></a> Source: [docs\standard\garbagecollection\gc.md](https://github.com/dotnet/docs/blob/2c57b5cebd63b1d94b127cd269e3b319fb24dd97/docs/standard/garbagecollection/gc.md)
-* Status: Ignored
-* Target File: 
-* Handoff File: 
-* Handoff Datetime: 0001-01-01 00:00:00
-* Handoff Reason: Ignored
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
