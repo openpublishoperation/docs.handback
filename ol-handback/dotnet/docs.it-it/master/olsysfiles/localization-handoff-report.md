@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\about.md](https://github.com/dotnet/docs/blob/25ffe74610e938c23294654b35f095fb824d3068/docs/standard/about.md) | HandedOffSuccess | [Details](#f658a9f506c436d86282407d2cf40867f6717e4f3252)
+ [docs\core\preview3\tutorials\using-with-xplat-cli-msbuild.md](https://github.com/dotnet/docs/blob/ab71aab99505f211fe4adc86957eda4707761f1c/docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md) | HandedOffSuccess | [Details](#01b17021e79bcdb2dc69f97b709f4aa63dbab9aa90)
 
 ## Item Details
-##### <a name='f658a9f506c436d86282407d2cf40867f6717e4f3252'></a> Source: [docs\standard\about.md](https://github.com/dotnet/docs/blob/25ffe74610e938c23294654b35f095fb824d3068/docs/standard/about.md)
+##### <a name='01b17021e79bcdb2dc69f97b709f4aa63dbab9aa90'></a> Source: [docs\core\preview3\tutorials\using-with-xplat-cli-msbuild.md](https://github.com/dotnet/docs/blob/ab71aab99505f211fe4adc86957eda4707761f1c/docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [about.ad7aa428a901c640dfa039841c34b756e7aabd82.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/a419447ae381ee22c0ee8e4ac9d2e52e00a80a92/ol-handoff/dotnet/docs.it-it/master/ht-p2/about.ad7aa428a901c640dfa039841c34b756e7aabd82.it-it.xlf)
-* Handoff Datetime: 2016-11-17 08:47:14
+* Handoff File: [using-with-xplat-cli-msbuild.aa34c5f9c158bf8119e47e7ddb734c84d85be785.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/83fce2f4d6a859855f79e3351177cd27c3ff6e11/ol-handoff/dotnet/docs.it-it/master/ht-p1/using-with-xplat-cli-msbuild.aa34c5f9c158bf8119e47e7ddb734c84d85be785.it-it.xlf)
+* Handoff Datetime: 2016-11-17 18:47:24
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
