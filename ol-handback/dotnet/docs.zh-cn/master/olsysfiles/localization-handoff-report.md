@@ -1,57 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tutorials\index.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/core/preview3/tutorials/index.md) | HandedOffSuccess | [Details](#e318f7ca1a9091dad7480f270d62f78b82c12fbb84)
- [docs\core\preview3\tutorials\using-on-windows-vs-2017.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/core/preview3/tutorials/using-on-windows-vs-2017.md) | HandedOffSuccess | [Details](#4437f44523bcc4e8517de5b6be42a63439f817d788)
- [docs\toc.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/toc.md) | HandedOffSuccess | [Details](#fee813098026f83f991a765203d2777065d0138f3381)
 
 ## Item Details
-##### <a name='e318f7ca1a9091dad7480f270d62f78b82c12fbb84'></a> Source: [docs\core\preview3\tutorials\index.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/core/preview3/tutorials/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.c52ba92fea0b31b20529dfe903e92b7e46dfb8fb.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/4d8f623834b937d6a232db7d8e9e0f4d00060b21/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/index.c52ba92fea0b31b20529dfe903e92b7e46dfb8fb.zh-cn.xlf)
-* Handoff Datetime: 2016-11-17 04:43:40
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='4437f44523bcc4e8517de5b6be42a63439f817d788'></a> Source: [docs\core\preview3\tutorials\using-on-windows-vs-2017.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/core/preview3/tutorials/using-on-windows-vs-2017.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [using-on-windows-vs-2017.9435fc5adf06f6b3fb28f32b3d3c3f5df162a2ac.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/4d8f623834b937d6a232db7d8e9e0f4d00060b21/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/using-on-windows-vs-2017.9435fc5adf06f6b3fb28f32b3d3c3f5df162a2ac.zh-cn.xlf)
-* Handoff Datetime: 2016-11-17 04:43:40
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='fee813098026f83f991a765203d2777065d0138f3381'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/toc.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/4d8f623834b937d6a232db7d8e9e0f4d00060b21/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Handoff Datetime: 2016-11-17 04:43:40
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.zh-cn/blob/a7a75d4a1d52ffb2616047167d0c7222c7b78426/docs/toc.md)
-* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/3f2bce27bcf66455b685a34ce3a2d315d2c91c5e/ol-handback/dotnet/docs.zh-cn/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Current Handback Datetime: 2016-11-11 11:56:21
-* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/3f2bce27bcf66455b685a34ce3a2d315d2c91c5e/ol-handback/dotnet/docs.zh-cn/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-11 11:57:17
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
