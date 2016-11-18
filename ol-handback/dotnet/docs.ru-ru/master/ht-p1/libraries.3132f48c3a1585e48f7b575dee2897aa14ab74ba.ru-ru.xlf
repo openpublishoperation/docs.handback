@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">503cf3628ee317f701f467bddc4bcb5998b82af4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\libraries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b743c7373958ab8c3c389d1e913a132f6b59f512</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce6b4b0287e09e26cac417d6679fc5bdee3716e0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">Перенос в .NET Core — библиотеки</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">Перенос в .NET Core — библиотеки</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">Перенос в .NET Core — библиотеки</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.</source>
+          <target state="translated">С выпуском .NET Core 1.0 появилась возможность переносить существующий код библиотек, чтобы он мог выполняться на разных платформах.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article discusses the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.</source>
+          <target state="translated">В этой статье рассматриваются библиотека .NET Standard и недоступные технологии, объясняется меньшее число интерфейсов API, доступных в .NET Core 1.0, описывается использование средств, входящих в состав пакета SDK для предварительной версии 2 платформы .NET Core, а также рекомендуемые подходы к переносу кода.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Porting is a task that may take time, especially if you have a large codebase.</source>
+          <target state="translated">Перенос может потребовать немало времени, особенно если у вас большая база кода.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You should also be prepared to adapt the guidance here as needed to best fit your code.</source>
+          <target state="translated">Вам также следует быть готовыми адаптировать приведенные здесь рекомендации в соответствии с особенностями вашего кода.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.</source>
+          <target state="translated">Каждая база кода имеет свои отличия, поэтому в этой статье мы попытались дать наиболее общие рекомендации, но, возможно, вам потребуется отклониться от них и пойти своим путем.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Предварительные требования</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article assumes you are using Visual Studio 2015 or later on Windows.</source>
+          <target state="translated">В этой статье предполагается, что вы используете Visual Studio 2015 или более поздней версии в ОС Windows.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The bits required for building .NET Core code are not available on previous versions of Visual Studio.</source>
+          <target state="translated">Двоичные файлы, необходимые для сборки кода .NET Core, недоступны в предыдущих версиях Visual Studio.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This article also assumes that you understand the <bpt id="p1">[</bpt>recommended porting process<ept id="p1">](index.md)</ept> and that you have resolved any issues with <bpt id="p2">[</bpt>third-party dependencies<ept id="p2">](third-party-deps.md)</ept>.</source>
+          <target state="translated">В статье также предполагается, что вы знакомы с <bpt id="p1">[</bpt>рекомендуемым процессом переноса<ept id="p1">](index.md)</ept> и устранили все проблемы с <bpt id="p2">[</bpt>зависимостями сторонних разработчиков<ept id="p2">](third-party-deps.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Targeting the .NET Standard Library</source>
+          <target state="translated">Нацеливание на библиотеку .NET Standard</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The best way to build a cross-platform library for .NET Core is to target the <bpt id="p1">[</bpt>.NET Standard Library<ept id="p1">](../../standard/library.md)</ept>.</source>
+          <target state="translated">Лучший способ создания кроссплатформенной библиотеки для .NET Core — нацеливание на <bpt id="p1">[</bpt>библиотеку .NET Standard<ept id="p1">](../../standard/library.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.</source>
+          <target state="translated">Библиотека .NET Standard представляет собой формальную спецификацию интерфейсов API .NET, которые должны быть доступны во всех средах выполнения .NET.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is supported by the .NET Core runtime.</source>
+          <target state="translated">Она поддерживается средой выполнения .NET Core.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.</source>
+          <target state="translated">Это означает, что вам необходимо найти компромисс между интерфейсами API, которые можно использовать, и поддерживаемыми платформами, выбрав ту версию платформы .NET Standard, которая позволяет достичь нужного компромисса.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>As of right now, there are 7 different versions to consider: .NET Standard 1.0 through 1.6.</source>
+          <target state="translated">На данный момент существует 7 разных версий .NET Standard: от версии 1.0 до версии 1.6.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>If you pick a higher version, you get access to more APIs at the cost of running on fewer targets.</source>
+          <target state="translated">Выбирая более позднюю версию, вы получаете доступ к большему количеству интерфейсов API, но круг целевых платформ сужается.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you pick a lower version, your code can run on more targets but at the cost of fewer APIs available to you.</source>
+          <target state="translated">Если вы выберете более раннюю версию, ваш код сможет выполняться на большем количестве целевых платформ, но за счет сокращения количества доступных интерфейсов API.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For your convenience, here is a matrix of each .NET Standard version and each specific area it runs on:</source>
+          <target state="translated">Для удобства ниже приводится таблица, в которой сопоставлены все версии .NET Standard и поддерживаемые платформы.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Platform Name</source>
+          <target state="translated">Имя платформы</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Alias</source>
+          <target state="translated">Alias</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>.NET Standard</source>
+          <target state="translated">.NET Standard</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>netstandard</source>
+          <target state="translated">netstandard</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1,0</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>1.1</source>
+          <target state="translated">1.1</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>1.2</source>
+          <target state="translated">1.2</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>1.3</source>
+          <target state="translated">1.3</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>1.4</source>
+          <target state="translated">1.4</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>1.5</source>
+          <target state="translated">1.5</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>1.6</source>
+          <target state="translated">1.6</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>.NET Core</source>
+          <target state="translated">.NET Core</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>netcoreapp</source>
+          <target state="translated">netcoreapp</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1,0</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>.NET Framework</source>
+          <target state="translated">.NET Framework</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>net</source>
+          <target state="translated">net</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>4.6.2</source>
+          <target state="translated">4.6.2</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>4.6.3</source>
+          <target state="translated">4.6.3</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Mono/Xamarin Platforms</source>
+          <target state="translated">Платформы Mono и Xamarin</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Universal Windows Platform</source>
+          <target state="translated">Универсальная платформа Windows </target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>uap</source>
+          <target state="translated">uap</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>10.0</source>
+          <target state="translated">10.0</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <target state="translated">Windows</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>win</source>
+          <target state="translated">win</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Windows Phone</source>
+          <target state="translated">Windows Phone</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>wpa</source>
+          <target state="translated">wpa</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Windows Phone Silverlight</source>
+          <target state="translated">Windows Phone Silverlight</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>wp</source>
+          <target state="translated">wp</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>A key thing to understand is that <bpt id="p1">**</bpt>a project targeting a lower version cannot reference a project targeting a higher version<ept id="p1">**</ept>.</source>
+          <target state="translated">Очень важно понимать, что <bpt id="p1">**</bpt>проект, предназначенный для более ранней версии, не может ссылаться на проект, предназначенный для более поздней версии<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, a project targeting the .NET Platform Standard version 1.2 cannot reference projects that target .NET Platform Standard version 1.3 or higher.</source>
+          <target state="translated">Например, проект, предназначенный для платформы .NET Standard версии 1.2, не может ссылаться на проекты, предназначенные для платформы .NET Standard версии 1.3 или более поздней.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Projects <bpt id="p1">**</bpt>can<ept id="p1">**</ept> reference lower versions, though, so a project targeting .NET Platform Standard 1.3 can reference a project targeting .NET Platform Standard 1.2 or lower.</source>
+          <target state="translated">Однако проекты <bpt id="p1">**</bpt>могут<ept id="p1">**</ept> ссылаться на более ранние версии, то есть проект, предназначенный для платформы .NET Standard 1.3, может ссылаться на проект, предназначенный для платформы .NET Standard 1.2 или более ранней.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.</source>
+          <target state="translated">Рекомендуется выбирать самую раннюю возможную версию .NET Standard и использовать ее в рамках всего проекта.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Read more in <bpt id="p1">[</bpt>.NET Platform Standard Library<ept id="p1">](../../standard/library.md)</ept>.</source>
+          <target state="translated">Дополнительные сведения см. в разделе <bpt id="p1">[</bpt>Библиотека платформы .NET Standard<ept id="p1">](../../standard/library.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Key Technologies Not Yet Available on the .NET Standard or .NET Core</source>
+          <target state="translated">Ключевые технологии, пока не доступные в .NET Standard или .NET Core</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You may be using some technologies available for the .NET Framework that are not currently available for .NET Core.</source>
+          <target state="translated">Возможно, вы используете некоторые технологии .NET Framework, которые в настоящее время недоступны для .NET Core.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Each of the following sub-sections corresponds to one of those technologies.</source>
+          <target state="translated">Каждый из следующих подразделов посвящен одной из таких технологий.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Alternative options are listed if it is feasible for you to adopt them.</source>
+          <target state="translated">Приводятся альтернативные варианты, которые можно применить, если это представляется целесообразным.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>App Domains</source>
+          <target state="translated">Домены приложений</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>AppDomains can be used for different purposes on the .NET Framework.</source>
+          <target state="translated">Домены приложений могут использоваться в .NET Framework в различных целях.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For code isolation, we recommend separate processes and/or containers as an alternative.</source>
+          <target state="translated">Для изоляции кода мы рекомендуем в качестве альтернативы отдельные процессы или контейнеры.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For dynamic loading of assemblies, we recommend the new  <ph id="ph1">@System.Runtime.Loader.AssemblyLoadContext</ph> class.</source>
+          <target state="translated">Для динамической загрузки сборок рекомендуется использовать новый класс <ph id="ph1">@System.Runtime.Loader.AssemblyLoadContext</ph>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Remoting</source>
+          <target state="translated">Удаленное взаимодействие</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as <bpt id="p1">[</bpt>Pipes<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/system.io.pipes)</ept> or <bpt id="p2">[</bpt>Memory Mapped Files<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile)</ept>.</source>
+          <target state="translated">Для взаимодействия между процессами вместо удаленного взаимодействия можно применять механизмы межпроцессного взаимодействия (IPC), такие как <bpt id="p1">[</bpt>каналы<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/system.io.pipes)</ept> и <bpt id="p2">[</bpt>отображенные в память файлы<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile)</ept>.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP.</source>
+          <target state="translated">Для взаимодействия между компьютерами в качестве альтернативы можно использовать сетевое решение, желательно протокол на основе обычного текста с низкими издержками, например HTTP.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>KestrelHttpServer<ept id="p1">](https://github.com/aspnet/KestrelHttpServer)</ept>, the web server used by ASP.NET Core, is an option here.</source>
+          <target state="translated">Как вариант можно рассмотреть <bpt id="p1">[</bpt>KestrelHttpServer<ept id="p1">](https://github.com/aspnet/KestrelHttpServer)</ept>, веб-сервер, используемый платформой ASP.NET Core.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Remote proxy generation via <bpt id="p1">[</bpt>Castle.Core<ept id="p1">](https://github.com/castleproject/Core)</ept> is also an option to consider.</source>
+          <target state="translated">Еще один вариант — создание удаленного прокси-сервера посредством <bpt id="p1">[</bpt>Castle.Core<ept id="p1">](https://github.com/castleproject/Core)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Binary Serialization</source>
+          <target state="translated">Двоичная сериализация</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>As an alternative to Binary Serialization, there are multiple different serialization technologies to choose.</source>
+          <target state="translated">В качестве альтернативы двоичной сериализации имеется множество различных технологий сериализации.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You should choose one that fits your goals for formatting and footprint.</source>
+          <target state="translated">Следует выбрать ту из них, которая соответствует вашим требованиям к форматированию и размеру данных.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Popular choices include:</source>
+          <target state="translated">Вот некоторые популярные варианты:</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>JSON.NET<ept id="p1">](http://www.newtonsoft.com/json)</ept> for JSON</source>
+          <target state="translated"><bpt id="p1">[</bpt>JSON.NET<ept id="p1">](http://www.newtonsoft.com/json)</ept> для JSON;</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Runtime.Serialization.DataContractSerializer</ph> for both XML and JSON</source>
+          <target state="translated"><ph id="ph1">@System.Runtime.Serialization.DataContractSerializer</ph> — для XML и JSON</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Xml.Serialization.XmlSerializer</ph> for XML</source>
+          <target state="translated"><ph id="ph1">@System.Xml.Serialization.XmlSerializer</ph> — для XML</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>protobuf-net<ept id="p1">](https://github.com/mgravell/protobuf-net)</ept> for Protocol Buffers</source>
+          <target state="translated"><bpt id="p1">[</bpt>protobuf-net<ept id="p1">](https://github.com/mgravell/protobuf-net)</ept> для буферов протоколов.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Refer to the linked resources to learn about their benefits and choose the ones for your needs.</source>
+          <target state="translated">Чтобы получить сведения о преимуществах каждого из этих вариантов и выбрать наиболее подходящий, перейдите по соответствующим ссылкам.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>There are many other serialization formats and technologies out there, many of which are open source.</source>
+          <target state="translated">Существует также множество других форматов и технологий сериализации, многие из которых имеют открытый исходный код.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Sandboxes</source>
+          <target state="translated">"Песочницы"</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>As an alternative to Sandboxing, you can use operating system provided security boundaries, such as user accounts for running processes with the least set of privileges.</source>
+          <target state="translated">В качестве альтернативы "песочницам" можно применять ограничения безопасности, обеспечиваемые операционной системой, например учетные записи пользователей для выполнения процессов с минимальным набором прав.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Overview of <ph id="ph1">`project.json`</ph></source>
+          <target state="translated">Общие сведения о <ph id="ph1">`project.json`</ph></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>project.json project model<ept id="p1">](../tools/project-json.md)</ept> is a project model that ships with .NET Core SDK 1.0 Preview 2.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Модель проекта project.json<ept id="p1">](../tools/project-json.md)</ept> — это модель проекта, входящая в состав предварительной версии 2 пакета SDK для .NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>It offers some benefits you may wish to take advantage of today:</source>
+          <target state="translated">Она предлагает ряд преимуществ, которые могут вам потребоваться:</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Simple multitargeting where target-specific assemblies can be generated from a single build.</source>
+          <target state="translated">простая настройка для различных версий: целевые сборки можно создавать на основе одной и той же сборки;</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The ability to easily generate a NuGet package with a build of the project.</source>
+          <target state="translated">возможность легко создать пакет NuGet со сборкой проекта;</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>No need to list files in your project file.</source>
+          <target state="translated">отсутствие необходимости в указании списка файлов в файле проекта;</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Unification of NuGet package dependencies and project-to-project dependencies.</source>
+          <target state="translated">унификация зависимостей пакетов NuGet и межпроектных зависимостей.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>While <ph id="ph1">`project.json`</ph> is eventually going to be deprecated, it can be used to build libraries on the .NET Standard today.</source>
+          <target state="translated">Хотя модель проекта <ph id="ph1">`project.json`</ph> в конечном итоге устареет, в настоящее время ее можно использовать для сборки библиотек на основе .NET Standard.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The Project File: <ph id="ph1">`project.json`</ph></source>
+          <target state="translated">Файл проекта: <ph id="ph1">`project.json`</ph></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>.NET Core projects are defined by a directory containing a <ph id="ph1">`project.json`</ph> file.</source>
+          <target state="translated">Проекты .NET Core определяются каталогом, содержащим файл <ph id="ph1">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>This file is where aspects of the project are declared, such as package dependencies, compiler configuration, runtime configuration, and more.</source>
+          <target state="translated">Именно в этом файле объявляются различные аспекты проекта, в том числе зависимости пакетов, конфигурация компилятора, конфигурация среды выполнения и многое другое.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet restore`</ph> command reads this project file, restores all dependencies of the project, and generates a <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">Команда <ph id="ph1">`dotnet restore`</ph> считывает этот файл проекта, восстанавливает все зависимости для проекта и создает файл <ph id="ph2">`project.lock.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This file contains all the necessary information the build system needs to build the project.</source>
+          <target state="translated">Этот файл содержит все сведения, которые требуются системе сборки для сборки проекта.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>To learn more about the <ph id="ph1">`project.json`</ph> file, read the <bpt id="p1">[</bpt>project.json reference<ept id="p1">](../tools/project-json.md)</ept>.</source>
+          <target state="translated">Дополнительные сведения о файле <ph id="ph1">`project.json`</ph> см.в <bpt id="p1">[</bpt>справке по файлу project.json<ept id="p1">](../tools/project-json.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The Solution File: <ph id="ph1">`global.json`</ph></source>
+          <target state="translated">Файл решения: <ph id="ph1">`global.json`</ph></target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file is an optional file to include in a solution which contains multiple projects.</source>
+          <target state="translated"><ph id="ph1">`global.json`</ph> — это необязательный файл, который можно включить в решение, содержащее несколько проектов.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>It typically resides in the root directory of a set of projects.</source>
+          <target state="translated">Обычно он находится в корневом каталоге набора проектов.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>It can be used to inform the build system of different subdirectories which can contain projects.</source>
+          <target state="translated">С его помощью можно сообщать системе сборки о различных подкаталогах, содержащих проекты.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This is for larger systems composed of several projects.</source>
+          <target state="translated">Этот файл предназначен для больших систем, состоящих из нескольких проектов.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>For example, you can organize your code into top-level <ph id="ph1">`/src`</ph> and <ph id="ph2">`/test`</ph> folder as such:</source>
+          <target state="translated">Например, можно разделить код на папку <ph id="ph1">`/src`</ph> верхнего уровня и папку <ph id="ph2">`/test`</ph> следующим образом:</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can then have multiple <ph id="ph1">`project.json`</ph> files under their own sub-folders inside <ph id="ph2">`/src`</ph> and <ph id="ph3">`/test`</ph>.</source>
+          <target state="translated">Затем можно создавать файлы <ph id="ph1">`project.json`</ph> в собственных вложенных папках в папках <ph id="ph2">`/src`</ph> и <ph id="ph3">`/test`</ph>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>How to Multitarget with <ph id="ph1">`project.json`</ph></source>
+          <target state="translated">Настройка для различных версий с помощью <ph id="ph1">`project.json`</ph></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Many libraries multitarget to have as wide of a reach as possible.</source>
+          <target state="translated">Многие библиотеки настраиваются для различных версий, чтобы иметь максимально возможный охват.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>With .NET Core, multitargeting is a "first class citizen", meaning that you can easily generate platform-specific assemblies with a single build.</source>
+          <target state="translated">В .NET Core настройка для различных версий — одно из основных преимуществ, так как вы можете легко создавать сборки для конкретных платформ на основе одной единственной сборки.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Multitargeting is as simple as adding the correct Target Framework Moniker (TFM) to your <ph id="ph1">`project.json`</ph> file, using the correct dependencies for each target (<ph id="ph2">`dependencies`</ph> for .NET Core and <ph id="ph3">`frameworkAssemblies`</ph> for .NET Framework), and potentially using <ph id="ph4">`#if`</ph> directives to conditionally compile the source code for platform-specific API usage.</source>
+          <target state="translated">Чтобы выполнить настройку для различных версий, нужно всего лишь добавить правильный моникер целевой платформы (TFM) в файл <ph id="ph1">`project.json`</ph>, использовать правильные зависимости для каждой целевой платформы (<ph id="ph2">`dependencies`</ph> для .NET Core и <ph id="ph3">`frameworkAssemblies`</ph> для .NET Framework), а также при необходимости использовать директивы <ph id="ph4">`#if`</ph> с целью условной компиляции исходного кода для использования API конкретных платформ.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>For example, imagine you are building a library where you wanted to perform some network operations, and you wanted that library to run on all .NET Framework versions, a Portable Class Library (PCL) Profile, and .NET Core.</source>
+          <target state="translated">Предположим, что вы создаете библиотеку, выполняющую некоторые сетевые операции, и вы хотите, чтобы она выполнялась во всех версиях .NET Framework, в профиле переносимой библиотеки классов (PCL) и в .NET Core.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For .NET Core and .NET Framework 4.5+ targets, you may use <ph id="ph1">`System.Net.Http`</ph> library and <ph id="ph2">`async`</ph><ph id="ph3">/</ph><ph id="ph4">`await`</ph>.</source>
+          <target state="translated">Для целевых платформ .NET Core и .NET Framework 4.5 или более поздних версий можно использовать библиотеки <ph id="ph1">`System.Net.Http`</ph> и <ph id="ph2">`async`</ph><ph id="ph3">/</ph><ph id="ph4">`await`</ph>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>However, for earlier versions of .NET Framework, those APIs aren't available.</source>
+          <target state="translated">Однако для более ранних версий .NET Framework эти интерфейсы API недоступны.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Here's a sample <ph id="ph1">`frameworks`</ph> section for a <ph id="ph2">`project.json`</ph> that targets the .NET Framework versions 2.0, 3.5, 4.0, 4.5, and .NET Standard 1.6:</source>
+          <target state="translated">Вот пример раздела <ph id="ph1">`frameworks`</ph> файла <ph id="ph2">`project.json`</ph>, предназначенного для версий .NET Framework 2.0, 3.5, 4.0, 4.5 и .NET Standard 1.6.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Note that PCL targets are special: they require you to specify a build definition for the compiler to recognize, and they require you to specify all of the assemblies you use, including <ph id="ph1">`mscorlib`</ph>.</source>
+          <target state="translated">Обратите внимание на то, что нацеливание на PCL осуществляется особым образом: необходимо указать определение сборки, распознаваемое компилятором, а также все используемые сборки, включая <ph id="ph1">`mscorlib`</ph>.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Your source code could then use the dependencies like this:</source>
+          <target state="translated">После этого в исходном коде можно использовать зависимости следующим образом:</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Note that all of the .NET Framework and .NET Standard targets have names recognized by the compiler:</source>
+          <target state="translated">Обратите внимание на то, что все целевые платформы .NET Framework и .NET Standard имеют имена, распознаваемые компилятором:</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>As mentioned above, if you are targeting a PCL, then you will have to specify a build definition for the compiler to understand.</source>
+          <target state="translated">Как было сказано ранее, при нацеливании на PCL необходимо указать определение сборки, распознаваемое компилятором.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>There is no default definition that the compiler can use.</source>
+          <target state="translated">Определения по умолчанию, которое может использовать компилятор, нет.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Using <ph id="ph1">`project.json`</ph> in Visual Studio</source>
+          <target state="translated">Использование файла <ph id="ph1">`project.json`</ph> в Visual Studio</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You have two options for using <ph id="ph1">`project.json`</ph> in Visual Studio:</source>
+          <target state="translated">Использовать <ph id="ph1">`project.json`</ph> в Visual Studio можно двумя способами:</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>A new xproj project type.</source>
+          <target state="translated">новый тип проекта xproj;</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>A retargeted PCL project which supports .NET Standard.</source>
+          <target state="translated">перенацеленный проект PCL, поддерживающий .NET Standard.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>There are different benefits and drawbacks for each.</source>
+          <target state="translated">У каждого способа есть свои преимущества и недостатки.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When to Pick an Xproj Project</source>
+          <target state="translated">Когда следует выбирать проект Xproj</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The new Xproj project system in Visual Studio utilizes the capabilities of the <ph id="ph1">`project.json`</ph>-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.</source>
+          <target state="translated">Новая система проектов Xproj в Visual Studio использует возможности модели проекта на основе <ph id="ph1">`project.json`</ph> для обеспечения двух основных преимуществ в дополнение к возможностям существующих типов проектов: простая настройка для разных версий путем создания нескольких сборок и возможность создать пакет NuGet непосредственно при сборке.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>However, it comes at the cost of lacking certain features you may use, such as:</source>
+          <target state="translated">Однако в то же время она лишена ряда возможностей, которые вы, возможно, используете, таких как:</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Support for F# or Visual Basic</source>
+          <target state="translated">поддержка F# или Visual Basic;</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Generating satellite assemblies with localized resource strings</source>
+          <target state="translated">создание вспомогательных сборок с локализованными строками ресурсов;</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Directly referencing a <ph id="ph1">`.dll`</ph> file on the filesystem</source>
+          <target state="translated">прямые ссылки на файл <ph id="ph1">`.dll`</ph> в файловой системе;</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The ability to reference a csproj-based project in the Reference Manager (depending on the <ph id="ph1">`.dll`</ph> file directly is supported, though)</source>
+          <target state="translated">возможность ссылаться на проект на основе csproj в диспетчере ссылок (однако прямое использование файла <ph id="ph1">`.dll`</ph> поддерживается).</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>If your project needs are relatively minimal and you can take advantage of the new features of xproj, you should pick it as your project system.</source>
+          <target state="translated">Если потребности проекта сравнительно невелики и вы можете использовать новые возможности xproj, следует выбрать эту систему проектов.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This can be done in Visual Studio as such:</source>
+          <target state="translated">Чтобы сделать это в Visual Studio, выполните указанные ниже действия:</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Ensure you are using Visual Studio 2015 or later.</source>
+          <target state="translated">Необходимо использовать Visual Studio 2015 или более поздней версии.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Select File | New Project.</source>
+          <target state="translated">Выберите "Файл" &gt; "Создать проект".</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Select ".NET Core" under Visual C#.</source>
+          <target state="translated">В узле Visual C# выберите элемент .NET Core.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Select the "Class Library (.NET Core)" template.</source>
+          <target state="translated">Выберите шаблон "Библиотека классов (.NET Core)".</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>When to Pick a PCL project</source>
+          <target state="translated">Когда следует выбирать проект PCL</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You can target .NET Core with the traditional project system in Visual Studio, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.</source>
+          <target state="translated">Для нацеливания на .NET Core можно использовать традиционную систему проектов в Visual Studio. Для этого создайте переносимую библиотеку классов (PCL) и выберите элемент .NET Core в диалоговом окне настройки проекта.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Then you'll need to retarget the project to be based on the .NET Standard:</source>
+          <target state="translated">Затем вам потребуется перенацелить проект так, чтобы он основывался на платформе .NET Standard:</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Right-click on the project file in Visual Studio and select Properties.</source>
+          <target state="translated">Щелкните правой кнопкой мыши файл проекта в Visual Studio и выберите пункт "Свойства".</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Under Build, select "Convert to .NET Standard".</source>
+          <target state="translated">В разделе "Сборка" выберите "Преобразовать в .NET Standard".</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you have more advanced project system needs, this should be your choice.</source>
+          <target state="translated">Если требования к системе проектов сложнее, выбор за вами.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Note that if you wish to multitarget by generating platform-specific assemblies like with the <ph id="ph1">`xproj`</ph> project system, you'll need to create a "Bait and Switch" PCL, as described in <bpt id="p1">[</bpt>How to Make Portable Class Libraries Work for You<ept id="p1">](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/)</ept>.</source>
+          <target state="translated">Обратите внимание на то, что если вам необходимо выполнить настройку для разных версий путем создания сборок для конкретных платформ, как с помощью системы проектов <ph id="ph1">`xproj`</ph>, то вам потребуется создать библиотеку PCL "с подменой", как описано в разделе <bpt id="p1">[</bpt>Обеспечение правильной работы переносимых библиотек классов<ept id="p1">](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/)</ept>.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Retargeting your .NET Framework Code to .NET Framework 4.6.2</source>
+          <target state="translated">Перенацеливание кода .NET Framework на версию .NET Framework 4.6.2</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>If your code is not targeting .NET Framework 4.6.2, it's recommended that you retarget.</source>
+          <target state="translated">Если ваш код не предназначен для платформы .NET Framework 4.6.2, рекомендуется перенацелить его.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.</source>
+          <target state="translated">Это позволит использовать альтернативные интерфейсы API в случаях, когда .NET Standard не поддерживает существующие интерфейсы API.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For each of your projects in Visual Studio you wish to port, do the following:</source>
+          <target state="translated">Для каждого проекта в Visual Studio, который нужно перенести, выполните указанные ниже действия:</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Right-click on the project and select Properties</source>
+          <target state="translated">Щелкните проект правой кнопкой мыши и выберите пункт "Свойства".</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In the "Target Framework" dropdown, select ".NET Framework 4.6.2".</source>
+          <target state="translated">В раскрывающемся списке "Целевая рабочая среда" выберите значение .NET Framework 4.6.2.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Recompile your projects.</source>
+          <target state="translated">Перекомпилируйте проекты.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">Вот и все!</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Because your projects now target .NET Framework 4.6.2, you can use that version of .NET Framework as your base for porting code.</source>
+          <target state="translated">Так как ваши проекты теперь предназначены для .NET Framework 4.6.2, вы можете использовать эту версию .NET Framework в качестве основы для переноса кода.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Determining the Portability of Your Code</source>
+          <target state="translated">Определение переносимости кода</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report that you can begin to analyze.</source>
+          <target state="translated">Следующий шаг — запуск анализатора переносимости API (ApiPort) для создания отчета о переносимости и его последующий анализ.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You'll need to make sure you understand the <bpt id="p1">[</bpt>API Portability tool (ApiPort)<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> and can generate portability reports for targeting .NET Core.</source>
+          <target state="translated">Вам необходимо уметь работать со <bpt id="p1">[</bpt>средством переносимости API (ApiPort)<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> и создавать отчеты о переносимости для нацеливания на .NET Core.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>How you do this will likely vary based on your needs and personal tastes.</source>
+          <target state="translated">Выполняемые действия могут различаться в зависимости от ваших потребностей и личных предпочтений.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>What follows are a few different approaches - you may find yourself mixing each approach depending on how your code is structured.</source>
+          <target state="translated">Ниже описываются несколько разных подходов — вы можете использовать их в различных сочетаниях в зависимости от структуры кода.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Dealing Primarily with the Compiler</source>
+          <target state="translated">Работа в первую очередь с компилятором</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>This approach may be the best for small projects or projects which don't use many .NET Framework APIs.</source>
+          <target state="translated">Такой подход может быть оптимальным для небольших проектов или проектов, в которых используется небольшое количество интерфейсов API .NET Framework.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The approach is very simple:</source>
+          <target state="translated">Этот подход очень прост:</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Optionally run ApiPort on your project.</source>
+          <target state="translated">При необходимости запустите средство ApiPort для проекта.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>If ApiPort was ran, take a quick glance at the report.</source>
+          <target state="translated">Если средство ApiPort запускалось, вкратце просмотрите отчет.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Copy all of your code over into a new .NET Core project.</source>
+          <target state="translated">Скопируйте весь код в новый проект .NET Core.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Work out compiler errors until it compiles, referring to the portability report if needed.</source>
+          <target state="translated">Исправьте ошибки компилятора, пока код не будет компилироваться. При необходимости обращайтесь к отчету о совместимости.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Repeat as needed.</source>
+          <target state="translated">Повторите эту процедуру, если необходимо.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Although this approach is very unstructured, the code-focused approach can lead to resolving any issues quickly, and may be the best approach for smaller projects or libraries.</source>
+          <target state="translated">Хотя такой подход отличается низкой систематичностью, ориентация на код может помочь быстро устранить все проблемы и оказаться оптимальной для небольших проектов или библиотек.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>A project that contains only data models may be an ideal candidate here.</source>
+          <target state="translated">Наиболее подходящим здесь может быть проект, содержащий только модели данных.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Staying on the .NET Framework until Portability Issues are Resolved</source>
+          <target state="translated">Использование .NET Framework до устранения проблем переносимости</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>This approach may be the best if you prefer to have code that compiles during the entire process.</source>
+          <target state="translated">Такой подход может быть оптимальным, если вам нужен код, который компилируется на протяжении всего процесса.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>The approach is as follows:</source>
+          <target state="translated">Он выглядит следующим образом.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Run ApiPort on a project.</source>
+          <target state="translated">Запустите средство ApiPort для проекта.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Address issues by using different APIs which are portable.</source>
+          <target state="translated">Устраните проблемы, используя другие интерфейсы API, являющиеся переносимыми.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Keep note of any areas where you can't use a direct alternative.</source>
+          <target state="translated">Запомните области, для которых нет прямых альтернатив.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Repeat steps 1-3 for all projects you're porting until you're confident each is ready to be copied over into a .NET Core project.</source>
+          <target state="translated">Повторяйте шаги 1–3 для всех переносимых проектов, пока вы не будете уверены в том, что каждый из них готов к копированию в проект .NET Core.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Copy the code into a new .NET Core projects.</source>
+          <target state="translated">Скопируйте код в новые проекты .NET Core.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Work out any issues that you've kept note of.</source>
+          <target state="translated">Разрешите проблемы, которые вы запомнили ранее.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>This careful approach is more structured than simply working out compiler errors, but it is still relatively code-focused and has the benefit of always having code that can compile.</source>
+          <target state="translated">Такой тщательный подход является более систематичным, чем простое устранение ошибок компилятора, но он по-прежнему в некоторой степени ориентирован на код и имеет то преимущество, что код является компилируемым на всех этапах.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The way you resolve certain issues that couldn't be addressed by just using another API can vary greatly.</source>
+          <target state="translated">Способы устранения некоторых проблем, которые не далось разрешить использованием другого интерфейса API, могут быть самыми разными.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>You may find that you need to develop a more comprehensive plan for certain projects, which is covered as the next approach.</source>
+          <target state="translated">Для некоторых проектов может оказаться необходимым разработать более детальный план. Эта задача рассматривается в следующем подходе.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Developing a Comprehensive Plan of Attack</source>
+          <target state="translated">Разработка детального плана</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>This approach may be best for larger and more complex projects, where restructuring of code or rewriting certain areas may be necessary to support .NET Core.</source>
+          <target state="translated">Этот подход может быть оптимальным для более крупных и сложных проектов, в которых для поддержки .NET Core может потребоваться реструктурировать код или повторно написать некоторые части.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The approach is as follows:</source>
+          <target state="translated">Он выглядит следующим образом.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Run ApiPort on a project.</source>
+          <target state="translated">Запустите средство ApiPort для проекта.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Understand where in your code each non-portable type is being used and how that affects overall portability.</source>
+          <target state="translated">Определите, в каких местах кода используется каждый непереносимый тип и как он влияет на переносимость в целом.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">1.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Understand the nature of those types.</source>
+          <target state="translated">Изучите особенности этих типов.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Are they small in number, but used frequently?</source>
+          <target state="translated">Их немного, но они часто используются?</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Are they large in number, but used infrequently?</source>
+          <target state="translated">Или их много, но используются они нечасто?</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Is their use concentrated, or is it spread throughout your code?</source>
+          <target state="translated">Ограничена ли область их использования или они распределены по всему коду?</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">2.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Is it easy to isolate code that isn't portable so you can deal with it more easily?</source>
+          <target state="translated">Можно ли легко изолировать непереносимый код, чтобы с ним было проще работать?</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>c.</source>
+          <target state="translated">В.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Would you need to refactor your code?</source>
+          <target state="translated">Требуется ли рефакторинг кода?</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>d.</source>
+          <target state="translated">Г.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>For those types which aren't portable, are there alternative APIs that accomplish the same task?</source>
+          <target state="translated">Есть ли для непереносимых типов альтернативные интерфейсы API, выполняющие те же задачи?</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>For example, if you're using the <ph id="ph1">`WebClient`</ph> class, you may be able to use the <ph id="ph2">`HttpClient`</ph> class instead.</source>
+          <target state="translated">Например, если используется класс <ph id="ph1">`WebClient`</ph>, вместо него можно использовать класс <ph id="ph2">`HttpClient`</ph>.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>e.</source>
+          <target state="translated">Д.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Are there different portable APIs you can use to accomplish a task, even if it's not a drop-in replacement?</source>
+          <target state="translated">Есть ли другие переносимые интерфейсы API, которые можно использовать для выполнения задачи, даже если это не совсем равноценная замена?</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For example, if you're using <ph id="ph1">`XmlSchema`</ph> to help parse XML, but you don't require XML schema discovery, you could use <ph id="ph2">`System.Linq.Xml`</ph> APIs and hand-parse the data.</source>
+          <target state="translated">Например, если вы используете <ph id="ph1">`XmlSchema`</ph> для анализа XML, но вам не требуется обнаружение схемы XML, вы можете использовать интерфейсы API <ph id="ph2">`System.Linq.Xml`</ph> и анализировать данные вручную.</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>If you have assemblies that are difficult to port, is it worth leaving them on .NET Framework for now?</source>
+          <target state="translated">Если у вас есть сборки, которые трудно перенести, возможно, пока стоит оставить их в .NET Framework?</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Here are some things to consider:</source>
+          <target state="translated">Следует учесть ряд факторов:</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">1.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework- or Windows-specific functionality.</source>
+          <target state="translated">В библиотеке могут быть функции, которые несовместимы с .NET Core, так как они слишком тесно связаны с возможностями .NET Framework или Windows.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features for the time being?</source>
+          <target state="translated">Возможно, пока стоит отказаться от этих функций и выпустить версию библиотеки для .NET Core с ограниченной функциональностью?</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">2.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Would a refactor help here?</source>
+          <target state="translated">Поможет ли в этом случае рефакторинг?</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Is it reasonable to write your own implementation of an unavailable .NET Framework API?</source>
+          <target state="translated">Целесообразно ли написание собственной реализации недоступного интерфейса API .NET Framework?</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>You could consider instead copying, modifying, and using code from the <bpt id="p1">[</bpt>.NET Framework Reference Source<ept id="p1">](https://github.com/Microsoft/referencesource)</ept>.</source>
+          <target state="translated">Вместо этого можно рассмотреть возможность копирования, изменения и использования кода из <bpt id="p1">[</bpt>библиотеки эталонного исходного кода .NET Framework<ept id="p1">](https://github.com/Microsoft/referencesource)</ept>.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>It's licensed under the <bpt id="p1">[</bpt>MIT License<ept id="p1">](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt)</ept>, so you have significant freedom in doing this.</source>
+          <target state="translated">Он предоставляется по <bpt id="p1">[</bpt>лицензии MIT<ept id="p1">](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt)</ept>, поэтому делать это можно достаточно свободно.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Just be sure to properly attribute Microsoft in your code!</source>
+          <target state="translated">Только не забывайте соответствующим образом упоминать корпорацию Майкрософт в своем коде.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Repeat this process as needed for different projects.</source>
+          <target state="translated">При необходимости повторите этот процесс для различных проектов.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Once you have a plan, execute that plan.</source>
+          <target state="translated">Разработав план, выполните его.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The analysis phase could take some time depending on how large your codebase is.</source>
+          <target state="translated">Этап анализа может занять некоторое время в зависимости от объема базы кода.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan can save you a lot of time in the long run, particularly if you have a more complex codebase.</source>
+          <target state="translated">Потратив некоторое время на этот этап, чтобы тщательно проанализировать требуемый объем изменений и разработать план, вы сможете сэкономить много времени в долгосрочной перспективе, особенно если у вас сложная база кода.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.6.2, making this a more structured version of the previous approach.</source>
+          <target state="translated">План может предусматривать внесение существенных изменений в базу кода с сохранением нацеливания на .NET Framework 4.6.2, что делает этот подход более структурированным по сравнению с предыдущим.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>How you go about executing your plan will be dependent on your codebase.</source>
+          <target state="translated">Способ реализации плана зависит от базы кода.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Mixing Approaches</source>
+          <target state="translated">Сочетание подходов</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>It's likely that you'll mix the above approaches on a per-project basis.</source>
+          <target state="translated">В каждом конкретном случае, скорее всего, потребуется использовать описанные выше подходы в разных сочетаниях.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>You should do what makes the most sense to you and for your codebase.</source>
+          <target state="translated">Выбирайте наиболее подходящие варианты для себя и вашей базы коды.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Porting your Tests</source>
+          <target state="translated">Перенос тестов</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core.</source>
+          <target state="translated">Чтобы гарантировать правильную работу кода после его переноса в .NET Core, лучше всего тестировать его в процессе переноса.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>To do this, you'll need to use a testing framework that will build and run tests for .NET Core.</source>
+          <target state="translated">Для этого потребуется использовать платформу тестирования, которая будет выполнять сборку и запуск тестов для .NET Core.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Currently, you have three options:</source>
+          <target state="translated">В настоящее время имеются три варианта:</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>xUnit<ept id="p1">](https://xunit.github.io/)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>xUnit<ept id="p1">](https://xunit.github.io/)</ept></target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Getting Started<ept id="p1">](http://xunit.github.io/docs/getting-started-dnx.html)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Начало работы<ept id="p1">](http://xunit.github.io/docs/getting-started-dnx.html)</ept></target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Tool to convert an MSTest project to xUnit<ept id="p1">](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Средство для преобразования проекта MSTest в xUnit<ept id="p1">](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)</ept></target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NUnit<ept id="p1">](http://www.nunit.org/)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NUnit<ept id="p1">](http://www.nunit.org/)</ept></target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Getting Started<ept id="p1">](https://github.com/nunit/docs/wiki/Installation)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Начало работы<ept id="p1">](https://github.com/nunit/docs/wiki/Installation)</ept></target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Blog post about migrating from MSTest to NUnit<ept id="p1">](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Запись блога о миграции из MSTest в NUnit<ept id="p1">](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)</ept></target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>MSTest<ept id="p1">](https://msdn.microsoft.com/library/ms243147.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>MSTest<ept id="p1">](https://msdn.microsoft.com/library/ms243147.aspx)</ept></target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Recommended Approach to Porting</source>
+          <target state="translated">Рекомендуемый подход к переносу</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Finally, porting the code itself!</source>
+          <target state="translated">Наконец, перенесите сам код.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Ultimately, the actual porting effort will depend heavily on how your .NET Framework code is structured.</source>
+          <target state="translated">Процедура переноса во многом зависит от того, как структурирован ваш код .NET Framework.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>That being said, here is a recommended approach which may work well with your codebase.</source>
+          <target state="translated">Тем не менее ниже описывается рекомендованный подход, который может хорошо подойти вашей базе кода.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>A good way to port your code is to begin with the "base" of your library.</source>
+          <target state="translated">Перенос кода лучше всего начинать с основных компонентов библиотеки.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>This may be data models or some other foundational classes and methods that everything else uses directly or indirectly.</source>
+          <target state="translated">Это могут быть модели данных или какие-либо иные базовые классы и методы, используемые всеми остальными компонентами прямо или косвенно.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Port the test project which tests the layer of your library that you're currently porting.</source>
+          <target state="translated">Перенесите тестовый проект с целью тестирования того уровня библиотеки, который вы переносите на данном этапе.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Copy over the "base" of your library into a new .NET Core project and select the version of the .NET Standard you wish to support.</source>
+          <target state="translated">Скопируйте основные компоненты библиотеки в новый проект .NET Core и выберите версию .NET Standard, которая должна поддерживаться.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Make any changes needed to get the code to compile.</source>
+          <target state="translated">Внесите изменения, необходимые для компиляции кода.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Much of this may require adding NuGet package dependencies to your <ph id="ph1">`project.json`</ph> file.</source>
+          <target state="translated">Зачастую для этого требуется добавить зависимости пакетов NuGet в файл <ph id="ph1">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Run tests and make any needed adjustments.</source>
+          <target state="translated">Проведите тесты и внесите необходимые исправления.</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Pick the next layer of code to port over and repeat steps 2 and 3!</source>
+          <target state="translated">Выберите следующий уровень кода для переноса и повторите шаги 2 и 3.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>If you methodically move outward from the base of your library and test each layer as needed, porting will be a systematic process where problems are isolated to one layer of code at a time.</source>
+          <target state="translated">Методично двигаясь от базовых компонентов библиотеки к более высоким уровням и тестируя каждый из них требуемым образом, вы обеспечиваете систематичность переноса и изоляцию проблем, относящихся к отдельным уровням кода.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0fda867f1d29caaca716ad27baf6e43146cb99df</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\using-ci-with-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4a2aaa9410a97f54077ceb875342ebcf4acdd5aa</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">20fc0fece488375b2748f8ab394cf3d90a73c6f7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">継続的インテグレーション (CI) で .NET Core SDK とツールを使用する</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">継続的インテグレーション (CI) で .NET Core SDK とツールを使用する</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">継続的インテグレーション (CI) で .NET Core SDK とツールを使用する</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">概要</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document outlines the usage of .NET Core SDK and its tools on the build server.</source>
+          <target state="translated">このドキュメントでは、ビルド サーバーでの .NET Core SDK とそのツールの使用方法について説明します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In general, on a CI build server, you want to automate the installation in some way.</source>
+          <target state="translated">一般に、CI ビルド サーバーでは、何らかの方法でインストールを自動化することが望まれます。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The automation, ideally, should not require administrative privileges if at all possible.</source>
+          <target state="translated">可能な限り自動化に管理者特権を必要としないことが理想的です。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For SaaS CI solutions, there are several options.</source>
+          <target state="translated">SaaS CI ソリューションの場合、いくつかのオプションがあります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This document will cover two very popular ones, <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> and <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</source>
+          <target state="translated">このドキュメントでは、非常に一般的な 2 つのオプションである <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> と <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept> について説明します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>There are, of course, many other services out there, but the installation and usage mechanisms should be similar.</source>
+          <target state="translated">もちろん、他にも多くのサービスがありますが、インストールと使用のメカニズムはどれも似ています。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Installation options for CI build servers</source>
+          <target state="translated">CI ビルド サーバーのインストール オプション</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Using the native installers</source>
+          <target state="translated">ネイティブ インストーラーの使用</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If using installers that require administrative privileges is not something that presents a problem, native installers for each platform can be used to set up the build server.</source>
+          <target state="translated">管理者特権が必要なインストーラーを使用しても問題がない場合は、各プラットフォーム用のネイティブ インストーラーをビルド サーバーの設定に使用できます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This approach, especially in the case of Linux build servers, has one advantage which is automatic installing of dependencies needed for the SDK to run.</source>
+          <target state="translated">この方法には (特に Linux ビルド サーバーの場合)、SDK の実行に必要な依存関係が自動的にインストールされるという 1 つの利点があります。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The native installers will also install a system-wide version of the SDK, which may be desired; if it's not, you should look into the <bpt id="p1">[</bpt>installer script usage<ept id="p1">](#using-the-installer-script)</ept> outlined below.</source>
+          <target state="translated">ネイティブ インストーラーはシステム全体バージョンの SDK もインストールし、これは望ましい場合があります。そうでない場合は、以下で説明する<bpt id="p1">[</bpt>インストーラー スクリプトの使用<ept id="p1">](#using-the-installer-script)</ept>を検討する必要があります。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Using this approach is simple.</source>
+          <target state="translated">このアプローチは簡単に使用できます。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For Linux, there is a choice of using a feed-based package manager, such as <ph id="ph1">`apt-get`</ph> for Ubuntu or <ph id="ph2">`yum`</ph> for CentOS, or using the packages themselves (that is, DEB or RPM).</source>
+          <target state="translated">Linux では、フィードに基づくパッケージ マネージャー (Ubuntu の <ph id="ph1">`apt-get`</ph> または CentOS の <ph id="ph2">`yum`</ph>) を使用するか、パッケージ自体 (DEB または RPM) を使用します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The former would require setting up the feed that contains the packages.</source>
+          <target state="translated">前者の場合は、パッケージを含むフィードの設定が必要です。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For Windows platforms, you can use the MSI.</source>
+          <target state="translated">Windows プラットフォームの場合は、MSI を使用できます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>All of the binaries can be found on the <bpt id="p1">[</bpt>.NET Core getting started page<ept id="p1">](https://aka.ms/dotnetcoregs)</ept> which points to the latest stable releases.</source>
+          <target state="translated">すべてのバイナリは、最新の安定したリリースを集めた <bpt id="p1">[</bpt>.NET Core の概要ページ<ept id="p1">](https://aka.ms/dotnetcoregs)</ept>で見つかります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If you wish to use newer (and potentially unstable) releases or the latest, you can use the links from the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/cli)</ept>.</source>
+          <target state="translated">さらに新しい (安定していない可能性がある) リリースまたは最新版を使用する場合は、<bpt id="p1">[</bpt>CLI リポジトリ<ept id="p1">](https://github.com/dotnet/cli)</ept>からのリンクを使用できます。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Using the installer script</source>
+          <target state="translated">インストーラー スクリプトの使用</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Using the installer script allows for non-administrative installation on your build server.</source>
+          <target state="translated">インストーラー スクリプトを使用すると、管理者特権を必要としないインストールをビルド サーバーで実行できます。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>It also allows a very easy automation.</source>
+          <target state="translated">また、非常に簡単に自動化できます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The script itself will download the ZIP/tarball files needed and will unpack them; it will also add the install location on the local machine to the PATH so that the tools become available for invocation immediately post-install.</source>
+          <target state="translated">スクリプト自体が、必要な ZIP/tarball ファイルをダウンロードして展開します。また、ローカル コンピューター上のインストール場所を PATH に追加して、インストール後すぐにツールを使用できるようにします。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The installer script can easily be automated at the start of the build to fetch and install the needed version of the SDK.</source>
+          <target state="translated">インストーラー スクリプトは、ビルドの開始時に簡単に自動化し、SDK の必要なバージョンを取得してインストールできます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The "needed version" is whatever version application being built requires.</source>
+          <target state="translated">"必要なバージョン" とは、ビルドされるアプリケーションで必要なバージョンです。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can choose the installation path so you can install the SDK locally and then clean up after the build completes.</source>
+          <target state="translated">SDK をローカルにインストールし、ビルド完了後にクリーンアップできるように、インストール パスを選択できます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This brings additional encapsulation and atomicity to the build process.</source>
+          <target state="translated">ビルド プロセスにカプセル化とアトミック性が追加されます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The installation script reference can be found in the <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> document.</source>
+          <target state="translated">インストール スクリプトのリファレンス情報は、<bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> のドキュメントにあります。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Dealing with the dependencies</source>
+          <target state="translated">依存関係の処理</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Using the installer script means that the native dependencies are not installed automatically and that you have to install them if the operating system you are installing on already doesn't have them.</source>
+          <target state="translated">インストーラー スクリプトを使用すると、ネイティブな依存関係は自動的にインストールされず、インストールしているオペレーティング システムにまだない場合は手動でインストールする必要があります。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can see the list of prerequisites in the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</source>
+          <target state="translated">前提条件の一覧は、<bpt id="p1">[</bpt>CLI リポジトリ<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>をご覧ください。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>CI services setup examples</source>
+          <target state="translated">CI サービスのセットアップの例</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The below sections show examples of configurations using the mentioned CI SaaS offerings.</source>
+          <target state="translated">以下のセクションでは、説明した CI SaaS 製品を使用した構成の例を示します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>TravisCI</source>
+          <target state="translated">TravisCI</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> can be configured to install the .NET Core SDK using the <ph id="ph1">`csharp`</ph> language and the <ph id="ph2">`dotnet`</ph> key.</source>
+          <target state="translated"><bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> は、<ph id="ph1">`csharp`</ph> 言語と <ph id="ph2">`dotnet`</ph> キーを使用して .NET Core SDK をインストールするように構成できます。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">次のものだけを使用します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Travis can run both <ph id="ph1">`osx`</ph> (OS X 10.11) and <ph id="ph2">`linux`</ph> ( Ubuntu 14.04 ) job in a build matrix, see <bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> for more information.</source>
+          <target state="translated">Travis は、ビルド マトリックスの <ph id="ph1">`osx`</ph> (OS X 10.11) と <ph id="ph2">`linux`</ph> (Ubuntu 14.04 ) の両方のジョブを実行できます。詳細については、<bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> をご覧ください。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>AppVeyor</source>
+          <target state="translated">AppVeyor</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> has .NET Core SDK preview2 already installed in the build worker image <ph id="ph1">`Visual Studio 2015`</ph>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> では、.NET Core SDK preview2 がビルド ワーカー イメージ <ph id="ph1">`Visual Studio 2015`</ph> に既にインストールされています。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">次のものだけを使用します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>It's possible to install a specific version of .NET Core SDK, see <bpt id="p1">[</bpt>example appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept> for more info.</source>
+          <target state="translated">特定のバージョンの .NET Core SDK をインストールできます。詳細については、<bpt id="p1">[</bpt>appveyor.yml の例<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept>をご覧ください。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to <ph id="ph1">`PATH`</ph> env var.</source>
+          <target state="translated">この例では、.NET Core SDK バイナリがダウンロードされ、サブディレクトリに解凍されて、<ph id="ph1">`PATH`</ph> 環境変数に追加されます。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A build matrix can be added to run integration tests with multiple version of the .NET Core SDK.</source>
+          <target state="translated">複数バージョンの .NET Core SDK との統合テストを実行するために、ビルド マトリックスを追加できます。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
