@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5271b63a47aa2fcc81cd9c8b1ffd22e618829412</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\exceptions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4039eb59d735cb586da4b617c06c78c4c56de430</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">be4d291e2a7cf2236c26ac277caceef429e3920d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">在 .NET 中处理和引发异常</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understand how to use exceptions in .NET</source>
+          <target state="translated">了解如何在 .NET 中使用异常</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">在 .NET 中处理和引发异常</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Applications must be able to handle errors that occur during execution in a consistent manner.</source>
+          <target state="translated">应用程序必须能够以一致的方式处理执行期间发生的错误。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>.NET provides a model for notifying applications of errors in a uniform way: .NET operations indicate failure by throwing exceptions.</source>
+          <target state="translated">.NET 提供一种以统一方式向应用程序报错的模型：.NET 操作通过引发异常来指示故障。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">异常</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An exception is any error condition or unexpected behavior that is encountered by an executing program.</source>
+          <target state="translated">异常是执行程序遇到的所有错误条件或意外行为。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on.</source>
+          <target state="translated">异常可能由你的代码或调用的代码（如共享库）中的错误、不可用的操作系统资源、运行时遇到的意外情况（如无法验证的代码）等引发。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Your application can recover from some of these conditions, but not from others.</source>
+          <target state="translated">应用程序可从这些情况中的一些中恢复，但无法从其他情况中恢复。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.</source>
+          <target state="translated">尽管可以从大多数应用程序异常中恢复，但不能从大多数运行时异常中恢复。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In .NET, an exception is an object that inherits from the <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> class.</source>
+          <target state="translated">在 .NET 中，异常是从 <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> 类继承的对象。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>An exception is thrown from an area of code where a problem has occurred.</source>
+          <target state="translated">异常引发自发生问题的代码区域。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The exception is passed up the stack until the application handles it or the program terminates.</source>
+          <target state="translated">异常在堆栈中向上传递，直到应用程序对其进行处理或者程序终止。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Exceptions vs. traditional error-handling methods</source>
+          <target state="translated">异常与传统的错误处理方法</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system.</source>
+          <target state="translated">传统上，语言的错误处理模型依赖语言检测错误和针对错误查找其处理程序的独特方式，或者依赖操作系统提供的错误处理机制。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The way .NET implements exception handling provides the following advantages:</source>
+          <target state="translated">.NET 实现异常处理的方式有以下优点：</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Exception throwing and handling works the same for .NET programming languages.</source>
+          <target state="translated">引发和处理异常的方式与 .NET 编程语言的相同。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.</source>
+          <target state="translated">处理异常不需要任何特定的语言语法，但允许每种语言定义自己的语法。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown across process and even machine boundaries.</source>
+          <target state="translated">可跨进程，甚至跨计算机边界引发异常。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Exception-handling code can be added to an application to increase program reliability.</source>
+          <target state="translated">可向应用程序添加异常处理代码以提高程序的可靠性。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Exceptions offer advantages over other methods of error notification, such as return codes.</source>
+          <target state="translated">异常相较于其他错误通知方法（如返回代码）具有多种优势。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Failures do not go unnoticed because if an exception is thrown and you don't handle it, the runtime terminates your application.</source>
+          <target state="translated">故障不会被忽略掉，因为如果引发了异常且未得到解决，运行时会终止应用程序。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Invalid values do not continue to propagate through the system as a result of code that fails to check for a failure return code.</source>
+          <target state="translated">因为代码未能检查出是否存在故障返回代码，所以无效值不会继续在系统中传播。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Exception class and properties</source>
+          <target state="translated">异常类和属性</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class is the base class from which exceptions inherit.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 类是异常从中继承的基类。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.InvalidCastException</ph> class hierarchy is as follows:</source>
+          <target state="translated">例如，<ph id="ph1">@System.InvalidCastException</ph> 类层次结构如下所示：</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class has the following properties that help make understanding an exception easier.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 类具有以下属性，有助于更轻松地理解异常。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Property Name</source>
+          <target state="translated">属性名</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.Collections.IDictionary</ph> that holds arbitrary data in key-value pairs.</source>
+          <target state="translated"><ph id="ph1">@System.Collections.IDictionary</ph> 包含键/值对中的任意数据。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.</source>
+          <target state="translated">可容纳指向帮助文件的 URL（或 URN），帮助文件中提供了大量信息说明了异常的原因。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This property can be used to create and preserve a series of exceptions during exception handling.</source>
+          <target state="translated">在处理异常时此属性可用于创建和保留一系列异常。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use it to create a new exception that contains previously caught exceptions.</source>
+          <target state="translated">可将其用于创建新异常，其中包含之前捕获到的异常。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The original exception can be captured by the second exception in the <ph id="ph1">@System.Exception.InnerException</ph> property, allowing code that handles the second exception to examine the additional information.</source>
+          <target state="translated">可通过 <ph id="ph1">@System.Exception.InnerException</ph> 属性中的第二个异常捕获原始异常，允许处理第二个异常的代码检查其他信息。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a method that receives an argument that's improperly formatted.</source>
+          <target state="translated">例如，假设有一个方法可接收格式不正确的参数。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The code tries to read the argument, but an exception is thrown.</source>
+          <target state="translated">该代码尝试读取参数，但会引发异常。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The method catches the exception and throws a <ph id="ph1">@System.FormatException.</ph> To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred.</source>
+          <target state="translated">此方法捕获异常并引发 <ph id="ph1">@System.FormatException.</ph>。若要提高调用方确定引发异常的原因的能力，有时最好用一个方法捕获帮助器例程引发的异常，然后引发一个更能说明已发生错误的异常。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception.</source>
+          <target state="translated">可创建一个新的且更有意义的异常，其中可将内部异常引用设为原始异常。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This more meaningful exception can then be thrown to the caller.</source>
+          <target state="translated">然后可向调用方引发此更有意义的异常。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first.</source>
+          <target state="translated">请注意，使用此功能，可创建一系列链接的异常，以最先引发的异常结尾。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides details about the cause of an exception.</source>
+          <target state="translated">提供有关异常原因的详细信息。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Gets or sets the name of the application or the object that causes the error.</source>
+          <target state="translated">获取或设置导致错误的应用程序或对象的名称。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Contains a stack trace that can be used to determine where an error occurred.</source>
+          <target state="translated">包含可用于确定错误位置的堆栈跟踪。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The stack trace includes the source file name and program line number if debugging information is available.</source>
+          <target state="translated">如果有可用的调试信息，则堆栈跟踪包含源文件名和程序行号。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Most of the classes that inherit from <ph id="ph1">@System.Exception</ph> do not implement additional members or provide additional functionality; they simply inherit from <ph id="ph2">@System.Exception.</ph> Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.</source>
+          <target state="translated">继承自 <ph id="ph1">@System.Exception</ph> 的大多数类不实现其他成员或提供其他功能，它们只是从 <ph id="ph2">@System.Exception.</ph> 继承。因此，可在异常类层次结构、异常名称和异常所含的信息中找到异常的最重要信息。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>It is recommended to throw and catch only objects that derive from <ph id="ph1">@System.Exception,</ph> but you can throw any object that derives from the <ph id="ph2">@System.Object</ph> class as an exception.</source>
+          <target state="translated">建议仅引发和捕获从 <ph id="ph1">@System.Exception,</ph> 派生的对象，但是可引发从 <ph id="ph2">@System.Object</ph> 类派生的任意对象作为异常。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Note that not all languages support throwing and catching objects that do not derive from <ph id="ph1">@System.Exception.</ph></source>
+          <target state="translated">请注意，并非所有语言都支持引发和捕获不是从 <ph id="ph1">@System.Exception.</ph> 派生的对象</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Common Exceptions</source>
+          <target state="translated">常见异常</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following table lists some common exceptions with examples of what can cause them.</source>
+          <target state="translated">下表列出了一些常见的异常，以及会引发这些异常的原因的示例。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Exception type</source>
+          <target state="translated">异常类型</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Base type</source>
+          <target state="translated">基类型</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Base class for all exceptions.</source>
+          <target state="translated">所有异常的基类。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">无（使用此异常的派生类）。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when an array is indexed improperly.</source>
+          <target state="translated">仅当错误地对数组进行索引时，才由运行时引发。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Indexing an array outside its valid range: <ph id="ph1">`arr[arr.Length+1]`</ph></source>
+          <target state="translated">在数组的有效范围外对数组进行索引：<ph id="ph1">`arr[arr.Length+1]`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when a null object is referenced.</source>
+          <target state="translated">仅当引用 null 对象时，才由运行时引发。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Thrown by methods when in an invalid state.</source>
+          <target state="translated">当处于无效状态时，由方法引发。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Calling <ph id="ph1">`Enumerator.GetNext()`</ph> after removing an Item from the underlying collection.</source>
+          <target state="translated">从基础集合删除项后调用 <ph id="ph1">`Enumerator.GetNext()`</ph>。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Base class for all argument exceptions.</source>
+          <target state="translated">所有自变量异常的基类。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">无（使用此异常的派生类）。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that do not allow an argument to be null.</source>
+          <target state="translated">由不允许参数为 null 的方法引发。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that verify that arguments are in a given range.</source>
+          <target state="translated">由验证自变量是否位于给定范围内的方法引发。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>How to use the try/catch block to catch exceptions</source>
+          <target state="translated">如何使用 try/catch 块捕获异常</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Place the sections of code that might throw exceptions in a <ph id="ph1">`try`</ph> block and place code that handles exceptions in a <ph id="ph2">`catch`</ph> block.</source>
+          <target state="translated">将可能引发异常的代码部分置于 <ph id="ph1">`try`</ph> 块，将可处理异常的代码置于 <ph id="ph2">`catch`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`catch`</ph> block is a series of statements beginning with the keyword <ph id="ph2">`catch`</ph>, followed by an exception type and an action to be taken.</source>
+          <target state="translated"><ph id="ph1">`catch`</ph> 块是一系列以关键字 <ph id="ph2">`catch`</ph> 开头的语句，后跟要执行的异常类型和操作。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible exception.</source>
+          <target state="translated">下方代码示例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 块来捕获可能的异常。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Main`</ph> method contains a <ph id="ph2">`try`</ph> block with a <ph id="ph3">@System.IO.StreamReader</ph> statement that opens a data file called <ph id="ph4">`data.txt`</ph> and writes a string from the file.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph> 方法包含带有 <ph id="ph3">@System.IO.StreamReader</ph> 语句的 <ph id="ph2">`try`</ph> 块，此块可打开名为 <ph id="ph4">`data.txt`</ph> 的数据文件，并写入该文件的字符串。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Following the <ph id="ph1">`try`</ph> block is a <ph id="ph2">`catch`</ph> block that catches any exception that results from the <ph id="ph3">`try`</ph> block.</source>
+          <target state="translated">以下 <ph id="ph1">`try`</ph> 块是可捕获由 <ph id="ph3">`try`</ph> 块导致的任何异常的 <ph id="ph2">`catch`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The common language runtime catches exceptions that are not caught by a catch block.</source>
+          <target state="translated">公共语言运行时可捕获未被 catch 块捕获的异常。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.</source>
+          <target state="translated">会出现调试对话框，或是停止运行程序且会出现含有异常信息的对话框，或者会将错误打印到 STDERR，具体情况取决于运行时的配置方式。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <ph id="ph1">@System.OutOfMemoryException.</ph> Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others.</source>
+          <target state="translated">几乎任何代码行均可导致异常，特别是由公共语言运行时本身所引发的异常，如 <ph id="ph1">@System.OutOfMemoryException.</ph>。大多数应用程序无需处理这些异常，但在编写供他人使用的库时，应注意到这种可能性。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For suggestions on when to set code in a Try block, see <bpt id="p1">[</bpt>Best Practices for Exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">有关何时在 try 块中设置代码的建议，请参阅<bpt id="p1">[</bpt>异常的最佳做法<ept id="p1">](#best-practices-for-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>How to use specific exceptions in a Catch block</source>
+          <target state="translated">如何在 catch 块中使用特定异常</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The preceding code example illustrates a basic <ph id="ph1">`catch`</ph> statement that catches any exception.</source>
+          <target state="translated">前面的代码示例介绍了一个可捕获所有异常的基本 <ph id="ph1">`catch`</ph> 语句。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In general, though, it's good programming practice to catch a specific type of exception rather than use a basic <ph id="ph1">`catch`</ph> statement.</source>
+          <target state="translated">但一般情况下，捕获特定类型的异常而非使用基本 <ph id="ph1">`catch`</ph> 语句才是好的编程做法。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it.</source>
+          <target state="translated">异常发生时，会在堆栈中向上传递，每个 catch 块都有机会处理异常。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The order of catch statements is important.</source>
+          <target state="translated">Catch 语句的顺序非常重要。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error.</source>
+          <target state="translated">在一般异常 catch 块或编译器发出错误前，将 catch 块指向特定异常。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block.</source>
+          <target state="translated">通过匹配异常类型与 catch 块中指定的异常名称，确定合适的 catch 块。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If there is no specific catch block, the exception is caught by a general catch block, if one exists.</source>
+          <target state="translated">如果没有特定的 catch 块，则将由一般 catch 块捕获异常（如果异常存在）。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.InvalidCastException.</ph> The sample creates a class called <ph id="ph5">`Employee`</ph> with a single property, employee level (<ph id="ph6">`Emlevel`</ph>).</source>
+          <target state="translated">下面的代码示例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 块来捕捉 <ph id="ph4">@System.InvalidCastException.</ph>。该示例创建一个名为 <ph id="ph5">`Employee`</ph> 的类，其具有单个属性、雇员级别 (<ph id="ph6">`Emlevel`</ph>)。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A method, <ph id="ph1">`PromoteEmployee`</ph>, takes an object and increments the employee level.</source>
+          <target state="translated"><ph id="ph1">`PromoteEmployee`</ph> 方法接收对象并递增雇员级别。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.InvalidCastException</ph> occurs when a <ph id="ph2">@System.DateTime</ph> instance is passed to the <ph id="ph3">`PromoteEmployee`</ph> method.</source>
+          <target state="translated"><ph id="ph2">@System.DateTime</ph> 实例传递给 <ph id="ph3">`PromoteEmployee`</ph> 方法时，<ph id="ph1">@System.InvalidCastException</ph> 发生。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>How to use finally blocks</source>
+          <target state="translated">如何使用 finally 块</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, execution stops and control is given to the appropriate exception handler.</source>
+          <target state="translated">发生异常时，将停止执行且会向相应异常处理程序赋予控制权。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This often means that lines of code you expect to be executed are bypassed.</source>
+          <target state="translated">这意味着会绕过预计要执行的代码行。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown.</source>
+          <target state="translated">即使引发了异常，也需要完成某些资源清理，例如关闭文件。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>To do this, you can use a <ph id="ph1">`finally`</ph> block.</source>
+          <target state="translated">若要执行此操作，可以使用 <ph id="ph1">`finally`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`finally`</ph> block always executes, regardless of whether an exception is thrown.</source>
+          <target state="translated">无论是否引发异常，始终会执行 <ph id="ph1">`finally`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.ArgumentOutOfRangeException.</ph> The <ph id="ph5">`Main`</ph> method creates two arrays and attempts to copy one to the other.</source>
+          <target state="translated">下面的代码示例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 块来捕捉 <ph id="ph4">@System.ArgumentOutOfRangeException.</ph>。<ph id="ph5">`Main`</ph> 方法创建两个数组，并尝试将一个数组复制到另一个。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The action generates an <ph id="ph1">@System.ArgumentOutOfRangeException</ph> and the error is written to the console.</source>
+          <target state="translated">该操作将生成 <ph id="ph1">@System.ArgumentOutOfRangeException</ph> 并且会向控制台写入错误。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`finally`</ph> block executes regardless of the outcome of the copy action.</source>
+          <target state="translated"><ph id="ph1">`finally`</ph> 块执行时不考虑复制操作的结果。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>How to explicitly throw exceptions</source>
+          <target state="translated">如何显式引发异常</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>You can explicitly throw an exception using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">可使用 <ph id="ph1">`throw`</ph> 语句显式引发异常。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can also throw a caught exception again using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">可使用 <ph id="ph1">`throw`</ph> 语句再次引发捕获的异常。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.</source>
+          <target state="translated">向重新引发的异常添加信息以在调试时提供详细信息，这是很好的编码做法。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible <ph id="ph4">@System.IO.FileNotFoundException.</ph> Following the <ph id="ph5">`try`</ph> block is a <ph id="ph6">`catch`</ph> block that catches the <ph id="ph7">@System.IO.FileNotFoundException</ph> and writes a message to the console if the data file is not found.</source>
+          <target state="translated">下面的代码示例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 块来捕捉可能发生的 <ph id="ph4">@System.IO.FileNotFoundException.</ph>。<ph id="ph5">`try`</ph> 块之后是可捕获 <ph id="ph7">@System.IO.FileNotFoundException</ph> 并在未找到数据文件时将消息写入控制台的 <ph id="ph6">`catch`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The next statement is the <ph id="ph1">`throw`</ph> statement that throws a new <ph id="ph2">@System.IO.FileNotFoundException</ph> and adds text information to the exception.</source>
+          <target state="translated">下一语句为 <ph id="ph1">`throw`</ph> 语句，可引发新的 <ph id="ph2">@System.IO.FileNotFoundException</ph> 并向异常添加文本信息。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>How to create user-defined exceptions</source>
+          <target state="translated">如何创建用户定义的异常</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>.NET provides a hierarchy of exception classes ultimately derived from the base class <ph id="ph1">@System.Exception.</ph> However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the <ph id="ph2">@System.Exception</ph> class.</source>
+          <target state="translated">.NET 提供最终从基类派生的异常类层次结构 <ph id="ph1">@System.Exception.</ph>。但是，如果预定义的异常都不符合需求，可通过从 <ph id="ph2">@System.Exception</ph> 类派生来创建自己的异常类。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example.</source>
+          <target state="translated">创建自己的异常时，用户定义的异常类的名称需要以“Exception”结尾，并实施三个常见的构造函数，如以下示例所示。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The example defines a new exception class named <ph id="ph1">`EmployeeListNotFoundException`</ph>.</source>
+          <target state="translated">该示例定义名为 <ph id="ph1">`EmployeeListNotFoundException`</ph> 的新异常类。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The class is derived from <ph id="ph1">@System.Exception</ph> and includes three constructors.</source>
+          <target state="translated">该类从 <ph id="ph1">@System.Exception</ph> 派生，且包含三个构造函数。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller).</source>
+          <target state="translated">使用远程处理时，必须确保所有用户定义的异常的元数据在服务器（被调用方）可用，在客户端（代理对象或调用方）也可用。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Best practices for exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">有关详细信息，请参阅<bpt id="p1">[</bpt>异常的最佳做法<ept id="p1">](#best-practices-for-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Best practices for exceptions</source>
+          <target state="translated">异常的最佳做法</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A well-designed app handles exceptions and errors to prevent app crashes.</source>
+          <target state="translated">设计良好的应用处理异常和错误以防止应用崩溃。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This section describes best practices for handling and creating exceptions.</source>
+          <target state="translated">本部分介绍了处理和创建异常的最佳做法。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Use try/catch/finally blocks</source>
+          <target state="translated">使用 try/catch/finally 块</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> blocks around code that can potentially generate an exception.</source>
+          <target state="translated">在可能产生异常的代码周围使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> 块。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`catch`</ph> blocks, always order exceptions from the most specific to the least specific.</source>
+          <target state="translated">在 <ph id="ph1">`catch`</ph> 块中，始终按从最特定到最不特定的顺序对异常排序。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Use a <ph id="ph1">`finally`</ph> block to clean up resources, whether you can recover or not.</source>
+          <target state="translated">无论是否可进行恢复，使用 <ph id="ph1">`finally`</ph> 块清理资源。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Handle common conditions without throwing exceptions</source>
+          <target state="translated">在不引发异常的前提下，处理常见情况</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception.</source>
+          <target state="translated">对于易于发生但可能会触发异常的情况，请考虑使用能避免引发异常的方法进行处理。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For example, if you try to close a connection that is already closed, you'll get an <ph id="ph1">`InvalidOperationException`</ph>.</source>
+          <target state="translated">例如，如果尝试关闭已关闭的连接，则会获得 <ph id="ph1">`InvalidOperationException`</ph>。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You can avoid that by using an <ph id="ph1">`if`</ph> statement to check the connection state before trying to close it.</source>
+          <target state="translated">尝试关闭前，可通过使用 <ph id="ph1">`if`</ph> 语句检查连接状态，避免该情况。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If you don't check connection state before closing, you can catch the <ph id="ph1">`InvalidOperationException`</ph> exception.</source>
+          <target state="translated">如果关闭前未检查连接状态，则可能捕获 <ph id="ph1">`InvalidOperationException`</ph> 异常。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The method to choose depends on how often you expect the event to occur.</source>
+          <target state="translated">选择的方法取决于希望时间发生的频率。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Use exception handling if the event doesn't occur very often, that is, if the event is truly exceptional and indicates an error (such as an unexpected end-of-file).</source>
+          <target state="translated">如果此事件未经常发生（也就是说，如果此事件确实为异常并指示错误（如意外的文件尾）），则使用异常处理。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>When you use exception handling, less code is executed in normal conditions.</source>
+          <target state="translated">如果使用异常处理，将在正常条件下执行较少代码。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Check for error conditions in code if the event happens routinely and could be considered part of normal execution.</source>
+          <target state="translated">如果事件例行发生，且被视为正常性执行的一部分，请检查代码中是否存在错误情况。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>When you check for common error conditions, less code is executed because you avoid exceptions.</source>
+          <target state="translated">检查常见错误情况时，为了避免异常，执行较少的代码。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Design classes so that exceptions can be avoided</source>
+          <target state="translated">设计类，以避免异常</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A class can provide methods or properties that enable you to avoid making a call that would trigger an exception.</source>
+          <target state="translated">类可提供一些方法或属性来确保避免生成会引发异常的调用。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For example, a <ph id="ph1">@System.IO.FileStream</ph> class provides methods that help determine whether the end of the file has been reached.</source>
+          <target state="translated">例如，<ph id="ph1">@System.IO.FileStream</ph> 类提供可帮助确实是否已到达文件末尾的方法。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>These can be used to avoid the exception that is thrown if you read past the end of the file.</source>
+          <target state="translated">它可用于避免在读取超过文件末尾时引发的异常。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The following example shows how to read to the end of a file without triggering an exception.</source>
+          <target state="translated">下方示例显示如何读取文件末尾而不会引发异常。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Another way to avoid exceptions is to return null for extremely common error cases instead of throwing an exception.</source>
+          <target state="translated">避免异常的另一方法是，对极为常见的错误案例返回 NULL，而不是引发异常。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>An extremely common error case can be considered normal flow of control.</source>
+          <target state="translated">极其常见的错误案例可被视为常规控制流。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>By returning null in these cases, you minimize the performance impact to an app.</source>
+          <target state="translated">通过在这些情况下返回 null，可最大程度地减小对应用的性能产生的影响。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Throw exceptions instead of returning an error code</source>
+          <target state="translated">引发异常而不是返回错误代码</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.</source>
+          <target state="translated">异常可确保故障不被忽略，因为调用代码不会检查返回代码。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Use the predefined .NET exception types</source>
+          <target state="translated">使用预定义的 .NET 异常类型</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Introduce a new exception class only when a predefined one doesn't apply.</source>
+          <target state="translated">仅当预定义的异常类不适用时，引入新异常类。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如：</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.InvalidOperationException</ph> exception if a property set or method call is not appropriate given the object's current state.</source>
+          <target state="translated">如果根据对象的当前状态，属性集或方法调用不适当，则会引发 <ph id="ph1">@System.InvalidOperationException</ph> 异常。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.ArgumentException</ph> exception or one of the predefined classes that derive from <ph id="ph2">@System.ArgumentException</ph> if invalid parameters are passed.</source>
+          <target state="translated">如果传送了无效的参数，则引发 <ph id="ph1">@System.ArgumentException</ph> 异常或从 <ph id="ph2">@System.ArgumentException</ph> 派生的一个预定义类。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>End exception class names with the word <ph id="ph1">`Exception`</ph></source>
+          <target state="translated">异常类名称的结尾为 <ph id="ph1">`Exception`</ph></target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>When a custom exception is necessary, name it appropriately and derive it from the <ph id="ph1">@System.Exception</ph> class.</source>
+          <target state="translated">需要自定义异常时，对其正确命名并从 <ph id="ph1">@System.Exception</ph> 类进行派生。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如：</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Include three constructors in custom exception classes</source>
+          <target state="translated">在自定义异常类中包括三种构造函数</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.</source>
+          <target state="translated">创建自己的异常类别时至少使用三种公共构造函数：默认构造函数、采用字符串消息的构造函数和采用字符串消息和内部异常的构造函数。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor,</ph> which uses default values.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor,</ph>，它使用默认值。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String),</ph> which accepts a string message.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String),</ph>，它接受字符串消息。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph> which accepts a string message and an inner exception.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph>，它接受字符串消息和内部异常。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>How to: Create User-Defined Exceptions<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>.</source>
+          <target state="translated">有关示例，请参阅<bpt id="p1">[</bpt>如何：创建用户定义的异常<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Ensure that exception data is available when code executes remotely</source>
+          <target state="translated">确保代码远程执行时异常数据可用</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.</source>
+          <target state="translated">创建用户定义的异常时，请确保异常的元数据对远程执行的代码可用。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains.</source>
+          <target state="translated">例如，在实现应用域的 .NET 运行时上，在应用域中可能会发生异常。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Suppose App Domain A creates App Domain B, which executes code that throws an exception.</source>
+          <target state="translated">假设应用域 A 创建应用域 B，后者执行引发异常的代码。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <ph id="ph1">@System.IO.FileNotFoundException</ph> exception.</source>
+          <target state="translated">应用域 A 若想正确捕获和处理异常，它必须能够找到包含应用域 B 所引发的异常的程序集。如果应用域 B 在其应用程序基下（但未在应用域 A 的应用程序基下）引发了一个包含在程序集内的异常，那么应用域 A 将无法找到异常，且公共语言运行时将引发 <ph id="ph1">@System.IO.FileNotFoundException</ph> 异常。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>To avoid this situation, you can deploy the assembly that contains the exception information in two ways:</source>
+          <target state="translated">为避免此情况，可以两种方式部署包含异常信息的程序集：</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Put the assembly into a common application base shared by both app domains.</source>
+          <target state="translated">将程序集放在两个应用域共享的公共应用程序基中。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\-</ph> or -</source>
+          <target state="translated"><ph id="ph1">\-</ph> 或 -</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.</source>
+          <target state="translated">如果两个应用域不共享一个公共应用程序基，则用强名称为包含异常信息的程序集签名并将其部署到全局程序集缓存中。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Include a localized description string in every exception</source>
+          <target state="translated">在每个异常中都包含一个本地化描述字符串</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The error message that the user sees is derived from the description string of the exception that was thrown, and not from the name of the exception class.</source>
+          <target state="translated">用户看到的错误消息派生自引发的异常的描述字符串，而不是派生自异常类的名称。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Use grammatically correct error messages</source>
+          <target state="translated">使用语法正确的错误消息</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Write clear sentences and include ending punctuation.</source>
+          <target state="translated">编写清晰的句子，包括结束标点。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Each sentence in a description string of an exception should end in a period.</source>
+          <target state="translated">在异常的描述字符串中，每个句子都应以句号结尾。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>For example, "The log table has overflowed.”</source>
+          <target state="translated">例如，“日志表已溢出。”</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>would be an appropriate description string.</source>
+          <target state="translated">就是一个正确的描述字符串。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>In custom exceptions, provide additional properties as needed</source>
+          <target state="translated">在自定义异常中，按需提供其他属性</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful.</source>
+          <target state="translated">仅当存在附加信息有用的编程方案时，才在异常中提供附加属性（不包括描述字符串）。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.IO.FileNotFoundException</ph> provides the <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> property.</source>
+          <target state="translated">例如，<ph id="ph1">@System.IO.FileNotFoundException</ph> 提供 <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> 属性。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Place throw statements so that the stack trace will be helpful</source>
+          <target state="translated">放置引发语句，使得堆栈跟踪有所帮助</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The stack trace begins at the statement where the exception is thrown and ends at the <ph id="ph1">`catch`</ph> statement that catches the exception.</source>
+          <target state="translated">堆栈跟踪从引发异常的语句开始，到捕获异常的 <ph id="ph1">`catch`</ph> 语句结束。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Use exception builder methods</source>
+          <target state="translated">使用异常生成器方法</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>It is common for a class to throw the same exception from different places in its implementation.</source>
+          <target state="translated">类从其实现中的不同位置引发同一异常是常见的情况。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To avoid excessive code, use helper methods that create the exception and return it.</source>
+          <target state="translated">为避免过多的代码，应使用帮助器方法创建异常并将其返回。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如: </target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In some cases, it's more appropriate to use the exception's constructor to build the exception.</source>
+          <target state="translated">在某些情况下，更适合使用异常的构造函数生成异常。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>An example is a global exception class such as <ph id="ph1">@System.ArgumentException,</ph></source>
+          <target state="translated">例如，<ph id="ph1">@System.ArgumentException,</ph> 等全局异常类</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Clean up intermediate results when throwing an exception</source>
+          <target state="translated">引发异常时清理中间结果</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Callers should be able to assume that there are no side effects when an exception is thrown from a method.</source>
+          <target state="translated">当异常从方法引发时，调用方应能够假定没有副作用。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.</source>
+          <target state="translated">例如，如果你的代码可以通过从一个帐户取钱并存入另一个帐户来转移资金，而在存款时引发了异常，你不希望取款仍然有效。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.</source>
+          <target state="translated">解决这一情况的一种方法是，捕获由存款交易引发的异常，然后回滚取款。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This example illustrates the use of <ph id="ph1">`throw`</ph> to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <ph id="ph2">@System.Exception.InnerException</ph> property.</source>
+          <target state="translated">此示例介绍如何使用 <ph id="ph1">`throw`</ph> 重新引发原始异常，让调用方更轻松地发现问题的真正原因，而无需检查 <ph id="ph2">@System.Exception.InnerException</ph> 属性。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>An alternative is to throw a new exception and include the original exception as the inner exception:</source>
+          <target state="translated">另一种方法是，引发一个新的异常并将原始异常包括在其中作为内部异常：</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">请参阅</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>To learn more about how exceptions work in .NET, see <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>.</source>
+          <target state="translated">若要了解有关 .NET 中异常的工作方式的详细信息，请参阅<bpt id="p1">[</bpt>运行时中每个开发人员都需要了解的有关异常的事项<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">05f692a1a58c0c653e14993cafd61a0711ebf9f8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\when-to-use-a-thread-safe-collection.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">098df41a5c9d3bf053e5ec0a9b66a8b09370dce9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c0d22f0ce489c88a93f20d033de66644d3cf51d7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">Quand utiliser une collection thread-safe</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">Quand utiliser une collection thread-safe</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When to Use a Thread-Safe Collection</source>
+          <target state="translated">Quand utiliser une collection thread-safe</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ConcurrentQueue`</ph>, <ph id="ph2">`ConcurrentStack`</ph>, <ph id="ph3">`ConcurrentDictionary`</ph>, <ph id="ph4">`ConcurrentBag`</ph>, and <ph id="ph5">`BlockingCollection`</ph> collection types are specially designed to support multi-threaded add and remove operations.</source>
+          <target state="translated">Les types de collection <ph id="ph1">`ConcurrentQueue`</ph>, <ph id="ph2">`ConcurrentStack`</ph>, <ph id="ph3">`ConcurrentDictionary`</ph>, <ph id="ph4">`ConcurrentBag`</ph> et <ph id="ph5">`BlockingCollection`</ph> sont spécialement conçus pour prendre en charge les opérations d’ajout et de suppression multithread.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms.</source>
+          <target state="translated">Pour garantir la cohérence de thread, ces nouveaux types utilisent différentes sortes de mécanismes de verrouillage et de synchronisation sans verrou efficaces.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Synchronization adds overhead to an operation.</source>
+          <target state="translated">La synchronisation ajoute une surcharge à une opération.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.</source>
+          <target state="translated">La quantité de la surcharge dépend du genre de synchronisation utilisé, du genre d’opérations exécutées et d’autres facteurs tels que le nombre de threads qui tentent d’accéder simultanément à la collection.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock.</source>
+          <target state="translated">Dans certains scénarios, la surcharge de synchronisation est négligeable et permet au type multithread de s’exécuter beaucoup plus rapidement et d’évoluer beaucoup mieux que son équivalent qui n’est pas thread-safe quand il est protégé par un verrou externe.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.</source>
+          <target state="translated">Dans d’autres scénarios, la surcharge peut entraîner une exécution et une scalabilité du type thread-safe à peu près identiques, ou même plus lentes, que celles de la version du type qui n’est pas thread-safe et qui est verrouillée de manière externe.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following sections provide general guidance about when to use a thread-safe collection versus its non-thread-safe equivalent that has a user-provided lock around its read and write operations.</source>
+          <target state="translated">Les sections suivantes fournissent des recommandations générales concernant le moment où utiliser une collection thread-safe ou son équivalent non thread-safe qui a un verrou fourni par l’utilisateur autour de ses opérations de lecture et d’écriture.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because performance may vary depending on many factors, the guidance is not specific and is not necessarily valid in all circumstances.</source>
+          <target state="translated">Étant donné que les performances peuvent varier en fonction de nombreux facteurs, ces recommandations ne sont pas spécifiques et ne sont pas nécessairement valables dans toutes les circonstances.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If performance is very important, then the best way to determine which collection type to use is to measure performance based on representative computer configurations and loads.</source>
+          <target state="translated">Si les performances sont très importantes, la meilleure façon de déterminer le type de collection à utiliser consiste à mesurer les performances en fonction de configurations et de charges d’ordinateur représentatives.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This document uses the following terms:</source>
+          <target state="translated">Ce document utilise les termes suivants :</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Pure producer-consumer scenario:<ept id="p1">*</ept> Any given thread is either adding or removing elements, but not both.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Scénario producteur-consommateur pur :<ept id="p1">*</ept> Tout thread donné ajoute ou supprime des éléments, mais pas les deux.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Mixed producer-consumer scenario:<ept id="p1">*</ept> Any given thread is both adding and removing elements.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Scénario producteur-consommateur mixte :<ept id="p1">*</ept> Tout thread donné ajoute et supprime des éléments.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Speedup:<ept id="p1">*</ept> Faster algorithmic performance relative to another type in the same scenario.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Accélération :<ept id="p1">*</ept> Performances algorithmiques plus rapides par rapport à un autre type dans le même scénario.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Scalability:<ept id="p1">*</ept> The increase in performance that is proportional to the number of cores on the computer.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Scalabilité :<ept id="p1">*</ept> Augmentation des performances proportionnelle au nombre de cœurs de l’ordinateur.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>An algorithm that scales performs faster on eight cores than it does on two cores.</source>
+          <target state="translated">Un algorithme évolutif s’exécute plus vite sur huit cœurs que sur deux cœurs.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> vs. Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></source>
+          <target state="translated">Comparaison de ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph> et de Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, where the processing time for each element is very small (a few instructions), then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> can offer modest performance benefits over a <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept> that has an external lock.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur purs, où le temps de traitement de chaque élément est très court (quelques instructions), <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentQueue<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1)</ept> peut offrir des avantages modestes en matière de performances par rapport à un <bpt id="p2">[</bpt>System.Collections.Generic.Queue<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1)</ept> qui a un verrou externe.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In this scenario, <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> performs best when one dedicated thread is queuing and one dedicated thread is de-queuing.</source>
+          <target state="translated">Dans ce scénario, <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> fonctionne mieux quand un thread dédié effectue la mise en file d’attente et qu’un autre thread dédié annule la mise en file d’attente.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you do not enforce this rule, then <ph id="ph1">`Queue&lt;T&gt;`</ph> might even perform slightly faster than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> on computers that have multiple cores.</source>
+          <target state="translated">Si vous n’appliquez pas cette règle, <ph id="ph1">`Queue&lt;T&gt;`</ph> peut même s’exécuter légèrement plus rapidement que <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> sur les ordinateurs à plusieurs cœurs.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS (floating point operations) or more, then the two-thread rule does not apply to <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>, which then has very good scalability.</source>
+          <target state="translated">Quand le temps de traitement est autour de 500 opérations en virgule flottante (FLOPS), ou plus, la règle de deux threads ne s’applique pas à <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph>, qui possède alors une très bonne scalabilité.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Queue&lt;T&gt;`</ph> does not scale well in this scenario.</source>
+          <target state="translated"><ph id="ph1">`Queue&lt;T&gt;`</ph> n’évolue pas bien dans ce scénario.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, when the processing time is very small, a <ph id="ph1">`Queue&lt;T&gt;`</ph> that has an external lock scales better than <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph> does.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur mixtes, quand le temps de traitement est très court, un <ph id="ph1">`Queue&lt;T&gt;`</ph> qui a un externe verrou évolue mieux que <ph id="ph2">`ConcurrentQueue&lt;T&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>However, when processing time is around 500 FLOPS or more, then the <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> scales better.</source>
+          <target state="translated">Toutefois, quand le temps de traitement est autour de 500 opérations en virgule flottante (FLOPS), ou plus, <ph id="ph1">`ConcurrentQueue&lt;T&gt;`</ph> évolue mieux.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>ConcurrentStack vs. Stack</source>
+          <target state="translated">Comparaison de ConcurrentStack et de Stack</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, when processing time is very small, then <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> and <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept> that has an external lock will probably perform about the same with one dedicated pushing thread and one dedicated popping thread.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur purs, quand le temps de traitement est très court, <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentStack<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1)</ept> et <bpt id="p2">[</bpt>System.Collections.Generic.Stack<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p2">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1)</ept> qui a un verrou externe s’exécuteront probablement de la même manière avec un thread d’exécution de type push dédié et un thread d’exécution de type pop dédié.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, as the number of threads increases, both types slow down because of increased contention, and <ph id="ph1">`Stack&lt;T&gt;`</ph> might perform better than <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>.</source>
+          <target state="translated">Toutefois, à mesure que le nombre de threads augmente, les deux types ralentissent à cause de l’augmentation des conflits, et <ph id="ph1">`Stack&lt;T&gt;`</ph> peut fonctionner mieux que <ph id="ph2">`ConcurrentStack&lt;T&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When processing time is around 500 FLOPS or more, then both types scale at about the same rate.</source>
+          <target state="translated">Quand le temps de traitement est autour de 500 opérations en virgule flottante (FLOPS), ou plus, les deux types évoluent à peu près au même rythme.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph> is faster for both small and large workloads.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur mixtes, <ph id="ph1">`ConcurrentStack&lt;T&gt;`</ph> est plus rapide à la fois pour les petites et les grandes charges de travail.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The use of the <ph id="ph1">`PushRange`</ph> and <ph id="ph2">`TryPopRange`</ph> may greatly speed up access times.</source>
+          <target state="translated">L’utilisation de <ph id="ph1">`PushRange`</ph> et de <ph id="ph2">`TryPopRange`</ph> peut accélérer considérablement les temps d’accès.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>ConcurrentDictionary vs. Dictionary</source>
+          <target state="translated">Comparaison de ConcurrentDictionary et de Dictionary</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In general, use a <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> in any scenario where you are adding and updating keys or values concurrently from multiple threads.</source>
+          <target state="translated">En général, utilisez un <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> dans tout scénario où vous ajoutez et mettez à jour des clés ou des valeurs simultanément à partir de plusieurs threads.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates and relatively few reads, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally offers modest benefits.</source>
+          <target state="translated">Dans les scénarios qui impliquent des mises à jour fréquentes et des lectures relativement peu nombreuses, <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> offre généralement des avantages modestes.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve many reads and many updates, the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> generally is significantly faster on computers that have any number of cores.</source>
+          <target state="translated">Dans les scénarios qui impliquent de nombreuses lectures et de nombreuses mises à jour, <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> est généralement beaucoup plus rapide, quel que soit le nombre de cœurs des ordinateurs.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In scenarios that involve frequent updates, you can increase the degree of concurrency in the <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> and then measure to see whether performance increases on computers that have more cores.</source>
+          <target state="translated">Dans les scénarios qui impliquent des mises à jour fréquentes, vous pouvez augmenter le degré d’accès concurrentiel dans <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>, puis mesurer pour voir si les performances augmentent sur les ordinateurs qui ont plus de cœurs.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>If you change the concurrency level, avoid global operations as much as possible.</source>
+          <target state="translated">Si vous modifiez le niveau d’accès concurrentiel, évitez, autant que possible, les opérations globales.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you are only reading key or values, the <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> is faster because no synchronization is required if the dictionary is not being modified by any threads.</source>
+          <target state="translated">Si vous lisez uniquement une clé ou des valeurs, <bpt id="p1">[</bpt>System.Collections.Generic.Dictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2)</ept> est plus rapide car aucune synchronisation n’est nécessaire si le dictionnaire n’est pas modifié par des threads.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>ConcurrentBag</source>
+          <target state="translated">ConcurrentBag</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In pure producer-consumer scenarios, <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> will probably perform more slowly than the other concurrent collection types.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur purs, <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentBag<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1)</ept> s’exécutera probablement plus lentement que les autres types de collections simultanées.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In mixed producer-consumer scenarios, <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph> is generally much faster and more scalable than any other concurrent collection type for both large and small workloads.</source>
+          <target state="translated">Dans les scénarios producteur-consommateur mixtes, <ph id="ph1">`ConcurrentBag&lt;T&gt;`</ph> est généralement beaucoup plus rapide et plus évolutif que les autres types de collections simultanées à la fois pour les petites et pour les grandes charges de travail.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>BlockingCollection</source>
+          <target state="translated">BlockingCollection</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When bounding and blocking semantics are required, <bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> will probably perform faster than any custom implementation.</source>
+          <target state="translated">Quand une sémantique de délimitation et de blocage est nécessaire, <bpt id="p1">[</bpt>System.Collections.Concurrent.BlockingCollection<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1)</ept> s’exécutera probablement plus rapidement que toute implémentation personnalisée.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It also supports rich cancellation, enumeration, and exception handling.</source>
+          <target state="translated">Il prend également en charge une gestion enrichie des annulations, énumérations et exceptions.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Voir aussi</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Collections thread-safe<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

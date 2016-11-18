@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2baa48c3b79dfbc5d39652cc57fe015a2313d6e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\converting-between-time-zones.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2011e2c06a6d5b968ea9c02c1fd25b901d4f6f78</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1a13d4dd5087ca20f52c7a2e1051728a5d96f8ee</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">在各时区之间转换时间</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">在各时区之间转换时间</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Converting times between time zones</source>
+          <target state="translated">在各时区之间转换时间</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>It is becoming increasingly important for any application that works with dates and times to handle differences between time zones.</source>
+          <target state="translated">对任何使用日期和时间的应用程序而言，处理各时区之间的差异变得愈发重要。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An application can no longer assume that all times can be expressed in the local time, which is the time available from the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> structure.</source>
+          <target state="translated">应用程序不再能保证将所有时间表示为 <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> 结构提供的本地时间。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, a Web page that displays the current time in the eastern part of the United States will lack credibility to a customer in eastern Asia.</source>
+          <target state="translated">例如，显示美国东部当前时间的网页对东亚客户而言缺乏可信度。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic explains how to convert times from one time zone to another, as well as how to convert <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values that have limited time zone awareness.</source>
+          <target state="translated">本主题介绍如何将时间从一个时区转换到另一个时区，以及如何转换时区感知有限的 <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Converting to Coordinated Universal Time</source>
+          <target state="translated">转换为协调世界时</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Coordinated Universal Time (UTC) is a high-precision, atomic time standard.</source>
+          <target state="translated">协调世界时 (UTC) 是一项高精度的原子时标准。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The world’s time zones are expressed as positive or negative offsets from UTC.</source>
+          <target state="translated">世界的时区表示为相对于 UTC 的正/负偏移量。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Thus, UTC provides a kind of time-zone free or time-zone neutral time.</source>
+          <target state="translated">因此，UTC 提供一种无时区或中间时区的时间。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The use of UTC time is recommended when a date and time's portability across computers is important.</source>
+          <target state="translated">如果日期和时间在计算机之间的可移植性非常重要，则建议使用 UTC 时间。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Converting individual time zones to UTC makes time comparisons easy.</source>
+          <target state="translated">通过将各个时区转换为 UTC，可以简化时间的比较。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can also serialize a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure to unambiguously represent a single point in time.</source>
+          <target state="translated">还可以序列化 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 结构，明确表示单个时间点。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Because <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> objects store a date and time value along with its offset from UTC, they always represent a particular point in time in relationship to UTC.</source>
+          <target state="translated">由于 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 对象会存储日期和时间值以及其相对于 UTC 的偏移量，它们始终表示与 UTC 相关的某一特定时间点。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The easiest way to convert a time to UTC is to call the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic) <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method.</source>
+          <target state="translated">将时间转换为 UTC 的最简单方式是调用 <ph id="ph1">`static`</ph>（在 Visual Basic 中调用 <ph id="ph2">`Shared`</ph>）<bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TimeZoneInfo.ConvertTimeToUtc(DateTime)`</ph> method isn't currently available in .NET Core.</source>
+          <target state="translated"><ph id="ph1">`TimeZoneInfo.ConvertTimeToUtc(DateTime)`</ph> 方法在 .NET Core 中当前不可用。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The exact conversion performed by the method depends on the value of the <ph id="ph1">`DateTime`</ph> parameter's <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property, as the following table shows.</source>
+          <target state="translated">该方法执行的具体转换取决于 <ph id="ph1">`DateTime`</ph> 参数的 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 属性值，如下表所示。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> property</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> 属性</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="translated">转换</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Converts local time to UTC.</source>
+          <target state="translated">将本地时间转换为 UTC。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Assumes the <ph id="ph1">`DateTime`</ph> parameter is local time and converts local time to UTC.</source>
+          <target state="translated">假定 <ph id="ph1">`DateTime`</ph> 参数为本地时间并将本地时间转换为 UTC。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Returns the <ph id="ph1">`DateTime`</ph> parameter unchanged.</source>
+          <target state="translated">返回未更改的 <ph id="ph1">`DateTime`</ph> 参数。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The following code converts the current local time to UTC and displays the result to the console.</source>
+          <target state="translated">以下代码可将当前本地时间转换为 UTC，并将结果显示在控制台上。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method does not necessarily produce results that are identical to the <bpt id="p2">[</bpt>TimeZone.ToUniversalTime<ept id="p2">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> and <bpt id="p3">[</bpt>DateTime.ToUniversalTime<ept id="p3">](xref:System.DateTime.ToUniversalTime)</ept> methods.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> 方法不一定会生成与 <bpt id="p2">[</bpt>TimeZone.ToUniversalTime<ept id="p2">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> 和 <bpt id="p3">[</bpt>DateTime.ToUniversalTime<ept id="p3">](xref:System.DateTime.ToUniversalTime)</ept> 方法相同的结果。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the host system's local time zone includes multiple adjustment rules, <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ConvertTimeToUtc(v=vs.110).aspx)</ept> applies the appropriate rule to a particular date and time.</source>
+          <target state="translated">如果主机系统的本地时区包含多个调整规则，<bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc(DateTime)<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ConvertTimeToUtc(v=vs.110).aspx)</ept> 会将适当的规则应用于特定日期和时间。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The other two methods always apply the latest adjustment rule.</source>
+          <target state="translated">其他两种方法始终应用最新调整规则。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If the date and time value does not represent either the local time or UTC, the <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> method will likely return an erroneous result.</source>
+          <target state="translated">如果日期和时间值不表示本地时间或 UTC，<bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZone.ToUniversalTime(v=vs.110).aspx)</ept> 方法可能返回错误的结果。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>However, you can use the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method to convert the date and time from a specified time zone.</source>
+          <target state="translated">但是，可以使用 <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> 方法转换指定时区的日期和时间。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>(For details on retrieving a TimeZoneInfo object that represents the destination time zone, see <bpt id="p1">[</bpt>Finding the time zones defined on a local system<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept>.</source>
+          <target state="translated">（有关检索表示目标时区的 TimeZoneInfo 对象的详细信息，请参阅<bpt id="p1">[</bpt>查找本地系统上定义的时区<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following code uses the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> method to convert Eastern Standard Time to UTC.</source>
+          <target state="translated">以下代码使用 <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTimeToUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/bb381744(v=vs.110).aspx)</ept> 方法将东部标准时间转换为 UTC。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Note that this method throws an <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> if the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> object's <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTimeKind)</ept> property and the time zone are mismatched.</source>
+          <target state="translated">请注意，如果 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 对象的 <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTimeKind)</ept> 属性与时区不匹配，此方法将引发 <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept>。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A mismatch occurs if the Kind property is <bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept> but the <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object does not represent the local time zone, or if the Kind property is <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> but the <bpt id="p4">[</bpt>TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> object does not equal <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">如果 Kind 属性为 <bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept>，但<bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> 对象不表示本地时区，或如果 Kind 属性为 <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>，但 <bpt id="p4">[</bpt>TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> 对象不等于 <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>，则会出现不匹配。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>All of these methods take <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values as parameters and return a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value.</source>
+          <target state="translated">所有这些方法均采用 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值作为参数，并返回 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>For <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> structure has a <bpt id="p3">[</bpt>ToUniversalTime<ept id="p3">](xref:System.DateTimeOffset.ToUniversalTime)</ept> instance method that converts the date and time of the current instance to UTC.</source>
+          <target state="translated">对于 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值，<bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 结构具有 <bpt id="p3">[</bpt>ToUniversalTime<ept id="p3">](xref:System.DateTimeOffset.ToUniversalTime)</ept> 实例方法，该方法可将当前实例的日期和时间转换为 UTC。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following example calls the <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](xref:System.DateTimeOffset.ToUniversalTime)</ept> method to convert a local time and several other times to Coordinated Universal Time (UTC).</source>
+          <target state="translated">以下示例调用 <bpt id="p1">[</bpt>ToUniversalTime<ept id="p1">](xref:System.DateTimeOffset.ToUniversalTime)</ept> 方法，将本地时间和几个其他时间转换为协调世界时 (UTC)。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Converting UTC to a designated time zone</source>
+          <target state="translated">将 UTC 转换为指定的时区</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>To convert UTC to local time, see the <bpt id="p1">[</bpt>Converting UTC to local time<ept id="p1">](#converting-utc-to-local-time)</ept> section that follows.</source>
+          <target state="translated">若要将 UTC 转换为本地时间，请参阅下方<bpt id="p1">[</bpt>将 UTC 转换为本地时间<ept id="p1">](#converting-utc-to-local-time)</ept>一节。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To convert UTC to the time in any time zone that you designate, call the <bpt id="p1">[</bpt>ConvertTimeFromUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZoneInfo.converttimefromutc(v=vs.110).aspx)</ept> method.</source>
+          <target state="translated">若要将 UTC 转换为任何指定时区中的时间，请调用 <bpt id="p1">[</bpt>ConvertTimeFromUtc<ept id="p1">](https://msdn.microsoft.com/en-us/library/System.TimeZoneInfo.converttimefromutc(v=vs.110).aspx)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The `TimeZoneInfo.ConvertTimeFromUtc' method isn't currently available in .NET Core.</source>
+          <target state="translated">“TimeZoneInfo.ConvertTimeFromUtc”方法当前在 .NET Core 中不可用。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The method takes two parameters:</source>
+          <target state="translated">该方法采用两个参数：</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The UTC to convert.</source>
+          <target state="translated">要转换的 UTC。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This must be a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value whose <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property is set to <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> or <bpt id="p4">[</bpt>DateTimeKind.Unspecified<ept id="p4">](xref:System.DateTimeKind.Unspecified)</ept>.</source>
+          <target state="translated">这必须是一个 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值，其 <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> 属性设置为 <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> 或 <bpt id="p4">[</bpt>DateTimeKind.Unspecified<ept id="p4">](xref:System.DateTimeKind.Unspecified)</ept>。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The time zone to convert the UTC to.</source>
+          <target state="translated">UTC 要转换的目标时区。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following code converts UTC to Central Standard Time.</source>
+          <target state="translated">以下代码可将 UTC 转换为中部标准时间。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Converting UTC to local time</source>
+          <target state="translated">将 UTC 转换为本地时间</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>To convert UTC to local time, call the <bpt id="p1">[</bpt>DateTime.ToLocalTime<ept id="p1">](xref:System.DateTime)</ept> method of the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> object whose time you want to convert.</source>
+          <target state="translated">若要将 UTC 转换为本地时间，请调用要转换其时间的 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 对象的 <bpt id="p1">[</bpt>DateTime.ToLocalTime<ept id="p1">](xref:System.DateTime)</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The exact behavior of the method depends on the value of the object’s <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property, as the following table shows.</source>
+          <target state="translated">该方法的具体行为取决于该对象的 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 属性值，如下表所示。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> property</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime.Kind<ept id="p1">](xref:System.DateTimeKind)</ept> 属性</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Conversion</source>
+          <target state="translated">转换</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Local<ept id="p1">](xref:System.DateTimeKind.Local)</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Returns the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value unchanged.</source>
+          <target state="translated">返回未更改的 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Unspecified<ept id="p1">](xref:System.DateTimeKind.Unspecified)</ept></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Assumes that the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value is UTC and converts the UTC to local time.</source>
+          <target state="translated">假定 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值为 UTC 并将 UTC 转换为本地时间。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeKind.Utc<ept id="p1">](xref:System.DateTimeKind.Utc)</ept></target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Converts the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value to local time.</source>
+          <target state="translated">将 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值转换为本地时间。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Converting between any two time zones</source>
+          <target state="translated">在任意两个时区之间转换</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You can convert between any two time zones by using the static <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">可以使用静态 <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> 方法实现两个任意时区之间的转换。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This method's parameters are the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value to convert, a <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object that represents the time zone of the date and time value, and a <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> object that represents the time zone to convert the date and time value to.</source>
+          <target state="translated">此方法的参数是要转换的 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值，一个 <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> 对象（表示日期和时间值的时区）和一个 <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> 对象（表示日期和时间值要转换的目标时区）。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The method requires that the <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property of the date and time value to convert and the <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object or time zone identifier that represents its time zone correspond to one another.</source>
+          <target state="translated">该方法要求要转换的日期和时间值的 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 属性、<bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> 对象或表示其时区的时区标识符彼此对应。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Otherwise, an <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept> is thrown.</source>
+          <target state="translated">否则，会引发 <bpt id="p1">[</bpt>ArgumentException<ept id="p1">](xref:System.ArgumentException)</ept>。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>For example, if the <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property of the date and time value is <bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>, an exception is thrown if the <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> object passed as a parameter to the method is not equal to <bpt id="p4">[</bpt>TimeZoneInfo.Local<ept id="p4">](xref:System.TimeZoneInfo.Local)</ept>.</source>
+          <target state="translated">例如，如果日期和时间值的 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 属性为<bpt id="p2">[</bpt>DateTimeKind.Local<ept id="p2">](xref:System.DateTimeKind.Local)</ept>，而作为参数传递给该方法的 <bpt id="p3">[</bpt>TimeZoneInfo<ept id="p3">](xref:System.TimeZoneInfo)</ept> 对象不等于 <bpt id="p4">[</bpt>TimeZoneInfo.Local<ept id="p4">](xref:System.TimeZoneInfo.Local)</ept>，则会引发异常。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>An exception is also thrown if the identifier passed as a parameter to the method is not equal to <bpt id="p1">[</bpt>TimeZoneInfo.Id<ept id="p1">](xref:System.TimeZoneInfo.Id)</ept>.</source>
+          <target state="translated">如果作为参数传递给该方法的标识符不等于 <bpt id="p1">[</bpt>TimeZoneInfo.Id<ept id="p1">](xref:System.TimeZoneInfo.Id)</ept>，也会引发异常。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method to convert from Hawaiian Standard Time to local time.</source>
+          <target state="translated">下面的示例使用 <bpt id="p1">[</bpt>ConvertTime<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> 方法将夏威夷标准时间转换为本地时间。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Converting DateTimeOffset values</source>
+          <target state="translated">转换 DateTimeOffset 值</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Date and time values represented by <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> objects are not fully time-zone aware because the object is disassociated from its time zone at the time it is instantiated.</source>
+          <target state="translated">由 <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 对象表示的日期和时间值不具备完全时区感知能力，因为实例化该对象时已解除其与其时区的关联。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>However, in many cases an application simply needs to convert a date and time based on two different offsets from UTC rather than on the time in particular time zones.</source>
+          <target state="translated">但是，大多数情况下，应用程序仅需根据两种相对于 UTC 的偏移量，而不是特定时区的时间来转换日期和时间。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>To perform this conversion, you can call the current instance's <bpt id="p1">[</bpt>ToOffset<ept id="p1">](xref:System.DateTimeOffset.ToOffset(System.TimeSpan))</ept> method.</source>
+          <target state="translated">若要执行此转换，可以调用当前实例的 <bpt id="p1">[</bpt>ToOffset<ept id="p1">](xref:System.DateTimeOffset.ToOffset(System.TimeSpan))</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The method's single parameter is <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> representing the offset of the new date and time value that the method is to return.</source>
+          <target state="translated">该方法的单个参数是 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept>，表示方法将返回的新日期和时间值的偏移量。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, if the date and time of a user request for a Web page is known and is serialized as a string in the format MM/dd/yyyy hh:mm:ss zzzz, the following <ph id="ph1">`ReturnTimeOnServer`</ph> method converts this date and time value to the date and time on the Web server.</source>
+          <target state="translated">例如，如果用户所请求网页的日期和时间已知，并且已被序列化为 MM/dd/yyyy hh:mm:ss zzzz 格式的字符串，以下 <ph id="ph1">`ReturnTimeOnServer`</ph> 方法会将此日期和时间值转换为 Web 服务器上的日期和时间。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If the method is passed the string "9/1/2007 5:32:07 -05:00", which represents the date and time in a time zone five hours earlier than UTC, it returns 9/1/2007 3:32:07 AM -07:00 for a server located in the U.S. Pacific Standard Time zone.</source>
+          <target state="translated">如果向该方法传递字符串“9/1/2007 5:32:07 -05:00”（表示比 UTC 早五个小时的时区中的日期和时间），则对处于美国太平洋标准时区中的服务器，它将返回 9/1/2007 3:32:07 AM -07:00。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class also includes an overloaded <bpt id="p2">[</bpt>TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p2">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> method that performs time zone conversions with <bpt id="p3">[</bpt>System.DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 类还包括通过 <bpt id="p3">[</bpt>System.DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> 值执行时区转换的已重载 <bpt id="p2">[</bpt>TimeZoneInfo.ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p2">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The method's parameters are a <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value and a reference to the time zone to which the time is to be converted.</source>
+          <target state="translated">该方法有两个参数：一个是 <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值，另一个是对时间要转换的目标时区的引用。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The method call returns a <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">该方法调用返回 <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`ReturnTimeOnServer`</ph> method in the previous example could be rewritten as follows to call the <bpt id="p1">[</bpt>ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated">例如，可如下所示重写上一示例中的 <ph id="ph1">`ReturnTimeOnServer`</ph> 方法，以调用 <bpt id="p1">[</bpt>ConvertTime(DateTimeOffset, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo))</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>日期、时间和时区<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Finding the time zones defined on a local system<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>查找本地系统上定义的时区<ept id="p1">](finding-the-time-zones-on-local-system.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

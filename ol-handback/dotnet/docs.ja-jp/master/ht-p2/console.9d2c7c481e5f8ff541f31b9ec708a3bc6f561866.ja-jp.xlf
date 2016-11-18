@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d311674cc50c8a86128cf88c39e3044f70ba183</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\framework\docker\console.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">02fa0bc4ba65f75936d48f81291b670aaf3252bd</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e87ca82017d263984a8c5e72f040f0c9875ec571</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Running Console applications in Docker</source>
+          <target state="translated">Docker でのコンソール アプリケーションの実行</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.</source>
+          <target state="translated">既存の .NET Framework コンソール アプリケーションを Windows Docker コンテナーで実行する方法について説明します。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, Container, Console, Applications</source>
+          <target state="translated">.NET, コンテナー, コンソール, アプリケーション</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Running console applications in Windows containers</source>
+          <target state="translated">Windows コンテナーでのコンソール アプリケーションの実行</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Console applications are used for many purposes; from simple querying of a status to long running document image processing tasks.</source>
+          <target state="translated">コンソール アプリケーションは、状態の単純なクエリから、実行時間の長いドキュメント イメージ処理タスクまで、さまざまな目的で使用されます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In any case, the ability to start up and scale these applications are met with limitations of hardware acquisitions, startup times or running multiple instances.</source>
+          <target state="translated">いずれの場合にも、これらのアプリケーションを起動およびスケーリングする機能は、ハードウェアの取得、起動時間、または複数インスタンスの実行による制約を受けます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Moving your console applications to use Docker and Windows Server containers allows for starting these applications from a clean state, enabling them to perform the operation and then shutdown cleanly.</source>
+          <target state="translated">Docker コンテナーと Windows Server コンテナーを使用するようにコンソール アプリケーションを移行すると、これらのアプリケーションをクリーンな状態から起動でき、操作を実行してからクリーンにシャットダウンできます。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic will show the steps needed to move a console application to a Windows based container and start it using a PowerShell script.</source>
+          <target state="translated">このトピックでは、コンソール アプリケーションを Windows ベースのコンテナーに移行し、PowerShell スクリプトを使用してこのアプリケーションを起動するために必要な手順を示します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The sample console application is a simple example which takes an argument, a question in this case, and returns a random answer.</source>
+          <target state="translated">サンプルのコンソール アプリケーションは、引数 (この場合は質問) を受け取ってランダムな回答を返す単純な例です。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This could take a <ph id="ph1">`customer_id`</ph> and process their taxes, or create a thumbnail for an <ph id="ph2">`image_url`</ph> argument.</source>
+          <target state="translated">この例では、<ph id="ph1">`customer_id`</ph> を受け取ってその税金を処理したり、<ph id="ph2">`image_url`</ph> 引数に対してサムネイルを作成したりできます。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In addition to the answer, the <ph id="ph1">`Environment.MachineName`</ph> has been added to the response to show the difference between running the application locally and in a Windows container.</source>
+          <target state="translated">回答に加えて、<ph id="ph1">`Environment.MachineName`</ph> が応答に追加されており、アプリケーションの実行をローカルで行う場合と Windows コンテナーで行う場合の違いが示されます。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.</source>
+          <target state="translated">アプリケーションをローカルで実行する場合はローカル コンピューター名が返され、Windows コンテナーで実行する場合はコンテナーのセッション ID が返されます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The complete example is available in the <bpt id="p1">[</bpt>dotnet/core-docs repository on GitHub<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)</ept>.</source>
+          <target state="translated">完全な例は <bpt id="p1">[</bpt>GitHub の dotnet/core-docs リポジトリ<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator)</ept>にあります。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need to be familiar with some Docker terms before you begin working on moving your application to a container.</source>
+          <target state="translated">アプリケーションをコンテナーに移行する作業を開始する前に、いくつかの Docker 用語を理解しておく必要があります。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>Docker image<ept id="p1">*</ept> is a read-only template that defines the environment for a running container, including the operating system (OS), system components, and application(s).</source>
+          <target state="translated"><bpt id="p1">*</bpt>Docker イメージ<ept id="p1">*</ept>は、オペレーティング システム (OS)、システム コンポーネント、アプリケーションなど、実行中のコンテナー用の環境を定義する読み取り専用のテンプレートです。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>One important feature of Docker images is that images are composed from a base image.</source>
+          <target state="translated">Docker イメージの重要な特徴の 1 つは、イメージが基本イメージから構成されることです。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Each new image adds a small set of features to an existing image.</source>
+          <target state="translated">新しい各イメージが、特徴の小さなセットを既存のイメージに追加します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>Docker container<ept id="p1">*</ept> is a running instance of an image.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Docker コンテナー<ept id="p1">*</ept>は、イメージの実行インスタンスです。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You scale an application by running the same image in many containers.</source>
+          <target state="translated">さまざまなコンテナーで同じイメージを実行することで、アプリケーションをスケーリングします。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Conceptually, this is similar to running the same application in multiple hosts.</source>
+          <target state="translated">概念的には、複数のホストで同じアプリケーションを実行する場合に似ています。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>You can learn more about the Docker architecture by reading the <bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept> on the Docker site.</source>
+          <target state="translated">Docker アーキテクチャの詳細については、Docker サイトの「<bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>」 (Docker の概要) を参照してください。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Moving your console application is a matter of a few steps.</source>
+          <target state="translated">コンソール アプリケーションの移行には、次のいくつかの手順を要します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Build the application<ept id="p1">](#building-the-application)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>アプリケーションのビルド<ept id="p1">](#building-the-application)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a Dockerfile for the image<ept id="p1">](#creating-the-dockerfile)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イメージの Dockerfile の作成<ept id="p1">](#creating-the-dockerfile)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Process to build and run the Docker container<ept id="p1">](#creating-the-image)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker コンテナーをビルドして実行するプロセス<ept id="p1">](#creating-the-image)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要条件</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Windows containers are supported on <bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> or <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept>.</source>
+          <target state="translated">Windows コンテナーは、<bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> または <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept> でサポートされています。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature.</source>
+          <target state="translated">Windows Server 2016 を使用している場合、Docker for Windows インストーラーによってこの機能は有効にならないので、コンテナーを手動で有効にする必要があります。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Make sure all updates have run for the OS and then follow the instructions from the <bpt id="p1">[</bpt>Container Host Deployment<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept> article to install the containers and Docker features.</source>
+          <target state="translated">OS に対してすべての更新プログラムが実行されていることを確認してから、「<bpt id="p1">[</bpt>Container Host Deployment<ept id="p1">](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/deployment/deployment)</ept>」 (コンテナー ホストの展開) の記事にある説明に従って、コンテナーおよび Docker 機能をインストールします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers.</source>
+          <target state="translated">Windows コンテナーをサポートするには、Docker for Windows バージョン 1.12 Beta 26 以降が必要になります。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept>.</source>
+          <target state="translated">既定では、Docker は Linux ベースのコンテナーを有効にします。Windows コンテナーに切り替えるには、システム トレイで Docker アイコンを右クリックし、<bpt id="p1">**</bpt>[Switch to Windows containers]<ept id="p1">**</ept> (Windows コンテナーに切り替え) を選択します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Docker will run the process to change and a restart may be required.</source>
+          <target state="translated">Docker は変更プロセスを実行します。この際、再起動が必要になる場合があります。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Windows-Containers</source>
+          <target state="translated">Windows コンテナー</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Building the application</source>
+          <target state="translated">アプリケーションのビルド</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Typically console applications are distributed through an installer, FTP, or File Share deployment.</source>
+          <target state="translated">通常、コンソール アプリケーションは、インストーラー、FTP、またはファイル共有の展開を通して配布されます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.</source>
+          <target state="translated">コンテナーへの展開時には、資産をコンパイルし、Docker イメージを作成するときに使用できる場所にステージングする必要があります。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept>, the script uses <bpt id="p2">[</bpt>MSBuild<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd393574.aspx)</ept> to compile the application to complete the task of building the assets.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Build.ps1<ept id="p1">*</ept> で、スクリプトは資産のビルド タスクを実行するために、<bpt id="p2">[</bpt>MSBuild<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd393574.aspx)</ept> を使用してアプリケーションをコンパイルします。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>There are a few parameters passed to MSBuild to finalize the needed assets.</source>
+          <target state="translated">必要な資産を最終処理するために MSBuild に渡されるいくつかのパラメーターがあります。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).</source>
+          <target state="translated">コンパイルするプロジェクト ファイルまたはソリューションの名前、出力の場所、および構成 (Release または Debug) です。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In the call to <ph id="ph1">`Invoke-MSBuild`</ph> the <ph id="ph2">`OutputPath`</ph> is set to <bpt id="p1">**</bpt>publish<ept id="p1">**</ept> and  <ph id="ph3">`Configuration`</ph> set to <bpt id="p2">**</bpt>Release<ept id="p2">**</ept>.</source>
+          <target state="translated"><ph id="ph1">`Invoke-MSBuild`</ph> への呼び出しで、<ph id="ph2">`OutputPath`</ph> は <bpt id="p1">**</bpt>publish<ept id="p1">**</ept> に設定され、<ph id="ph3">`Configuration`</ph> は <bpt id="p2">**</bpt>Release<ept id="p2">**</ept> に設定されます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Creating the Dockerfile</source>
+          <target state="translated">Dockerfile の作成</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The base image used for a console .NET Framework application is <ph id="ph1">`microsoft/windowsservercore`</ph>, publicly available on <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/windowsservercore/)</ept>.</source>
+          <target state="translated">コンソールの .NET Framework アプリケーションに使用される基本イメージは <ph id="ph1">`microsoft/windowsservercore`</ph> であり、<bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/windowsservercore/)</ept> で一般公開されています。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The base image contains a minimal installation of Windows Server 2016, .NET Framework 4.6.2 and serves as the base OS image for Windows Containers.</source>
+          <target state="translated">この基本イメージには、Windows Server 2016、.NET Framework 4.6.2 の最小限のインストールが含まれており、Windows コンテナーの基本 OS イメージとして機能します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The first line in the Dockerfile designates the base image using the <bpt id="p1">[</bpt><ph id="ph1">`FROM`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/from)</ept> instruction.</source>
+          <target state="translated">Dockerfile の最初の行は、<bpt id="p1">[</bpt><ph id="ph1">`FROM`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/from)</ept> 命令を使用して基本イメージを指定します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Next, <bpt id="p1">[</bpt><ph id="ph1">`ADD`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/add)</ept> in the file copies the application assets from the <bpt id="p2">**</bpt>publish<ept id="p2">**</ept> folder to root folder of the container and last; setting the <bpt id="p3">[</bpt><ph id="ph2">`ENTRYPOINT`</ph><ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> of the image states that this is the command or application that will run when the container starts.</source>
+          <target state="translated">次に、ファイル内の <bpt id="p1">[</bpt><ph id="ph1">`ADD`</ph><ept id="p1">](https://docs.docker.com/engine/reference/builder/#/add)</ept> は、<bpt id="p2">**</bpt>publish<ept id="p2">**</ept> フォルダーからコンテナーのルート フォルダーにアプリケーション資産をコピーします。最後に、イメージの <bpt id="p3">[</bpt><ph id="ph2">`ENTRYPOINT`</ph><ept id="p3">](https://docs.docker.com/engine/reference/builder/#/entrypoint)</ept> を設定することで、これがコンテナーの開始時に実行されるコマンドまたはアプリケーションであることを示します。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Creating the image</source>
+          <target state="translated">イメージの作成</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In order to create the Docker image, the following code is added to the <bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept> script.</source>
+          <target state="translated">Docker イメージを作成するには、<bpt id="p1">*</bpt>build.ps1<ept id="p1">*</ept> スクリプトに次のコードを追加します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When the script is run, the <ph id="ph1">`console-random-answer-generator`</ph> image is created using the assets compiled from MSBuild defined in the <bpt id="p1">[</bpt>Building the application<ept id="p1">](#building-the-application)</ept> section.</source>
+          <target state="translated">スクリプトを実行すると、「<bpt id="p1">[</bpt>アプリケーションのビルド<ept id="p1">](#building-the-application)</ept>」セクションで定義した MSBuild からコンパイルされた資産を使用して、<ph id="ph1">`console-random-answer-generator`</ph> イメージが作成されます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Run the script using <ph id="ph1">`.\build.ps1`</ph> from the PowerShell command prompt.</source>
+          <target state="translated">PowerShell コマンド プロンプトから、<ph id="ph1">`.\build.ps1`</ph> を使用してスクリプトを実行します。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>When the build is complete, using the <ph id="ph1">`docker images`</ph> command from a command line or PowerShell prompt; you'll see that the image is created and ready to be run.</source>
+          <target state="translated">ビルドが完了したら、コマンドラインまたは PowerShell プロンプトから <ph id="ph1">`docker images`</ph> コマンドを使用します。イメージが作成され、実行できる状態であることがわかります。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Running the container</source>
+          <target state="translated">コンテナーの実行</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can start the container from the command line using the Docker commands.</source>
+          <target state="translated">コンテナーは、コマンドラインから Docker コマンドを使用して起動できます。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The output is</source>
+          <target state="translated">出力は次のようになります。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If you run the <ph id="ph1">`docker ps -a`</ph> command from PowerShell, you can see that the container still exists.</source>
+          <target state="translated">PowerShell から <ph id="ph1">`docker ps -a`</ph> コマンドを実行すると、コンテナーがまだ存在することがわかります。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The STATUS column shows at "About a minute ago", the application was complete and could be shut down.</source>
+          <target state="translated">STATUS 列は、"約 1 分前" にアプリケーションが完了しており、シャットダウンできることを示しています。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If the command was run a hundred times, there would be a hundred containers left static with no work to do.</source>
+          <target state="translated">このコマンドを 100 回実行すれば、実行する作業のない 100 個のコンテナーが静的な状態で残ります。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In the beginning scenario the ideal operation was to do the work and shutdown or cleanup.</source>
+          <target state="translated">最初のシナリオでは、理想的な操作は、作業を実行してからシャットダウンまたはクリーンアップを行うことでした。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To accomplish that workflow, adding the <ph id="ph1">`--rm`</ph> option to the <ph id="ph2">`docker run`</ph> command will remove the container as soon as the <ph id="ph3">`Exited`</ph> signal is received.</source>
+          <target state="translated">そのワークフローを実行するには、<ph id="ph1">`--rm`</ph> オプションを <ph id="ph2">`docker run`</ph> コマンドに追加することで、<ph id="ph3">`Exited`</ph> シグナルを受け取ったらすぐにコンテナーが削除されるようにします。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Running the command with this option and then looking at the output of <ph id="ph1">`docker ps -a`</ph> command; notice that the container id (the <ph id="ph2">`Environment.MachineName`</ph>) is not in the list.</source>
+          <target state="translated">このオプションを指定してコマンドを実行してから、<ph id="ph1">`docker ps -a`</ph> コマンドの出力を見ると、コンテナー ID (<ph id="ph2">`Environment.MachineName`</ph>) が一覧に表示されていません。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Running the container using PowerShell</source>
+          <target state="translated">PowerShell を使用したコンテナーの実行</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the sample project files there is also a <bpt id="p1">*</bpt>run.ps1<ept id="p1">*</ept> which is an example of how to use PowerShell to run the application accepting the arguments.</source>
+          <target state="translated">サンプル プロジェクト ファイルには、PowerShell を使用して引数を受け入れるアプリケーションを実行する方法の例として、<bpt id="p1">*</bpt>run.ps1<ept id="p1">*</ept> も含まれています。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>To run, open PowerShell and use the following command:</source>
+          <target state="translated">実行するには、PowerShell を開き、次のコマンドを使用します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">まとめ</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Just by adding a Dockerfile and publishing the application, you can containerize your .NET Framework console applications and now take the advantage of running multiple instances, clean start and stop and more Windows Server 2016 capabilities without making any changes to the application code at all.</source>
+          <target state="translated">Dockerfile を追加し、アプリケーションを発行するだけで、.NET Framework コンソール アプリケーションをコンテナー化できます。これにより、アプリケーション コードを全く変更せずに、複数のインスタンス、クリーンな起動と停止、および Windows Server 2016 のより多くの機能を実行することができます。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

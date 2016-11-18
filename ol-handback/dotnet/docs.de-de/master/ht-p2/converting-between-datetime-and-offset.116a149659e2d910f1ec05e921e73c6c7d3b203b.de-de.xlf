@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">99ec9d8c433025bbc5122fe3ea364fe84f33a1f8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\converting-between-datetime-and-offset.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9a2426e00f90792e8b8b39370e84c90421240277</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5846e18372f553f7054645af30b9a6e6a7ff756a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Converting between DateTime and DateTimeOffset</source>
+          <target state="translated">Konvertieren zwischen DateTime und DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Converting between DateTime and DateTimeOffset</source>
+          <target state="translated">Konvertieren zwischen DateTime und DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Converting between DateTime and DateTimeOffset</source>
+          <target state="translated">Konvertieren zwischen DateTime und DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Although the <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure provides a greater degree of time zone awareness than the <bpt id="p2">[</bpt>System.DateTime<ept id="p2">](xref:System.DateTime)</ept> structure, <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> parameters are used more commonly in method calls.</source>
+          <target state="translated">Obwohl die <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Struktur eine umfassendere Zeitzonenunterstützung bietet als die <bpt id="p2">[</bpt>System.DateTime<ept id="p2">](xref:System.DateTime)</ept>-Struktur, werden <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept>-Parameter häufiger in Methodenaufrufen verwendet.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Because of this, the ability to convert <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values to <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> values and vice versa is particularly important.</source>
+          <target state="translated">Aus diesem Grund ist die Fähigkeit sehr wichtig, <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werte in <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Werte und umgekehrt zu konvertieren.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how to perform these conversions in a way that preserves as much time zone information as possible.</source>
+          <target state="translated">Dieser Artikel zeigt, wie Sie diese Konvertierungen auf eine Weise ausführen, bei der so viele Zeitzoneninformationen wie möglich beibehalten werden.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Both the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and the <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types have some limitations when representing times in time zones.</source>
+          <target state="translated">Sowohl der <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- als auch der <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Typ weisen einige Einschränkungen hinsichtlich der Darstellung von Zeiten in Zeitzonen auf.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>With its <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property, <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> is able to reflect only Coordinated Universal Time (UTC) and the system's local time zone.</source>
+          <target state="translated">Mit der Eigenschaft <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> kann <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> nur die koordinierte Weltzeit (UTC) und die lokale Zeitzone des Systems widerspiegeln.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> reflects a time's offset from UTC, but it does not reflect the actual time zone to which that offset belongs.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> gibt die Abweichung einer Uhrzeit von der UTC wieder, aber nicht die tatsächliche Zeitzone, zu der diese Abweichung gehört.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For details about time values and support for time zones, see <bpt id="p1">[</bpt>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo<ept id="p1">](choosing-between-datetime.md)</ept>.</source>
+          <target state="translated">Detaillierte Informationen zu Uhrzeitwerten und zur Unterstützung von Zeitzonen finden Sie unter <bpt id="p1">[</bpt>Auswählen zwischen DateTime, DateTimeOffset, TimeSpan und TimeZoneInfo<ept id="p1">](choosing-between-datetime.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Conversions from DateTime to DateTimeOffset</source>
+          <target state="translated">Konvertierungen von DateTime in DateTimeOffset</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure provides two equivalent ways to perform <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> to <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> conversion that are suitable for most conversions:</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Struktur bietet zwei gleichwertige Möglichkeiten zum Konvertieren von <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> in <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept>, die sich für die meisten Konvertierungen eignen:</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset(DateTime)<ept id="p1">](xref:System.DateTimeOffset)</ept> constructor, which creates a new <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> object based on a <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> value.</source>
+          <target state="translated">Der <bpt id="p1">[</bpt>DateTimeOffset(DateTime)<ept id="p1">](xref:System.DateTimeOffset)</ept>-Konstruktor, der ein neues <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Objekt basierend auf einem <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept>-Wert erstellt.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The implicit conversion operator, which allows you to assign a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value to a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> object.</source>
+          <target state="translated">Der implizite Konvertierungsoperator, mit dem Sie einem <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Objekt einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert zuweisen können.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For UTC and local <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values, the <bpt id="p2">[</bpt>DateTimeOffset.Offset<ept id="p2">](xref:System.DateTimeOffset.Offset)</ept> property of the resulting <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> value accurately reflects the UTC or local time zone offset.</source>
+          <target state="translated">Für UTC und lokale <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werte gibt die <bpt id="p2">[</bpt>DateTimeOffset.Offset<ept id="p2">](xref:System.DateTimeOffset.Offset)</ept>-Eigenschaft des resultierenden <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept>-Werts exakt die UTC-Abweichung oder Abweichung der lokalen Zeitzone wieder.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For example, the following code converts a UTC time to its equivalent <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">Folgender Code konvertiert z.B. eine UTC-Zeit in den entsprechenden <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Wert.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In this case, the offset of the <ph id="ph1">`utcTime2`</ph> variable is 00:00.</source>
+          <target state="translated">In diesem Fall beträgt die Abweichung der <ph id="ph1">`utcTime2`</ph>-Variablen 00:00.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Similarly, the following code converts a local time to its equivalent <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">Auf die gleiche Weise konvertiert folgender Code eine lokale Zeit in den entsprechenden <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Wert.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, for <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values whose <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property is <bpt id="p3">[</bpt>DateTimeKind.Unspecified<ept id="p3">](xref:System.DateTimeKind.Unspecified)</ept>, these two conversion methods produce a <bpt id="p4">[</bpt>DateTimeOffset<ept id="p4">](xref:System.DateTimeOffset)</ept> value whose offset is that of the local time zone.</source>
+          <target state="translated">Für <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werte, deren <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept>-Eigenschaft <bpt id="p3">[</bpt>DateTimeKind.Unspecified<ept id="p3">](xref:System.DateTimeKind.Unspecified)</ept> lautet, erzeugen diese beiden Konvertierungsmethoden allerdings einen<bpt id="p4">[</bpt>DateTimeOffset<ept id="p4">](xref:System.DateTimeOffset)</ept>-Wert, dessen Abweichung der Abweichung der lokalen Zeitzone entspricht.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This is shown in the following example, which is run in the U.S. Pacific Standard Time zone.</source>
+          <target state="translated">Dies wird im folgenden Beispiel gezeigt, das in der Zeitzone „Pacific Standard Time“ (USA) ausgeführt wird.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value reflects the date and time in something other than the local time zone or UTC, you can convert it to a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value and preserve its time zone information by calling the overloaded <bpt id="p3">[</bpt>DateTimeOffset(DateTime, TimeSpan)<ept id="p3">](xref:System.DateTimeOffset)</ept> constructor.</source>
+          <target state="translated">Wenn der <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert das Datum und die Uhrzeit in einer anderen Zeit als der lokalen Zeitzone oder der UTC wiedergibt, können Sie den Wert in einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert konvertieren und die Zeitzoneninformationen beibehalten, indem Sie den überladenen <bpt id="p3">[</bpt>DateTimeOffset(DateTime, TimeSpan)<ept id="p3">](xref:System.DateTimeOffset)</ept>-Konstruktor aufrufen.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>For example, the following example instantiates a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> object that reflects Central Standard Time.</source>
+          <target state="translated">Das folgende Beispiel instanziiert ein <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Objekt, das die Central Standard Time wiedergibt.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The second parameter to this constructor overload, a <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> object that represents the time's offset from UTC, should be retrieved by calling the <bpt id="p2">[</bpt>TimeZoneInfo.GetUtcOffset(DateTime)<ept id="p2">](xref:System.TimeZoneInfo)</ept> method of the time's corresponding time zone.</source>
+          <target state="translated">Der zweite Parameter dieser Konstruktorüberladung, ein <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept>-Objekt, das die Abweichung der Uhrzeit von der UTC darstellt, sollte durch Aufrufen der <bpt id="p2">[</bpt>TimeZoneInfo.GetUtcOffset(DateTime)<ept id="p2">](xref:System.TimeZoneInfo)</ept>-Methode der entsprechenden Zeitzone der Uhrzeit abgerufen werden.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The method's single parameter is the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value that represents the date and time to be converted.</source>
+          <target state="translated">Der einzige Parameter der Methode ist der <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert, der das Datum und die Uhrzeit darstellt, das/die konvertiert werden soll.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If the time zone supports daylight saving time, this parameter allows the method to determine the appropriate offset for that particular date and time.</source>
+          <target state="translated">Wenn die Zeitzone die Sommerzeit unterstützt, ermöglicht dieser Parameter der Methode, die richtige Abweichung für dieses spezielle Datum und diese spezielle Uhrzeit zu bestimmen.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Conversions from DateTimeOffset to DateTime</source>
+          <target state="translated">Konvertierungen von DateTimeOffset in DateTime</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> property is most commonly used to perform <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> to <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> conversion.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Eigenschaft wird am häufigsten verwendet, um Konvertierungen von <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> in <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> durchzuführen.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, it returns a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value whose <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property is <bpt id="p3">[</bpt>DateTimeKind.Unspecified<ept id="p3">](xref:System.DateTimeKind.Unspecified)</ept>, as the following example illustrates.</source>
+          <target state="translated">Die Eigenschaft gibt allerdings einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert zurück, dessen <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept>-Eigenschaft <bpt id="p3">[</bpt>DateTimeKind.Unspecified<ept id="p3">](xref:System.DateTimeKind.Unspecified)</ept> lautet, wie im folgenden Beispiel veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This means that any information about the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value's relationship to UTC is lost by the conversion when the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> property is used.</source>
+          <target state="translated">Dies bedeutet, dass alle Informationen über die Beziehung des <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werts zur UTC bei der Konvertierung verloren gehen, wenn die <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Eigenschaft verwendet wird.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This affects <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values that correspond to UTC time or to the system's local time because the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> structure reflects only those two time zones in its <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> property.</source>
+          <target state="translated">Dies betrifft <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werte, die der UTC-Zeit oder der lokalen Systemzeit entsprechen, weil die <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Struktur in ihrer <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept>-Eigenschaft nur diese beiden Zeitzonen wiedergibt.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To preserve as much time zone information as possible when converting a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> to a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value, you can use the <bpt id="p3">[</bpt>DateTimeOffset.UtcDateTime<ept id="p3">](xref:System.DateTimeOffset.UtcDateTime)</ept> and <bpt id="p4">[</bpt>DateTimeOffset.LocalDateTime<ept id="p4">](xref:System.DateTimeOffset.LocalDateTime)</ept> properties.</source>
+          <target state="translated">Um bei der Konvertierung eines <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werts in einen <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Wert so viele Zeitzoneninformationen wie möglich beizubehalten, können Sie die Eigenschaften <bpt id="p3">[</bpt>DateTimeOffset.UtcDateTime<ept id="p3">](xref:System.DateTimeOffset.UtcDateTime)</ept> und <bpt id="p4">[</bpt>DateTimeOffset.LocalDateTime<ept id="p4">](xref:System.DateTimeOffset.LocalDateTime)</ept> verwenden.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Converting a UTC Time</source>
+          <target state="translated">Konvertieren einer UTC-Zeit</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To indicate that a converted <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value is the UTC time, you can retrieve the value of the <bpt id="p2">[</bpt>DateTimeOffset.UtcDateTime<ept id="p2">](xref:System.DateTimeOffset.UtcDateTime)</ept> property.</source>
+          <target state="translated">Um anzugeben, dass es sich bei einem konvertierten <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert um die UTC-Zeit handelt, können Sie den Wert der <bpt id="p2">[</bpt>DateTimeOffset.UtcDateTime<ept id="p2">](xref:System.DateTimeOffset.UtcDateTime)</ept>-Eigenschaft abrufen.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>It differs from the <bpt id="p1">[</bpt>DateTimeOffset.DateTime<ept id="p1">](xref:System.DateTimeOffset.DateTime)</ept> property in two ways:</source>
+          <target state="translated">Diese Eigenschaft unterscheidet sich in zweierlei Hinsicht von der <bpt id="p1">[</bpt>DateTimeOffset.DateTime<ept id="p1">](xref:System.DateTimeOffset.DateTime)</ept>-Eigenschaft:</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It returns a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value whose <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property is <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">Sie gibt einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert zurück, dessen <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept>-Eigenschaft <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept> lautet.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">[</bpt>DateTimeOffset.Offset<ept id="p1">](xref:System.DateTimeOffset.Offset)</ept> property value does not equal <bpt id="p2">[</bpt>TimeSpan.Zero<ept id="p2">](xref:System.TimeSpan.Zero)</ept>, it converts the time to UTC.</source>
+          <target state="translated">Wenn der <bpt id="p1">[</bpt>DateTimeOffset.Offset<ept id="p1">](xref:System.DateTimeOffset.Offset)</ept>-Eigenschaftswert nicht gleich <bpt id="p2">[</bpt>TimeSpan.Zero<ept id="p2">](xref:System.TimeSpan.Zero)</ept> ist, wird die Uhrzeit in die UTC konvertiert.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If your application requires that converted <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values unambiguously identify a single point in time, you should consider using the <bpt id="p2">[</bpt>DateTimeOffset.UtcDateTime<ept id="p2">](xref:System.DateTimeOffset.UtcDateTime)</ept> property to handle all <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> to <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept> conversions.</source>
+          <target state="translated">Wenn es Ihre Anwendung erfordert, dass konvertierte <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Werte eine bestimmte Uhrzeit eindeutig identifizieren, sollten Sie die Eigenschaft <bpt id="p2">[</bpt>DateTimeOffset.UtcDateTime<ept id="p2">](xref:System.DateTimeOffset.UtcDateTime)</ept> verwenden, um alle Konvertierungen von <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> in <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept> zu verarbeiten.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following code uses the <bpt id="p1">[</bpt>UtcDateTime<ept id="p1">](xref:System.DateTimeOffset.UtcDateTime)</ept> property to convert a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value whose offset equals <bpt id="p3">[</bpt>TimeSpan.Zero<ept id="p3">](xref:System.TimeSpan.Zero)</ept> to a <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept> value.</source>
+          <target state="translated">Der folgende Code verwendet die <bpt id="p1">[</bpt>UtcDateTime<ept id="p1">](xref:System.DateTimeOffset.UtcDateTime)</ept>-Eigenschaft, um einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert zu konvertieren, dessen Abweichung <bpt id="p3">[</bpt>TimeSpan.Zero<ept id="p3">](xref:System.TimeSpan.Zero)</ept> mit einem <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept>-Wert gleichsetzt.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following code uses the UtcDateTime property to perform both a time zone conversion and a type conversion on a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">Der folgende Code verwendet die UtcDateTime-Eigenschaft, um sowohl eine Zeitzonenkonvertierung als auch eine Typkonvertierung für einen <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Wert auszuführen.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Converting a Local Time</source>
+          <target state="translated">Konvertieren einer lokalen Zeit</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>To indicate that a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value represents the local time, you can pass the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value returned by the <bpt id="p3">[</bpt>DateTimeOffset.DateTime<ept id="p3">](xref:System.DateTimeOffset.DateTime)</ept> property to the static <bpt id="p4">[</bpt>DateTime.SpecifyKind(DateTime, DateTimeKind)<ept id="p4">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept> method.</source>
+          <target state="translated">Um anzugeben, dass ein <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Wert die lokale Uhrzeit wiedergibt, können Sie den <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Wert, der von der <bpt id="p3">[</bpt>DateTimeOffset.DateTime<ept id="p3">](xref:System.DateTimeOffset.DateTime)</ept>-Eigenschaft zurückgegeben wurde, an die statische <bpt id="p4">[</bpt>DateTime.SpecifyKind(DateTime, DateTimeKind)<ept id="p4">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept>-Methode übergeben.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The method returns the date and time passed to it as its first parameter, but sets the <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property to the value specified by its second parameter.</source>
+          <target state="translated">Die Methode gibt das an sie übergebene Datum und die übergebene Uhrzeit als ersten Parameter zurück, legt aber die <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft auf den vom zweiten Parameter angegebenen Wert fest.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The following code uses the <bpt id="p1">[</bpt>SpecifyKind(DateTime, DateTimeKind)<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept> method when converting a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value whose offset corresponds to that of the local time zone.</source>
+          <target state="translated">Der folgende Code verwendet die <bpt id="p1">[</bpt>SpecifyKind(DateTime, DateTimeKind)<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept>-Methode, um einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert zu konvertieren, dessen Abweichung der Abweichung der lokalen Zeitzone entspricht.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>You can also use the <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept> property to convert a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value to a local <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> value.</source>
+          <target state="translated">Sie können auch die <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept>-Eigenschaft verwenden, um einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert in einen lokalen <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept>-Wert zu konvertieren.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property of the returned <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value is <bpt id="p3">[</bpt>DateTimeKind.Local<ept id="p3">](xref:System.DateTimeKind.Local)</ept>.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept>-Eigenschaft des zurückgegebenen <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Werts ist <bpt id="p3">[</bpt>DateTimeKind.Local<ept id="p3">](xref:System.DateTimeKind.Local)</ept>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The following code uses the <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept> property when converting a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value whose offset corresponds to that of the local time zone.</source>
+          <target state="translated">Der folgende Code verwendet die <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept>-Eigenschaft, um einen <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Wert zu konvertieren, dessen Abweichung der Abweichung der lokalen Zeitzone entspricht.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When you retrieve a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value using the <bpt id="p2">[</bpt>DateTimeOffset.LocalDateTime<ept id="p2">](xref:System.DateTimeOffset.LocalDateTime)</ept> property, the property's <ph id="ph1">`get`</ph> accessor first converts the <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept> value to UTC, then converts it to local time by calling the <bpt id="p4">[</bpt>DateTimeOffset.ToLocalTime<ept id="p4">](xref:System.DateTimeOffset)</ept> method.</source>
+          <target state="translated">Wenn Sie einen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>-Wert mithilfe der <bpt id="p2">[</bpt>DateTimeOffset.LocalDateTime<ept id="p2">](xref:System.DateTimeOffset.LocalDateTime)</ept>-Eigenschaft abrufen, konvertiert der <ph id="ph1">`get`</ph>-Accessor der Eigenschaft den <bpt id="p3">[</bpt>DateTimeOffset<ept id="p3">](xref:System.DateTimeOffset)</ept>-Wert zuerst in die UTC und dann durch Aufrufen der <bpt id="p4">[</bpt>DateTimeOffset.ToLocalTime<ept id="p4">](xref:System.DateTimeOffset)</ept>-Methode in die lokale Zeit.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This means that you can retrieve a value from the <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept> property to perform a time zone conversion at the same time that you perform a type conversion.</source>
+          <target state="translated">Dies bedeutet, dass Sie einen Wert aus der <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept>-Eigenschaft abrufen können, um gleichzeitig mit einer Typkonvertierung auch eine Zeitzonenkonvertierung auszuführen.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>It also means that the local time zone's adjustment rules are applied in performing the conversion.</source>
+          <target state="translated">Es bedeutet auch, dass die beim Durchführen der Konvertierung die Anpassungsregeln der lokalen Zeitzone angewendet werden.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following code illustrates the use of the <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept> property to perform both a type and a time zone conversion.</source>
+          <target state="translated">Der folgende Code verwendet die Verwendung der <bpt id="p1">[</bpt>DateTimeOffset.LocalDateTime<ept id="p1">](xref:System.DateTimeOffset.LocalDateTime)</ept>-Eigenschaft, um sowohl eine Typkonvertierung als auch eine Zeitzonenkonvertierung auszuführen.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>A General-Purpose Conversion Method</source>
+          <target state="translated">Eine allgemeine Konvertierungsmethode</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The following example defines a method named <ph id="ph1">`ConvertFromDateTimeOffset`</ph> that converts <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values to <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated">Das folgende Beispiel definiert eine Methode namens <ph id="ph1">`ConvertFromDateTimeOffset`</ph>, die <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werte in <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept>-Werte konvertiert.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Based on its offset, it determines whether the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value is a UTC time, a local time, or some other time, and defines the returned date and time value's <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property accordingly.</source>
+          <target state="translated">Basierend auf der Abweichung bestimmt die Methode, ob es sich beim <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Wert um eine UTC-Zeit, eine lokale Zeit oder eine andere Zeit handelt, und definiert die <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept>-Eigenschaft des zurückgegebenen Datums- und Uhrzeitwerts entsprechend.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The follow example calls the <ph id="ph1">`ConvertFromDateTimeOffset`</ph> method to convert <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values that represent a UTC time, a local time, and a time in the U.S. Central Standard Time zone.</source>
+          <target state="translated">Das folgende Beispiel ruft die <ph id="ph1">`ConvertFromDateTimeOffset`</ph>-Methode auf, um <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>-Werte zu konvertieren, die eine UTC-Zeit, eine lokale Zeit und eine Zeit in der Central Standard Time-Zeitzone (USA) darstellen.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Note that this code makes two assumptions that, depending on the application and the source of its date and time values, may not always be valid:</source>
+          <target state="translated">Beachten Sie, dass bei diesem Code von zwei Annahmen ausgegangen wird, die je nach der Anwendung und der Quelle ihrer Datums- und Uhrzeitwerte, nicht immer zutreffen:</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It assumes that a date and time value whose offset is <bpt id="p1">[</bpt>TimeSpan.Zero<ept id="p1">](xref:System.TimeSpan.Zero)</ept> represents UTC.</source>
+          <target state="translated">Es wird angenommen, dass ein Datums- und Uhrzeitwert, dessen Abweichung <bpt id="p1">[</bpt>TimeSpan.Zero<ept id="p1">](xref:System.TimeSpan.Zero)</ept> beträgt, eine UTC-Zeit darstellt.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In fact, UTC is not a time in a particular time zone, but the time in relation to which the times in the world's time zones are standardized.</source>
+          <target state="translated">Tatsächlich ist die UTC keine Zeit in einer bestimmten Zeitzone, sondern die Uhrzeit, nach der alle Uhrzeiten in den Zeitzone der Welt standardisiert sind.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Time zones can also have an offset of <bpt id="p1">[</bpt>Zero<ept id="p1">](xref:System.TimeSpan.Zero)</ept>.</source>
+          <target state="translated">Zeitzonen können auch eine Abweichung von <bpt id="p1">[</bpt>null<ept id="p1">](xref:System.TimeSpan.Zero)</ept> aufweisen.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>It assumes that a date and time whose offset equals that of the local time zone represents the local time zone.</source>
+          <target state="translated">Es wird angenommen, dass ein Datums- und Uhrzeitwert, dessen Abweichung der Abweichung der lokalen Zeitzone entspricht, die lokale Zeitzone darstellt.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Because date and time values are disassociated from their original time zone, this may not be the case; the date and time can have originated in another time zone with the same offset.</source>
+          <target state="translated">Dies ist möglicherweise nicht der Fall, weil Datums- und Uhrzeitwerte nicht mehr ihrer ursprünglichen Zeitzone verknüpft sind. Datum und Uhrzeit können aus einer anderen Zeitzone mit der gleichen Abweichung stammen.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Datumsangaben, Uhrzeiten und Zeitzonen<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c8ff0f81054feddb4ee7042926c817de525034f9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\async-in-depth.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4a59cc5bc6b7d68b057f06623b3cc2f09799a72f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6ad464a4806ef09df47b4d06900d8102ffaf398b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Async in depth</source>
+          <target state="translated">深入了解非同步</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>In-depth explanation of how asynchronous code works in .NET</source>
+          <target state="translated">深入解說非同步程式碼在 .NET 中的運作方式</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Standard</source>
+          <target state="translated">.NET, .NET Core, .NET Standard</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Async in depth</source>
+          <target state="translated">深入了解非同步</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.</source>
+          <target state="translated">撰寫 I/O-bound 和 CPU-bound 非同步程式碼的直接做法，就是使用以 .NET 工作為基礎的非同步模型。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The model is exposed by the <ph id="ph1">`Task`</ph> and <ph id="ph2">`Task&lt;T&gt;`</ph> types and the <ph id="ph3">`async`</ph> and <ph id="ph4">`await`</ph> language keywords.</source>
+          <target state="translated">此模型是由 <ph id="ph1">`Task`</ph> 和 <ph id="ph2">`Task&lt;T&gt;`</ph> 類型以及 <ph id="ph3">`async`</ph> 和 <ph id="ph4">`await`</ph> 語言關鍵字所公開。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article explains how to use .NET async and provides insight into the async framework used under the covers.</source>
+          <target state="translated">本文說明如何使用 .NET 非同步，並深入解析幕後所使用的非同步架構。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Task and Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></source>
+          <target state="translated">Task 與 Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Tasks are constructs used to implement what is known as the <bpt id="p1">[</bpt>Promise Model of Concurrency<ept id="p1">](https://en.wikipedia.org/wiki/Futures_and_promises)</ept>.</source>
+          <target state="translated">Task 是用來實作稱為 <bpt id="p1">[</bpt>Promise 並行存取模型<ept id="p1">](https://en.wikipedia.org/wiki/Futures_and_promises)</ept>的建構。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In short, they offer you a "promise" that work will be completed at a later point, letting you coordinate with the promise with a clean API.</source>
+          <target state="translated">簡單地說，它們會對您「承諾」工作將於稍後完成，讓您以無障礙的 API 來協調此承諾。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task`</ph> represents a single operation which does not return a value.</source>
+          <target state="translated"><ph id="ph1">`Task`</ph> 代表不會傳回值的單一作業。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task&lt;T&gt;`</ph> represents a single operation which returns a value of type <ph id="ph2">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Task&lt;T&gt;`</ph> 代表會傳回類型為 <ph id="ph2">`T`</ph> 之值的單一作業。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>It’s important to reason about tasks as abstractions of work happening asynchronously, and <bpt id="p1">*</bpt>not<ept id="p1">*</ept> an abstraction over threading.</source>
+          <target state="translated">您必須了解 Task 是以非同步方式執行工作的抽象層，而「不是」透過執行緒的抽象層。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate.</source>
+          <target state="translated">根據預設，Task 會在目前的執行緒上執行，並視需要將工作委派給作業系統。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Optionally, tasks can be be explicitly requested to run on a separate thread via the <ph id="ph1">`Task.Run`</ph> API.</source>
+          <target state="translated">您可以選擇性地明確要求透過 <ph id="ph1">`Task.Run`</ph> API 在個別執行緒上執行 Task。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Tasks expose an API protocol for monitoring, waiting upon and accessing the result value (in the case of <ph id="ph1">`Task&lt;T&gt;`</ph>) of a task.</source>
+          <target state="translated">Task 會公開 API 通訊協定，以監視、等候及存取 Task 的結果值 (如果是 <ph id="ph1">`Task&lt;T&gt;`</ph>)。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Language integration, with the <ph id="ph1">`await`</ph> keyword, provides a higher-level abstraction for using tasks.</source>
+          <target state="translated">與 <ph id="ph1">`await`</ph> 關鍵字的語言整合提供更高層級的抽象層來使用 Task。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Using <ph id="ph1">`await`</ph> allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done.</source>
+          <target state="translated">使用 <ph id="ph1">`await`</ph> 可在某個 Task 正在執行時，藉由將控制權轉讓給其呼叫端直到該 Task 完成為止，來允許您的應用程式或服務執行有用的工作。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Your code does not need to rely on callbacks or events to continue execution after the task has been completed.</source>
+          <target state="translated">您的程式碼不需要依賴回呼或事件，就能在 Task 完成之後繼續執行。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The language and task API integration does that for you.</source>
+          <target state="translated">語言和工作 API 整合會為您執行這項作業。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you’re using <ph id="ph1">`Task&lt;T&gt;`</ph>, the <ph id="ph2">`await`</ph> keyword will additionally “unwrap” the value returned when the Task is complete.</source>
+          <target state="translated">如果您使用 <ph id="ph1">`Task&lt;T&gt;`</ph>，<ph id="ph2">`await`</ph> 關鍵字會另外將 Task 完成時所傳回的值「解除包裝」。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The details of how this works are explained further below.</source>
+          <target state="translated">以下將進一步說明其運作方式的細節。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can learn more about tasks and the different ways to interact with them in the <bpt id="p1">[</bpt>Task-based Asynchronous Pattern (TAP) Article<ept id="p1">](https://msdn.microsoft.com/library/hh873175.aspx)</ept>.</source>
+          <target state="translated">如需 Task 及與其互動之不同方式的詳細資訊，請參閱<bpt id="p1">[</bpt>以工作為基礎的非同步模式 (TAP)<ept id="p1">](https://msdn.microsoft.com/library/hh873175.aspx)</ept> 一文。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Deeper Dive into Tasks for an I/O-Bound Operation</source>
+          <target state="translated">更深入了解 I/O-Bound 作業的 Task</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following section describes a 10,000 foot view of what happens with a typical async I/O call.</source>
+          <target state="translated">下一節將概要描述使用一般非同步 I/O 呼叫會發生什麼情況。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Let's start with a couple examples.</source>
+          <target state="translated">首先讓我們示範兩個範例。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The first example calls an async method and returns an active task, likely yet to complete.</source>
+          <target state="translated">第一個範例會呼叫非同步方法，並傳回作用中但可能尚未完成的 Task。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The second example adds the use of he <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> keywords to operate on the task.</source>
+          <target state="translated">第二個範例會加入 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph> 關鍵字的使用，以在 Task 上運作。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`GetStringAsync()`</ph> calls through lower-level .NET libraries (perhaps calling other async methods) until it reaches a P/Invoke interop call into a native networking library.</source>
+          <target state="translated">對 <ph id="ph1">`GetStringAsync()`</ph> 的呼叫會在較低層級的 .NET 程式庫中進行 (也可能會呼叫其他非同步方法)，直到抵達原生網路程式庫中的 P/Invoke Interop 呼叫。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The native library may subsequently call into a System API call (such as <ph id="ph1">`write()`</ph> to a socket on Linux).</source>
+          <target state="translated">接著可能會在系統 API 呼叫中呼叫原生程式庫 (例如對 Linux 上的通訊端呼叫 <ph id="ph1">`write()`</ph>)。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>A task object will be created at the native/managed boundary, possibly using <bpt id="p1">[</bpt>TaskCompletionSource<ept id="p1">](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600))</ept>.</source>
+          <target state="translated">系統可能會使用 <bpt id="p1">[</bpt>TaskCompletionSource<ept id="p1">](xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult(%600))</ept> 在原生/Managed 界限處建立 Task 物件。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The task object will be passed up through the layers, possibly operated on or directly returned, eventually returned to the initial caller.</source>
+          <target state="translated">此 Task 物件會向上傳遞給所有層級，可能在其上運作或直接傳回，最後將傳回給初始呼叫端。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the second example above, a <ph id="ph1">`Task&lt;T&gt;`</ph> object will be returned from <ph id="ph2">`GetStringAsync`</ph>.</source>
+          <target state="translated">在上述第二個範例中，會從 <ph id="ph2">`GetStringAsync`</ph> 傳回 <ph id="ph1">`Task&lt;T&gt;`</ph> 物件。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The use of the <ph id="ph1">`await`</ph> keyword causes the method to return a newly created task object.</source>
+          <target state="translated">使用 <ph id="ph1">`await`</ph> 關鍵字會導致方法傳回新建立的 Task 物件。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Control returns to the caller from this location in the <ph id="ph1">`GetFirstCharactersCountAsync`</ph> method.</source>
+          <target state="translated">控制權會從 <ph id="ph1">`GetFirstCharactersCountAsync`</ph> 方法的此位置返回呼叫端。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The methods and properties of the <bpt id="p1">[</bpt>Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Threading.Tasks.Task%601)</ept> object enable callers to monitor the progress of the task, which will complete when the remaining code in GetFirstCharactersCountAsync has executed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Task<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Threading.Tasks.Task%601)</ept> 物件的方法和屬性可讓呼叫端監視 Task 的進度，此 Task 將在 GetFirstCharactersCountAsync 中的其餘程式碼都已執行之後完成。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>After the System API call, the request is now in kernel space, making its way to the networking subsystem of the OS (such as <ph id="ph1">`/net`</ph> in the Linux Kernel).</source>
+          <target state="translated">系統 API 呼叫之後，要求現在會在核心空間，直到抵達 OS 的網路子系統 (例如 Linux 核心中的 <ph id="ph1">`/net`</ph>)。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Here the OS will handle the networking request <bpt id="p1">*</bpt>asynchronously<ept id="p1">*</ept>.</source>
+          <target state="translated">OS 將在此「以非同步方式」處理網路要求。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Details may be different depending on the OS used (the device driver call may be scheduled as a signal sent back to the runtime, or a device driver call may be made and <bpt id="p1">*</bpt>then<ept id="p1">*</ept> a signal sent back), but eventually the runtime will be informed that the networking request is in progress.</source>
+          <target state="translated">相關細節可能會因使用的 OS 而有所不同 (裝置驅動程式呼叫可能會排程作為傳回執行階段的信號，或裝置驅動程式呼叫可能會發出「再」傳回信號)，但最後都會通知執行階段此網路要求正在進行中。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>At this time, the work for the device driver will either be scheduled, in-progress, or already finished (the request is already out "over the wire") - but because this is all happening asynchronously, the device driver is able to immediately handle something else!</source>
+          <target state="translated">此時，裝置驅動程式的工作將會是已排程、進行中或已完成 (要求已「透過網路」送出)，但由於全部都會以非同步方式進行，因此裝置驅動程式能夠立即處理其他工作！</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, in Windows an OS thread makes a call to the network device driver and asks it to perform the networking operation via an Interrupt Request Packet (IRP) which represents the operation.</source>
+          <target state="translated">例如，在 Windows 中，OS 執行緒會呼叫網路裝置驅動程式，並要求它透過代表網路作業的插斷要求封包 (IRP) 來執行此作業。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The device driver receives the IRP, makes the call to the network, marks the IRP as "pending", and returns back to the OS.</source>
+          <target state="translated">裝置驅動程式會接收 IRP、對網路進行呼叫、將 IRP 標記為「擱置」，然後傳回給 OS。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Because the OS thread now knows that the IRP is "pending", it doesn't have any more work to do for this job and "returns" back so that it can be used to perform other work.</source>
+          <target state="translated">因為 OS 執行緒現在知道 IRP 處於「擱置」狀態，所以沒有任何要讓此作業執行的工作，並且會「傳回」以便用來執行其他工作。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When the request is fulfilled and data comes back through the device driver, it notifies the CPU of new data received via an interrupt.</source>
+          <target state="translated">要求完成並透過裝置驅動程式傳回資料之後，它會通知 CPU 透過插斷收到的新資料。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>How this interrupt gets handled will vary depending on the OS, but eventually the data will be passed through the OS until it reaches a system interop call (for example, in Linux an interrupt handler will schedule the bottom half of the IRQ to pass the data up through the OS asynchronously).</source>
+          <target state="translated">此插斷的處理方式會因 OS 而有所不同，但最後會將資料傳遞通過 OS，直到抵達系統 Interop 呼叫 (例如在 Linux 中，插斷處理常式會排程 IRQ 的後半部，以非同步方式將資料上傳通過 OS)。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Note that this <bpt id="p1">*</bpt>also<ept id="p1">*</ept> happens asynchronously!</source>
+          <target state="translated">請注意，這「也是」以非同步方式進行！</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The result is queued up until the next available thread is able execute the async method and "unwrap" the result of the completed task.</source>
+          <target state="translated">此結果會排入佇列，等候下一個可用的執行緒能夠執行非同步方法並將已完成 Task 的結果「解除包裝」。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Throughout this entire process, a key takeaway is that <bpt id="p1">**</bpt>no thread is dedicated to running the task<ept id="p1">**</ept>.</source>
+          <target state="translated">這整個過程的重點是<bpt id="p1">**</bpt>沒有專門用來執行 Task 的執行緒<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Although work is executed in some context (i.e. the OS does have to pass data to a device driver and respond to an interrupt), there is no thread dedicated to <bpt id="p1">*</bpt>waiting<ept id="p1">*</ept> for data from the request to come back.</source>
+          <target state="translated">雖然在某些情況下會執行工作 (例如 OS 必須將資料傳遞給裝置驅動程式並回應插斷)，但沒有專門用來「等候」所要求資料傳回的執行緒。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This allows the system to handle a much larger volume of work rather than waiting for some I/O call to finish.</source>
+          <target state="translated">比起等候一些 I/O 呼叫完成，這樣做可讓系統處理更大量的工作。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Although the above may seem like a lot of work to be done, when measured in terms of wall clock time, it’s miniscule compared to the time it takes to do the actual I/O work.</source>
+          <target state="translated">雖然上述做法似乎需要完成許多工作，但以時鐘時間測量時，它所花費的時間相較於實際 I/O 工作簡直是小巫見大巫。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Although not at all precise, a potential timeline for such a call would look like this:</source>
+          <target state="translated">雖然不完全精確，但這類呼叫的時間軸可能類似如下：</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>0-1————————————————————————————————————————————————–2-3</source>
+          <target state="translated">0-1————————————————————————————————————————————————–2-3</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Time spent from points <ph id="ph1">`0`</ph> to <ph id="ph2">`1`</ph> is everything up until an async method yields control to its caller.</source>
+          <target state="translated">從點 <ph id="ph1">`0`</ph> 至 <ph id="ph2">`1`</ph> 所花費的時間，會用在非同步方法將控制權轉讓給其呼叫端之前的所有工作。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Time spent from points <ph id="ph1">`1`</ph> to <ph id="ph2">`2`</ph> is the time spent on I/O, with no CPU cost.</source>
+          <target state="translated">從點 <ph id="ph1">`1`</ph> 至 <ph id="ph2">`2`</ph> 所花費的時間，是 I/O 上所花費的時間 (不含 CPU 成本)。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Finally, time spent from points <ph id="ph1">`2`</ph> to <ph id="ph2">`3`</ph> is passing control back (and potentially a value) to the async method, at which point it is executing again.</source>
+          <target state="translated">最後，從點 <ph id="ph1">`2`</ph> 至 <ph id="ph2">`3`</ph> 所花費的時間，會用在將控制權 (可能還有值) 交回給非同步方法，然後再次執行。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>What does this mean for a server scenario?</source>
+          <target state="translated">這對伺服器案例有何意義？</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This model works well with a typical server scenario workload.</source>
+          <target state="translated">此模型適用於一般伺服器案例的工作負載。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Because there are no threads dedicated to blocking on unfinished tasks, the server threadpool can service a much higher volume of web requests.</source>
+          <target state="translated">因為沒有封鎖未完成 Task 的專用執行緒，所以伺服器執行緒集區可以服務更大量的 Web 要求。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Consider two servers: one that runs async code, and one that does not.</source>
+          <target state="translated">以兩部伺服器為例︰一部執行非同步程式碼，另一部不執行。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For the purpose of this example, each server only has 5 threads available to service requests.</source>
+          <target state="translated">在此範例中，每部伺服器只有 5 個執行緒可用來服務要求。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Note that these numbers are imaginarily small and serve only in a demonstrative context.</source>
+          <target state="translated">請注意，此數目比想像中的小，僅供示範內容使用。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Assume both servers receive 6 concurrent requests.</source>
+          <target state="translated">假設這兩部伺服器收到 6 個並行要求。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Each request performs an I/O operation.</source>
+          <target state="translated">每個要求會執行一個 I/O 作業。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The server <bpt id="p1">*</bpt>without<ept id="p1">*</ept> async code has to queue up the 6th request until one of the 5 threads have finished the I/O-bound work and written a response.</source>
+          <target state="translated">「未使用」非同步程式碼的伺服器必須等到 5 個執行緒的其中一個已完成 I/O-bound 工作並寫入回應，才能將第 6 個要求排入佇列。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>At the point that the 20th request comes in, the server might start to slow down, because the queue is getting too long.</source>
+          <target state="translated">排到第 20 個要求時，由於佇列變得太長，因此伺服器可能會開始變慢。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The server <bpt id="p1">*</bpt>with<ept id="p1">*</ept> async code running on it still queues up the 6th request, but because it uses <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph>, each of its threads are freed up when the I/O-bound work starts, rather than when it finishes.</source>
+          <target state="translated">在其上「執行」非同步程式碼的伺服器仍可將第 6 個要求排入佇列，但因為它使用 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph>，所以當 I/O-bound 工作開始時 (而不是完成時)，將會釋放其所包含的每個執行緒。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>By the time the 20th request comes in, the queue for incoming requests will be far smaller (if it has anything in it at all), and the server won't slow down.</source>
+          <target state="translated">排到第 20 個要求時，傳入要求的佇列會很小 (如果有任何內容)，而且伺服器不會變慢。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Although this is a contrived example, it works in a very similar fashion in the real world.</source>
+          <target state="translated">雖然這是虛擬範例，但其運作方式與真實世界非常類似。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In fact, you can expect a server to be able to handle an order of magnitude more requests using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> than if it were dedicating a thread for each request it receives.</source>
+          <target state="translated">事實上，您可以預期伺服器使用 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph> 時，會比針對所收到的每個要求設定專用執行緒，能夠處理更大量的要求。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>What does this mean for client scenario?</source>
+          <target state="translated">這對用戶端案例有何意義？</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The biggest gain for using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> for a client app is an increase in responsiveness.</source>
+          <target state="translated">針對用戶端應用程式使用 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph> 的最大好處在於加快回應速度。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although you can make an app responsive by spawning threads manually, the act of spawning a thread is an expensive operation relative to just using <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph>.</source>
+          <target state="translated">雖然您可以透過手動繁衍執行緒來加快應用程式的回應速度，但相對於只使用 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph>，繁衍執行緒的做法是高度耗費資源的作業。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Especially for something like a mobile game, impacting the UI thread as little as possible where I/O is concerned is crucial.</source>
+          <target state="translated">特別是針對重視 I/O 的項目 (例如行動遊戲)，請務必盡可能將 UI 執行緒的影響降到最低。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>More importantly, because I/O-bound work spends virtually no time on the CPU, dedicating an entire CPU thread to perform barely any useful work would be a poor use of resources.</source>
+          <target state="translated">更重要的是，因為 I/O-bound 工作在 CPU 上花費的時間幾乎為零，所以讓整個 CPU 執行緒只用來執行極少的任何有用工作，並無法有效利用資源。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Additionally, dispatching work to the UI thread (such as updating a UI) is very simple with <ph id="ph1">`async`</ph> methods, and does not require extra work (such as calling a thread-safe delegate).</source>
+          <target state="translated">此外，使用 <ph id="ph1">`async`</ph> 方法可輕鬆地將工作分派給 UI 執行緒 (例如更新 UI)，而且不需要額外的工作 (例如呼叫安全執行緒委派)。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Deeper Dive into Task and Task<ph id="ph1">&lt;T&gt;</ph> for a CPU-Bound Operation</source>
+          <target state="translated">更深入了解 CPU-Bound 作業的 Task 和 Task<ph id="ph1">&lt;T&gt;</ph></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>CPU-bound <ph id="ph1">`async`</ph> code is a bit different than I/O-bound <ph id="ph2">`async`</ph> code.</source>
+          <target state="translated">CPU-bound <ph id="ph1">`async`</ph> 程式碼與 I/O-bound <ph id="ph2">`async`</ph> 程式碼稍微不同。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Because the work is done on the CPU, there's no way to get around dedicating a thread to the computation.</source>
+          <target state="translated">由於工作會在 CPU 上執行，因此必須指定專門用於計算的執行緒。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The use of <ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> provides you with a clean way to interact with a background thread and keep the caller of the async method responsive.</source>
+          <target state="translated">使用 <ph id="ph1">`async`</ph> 和 <ph id="ph2">`await`</ph> 可讓您無障礙地與背景執行緒互動，並確保非同步方法的呼叫端保持回應。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Note that this does not provide any protection for shared data.</source>
+          <target state="translated">請注意，這不會對共用資料提供任何保護。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>If you are using shared data, you will still need to apply an appropriate synchronization strategy.</source>
+          <target state="translated">如果您要使用共用資料，您仍然需要套用適當的同步處理策略。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Here's a 10,000 foot view of a CPU-bound async call:</source>
+          <target state="translated">CPU-bound 非同步呼叫的概觀如下：</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CalculateResult()`</ph> executes on the thread it was called on.</source>
+          <target state="translated"><ph id="ph1">`CalculateResult()`</ph> 會對所呼叫的執行緒執行。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>When it calls <ph id="ph1">`Task.Run`</ph>, it queues the expensive CPU-bound operation, <ph id="ph2">`DoExpensiveCalculation()`</ph>, on the thread pool and receives a <ph id="ph3">`Task&lt;int&gt;`</ph> handle.</source>
+          <target state="translated">當它呼叫 <ph id="ph1">`Task.Run`</ph> 時，它會將執行緒集區上高度耗費資源的 CPU-bound 作業 <ph id="ph2">`DoExpensiveCalculation()`</ph> 排入佇列，並收到 <ph id="ph3">`Task&lt;int&gt;`</ph> 控制代碼。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DoExpensiveCalculation()`</ph> is eventually run concurrently on the next available thread, likely on another CPU core.</source>
+          <target state="translated"><ph id="ph1">`DoExpensiveCalculation()`</ph> 最終會對下一個可用的執行緒 (可能位於另一個 CPU 核心) 同時執行。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It's possible to do concurrent work while <ph id="ph1">`DoExpensiveCalculation()`</ph> is busy on another thread, because the thread which called <ph id="ph2">`CalculateResult()`</ph> is still executing.</source>
+          <target state="translated">您可以在另一個執行緒上的 <ph id="ph1">`DoExpensiveCalculation()`</ph> 忙碌時，同時執行工作，因為稱為 <ph id="ph2">`CalculateResult()`</ph> 的執行緒仍在執行中。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Once <ph id="ph1">`await`</ph> is encountered, the execution of <ph id="ph2">`CalculateResult()`</ph> is yielded to its caller, allowing other work to be done with the current thread while <ph id="ph3">`DoExpensiveCalculation()`</ph> is churning out a result.</source>
+          <target state="translated">遇到 <ph id="ph1">`await`</ph> 之後，<ph id="ph2">`CalculateResult()`</ph> 的執行會轉讓給呼叫端，以允許其他工作可在 <ph id="ph3">`DoExpensiveCalculation()`</ph> 大量產生結果同時，使用目前的執行緒來執行。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Once it has finished, the result is queued up to run on the main thread.</source>
+          <target state="translated">完成後，結果會排入佇列，等候在主執行緒上執行。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Eventually, the main thread will return to executing <ph id="ph1">`CalculateResult()`</ph>, at which point it will have the result of <ph id="ph2">`DoExpensiveCalculation()`</ph>.</source>
+          <target state="translated">最後，主執行緒會返回正在執行的 <ph id="ph1">`CalculateResult()`</ph>，此時它會有 <ph id="ph2">`DoExpensiveCalculation()`</ph> 的結果。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Why does async help here?</source>
+          <target state="translated">為什麼非同步有助於此作業？</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`async`</ph> and <ph id="ph2">`await`</ph> are the best practice managing CPU-bound work when you need responsiveness.</source>
+          <target state="translated">當您需要快速回應，<ph id="ph1">`async`</ph> 與 <ph id="ph2">`await`</ph> 是管理 CPU-bound 工作的最佳做法。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>There are multiple patterns for using async with CPU-bound work.</source>
+          <target state="translated">搭配 CPU-bound 工作使用 async 的模式有許多種。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>It's important to note that there is a small cost to using async and it's not recommended for tight loops.</source>
+          <target state="translated">請務必注意使用 async 會耗費少量成本，而且不建議用於緊密迴圈。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>It's up to you to determine how you write your code around this new capability.</source>
+          <target state="translated">您必須自行決定要如何撰寫以這項新功能為主的程式碼。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

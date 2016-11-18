@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">42b82c6a906a803b45976c01a55e585cd3b7542f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\using-objects.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1161936b989bf247b72dd8b1cac32b7ae1e5b7c3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">210bb7ce0806464f2614d2bdc75fc2d58d3fe813</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">Uso de objetos que implementan IDisposable</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">Uso de objetos que implementan IDisposable</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using objects that implement IDisposable</source>
+          <target state="translated">Uso de objetos que implementan IDisposable</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface to allow this unmanaged memory to be reclaimed.</source>
+          <target state="translated">El recolector de elementos no utilizados de Common Language Runtime reclama la memoria usada por los objetos no administrados, aunque los tipos que usan recursos no administrados implementan la interfaz <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> para permitir que se reclame esta memoria no administrada.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When you finish using an object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept>, you should call the object's <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated">Cuando termine de usar un objeto que implementa <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept>, debe llamar a la implementación <bpt id="p2">[</bpt>IDisposable.Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> del objeto.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You can do this in one of two ways:</source>
+          <target state="translated">Hay dos maneras de hacerlo:</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>With the C# <ph id="ph1">`using`</ph> statement or the Visual Basic <ph id="ph2">`Using`</ph> statement.</source>
+          <target state="translated">Mediante la instrucción <ph id="ph1">`using`</ph> de C# o la instrucción <ph id="ph2">`Using`</ph> de Visual Basic.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>By implementing a <ph id="ph1">`try/finally`</ph> block.</source>
+          <target state="translated">Mediante la implementación de un bloque <ph id="ph1">`try/finally`</ph>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The using statement</source>
+          <target state="translated">La instrucción using</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`using`</ph> statement in C# and the <ph id="ph2">`Using`</ph> statement in Visual Basic simplify the code that you must write to create and clean up an object.</source>
+          <target state="translated">Las instrucciones <ph id="ph1">`using`</ph> de C# y <ph id="ph2">`Using`</ph> de Visual Basic simplifican el código que se debe escribir para crear y limpiar un objeto.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`using`</ph> statement obtains one or more resources, executes the statements that you specify, and automatically disposes of the object.</source>
+          <target state="translated">La instrucción <ph id="ph1">`using`</ph> obtiene uno o más recursos, ejecuta las instrucciones especificadas y desecha el objeto automáticamente.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>However, the <ph id="ph1">`using`</ph> statement is useful only for objects that are used within the scope of the method in which they are constructed.</source>
+          <target state="translated">Pero la instrucción <ph id="ph1">`using`</ph> solo resulta útil para los objetos que se usan dentro del ámbito del método en el que se construyen.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following example uses the <ph id="ph1">`using`</ph> statement to create and release a <bpt id="p1">[</bpt>System.IO.StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> object.</source>
+          <target state="translated">En el ejemplo siguiente se usa la instrucción <ph id="ph1">`using`</ph> para crear y liberar un objeto <bpt id="p1">[</bpt>System.IO.StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Note that although the <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> class implements the <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept> interface, which indicates that it uses an unmanaged resource, the example doesn't explicitly call the <bpt id="p3">[</bpt>StreamReader.Dispose<ept id="p3">](xref:System.IO.StreamReader.Dispose(System.Boolean))</ept> method.</source>
+          <target state="translated">Si bien la clase <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> implementa la interfaz <bpt id="p2">[</bpt>IDisposable<ept id="p2">](xref:System.IDisposable)</ept>, que indica que usa un recurso no administrado, en el ejemplo no se llama al método <bpt id="p3">[</bpt>StreamReader.Dispose<ept id="p3">](xref:System.IO.StreamReader.Dispose(System.Boolean))</ept> de manera explícita.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When the C# or Visual Basic compiler encounters the <ph id="ph1">`using`</ph> statement, it emits intermediate language (IL) that is equivalent to the following code that explicitly contains a <ph id="ph2">`try/finally`</ph> block.</source>
+          <target state="translated">Cuando el compilador de C# o de Visual Basic encuentra la instrucción <ph id="ph1">`using`</ph>, emite un lenguaje intermedio (IL), que equivale al código siguiente que contiene un bloque <ph id="ph2">`try/finally`</ph> de manera explícita.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The C# <ph id="ph1">`using`</ph> statement also allows you to acquire multiple resources in a single statement, which is internally equivalent to nested using statements.</source>
+          <target state="translated">La instrucción <ph id="ph1">`using`</ph> de C# también permite adquirir varios recursos en una sola instrucción, lo que internamente equivale a instrucciones using anidadas.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The following example instantiates two <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> objects to read the contents of two different files.</source>
+          <target state="translated">En el ejemplo siguiente se crean instancias de dos objetos <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> para leer el contenido de dos archivos.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Try/finally block</source>
+          <target state="translated">Bloque try/finally</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Instead of wrapping a <ph id="ph1">`try/finally`</ph> block in a <ph id="ph2">`using`</ph> statement, you may choose to implement the <ph id="ph3">`try/finally`</ph> block directly.</source>
+          <target state="translated">En lugar de ajustar un bloque <ph id="ph1">`try/finally`</ph> en una instrucción <ph id="ph2">`using`</ph>, puede elegir implementar el bloque <ph id="ph3">`try/finally`</ph> directamente.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This may be your personal coding style, or you might want to do this for one of the following reasons:</source>
+          <target state="translated">Puede adoptar este estilo como su método de codificación personal, o bien puede hacer esto por una de las razones siguientes:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To include a <ph id="ph1">`catch`</ph> block to handle any exceptions thrown in the <ph id="ph2">`try`</ph> block.</source>
+          <target state="translated">Para incluir un bloque <ph id="ph1">`catch`</ph> para controlar las excepciones producidas en el bloque <ph id="ph2">`try`</ph>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Otherwise, any exceptions thrown by the <ph id="ph1">`using`</ph> statement are unhandled, as are any exceptions thrown within the <ph id="ph2">`using`</ph> block if a <ph id="ph3">`try/catch`</ph> block isn't present.</source>
+          <target state="translated">De lo contrario, las excepciones que produzca la instrucción <ph id="ph1">`using`</ph> no se controlan, al igual que las excepciones producidas dentro del bloque <ph id="ph2">`using`</ph> si no hay ningún bloque <ph id="ph3">`try/catch`</ph> presente.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To instantiate an object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> whose scope is not local to the block within which it is declared.</source>
+          <target state="translated">Para crear instancias de un objeto que implementa <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> cuyo ámbito no es local en el bloque en el que se declara.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following example is similar to the previous example, except that it uses a <ph id="ph1">`try/catch/finally`</ph> block to instantiate, use, and dispose of a <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept> object, and to handle any exceptions thrown by the <bpt id="p2">[</bpt>StreamReader<ept id="p2">](xref:System.IO.StreamReader)</ept> constructor and its <bpt id="p3">[</bpt>ReadToEnd<ept id="p3">](xref:System.IO.StreamReader.ReadToEnd)</ept> method.</source>
+          <target state="translated">El siguiente ejemplo es similar al anterior, a excepción de que se usa un bloque <ph id="ph1">`try/catch/finally`</ph> para crear instancias, usar y eliminar un objeto <bpt id="p1">[</bpt>StreamReader<ept id="p1">](xref:System.IO.StreamReader)</ept>, y para controlar las excepciones que produce el constructor <bpt id="p2">[</bpt>StreamReader<ept id="p2">](xref:System.IO.StreamReader)</ept> y su método <bpt id="p3">[</bpt>ReadToEnd<ept id="p3">](xref:System.IO.StreamReader.ReadToEnd)</ept>.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Note that the code in the <ph id="ph1">`finally`</ph> block checks that the object that implements <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> isn't <ph id="ph2">`null`</ph> before it calls the <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> method.</source>
+          <target state="translated">Observe que el código del bloque <ph id="ph1">`finally`</ph> comprueba que el objeto que implementa <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> no es <ph id="ph2">`null`</ph> antes de llamar al método <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Failure to do this can result in a <bpt id="p1">[</bpt>NullReferenceException<ept id="p1">](xref:System.NullReferenceException)</ept> exception at run time.</source>
+          <target state="translated">No hacerlo puede provocar una excepción <bpt id="p1">[</bpt>NullReferenceException<ept id="p1">](xref:System.NullReferenceException)</ept> en tiempo de ejecución.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can follow this basic pattern if you choose to implement or must implement a <ph id="ph1">`try/finally`</ph> block, because your programming language doesn't support a <ph id="ph2">`using`</ph> statement but does allow direct calls to the <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method.</source>
+          <target state="translated">Puede seguir este patrón básico si elige implementar o debe implementar un bloque <ph id="ph1">`try/finally`</ph>, ya que el lenguaje de programación no admite una instrucción <ph id="ph2">`using`</ph> pero sí llamadas directas al método <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cleaning up unmanaged resources<ept id="p1">](unmanaged.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Limpieza de recursos no administrados<ept id="p1">](unmanaged.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
