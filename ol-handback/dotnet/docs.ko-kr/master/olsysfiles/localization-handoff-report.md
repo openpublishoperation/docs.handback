@@ -1,11 +1,31 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/5349a35ddb1f13e90b1bfda1d183c76ce02dacc3/docs/core/tools/test-protocol.md) | HandedOffSuccess | [Details](#eda71520f50b2c62d6f2e2df80f392f38a784bcf114)
 
 ## Item Details
+##### <a name='eda71520f50b2c62d6f2e2df80f392f38a784bcf114'></a> Source: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/5349a35ddb1f13e90b1bfda1d183c76ce02dacc3/docs/core/tools/test-protocol.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/9528f5599edbbc828eff4cc669ad7b9c85e08ad5/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf)
+* Handoff Datetime: 2016-11-20 02:44:09
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs.ko-kr/blob/3a4b22867c0a0a3c8bd7d18570ebfb4604d66baa/docs/core/tools/test-protocol.md)
+* Current Handback File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/db96795a2e26d554d3678e19239a798c10f60d0c/ol-handback/dotnet/docs.ko-kr/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf)
+* Current Handback Datetime: 2016-11-18 11:46:09
+* Bilingual File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/db96795a2e26d554d3678e19239a798c10f60d0c/ol-handback/dotnet/docs.ko-kr/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-18 11:47:43
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
