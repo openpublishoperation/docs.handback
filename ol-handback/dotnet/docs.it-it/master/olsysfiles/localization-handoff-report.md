@@ -6,24 +6,24 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/5349a35ddb1f13e90b1bfda1d183c76ce02dacc3/docs/core/tools/test-protocol.md) | HandedOffSuccess | [Details](#eda71520f50b2c62d6f2e2df80f392f38a784bcf114)
+ [docs\standard\datetime\index.md](https://github.com/dotnet/docs/blob/5f2b8a82d9a4075e93c03622221b87f8d95047d4/docs/standard/datetime/index.md) | HandedOffSuccess | [Details](#9a77aa810001769acaa375f4b585b2769710db8f3343)
 
 ## Item Details
-##### <a name='eda71520f50b2c62d6f2e2df80f392f38a784bcf114'></a> Source: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/5349a35ddb1f13e90b1bfda1d183c76ce02dacc3/docs/core/tools/test-protocol.md)
+##### <a name='9a77aa810001769acaa375f4b585b2769710db8f3343'></a> Source: [docs\standard\datetime\index.md](https://github.com/dotnet/docs/blob/5f2b8a82d9a4075e93c03622221b87f8d95047d4/docs/standard/datetime/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/202cf5b03a37006f8cc1f642845aa237d0893f91/ol-handoff/dotnet/docs.it-it/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf)
-* Handoff Datetime: 2016-11-20 02:43:24
+* Handoff File: [index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/748eccd8840e78ed9f22ca8a50f771f33f93b54c/ol-handoff/dotnet/docs.it-it/master/ht-p2/index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf)
+* Handoff Datetime: 2016-11-21 20:45:06
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs.it-it/blob/44b3dc6786baa8fb59aab6e4b0112fb9313a5ec6/docs/core/tools/test-protocol.md)
-* Current Handback File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf](https://github.com/dotnet/docs.handback/blob/4894e843404d7f8d0869ec5be128f1b838d096b2/ol-handback/dotnet/docs.it-it/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf)
-* Current Handback Datetime: 2016-11-18 09:20:06
-* Bilingual File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf](https://github.com/dotnet/docs.handback/blob/4894e843404d7f8d0869ec5be128f1b838d096b2/ol-handback/dotnet/docs.it-it/master/ht-p1/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.it-it.xlf)
-* Bilingual Datetime: 2016-11-18 09:23:03
+* Current Target File: [docs\standard\datetime\index.md](https://github.com/dotnet/docs.it-it/blob/c95253b999db8c4c2c0728e18d4e17a2ac7eed07/docs/standard/datetime/index.md)
+* Current Handback File: [index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf](https://github.com/dotnet/docs.handback/blob/984702e291835b1522ab42ea3765b497bf427401/ol-handback/dotnet/docs.it-it/master/index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf)
+* Current Handback Datetime: 2016-11-15 11:31:25
+* Bilingual File: [index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf](https://github.com/dotnet/docs.handback/blob/984702e291835b1522ab42ea3765b497bf427401/ol-handback/dotnet/docs.it-it/master/index.e3ecdf8986f876e88fd10e48cde1c3a3dcd1e9bc.it-it.xlf)
+* Bilingual Datetime: 2016-11-15 11:32:35
 * [Back to Top](#report-top)
 
 
