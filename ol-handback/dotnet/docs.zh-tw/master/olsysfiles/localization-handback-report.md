@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/standard-timespan.md) | InSyncHandedBackSuccess | [Details](#bb209c7bac71960fa0a679e546bedae486b412b83308)
 
 ## Item Details
+##### <a name='bb209c7bac71960fa0a679e546bedae486b412b83308'></a> Source: [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs/blob/fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c/docs/standard/base-types/standard-timespan.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\base-types\standard-timespan.md](https://github.com/dotnet/docs.zh-tw/blob/9620d1fa50d51e1cb1da0848a5a8a3cd7cfdebdb/docs/standard/base-types/standard-timespan.md)
+* Handoff File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/822fc4c86b093bd0e8e6220f197f2c66ba6fc742/ol-handoff/dotnet/docs.zh-tw/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf)
+* Handoff Datetime: 2016-11-16 11:17:44
+* Handoff Reason: Include
+* Archive File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/54b2315f7f2b6a1a74ec63053cbdae50321f54f3/ol-archive/dotnet/docs.zh-tw/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf)
+* Archive Datetime: 2016-11-18 07:26:25
+* Handback File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/95f7401d2500ac31ac8c7cbf10bbb517d3882973/ol-handback/dotnet/docs.zh-tw/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf)
+* Handback Datetime: 2016-11-21 14:22:40
+* Bilingual File: [standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/892bb5fd337e104c54e27ce41ca55909270a17d6/ol-handback/dotnet/docs.zh-tw/master/ht-p2/standard-timespan.5cf87331d7b27af15b883bc0e3c91052b3766323.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-14 10:10:12
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
