@@ -2,7 +2,7 @@
 > This report show how many files are handback automatically in this handoff.
 
 ## Summary
-* **Auto Archive Count**: 0
+* **Auto Archive Count**: 4
 * **Auto Handback Count**: 0
 
 ## Auto Handback List
@@ -22,4 +22,8 @@
 
 | Handoff Xliff | Archived Reason | 
 | --- | --- | 
+| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c9b1eeaad052f0ac22bd9a434b4366626c5873ac/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf) | Archived when 16/11/18 07:26 | 
+| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\using-with-xplat-cli-msbuild-folders.943f1e92d20f89ba65fc2676ca814526706870e3.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c9b1eeaad052f0ac22bd9a434b4366626c5873ac/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/using-with-xplat-cli-msbuild-folders.943f1e92d20f89ba65fc2676ca814526706870e3.zh-cn.xlf) | Archived when 16/11/18 07:26 | 
+| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\dotnet-nuget-delete.c3015c363a229a41a0b6640fa7c6e25e28852efd.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c9b1eeaad052f0ac22bd9a434b4366626c5873ac/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/dotnet-nuget-delete.c3015c363a229a41a0b6640fa7c6e25e28852efd.zh-cn.xlf) | Archived when 16/11/18 07:26 | 
+| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c9b1eeaad052f0ac22bd9a434b4366626c5873ac/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.zh-cn.xlf) | Archived when 16/11/18 07:26 | 
 
