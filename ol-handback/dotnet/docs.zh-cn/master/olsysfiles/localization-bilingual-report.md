@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/grouping.md) | InSyncHandedBackSuccess | [Details](#6aa304f5c4ed400faddd3869006cdd011aa064663286)
 
 ## Item Details
-##### <a name='6aa304f5c4ed400faddd3869006cdd011aa064663286'></a> Source: [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/grouping.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\grouping.md](https://github.com/dotnet/docs.zh-cn/blob/ea24652cdc62213c49bf5a6a9925f4d31fd0ea98/docs/standard/base-types/grouping.md)
-* Handoff File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f8be5063f532b2a06e6176fe50676c924c141694/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf)
-* Handoff Datetime: 2016-11-16 11:17:18
-* Handoff Reason: Include
-* Archive File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf)
-* Archive Datetime: 2016-11-18 07:26:17
-* Handback File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/8fd1d61df5ed2163e470b7b2edcb9b2adc930cc5/ol-handback/dotnet/docs.zh-cn/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf)
-* Handback Datetime: 2016-11-23 15:41:26
-* Bilingual File: [grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/8fd1d61df5ed2163e470b7b2edcb9b2adc930cc5/ol-handback/dotnet/docs.zh-cn/master/ht-p2/grouping.33793cd2e6bf04d024a452f85e13089b2709b3dd.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-23 15:42:20
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
