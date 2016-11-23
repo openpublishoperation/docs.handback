@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">503cf3628ee317f701f467bddc4bcb5998b82af4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\libraries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b743c7373958ab8c3c389d1e913a132f6b59f512</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce6b4b0287e09e26cac417d6679fc5bdee3716e0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">移轉到 .NET Core - 程式庫</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">移轉到 .NET Core - 程式庫</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Libraries</source>
+          <target state="translated">移轉到 .NET Core - 程式庫</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>With the release of .NET Core 1.0, there is an opportunity to port existing library code so that it can run cross-platform.</source>
+          <target state="translated">使用 .NET Core 1.0 版本時，有機會移轉現有的程式庫程式碼，讓它可以跨平台執行。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article discusses the .NET Standard Library, unavailable technologies, how to account for the smaller number of APIs available on .NET Core 1.0, how to use the tooling that ships with .NET Core SDK Preview 2, and recommended approaches to porting your code.</source>
+          <target state="translated">本文討論 .NET 標準程式庫、無法使用的技術、如何說明 .NET Core 1.0 上提供的較少 API、如何使用 .NET Core SDK Preview 2 隨附的工具，以及移轉程式碼的建議作法。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Porting is a task that may take time, especially if you have a large codebase.</source>
+          <target state="translated">移轉可能需要一些時間，尤其是當您有大型的程式碼基底時。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You should also be prepared to adapt the guidance here as needed to best fit your code.</source>
+          <target state="translated">您也應該在此視需要準備採用最適合您程式碼的指引。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Every codebase is different, so this article attempts to frame things in a flexible way, but you may find yourself needing to diverge from the prescribed guidance.</source>
+          <target state="translated">每個程式碼基底都不相同，因此本文嘗試以彈性的方式規範項目，但您可能會發現自己需要偏離規定的指引。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要條件</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article assumes you are using Visual Studio 2015 or later on Windows.</source>
+          <target state="translated">本文假設您在 Windows 上使用 Visual Studio 2015 或更新版本。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The bits required for building .NET Core code are not available on previous versions of Visual Studio.</source>
+          <target state="translated">舊版 Visual Studio 不提供建置 .NET Core 程式碼所需的位元。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This article also assumes that you understand the <bpt id="p1">[</bpt>recommended porting process<ept id="p1">](index.md)</ept> and that you have resolved any issues with <bpt id="p2">[</bpt>third-party dependencies<ept id="p2">](third-party-deps.md)</ept>.</source>
+          <target state="translated">本文也假設您了解<bpt id="p1">[</bpt>建議移轉程序<ept id="p1">](index.md)</ept>，並已解決所有<bpt id="p2">[</bpt>協力廠商相依性<ept id="p2">](third-party-deps.md)</ept>問題。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Targeting the .NET Standard Library</source>
+          <target state="translated">以 .NET 標準程式庫為目標</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The best way to build a cross-platform library for .NET Core is to target the <bpt id="p1">[</bpt>.NET Standard Library<ept id="p1">](../../standard/library.md)</ept>.</source>
+          <target state="translated">建置 .NET Core 跨平台程式庫的最佳辦法，是以 <bpt id="p1">[</bpt>.NET 標準程式庫<ept id="p1">](../../standard/library.md)</ept>為目標。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The .NET Standard Library is the formal specification of .NET APIs that are intended to be available on all .NET runtimes.</source>
+          <target state="translated">.NET 標準程式庫是計劃提供所有 .NET 執行階段使用的 .NET API 正式規格。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is supported by the .NET Core runtime.</source>
+          <target state="translated">受 .NET Core 執行階段支援。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>What this means is that you'll have to make a tradeoff between APIs you can use and platforms you can support, and pick the version of the .NET Platform Standard that best suits the tradeoff you wish to make.</source>
+          <target state="translated">這表示，您必須在可以使用的 API 與可以支援的平台之間作出取捨，並挑選最適合所要取捨的 .NET Standard 平台版本。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>As of right now, there are 7 different versions to consider: .NET Standard 1.0 through 1.6.</source>
+          <target state="translated">目前有 7 種不同的版本要考慮︰.NET Standard 1.0 到 1.6。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>If you pick a higher version, you get access to more APIs at the cost of running on fewer targets.</source>
+          <target state="translated">如果您選擇較新的版本，就可以存取較多的 API，代價是在較少的目標上執行。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you pick a lower version, your code can run on more targets but at the cost of fewer APIs available to you.</source>
+          <target state="translated">如果您選擇較舊的版本，程式碼可以在較多的目標上執行，代價是可用的 API 較少。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For your convenience, here is a matrix of each .NET Standard version and each specific area it runs on:</source>
+          <target state="translated">為了方便起見，以下是每個 .NET Standard 版及其執行所在的各特定區域的交叉表︰</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Platform Name</source>
+          <target state="translated">平台名稱</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Alias</source>
+          <target state="translated">Alias</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>.NET Standard</source>
+          <target state="translated">.NET Standard</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>netstandard</source>
+          <target state="translated">netstandard</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>1.1</source>
+          <target state="translated">1.1</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>1.2</source>
+          <target state="translated">1.2</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>1.3</source>
+          <target state="translated">1.3</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>1.4</source>
+          <target state="translated">1.4</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>1.5</source>
+          <target state="translated">1.5</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>1.6</source>
+          <target state="translated">1.6</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>.NET Core</source>
+          <target state="translated">.NET 核心</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>netcoreapp</source>
+          <target state="translated">netcoreapp</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>.NET Framework</source>
+          <target state="translated">.NET Framework</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>net</source>
+          <target state="translated">net</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>4.6.2</source>
+          <target state="translated">4.6.2</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>4.6.3</source>
+          <target state="translated">4.6.3</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Mono/Xamarin Platforms</source>
+          <target state="translated">Mono/Xamarin 平台</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Universal Windows Platform</source>
+          <target state="translated">通用 Windows 平台</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>uap</source>
+          <target state="translated">uap</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>10.0</source>
+          <target state="translated">10.0</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <target state="translated">Windows</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>win</source>
+          <target state="translated">win</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Windows Phone</source>
+          <target state="translated">Windows Phone</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>wpa</source>
+          <target state="translated">wpa</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Windows Phone Silverlight</source>
+          <target state="translated">Windows Phone Silverlight</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>wp</source>
+          <target state="translated">wp</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>A key thing to understand is that <bpt id="p1">**</bpt>a project targeting a lower version cannot reference a project targeting a higher version<ept id="p1">**</ept>.</source>
+          <target state="translated">了解重點：<bpt id="p1">**</bpt>以較舊版本為目標的專案無法參考以較新版本為目標的專案<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, a project targeting the .NET Platform Standard version 1.2 cannot reference projects that target .NET Platform Standard version 1.3 or higher.</source>
+          <target state="translated">例如，以 .NET Standard 平台 1.2 版為目標的專案無法參考以 .NET Standard 平台 1.3 或更新版本為目標的專案。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Projects <bpt id="p1">**</bpt>can<ept id="p1">**</ept> reference lower versions, though, so a project targeting .NET Platform Standard 1.3 can reference a project targeting .NET Platform Standard 1.2 or lower.</source>
+          <target state="translated">但是專案<bpt id="p1">**</bpt>可以<ept id="p1">**</ept>參考較舊的版本，因此以 .NET Standard 平台 1.3 為目標的專案可以參考以 .NET Standard 平台 1.2 或較舊版本為目標的專案。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>It's recommended that you pick the lowest possible .NET Standard version and use that throughout your project.</source>
+          <target state="translated">建議您選擇可能的最低 .NET Standard 版本，整個專案都使用這個版本。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Read more in <bpt id="p1">[</bpt>.NET Platform Standard Library<ept id="p1">](../../standard/library.md)</ept>.</source>
+          <target state="translated">深入了解 <bpt id="p1">[</bpt>.NET 平台標準程式庫<ept id="p1">](../../standard/library.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Key Technologies Not Yet Available on the .NET Standard or .NET Core</source>
+          <target state="translated">.NET Standard 或 .NET Core 尚未提供關鍵技術</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You may be using some technologies available for the .NET Framework that are not currently available for .NET Core.</source>
+          <target state="translated">您使用的某些技術可能是 .NET Framework 提供，但目前 .NET Core 不提供。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Each of the following sub-sections corresponds to one of those technologies.</source>
+          <target state="translated">下列小節各自對應其中一項技術。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Alternative options are listed if it is feasible for you to adopt them.</source>
+          <target state="translated">可以採用的替代選項就會列出。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>App Domains</source>
+          <target state="translated">應用程式定義域</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>AppDomains can be used for different purposes on the .NET Framework.</source>
+          <target state="translated">AppDomain 在 .NET Framework 上可用於不同用途。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>For code isolation, we recommend separate processes and/or containers as an alternative.</source>
+          <target state="translated">若要隔離程式碼，建議選擇使用不同的程序及/或容器。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For dynamic loading of assemblies, we recommend the new  <ph id="ph1">@System.Runtime.Loader.AssemblyLoadContext</ph> class.</source>
+          <target state="translated">若要以動態方式載入組件，建議使用新的 <ph id="ph1">@System.Runtime.Loader.AssemblyLoadContext</ph> 類別。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Remoting</source>
+          <target state="translated">遠端處理</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For communication across processes, inter-process communication (IPC) mechanisms can be used as an alternative to Remoting, such as <bpt id="p1">[</bpt>Pipes<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/system.io.pipes)</ept> or <bpt id="p2">[</bpt>Memory Mapped Files<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile)</ept>.</source>
+          <target state="translated">若要跨處理序通訊，可以使用處理序間通訊 (IPC) 機制替代遠端處理，例如<bpt id="p1">[</bpt>管道<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/system.io.pipes)</ept>或<bpt id="p2">[</bpt>記憶體對應檔案<ept id="p2">](https://docs.microsoft.com/dotnet/core/api/system.io.memorymappedfiles.memorymappedfile)</ept>。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Across machines, you can use a network based solution as an alternative, preferably a low-overhead plain text protocol such as HTTP.</source>
+          <target state="translated">跨電腦可以選擇使用網路型解決方案，最好是低額外負荷的純文字通訊協定，如 HTTP。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>KestrelHttpServer<ept id="p1">](https://github.com/aspnet/KestrelHttpServer)</ept>, the web server used by ASP.NET Core, is an option here.</source>
+          <target state="translated">在此可以選擇 ASP.NET Core 使用的 Web 伺服器 <bpt id="p1">[</bpt>KestrelHttpServer<ept id="p1">](https://github.com/aspnet/KestrelHttpServer)</ept>。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Remote proxy generation via <bpt id="p1">[</bpt>Castle.Core<ept id="p1">](https://github.com/castleproject/Core)</ept> is also an option to consider.</source>
+          <target state="translated">也可以考慮選擇透過 <bpt id="p1">[</bpt>Castle.Core<ept id="p1">](https://github.com/castleproject/Core)</ept> 產生遠端 Proxy。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Binary Serialization</source>
+          <target state="translated">二進位序列化</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>As an alternative to Binary Serialization, there are multiple different serialization technologies to choose.</source>
+          <target state="translated">若要替代二進位序列化，有多種不同的序列化技術可供選擇。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>You should choose one that fits your goals for formatting and footprint.</source>
+          <target state="translated">您應該選擇一種適合您格式和使用量目標的技術。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Popular choices include:</source>
+          <target state="translated">熱門選項包括︰</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>JSON.NET<ept id="p1">](http://www.newtonsoft.com/json)</ept> for JSON</source>
+          <target state="translated">JSON 為 <bpt id="p1">[</bpt>JSON.NET<ept id="p1">](http://www.newtonsoft.com/json)</ept></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Runtime.Serialization.DataContractSerializer</ph> for both XML and JSON</source>
+          <target state="translated">XML 及 JSON 皆可使用 <ph id="ph1">@System.Runtime.Serialization.DataContractSerializer</ph></target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Xml.Serialization.XmlSerializer</ph> for XML</source>
+          <target state="translated">XML 為 <ph id="ph1">@System.Xml.Serialization.XmlSerializer</ph></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>protobuf-net<ept id="p1">](https://github.com/mgravell/protobuf-net)</ept> for Protocol Buffers</source>
+          <target state="translated">通訊協定緩衝區為 <bpt id="p1">[</bpt>protobuf net<ept id="p1">](https://github.com/mgravell/protobuf-net)</ept></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Refer to the linked resources to learn about their benefits and choose the ones for your needs.</source>
+          <target state="translated">請參閱連結資源，以了解它們的優點，並選擇符合您需求的項目。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>There are many other serialization formats and technologies out there, many of which are open source.</source>
+          <target state="translated">另有許多其他序列化格式與技術，其中有許多是開放原始碼。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Sandboxes</source>
+          <target state="translated">沙箱</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>As an alternative to Sandboxing, you can use operating system provided security boundaries, such as user accounts for running processes with the least set of privileges.</source>
+          <target state="translated">沙箱的替代方案可以使用作業系統提供的安全性界限，例如以最少權限組執行處理序的使用者帳戶。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Overview of <ph id="ph1">`project.json`</ph></source>
+          <target state="translated"><ph id="ph1">`project.json`</ph> 概觀</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>project.json project model<ept id="p1">](../tools/project-json.md)</ept> is a project model that ships with .NET Core SDK 1.0 Preview 2.</source>
+          <target state="translated"><bpt id="p1">[</bpt>project.json 專案模型<ept id="p1">](../tools/project-json.md)</ept>是隨附於 .NET Core SDK 1.0 Preview 2 的專案模型。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>It offers some benefits you may wish to take advantage of today:</source>
+          <target state="translated">您現在可能想要利用它的某些優勢︰</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Simple multitargeting where target-specific assemblies can be generated from a single build.</source>
+          <target state="translated">簡單的多目標，可從單一組建產生特定目標組件。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The ability to easily generate a NuGet package with a build of the project.</source>
+          <target state="translated">能夠使用專案組建輕鬆產生 NuGet 封裝。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>No need to list files in your project file.</source>
+          <target state="translated">不必列出專案檔中的檔案。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Unification of NuGet package dependencies and project-to-project dependencies.</source>
+          <target state="translated">統一 NuGet 封裝相依性以及專案對專案相依性。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>While <ph id="ph1">`project.json`</ph> is eventually going to be deprecated, it can be used to build libraries on the .NET Standard today.</source>
+          <target state="translated">雖然最終會淘汰 <ph id="ph1">`project.json`</ph>，但現在仍可用來在 .NET Standard 上建置程式庫。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The Project File: <ph id="ph1">`project.json`</ph></source>
+          <target state="translated">專案檔：<ph id="ph1">`project.json`</ph></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>.NET Core projects are defined by a directory containing a <ph id="ph1">`project.json`</ph> file.</source>
+          <target state="translated">.NET Core 專案是由包含 <ph id="ph1">`project.json`</ph> 檔案的目錄所定義。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>This file is where aspects of the project are declared, such as package dependencies, compiler configuration, runtime configuration, and more.</source>
+          <target state="translated">這個檔案是各層面皆宣告的專案，如封裝相依性、編譯器設定、執行階段設定等等。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet restore`</ph> command reads this project file, restores all dependencies of the project, and generates a <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated"><ph id="ph1">`dotnet restore`</ph> 命令會讀取此專案檔、還原專案所有相依性，以及產生 <ph id="ph2">`project.lock.json`</ph> 檔案。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This file contains all the necessary information the build system needs to build the project.</source>
+          <target state="translated">此檔案包含組建系統建置專案所需的所有必要資訊。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>To learn more about the <ph id="ph1">`project.json`</ph> file, read the <bpt id="p1">[</bpt>project.json reference<ept id="p1">](../tools/project-json.md)</ept>.</source>
+          <target state="translated">若要深入了解 <ph id="ph1">`project.json`</ph> 檔案，請參閱 <bpt id="p1">[</bpt>project.json 參考<ept id="p1">](../tools/project-json.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The Solution File: <ph id="ph1">`global.json`</ph></source>
+          <target state="translated">方案檔：<ph id="ph1">`global.json`</ph></target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file is an optional file to include in a solution which contains multiple projects.</source>
+          <target state="translated"><ph id="ph1">`global.json`</ph> 檔案是選擇性檔案，以納入包含多個專案的方案。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>It typically resides in the root directory of a set of projects.</source>
+          <target state="translated">它通常位在專案集的根目錄中。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>It can be used to inform the build system of different subdirectories which can contain projects.</source>
+          <target state="translated">它可用來通知組建系統可包含專案的不同子目錄。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This is for larger systems composed of several projects.</source>
+          <target state="translated">這適合由數個專案組成的較大型系統。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>For example, you can organize your code into top-level <ph id="ph1">`/src`</ph> and <ph id="ph2">`/test`</ph> folder as such:</source>
+          <target state="translated">例如，您可以將程式碼組織到最上層的 <ph id="ph1">`/src`</ph> 和 <ph id="ph2">`/test`</ph> 資料夾，像這樣︰</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can then have multiple <ph id="ph1">`project.json`</ph> files under their own sub-folders inside <ph id="ph2">`/src`</ph> and <ph id="ph3">`/test`</ph>.</source>
+          <target state="translated">然後，將多個 <ph id="ph1">`project.json`</ph> 檔案放在 <ph id="ph2">`/src`</ph> 和 <ph id="ph3">`/test`</ph> 自己的子資料夾內。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>How to Multitarget with <ph id="ph1">`project.json`</ph></source>
+          <target state="translated">如何使用 <ph id="ph1">`project.json`</ph> 設定多目標</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Many libraries multitarget to have as wide of a reach as possible.</source>
+          <target state="translated">有許多程式庫設定多目標以盡可能廣伸觸角。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>With .NET Core, multitargeting is a "first class citizen", meaning that you can easily generate platform-specific assemblies with a single build.</source>
+          <target state="translated">使用 .NET Core，設定多目標是「一等公民」，表示您可以使用單一組建輕鬆產生特定平台的組件。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Multitargeting is as simple as adding the correct Target Framework Moniker (TFM) to your <ph id="ph1">`project.json`</ph> file, using the correct dependencies for each target (<ph id="ph2">`dependencies`</ph> for .NET Core and <ph id="ph3">`frameworkAssemblies`</ph> for .NET Framework), and potentially using <ph id="ph4">`#if`</ph> directives to conditionally compile the source code for platform-specific API usage.</source>
+          <target state="translated">設定多目標就像將正確的目標 Framework Moniker (TFM) 加入到 <ph id="ph1">`project.json`</ph> 檔案中一樣簡單，每個目標使用正確的相依性 (.NET Core 是 <ph id="ph2">`dependencies`</ph>，.NET Framework 是 <ph id="ph3">`frameworkAssemblies`</ph>)，也可以使用 <ph id="ph4">`#if`</ph> 指示詞有條件地編譯原始程式碼供特定平台 API 使用。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>For example, imagine you are building a library where you wanted to perform some network operations, and you wanted that library to run on all .NET Framework versions, a Portable Class Library (PCL) Profile, and .NET Core.</source>
+          <target state="translated">例如，假設您要建置一個程式庫，在此執行某些網路作業，而且希望此程式庫能在所有 .NET Framework 版本、可攜式類別庫 (PCL) 設定檔和 .NET Core 上執行。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For .NET Core and .NET Framework 4.5+ targets, you may use <ph id="ph1">`System.Net.Http`</ph> library and <ph id="ph2">`async`</ph><ph id="ph3">/</ph><ph id="ph4">`await`</ph>.</source>
+          <target state="translated">.NET Core 和 .NET Framework 4.5+ 的目標可以使用 <ph id="ph1">`System.Net.Http`</ph> 程式庫和 <ph id="ph2">`async`</ph><ph id="ph3">/</ph><ph id="ph4">`await`</ph>。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>However, for earlier versions of .NET Framework, those APIs aren't available.</source>
+          <target state="translated">但是舊版的 .NET Framework 無法使用這些 API。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Here's a sample <ph id="ph1">`frameworks`</ph> section for a <ph id="ph2">`project.json`</ph> that targets the .NET Framework versions 2.0, 3.5, 4.0, 4.5, and .NET Standard 1.6:</source>
+          <target state="translated">以下是 <ph id="ph2">`project.json`</ph> 的範例 <ph id="ph1">`frameworks`</ph> 區段，其目標為 .NET Framework 2.0、3.5、4.0、4.5 版以及 .NET Standard 1.6：</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Note that PCL targets are special: they require you to specify a build definition for the compiler to recognize, and they require you to specify all of the assemblies you use, including <ph id="ph1">`mscorlib`</ph>.</source>
+          <target state="translated">請注意，PCL 的目標很特殊︰它們需要您指定組建定義供編譯器辨識，而且需要您指定使用的全部組件，包括 <ph id="ph1">`mscorlib`</ph>。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Your source code could then use the dependencies like this:</source>
+          <target state="translated">然後原始程式碼就可以使用相依性，像這樣︰</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Note that all of the .NET Framework and .NET Standard targets have names recognized by the compiler:</source>
+          <target state="translated">請注意，所有 .NET Framework 及 .NET Standard 的目標都有編譯器辨識的名稱︰</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>As mentioned above, if you are targeting a PCL, then you will have to specify a build definition for the compiler to understand.</source>
+          <target state="translated">如上所述，如果您的目標是 PCL，則必須指定編譯器了解的組建定義。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>There is no default definition that the compiler can use.</source>
+          <target state="translated">沒有編譯器可以使用的任何預設定義。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Using <ph id="ph1">`project.json`</ph> in Visual Studio</source>
+          <target state="translated">在 Visual Studio 中使用 <ph id="ph1">`project.json`</ph></target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You have two options for using <ph id="ph1">`project.json`</ph> in Visual Studio:</source>
+          <target state="translated">在 Visual Studio 中使用 <ph id="ph1">`project.json`</ph> 有兩個選項︰</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>A new xproj project type.</source>
+          <target state="translated">新的 xproj 專案類型。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>A retargeted PCL project which supports .NET Standard.</source>
+          <target state="translated">支援 .NET Standard 的重定目標 PCL 專案。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>There are different benefits and drawbacks for each.</source>
+          <target state="translated">各有優缺點。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When to Pick an Xproj Project</source>
+          <target state="translated">挑選 Xproj 專案的時機</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The new Xproj project system in Visual Studio utilizes the capabilities of the <ph id="ph1">`project.json`</ph>-based project model to offer two major features over existing project types: seamless multitargeting by building multiple assemblies and the ability to directly generate a NuGet package on build.</source>
+          <target state="translated">Visual Studio 中的新 Xproj 專案系統利用 <ph id="ph1">`project.json`</ph> 專案模型的各種功能，在現有的專案類型上提供兩大功能︰組建多個組件以順暢設定多目標，以及能夠直接在組建上產生 NuGet 封裝。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>However, it comes at the cost of lacking certain features you may use, such as:</source>
+          <target state="translated">不過，代價是缺少可能用到的某些功能，例如︰</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Support for F# or Visual Basic</source>
+          <target state="translated">F# 或 Visual Basic 支援</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Generating satellite assemblies with localized resource strings</source>
+          <target state="translated">產生有當地語系化資源字串的附屬組件</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Directly referencing a <ph id="ph1">`.dll`</ph> file on the filesystem</source>
+          <target state="translated">直接參考檔案系統上的 <ph id="ph1">`.dll`</ph> 檔案</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The ability to reference a csproj-based project in the Reference Manager (depending on the <ph id="ph1">`.dll`</ph> file directly is supported, though)</source>
+          <target state="translated">能在參考管理員中參考 csproj 型專案 (但取決於是否直接支援 <ph id="ph1">`.dll`</ph> 檔案)</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>If your project needs are relatively minimal and you can take advantage of the new features of xproj, you should pick it as your project system.</source>
+          <target state="translated">如果您的專案需求相對較小，而且可以利用 xproj 的新功能，您應該挑選它作為專案系統。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>This can be done in Visual Studio as such:</source>
+          <target state="translated">在 Visual Studio 中完成此作業，如下所示︰</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Ensure you are using Visual Studio 2015 or later.</source>
+          <target state="translated">確定使用的是 Visual Studio 2015 或更新版本。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Select File | New Project.</source>
+          <target state="translated">選取 [檔案] | [新增專案]。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Select ".NET Core" under Visual C#.</source>
+          <target state="translated">選取 Visual C# 下的 ".NET Core"。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Select the "Class Library (.NET Core)" template.</source>
+          <target state="translated">選取 "Class Library (.NET Core)" 範本。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>When to Pick a PCL project</source>
+          <target state="translated">挑選 PCL 專案的時機</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>You can target .NET Core with the traditional project system in Visual Studio, by creating a Portable Class Library (PCL) and selecting ".NET Core" in the project configuration dialog.</source>
+          <target state="translated">藉由建立可攜式類別庫 (PCL)，並在 [專案組態] 對話方塊中選取 [.NET Core]，您可以在 Visual Studio 中設定使用傳統專案系統的 .NET Core 為目標。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Then you'll need to retarget the project to be based on the .NET Standard:</source>
+          <target state="translated">然後，您必須在 .NET Standard 上將用作基礎的專案重新設定為目標︰</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Right-click on the project file in Visual Studio and select Properties.</source>
+          <target state="translated">以滑鼠右鍵按一下 Visual Studio 中的專案檔案，然後選取 [內容]。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Under Build, select "Convert to .NET Standard".</source>
+          <target state="translated">在 [組建] 下，選取 「Convert to .NET Standard」 (轉換為 .NET Standard)。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you have more advanced project system needs, this should be your choice.</source>
+          <target state="translated">如有進階的專案系統需求，這應該就是您的選擇。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Note that if you wish to multitarget by generating platform-specific assemblies like with the <ph id="ph1">`xproj`</ph> project system, you'll need to create a "Bait and Switch" PCL, as described in <bpt id="p1">[</bpt>How to Make Portable Class Libraries Work for You<ept id="p1">](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/)</ept>.</source>
+          <target state="translated">請注意，如果想要透過產生特定平台組件來設定多目標，像使用 <ph id="ph1">`xproj`</ph> 專案系統，您需要建立「誘導轉向」PCL，如 <bpt id="p1">[</bpt>How to Make Portable Class Libraries Work for You<ept id="p1">](https://blogs.msdn.microsoft.com/dsplaisted/2012/08/27/how-to-make-portable-class-libraries-work-for-you/)</ept> (如何讓可攜式類別庫為您工作) 中所述。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Retargeting your .NET Framework Code to .NET Framework 4.6.2</source>
+          <target state="translated">將 .NET Framework 程式碼重定目標為 .NET Framework 4.6.2</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>If your code is not targeting .NET Framework 4.6.2, it's recommended that you retarget.</source>
+          <target state="translated">如果您的程式碼目標不是 .NET Framework 4.6.2，建議您重新設定目標。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>This ensures that you can use the latest API alternatives for cases where the .NET Standard can't support existing APIs.</source>
+          <target state="translated">這可確保當 .NET Standard 不支援現有的 API 時，您能使用最新的 API 替代項目。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For each of your projects in Visual Studio you wish to port, do the following:</source>
+          <target state="translated">針對您想要移轉的每個 Visual Studio 專案，執行下列作業︰</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Right-click on the project and select Properties</source>
+          <target state="translated">以滑鼠右鍵按一下專案，選取 [內容]。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In the "Target Framework" dropdown, select ".NET Framework 4.6.2".</source>
+          <target state="translated">在 [目標 Framework] 下拉式清單中選取 [.NET Framework 4.6.2]。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Recompile your projects.</source>
+          <target state="translated">重新編譯您的專案。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是這麼容易！</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Because your projects now target .NET Framework 4.6.2, you can use that version of .NET Framework as your base for porting code.</source>
+          <target state="translated">因為您的專案現在是以 .NET Framework 4.6.2 為目標，所以您可以使用該版 .NET Framework 作為基礎移轉程式碼。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Determining the Portability of Your Code</source>
+          <target state="translated">判斷程式碼的可攜性</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report that you can begin to analyze.</source>
+          <target state="translated">下一個步驟是執行 API 可攜性分析器 (ApiPort)，以產生可以開始分析的可攜性報告。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>You'll need to make sure you understand the <bpt id="p1">[</bpt>API Portability tool (ApiPort)<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept> and can generate portability reports for targeting .NET Core.</source>
+          <target state="translated">您必須確定您了解 <bpt id="p1">[</bpt>API 可攜性工具 (ApiPort)<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>，而且可以產生以 .NET Core 為目標的可攜性報告。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>How you do this will likely vary based on your needs and personal tastes.</source>
+          <target state="translated">作法因個人需求及品味而異。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>What follows are a few different approaches - you may find yourself mixing each approach depending on how your code is structured.</source>
+          <target state="translated">下面是幾個不同的方法，您可能會發現自己混用了各種方法，視您的程式碼結構而定。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Dealing Primarily with the Compiler</source>
+          <target state="translated">主要以編譯器處理</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>This approach may be the best for small projects or projects which don't use many .NET Framework APIs.</source>
+          <target state="translated">這個方法大概最適合小型專案或不使用太多 .NET Framework API 的專案。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The approach is very simple:</source>
+          <target state="translated">方法很簡單︰</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Optionally run ApiPort on your project.</source>
+          <target state="translated">對專案選擇性執行 ApiPort。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>If ApiPort was ran, take a quick glance at the report.</source>
+          <target state="translated">如果已執行 ApiPort，快速瀏覽報表。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Copy all of your code over into a new .NET Core project.</source>
+          <target state="translated">將所有程式碼全部複製到新的 .NET Core 專案。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Work out compiler errors until it compiles, referring to the portability report if needed.</source>
+          <target state="translated">解決編譯器錯誤直到完成編譯，如有需要請參考可攜性報表。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Repeat as needed.</source>
+          <target state="translated">視需要重複執行。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Although this approach is very unstructured, the code-focused approach can lead to resolving any issues quickly, and may be the best approach for smaller projects or libraries.</source>
+          <target state="translated">雖然此方法不夠有條理，但以程式碼為主的方法可以快速解決任何問題，而且可能是最適合小型專案或程式庫的方法。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>A project that contains only data models may be an ideal candidate here.</source>
+          <target state="translated">只包含資料模型的專案可能是理想的選項。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Staying on the .NET Framework until Portability Issues are Resolved</source>
+          <target state="translated">留在 .NET Framework 直到可攜性問題解決</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>This approach may be the best if you prefer to have code that compiles during the entire process.</source>
+          <target state="translated">如果您偏好在整個程序期間執行編譯的程式碼，這就是最佳方法。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>The approach is as follows:</source>
+          <target state="translated">方法如下所示︰</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Run ApiPort on a project.</source>
+          <target state="translated">對專案執行 ApiPort。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Address issues by using different APIs which are portable.</source>
+          <target state="translated">使用不同的可攜式 API 解決問題。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Keep note of any areas where you can't use a direct alternative.</source>
+          <target state="translated">記下任何不能使用直接替代方案的區域。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Repeat steps 1-3 for all projects you're porting until you're confident each is ready to be copied over into a .NET Core project.</source>
+          <target state="translated">為所有移轉的專案重複步驟 1-3，直到確定每個專案皆可複製到 .NET Core 專案。</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Copy the code into a new .NET Core projects.</source>
+          <target state="translated">將程式碼複製到新的 .NET Core 專案。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Work out any issues that you've kept note of.</source>
+          <target state="translated">解決所有記下的問題。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>This careful approach is more structured than simply working out compiler errors, but it is still relatively code-focused and has the benefit of always having code that can compile.</source>
+          <target state="translated">這個謹慎的方法比只處理編譯器錯誤更有條理，但仍相當著重在程式碼，其優點是永遠有可編譯的程式碼。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The way you resolve certain issues that couldn't be addressed by just using another API can vary greatly.</source>
+          <target state="translated">某些換個 API 無法解決的問題，其解決方式差異極大。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>You may find that you need to develop a more comprehensive plan for certain projects, which is covered as the next approach.</source>
+          <target state="translated">您可能現某些專案需要開發更完善的方案，下個方法中會加以說明。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Developing a Comprehensive Plan of Attack</source>
+          <target state="translated">開發全面的攻擊計劃</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>This approach may be best for larger and more complex projects, where restructuring of code or rewriting certain areas may be necessary to support .NET Core.</source>
+          <target state="translated">這個方法可能最適合大型且更複雜的專案，因為可能必須重新建構程式碼或重寫特定區域才能支援 .NET Core。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The approach is as follows:</source>
+          <target state="translated">方法如下所示︰</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Run ApiPort on a project.</source>
+          <target state="translated">對專案執行 ApiPort。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Understand where in your code each non-portable type is being used and how that affects overall portability.</source>
+          <target state="translated">了解每個非可攜式類型用在程式碼何處，以及對整體可攜性有何影響。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Understand the nature of those types.</source>
+          <target state="translated">了解這些類型的性質。</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Are they small in number, but used frequently?</source>
+          <target state="translated">它們數量很少但使用頻繁嗎？</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Are they large in number, but used infrequently?</source>
+          <target state="translated">它們數量很大但很少使用嗎？</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Is their use concentrated, or is it spread throughout your code?</source>
+          <target state="translated">使用集中還是分散在整個程式碼？</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">b.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Is it easy to isolate code that isn't portable so you can deal with it more easily?</source>
+          <target state="translated">是不是非可攜式的程式碼容易隔離，所以您可以更輕鬆地處理它？</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>c.</source>
+          <target state="translated">c. </target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Would you need to refactor your code?</source>
+          <target state="translated">您需要重構程式碼嗎？</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>d.</source>
+          <target state="translated">d.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>For those types which aren't portable, are there alternative APIs that accomplish the same task?</source>
+          <target state="translated">對於非可攜式的類型，是否有替代的 API 可以完成相同的工作？</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>For example, if you're using the <ph id="ph1">`WebClient`</ph> class, you may be able to use the <ph id="ph2">`HttpClient`</ph> class instead.</source>
+          <target state="translated">例如，如果您使用的是 <ph id="ph1">`WebClient`</ph> 類別，可以改用 <ph id="ph2">`HttpClient`</ph> 類別。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>e.</source>
+          <target state="translated">e.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Are there different portable APIs you can use to accomplish a task, even if it's not a drop-in replacement?</source>
+          <target state="translated">有不同的可攜式 API 可用來完成工作嗎，即使它不是直接替換項目？</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For example, if you're using <ph id="ph1">`XmlSchema`</ph> to help parse XML, but you don't require XML schema discovery, you could use <ph id="ph2">`System.Linq.Xml`</ph> APIs and hand-parse the data.</source>
+          <target state="translated">例如，如果使用 <ph id="ph1">`XmlSchema`</ph> 協助剖析 XML，但不需要 XML 結構描述探索，您可以使用 <ph id="ph2">`System.Linq.Xml`</ph> API 手動剖析資料。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>If you have assemblies that are difficult to port, is it worth leaving them on .NET Framework for now?</source>
+          <target state="translated">如果有難以移轉的組件，暫時留在 .NET Framework 是否值得？</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Here are some things to consider:</source>
+          <target state="translated">以下是要考量的事項：</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>You may have some functionality in your library that's incompatible with .NET Core because it relies too heavily on .NET Framework- or Windows-specific functionality.</source>
+          <target state="translated">程式庫中可能有一些功能與 .NET Core 不相容，因為它太過依賴 .NET Framework 或 Windows 特定功能。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Is it worth leaving that functionality behind for now and releasing a .NET Core version of your library with less features for the time being?</source>
+          <target state="translated">目前暫時拋開該功能，改用功能較少的.NET Core 版程式庫是否值得？</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>b.</source>
+          <target state="translated">b.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Would a refactor help here?</source>
+          <target state="translated">重構在此是否有所助益？</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Is it reasonable to write your own implementation of an unavailable .NET Framework API?</source>
+          <target state="translated">撰寫無法使用的 .NET Framework API 自有實作是否合理？</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>You could consider instead copying, modifying, and using code from the <bpt id="p1">[</bpt>.NET Framework Reference Source<ept id="p1">](https://github.com/Microsoft/referencesource)</ept>.</source>
+          <target state="translated">可以考慮改用複製、修改及使用 <bpt id="p1">[</bpt>.NET Framework 參考來源<ept id="p1">](https://github.com/Microsoft/referencesource)</ept>的程式碼。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>It's licensed under the <bpt id="p1">[</bpt>MIT License<ept id="p1">](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt)</ept>, so you have significant freedom in doing this.</source>
+          <target state="translated">它在 <bpt id="p1">[</bpt>MIT 授權<ept id="p1">](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt)</ept> 中授權，所以您可以自由執行這項作業。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Just be sure to properly attribute Microsoft in your code!</source>
+          <target state="translated">只要確定在程式碼中正確定義 Microsoft 屬性！</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Repeat this process as needed for different projects.</source>
+          <target state="translated">視需要對不同的專案重複此程序。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Once you have a plan, execute that plan.</source>
+          <target state="translated">計劃好後，請執行該計劃。</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>The analysis phase could take some time depending on how large your codebase is.</source>
+          <target state="translated">分析階段可能需要一些時間，視您的程式碼基底大小而定。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan can save you a lot of time in the long run, particularly if you have a more complex codebase.</source>
+          <target state="translated">花時間在這個階段徹底了解所需的變更範圍以及開發計劃，可以省下未來許多時間，特別是如果您的程式碼基底較為複雜。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.6.2, making this a more structured version of the previous approach.</source>
+          <target state="translated">您的計劃可能涉及在對程式碼基底進行重大變更時仍要以 .NET Framework 4.6.2 為目標，讓它成為前一種方法更有條理的版本。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>How you go about executing your plan will be dependent on your codebase.</source>
+          <target state="translated">如何執行計劃，視程式碼基底而定。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Mixing Approaches</source>
+          <target state="translated">混合方法</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>It's likely that you'll mix the above approaches on a per-project basis.</source>
+          <target state="translated">您可能會根據每個專案混用上述各種方法。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>You should do what makes the most sense to you and for your codebase.</source>
+          <target state="translated">您應該做對您和程式碼基底而言最有意義的事。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Porting your Tests</source>
+          <target state="translated">移轉測試</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core.</source>
+          <target state="translated">移轉程式碼後，確定一切正常運作的最佳方式，是在將程式碼移轉到 .NET Core 時測試程式碼。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>To do this, you'll need to use a testing framework that will build and run tests for .NET Core.</source>
+          <target state="translated">若要這樣做，您必須使用會建置及執行 .NET Core 測試的測試架構。</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Currently, you have three options:</source>
+          <target state="translated">目前有三個選項︰</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>xUnit<ept id="p1">](https://xunit.github.io/)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>xUnit<ept id="p1">](https://xunit.github.io/)</ept></target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Getting Started<ept id="p1">](http://xunit.github.io/docs/getting-started-dnx.html)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>使用者入門<ept id="p1">](http://xunit.github.io/docs/getting-started-dnx.html)</ept></target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Tool to convert an MSTest project to xUnit<ept id="p1">](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>將 MSTest 專案轉換成 xUnit 的工具<ept id="p1">](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)</ept></target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NUnit<ept id="p1">](http://www.nunit.org/)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NUnit<ept id="p1">](http://www.nunit.org/)</ept></target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Getting Started<ept id="p1">](https://github.com/nunit/docs/wiki/Installation)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>使用者入門<ept id="p1">](https://github.com/nunit/docs/wiki/Installation)</ept></target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Blog post about migrating from MSTest to NUnit<ept id="p1">](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>關於從 MSTest 移轉至 NUnit 的部落格文章<ept id="p1">](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)</ept></target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>MSTest<ept id="p1">](https://msdn.microsoft.com/library/ms243147.aspx)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>MSTest<ept id="p1">](https://msdn.microsoft.com/library/ms243147.aspx)</ept></target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Recommended Approach to Porting</source>
+          <target state="translated">建議的移轉方法</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Finally, porting the code itself!</source>
+          <target state="translated">最後，移轉程式碼！</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Ultimately, the actual porting effort will depend heavily on how your .NET Framework code is structured.</source>
+          <target state="translated">最終的移轉代價主要取決於 .NET Framework 程式碼的結構方式。</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>That being said, here is a recommended approach which may work well with your codebase.</source>
+          <target state="translated">以下是建議的方法，非常適合您的程式碼基底。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>A good way to port your code is to begin with the "base" of your library.</source>
+          <target state="translated">移轉程式碼的好方法是從程式庫的「基底」開始。</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>This may be data models or some other foundational classes and methods that everything else uses directly or indirectly.</source>
+          <target state="translated">這可以是資料模型，或某些其他項目直接或間接使用的其他基本類別和方法。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Port the test project which tests the layer of your library that you're currently porting.</source>
+          <target state="translated">移轉測試專案，此專案會測試目前移轉中的程式庫圖層。</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Copy over the "base" of your library into a new .NET Core project and select the version of the .NET Standard you wish to support.</source>
+          <target state="translated">將程式庫的「基底」複製到新的 .NET Core 專案，然後選取您想要支援的 .NET Standard 版本。</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Make any changes needed to get the code to compile.</source>
+          <target state="translated">進行任何必要的變更，令程式碼執行編譯。</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Much of this may require adding NuGet package dependencies to your <ph id="ph1">`project.json`</ph> file.</source>
+          <target state="translated">此工作的大部分需要將 NuGet 封裝相依性加入 <ph id="ph1">`project.json`</ph> 檔案中。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Run tests and make any needed adjustments.</source>
+          <target state="translated">執行測試並進行任何必要的調整。</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Pick the next layer of code to port over and repeat steps 2 and 3!</source>
+          <target state="translated">挑選下一層要移轉的程式碼，並重複步驟 2 和 3！</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>If you methodically move outward from the base of your library and test each layer as needed, porting will be a systematic process where problems are isolated to one layer of code at a time.</source>
+          <target state="translated">如果您有條理地從程式庫基底外移，並視需要測試每一層，移轉就會是系統化的程序，問題會一次隔離至一層程式碼。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
