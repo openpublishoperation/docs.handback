@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\docker\visual-studio-tools-for-docker.md](https://github.com/dotnet/docs/blob/03193513706967a46f74bccdba08a56946dd67df/docs/core/docker/visual-studio-tools-for-docker.md) | InSyncHandedBackSuccess | [Details](#274402bbd254e97d88771675daf07995983914aa42)
 
 ## Item Details
-##### <a name='274402bbd254e97d88771675daf07995983914aa42'></a> Source: [docs\core\docker\visual-studio-tools-for-docker.md](https://github.com/dotnet/docs/blob/03193513706967a46f74bccdba08a56946dd67df/docs/core/docker/visual-studio-tools-for-docker.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\docker\visual-studio-tools-for-docker.md](https://github.com/dotnet/docs.zh-tw/blob/3e36f910b5df33bb6a5945aeb23dcd022a114a50/docs/core/docker/visual-studio-tools-for-docker.md)
-* Handoff File: [visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/822fc4c86b093bd0e8e6220f197f2c66ba6fc742/ol-handoff/dotnet/docs.zh-tw/master/ht-p1/visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf)
-* Handoff Datetime: 2016-11-16 11:17:44
-* Handoff Reason: Include
-* Archive File: [visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/54b2315f7f2b6a1a74ec63053cbdae50321f54f3/ol-archive/dotnet/docs.zh-tw/master/ht-p1/visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf)
-* Archive Datetime: 2016-11-18 07:26:25
-* Handback File: [visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/f7b564e4bf8126c43a3c76a0108d6f55549706a0/ol-handback/dotnet/docs.zh-tw/master/ht-p1/visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf)
-* Handback Datetime: 2016-11-23 16:00:51
-* Bilingual File: [visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/2cce5b5faa54e11c35da8aefef6a137f0330c0fa/ol-handback/dotnet/docs.zh-tw/master/ht-p1/visual-studio-tools-for-docker.e52c687ecd5b2cfa4ffac55a307bf71f7c1df5f8.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-18 09:23:55
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
