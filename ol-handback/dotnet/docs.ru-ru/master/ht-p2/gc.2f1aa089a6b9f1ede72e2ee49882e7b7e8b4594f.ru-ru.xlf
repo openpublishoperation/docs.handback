@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0734347048742657b8e33a1fffae15448ecad4f3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\gc.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">28a616416d222585b1acea71f0a6d2ed046d62ee</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1337b68771f95336d70594d78f544bfa19cfa815</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Автоматическое управление памятью и сборка мусора</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Автоматическое управление памятью и сборка мусора</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Автоматическое управление памятью и сборка мусора</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Automatic memory management is one of the services that the Common Language Runtime provides during managed execution.</source>
+          <target state="translated">Автоматическое управление памятью реализуется одной из служб, которые среда CLR предоставляет в ходе управляемого выполнения.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The Common Language Runtime's garbage collector manages the allocation and release of memory for an application.</source>
+          <target state="translated">Сборщик мусора среды CLR управляет освобождением и выделением памяти для приложения.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications.</source>
+          <target state="translated">Для разработчиков это означает, что при разработке управляемого приложения не нужно писать код для управления памятью.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed.</source>
+          <target state="translated">Автоматическое управление памятью позволяет устранить распространенные проблемы, такие как не освобожденный по забывчивости объект, вызывающий утечку памяти, или попытки доступа к памяти для уже удаленного объекта.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This section describes how the garbage collector allocates and releases memory.</source>
+          <target state="translated">В этом разделе описано, каким образом сборщик мусора выделяет и освобождает память.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Allocating Memory</source>
+          <target state="translated">Выделение памяти</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When you initialize a new process, the runtime reserves a contiguous region of address space for the process.</source>
+          <target state="translated">При инициализации нового процесса среда выполнения резервирует для него непрерывную область адресного пространства.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This reserved address space is called the managed heap.</source>
+          <target state="translated">Это зарезервированное адресное пространство называется управляемой кучей.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The managed heap maintains a pointer to the address where the next object in the heap will be allocated.</source>
+          <target state="translated">Эта управляемая куча содержит указатель адреса, с которого будет выделена память для следующего объекта в куче.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Initially, this pointer is set to the managed heap's base address.</source>
+          <target state="translated">Изначально этот указатель устанавливается в базовый адрес управляемой кучи.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>All reference types are allocated on the managed heap.</source>
+          <target state="translated">Все ссылочные типы размещаются в управляемой куче.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When an application creates the first reference type, memory is allocated for the type at the base address of the managed heap.</source>
+          <target state="translated">Когда приложение создает первый ссылочный тип, память для него выделяется, начиная с базового адреса управляемой кучи.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When the application creates the next object, the garbage collector allocates memory for it in the address space immediately following the first object.</source>
+          <target state="translated">При создании приложением следующего объекта сборщик мусора выделяет для него память в адресном пространстве, непосредственно следующем за первым объектом.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>As long as address space is available, the garbage collector continues to allocate space for new objects in this manner.</source>
+          <target state="translated">Пока имеется доступное адресное пространство, сборщик мусора продолжает выделять пространство для новых объектов по этой схеме.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Allocating memory from the managed heap is faster than unmanaged memory allocation.</source>
+          <target state="translated">Выделение памяти из управляемой кучи происходит быстрее, чем неуправляемое выделение памяти.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Because the runtime allocates memory for an object by adding a value to a pointer, it is almost as fast as allocating memory from the stack.</source>
+          <target state="translated">Поскольку среда выполнения выделяет память для объекта путем добавления значения к указателю, это осуществляется почти так же быстро, как выделение памяти из стека.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In addition, because new objects that are allocated consecutively are stored contiguously in the managed heap, an application can access the objects very quickly.</source>
+          <target state="translated">Кроме того, поскольку выделяемые последовательно новые объекты и располагаются последовательно в управляемой куче, приложение может получать доступ к объектам очень быстро.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Releasing Memory</source>
+          <target state="translated">Освобождение памяти</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made.</source>
+          <target state="translated">Механизм оптимизации сборщика мусора определяет наилучшее время для выполнения сбора, основываясь на произведенных выделениях памяти.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application.</source>
+          <target state="translated">Когда сборщик мусора выполняет очистку, он освобождает память, выделенную для объектов, которые больше не используются приложением.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>It determines which objects are no longer being used by examining the application's roots.</source>
+          <target state="translated">Он определяет, какие объекты больше не используются, основываясь на корнях приложения.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Every application has a set of roots.</source>
+          <target state="translated">Каждое приложение имеет набор корней.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Each root either refers to an object on the managed heap or is set to null.</source>
+          <target state="translated">Каждый корень либо ссылается на объект, находящийся в управляемой куче, либо имеет значение NULL.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>An application's roots include static fields, local variables and parameters on a thread's stack, and CPU registers.</source>
+          <target state="translated">Корни приложения содержат статические поля, локальные переменные и параметры стека потока, а также регистры процессора.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The garbage collector has access to the list of active roots that the just-in-time (JIT) compiler and the runtime maintain.</source>
+          <target state="translated">Сборщик мусора имеет доступ к списку активных корней, которые поддерживаются JIT-компилятором и средой выполнения.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Using this list, it examines an application's roots, and in the process creates a graph that contains all the objects that are reachable from the roots.</source>
+          <target state="translated">С помощью этого списка он проверяет корни приложения и в процессе проверки создает граф, содержащий все объекты, к которым можно получить доступ из этих корней.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Objects that are not in the graph are unreachable from the application's roots.</source>
+          <target state="translated">Объекты, не входящие в этот граф, являются недостижимыми из данных корней приложения.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The garbage collector considers unreachable objects garbage and will release the memory allocated for them.</source>
+          <target state="translated">Сборщик мусора считает недостижимые объекты мусором и будет освобождать выделенную для них память.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>During a collection, the garbage collector examines the managed heap, looking for the blocks of address space occupied by unreachable objects.</source>
+          <target state="translated">В процессе очистки сборщик мусора проверяет управляемую кучу, отыскивая блоки адресного пространства, занятые недостижимыми объектами.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>As it discovers each unreachable object, it uses a memory-copying function to compact the reachable objects in memory, freeing up the blocks of address spaces allocated to unreachable objects.</source>
+          <target state="translated">При обнаружении недостижимого объекта он использует функцию копирования памяти для уплотнения достижимых объектов в памяти, освобождая блоки адресного пространства, выделенные под недостижимые объекты.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Once the memory for the reachable objects has been compacted, the garbage collector makes the necessary pointer corrections so that the application's roots point to the objects in their new locations.</source>
+          <target state="translated">После уплотнения памяти, занимаемой достижимыми объектами, сборщик мусора вносит необходимые поправки в указатель, чтобы корни приложения указывали на новые расположения объектов.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It also positions the managed heap's pointer after the last reachable object.</source>
+          <target state="translated">Он также устанавливает указатель управляемой кучи в положение после последнего достижимого объекта.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Note that memory is compacted only if a collection discovers a significant number of unreachable objects.</source>
+          <target state="translated">Обратите внимание, что память уплотняется, только если при очистке обнаруживается значительное число недостижимых объектов.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If all the objects in the managed heap survive a collection, then there is no need for memory compaction.</source>
+          <target state="translated">Если после сборки мусора все объекты в управляемой куче остаются на месте, то уплотнение памяти не требуется.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To improve performance, the runtime allocates memory for large objects in a separate heap.</source>
+          <target state="translated">Для повышения производительности среда выполнения выделяет память для больших объектов в отдельной куче.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The garbage collector automatically releases the memory for large objects.</source>
+          <target state="translated">Сборщик мусора автоматически освобождает память, выделенную для больших объектов.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>However, to avoid moving large objects in memory, this memory is not compacted.</source>
+          <target state="translated">Однако для устранения перемещений в памяти больших объектов эта память не сжимается.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Generations and Performance</source>
+          <target state="translated">Поколения и производительность</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To optimize the performance of the garbage collector, the managed heap is divided into three generations: 0, 1, and 2.</source>
+          <target state="translated">Для оптимизации производительности сборщика мусора управляемая куча делится на три поколения: 0, 1 и 2.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The runtime's garbage collection algorithm is based on several generalizations that the computer software industry has discovered to be true by experimenting with garbage collection schemes.</source>
+          <target state="translated">Алгоритм сборки мусора в среде выполнения основан на ряде обобщений, к которым пришла программная индустрия в процессе экспериментов со схемами сборки мусора.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>First, it is faster to compact the memory for a portion of the managed heap than for the entire managed heap.</source>
+          <target state="translated">Во-первых, уплотнять память для части управляемой кучи быстрее, чем для всей кучи.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Secondly, newer objects will have shorter lifetimes and older objects will have longer lifetimes.</source>
+          <target state="translated">Во-вторых, более новые объекты имеют меньшее время жизни, а более старые объекты имеют большее время жизни.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Lastly, newer objects tend to be related to each other and accessed by the application around the same time.</source>
+          <target state="translated">Наконец, более новые объекты теснее связаны друг с другом, и приложение обращается к ним приблизительно в одно и то же время.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The runtime's garbage collector stores new objects in generation 0.</source>
+          <target state="translated">Сборщик мусора среды выполнения хранит новые объекты в поколении 0.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Objects created early in the application's lifetime that survive collections are promoted and stored in generations 1 and 2.</source>
+          <target state="translated">Уровень объектов, созданных на раннем этапе работы приложения и оставшихся после сборок мусора, повышается, и они сохраняются в поколении 1 и 2.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The process of object promotion is described later in this topic.</source>
+          <target state="translated">Процесс продвижения объекта по уровням описан далее в этом разделе.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Because it is faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory in a specific generation rather than release the memory for the entire managed heap each time it performs a collection.</source>
+          <target state="translated">Поскольку быстрее сжать часть управляемой кучи, чем всю кучу, эта схема позволяет сборщику мусора освобождать память в определенном поколении, а не освобождать память для всей кучи каждый раз при сборке мусора.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In reality, the garbage collector performs a collection when generation 0 is full.</source>
+          <target state="translated">В действительности сборщик мусора выполняет очистку при заполнении поколения 0.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If an application attempts to create a new object when generation 0 is full, the garbage collector discovers that there is no address space remaining in generation 0 to allocate for the object.</source>
+          <target state="translated">Если приложение пытается создать новый объект, когда поколение 0 заполнено, сборщик мусора обнаруживает, что в поколении 0 не осталось свободного адресного пространства для объекта.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The garbage collector performs a collection in an attempt to free address space in generation 0 for the object.</source>
+          <target state="translated">Сборщик мусора выполняет сборку, пытаясь освободить для этого объекта адресное пространство в поколении 0.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The garbage collector starts by examining the objects in generation 0 rather than all objects in the managed heap.</source>
+          <target state="translated">Сборщик мусора начинает проверять объекты в поколении 0, а не все объекты в управляемой куче.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This is the most efficient approach, because new objects tend to have short lifetimes, and it is expected that many of the objects in generation 0 will no longer be in use by the application when a collection is performed.</source>
+          <target state="translated">Это наиболее эффективный подход, поскольку, как правило, новые объекты имеют меньшее время жизни, и можно ожидать, что многие из объектов в поколении 0 к моменту проведения сборки мусора уже не используются приложением.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In addition, a collection of generation 0 alone often reclaims enough memory to allow the application to continue creating new objects.</source>
+          <target state="translated">Кроме того, сборка мусора только в поколении 0 зачастую освобождает достаточно памяти для того, чтобы приложение могло продолжить создавать новые объекты.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>After the garbage collector performs a collection of generation 0, it compacts the memory for the reachable objects as explained in <bpt id="p1">[</bpt>Releasing Memory<ept id="p1">](#releasing-memory)</ept> earlier in this topic.</source>
+          <target state="translated">После того как сборщик мусора выполнит освобождение для поколения 0, он уплотняет память для достижимых объектов, как описано ранее в разделе <bpt id="p1">[</bpt>Освобождение памяти<ept id="p1">](#releasing-memory)</ept>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The garbage collector then promotes these objects and considers this portion of the managed heap generation 1.</source>
+          <target state="translated">Затем сборщик мусора продвигает эти объекты и считает эту часть управляемой кучи поколением 1.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Because objects that survive collections tend to have longer lifetimes, it makes sense to promote them to a higher generation.</source>
+          <target state="translated">Так как объекты, оставшиеся после сборки, обычно склонны к долгой жизни, имеет смысл продвинуть их в поколение более высокого уровня.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>As a result, the garbage collector does not have to reexamine the objects in generations 1 and 2 each time it performs a collection of generation 0.</source>
+          <target state="translated">В результате сборщику мусора не обязательно выполнять повторную проверку объектов поколений 1 и 2 при каждой сборке мусора в поколении 0.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>After the garbage collector performs its first collection of generation 0 and promotes the reachable objects to generation 1, it considers the remainder of the managed heap generation 0.</source>
+          <target state="translated">После того как сборщик мусора выполнит первую сборку поколения 0 и продвинет доступные объекты в поколение 1, он считает оставшуюся часть управляемой кучи поколением 0.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It continues to allocate memory for new objects in generation 0 until generation 0 is full and it is necessary to perform another collection.</source>
+          <target state="translated">Он продолжает размещать память для новых объектов в поколении 0, до тех пор пока поколение 0 не заполнится и необходимо будет провести следующую сборку.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>At this point, the garbage collector's optimizing engine determines whether it is necessary to examine the objects in older generations.</source>
+          <target state="translated">В этот момент оптимизатор сборщика мусора определяет, есть ли необходимость проверки объектов в более старых поколениях.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, if a collection of generation 0 does not reclaim enough memory for the application to successfully complete its attempt to create a new object, the garbage collector can perform a collection of generation 1, then generation 2.</source>
+          <target state="translated">Например, если сборка поколения 0 не освобождает достаточно памяти, чтобы приложение могло успешно завершить создание объекта, сборщик мусора может выполнить сборку мусора поколения 1, а затем поколения 2.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If this does not reclaim enough memory, the garbage collector can perform a collection of generations 2, 1, and 0.</source>
+          <target state="translated">Если и это не действие не освободит достаточно памяти, сборщик мусора может выполнить сборку мусора поколений 2, 1, и 0.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>After each collection, the garbage collector compacts the reachable objects in generation 0 and promotes them to generation 1.</source>
+          <target state="translated">После каждой сборки сборщик мусора собирает доступные объекты в поколении 0 и продвигает их в поколение 1.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Objects in generation 1 that survive collections are promoted to generation 2.</source>
+          <target state="translated">Объекты в поколении 1, оставшиеся после сборок, продвигаются в поколение 2.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Because the garbage collector supports only three generations, objects in generation 2 that survive a collection remain in generation 2 until they are determined to be unreachable in a future collection.</source>
+          <target state="translated">Поскольку сборщик мусора поддерживает только три поколения, объекты в поколении 2, оставшиеся после сборки, остаются в поколении 2 до тех пор, пока они не перестанут быть доступными в результате сборки мусора.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Releasing Memory for Unmanaged Resources</source>
+          <target state="translated">Освобождение памяти для неуправляемых ресурсов</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For the majority of the objects that your application creates, you can rely on the garbage collector to automatically perform the necessary memory management tasks.</source>
+          <target state="translated">Для большинства объектов, созданных приложением, сборщик мусора автоматически выполнит необходимые задачи по управлению памятью.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>However, unmanaged resources require explicit cleanup.</source>
+          <target state="translated">Однако для неуправляемых ресурсов требуется явная очистка.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection.</source>
+          <target state="translated">Основным типом неуправляемых ресурсов являются объекты, образующие упаковку для ресурсов операционной системы, такие как дескриптор файлов, дескриптор окна или сетевое подключение.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Although the garbage collector is able to track the lifetime of a managed object that encapsulates an unmanaged resource, it does not have specific knowledge about how to clean up the resource.</source>
+          <target state="translated">Хотя сборщик мусора может отслеживать время жизни управляемого объекта, инкапсулирующего неуправляемые ресурсы, он не имеет определенных сведений о том, как освобождать эти ресурсы.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>When you create an object that encapsulates an unmanaged resource, it is recommended that you provide the necessary code to clean up the unmanaged resource in a public <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">При создании объекта, инкапсулирующего неуправляемый ресурс, рекомендуется предоставлять необходимый код для очистки неуправляемого ресурса в общем методе <ph id="ph1">`Dispose`</ph>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>By providing a <ph id="ph1">`Dispose`</ph> method, you enable users of your object to explicitly free its memory when they are finished with the object.</source>
+          <target state="translated">Предоставление метода<ph id="ph1">`Dispose`</ph> дает возможность пользователям объекта явно освобождать память при завершении работы с объектом.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>When you use an object that encapsulates an unmanaged resource, you should be aware of <ph id="ph1">`Dispose`</ph> and call it as necessary.</source>
+          <target state="translated">Когда используется объект, инкапсулирующий неуправляемый ресурс, следует помнить о <ph id="ph1">`Dispose`</ph> и при необходимости вызывать его.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For more information about cleaning up unmanaged resources and an example of a design pattern for implementing <ph id="ph1">`Dispose`</ph>, see <bpt id="p1">[</bpt>Garbage Collection in .NET<ept id="p1">](index.md)</ept>.</source>
+          <target state="translated">Дополнительные сведения об освобождении неуправляемых ресурсов и пример шаблона для реализации метода <ph id="ph1">`Dispose`</ph> см. в разделе <bpt id="p1">[</bpt>Сборка мусора в .NET<ept id="p1">](index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Сборка мусора в .NET<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
