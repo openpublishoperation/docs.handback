@@ -2,13 +2,13 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aafa0c110dc3a2820f7e050d70b9450af1db35d8</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5493ccb77e62d20d5101728ef8ab1744ea697fb8</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\using-with-xplat-cli.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
       <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
-      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ad728e8551de1a665eaf4799620996b7afda6d0</xliffext:olskeletonhash>
-      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1cc7baffec32a9306cc56315ec41e6862db64d33</xliffext:olxliffhash>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">322dbd2e537312333af977d9e712ec9ba9224db4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f1c33e824953ee06e2b9668ef7afab772d44e426</xliffext:olxliffhash>
     </header>
     <body>
       <group id="content" extype="content">
@@ -25,414 +25,408 @@
           <source>Getting started with .NET Core on Windows/Linux/macOS using the command line</source>
           <target state="translated">Начало работы с .NET Core в Windows, Linux и Mac OS с помощью командной строки</target>       </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.</source>
-          <target state="translated">В этом руководстве показано, как использовать средства CLI платформы .NET Core для создания межплатформенных консольных приложений.</target>       </trans-unit>
+          <source>This guide will show you how to use the .NET Core CLI tooling to build basic cross-platform console apps.</source>
+          <target state="translated">В этом руководстве показано, как с помощью средств командной строки в .NET Core создавать базовые кроссплатформенные консольные приложения.</target>       </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>It will start with the most basic console app and eventually span multiple projects, including testing.</source>
-          <target state="translated">Мы начнем с самого простого консольного приложения, а затем охватим несколько проектов, включая тестирование.</target>       </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>You'll add these features step-by-step, building on what you've already seen and built.</source>
-          <target state="translated">Возможности будут добавляться поэтапно на основе того, что вы уже узнали и создали.</target>       </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>If you're unfamiliar with the .NET Core CLI toolset, read <bpt id="p1">[</bpt>the .NET Core SDK overview<ept id="p1">](../sdk.md)</ept>.</source>
           <target state="translated">Если вы не знакомы с набором средств CLI .NET Core, прочитайте <bpt id="p1">[</bpt>обзор пакета SDK для .NET Core<ept id="p1">](../sdk.md)</ept>.</target>       </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
+        <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>Prerequisites</source>
           <target state="translated">Предварительные требования</target>       </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
+        <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Before you begin, ensure you have the <bpt id="p1">[</bpt>latest .NET Core CLI tooling<ept id="p1">](https://www.microsoft.com/net/core)</ept>.</source>
           <target state="translated">Перед тем как приступать, убедитесь в том, что у вас имеется <bpt id="p1">[</bpt>последняя версия средств CLI для .NET Core<ept id="p1">](https://www.microsoft.com/net/core)</ept>.</target>       </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
+        <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>You'll also need a text editor.</source>
           <target state="translated">Вам также потребуется текстовый редактор.</target>       </trans-unit>
-        <trans-unit id="112" translate="yes" xml:space="preserve">
+        <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>Hello, Console App!</source>
           <target state="translated">Первое консольное приложение</target>       </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>First, navigate to or create a new folder with a name you like.</source>
-          <target state="translated">Сначала перейдите к существующей папке или создайте папку с любым именем на свое усмотрение.</target>       </trans-unit>
-        <trans-unit id="114" translate="yes" xml:space="preserve">
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Navigate to or create a new folder with a name you like.</source>
+          <target state="translated">Перейдите к существующей папке или создайте папку с любым именем.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>"Hello" is the name chosen for the sample code, which can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>.</source>
           <target state="translated">Для образца кода, который можно найти <bpt id="p1">[</bpt>здесь<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>, выбрано имя Hello.</target>       </trans-unit>
-        <trans-unit id="115" translate="yes" xml:space="preserve">
+        <trans-unit id="113" translate="yes" xml:space="preserve">
           <source>Open up a command prompt and type the following:</source>
           <target state="translated">Откройте окно командной строки и введите следующее:</target>       </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
+        <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>Let's do a quick walkthrough:</source>
           <target state="translated">Вкратце рассмотрим эти команды.</target>       </trans-unit>
-        <trans-unit id="117" translate="yes" xml:space="preserve">
+        <trans-unit id="115" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> creates an up-to-date <ph id="ph2">`project.json`</ph> file with NuGet dependencies necessary to build a console app.</source>
           <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> создает актуальный файл <ph id="ph2">`project.json`</ph> с зависимостями NuGet, необходимыми для сборки консольного приложения.</target>       </trans-unit>
-        <trans-unit id="118" translate="yes" xml:space="preserve">
+        <trans-unit id="116" translate="yes" xml:space="preserve">
           <source>It also creates a <ph id="ph1">`Program.cs`</ph>, a basic file containing the entry point for the application.</source>
           <target state="translated">Эта команда также создает <ph id="ph1">`Program.cs`</ph> — простой файл, содержащий точку входа для приложения.</target>       </trans-unit>
-        <trans-unit id="119" translate="yes" xml:space="preserve">
+        <trans-unit id="117" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`project.json`</ph>:</source>
           <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
+        <trans-unit id="118" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`Program.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
+        <trans-unit id="119" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> calls into NuGet to restore the tree of dependencies.</source>
           <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> вызывает пакет NuGet для восстановления дерева зависимостей.</target>       </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
+        <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>NuGet analyzes the <ph id="ph1">`project.json`</ph> file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the <ph id="ph2">`project.lock.json`</ph> file.</source>
           <target state="translated">NuGet анализирует файл <ph id="ph1">`project.json`</ph>, скачивает указанные в нем зависимости (или извлекает их из кэша на вашем компьютере) и записывает файл <ph id="ph2">`project.lock.json`</ph>.</target>       </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
+        <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">`project.lock.json`</ph> file is necessary to be able to compile and run.</source>
           <target state="translated">Файл <ph id="ph1">`project.lock.json`</ph> необходим для компиляции и запуска.</target>       </trans-unit>
-        <trans-unit id="124" translate="yes" xml:space="preserve">
+        <trans-unit id="122" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">`project.lock.json`</ph> file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.</source>
           <target state="translated">Файл <ph id="ph1">`project.lock.json`</ph> содержит сохраняемую полную схему зависимостей NuGet и другие сведения, описывающие приложение.</target>       </trans-unit>
-        <trans-unit id="125" translate="yes" xml:space="preserve">
+        <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>This file is read by other tools, such as <ph id="ph1">`dotnet build`</ph> and <ph id="ph2">`dotnet run`</ph>, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.</source>
           <target state="translated">Этот файл считывается другими средствами, такими как <ph id="ph1">`dotnet build`</ph> и <ph id="ph2">`dotnet run`</ph>, что позволяет им обрабатывать исходный код с правильным набором зависимостей NuGet и разрешений привязки.</target>       </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
+        <trans-unit id="124" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> calls <ph id="ph2">`dotnet build`</ph> to ensure that the build targets have been built, and then calls <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> to run the target application.</source>
           <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> вызывает <ph id="ph2">`dotnet build`</ph> для проверки того, выполнена ли сборка целевых объектов, а затем вызывает <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> для запуска целевого приложения.</target>       </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
+        <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>You can also execute <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> to compile the code without running the build console applications.</source>
           <target state="translated">Вы также можете выполнить <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept>, чтобы скомпилировать код, не запуская консольные приложения сборки.</target>       </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
+        <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>Building a self-contained application</source>
           <target state="translated">Сборка автономного приложения</target>       </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
+        <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>Let's try compiling a self-contained application instead of a portable application.</source>
           <target state="translated">Давайте попробуем скомпилировать автономное, а не переносимое приложение.</target>       </trans-unit>
-        <trans-unit id="130" translate="yes" xml:space="preserve">
+        <trans-unit id="128" translate="yes" xml:space="preserve">
           <source>You can read more about the <bpt id="p1">[</bpt>types of portability in .NET Core<ept id="p1">](../deploying/index.md)</ept> to learn about the different application types, and how they are deployed.</source>
           <target state="translated">Вы можете прочитать статью о <bpt id="p1">[</bpt>типах переносимости в .NET Core<ept id="p1">](../deploying/index.md)</ept>, чтобы ознакомиться с различными типами приложений и способами их развертывания.</target>       </trans-unit>
-        <trans-unit id="131" translate="yes" xml:space="preserve">
+        <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>You need to make some changes to your <ph id="ph1">`project.json`</ph> file to direct the tools to build a self-contained application.</source>
           <target state="translated">Вам необходимо внести ряд изменений в файл <ph id="ph1">`project.json`</ph>, чтобы указать, что средства должны выполнить сборку автономного приложения.</target>       </trans-unit>
-        <trans-unit id="132" translate="yes" xml:space="preserve">
+        <trans-unit id="130" translate="yes" xml:space="preserve">
           <source>You can see these in the <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> project in the samples directory.</source>
           <target state="translated">Эти изменения можно просмотреть в проекте <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> в каталоге с образцами.</target>       </trans-unit>
-        <trans-unit id="133" translate="yes" xml:space="preserve">
+        <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>The first change is to remove the <ph id="ph1">`"type": "platform"`</ph> element from all dependencies.</source>
           <target state="translated">Первое изменение — это удаление элемента <ph id="ph1">`"type": "platform"`</ph> из всех зависимостей.</target>       </trans-unit>
-        <trans-unit id="134" translate="yes" xml:space="preserve">
+        <trans-unit id="132" translate="yes" xml:space="preserve">
           <source>This project's only dependency so far is <ph id="ph1">`"Microsoft.NETCore.App"`</ph>.</source>
           <target state="translated">Единственная зависимость проекта — <ph id="ph1">`"Microsoft.NETCore.App"`</ph>.</target>       </trans-unit>
-        <trans-unit id="135" translate="yes" xml:space="preserve">
+        <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">`dependencies`</ph> section should look like this:</source>
           <target state="translated">Раздел <ph id="ph1">`dependencies`</ph> должен выглядеть следующим образом:</target>       </trans-unit>
-        <trans-unit id="136" translate="yes" xml:space="preserve">
+        <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>Next, you need to add a <ph id="ph1">`runtimes`</ph> node to specify all the target execution environments.</source>
           <target state="translated">Далее необходимо добавить узел <ph id="ph1">`runtimes`</ph>, чтобы указать все целевые среды выполнения.</target>       </trans-unit>
-        <trans-unit id="137" translate="yes" xml:space="preserve">
+        <trans-unit id="135" translate="yes" xml:space="preserve">
           <source>For example, the following <ph id="ph1">`runtimes`</ph> node instructs the build system to create executables for the 64 bit version of Windows 10 and the 64 bit version of Mac OS X version 10.11.</source>
           <target state="translated">Например, приведенный ниже узел <ph id="ph1">`runtimes`</ph> предписывает системе сборки создать исполняемые файлы для 64 разрядной версии Windows 10 и 64 разрядной версии Mac OS X 10.11.</target>       </trans-unit>
-        <trans-unit id="138" translate="yes" xml:space="preserve">
+        <trans-unit id="136" translate="yes" xml:space="preserve">
           <source>The build system will generate native executables for the current environment.</source>
           <target state="translated">Система сборки создаст исполняемые файлы в машинном коде для текущей среды.</target>       </trans-unit>
-        <trans-unit id="139" translate="yes" xml:space="preserve">
+        <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>If you are following these steps on a Windows machine, you'll build a Windows executable.</source>
           <target state="translated">Если выполнить эти действия на компьютере с Windows, будет создан исполняемый файл Windows.</target>       </trans-unit>
-        <trans-unit id="140" translate="yes" xml:space="preserve">
+        <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>If you are following these steps on a Mac, you'll build the OS X executable.</source>
           <target state="translated">Если выполнить эти действия на компьютере с Mac OS, будет создан исполняемый файл OS X.</target>       </trans-unit>
-        <trans-unit id="141" translate="yes" xml:space="preserve">
+        <trans-unit id="139" translate="yes" xml:space="preserve">
           <source>See the full list of supported runtimes in the <bpt id="p1">[</bpt>RID catalog<ept id="p1">](../rid-catalog.md)</ept>.</source>
           <target state="translated">Полный список поддерживаемых сред выполнения см. в <bpt id="p1">[</bpt>каталоге RID<ept id="p1">](../rid-catalog.md)</ept>.</target>       </trans-unit>
-        <trans-unit id="142" translate="yes" xml:space="preserve">
+        <trans-unit id="140" translate="yes" xml:space="preserve">
           <source>After making those two changes you execute <ph id="ph1">`dotnet restore`</ph>, followed by <ph id="ph2">`dotnet build`</ph> to create the native executable.</source>
           <target state="translated">После внесения этих двух изменений следует выполнить команду <ph id="ph1">`dotnet restore`</ph>, а затем команду <ph id="ph2">`dotnet build`</ph>, чтобы создать исполняемый файл в машинном коде.</target>       </trans-unit>
-        <trans-unit id="143" translate="yes" xml:space="preserve">
+        <trans-unit id="141" translate="yes" xml:space="preserve">
           <source>Then, you can run the generated native executable.</source>
           <target state="translated">Затем вы можете запустить созданный исполняемый файл в машинном коде.</target>       </trans-unit>
-        <trans-unit id="144" translate="yes" xml:space="preserve">
+        <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>The following example shows the commands for Windows.</source>
           <target state="translated">В приведенном ниже примере показаны команды для Windows.</target>       </trans-unit>
-        <trans-unit id="145" translate="yes" xml:space="preserve">
+        <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>The example shows where the native executable gets generated and assumes that the project directory is named HelloNative.</source>
           <target state="translated">В примере показано, где создается исполняемый файл в машинном коде. В нем предполагается, что каталог проекта имеет имя HelloNative.</target>       </trans-unit>
-        <trans-unit id="146" translate="yes" xml:space="preserve">
+        <trans-unit id="144" translate="yes" xml:space="preserve">
           <source>You may notice that the native application takes slightly longer to build, but executes slightly faster.</source>
           <target state="translated">Вы можете заметить, что сборка приложения в машинном коде идет немного дольше, но выполняется такое приложение немного быстрее.</target>       </trans-unit>
-        <trans-unit id="147" translate="yes" xml:space="preserve">
+        <trans-unit id="145" translate="yes" xml:space="preserve">
           <source>This behavior becomes more noticeable as the application grows.</source>
           <target state="translated">Эти отличия становятся заметнее по мере увеличения размера приложения.</target>       </trans-unit>
-        <trans-unit id="148" translate="yes" xml:space="preserve">
+        <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>The build process generates several more files when your <ph id="ph1">`project.json`</ph> creates a native build.</source>
           <target state="translated">При создании сборки в машинном коде процесс сборки <ph id="ph1">`project.json`</ph> создает еще несколько файлов.</target>       </trans-unit>
-        <trans-unit id="149" translate="yes" xml:space="preserve">
+        <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>These files are created in <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph> where <ph id="ph2">`&lt;platform&gt;`</ph> is the RID chosen.</source>
           <target state="translated">Эти файлы создаются в каталоге <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph>, где <ph id="ph2">`&lt;platform&gt;`</ph> — выбранный идентификатор RID.</target>       </trans-unit>
-        <trans-unit id="150" translate="yes" xml:space="preserve">
+        <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>In addition to the project's <ph id="ph1">`HelloNative.dll`</ph> there is a <ph id="ph2">`HelloNative.exe`</ph> that loads the runtime and starts the application.</source>
           <target state="translated">Помимо файла <ph id="ph1">`HelloNative.dll`</ph> проекта, имеется файл <ph id="ph2">`HelloNative.exe`</ph>, который загружает среду выполнения и запускает приложение.</target>       </trans-unit>
-        <trans-unit id="151" translate="yes" xml:space="preserve">
+        <trans-unit id="149" translate="yes" xml:space="preserve">
           <source>Note that the name of the generated application changed because the project directory's name has changed.</source>
           <target state="translated">Обратите внимание на то, что имя созданного приложения изменилось, так как изменилось имя каталога проекта.</target>       </trans-unit>
-        <trans-unit id="152" translate="yes" xml:space="preserve">
+        <trans-unit id="150" translate="yes" xml:space="preserve">
           <source>You may want to package this application to execute it on a machine that does not include the .NET runtime.</source>
           <target state="translated">Вам может потребоваться упаковать это приложение для выполнения на компьютере, на котором нет среды выполнения .NET.</target>       </trans-unit>
-        <trans-unit id="153" translate="yes" xml:space="preserve">
+        <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>You do that using the <ph id="ph1">`dotnet publish`</ph> command.</source>
           <target state="translated">Для этого служит команда <ph id="ph1">`dotnet publish`</ph>.</target>       </trans-unit>
-        <trans-unit id="154" translate="yes" xml:space="preserve">
+        <trans-unit id="152" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">`dotnet publish`</ph> command creates a new subdirectory under the <ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> directory called <ph id="ph3">`publish`</ph>.</source>
           <target state="translated">Команда <ph id="ph1">`dotnet publish`</ph> создает подкаталог в каталоге <ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> с именем <ph id="ph3">`publish`</ph>.</target>       </trans-unit>
-        <trans-unit id="155" translate="yes" xml:space="preserve">
+        <trans-unit id="153" translate="yes" xml:space="preserve">
           <source>It copies the executable, all dependent DLLs and the framework to this sub directory.</source>
           <target state="translated">Она копирует в этот подкаталог исполняемый файл, все зависимые библиотеки DLL и платформу.</target>       </trans-unit>
-        <trans-unit id="156" translate="yes" xml:space="preserve">
+        <trans-unit id="154" translate="yes" xml:space="preserve">
           <source>You can package that directory to another machine (or a container) and execute the application there.</source>
           <target state="translated">Вы можете упаковать этот каталог на другом компьютере (или в контейнере), чтобы выполнить приложение на нем.</target>       </trans-unit>
-        <trans-unit id="157" translate="yes" xml:space="preserve">
+        <trans-unit id="155" translate="yes" xml:space="preserve">
           <source>Let's contrast that with the behavior of <ph id="ph1">`dotnet publish`</ph> in the first Hello World sample.</source>
           <target state="translated">Давайте сравним это с поведением <ph id="ph1">`dotnet publish`</ph> в первом примере Hello World.</target>       </trans-unit>
-        <trans-unit id="158" translate="yes" xml:space="preserve">
+        <trans-unit id="156" translate="yes" xml:space="preserve">
           <source>That application is a <bpt id="p1">*</bpt>portable application<ept id="p1">*</ept>, which is the default type of application for .NET Core.</source>
           <target state="translated">Первое приложение является <bpt id="p1">*</bpt>переносимым<ept id="p1">*</ept> — это тип приложений по умолчанию в .NET Core.</target>       </trans-unit>
-        <trans-unit id="159" translate="yes" xml:space="preserve">
+        <trans-unit id="157" translate="yes" xml:space="preserve">
           <source>A portable application requires that .NET Core is installed on the target machine.</source>
           <target state="translated">Переносимое приложение требует установки .NET Core на целевом компьютере.</target>       </trans-unit>
-        <trans-unit id="160" translate="yes" xml:space="preserve">
+        <trans-unit id="158" translate="yes" xml:space="preserve">
           <source>Portable applications can be built on one machine and executed anywhere.</source>
           <target state="translated">Переносимые приложения можно создавать на одном компьютере, а выполнять на любых других.</target>       </trans-unit>
-        <trans-unit id="161" translate="yes" xml:space="preserve">
+        <trans-unit id="159" translate="yes" xml:space="preserve">
           <source>Native applications must be built separately for each target machine.</source>
           <target state="translated">Приложения в машинном коде необходимо создавать отдельно для каждого целевого компьютера.</target>       </trans-unit>
-        <trans-unit id="162" translate="yes" xml:space="preserve">
+        <trans-unit id="160" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`dotnet publish`</ph> creates a directory that has the application's DLL, and any dependent dlls that are not part of the platform installation.</source>
           <target state="translated"><ph id="ph1">`dotnet publish`</ph> создает каталог, содержащий библиотеку DLL приложения, а также все зависимые библиотеки DLL, не входящие в состав установки платформы.</target>       </trans-unit>
-        <trans-unit id="163" translate="yes" xml:space="preserve">
+        <trans-unit id="161" translate="yes" xml:space="preserve">
           <source>Augmenting the program</source>
           <target state="translated">Расширение программы</target>       </trans-unit>
-        <trans-unit id="164" translate="yes" xml:space="preserve">
+        <trans-unit id="162" translate="yes" xml:space="preserve">
           <source>Let's change the file just a little bit.</source>
           <target state="translated">Давайте немного изменим файл.</target>       </trans-unit>
-        <trans-unit id="165" translate="yes" xml:space="preserve">
+        <trans-unit id="163" translate="yes" xml:space="preserve">
           <source>Fibonacci numbers are fun, so let's try that out (using the native version):</source>
           <target state="translated">С числами Фибоначчи интересно работать, поэтому давайте попробуем сделать следующее (в версии в машинном коде):</target>       </trans-unit>
-        <trans-unit id="166" translate="yes" xml:space="preserve">
+        <trans-unit id="164" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`Program.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="167" translate="yes" xml:space="preserve">
+        <trans-unit id="165" translate="yes" xml:space="preserve">
           <source>And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):</source>
           <target state="translated">Затем запустим программу (необходимо использовать компьютер с Windows и изменить имя каталога проекта на Fibonacci):</target>       </trans-unit>
-        <trans-unit id="168" translate="yes" xml:space="preserve">
+        <trans-unit id="166" translate="yes" xml:space="preserve">
           <source>And that's it!</source>
           <target state="translated">Вот и все!</target>       </trans-unit>
-        <trans-unit id="169" translate="yes" xml:space="preserve">
+        <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>You can augment <ph id="ph1">`Program.cs`</ph> any way you like.</source>
           <target state="translated">Вы можете расширять файл <ph id="ph1">`Program.cs`</ph> по своему усмотрению.</target>       </trans-unit>
-        <trans-unit id="170" translate="yes" xml:space="preserve">
+        <trans-unit id="168" translate="yes" xml:space="preserve">
           <source>Adding some new files</source>
           <target state="translated">Добавление новых файлов</target>       </trans-unit>
-        <trans-unit id="171" translate="yes" xml:space="preserve">
+        <trans-unit id="169" translate="yes" xml:space="preserve">
           <source>Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.</source>
           <target state="translated">Программы на основе одного файла подходят для решения простых одиночных задач, однако, если вы создаете программу, состоящую из нескольких компонентов, скорее всего, вам потребуется разделить ее на несколько файлов.</target>       </trans-unit>
-        <trans-unit id="172" translate="yes" xml:space="preserve">
+        <trans-unit id="170" translate="yes" xml:space="preserve">
           <source>Multiple files are a way to do that.</source>
           <target state="translated">Это упростит работу.</target>       </trans-unit>
-        <trans-unit id="173" translate="yes" xml:space="preserve">
+        <trans-unit id="171" translate="yes" xml:space="preserve">
           <source>Create a new file and give it a unique namespace:</source>
           <target state="translated">Создайте файл и назначьте ему уникальное пространство имен:</target>       </trans-unit>
-        <trans-unit id="174" translate="yes" xml:space="preserve">
+        <trans-unit id="172" translate="yes" xml:space="preserve">
           <source>Next, include it in your <ph id="ph1">`Program.cs`</ph> file:</source>
           <target state="translated">Далее включите его в файл <ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="175" translate="yes" xml:space="preserve">
+        <trans-unit id="173" translate="yes" xml:space="preserve">
           <source>And finally, you can build it:</source>
           <target state="translated">Наконец, можно выполнить сборку:</target>       </trans-unit>
-        <trans-unit id="176" translate="yes" xml:space="preserve">
+        <trans-unit id="174" translate="yes" xml:space="preserve">
           <source>Now the fun part: making the new file do something!</source>
           <target state="translated">После этого наступает самое интересное — реализация задач, выполняемых файлом.</target>       </trans-unit>
-        <trans-unit id="177" translate="yes" xml:space="preserve">
+        <trans-unit id="175" translate="yes" xml:space="preserve">
           <source>Example: A Fibonacci Sequence Generator</source>
           <target state="translated">Пример. Генератор последовательностей Фибоначчи</target>       </trans-unit>
-        <trans-unit id="178" translate="yes" xml:space="preserve">
+        <trans-unit id="176" translate="yes" xml:space="preserve">
           <source>Let's say you want to build off of the previous <bpt id="p1">[</bpt>Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept> by caching some Fibonacci values and add some recursive flair.</source>
           <target state="translated">Предположим, что вы хотите использовать в качестве основы <bpt id="p1">[</bpt>предыдущий пример<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept>, реализовав в нем кэширование значений Фибоначчи и рекурсию.</target>       </trans-unit>
-        <trans-unit id="179" translate="yes" xml:space="preserve">
+        <trans-unit id="177" translate="yes" xml:space="preserve">
           <source>Your code for a <bpt id="p1">[</bpt>better Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept> might look something like this:</source>
           <target state="translated">Код <bpt id="p1">[</bpt>улучшенного примера работы с числами Фибоначчи<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept> может выглядеть так:</target>       </trans-unit>
-        <trans-unit id="180" translate="yes" xml:space="preserve">
+        <trans-unit id="178" translate="yes" xml:space="preserve">
           <source>Note that the use of <ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> and <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> means incorporating the <ph id="ph3">`System.Collections`</ph> namespace.</source>
           <target state="translated">Обратите внимание на то, что использование <ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> и <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> означает включение пространства имен <ph id="ph3">`System.Collections`</ph>.</target>       </trans-unit>
-        <trans-unit id="181" translate="yes" xml:space="preserve">
+        <trans-unit id="179" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">`Microsoft.NetCore.App`</ph> package is a <bpt id="p1">*</bpt>metapackage<ept id="p1">*</ept> that contains many of the core assemblies from the .NET Framework.</source>
           <target state="translated">Пакет <ph id="ph1">`Microsoft.NetCore.App`</ph> — это <bpt id="p1">*</bpt>метапакет<ept id="p1">*</ept>, который содержит многие базовые сборки платформы .NET Framework.</target>       </trans-unit>
-        <trans-unit id="182" translate="yes" xml:space="preserve">
+        <trans-unit id="180" translate="yes" xml:space="preserve">
           <source>By including this metapackage, you've already included the <ph id="ph1">`System.Collections.dll`</ph> assembly as part of your project.</source>
           <target state="translated">Включив этот метапакет, вы уже включили сборку <ph id="ph1">`System.Collections.dll`</ph> в состав проекта.</target>       </trans-unit>
-        <trans-unit id="183" translate="yes" xml:space="preserve">
+        <trans-unit id="181" translate="yes" xml:space="preserve">
           <source>You can verify this by running <ph id="ph1">`dotnet publish`</ph> and examining the files that are part of the installed package.</source>
           <target state="translated">Чтобы проверить это, выполните команду <ph id="ph1">`dotnet publish`</ph> и просмотрите список файлов, входящих в установленный пакет.</target>       </trans-unit>
-        <trans-unit id="184" translate="yes" xml:space="preserve">
+        <trans-unit id="182" translate="yes" xml:space="preserve">
           <source>You'll see <ph id="ph1">`System.Collections.dll`</ph> in the list.</source>
           <target state="translated">Файл <ph id="ph1">`System.Collections.dll`</ph> присутствует в списке.</target>       </trans-unit>
-        <trans-unit id="185" translate="yes" xml:space="preserve">
+        <trans-unit id="183" translate="yes" xml:space="preserve">
           <source>Now adjust the <ph id="ph1">`Main()`</ph> method in your <ph id="ph2">`Program.cs`</ph> file as shown below.</source>
           <target state="translated">Теперь измените метод <ph id="ph1">`Main()`</ph> в файле <ph id="ph2">`Program.cs`</ph>, как показано ниже.</target>       </trans-unit>
-        <trans-unit id="186" translate="yes" xml:space="preserve">
+        <trans-unit id="184" translate="yes" xml:space="preserve">
           <source>The example assumes that <ph id="ph1">`Program.cs`</ph> has a <ph id="ph2">`using System;`</ph> statement.</source>
           <target state="translated">В примере предполагается, что файл <ph id="ph1">`Program.cs`</ph> содержит оператор <ph id="ph2">`using System;`</ph>.</target>       </trans-unit>
-        <trans-unit id="187" translate="yes" xml:space="preserve">
+        <trans-unit id="185" translate="yes" xml:space="preserve">
           <source>If you have a <ph id="ph1">`using static System.Console;`</ph> statement, remove <ph id="ph2">`Console.`</ph> from <ph id="ph3">`Console.WriteLine`</ph>.</source>
           <target state="translated">Если оператор <ph id="ph1">`using static System.Console;`</ph> имеется, удалите <ph id="ph2">`Console.`</ph> из <ph id="ph3">`Console.WriteLine`</ph>.</target>       </trans-unit>
-        <trans-unit id="188" translate="yes" xml:space="preserve">
+        <trans-unit id="186" translate="yes" xml:space="preserve">
           <source>Finally, run it!</source>
           <target state="translated">Наконец, запустите программу.</target>       </trans-unit>
-        <trans-unit id="189" translate="yes" xml:space="preserve">
+        <trans-unit id="187" translate="yes" xml:space="preserve">
           <source>And that's it!</source>
           <target state="translated">Вот и все!</target>       </trans-unit>
-        <trans-unit id="190" translate="yes" xml:space="preserve">
+        <trans-unit id="188" translate="yes" xml:space="preserve">
           <source>Using folders to organize code</source>
           <target state="translated">Упорядочение кода с помощью папок</target>       </trans-unit>
-        <trans-unit id="191" translate="yes" xml:space="preserve">
+        <trans-unit id="189" translate="yes" xml:space="preserve">
           <source>Say you wanted to introduce some new types to do work on.</source>
           <target state="translated">Предположим, что требуется добавить новые типы для выполнения поставленных задач.</target>       </trans-unit>
-        <trans-unit id="192" translate="yes" xml:space="preserve">
+        <trans-unit id="190" translate="yes" xml:space="preserve">
           <source>You can do this by adding more files and making sure to give them namespaces you can include in your <ph id="ph1">`Program.cs`</ph> file.</source>
           <target state="translated">Это можно сделать путем добавления дополнительных файлов и назначения им пространств имен, которые можно включить в файл <ph id="ph1">`Program.cs`</ph>.</target>       </trans-unit>
-        <trans-unit id="193" translate="yes" xml:space="preserve">
+        <trans-unit id="191" translate="yes" xml:space="preserve">
           <source>This works great when the size of your project is relatively small.</source>
           <target state="translated">такой подход работает, если размер проект относительно мал.</target>       </trans-unit>
-        <trans-unit id="194" translate="yes" xml:space="preserve">
+        <trans-unit id="192" translate="yes" xml:space="preserve">
           <source>However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.</source>
           <target state="translated">Однако если у вас большое приложение со множеством различных типов данных и, возможно, несколькими уровнями, вам может потребоваться логически упорядочить их.</target>       </trans-unit>
-        <trans-unit id="195" translate="yes" xml:space="preserve">
+        <trans-unit id="193" translate="yes" xml:space="preserve">
           <source>This is where folders come into play.</source>
           <target state="translated">Как раз для этого и могут пригодиться папки.</target>       </trans-unit>
-        <trans-unit id="196" translate="yes" xml:space="preserve">
+        <trans-unit id="194" translate="yes" xml:space="preserve">
           <source>You can either follow along with <bpt id="p1">[</bpt>the NewTypes sample project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept> that this guide covers, or create your own files and folders.</source>
           <target state="translated">Вы можете разобрать <bpt id="p1">[</bpt>образец проекта NewTypes<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>, который рассматривается в этом руководстве, или создать собственные файлы и папки.</target>       </trans-unit>
-        <trans-unit id="197" translate="yes" xml:space="preserve">
+        <trans-unit id="195" translate="yes" xml:space="preserve">
           <source>To begin, create a new folder under the root of your project.</source>
           <target state="translated">Для начала создайте папку в корневом каталоге проекта.</target>       </trans-unit>
-        <trans-unit id="198" translate="yes" xml:space="preserve">
+        <trans-unit id="196" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`/Model`</ph> is chosen here.</source>
           <target state="translated">В этом случае выбрано <ph id="ph1">`/Model`</ph>.</target>       </trans-unit>
-        <trans-unit id="199" translate="yes" xml:space="preserve">
+        <trans-unit id="197" translate="yes" xml:space="preserve">
           <source>Now add some new types to the folder:</source>
           <target state="translated">Далее добавьте в папку новые типы:</target>       </trans-unit>
-        <trans-unit id="200" translate="yes" xml:space="preserve">
+        <trans-unit id="198" translate="yes" xml:space="preserve">
           <source>Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your <ph id="ph1">`Program.cs`</ph>.</source>
           <target state="translated">Теперь присвойте им всем одно и то же пространство имен, как если бы они были файлами в одном каталоге, чтобы их можно было включить в файл <ph id="ph1">`Program.cs`</ph>.</target>       </trans-unit>
-        <trans-unit id="201" translate="yes" xml:space="preserve">
+        <trans-unit id="199" translate="yes" xml:space="preserve">
           <source>Example: Pet Types</source>
           <target state="translated">Пример. Типы домашних животных</target>       </trans-unit>
-        <trans-unit id="202" translate="yes" xml:space="preserve">
+        <trans-unit id="200" translate="yes" xml:space="preserve">
           <source>This example creates two new types, <ph id="ph1">`Dog`</ph> and <ph id="ph2">`Cat`</ph>, and has them implement an interface, <ph id="ph3">`IPet`</ph>.</source>
           <target state="translated">В этом примере создаются два типа, <ph id="ph1">`Dog`</ph> и <ph id="ph2">`Cat`</ph>, которые реализуют интерфейс <ph id="ph3">`IPet`</ph>.</target>       </trans-unit>
-        <trans-unit id="203" translate="yes" xml:space="preserve">
+        <trans-unit id="201" translate="yes" xml:space="preserve">
           <source>Folder Structure:</source>
           <target state="translated">Структура папок:</target>       </trans-unit>
-        <trans-unit id="204" translate="yes" xml:space="preserve">
+        <trans-unit id="202" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`IPet.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`IPet.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="205" translate="yes" xml:space="preserve">
+        <trans-unit id="203" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`Dog.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`Dog.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="206" translate="yes" xml:space="preserve">
+        <trans-unit id="204" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`Cat.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`Cat.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="207" translate="yes" xml:space="preserve">
+        <trans-unit id="205" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`Program.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="208" translate="yes" xml:space="preserve">
+        <trans-unit id="206" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`project.json`</ph>:</source>
           <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
-        <trans-unit id="209" translate="yes" xml:space="preserve">
+        <trans-unit id="207" translate="yes" xml:space="preserve">
           <source>And if you run this:</source>
           <target state="translated">Если выполнить эту программу:</target>       </trans-unit>
-        <trans-unit id="210" translate="yes" xml:space="preserve">
+        <trans-unit id="208" translate="yes" xml:space="preserve">
           <source>New pet types can be added (such as a <ph id="ph1">`Bird`</ph>), extending this project.</source>
           <target state="translated">Чтобы расширить проект, можно добавить новые типы домашних животных (например, <ph id="ph1">`Bird`</ph>).</target>       </trans-unit>
-        <trans-unit id="211" translate="yes" xml:space="preserve">
+        <trans-unit id="209" translate="yes" xml:space="preserve">
           <source>Testing your Console App</source>
           <target state="translated">Тестирование консольного приложения</target>       </trans-unit>
-        <trans-unit id="212" translate="yes" xml:space="preserve">
+        <trans-unit id="210" translate="yes" xml:space="preserve">
           <source>You'll probably be wanting to test your projects at some point.</source>
           <target state="translated">На некотором этапе может потребоваться протестировать проект.</target>       </trans-unit>
-        <trans-unit id="213" translate="yes" xml:space="preserve">
+        <trans-unit id="211" translate="yes" xml:space="preserve">
           <source>Here's a good way to do it:</source>
           <target state="translated">Вот как можно это сделать.</target>       </trans-unit>
-        <trans-unit id="214" translate="yes" xml:space="preserve">
+        <trans-unit id="212" translate="yes" xml:space="preserve">
           <source>Move any source of your existing project into a new <ph id="ph1">`src`</ph> folder.</source>
           <target state="translated">Переместите исходный код существующего проекта в новую папку <ph id="ph1">`src`</ph>.</target>       </trans-unit>
-        <trans-unit id="215" translate="yes" xml:space="preserve">
+        <trans-unit id="213" translate="yes" xml:space="preserve">
           <source>Create a <ph id="ph1">`/test`</ph> directory.</source>
           <target state="translated">Создайте каталог <ph id="ph1">`/test`</ph>.</target>       </trans-unit>
-        <trans-unit id="216" translate="yes" xml:space="preserve">
+        <trans-unit id="214" translate="yes" xml:space="preserve">
           <source>Create a new <ph id="ph1">`global.json`</ph> file:</source>
           <target state="translated">Создайте файл <ph id="ph1">`global.json`</ph>:</target>       </trans-unit>
-        <trans-unit id="217" translate="yes" xml:space="preserve">
+        <trans-unit id="215" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`global.json`</ph>:</source>
           <target state="translated"><ph id="ph1">`global.json`</ph>:</target>       </trans-unit>
-        <trans-unit id="218" translate="yes" xml:space="preserve">
+        <trans-unit id="216" translate="yes" xml:space="preserve">
           <source>This file tells the build system that this is a multi-project system, which allows it to look for dependencies in more than just the current folder it happens to be executing in.</source>
           <target state="translated">Этот файл сообщает системе сборки, что это многопроектная система, что позволяет ей искать зависимости не только в текущей папке, в которой она выполняется.</target>       </trans-unit>
-        <trans-unit id="219" translate="yes" xml:space="preserve">
+        <trans-unit id="217" translate="yes" xml:space="preserve">
           <source>This is important because it allows you to place a dependency on the code under test in your test project.</source>
           <target state="translated">Это важно, так как позволяет тестировать зависимость в коде тестового проекта.</target>       </trans-unit>
-        <trans-unit id="220" translate="yes" xml:space="preserve">
+        <trans-unit id="218" translate="yes" xml:space="preserve">
           <source>Example: Extending the NewTypes project</source>
           <target state="translated">Пример. Расширение проекта NewTypes</target>       </trans-unit>
-        <trans-unit id="221" translate="yes" xml:space="preserve">
+        <trans-unit id="219" translate="yes" xml:space="preserve">
           <source>Now that the project system is in place, you can create your test project and start writing tests!</source>
           <target state="translated">Теперь, когда вы реализовали систему проектов, можно создать тестовый проект и приступить к созданию тестов.</target>       </trans-unit>
-        <trans-unit id="222" translate="yes" xml:space="preserve">
+        <trans-unit id="220" translate="yes" xml:space="preserve">
           <source>From here on out, this guide will use and extend <bpt id="p1">[</bpt>the sample Types project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>.</source>
           <target state="translated">Далее в этом руководстве мы будем использовать и расширять <bpt id="p1">[</bpt>образец проекта Types<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>.</target>       </trans-unit>
-        <trans-unit id="223" translate="yes" xml:space="preserve">
+        <trans-unit id="221" translate="yes" xml:space="preserve">
           <source>Additionally, it will use the <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> test framework.</source>
           <target state="translated">Кроме того, будет использоваться платформа тестирования <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept>.</target>       </trans-unit>
-        <trans-unit id="224" translate="yes" xml:space="preserve">
+        <trans-unit id="222" translate="yes" xml:space="preserve">
           <source>Feel free to follow along or create your own multi-project system with tests.</source>
           <target state="translated">Вы можете рассмотреть этот пример или создать собственную многопроектную систему с тестами.</target>       </trans-unit>
-        <trans-unit id="225" translate="yes" xml:space="preserve">
+        <trans-unit id="223" translate="yes" xml:space="preserve">
           <source>The whole project structure should look like this:</source>
           <target state="translated">Структура проекта в целом должна выглядеть следующим образом:</target>       </trans-unit>
-        <trans-unit id="226" translate="yes" xml:space="preserve">
+        <trans-unit id="224" translate="yes" xml:space="preserve">
           <source>There are two new things to make sure you have in your test project:</source>
           <target state="translated">В тестовом проекте должно быть еще два новых компонента:</target>       </trans-unit>
-        <trans-unit id="227" translate="yes" xml:space="preserve">
+        <trans-unit id="225" translate="yes" xml:space="preserve">
           <source>A correct <ph id="ph1">`project.json`</ph> with the following:</source>
           <target state="translated">правильный файл <ph id="ph1">`project.json`</ph> со следующими элементами:</target>       </trans-unit>
-        <trans-unit id="228" translate="yes" xml:space="preserve">
+        <trans-unit id="226" translate="yes" xml:space="preserve">
           <source>A reference to <ph id="ph1">`xunit`</ph></source>
           <target state="translated">ссылка на <ph id="ph1">`xunit`</ph></target>       </trans-unit>
-        <trans-unit id="229" translate="yes" xml:space="preserve">
+        <trans-unit id="227" translate="yes" xml:space="preserve">
           <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph></source>
           <target state="translated">ссылка на <ph id="ph1">`dotnet-test-xunit`</ph></target>       </trans-unit>
-        <trans-unit id="230" translate="yes" xml:space="preserve">
+        <trans-unit id="228" translate="yes" xml:space="preserve">
           <source>A reference to the namespace corresponding to the code under test</source>
           <target state="translated">ссылка на пространство имен, соответствующее тестируемому коду;</target>       </trans-unit>
-        <trans-unit id="231" translate="yes" xml:space="preserve">
+        <trans-unit id="229" translate="yes" xml:space="preserve">
           <source>An Xunit test class.</source>
           <target state="translated">класс теста Xunit.</target>       </trans-unit>
-        <trans-unit id="232" translate="yes" xml:space="preserve">
+        <trans-unit id="230" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`NewTypesTests/project.json`</ph>:</source>
           <target state="translated"><ph id="ph1">`NewTypesTests/project.json`</ph>:</target>       </trans-unit>
-        <trans-unit id="233" translate="yes" xml:space="preserve">
+        <trans-unit id="231" translate="yes" xml:space="preserve">
           <source><ph id="ph1">`PetTests.cs`</ph>:</source>
           <target state="translated"><ph id="ph1">`PetTests.cs`</ph>:</target>       </trans-unit>
-        <trans-unit id="234" translate="yes" xml:space="preserve">
+        <trans-unit id="232" translate="yes" xml:space="preserve">
           <source>Now you can run tests!</source>
           <target state="translated">Теперь можно выполнить тесты.</target>       </trans-unit>
-        <trans-unit id="235" translate="yes" xml:space="preserve">
+        <trans-unit id="233" translate="yes" xml:space="preserve">
           <source>The <bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> command runs the test runner you have specified in your project.</source>
           <target state="translated">Команда <bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> запускает средство выполнения тестов, которое вы указали в проекте.</target>       </trans-unit>
-        <trans-unit id="236" translate="yes" xml:space="preserve">
+        <trans-unit id="234" translate="yes" xml:space="preserve">
           <source>Make sure you start at the top-level directory.</source>
           <target state="translated">Начинать следует с каталога верхнего уровня.</target>       </trans-unit>
-        <trans-unit id="237" translate="yes" xml:space="preserve">
+        <trans-unit id="235" translate="yes" xml:space="preserve">
           <source>Output should look like this:</source>
           <target state="translated">Выходные данные должны выглядеть следующим образом:</target>       </trans-unit>
-        <trans-unit id="238" translate="yes" xml:space="preserve">
+        <trans-unit id="236" translate="yes" xml:space="preserve">
           <source>Conclusion</source>
           <target state="translated">Заключение</target>       </trans-unit>
-        <trans-unit id="239" translate="yes" xml:space="preserve">
+        <trans-unit id="237" translate="yes" xml:space="preserve">
           <source>Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.</source>
           <target state="translated">Надеемся, это руководство помогло вам понять, как создавать консольные приложения .NET разного уровня сложности: от самых простых до многопроектных систем с модульными тестами.</target>       </trans-unit>
-        <trans-unit id="240" translate="yes" xml:space="preserve">
+        <trans-unit id="238" translate="yes" xml:space="preserve">
           <source>The next step is to create awesome console apps of your own!</source>
           <target state="translated">Ваш следующий шаг — создание собственного консольного приложения.</target>       </trans-unit>
-        <trans-unit id="241" translate="yes" xml:space="preserve">
+        <trans-unit id="239" translate="yes" xml:space="preserve">
           <source>If a more advanced example of a console app interests you, check out the next tutorial: <bpt id="p1">[</bpt>Using the CLI tools to write console apps: An advanced step-by-step guide<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>.</source>
           <target state="translated">Если вы хотите разобрать более подробный пример консольного приложения, обратитесь к следующему учебнику: <bpt id="p1">[</bpt>Подробное пошаговое руководство. Использование средств CLI для создания консольных приложений<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>.</target>       </trans-unit>
       </group>
