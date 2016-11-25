@@ -1,43 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quantifiers.md) | InSyncHandedBackSuccess | [Details](#79637972770d3ab5d954d40285dc4f07e58d233f3299)
- [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quick-ref.md) | InSyncHandedBackSuccess | [Details](#f4319de43043605da63f469b59a5dfdb28badc8e3300)
 
 ## Item Details
-##### <a name='79637972770d3ab5d954d40285dc4f07e58d233f3299'></a> Source: [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quantifiers.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\quantifiers.md](https://github.com/dotnet/docs.ru-ru/blob/93c92489249874c87a6ba7998b08ecf749d24e43/docs/standard/base-types/quantifiers.md)
-* Handoff File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/8736ffd3b114268f961af29734b85f55d630465f/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf)
-* Handoff Datetime: 2016-11-16 11:16:54
-* Handoff Reason: Include
-* Archive File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf)
-* Archive Datetime: 2016-11-18 07:26:08
-* Handback File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/cbde09b953231c33a3dcc87ce32fd4695c27c735/ol-handback/dotnet/docs.ru-ru/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf)
-* Handback Datetime: 2016-11-24 14:06:45
-* Bilingual File: [quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/cbde09b953231c33a3dcc87ce32fd4695c27c735/ol-handback/dotnet/docs.ru-ru/master/ht-p2/quantifiers.62ce952c0bd512e240d0384fa033546011cbad48.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-24 14:07:25
-* [Back to Top](#report-top)
-
-##### <a name='f4319de43043605da63f469b59a5dfdb28badc8e3300'></a> Source: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/quick-ref.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs.ru-ru/blob/93c92489249874c87a6ba7998b08ecf749d24e43/docs/standard/base-types/quick-ref.md)
-* Handoff File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/8736ffd3b114268f961af29734b85f55d630465f/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf)
-* Handoff Datetime: 2016-11-16 11:16:54
-* Handoff Reason: Include
-* Archive File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf)
-* Archive Datetime: 2016-11-18 07:26:08
-* Handback File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/cbde09b953231c33a3dcc87ce32fd4695c27c735/ol-handback/dotnet/docs.ru-ru/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf)
-* Handback Datetime: 2016-11-24 14:06:45
-* Bilingual File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/cbde09b953231c33a3dcc87ce32fd4695c27c735/ol-handback/dotnet/docs.ru-ru/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-24 14:07:25
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
