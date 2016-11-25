@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">af32bc592762d7e8cb4e3b180656d9c3464df4a5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1de9901250fde730d570ab9e41364588b572c9f9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">96570649c377119831a5d424e017b368eea586d6</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>csproj reference | .NET Core SDK</source>
+          <target state="translated">csproj 引用 | .NET Core SDK</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn about the differences between existing and .NET Core csproj files</source>
+          <target state="translated">了解现有文件和 .NET Core csproj 文件之间的区别</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>reference, csproj, .NET Core</source>
+          <target state="translated">引用, csproj, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Additions to csproj format for .NET Core</source>
+          <target state="translated">.NET Core 的 csproj 格式的新增内容</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">概述</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document outlines the changes that were added to the csproj files as part of the move from project.json to csproj and <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/MSBuild)</ept>.</source>
+          <target state="translated">本文档概述了作为从 project.json 移动到 csproj.json 和 <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/MSBuild)</ept> 的一部分，添加到 csproj 文件的更改。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This document outlines <bpt id="p1">**</bpt>only the deltas to non-core csproj files<ept id="p1">**</ept>.</source>
+          <target state="translated">本文档仅简单介绍<bpt id="p1">**</bpt>非核心 csproj 文件的增量<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you need more information about general project file syntax and reference, please consult <bpt id="p1">[</bpt>the MSBuild project file<ept id="p1">]()</ept> documentation.</source>
+          <target state="translated">如果需要有关常规项目文件的语法和引用的详细信息，请参阅 <bpt id="p1">[</bpt>MSBuild 项目文件<ept id="p1">]()</ept>文档。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> this document will grow in the future, so please check back to see new additions.</source>
+          <target state="translated"><bpt id="p1">**</bpt>注意：<ept id="p1">**</ept>本文档会不断更新，因此请时常查阅以了解新增内容。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Additions</source>
+          <target state="translated">新增内容</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>PackageReference</source>
+          <target state="translated">PackageReference</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Specifies a NuGet dependency in the project.</source>
+          <target state="translated">指定项目中的 NuGet 依赖项。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Include`</ph> attribute specifies the package ID.</source>
+          <target state="translated"><ph id="ph1">`Include`</ph> 属性指定包 ID。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">版本</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;Version&gt;`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`&lt;Version&gt;`</ph> 指定要还原的包的版本。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The element respect the rules of the NuGet versioning scheme.</source>
+          <target state="translated">此元素遵从 NuGet 版本控制方案的规则。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>IncludeAssets</source>
+          <target state="translated">IncludeAssets</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;IncludeAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed.</source>
+          <target state="translated"><ph id="ph1">`&lt;IncludeAssets&gt;`</ph> 子元素指定应使用父级 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 指定的包所属的哪些资产。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">此元素可以包含下面的一个或多个值：</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Compile � are the contents of the lib folder available to compile against</source>
+          <target state="translated">编译 � 是可用于进行编译的 lib 文件夹的内容</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Runtime � are the contents of the runtime folder distributed</source>
+          <target state="translated">运行时 � 是分布的运行时文件夹的内容</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>ContentFiles � are the contents of the contentfiles folder used</source>
+          <target state="translated">内容文件 � 是所用内容文件文件夹的内容</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Build � do the props/targets in the build folder get used</source>
+          <target state="translated">生成 � 使用生成文件夹中的属性/目标</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Native - are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">本地 - 是从本机资产复制到运行时输出文件夹的内容</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Analyzers � do the analyzers get used</source>
+          <target state="translated">分析器 � 使用分析器</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">或者，此元素可以包含：</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>None � none of those things get used</source>
+          <target state="translated">无 � 没有使用上述任何值</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>All � all of those things get used.</source>
+          <target state="translated">全部 � 使用了上述所有值。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>ExcludeAssets</source>
+          <target state="translated">ExcludeAssets</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;ExcluseAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should not be consumed.</source>
+          <target state="translated"><ph id="ph1">`&lt;ExcluseAssets&gt;`</ph> 子元素指定不应使用父级 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 指定的包所属的哪些资产。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">此元素可以包含下面的一个或多个值：</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Compile � are the contents of the lib folder available to compile against</source>
+          <target state="translated">编译 � 是可用于进行编译的 lib 文件夹的内容</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Runtime � are the contents of the runtime folder distributed</source>
+          <target state="translated">运行时 � 是分布的运行时文件夹的内容</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>ContentFiles � are the contents of the contentfiles folder used</source>
+          <target state="translated">内容文件 � 是所用内容文件文件夹的内容</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Build � do the props/targets in the build folder get used</source>
+          <target state="translated">生成 � 使用生成文件夹中的属性/目标</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Native - are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">本地 - 是从本机资产复制到运行时输出文件夹的内容</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Analyzers � do the analyzers get used</source>
+          <target state="translated">分析器 � 使用分析器</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">或者，此元素可以包含：</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>None � none of those things get used</source>
+          <target state="translated">无 � 没有使用上述任何值</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>All � all of those things get used.</source>
+          <target state="translated">全部 � 使用了上述所有值。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>PrivateAssets</source>
+          <target state="translated">PrivateAssets</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;PrivateAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed but that they should not flow to the next project.</source>
+          <target state="translated"><ph id="ph1">`&lt;PrivateAssets&gt;`</ph> 子元素指定应使用父级 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 指定的包所属的哪些资产，但这些资产不应传递到下一个项目。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> this is a new term for project.json/xproj <ph id="ph1">`SupressParent`</ph> element.</source>
+          <target state="translated"><bpt id="p1">**</bpt>注意：<ept id="p1">**</ept>这是 project.json/xproj <ph id="ph1">`SupressParent`</ph> 元素的新术语。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">此元素可以包含下面的一个或多个值：</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Compile � are the contents of the lib folder available to compile against</source>
+          <target state="translated">编译 � 是可用于进行编译的 lib 文件夹的内容</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Runtime � are the contents of the runtime folder distributed</source>
+          <target state="translated">运行时 � 是分布的运行时文件夹的内容</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>ContentFiles � are the contents of the contentfiles folder used</source>
+          <target state="translated">内容文件 � 是所用内容文件文件夹的内容</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Build � do the props/targets in the build folder get used</source>
+          <target state="translated">生成 � 使用生成文件夹中的属性/目标</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Native - are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">本地 - 是从本机资产复制到运行时输出文件夹的内容</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Analyzers � do the analyzers get used</source>
+          <target state="translated">分析器 � 使用分析器</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">或者，此元素可以包含：</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>None � none of those things get used</source>
+          <target state="translated">无 � 没有使用上述任何值</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>All � all of those things get used.</source>
+          <target state="translated">全部 � 使用了上述所有值。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>DotnetCliToolReference</source>
+          <target state="translated">DotnetCliToolReference</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> element specifies the CLI tool that the user wants restores in the context of the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> 元素指定用户想要在项目的上下文中还原的 CLI 工具。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It is a replacement for the <ph id="ph1">`tools`</ph> node in <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated">在 <ph id="ph2">`project.json`</ph> 中，它可以替换 <ph id="ph1">`tools`</ph> 节点。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">版本</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;Version&gt;`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`&lt;Version&gt;`</ph> 指定要还原的包的版本。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The element respect the rules of the NuGet versioning scheme.</source>
+          <target state="translated">此元素遵从 NuGet 版本控制方案的规则。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifiers</source>
+          <target state="translated">RuntimeIdentifiers</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> element allows specifying a semicolon-delimited list of <bpt id="p1">[</bpt>Runtime Identifiers<ept id="p1">](../../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> 元素可用于指定项目的<bpt id="p1">[</bpt>运行时标识符<ept id="p1">](../../rid-catalog.md)</ept>的列表（以分号分隔）。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>These allow publishing self-contained deployments.</source>
+          <target state="translated">以上功能允许发布独立部署。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
