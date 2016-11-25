@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0c73fb0a12092877ff5b54221f4a80693d1d1152</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\exceptions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4039eb59d735cb586da4b617c06c78c4c56de430</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9296088cb345ca8e749cc7c98a39bacca0772227</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Targeting source file commit 9584699ad7e745ae3cb059b1bb8327301c9a3286 is lower than latest handed back source file commit 9584699ad7e745ae3cb059b1bb8327301c9a3286</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">Tratando e gerando exceções no .NET</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understand how to use exceptions in .NET</source>
+          <target state="translated">Entenda como usar exceções no .NET</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">Tratando e gerando exceções no .NET</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Applications must be able to handle errors that occur during execution in a consistent manner.</source>
+          <target state="translated">Aplicativos devem ser capazes de tratar de erros que ocorrem durante a execução de uma maneira consistente.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>.NET provides a model for notifying applications of errors in a uniform way: .NET operations indicate failure by throwing exceptions.</source>
+          <target state="translated">O .NET fornece um modelo para notificar aplicativos sobre erros de maneira uniforme: operações do .NET indicam falhas por meio da geração de exceções.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">Exceções</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An exception is any error condition or unexpected behavior that is encountered by an executing program.</source>
+          <target state="translated">Uma exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on.</source>
+          <target state="translated">Exceções podem ser geradas devido a uma falha em seu código ou no código que você chama (como uma biblioteca compartilhada), recursos do sistema operacional não disponíveis, condições inesperadas encontradas pelo tempo de execução (como código que não pode ser verificado) e assim por diante.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Your application can recover from some of these conditions, but not from others.</source>
+          <target state="translated">Seu aplicativo pode se recuperar de algumas dessas condições, mas não de outras.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.</source>
+          <target state="translated">Embora você possa se recuperar da maioria das exceções de aplicativo, não é possível recuperar-se da maioria das exceções de tempo de execução.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In .NET, an exception is an object that inherits from the <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> class.</source>
+          <target state="translated">No .NET, uma exceção é um objeto que herda da classe <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>An exception is thrown from an area of code where a problem has occurred.</source>
+          <target state="translated">Uma exceção é lançada de uma área do código em que ocorreu um problema.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The exception is passed up the stack until the application handles it or the program terminates.</source>
+          <target state="translated">A exceção é passada pilha acima até que o aplicativo trate dela ou o programa seja encerrado.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Exceptions vs. traditional error-handling methods</source>
+          <target state="translated">Métodos de tratamento de exceção vs. tratamento de erro tradicional</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system.</source>
+          <target state="translated">Tradicionalmente, o modelo de tratamento de erro da linguagem confiava na forma exclusiva da linguagem de detectar erros e localizar manipuladores para eles ou no mecanismo de tratamento de erro fornecido pelo sistema operacional.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The way .NET implements exception handling provides the following advantages:</source>
+          <target state="translated">A maneira como o .NET implementa o tratamento de exceção oferece as seguintes vantagens:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Exception throwing and handling works the same for .NET programming languages.</source>
+          <target state="translated">O lançamento e tratamento de exceção funciona da mesma maneira para linguagens de programação .NET.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.</source>
+          <target state="translated">Não requer nenhuma sintaxe de linguagem específica para tratamento de exceção, mas permite que cada linguagem defina sua própria sintaxe.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown across process and even machine boundaries.</source>
+          <target state="translated">Exceções podem ser geradas pelos limites de processo e até mesmo de computador.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Exception-handling code can be added to an application to increase program reliability.</source>
+          <target state="translated">O código de tratamento de exceção pode ser adicionado a um aplicativo para aumentar a confiabilidade do programa.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Exceptions offer advantages over other methods of error notification, such as return codes.</source>
+          <target state="translated">As exceções oferecem vantagens sobre outros métodos de notificação de erro, como códigos de retorno.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Failures do not go unnoticed because if an exception is thrown and you don't handle it, the runtime terminates your application.</source>
+          <target state="translated">Falhas não passam despercebidas porque se uma exceção for lançada e você não tratar dela, o tempo de execução encerra o aplicativo.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Invalid values do not continue to propagate through the system as a result of code that fails to check for a failure return code.</source>
+          <target state="translated">Valores inválidos não continuam a se propagar através do sistema como resultado do código que não consegue verificar se há um código de retorno de falha.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Exception class and properties</source>
+          <target state="translated">Classe e propriedades da exceção</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class is the base class from which exceptions inherit.</source>
+          <target state="translated">A classe <ph id="ph1">@System.Exception</ph> é a classe base da qual as exceções herdam.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.InvalidCastException</ph> class hierarchy is as follows:</source>
+          <target state="translated">Por exemplo, a hierarquia de classe <ph id="ph1">@System.InvalidCastException</ph> é como se segue:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class has the following properties that help make understanding an exception easier.</source>
+          <target state="translated">A classe <ph id="ph1">@System.Exception</ph> tem as propriedades a seguir, que ajudam a facilitar o entendimento de uma exceção.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Property Name</source>
+          <target state="translated">Nome da Propriedade</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.Collections.IDictionary</ph> that holds arbitrary data in key-value pairs.</source>
+          <target state="translated">Um <ph id="ph1">@System.Collections.IDictionary</ph> que contém dados arbitrários em pares chave-valor.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.</source>
+          <target state="translated">Pode conter uma URL (ou URN) para um arquivo de ajuda que fornece informações abrangentes sobre a causa de uma exceção.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This property can be used to create and preserve a series of exceptions during exception handling.</source>
+          <target state="translated">Essa propriedade pode ser usada para criar e manter uma série de exceções durante o tratamento de exceção.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use it to create a new exception that contains previously caught exceptions.</source>
+          <target state="translated">Você pode usá-lo para criar uma nova exceção contendo exceções previamente capturadas.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The original exception can be captured by the second exception in the <ph id="ph1">@System.Exception.InnerException</ph> property, allowing code that handles the second exception to examine the additional information.</source>
+          <target state="translated">A exceção original pode ser capturada pela segunda exceção na propriedade <ph id="ph1">@System.Exception.InnerException</ph>, permitindo que o código que trata da segunda exceção examine as informações adicionais.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a method that receives an argument that's improperly formatted.</source>
+          <target state="translated">Por exemplo, suponha que você tem um método que recebe um argumento que está formatado de modo inadequado.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The code tries to read the argument, but an exception is thrown.</source>
+          <target state="translated">O código tenta ler o argumento, mas uma exceção é gerada.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The method catches the exception and throws a <ph id="ph1">@System.FormatException.</ph> To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred.</source>
+          <target state="translated">O método captura a exceção e gera um <ph id="ph1">@System.FormatException.</ph> Para melhorar a capacidade do chamador a fim de determinar o motivo pelo qual uma exceção é gerada, às vezes é desejável que um método capture uma exceção gerada por uma rotina auxiliar e, em seguida, gere uma exceção mais indicativa do erro que ocorreu.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception.</source>
+          <target state="translated">Uma exceção mais nova e mais significativa pode ser criada, na qual a referência à exceção interna pode ser definida para a exceção original.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This more meaningful exception can then be thrown to the caller.</source>
+          <target state="translated">Essa exceção mais significativa pode, em seguida, ser gerada para o chamador.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first.</source>
+          <target state="translated">Observe que com essa funcionalidade você pode criar uma série de exceções vinculadas que termina com a primeira exceção gerada.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides details about the cause of an exception.</source>
+          <target state="translated">Fornece detalhes sobre a causa de uma exceção.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Gets or sets the name of the application or the object that causes the error.</source>
+          <target state="translated">Obtém ou define o nome do aplicativo ou objeto que causa o erro.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Contains a stack trace that can be used to determine where an error occurred.</source>
+          <target state="translated">Contém um rastreamento de pilha que pode ser usado para determinar onde um erro ocorreu.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The stack trace includes the source file name and program line number if debugging information is available.</source>
+          <target state="translated">O rastreamento de pilha inclui o nome do arquivo de origem e o número de linha de programa se informações de depuração estiverem disponíveis.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Most of the classes that inherit from <ph id="ph1">@System.Exception</ph> do not implement additional members or provide additional functionality; they simply inherit from <ph id="ph2">@System.Exception.</ph> Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.</source>
+          <target state="translated">A maioria das classes que herdam de <ph id="ph1">@System.Exception</ph> não implementam membros adicionais ou fornecem funcionalidade adicional; elas simplesmente herdam de <ph id="ph2">@System.Exception.</ph> Portanto, as informações mais importantes para uma exceção podem ser encontradas na hierarquia de classes de exceção, no nome da exceção e nas informações contidas na exceção.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>It is recommended to throw and catch only objects that derive from <ph id="ph1">@System.Exception,</ph> but you can throw any object that derives from the <ph id="ph2">@System.Object</ph> class as an exception.</source>
+          <target state="translated">É recomendável gerar e capturar apenas objetos que derivam de <ph id="ph1">@System.Exception,</ph>, mas é possível gerar como uma exceção qualquer objeto que derive da classe <ph id="ph2">@System.Object</ph>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Note that not all languages support throwing and catching objects that do not derive from <ph id="ph1">@System.Exception.</ph></source>
+          <target state="translated">Observe que nem todas as linguagens dão suporte à geração e captura de objetos que não derivam de <ph id="ph1">@System.Exception.</ph></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Common Exceptions</source>
+          <target state="translated">Exceções comuns</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following table lists some common exceptions with examples of what can cause them.</source>
+          <target state="translated">A tabela a seguir lista algumas exceções comuns com exemplos do que pode causá-las.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Exception type</source>
+          <target state="translated">Tipo de exceção</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Base type</source>
+          <target state="translated">Tipo base</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Exemplo</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Base class for all exceptions.</source>
+          <target state="translated">A classe base para todas as exceções.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">Nenhuma (use uma classe derivada dessa exceção).</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when an array is indexed improperly.</source>
+          <target state="translated">Gerada pelo tempo de execução somente quando uma matriz é indexada incorretamente.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Indexing an array outside its valid range: <ph id="ph1">`arr[arr.Length+1]`</ph></source>
+          <target state="translated">Indexar uma matriz fora do intervalo válido: <ph id="ph1">`arr[arr.Length+1]`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when a null object is referenced.</source>
+          <target state="translated">Gerada pelo tempo de execução somente quando um objeto nulo é referenciado.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Thrown by methods when in an invalid state.</source>
+          <target state="translated">Gerada por métodos quando em um estado inválido.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Calling <ph id="ph1">`Enumerator.GetNext()`</ph> after removing an Item from the underlying collection.</source>
+          <target state="translated">Chamar <ph id="ph1">`Enumerator.GetNext()`</ph> após a remoção de um item da coleção subjacente.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Base class for all argument exceptions.</source>
+          <target state="translated">A classe base para todas as exceções de argumento.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">Nenhuma (use uma classe derivada dessa exceção).</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that do not allow an argument to be null.</source>
+          <target state="translated">Gerada por métodos que não permitem que um argumento seja nulo.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that verify that arguments are in a given range.</source>
+          <target state="translated">Gerada por métodos que verificam se os argumentos estão em um determinado intervalo.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>How to use the try/catch block to catch exceptions</source>
+          <target state="translated">Como usar o bloco try/catch para capturar exceções</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Place the sections of code that might throw exceptions in a <ph id="ph1">`try`</ph> block and place code that handles exceptions in a <ph id="ph2">`catch`</ph> block.</source>
+          <target state="translated">Coloque as seções do código que podem gerar exceções em um bloco <ph id="ph1">`try`</ph> e coloque o código que trata de exceções em um bloco <ph id="ph2">`catch`</ph>.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`catch`</ph> block is a series of statements beginning with the keyword <ph id="ph2">`catch`</ph>, followed by an exception type and an action to be taken.</source>
+          <target state="translated">O bloco <ph id="ph1">`catch`</ph> é uma série de instruções que começam com a palavra-chave <ph id="ph2">`catch`</ph>, seguido por um tipo de exceção e uma ação a ser tomada.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible exception.</source>
+          <target state="translated">O exemplo de código a seguir usa um bloco <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> para capturar uma possível exceção.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Main`</ph> method contains a <ph id="ph2">`try`</ph> block with a <ph id="ph3">@System.IO.StreamReader</ph> statement that opens a data file called <ph id="ph4">`data.txt`</ph> and writes a string from the file.</source>
+          <target state="translated">O método <ph id="ph1">`Main`</ph> contém um bloco <ph id="ph2">`try`</ph> com uma instrução <ph id="ph3">@System.IO.StreamReader</ph> que abre um arquivo de dados chamado <ph id="ph4">`data.txt`</ph> e grava uma cadeia de caracteres do arquivo.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Following the <ph id="ph1">`try`</ph> block is a <ph id="ph2">`catch`</ph> block that catches any exception that results from the <ph id="ph3">`try`</ph> block.</source>
+          <target state="translated">Após o bloco <ph id="ph1">`try`</ph> há um bloco <ph id="ph2">`catch`</ph>, que captura qualquer exceção resultante do bloco <ph id="ph3">`try`</ph>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The common language runtime catches exceptions that are not caught by a catch block.</source>
+          <target state="translated">O Common Language Runtime captura exceções que não são capturadas por um bloco catch.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.</source>
+          <target state="translated">Dependendo de como o tempo de execução estiver configurado, uma caixa de diálogo de depuração será exibida ou o programa interromperá a execução e será exibida uma caixa de diálogo com as informações de exceção ou, ainda, um erro será impresso para stderr.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <ph id="ph1">@System.OutOfMemoryException.</ph> Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others.</source>
+          <target state="translated">Quase qualquer linha de código pode causar uma exceção, especialmente exceções geradas pelo Common Language Runtime em si, como <ph id="ph1">@System.OutOfMemoryException.</ph> A maioria dos aplicativos não precisa lidar com essas exceções, mas você deve estar ciente dessa possibilidade ao gravar bibliotecas para serem usadas por outros.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For suggestions on when to set code in a Try block, see <bpt id="p1">[</bpt>Best Practices for Exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">Para obter sugestões sobre quando definir código em um bloco Try, veja <bpt id="p1">[</bpt>Práticas recomendadas para exceções<ept id="p1">](#best-practices-for-exceptions)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>How to use specific exceptions in a Catch block</source>
+          <target state="translated">Como usar exceções específicas em um bloco Catch</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The preceding code example illustrates a basic <ph id="ph1">`catch`</ph> statement that catches any exception.</source>
+          <target state="translated">O exemplo de código anterior ilustra uma instrução básica <ph id="ph1">`catch`</ph> que captura qualquer exceção.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In general, though, it's good programming practice to catch a specific type of exception rather than use a basic <ph id="ph1">`catch`</ph> statement.</source>
+          <target state="translated">Em geral, no entanto, é uma boa prática capturar um tipo específico de exceção em vez de usar a instrução básica <ph id="ph1">`catch`</ph>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it.</source>
+          <target state="translated">Quando ocorre uma exceção, ela é passada para cima na pilha e, a cada bloco catch, é dada a oportunidade de tratá-la.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The order of catch statements is important.</source>
+          <target state="translated">A ordem das instruções catch é importante.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error.</source>
+          <target state="translated">Coloque blocos catch direcionados para exceções específicas antes que um bloco catch de exceção geral ou o compilador possa emitir um erro.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block.</source>
+          <target state="translated">O bloco catch adequado é determinado ao fazer a correspondência entre o tipo da exceção e o nome da exceção especificada no bloco catch.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If there is no specific catch block, the exception is caught by a general catch block, if one exists.</source>
+          <target state="translated">Se não houver nenhum bloco catch específico, a exceção será detectada por um bloco catch geral, se houver.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.InvalidCastException.</ph> The sample creates a class called <ph id="ph5">`Employee`</ph> with a single property, employee level (<ph id="ph6">`Emlevel`</ph>).</source>
+          <target state="translated">O seguinte exemplo de código usa um bloco <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> para capturar uma <ph id="ph4">@System.InvalidCastException.</ph> O exemplo cria uma classe chamada <ph id="ph5">`Employee`</ph> com uma única propriedade, nível do funcionário (<ph id="ph6">`Emlevel`</ph>).</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A method, <ph id="ph1">`PromoteEmployee`</ph>, takes an object and increments the employee level.</source>
+          <target state="translated">Um método, <ph id="ph1">`PromoteEmployee`</ph>, utiliza um objeto e incrementa o nível do funcionário.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.InvalidCastException</ph> occurs when a <ph id="ph2">@System.DateTime</ph> instance is passed to the <ph id="ph3">`PromoteEmployee`</ph> method.</source>
+          <target state="translated">Um <ph id="ph1">@System.InvalidCastException</ph> ocorre quando uma instância <ph id="ph2">@System.DateTime</ph> é passada para o método <ph id="ph3">`PromoteEmployee`</ph>.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>How to use finally blocks</source>
+          <target state="translated">Como usar blocos finally</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, execution stops and control is given to the appropriate exception handler.</source>
+          <target state="translated">Quando ocorre uma exceção, a execução é interrompida e o controle é dado ao manipulador de exceção apropriado.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This often means that lines of code you expect to be executed are bypassed.</source>
+          <target state="translated">Geralmente, isso significa que linhas de código que você espera que sejam executadas são ignoradas.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown.</source>
+          <target state="translated">A limpeza de alguns recursos, assim como o fechamento de um arquivo, precisará ser feita mesmo se uma exceção for gerada.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>To do this, you can use a <ph id="ph1">`finally`</ph> block.</source>
+          <target state="translated">Para fazer isso, você pode usar um bloco <ph id="ph1">`finally`</ph>.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`finally`</ph> block always executes, regardless of whether an exception is thrown.</source>
+          <target state="translated">Um bloco <ph id="ph1">`finally`</ph> sempre é executado, independentemente de uma exceção ser ou não gerada.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.ArgumentOutOfRangeException.</ph> The <ph id="ph5">`Main`</ph> method creates two arrays and attempts to copy one to the other.</source>
+          <target state="translated">O seguinte exemplo de código usa um bloco <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> para capturar uma <ph id="ph4">@System.ArgumentOutOfRangeException.</ph> O método <ph id="ph5">`Main`</ph> cria duas matrizes e tenta copiar uma para a outra.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The action generates an <ph id="ph1">@System.ArgumentOutOfRangeException</ph> and the error is written to the console.</source>
+          <target state="translated">A ação gera um <ph id="ph1">@System.ArgumentOutOfRangeException</ph> e o erro é gravado no console.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`finally`</ph> block executes regardless of the outcome of the copy action.</source>
+          <target state="translated">Este bloco <ph id="ph1">`finally`</ph> é executado independentemente resultado da ação de cópia.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>How to explicitly throw exceptions</source>
+          <target state="translated">Como gerar exceções explicitamente</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>You can explicitly throw an exception using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">Você pode gerar uma exceção explicitamente usando a instrução <ph id="ph1">`throw`</ph>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can also throw a caught exception again using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">Você também pode lançar novamente uma exceção capturada usando a instrução <ph id="ph1">`throw`</ph>.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.</source>
+          <target state="translated">É uma boa prática adicionar informações a uma exceção que é lançada novamente para fornecer mais informações durante a depuração.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible <ph id="ph4">@System.IO.FileNotFoundException.</ph> Following the <ph id="ph5">`try`</ph> block is a <ph id="ph6">`catch`</ph> block that catches the <ph id="ph7">@System.IO.FileNotFoundException</ph> and writes a message to the console if the data file is not found.</source>
+          <target state="translated">O seguinte exemplo usa um bloco <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> para capturar um possível <ph id="ph4">@System.IO.FileNotFoundException.</ph> Após o bloco <ph id="ph5">`try`</ph>, há um bloco <ph id="ph6">`catch`</ph> que captura a <ph id="ph7">@System.IO.FileNotFoundException</ph> e grava uma mensagem no console se o arquivo de dados não for encontrado.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The next statement is the <ph id="ph1">`throw`</ph> statement that throws a new <ph id="ph2">@System.IO.FileNotFoundException</ph> and adds text information to the exception.</source>
+          <target state="translated">A próxima instrução é a instrução <ph id="ph1">`throw`</ph>, que gera uma nova <ph id="ph2">@System.IO.FileNotFoundException</ph> e adiciona informações de texto à exceção.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>How to create user-defined exceptions</source>
+          <target state="translated">Como criar exceções definidas pelo usuário</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>.NET provides a hierarchy of exception classes ultimately derived from the base class <ph id="ph1">@System.Exception.</ph> However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the <ph id="ph2">@System.Exception</ph> class.</source>
+          <target state="translated">O .NET fornece uma hierarquia de classes de exceção derivada da classe base <ph id="ph1">@System.Exception.</ph> No entanto, se nenhuma das exceções predefinidas atender às suas necessidades, é possível criar suas próprias classes de exceção derivando da classe <ph id="ph2">@System.Exception</ph>.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example.</source>
+          <target state="translated">Ao criar suas próprias exceções, encerre o nome de classe de exceção definida pelo usuário com a palavra "Exception" e implemente os três construtores comuns, como mostrado no exemplo a seguir.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The example defines a new exception class named <ph id="ph1">`EmployeeListNotFoundException`</ph>.</source>
+          <target state="translated">O exemplo define uma nova classe de exceção chamada <ph id="ph1">`EmployeeListNotFoundException`</ph>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The class is derived from <ph id="ph1">@System.Exception</ph> and includes three constructors.</source>
+          <target state="translated">A classe é derivada de <ph id="ph1">@System.Exception</ph> e inclui três construtores.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller).</source>
+          <target state="translated">Em situações nas quais você está usando a comunicação remota, você deve garantir que os metadados para todas as exceções definidas pelo usuário estejam disponíveis no servidor (computador chamado) e para o cliente (o objeto de proxy ou chamador).</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Best practices for exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>Práticas recomendadas para exceções<ept id="p1">](#best-practices-for-exceptions)</ept>.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Best practices for exceptions</source>
+          <target state="translated">Práticas recomendadas para exceções</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A well-designed app handles exceptions and errors to prevent app crashes.</source>
+          <target state="translated">Um aplicativo bem projetado sabe tratar erros e exceções para evitar falhas.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This section describes best practices for handling and creating exceptions.</source>
+          <target state="translated">Esta seção descreve as práticas recomendadas para tratar e criar exceções.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Use try/catch/finally blocks</source>
+          <target state="translated">Usar blocos try/catch/finally</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> blocks around code that can potentially generate an exception.</source>
+          <target state="translated">Use blocos <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> em torno de código que potencialmente possa gerar uma exceção.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`catch`</ph> blocks, always order exceptions from the most specific to the least specific.</source>
+          <target state="translated">Sempre ordene exceções em blocos <ph id="ph1">`catch`</ph> da mais específica para a menos específica.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Use a <ph id="ph1">`finally`</ph> block to clean up resources, whether you can recover or not.</source>
+          <target state="translated">Use um bloco <ph id="ph1">`finally`</ph> para limpar os recursos, independentemente de você poder recuperá-los ou não.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Handle common conditions without throwing exceptions</source>
+          <target state="translated">Tratar de condições comuns sem gerar exceções</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception.</source>
+          <target state="translated">Para condições que têm boa probabilidade de ocorrer mas que podem disparar uma exceção, considere tratá-las de uma maneira que evite essa exceção.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For example, if you try to close a connection that is already closed, you'll get an <ph id="ph1">`InvalidOperationException`</ph>.</source>
+          <target state="translated">Por exemplo, se você tentar fechar uma conexão que já está fechada, você obterá um <ph id="ph1">`InvalidOperationException`</ph>.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You can avoid that by using an <ph id="ph1">`if`</ph> statement to check the connection state before trying to close it.</source>
+          <target state="translated">Você pode evitar isso usando uma instrução <ph id="ph1">`if`</ph> para verificar o estado da conexão antes de tentar fechá-la.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If you don't check connection state before closing, you can catch the <ph id="ph1">`InvalidOperationException`</ph> exception.</source>
+          <target state="translated">Se você não verificar estado da conexão antes de fechar, você poderá capturar a exceção <ph id="ph1">`InvalidOperationException`</ph>.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The method to choose depends on how often you expect the event to occur.</source>
+          <target state="translated">O método a escolher depende da frequência com que você espera que o evento ocorra.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Use exception handling if the event doesn't occur very often, that is, if the event is truly exceptional and indicates an error (such as an unexpected end-of-file).</source>
+          <target state="translated">Use o tratamento de exceções se o evento não ocorrer muito frequentemente, ou seja, se o evento é realmente excepcional e indica um erro (como um fim de arquivo inesperado).</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>When you use exception handling, less code is executed in normal conditions.</source>
+          <target state="translated">Quando você usa o tratamento de exceções, menos código é executado em condições normais.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Check for error conditions in code if the event happens routinely and could be considered part of normal execution.</source>
+          <target state="translated">Verifique a existência de condições de erro no código se o evento ocorrer rotineiramente e puder ser considerado parte da execução normal.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>When you check for common error conditions, less code is executed because you avoid exceptions.</source>
+          <target state="translated">Quando você verifica se há condições de erro comuns, menos código é executado porque você evita exceções.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Design classes so that exceptions can be avoided</source>
+          <target state="translated">Projetar classes de modo que as exceções possam ser evitadas</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A class can provide methods or properties that enable you to avoid making a call that would trigger an exception.</source>
+          <target state="translated">Uma classe pode fornecer métodos ou propriedades que permitem que você evite fazer uma chamada que dispararia uma exceção.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For example, a <ph id="ph1">@System.IO.FileStream</ph> class provides methods that help determine whether the end of the file has been reached.</source>
+          <target state="translated">Por exemplo, uma classe <ph id="ph1">@System.IO.FileStream</ph> fornece métodos que ajudam a determinar se ao final do arquivo foi atingido.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>These can be used to avoid the exception that is thrown if you read past the end of the file.</source>
+          <target state="translated">Elas podem ser usadas para evitar exceções geradas quando você faz a leitura após o fim do arquivo.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The following example shows how to read to the end of a file without triggering an exception.</source>
+          <target state="translated">O exemplo a seguir mostra como ler até o final de um arquivo sem disparar uma exceção.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Another way to avoid exceptions is to return null for extremely common error cases instead of throwing an exception.</source>
+          <target state="translated">Outra maneira de evitar exceções é retornar nulo para casos muito comuns de erro, em vez de gerar uma exceção.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>An extremely common error case can be considered normal flow of control.</source>
+          <target state="translated">Um caso extremamente comum de erro pode ser considerado um fluxo normal de controle.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>By returning null in these cases, you minimize the performance impact to an app.</source>
+          <target state="translated">Ao retornar nulo nesses casos, você minimiza o impacto no desempenho de um aplicativo.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Throw exceptions instead of returning an error code</source>
+          <target state="translated">Gerar exceções em vez de retornar um código de erro</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.</source>
+          <target state="translated">Exceções asseguram que falhas não passem despercebidas porque o código de chamada não verificou um código de retorno.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Use the predefined .NET exception types</source>
+          <target state="translated">Usar os tipos de exceção do .NET predefinidos</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Introduce a new exception class only when a predefined one doesn't apply.</source>
+          <target state="translated">Apresente uma nova classe de exceção apenas quando a predefinida não se aplicar.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Por exemplo:</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.InvalidOperationException</ph> exception if a property set or method call is not appropriate given the object's current state.</source>
+          <target state="translated">Gere uma exceção <ph id="ph1">@System.InvalidOperationException</ph> se uma propriedade de definição ou chamada de método não for adequada para o estado atual do objeto.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.ArgumentException</ph> exception or one of the predefined classes that derive from <ph id="ph2">@System.ArgumentException</ph> if invalid parameters are passed.</source>
+          <target state="translated">Gere uma exceção <ph id="ph1">@System.ArgumentException</ph> ou uma das classes predefinidas que derivam de <ph id="ph2">@System.ArgumentException</ph> se parâmetros inválidos forem passados.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>End exception class names with the word <ph id="ph1">`Exception`</ph></source>
+          <target state="translated">Terminar os nomes das classes de exceção com a palavra <ph id="ph1">`Exception`</ph></target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>When a custom exception is necessary, name it appropriately and derive it from the <ph id="ph1">@System.Exception</ph> class.</source>
+          <target state="translated">Quando uma exceção personalizada for necessária, nomeie-a adequadamente e derive-a da classe <ph id="ph1">@System.Exception</ph>.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Por exemplo:</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Include three constructors in custom exception classes</source>
+          <target state="translated">Incluir três construtores em classes de exceção personalizada</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.</source>
+          <target state="translated">Use pelo menos três os construtores comuns ao criar suas próprias classes de exceção: o construtor padrão, um construtor que recebe uma mensagem de cadeia de caracteres e uma exceção interna.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor,</ph> which uses default values.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor,</ph> que usa valores padrão.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String),</ph> which accepts a string message.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String),</ph> que aceita uma mensagem de cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph> which accepts a string message and an inner exception.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph> que aceita uma mensagem de cadeia de caracteres e uma exceção interna.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>How to: Create User-Defined Exceptions<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>.</source>
+          <target state="translated">Para ver um exemplo, veja <bpt id="p1">[</bpt>Como criar exceções definidas pelo usuário<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Ensure that exception data is available when code executes remotely</source>
+          <target state="translated">Certifique-se de que os dados de exceção estão disponíveis quando o código é executado remotamente</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.</source>
+          <target state="translated">Ao criar exceções definidas pelo usuário, assegure que os metadados para as exceções estejam disponíveis para códigos executando remotamente.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains.</source>
+          <target state="translated">Por exemplo, em tempos de execução do .NET que implementam domínios de aplicativo, podem ocorrer exceções entre domínios de aplicativo.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Suppose App Domain A creates App Domain B, which executes code that throws an exception.</source>
+          <target state="translated">Suponha que o Domínio de Aplicativo A crie o Domínio de aplicativo B, o qual executa o código que gera uma exceção.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <ph id="ph1">@System.IO.FileNotFoundException</ph> exception.</source>
+          <target state="translated">Para que o Domínio de Aplicativo A capture e trate corretamente a exceção, ele deverá ser capaz de localizar o assembly que contém a exceção gerada pelo Domínio de Aplicativo B. Se o Domínio de Aplicativo B gerar uma exceção contida em um assembly em sua base de aplicativo, mas não na base de aplicativo do Domínio de Aplicativo A, o Domínio de Aplicativo A não será capaz de localizar a exceção e o Common Language Runtime gerará uma exceção <ph id="ph1">@System.IO.FileNotFoundException</ph>.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>To avoid this situation, you can deploy the assembly that contains the exception information in two ways:</source>
+          <target state="translated">Para evitar essa situação, você pode implantar o assembly que contém as informações de exceção de duas maneiras:</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Put the assembly into a common application base shared by both app domains.</source>
+          <target state="translated">Coloque o assembly em uma base de aplicativos comum compartilhada por ambos os domínios de aplicativos.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\-</ph> or -</source>
+          <target state="translated"><ph id="ph1">\-</ph> ou -</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.</source>
+          <target state="translated">Se os domínios não compartilham uma base de aplicativos comum, assine o assembly que contém as informações de exceção com um nome forte e implante o assembly no cache de assembly global.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Include a localized description string in every exception</source>
+          <target state="translated">Incluir uma cadeia de caracteres de descrição localizada em cada exceção</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The error message that the user sees is derived from the description string of the exception that was thrown, and not from the name of the exception class.</source>
+          <target state="translated">A mensagem de erro que o usuário recebe é derivada da cadeia de caracteres de descrição da exceção que foi gerada, em vez do nome da classe de exceção.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Use grammatically correct error messages</source>
+          <target state="translated">Usar mensagens de erro gramaticalmente corretas</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Write clear sentences and include ending punctuation.</source>
+          <target state="translated">Escreva frases claras e inclua pontuação final.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Each sentence in a description string of an exception should end in a period.</source>
+          <target state="translated">Cada sentença em uma cadeia de caracteres descrição de uma exceção deve terminar com um ponto final.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>For example, "The log table has overflowed.”</source>
+          <target state="translated">Por exemplo, "A tabela de log estourou."</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>would be an appropriate description string.</source>
+          <target state="translated">seria uma cadeia de caracteres de descrição apropriada.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>In custom exceptions, provide additional properties as needed</source>
+          <target state="translated">Em exceções personalizadas, forneça propriedades adicionais conforme necessário</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful.</source>
+          <target state="translated">Forneça propriedades adicionais para uma exceção (além da cadeia de caracteres de descrição) somente quando houver um cenário programático no qual as informações adicionais serão úteis.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.IO.FileNotFoundException</ph> provides the <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> property.</source>
+          <target state="translated">Por exemplo, o <ph id="ph1">@System.IO.FileNotFoundException</ph> fornece a propriedade <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph>.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Place throw statements so that the stack trace will be helpful</source>
+          <target state="translated">Posicionar instruções throw de modo que o rastreamento de pilha seja útil</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The stack trace begins at the statement where the exception is thrown and ends at the <ph id="ph1">`catch`</ph> statement that catches the exception.</source>
+          <target state="translated">O rastreamento de pilha começa na instrução na qual a exceção é lançada e termina na instrução <ph id="ph1">`catch`</ph> que captura a exceção.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Use exception builder methods</source>
+          <target state="translated">Usar métodos de construtor de exceção</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>It is common for a class to throw the same exception from different places in its implementation.</source>
+          <target state="translated">É comum uma classe lançar a mesma exceção em locais diferentes em sua implementação.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To avoid excessive code, use helper methods that create the exception and return it.</source>
+          <target state="translated">Para evitar excesso de código, use métodos auxiliares que criam a exceção e a retornam.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Por exemplo:</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In some cases, it's more appropriate to use the exception's constructor to build the exception.</source>
+          <target state="translated">Em alguns casos, é mais adequado usar o construtor da exceção para compilá-la.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>An example is a global exception class such as <ph id="ph1">@System.ArgumentException,</ph></source>
+          <target state="translated">Um exemplo é uma classe de exceção global como <ph id="ph1">@System.ArgumentException,</ph></target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Clean up intermediate results when throwing an exception</source>
+          <target state="translated">Limpar resultados intermediários ao lançar uma exceção</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Callers should be able to assume that there are no side effects when an exception is thrown from a method.</source>
+          <target state="translated">Os chamadores devem ser capazes de pressupor que não haverá efeitos colaterais quando uma exceção for gerada de um método.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.</source>
+          <target state="translated">Por exemplo, se você tiver um código que transfere dinheiro retirando-o de uma conta e depositando em outra e uma exceção for gerada ao executar o depósito, você não desejará que a retirada permaneça em vigor.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.</source>
+          <target state="translated">Uma maneira de lidar com essa situação é capturar todas as exceções geradas pela transação do depósito e reverter a retirada.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This example illustrates the use of <ph id="ph1">`throw`</ph> to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <ph id="ph2">@System.Exception.InnerException</ph> property.</source>
+          <target state="translated">Este exemplo ilustra o uso de <ph id="ph1">`throw`</ph> para gerar novamente a exceção original, que pode tornar mais fácil para os chamadores ver a causa real do problema sem a necessidade de examinar a propriedade <ph id="ph2">@System.Exception.InnerException</ph>.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>An alternative is to throw a new exception and include the original exception as the inner exception:</source>
+          <target state="translated">Uma alternativa é gerar uma nova exceção e incluir a exceção original como a exceção interna:</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>To learn more about how exceptions work in .NET, see <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>.</source>
+          <target state="translated">Para saber mais sobre o funcionamento de exceções no .NET, veja <bpt id="p1">[</bpt>O que todo desenvolvedor precisa saber sobre exceções no tempo de execução<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

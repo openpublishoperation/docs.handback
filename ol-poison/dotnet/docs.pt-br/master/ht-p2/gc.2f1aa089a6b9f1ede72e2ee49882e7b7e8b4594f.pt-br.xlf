@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">68815f7e7e96483eff218138dd1612a20e2eb1e6</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\gc.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">912ae73d2b11cf8ab21151110755577a3260b08c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0afecd55a0497c769dd6126252bb9dc7c21625bd</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Targeting source file commit 213ce098bcc2b5e31c55e759d895254d5ca33caa is lower than latest handed back source file commit b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Gerenciamento automático de memória e coleta de lixo</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Gerenciamento automático de memória e coleta de lixo</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Automatic memory management and garbage collection</source>
+          <target state="translated">Gerenciamento automático de memória e coleta de lixo</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Automatic memory management is one of the services that the Common Language Runtime provides during managed nxecution.</source>
+          <target state="translated">O gerenciamento automático de memória é um dos serviços que o Common Language Runtime oferece durante a execução gerenciada.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The Common Language Runtime's garbage collector manages the allocation and release of memory for an application.</source>
+          <target state="translated">O coletor de lixo do Common Language Runtime gerencia a alocação e a liberação de memória para um aplicativo.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For developers, this means that you do not have to write code to perform memory management tasks when you develop managed applications.</source>
+          <target state="translated">Para desenvolvedores, isso significa que você não tem que escrever código para executar tarefas de gerenciamento de memória quando desenvolver aplicativos gerenciados.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Automatic memory management can eliminate common problems, such as forgetting to free an object and causing a memory leak, or attempting to access memory for an object that has already been freed.</source>
+          <target state="translated">O gerenciamento automático de memória pode eliminar problemas comuns, como esquecer de liberar um objeto e causar um vazamento de memória ou tentar acessar a memória de um objeto que já tinha sido liberado.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This section describes how the garbage collector allocates and releases memory.</source>
+          <target state="translated">Esta seção descreve como o coletor de lixo aloca e libera memória.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Allocating Memory</source>
+          <target state="translated">Alocando memória</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>When you initialize a new process, the runtime reserves a contiguous region of address space for the process.</source>
+          <target state="translated">Quando você inicializa um novo processo, o tempo de execução reserva uma região contígua de espaço de endereço para o processo.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This reserved address space is called the managed heap.</source>
+          <target state="translated">Esse espaço de endereço reservado é chamado de heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The managed heap maintains a pointer to the address where the next object in the heap will be allocated.</source>
+          <target state="translated">O heap gerenciado mantém um ponteiro para o endereço no qual o próximo objeto do heap será alocado.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Initially, this pointer is set to the managed heap's base address.</source>
+          <target state="translated">Inicialmente, esse ponteiro é definido como o endereço básico do heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>All reference types are allocated on the managed heap.</source>
+          <target state="translated">Todos os tipos de referência são alocados no heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When an application creates the first reference type, memory is allocated for the type at the base address of the managed heap.</source>
+          <target state="translated">Quando um aplicativo cria o primeiro tipo de referência, a memória é alocada para o tipo no endereço base do heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When the application creates the next object, the garbage collector allocates memory for it in the address space immediately following the first object.</source>
+          <target state="translated">Quando o aplicativo cria o próximo objeto, o coletor de lixo aloca memória para ele no espaço de endereço logo depois do primeiro objeto.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>As long as address space is available, the garbage collector continues to allocate space for new objects in this manner.</source>
+          <target state="translated">Desde que exista espaço de endereço disponível, o coletor de lixo continua alocando espaço para novos objetos dessa maneira.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Allocating memory from the managed heap is faster than unmanaged memory allocation.</source>
+          <target state="translated">A alocação memória com base no heap gerenciado é mais rápida do que a alocação de memória não gerenciada.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Because the runtime allocates memory for an object by adding a value to a pointer, it is almost as fast as allocating memory from the stack.</source>
+          <target state="translated">Como o tempo de execução aloca memória para um objeto adicionando um valor a um ponteiro, ele é quase tão rápido quanto a alocação de memória com base na pilha.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In addition, because new objects that are allocated consecutively are stored contiguously in the managed heap, an application can access the objects very quickly.</source>
+          <target state="translated">Além disso, como novos objetos que são alocados consecutivamente são armazenados contiguamente no heap gerenciado, um aplicativo pode acessar os objetos muito rapidamente.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Releasing Memory</source>
+          <target state="translated">Liberando memória</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made.</source>
+          <target state="translated">O mecanismo de otimização do coletor de lixo determina o melhor momento para executar uma coleta com base nas alocações que estão sendo feitas.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application.</source>
+          <target state="translated">Quando o coletor de lixo executa uma coleta, ele libera a memória dos objetos que não estão mais sendo usados pelo aplicativo.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>It determines which objects are no longer being used by examining the application's roots.</source>
+          <target state="translated">Ele determina quais objetos não estão mais sendo usados examinando as raízes do aplicativo.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Every application has a set of roots.</source>
+          <target state="translated">Cada aplicativo tem um conjunto de raízes.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Each root either refers to an object on the managed heap or is set to null.</source>
+          <target state="translated">Cada raiz refere-se a um objeto no heap gerenciado ou é definida como nula.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>An application's roots include static fields, local variables and parameters on a thread's stack, and CPU registers.</source>
+          <target state="translated">As raízes de um aplicativo incluem campos estáticos, variáveis locais e parâmetros na pilha de um thread, além de registros de CPU.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The garbage collector has access to the list of active roots that the just-in-time (JIT) compiler and the runtime maintain.</source>
+          <target state="translated">O coletor de lixo tem acesso à lista de raízes ativas mantidas pelo tempo de execução e pelo compilador JIT (just-in-time).</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Using this list, it examines an application's roots, and in the process creates a graph that contains all the objects that are reachable from the roots.</source>
+          <target state="translated">Usando essa lista, ele examina as raízes de um aplicativo e, no processo, cria um gráfico que contém todos os objetos que possam ser alcançados nas raízes.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Objects that are not in the graph are unreachable from the application's roots.</source>
+          <target state="translated">Objetos que não estão no gráfico são inacessíveis nas raízes do aplicativo.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The garbage collector considers unreachable objects garbage and will release the memory allocated for them.</source>
+          <target state="translated">O coletor de lixo considera lixo os objetos inacessíveis e liberará a memória alocada para eles.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>During a collection, the garbage collector examines the managed heap, looking for the blocks of address space occupied by unreachable objects.</source>
+          <target state="translated">Durante uma coleta, o coletor de lixo examina o heap gerenciado, procurando os blocos de espaço de endereço ocupados por objetos inacessíveis.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>As it discovers each unreachable object, it uses a memory-copying function to compact the reachable objects in memory, freeing up the blocks of address spaces allocated to unreachable objects.</source>
+          <target state="translated">Na medida em que descobre cada objeto inacessível, ele usa uma função de cópia de memória para compactar os objetos acessíveis na memória, liberando os blocos de espaços de endereço alocados para objetos inacessíveis.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Once the memory for the reachable objects has been compacted, the garbage collector makes the necessary pointer corrections so that the application's roots point to the objects in their new locations.</source>
+          <target state="translated">Uma vez que a memória dos objetos acessíveis tenha sido compactada, o coletor de lixo faz as correções necessárias no ponteiro de forma que as raízes do aplicativo apontem para os objetos em seus novos locais.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It also positions the managed heap's pointer after the last reachable object.</source>
+          <target state="translated">Ele também posiciona o ponteiro do heap gerenciado após o último objeto acessível.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Note that memory is compacted only if a collection discovers a significant number of unreachable objects.</source>
+          <target state="translated">Observe que memória é compactada somente se uma coleta descobre um número significativo de objetos inacessíveis.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If all the objects in the managed heap survive a collection, then there is no need for memory compaction.</source>
+          <target state="translated">Se todos os objetos no heap gerenciado sobrevivem a uma coleta, não há necessidade de compactação de memória.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>To improve performance, the runtime allocates memory for large objects in a separate heap.</source>
+          <target state="translated">Para melhorar o desempenho, o tempo de execução aloca memória para objetos grandes em um heap separado.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The garbage collector automatically releases the memory for large objects.</source>
+          <target state="translated">O coletor de lixo automaticamente libera a memória para objetos grandes.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>However, to avoid moving large objects in memory, this memory is not compacted.</source>
+          <target state="translated">No entanto, para evitar mover objetos grandes na memória, essa memória não é compactada.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Generations and Performance</source>
+          <target state="translated">Gerações e desempenho</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To optimize the performance of the garbage collector, the managed heap is divided into three generations: 0, 1, and 2.</source>
+          <target state="translated">Para otimizar o desempenho do coletor de lixo, o heap gerenciado é dividido em três gerações: 0, 1 e 2.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The runtime's garbage collection algorithm is based on several generalizations that the computer software industry has discovered to be true by experimenting with garbage collection schemes.</source>
+          <target state="translated">O algoritmo da coleta de lixo do tempo de execução é baseado em várias generalizações que a indústria de software de computador descobriu serem verdadeiras experimentando os esquemas da coleta de lixo.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>First, it is faster to compact the memory for a portion of the managed heap than for the entire managed heap.</source>
+          <target state="translated">Primeiro, é mais rápido compactar a memória para uma parte do heap gerenciado do que para o heap gerenciado inteiro.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Secondly, newer objects will have shorter lifetimes and older objects will have longer lifetimes.</source>
+          <target state="translated">Em segundo lugar, objetos mais recentes terão vidas úteis menores e objetos mais antigos objetos terão vidas úteis maiores.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Lastly, newer objects tend to be related to each other and accessed by the application around the same time.</source>
+          <target state="translated">Finalmente, objetos mais recentes tendem a se relacionar e serem acessados pelo aplicativo aproximadamente ao mesmo tempo.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The runtime's garbage collector stores new objects in generation 0.</source>
+          <target state="translated">O coletor de lixo do tempo de execução armazena novos objetos na geração 0.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Objects created early in the application's lifetime that survive collections are promoted and stored in generations 1 and 2.</source>
+          <target state="translated">Os objetos criados no início no tempo de vida do aplicativo que sobrevivem a coleções são promovidos e armazenados nas gerações 1 e 2.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The process of object promotion is described later in this topic.</source>
+          <target state="translated">O processo de promoção do objeto será descrito mais adiante neste tópico.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Because it is faster to compact a portion of the managed heap than the entire heap, this scheme allows the garbage collector to release the memory in a specific generation rather than release the memory for the entire managed heap each time it performs a collection.</source>
+          <target state="translated">Como é mais rápido compactar uma parte do heap gerenciado do que o heap inteiro, esse esquema permite que o coletor de lixo libere a memória em uma geração específica em vez liberar a memória para toda a memória gerenciada a cada vez que ele executa uma coleta.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In reality, the garbage collector performs a collection when generation 0 is full.</source>
+          <target state="translated">Na verdade, o coletor de lixo executa uma coleta quando a geração 0 está cheia.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If an application attempts to create a new object when generation 0 is full, the garbage collector discovers that there is no address space remaining in generation 0 to allocate for the object.</source>
+          <target state="translated">Se um aplicativo tentar criar um novo objeto quando a geração 0 está cheia, o coletor de lixo descobre que não existe nenhum espaço de endereço restante na geração 0 para alocar para o objeto.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The garbage collector performs a collection in an attempt to free address space in generation 0 for the object.</source>
+          <target state="translated">O coletor de lixo executa uma coleta em uma tentativa de liberar espaço de endereço na geração 0 para o objeto.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The garbage collector starts by examining the objects in generation 0 rather than all objects in the managed heap.</source>
+          <target state="translated">O coletor de lixo inicia examinando os objetos na geração 0 em vez de todos os objetos no heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This is the most efficient approach, because new objects tend to have short lifetimes, and it is expected that many of the objects in generation 0 will no longer be in use by the application when a collection is performed.</source>
+          <target state="translated">Isso é a abordagem mais eficiente, porque novos objetos costumam ter tempos de vida curtos e é esperado que muitos dos objetos na geração 0 não estejam mais em uso pelo aplicativo quando uma coleta é executada.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In addition, a collection of generation 0 alone often reclaims enough memory to allow the application to continue creating new objects.</source>
+          <target state="translated">Além disso, uma única coleta de geração 0 normalmente recupera memória suficiente para permitir ao aplicativo continuar criando novos objetos.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>After the garbage collector performs a collection of generation 0, it compacts the memory for the reachable objects as explained in <bpt id="p1">[</bpt>Releasing Memory<ept id="p1">](#releasing-memory)</ept> earlier in this topic.</source>
+          <target state="translated">Após o coletor de lixo executar uma coleta de geração 0, ele compacta a memória para os objetos acessíveis conforme explicado anteriormente neste tópico em <bpt id="p1">[</bpt>Liberando memória<ept id="p1">](#releasing-memory)</ept>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The garbage collector then promotes these objects and considers this portion of the managed heap generation 1.</source>
+          <target state="translated">Assim, o coletor de lixo promove esses objetos e considera isso parte da geração 1 do heap gerenciado.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Because objects that survive collections tend to have longer lifetimes, it makes sense to promote them to a higher generation.</source>
+          <target state="translated">Como os objetos que sobrevivem a coleções tendem a ter tempos de vida mais longos, faz sentido promovê-los a uma geração mais alta.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>As a result, the garbage collector does not have to reexamine the objects in generations 1 and 2 each time it performs a collection of generation 0.</source>
+          <target state="translated">Como resultado, o coletor de lixo não tem que reexaminar os objetos em gerações 1 e 2 sempre que executa uma coleta de geração 0.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>After the garbage collector performs its first collection of generation 0 and promotes the reachable objects to generation 1, it considers the remainder of the managed heap generation 0.</source>
+          <target state="translated">Depois que o coletor de lixo executa sua primeira coleta de geração 0 e promove os objetos atingíveis para a geração 1, ele considera o restante do heap gerenciado a geração 0.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It continues to allocate memory for new objects in generation 0 until generation 0 is full and it is necessary to perform another collection.</source>
+          <target state="translated">Ele continua alocando a memória para novos objetos na geração 0 até que a geração 0 esteja completa e seja necessário executar outra coleta.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>At this point, the garbage collector's optimizing engine determines whether it is necessary to examine the objects in older generations.</source>
+          <target state="translated">Nesse ponto, o mecanismo de otimização do coletor de lixo determina se é necessário examinar os objetos em gerações mais antigas.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, if a collection of generation 0 does not reclaim enough memory for the application to successfully complete its attempt to create a new object, the garbage collector can perform a collection of generation 1, then generation 2.</source>
+          <target state="translated">Por exemplo, se uma coleta de geração 0 não recupera memória suficiente para que o aplicativo conclua com êxito a sua tentativa de criar um novo objeto, o coletor de lixo pode executar uma coleta de geração 1 e, então, de geração 2.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If this does not reclaim enough memory, the garbage collector can perform a collection of generations 2, 1, and 0.</source>
+          <target state="translated">Se isso não recuperar memória suficiente, o coletor de lixo poderá executar uma coleta de gerações 2, 1 e 0.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>After each collection, the garbage collector compacts the reachable objects in generation 0 and promotes them to generation 1.</source>
+          <target state="translated">Depois de cada coleta, o coletor de lixo compactará os objetos atingíveis na geração 0 e os promoverá para a geração 1.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Objects in generation 1 that survive collections are promoted to generation 2.</source>
+          <target state="translated">Os objetos na geração 1 que sobrevivem a coleções são promovidos para a geração 2.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Because the garbage collector supports only three generations, objects in generation 2 that survive a collection remain in generation 2 until they are determined to be unreachable in a future collection.</source>
+          <target state="translated">Como o coletor de lixo só dá suporte a três gerações, os objetos na geração 2 que sobrevivem a uma coleta permanecem na geração 2 até serem considerados inacessíveis em uma coleta futura.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Releasing Memory for Unmanaged Resources</source>
+          <target state="translated">Liberando memória para recursos não gerenciados</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For the majority of the objects that your application creates, you can rely on the garbage collector to automatically perform the necessary memory management tasks.</source>
+          <target state="translated">Para a maioria dos objetos que seu aplicativo cria, você pode confiar no coletor de lixo para executar automaticamente as tarefas de gerenciamento de memória necessárias.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>However, unmanaged resources require explicit cleanup.</source>
+          <target state="translated">Entretanto, recursos não gerenciados requerem limpeza explícita.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The most common type of unmanaged resource is an object that wraps an operating system resource, such as a file handle, window handle, or network connection.</source>
+          <target state="translated">O tipo mais comum de recursos não gerenciados é um objeto que encapsula um recurso do sistema operacional, como um identificador de arquivo, um identificador de janela ou uma conexão de rede.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Although the garbage collector is able to track the lifetime of a managed object that encapsulates an unmanaged resource, it does not have specific knowledge about how to clean up the resource.</source>
+          <target state="translated">Embora o coletor de lixo seja capaz de acompanhar o tempo de vida de um objeto gerenciado que encapsule um recurso não gerenciado, ele não tem conhecimento específico sobre como limpar o recurso.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>When you create an object that encapsulates an unmanaged resource, it is recommended that you provide the necessary code to clean up the unmanaged resource in a public <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated">Quando você cria um objeto que encapsula um recurso não gerenciado, é recomendável fornecer o código necessário para limpar o recurso não gerenciado em um método público <ph id="ph1">`Dispose`</ph>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>By providing a <ph id="ph1">`Dispose`</ph> method, you enable users of your object to explicitly free its memory when they are finished with the object.</source>
+          <target state="translated">Ao fornecer um método <ph id="ph1">`Dispose`</ph>, você permite que usuários do seu objeto liberem, explicitamente, sua memória quando terminarem o objeto.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>When you use an object that encapsulates an unmanaged resource, you should be aware of <ph id="ph1">`Dispose`</ph> and call it as necessary.</source>
+          <target state="translated">Quando usa um objeto que encapsula um recurso não gerenciado, você deve estar ciente de <ph id="ph1">`Dispose`</ph> e chamá-lo conforme necessário.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For more information about cleaning up unmanaged resources and an example of a design pattern for implementing <ph id="ph1">`Dispose`</ph>, see <bpt id="p1">[</bpt>Garbage Collection in .NET<ept id="p1">](index.md)</ept>.</source>
+          <target state="translated">Para obter mais informações sobre a limpeza de recursos não gerenciados e um exemplo de um padrão de design para implementar <ph id="ph1">`Dispose`</ph>, veja <bpt id="p1">[</bpt>Coleta de lixo em .NET<ept id="p1">](index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.GC<ept id="p1">](xref:System.GC)</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Coleta de lixo no .NET<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
