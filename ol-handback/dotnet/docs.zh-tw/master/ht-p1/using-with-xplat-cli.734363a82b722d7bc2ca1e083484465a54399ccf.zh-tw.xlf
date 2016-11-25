@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5493ccb77e62d20d5101728ef8ab1744ea697fb8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\using-with-xplat-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">322dbd2e537312333af977d9e712ec9ba9224db4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f1c33e824953ee06e2b9668ef7afab772d44e426</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line</source>
+          <target state="translated">使用命令列在 Windows/Linux/macOS 上開始使用 .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)</source>
+          <target state="translated">使用 .NET Core 命令列介面 (CLI) 在 Windows、Linux 或 macOS 上開始使用 .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line</source>
+          <target state="translated">使用命令列在 Windows/Linux/macOS 上開始使用 .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This guide will show you how to use the .NET Core CLI tooling to build basic cross-platform console apps.</source>
+          <target state="translated">本指南說明如何使用 .NET Core CLI 工具，來建置基本的跨平台主控台應用程式。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>If you're unfamiliar with the .NET Core CLI toolset, read <bpt id="p1">[</bpt>the .NET Core SDK overview<ept id="p1">](../sdk.md)</ept>.</source>
+          <target state="translated">如果您不熟悉 .NET Core CLI 工具組，請參閱 <bpt id="p1">[</bpt>.NET Core SDK 概觀<ept id="p1">](../sdk.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要條件</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Before you begin, ensure you have the <bpt id="p1">[</bpt>latest .NET Core CLI tooling<ept id="p1">](https://www.microsoft.com/net/core)</ept>.</source>
+          <target state="translated">在開始之前，請確定您有<bpt id="p1">[</bpt>最新的 .NET Core CLI 工具<ept id="p1">](https://www.microsoft.com/net/core)</ept>。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You'll also need a text editor.</source>
+          <target state="translated">您也需要文字編輯器。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Hello, Console App!</source>
+          <target state="translated">嗨，主控台應用程式！</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Navigate to or create a new folder with a name you like.</source>
+          <target state="translated">瀏覽至或用您喜歡的名稱建立新的資料夾。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>"Hello" is the name chosen for the sample code, which can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>.</source>
+          <target state="translated">"Hello" 是針對範例程式碼選擇的名稱，您可以在<bpt id="p1">[</bpt>這裡<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello)</ept>找到。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Open up a command prompt and type the following:</source>
+          <target state="translated">開啟命令提示字元並輸入下列命令：</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Let's do a quick walkthrough:</source>
+          <target state="translated">讓我們快速逐步解說︰</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> creates an up-to-date <ph id="ph2">`project.json`</ph> file with NuGet dependencies necessary to build a console app.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> 使用建置主控台應用程式時所需的 NuGet 相依性建立最新的 <ph id="ph2">`project.json`</ph> 檔案。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>It also creates a <ph id="ph1">`Program.cs`</ph>, a basic file containing the entry point for the application.</source>
+          <target state="translated">它也會建立 <ph id="ph1">`Program.cs`</ph>，這個基本檔案包含了應用程式的進入點。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> calls into NuGet to restore the tree of dependencies.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> 呼叫 NuGet 以還原相依性樹狀結構。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>NuGet analyzes the <ph id="ph1">`project.json`</ph> file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">NuGet 會分析 <ph id="ph1">`project.json`</ph> 檔案、下載檔案中所述的相依性 (或從您電腦上的快取抓取)，並寫入 <ph id="ph2">`project.lock.json`</ph> 檔案。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.lock.json`</ph> file is necessary to be able to compile and run.</source>
+          <target state="translated">必須要有 <ph id="ph1">`project.lock.json`</ph> 檔案才能夠編譯並執行。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.lock.json`</ph> file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.</source>
+          <target state="translated"><ph id="ph1">`project.lock.json`</ph> 檔案是一組持續性且完整的 NuGet 相依性圖形，也包含了描述應用程式的其他資訊。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This file is read by other tools, such as <ph id="ph1">`dotnet build`</ph> and <ph id="ph2">`dotnet run`</ph>, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.</source>
+          <target state="translated">其他工具，例如 <ph id="ph1">`dotnet build`</ph> 和 <ph id="ph2">`dotnet run`</ph>，會讀取這個檔案，以便它們能用正確的 NuGet 相依性集合與繫結解析，處理原始程式碼。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> calls <ph id="ph2">`dotnet build`</ph> to ensure that the build targets have been built, and then calls <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> to run the target application.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> 呼叫 <ph id="ph2">`dotnet build`</ph> 以確保建置目標已經建置好，然後呼叫 <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> 執行目標應用程式。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can also execute <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> to compile the code without running the build console applications.</source>
+          <target state="translated">您也可以執行 <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> 來編譯程式碼，而不執行建置主控台應用程式。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Building a self-contained application</source>
+          <target state="translated">建置獨立的應用程式</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Let's try compiling a self-contained application instead of a portable application.</source>
+          <target state="translated">讓我們來試試編譯獨立的應用程式，而不是可攜式應用程式。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can read more about the <bpt id="p1">[</bpt>types of portability in .NET Core<ept id="p1">](../deploying/index.md)</ept> to learn about the different application types, and how they are deployed.</source>
+          <target state="translated">您可以深入閱讀 <bpt id="p1">[</bpt>.NET Core 中的可攜性類型<ept id="p1">](../deploying/index.md)</ept>，來了解不同的應用程式類型，及其部署方式。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You need to make some changes to your <ph id="ph1">`project.json`</ph> file to direct the tools to build a self-contained application.</source>
+          <target state="translated">您需要為您的 <ph id="ph1">`project.json`</ph> 檔案進行一些變更，指引工具建立獨立的應用程式。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can see these in the <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> project in the samples directory.</source>
+          <target state="translated">您可以在範例目錄中的 <bpt id="p1">[</bpt>HelloNative<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloNative)</ept> 專案看到這些。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The first change is to remove the <ph id="ph1">`"type": "platform"`</ph> element from all dependencies.</source>
+          <target state="translated">第一項變更是從所有相依性移除 <ph id="ph1">`"type": "platform"`</ph> 元素。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This project's only dependency so far is <ph id="ph1">`"Microsoft.NETCore.App"`</ph>.</source>
+          <target state="translated">這個專案到目前為止的唯一相依性是 <ph id="ph1">`"Microsoft.NETCore.App"`</ph>。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dependencies`</ph> section should look like this:</source>
+          <target state="translated"><ph id="ph1">`dependencies`</ph> 區段應該像這樣：</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Next, you need to add a <ph id="ph1">`runtimes`</ph> node to specify all the target execution environments.</source>
+          <target state="translated">接下來，您必須新增 <ph id="ph1">`runtimes`</ph> 節點以指定所有目標執行環境。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, the following <ph id="ph1">`runtimes`</ph> node instructs the build system to create executables for the 64 bit version of Windows 10 and the 64 bit version of Mac OS X version 10.11.</source>
+          <target state="translated">例如，下列 <ph id="ph1">`runtimes`</ph> 節點會指示建置系統建立 64 位元版本 Windows 10 及 64 位元版本 Mac OS X 10.11 版的可執行檔。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The build system will generate native executables for the current environment.</source>
+          <target state="translated">建置系統會產生目前環境的原生可執行檔。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you are following these steps on a Windows machine, you'll build a Windows executable.</source>
+          <target state="translated">如果您在 Windows 電腦上依照下列步驟執行，則會建置 Windows 可執行檔。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>If you are following these steps on a Mac, you'll build the OS X executable.</source>
+          <target state="translated">如果您在 Mac 上依照下列步驟執行，則會建置 OS X 可執行檔。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>See the full list of supported runtimes in the <bpt id="p1">[</bpt>RID catalog<ept id="p1">](../rid-catalog.md)</ept>.</source>
+          <target state="translated">請參閱 <bpt id="p1">[</bpt>RID 目錄<ept id="p1">](../rid-catalog.md)</ept>中的支援執行階段完整清單。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>After making those two changes you execute <ph id="ph1">`dotnet restore`</ph>, followed by <ph id="ph2">`dotnet build`</ph> to create the native executable.</source>
+          <target state="translated">進行這兩項變更之後，請執行 <ph id="ph1">`dotnet restore`</ph>，後面接著 <ph id="ph2">`dotnet build`</ph>，建立原生的可執行檔。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Then, you can run the generated native executable.</source>
+          <target state="translated">然後，您可以執行產生的原生可執行檔。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The following example shows the commands for Windows.</source>
+          <target state="translated">下列範例顯示適用於 Windows 的命令。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The example shows where the native executable gets generated and assumes that the project directory is named HelloNative.</source>
+          <target state="translated">此範例會顯示產生原生可執行檔的位置，並假設專案目錄名為 HelloNative。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You may notice that the native application takes slightly longer to build, but executes slightly faster.</source>
+          <target state="translated">您可能會注意到，原生應用程式需要稍微較長的時間來建置，但執行速度稍微較快。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This behavior becomes more noticeable as the application grows.</source>
+          <target state="translated">這種行為會隨著應用程式成長而更明顯。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The build process generates several more files when your <ph id="ph1">`project.json`</ph> creates a native build.</source>
+          <target state="translated">在您的 <ph id="ph1">`project.json`</ph> 建立原生組建時，建置程序會產生數個額外檔案。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These files are created in <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph> where <ph id="ph2">`&lt;platform&gt;`</ph> is the RID chosen.</source>
+          <target state="translated">這些檔案建立於 <ph id="ph1">`bin\Debug\netcoreapp1.0\&lt;platform&gt;`</ph>，其中 <ph id="ph2">`&lt;platform&gt;`</ph> 是選擇的 RID。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In addition to the project's <ph id="ph1">`HelloNative.dll`</ph> there is a <ph id="ph2">`HelloNative.exe`</ph> that loads the runtime and starts the application.</source>
+          <target state="translated">除了專案的 <ph id="ph1">`HelloNative.dll`</ph> 之外，還有 <ph id="ph2">`HelloNative.exe`</ph>，它會載入執行階段，並啟動應用程式。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Note that the name of the generated application changed because the project directory's name has changed.</source>
+          <target state="translated">請注意，產生的應用程式名稱已變更，因為專案目錄的名稱已變更。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>You may want to package this application to execute it on a machine that does not include the .NET runtime.</source>
+          <target state="translated">若要在不包含 .NET 執行階段的電腦上執行此應用程式，請封裝此應用程式。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You do that using the <ph id="ph1">`dotnet publish`</ph> command.</source>
+          <target state="translated">您可以使用 <ph id="ph1">`dotnet publish`</ph> 命令來完成。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`dotnet publish`</ph> command creates a new subdirectory under the <ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> directory called <ph id="ph3">`publish`</ph>.</source>
+          <target state="translated"><ph id="ph1">`dotnet publish`</ph> 命令會在 <ph id="ph2">`./bin/Debug/netcoreapp1.0/&lt;platform&gt;`</ph> 目錄下建立新的子目錄，名為 <ph id="ph3">`publish`</ph>。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>It copies the executable, all dependent DLLs and the framework to this sub directory.</source>
+          <target state="translated">它會將可執行檔、所有相依的 DLL，以及架構都複製到這個子目錄。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You can package that directory to another machine (or a container) and execute the application there.</source>
+          <target state="translated">您可以封裝該目錄到另一部電腦 (或容器)，然後在該處執行應用程式。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Let's contrast that with the behavior of <ph id="ph1">`dotnet publish`</ph> in the first Hello World sample.</source>
+          <target state="translated">讓我們比較第一個 Hello World 範例中的 <ph id="ph1">`dotnet publish`</ph> 行為。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>That application is a <bpt id="p1">*</bpt>portable application<ept id="p1">*</ept>, which is the default type of application for .NET Core.</source>
+          <target state="translated">該應用程式是「可攜式應用程式」，這是 .NET Core 應用程式的預設類型。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A portable application requires that .NET Core is installed on the target machine.</source>
+          <target state="translated">可攜式應用程式需要在目標電腦上安裝 .NET Core。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Portable applications can be built on one machine and executed anywhere.</source>
+          <target state="translated">可攜式應用程式可在一部電腦上建置，然後在任何位置執行。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Native applications must be built separately for each target machine.</source>
+          <target state="translated">原生應用程式則必須個別針對每一部目標電腦而建置。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet publish`</ph> creates a directory that has the application's DLL, and any dependent dlls that are not part of the platform installation.</source>
+          <target state="translated"><ph id="ph1">`dotnet publish`</ph>建立一個目錄，其中具有應用程式的 DLL，以及不屬於平台安裝一部分的任何相依 dll。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Augmenting the program</source>
+          <target state="translated">擴充程式</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Let's change the file just a little bit.</source>
+          <target state="translated">讓我們稍微變更檔案。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Fibonacci numbers are fun, so let's try that out (using the native version):</source>
+          <target state="translated">Fibonacci 數字很有趣，因此讓我們來試試 (使用原生的版本)︰</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):</source>
+          <target state="translated">並執行程式 (假設您是在 Windows 上，並且已將專案目錄名稱變更為 Fibonacci)︰</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是這麼容易！</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>You can augment <ph id="ph1">`Program.cs`</ph> any way you like.</source>
+          <target state="translated">您可以隨意擴充 <ph id="ph1">`Program.cs`</ph>。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Adding some new files</source>
+          <target state="translated">新增一些新的檔案</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.</source>
+          <target state="translated">單一檔案很適合用於簡單的一次性程式，但有可能您會想要分成多個檔案，如果您在建置具有多個元件的任何項目的話。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Multiple files are a way to do that.</source>
+          <target state="translated">多個檔案是這麼做的一個方法。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Create a new file and give it a unique namespace:</source>
+          <target state="translated">建立新的檔案，並給它唯一的命名空間︰</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Next, include it in your <ph id="ph1">`Program.cs`</ph> file:</source>
+          <target state="translated">接下來，將它包含在您的 <ph id="ph1">`Program.cs`</ph> 檔案︰</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>And finally, you can build it:</source>
+          <target state="translated">最後，可以建置它︰</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Now the fun part: making the new file do something!</source>
+          <target state="translated">再來是有趣的部分︰讓新的檔案執行某些動作！</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Example: A Fibonacci Sequence Generator</source>
+          <target state="translated">範例︰Fibonacci 序列產生器</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Let's say you want to build off of the previous <bpt id="p1">[</bpt>Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept> by caching some Fibonacci values and add some recursive flair.</source>
+          <target state="translated">假設您想要藉由快取某些 Fibonacci 值，再新增一些遞迴效果，從先前的 <bpt id="p1">[</bpt>Fibonacci 範例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Fibonacci)</ept> 開始建置。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Your code for a <bpt id="p1">[</bpt>better Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept> might look something like this:</source>
+          <target state="translated">您的<bpt id="p1">[</bpt>更好的 Fibonacci 範例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetter)</ept>的程式碼看起來可能像這樣︰</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Note that the use of <ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> and <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> means incorporating the <ph id="ph3">`System.Collections`</ph> namespace.</source>
+          <target state="translated">請注意，使用 <ph id="ph1">`Dictionary&lt;int, int&gt;`</ph> 和 <ph id="ph2">`IEnumerable&lt;int&gt;`</ph> 表示會併入 <ph id="ph3">`System.Collections`</ph> 命名空間。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Microsoft.NetCore.App`</ph> package is a <bpt id="p1">*</bpt>metapackage<ept id="p1">*</ept> that contains many of the core assemblies from the .NET Framework.</source>
+          <target state="translated"><ph id="ph1">`Microsoft.NetCore.App`</ph> 套件是「中繼套件」，其中包含許多來自 .NET Framework 的核心組件。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>By including this metapackage, you've already included the <ph id="ph1">`System.Collections.dll`</ph> assembly as part of your project.</source>
+          <target state="translated">藉由包含這個中繼套件，您便已經將 <ph id="ph1">`System.Collections.dll`</ph> 組件包含為專案的一部分。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You can verify this by running <ph id="ph1">`dotnet publish`</ph> and examining the files that are part of the installed package.</source>
+          <target state="translated">您可以執行 <ph id="ph1">`dotnet publish`</ph> 並檢查屬於所安裝套件一部分的檔案，確認這點。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>You'll see <ph id="ph1">`System.Collections.dll`</ph> in the list.</source>
+          <target state="translated">您會在清單中看到 <ph id="ph1">`System.Collections.dll`</ph>。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Now adjust the <ph id="ph1">`Main()`</ph> method in your <ph id="ph2">`Program.cs`</ph> file as shown below.</source>
+          <target state="translated">現在，請如下所示調整 <ph id="ph2">`Program.cs`</ph> 檔案中的 <ph id="ph1">`Main()`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The example assumes that <ph id="ph1">`Program.cs`</ph> has a <ph id="ph2">`using System;`</ph> statement.</source>
+          <target state="translated">這個範例假設 <ph id="ph1">`Program.cs`</ph> 有 <ph id="ph2">`using System;`</ph> 陳述式。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If you have a <ph id="ph1">`using static System.Console;`</ph> statement, remove <ph id="ph2">`Console.`</ph> from <ph id="ph3">`Console.WriteLine`</ph>.</source>
+          <target state="translated">如果您有 <ph id="ph1">`using static System.Console;`</ph> 陳述式，請從 <ph id="ph3">`Console.WriteLine`</ph> 移除 <ph id="ph2">`Console.`</ph>。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Finally, run it!</source>
+          <target state="translated">最後，執行應用程式！</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是這麼容易！</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Using folders to organize code</source>
+          <target state="translated">使用資料夾來組織程式碼</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Say you wanted to introduce some new types to do work on.</source>
+          <target state="translated">假設您想要引進一些新的類型來使用。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>You can do this by adding more files and making sure to give them namespaces you can include in your <ph id="ph1">`Program.cs`</ph> file.</source>
+          <target state="translated">您可以藉由新增更多檔案，並確定給予它們可包含在您 <ph id="ph1">`Program.cs`</ph> 檔案中的命名空間，來達到此目的。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This works great when the size of your project is relatively small.</source>
+          <target state="translated">這很適合您的專案相當小的時候。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.</source>
+          <target state="translated">不過，如果您有較大的應用程式，並且使用許多不同的資料類型，且可能有多個層時，您可能會想以邏輯方式來組織項目。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This is where folders come into play.</source>
+          <target state="translated">這就是資料夾派上用場的時刻。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You can either follow along with <bpt id="p1">[</bpt>the NewTypes sample project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept> that this guide covers, or create your own files and folders.</source>
+          <target state="translated">您可以遵照本指南介紹的 <bpt id="p1">[</bpt>NewTypes 範例專案<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>，或建立自己的檔案和資料夾。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>To begin, create a new folder under the root of your project.</source>
+          <target state="translated">若要開始，請在專案的根目錄下建立新的資料夾。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`/Model`</ph> is chosen here.</source>
+          <target state="translated"><ph id="ph1">`/Model`</ph>在這裡選擇。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Now add some new types to the folder:</source>
+          <target state="translated">現在，請新增一些新的類型到資料夾中︰</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your <ph id="ph1">`Program.cs`</ph>.</source>
+          <target state="translated">現在，就彷彿它們是相同目錄中的檔案，請給予它們相同的命名空間，然後您就可以將其包含在您的 <ph id="ph1">`Program.cs`</ph>。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Example: Pet Types</source>
+          <target state="translated">範例︰寵物類型</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>This example creates two new types, <ph id="ph1">`Dog`</ph> and <ph id="ph2">`Cat`</ph>, and has them implement an interface, <ph id="ph3">`IPet`</ph>.</source>
+          <target state="translated">這個範例會建立兩個新的類型：<ph id="ph1">`Dog`</ph> 和 <ph id="ph2">`Cat`</ph>，並且實作介面 <ph id="ph3">`IPet`</ph>。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Folder Structure:</source>
+          <target state="translated">資料夾結構：</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IPet.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`IPet.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Dog.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Dog.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Cat.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Cat.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>And if you run this:</source>
+          <target state="translated">而且，如果您執行它︰</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>New pet types can be added (such as a <ph id="ph1">`Bird`</ph>), extending this project.</source>
+          <target state="translated">可以新增新的寵物類型 (例如 <ph id="ph1">`Bird`</ph>)，擴充此專案。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Testing your Console App</source>
+          <target state="translated">測試主控台應用程式</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>You'll probably be wanting to test your projects at some point.</source>
+          <target state="translated">您可能會想要在某個時間點測試您的專案。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Here's a good way to do it:</source>
+          <target state="translated">以下是很好的作法︰</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Move any source of your existing project into a new <ph id="ph1">`src`</ph> folder.</source>
+          <target state="translated">將現有專案的任何來源移至新的 <ph id="ph1">`src`</ph> 資料夾。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`/test`</ph> directory.</source>
+          <target state="translated">建立 <ph id="ph1">`/test`</ph> 目錄。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Create a new <ph id="ph1">`global.json`</ph> file:</source>
+          <target state="translated">建立新的 <ph id="ph1">`global.json`</ph> 檔案：</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`global.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`global.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This file tells the build system that this is a multi-project system, which allows it to look for dependencies in more than just the current folder it happens to be executing in.</source>
+          <target state="translated">這個檔案會告訴建置系統，這是多專案的系統，如此可讓它到它處尋找相依性，而不只是在剛好執行所在的目前資料夾。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>This is important because it allows you to place a dependency on the code under test in your test project.</source>
+          <target state="translated">這很重要，因為它可讓您將對測試中之程式碼的相依性，放在您的測試專案中。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Example: Extending the NewTypes project</source>
+          <target state="translated">範例︰擴充 NewTypes 專案</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Now that the project system is in place, you can create your test project and start writing tests!</source>
+          <target state="translated">現在，專案系統已就緒，您可以建立測試專案，並開始撰寫測試！</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>From here on out, this guide will use and extend <bpt id="p1">[</bpt>the sample Types project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>.</source>
+          <target state="translated">從現在開始，本指南會使用和擴充<bpt id="p1">[</bpt>範例 Types 專案<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypes)</ept>。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Additionally, it will use the <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> test framework.</source>
+          <target state="translated">此外，它會使用 <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> 測試架構。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Feel free to follow along or create your own multi-project system with tests.</source>
+          <target state="translated">請放心地依照指示進行，或建立自己的多專案系統與測試。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The whole project structure should look like this:</source>
+          <target state="translated">整個專案結構看起來應該像這樣︰</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>There are two new things to make sure you have in your test project:</source>
+          <target state="translated">您的測試專案中需要確定有兩樣新的項目︰</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>A correct <ph id="ph1">`project.json`</ph> with the following:</source>
+          <target state="translated">正確的 <ph id="ph1">`project.json`</ph>，並具有下列各項︰</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`xunit`</ph></source>
+          <target state="translated">參考<ph id="ph1">`xunit`</ph></target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph></source>
+          <target state="translated">參考<ph id="ph1">`dotnet-test-xunit`</ph></target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>A reference to the namespace corresponding to the code under test</source>
+          <target state="translated">對應至測試中程式碼的命名空間參考</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>An Xunit test class.</source>
+          <target state="translated">Xunit 測試類別。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NewTypesTests/project.json`</ph>:</source>
+          <target state="translated"><ph id="ph1">`NewTypesTests/project.json`</ph>:</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PetTests.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`PetTests.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Now you can run tests!</source>
+          <target state="translated">現在您可以執行測試了！</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> command runs the test runner you have specified in your project.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> 命令會執行您的專案中所指定的測試執行器。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Make sure you start at the top-level directory.</source>
+          <target state="translated">請確定您在最上層目錄啟動。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Output should look like this:</source>
+          <target state="translated">輸出應該看起來像這樣︰</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">結論</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.</source>
+          <target state="translated">希望本指南已協助您了解如何建立 .NET Core 主控台應用程式，從基礎一直到具有單元測試的多專案系統。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The next step is to create awesome console apps of your own!</source>
+          <target state="translated">下一個步驟是建立您自己的出色主控台應用程式！</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>If a more advanced example of a console app interests you, check out the next tutorial: <bpt id="p1">[</bpt>Using the CLI tools to write console apps: An advanced step-by-step guide<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>.</source>
+          <target state="translated">如果您對更進階的主控台應用程式範例感興趣，請參閱下一個教學課程︰<bpt id="p1">[</bpt>使用 CLI 工具來撰寫主控台應用程式︰進階的逐步指南<ept id="p1">](cli-console-app-tutorial-advanced.md)</ept>。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
