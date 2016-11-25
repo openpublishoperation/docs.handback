@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b17021e79bcdb2dc69f97b709f4aa63dbab9aa</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tutorials\using-with-xplat-cli-msbuild.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f4687c866d3e890d8a186aa37ff5cdea27ffe4b8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">80690ec3287d1b867fca08669e2a6f0351ed22df</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK Preview 3)</source>
+          <target state="translated">Erste Schritte mit .NET Core unter Windows/Linux/macOS unter Verwendung der Befehlszeile (SDK Preview 3)</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)</source>
+          <target state="translated">Erste Schritte mit .NET Core unter Windows, Linux oder Mac OS unter Verwendung der .NET Core-Befehlszeilenschnittstelle (CLI)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK Preview 3)</source>
+          <target state="translated">Erste Schritte mit .NET Core unter Windows/Linux/macOS unter Verwendung der Befehlszeile (SDK Preview 3)</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.</source>
+          <target state="translated">In diesem Leitfaden erfahren Sie, wie Sie mit den Tools der .NET Core-Befehlszeilenschnittstelle plattformübergreifende Konsolen-Apps erstellen können.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It will start with the most basic console app and eventually span multiple projects, including testing.</source>
+          <target state="translated">Dabei wird mit einer ganz einfachen Konsolen-App begonnen, die immer mehr erweitert wird und sich über mehrere Projekte einschließlich Tests erstreckt.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You'll add these features step-by-step, building on what you've already seen and built.</source>
+          <target state="translated">Die einzelnen Funktionen werden schrittweise hinzugefügt, wobei die einzelnen Schritte aufeinander aufbauen.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you're unfamiliar with the .NET Core CLI toolset, read <bpt id="p1">[</bpt>the .NET Core SDK overview<ept id="p1">](../tools/dotnet.md)</ept>.</source>
+          <target state="translated">Wenn Sie mit dem Toolset der .NET Core-Befehlszeilenschnittstelle nicht vertraut sind, finden Sie entsprechende Informationen in der <bpt id="p1">[</bpt>Übersicht über das .NET Core SDK<ept id="p1">](../tools/dotnet.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Erforderliche Komponenten</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Before you begin, ensure you have <bpt id="p1">[</bpt>.NET Core CLI tooling Preview 3 or later<ept id="p1">](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)</ept>.</source>
+          <target state="translated">Stellen Sie vor Beginn sicher, dass die <bpt id="p1">[</bpt>Tools der .NET Core-CLI der Preview 3-Version<ept id="p1">](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)</ept> installiert sind.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You'll also need a text editor.</source>
+          <target state="translated">Außerdem benötigen Sie einen Text-Editor.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Hello, Console App!</source>
+          <target state="translated">Hallo Konsolenanwendung!</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>First, navigate to or create a new folder with a name you like.</source>
+          <target state="translated">Erstellen Sie zunächst einen Ordner mit einem beliebigen Namen.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>"Hello" is the name chosen for the sample code, which can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild)</ept>.</source>
+          <target state="translated">Wir haben den Namen „Hello“ für den Beispielcode verwendet, der <bpt id="p1">[</bpt>hier<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild)</ept> zu finden ist.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Open up a command prompt and type the following:</source>
+          <target state="translated">Öffnen Sie die Eingabeaufforderung, und geben Sie folgenden Befehl ein:</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Let's do a quick walkthrough:</source>
+          <target state="translated">Hier eine kurze Beschreibung der Schritte:</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> creates an up-to-date <ph id="ph2">`Hello.csproj`</ph> project file with the dependencies necessary to build a console app.</source>
+          <target state="translated">Mit <bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> wird eine aktuelle Projektdatei <ph id="ph2">`Hello.csproj`</ph> mit den Abhängigkeiten erstellt, die zum Erstellen einer Konsolen-App benötigt werden.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>It also creates a <ph id="ph1">`Program.cs`</ph>, a basic file containing the entry point for the application.</source>
+          <target state="translated">Zudem wird <ph id="ph1">`Program.cs`</ph> erstellt. Hierbei handelt es sich um eine einfache Datei, die den Einstiegspunkt für die Anwendung enthält.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Hello.csproj`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Hello.csproj`</ph>:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The project file specifies everything that's needed to restore dependencies and build the program.</source>
+          <target state="translated">Die Projektdatei gibt alle Elemente an, die zum Wiederherstellen von Abhängigkeiten und erstellen des Programms erforderlich sind.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Import`</ph> tag brings in some properties that are common to all .NET Core projects.</source>
+          <target state="translated">Das Tag <ph id="ph1">`Import`</ph> fügt einige Eigenschaften hinzu, die alle .NET Core-Projekte gemeinsam haben.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`OutputType`</ph> tag specifies that we're building an executable, in other words a console application.</source>
+          <target state="translated">Das Tag <ph id="ph1">`OutputType`</ph> gibt an, dass wir eine ausführbare Datei, also eine Konsolenanwendung, erstellen.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TargetFramework`</ph> tag specifies what .NET runtime we're targeting.</source>
+          <target state="translated">Das Tag <ph id="ph1">`TargetFramework`</ph> gibt an, welche .NET Runtime wir als Ziel haben.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In an advance scenario, you can specify multiple target frameworks and build to all those in a single operation.</source>
+          <target state="translated">In einem komplexen Szenario können Sie mehrere Zielframeworks angeben und die Erstellung für diese in einem einzigen Vorgang vornehmen.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In this tutorial, we'll stick to building only for .NET Core 1.0.</source>
+          <target state="translated">In diesem Tutorial beschränken wir uns auf Builds für .NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Compile`</ph> tag tells the compiler to build all the files in the current directory and all its subdirectories that have the <ph id="ph2">`.cs`</ph> file extension, in other words all the C# files in the project.</source>
+          <target state="translated">Das Tag <ph id="ph1">`Compile`</ph> weist den Compiler an, alle Dateien im aktuellen Verzeichnis und allen seinen Unterverzeichnisse mit der Erweiterung <ph id="ph2">`.cs`</ph> zu erstellen, also alle C#-Dateien im Projekt.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In advanced scenarios, it is possible to exclude files, but in this tutorial, and in most simple scenarios, this line can be left unchanged.</source>
+          <target state="translated">In komplexen Szenarien ist es möglich, Dateien auszuschließen. Doch in diesem Tutorial und in den meisten einfachen Szenarien kann diese Zeile unverändert bleiben.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`EmbeddedResource`</ph> tag instructs the build system to embed localization files with the extension <ph id="ph2">`.resx`</ph> into the compiled executable.</source>
+          <target state="translated">Das Tag <ph id="ph1">`EmbeddedResource`</ph> weist das Buildsystem an, Lokalisierungsdateien mit der Erweiterung <ph id="ph2">`.resx`</ph> in die kompilierte ausführbare Datei einzubetten.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>We won't use that feature in this tutorial.</source>
+          <target state="translated">Dieses Feature verwenden wird in diesem Tutorial nicht.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PackageReference`</ph> tags specify what dependency packages must be restored and included when building the application.</source>
+          <target state="translated">Die <ph id="ph1">`PackageReference`</ph>-Tags geben an, welche Abhängigkeitspakete beim Erstellen der Anwendung wiederhergestellt werden müssen.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Each package reference specifies the name of the package under the <ph id="ph1">`Include`</ph> attribute, and a version number.</source>
+          <target state="translated">Jeder Paketverweis gibt den Namen des Pakets unter dem <ph id="ph1">`Include`</ph>-Attribut und eine Versionsnummer an.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In most advanced scenarios, you'll add more package references.</source>
+          <target state="translated">In den meisten komplexen Szenarien fügen Sie weitere Paketverweise hinzu.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>It is also possible to reference other projects on disk.</source>
+          <target state="translated">Es ist auch möglich, auf andere Projekte auf dem Datenträger zu verweisen.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The program starts by <ph id="ph1">`using System`</ph>, which means "bring everything in the <ph id="ph2">`System`</ph> namespace into scope for this file".</source>
+          <target state="translated">Das Programm startet mithilfe von <ph id="ph1">`using System`</ph>, was bedeutet, dass alles im Namespace <ph id="ph2">`System`</ph> in den Geltungsbereich für diese Datei gebracht wird.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`System`</ph> namespace includes basic constructs such as <ph id="ph2">`string`</ph>, or numeric types.</source>
+          <target state="translated">Der Namespace <ph id="ph1">`System`</ph> enthält grundlegende Konstrukte, wie z.B. <ph id="ph2">`string`</ph>, oder numerische Typen.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>We then define a namespace called "ConsoleApplication".</source>
+          <target state="translated">Wir definieren dann einen Namespace mit dem Namen „ConsoleApplication“.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can change this to anything you want.</source>
+          <target state="translated">Sie können diesen Namen nach Wunsch ändern.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A class named "Program" is defined within that namespace, with a <ph id="ph1">`Main`</ph> method that takes an array of strings as its argument.</source>
+          <target state="translated">Eine Klasse namens „Program“ wird in diesem Namespace definiert, die über eine <ph id="ph1">`Main`</ph>-Methode verfügt, welche ein Array von Zeichenfolgen als Argument verwendet.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This array will contain the list of arguments passed in when the compiled program will be called.</source>
+          <target state="translated">Dieses Array enthält die Liste mit Argumenten, die übergeben werden, wenn das kompilierte Programm aufgerufen wird.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>As it is, this array is not used: all the program is doing is to write "Hello World!"</source>
+          <target state="translated">Dieses Array wird allerdings nicht verwendet. Die Anwendung gibt lediglich „Hello World!“</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>to the console.</source>
+          <target state="translated">auf der Konsole aus.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>We can make things a little more interesting by changing the <ph id="ph1">`Console.WriteLine`</ph> into the following code.</source>
+          <target state="translated">Wir können die Dinge ein wenig interessanter gestalten, indem wir <ph id="ph1">`Console.WriteLine`</ph> in den folgenden Code ändern.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> calls into <bpt id="p2">[</bpt>NuGet<ept id="p2">](http://nuget.org)</ept> (.NET's package manager) to restore the tree of dependencies.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> führt einen Aufruf in <bpt id="p2">[</bpt>NuGet<ept id="p2">](http://nuget.org)</ept> (dem Paket-Manager von .NET) aus, um die Struktur der Abhängigkeiten wiederherzustellen.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>NuGet analyzes the <ph id="ph1">`Hello.csproj`</ph> file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the <ph id="ph2">`obj/project.assets.json`</ph> file.</source>
+          <target state="translated">NuGet analysiert die Datei <ph id="ph1">`Hello.csproj`</ph>, lädt die in der Datei angegebenen Abhängigkeiten herunter (oder ruft diese aus einem Cache auf Ihrem Computer ab) und schreibt die Datei <ph id="ph2">`obj/project.assets.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.assets.json`</ph> file is necessary to be able to compile and run.</source>
+          <target state="translated">Die Datei <ph id="ph1">`project.assets.json`</ph> ist zum Kompilieren und Ausführen erforderlich.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.assets.json`</ph> file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.</source>
+          <target state="translated">Bei der Datei <ph id="ph1">`project.assets.json`</ph> handelt es sich um eine persistente und umfassende Gruppe des Diagramms von NuGet-Abhängigkeiten und anderen Informationen, die eine Anwendung beschreiben.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This file is read by other tools, such as <ph id="ph1">`dotnet build`</ph> and <ph id="ph2">`dotnet run`</ph>, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.</source>
+          <target state="translated">Diese Datei wird von anderen Tools wie <ph id="ph1">`dotnet build`</ph> und <ph id="ph2">`dotnet run`</ph> gelesen, die dadurch in die Lage versetzt werden, den Quellcode mit einer vorschriftsmäßigen Menge von NuGet-Abhängigkeiten und Bindungsauflösungen zu verarbeiten.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> calls <ph id="ph2">`dotnet build`</ph> to ensure that the build targets have been built, and then calls <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> to run the target application.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> ruft <ph id="ph2">`dotnet build`</ph> auf, um sicherzustellen, dass die Buildziele erstellt wurden, und ruft anschließend <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> auf, um die Zielanwendung auszuführen.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can also execute <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> to compile the code without running the build console applications.</source>
+          <target state="translated">Sie können alternativ <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> ausführen, um den Code zu kompilieren, ohne die Konsolenanwendungen des Builds auszuführen.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This results in a <ph id="ph1">`bin/Debug/netcoreapp1.0/Hello.dll`</ph> compiled application that can be run with <ph id="ph2">`dotnet bin\Debug\netcoreapp1.0\Hello.dll`</ph> on Windows, and <ph id="ph3">`dotnet bin/Debug/netcoreapp1.0/Hello.dll`</ph> on other systems.</source>
+          <target state="translated">Dies führt zur kompilierten Anwendung <ph id="ph1">`bin/Debug/netcoreapp1.0/Hello.dll`</ph>, die mit <ph id="ph2">`dotnet bin\Debug\netcoreapp1.0\Hello.dll`</ph> unter Windows und mit <ph id="ph3">`dotnet bin/Debug/netcoreapp1.0/Hello.dll`</ph> auf anderen Systemen ausgeführt werden kann.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You may specify an additional parameter on the command-line (assuming you are on Windows):</source>
+          <target state="translated">Sie können in der Befehlszeile einen zusätzlichen Parameter angeben (vorausgesetzt, Sie arbeiten unter Windows):</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>As an advanced scenario, it's possible to build the application as a self-contained set of platform-specific files that can be deployed and run to a machine that doesn't necessarily have .NET Core installed.</source>
+          <target state="translated">In einem komplexen Szenario ist es möglich, die Anwendung als eigenständigen Satz plattformspezifischer Dateien zu erstellen, die auf einen Computer bereitgestellt und ausgeführt werden können, auf dem nicht notwendigerweise .NET Core installiert ist.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>.NET Core Application Deployment<ept id="p1">](../deploying/index.md)</ept> for details.</source>
+          <target state="translated">Details finden Sie unter <bpt id="p1">[</bpt>.NET Core-Anwendungsbereitstellung<ept id="p1">](../deploying/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Augmenting the program</source>
+          <target state="translated">Erweitern des Programms</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Let's change the file just a little bit.</source>
+          <target state="translated">Verändern wir nun die Datei ein wenig.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Fibonacci numbers are fun, so let's try that out:</source>
+          <target state="translated">Fibonacci-Zahlen machen Spaß, also probieren wir das aus:</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):</source>
+          <target state="translated">Führen wir das Programm aus (dabei gehen wir davon aus, dass Sie mit Windows arbeiten und das Projektverzeichnis in „Fibonacci“ umbenannt haben):</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">Und das ist schon alles!</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can augment <ph id="ph1">`Program.cs`</ph> any way you like.</source>
+          <target state="translated">Sie können <ph id="ph1">`Program.cs`</ph> beliebig erweitern.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Adding some new files</source>
+          <target state="translated">Hinzufügen neuer Dateien</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.</source>
+          <target state="translated">Einzelne Dateien können problemlos zu einfachen Einmalprogrammen hinzugefügt werden. Wenn Sie jedoch ein Programm mit mehreren Komponenten erstellen, werden Sie die Dinge wahrscheinlich in mehreren Dateien ausgliedern wollen.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Multiple files are a way to do that.</source>
+          <target state="translated">Eine Möglichkeit, dies zu tun, ist die Verwendung mehrerer Dateien.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Create a new file and give it a unique namespace:</source>
+          <target state="translated">Erstellen Sie eine neue Datei, und geben Sie ihr einen eindeutigen Namespace:</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Next, include it in your <ph id="ph1">`Program.cs`</ph> file:</source>
+          <target state="translated">Als Nächstes fügen Sie sie in die Datei <ph id="ph1">`Program.cs`</ph> ein:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>And finally, you can build it:</source>
+          <target state="translated">Und schließlich können Sie sie erstellen:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Now the fun part: making the new file do something!</source>
+          <target state="translated">Nun kommt der unterhaltsame Teil: Sorgen Sie dafür, dass die neue Datei etwas tut.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Example: A Fibonacci Sequence Generator</source>
+          <target state="translated">Beispiel: Generator für Fibonacci-Folgen</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Let's say you want to build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive flair.</source>
+          <target state="translated">Angenommen, Sie möchten das vorherige Fibonacci-Beispiel weiterentwickeln, indem Sie einige Fibonacci-Werte zwischenspeichern und einige rekursive Funktionen hinzufügen.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Your code for a <bpt id="p1">[</bpt>better Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetterMsBuild)</ept> might use a new <ph id="ph1">`FibonacciGenerator.cs`</ph> file with the following code.</source>
+          <target state="translated">Der Code für ein <bpt id="p1">[</bpt>besseres Fibonacci-Beispiel<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetterMsBuild)</ept> kann eine neue Datei <ph id="ph1">`FibonacciGenerator.cs`</ph> mit dem folgenden Code verwenden.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Now adjust the <ph id="ph1">`Main()`</ph> method in your <ph id="ph2">`Program.cs`</ph> file as shown below.</source>
+          <target state="translated">Passen Sie nun die <ph id="ph1">`Main()`</ph>-Methode in der Datei <ph id="ph2">`Program.cs`</ph> wie folgt an.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Finally, run it!</source>
+          <target state="translated">Führen Sie die Datei anschließend aus.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">Und das ist schon alles!</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">Schlussfolgerung</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.</source>
+          <target state="translated">In dieser Anleitung wurde beschrieben, wie eine .NET Core-Konsolenanwendung erstellt wird. Dabei wurde mit einer einfachen Konsolenanwendung begonnen, die schrittweise zu einem System mit mehreren Projekten und Unittests erweitert wurde.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The next step is to create awesome console apps of your own!</source>
+          <target state="translated">Im nächsten Schritt erstellen Sie eigene beeindruckende Konsolenanwendungen.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If a more advanced example of a console app interests you, check out the next tutorial: <bpt id="p1">[</bpt>Organizing and testing projects with the .NET Core command line (SDK Preview 3)<ept id="p1">](using-with-xplat-cli-msbuild-folders.md)</ept>.</source>
+          <target state="translated">Wenn Sie an einem komplexeres Beispiel der Konsolen-App interessiert sind, sehen Sie sich das nächste Tutorial über das <bpt id="p1">[</bpt>Organisieren und Testen von Projekten mit der .NET Core-Befehlszeile (SDK Preview 3)<ept id="p1">](using-with-xplat-cli-msbuild-folders.md)</ept> an.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
