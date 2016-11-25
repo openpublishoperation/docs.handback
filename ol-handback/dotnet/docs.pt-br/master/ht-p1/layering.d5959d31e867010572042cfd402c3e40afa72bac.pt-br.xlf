@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">233d365b582c274cd3a1f078846a6e854c7a6c95</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\layering.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2d631122c1ab87bfc94c77ec9fc9d33c1599ead7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f85c48891bdd2e31e9b5279289b09b07c63150a0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core Command Line Tools Preview 3 Architecture</source>
+          <target state="translated">Arquitetura das Ferramentas da Linha de Comando da Visualização 3 do .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Preview 3 brings about certain changes to the way the overall .NET Core tools are layered.</source>
+          <target state="translated">A Visualização 3 traz determinadas alterações na forma como as ferramentas gerais do .NET Core são colocadas em camadas.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, extensibilidade, comandos personalizados, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>High level overview of changes in CLI Preview 3</source>
+          <target state="translated">Visão geral de nível alto das alterações na CLI da Visualização 3</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Visão Geral</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document will describe in high-level the changes that moving from <ph id="ph1">`project.json`</ph> to MSBuild and <ph id="ph2">`csproj`</ph> project system bring.</source>
+          <target state="translated">Este documento descreverá em alto nível as alterações causadas pela mudança de <ph id="ph1">`project.json`</ph> para o MSBuild e o sistema de projeto <ph id="ph2">`csproj`</ph>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It will outline the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture.</source>
+          <target state="translated">Ele descreverá a nova maneira pela qual as ferramentas são todas colocadas em camadas e quais peças novas estão disponíveis, bem como seus lugares no quadro geral.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and <ph id="ph1">`csproj`</ph>.</source>
+          <target state="translated">Após ler este artigo, você terá uma compreensão melhor sobre todas as partes que compõem as ferramentas do .NET Core após a mudança para o MSBuild e <ph id="ph1">`csproj`</ph>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> this article is <bpt id="p2">**</bpt>not required<ept id="p2">**</ept> to use the Preview 3 .NET Core Command Line tools.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Observação:<ept id="p1">**</ept> este artigo é <bpt id="p2">**</bpt>não é necessário<ept id="p2">**</ept> para usar as ferramentas de Linha de Comando da Visualização 3 do .NET Core.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>you can continue using the tools as you are used to.</source>
+          <target state="translated">Você pode continuar usando as ferramentas às quais está acostumado.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article is here to complete the picture of how the move to MSBuild changes the overall "layering" and the architecture of the command line tools.</source>
+          <target state="translated">Este artigo está completa o quadro de como a mudança para o MSBuild altera a "camada" geral e a arquitetura das ferramentas de linha de comando.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Moving away from project.json</source>
+          <target state="translated">Deixando o project.json</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The biggest change in the Preview 3 tooling for .NET Core is certainly the <bpt id="p1">[</bpt>move away from project.json to csproj<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> as the project system.</source>
+          <target state="translated">A maior alteração na ferramentas da Visualização 3 do .NET Core é certamente a <bpt id="p1">[</bpt>mudança do project.json para o csproj<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> como sistema de projeto.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Preview 3 version of the command line tools is the first release of .NET Core command line tooling that does not contain any support for project.json.</source>
+          <target state="translated">A versão de Visualização 3 das ferramentas de linha de comando é a primeira versão das ferramentas de linha de comando do .NET Core que não oferece suporte ao project.json.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>That means that it cannot be used to build, run or publish project.json based applications and libraries.</source>
+          <target state="translated">Isso significa que ele não pode ser usado para compilar, executar ou publicar aplicativos e bibliotecas baseados no project.json.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In order to use this version of the tools, you will need to migrate your existing projects or start new ones.</source>
+          <target state="translated">Para usar essa versão das ferramentas, é necessário migrar os projetos existentes ou iniciar projetos novos.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/msbuild)</ept>.</source>
+          <target state="translated">Como parte dessa mudança, o mecanismo de build personalizado desenvolvido para compilar projetos project.json foi substituído por um mecanismo de build maduro e totalmente capaz, chamado <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/msbuild)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release.</source>
+          <target state="translated">O MSBuild é um mecanismo conhecido na comunidade do .NET, pois que tem sido uma tecnologia chave desde a primeira versão da plataforma.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Of course, because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on.</source>
+          <target state="translated">Naturalmente, como precisa compilar aplicativos .NET Core, o MSBuild foi movido para o .NET Core e pode ser usado em qualquer plataforma que executa o .NET Core.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.</source>
+          <target state="translated">Uma das principais promessas do .NET Core é uma pilha de desenvolvimento de plataforma cruzada e nós garantimos que essa mudança não quebra essa promessa.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> if you are new to MSBuild and would like to learn more about it, you can start by reading the <bpt id="p2">[</bpt>existing documentation<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd637714.aspx)</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Observação:<ept id="p1">**</ept> se você for novato no MSBuild e deseja de saber mais sobre ele, comece lendo a <bpt id="p2">[</bpt>documentação existente<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd637714.aspx)</ept>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The tooling layers</source>
+          <target state="translated">As camadas de ferramentas</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>With the move away from the existing project system as well as with building engine switches, the question that naturally follows is do any of these changes change the overall "layering" of the whole .NET Core tooling ecosystem?</source>
+          <target state="translated">Com a mudança do sistema de projeto existente, bem como com a criação de comutadores de mecanismo, a pergunta que surge naturalmente é: essas mudanças alteram as "camadas" gerais do ecossistema de ferramentas do .NET Core?</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Are there new bits and components?</source>
+          <target state="translated">Existem novos bits e componentes?</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Let's start with a quick refresher on Preview 2 layering as shown in the following picture:</source>
+          <target state="translated">Vamos começar recapitulando as camadas na Visualização 2, conforme mostrado na figura a seguir:</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Preview 2 tools high-level architecture</source>
+          <target state="translated">A arquitetura de alto nível das ferramentas da Visualização 2</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The layering of the tools is quite simple.</source>
+          <target state="translated">As camadas das ferramentas são bastante simples.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>At the bottom we have the .NET Core Command Line tools as a foundation.</source>
+          <target state="translated">Na parte inferior, temos as ferramentas de Linha de Comando do .NET Core como base.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>All other, higher-level tools such as Visual Studio or VS Code, depend and rely on the CLI to build projects, restore dependencies and so on.</source>
+          <target state="translated">Todas as outras ferramentas de alto nível, como o Visual Studio ou o código VS, dependem e contam com a CLI para compilar projetos, restaurar dependências e assim por diante.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This meant that, for example, if Visual Studio wanted to perform a restore operation, it would call into <ph id="ph1">`dotnet restore`</ph> command in the CLI.</source>
+          <target state="translated">Isso significa que, por exemplo, se o Visual Studio quisesse executar uma operação de restauração, ele chamaria o comando <ph id="ph1">`dotnet restore`</ph> na CLI.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>With the move to the new project system, the previous diagram changes:</source>
+          <target state="translated">Com a mudança para o novo sistema de projeto, o diagrama anterior se altera:</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Preview 3 tools high-level architecture</source>
+          <target state="translated">A arquitetura de alto nível das ferramentas da Visualização 3</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The main difference is that the CLI is not the foundational layer anymore; this role is now filled by the "shared SDK component".</source>
+          <target state="translated">A principal diferença é que a CLI não é mais a camada básica; agora, essa função é executada pelo "componente SDK compartilhado".</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This shared SDK component is a set of targets and associated tasks that are responsible for compiling your code, publishing it, packing nuget packages etc. The SDK itself is open-source and is available on GitHub on the <bpt id="p1">[</bpt>SDK repo<ept id="p1">](https://github.com/dotnet/sdk)</ept>.</source>
+          <target state="translated">Esse componente SDK compartilhado é um conjunto de destinos e tarefas associadas responsáveis por compilar o seu código, publicá-lo, empacotar pacotes nuget etc. O SDK em si é aberto e está disponível no GitHub no <bpt id="p1">[</bpt>repositório SDK<ept id="p1">](https://github.com/dotnet/sdk)</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> a "target" is an MSBuild term that indicates a named operation that MSBuild can invoke.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Observação:<ept id="p1">**</ept> "destino" é um termo do MSBuild que indica uma operação nomeada que o MSBuild pode invocar.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It is usually coupled with one or more tasks that execute some logic that the target is supposed to do.</source>
+          <target state="translated">Normalmente, ele está acoplado com uma ou mais tarefas que executam alguma lógica que o destino deve realizar.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>MSBuild supports many ready-made targets such as <ph id="ph1">`Copy`</ph> or <ph id="ph2">`Execute`</ph>; it also allows users to write their own tasks using managed code and define targets to execute those tasks.</source>
+          <target state="translated">O MSBuild oferece suporte a muitos destinos prontos como <ph id="ph1">`Copy`</ph> ou <ph id="ph2">`Execute`</ph>; ele também permite aos usuários gravar suas próprias tarefas usando código gerenciado e definir metas para executar essas tarefas.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can read more about MSBuild tasks on <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms171466.aspx)</ept>.</source>
+          <target state="translated">Você pode ler mais sobre as tarefas do MSBuild em <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms171466.aspx)</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>All the toolsets now consume the shared SDK component and its targets, CLI included.</source>
+          <target state="translated">Todos os conjuntos de ferramentas agora consumem o componente SDK compartilhado e seus destinos, incluindo a CLI.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For example, the next version of Visual Studio will not call into <ph id="ph1">`dotnet restore`</ph> command to restore dependencies for .NET Core projects, it will use the "Restore" target directly.</source>
+          <target state="translated">Por exemplo, a próxima versão do Visual Studio não chamará o comando <ph id="ph1">`dotnet restore`</ph> para restaurar dependências para projetos do .NET Core, ela usará o destino de "Restauração" diretamente.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Since these are MSBuild targets, you can also use raw MSBuild to execute them using the <bpt id="p1">[</bpt>dotnet msbuild<ept id="p1">](dotnet-msbuild.md)</ept> command.</source>
+          <target state="translated">Como esses são os destinos do MSBuild, também é possível usar o MSBuild bruto para executá-los, usando o comando <bpt id="p1">[</bpt>dotnet msbuild<ept id="p1">](dotnet-msbuild.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Preview 3 CLI commands</source>
+          <target state="translated">Comandos CLI da Visualização 3</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The shared SDK component means that the majority of existing CLI commands have been re-implemented as MSBuild tasks and targets.</source>
+          <target state="translated">O componente SDK compartilhado significa que a maioria dos comandos CLI existentes foram reimplementados como destinos e tarefas do MSBuild.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>What does this mean for the CLI commands and your usage of the toolset?</source>
+          <target state="translated">O que isso significa para os comandos CLI e o uso do conjunto de ferramentas?</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>From an usage perspective, it doesn't change the way you use the CLI.</source>
+          <target state="translated">De uma perspectiva de uso, ele não altera a maneira de usar a CLI.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The CLI still has the core commands that exist in Preview 2 release:</source>
+          <target state="translated">A CLI ainda tem os comandos principais que existem na versão da Visualização 2:</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on).</source>
+          <target state="translated">Esses comandos ainda fazem o que você espera que eles façam (criar um projeto, compilá-lo, publicá-lo, empacotá-lo e assim por diante).</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using <ph id="ph1">`dotent &lt;command&gt; --help`</ph>) or Preview 3 documentation on this site to get familiar with any changes.</source>
+          <target state="translated">A maioria das opções não foram alteradas e ainda estão lá. Você pode consultar as telas de ajuda dos comandos (usando <ph id="ph1">`dotent &lt;command&gt; --help`</ph>) ou documentação da Visualização 3 neste site para se familiarizar com as alterações.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>From an execution perspective, the CLI commands will take their parameters and construct a call to "raw" MSBuild that will set the needed properties and run the desired target.</source>
+          <target state="translated">De uma perspectiva de execução, os comandos CLI assumirão seus parâmetros e construirão uma chamada para o MSBuild "bruto" que defina as propriedades necessárias e execute o destino desejado.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To better illustrate this, consider the following command:</source>
+          <target state="translated">Para ilustrar melhor, considere o seguinte comando:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This command is publishing an application into a <ph id="ph1">`pub`</ph> folder using the "Release" configuration.</source>
+          <target state="translated">Esse comando está publicando um aplicativo em uma pasta <ph id="ph1">`pub`</ph> usando a configuração de "Versão".</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Internally, this command gets translated into the following MSBuild invocation:</source>
+          <target state="translated">Internamente, esse comando é convertido na seguinte invocação do MSBuild:</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The notable exception to this rule are <ph id="ph1">`new`</ph> and <ph id="ph2">`run`</ph> commands, as they have not been implemented as MSBuild targets.</source>
+          <target state="translated">A exceção notável a essa regra são os comandos <ph id="ph1">`new`</ph> e <ph id="ph2">`run`</ph>, pois eles não foram implementados como destinos do MSBuild.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">Conclusão</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This document outlined at a high-level the changes that are happening to the overall CLI tooling architecture and functioning that are coming with Preview 3.</source>
+          <target state="translated">Este documento descreveu em alto nível as alterações que estão ocorrendo na arquitetura e no funcionamento geral das ferramentas da CLI que serão apresentadas com a Visualização 3.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It has introduced the notion of the shared SDK component as well as explained how the CLI commands function, from a technical perspective, in Preview 3.</source>
+          <target state="translated">Introduziu-se a noção de componente SDK compartilhado se explicou como os comandos da CLI funcionam, de uma perspectiva técnica, na Visualização 3.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

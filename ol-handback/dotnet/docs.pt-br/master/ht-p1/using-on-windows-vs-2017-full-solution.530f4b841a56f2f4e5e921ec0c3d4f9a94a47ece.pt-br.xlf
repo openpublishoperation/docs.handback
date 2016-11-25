@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9e65979d2f41e39e89109c2c5480acaebbef757f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tutorials\using-on-windows-vs-2017-full-solution.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e29a54d1a4949abdd0de1df496fb58cd62111dfb</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c5ae8ea0231349c002c7cfe59d2ad52d63c80a1a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">Compilar uma solução completa do .NET Core no Windows usando o Visual Studio 2017</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">Compilar uma solução completa do .NET Core no Windows usando o Visual Studio 2017</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">Compilar uma solução completa do .NET Core no Windows usando o Visual Studio 2017</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>by <bpt id="p1">[</bpt>Bertrand Le Roy<ept id="p1">](https://github.com/bleroy)</ept> and <bpt id="p2">[</bpt>Phillip Carter<ept id="p2">](https://github.com/cartermp)</ept></source>
+          <target state="translated">por <bpt id="p1">[</bpt>Bertrand Le Roy<ept id="p1">](https://github.com/bleroy)</ept> e <bpt id="p2">[</bpt>Phillip Carter<ept id="p2">](https://github.com/cartermp)</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications.</source>
+          <target state="translated">O Visual Studio 2017 fornece um ambiente de desenvolvimento completo para desenvolver aplicativos .NET Core.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The procedures in this document describe the steps necessary to build a typical .NET Core solution that includes reusable libraries, testing, and using third-party libraries.</source>
+          <target state="translated">Os procedimentos deste documento descrevem as etapas necessárias para criar uma solução típica do .NET Core que inclui bibliotecas reutilizáveis, testes e o uso de bibliotecas de terceiros.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Pré-requisitos</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Follow the instructions on <bpt id="p1">[</bpt>our prerequisites page<ept id="p1">](../windows-prerequisites.md)</ept> to update your environment.</source>
+          <target state="translated">Siga as instruções na <bpt id="p1">[</bpt>nossa página de pré-requisitos<ept id="p1">](../windows-prerequisites.md)</ept> para atualizar seu ambiente.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A solution using only .NET Core projects</source>
+          <target state="translated">Uma solução que usa apenas projetos .NET Core</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Writing the library</source>
+          <target state="translated">Escrevendo a biblioteca</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">No Visual Studio, escolha <bpt id="p1">**</bpt>Arquivo<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Novo<ept id="p2">**</ept> e <bpt id="p3">**</bpt>Projeto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog, expand the <bpt id="p2">**</bpt>Visual C#<ept id="p2">**</ept> node and choose the <bpt id="p3">**</bpt>.NET Core<ept id="p3">**</ept> node, and then choose <bpt id="p4">**</bpt>Class Library (.NET Standard)<ept id="p4">**</ept>.</source>
+          <target state="translated">Na caixa de diálogo <bpt id="p1">**</bpt>Novo Projeto<ept id="p1">**</ept>, expanda o nó <bpt id="p2">**</bpt>Visual C#<ept id="p2">**</ept>, escolha o nó <bpt id="p3">**</bpt>.NET Core<ept id="p3">**</ept> e escolha <bpt id="p4">**</bpt>Biblioteca de Classes (.NET Standard)<ept id="p4">**</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Name the project "Library" and the solution "Golden".</source>
+          <target state="translated">Nomeie o projeto como “Biblioteca” e a solução como “Dourada”.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Leave <bpt id="p1">**</bpt>Create directory for solution<ept id="p1">**</ept> checked.</source>
+          <target state="translated">Deixe <bpt id="p1">**</bpt>Criar diretório para a solução<ept id="p1">**</ept> marcado.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Clique em <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the <bpt id="p1">**</bpt>Dependencies<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Manage NuGet Packages<ept id="p2">**</ept>.</source>
+          <target state="translated">No Gerenciador de Soluções, abra o menu de contexto para o nó <bpt id="p1">**</bpt>Dependências<ept id="p1">**</ept> e escolha <bpt id="p2">**</bpt>Gerenciar Pacotes NuGet<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Choose "nuget.org" as the <bpt id="p1">**</bpt>Package source<ept id="p1">**</ept>, and choose the <bpt id="p2">**</bpt>Browse<ept id="p2">**</ept> tab.</source>
+          <target state="translated">Escolha “nuget.org” como a <bpt id="p1">**</bpt>Origem do pacote<ept id="p1">**</ept> e escolha a guia <bpt id="p2">**</bpt>Procurar<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Browse for <bpt id="p1">**</bpt>Newtonsoft.Json<ept id="p1">**</ept>.</source>
+          <target state="translated">Procure por <bpt id="p1">**</bpt>Newtonsoft.json<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>, and accept the license agreement.</source>
+          <target state="translated">Clique em <bpt id="p1">**</bpt>Instalar<ept id="p1">**</ept> e aceite o contrato de licença.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The package should now appear under <bpt id="p1">**</bpt>Dependencies/NuGet<ept id="p1">**</ept> and be automatically restored.</source>
+          <target state="translated">O pacote deve aparecer sob <bpt id="p1">**</bpt>Dependências/NuGet<ept id="p1">**</ept> e ser restaurado automaticamente.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Rename the <ph id="ph1">`Class1.cs`</ph> file to <ph id="ph2">`Thing.cs`</ph>.</source>
+          <target state="translated">Renomeie o arquivo <ph id="ph1">`Class1.cs`</ph> para <ph id="ph2">`Thing.cs`</ph>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Accept the rename of the class.</source>
+          <target state="translated">Aceite a renomeação da classe.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add a method: <ph id="ph1">`public int Get(int number) =&gt; Newtonsoft.Json.JsonConvert.DeserializeObject&lt;int&gt;($"{number}");`</ph></source>
+          <target state="translated">Adicionar um método: <ph id="ph1">`public int Get(int number) =&gt; Newtonsoft.Json.JsonConvert.DeserializeObject&lt;int&gt;($"{number}");`</ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Build Solution<ept id="p2">**</ept>.</source>
+          <target state="translated">No menu <bpt id="p1">**</bpt>Compilar<ept id="p1">**</ept>, escolha <bpt id="p2">**</bpt>Compilar Solução<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The solution should build without error.</source>
+          <target state="translated">A solução deverá ser compilada sem erros.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Writing the test project</source>
+          <target state="translated">Escrevendo o projeto de teste</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the <bpt id="p1">**</bpt>Solution<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, <bpt id="p3">**</bpt>New Project<ept id="p3">**</ept>.</source>
+          <target state="translated">No Gerenciador de Soluções, abra o menu de contexto do nó <bpt id="p1">**</bpt>Solução<ept id="p1">**</ept> e escolha <bpt id="p2">**</bpt>Adicionar<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Novo Projeto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog, under <bpt id="p2">**</bpt>Visual C# / .NET Core<ept id="p2">**</ept>, choose <bpt id="p3">**</bpt>Unit Test Project (.NET Core)<ept id="p3">**</ept>.</source>
+          <target state="translated">Na caixa de diálogo <bpt id="p1">**</bpt>Novo Projeto<ept id="p1">**</ept>, em <bpt id="p2">**</bpt>Visual C# / .NET Core<ept id="p2">**</ept>, escolha <bpt id="p3">**</bpt>Projeto de Teste de Unidade (.NET Core)<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Name it "TestLibrary" and click OK.</source>
+          <target state="translated">Nomeie-o como "TestLibrary" e clique em OK.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>TestLibrary<ept id="p1">**</ept> project, open the context menu for the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> node and choose <bpt id="p3">**</bpt>Add Reference<ept id="p3">**</ept>.</source>
+          <target state="translated">No projeto <bpt id="p1">**</bpt>TestLibrary<ept id="p1">**</ept>, abra o menu de contexto do nó <bpt id="p2">**</bpt>Dependências<ept id="p2">**</ept> e escolha <bpt id="p3">**</bpt>Adicionar Referência<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Projects<ept id="p1">**</ept>, then check the Library project and click OK.</source>
+          <target state="translated">Clique em <bpt id="p1">**</bpt>Projetos<ept id="p1">**</ept>, verifique o projeto de Biblioteca e clique em OK.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This adds a reference to your library from the test project.</source>
+          <target state="translated">Isso adiciona uma referência à biblioteca do projeto de teste.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Rename the <ph id="ph1">`UnitTest1.cs`</ph> file to <ph id="ph2">`LibraryTests.cs`</ph> and accept the class rename.</source>
+          <target state="translated">Renomeie o arquivo <ph id="ph1">`UnitTest1.cs`</ph> para <ph id="ph2">`LibraryTests.cs`</ph> e aceite a renomeação de classe.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add <ph id="ph1">`using Library;`</ph> to the top of the file, and replace the <ph id="ph2">`TestMethod1`</ph> method with the following code:</source>
+          <target state="translated">Adicione <ph id="ph1">`using Library;`</ph> à parte superior do arquivo e substitua o método <ph id="ph2">`TestMethod1`</ph> com o código a seguir:</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You should now be able to build the solution.</source>
+          <target state="translated">Agora, você poderá criar a solução.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Windows<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Test Explorer<ept id="p3">**</ept> in order to get the test explorer window into your workspace.</source>
+          <target state="translated">No menu <bpt id="p1">**</bpt>Teste<ept id="p1">**</ept>, escolha <bpt id="p2">**</bpt>Windows<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Gerenciador de Testes<ept id="p3">**</ept> para obter a janela Gerenciador de Testes na área de trabalho.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>After a few seconds, the <ph id="ph1">`ThingGetsObjectValFromNumber`</ph> test should appear in the test explorer.</source>
+          <target state="translated">Depois de alguns segundos, o teste <ph id="ph1">`ThingGetsObjectValFromNumber`</ph> deve aparecer no gerenciador de testes.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Choose <bpt id="p1">**</bpt>Run All<ept id="p1">**</ept>.</source>
+          <target state="translated">Escolha <bpt id="p1">**</bpt>Executar Todos<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The test should pass.</source>
+          <target state="translated">O teste deve ser aprovado.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Writing the console app</source>
+          <target state="translated">Escrevendo o aplicativo de console</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the solution, and add a new <bpt id="p1">**</bpt>Console App (.NET Core)<ept id="p1">**</ept> project.</source>
+          <target state="translated">No Gerenciador de Soluções, abra o menu de contexto para a solução e adicione um novo projeto de <bpt id="p1">**</bpt>Aplicativo de Console (.NET Core)<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Name it "App", and set the location to <ph id="ph1">`Golden\src`</ph>.</source>
+          <target state="translated">Nomeie-o como “Aplicativo” e defina o local como <ph id="ph1">`Golden\src`</ph>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>App<ept id="p1">**</ept> project, open the context menu for the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> node and choose <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>,  <bpt id="p4">**</bpt>Reference<ept id="p4">**</ept>.</source>
+          <target state="translated">No projeto <bpt id="p1">**</bpt>Aplicativo<ept id="p1">**</ept>, abra o menu de contexto do nó <bpt id="p2">**</bpt>Dependências<ept id="p2">**</ept> e escolha <bpt id="p3">**</bpt>Adicionar<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Referência<ept id="p4">**</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Reference Manager<ept id="p1">**</ept> dialog, check <bpt id="p2">**</bpt>Library<ept id="p2">**</ept> under the <bpt id="p3">**</bpt>Projects<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Solution<ept id="p4">**</ept> node, and then click <bpt id="p5">**</bpt>OK<ept id="p5">**</ept></source>
+          <target state="translated">Na caixa de diálogo <bpt id="p1">**</bpt>Gerenciador de Referências<ept id="p1">**</ept>, marque <bpt id="p2">**</bpt>Biblioteca<ept id="p2">**</ept> em <bpt id="p3">**</bpt>Projetos<ept id="p3">**</ept>, no nó <bpt id="p4">**</bpt>Solução<ept id="p4">**</ept> e clique em <bpt id="p5">**</bpt>OK<ept id="p5">**</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Open the context menu for the <bpt id="p1">**</bpt>App<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Set as StartUp Project<ept id="p2">**</ept>.</source>
+          <target state="translated">Abra o menu de contexto do nó <bpt id="p1">**</bpt>Aplicativo<ept id="p1">**</ept> e escolha <bpt id="p2">**</bpt>Definir como Projeto de Inicialização<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This ensures that hitting F5 or CTRL+F5 will start the console app.</source>
+          <target state="translated">Isso garante que pressionar F5 ou CTRL+F5 iniciará o aplicativo de console.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file, add a <ph id="ph2">`using Library;`</ph> directive to the top of the file, and then add <ph id="ph3">`Console.WriteLine($"The answer is {new Thing().Get(42)}");`</ph> to the <ph id="ph4">`Main`</ph> method.</source>
+          <target state="translated">Abra o arquivo <ph id="ph1">`Program.cs`</ph>, adicione uma diretiva <ph id="ph2">`using Library;`</ph> à parte superior do arquivo e adicione <ph id="ph3">`Console.WriteLine($"The answer is {new Thing().Get(42)}");`</ph> ao método <ph id="ph4">`Main`</ph>.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Set a breakpoint after the line that you just added.</source>
+          <target state="translated">Defina um ponto de interrupção após a linha que você acabou de adicionar.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Press F5 to run the application..</source>
+          <target state="translated">Pressione F5 para executar o aplicativo.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The application should build without error, and should hit the breakpoint.</source>
+          <target state="translated">O aplicativo deve ser compilado sem erros e deve atingir o ponto de interrupção.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You should also be able to check that the application output "The answer is 42.".</source>
+          <target state="translated">Você também deve ser capaz de verificar se o aplicativo gera a saída "A resposta é 42".</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

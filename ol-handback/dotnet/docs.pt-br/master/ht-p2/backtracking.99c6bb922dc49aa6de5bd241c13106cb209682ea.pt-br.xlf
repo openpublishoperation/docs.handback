@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">649dfd6752f0589eb396b00e7d0b5184bb65d488</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\backtracking.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d3c3f4b81cf190742fd47a71d366c45ef3d12d49</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">44f9547568980ddd9867439669c8bc02c62fd81a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">Retrocesso em expressões regulares</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">Retrocesso em expressões regulares</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">Retrocesso em expressões regulares</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Backtracking occurs when a regular expression pattern contains optional <bpt id="p1">[</bpt>quantifiers<ept id="p1">](quantifiers.md)</ept> or <bpt id="p2">[</bpt>alternation constructs<ept id="p2">](alternation.md)</ept>, and the regular expression engine returns to a previous saved state to continue its search for a match.</source>
+          <target state="translated">O retrocesso ocorre quando um padrão de expressão regular contém <bpt id="p1">[</bpt>quantificadores<ept id="p1">](quantifiers.md)</ept> opcionais ou <bpt id="p2">[</bpt>constructos de alternância<ept id="p2">](alternation.md)</ept> e o mecanismo de expressões regulares retorna a um estado salvo anterior para retomar sua pesquisa por uma correspondência.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns.</source>
+          <target state="translated">O retrocesso é indispensável para o poder das expressões regulares, ele permite que as expressões sejam poderosas e flexíveis e correspondam a padrões muito complexos.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>At the same time, this power comes at a cost.</source>
+          <target state="translated">No entanto, todo esse poder tem um custo.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Backtracking is often the single most important factor that affects the performance of the regular expression engine.</source>
+          <target state="translated">O retrocesso muitas vezes é o fator individual que mais afeta o desempenho do mecanismo de expressões regulares.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking.</source>
+          <target state="translated">Felizmente, o desenvolvedor tem controle sobre o comportamento do mecanismo de expressões regulares e como ele usa o retrocesso.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This topic explains how backtracking works and how it can be controlled.</source>
+          <target state="translated">Este tópico explica como o retrocesso funciona e como ele pode ser controlado.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In general, a Nondeterministic Finite Automaton (NFA) engine like the  regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.</source>
+          <target state="translated">Em geral, um mecanismo de NFA (Automação Finita Não Determinística), como o mecanismo de expressões regulares, coloca a responsabilidade pela criação de expressões regulares eficientes e rápidas nas mãos do desenvolvedor.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This topic contains the following sections:</source>
+          <target state="translated">Esse tópico contém as seguintes seções:</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Linear comparison without backtracking<ept id="p1">](#linear-comparison-without-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Comparação linear sem retrocesso<ept id="p1">](#linear-comparison-without-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking with optional quantifiers or alternation constructs<ept id="p1">](#backtracking-with-optional-quantifiers-or-alternation-constructs)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Retrocesso com quantificadores opcionais ou constructos de alternância<ept id="p1">](#backtracking-with-optional-quantifiers-or-alternation-constructs)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking with nested optional quantifiers<ept id="p1">](#backtracking-with-nested-optional-quantifiers)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Retrocesso com quantificadores opcionais aninhados<ept id="p1">](#backtracking-with-nested-optional-quantifiers)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Controlling backtracking<ept id="p1">](#controlling-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Controlando o retrocesso<ept id="p1">](#controlling-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Linear comparison without backtracking</source>
+          <target state="translated">Comparação linear sem retrocesso</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If a regular expression pattern has no optional quantifiers or alternation constructs, the regular expression engine executes in linear time.</source>
+          <target state="translated">Se um padrão de expressão regular não tem quantificadores ou constructos de alternância opcionais, o mecanismo de expressões regulares é executado em tempo linear.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>That is, after the regular expression engine matches the first language element in the pattern with text in the input string, it tries to match the next language element in the pattern with the next character or group of characters in the input string.</source>
+          <target state="translated">Ou seja, depois que o mecanismo de expressões regulares corresponde o primeiro elemento de linguagem no padrão com o texto da cadeia de caracteres de entrada, ele tenta corresponder o elemento de linguagem seguinte no padrão com o próximo caractere ou grupo de caracteres na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This continues until the match either succeeds or fails.</source>
+          <target state="translated">Esse processo continuará até que a correspondência obtenha êxito ou falhe.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In either case, the regular expression engine advances by one character at a time in the input string.</source>
+          <target state="translated">Em ambos os casos, o mecanismo de expressões regulares avança um caractere de cada vez na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The following example provides an illustration.</source>
+          <target state="translated">O exemplo a seguir fornece uma ilustração.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`e{2}\w\b`</ph> looks for two occurrences of the letter "e" followed by any word character followed by a word boundary.</source>
+          <target state="translated">A expressão regular <ph id="ph1">`e{2}\w\b`</ph> procura duas ocorrências da letra “e” seguidas por qualquer caractere de palavra seguido por um limite de palavra.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Although this regular expression includes the quantifier <ph id="ph1">`{2}`</ph>, it is evaluated in a linear manner.</source>
+          <target state="translated">Embora essa expressão regular inclua o quantificador <ph id="ph1">`{2}`</ph>, ela é avaliada de uma maneira linear.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The regular expression engine does not backtrack because <ph id="ph1">`{2}`</ph> is not an optional quantifier; it specifies an exact number and not a variable number of times that the previous subexpression must match.</source>
+          <target state="translated">O mecanismo de expressões regulares não retrocede porque <ph id="ph1">`{2}`</ph> não é um quantificador opcional, ele especifica um número exato e não um número variável de vezes que a subexpressão anterior deve corresponder.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As a result, the regular expression engine tries to match the regular expression pattern with the input string as shown in the following table.</source>
+          <target state="translated">Como resultado, o mecanismo de expressões regulares tenta corresponder o padrão da expressão regular com a cadeia de caracteres de entrada conforme mostrado na tabela a seguir.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+          <target state="translated">Operação</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Position in pattern</source>
+          <target state="translated">Posição no padrão</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Position in string</source>
+          <target state="translated">Posição na cadeia de caracteres</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Result</source>
+          <target state="translated">Resultado</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="translated">1</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>"needing a reed" (index 0)</source>
+          <target state="translated">"needing a reed" (índice 0)</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>2</source>
+          <target state="translated">2</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>"eeding a reed" (index 1)</source>
+          <target state="translated">"eeding a reed" (índice 1)</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>3</source>
+          <target state="translated">3</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>"eding a reed" (index 2)</source>
+          <target state="translated">"eding a reed" (índice 2)</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>4</source>
+          <target state="translated">4</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>\w</source>
+          <target state="translated">\w</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed" (índice 3)</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>5</source>
+          <target state="translated">5</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>\b</source>
+          <target state="translated">\b</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>"ing a reed" (index 4)</source>
+          <target state="translated">"ing a reed" (índice 4)</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Possible match fails.</source>
+          <target state="translated">Possível falha de correspondência.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>6</source>
+          <target state="translated">6</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>"eding a reed" (index 2)</source>
+          <target state="translated">"eding a reed" (índice 2)</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>7</source>
+          <target state="translated">7</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed" (índice 3)</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Possible match fails.</source>
+          <target state="translated">Possível falha de correspondência.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>8</source>
+          <target state="translated">8</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed" (índice 3)</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Match fails.</source>
+          <target state="translated">Falha de correspondência.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>9</source>
+          <target state="translated">9</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>"ing a reed" (index 4)</source>
+          <target state="translated">"ing a reed" (índice 4)</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>10</source>
+          <target state="translated">10</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>"ng a reed" (index 5)</source>
+          <target state="translated">"ng a reed" (índice 5)</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>11</source>
+          <target state="translated">11</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>"g a reed" (index 6)</source>
+          <target state="translated">"g a reed" (índice 6)</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>12</source>
+          <target state="translated">12</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>" a reed" (index 7)</source>
+          <target state="translated">" a reed" (índice 7)</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>13</source>
+          <target state="translated">13</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>"a reed" (index 8)</source>
+          <target state="translated">"a reed" (índice 8)</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>14</source>
+          <target state="translated">14</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>" reed" (index 9)</source>
+          <target state="translated">" reed" (índice 9)</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">Nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>15</source>
+          <target state="translated">15</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>"reed" (index 10)</source>
+          <target state="translated">"reed" (índice 10)</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>No match</source>
+          <target state="translated">Nenhuma correspondência</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>16</source>
+          <target state="translated">16</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>"eed" (index 11)</source>
+          <target state="translated">"eed" (índice 11)</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>17</source>
+          <target state="translated">17</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>"ed" (index 12)</source>
+          <target state="translated">"ed" (índice 12)</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>18</source>
+          <target state="translated">18</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>\w</source>
+          <target state="translated">\w</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>"d" (index 13)</source>
+          <target state="translated">"d" (índice 13)</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">Possível correspondência.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>19</source>
+          <target state="translated">19</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>\b</source>
+          <target state="translated">\b</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>"" (index 14)</source>
+          <target state="translated">"" (índice 14)</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Match.</source>
+          <target state="translated">Correspondência.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string.</source>
+          <target state="translated">Se um padrão de expressão regular não inclui nenhum quantificador ou construtor de alternância opcional, o número máximo de comparações necessárias para corresponder ao padrão da expressão regular com a cadeia de caracteres de entrada é aproximadamente equivalente ao número de caracteres na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.</source>
+          <target state="translated">Nesse caso, o mecanismo de expressões regulares usa 19 comparações para identificar possíveis correspondências nesta cadeia de 13 caracteres.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.</source>
+          <target state="translated">Em outras palavras, o mecanismo de expressões regulares é executado em tempo quase linear se não contém quantificadores ou construtores de alternância opcionais.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Backtracking with optional quantifiers or alternation constructs</source>
+          <target state="translated">Retrocesso com quantificadores opcionais ou constructos de alternância</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>When a regular expression includes optional quantifiers or alternation constructs, the evaluation of the input string is no longer linear.</source>
+          <target state="translated">Quando uma expressão regular inclui quantificadores ou construtores de alternância opcionais, a avaliação da cadeia de caracteres de entrada deixa de ser linear.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Pattern matching with an NFA engine is driven by the language elements in the regular expression and not by the characters to be matched in the input string.</source>
+          <target state="translated">A correspondência de padrões com um mecanismo NFA é orientada pelos elementos de linguagem da expressão regular e não pelos caracteres a serem correspondidos na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Therefore, the regular expression engine tries to fully match optional or alternative subexpressions.</source>
+          <target state="translated">Assim, o mecanismo de expressões regulares tenta fazer a correspondência total de subexpressões opcionais ou alternativas.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>When it advances to the next language element in the subexpression and the match is unsuccessful, the regular expression engine can abandon a portion of its successful match and return to an earlier saved state in the interest of matching the regular expression as a whole with the input string.</source>
+          <target state="translated">Quando ele avança para o elemento de linguagem seguinte na subexpressão e a correspondência falha, o mecanismo de expressões regulares pode abandonar uma parte de sua correspondência bem-sucedida e retornar a um estado salvo anteriormente com o objetivo de corresponder a expressão regular inteira com a cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This process of returning to a previous saved state to find a match is known as backtracking.</source>
+          <target state="translated">Esse processo de retornar a um estado salvo anterior para localizar uma correspondência é conhecido como o retrocesso.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example, consider the regular expression pattern <ph id="ph1">`.*(es)`</ph>, which matches the characters "es" and all the characters that precede it.</source>
+          <target state="translated">Por exemplo, considere o padrão de expressão regular <ph id="ph1">`.*(es)`</ph>, o qual corresponde os caracteres “es” e todos os caracteres que os precedem.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>As the following example shows, if the input string is "Essential services are provided by regular expressions.", the pattern matches the whole string up to and including the "es" in "expressions".</source>
+          <target state="translated">Como mostra o exemplo a seguir, se a cadeia de caracteres de entrada é "Essential services are provided by regular expressions." (Serviços essenciais são fornecidos por expressões regulares.), o padrão corresponde a cadeia de caracteres até o “es” (inclusive) em "expressions”.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>To do this, the regular expression engine uses backtracking as follows:</source>
+          <target state="translated">Para fazer isso, o mecanismo de expressões regulares usa o retrocesso da seguinte forma:</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>It matches the <ph id="ph1">`.*`</ph> (which matches zero, one, or more occurrences of any character) with the whole input string.</source>
+          <target state="translated">Ele corresponde o <ph id="ph1">`.*`</ph> (que corresponde a zero, uma ou mais ocorrências de qualquer caractere) com a cadeia de caracteres de entrada inteira.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>It attempts to match "e" in the regular expression pattern.</source>
+          <target state="translated">Ele tenta corresponder “e” no padrão da expressão regular.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>However, the input string has no remaining characters available to match.</source>
+          <target state="translated">No entanto, a cadeia de caracteres de entrada não tem nenhum caractere restante disponível para corresponder.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>It backtracks to its last successful match, "Essential services are provided by regular expressions", and attempts to match "e" with the period at the end of the sentence.</source>
+          <target state="translated">Ele retrocede para sua última correspondência bem-sucedida, "Essential services are provided by regular expressions", e tenta corresponder “e” com o ponto no final da frase.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The match fails.</source>
+          <target state="translated">A correspondência falha.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>It continues to backtrack to a previous successful match one character at a time until the tentatively matched substring is "Essential services are provided by regular expr".</source>
+          <target state="translated">Ele continua a retroceder para uma correspondência bem-sucedida anterior um caractere de cada vez até que a subcadeia de caracteres provisória correspondente seja “Essential services are provided by regular expr".</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>It then compares the "e" in the pattern to the second "e" in "expressions" and finds a match.</source>
+          <target state="translated">Ele então compara o “e” no padrão com o segundo “e” em “expressions” e encontra uma correspondência.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions").</source>
+          <target state="translated">Ele compara o “s” no padrão com o “s” após o caractere “e” que já foi correspondido (o primeiro “s” em “expressions”).</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The match is successful.</source>
+          <target state="translated">A correspondência é bem-sucedida.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations.</source>
+          <target state="translated">Quando o retrocesso é usado, corresponder o padrão de expressão regular com a cadeia de caracteres de entrada, que tem 55 caracteres de comprimento, requer 67 operações de comparação.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Interestingly, if the regular expression pattern included a lazy quantifier, <ph id="ph1">`.*?(es),`</ph> matching the regular expression would require additional comparisons.</source>
+          <target state="translated">O interessante é que, se o padrão de expressão regular incluísse um quantificador lento, <ph id="ph1">`.*?(es),`</ph>, a correspondência da expressão regular exigiria comparações adicionais.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In this case, instead of having to backtrack from the end of the string to the "r" in "expressions", the regular expression engine would have to backtrack all the way to the beginning of the string to match "Es" and would require 113 comparisons.</source>
+          <target state="translated">Nesse caso, em vez de ter que retroceder do final da cadeia de caracteres até o “r” em “expressions”, o mecanismo de expressões regulares teria que retroceder até o início da cadeia de caracteres para corresponder “Es” e isso exigiria 113 comparações.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.</source>
+          <target state="translated">Geralmente, se um padrão de expressão regular tem um único constructo de alternância ou um único quantificador opcional, o número de operações de comparação necessárias para corresponder ao padrão é mais que duas vezes maior do que o número de caracteres na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Backtracking with nested optional quantifiers</source>
+          <target state="translated">Retrocesso com quantificadores opcionais aninhados</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers.</source>
+          <target state="translated">O número de operações de comparação necessárias para corresponder a um padrão de expressão regular pode aumentar exponencialmente se o padrão inclui um grande número de construtores de alternância, se ele inclui construtores de alternância aninhados ou, mais comumente, se ele inclui quantificadores opcionais aninhados.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression pattern <ph id="ph1">`^(a+)+$`</ph> is designed to match a complete string that contains one or more "a" characters.</source>
+          <target state="translated">Por exemplo, o padrão de expressão regular <ph id="ph1">`^(a+)+$`</ph> foi criado para corresponder a uma cadeia de caracteres completa que contém um ou mais caracteres “a”.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The example provides two input strings of identical length, but only the first string matches the pattern.</source>
+          <target state="translated">O exemplo fornece duas cadeias de caracteres de entrada de comprimento idêntico, mas somente a primeira cadeia de caracteres corresponde ao padrão.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Diagnostics.Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> class is used to determine how long the match operation takes.</source>
+          <target state="translated">A classe <bpt id="p1">[</bpt>System.Diagnostics.Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> é usada para determinar a duração da operação de correspondência.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the regular expression engine took about twice as long to find that an input string did not match the pattern as it did to identify a matching string.</source>
+          <target state="translated">Como a saída do exemplo mostra, o mecanismo de expressões regulares demora aproximadamente duas vezes mais tempo para descobrir que uma cadeia de caracteres de entrada não correspondeu ao padrão do que o tempo que foi necessário para identificar uma cadeia de caracteres compatível.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>This is because an unsuccessful match always represents a worst-case scenario.</source>
+          <target state="translated">Isso acontece porque uma correspondência malsucedida sempre representa um cenário de pior caso.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data.</source>
+          <target state="translated">O mecanismo de expressões regulares deve usar a expressão regular para seguir todos os caminhos possíveis através dos dados antes de concluir que a correspondência falhou e os parênteses aninhados criam vários caminhos adicionais nos dados.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The regular expression engine concludes that the second string did not match the pattern by doing the following:</source>
+          <target state="translated">O mecanismo de expressões regulares conclui que a segunda cadeia de caracteres não correspondeu ao padrão ao fazer o seguinte:</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern a+.</source>
+          <target state="translated">Ele verifica que estava no início da cadeia de caracteres e então corresponde os primeiros cinco caracteres da cadeia de caracteres com o padrão a+.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>It then determines that there are no additional groups of "a" characters in the string.</source>
+          <target state="translated">Ele então determina que não há grupos adicionais de caracteres “a” na cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Finally, it tests for the end of the string.</source>
+          <target state="translated">Finalmente, ele testa o final da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Because one additional character remains in the string, the match fails.</source>
+          <target state="translated">Como um caractere adicional permanece na cadeia de caracteres, a correspondência falha.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>This failed match requires 9 comparisons.</source>
+          <target state="translated">Essa correspondência com falha requer 9 comparações.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The regular expression engine also saves state information from its matches of "a" (which we will call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).</source>
+          <target state="translated">O mecanismo de expressões regulares também salva as informações de estado de suas correspondências de “a” (as quais chamaremos a correspondência 1), "aa” (correspondência 2), "aaa" (correspondência 3) e “aaaa" (correspondência 4).</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>It returns to the previously saved match 4.</source>
+          <target state="translated">Ele retorna à correspondência 4 salva anteriormente.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>It determines that there is one additional "a" character to assign to an additional captured group.</source>
+          <target state="translated">Ele determina que há um caractere adicional “a” a ser atribuído a um grupo capturado adicional.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Finally, it tests for the end of the string.</source>
+          <target state="translated">Finalmente, ele testa o final da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Because one additional character remains in the string, the match fails.</source>
+          <target state="translated">Como um caractere adicional permanece na cadeia de caracteres, a correspondência falha.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>This failed match requires 4 comparisons.</source>
+          <target state="translated">Essa correspondência com falha requer 4 comparações.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>So far, a total of 13 comparisons have been performed.</source>
+          <target state="translated">Até agora, foi executado um total de 13 comparações.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It returns to the previously saved match 3.</source>
+          <target state="translated">Ele retorna à correspondência 3 salva anteriormente.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>It determines that there are two additional "a" characters to assign to an additional captured group.</source>
+          <target state="translated">Ele determina que há dois caracteres adicionais “a” a serem atribuídos a um grupo capturado adicional.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, the end-of-string test fails.</source>
+          <target state="translated">No entanto, o teste de fim da cadeia de caracteres falha.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups.</source>
+          <target state="translated">Ele então retorna para a correspondência 3 e tenta corresponder os dois caracteres adicionais “a” em dois grupos capturados adicionais.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The end-of-string test still fails.</source>
+          <target state="translated">No entanto, o teste de fim da cadeia de caracteres continua a falhar.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>These failed matches require 12 comparisons.</source>
+          <target state="translated">Essas correspondências com falha exigem 12 comparações.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>So far, a total of 25 comparisons have been performed.</source>
+          <target state="translated">Até agora, foi executado um total de 25 comparações.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match.</source>
+          <target state="translated">A comparação de cadeia de caracteres de entrada com a expressão regular continuará dessa forma até que o mecanismo de expressão regular tente todas as combinações possíveis de correspondências e conclua que não há nenhuma correspondência.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Because of the nested quantifiers, this comparison is an O(2n) or an exponential operation, where n is the number of characters in the input string.</source>
+          <target state="translated">Devido aos quantificadores aninhados, essa comparação é O(2n) ou uma operação exponencial, em que n é o número de caracteres na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons.</source>
+          <target state="translated">Isso significa que, no pior caso, uma cadeia de caracteres de entrada com 30 caracteres requer aproximadamente 1.073.741.824 comparações e uma cadeia de caracteres de entrada com 40 caracteres requer aproximadamente 1.099.511.627.776 comparações.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern.</source>
+          <target state="translated">Se você usar cadeias de caracteres com esses tamanhos ou até mesmo com tamanhos maiores, os métodos de expressões regulares poderão demorar um tempo extremamente longo para terminar ao processarem uma entrada que não correspondam ao padrão de expressão regular.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Controlling backtracking</source>
+          <target state="translated">Controlando o retrocesso</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Backtracking lets you create powerful, flexible regular expressions.</source>
+          <target state="translated">O retrocesso permite a você criar expressões regulares avançadas e flexíveis.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>However, as the previous section showed, these benefits may be coupled with unacceptably poor performance.</source>
+          <target state="translated">No entanto, conforme mostrado na seção anterior, esses benefícios podem estar associados a um baixo desempenho inaceitável.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>To prevent excessive backtracking, you should define a time-out interval when you instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object or call a static regular expression matching method.</source>
+          <target state="translated">Para evitar o retrocesso excessivo, você deve definir um intervalo de tempo limite no qual criará uma instância de um objeto <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> ou chamará um método de correspondência de expressão regular estático.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>This is discussed in the next section.</source>
+          <target state="translated">Isso é abordado na próxima seção.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In addition, .NET Core supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: <bpt id="p1">[</bpt>nonbacktracking subexpressions<ept id="p1">](#nonbacktracking-subexpression)</ept>, <bpt id="p2">[</bpt>lookbehind assertions<ept id="p2">](#lookbehind-assertions)</ept>, and <bpt id="p3">[</bpt>lookahead assertions<ept id="p3">](#lookahead-assertions)</ept>.</source>
+          <target state="translated">Além disso, o .NET Core dá suporte a três elementos de linguagem de expressão regular que limitam ou suprimem o retrocesso e que dão suporte a expressões regulares complexas com pouca ou nenhuma penalidade de desempenho: <bpt id="p1">[</bpt>subexpressões sem retrocesso<ept id="p1">](#nonbacktracking-subexpression)</ept>, <bpt id="p2">[</bpt>asserções lookbehind<ept id="p2">](#lookbehind-assertions)</ept> e <bpt id="p3">[</bpt>asserções lookahead<ept id="p3">](#lookahead-assertions)</ept>.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>For more information about each language element, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Para obter mais informações sobre cada elemento de linguagem, consulte <bpt id="p1">[</bpt>Constructos de agrupamento em expressões regulares<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Defining a time-out interval</source>
+          <target state="translated">Definindo um intervalo de tempo limite</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> exception.</source>
+          <target state="translated">Você pode definir um valor de tempo limite que representa o intervalo mais longo durante o qual o mecanismo de expressões regulares pesquisará uma única correspondência antes de abandonar a tentativa e gerar uma exceção <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>You specify the time-out interval by supplying a <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value to the <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> constructor for instance regular expressions.</source>
+          <target state="translated">Você especifica o intervalo de tempo limite ao fornecer um valor de <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> para o construtor <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> para expressões regulares da instância.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>In addition, each static pattern matching method has an overload with a <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value to the [Regex.Regex(String, RegexOptions, TimeSpan)] parameter that allows you to specify a time-out value.</source>
+          <target state="translated">Além disso, cada método de correspondência de padrão estático tem uma sobrecarga com um valor de <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> para o parâmetro [Regex.Regex(String, RegexOptions, TimeSpan)] que permite a você especificar um valor de tempo limite.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>By default, the time-out interval is set to <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept> and the regular expression engine does not time out.</source>
+          <target state="translated">Por padrão, o intervalo de tempo limite é definido para <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept>, o que significa que o mecanismo de expressões regulares não atinge o tempo limite.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>We recommend th&gt;at you always set a time-out interval if your regular expression relies on backtracking.</source>
+          <target state="translated">É recomendável sempre definir um intervalo de tempo limite se a sua expressão regular depende de retrocesso.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>n exception indicates that the regular expression engine was unable to find a match within in the specified time-out interval but does not indicate why the exception was thrown.</source>
+          <target state="translated">Uma exceção <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>n indica que o mecanismo de expressões regulares não pôde localizar uma correspondência dentro do intervalo de tempo limite especificado, mas não indica como a exceção foi gerada.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown.</source>
+          <target state="translated">O motivo poderia ser o retrocesso excessivo, mas também é possível que o intervalo de tempo limite tenha sido definido como um valor muito baixo considerando a carga do sistema no momento em que a exceção foi gerada.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.</source>
+          <target state="translated">Ao tratar a exceção, você pode escolher entre abandonar as correspondências adicionais com a cadeia de caracteres de entrada ou aumentar o intervalo de tempo limite e repetir a operação de correspondência.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>For example, the following code calls the <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> constructor to instantiate a Regex object with a time-out value of one second.</source>
+          <target state="translated">Por exemplo, o código a seguir chama o construtor <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> para criar uma instância de um objeto Regex com um valor de tempo limite de um segundo.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`(a+)+$`</ph>, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking.</source>
+          <target state="translated">O padrão de expressão regular <ph id="ph1">`(a+)+$`</ph>, que faz a correspondência de uma ou várias sequências de um ou mais caracteres de “a” no final de uma linha, está sujeito ao retrocesso excessivo.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>If a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> is thrown, the example increases the time-out value up to a maximum interval of three seconds.</source>
+          <target state="translated">Se <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> for gerada, o exemplo aumenta o valor do tempo limite até um intervalo máximo de três segundos.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>After that, it abandons the attempt to match the pattern.</source>
+          <target state="translated">Depois disso, ele abandona a tentativa de corresponder o padrão.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpression</source>
+          <target state="translated">Subexpressão sem retrocesso</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept> <bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element suppresses backtracking in a subexpression.</source>
+          <target state="translated">O elemento de linguagem <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept> <bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> suprime o retrocesso em uma subexpressão.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>It is useful for preventing the performance problems associated with failed matches.</source>
+          <target state="translated">Ele é útil para evitar problemas de desempenho associados a correspondências com falha.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The following example illustrates how suppressing backtracking improves performance when using nested quantifiers.</source>
+          <target state="translated">O exemplo a seguir ilustra como suprimir o retrocesso melhora o desempenho quando quantificadores aninhados são usados.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions.</source>
+          <target state="translated">Ele mede o tempo necessário para que o mecanismo de expressão regular determine que uma cadeia de caracteres de entrada não corresponde a duas expressões regulares.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons.</source>
+          <target state="translated">A primeira expressão regular usa o retrocesso para tentar corresponder uma cadeia de caracteres que contém uma ou mais ocorrências de um ou mais dígitos hexadecimais, seguidos por dois-pontos, seguido por um ou mais dígitos hexadecimais, seguidos por dois dois-pontos.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The second regular expression is identical to the first, except that it disables backtracking.</source>
+          <target state="translated">A segunda expressão regular é idêntica à primeira, exceto que ela desabilita o retrocesso.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the performance improvement from disabling backtracking is significant.</source>
+          <target state="translated">Como a saída do exemplo mostra, a melhora do desempenho resultante da desabilitação do retrocesso é significativa.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Lookbehind assertions</source>
+          <target state="translated">Asserções lookbehind</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>.NET includes two language elements, <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> and <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, that match the previous character or characters in the input string.</source>
+          <target state="translated">O .NET inclui dois elementos de linguagem, <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> e <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, que correspondem ao caractere ou aos caracteres anteriores na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately precede the current character can be matched by <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>, without advancing or backtracking.</source>
+          <target state="translated">Ambos os elementos de linguagem são asserções de largura zero, ou seja, eles determinam se o caractere ou os caracteres que precedem imediatamente o caractere atual podem ser correspondidos pela <bpt id="p1">*</bpt>subexpressão<ept id="p1">*</ept>, sem avanço ou retrocesso.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a positive lookbehind assertion; that is, the character or characters before the current position must match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> é uma asserção lookbehind positiva, ou seja, o caractere ou os caracteres antes da posição atual devem corresponder à <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a negative lookbehind assertion; that is, the character or characters before the current position must not match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> é uma asserção lookbehind negativa, ou seja, o caractere ou os caracteres antes da posição atual não devem corresponder à <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Both positive and negative lookbehind assertions are most useful when <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> is a subset of the previous <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>.</source>
+          <target state="translated">As asserções lookbehind positivas e negativas são mais úteis quando <bpt id="p1">*</bpt>subexpressão<ept id="p1">*</ept> é um subconjunto da <bpt id="p2">*</bpt>subexpressão<ept id="p2">*</ept> anterior.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address.</source>
+          <target state="translated">O exemplo a seguir usa dois padrões equivalentes à expressão regular que validam o nome de usuário em um endereço de email.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The first pattern is subject to poor performance because of excessive backtracking.</source>
+          <target state="translated">O primeiro padrão está sujeito a baixo desempenho devido ao retrocesso excessivo.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion.</source>
+          <target state="translated">O segundo padrão modifica a primeira expressão regular ao substituir um quantificador aninhado por uma asserção lookbehind positiva.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The output from the example displays the execution time of the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method.</source>
+          <target state="translated">A saída do exemplo exibe o tempo de execução do método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept>.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The first regular expression pattern, <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*@, is defined as shown in the following table.`</ph></source>
+          <target state="translated">O padrão da primeira expressão regular, <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*@, is defined as shown in the following table.`</ph></target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Padrão</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">Começa a correspondência no início da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">Corresponde a um caractere alfanumérico.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated">Essa comparação não diferencia maiúsculas de minúsculas porque o método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> é chamado com a opção <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Match zero, one, or more occurrences of a hyphen, period, or word character.</source>
+          <target state="translated">Corresponde a zero, uma ou mais ocorrências de um hífen, ponto ou caractere de palavra.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">Corresponde a um caractere alfanumérico.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character.</source>
+          <target state="translated">Corresponde a zero ou mais ocorrências da combinação de zero ou mais hífens, pontos ou caracteres de palavra, seguidos por um caractere alfanumérico.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">Este é o primeiro grupo de captura.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Match an at sign ("@").</source>
+          <target state="translated">Corresponde a um sinal de arroba (“@").</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The second regular expression pattern, <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])@`</ph>, uses a positive lookbehind assertion.</source>
+          <target state="translated">O segundo padrão de expressão regular, <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])@`</ph>, usa uma asserção lookbehind positiva.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>It is defined as shown in the following table.</source>
+          <target state="translated">Ele é definido conforme mostrado na tabela a seguir.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Padrão</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">Começa a correspondência no início da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">Corresponde a um caractere alfanumérico.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated">Essa comparação não diferencia maiúsculas de minúsculas porque o método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> é chamado com a opção <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a hyphen, period, or word character.</source>
+          <target state="translated">Corresponde a zero ou mais ocorrências de um hífen, ponto ou caractere de palavra.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Look back at the last matched character and continue the match if it is alphanumeric.</source>
+          <target state="translated">Examina de volta o último caractere correspondente e continua a correspondência se ele é alfanumérico.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.</source>
+          <target state="translated">Observe que os caracteres alfanuméricos são um subconjunto do conjunto que consiste em pontos, hífens e todos os caracteres de palavra.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Match an at sign ("@").</source>
+          <target state="translated">Corresponde a um sinal de arroba (“@").</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Lookahead assertions</source>
+          <target state="translated">Asserções lookahead</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>.NET includes two language elements, <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> and <bpt id="p4">**</bpt>(?!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, that match the next character or characters in the input string.</source>
+          <target state="translated">O .NET inclui dois elementos de linguagem, <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> e <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, que correspondem ao próximo caractere ou aos próximos caracteres na cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately follow the current character can be matched by <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>, without advancing or backtracking.</source>
+          <target state="translated">Ambos os elementos de linguagem são asserções de largura zero, ou seja, eles determinam se o caractere ou os caracteres que seguem imediatamente o caractere atual podem ser correspondidos pela <bpt id="p1">*</bpt>subexpressão<ept id="p1">*</ept>, sem avanço ou retrocesso.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a positive lookahead assertion; that is, the character or characters after the current position must match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> é uma asserção lookahead positiva, ou seja, o caractere ou os caracteres depois da posição atual devem corresponder à <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a negative lookahead assertion; that is, the character or characters after the current position must not match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> é uma asserção lookahead negativa, ou seja, o caractere ou os caracteres depois da posição atual não devem corresponder à <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Both positive and negative lookahead assertions are most useful when <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> is a subset of the next <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>.</source>
+          <target state="translated">As asserções lookahead positivas e negativas são mais úteis quando <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> é um subconjunto da <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept> seguinte.</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The following example uses two equivalent regular expression patterns that validate a fully qualified type name.</source>
+          <target state="translated">O exemplo a seguir usa dois padrões de expressão regular equivalentes que validam um nome de tipo totalmente qualificado.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The first pattern is subject to poor performance because of excessive backtracking.</source>
+          <target state="translated">O primeiro padrão está sujeito a baixo desempenho devido ao retrocesso excessivo.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion.</source>
+          <target state="translated">O segundo modifica a primeira expressão regular ao substituir um quantificador aninhado por uma asserção lookahead positiva.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The output from the example displays the execution time of the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method.</source>
+          <target state="translated">A saída do exemplo exibe o tempo de execução do método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept>.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The first regular expression pattern, <ph id="ph1">`^(([A-Z]\w*)+\.)*[A-Z]\w*$`</ph>, is defined as shown in the following table.</source>
+          <target state="translated">O primeiro padrão de expressão regular, <ph id="ph1">`^(([A-Z]\w*)+\.)*[A-Z]\w*$`</ph>, é definido como mostrado na tabela a seguir.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Padrão</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">Começa a correspondência no início da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period.</source>
+          <target state="translated">Corresponde a um caractere alfabético (A-Z) seguido por zero ou mais caracteres de palavra uma ou mais vezes, seguidos de um ponto.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated">Essa comparação não diferencia maiúsculas de minúsculas porque o método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> é chamado com a opção <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Match the previous pattern zero or more times.</source>
+          <target state="translated">Corresponde ao padrão anterior zero vezes ou mais.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character followed by zero or more word characters.</source>
+          <target state="translated">Corresponder a um caractere alfabético seguido por zero ou mais caracteres de palavra.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the input string.</source>
+          <target state="translated">Finalizar a correspondência no final da cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The second regular expression pattern, <ph id="ph1">`^((?=[A-Z])\w+\.)*[A-Z]\w*$`</ph>, uses a positive lookahead assertion.</source>
+          <target state="translated">O segundo padrão de expressão regular, <ph id="ph1">`^((?=[A-Z])\w+\.)*[A-Z]\w*$`</ph>, usa uma asserção lookahead positiva.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>It is defined as shown in the following table.</source>
+          <target state="translated">Ele é definido conforme mostrado na tabela a seguir.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Padrão</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">Começa a correspondência no início da cadeia de caracteres.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Look ahead to the first character and continue the match if it is alphabetical (A-Z).</source>
+          <target state="translated">Examine além do primeiro caractere e continue a correspondência se ele for alfabético (A-Z).</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated">Essa comparação não diferencia maiúsculas de minúsculas porque o método <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> é chamado com a opção <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept>.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters followed by a period.</source>
+          <target state="translated">Corresponde a um ou mais caracteres de palavra seguidos por um ponto.</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Match the pattern of one or more word characters followed by a period zero or more times.</source>
+          <target state="translated">Corresponde ao padrão de um ou mais caracteres de palavra seguidos por um ponto zero ou mais vezes.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>The initial word character must be alphabetical.</source>
+          <target state="translated">O caractere de palavra inicial deve ser alfabético.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character followed by zero or more word characters.</source>
+          <target state="translated">Corresponder a um caractere alfabético seguido por zero ou mais caracteres de palavra.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the input string.</source>
+          <target state="translated">Finalizar a correspondência no final da cadeia de caracteres de entrada.</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Expressões regulares do .NET<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Linguagem de expressão regular – referência rápida<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Quantificadores em expressões regulares<ept id="p1">](quantifiers.md)</ept></target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Alternation constructs in regular expressions<ept id="p1">](alternation.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Constructos de alternância em expressões regulares<ept id="p1">](alternation.md)</ept></target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Constructos de agrupamento em expressões regulares<ept id="p1">](grouping.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
