@@ -1,32 +1,14 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/1a4cb06646929421cbc6dd745eba41479803b31f/docs/core/preview3/tools/csproj.md) | HandedOffSuccess | [Details](#dd3c3751d1654b41c1c029fad48a160f77aad66c59)
  [docs\toc.md](https://github.com/dotnet/docs/blob/903e8139fddc4402aebdced51ff23b4c68eacc8e/docs/toc.md) | HandedOffSuccess | [Details](#c444839642821c328a681e538d75fd64c3abb2a93382)
 
 ## Item Details
-##### <a name='dd3c3751d1654b41c1c029fad48a160f77aad66c59'></a> Source: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/1a4cb06646929421cbc6dd745eba41479803b31f/docs/core/preview3/tools/csproj.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/ae7aba82f037dc4dc2af27f6e70a6189b3b193a6/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf)
-* Handoff Datetime: 2016-11-22 19:00:59
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs.ru-ru/blob/c53ca90a1baa70e471a61a43d2e850d612b55b6d/docs/core/preview3/tools/csproj.md)
-* Current Handback File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/8d1ae1b3e7b1d48c42e725094f7bb0acb9ea9c22/ol-handback/dotnet/docs.ru-ru/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf)
-* Current Handback Datetime: 2016-11-25 15:03:18
-* Bilingual File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/8d1ae1b3e7b1d48c42e725094f7bb0acb9ea9c22/ol-handback/dotnet/docs.ru-ru/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-25 15:05:03
-* [Back to Top](#report-top)
-
 ##### <a name='c444839642821c328a681e538d75fd64c3abb2a93382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/903e8139fddc4402aebdced51ff23b4c68eacc8e/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
