@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">233d365b582c274cd3a1f078846a6e854c7a6c95</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\layering.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2d631122c1ab87bfc94c77ec9fc9d33c1599ead7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f85c48891bdd2e31e9b5279289b09b07c63150a0</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core Command Line Tools Preview 3 Architecture</source>
+          <target state="translated">.NET Core 명령줄 도구 Preview 3 아키텍처</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Preview 3 brings about certain changes to the way the overall .NET Core tools are layered.</source>
+          <target state="translated">Preview 3을 통해 전체.NET Core 도구를 계층화하는 방법에 대한 특정 변경 내용 설명</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, 확장성, 사용자 지정 명령, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>High level overview of changes in CLI Preview 3</source>
+          <target state="translated">CLI Preview 3에 대한 변경의 심화 설명</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">개요</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document will describe in high-level the changes that moving from <ph id="ph1">`project.json`</ph> to MSBuild and <ph id="ph2">`csproj`</ph> project system bring.</source>
+          <target state="translated">이 문서에서는 <ph id="ph1">`project.json`</ph>에서 MSBuild 및 <ph id="ph2">`csproj`</ph> 프로젝트 시스템으로 이동으로 인해 발생하는 높은 수준의 변경 내용에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It will outline the new way the tooling is layered all-up and which new pieces are available and what is their place in the overall picture.</source>
+          <target state="translated">모두 구동 상태로 도구를 계층화하는 새로운 방법과, 사용할 수 있는 새로운 부분, 전체적인 상황에서의 현재 위치에 대해 간략하게 설명합니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>After reading this article, you should have a better understanding of all of the pieces that make up .NET Core tooling after moving to MSBuild and <ph id="ph1">`csproj`</ph>.</source>
+          <target state="translated">이 문서를 읽고 나면 MSBuild 및 <ph id="ph1">`csproj`</ph>로 이동한 후 .NET Core 도구를 구성하는 모든 부분에 대해 잘 이해하게 됩니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> this article is <bpt id="p2">**</bpt>not required<ept id="p2">**</ept> to use the Preview 3 .NET Core Command Line tools.</source>
+          <target state="translated"><bpt id="p1">**</bpt>참고:<ept id="p1">**</ept> 이 문서는 Preview 3 .NET Core 명령줄 도구를 사용하는 데 <bpt id="p2">**</bpt>필요하지 않습니다<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>you can continue using the tools as you are used to.</source>
+          <target state="translated">이전 방식으로 도구를 계속 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article is here to complete the picture of how the move to MSBuild changes the overall "layering" and the architecture of the command line tools.</source>
+          <target state="translated">이 문서는 MSBuild로의 이동이 전반적인 "계층" 및 명령줄 도구 아키텍처를 어떻게 변화시키는지에 대한 완벽한 그림을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Moving away from project.json</source>
+          <target state="translated">project.json로부터의 이동</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The biggest change in the Preview 3 tooling for .NET Core is certainly the <bpt id="p1">[</bpt>move away from project.json to csproj<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> as the project system.</source>
+          <target state="translated">.NET Core용 Preview 3 도구에서의 가장 큰 변화는 프로젝트 시스템이 <bpt id="p1">[</bpt>project.json에서 csproj로<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> 이동한 점입니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Preview 3 version of the command line tools is the first release of .NET Core command line tooling that does not contain any support for project.json.</source>
+          <target state="translated">명령줄 도구의 Preview 3 버전은 project.json에 대한 어떤 지원도 포함되지 않은 .NET Core 명령줄 도구의 첫 번째 릴리스입니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>That means that it cannot be used to build, run or publish project.json based applications and libraries.</source>
+          <target state="translated">즉, project.json 기반 응용 프로그램 및 라이브러리를 빌드, 실행 또는 게시하는 데 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In order to use this version of the tools, you will need to migrate your existing projects or start new ones.</source>
+          <target state="translated">이 버전의 도구를 사용하려면 기존 프로젝트를 마이그레이션하거나 새 프로젝트를 시작해야 합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/msbuild)</ept>.</source>
+          <target state="translated">이러한 흐름에 포함되어 project.json 프로젝트를 빌드하기 위해 개발된 사용자 지정 빌드 엔진이 전문적이고 완전한 기능의 빌드 엔진인 <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/msbuild)</ept>로 바뀌었습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release.</source>
+          <target state="translated">MSBuild는.NET 커뮤니티에서 잘 알려진 엔진으로 플랫폼의 첫 번째 릴리스 이후 핵심 기술로 부상하였습니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Of course, because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on.</source>
+          <target state="translated">물론 .NET Core 응용 프로그램을 구축해야 하므로 MSBuild는 .NET Core로 이식되었으며, .NET Core에서 실행하는 모든 플랫폼에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.</source>
+          <target state="translated">NET Core의 주요 기능 중 하나는 플랫폼 간 개발 스택에 대한 것으로 이 이동으로 인해 이 기능이 없어지진 않습니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> if you are new to MSBuild and would like to learn more about it, you can start by reading the <bpt id="p2">[</bpt>existing documentation<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd637714.aspx)</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>참고:<ept id="p1">**</ept> 처음 MSBuild를 사용하고 자세한 내용을 보려면 <bpt id="p2">[</bpt>기존 설명서<ept id="p2">](https://msdn.microsoft.com/en-us/library/dd637714.aspx)</ept>를 읽어 시작할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The tooling layers</source>
+          <target state="translated">도구 레이어</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>With the move away from the existing project system as well as with building engine switches, the question that naturally follows is do any of these changes change the overall "layering" of the whole .NET Core tooling ecosystem?</source>
+          <target state="translated">기존 프로젝트 시스템으로부터의 이동과 빌드 엔진 전환에 따라 이러한 변화로 인해 전체 .NET Core 도구 에코 시스템의 전반적인 "계층"에도 변화가 있는지 자연스럽게 질문이 나오게 됩니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Are there new bits and components?</source>
+          <target state="translated">새로운 비트 및 구성 요소가 있을까요?</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Let's start with a quick refresher on Preview 2 layering as shown in the following picture:</source>
+          <target state="translated">다음 그림에 나와 있는 것처럼 이전에 알고 있는 Preview 2 계층을 빠르게 환기시켜보겠습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Preview 2 tools high-level architecture</source>
+          <target state="translated">Preview 2 도구에 대한 상위 수준 아키텍처</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The layering of the tools is quite simple.</source>
+          <target state="translated">도구 계층은 매우 간단합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>At the bottom we have the .NET Core Command Line tools as a foundation.</source>
+          <target state="translated">맨 아래 기본으로 .NET Core 명령줄 도구가 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>All other, higher-level tools such as Visual Studio or VS Code, depend and rely on the CLI to build projects, restore dependencies and so on.</source>
+          <target state="translated">Visual Studio 또는 VS Code와 같은 높은 수준의 다른 도구는 모두 프로젝트 빌드와 종속성 복원을 위해 CLI를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This meant that, for example, if Visual Studio wanted to perform a restore operation, it would call into <ph id="ph1">`dotnet restore`</ph> command in the CLI.</source>
+          <target state="translated">다시 말하면 예를 들어 Visual Studio에서 복원 작업을 수행하려면 CLI에서 <ph id="ph1">`dotnet restore`</ph> 명령을 호출합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>With the move to the new project system, the previous diagram changes:</source>
+          <target state="translated">새 프로젝트 시스템으로의 이전으로 이전 다이어그램이 다음과 같이 변경됩니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Preview 3 tools high-level architecture</source>
+          <target state="translated">Preview 3 도구에 대한 상위 수준 아키텍처</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The main difference is that the CLI is not the foundational layer anymore; this role is now filled by the "shared SDK component".</source>
+          <target state="translated">주요 차이점은 CLI가 더 이상 기본 계층이 아니라는 점입니다. 이 역할은 이제 "공유된 SDK 구성 요소"에 의해 채워집니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This shared SDK component is a set of targets and associated tasks that are responsible for compiling your code, publishing it, packing nuget packages etc. The SDK itself is open-source and is available on GitHub on the <bpt id="p1">[</bpt>SDK repo<ept id="p1">](https://github.com/dotnet/sdk)</ept>.</source>
+          <target state="translated">이 공유된 SDK 구성 요소는 코드 컴파일, 게시, nuget 패키지 압축 등을 담당하는 대상 및 관련 작업 집합입니다. SDK 자체는 오픈 소스이며 <bpt id="p1">[</bpt>SDK 리포지토리<ept id="p1">](https://github.com/dotnet/sdk)</ept>의 GitHub에서 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> a "target" is an MSBuild term that indicates a named operation that MSBuild can invoke.</source>
+          <target state="translated"><bpt id="p1">**</bpt>참고:<ept id="p1">**</ept> "대상"은 MSBuild에서 호출할 수 있는 명명된 작업을 나타내는 MSBuild 용어입니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It is usually coupled with one or more tasks that execute some logic that the target is supposed to do.</source>
+          <target state="translated">일반적으로 대상에서 구현되는 로직을 실행하는 하나 이상의 작업과 함께 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>MSBuild supports many ready-made targets such as <ph id="ph1">`Copy`</ph> or <ph id="ph2">`Execute`</ph>; it also allows users to write their own tasks using managed code and define targets to execute those tasks.</source>
+          <target state="translated">MSBuild는 <ph id="ph1">`Copy`</ph> 또는 <ph id="ph2">`Execute`</ph>와 같이 바로 사용할 수 있는 많은 대상을 지원합니다. 또한 이를 통해 사용자는 관리되는 코드를 사용하여 고유한 작업을 기록하고 대상을 정의하여 이러한 작업을 실행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can read more about MSBuild tasks on <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms171466.aspx)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/ms171466.aspx)</ept>에서 MSBuild 작업에 대해 확인하세요.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>All the toolsets now consume the shared SDK component and its targets, CLI included.</source>
+          <target state="translated">이제 모든 도구 집합은 CLI를 비롯하여 공유된 SDK 구성 요소와 대상을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For example, the next version of Visual Studio will not call into <ph id="ph1">`dotnet restore`</ph> command to restore dependencies for .NET Core projects, it will use the "Restore" target directly.</source>
+          <target state="translated">예를 들어 Visual Studio의 다음 버전에서 NET Core 프로젝트용 종속성 복원을 위해 <ph id="ph1">`dotnet restore`</ph> 명령을 호출하지 않는다면, 직접 "복원" 대상을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Since these are MSBuild targets, you can also use raw MSBuild to execute them using the <bpt id="p1">[</bpt>dotnet msbuild<ept id="p1">](dotnet-msbuild.md)</ept> command.</source>
+          <target state="translated">이는 MSBuild 대상이므로, 원시 MSBuild를 사용하여 <bpt id="p1">[</bpt>dotnet msbuild<ept id="p1">](dotnet-msbuild.md)</ept> 명령을 통해 실행할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Preview 3 CLI commands</source>
+          <target state="translated">Preview 3 CLI 명령</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The shared SDK component means that the majority of existing CLI commands have been re-implemented as MSBuild tasks and targets.</source>
+          <target state="translated">공유된 SDK 구성 요소는 대부분의 기존 CLI 명령들이 MSBuild 작업 및 대상으로 다시 구현되었음을 의미합니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>What does this mean for the CLI commands and your usage of the toolset?</source>
+          <target state="translated">CLI 명령 및 도구 집합의 경우 어떤 의미가 있을까요?</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>From an usage perspective, it doesn't change the way you use the CLI.</source>
+          <target state="translated">사용 관점으로 보면 CLI를 사용하는 방식은 변경되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The CLI still has the core commands that exist in Preview 2 release:</source>
+          <target state="translated">CLI에는 Preview 2 릴리스에 있는 핵심 명령이 아직 있습니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on).</source>
+          <target state="translated">이러한 명령은 여전히 사용자가 예상하는 대로 수행됩니다(프로젝트 새로 구동, 빌드, 게시, 압축 등).</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using <ph id="ph1">`dotent &lt;command&gt; --help`</ph>) or Preview 3 documentation on this site to get familiar with any changes.</source>
+          <target state="translated">대부분의 옵션은 변경되지 않은 채로 그래도 있습니다. 변경 사항에 대해 살펴보려면 이 사이트의 Preview 3 설명서 또는 명령의 도움말 화면(<ph id="ph1">`dotent &lt;command&gt; --help`</ph> 사용)에서 참조할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>From an execution perspective, the CLI commands will take their parameters and construct a call to "raw" MSBuild that will set the needed properties and run the desired target.</source>
+          <target state="translated">실행 관점에서 CLI 명령은 매개 변수를 사용하고 "원시" MSBuild에 대한 호출을 생성하여 필요한 속성을 설정하고 원하는 대상을 실행합니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To better illustrate this, consider the following command:</source>
+          <target state="translated">이해를 돕기 위해 다음 명령을 고려해 보세요.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This command is publishing an application into a <ph id="ph1">`pub`</ph> folder using the "Release" configuration.</source>
+          <target state="translated">이 명령은 "릴리스" 구성을 사용하여 응용 프로그램을 <ph id="ph1">`pub`</ph> 폴더에 게시합니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Internally, this command gets translated into the following MSBuild invocation:</source>
+          <target state="translated">내부적으로 이 명령은 다음과 같은 MSBuild 호출로 변환됩니다.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The notable exception to this rule are <ph id="ph1">`new`</ph> and <ph id="ph2">`run`</ph> commands, as they have not been implemented as MSBuild targets.</source>
+          <target state="translated">이 규칙에서 주목할 만한 예외는 <ph id="ph1">`new`</ph> 및 <ph id="ph2">`run`</ph> 명령으로 MSBuild 대상으로 구현되지 않았습니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">결론</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>This document outlined at a high-level the changes that are happening to the overall CLI tooling architecture and functioning that are coming with Preview 3.</source>
+          <target state="translated">이 문서에서는 Preview 3에서 제공되는 전반적인 CLI 도구 아키텍처와 기능에서 발생하는 높은 수준의 변경에 대해 개괄적으로 살펴보았습니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It has introduced the notion of the shared SDK component as well as explained how the CLI commands function, from a technical perspective, in Preview 3.</source>
+          <target state="translated">공유된 SDK 구성 요소 개념에 대해 소개하고 Preview 3에서 CLI 명령이 기술적인 관점에서 작동하는 방식에 대해 살펴보았습니다.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

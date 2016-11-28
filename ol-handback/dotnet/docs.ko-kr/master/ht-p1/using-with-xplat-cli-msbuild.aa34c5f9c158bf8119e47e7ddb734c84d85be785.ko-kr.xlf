@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b17021e79bcdb2dc69f97b709f4aa63dbab9aa</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tutorials\using-with-xplat-cli-msbuild.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f4687c866d3e890d8a186aa37ff5cdea27ffe4b8</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">80690ec3287d1b867fca08669e2a6f0351ed22df</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK Preview 3)</source>
+          <target state="translated">명령줄(SDK Preview 3)을 사용하여 Windows/Linux/macOS에서 .NET Core 시작</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows, Linux, or macOS using the .NET Core command line interface (CLI)</source>
+          <target state="translated">CLI(명령줄 인터페이스)를 사용하여 Windows, Linux 또는 macOS에서 .NET Core 시작</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK Preview 3)</source>
+          <target state="translated">명령줄(SDK Preview 3)을 사용하여 Windows/Linux/macOS에서 .NET Core 시작</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This guide will show you how to use the .NET Core CLI tooling to build cross-platform console apps.</source>
+          <target state="translated">이 가이드에서는 .NET Core CLI 도구를 사용하여 플랫폼 간 콘솔 앱을 빌드하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It will start with the most basic console app and eventually span multiple projects, including testing.</source>
+          <target state="translated">가장 기본적인 콘솔 앱으로 시작하여 테스트를 비롯한 여러 프로젝트로 확장됩니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>You'll add these features step-by-step, building on what you've already seen and built.</source>
+          <target state="translated">이러한 기능을 단계별로 추가하며, 이미 확인하고 빌드한 것 위에서 빌드하게 됩니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you're unfamiliar with the .NET Core CLI toolset, read <bpt id="p1">[</bpt>the .NET Core SDK overview<ept id="p1">](../tools/dotnet.md)</ept>.</source>
+          <target state="translated">.NET Core CLI 도구 집합에 익숙하지 않은 경우 <bpt id="p1">[</bpt>.NET Core SDK 개요<ept id="p1">](../tools/dotnet.md)</ept>를 읽어 보세요.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">필수 구성 요소</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Before you begin, ensure you have <bpt id="p1">[</bpt>.NET Core CLI tooling Preview 3 or later<ept id="p1">](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)</ept>.</source>
+          <target state="translated">시작하기 전에 <bpt id="p1">[</bpt>.NET Core CLI 도구 Preview 3 이상<ept id="p1">](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md)</ept>이 있는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You'll also need a text editor.</source>
+          <target state="translated">텍스트 편집기도 필요합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Hello, Console App!</source>
+          <target state="translated">Hello, 콘솔 앱!</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>First, navigate to or create a new folder with a name you like.</source>
+          <target state="translated">먼저, 원하는 이름의 폴더로 이동하거나 폴더를 새로 만듭니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>"Hello" is the name chosen for the sample code, which can be found <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild)</ept>.</source>
+          <target state="translated">"Hello"는 샘플 코드에 대해 선택한 이름으로, <bpt id="p1">[</bpt>여기<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild)</ept>서 찾을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Open up a command prompt and type the following:</source>
+          <target state="translated">명령 프롬프트를 열고 다음을 입력합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Let's do a quick walkthrough:</source>
+          <target state="translated">이제 간단한 연습을 해보겠습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept> creates an up-to-date <ph id="ph2">`Hello.csproj`</ph> project file with the dependencies necessary to build a console app.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet new`</ph><ept id="p1">](../tools/dotnet-new.md)</ept>는 콘솔 앱을 빌드하는 데 필요한 종속성이 있는 최신 <ph id="ph2">`Hello.csproj`</ph> 프로젝트 파일입니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>It also creates a <ph id="ph1">`Program.cs`</ph>, a basic file containing the entry point for the application.</source>
+          <target state="translated">응용 프로그램에 대한 진입점을 포함하는 기본 파일인 <ph id="ph1">`Program.cs`</ph>도 만듭니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Hello.csproj`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Hello.csproj`</ph>:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The project file specifies everything that's needed to restore dependencies and build the program.</source>
+          <target state="translated">프로젝트 파일은 종속성을 복원하고 프로그램을 빌드하는 데 필요한 모든 항목을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Import`</ph> tag brings in some properties that are common to all .NET Core projects.</source>
+          <target state="translated">모든 .NET Core 프로젝트에 공통된 일부 속성에는 <ph id="ph1">`Import`</ph> 태그가 제공됩니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`OutputType`</ph> tag specifies that we're building an executable, in other words a console application.</source>
+          <target state="translated"><ph id="ph1">`OutputType`</ph> 태그에서는 실행 파일, 즉 콘솔 응용 프로그램을 빌드하고 있음을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TargetFramework`</ph> tag specifies what .NET runtime we're targeting.</source>
+          <target state="translated"><ph id="ph1">`TargetFramework`</ph> 태그는 대상으로 지정한 .NET 런타임을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In an advance scenario, you can specify multiple target frameworks and build to all those in a single operation.</source>
+          <target state="translated">고급 시나리오에서는 여러 대상 프레임워크를 지정하고 이 모든 프레임워크를 단일 작업으로 빌드할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In this tutorial, we'll stick to building only for .NET Core 1.0.</source>
+          <target state="translated">이 자습서에서는 .NET Core 1.0에 대해서만 빌드합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Compile`</ph> tag tells the compiler to build all the files in the current directory and all its subdirectories that have the <ph id="ph2">`.cs`</ph> file extension, in other words all the C# files in the project.</source>
+          <target state="translated"><ph id="ph1">`Compile`</ph> 태그는 컴파일러에서 <ph id="ph2">`.cs`</ph> 파일 확장자가 있는 현재 디렉터리와 모든 하위 디렉터리에 모든 파일, 즉 프로젝트에 있는 모든 C# 파일을 빌드하도록 합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In advanced scenarios, it is possible to exclude files, but in this tutorial, and in most simple scenarios, this line can be left unchanged.</source>
+          <target state="translated">고급 시나리오에서는 파일을 제외할 수 있지만 이 자습서와 대부분의 간단한 시나리오에서 이 줄은 변경되지 않고 유지될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`EmbeddedResource`</ph> tag instructs the build system to embed localization files with the extension <ph id="ph2">`.resx`</ph> into the compiled executable.</source>
+          <target state="translated"><ph id="ph1">`EmbeddedResource`</ph> 태그는 빌드 시스템이 <ph id="ph2">`.resx`</ph> 확장명이 포함된 지역화 파일을 컴파일된 실행 파일에 포함하도록 지시합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>We won't use that feature in this tutorial.</source>
+          <target state="translated">이 자습서에서는 해당 기능을 사용하지 않겠습니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PackageReference`</ph> tags specify what dependency packages must be restored and included when building the application.</source>
+          <target state="translated"><ph id="ph1">`PackageReference`</ph> 태그는 응용 프로그램을 작성할 때 복원하고 포함해야 할 종속성 패키지를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Each package reference specifies the name of the package under the <ph id="ph1">`Include`</ph> attribute, and a version number.</source>
+          <target state="translated">각 패키지 참조에서는 <ph id="ph1">`Include`</ph> 특성 아래 패키지의 이름과 버전 번호를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In most advanced scenarios, you'll add more package references.</source>
+          <target state="translated">고급 시나리오에서는 패키지 참조가 더 추가됩니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>It is also possible to reference other projects on disk.</source>
+          <target state="translated">디스크에서 다른 프로젝트를 참조하는 것도 가능합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The program starts by <ph id="ph1">`using System`</ph>, which means "bring everything in the <ph id="ph2">`System`</ph> namespace into scope for this file".</source>
+          <target state="translated">프로그램은 <ph id="ph1">`using System`</ph>으로 시작됩니다. 즉, "<ph id="ph2">`System`</ph> 네임스페이스의 모든 항목을 이 파일 범위로 가져옵니다".</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`System`</ph> namespace includes basic constructs such as <ph id="ph2">`string`</ph>, or numeric types.</source>
+          <target state="translated"><ph id="ph1">`System`</ph> 네임스페이스에는 <ph id="ph2">`string`</ph> 또는 숫자 형식과 같은 기본 구문이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>We then define a namespace called "ConsoleApplication".</source>
+          <target state="translated">그런 다음 "ConsoleApplication"이라는 네임스페이스를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can change this to anything you want.</source>
+          <target state="translated">이 이름은 원하는 값으로 변경할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A class named "Program" is defined within that namespace, with a <ph id="ph1">`Main`</ph> method that takes an array of strings as its argument.</source>
+          <target state="translated">"프로그램"이라는 클래스는 해당 네임스페이스 내에서 인수로 문자열 배열을 사용하는 <ph id="ph1">`Main`</ph> 메서드로 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This array will contain the list of arguments passed in when the compiled program will be called.</source>
+          <target state="translated">이 배열에는 컴파일된 프로그램을 호출할 때 전달된 인수 목록이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>As it is, this array is not used: all the program is doing is to write "Hello World!"</source>
+          <target state="translated">이 배열은 그대로 사용되지 않습니다. 프로그램은 모두 "Hello World!"를 작성합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>to the console.</source>
+          <target state="translated">표시합니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>We can make things a little more interesting by changing the <ph id="ph1">`Console.WriteLine`</ph> into the following code.</source>
+          <target state="translated"><ph id="ph1">`Console.WriteLine`</ph>을 다음 코드로 변경하여 좀 더 재미있게 만들 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept> calls into <bpt id="p2">[</bpt>NuGet<ept id="p2">](http://nuget.org)</ept> (.NET's package manager) to restore the tree of dependencies.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet restore`</ph><ept id="p1">](../tools/dotnet-restore.md)</ept>는 <bpt id="p2">[</bpt>NuGet<ept id="p2">](http://nuget.org)</ept>(.NET의 패키지 관리자)을 호출하여 종속성 트리를 복원합니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>NuGet analyzes the <ph id="ph1">`Hello.csproj`</ph> file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the <ph id="ph2">`obj/project.assets.json`</ph> file.</source>
+          <target state="translated">NuGet은 <ph id="ph1">`Hello.csproj`</ph> 파일을 분석하고, 파일에 명시된 종속성을 다운로드하고(또는 컴퓨터의 캐시에서 종속성을 가져오고), <ph id="ph2">`obj/project.assets.json`</ph> 파일을 작성합니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.assets.json`</ph> file is necessary to be able to compile and run.</source>
+          <target state="translated"><ph id="ph1">`project.assets.json`</ph> 파일은 컴파일 및 실행하려면 필요합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.assets.json`</ph> file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.</source>
+          <target state="translated"><ph id="ph1">`project.assets.json`</ph> 파일은 NuGet 종속성 및 앱을 설명하는 기타 정보로 구성된 그래프의 지속적이고 전체적인 집합입니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This file is read by other tools, such as <ph id="ph1">`dotnet build`</ph> and <ph id="ph2">`dotnet run`</ph>, enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.</source>
+          <target state="translated"><ph id="ph1">`dotnet build`</ph> 및 <ph id="ph2">`dotnet run`</ph> 같은 다른 도구에서는 이 파일을 읽고, NuGet 종속성 및 바인딩 확인의 올바른 집합으로 소스 코드를 처리합니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept> calls <ph id="ph2">`dotnet build`</ph> to ensure that the build targets have been built, and then calls <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph> to run the target application.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet run`</ph><ept id="p1">](../tools/dotnet-run.md)</ept>은 <ph id="ph2">`dotnet build`</ph>를 호출하여 빌드 대상이 빌드되었는지를 확인하고 <ph id="ph3">`dotnet &lt;assembly.dll&gt;`</ph>을 호출하여 대상 응용 프로그램을 실행합니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can also execute <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept> to compile the code without running the build console applications.</source>
+          <target state="translated">또한 <bpt id="p1">[</bpt><ph id="ph1">`dotnet build`</ph><ept id="p1">](../tools/dotnet-build.md)</ept>를 실행하여 빌드 콘솔 응용 프로그램을 실행하지 않고 코드를 컴파일할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>This results in a <ph id="ph1">`bin/Debug/netcoreapp1.0/Hello.dll`</ph> compiled application that can be run with <ph id="ph2">`dotnet bin\Debug\netcoreapp1.0\Hello.dll`</ph> on Windows, and <ph id="ph3">`dotnet bin/Debug/netcoreapp1.0/Hello.dll`</ph> on other systems.</source>
+          <target state="translated">이로 인해 Windows에서는 <ph id="ph2">`dotnet bin\Debug\netcoreapp1.0\Hello.dll`</ph>로, 다른 시스템에서는 <ph id="ph3">`dotnet bin/Debug/netcoreapp1.0/Hello.dll`</ph>로 실행할 수 있는 <ph id="ph1">`bin/Debug/netcoreapp1.0/Hello.dll`</ph> 컴파일된 응용 프로그램이 만들어 집니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You may specify an additional parameter on the command-line (assuming you are on Windows):</source>
+          <target state="translated">명령줄에서 추가 매개 변수를 지정할 수 있습니다(사용자가 Windows를 사용한다고 가정).</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>As an advanced scenario, it's possible to build the application as a self-contained set of platform-specific files that can be deployed and run to a machine that doesn't necessarily have .NET Core installed.</source>
+          <target state="translated">고급 시나리오에서는 .NET Core를 설치하지 않아도 되는 컴퓨터에 배포하고 실행할 수 있는 자체 포함된 플랫폼별 파일로 응용 프로그램을 빌드할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>.NET Core Application Deployment<ept id="p1">](../deploying/index.md)</ept> for details.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>.NET Core 응용 프로그램 배포<ept id="p1">](../deploying/index.md)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Augmenting the program</source>
+          <target state="translated">프로그램 보강</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Let's change the file just a little bit.</source>
+          <target state="translated">파일을 아주 조금만 변경하겠습니다.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Fibonacci numbers are fun, so let's try that out:</source>
+          <target state="translated">피보나치(Fibonacci) 숫자가 흥미로우므로 시도해 보겠습니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>And running the program (assuming you're on Windows, and have changed the project directory name to Fibonacci):</source>
+          <target state="translated">프로그램을 실행합니다(플랫폼은 Windows이며 프로젝트 디렉터리 이름을 Fibonacci로 변경한 것으로 가정).</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">됐습니다!</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can augment <ph id="ph1">`Program.cs`</ph> any way you like.</source>
+          <target state="translated">원하는 대로 <ph id="ph1">`Program.cs`</ph>를 보강할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Adding some new files</source>
+          <target state="translated">몇 가지 새 파일 추가</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Single files are fine for simple one-off programs, but chances are you're going to want to break things out into multiple files if you're building anything which has multiple components.</source>
+          <target state="translated">단순한 일회용 프로그램에는 단일 파일도 괜찮지만, 여러 구성 요소가 있는 프로그램을 빌드하는 경우 기능을 여러 파일로 분할해야 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Multiple files are a way to do that.</source>
+          <target state="translated">여러 파일은 이런 경우에 사용합니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Create a new file and give it a unique namespace:</source>
+          <target state="translated">새 파일을 만들고 고유한 네임스페이스를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Next, include it in your <ph id="ph1">`Program.cs`</ph> file:</source>
+          <target state="translated">이런 다음 <ph id="ph1">`Program.cs`</ph> 파일에 포함합니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>And finally, you can build it:</source>
+          <target state="translated">마지막으로 파일을 빌드할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Now the fun part: making the new file do something!</source>
+          <target state="translated">이제부터가 흥미로운 부분입니다. 새 파일로 작업을 수행하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Example: A Fibonacci Sequence Generator</source>
+          <target state="translated">예제: 피보나치 시퀀스 생성기</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Let's say you want to build off of the previous Fibonacci example by caching some Fibonacci values and add some recursive flair.</source>
+          <target state="translated">일부 피보나치 값을 캐시하여 이전 피보나치 예제에서 빌드하고 약간의 재귀 기능을 추가하려 한다고 가정해 보겠습니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Your code for a <bpt id="p1">[</bpt>better Fibonacci example<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetterMsBuild)</ept> might use a new <ph id="ph1">`FibonacciGenerator.cs`</ph> file with the following code.</source>
+          <target state="translated"><bpt id="p1">[</bpt>더 나은 피보나치 예제<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/FibonacciBetterMsBuild)</ept>에 대한 코드는 다음 코드로 새 <ph id="ph1">`FibonacciGenerator.cs`</ph> 파일을 사용할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Now adjust the <ph id="ph1">`Main()`</ph> method in your <ph id="ph2">`Program.cs`</ph> file as shown below.</source>
+          <target state="translated">이제 아래와 같이 <ph id="ph2">`Program.cs`</ph> 파일에서 <ph id="ph1">`Main()`</ph> 메서드를 조정합니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Finally, run it!</source>
+          <target state="translated">마지막으로 실행합니다!</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">됐습니다!</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">결론</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Hopefully this guide has helped you learn how to create a .NET Core console app, from the basics all the way up to a multi-project system with unit tests.</source>
+          <target state="translated">이 가이드가 기본적인 사항에서 단위 테스트가 포함된 다중 프로젝트 시스템에 이르기까지 .NET Core 콘솔 앱을 만드는 방법을 배우는 데 도움이 되었길 바랍니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The next step is to create awesome console apps of your own!</source>
+          <target state="translated">다음 단계는 자신만의 멋진 콘솔 앱을 만드는 것입니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If a more advanced example of a console app interests you, check out the next tutorial: <bpt id="p1">[</bpt>Organizing and testing projects with the .NET Core command line (SDK Preview 3)<ept id="p1">](using-with-xplat-cli-msbuild-folders.md)</ept>.</source>
+          <target state="translated">흥미로운 고급 콘솔 앱의 예제를 보려면 <bpt id="p1">[</bpt>.NET Core 명령줄(SDK Preview 3)을 사용하여 프로젝트 구성 및 테스트<ept id="p1">](using-with-xplat-cli-msbuild-folders.md)</ept> 자습서를 참조하세요.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

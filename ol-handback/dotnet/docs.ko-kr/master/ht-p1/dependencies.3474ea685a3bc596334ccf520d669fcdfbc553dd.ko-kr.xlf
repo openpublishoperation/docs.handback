@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e04d5f3b08c7f6885ed9914a91fc308234e6ce3b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\dependencies.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fc9d6ce3df104e95d7a86ace7cec5ce6b8035a20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d0e2fc93c7a1a6541f179cfebce1e46d8f0149b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Managing dependencies in .NET Core Preview 3 tooling</source>
+          <target state="translated">.NET Core Preview 3 도구에서 종속성 관리</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Preview 3 brings about changes to how dependencies are managed</source>
+          <target state="translated">Preview 3을 통해 종속성을 관리하는 방식에 대한 변경 내용 설명</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, 확장성, 사용자 지정 명령, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Managing dependencies in .NET Core Preview 3 tooling</source>
+          <target state="translated">.NET Core Preview 3 도구에서 종속성 관리</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">개요</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>With the move of .NET Core projects from project.json to csproj and MSBuild, a significant invesment also happened that resulted in unification of the project file and assets that allow tracking of depenencies.</source>
+          <target state="translated">.NET Core 프로젝트가 project.json에서 csproj 및 MSBuild로 이동하면서 상당한 투자가 발생되어 그 결과 종속성 추적을 허용하는 프로젝트 파일과 자산 통합이 이루어졌습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For .NET Core projects this is similar to what project.json did.</source>
+          <target state="translated">.NET Core 프로젝트의 경우 project.json의 경우와 비슷합니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>There is no separate JSON or XML file that tracks NuGet dependencies.</source>
+          <target state="translated">NuGet 종속성을 추적하는 별도 JSON 또는 XML 파일이 없습니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>With this change, we've also introduced another type of <bpt id="p1">*</bpt>reference<ept id="p1">*</ept> into the csproj syntax called the <ph id="ph1">`&lt;PackageReference&gt;`</ph>.</source>
+          <target state="translated">이 변경으로 <ph id="ph1">`&lt;PackageReference&gt;`</ph>라는 csproj 구문에 대한 다른 <bpt id="p1">*</bpt>참조<ept id="p1">*</ept> 형식도 소개하였습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This document describes the new reference type.</source>
+          <target state="translated">이 문서에서는 새 참조 형식을 설명합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>It also shows how to add a package dependency using this new reference type to your project.</source>
+          <target state="translated">또한 프로젝트에 대한 이 새 참조 형식을 사용하여 패키지 종속성을 추가하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The new <ph id="ph1">&lt;PackageReference&gt;</ph> element</source>
+          <target state="translated">새 <ph id="ph1">&lt;PackageReference&gt;</ph> 요소</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;PackageReference&gt;`</ph> has the following basic structure:</source>
+          <target state="translated"><ph id="ph1">`&lt;PackageReference&gt;`</ph>의 기본 구조는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you are familiar with MSBuild, it will look familiar to the other <bpt id="p1">[</bpt>reference types<ept id="p1">]()</ept> that already exist.</source>
+          <target state="translated">MSBuild를 잘 알고 있다면 이미 있는 다른 <bpt id="p1">[</bpt>참조 형식<ept id="p1">]()</ept>과 유사해 보입니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The key is the <ph id="ph1">`Include`</ph> statement which specifies the package id that you wish to add to the project.</source>
+          <target state="translated">키는 프로젝트에 추가할 패키지 ID를 지정하는 <ph id="ph1">`Include`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;Version&gt;`</ph> child element specified the version to get.</source>
+          <target state="translated"><ph id="ph1">`&lt;Version&gt;`</ph> 자식 요소는 가져올 버전을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The versions are specified as per <bpt id="p1">[</bpt>NuGet version rules<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/dependency-versions#version-ranges)</ept>.</source>
+          <target state="translated">버전은 <bpt id="p1">[</bpt>NuGet 버전 규칙<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/dependency-versions#version-ranges)</ept>에 따라 지정됩니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> if you are not faimilar with the overall <ph id="ph1">`csproj`</ph> syntax, you can use the <bpt id="p2">[</bpt>MSBuild project reference documentation<ept id="p2">]()</ept> to get acquainted.</source>
+          <target state="translated"><bpt id="p1">**</bpt>참고:<ept id="p1">**</ept> 전체 <ph id="ph1">`csproj`</ph> 구문에 대해 잘 알고 있지 않은 경우 <bpt id="p2">[</bpt>MSBuild 프로젝트 참조 설명서<ept id="p2">]()</ept>를 사용하여 자세히 알아보세요.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Adding a dependency that is available only in a specific target is done using conditions:</source>
+          <target state="translated">특정 대상에만 사용할 수 있는 종속성을 추가하려면 다음 조건을 사용하여 수행합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The above means that the dependency will only be valid if the build is happening for that given target.</source>
+          <target state="translated">위의 예는 지정된 대상에 대해 빌드가 발생한 경우에만 종속성이 유효하다는 것을 의미합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`$(TargetFramework)`</ph> in the condition is a MSBuild property that is being set in the project.</source>
+          <target state="translated">조건에서 <ph id="ph1">`$(TargetFramework)`</ph>는 프로젝트에 설정 되는 MSBuild 속성입니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For most common .NET Core applications, you will not need to do this.</source>
+          <target state="translated">가장 일반적인.NET Core 응용 프로그램의 경우 이 작업을 수행하지 않아도 됩니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Adding a dependency to your project</source>
+          <target state="translated">프로젝트에 종속성 추가</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Adding a dependency to your project is straightforward.</source>
+          <target state="translated">프로젝트에 종속성을 추가하는 작업은 간단합니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Here is an example of how to add <ph id="ph1">`JSON.net`</ph> version <ph id="ph2">`9.0.1`</ph> to your project.</source>
+          <target state="translated">다음은 <ph id="ph1">`JSON.net`</ph> 버전 <ph id="ph2">`9.0.1`</ph>을 프로젝트에 추가하는 방법을 보여 주는 예입니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Of course, it is applicable to any other NuGet dependency.</source>
+          <target state="translated">물론, 다른 NuGet 종속성에 적용됩니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When you open your project file, you will see two or more <ph id="ph1">`&lt;ItemGroup&gt;`</ph> nodes.</source>
+          <target state="translated">프로젝트 파일을 열면 <ph id="ph1">`&lt;ItemGroup&gt;`</ph> 노드가 두 개 이상 나타납니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You will notice that one of the nodes already has <ph id="ph1">`&lt;PackageReference&gt;`</ph> elements in it.</source>
+          <target state="translated">노드 중 하나에 이미 <ph id="ph1">`&lt;PackageReference&gt;`</ph> 요소가 있다고 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can add your new dependency to this node, or create a new one; it is completely up to you as the result will be the same.</source>
+          <target state="translated">이 노드에 새 종속성을 추가하거나 새로 만들 수 있습니다. 둘 중 어떤 방법을 사용해도 결과는 동일합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In this example we will use the default template that is dropped by <ph id="ph1">`dotnet new`</ph>.</source>
+          <target state="translated">이 예제에서는 <ph id="ph1">`dotnet new`</ph>에서 삭제된 기본 템플릿을 사용해보겠습니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This is a simple console application.</source>
+          <target state="translated">이는 간단한 콘솔 응용 프로그램입니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>When we open up the project, we first find the <ph id="ph1">`&lt;ItemGroup&gt;`</ph> with already existing <ph id="ph2">`&lt;PackageReference&gt;`</ph> in it.</source>
+          <target state="translated">프로젝트를 열면 먼저 이미 기존 <ph id="ph2">`&lt;PackageReference&gt;`</ph>에 <ph id="ph1">`&lt;ItemGroup&gt;`</ph>이 있음을 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>We then add the following to it:</source>
+          <target state="translated">그리고 다음을 추가합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>After this, we save the project and run the <ph id="ph1">`dotnet restore`</ph> command to install the dependency.</source>
+          <target state="translated">이렇게 되면 프로젝트를 저장하고 <ph id="ph1">`dotnet restore`</ph> 명령을 실행하여 종속성을 설치합니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The full project looks like this:</source>
+          <target state="translated">전체 프로젝트는 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Removing a dependency from the project</source>
+          <target state="translated">프로젝트에서 종속성 제거</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Removing a dependency from the project file involves simply removing the <ph id="ph1">`&lt;PackageReference&gt;`</ph> from the project file.</source>
+          <target state="translated">프로젝트 파일에서 종속성을 제거하는 작업은 프로젝트 파일에서 <ph id="ph1">`&lt;PackageReference&gt;`</ph>를 단순히 제거하는 것입니다.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
