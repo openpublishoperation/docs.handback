@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md) | InSyncHandedBackSuccess | [Details](#a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366)
 
 ## Item Details
-##### <a name='a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366'></a> Source: [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\getting-started.md](https://github.com/dotnet/docs.ru-ru/blob/4719c036fa69e57caf1f2c23474c0b06cf58e893/docs/standard/getting-started.md)
-* Handoff File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/1b43a6399f50578b92f2bbd5497b4df49352db20/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf)
-* Handoff Datetime: 2016-11-16 09:05:14
-* Handoff Reason: Include
-* Archive File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf)
-* Archive Datetime: 2016-11-18 07:26:08
-* Handback File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/4f409372fc9b4c22e1cf183cfed59a05a42dc6d6/ol-handback/dotnet/docs.ru-ru/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf)
-* Handback Datetime: 2016-11-29 17:18:47
-* Bilingual File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/b6bc3c600be730f5c559c37acba7c6aae8855789/ol-handback/dotnet/docs.ru-ru/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-25 14:49:52
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
