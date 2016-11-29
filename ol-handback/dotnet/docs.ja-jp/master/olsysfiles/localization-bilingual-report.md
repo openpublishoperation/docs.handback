@@ -1,14 +1,29 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
+ [docs\standard\about.md](https://github.com/dotnet/docs/blob/25ffe74610e938c23294654b35f095fb824d3068/docs/standard/about.md) | InSyncHandedBackSuccess | [Details](#f658a9f506c436d86282407d2cf40867f6717e4f3253)
  [docs\toc.md](https://github.com/dotnet/docs/blob/341586c479152b50767c761cbd1747d1af931fa0/docs/toc.md) | HandedOffSuccess | [Details](#6a6c18dec3c523ac966d0c16a3dd8ddb90fe94383382)
 
 ## Item Details
+##### <a name='f658a9f506c436d86282407d2cf40867f6717e4f3253'></a> Source: [docs\standard\about.md](https://github.com/dotnet/docs/blob/25ffe74610e938c23294654b35f095fb824d3068/docs/standard/about.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\about.md](https://github.com/dotnet/docs.ja-jp/blob/c55a00c8e2637b70dac425848b6407ce9a8ae4d7/docs/standard/about.md)
+* Handoff File: [about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/05d83ded7e697d8722b56d23ccb273b5cf7037a8/ol-handoff/dotnet/docs.ja-jp/master/ht-p2/about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf)
+* Handoff Datetime: 2016-11-17 08:47:52
+* Handoff Reason: Include
+* Archive File: [about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/0463cbc0cd2c36f2c1459721d992b0da8ae4da3e/ol-archive/dotnet/docs.ja-jp/master/ht-p2/about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf)
+* Archive Datetime: 2016-11-18 07:26:34
+* Handback File: [about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/3fb7355be24d4688b7c4fca8bf269c1955b3e56f/ol-handback/dotnet/docs.ja-jp/master/ht-p2/about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf)
+* Handback Datetime: 2016-11-29 16:55:45
+* Bilingual File: [about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/3fb7355be24d4688b7c4fca8bf269c1955b3e56f/ol-handback/dotnet/docs.ja-jp/master/ht-p2/about.ad7aa428a901c640dfa039841c34b756e7aabd82.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-29 16:58:53
+* [Back to Top](#report-top)
+
 ##### <a name='6a6c18dec3c523ac966d0c16a3dd8ddb90fe94383382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/341586c479152b50767c761cbd1747d1af931fa0/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
