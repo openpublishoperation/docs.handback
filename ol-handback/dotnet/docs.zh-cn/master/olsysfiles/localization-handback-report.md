@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | InSyncHandedBackSuccess | [Details](#5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352)
 
 ## Item Details
+##### <a name='5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\exceptions.md](https://github.com/dotnet/docs.zh-cn/blob/506a5690d19bd8cc93173fec968feea8d8483125/docs/standard/exceptions.md)
+* Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f8be5063f532b2a06e6176fe50676c924c141694/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Handoff Datetime: 2016-11-16 11:17:18
+* Handoff Reason: Include
+* Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Archive Datetime: 2016-11-18 07:26:17
+* Handback File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/9c4d236d26e29e07f40f16116d72d73a7f8222d9/ol-handback/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Handback Datetime: 2016-11-29 13:27:56
+* Bilingual File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0fce32bd3bbe0acb288002c5a42e5d1be9ea2a62/ol-handback/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-25 13:33:43
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
