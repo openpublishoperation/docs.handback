@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backreference.md) | InSyncHandedBackSuccess | [Details](#757c8c4e71bbafb12c8add925723daf1a24e06d13259)
 
 ## Item Details
+##### <a name='757c8c4e71bbafb12c8add925723daf1a24e06d13259'></a> Source: [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/backreference.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\base-types\backreference.md](https://github.com/dotnet/docs.de-de/blob/12801d0b41afb5fa9dc23883e22c319eea5181d9/docs/standard/base-types/backreference.md)
+* Handoff File: [backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/dab63646e3a29d8a7a883198cd4a9159618c1eb4/ol-handoff/dotnet/docs.de-de/master/ht-p2/backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf)
+* Handoff Datetime: 2016-11-16 11:15:57
+* Handoff Reason: Include
+* Archive File: [backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/9863d9b09ca5b3e2afe806da809e3c9a2fcc77f7/ol-archive/dotnet/docs.de-de/master/ht-p2/backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf)
+* Archive Datetime: 2016-11-18 07:25:43
+* Handback File: [backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf](https://github.com/dotnet/docs.handback/blob/215416fdf07d956fa4a5c737b9d3b92b8fa1ed76/ol-handback/dotnet/docs.de-de/master/ht-p2/backreference.fbef437996ba5b6b67d262c55e28849753ee06cf.de-de.xlf)
+* Handback Datetime: 2016-11-29 16:44:17
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
