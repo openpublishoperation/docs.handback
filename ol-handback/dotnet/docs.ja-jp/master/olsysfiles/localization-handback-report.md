@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md) | InSyncHandedBackSuccess | [Details](#a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366)
 
 ## Item Details
-##### <a name='a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366'></a> Source: [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\getting-started.md](https://github.com/dotnet/docs.ja-jp/blob/c55a00c8e2637b70dac425848b6407ce9a8ae4d7/docs/standard/getting-started.md)
-* Handoff File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/3864fdd700a36f9fa5d799ee2fe3c53862295251/ol-handoff/dotnet/docs.ja-jp/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf)
-* Handoff Datetime: 2016-11-16 09:05:42
-* Handoff Reason: Include
-* Archive File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/0463cbc0cd2c36f2c1459721d992b0da8ae4da3e/ol-archive/dotnet/docs.ja-jp/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf)
-* Archive Datetime: 2016-11-18 07:26:34
-* Handback File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/a446a3ed374c79ecdab0fcc1e6c56676c947922e/ol-handback/dotnet/docs.ja-jp/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf)
-* Handback Datetime: 2016-11-29 17:19:04
-* Bilingual File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/07e055c49ccfcd1b9f2527756eb0b76acc2fbedf/ol-handback/dotnet/docs.ja-jp/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-25 10:19:57
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
