@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\contributing.md](https://github.com/dotnet/docs/blob/eaf88f2528d069cd0b17749a9d839cd83da8914a/docs/core/preview3/contributing.md) | HandedOffSuccess | [Details](#4d5fa8592ec69d864bd9a5e6dcfde4c2036dd5c457)
 
 ## Item Details
-##### <a name='4d5fa8592ec69d864bd9a5e6dcfde4c2036dd5c457'></a> Source: [docs\core\preview3\contributing.md](https://github.com/dotnet/docs/blob/eaf88f2528d069cd0b17749a9d839cd83da8914a/docs/core/preview3/contributing.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/10adf764680c081d839cded4037e39bcd168e605/ol-handoff/dotnet/docs.de-de/master/ht-p1/contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf)
-* Handoff Datetime: 2016-11-30 02:35:58
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\preview3\contributing.md](https://github.com/dotnet/docs.de-de/blob/33105c1d7686bc3d9561fecbccb48b6a59ebe240/docs/core/preview3/contributing.md)
-* Current Handback File: [contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf](https://github.com/dotnet/docs.handback/blob/35137098ae8b778e11c7a70541283f4e907b91ed/ol-handback/dotnet/docs.de-de/master/ht-p1/contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf)
-* Current Handback Datetime: 2016-11-25 11:49:59
-* Bilingual File: [contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf](https://github.com/dotnet/docs.handback/blob/35137098ae8b778e11c7a70541283f4e907b91ed/ol-handback/dotnet/docs.de-de/master/ht-p1/contributing.d09c5cb84aedfebcb439768c30f4d13a637536cd.de-de.xlf)
-* Bilingual Datetime: 2016-11-25 11:50:37
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
