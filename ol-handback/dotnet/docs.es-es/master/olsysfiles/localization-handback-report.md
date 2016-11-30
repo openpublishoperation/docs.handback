@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md) | InSyncHandedBackSuccess | [Details](#a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291)
 
 ## Item Details
+##### <a name='a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291'></a> Source: [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\base-types\options.md](https://github.com/dotnet/docs.es-es/blob/fc539e6bb1f62d3885dbaf6daf597a163a161d43/docs/standard/base-types/options.md)
+* Handoff File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/aed8dcc4a6186931a91a77d033fb9f242977f27c/ol-handoff/dotnet/docs.es-es/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf)
+* Handoff Datetime: 2016-11-16 11:16:21
+* Handoff Reason: Include
+* Archive File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/eae70a503f72c605cd3e29f38b98a394ddac87ff/ol-archive/dotnet/docs.es-es/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf)
+* Archive Datetime: 2016-11-18 07:25:56
+* Handback File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf](https://github.com/dotnet/docs.handback/blob/5b06435890a755dd5fc51225ce53dcc57f30cc16/ol-handback/dotnet/docs.es-es/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf)
+* Handback Datetime: 2016-11-30 17:33:00
+* Bilingual File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf](https://github.com/dotnet/docs.handback/blob/d402cfa8eb29bbba037c4d17d2d79f6a5cd75b6d/ol-handback/dotnet/docs.es-es/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.es-es.xlf)
+* Bilingual Datetime: 2016-11-18 09:23:27
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
