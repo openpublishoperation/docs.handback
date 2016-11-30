@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | InSyncHandedBackSuccess | [Details](#5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352)
 
 ## Item Details
-##### <a name='5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\exceptions.md](https://github.com/dotnet/docs.fr-fr/blob/c70b220c726e3b02eaf65f4add31f9dc34b49bfd/docs/standard/exceptions.md)
-* Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/bd4db3f09ef0a3167a658ff194e858761211c9f4/ol-handoff/dotnet/docs.fr-fr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf)
-* Handoff Datetime: 2016-11-16 11:15:09
-* Handoff Reason: Include
-* Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/1b9a0992c2da97a9007e2fa5cc88140d26f9b173/ol-archive/dotnet/docs.fr-fr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf)
-* Archive Datetime: 2016-11-18 07:25:25
-* Handback File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/644d5dc9d476aa0bb34808020e8f16e030748588/ol-handback/dotnet/docs.fr-fr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf)
-* Handback Datetime: 2016-11-30 21:26:32
-* Bilingual File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/994b31151b830229a03d1b4e0cc43f849ee72ca4/ol-handback/dotnet/docs.fr-fr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-15 21:32:03
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
