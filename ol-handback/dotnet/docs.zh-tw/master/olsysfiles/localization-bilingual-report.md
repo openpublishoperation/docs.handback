@@ -1,29 +1,14 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md) | InSyncHandedBackSuccess | [Details](#a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291)
  [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md) | HandedOffSuccess | [Details](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
 
 ## Item Details
-##### <a name='a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291'></a> Source: [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\options.md](https://github.com/dotnet/docs.zh-tw/blob/d7d3fb331a60871533c157198f67a88972b41e3e/docs/standard/base-types/options.md)
-* Handoff File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/822fc4c86b093bd0e8e6220f197f2c66ba6fc742/ol-handoff/dotnet/docs.zh-tw/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf)
-* Handoff Datetime: 2016-11-16 11:17:44
-* Handoff Reason: Include
-* Archive File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/54b2315f7f2b6a1a74ec63053cbdae50321f54f3/ol-archive/dotnet/docs.zh-tw/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf)
-* Archive Datetime: 2016-11-18 07:26:25
-* Handback File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/1b7034fbdd212a1ca59b8a84474fc129c791e2a5/ol-handback/dotnet/docs.zh-tw/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf)
-* Handback Datetime: 2016-11-30 17:33:25
-* Bilingual File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/1b7034fbdd212a1ca59b8a84474fc129c791e2a5/ol-handback/dotnet/docs.zh-tw/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-30 17:39:39
-* [Back to Top](#report-top)
-
 ##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
