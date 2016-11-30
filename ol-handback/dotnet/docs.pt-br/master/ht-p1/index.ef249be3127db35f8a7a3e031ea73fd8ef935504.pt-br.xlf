@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-eac019f" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e75dbae3e8c778d204f9ad0e2ec48adb75b16c74</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\fsharp\language-reference\functions\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c9265094e0f5d96aeeb0511f2dddf4de5a664b6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">054aa4663cc1ef343f0b777541a3f24496e2ba3a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Functions (F#)</source>
+          <target state="translated">Funções (F#)</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Functions (F#)</source>
+          <target state="translated">Funções (F#)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>visual f#, f#, functional programming</source>
+          <target state="translated">visual f#, f#, programação funcional</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Functions</source>
+          <target state="translated">Funções</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Functions are the fundamental unit of program execution in any programming language.</source>
+          <target state="translated">As funções são a unidade fundamental de execução do programa em qualquer linguagem de programação.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>As in other languages, an F# function has a name, can have parameters and take arguments, and has a body.</source>
+          <target state="translated">Como em outras linguagens, uma função do F# tem um nome, pode ter parâmetros e receber argumentos, e tem um corpo.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.</source>
+          <target state="translated">O F# também oferece suporte a construções de programação funcional como tratamento de funções como valores, uso de funções sem nome em expressões, composição de funções para formar novas funções, funções via currying e a definição implícita de funções por meio da aplicação parcial dos argumentos da função.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You define functions by using the <ph id="ph1">`let`</ph> keyword, or, if the function is recursive, the <ph id="ph2">`let rec`</ph> keyword combination.</source>
+          <target state="translated">Defina funções usando a palavra-chave <ph id="ph1">`let`</ph>, ou, se a função for recursiva, a combinação de palavras-chave <ph id="ph2">`let rec`</ph>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+          <target state="translated">Sintaxe</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Remarks</source>
+          <target state="translated">Comentários</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>function-name<ept id="p1">*</ept> is an identifier that represents the function.</source>
+          <target state="translated"><bpt id="p1">*</bpt>function-name<ept id="p1">*</ept> é um identificador que representa a função.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>parameter-list<ept id="p1">*</ept> consists of successive parameters that are separated by spaces.</source>
+          <target state="translated"><bpt id="p1">*</bpt>parameter-list<ept id="p1">*</ept> é formado por parâmetros sucessivos separados por espaços.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can specify an explicit type for each parameter, as described in the Parameters section.</source>
+          <target state="translated">Você pode especificar um tipo explícito para cada parâmetro, conforme descrito na seção Parâmetros.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you do not specify a specific argument type, the compiler attempts to infer the type from the function body.</source>
+          <target state="translated">Se você não especificar um tipo de argumento específico, o compilador tentará inferir o tipo do corpo da função.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>function-body<ept id="p1">*</ept> consists of an expression.</source>
+          <target state="translated"><bpt id="p1">*</bpt>function-body<ept id="p1">*</ept> é formado por uma expressão.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The expression that makes up the function body is typically a compound expression consisting of a number of expressions that culminate in a final expression that is the return value.</source>
+          <target state="translated">A expressão que constitui o corpo da função normalmente é uma expressão composta formada por diversas expressões que culminam em uma expressão final, que é o valor de retorno.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>return-type<ept id="p1">*</ept> is a colon followed by a type and is optional.</source>
+          <target state="translated"><bpt id="p1">*</bpt>return-type<ept id="p1">*</ept> é um sinal de dois-pontos seguido por um tipo, e é opcional.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you do not specify the type of the return value explicitly, the compiler determines the return type from the final expression.</source>
+          <target state="translated">Se você não especificar explicitamente o tipo do valor de retorno, o compilador determinará o tipo de retorno da expressão final.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A simple function definition resembles the following:</source>
+          <target state="translated">Uma definição de função simples é semelhante à seguinte:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In the previous example, the function name is <ph id="ph1">`f`</ph>, the argument is <ph id="ph2">`x`</ph>, which has type <ph id="ph3">`int`</ph>, the function body is <ph id="ph4">`x + 1`</ph>, and the return value is of type <ph id="ph5">`int`</ph>.</source>
+          <target state="translated">No exemplo anterior, o nome da função é <ph id="ph1">`f`</ph>, o argumento é <ph id="ph2">`x`</ph>, que tem o tipo <ph id="ph3">`int`</ph>, o corpo da função é <ph id="ph4">`x + 1`</ph> e o valor de retorno é do tipo <ph id="ph5">`int`</ph>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Functions can be marked <ph id="ph1">`inline`</ph>.</source>
+          <target state="translated">As funções podem ser marcadas como <ph id="ph1">`inline`</ph>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For information about <ph id="ph1">`inline`</ph>, see <bpt id="p1">[</bpt>Inline Functions<ept id="p1">](../functions/inline-functions.md)</ept>.</source>
+          <target state="translated">Para saber mais sobre <ph id="ph1">`inline`</ph>, veja <bpt id="p1">[</bpt>Funções embutidas<ept id="p1">](../functions/inline-functions.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Scope</source>
+          <target state="translated">Escopo</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>At any level of scope other than module scope, it is not an error to reuse a value or function name.</source>
+          <target state="translated">Em qualquer nível de escopo diferente do escopo do módulo, não é errado reutilizar um nome de função ou valor.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you reuse a name, the name declared later shadows the name declared earlier.</source>
+          <target state="translated">Se você reutilizar um nome, o nome declarado posteriormente cobrirá o nome declarado anteriormente.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>However, at the top level scope in a module, names must be unique.</source>
+          <target state="translated">No entanto, no escopo de nível superior em um módulo, os nomes devem ser exclusivos.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, the following code produces an error when it appears at module scope, but not when it appears inside a function:</source>
+          <target state="translated">Por exemplo, o código a seguir gera um erro quando é exibido no escopo do módulo, mas não quando aparece dentro de uma função:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet101.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet101.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>But the following code is acceptable at any level of scope:</source>
+          <target state="translated">Mas o código a seguir é aceitável em qualquer nível do escopo:</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet102.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet102.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+          <target state="translated">Parâmetros</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Names of parameters are listed after the function name.</source>
+          <target state="translated">Os nomes de parâmetros são listados após o nome da função.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You can specify a type for a parameter, as shown in the following example:</source>
+          <target state="translated">Você pode especificar um tipo para um parâmetro, conforme mostra o exemplo a seguir:</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If you specify a type, it follows the name of the parameter and is separated from the name by a colon.</source>
+          <target state="translated">Se você especificar um tipo, ele virá após o nome do parâmetro e será separado do nome por dois-pontos.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If you omit the type for the parameter, the parameter type is inferred by the compiler.</source>
+          <target state="translated">Se você omitir o tipo do parâmetro, o tipo de parâmetro será inferido pelo compilador.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, in the following function definition, the argument <ph id="ph1">`x`</ph> is inferred to be of type <ph id="ph2">`int`</ph> because 1 is of type <ph id="ph3">`int`</ph>.</source>
+          <target state="translated">Por exemplo, na definição de função a seguir, o argumento <ph id="ph1">`x`</ph> é inferido como sendo do tipo <ph id="ph2">`int`</ph>, pois 1 é do tipo <ph id="ph3">`int`</ph>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>However, the compiler will attempt to make the function as generic as possible.</source>
+          <target state="translated">No entanto, o compilador tentará tornar a função a mais genérica possível.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For example, note the following code:</source>
+          <target state="translated">Por exemplo, observe o código a seguir:</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The function creates a tuple from one argument of any type.</source>
+          <target state="translated">A função cria uma tupla de um argumento de qualquer tipo.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Because the type is not specified, the function can be used with any argument type.</source>
+          <target state="translated">Como o tipo não foi especificado, a função pode ser usada com qualquer tipo de argumento.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Automatic Generalization<ept id="p1">](../generics/automatic-generalization.md)</ept>.</source>
+          <target state="translated">Para saber mais, veja <bpt id="p1">[</bpt>Generalização automática<ept id="p1">](../generics/automatic-generalization.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Function Bodies</source>
+          <target state="translated">Corpos de Função</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A function body can contain definitions of local variables and functions.</source>
+          <target state="translated">O corpo de uma função pode conter definições de funções e variáveis locais.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Such variables and functions are in scope in the body of the current function but not outside it.</source>
+          <target state="translated">Essas variáveis e funções estão no escopo no corpo da função atual, mas não fora dela.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When you have the lightweight syntax option enabled, you must use indentation to indicate that a definition is in a function body, as shown in the following example:</source>
+          <target state="translated">Quando a opção de sintaxe leve está habilitada, é necessário usar o recuo para indicar que uma definição está em um corpo de função, conforme mostra o exemplo a seguir:</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet103.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet103.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Code Formatting Guidelines<ept id="p1">](../code-formatting-guidelines.md)</ept> and <bpt id="p2">[</bpt>Verbose Syntax<ept id="p2">](../verbose-syntax.md)</ept>.</source>
+          <target state="translated">Para saber mais, veja <bpt id="p1">[</bpt>Diretrizes de formatação de código<ept id="p1">](../code-formatting-guidelines.md)</ept> e <bpt id="p2">[</bpt>Sintaxe detalhada<ept id="p2">](../verbose-syntax.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Return Values</source>
+          <target state="translated">Valores de Retorno</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The compiler uses the final expression in a function body to determine the return value and type.</source>
+          <target state="translated">O compilador usa a expressão final em um corpo de função para determinar o valor de retorno e o tipo.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The compiler might infer the type of the final expression from previous expressions.</source>
+          <target state="translated">O compilador pode inferir o tipo da expressão final a partir das expressões anteriores.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the function <ph id="ph1">`cylinderVolume`</ph>, shown in the previous section, the type of <ph id="ph2">`pi`</ph> is determined from the type of the literal <ph id="ph3">`3.14159`</ph> to be <ph id="ph4">`float`</ph>.</source>
+          <target state="translated">Na função <ph id="ph1">`cylinderVolume`</ph>, mostrada na seção anterior, o tipo de <ph id="ph2">`pi`</ph> é determinado pelo tipo do literal <ph id="ph3">`3.14159`</ph> como <ph id="ph4">`float`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The compiler uses the type of <ph id="ph1">`pi`</ph> to determine the type of the expression <ph id="ph2">`h * pi * r * r`</ph> to be <ph id="ph3">`float`</ph>.</source>
+          <target state="translated">O compilador usa o tipo de <ph id="ph1">`pi`</ph> para determinar o tipo da expressão <ph id="ph2">`h * pi * r * r`</ph> como <ph id="ph3">`float`</ph>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Therefore, the overall return type of the function is <ph id="ph1">`float`</ph>.</source>
+          <target state="translated">Portanto, o tipo de retorno geral da função é <ph id="ph1">`float`</ph>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To specify the return value explicitly, write the code as follows:</source>
+          <target state="translated">Para especificar explicitamente o valor de retorno, escreva o código da seguinte maneira:</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet105.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet105.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>As the code is written above, the compiler applies <bpt id="p1">**</bpt>float<ept id="p1">**</ept> to the entire function; if you mean to apply it to the parameter types as well, use the following code:</source>
+          <target state="translated">À medida que o código é escrito acima, o compilador aplica <bpt id="p1">**</bpt>float<ept id="p1">**</ept> à função inteira; se você também pretende aplicá-lo aos tipos de parâmetro, use o código a seguir:</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Calling a Function</source>
+          <target state="translated">Chamando uma Função</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You call functions by specifying the function name followed by a space and then any arguments separated by spaces.</source>
+          <target state="translated">Você pode chamar funções especificando o nome da função seguido por um espaço e por quaisquer argumentos, separados por espaços.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example, to call the function <bpt id="p1">**</bpt>cylinderVolume<ept id="p1">**</ept> and assign the result to the value <bpt id="p2">**</bpt>vol<ept id="p2">**</ept>, you write the following code:</source>
+          <target state="translated">Por exemplo, para chamar a função <bpt id="p1">**</bpt>cylinderVolume<ept id="p1">**</ept> e atribuir o resultado para o valor <bpt id="p2">**</bpt>vol<ept id="p2">**</ept>, escreva o código a seguir:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Partial Application of Arguments</source>
+          <target state="translated">Aplicativo de Argumentos Parcial</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>If you supply fewer than the specified number of arguments, you create a new function that expects the remaining arguments.</source>
+          <target state="translated">Se você fornecer uma quantidade inferior ao número especificado de argumentos, criará uma nova função que esperará os argumentos restantes.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This method of handling arguments is referred to as <bpt id="p1">*</bpt>currying<ept id="p1">*</ept> and is a characteristic of functional programming languages like F#.</source>
+          <target state="translated">Esse método de manipulação de argumentos é conhecido como <bpt id="p1">*</bpt>currying<ept id="p1">*</ept>, e é uma característica de linguagens de programação funcionais como F#.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For example, suppose you are working with two sizes of pipe: one has a radius of <bpt id="p1">**</bpt>2.0<ept id="p1">**</ept> and the other has a radius of <bpt id="p2">**</bpt>3.0<ept id="p2">**</ept>.</source>
+          <target state="translated">Por exemplo, vamos supor que você esteja trabalhando com dois tamanhos de pipe: uma com um raio de <bpt id="p1">**</bpt>2.0<ept id="p1">**</ept> e outro com um raio de <bpt id="p2">**</bpt>3.0<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You could create functions that determine the volume of pipe as follows:</source>
+          <target state="translated">Você poderia criar funções que determinam o volume do pipe da seguinte maneira:</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet106.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet106.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You would then supply the additional argument as needed for various lengths of pipe of the two different sizes:</source>
+          <target state="translated">Em seguida, você forneceria o argumento adicional, conforme o necessário, para várias durações de pipe dos dois tamanhos diferentes:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet107.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet107.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Recursive Functions</source>
+          <target state="translated">Funções Recursivas</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Recursive functions<ept id="p1">*</ept> are functions that call themselves.</source>
+          <target state="translated">As <bpt id="p1">*</bpt>funções recursivas<ept id="p1">*</ept> são funções que chamam a si próprias.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>They require that you specify the <bpt id="p1">**</bpt>rec<ept id="p1">**</ept> keyword following the <bpt id="p2">**</bpt>let<ept id="p2">**</ept> keyword.</source>
+          <target state="translated">Eles exigem que você especifique a palavra-chave <bpt id="p1">**</bpt>rec<ept id="p1">**</ept> logo após a palavra-chave <bpt id="p2">**</bpt>let<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Invoke the recursive function from within the body of the function just as you would invoke any function call.</source>
+          <target state="translated">Invoque a função recursiva de dentro do corpo da função, exatamente como você invocaria qualquer chamada de função.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The following recursive function computes the <bpt id="p1">*</bpt>n<ept id="p1">*</ept>th Fibonacci number.</source>
+          <target state="translated">A função recursiva a seguir calcula o <bpt id="p1">*</bpt>enésimo<ept id="p1">*</ept> número de Fibonacci.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The Fibonacci number sequence has been known since antiquity and is a sequence in which each successive number is the sum of the previous two numbers in the sequence.</source>
+          <target state="translated">A sequência numérica de Fibonacci é conhecida desde a antiguidade e é uma sequência na qual cada número sucessivo é a soma dos dois números anteriores na sequência.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet108.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet108.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Some recursive functions might overflow the program stack or perform inefficiently if you do not write them with care and with awareness of special techniques, such as the use of accumulators and continuations.</source>
+          <target state="translated">Algumas funções recursivas podem estourar a pilha do programa ou executar de maneira ineficiente se não forem escritas com cuidado e com conhecimento de técnicas especiais, como o uso de acumuladores e continuações.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Function Values</source>
+          <target state="translated">Valores de Função</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In F#, all functions are considered values; in fact, they are known as <bpt id="p1">*</bpt>function values<ept id="p1">*</ept>.</source>
+          <target state="translated">Em F#, todas as funções são consideradas valores; na verdade, elas são conhecidas como <bpt id="p1">*</bpt>valores de função<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Because functions are values, they can be used as arguments to other functions or in other contexts where values are used.</source>
+          <target state="translated">Como as funções são valores, elas podem ser usadas como argumentos de outras funções ou em outros contextos nos quais os valores são usados.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Following is an example of a function that takes a function value as an argument:</source>
+          <target state="translated">Veja a seguir um exemplo de uma função que usa um valor de função como argumento:</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet109.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet109.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You specify the type of a function value by using the <ph id="ph1">`-&gt;`</ph> token.</source>
+          <target state="translated">Especifique o tipo de valor de uma função usando o token <ph id="ph1">`-&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>On the left side of this token is the type of the argument, and on the right side is the return value.</source>
+          <target state="translated">À esquerda desse token está o tipo do argumento, e à direita está o valor de retorno.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>In the previous example, <ph id="ph1">`apply1`</ph> is a function that takes a function <ph id="ph2">`transform`</ph> as an argument, where <ph id="ph3">`transform`</ph> is a function that takes an integer and returns another integer.</source>
+          <target state="translated">No exemplo anterior, <ph id="ph1">`apply1`</ph> é uma função que use uma função <ph id="ph2">`transform`</ph> como um argumento, em que <ph id="ph3">`transform`</ph> é uma função que usa um inteiro e retorna outro inteiro.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The following code shows how to use <ph id="ph1">`apply1`</ph>:</source>
+          <target state="translated">O código a seguir mostra como usar <ph id="ph1">`apply1`</ph>:</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet110.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet110.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The value of <ph id="ph1">`result`</ph> will be 101 after the previous code runs.</source>
+          <target state="translated">O valor de <ph id="ph1">`result`</ph> será 101 após a execução do código anterior.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Multiple arguments are separated by successive <ph id="ph1">`-&gt;`</ph> tokens, as shown in the following example:</source>
+          <target state="translated">Vários argumentos são separados por tokens <ph id="ph1">`-&gt;`</ph> sucessivos, conforme mostra o exemplo a seguir:</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet111.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet111.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The result is 200.</source>
+          <target state="translated">O resultado é 200.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Lambda Expressions</source>
+          <target state="translated">Expressões lambda</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>lambda expression<ept id="p1">*</ept> is an unnamed function.</source>
+          <target state="translated">Uma <bpt id="p1">*</bpt>expressão lambda<ept id="p1">*</ept> é uma função sem nome.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>In the previous examples, instead of defining named functions <bpt id="p1">**</bpt>increment<ept id="p1">**</ept> and <bpt id="p2">**</bpt>mul<ept id="p2">**</ept>, you could use lambda expressions as follows:</source>
+          <target state="translated">Nos exemplos anteriores, em vez de definir as funções nomeadas <bpt id="p1">**</bpt>increment<ept id="p1">**</ept> e <bpt id="p2">**</bpt>mul<ept id="p2">**</ept>, use expressões lambda, da seguinte maneira:</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet112.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet112.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You define lambda expressions by using the <ph id="ph1">`fun`</ph> keyword.</source>
+          <target state="translated">Defina expressões lambda usando a palavra-chave <ph id="ph1">`fun`</ph>.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>A lambda expression resembles a function definition, except that instead of the <ph id="ph1">`=`</ph> token, the <ph id="ph2">`-&gt;`</ph> token is used to separate the argument list from the function body.</source>
+          <target state="translated">Uma expressão lambda é semelhante a uma definição de função, com exceção de que em vez do token <ph id="ph1">`=`</ph>, o token <ph id="ph2">`-&gt;`</ph> é usado para separar a lista de argumentos do corpo da função.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>As in a regular function definition, the argument types can be inferred or specified explicitly, and the return type of the lambda expression is inferred from the type of the last expression in the body.</source>
+          <target state="translated">Assim como em uma definição de função normal, os tipos de argumento podem ser inferidos ou explicitamente especificados, e o tipo de retorno da expressão lambda é inferido do tipo da última expressão no corpo.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Lambda Expressions: The <ph id="ph1">`fun`</ph> Keyword<ept id="p1">](../functions/lambda-expressions-the-fun-keyword.md)</ept>.</source>
+          <target state="translated">Para saber mais, veja <bpt id="p1">[</bpt>Expressões lambda: a palavra-chave <ph id="ph1">`fun`</ph><ept id="p1">](../functions/lambda-expressions-the-fun-keyword.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Function Composition and Pipelining</source>
+          <target state="translated">Composição de Função e Pipelining</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Functions in F# can be composed from other functions.</source>
+          <target state="translated">As funções em F# podem ser compostas de outras funções.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The composition of two functions <bpt id="p1">**</bpt>function1<ept id="p1">**</ept> and <bpt id="p2">**</bpt>function2<ept id="p2">**</ept> is another function that represents the application of <bpt id="p3">**</bpt>function1<ept id="p3">**</ept> followed the application of <bpt id="p4">**</bpt>function2<ept id="p4">**</ept>:</source>
+          <target state="translated">A composição de duas funções <bpt id="p1">**</bpt>função1<ept id="p1">**</ept> e <bpt id="p2">**</bpt>função2<ept id="p2">**</ept> é outra função que representa a aplicação da <bpt id="p3">**</bpt>função1<ept id="p3">**</ept> seguida pela aplicação da <bpt id="p4">**</bpt>função2<ept id="p4">**</ept>:</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet113.fs)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-fsharp</bpt><bpt id="p2">[</bpt>Main<ept id="p2">](../../../../samples/snippets/fsharp/lang-ref-1/snippet113.fs)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The result is 202.</source>
+          <target state="translated">O resultado é 202.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Pipelining enables function calls to be chained together as successive operations.</source>
+          <target state="translated">O pipelining permite o encadeamento de chamadas de função como operações sucessivas.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Pipelining works as follows:</source>
+          <target state="translated">O pipelining funciona da seguinte maneira:</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The result is again 202.</source>
+          <target state="translated">O resultado é 202 novamente.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The composition operators take two functions and return a function; by contrast, the pipeline operators take a function and an argument and return a value.</source>
+          <target state="translated">Os operadores de composição usam duas funções e retornam uma função; por outro lado, os operadores de pipeline usam uma função e um argumento e retornam um valor.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following code example shows the difference between the pipeline and composition operators by showing the differences in the function signatures and usage.</source>
+          <target state="translated">O exemplo de código a seguir mostra a diferença entre os operadores de pipeline e de composição, mostrando as diferenças no uso e nas assinaturas da função.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Overloading Functions</source>
+          <target state="translated">Sobrecarregando Funções</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>You can overload methods of a type but not functions.</source>
+          <target state="translated">Você pode sobrecarregar métodos de um tipo, mas não funções.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Methods<ept id="p1">](../members/methods.md)</ept>.</source>
+          <target state="translated">Para saber mais, veja <bpt id="p1">[</bpt>Métodos<ept id="p1">](../members/methods.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Values<ept id="p1">](../values/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Valores<ept id="p1">](../values/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>F# Language Reference<ept id="p1">](../index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Referência da Linguagem F#<ept id="p1">](../index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
