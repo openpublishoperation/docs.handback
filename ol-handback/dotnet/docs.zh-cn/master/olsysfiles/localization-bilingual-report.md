@@ -1,14 +1,29 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
+ [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | InSyncHandedBackSuccess | [Details](#5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352)
  [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md) | HandedOffSuccess | [Details](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
 
 ## Item Details
+##### <a name='5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\exceptions.md](https://github.com/dotnet/docs.zh-cn/blob/a3c6ab03c35b32690b4ce6f76cbf4d9c954a7b8d/docs/standard/exceptions.md)
+* Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f8be5063f532b2a06e6176fe50676c924c141694/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Handoff Datetime: 2016-11-16 11:17:18
+* Handoff Reason: Include
+* Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Archive Datetime: 2016-11-18 07:26:17
+* Handback File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/5109776927f1f9810a11f288560a9b71bc9b3b1d/ol-handback/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Handback Datetime: 2016-11-30 21:27:20
+* Bilingual File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/5109776927f1f9810a11f288560a9b71bc9b3b1d/ol-handback/dotnet/docs.zh-cn/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-30 21:30:08
+* [Back to Top](#report-top)
+
 ##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
