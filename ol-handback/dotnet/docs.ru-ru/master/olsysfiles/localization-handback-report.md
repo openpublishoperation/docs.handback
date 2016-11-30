@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md) | InSyncHandedBackSuccess | [Details](#fa0513a5b450742995bd86fca495ba9904e7361b3301)
 
 ## Item Details
-##### <a name='fa0513a5b450742995bd86fca495ba9904e7361b3301'></a> Source: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs.ru-ru/blob/4719c036fa69e57caf1f2c23474c0b06cf58e893/docs/standard/base-types/regex-behavior.md)
-* Handoff File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/8736ffd3b114268f961af29734b85f55d630465f/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf)
-* Handoff Datetime: 2016-11-16 11:16:54
-* Handoff Reason: Include
-* Archive File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf)
-* Archive Datetime: 2016-11-18 07:26:08
-* Handback File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f31ceea7a94b63d6ac9991a9888539287414b7cd/ol-handback/dotnet/docs.ru-ru/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf)
-* Handback Datetime: 2016-11-30 11:41:51
-* Bilingual File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f286615b95564f110c40d6cded66f24847821aca/ol-handback/dotnet/docs.ru-ru/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-29 16:57:49
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
