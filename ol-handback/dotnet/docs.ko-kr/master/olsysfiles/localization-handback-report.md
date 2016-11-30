@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | InSyncHandedBackSuccess | [Details](#5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352)
 
 ## Item Details
-##### <a name='5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\exceptions.md](https://github.com/dotnet/docs.ko-kr/blob/7db643580e0bf5edd6e3a39ddf30c84227e89c79/docs/standard/exceptions.md)
-* Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf)
-* Handoff Datetime: 2016-11-16 11:18:33
-* Handoff Reason: Include
-* Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/ca02aebde9da526e61ebd471febb014f6fea485c/ol-archive/dotnet/docs.ko-kr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf)
-* Archive Datetime: 2016-11-18 07:26:43
-* Handback File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/853ac62f94a01aa7c99d0bed86170aa11e795ab9/ol-handback/dotnet/docs.ko-kr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf)
-* Handback Datetime: 2016-11-30 21:27:42
-* Bilingual File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/91495cea2738682717862020ddd1dd02edebab45/ol-handback/dotnet/docs.ko-kr/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ko-kr.xlf)
-* Bilingual Datetime: 2016-11-18 09:24:14
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
