@@ -1,29 +1,14 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md) | InSyncHandedBackSuccess | [Details](#fa0513a5b450742995bd86fca495ba9904e7361b3301)
  [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md) | HandedOffSuccess | [Details](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
 
 ## Item Details
-##### <a name='fa0513a5b450742995bd86fca495ba9904e7361b3301'></a> Source: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs.it-it/blob/954549850646599d5521599260ac10b5cc05cd70/docs/standard/base-types/regex-behavior.md)
-* Handoff File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/596302bc5bacb4935ec4bc2ccbe255b1dc5f546f/ol-handoff/dotnet/docs.it-it/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf)
-* Handoff Datetime: 2016-11-16 11:15:34
-* Handoff Reason: Include
-* Archive File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/2f8c10b0be3c944763e7ea3ca06426e3ccac3678/ol-archive/dotnet/docs.it-it/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf)
-* Archive Datetime: 2016-11-18 07:25:34
-* Handback File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf](https://github.com/dotnet/docs.handback/blob/2ca93321284662faec5079fcd7e4de2fea2f8832/ol-handback/dotnet/docs.it-it/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf)
-* Handback Datetime: 2016-11-30 11:58:10
-* Bilingual File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf](https://github.com/dotnet/docs.handback/blob/2ca93321284662faec5079fcd7e4de2fea2f8832/ol-handback/dotnet/docs.it-it/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf)
-* Bilingual Datetime: 2016-11-30 11:59:29
-* [Back to Top](#report-top)
-
 ##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
