@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md) | InSyncHandedBackSuccess | [Details](#5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352)
 
 ## Item Details
+##### <a name='5271b63a47aa2fcc81cd9c8b1ffd22e6188294123352'></a> Source: [docs\standard\exceptions.md](https://github.com/dotnet/docs/blob/9584699ad7e745ae3cb059b1bb8327301c9a3286/docs/standard/exceptions.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\exceptions.md](https://github.com/dotnet/docs.ru-ru/blob/0951dea32624805a912c8979eae8e2d109955319/docs/standard/exceptions.md)
+* Handoff File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/8736ffd3b114268f961af29734b85f55d630465f/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf)
+* Handoff Datetime: 2016-11-16 11:16:54
+* Handoff Reason: Include
+* Archive File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf)
+* Archive Datetime: 2016-11-18 07:26:08
+* Handback File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/2c9746eb94ec2807db4338a405b65b7e572b34e7/ol-handback/dotnet/docs.ru-ru/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf)
+* Handback Datetime: 2016-11-30 21:27:07
+* Bilingual File: [exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/e55b5f4c459d0bf8449ecbbb9794edb1eae27ccc/ol-handback/dotnet/docs.ru-ru/master/ht-p2/exceptions.2c65f693d1e10768877aac0dd5db5448f6de5b33.ru-ru.xlf)
+* Bilingual Datetime: 2016-11-14 12:13:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
