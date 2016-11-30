@@ -1,45 +1,27 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 3
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/5c0514262e52d7c691f9a956fecfa8074e44d913/docs/core/getting-started.md) | ArchivedSuccess | [Details](#defe6350613d8e7167b0ccfe7893a4f2ba9a855443)
- [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md) | InSyncHandedBackSuccess | [Details](#a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366)
+ [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md) | InSyncHandedBackSuccess | [Details](#a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291)
  [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md) | HandedOffSuccess | [Details](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
 
 ## Item Details
-##### <a name='defe6350613d8e7167b0ccfe7893a4f2ba9a855443'></a> Source: [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/5c0514262e52d7c691f9a956fecfa8074e44d913/docs/core/getting-started.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/348b0985602ca99521b5e1f338a0ee11cb68f7ad/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Handoff Datetime: 2016-11-22 23:00:41
-* Handoff Reason: Include
-* Archive File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/07110f18e2711235a5e9352fa4f7378e35cf3c05/ol-archive/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Archive Datetime: 2016-11-28 06:10:24
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\getting-started.md](https://github.com/dotnet/docs.zh-cn/blob/f6f3c142cc1e438f363a30a0685207c882a86631/docs/core/getting-started.md)
-* Current Handback File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Current Handback Datetime: 2016-11-30 15:08:11
-* Bilingual File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-30 15:10:47
-* [Back to Top](#report-top)
-
-##### <a name='a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366'></a> Source: [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md)
+##### <a name='a2a9fe356a0b2e9cf9415714bc01b77ea86229fc3291'></a> Source: [docs\standard\base-types\options.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/options.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\getting-started.md](https://github.com/dotnet/docs.zh-cn/blob/f6f3c142cc1e438f363a30a0685207c882a86631/docs/standard/getting-started.md)
-* Handoff File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/5e96e427bf4ed5e892fe09fbb33ddac9d3e3dc20/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Handoff Datetime: 2016-11-16 09:05:21
+* Target File: [docs\standard\base-types\options.md](https://github.com/dotnet/docs.zh-cn/blob/a3c6ab03c35b32690b4ce6f76cbf4d9c954a7b8d/docs/standard/base-types/options.md)
+* Handoff File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f8be5063f532b2a06e6176fe50676c924c141694/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf)
+* Handoff Datetime: 2016-11-16 11:17:18
 * Handoff Reason: Include
-* Archive File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
+* Archive File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf)
 * Archive Datetime: 2016-11-18 07:26:17
-* Handback File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Handback Datetime: 2016-11-30 15:08:11
-* Bilingual File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-30 15:10:47
+* Handback File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/62238f5df00b1f2cb88092176393e90d126949d1/ol-handback/dotnet/docs.zh-cn/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf)
+* Handback Datetime: 2016-11-30 17:33:17
+* Bilingual File: [options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/62238f5df00b1f2cb88092176393e90d126949d1/ol-handback/dotnet/docs.zh-cn/master/ht-p2/options.65329b23b2caac128f3130b9180bba5a93dcbed5.zh-cn.xlf)
+* Bilingual Datetime: 2016-11-30 17:36:27
 * [Back to Top](#report-top)
 
 ##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md)
