@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md) | InSyncHandedBackSuccess | [Details](#fa0513a5b450742995bd86fca495ba9904e7361b3301)
 
 ## Item Details
+##### <a name='fa0513a5b450742995bd86fca495ba9904e7361b3301'></a> Source: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs/blob/b20713600d7c3ddc31be5885733a1e8910ede8c6/docs/standard/base-types/regex-behavior.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\base-types\regex-behavior.md](https://github.com/dotnet/docs.ko-kr/blob/ae02f34fe4a421d6d9b526241351f919b75b4df4/docs/standard/base-types/regex-behavior.md)
+* Handoff File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/d9bd8b655d57c4e4ce2f9f174b05c3e8d9a14176/ol-handoff/dotnet/docs.ko-kr/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf)
+* Handoff Datetime: 2016-11-16 11:18:33
+* Handoff Reason: Include
+* Archive File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/ca02aebde9da526e61ebd471febb014f6fea485c/ol-archive/dotnet/docs.ko-kr/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf)
+* Archive Datetime: 2016-11-18 07:26:43
+* Handback File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/07ac048994ef7d10eefe34cccf28bff9987627c8/ol-handback/dotnet/docs.ko-kr/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf)
+* Handback Datetime: 2016-11-30 11:58:18
+* Bilingual File: [regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/39884a1c75a3e20b8d44f70cf86fb8dc30c6cb89/ol-handback/dotnet/docs.ko-kr/master/ht-p2/regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.ko-kr.xlf)
+* Bilingual Datetime: 2016-11-16 13:34:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
