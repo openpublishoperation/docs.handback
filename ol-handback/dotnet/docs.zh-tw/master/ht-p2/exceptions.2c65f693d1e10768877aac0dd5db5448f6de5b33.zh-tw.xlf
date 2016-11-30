@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5271b63a47aa2fcc81cd9c8b1ffd22e618829412</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\exceptions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4039eb59d735cb586da4b617c06c78c4c56de430</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">be4d291e2a7cf2236c26ac277caceef429e3920d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">在 .NET 中處理和擲回例外狀況</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Understand how to use exceptions in .NET</source>
+          <target state="translated">了解如何在 .NET 中使用例外狀況</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Handling and throwing exceptions in .NET</source>
+          <target state="translated">在 .NET 中處理和擲回例外狀況</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Applications must be able to handle errors that occur during execution in a consistent manner.</source>
+          <target state="translated">應用程式必須能以一致的方式處理執行期間發生的錯誤。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>.NET provides a model for notifying applications of errors in a uniform way: .NET operations indicate failure by throwing exceptions.</source>
+          <target state="translated">.NET 提供模型，可以統一的方式通知應用程式的錯誤：.NET 作業會藉由擲回例外狀況指出失敗。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Exceptions</source>
+          <target state="translated">例外狀況</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>An exception is any error condition or unexpected behavior that is encountered by an executing program.</source>
+          <target state="translated">例外狀況是執行程式所遇到的錯誤狀況或未預期的行為。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown because of a fault in your code or in code that you call (such as a shared library), unavailable operating system resources, unexpected conditions that the runtime encounters (such as code that cannot be verified), and so on.</source>
+          <target state="translated">若是程式碼或您呼叫的程式碼 (例如共用程式庫) 中有錯誤、無法使用作業系統資源、執行階段遇到非預期的狀況 (例如無法驗證的程式碼) 等等，就可能擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Your application can recover from some of these conditions, but not from others.</source>
+          <target state="translated">您的應用程式可從一些狀況中復原，但有些狀況就無法復原。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Although you can recover from most application exceptions, you cannot recover from most runtime exceptions.</source>
+          <target state="translated">雖然您可以從應用程式的大部分例外狀況中復原，但卻無法從執行階段的大部分例外狀況中復原。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In .NET, an exception is an object that inherits from the <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> class.</source>
+          <target state="translated">在 .NET 中，例外狀況是從 <bpt id="p1">[</bpt>System.Exception<ept id="p1">](xref:System.Exception)</ept> 類別繼承的物件。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>An exception is thrown from an area of code where a problem has occurred.</source>
+          <target state="translated">從發生問題的程式碼區域擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The exception is passed up the stack until the application handles it or the program terminates.</source>
+          <target state="translated">例外狀況會向上傳遞堆疊，直到應用程式處理或程式終止它。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Exceptions vs. traditional error-handling methods</source>
+          <target state="translated">例外狀況與傳統錯誤處理方法的比較</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Traditionally, a language's error-handling model relied on either the language's unique way of detecting errors and locating handlers for them, or on the error-handling mechanism provided by the operating system.</source>
+          <target state="translated">傳統上，一種語言的錯誤處理模型不是依賴語言唯一偵測錯誤的方式與尋找處理常式，就是依賴作業系統所提供的錯誤處理機制。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The way .NET implements exception handling provides the following advantages:</source>
+          <target state="translated">.NET 實作例外狀況處理的方式具有下列優點：</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Exception throwing and handling works the same for .NET programming languages.</source>
+          <target state="translated">.NET 程式語言擲回和處理例外狀況的方式都相同。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Does not require any particular language syntax for handling exceptions, but allows each language to define its own syntax.</source>
+          <target state="translated">要處理例外狀況不需要任何特定語言的語法，但可讓每一種語言定義自己的語法。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Exceptions can be thrown across process and even machine boundaries.</source>
+          <target state="translated">例外狀況可跨處理序，甚至是跨電腦界限擲回。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Exception-handling code can be added to an application to increase program reliability.</source>
+          <target state="translated">可將例外狀況處理程式碼加入應用程式，以增加程式可靠性。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Exceptions offer advantages over other methods of error notification, such as return codes.</source>
+          <target state="translated">例外狀況優於其他錯誤通知方法，例如傳回碼。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Failures do not go unnoticed because if an exception is thrown and you don't handle it, the runtime terminates your application.</source>
+          <target state="translated">不會發生未通知失敗的情況，因為如果擲回例外狀況而您未加以處理，執行階段就會終止您的應用程式。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Invalid values do not continue to propagate through the system as a result of code that fails to check for a failure return code.</source>
+          <target state="translated">也不會因為程式碼無法檢查失敗傳回碼，就繼續在整個系統散佈無效的值。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Exception class and properties</source>
+          <target state="translated">Exception 類別和屬性</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class is the base class from which exceptions inherit.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 類別是例外狀況所繼承的基底類別。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.InvalidCastException</ph> class hierarchy is as follows:</source>
+          <target state="translated">例如 <ph id="ph1">@System.InvalidCastException</ph> 類別的階層如下：</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">@System.Exception</ph> class has the following properties that help make understanding an exception easier.</source>
+          <target state="translated"><ph id="ph1">@System.Exception</ph> 類別具有下列屬性，讓您更容易了解例外狀況。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Property Name</source>
+          <target state="translated">屬性名稱</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.Collections.IDictionary</ph> that holds arbitrary data in key-value pairs.</source>
+          <target state="translated"><ph id="ph1">@System.Collections.IDictionary</ph> 會將任意資料保存在索引鍵/值組。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Can hold a URL (or URN) to a help file that provides extensive information about the cause of an exception.</source>
+          <target state="translated">可保留說明檔的 URL (或 URN)，以提供有關例外狀況原因的廣泛資訊。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This property can be used to create and preserve a series of exceptions during exception handling.</source>
+          <target state="translated">您可以在例外狀況處理期間，使用此屬性來建立及保留一系列的例外狀況。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use it to create a new exception that contains previously caught exceptions.</source>
+          <target state="translated">您可以使用此屬性來建立新的例外狀況，其中包含先前攔截例外狀況。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The original exception can be captured by the second exception in the <ph id="ph1">@System.Exception.InnerException</ph> property, allowing code that handles the second exception to examine the additional information.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.InnerException</ph> 屬性中的第二個例外狀況可以擷取原始的例外狀況，讓程式碼可以處理第二個例外狀況，以檢視其他額外的資訊。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a method that receives an argument that's improperly formatted.</source>
+          <target state="translated">例如，假設您有一個方法會接收格式不正確的引數。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The code tries to read the argument, but an exception is thrown.</source>
+          <target state="translated">此程式碼會嘗試讀取引數，但擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The method catches the exception and throws a <ph id="ph1">@System.FormatException.</ph> To improve the caller's ability to determine the reason an exception is thrown, it is sometimes desirable for a method to catch an exception thrown by a helper routine and then throw an exception more indicative of the error that has occurred.</source>
+          <target state="translated">此方法會攔截例外狀況，並擲回 <ph id="ph1">@System.FormatException.</ph>。為改善呼叫端判斷例外狀況擲回原因的能力，有時會需要方法攔截協助程式常式擲回的例外狀況，然後再擲回例外狀況更清楚地指出所發生的錯誤。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A new and more meaningful exception can be created, where the inner exception reference can be set to the original exception.</source>
+          <target state="translated">您可以建立全新且更有意義的例外狀況，其中的內部例外狀況參考可設定為原始例外狀況。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This more meaningful exception can then be thrown to the caller.</source>
+          <target state="translated">這個更有意義的例外狀況接著會擲回給呼叫端。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Note that with this functionality, you can create a series of linked exceptions that ends with the exception that was thrown first.</source>
+          <target state="translated">請注意，透過這項功能，您可以建立一系列的連結例外狀況，每個例外狀況後面接著先前擲回的例外狀況。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides details about the cause of an exception.</source>
+          <target state="translated">提供有關例外狀況原因的詳細資料。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Gets or sets the name of the application or the object that causes the error.</source>
+          <target state="translated">取得或設定造成錯誤的應用程式或物件的名稱。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Contains a stack trace that can be used to determine where an error occurred.</source>
+          <target state="translated">包含可用來判斷發生錯誤位置的堆疊追蹤。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The stack trace includes the source file name and program line number if debugging information is available.</source>
+          <target state="translated">堆疊追蹤包括原始程式檔名稱和程式行號 (若有偵錯資訊的話)。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Most of the classes that inherit from <ph id="ph1">@System.Exception</ph> do not implement additional members or provide additional functionality; they simply inherit from <ph id="ph2">@System.Exception.</ph> Therefore, the most important information for an exception can be found in the hierarchy of exception classes, the exception name, and the information contained in the exception.</source>
+          <target state="translated">大部分繼承自 <ph id="ph1">@System.Exception</ph> 的類別都不會實作其他成員，也不會提供其他功能，而只會繼承 <ph id="ph2">@System.Exception.</ph>。因此可以在例外狀況類別階層、例外狀況名稱及例外狀況內含的資訊中，找到例外狀況最重要的資訊。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>It is recommended to throw and catch only objects that derive from <ph id="ph1">@System.Exception,</ph> but you can throw any object that derives from the <ph id="ph2">@System.Object</ph> class as an exception.</source>
+          <target state="translated">建議只擲回及攔截衍生自 <ph id="ph1">@System.Exception,</ph> 的物件，但您可以擲回任何衍生自 <ph id="ph2">@System.Object</ph> 類別的物件作為例外狀況。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Note that not all languages support throwing and catching objects that do not derive from <ph id="ph1">@System.Exception.</ph></source>
+          <target state="translated">請注意，並非所有語言都能擲回及攔截不是衍生自 <ph id="ph1">@System.Exception.</ph> 的物件。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Common Exceptions</source>
+          <target state="translated">常見的例外狀況</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following table lists some common exceptions with examples of what can cause them.</source>
+          <target state="translated">下表列出一些常見的例外狀況，並提供可能造成這些例外狀況的原因範例。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Exception type</source>
+          <target state="translated">例外狀況類型</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Base type</source>
+          <target state="translated">基底類型</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">範例</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Base class for all exceptions.</source>
+          <target state="translated">適用於所有例外狀況的基底類別。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">無 (使用這個例外狀況的衍生類別)。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when an array is indexed improperly.</source>
+          <target state="translated">只有當陣列索引不正確時，才由執行階段擲回。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Indexing an array outside its valid range: <ph id="ph1">`arr[arr.Length+1]`</ph></source>
+          <target state="translated">在有效的陣列範圍之外編製陣列索引：<ph id="ph1">`arr[arr.Length+1]`</ph></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Thrown by the runtime only when a null object is referenced.</source>
+          <target state="translated">只有當參考 Null 物件時，才由執行階段擲回。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Thrown by methods when in an invalid state.</source>
+          <target state="translated">當處於無效狀態時，由方法擲回。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Calling <ph id="ph1">`Enumerator.GetNext()`</ph> after removing an Item from the underlying collection.</source>
+          <target state="translated">在從基礎集合將 Item 移除之後，呼叫 <ph id="ph1">`Enumerator.GetNext()`</ph>。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Base class for all argument exceptions.</source>
+          <target state="translated">適用於所有引數例外狀況的基底類別。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>None (use a derived class of this exception).</source>
+          <target state="translated">無 (使用這個例外狀況的衍生類別)。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that do not allow an argument to be null.</source>
+          <target state="translated">由不允許引數為 Null 的方法擲回。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Thrown by methods that verify that arguments are in a given range.</source>
+          <target state="translated">由驗證引數是在指定範圍內的方法擲回。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>How to use the try/catch block to catch exceptions</source>
+          <target state="translated">如何使用 try/catch 區塊攔截例外狀況</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Place the sections of code that might throw exceptions in a <ph id="ph1">`try`</ph> block and place code that handles exceptions in a <ph id="ph2">`catch`</ph> block.</source>
+          <target state="translated">將可能擲回例外狀況的程式碼區段放在 <ph id="ph1">`try`</ph> 區塊中，並將處理例外狀況的程式碼放在 <ph id="ph2">`catch`</ph> 區塊中。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`catch`</ph> block is a series of statements beginning with the keyword <ph id="ph2">`catch`</ph>, followed by an exception type and an action to be taken.</source>
+          <target state="translated"><ph id="ph1">`catch`</ph> 區塊為一系列的陳述式，以關鍵字 <ph id="ph2">`catch`</ph> 開頭，後面接著例外狀況類型和要採取的動作。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible exception.</source>
+          <target state="translated">下列程式碼範例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 區塊攔截可能的例外狀況。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Main`</ph> method contains a <ph id="ph2">`try`</ph> block with a <ph id="ph3">@System.IO.StreamReader</ph> statement that opens a data file called <ph id="ph4">`data.txt`</ph> and writes a string from the file.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph> 方法包含內存 <ph id="ph3">@System.IO.StreamReader</ph> 陳述式的 <ph id="ph2">`try`</ph> 區塊，該陳述式可開啟名為 <ph id="ph4">`data.txt`</ph> 的資料檔案，並寫入檔案中的字串。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Following the <ph id="ph1">`try`</ph> block is a <ph id="ph2">`catch`</ph> block that catches any exception that results from the <ph id="ph3">`try`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`try`</ph> 區塊後面接著 <ph id="ph2">`catch`</ph> 區塊，該區塊會攔截 <ph id="ph3">`try`</ph> 區塊所產生的任何例外狀況。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>The common language runtime catches exceptions that are not caught by a catch block.</source>
+          <target state="translated">Common Language Runtime 會攔截 catch 區塊未攔截的例外狀況。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Depending on how the runtime is configured, a debug dialog box appears, or the program stops executing and a dialog box with exception information appears, or an error is printed out to STDERR.</source>
+          <target state="translated">根據執行階段的設定方式，可能會發生下列其中一種情況：顯示偵錯對話方塊、程式停止執行並顯示內含例外狀況資訊的對話方塊，或錯誤印出至 STDERR。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <ph id="ph1">@System.OutOfMemoryException.</ph> Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others.</source>
+          <target state="translated">幾乎所有程式碼行都能引發例外狀況，特別是 Common Language Runtime 本身擲回的例外狀況，例如 <ph id="ph1">@System.OutOfMemoryException.</ph>。大部分應用程式無須處理這些例外狀況，但在撰寫供他人使用的程式庫，應留意此可能性。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For suggestions on when to set code in a Try block, see <bpt id="p1">[</bpt>Best Practices for Exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">如需何時在 Try 區塊中設定程式碼的建議，請參閱<bpt id="p1">[</bpt>例外狀況的最佳做法<ept id="p1">](#best-practices-for-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>How to use specific exceptions in a Catch block</source>
+          <target state="translated">如何使用 Catch 區塊中的特定例外狀況</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The preceding code example illustrates a basic <ph id="ph1">`catch`</ph> statement that catches any exception.</source>
+          <target state="translated">上述程式碼範例示範攔截任何例外狀況的基本 <ph id="ph1">`catch`</ph> 陳述式。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In general, though, it's good programming practice to catch a specific type of exception rather than use a basic <ph id="ph1">`catch`</ph> statement.</source>
+          <target state="translated">一般而言，比起使用基本 <ph id="ph1">`catch`</ph> 陳述式，攔截特定例外狀況類型會是更佳的程式設計做法。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, it is passed up the stack and each catch block is given the opportunity to handle it.</source>
+          <target state="translated">發生例外狀況時，該例外狀況會在堆疊中向上傳遞，讓每個 catch 區塊都有機會處理。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The order of catch statements is important.</source>
+          <target state="translated">Catch 陳述式的順序很重要。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Put catch blocks targeted to specific exceptions before a general exception catch block or the compiler might issue an error.</source>
+          <target state="translated">請將針對特定例外狀況的 catch 區塊放在一般例外狀況的 catch 區塊之前，否則編譯器可能會發出錯誤。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The proper catch block is determined by matching the type of the exception to the name of the exception specified in the catch block.</source>
+          <target state="translated">藉由比對 catch 區塊中指定的例外狀況類型與例外狀況名稱，即可決定正確的 catch 區塊。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If there is no specific catch block, the exception is caught by a general catch block, if one exists.</source>
+          <target state="translated">如果沒有特定 catch 區塊，則會由一般 catch 區塊 (如果有的話) 攔截例外狀況。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.InvalidCastException.</ph> The sample creates a class called <ph id="ph5">`Employee`</ph> with a single property, employee level (<ph id="ph6">`Emlevel`</ph>).</source>
+          <target state="translated">下列程式碼範例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 區塊攔截 <ph id="ph4">@System.InvalidCastException.</ph>。此範例會建立名為的類別 <ph id="ph5">`Employee`</ph> 並只具有員工層級一個屬性 (<ph id="ph6">`Emlevel`</ph>) 的類別。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A method, <ph id="ph1">`PromoteEmployee`</ph>, takes an object and increments the employee level.</source>
+          <target state="translated"><ph id="ph1">`PromoteEmployee`</ph> 方法會採用一個物件並遞增員工層級。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">@System.InvalidCastException</ph> occurs when a <ph id="ph2">@System.DateTime</ph> instance is passed to the <ph id="ph3">`PromoteEmployee`</ph> method.</source>
+          <target state="translated"><ph id="ph1">@System.InvalidCastException</ph> 會在 <ph id="ph2">@System.DateTime</ph> 執行個體傳遞給 <ph id="ph3">`PromoteEmployee`</ph> 方法時發生。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>How to use finally blocks</source>
+          <target state="translated">如何使用 finally 區塊</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>When an exception occurs, execution stops and control is given to the appropriate exception handler.</source>
+          <target state="translated">發生例外狀況時，執行會停止，並將控制權交給適當的例外狀況處理常式。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>This often means that lines of code you expect to be executed are bypassed.</source>
+          <target state="translated">這通常表示會略過您預期要執行的程式碼行。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Some resource cleanup, such as closing a file, needs to be done even if an exception is thrown.</source>
+          <target state="translated">某些資源清除作業 (例如關閉檔案) 即使擲回例外狀況也必須執行。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>To do this, you can use a <ph id="ph1">`finally`</ph> block.</source>
+          <target state="translated">若要這樣做，您可以使用 <ph id="ph1">`finally`</ph> 區塊。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`finally`</ph> block always executes, regardless of whether an exception is thrown.</source>
+          <target state="translated"><ph id="ph1">`finally`</ph> 區塊永遠會執行，而不論是否擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch an <ph id="ph4">@System.ArgumentOutOfRangeException.</ph> The <ph id="ph5">`Main`</ph> method creates two arrays and attempts to copy one to the other.</source>
+          <target state="translated">下列程式碼範例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 區塊攔截 <ph id="ph4">@System.ArgumentOutOfRangeException.</ph>。<ph id="ph5">`Main`</ph> 方法會建立兩個陣列，並嘗試從其中一個複製到另一個。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The action generates an <ph id="ph1">@System.ArgumentOutOfRangeException</ph> and the error is written to the console.</source>
+          <target state="translated">此動作會產生 <ph id="ph1">@System.ArgumentOutOfRangeException</ph>，並會將錯誤寫入主控台。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`finally`</ph> block executes regardless of the outcome of the copy action.</source>
+          <target state="translated">不論複製動作的結果為何，<ph id="ph1">`finally`</ph> 區塊都會執行。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>How to explicitly throw exceptions</source>
+          <target state="translated">如何明確擲回例外狀況</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>You can explicitly throw an exception using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">您可以使用 <ph id="ph1">`throw`</ph> 陳述式，明確擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>You can also throw a caught exception again using the <ph id="ph1">`throw`</ph> statement.</source>
+          <target state="translated">您也可以使用 <ph id="ph1">`throw`</ph> 陳述式，再次擲回所攔截的例外狀況。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It is good coding practice to add information to an exception that is re-thrown to provide more information when debugging.</source>
+          <target state="translated">建議您撰寫程式碼，將資訊加入要重新擲回的例外狀況，以在偵錯時提供更多資訊。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following code example uses a <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> block to catch a possible <ph id="ph4">@System.IO.FileNotFoundException.</ph> Following the <ph id="ph5">`try`</ph> block is a <ph id="ph6">`catch`</ph> block that catches the <ph id="ph7">@System.IO.FileNotFoundException</ph> and writes a message to the console if the data file is not found.</source>
+          <target state="translated">下列程式碼範例使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph> 區塊攔截可能的 <ph id="ph4">@System.IO.FileNotFoundException.</ph>。下列 <ph id="ph5">`try`</ph> 區塊是 <ph id="ph6">`catch`</ph> 區塊，會攔截 <ph id="ph7">@System.IO.FileNotFoundException</ph>，並會在找不到資料檔案時，寫入一則訊息到主控台。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The next statement is the <ph id="ph1">`throw`</ph> statement that throws a new <ph id="ph2">@System.IO.FileNotFoundException</ph> and adds text information to the exception.</source>
+          <target state="translated">下一個陳述式是 <ph id="ph1">`throw`</ph> 陳述式，會擲回新的 <ph id="ph2">@System.IO.FileNotFoundException</ph> ，並將文字資訊新增到例外狀況。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>How to create user-defined exceptions</source>
+          <target state="translated">如何建立使用者定義的例外狀況</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>.NET provides a hierarchy of exception classes ultimately derived from the base class <ph id="ph1">@System.Exception.</ph> However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the <ph id="ph2">@System.Exception</ph> class.</source>
+          <target state="translated">.NET 提供的例外狀況類別階層最終由基底類別 <ph id="ph1">@System.Exception.</ph> 衍生而出。倘若沒有任何預先定義的例外狀況符合您的需求，您可以從 <ph id="ph2">@System.Exception</ph>衍生建立您自己的例外狀況類別。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example.</source>
+          <target state="translated">建立您自己的例外狀況時，以文字 "Exception" 作為使用者定義例外狀況類別名稱的結尾，並實作三種常見的建構函式，如下列範例所示。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The example defines a new exception class named <ph id="ph1">`EmployeeListNotFoundException`</ph>.</source>
+          <target state="translated">此範例會定義名為 <ph id="ph1">`EmployeeListNotFoundException`</ph> 的新例外狀況類別。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The class is derived from <ph id="ph1">@System.Exception</ph> and includes three constructors.</source>
+          <target state="translated">此類別衍生自 <ph id="ph1">@System.Exception</ph>，包含三個建構函式。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In situations where you are using remoting, you must ensure that the metadata for any user-defined exceptions is available at the server (callee) and to the client (the proxy object or caller).</source>
+          <target state="translated">在您使用遠端功能的情況下，您必須確定任何使用者定義例外狀況的中繼資料是由伺服器 (被呼叫端) 提供，並提供給用戶端 (Proxy 物件或呼叫端)。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Best practices for exceptions<ept id="p1">](#best-practices-for-exceptions)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱<bpt id="p1">[</bpt>例外狀況的最佳做法<ept id="p1">](#best-practices-for-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Best practices for exceptions</source>
+          <target state="translated">例外狀況的最佳做法</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A well-designed app handles exceptions and errors to prevent app crashes.</source>
+          <target state="translated">設計良好的應用程式可處理例外狀況和錯誤，防止應用程式損毀。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>This section describes best practices for handling and creating exceptions.</source>
+          <target state="translated">本節說明處理和建立例外狀況的最佳做法。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Use try/catch/finally blocks</source>
+          <target state="translated">使用 try/catch/finally 區塊</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> blocks around code that can potentially generate an exception.</source>
+          <target state="translated">使用 <ph id="ph1">`try`</ph><ph id="ph2">/</ph><ph id="ph3">`catch`</ph><ph id="ph4">/</ph><ph id="ph5">`finally`</ph> 區塊括住程式碼可能會產生例外狀況。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`catch`</ph> blocks, always order exceptions from the most specific to the least specific.</source>
+          <target state="translated">在 <ph id="ph1">`catch`</ph> 區塊中，一律將例外狀況從最特殊的排列到最不特殊的。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Use a <ph id="ph1">`finally`</ph> block to clean up resources, whether you can recover or not.</source>
+          <target state="translated">不論您是否可以復原，使用 <ph id="ph1">`finally`</ph> 區塊都可清除資源。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Handle common conditions without throwing exceptions</source>
+          <target state="translated">處理常見的狀況，而不擲回例外狀況</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>For conditions that are likely to occur but might trigger an exception, consider handling them in a way that will avoid the exception.</source>
+          <target state="translated">針對可能發生但可能會觸發例外狀況的狀況，請考慮以避免例外狀況的方式來處理這些狀況。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For example, if you try to close a connection that is already closed, you'll get an <ph id="ph1">`InvalidOperationException`</ph>.</source>
+          <target state="translated">例如，如果您嘗試關閉已關閉的連線，您會得到 <ph id="ph1">`InvalidOperationException`</ph>。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>You can avoid that by using an <ph id="ph1">`if`</ph> statement to check the connection state before trying to close it.</source>
+          <target state="translated">您可以在嘗試關閉之前，使用 <ph id="ph1">`if`</ph> 陳述式來檢查連線狀態，以避免此例外狀況。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>If you don't check connection state before closing, you can catch the <ph id="ph1">`InvalidOperationException`</ph> exception.</source>
+          <target state="translated">如果您沒有檢查連線狀態就關閉，您可能會攔截到 <ph id="ph1">`InvalidOperationException`</ph> 例外狀況。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The method to choose depends on how often you expect the event to occur.</source>
+          <target state="translated">選擇的方法取決於您預期事件會發生的頻率。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Use exception handling if the event doesn't occur very often, that is, if the event is truly exceptional and indicates an error (such as an unexpected end-of-file).</source>
+          <target state="translated">如果事件不常發生，也就是說事件真的是例外並且表示錯誤 (例如未預期的檔案結尾)，則使用例外狀況處理。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>When you use exception handling, less code is executed in normal conditions.</source>
+          <target state="translated">當您使用例外狀況處理時，在正常情況下會執行較少的程式碼。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Check for error conditions in code if the event happens routinely and could be considered part of normal execution.</source>
+          <target state="translated">如果事件定期發生而且可視為正常執行的一部分，請檢查程式碼中是否有錯誤狀況。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>When you check for common error conditions, less code is executed because you avoid exceptions.</source>
+          <target state="translated">當您檢查是否有常見的錯誤狀況時，因為避免例外狀況，所以會執行較少的程式碼。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Design classes so that exceptions can be avoided</source>
+          <target state="translated">設計類別以避免例外狀況</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A class can provide methods or properties that enable you to avoid making a call that would trigger an exception.</source>
+          <target state="translated">類別可提供方法或屬性，讓您避免進行會觸發例外狀況的呼叫。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>For example, a <ph id="ph1">@System.IO.FileStream</ph> class provides methods that help determine whether the end of the file has been reached.</source>
+          <target state="translated">例如，<ph id="ph1">@System.IO.FileStream</ph> 類別會提供方法，協助判斷是否已經抵達檔案結尾。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>These can be used to avoid the exception that is thrown if you read past the end of the file.</source>
+          <target state="translated">這些方法或屬性可用來避免萬一您讀取超過檔案結尾時，所擲回的例外狀況。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The following example shows how to read to the end of a file without triggering an exception.</source>
+          <target state="translated">下列範例示範如何讀取至檔案結尾，而不會觸發例外狀況。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Another way to avoid exceptions is to return null for extremely common error cases instead of throwing an exception.</source>
+          <target state="translated">另一個避免例外狀況的方法是針對很常見的錯誤案例傳回 null，而不擲回例外狀況。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>An extremely common error case can be considered normal flow of control.</source>
+          <target state="translated">相當普遍的錯誤案例可視為一般控制流程。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>By returning null in these cases, you minimize the performance impact to an app.</source>
+          <target state="translated">針對這些案例傳回 null，就能盡量降低對應用程式效能的影響。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Throw exceptions instead of returning an error code</source>
+          <target state="translated">擲回例外狀況來代替傳回錯誤碼</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Exceptions ensure that failures do not go unnoticed because calling code didn't check a return code.</source>
+          <target state="translated">例外狀況可確保不會發生未通知失敗的情況，因為呼叫程式碼並不會檢查傳回碼。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Use the predefined .NET exception types</source>
+          <target state="translated">使用預先定義的 .NET 例外狀況類型</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Introduce a new exception class only when a predefined one doesn't apply.</source>
+          <target state="translated">只有在預先定義的類型不適用時，才引進新的例外狀況類別。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如：</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.InvalidOperationException</ph> exception if a property set or method call is not appropriate given the object's current state.</source>
+          <target state="translated">如果屬性集或方法呼叫對於物件的目前狀態而言並不適當，就會擲回 <ph id="ph1">@System.InvalidOperationException</ph> 例外狀況。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Throw an <ph id="ph1">@System.ArgumentException</ph> exception or one of the predefined classes that derive from <ph id="ph2">@System.ArgumentException</ph> if invalid parameters are passed.</source>
+          <target state="translated">在傳遞的參數無效時擲回 <ph id="ph1">@System.ArgumentException</ph> 例外狀況，或擲回預先定義之類別中，從 <ph id="ph2">@System.ArgumentException</ph> 衍生而來的類別。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>End exception class names with the word <ph id="ph1">`Exception`</ph></source>
+          <target state="translated">使用字組 <ph id="ph1">`Exception`</ph> 作為例外狀況類別名稱的結尾</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>When a custom exception is necessary, name it appropriately and derive it from the <ph id="ph1">@System.Exception</ph> class.</source>
+          <target state="translated">如需自訂例外狀況，請適當地加以命名，並從 <ph id="ph1">@System.Exception</ph>加以衍生。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如：</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Include three constructors in custom exception classes</source>
+          <target state="translated">在自訂例外狀況類別中包含三個建構函式</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Use at least the three common constructors when creating your own exception classes: the default constructor, a constructor that takes a string message, and a constructor that takes a string message and an inner exception.</source>
+          <target state="translated">當您建立自己的例外狀況類別時，請使用至少三個種常見的建構函式：預設建構函式、採用字串訊息的建構函式，以及採用字串訊息和內部例外狀況的建構函式。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor,</ph> which uses default values.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor,</ph>，會使用預設值。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String),</ph> which accepts a string message.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String),</ph>，會接受字串訊息。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph> which accepts a string message and an inner exception.</source>
+          <target state="translated"><ph id="ph1">@System.Exception.%23ctor(System.String,System.Exception),</ph>，會接受字串訊息及內部例外狀況。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>How to: Create User-Defined Exceptions<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>.</source>
+          <target state="translated">如需範例，請參閱<bpt id="p1">[</bpt>如何：建立使用者定義的例外狀況<ept id="p1">](#how-to-create-user-defined-exceptions)</ept>。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Ensure that exception data is available when code executes remotely</source>
+          <target state="translated">確保從遠端執行程式碼時可以使用例外狀況資料</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>When you create user-defined exceptions, ensure that the metadata for the exceptions is available to code that is executing remotely.</source>
+          <target state="translated">當您建立使用者定義的例外狀況時，請確保例外狀況的中繼資料可供遠端執行的程式碼使用。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example, on .NET runtimes that implement App Domains, exceptions may occur across App domains.</source>
+          <target state="translated">例如，在實作應用程式定義域的 .NET 執行階段上，例外狀況可能會跨應用程式定義域發生。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Suppose App Domain A creates App Domain B, which executes code that throws an exception.</source>
+          <target state="translated">假定應用程式定義域 A 建立應用程式定義域 B，它會執行擲回例外狀況的程式碼。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>For App Domain A to properly catch and handle the exception, it must be able to find the assembly that contains the exception thrown by App Domain B. If App Domain B throws an exception that is contained in an assembly under its application base, but not under App Domain A's application base, App Domain A will not be able to find the exception, and the common language runtime will throw a <ph id="ph1">@System.IO.FileNotFoundException</ph> exception.</source>
+          <target state="translated">為使應用程式定義域 A 能夠正確地攔截及處理例外狀況，其必須能夠尋找含有應用程式定義域 B 所擲回之例外狀況的組件。若應用程式定義域 B 擲回例外狀況，但此例外狀況包含在位於其應用程式基底之下的組件，而不是位於在應用程式定義域 A 的應用程式基底之下的組件，應用程式定義域 A 將無法尋找例外狀況，而且 Common Language Runtime 將會擲回 <ph id="ph1">@System.IO.FileNotFoundException</ph> 例外狀況。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>To avoid this situation, you can deploy the assembly that contains the exception information in two ways:</source>
+          <target state="translated">若要避免這個情形，您可以透過兩種方式部署含有例外狀況資訊的組件：</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Put the assembly into a common application base shared by both app domains.</source>
+          <target state="translated">將組件放入這兩個應用程式定義域共用的通用應用程式基底。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\-</ph> or -</source>
+          <target state="translated"><ph id="ph1">\-</ph>或-</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>If the domains do not share a common application base, sign the assembly that contains the exception information with a strong name and deploy the assembly into the global assembly cache.</source>
+          <target state="translated">如果定義域不共用通用應用程式基底，則以強式名稱簽署含有例外狀況資訊的組件，並將組件部署到全域組件快取中。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Include a localized description string in every exception</source>
+          <target state="translated">在每一個例外狀況中包含當地語系化的描述字串</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The error message that the user sees is derived from the description string of the exception that was thrown, and not from the name of the exception class.</source>
+          <target state="translated">使用者看到的錯誤訊息是衍生自擲回的例外狀況描述字串，而不是衍生自例外狀況類別名稱。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Use grammatically correct error messages</source>
+          <target state="translated">使用文法正確的錯誤訊息</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Write clear sentences and include ending punctuation.</source>
+          <target state="translated">撰寫清楚的句子並包含結尾標點符號。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Each sentence in a description string of an exception should end in a period.</source>
+          <target state="translated">例外狀況說明字串中的每一句應該以句號結束。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>For example, "The log table has overflowed.”</source>
+          <target state="translated">例如，「記錄資料表已溢位」</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>would be an appropriate description string.</source>
+          <target state="translated">就是適當的描述字串。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>In custom exceptions, provide additional properties as needed</source>
+          <target state="translated">在自訂例外狀況中，視需要提供額外的屬性</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Provide additional properties for an exception (in addition to the description string) only when there's a programmatic scenario where the additional information is useful.</source>
+          <target state="translated">只有在額外資訊對某個程式設計案例有用時，才提供例外狀況的額外屬性 (以及描述字串)。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">@System.IO.FileNotFoundException</ph> provides the <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> property.</source>
+          <target state="translated">例如，<ph id="ph1">@System.IO.FileNotFoundException</ph> 提供 <ph id="ph2">@System.IO.FileNotFoundException.FileName</ph> 屬性。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>Place throw statements so that the stack trace will be helpful</source>
+          <target state="translated">放置 throw 陳述式讓堆疊追蹤更有用</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>The stack trace begins at the statement where the exception is thrown and ends at the <ph id="ph1">`catch`</ph> statement that catches the exception.</source>
+          <target state="translated">堆疊追蹤會從擲回例外狀況所在的陳述式開始，並在攔截例外狀況的 <ph id="ph1">`catch`</ph> 陳述式結束。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Use exception builder methods</source>
+          <target state="translated">使用例外狀況產生器方法</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>It is common for a class to throw the same exception from different places in its implementation.</source>
+          <target state="translated">類別在它的實作中從不同的地方擲回相同的例外狀況是很常見的。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>To avoid excessive code, use helper methods that create the exception and return it.</source>
+          <target state="translated">若要避免過多的程式碼，請使用 Helper 方法，以建立例外狀況並將它傳回。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如: </target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>In some cases, it's more appropriate to use the exception's constructor to build the exception.</source>
+          <target state="translated">在某些情況下，使用例外狀況的建構函式來建置例外狀況會更適當。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>An example is a global exception class such as <ph id="ph1">@System.ArgumentException,</ph></source>
+          <target state="translated">範例為全域例外狀況類別 <ph id="ph1">@System.ArgumentException,</ph></target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Clean up intermediate results when throwing an exception</source>
+          <target state="translated">在擲回例外狀況時清除中繼結果</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Callers should be able to assume that there are no side effects when an exception is thrown from a method.</source>
+          <target state="translated">呼叫端應該能夠假設，從方法擲回例外狀況時不會產生副作用。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>For example, if you have code that transfers money by withdrawing from one account and depositing in another account, and an exception is thrown while executing the deposit, you don't want the withdrawal to remain in effect.</source>
+          <target state="translated">例如，如果您有用來轉帳的程式碼，會從某個帳戶提款再存入另一個帳戶，而且在執行存款時擲回例外狀況，則您不想要讓提款仍有效。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>One way to handle this situation is to catch any exceptions thrown by the deposit transaction and roll back the withdrawal.</source>
+          <target state="translated">處理這種情況的一個方式是攔截存款交易所擲回的任何例外狀況，並復原提款。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This example illustrates the use of <ph id="ph1">`throw`</ph> to re-throw the original exception, which can make it easier for callers to see the real cause of the problem without having to examine the <ph id="ph2">@System.Exception.InnerException</ph> property.</source>
+          <target state="translated">此範例說明如何使用 <ph id="ph1">`throw`</ph> 重新擲回原始的例外狀況，以方便呼叫端無須檢視 <ph id="ph2">@System.Exception.InnerException</ph>屬性，就能輕鬆查看問題的實際原因。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>An alternative is to throw a new exception and include the original exception as the inner exception:</source>
+          <target state="translated">另一種做法是擲回新的例外狀況，並包含原始例外狀況作為內部例外狀況：</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">請參閱</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>To learn more about how exceptions work in .NET, see <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>.</source>
+          <target state="translated">若要深入了解 .NET 中例外狀況的運作方式，請參閱 <bpt id="p1">[</bpt>What Every Dev needs to Know About Exceptions in the Runtime<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)</ept>。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
