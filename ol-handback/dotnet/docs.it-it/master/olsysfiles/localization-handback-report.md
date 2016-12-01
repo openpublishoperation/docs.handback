@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/130b94a745b0e3222e205d8af26194239130ec9c/docs/core/windows-prerequisites.md) | InSyncHandedBackSuccess | [Details](#2e6483b3f1b8b9e1f36a0f4f7377319871fd5674131)
 
 ## Item Details
-##### <a name='2e6483b3f1b8b9e1f36a0f4f7377319871fd5674131'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/130b94a745b0e3222e205d8af26194239130ec9c/docs/core/windows-prerequisites.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.it-it/blob/1f61fc52b71570c37340152cd4010b67ceeed032/docs/core/windows-prerequisites.md)
-* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/596302bc5bacb4935ec4bc2ccbe255b1dc5f546f/ol-handoff/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
-* Handoff Datetime: 2016-11-16 11:15:34
-* Handoff Reason: Include
-* Archive File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/2f8c10b0be3c944763e7ea3ca06426e3ccac3678/ol-archive/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
-* Archive Datetime: 2016-11-18 07:25:34
-* Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handback/blob/ee7fe5f3df717226845f5bc239b04506b10c7366/ol-handback/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
-* Handback Datetime: 2016-12-01 15:29:41
-* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf](https://github.com/dotnet/docs.handback/blob/6576b7c369f5ce7d56d6b305977e325b692dd7fa/ol-handback/dotnet/docs.it-it/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.it-it.xlf)
-* Bilingual Datetime: 2016-11-24 08:52:56
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
