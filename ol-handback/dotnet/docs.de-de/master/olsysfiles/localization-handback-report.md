@@ -1,29 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/f7dffe4885b331cec8d37f3cc5c9163f69c3b4c9/docs/framework/docker/aspnetmvc.md) | HandedOffSuccess | [Details](#910751fa2fd6ec653d03070045e4216ca69868ce3052)
 
 ## Item Details
-##### <a name='910751fa2fd6ec653d03070045e4216ca69868ce3052'></a> Source: [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/f7dffe4885b331cec8d37f3cc5c9163f69c3b4c9/docs/framework/docker/aspnetmvc.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/04ae84b265a9a638de5e20ebdeeeb9e7289335e4/ol-handoff/dotnet/docs.de-de/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf)
-* Handoff Datetime: 2016-11-22 23:00:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs.de-de/blob/c271ad32d981ac6c2eba472ff7cae2ff7b6d0ffa/docs/framework/docker/aspnetmvc.md)
-* Current Handback File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf](https://github.com/dotnet/docs.handback/blob/9b1cdafe49a337501ee0a84e1e8b4fa0445a6028/ol-handback/dotnet/docs.de-de/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.de-de.xlf)
-* Current Handback Datetime: 2016-12-02 15:12:43
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
