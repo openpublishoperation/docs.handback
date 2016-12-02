@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md) | InSyncHandedBackSuccess | [Details](#a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366)
 
 ## Item Details
-##### <a name='a08b0a0f95d43eb995f015f7e408f77fe4ab9d633366'></a> Source: [docs\standard\getting-started.md](https://github.com/dotnet/docs/blob/10e9195efdbfa031698a8b0f8e8c3479babd9727/docs/standard/getting-started.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\getting-started.md](https://github.com/dotnet/docs.zh-cn/blob/e1eb270a07f4c7e4df1e61b9c07878216afa5784/docs/standard/getting-started.md)
-* Handoff File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/5e96e427bf4ed5e892fe09fbb33ddac9d3e3dc20/ol-handoff/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Handoff Datetime: 2016-11-16 09:05:21
-* Handoff Reason: Include
-* Archive File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f1ea77ecbeefbbbcd72c92c478f28f347f6611fb/ol-archive/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Archive Datetime: 2016-11-18 07:26:17
-* Handback File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/10fbf91ca9c71699b088ddc097a95b8d8d0ad83c/ol-handback/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Handback Datetime: 2016-12-02 03:14:11
-* Bilingual File: [getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p2/getting-started.1ab878593873ee0cb270e09c09a85ed28dc93e87.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-30 15:10:47
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
