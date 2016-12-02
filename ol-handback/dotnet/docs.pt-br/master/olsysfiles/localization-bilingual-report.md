@@ -6,25 +6,25 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md) | HandedOffSuccess | [Details](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md) | HandedOffSuccess | [Details](#9f52e51f707d991c8210e46f178a09a9c6881c123382)
 
 ## Item Details
-##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c48f48654e65345fbc88f391778515627d4e6cff/docs/toc.md)
+##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/406e3fd4da65a6ed6c136556d4104a2711bd00ed/ol-handoff/dotnet/docs.pt-br/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf)
-* Handoff Datetime: 2016-11-30 00:36:44
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/56cf107c93b5294cb0f169e5be8c18813a834a4a/ol-handoff/dotnet/docs.pt-br/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf)
+* Handoff Datetime: 2016-12-02 14:23:54
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Bilingual Error:[bilingual_uploading_failed](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382bilingual_uploading_failed)
+* Bilingual Error:[bilingual_uploading_failed](#9f52e51f707d991c8210e46f178a09a9c6881c123382bilingual_uploading_failed)
 * [Back to Top](#report-top)
 
 
 ## Error Details
-##### <a name='0f5207ec6474021a15b2f7aa784a1c73e8645eb43382handback_file_rejected'></a> Source: [docs\toc.md](#0f5207ec6474021a15b2f7aa784a1c73e8645eb43382)
+##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123382handback_file_rejected'></a> Source: [docs\toc.md](#9f52e51f707d991c8210e46f178a09a9c6881c123382)
 * Error Code: handback_file_rejected
 * Error Message: Targeting source file commit 0eb316d3d9b6849f5972a5a5dd4a1463a86fe14b is lower than latest handed back source file commit 71eab6216e116b99927dfeaa8ce3cf70bcc08a5e
 * Retriable: False
