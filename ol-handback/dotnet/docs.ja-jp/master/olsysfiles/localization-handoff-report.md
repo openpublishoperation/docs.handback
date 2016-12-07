@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/055ec6a242c38066077d8cd0c164a60c59276fcc/docs/core/preview3/tools/csproj.md) | HandedOffSuccess | [Details](#75c198487e9f95bd05bd6af9d82ab925bccf732759)
 
 ## Item Details
-##### <a name='75c198487e9f95bd05bd6af9d82ab925bccf732759'></a> Source: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/055ec6a242c38066077d8cd0c164a60c59276fcc/docs/core/preview3/tools/csproj.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/e172396cc54e8d93fcf9259422e6bae0e261996f/ol-handoff/dotnet/docs.ja-jp/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf)
-* Handoff Datetime: 2016-12-05 20:25:03
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs.ja-jp/blob/c55a00c8e2637b70dac425848b6407ce9a8ae4d7/docs/core/preview3/tools/csproj.md)
-* Current Handback File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/a9ab3ad487a9c9cc36e7db583dd3fc824b3e06ac/ol-handback/dotnet/docs.ja-jp/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-25 10:32:25
-* Bilingual File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/a9ab3ad487a9c9cc36e7db583dd3fc824b3e06ac/ol-handback/dotnet/docs.ja-jp/master/ht-p1/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-25 10:34:25
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
