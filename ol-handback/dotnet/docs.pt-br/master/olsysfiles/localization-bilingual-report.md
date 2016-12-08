@@ -1,13 +1,12 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md) | HandedOffSuccess | [Details](#9f52e51f707d991c8210e46f178a09a9c6881c123382)
- [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md) | ArchivedSuccess | [Details](#478f136e7e979cb8828c580e049b65c40302f73b7351)
 
 ## Item Details
 ##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md)
@@ -21,23 +20,6 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Bilingual Error:[bilingual_uploading_failed](#9f52e51f707d991c8210e46f178a09a9c6881c123382bilingual_uploading_failed)
-* [Back to Top](#report-top)
-
-##### <a name='478f136e7e979cb8828c580e049b65c40302f73b7351'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/bd80cda217de8ca2aab2619ad401f1b561590b99/ol-handoff/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Handoff Datetime: 2016-11-15 23:04:13
-* Handoff Reason: Include
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/e6e5e02a90a42e95db658b36c216a89d7b646bee/ol-archive/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Archive Datetime: 2016-11-16 06:18:03
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.pt-br/blob/2d7ac09038e66edbcb0fab4f27243feff09206bb/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/5ab68b57166f2ac04b77d031674d1226a9db8b57/ol-handback/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Current Handback Datetime: 2016-12-08 06:55:52
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/5ab68b57166f2ac04b77d031674d1226a9db8b57/ol-handback/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Bilingual Datetime: 2016-12-08 06:59:33
 * [Back to Top](#report-top)
 
 
