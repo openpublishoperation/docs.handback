@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md) | ArchivedSuccess | [Details](#478f136e7e979cb8828c580e049b65c40302f73b7351)
 
 ## Item Details
-##### <a name='478f136e7e979cb8828c580e049b65c40302f73b7351'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/a30b7263a7a785d519b5bb6e08c0d967005a5c46/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Handoff Datetime: 2016-11-15 23:04:07
-* Handoff Reason: Include
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/063b51002ed35235acd26d93f5d3bae6b06ce3b1/ol-archive/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Archive Datetime: 2016-11-16 06:17:57
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.ko-kr/blob/7ac274a7928fc826af45d6a32bfbc027f24c782c/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/ecbed64dde25aa9964fe8b913b3f3615556429fb/ol-handback/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Current Handback Datetime: 2016-12-08 03:56:13
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/24c33dcc825ae0651ad6600567e54d2cd8d3c122/ol-handback/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Bilingual Datetime: 2016-11-11 09:53:33
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
