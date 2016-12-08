@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md) | ArchivedSuccess | [Details](#478f136e7e979cb8828c580e049b65c40302f73b7351)
 
 ## Item Details
-##### <a name='478f136e7e979cb8828c580e049b65c40302f73b7351'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/83fe09510dfe2ed2b3a6c985349ab457129cdf66/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf)
-* Handoff Datetime: 2016-11-15 23:03:47
-* Handoff Reason: Include
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/59e334ad213b4a8532f40faeccbd449b588d12c3/ol-archive/dotnet/docs.zh-cn/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf)
-* Archive Datetime: 2016-11-16 06:17:36
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.zh-cn/blob/e1eb270a07f4c7e4df1e61b9c07878216afa5784/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/7feff218aaf7cc2a82e6bfe457fbd60e5ab1c520/ol-handback/dotnet/docs.zh-cn/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf)
-* Current Handback Datetime: 2016-12-08 06:55:27
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/f904c223f8a3602fe179be21a72039723005bb43/ol-handback/dotnet/docs.zh-cn/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-11 11:44:02
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
