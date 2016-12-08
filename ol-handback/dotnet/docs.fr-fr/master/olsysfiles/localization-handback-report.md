@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md) | ArchivedSuccess | [Details](#478f136e7e979cb8828c580e049b65c40302f73b7351)
 
 ## Item Details
-##### <a name='478f136e7e979cb8828c580e049b65c40302f73b7351'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/569f34efa91d6ef4575d5bd2911c1f8a976db5d8/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf)
-* Handoff Datetime: 2016-11-15 23:03:10
-* Handoff Reason: Include
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/af5ceec231a5e9cbe2ab193e0518a95cd0c2480a/ol-archive/dotnet/docs.fr-fr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf)
-* Archive Datetime: 2016-11-16 06:17:03
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.fr-fr/blob/6ce89f305fbf2b7a0b41e0c0764cd59e9296ba8f/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/7d732f8ef9f1736d07df1d9f3e60fd7b5f806fa2/ol-handback/dotnet/docs.fr-fr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf)
-* Current Handback Datetime: 2016-12-08 03:55:46
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
