@@ -1,13 +1,12 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md) | HandedOffSuccess | [Details](#9f52e51f707d991c8210e46f178a09a9c6881c123382)
- [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md) | ArchivedSuccess | [Details](#478f136e7e979cb8828c580e049b65c40302f73b7351)
 
 ## Item Details
 ##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123382'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md)
@@ -24,23 +23,6 @@
 * Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/0aa781f27eaaf52172c6d2391f05bac5da8d2e23/ol-handback/dotnet/docs.ko-kr/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf)
 * Current Handback Datetime: 2016-11-28 12:58:22
 * Bilingual Error:[bilingual_uploading_failed](#9f52e51f707d991c8210e46f178a09a9c6881c123382bilingual_uploading_failed)
-* [Back to Top](#report-top)
-
-##### <a name='478f136e7e979cb8828c580e049b65c40302f73b7351'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/5d55f1a4211e17ef0d8a4cff4d508e2b1a168700/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/a30b7263a7a785d519b5bb6e08c0d967005a5c46/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Handoff Datetime: 2016-11-15 23:04:07
-* Handoff Reason: Include
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/063b51002ed35235acd26d93f5d3bae6b06ce3b1/ol-archive/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Archive Datetime: 2016-11-16 06:17:57
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.ko-kr/blob/7ac274a7928fc826af45d6a32bfbc027f24c782c/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/ecbed64dde25aa9964fe8b913b3f3615556429fb/ol-handback/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Current Handback Datetime: 2016-12-08 03:56:13
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/ecbed64dde25aa9964fe8b913b3f3615556429fb/ol-handback/dotnet/docs.ko-kr/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.ko-kr.xlf)
-* Bilingual Datetime: 2016-12-08 03:59:51
 * [Back to Top](#report-top)
 
 
