@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0bd8998cfb508294ffbc7a9619b571c9881ba294</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\induced.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9baaf4b5ef4785d3ed2207e62d076e46e936925</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ac8364d8a2c07281efe1a8f69f030ad6d5503aff</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">발생한 컬렉션</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">발생한 컬렉션</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">발생한 컬렉션</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In most cases, the garbage collector can determine the best time to perform a collection, and you should let it run independently.</source>
+          <target state="translated">대부분의 경우 가비지 수집기가 수집을 수행할 적절한 시기를 결정할 수 있으며 가비지 수집기가 독립적으로 실행되는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are rare situations when a forced collection might improve your application's performance.</source>
+          <target state="translated">강제된 컬렉션이 응용 프로그램의 성능을 향상시키는 드문 경우도 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In these cases, you can induce garbage collection by using the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method to force a garbage collection.</source>
+          <target state="translated">이러한 경우에 가비지 수집을 강제하는 <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> 메서드를 사용하여 가비지 수집을 발생시킬 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> method when there is a significant reduction in the amount of memory being used at a specific point in your application's code.</source>
+          <target state="translated">응용 프로그램 코드의 특정 지점에서 사용되는 메모리 양이 상당히 감소하는 경우 <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> 메서드를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, if your application uses a complex dialog box that has several controls, calling <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> when the dialog box is closed could improve performance by immediately reclaiming the memory used by the dialog box.</source>
+          <target state="translated">예를 들어 응용 프로그램이 몇 가지 컨트롤이 있는 복잡한 대화 상자를 사용하는 경우 대화 상자를 닫을 때 <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept>를 호출하면 즉시 대화 상자에서 사용하는 메모리를 확보하여 성능을 개선할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Be sure that your application is not inducing garbage collection too frequently, because that can decrease performance if the garbage collector is trying to reclaim objects at non-optimal times.</source>
+          <target state="translated">가비지 수집기가 최적이 아닌 시간에 개체를 회수하려고 하는 경우 성능이 저하될 수 있기 때문에 응용 프로그램이 너무 자주 가비지 수집을 발생시키지 않도록 합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can supply a <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept> enumeration value to the <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept> method to collect only when collection would be productive, as discussed in the next section.</source>
+          <target state="translated">다음 섹션에서 설명했듯이 <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept> 열거형 값을 <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept> 메서드로 제공하여 컬렉션이 생산적인 경우에만 수집할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>GC collection mode</source>
+          <target state="translated">GC 컬렉션 모드</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can use one of the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method overloads that includes a <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> value to specify the behavior for a forced collection as follows.</source>
+          <target state="translated">다음과 같이 <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> 값을 포함하는 <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> 메서드 오버로드 중 하나를 사용하여 강제된 컬렉션에 대한 동작을 지정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>GCCollectionMode value</source>
+          <target state="translated">GCCollectionMode 값</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Default<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>기본<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Uses the default garbage collection setting for the running version of the .NET Framework.</source>
+          <target state="translated">실행 중인 버전의 .NET Framework에 대한 기본 가비지 수집 설정을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>강제<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Forces garbage collection to occur immediately.</source>
+          <target state="translated">가비지 수집이 즉시 실행되도록 강제합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This is equivalent to calling the <bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept> overload.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept> 오버로드를 호출하는 작업에 해당합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It results in a full blocking collection of all generations.</source>
+          <target state="translated">모든 세대의 전체 차단 컬렉션에서 발생합니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also compact the large object heap by setting the <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> property to <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept> before forcing an immediate full blocking garbage collection.</source>
+          <target state="translated">또한 전체 차단 가비지 수집을 즉시 강제하기 전에 <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> 속성을 <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept>으로 설정하여 큰 개체 힙을 압축할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>최적화됨<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Enables the garbage collector to determine whether the current time is optimal to reclaim objects.</source>
+          <target state="translated">가비지 수집기는 현재 시간이 개체를 회수하기 위한 최적 시간인지 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The garbage collector could determine that a collection would not be productive enough to be justified, in which case it will return without reclaiming objects.</source>
+          <target state="translated">가비지 수집기는 컬렉션이 정당화될 만큼 생산적이지 않다는 것을 결정할 수 있습니다. 이 경우에 개체를 회수하지 않고 반환합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Background or blocking collections</source>
+          <target state="translated">배경 또는 차단 컬렉션</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can call the <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method overload to specify whether an induced collection is blocking or not.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 메서드 오버 로드를 호출하여 발생한 컬렉션을 차단할지를 지정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The type of collection performed depends on a combination of the method's <bpt id="p1">*</bpt>mode<ept id="p1">*</ept> and <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept> parameters.</source>
+          <target state="translated">수행된 컬렉션의 유형은 메서드의 <bpt id="p1">*</bpt>mode<ept id="p1">*</ept> 및 <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept> 매개 변수의 조합에 따라 달라집니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept> is a member of the <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> enumeration, and <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept> is a <bpt id="p4">[</bpt>Boolean<ept id="p4">](xref:System.Boolean)</ept> value.</source>
+          <target state="translated"><bpt id="p1">*</bpt>mode<ept id="p1">*</ept>는 <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> 열거형의 구성원이며 <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept>은 <bpt id="p4">[</bpt>부울<ept id="p4">](xref:System.Boolean)</ept> 값입니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following table summarizes the interaction of the mode and blocking arguments.</source>
+          <target state="translated">다음 테이블에서는 모드와 차단 인수의 상호 작용을 간단하게 설명합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>모드<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> or <bpt id="p2">[</bpt>Default<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>강제<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> 또는 <bpt id="p2">[</bpt>기본<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>A blocking collection is performed as soon as possible.</source>
+          <target state="translated">차단 컬렉션은 가능한 한 빨리 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and generation is 0 or 1, the <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method immediately triggers a blocking collection and returns when the collection is finished.</source>
+          <target state="translated">배경 컬렉션이 진행되고 생성이 0 또는 1인 경우 <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 메서드는 즉시 차단 수집을 트리거하여 컬렉션을 완료할 때 반환합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and the generation parameter is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.</source>
+          <target state="translated">배경 컬렉션이 진행되고 생성 매개 변수가 2인 경우 메서드는 백그라운드 컬렉션이 완료되고 2세대 컬렉션을 트리거한 다음 반환될 때까지 대기합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A collection is performed as soon as possible.</source>
+          <target state="translated">컬렉션은 가능한 한 빨리 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 메서드는 백그라운드 컬렉션을 요청하지만 보장되지 않습니다. 상황에 따라 차단 컬렉션이 계속 수행될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">백그라운드 컬렉션이 이미 진행 중인 경우 메서드가 즉시 반환됩니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>최적화됨<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A blocking collection may be performed, depending on the state of the garbage collector and the generation parameter.</source>
+          <target state="translated">가비지 수집기 및 세대 매개 변수의 상태에 따라 차단 컬렉션이 수행될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">가비지 수집기는 최적의 성능을 제공하려고 합니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A collection may be performed, depending on the state of the garbage collector.</source>
+          <target state="translated">가비지 수집기의 상태에 따라 컬렉션이 수행될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> 메서드는 백그라운드 컬렉션을 요청하지만 보장되지 않습니다. 상황에 따라 차단 컬렉션이 계속 수행될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">가비지 수집기는 최적의 성능을 제공하려고 합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">백그라운드 컬렉션이 이미 진행 중인 경우 메서드가 즉시 반환됩니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Latency modes<ept id="p1">](latency.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>대기 시간 모드<ept id="p1">](latency.md)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET에서 가비지 수집<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
