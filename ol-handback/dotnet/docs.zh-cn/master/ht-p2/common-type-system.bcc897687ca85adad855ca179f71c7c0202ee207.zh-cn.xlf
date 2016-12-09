@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">35098ce238af88229fddf2adc7cf762848781ebc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\common-type-system.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f66d2394f5af4bc23f5a34be8d74d91b9969f4c7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">27ebc9a4a8a31450d653e65ed008ffe096e6a0cc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">通用类型系统深入探讨</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">通用类型系统深入探讨</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">通用类型系统深入探讨</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic contains the following sections that explore the common type system in depth:</source>
+          <target state="translated">本主题包含以下部分，深入探讨通用类型系统：</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types in .NET<ept id="p1">](#types-in-net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 中的类型<ept id="p1">](#types-in-net)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type definitions<ept id="p1">](#type-definitions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>类型定义<ept id="p1">](#type-definitions)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type members<ept id="p1">](#type-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>类型成员<ept id="p1">](#type-members)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Characteristics of type members<ept id="p1">](#characteristics-of-type-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>类型成员的特征<ept id="p1">](#characteristics-of-type-members)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Types in .NET</source>
+          <target state="translated">.NET 中的类型</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>All types in .NET are either value types or reference types.</source>
+          <target state="translated">.NET 中的所有类型不是值类型就是引用类型。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Value types are data types whose objects are represented by the object's actual value.</source>
+          <target state="translated">值类型是使用对象实际值来表示对象的数据类型。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If an instance of a value type is assigned to a variable, that variable is given a fresh copy of the value.</source>
+          <target state="translated">如果向一个变量分配值类型的实例，则该变量将被赋以该值的全新副本。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Reference types are data types whose objects are represented by a reference (similar to a pointer) to the object's actual value.</source>
+          <target state="translated">引用类型是使用对对象实际值的引用（类似于指针）来表示对象的数据类型。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If a reference type is assigned to a variable, that variable references (points to) the original value.</source>
+          <target state="translated">如果为某个变量分配一个引用类型，则该变量将引用（或指向）原始值。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>No copy is made.</source>
+          <target state="translated">不创建任何副本。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The common type system in .NET supports the following five categories of types:</source>
+          <target state="translated">.NET 中的通用类型系统支持以下五种类别的类型：</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Classes<ept id="p1">](#classes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>类<ept id="p1">](#classes)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Structures<ept id="p1">](#structures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>结构<ept id="p1">](#structures)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>枚举<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interfaces<ept id="p1">](#interfaces)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>接口<ept id="p1">](#interfaces)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Delegates<ept id="p1">](#delegates)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>委托<ept id="p1">](#delegates)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Classes</source>
+          <target state="translated">类</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A class is a reference type that can be derived directly from another class and that is derived implicitly from <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>.</source>
+          <target state="translated">类是可以直接从另一个类派生以及从 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 隐式派生的引用类型。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The class defines the operations that an object (which is an instance of the class) can perform (methods, events, or properties) and the data that the object contains (fields).</source>
+          <target state="translated">类定义对象（它是该类的实例）可以执行的操作（方法、事件或属性）和该对象包含的数据（字段）。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Although a class generally includes both definition and implementation (unlike interfaces, for example, which contain only definition without implementation), it can have one or more members that have no implementation.</source>
+          <target state="translated">尽管类通常同时包含定义和实现（与接口不同，例如，接口只包含定义而不包含实现），但它也可以有一个或多个没有实现的成员。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The following table describes some of the characteristics that a class may have.</source>
+          <target state="translated">下表介绍了类可以具有的一些特征。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Each language that supports the runtime provides a way to indicate that a class or class member has one or more of these characteristics.</source>
+          <target state="translated">支持运行时的每种语言都提供了一种方法，来指示类或类成员具有其中的一种或多种特征。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, individual programming languages that target .NET may not make all these characteristics available.</source>
+          <target state="translated">但是，针对 .NET 的各个编程语言不能使所有这些特征都可用。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Characteristic</source>
+          <target state="translated">特征</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">说明</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>sealed</source>
+          <target state="translated">sealed</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Specifies that another class cannot be derived from this type.</source>
+          <target state="translated">指定不能从此类型派生出另一个类。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>implements</source>
+          <target state="translated">实现</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Indicates that the class uses one or more interfaces by providing implementations of interface members.</source>
+          <target state="translated">指出该类通过提供接口成员的实现，使用一个或多个接口。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>abstract</source>
+          <target state="translated">abstract</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Indicates that the class cannot be instantiated.</source>
+          <target state="translated">指出无法实例化类。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>To use it, you must derive another class from it.</source>
+          <target state="translated">若要使用它，必须由其派生出另一个类。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>inherits</source>
+          <target state="translated">继承</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Indicates that instances of the class can be used anywhere the base class is specified.</source>
+          <target state="translated">指出可以在指定了基类的任何地方使用类的实例。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>A derived class that inherits from a base class can use the implementation of any public members provided by the base class, or the derived class can override the implementation of the public members with its own implementation.</source>
+          <target state="translated">从基类继承的派生类可以使用基类提供的任何公共成员的实现，派生类也可以用自己的实现重写这些公共成员的实现。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>exported or not exported</source>
+          <target state="translated">exported 或 not exported</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Indicates whether a class is visible outside the assembly in which it is defined.</source>
+          <target state="translated">指出某个类在定义它的程序集之外是否可见。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This characteristic applies only to top-level classes and not to nested classes.</source>
+          <target state="translated">此特征仅适用于顶级类，不适用于嵌套类。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A class can also be nested in a parent class or structure.</source>
+          <target state="translated">类也可以嵌套在父类或结构中。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Nested classes also have member characteristics.</source>
+          <target state="translated">嵌套类也有成员特征。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Nested types<ept id="p1">](#nested-types)</ept>.</source>
+          <target state="translated">有关详细信息，请参阅<bpt id="p1">[</bpt>嵌套类型<ept id="p1">](#nested-types)</ept>。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Class members that have no implementation are abstract members.</source>
+          <target state="translated">没有实现的类成员是抽象成员。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A class that has one or more abstract members is itself abstract; new instances of it cannot be created.</source>
+          <target state="translated">有一个或更多抽象成员的类其本身也是抽象的；不可以创建它的新实例。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract.</source>
+          <target state="translated">以运行时为目标的某些语言允许将类标记为抽象类，即使其成员都不是抽象成员也是如此。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate.</source>
+          <target state="translated">当要封装一组派生类可在适当时候继承或重写的基本功能时，可以使用抽象类。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Classes that are not abstract are referred to as concrete classes.</source>
+          <target state="translated">非抽象的类称为具体类。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A class can implement any number of interfaces, but it can inherit from only one base class in addition to <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>, from which all classes inherit implicitly.</source>
+          <target state="translated">类可以实现任意数目的接口，但是它除了 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>（所有类都可以隐式从它继承）之外，只能从一个基类继承。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>All classes must have at least one constructor, which initializes new instances of the class.</source>
+          <target state="translated">所有的类都必须至少有一个构造函数，该函数初始化此类的新实例。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you do not explicitly define a constructor, most compilers will automatically provide a default (parameterless) constructor.</source>
+          <target state="translated">如果没有显式定义构造函数，大多数编译器将自动提供一个默认（无参数的）构造函数。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Structures</source>
+          <target state="translated">结构</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A structure is a value type that derives implicitly from <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>, which in turn is derived from <bpt id="p2">[</bpt>System.Object<ept id="p2">](xref:System.Object)</ept>.</source>
+          <target state="translated">结构是隐式从 <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept> 派生的值类型，后者从 <bpt id="p2">[</bpt>System.Object<ept id="p2">](xref:System.Object)</ept> 派生。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>A structure is very useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters.</source>
+          <target state="translated">对于表示内存要求很小的值以及将值作为按值参数传递给具有强类型参数的方法，结构很有用。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In .NET, all primitive data types (<bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept>, <bpt id="p2">[</bpt>Byte<ept id="p2">](xref:System.Byte)</ept>, <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept>, <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept>, <bpt id="p5">[</bpt>Decimal<ept id="p5">](xref:System.Decimal)</ept>, <bpt id="p6">[</bpt>Double<ept id="p6">](xref:System.Double)</ept>, <bpt id="p7">[</bpt>Int16<ept id="p7">](xref:System.Int16)</ept>, <bpt id="p8">[</bpt>Int32<ept id="p8">](xref:System.Int32)</ept>, <bpt id="p9">[</bpt>Int64<ept id="p9">](xref:System.Int64)</ept>, <bpt id="p10">[</bpt>SByte<ept id="p10">](xref:System.SByte)</ept>, <bpt id="p11">[</bpt>Single<ept id="p11">](xref:System.Single)</ept>, <bpt id="p12">[</bpt>UInt16<ept id="p12">](xref:System.UInt16)</ept>, <bpt id="p13">[</bpt>UInt32<ept id="p13">](xref:System.UInt32)</ept>, and <bpt id="p14">[</bpt>UInt64<ept id="p14">](xref:System.UInt64)</ept>) are defined as structures.</source>
+          <target state="translated">在 .NET 中，所有基元数据类型（<bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept>、<bpt id="p2">[</bpt>Byte<ept id="p2">](xref:System.Byte)</ept>、<bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept>、<bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept>、<bpt id="p5">[</bpt>Decimal<ept id="p5">](xref:System.Decimal)</ept>、<bpt id="p6">[</bpt>Double<ept id="p6">](xref:System.Double)</ept>、<bpt id="p7">[</bpt>Int16<ept id="p7">](xref:System.Int16)</ept>、<bpt id="p8">[</bpt>Int32<ept id="p8">](xref:System.Int32)</ept>、<bpt id="p9">[</bpt>Int64<ept id="p9">](xref:System.Int64)</ept>、<bpt id="p10">[</bpt>SByte<ept id="p10">](xref:System.SByte)</ept>、<bpt id="p11">[</bpt>Single<ept id="p11">](xref:System.Single)</ept>、<bpt id="p12">[</bpt>UInt16<ept id="p12">](xref:System.UInt16)</ept>、<bpt id="p13">[</bpt>UInt32<ept id="p13">](xref:System.UInt32)</ept> 和 <bpt id="p14">[</bpt>UInt64<ept id="p14">](xref:System.UInt64)</ept>）都定义为结构。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Like classes, structures define both data (the fields of the structure) and the operations that can be performed on that data (the methods of the structure).</source>
+          <target state="translated">像类一样，结构同时定义数据（结构的字段）和可以对该数据执行的操作（结构的方法）。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This means that you can call methods on structures, including the virtual methods defined on the <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> and <bpt id="p2">[</bpt>System.ValueType<ept id="p2">](xref:System.ValueType)</ept> classes, and any methods defined on the value type itself.</source>
+          <target state="translated">这意味着可以对结构调用方法，包括在 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 和 <bpt id="p2">[</bpt>System.ValueType<ept id="p2">](xref:System.ValueType)</ept> 类上定义的虚方法以及在值类型自身上定义的任意方法。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In other words, structures can have fields, properties, and events, as well as static and nonstatic methods.</source>
+          <target state="translated">换句话说，结构可以具有字段、属性和事件以及静态和非静态方法。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can create instances of structures, pass them as parameters, store them as local variables, or store them in a field of another value type or reference type.</source>
+          <target state="translated">您可以创建结构的实例，将它们作为参数传递，将它们存储为局部变量，或将它们存储在另一值类型或引用类型的字段中。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Structures can also implement interfaces.</source>
+          <target state="translated">结构也可以实现接口。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Value types also differ from classes in several respects.</source>
+          <target state="translated">值类型与类在一些方面也是不同的。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>First, although they implicitly inherit from <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>, they cannot directly inherit from any type.</source>
+          <target state="translated">首先，尽管它们都从 <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept> 隐式继承，但是它们不能从任何类型直接继承。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Similarly, all value types are sealed, which means that no other type can be derived from them.</source>
+          <target state="translated">同样，所有值类型都是密封的，这意味着不能从它们派生出其他类型。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>They also do not require constructors.</source>
+          <target state="translated">它们也不需要构造函数。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For each value type, the common language runtime supplies a corresponding boxed type, which is a class that has the same state and behavior as the value type.</source>
+          <target state="translated">对于每一种值类型，公共语言运行时都提供一种相应的已装箱类型，它是与值类型有着相同状态和行为的类。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An instance of a value type is boxed when it is passed to a method that accepts a parameter of type <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>.</source>
+          <target state="translated">将值类型的实例传递到接受 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 类型的参数的方法时，会将它装箱。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>It is unboxed (that is, converted from an instance of a class back to an instance of a value type) when control returns from a method call that accepts a value type as a by-reference parameter.</source>
+          <target state="translated">当控件从接受值类型作为传引用参数的方法调用返回时，会将它拆箱（即它从类实例重新转换回值类型的实例）。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Some languages require that you use special syntax when the boxed type is required; others automatically use the boxed type when it is needed.</source>
+          <target state="translated">当需要已装箱的类型时，某些语言要求使用特殊的语法；而另外一些语言会在需要时自动使用已装箱的类型。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When you define a value type, you are defining both the boxed and the unboxed type.</source>
+          <target state="translated">在定义值类型时，需要同时定义已装箱和未装箱的类型。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">枚举</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>An enumeration (enum) is a value type that inherits directly from <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept> and that supplies alternate names for the values of an underlying primitive type.</source>
+          <target state="translated">枚举 (enum) 是一种值类型，该值类型直接从 <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept> 继承并为基础基元类型的值提供替代名称。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>An enumeration type has a name, an underlying type that must be one of the built-in signed or unsigned integer types (such as <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>, <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>, or <bpt id="p3">[</bpt>UInt64<ept id="p3">](xref:System.UInt64)</ept>), and a set of fields.</source>
+          <target state="translated">枚举类型具有一个名称、一个必须为某个内置带符号或不带符号的整数类型的基础类型（如 <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>、<bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept> 或 <bpt id="p3">[</bpt>UInt64<ept id="p3">](xref:System.UInt64)</ept>）以及一组字段。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The fields are static literal fields, each of which represents a constant.</source>
+          <target state="translated">字段是静态文本字段，其中的每一个字段都表示常数。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The same value can be assigned to multiple fields.</source>
+          <target state="translated">同一个值可以分配给多个字段。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When this occurs, you must mark one of the values as the primary enumeration value for reflection and string conversion.</source>
+          <target state="translated">出现这种情况时，必须将其中某个值标记为主要枚举值，以便进行反射和字符串转换。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>You can assign a value of the underlying type to an enumeration and vice versa (no cast is required by the runtime).</source>
+          <target state="translated">可以将基础类型的值分配给枚举，反之亦然（运行时不要求强制转换）。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You can create an instance of an enumeration and call the methods of <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept>, as well as any methods defined on the enumeration's underlying type.</source>
+          <target state="translated">可以创建枚举的实例，并调用 <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept> 的方法以及在枚举的基础类型上定义的任何方法。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, some languages might not let you pass an enumeration as a parameter when an instance of the underlying type is required (or vice versa).</source>
+          <target state="translated">但是，某些语言可能不允许在要求基础类型的实例时将枚举作为参数传递（反之亦然）。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The following additional restrictions apply to enumerations:</source>
+          <target state="translated">对于枚举还有以下附加限制：</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>They cannot define their own methods.</source>
+          <target state="translated">它们不能定义自己的方法。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>They cannot implement interfaces.</source>
+          <target state="translated">它们不能实现接口。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>They cannot define properties or events.</source>
+          <target state="translated">它们不能定义属性或事件。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>They cannot be generic, unless they are generic only because they are nested within a generic type.</source>
+          <target state="translated">枚举不能是泛型，除非它嵌套在泛型类型中，才能是泛型。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>That is, an enumeration cannot have type parameters of its own.</source>
+          <target state="translated">也就是说，枚举不能有自己的类型参数。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Nested types (including enumerations) created with C# include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own.</source>
+          <target state="translated">用 C# 创建的嵌套类型（包括枚举）包含所有封闭泛型类型的类型参数，因此即使这些嵌套类型没有自己的类型参数，它们也是泛型的。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Type.MakeGenericType<ept id="p1">](xref:System.Type.MakeGenericType(System.Type[]))</ept> reference topic.</source>
+          <target state="translated">有关详细信息，请参阅 <bpt id="p1">[</bpt>Type.MakeGenericType<ept id="p1">](xref:System.Type.MakeGenericType(System.Type[]))</ept> 参考主题。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> attribute denotes a special kind of enumeration called a bit field.</source>
+          <target state="translated"><bpt id="p1">[</bpt>FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> 特性表示一种特殊的枚举，称为位域。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The runtime itself does not distinguish between traditional enumerations and bit fields, but your language might do so.</source>
+          <target state="translated">运行时本身不区分传统枚举与位域，但您的语言可能会区分二者。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>When this distinction is made, bitwise operators can be used on bit fields, but not on enumerations, to generate unnamed values.</source>
+          <target state="translated">当区分二者的时候，可以对位域（而不是枚举）使用位操作符以产生未命名的值。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Enumerations are generally used for lists of unique elements, such as days of the week, country or region names, and so on.</source>
+          <target state="translated">枚举一般用于列出唯一的元素，如一周的各天、国家/地区名称，等等。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Bit fields are generally used for lists of qualities or quantities that might occur in combination, such as <ph id="ph1">`Red And Big And Fast`</ph>.</source>
+          <target state="translated">位域一般用于列出可能联合发生的质量或数量，比如 <ph id="ph1">`Red And Big And Fast`</ph>。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use both bit fields and traditional enumerations.</source>
+          <target state="translated">下面的示例说明如何使用位域和传统枚举。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+          <target state="translated">接口</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>An interface defines a contract that specifies a "can do" relationship or a "has a" relationship.</source>
+          <target state="translated">接口定义用于指定“可以执行”关系或“具有”关系的协定。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Interfaces are often used to implement functionality, such as comparing and sorting (the <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> interfaces), testing for equality (the <bpt id="p3">[</bpt>IEquatable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p3">](xref:System.IEquatable%601)</ept> interface), or enumerating items in a collection (the <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> and <bpt id="p5">[</bpt>IEnumerable<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p5">](xref:System.Collections.Generic.IEnumerable%601)</ept> interfaces).</source>
+          <target state="translated">接口通常用于实现某种功能，如比较和排序（<bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> 和 <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> 接口）、测试相等性（<bpt id="p3">[</bpt>IEquatable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p3">](xref:System.IEquatable%601)</ept> 接口）或枚举集合中的项（<bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> 和 <bpt id="p5">[</bpt>IEnumerable<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p5">](xref:System.Collections.Generic.IEnumerable%601)</ept> 接口）。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Interfaces can have properties, methods, and events, all of which are abstract members; that is, although the interface defines the members and their signatures, it leaves it to the type that implements the interface to define the functionality of each interface member.</source>
+          <target state="translated">接口可具有属性、方法和事件，所有这些都是抽象成员；也就是说，虽然接口定义这些成员及其签名，但每个接口成员的功能由实现该接口的类型定义。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This means that any class or structure that implements an interface must supply definitions for the abstract members declared in the interface.</source>
+          <target state="translated">这意味着实现接口的任何类或结构都必须为该接口中声明的抽象成员提供定义。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>An interface can require any implementing class or structure to also implement one or more other interfaces.</source>
+          <target state="translated">接口也可以要求任何实现类或结构实现一个或多个其他接口。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following restrictions apply to interfaces:</source>
+          <target state="translated">对接口有以下限制：</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>An interface can be declared with any accessibility, but interface members must all have public accessibility.</source>
+          <target state="translated">接口可以用任何可访问性来声明，但接口成员必须全都具有公共可访问性。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Interfaces cannot define constructors.</source>
+          <target state="translated">接口不能定义构造函数。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Interfaces cannot define fields.</source>
+          <target state="translated">接口不能定义字段。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Interfaces can define only instance members.</source>
+          <target state="translated">接口只能定义实例成员。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>They cannot define static members.</source>
+          <target state="translated">它们不能定义静态成员。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Each language must provide rules for mapping an implementation to the interface that requires the member, because more than one interface can declare a member with the same signature, and these members can have separate implementations.</source>
+          <target state="translated">每种语言都必须提供映射规则，将实现映射到需要该成员的接口，因为多个接口可以使用同一个签名声明成员，而这些成员可以分别具有单独的实现。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Delegates</source>
+          <target state="translated">委托</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Delegates are reference types that serve a purpose similar to that of function pointers in C++.</source>
+          <target state="translated">委托是用途类似于 C++ 中的函数指针的引用类型。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>They are used for event handlers and callback functions in .NET.</source>
+          <target state="translated">它们用于 .NET 中的事件处理程序和回调函数。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Unlike function pointers, delegates are secure, verifiable, and type safe.</source>
+          <target state="translated">与函数指针不同，委托是安全、可验证和类型安全的。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>A delegate type can represent any instance method or static method that has a compatible signature.</source>
+          <target state="translated">委托类型可以表示任何具有兼容签名的实例方法或静态方法。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A parameter of a delegate is compatible with the corresponding parameter of a method if the type of the delegate parameter is more restrictive than the type of the method parameter, because this guarantees that an argument passed to the delegate can be passed safely to the method.</source>
+          <target state="translated">如果委托参数的类型的限制性强于方法参数的类型，则该委托的参数与该方法的相应参数兼容，因为这可保证传递给委托的参数可以安全地传递给方法。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Similarly, the return type of a delegate is compatible with the return type of a method if the return type of the method is more restrictive than the return type of the delegate, because this guarantees that the return value of the method can be cast safely to the return type of the delegate.</source>
+          <target state="translated">同样，如果方法的返回类型的限制性强于委托的返回类型，则该委托的返回类型与该方法的返回类型兼容，因为这可保证方法的返回值可以安全地强制转换为委托的返回类型。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For example, a delegate that has a parameter of type <bpt id="p1">[</bpt>IEnumerable<ept id="p1">](xref:System.Collections.IEnumerable)</ept> and a return type of <bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept> can represent a method that has a parameter of type <bpt id="p3">[</bpt>Object<ept id="p3">](xref:System.Object)</ept> and a return value of type <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept>.</source>
+          <target state="translated">例如，具有类型为 <bpt id="p1">[</bpt>IEnumerable<ept id="p1">](xref:System.Collections.IEnumerable)</ept> 的参数和 <bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept> 返回类型的委托可以表示具有类型为 <bpt id="p3">[</bpt>Object<ept id="p3">](xref:System.Object)</ept> 的参数和类型为 <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> 的返回值的方法。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>A delegate is said to be bound to the method it represents.</source>
+          <target state="translated">委托一般绑定到它表示的方法。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In addition to being bound to the method, a delegate can be bound to an object.</source>
+          <target state="translated">除了绑定到方法之外，委托还可以绑定到对象。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The object represents the first parameter of the method, and is passed to the method every time the delegate is invoked.</source>
+          <target state="translated">该对象表示方法的第一个参数，每次调用委托时将该对象传递给方法。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If the method is an instance method, the bound object is passed as the implicit <ph id="ph1">`this`</ph> parameter (<ph id="ph2">`Me`</ph> in Visual Basic); if the method is static, the object is passed as the first formal parameter of the method, and the delegate signature must match the remaining parameters.</source>
+          <target state="translated">如果方法是实例方法，则将绑定的对象作为隐式 <ph id="ph1">`this`</ph> 参数（在 Visual Basic 中为 <ph id="ph2">`Me`</ph>）传递；如果方法为静态方法，则将该对象作为方法的第一个形参传递，并且委托签名必须匹配其余参数。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>All delegates inherit from <bpt id="p1">[</bpt>System.MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>, which inherits from <bpt id="p2">[</bpt>System.Delegate<ept id="p2">](xref:System.Delegate)</ept>.</source>
+          <target state="translated">所有委托从继承自 <bpt id="p2">[</bpt>System.Delegate<ept id="p2">](xref:System.Delegate)</ept> 的 <bpt id="p1">[</bpt>System.MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept> 继承。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The C# and Visual Basic languages don't allow inheritance from these types.</source>
+          <target state="translated">C# 和 Visual Basic 语言不允许从这些类型继承，</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Instead, they provide keywords for declaring delegates.</source>
+          <target state="translated">而是提供了用于声明委托的关键字。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Because delegates inherit from <bpt id="p1">[</bpt>MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>, a delegate has an invocation list, which is a list of methods that the delegate represents and that are executed when the delegate is invoked.</source>
+          <target state="translated">由于委托从 <bpt id="p1">[</bpt>MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept> 继承，因此委托具有一个调用列表，其中列出了委托表示的方法，在调用委托时将执行该列表中的方法。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>All methods in the list receive the arguments supplied when the delegate is invoked.</source>
+          <target state="translated">列表中的所有方法接收调用委托时提供的自变量。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The return value is not defined for a delegate that has more than one method in its invocation list, even if the delegate has a return type.</source>
+          <target state="translated">没有为在调用列表中包含多个方法的委托（即使委托具有返回类型）定义返回值。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it.</source>
+          <target state="translated">在许多情况下（例如使用回调方法），一个委托只表示一个方法，而您需要做的就是创建委托并调用它。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>For delegates that represent multiple methods, .NET provides methods of the <bpt id="p1">[</bpt>Delegate<ept id="p1">](xref:System.Delegate)</ept> and <bpt id="p2">[</bpt>MulticastDelegate<ept id="p2">](xref:System.MulticastDelegate)</ept> delegate classes to support operations such as adding a method to a delegate's invocation list (the <bpt id="p3">[</bpt>Delegate.Combine<ept id="p3">](xref:System.Delegate.Combine(System.Delegate,System.Delegate))</ept> method), removing a method (the <bpt id="p4">[</bpt>Delegate.Remove<ept id="p4">](xref:System.Delegate.Remove(System.Delegate,System.Delegate))</ept> method), and getting the invocation list (the <bpt id="p5">[</bpt>Delegate.GetInvocationList<ept id="p5">](xref:System.Delegate.GetInvocationList)</ept> method).</source>
+          <target state="translated">对于表示多个方法的委托，.NET 提供了 <bpt id="p1">[</bpt>Delegate<ept id="p1">](xref:System.Delegate)</ept> 和 <bpt id="p2">[</bpt>MulticastDelegate<ept id="p2">](xref:System.MulticastDelegate)</ept> 委托类的方法以支持如下操作：将方法添加到委托的调用列表（<bpt id="p3">[</bpt>Delegate.Combine<ept id="p3">](xref:System.Delegate.Combine(System.Delegate,System.Delegate))</ept> 方法）、移除方法（<bpt id="p4">[</bpt>Delegate.Remove<ept id="p4">](xref:System.Delegate.Remove(System.Delegate,System.Delegate))</ept> 方法）、获取调用列表（<bpt id="p5">[</bpt>Delegate.GetInvocationList<ept id="p5">](xref:System.Delegate.GetInvocationList)</ept> 方法）。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>It is not necessary to use these methods for event-handler delegates in C# or Visual Basic, because these languages provide syntax for adding and removing event handlers.</source>
+          <target state="translated">不需要将这些方法用于 C# 或 Visual Basic 中的事件处理程序委托，因为这些语言为添加和移除事件处理程序提供了语法。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Type definitions</source>
+          <target state="translated">类型定义</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>A type definition includes the following:</source>
+          <target state="translated">类型定义包括以下内容：</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Any attributes defined on the type.</source>
+          <target state="translated">对该类型定义的任何特性。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The type's accessibility (visibility).</source>
+          <target state="translated">类型的可访问性（可见性）。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The type's name.</source>
+          <target state="translated">类型的名称。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The type's base type.</source>
+          <target state="translated">类型的基本类型。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Any interfaces implemented by the type.</source>
+          <target state="translated">该类型实现的任何接口。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Definitions for each of the type's members.</source>
+          <target state="translated">每个类型的成员的定义。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">特性</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Attributes provide additional user-defined metadata.</source>
+          <target state="translated">特性提供附加的用户定义元数据。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or run-time environment.</source>
+          <target state="translated">它们通常用于在程序集中存储有关类型的附加信息，或在设计时或运行时环境中用于修改类型成员的行为。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Attributes are themselves classes that inherit from <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept>.</source>
+          <target state="translated">特性本身是从 <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept> 继承的类。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Languages that support the use of attributes each have their own syntax for applying attributes to a language element.</source>
+          <target state="translated">每种支持使用特性的语言都有自己的语法，用于将特性应用到某个语言元素。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept> that is applied to that attribute class.</source>
+          <target state="translated">特性可应用到几乎任意语言元素；特性可以应用到的特定元素由应用到该特性类的 <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept> 定义。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Type accessibility</source>
+          <target state="translated">类型可访问性</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>All types have a modifier that governs their accessibility from other types.</source>
+          <target state="translated">所有类型都有一个修饰符，控制从其他类型对它们的可访问性。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following table describes the type accessibilities supported by the runtime.</source>
+          <target state="translated">下表说明了运行时所支持的类型可访问性。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Accessibility</source>
+          <target state="translated">可访问性</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">说明</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>public</source>
+          <target state="translated">public</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The type is accessible by all assemblies.</source>
+          <target state="translated">所有程序集都可以访问此类型。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>assembly</source>
+          <target state="translated">程序集</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The type is accessible only from within its assembly.</source>
+          <target state="translated">只能在其程序集内访问此类型。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The accessibility of a nested type depends on its accessibility domain, which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type.</source>
+          <target state="translated">嵌套类型的可访问性依赖于它的可访问域，该域是由已声明的成员可访问性和直接包含类型的可访问域这二者共同确定的。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, the accessibility domain of a nested type cannot exceed that of the containing type.</source>
+          <target state="translated">但是，嵌套类型的可访问域不能超出包含类型的可访问域。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The accessibility domain of a nested member <ph id="ph1">`M`</ph> declared in a type <ph id="ph2">`T`</ph>within a program <ph id="ph3">`P`</ph> is defined as follows (noting that <ph id="ph4">`M`</ph> might itself be a type):</source>
+          <target state="translated">在程序 <ph id="ph3">`P`</ph> 的类型 <ph id="ph2">`T`</ph> 中，声明的嵌套成员 <ph id="ph1">`M`</ph> 的可访问域是按以下方法定义的（注意，<ph id="ph4">`M`</ph> 本身也可能是一个类型）：</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`public`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the accessibility domain of <ph id="ph4">`T`</ph>.</source>
+          <target state="translated">如果 <ph id="ph1">`M`</ph> 的已声明可访问性为 <ph id="ph2">`public`</ph>，则 <ph id="ph3">`M`</ph> 的可访问域就是 <ph id="ph4">`T`</ph> 的可访问域。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`protected internal`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of <ph id="ph5">`P`</ph> and the program text of any type derived from <ph id="ph6">`T`</ph> declared outside <ph id="ph7">`P`</ph>.</source>
+          <target state="translated">如果 <ph id="ph1">`M`</ph> 的已声明可访问性为 <ph id="ph2">`protected internal`</ph>，则 <ph id="ph3">`M`</ph> 的可访问域就是 <ph id="ph4">`T`</ph> 的可访问域与 <ph id="ph5">`P`</ph> 的程序文本和从 <ph id="ph6">`T`</ph> 派生的（在 <ph id="ph7">`P`</ph> 之外声明的）任何类型的程序文本之间的交集。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`protected`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of <ph id="ph5">`T`</ph> and any type derived from <ph id="ph6">`T`</ph>.</source>
+          <target state="translated">如果 <ph id="ph1">`M`</ph> 的已声明可访问性为 <ph id="ph2">`protected`</ph>，则 <ph id="ph3">`M`</ph> 的可访问域就是 <ph id="ph4">`T`</ph> 的可访问域与 <ph id="ph5">`T`</ph> 的程序文本和从 <ph id="ph6">`T`</ph> 派生的任何类型的程序文本之间的交集。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`internal`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of<ph id="ph5">`P`</ph>.</source>
+          <target state="translated">如果 <ph id="ph1">`M`</ph> 的已声明可访问性为 <ph id="ph2">`internal`</ph>，则 <ph id="ph3">`M`</ph> 的可访问域就是 <ph id="ph4">`T`</ph> 的可访问域与 <ph id="ph5">`P`</ph> 的程序文本之间的交集。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`private`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the program text of <ph id="ph4">`T`</ph>.</source>
+          <target state="translated">如果 <ph id="ph1">`M`</ph> 的已声明可访问性为 <ph id="ph2">`private`</ph>，则 <ph id="ph3">`M`</ph> 的可访问域就是 <ph id="ph4">`T`</ph> 的程序文本。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Type names</source>
+          <target state="translated">类型名称</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The common type system imposes only two restrictions on names:</source>
+          <target state="translated">常规类型系统对名称只有两种限制：</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>All names are encoded as strings of Unicode (16-bit) characters.</source>
+          <target state="translated">所有的名称都按 Unicode（16 位）字符串进行编码。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Names are not permitted to have an embedded (16-bit) value of 0x0000.</source>
+          <target state="translated">名称不允许有嵌入的（16 位）0x0000 值。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>However, most languages impose additional restrictions on type names.</source>
+          <target state="translated">但是，大多数语言对类型名称都有附加限制。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>All comparisons are done on a byte-by-byte basis, and are therefore case-sensitive and locale-independent.</source>
+          <target state="translated">所有比较都是逐字节进行的，因此会区分大小写并与区域设置无关。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module.</source>
+          <target state="translated">尽管类型可能引用来自其他模块和程序集的类型，但类型在一个 .NET 模块内必须是完全定义的。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>(Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace.</source>
+          <target state="translated">（但是，根据编译器支持的情况，它可以分成多个源代码文件。）类型名称只需要在命名空间内唯一。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.</source>
+          <target state="translated">要完全标识一个类型，其类型名称必须由包含此类型实现的命名空间加以限定。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Base types and interfaces</source>
+          <target state="translated">基本类型和接口</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>A type can inherit values and behaviors from another type.</source>
+          <target state="translated">一个类型可以从另一个类型继承值和行为。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The common type system does not allow types to inherit from more than one base type.</source>
+          <target state="translated">常规类型系统不允许类型从多个基本类型进行继承。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>A type can implement any number of interfaces.</source>
+          <target state="translated">一个类型可以实现任何数量的接口。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>To implement an interface, a type must implement all the virtual members of that interface.</source>
+          <target state="translated">要实现接口，类型必须实现该接口的所有虚拟成员。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.</source>
+          <target state="translated">虚方法可以由派生的类型来实现，既可静态调用，也可动态调用。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Type members</source>
+          <target state="translated">类型成员</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The runtime enables you to define members of your type, which specifies the behavior and state of a type.</source>
+          <target state="translated">运行时允许您定义指定类型行为和状态的类型成员。</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Type members include the following:</source>
+          <target state="translated">类型成员包括以下内容：</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Fields<ept id="p1">](#fields)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>字段<ept id="p1">](#fields)</ept></target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>属性<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Methods<ept id="p1">](#methods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>方法<ept id="p1">](#methods)</ept></target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Constructors<ept id="p1">](#constructors)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>构造函数<ept id="p1">](#constructors)</ept></target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>事件<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Nested types<ept id="p1">](#nested-types)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>嵌套类型<ept id="p1">](#nested-types)</ept></target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">字段</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>A field describes and contains part of the type's state.</source>
+          <target state="translated">字段描述并包含类型状态的一部分。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Fields can be of any type supported by the runtime.</source>
+          <target state="translated">字段可以是运行时支持的任何类型。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Most commonly, fields are either <ph id="ph1">`private`</ph> or <ph id="ph2">`protected`</ph>, so that they are accessible only from within the class or from a derived class.</source>
+          <target state="translated">字段通常是 <ph id="ph1">`private`</ph> 或 <ph id="ph2">`protected`</ph>，因此只能在类内部或从派生类访问。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>If the value of a field can be modified from outside its type, a property set accessor is typically used.</source>
+          <target state="translated">如果可以从类型外部修改字段值，通常使用属性集访问器。</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Publicly exposed fields are usually read-only and can be of two types:</source>
+          <target state="translated">公开的字段通常是只读的，可以为以下两种类型：</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Constants, whose value is assigned at design time.</source>
+          <target state="translated">常量，在设计时赋值。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>These are static members of a class, although they are not defined using the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic) keyword.</source>
+          <target state="translated">尽管没有使用 <ph id="ph1">`static`</ph>（在 Visual Basic 中为 <ph id="ph2">`Shared`</ph>）关键字定义，但它们都是类的静态成员。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Read-only variables, whose values can be assigned in the class constructor.</source>
+          <target state="translated">只读变量，可以在类构造函数中赋值。</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The following example illustrates these two usages of read-only fields.</source>
+          <target state="translated">下面的示例演示只读字段的这两种用法。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">属性</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>A property names a value or state of the type and defines methods for getting or setting the property's value.</source>
+          <target state="translated">属性命名类型的值或状态，并定义获得或设置属性值的方法。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Properties can be primitive types, collections of primitive types, user-defined types, or collections of user-defined types.</source>
+          <target state="translated">属性可以是基元类型、基元类型的集合、用户定义的类型或用户定义类型的集合。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Properties are often used to keep the public interface of a type independent from the type's actual representation.</source>
+          <target state="translated">属性通常用于使类型的公共接口独立于类型的实际表示形式。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>This enables properties to reflect values that are not directly stored in the class (for example, when a property returns a computed value) or to perform validation before values are assigned to private fields.</source>
+          <target state="translated">这使属性能够反映不直接在类中存储的值（例如，当属性返回计算值时）或能够在将值赋给私有字段前进行验证。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the latter pattern.</source>
+          <target state="translated">下面的示例演示后一种模式。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>In addition to including the property itself, the Microsoft intermediate language (MSIL) for a type that contains a readable property includes a <ph id="ph1">`get`</ph><bpt id="p1">*</bpt>_propertyname<ept id="p1">*</ept> method, and the MSIL for a type that contains a writable property includes a <ph id="ph2">`set`</ph><bpt id="p2">*</bpt>_propertyname<ept id="p2">*</ept> method.</source>
+          <target state="translated">除了包含属性本身之外，包含可读属性的类型的 Microsoft 中间语言 (MSIL) 还包含一种 <ph id="ph1">`get`</ph><bpt id="p1">*</bpt>_propertyname<ept id="p1">*</ept> 方法，包含可写属性的类型的 MSIL 还包含一种 <ph id="ph2">`set`</ph><bpt id="p2">*</bpt>_propertyname<ept id="p2">*</ept> 方法。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Methods</source>
+          <target state="translated">方法</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>A method describes operations that are available on the type.</source>
+          <target state="translated">方法描述可用于类型的操作。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>A method's signature specifies the allowable types of all its parameters and of its return value.</source>
+          <target state="translated">方法的签名指定其所有参数和返回值可使用的类型。</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Although most methods define the precise number of parameters required for method calls, some methods support a variable number of parameters.</source>
+          <target state="translated">尽管大多数方法都定义方法调用所需的参数的确切数目，但某些方法支持可变数目的参数。</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The final declared parameter of these methods is marked with the <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> attribute.</source>
+          <target state="translated">这些方法的最后声明的参数用 <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> 特性标记。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Language compilers typically provide a keyword, such as <ph id="ph1">`params`</ph> in C# and <ph id="ph2">`ParamArray`</ph> in Visual Basic, that makes explicit use of <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> unnecessary.</source>
+          <target state="translated">语言编译器通常会提供一个关键字（例如，在 C# 中为 <ph id="ph1">`params`</ph>，在 Visual Basic 中为 <ph id="ph2">`ParamArray`</ph>），使得不必显式使用 <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept>。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+          <target state="translated">构造函数</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>A constructor is a special kind of method that creates new instances of a class or structure.</source>
+          <target state="translated">构造函数是一种特殊类型的方法，可创建类或结构的新实例。</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Like any other method, a constructor can include parameters; however, constructors have no return value (that is, they return <ph id="ph1">`void`</ph>).</source>
+          <target state="translated">像任何其他方法一样，构造函数可以包含参数，但是它不返回值（即它返回 <ph id="ph1">`void`</ph>）。</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>If the source code for a class does not explicitly define a constructor, the compiler includes a default (parameterless) constructor.</source>
+          <target state="translated">如果类的源代码没有显式定义构造函数，编译器将包含一个默认（无参数的）构造函数。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>However, if the source code for a class defines only parameterized constructors, the C# compiler doesn't generate a parameterless constructor.</source>
+          <target state="translated">但是，如果某个类的源代码只定义参数化的构造函数，则 C# 编译器不会生成无参数构造函数。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>If the source code for a structure defines constructors, they must be parameterized; a structure cannot define a default (parameterless) constructor, and compilers do not generate parameterless constructors for structures or other value types.</source>
+          <target state="translated">如果某个结构的源代码定义多个构造函数，则这些构造函数必须是参数化的；结构不能定义默认（无参数）构造函数，并且编译器不会为结构或其他值类型生成无参数构造函数。</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>All value types do have an implicit default constructor.</source>
+          <target state="translated">所有值类型都具有隐式的默认构造函数。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>This constructor is implemented by the common language runtime and initializes all fields of the structure to their default values.</source>
+          <target state="translated">此构造函数由公共语言运行时实现，并且将该结构的所有字段都初始化为其默认值。</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">事件</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event.</source>
+          <target state="translated">事件定义可以响应的事情，并定义订阅、取消订阅及引发事件的方法。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Events are often used to inform other types of state changes.</source>
+          <target state="translated">事件通常用于通知其他类型的状态改变。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Nested types</source>
+          <target state="translated">嵌套类型</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>A nested type is a type that is a member of some other type.</source>
+          <target state="translated">嵌套类型是作为某其他类型的成员的类型。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Nested types should be tightly coupled to their containing type and must not be useful as a general-purpose type.</source>
+          <target state="translated">嵌套类型应与其包含类型紧密关联，并且不得用作通用类型。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Nested types are useful when the declaring type uses and creates instances of the nested type, and use of the nested type is not exposed in public members.</source>
+          <target state="translated">在声明类型使用和创建嵌套类型实例时，嵌套类型很有用，但不在公共成员中公开嵌套类型的使用。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Nested types are confusing to some developers and should not be publicly visible unless there is a compelling reason for visibility.</source>
+          <target state="translated">嵌套类型可能会使有些开发人员感到困惑，因此除非有必要的理由，否则嵌套类型不应是公开可见的。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>In a well-designed library, developers should rarely have to use nested types to instantiate objects or declare variables.</source>
+          <target state="translated">在设计完善的库中，开发人员几乎不需要使用嵌套类型实例化对象或声明变量。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Characteristics of type members</source>
+          <target state="translated">类型成员的特征</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The common type system allows type members to have a variety of characteristics; however, languages are not required to support all these characteristics.</source>
+          <target state="translated">通用类型系统允许类型成员具有多种特征，但并不要求语言能支持所有这些特征。</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The following table describes member characteristics.</source>
+          <target state="translated">下表介绍了这些成员特征。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Characteristic</source>
+          <target state="translated">特征</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Can apply to</source>
+          <target state="translated">可应用到</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">说明</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>abstract</source>
+          <target state="translated">abstract</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">方法、属性和事件</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The type does not supply the method's implementation.</source>
+          <target state="translated">类型不提供方法的实现。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Types that inherit or implement abstract methods must supply an implementation for the method.</source>
+          <target state="translated">继承或实现抽象方法的类型必须提供方法的实现。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The only exception is when the derived type is itself an abstract type.</source>
+          <target state="translated">只有当派生的类型本身是抽象类型的时候，情况例外。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>All abstract methods are virtual.</source>
+          <target state="translated">所有的抽象方法都是虚的。</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>private</source>
+          <target state="translated">private</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Accessible only from within the same type as the member, or within a nested type.</source>
+          <target state="translated">只能在与成员相同的类型或在嵌套类型中访问。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>family</source>
+          <target state="translated">family</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Accessible from within the same type as the member, and from derived types that inherit from it.</source>
+          <target state="translated">在与成员相同的类型中和从它继承的派生类型访问。</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>assemby</source>
+          <target state="translated">assemby</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Accessible only in the assembly in which the type is defined.</source>
+          <target state="translated">只能在定义该类型的程序集中访问。</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>family and assembly</source>
+          <target state="translated">family 和 assembly</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Accessible only from types that qualify for both family and assembly access.</source>
+          <target state="translated">只能从同时具备族和程序集访问权的类型进行访问。</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>family or assemby</source>
+          <target state="translated">family 或 assembly</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Accessible only from types that qualify for either family or assembly access.</source>
+          <target state="translated">只能从具备族和程序集访问权的类型进行访问。</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>public</source>
+          <target state="translated">public</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Accessible from any type.</source>
+          <target state="translated">可从任何类型访问。</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>final</source>
+          <target state="translated">final</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">方法、属性和事件</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>The virtual method cannot be overridden in a derived type.</source>
+          <target state="translated">虚方法不能在派生类型中被重写。</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>initialize-only</source>
+          <target state="translated">initialize-only</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">字段</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>The value can only be initialized, and cannot be written after initialization.</source>
+          <target state="translated">该值只能被初始化，不能在初始化之后写入。</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>instance</source>
+          <target state="translated">实例</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Fields, methods, properties, and events</source>
+          <target state="translated">字段、方法、属性和事件</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>If a member is not marked as <ph id="ph1">`static`</ph> (C#), <ph id="ph2">`Shared`</ph> (Visual Basic), <ph id="ph3">`virtual`</ph> (C#), or <ph id="ph4">`Overridable`</ph> (Visual Basic),  it is an instance member (there is no instance keyword).</source>
+          <target state="translated">如果成员未标记为 <ph id="ph1">`static`</ph> (C#)、<ph id="ph2">`Shared`</ph> (Visual Basic)、<ph id="ph3">`virtual`</ph> (C#) 或 <ph id="ph4">`Overridable`</ph> (Visual Basic)，则它是一个实例成员（没有实例关键字）。</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>There will be as many copies of such members in memory as there are objects that use it.</source>
+          <target state="translated">内存中这些成员的副本数将会像使用它们的对象数一样多。</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>literal</source>
+          <target state="translated">文本</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">字段</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The value assigned to the field is a fixed value, known at compile time, of a built-in value type.</source>
+          <target state="translated">分配给该字段的值是一个内置值类型的固定值（在编译时已知）。</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Literal fields are sometimes referred to as constants.</source>
+          <target state="translated">文本字段有时指的是常数。</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>newslot or override</source>
+          <target state="translated">newslot 或 override</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">全部</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Defines how the member interacts with inherited members that have the same signature: <ph id="ph1">`newslot`</ph> hides inherited members that have the same signature; <ph id="ph2">`override`</ph> replaces the definition of an inherited virtual method.</source>
+          <target state="translated">定义成员如何与具有相同签名的继承成员进行交互：<ph id="ph1">`newslot`</ph> 隐藏具有相同签名的继承成员；<ph id="ph2">`override`</ph> 替换继承的虚方法的定义。</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The default is newslot.</source>
+          <target state="translated">默认为 newslot。</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>static</source>
+          <target state="translated">静态</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Fields, methods, properties, and events</source>
+          <target state="translated">字段、方法、属性和事件</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The member belongs to the type it is defined on, not to a particular instance of the type; the member exists even if an instance of the type is not created, and it is shared among all instances of the type.</source>
+          <target state="translated">成员属于定义它的类型，而不属于该类型的特定实例；即使不创建类型的实例，成员也会存在，并且它由该类型的所有实例共享。</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>virtual</source>
+          <target state="translated">virtual</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">方法、属性和事件</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>The method can be implemented by a derived type and can be invoked either statically or dynamically.</source>
+          <target state="translated">此方法可以由派生类型实现，并且既可静态调用，也可动态调用。</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>If dynamic invocation is used, the type of the instance that makes the call at run time (rather than the type known at compile time) determines which implementation of the method is called.</source>
+          <target state="translated">如果使用动态调用，在运行时执行调用的实例类型（而不是编译时已知的类型）将确定调用方法的哪一种实现。</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>To invoke a virtual method statically, the variable might have to be cast to a type that uses the desired version of the method.</source>
+          <target state="translated">若要静态调用虚方法，可能必须将变量强制转换为使用所需方法版本的类型。</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">重载</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Each type member has a unique signature.</source>
+          <target state="translated">每个类型成员都有一个唯一的签名。</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Method signatures consist of the method name and a parameter list (the order and types of the method's arguments).</source>
+          <target state="translated">方法签名由方法名称和一个参数列表（方法的参数的顺序和类型）组成。</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Multiple methods with the same name can be defined within a type as long as their signatures differ.</source>
+          <target state="translated">可以在一种类型内定义具有相同名称的多种方法，只要这些方法的签名不同。</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>When two or more methods with the same name are defined, the method is said to be overloaded.</source>
+          <target state="translated">当定义两种或多种具有相同名称的方法时，就称作重载。</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>For example, in <bpt id="p1">[</bpt>System.Char<ept id="p1">](xref:System.Char)</ept>, the <ph id="ph1">`IsDigit`</ph> method is overloaded.</source>
+          <target state="translated">例如，在 <bpt id="p1">[</bpt>System.Char<ept id="p1">](xref:System.Char)</ept> 中，重载了 <ph id="ph1">`IsDigit`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>One method takes a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept>.</source>
+          <target state="translated">一个方法采用 <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept>。</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>The other method takes a <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> and an <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>.</source>
+          <target state="translated">另一个方法采用 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> 和 <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>。</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>The return type is not considered part of a method's signature.</source>
+          <target state="translated">返回类型不被视为方法签名的一部分。</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>That is, methods cannot be overloaded if they differ only by return type.</source>
+          <target state="translated">这意味着如果方法只是返回类型不同，就不能重载。</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Inheriting, overriding, and hiding members</source>
+          <target state="translated">继承、重写和隐藏成员</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type.</source>
+          <target state="translated">派生类型继承其基类型的所有成员；也就是说，会在派生类型上定义这些成员，并供派生类型使用。</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>The behavior or qualities of inherited members can be modified in two ways:</source>
+          <target state="translated">继承成员的行为和质量可以通过以下两种方式来修改：</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>A derived type can hide an inherited member by defining a new member with the same signature.</source>
+          <target state="translated">派生类型可通过使用相同的签名定义一个新成员，从而隐藏继承的成员。</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as <ph id="ph1">`final`</ph>.</source>
+          <target state="translated">将先前的公共成员变成私有成员，或者为标记为 <ph id="ph1">`final`</ph> 的继承方法定义新行为时，可以采取这种方法。</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>A derived type can override an inherited virtual method.</source>
+          <target state="translated">派生类型可以重写继承的虚方法。</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time.</source>
+          <target state="translated">重写方法提供了对方法的一种新定义，将根据运行时的值的类型，而不是编译时已知的变量类型来调用方法。</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>A method can override a virtual method only if the virtual method is not marked as <ph id="ph1">`final`</ph> and the new method is at least as accessible as the virtual method.</source>
+          <target state="translated">只有在虚拟方法未标记为 <ph id="ph1">`final`</ph> 且新方法至少可以像虚拟方法一样进行访问的情况下，方法才能重写虚拟方法。</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type conversion in the .NET Framework<ept id="p1">](type-conversion.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Framework 中的类型转换<ept id="p1">](type-conversion.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2cf58161a75894a12f47cf67a5760dc26f9d261c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\extensibility.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c6027d635ba3454a483ac32629c011aad800c521</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7edf32b1af566baa06e2dfa6fb876fc6e9bb9b6d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">.NET Core CLI 扩展性模型</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">.NET Core CLI 扩展性模型</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, 扩展性, 自定义命令, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">.NET Core CLI 扩展性模型</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">概述</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them.</source>
+          <target state="translated">本文将介绍如何扩展 CLI 工具的主要方式，并解释驱动每个工具的方案。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It will the outline how to consume the tools as well as provide short notes on how to build both types of tools.</source>
+          <target state="translated">本文档将概述如何使用这些工具并简短说明如何生成两种工具。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>How to extend CLI tools</source>
+          <target state="translated">如何扩展 CLI 工具</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The Preview 3 CLI tools can be extended in three main ways:</source>
+          <target state="translated">可以通过以下三种主要方式扩展预览版 3 CLI 工具：</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Via NuGet packages on a per-project basis</source>
+          <target state="translated">通过基于每个项目的 NuGet 包</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Via NuGet packages with custom targets</source>
+          <target state="translated">通过具有自定义目标的 NuGet 包</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Via the system's PATH</source>
+          <target state="translated">通过系统路径</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The three extensibility mechanisms outlined above are not exclusive; you can use all or just one or combine them.</source>
+          <target state="translated">上面列出的三种扩展性机制并不相互排斥；可以同时使用、单独使用或结合使用。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Which one to pick depends largely on what is the goal you are trying to achieve with your extension.</source>
+          <target state="translated">选择何种机制很大程度上取决于希望通过扩展实现的目标。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Per-project based extensibility</source>
+          <target state="translated">基于每个项目的扩展性</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Per-project tools are <bpt id="p1">[</bpt>framework-dependented deployments<ept id="p1">](../deploying/index.md)</ept> that are distributed as NuGet packages.</source>
+          <target state="translated">基于项目的工具是作为 NuGet 包分布的<bpt id="p1">[</bpt>依赖于框架的部署<ept id="p1">](../deploying/index.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Tools are only available in the context of the project that references them and for which they are restored; invocation outside of the context of the project (for example, outside of the directory that contains the project) will fail as the command will not be able to be found.</source>
+          <target state="translated">工具仅在项目的上下文中可用，这些工具被该项目引用或为该项目还原；项目上下文外（例如，包含该项目的目录外）的调用将因无法找到命令而失败。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>These tools are perfect for build servers, since nothing outside of the project file is needed.</source>
+          <target state="translated">这些工具非常适合生成服务器，因为除项目文件外不需要任何条件。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The build process runs restore for the project it builds and tools will be available.</source>
+          <target state="translated">生成过程会对所生成的项目运行还原操作，并且工具可用。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Language projects, such as F#, are also in this category; after all, each project can only be written in one specific language.</source>
+          <target state="translated">语言项目（如 F#）也属于此类别；毕竟只能采用某种特定语言编写每个项目。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Finally, this extensibility model provides support for creation of tools that need access to the built output of the project.</source>
+          <target state="translated">最后，此扩展性模型支持创建需要访问项目生成输出的工具。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For instance, various Razor view tools in <bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept> MVC applications fall into this category.</source>
+          <target state="translated">例如，<bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept> MVC 应用程序中的多种 Razor 视图工具均属于此类别。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Consuming per-project tools</source>
+          <target state="translated">使用基于项目的工具</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Consuming these tools requires you to add a <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element for each tool you want to use to your project file.</source>
+          <target state="translated">使用这些工具要求将想要使用的每个工具的 <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> 元素添加到项目文件。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Inside the <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element, you reference the package in which the tool resides and you specify the version you need.</source>
+          <target state="translated">在 <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> 元素中，引用该工具所在的包并指定所需的版本。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>After running <ph id="ph1">`dotnet restore`</ph>, the tool and its dependencies are restored.</source>
+          <target state="translated">运行 <ph id="ph1">`dotnet restore`</ph> 后，将还原该工具及其依赖项。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For tools that need to load the build output of the project for execution, there is usually another dependency which is listed under the regular dependencies in the project file.</source>
+          <target state="translated">对于需要加载用于执行的项目生成输出的工具，通常还有一个依赖项，它位于项目文件中的常规依赖项下。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Since the Preview 3 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process.</source>
+          <target state="translated">因为预览版 3 版本的 CLI 使用 MSBuild 作为其生成引擎，建议将该工具的这些部分作为自定义 MSBuild 目标和任务写入，从而让这些部分参与整个生成过程。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in Preview 3 becomes a set of MSBuild properties that can be read from any target.</source>
+          <target state="translated">此外，它们还可以轻松获取通过该生成产生的所有数据（例如，输出文件的位置、正在生成的当前配置等）。预览版 3 中的所有这些信息将成为一组可从任何目标中读取的 MSBuild 属性。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>We will see how to add a custom target using NuGet later in this document.</source>
+          <target state="translated">本文档的后面将介绍如何使用 NuGet 添加自定义目标。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Let's review an example of adding a simple tools-only tool to a simple project.</source>
+          <target state="translated">我们来看看将简单的工具专用工具添加到简单项目的示例。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Given an example command called <ph id="ph1">`dotnet-api-search`</ph> that allows you to search through the NuGet packages for the specified API, here is a console application's project file that uses that tool:</source>
+          <target state="translated">假定示例命令称为 <ph id="ph1">`dotnet-api-search`</ph>，通过它可搜索指定 API 的所有 NuGet 包，以下是使用该工具的控制台应用程序的项目文件：</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element is structured in a similar way as the <ph id="ph2">`&lt;PackageReference&gt;`</ph> element.</source>
+          <target state="translated"><ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> 元素采用与 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 元素相同的方式进行结构化。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It needs the package ID of the package containing the tool and its version at the very least.</source>
+          <target state="translated">它需要至少包含该工具及其版本的包的包 ID。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Building tools</source>
+          <target state="translated">生成工具</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>As mentioned, tools are just portable console applications.</source>
+          <target state="translated">如前所述，工具仅仅是可移植控制台应用程序。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You would build one as you would build any console application.</source>
+          <target state="translated">可以采用与生成控制台应用程序类似的方式生成此工具。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>After you build it, you would use <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> command to create a NuGet package (nupkg) that contains your code, information about its dependencies and so on.</source>
+          <target state="translated">生成后，使用 <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> 命令创建 NuGet 包 (nupkg)，其中包含代码和依赖项等相关信息。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The package name can be whatever the author wants, but the application inside, the actual tool binary, has to conform to the convention of <ph id="ph1">`dotnet-&lt;command&gt;`</ph> in order for <ph id="ph2">`dotnet`</ph> to be able to invoke it.</source>
+          <target state="translated">作者可以随意命名包，但内部应用程序（即实际的工具二进制文件）必须遵循 <ph id="ph1">`dotnet-&lt;command&gt;`</ph> 的约定以便 <ph id="ph2">`dotnet`</ph> 能够调用它。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>In Preview 3 bits, the <ph id="ph1">`dotnet pack`</ph> command will not pack the <ph id="ph2">`runtimeconfig.json`</ph> file that is needed to run the tool.</source>
+          <target state="translated">以预览版 3 位中，<ph id="ph1">`dotnet pack`</ph> 命令不会将运行该工具所需的 <ph id="ph2">`runtimeconfig.json`</ph> 文件打包。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In order to package the this file, you have two options:</source>
+          <target state="translated">将该文件打包的方法有两种：</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`nuspec`</ph> file and use <ph id="ph2">`dotnet nuget pack`</ph> command newly available to Preview 3 CLI to include the file</source>
+          <target state="translated">创建 <ph id="ph1">`nuspec`</ph> 文件并使用预览版 3 CLI 最近新增的 <ph id="ph2">`dotnet nuget pack`</ph> 命令将该文件包含在内</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Use the new <ph id="ph1">`&lt;Content&gt;`</ph> element in an <ph id="ph2">`&lt;ItemGroup&gt;`</ph> in your project file to include the file manually</source>
+          <target state="translated">使用项目文件中 <ph id="ph2">`&lt;ItemGroup&gt;`</ph> 中的新增 <ph id="ph1">`&lt;Content&gt;`</ph> 元素手动将该文件包含在内</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Working with nuspec files is beyond the scope of this article, however you can find a lot of good information in the <bpt id="p1">[</bpt>official NuGet docs<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/creating-a-package#the-role-and-structure-of-the--nuspec-file)</ept>.</source>
+          <target state="translated">虽然使用 nuspec 文件不在本文的讨论范围之内，但可以在<bpt id="p1">[</bpt>官方 NuGet 文档<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/creating-a-package#the-role-and-structure-of-the--nuspec-file)</ept>中找到许多有用的信息。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>If you decide on the second approach, you can see the example <ph id="ph1">`csproj`</ph> file and how it is configured below:</source>
+          <target state="translated">如果决定选择第二种方法，可查看示例 <ph id="ph1">`csproj`</ph> 文件及下面的配置方式：</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This <ph id="ph1">`&lt;ItemGroup&gt;`</ph> instructs the <ph id="ph2">`dotnet pack`</ph> command to pack any <ph id="ph3">`runtimeconfig.json`</ph> files in the build output directory (designated by the <ph id="ph4">`$(OutputPath)`</ph> variable) and place it into the <ph id="ph5">`lib`</ph> folder for the built target framework.</source>
+          <target state="translated">该 <ph id="ph1">`&lt;ItemGroup&gt;`</ph> 指导 <ph id="ph2">`dotnet pack`</ph> 命令将生成输出目录（由 <ph id="ph4">`$(OutputPath)`</ph> 变量指定）中的任何 <ph id="ph3">`runtimeconfig.json`</ph> 文件打包，并将其插入 <ph id="ph5">`lib`</ph> 文件夹以生成目标框架。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The built target framework is designated similarly to the output path by using a MSBuild property.</source>
+          <target state="translated">通过使用 MSBuild 属性，以同样的方法将生成目标框架指定到输出路径。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>After this is set, the resulting tool nupkg file will contain all that is needed for running the tool.</source>
+          <target state="translated">完成此设置后，生成的工具 nupkg 文件将包含运行该工具所需的全部内容。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Since tools are portable applications, the user consuming the tool has to have the version of the .NET Core libraries that the tool was built against in order to run the tool.</source>
+          <target state="translated">由于工具是可移植应用程序，使用该工具的用户必须拥有生成该工具时所针对的 .NET Core 库版本，以便运行此工具。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Any other dependency that the tool uses and that is not contained within the .NET Core libraries is restored and placed in the NuGet cache.</source>
+          <target state="translated">工具使用的以及 .NET Core 库未包含的其他任何依赖项均被还原并放置在 NuGet 缓存中。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The entire tool is, therefore, run using the assemblies from the .NET Core libraries as well as assemblies from the NuGet cache.</source>
+          <target state="translated">因此，使用 .NET Core 库和 NuGet 缓存中的程序集可以运行整个工具。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>These kind of tools have a dependency graph that is completely separate from the dependency graph of the project that uses them.</source>
+          <target state="translated">这些类型的工具含有依赖项关系图，它完全独立于使用这些工具的项目的依赖项关系图。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The restore process will first restore the project's dependencies, and will then restore each of the tools and their dependencies.</source>
+          <target state="translated">还原过程将首先还原项目依赖项，然后还原每个工具及其依赖项。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You can find richer examples and different combinations of this in the <bpt id="p1">[</bpt>.NET Core CLI repo<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept>.</source>
+          <target state="translated">可在 <bpt id="p1">[</bpt>.NET Core CLI 存储库<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept>中找到有关此过程的更多示例和不同组合。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can also see the <bpt id="p1">[</bpt>implementation of tools used<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept> in the same repo.</source>
+          <target state="translated">还可以在相同存储库中查看<bpt id="p1">[</bpt>所用工具的实现<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept>。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Custom targets</source>
+          <target state="translated">自定义目标</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>NuGet has had the capability to package custom MSBuild target and props files for a while now and you can find the official documentation on this on the <bpt id="p1">[</bpt>NuGet documentation site<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)</ept>.</source>
+          <target state="translated">在当下这段时间内，NuGet 可将自定义的 MSBuild 目标和属性文件打包，用户可以在 <bpt id="p1">[</bpt>NuGet 文档网站<ept id="p1">](https://docs.nuget.org/ndocs/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)</ept>上找到相应的官方文档。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>With the move in the CLI to using MSBuild, the same mechanism of extensibility applies to .NET Core projects.</source>
+          <target state="translated">在移动到 CLI 中以使用 MSBuild 后，可扩展性的相同机制会应用到 .NET Core 项目。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You would use this type of extensiblity when you want to extend the build process or when you want to access any of the artifacts in the build process, such as generated files or inspect the configuration under which the build is invoked etc.</source>
+          <target state="translated">若想要扩展生成过程，或者访问生成过程中的任何项目（如生成文件）或检查调用生成所在的配置等，建议使用该类型的扩展。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The sample target's project file is included below for reference.</source>
+          <target state="translated">相关参考，请查看以下示例目标的项目文件。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>It shows how to use the new <ph id="ph1">`csproj`</ph> syntax for instructing <ph id="ph2">`dotnet pack`</ph> command what to package to place the targets files as well as assemblies into the <ph id="ph3">`build`</ph> folder inside the package.</source>
+          <target state="translated">此示例演示如何使用新的 <ph id="ph1">`csproj`</ph> 语法来指导 <ph id="ph2">`dotnet pack`</ph> 命令对哪些内容打包，以便将目标文件及程序集放到包内的 <ph id="ph3">`build`</ph>文件夹。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Take note of the <ph id="ph1">`&lt;ItemGroup&gt;`</ph> below that has the <ph id="ph2">`Label`</ph> property set to "dotnet pack instructions".</source>
+          <target state="translated">请注意以下将 <ph id="ph2">`Label`</ph> 属性设置为“dotnet 包说明”的 <ph id="ph1">`&lt;ItemGroup&gt;`</ph>。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Consuming custom targets is done by providing a <ph id="ph1">`&lt;PackageReference&gt;`</ph> that points to the package and its version inside the project that is being extended.</source>
+          <target state="translated">若要使用自定义目标，请提供指向此程序包的 <ph id="ph1">`&lt;PackageReference&gt;`</ph> 以及项目内正在进行扩展的该程序包版本。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Unlike the tools, the custom targets package does get included into the consuming project's dependency closure.</source>
+          <target state="translated">与工具不同，自定义目标包未包含在使用项目中的依赖项结尾。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Using the custom target depends solely on how you configure it.</source>
+          <target state="translated">使用自定义目标仅取决于配置方式。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Since it is the usual MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the <ph id="ph1">`dotnet msbuild /t:&lt;target-name&gt;`</ph> command.</source>
+          <target state="translated">由于它是常用的 MSBuild 目标，因此会依赖于给定的目标并在另一个目标后运行，也可使用 <ph id="ph1">`dotnet msbuild /t:&lt;target-name&gt;`</ph> 命令手动调用。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>However, if you wish to provide a better user experience to your users, you can combine per-project tools and custom targets.</source>
+          <target state="translated">但是，如果想为你的用户提供更好的用户体验，可以合并基于项目的工具和自定义目标。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required <ph id="ph1">`dotnet msbuild`</ph> invocation that would execute the target.</source>
+          <target state="translated">在这种情况下，基于项目的工具实质上只需接受任何所需的参数并将其转换为执行目标所需的 <ph id="ph1">`dotnet msbuild`</ph> 调用。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can see a sample of this kind of sinergy on the <bpt id="p1">[</bpt>MVP Summit 2016 Hackathon samples<ept id="p1">](https://github.com/dotnet/MVPSummitHackathon2016)</ept> repo in the <bpt id="p2">[</bpt><ph id="ph1">`dotnet-packer`</ph><ept id="p2">](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer)</ept> project.</source>
+          <target state="translated">有关此类型的 sinergy 示例，请查看 <bpt id="p2">[</bpt><ph id="ph1">`dotnet-packer`</ph><ept id="p2">](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer)</ept> 项目中的 <bpt id="p1">[</bpt>MVP 峰会 2016 黑客马拉松示例<ept id="p1">](https://github.com/dotnet/MVPSummitHackathon2016)</ept>存储库。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility</source>
+          <target state="translated">基于路径的扩展</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility is usually used for development machines where you need a tool that conceptually covers more than a single project.</source>
+          <target state="translated">基于路径的扩展常用于开发计算机，此计算机需要在概念上涵盖多个项目的工具。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The main drawback of this extensions mechanism is that it is tied to the machine where the tool exists.</source>
+          <target state="translated">此扩展机制的主要缺点在于必须将其关联到工具所在的计算机。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If you need it on another machine, you would have to deploy it.</source>
+          <target state="translated">如果其他计算机上需要该机制，则必须对其进行部署。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This pattern of CLI toolset extensibility is very simple.</source>
+          <target state="translated">此 CLI 工具集扩展的模式就非常简单。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>As covered in the <bpt id="p1">[</bpt>.NET Core CLI overview<ept id="p1">](index.md)</ept>, <ph id="ph1">`dotnet`</ph> driver can run any command that is named after the <ph id="ph2">`dotnet-&lt;command&gt;`</ph> convention.</source>
+          <target state="translated">正如 <bpt id="p1">[</bpt>.NET Core CLI 概述<ept id="p1">](index.md)</ept>中所述，<ph id="ph1">`dotnet`</ph> 驱动程序可以运行以 <ph id="ph2">`dotnet-&lt;command&gt;`</ph> 约定命名的任何命令。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The default resolution logic will first probe several locations and will finally fall to the system PATH.</source>
+          <target state="translated">默认的解析逻辑将首先探测多个位置，最后探测系统路径。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If the requested command exists in the system PATH and is a binary that can be invoked, <ph id="ph1">`dotnet`</ph> driver will invoke it.</source>
+          <target state="translated">如果请求的命令存在于系统路径中并且属于可调用的二进制文件，则 <ph id="ph1">`dotnet`</ph> 驱动程序将调用它。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The binary can be pretty much anything that the operating system can execute.</source>
+          <target state="translated">该二进制文件几乎可以是操作系统可以执行的任何内容。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>On Unix systems, this means anything that has the execute bit set via <ph id="ph1">`chmod +x`</ph>.</source>
+          <target state="translated">在 Unix 系统上，这表示通过 <ph id="ph1">`chmod +x`</ph> 设置了执行位的任何内容。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>On Windows it means anything that Windows knows how to run.</source>
+          <target state="translated">在 Windows 上，这表示 Windows 知道如何运行的任何内容。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>As an example, let's take a look at a very simple implementation of a <ph id="ph1">`dotnet clean`</ph> command.</source>
+          <target state="translated">例如，我们来看看非常简单的 <ph id="ph1">`dotnet clean`</ph> 命令的实现。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>We will use <ph id="ph1">`bash`</ph> to implement this command.</source>
+          <target state="translated">我们将使用 <ph id="ph1">`bash`</ph> 来实现此命令。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The command will simply delete the <ph id="ph1">`bin/`</ph> and <ph id="ph2">`obj/`</ph> directories in the current directory.</source>
+          <target state="translated">该命令仅删除当前目录中的 <ph id="ph1">`bin/`</ph> 和 <ph id="ph2">`obj/`</ph>。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`--lock`</ph> argument is passed to it, it will also delete <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">如果将 <ph id="ph1">`--lock`</ph> 参数传递给它，也会删除 <ph id="ph2">`project.lock.json`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The entirety of the command is given below.</source>
+          <target state="translated">下方给出了整个命令。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>On macOS, we can save this script as <ph id="ph1">`dotnet-clean`</ph> and set its executable bit with <ph id="ph2">`chmod +x dotnet-clean`</ph>.</source>
+          <target state="translated">在 macOS 上，可以将此脚本另存为 <ph id="ph1">`dotnet-clean`</ph> 并使用 <ph id="ph2">`chmod +x dotnet-clean`</ph> 设置其可执行位。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>We can then create a symbolic link to it in <ph id="ph1">`/usr/local/bin`</ph> using the command <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph>.</source>
+          <target state="translated">然后，可以使用命令 <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph> 在 <ph id="ph1">`/usr/local/bin`</ph> 中创建其符号链接。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This will make it possible to invoke the clean command using the <ph id="ph1">`dotnet clean`</ph> syntax.</source>
+          <target state="translated">这样，就可以使用 <ph id="ph1">`dotnet clean`</ph> 语法调用 clean 命令。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>You can test this by creating an app, running <ph id="ph1">`dotnet build`</ph> on it and then running <ph id="ph2">`dotnet clean`</ph>.</source>
+          <target state="translated">可以通过创建应用、在其中运行 <ph id="ph1">`dotnet build`</ph>，然后运行 <ph id="ph2">`dotnet clean`</ph> 来对此进行测试。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">结束语</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The .NET Core CLI tools allow three main extensibility points.</source>
+          <target state="translated">.NET Core CLI 工具允许三个主要扩展点。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The per-project tools are contained within the project's context, but they allow easy installation through restoration.</source>
+          <target state="translated">基于项目的工具包含在项目上下文中，但允许通过还原轻松安装。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Custom targets allow you to easily extend the build process with custom tasks.</source>
+          <target state="translated">通过自定义目标，可使用自定义任务轻松扩展生成过程。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>PATH-based tools are good for general, cross-project tools that are usable on a single machine.</source>
+          <target state="translated">基于路径的工具非常适合可在一台计算机上使用的常规、跨项目工具。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

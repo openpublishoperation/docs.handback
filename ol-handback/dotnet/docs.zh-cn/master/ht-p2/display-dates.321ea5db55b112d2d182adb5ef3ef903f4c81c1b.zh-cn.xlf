@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85c9d450be48c553ea3a1f1a0f16c298941fa325</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\display-dates.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">62f798ead5a51e7d5f98f9d6adfc897b6016b74f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">24e5cd9876ee5e877c57270f20d350929e40499b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">如何：用非公历日历显示日期</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to display dates in non-gregorian calendars</source>
+          <target state="translated">如何用非公历日历显示日期</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">如何：用非公历日历显示日期</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types use the Gregorian calendar as their default calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 和 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 类型使用公历日历作为其默认日历。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means that calling a date and time value's <ph id="ph1">`ToString`</ph> method displays the string representation of that date and time in the Gregorian calendar, even if that date and time was created using another calendar.</source>
+          <target state="translated">这意味着，调用日期和时间值的 <ph id="ph1">`ToString`</ph> 方法会用公历日历显示该日期和时间的字符串表示形式，即使该日期和时间是使用其他日历创建的。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This is illustrated in the following example, which uses two different ways to create a date and time value with the Persian calendar, but still displays those date and time values in the Gregorian calendar when it calls the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept> method.</source>
+          <target state="translated">这在下面的示例中进行了演示，该示例通过两种不同方式来使用波斯日历创建日期和时间值，但是在调用 <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept> 方法时仍用公历日历显示这些日期和时间值。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This example reflects two commonly used but incorrect techniques for displaying the date in a particular calendar.</source>
+          <target state="translated">此示例对于用特定日历显示日期，反映了两种常用但不正确的方法。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Two different techniques can be used to display the date in a particular calendar.</source>
+          <target state="translated">两种不同的方法可以用于以特定日历显示日期。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The first requires that the calendar be the default calendar for a particular culture.</source>
+          <target state="translated">第一种方法要求日历是特定区域性的默认日历。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The second can be used with any calendar.</source>
+          <target state="translated">第二种方法可以与任何日历一起使用。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To display the date for a culture's default calendar</source>
+          <target state="translated">针对区域性默认日历显示日期</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">实例化从 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 类派生的日历对象，它表示要使用的日历。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Instantiate a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object representing the culture whose formatting will be used to display the date.</source>
+          <target state="translated">实例化 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 对象，它表示其格式设置将用于显示日期的区域性。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method to determine whether the calendar object is a member of the array returned by the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated">调用 <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 方法以确定日历对象是否为 <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 属性返回的数组的成员。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This indicates that the calendar can serve as the default calendar for the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object.</source>
+          <target state="translated">这指示日历可以用作 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 对象的默认日历。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If it is not a member of the array, follow the instructions in the "To Display the Date in Any Calendar" section.</source>
+          <target state="translated">如果它不是数组的成员，请按照“用任何日历显示日期”部分中的说明执行。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Assign the calendar object to the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property of the <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> object returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated">将日历对象分配给 <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> 属性返回的 <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> 对象的 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 属性。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> class also has a <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 类还具有 <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept> 属性。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property.</source>
+          <target state="translated">但是，它是只读常量；它不会更改以反映分配给 <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 属性的新默认日历。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Call either the <bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> or the <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> method, and pass it the <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept> object whose default calendar was modified in the previous step.</source>
+          <target state="translated">调用 <bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> 或 <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> 方法，并向它传递其默认日历在上一步中进行了修改的 <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept> 对象。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To display the date in any calendar</source>
+          <target state="translated">用任何日历显示日期</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">实例化从 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 类派生的日历对象，它表示要使用的日历。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine which date and time elements should appear in the string representation of the date and time value.</source>
+          <target state="translated">确定应在日期和时间值的字符串表示形式中出现的日期和时间元素。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For each date and time element that you want to display, call the calendar object's <ph id="ph1">`Get…`</ph> method.</source>
+          <target state="translated">对于要显示的每个日期和时间元素，调用日历对象的 <ph id="ph1">`Get…`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following methods are available:</source>
+          <target state="translated">有以下方法可用：</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept>, to display the year in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept>，用适当日历显示年份。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept>, to display the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept>，用适当日历显示月份。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept>, to display the number of the day of the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept>，用适当日历显示月份中的天。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept>, to display the hour of the day in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept>，用适当日历显示一天中的小时。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept>, to display the minutes in the hour in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept>，用适当日历显示小时中的分钟。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept>, to display the seconds in the minute in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept>，用适当日历显示分钟中的秒。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept> , to display the milliseconds in the second in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept>，用适当日历显示秒中的毫秒。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example displays a date using two different calendars.</source>
+          <target state="translated">该示例使用两个不同日历显示日期。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It displays the date after defining the Hijri calendar as the default calendar for the ar-JO culture, and displays the date using the Persian calendar, which is not supported as an optional calendar by the fa-IR culture.</source>
+          <target state="translated">它在将回历定义为 ar-JO 区域性的默认日历之后显示日期，并使用波斯日历（fa-IR 区域性不支持将它作为可选日历）显示日期。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Each <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object can support one or more calendars, which are indicated by the <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated">每个 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 对象都可以支持一个或多个日历（由 <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 属性指示）。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>One of these is designated as the culture's default calendar and is returned by the read-only <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated">其中一个日历指定为区域性的默认日历，通过只读的 <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept> 属性返回。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Another of the optional calendars can be designated as the default by assigning a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object that represents that calendar to the <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated">可以通过将表示另一个可选日历的 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 对象分配给 <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> 属性返回的 <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> 属性，将该日历指定为默认值。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>However, some calendars, such as the Persian calendar represented by the <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept> class, do not serve as optional calendars for any culture.</source>
+          <target state="translated">但是，某些日历（如由 <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept> 类表示的波斯日历）不用作任何区域性的可选日历。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The example defines a reusable calendar utility class, <ph id="ph1">`CalendarUtility`</ph>, to handle many of the details of generating the string representation of a date using a particular calendar.</source>
+          <target state="translated">该示例定义了一个可重用的日历实用工具类 <ph id="ph1">`CalendarUtility`</ph>，用于处理有关使用特定日历生成日期的字符串表示形式的许多详细信息。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CalendarUtility`</ph> class has the following members:</source>
+          <target state="translated"><ph id="ph1">`CalendarUtility`</ph> 类包含以下成员：</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A parameterized constructor whose single parameter is a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object in which a date is to be represented.</source>
+          <target state="translated">一个参数化构造函数，其单个参数是要在其中表示日期的 <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> 对象。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This is assigned to a private field of the class.</source>
+          <target state="translated">这会分配给类的私有字段。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CalendarExists`</ph>, a private method that returns a Boolean value indicating whether the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object is supported by the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that is passed to the method as a parameter.</source>
+          <target state="translated"><ph id="ph1">`CalendarExists`</ph>，一个私有方法，它返回一个布尔值，用于指示作为参数传递给方法的 <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> 对象是否支持 <ph id="ph2">`CalendarUtility`</ph> 对象表示的日历。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The method wraps a call to the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method, to which it passes the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> array.</source>
+          <target state="translated">该方法包装对 <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 方法的调用，它会向该方法传递 <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> 数组。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`HasSameName`</ph>, a private method assigned to the <bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept> delegate that is passed as a parameter to the <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method.</source>
+          <target state="translated"><ph id="ph1">`HasSameName`</ph>，一个私有方法，它分配给作为参数传递给 <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> 方法的 <bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept> 委托。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Each member of the array is passed to the method until the method returns <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">数组的每个成员都会传递给该方法，直到该方法返回 <ph id="ph1">`true`</ph>。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The method determines whether the name of an optional calendar is the same as the calendar represented by the <ph id="ph1">`CalendarUtility`</ph> object.</source>
+          <target state="translated">该方法确定可选日历的名称是否与 <ph id="ph1">`CalendarUtility`</ph> 对象表示的日历相同。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DisplayDate`</ph>, an overloaded public method that is passed two parameters: either a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value to express in the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object; and the culture whose formatting rules are to be used.</source>
+          <target state="translated"><ph id="ph1">`DisplayDate`</ph>，一个重载公共方法，会向它传递两个参数：要以 <ph id="ph2">`CalendarUtility`</ph> 对象表示的日历表示的 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 或 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 值；以及要使用其格式设置规则的区域性。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.</source>
+          <target state="translated">它在返回日期的字符串表示形式时的行为取决于要使用其格式设置规则的区域性是否支持目标日历。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Regardless of the calendar used to create a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value in this example, that value is typically expressed as a Gregorian date.</source>
+          <target state="translated">无论在此示例中使用哪种日历创建 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 或 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 值，该值通常都表示为公历日期。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This is because the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types do not preserve any calendar information.</source>
+          <target state="translated">这是因为 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 和 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 类型不保留任何日历信息。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001.</source>
+          <target state="translated">它们在内部表示自 0001 年 1 月 1 日午夜以来所经历的时钟周期数。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The interpretation of that number depends on the calendar.</source>
+          <target state="translated">该数字的解释取决于日历。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For most cultures, the default calendar is the Gregorian calendar.</source>
+          <target state="translated">对于大多数区域性，默认日历是公历。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>执行格式设置操作<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

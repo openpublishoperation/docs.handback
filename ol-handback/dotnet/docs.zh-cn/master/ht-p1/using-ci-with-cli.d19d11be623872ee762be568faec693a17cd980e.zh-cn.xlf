@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0fda867f1d29caaca716ad27baf6e43146cb99df</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\using-ci-with-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4a2aaa9410a97f54077ceb875342ebcf4acdd5aa</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">20fc0fece488375b2748f8ab394cf3d90a73c6f7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">在持续集成 (CI) 中使用 .NET Core SDK 和工具</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">在持续集成 (CI) 中使用 .NET Core SDK 和工具</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">在持续集成 (CI) 中使用 .NET Core SDK 和工具</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">概述</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document outlines the usage of .NET Core SDK and its tools on the build server.</source>
+          <target state="translated">本文档概述了 .NET Core SDK 及其在生成服务器上的工具的使用情况。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In general, on a CI build server, you want to automate the installation in some way.</source>
+          <target state="translated">一般情况下，在 CI 生成服务器上，用户希望以某种方式自动化安装。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The automation, ideally, should not require administrative privileges if at all possible.</source>
+          <target state="translated">理想情况下，如果可能的话，自动化不需要管理特权。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For SaaS CI solutions, there are several options.</source>
+          <target state="translated">对于 SaaS CI 解决方案，有几个选项。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This document will cover two very popular ones, <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> and <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</source>
+          <target state="translated">本文档将介绍两个非常受欢迎的选项：<bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> 和 <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>There are, of course, many other services out there, but the installation and usage mechanisms should be similar.</source>
+          <target state="translated">当然，还存在许多其他选项，但安装和使用机制应该类似。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Installation options for CI build servers</source>
+          <target state="translated">CI 生成服务器的安装选项</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Using the native installers</source>
+          <target state="translated">使用本机安装程序</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If using installers that require administrative privileges is not something that presents a problem, native installers for each platform can be used to set up the build server.</source>
+          <target state="translated">如果使用需要管理特权的安装程序不是问题，可使用每个平台的本机安装程序来设置生成服务器。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This approach, especially in the case of Linux build servers, has one advantage which is automatic installing of dependencies needed for the SDK to run.</source>
+          <target state="translated">此方法（尤其对 Linux 生成服务器）有一个好处：自动安装运行 SDK 所需的依赖项。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The native installers will also install a system-wide version of the SDK, which may be desired; if it's not, you should look into the <bpt id="p1">[</bpt>installer script usage<ept id="p1">](#using-the-installer-script)</ept> outlined below.</source>
+          <target state="translated">本机安装程序也将安装全系统版本的 SDK（可能期望这样操作）；如果未安装，应查看下文介绍的<bpt id="p1">[</bpt>安装程序脚本使用情况<ept id="p1">](#using-the-installer-script)</ept>。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Using this approach is simple.</source>
+          <target state="translated">使用此方法非常简单。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For Linux, there is a choice of using a feed-based package manager, such as <ph id="ph1">`apt-get`</ph> for Ubuntu or <ph id="ph2">`yum`</ph> for CentOS, or using the packages themselves (that is, DEB or RPM).</source>
+          <target state="translated">对于 Linux，可选择使用基于源的包管理器（例如用于 Ubuntu 的 <ph id="ph1">`apt-get`</ph> 或用于 CentOS 的 <ph id="ph2">`yum`</ph>），或使用包本身（即 DEB 或 RPM）。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The former would require setting up the feed that contains the packages.</source>
+          <target state="translated">前者需要设置包含包的源。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For Windows platforms, you can use the MSI.</source>
+          <target state="translated">对于 Windows 平台，可以使用 MSI。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>All of the binaries can be found on the <bpt id="p1">[</bpt>.NET Core getting started page<ept id="p1">](https://aka.ms/dotnetcoregs)</ept> which points to the latest stable releases.</source>
+          <target state="translated">可在指向最新稳定版本的 <bpt id="p1">[</bpt>.NET Core 入门页面<ept id="p1">](https://aka.ms/dotnetcoregs)</ept>找到所有这些二进制文件。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If you wish to use newer (and potentially unstable) releases or the latest, you can use the links from the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/cli)</ept>.</source>
+          <target state="translated">若要使用较新（可能不稳定）的版本或最新版本，可使用 <bpt id="p1">[</bpt>CLI 存储库<ept id="p1">](https://github.com/dotnet/cli)</ept>中的链接。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Using the installer script</source>
+          <target state="translated">使用安装程序脚本</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Using the installer script allows for non-administrative installation on your build server.</source>
+          <target state="translated">使用安装程序脚本允许在生成服务器上进行非管理员安装。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>It also allows a very easy automation.</source>
+          <target state="translated">它还允许非常简单的自动化。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The script itself will download the ZIP/tarball files needed and will unpack them; it will also add the install location on the local machine to the PATH so that the tools become available for invocation immediately post-install.</source>
+          <target state="translated">脚本自己会下载所需 ZIP/tarball 文件并将其解压缩；它还会将本地计算机上的安装位置添加到 PATH，以便安装后即可为调用提供工具。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The installer script can easily be automated at the start of the build to fetch and install the needed version of the SDK.</source>
+          <target state="translated">启动生成后，可轻松自动化安装程序脚本，提取和安装所需版本的 SDK 。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The "needed version" is whatever version application being built requires.</source>
+          <target state="translated">“所需版本”指正在生成的应用程序所需的任何版本。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can choose the installation path so you can install the SDK locally and then clean up after the build completes.</source>
+          <target state="translated">可选择安装路径，因此可本地安装 SDK，然后在生成完成后清理。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This brings additional encapsulation and atomicity to the build process.</source>
+          <target state="translated">这为生成过程带来了额外的封装和隔离性。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The installation script reference can be found in the <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> document.</source>
+          <target state="translated">可在 <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> 文档中找到安装脚本引用。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Dealing with the dependencies</source>
+          <target state="translated">处理依赖项</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Using the installer script means that the native dependencies are not installed automatically and that you have to install them if the operating system you are installing on already doesn't have them.</source>
+          <target state="translated">使用安装程序脚本意味着不自动安装本机依赖项，如果在其上安装的操作系统上没有依赖项，则必须安装依赖项。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can see the list of prerequisites in the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</source>
+          <target state="translated">可在 <bpt id="p1">[</bpt>CLI 存储库<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>中查看先决条件列表。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>CI services setup examples</source>
+          <target state="translated">CI 服务设置示例</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The below sections show examples of configurations using the mentioned CI SaaS offerings.</source>
+          <target state="translated">以下各节介绍使用提及的 CI SaaS 产品/服务的配置示例。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>TravisCI</source>
+          <target state="translated">TravisCI</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> can be configured to install the .NET Core SDK using the <ph id="ph1">`csharp`</ph> language and the <ph id="ph2">`dotnet`</ph> key.</source>
+          <target state="translated">可将 <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> 配置为使用 <ph id="ph1">`csharp`</ph> 语言和 <ph id="ph2">`dotnet`</ph> 键安装 .NET Core SDK。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">只需使用：</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Travis can run both <ph id="ph1">`osx`</ph> (OS X 10.11) and <ph id="ph2">`linux`</ph> ( Ubuntu 14.04 ) job in a build matrix, see <bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> for more information.</source>
+          <target state="translated">Travis 可在生成矩阵中运行 <ph id="ph1">`osx`</ph> (OS X 10.11) 和 <ph id="ph2">`linux`</ph> ( Ubuntu 14.04 ) 作业，有关详细信息，请参阅 <bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept>（示例 .travis.yml）。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>AppVeyor</source>
+          <target state="translated">AppVeyor</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> has .NET Core SDK preview2 already installed in the build worker image <ph id="ph1">`Visual Studio 2015`</ph>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> 已在生成辅助角色进程映像 <ph id="ph1">`Visual Studio 2015`</ph> 中安装了 .NET Core SDK preview2。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">只需使用：</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>It's possible to install a specific version of .NET Core SDK, see <bpt id="p1">[</bpt>example appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept> for more info.</source>
+          <target state="translated">可安装 .NET Core SDK 的特定版本，有关详细信息，请参阅 <bpt id="p1">[</bpt>example appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept>（示例 appveyor.yml）。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to <ph id="ph1">`PATH`</ph> env var.</source>
+          <target state="translated">在本示例中，将 .NET Core SDK 二进制文件下载、解压缩到一个子目录中并添加到 <ph id="ph1">`PATH`</ph> env var。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A build matrix can be added to run integration tests with multiple version of the .NET Core SDK.</source>
+          <target state="translated">可添加生成矩阵，使用多个版本的 .NET Core SDK 运行集成测试。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
