@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9e65979d2f41e39e89109c2c5480acaebbef757f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tutorials\using-on-windows-vs-2017-full-solution.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e29a54d1a4949abdd0de1df496fb58cd62111dfb</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c5ae8ea0231349c002c7cfe59d2ad52d63c80a1a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">使用 Visual Studio 2017 在 Windows 上建置完整的 .NET Core 解決方案</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">使用 Visual Studio 2017 在 Windows 上建置完整的 .NET Core 解決方案</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Building a complete .NET Core solution on Windows, using Visual Studio 2017</source>
+          <target state="translated">使用 Visual Studio 2017 在 Windows 上建置完整的 .NET Core 解決方案</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>by <bpt id="p1">[</bpt>Bertrand Le Roy<ept id="p1">](https://github.com/bleroy)</ept> and <bpt id="p2">[</bpt>Phillip Carter<ept id="p2">](https://github.com/cartermp)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Bertrand Le Roy<ept id="p1">](https://github.com/bleroy)</ept> 和 <bpt id="p2">[</bpt>Phillip Carter<ept id="p2">](https://github.com/cartermp)</ept> 撰</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications.</source>
+          <target state="translated">Visual Studio 2017 提供功能完整的開發環境來開發 .NET Core 應用程式。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The procedures in this document describe the steps necessary to build a typical .NET Core solution that includes reusable libraries, testing, and using third-party libraries.</source>
+          <target state="translated">本文件中的程序說明建置一般 .NET Core 解決方案所需的步驟，其中包含可重複使用的程式庫、測試，以及使用協力廠商程式庫。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要條件</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Follow the instructions on <bpt id="p1">[</bpt>our prerequisites page<ept id="p1">](../windows-prerequisites.md)</ept> to update your environment.</source>
+          <target state="translated">請依照<bpt id="p1">[</bpt>我們的必要條件頁面<ept id="p1">](../windows-prerequisites.md)</ept>上的指示進行，更新您的環境。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A solution using only .NET Core projects</source>
+          <target state="translated">只使用 .NET Core 專案的方案</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Writing the library</source>
+          <target state="translated">撰寫程式庫</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">在 Visual Studio 中，依序選擇 [檔案]、[新增]、[專案]。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog, expand the <bpt id="p2">**</bpt>Visual C#<ept id="p2">**</ept> node and choose the <bpt id="p3">**</bpt>.NET Core<ept id="p3">**</ept> node, and then choose <bpt id="p4">**</bpt>Class Library (.NET Standard)<ept id="p4">**</ept>.</source>
+          <target state="translated">在 [新增專案] 對話方塊中，展開 [Visual C#] 節點，然後依序選擇 [.NET Core] 節點和 [類別庫 (.NET 標準)]。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Name the project "Library" and the solution "Golden".</source>
+          <target state="translated">將專案命名為 "Library"、方案命名為 "Golden"。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Leave <bpt id="p1">**</bpt>Create directory for solution<ept id="p1">**</ept> checked.</source>
+          <target state="translated">維持核取 [為方案建立目錄]。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">按一下 [確定]。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the <bpt id="p1">**</bpt>Dependencies<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Manage NuGet Packages<ept id="p2">**</ept>.</source>
+          <target state="translated">在 [方案總管] 中，開啟 [相依性] 節點的操作功能表，然後選擇 [管理 NuGet 套件]。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Choose "nuget.org" as the <bpt id="p1">**</bpt>Package source<ept id="p1">**</ept>, and choose the <bpt id="p2">**</bpt>Browse<ept id="p2">**</ept> tab.</source>
+          <target state="translated">選擇 "nuget.org" 作為 [套件來源]，然後選擇 [瀏覽] 索引標籤。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Browse for <bpt id="p1">**</bpt>Newtonsoft.Json<ept id="p1">**</ept>.</source>
+          <target state="translated">瀏覽 <bpt id="p1">**</bpt>Newtonsoft.Json<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Install<ept id="p1">**</ept>, and accept the license agreement.</source>
+          <target state="translated">按一下 [安裝]，然後接受授權合約。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The package should now appear under <bpt id="p1">**</bpt>Dependencies/NuGet<ept id="p1">**</ept> and be automatically restored.</source>
+          <target state="translated">套件現在應該會出現在 [相依性/NuGet] 下方且會自動還原。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Rename the <ph id="ph1">`Class1.cs`</ph> file to <ph id="ph2">`Thing.cs`</ph>.</source>
+          <target state="translated">將檔案 <ph id="ph1">`Class1.cs`</ph> 重新命名為 <ph id="ph2">`Thing.cs`</ph>。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Accept the rename of the class.</source>
+          <target state="translated">接受類別的重新命名。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add a method: <ph id="ph1">`public int Get(int number) =&gt; Newtonsoft.Json.JsonConvert.DeserializeObject&lt;int&gt;($"{number}");`</ph></source>
+          <target state="translated">新增方法：<ph id="ph1">`public int Get(int number) =&gt; Newtonsoft.Json.JsonConvert.DeserializeObject&lt;int&gt;($"{number}");`</ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Build Solution<ept id="p2">**</ept>.</source>
+          <target state="translated">在 [ <bpt id="p1">**</bpt>建置<ept id="p1">**</ept> ] 功能表上，選擇 [ <bpt id="p2">**</bpt>建置方案<ept id="p2">**</ept>]。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The solution should build without error.</source>
+          <target state="translated">方案應該會建置而無錯誤。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Writing the test project</source>
+          <target state="translated">撰寫測試專案</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the <bpt id="p1">**</bpt>Solution<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, <bpt id="p3">**</bpt>New Project<ept id="p3">**</ept>.</source>
+          <target state="translated">在 [方案總管] 中，開啟 [方案] 節點的操作功能表，然後依序選擇 [新增] 和 [新增專案]。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog, under <bpt id="p2">**</bpt>Visual C# / .NET Core<ept id="p2">**</ept>, choose <bpt id="p3">**</bpt>Unit Test Project (.NET Core)<ept id="p3">**</ept>.</source>
+          <target state="translated">在 [新增專案] 對話方塊的 [Visual C# / .NET Core] 下方，選擇 [單元測試專案 (.NET Core)]。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Name it "TestLibrary" and click OK.</source>
+          <target state="translated">將它命名為 "TestLibrary"，然後按一下 [確定]。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>TestLibrary<ept id="p1">**</ept> project, open the context menu for the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> node and choose <bpt id="p3">**</bpt>Add Reference<ept id="p3">**</ept>.</source>
+          <target state="translated">在 <bpt id="p1">**</bpt>TestLibrary<ept id="p1">**</ept> 專案中，開啟 [相依性] 節點的操作功能表，然後選擇 [新增參考]。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Projects<ept id="p1">**</ept>, then check the Library project and click OK.</source>
+          <target state="translated">按一下 [專案]，接著檢查程式庫專案，然後按一下 [確定]。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This adds a reference to your library from the test project.</source>
+          <target state="translated">這會從測試專案中新增對您程式庫的參考。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Rename the <ph id="ph1">`UnitTest1.cs`</ph> file to <ph id="ph2">`LibraryTests.cs`</ph> and accept the class rename.</source>
+          <target state="translated">將 <ph id="ph1">`UnitTest1.cs`</ph> 檔案重新命名為 <ph id="ph2">`LibraryTests.cs`</ph> 並接受類別重新命名。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add <ph id="ph1">`using Library;`</ph> to the top of the file, and replace the <ph id="ph2">`TestMethod1`</ph> method with the following code:</source>
+          <target state="translated">將 <ph id="ph1">`using Library;`</ph> 新增至檔案頂端，並使用下列程式碼取代 <ph id="ph2">`TestMethod1`</ph> 方法：</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You should now be able to build the solution.</source>
+          <target state="translated">您現在應該能夠建置方案。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Test<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Windows<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Test Explorer<ept id="p3">**</ept> in order to get the test explorer window into your workspace.</source>
+          <target state="translated">在 [測試] 功能表上，依序選擇 [Windows] 和 [測試總管]，以便進入工作區中的 [測試總管] 視窗。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>After a few seconds, the <ph id="ph1">`ThingGetsObjectValFromNumber`</ph> test should appear in the test explorer.</source>
+          <target state="translated">幾秒鐘後，<ph id="ph1">`ThingGetsObjectValFromNumber`</ph> 測試應該就會出現在 [測試總管] 中。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Choose <bpt id="p1">**</bpt>Run All<ept id="p1">**</ept>.</source>
+          <target state="translated">選擇 [ <bpt id="p1">**</bpt>全部執行<ept id="p1">**</ept>]。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The test should pass.</source>
+          <target state="translated">測試應該會順利通過。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Writing the console app</source>
+          <target state="translated">撰寫主控台應用程式</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In Solution Explorer, open the context menu for the solution, and add a new <bpt id="p1">**</bpt>Console App (.NET Core)<ept id="p1">**</ept> project.</source>
+          <target state="translated">在 [方案總管] 中，開啟方案的操作功能表，並新增一個新的 [主控台應用程式 (.NET Core)] 專案。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Name it "App", and set the location to <ph id="ph1">`Golden\src`</ph>.</source>
+          <target state="translated">將它命名為 "App"，並將位置設為 <ph id="ph1">`Golden\src`</ph>。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>App<ept id="p1">**</ept> project, open the context menu for the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> node and choose <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>,  <bpt id="p4">**</bpt>Reference<ept id="p4">**</ept>.</source>
+          <target state="translated">在 [應用程式] 專案中，開啟 [相依性] 節點的操作功能表，然後依序選擇 [新增] 和 [參考]。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Reference Manager<ept id="p1">**</ept> dialog, check <bpt id="p2">**</bpt>Library<ept id="p2">**</ept> under the <bpt id="p3">**</bpt>Projects<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Solution<ept id="p4">**</ept> node, and then click <bpt id="p5">**</bpt>OK<ept id="p5">**</ept></source>
+          <target state="translated">在 [參考管理員] 對話方塊中，分別核取 [專案] 下的 [程式庫]、[方案] 節點，然後再按一下 [確定]。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Open the context menu for the <bpt id="p1">**</bpt>App<ept id="p1">**</ept> node and choose <bpt id="p2">**</bpt>Set as StartUp Project<ept id="p2">**</ept>.</source>
+          <target state="translated">開啟 <bpt id="p1">**</bpt>App<ept id="p1">**</ept> 節點的操作功能表，然後選擇 [設定為啟始專案]。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This ensures that hitting F5 or CTRL+F5 will start the console app.</source>
+          <target state="translated">這確保在按下 F5 或 CTRL+F5 時，將會啟動主控台應用程式。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Open the <ph id="ph1">`Program.cs`</ph> file, add a <ph id="ph2">`using Library;`</ph> directive to the top of the file, and then add <ph id="ph3">`Console.WriteLine($"The answer is {new Thing().Get(42)}");`</ph> to the <ph id="ph4">`Main`</ph> method.</source>
+          <target state="translated">開啟 <ph id="ph1">`Program.cs`</ph> 檔案、將 <ph id="ph2">`using Library;`</ph> 指示詞新增至檔案的頂端，然後將 <ph id="ph3">`Console.WriteLine($"The answer is {new Thing().Get(42)}");`</ph> 新增至 <ph id="ph4">`Main`</ph> 方法。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Set a breakpoint after the line that you just added.</source>
+          <target state="translated">在您剛才新增的行之後設定中斷點。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Press F5 to run the application..</source>
+          <target state="translated">按 F5 執行應用程式。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The application should build without error, and should hit the breakpoint.</source>
+          <target state="translated">應用程式應該會建置且不會發生錯誤，並且應該到達中斷點。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You should also be able to check that the application output "The answer is 42.".</source>
+          <target state="translated">您也應該能夠確認應用程式輸出 "The answer is 42."。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
