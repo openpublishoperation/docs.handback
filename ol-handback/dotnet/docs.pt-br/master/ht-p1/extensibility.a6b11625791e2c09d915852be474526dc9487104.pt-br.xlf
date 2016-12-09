@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4223f296224c9b62c88b72f0f643c8b8b6fc9f6b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\extensibility.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2b6fec3e8b7b8e43a49178e846ebc37853a638b6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3948c7ede4e56778f4a4a5cd5b52f78ff3096855</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">Modelo de extensibilidade da CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">Modelo de extensibilidade da CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, extensibilidade, comandos personalizados, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">Modelo de extensibilidade da CLI do .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Visão Geral</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them.</source>
+          <target state="translated">Este documento abordará as principais maneiras de estender as ferramentas da CLI e explica os cenários que orientam a cada uma delas.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It will the outline how to consume the tools as well as provide short notes on how to build both types of tools.</source>
+          <target state="translated">Ele descreverá como consumir as ferramentas, bem como fornecerá breves anotações sobre como compilar ambos os tipos de ferramentas.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>How to extend CLI tools</source>
+          <target state="translated">Como estender as ferramentas da CLI</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The CLI tools can be extended in two main ways:</source>
+          <target state="translated">As ferramentas da CLI podem ser estendidas de duas maneiras:</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Via NuGet packages on a per-project basis</source>
+          <target state="translated">Por meio de pacotes NuGet por projeto</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Via the system's PATH</source>
+          <target state="translated">Por meio do PATH do sistema</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The two extensibility mechanisms outlined above are not exclusive; you can use both or just one.</source>
+          <target state="translated">Os dois mecanismos de extensibilidade descritos acima não são exclusivos; você pode usar ambos ou apenas um deles.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Which one to pick depends largely on what is the goal you are trying to achieve with your extension.</source>
+          <target state="translated">Qual deles escolher depende muito da meta que você está tentando alcançar com a extensão.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Per-project based extensibility</source>
+          <target state="translated">Extensibilidade por projeto</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Per-project tools are <bpt id="p1">[</bpt>portable console applications<ept id="p1">](../deploying/index.md)</ept> that are distributed as NuGet packages.</source>
+          <target state="translated">Ferramentas por projeto são <bpt id="p1">[</bpt>aplicativos de console portátil<ept id="p1">](../deploying/index.md)</ept> que são distribuídos como pacotes NuGet.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Tools are only available in the context of the project that references them and for which they are restored; invocation outside of the context of the project (for example, outside of the directory that contains the project) will fail as the command will not be able to be found.</source>
+          <target state="translated">Ferramentas só estão disponíveis no contexto do projeto que faz referência a eles e para os quais eles são restaurados; a invocação fora do contexto do projeto (por exemplo, fora do diretório que contém o projeto) falhará, pois o comando não poderá ser encontrado.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>These tools are perfect for build servers as well, since nothing outside of <ph id="ph1">`project.json`</ph> is needed.</source>
+          <target state="translated">Essas ferramentas são perfeitas para criar servidores, desde que nada fora do <ph id="ph1">`project.json`</ph> seja necessário.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The build process runs restore for the project it builds and tools will be available.</source>
+          <target state="translated">O processo de build executa a restauração para o projeto compilado e as ferramentas disponíveis.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Language projects, such as F#, are also in this category; after all, each project can only be written in one specific language.</source>
+          <target state="translated">Projetos de linguagem, como F#, também estão nesta categoria, afinal, cada projeto só pode ser escrito em um idioma específico.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Finally, this extensibility model provides support for creation of tools that need access to the built output of the project.</source>
+          <target state="translated">Por fim, esse modelo de extensibilidade dá suporte à criação de ferramentas que precisam acessar a saída da compilação do projeto.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For instance, various Razor view tools in <bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept> MVC applications fall into this category.</source>
+          <target state="translated">Por exemplo, diversas ferramentas de exibição Razor em aplicativos <bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept> MVC se enquadram nesta categoria.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Consuming per-project tools</source>
+          <target state="translated">Consumir ferramentas por projeto</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Consuming these tools requires you to add a <ph id="ph1">`tools`</ph> node to your <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated">Consumir essas ferramentas requer que você adicione um nó <ph id="ph1">`tools`</ph> ao <ph id="ph2">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Inside the <ph id="ph1">`tools`</ph> node, you reference the package in which the tool resides.</source>
+          <target state="translated">Dentro do nó <ph id="ph1">`tools`</ph>, você referenciar o pacote no qual a ferramenta reside.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>After running <ph id="ph1">`dotnet restore`</ph>, the tool and its dependencies are restored.</source>
+          <target state="translated">Após executar <ph id="ph1">`dotnet restore`</ph>, a ferramenta e suas dependências são restauradas.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For tools that need to load the build output of the project for execution, there is usually another dependency which is listed under the regular dependencies in the project file.</source>
+          <target state="translated">Para ferramentas que precisam carregar a saída do build do projeto para execução, geralmente há outra dependência listada nas dependências regulares no arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This means that tools that load project's code have two components:</source>
+          <target state="translated">Isso significa que as ferramentas que carregam o código do projeto têm dois componentes:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The "tools" main invoker</source>
+          <target state="translated">O invocador principal “ferramentas”</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Any number of other tools that contain the logic to work with</source>
+          <target state="translated">Qualquer número de outras ferramentas que contém a lógica para trabalhar com</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Why two things?</source>
+          <target state="translated">Por que as duas coisas?</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Tools that need to load the build output of a project need to have unified dependency graph with the project they are working.</source>
+          <target state="translated">Ferramentas que precisam carregar a saída de build de um projeto precisam ter um gráfico de dependência unificado com o projeto no qual estão trabalhando.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>By adding the dependency bit, we enable NuGet to resolve these dependencies as a unified graph.</source>
+          <target state="translated">Ao adicionar o bit de dependência, permitimos que o NuGet resolva essas dependências como um gráfico unificado.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The invoker is there because it needs to reason about the location as well as the frameworks of the dependency tool.</source>
+          <target state="translated">O invocador existe porque ele precisa entender sobre o local, bem como sobre as estruturas da ferramenta de dependência.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The invoker can accept all of the redirection arguments (<ph id="ph1">`-c`</ph>, <ph id="ph2">`-o`</ph>, <ph id="ph3">`-b`</ph>) that the user specifies and finds the dependency tool; it can also implement any policies for cases where multiple dependency tools exist for multiple frameworks (that is, does it run all of them, just one, etc.) In general, logic can be shared between these two tools any way that is needed.</source>
+          <target state="translated">O invocador pode aceitar todos os argumentos de redirecionamento (<ph id="ph1">`-c`</ph>, <ph id="ph2">`-o`</ph>, <ph id="ph3">`-b`</ph>) que o usuário especifica e localizar a ferramenta de dependência. Ele também pode implementar qualquer política para casos em que existem várias ferramentas de dependência para diversas estruturas (ou seja, ele executa todas elas ou apenas uma) Em geral, a lógica pode ser compartilhada entre essas duas ferramentas do modo que for necessário.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Let's review an example of adding a simple tools-only tool to a simple project.</source>
+          <target state="translated">Vamos examinar um exemplo de como adicionar uma ferramenta única simples a um projeto simples.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Given an example command called <ph id="ph1">`dotnet-api-search`</ph> that allows you to search through the NuGet packages for the specified API, here is a console application's <ph id="ph2">`project.json`</ph> file that uses that tool:</source>
+          <target state="translated">Dado um exemplo de comando chamado <ph id="ph1">`dotnet-api-search`</ph> que permite que você pesquise os pacotes NuGet para a API especificada, veja este arquivo do aplicativo de console <ph id="ph2">`project.json`</ph> que usa essa ferramenta:</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`tools`</ph> node is structured in a similar way as the <ph id="ph2">`dependencies`</ph> node.</source>
+          <target state="translated">O nó <ph id="ph1">`tools`</ph> é estruturado de forma semelhante ao nó <ph id="ph2">`dependencies`</ph>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It needs the package ID of the package containing the tool and its version at the very least.</source>
+          <target state="translated">Ele precisa no mínimo da ID do pacote que contém a ferramenta e sua versão.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the example above, we can see that there is another statement, the <ph id="ph1">`imports`</ph> one.</source>
+          <target state="translated">No exemplo acima, podemos ver que há outra instrução, a <ph id="ph1">`imports`</ph>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This influences the tool's restore process and specifies that the tool is also compatible, in addition to any targeted frameworks the tools has, with <ph id="ph1">`dnxcore50`</ph> target.</source>
+          <target state="translated">Isso influencia o processo de restauração da ferramenta e especifica que ela também é compatível, além de quaisquer estruturas de destino que as ferramentas tenham, com o destino <ph id="ph1">`dnxcore50`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For more information you can consult the <bpt id="p1">[</bpt>project.json reference<ept id="p1">](project-json.md)</ept>.</source>
+          <target state="translated">Para obter mais informações, você pode consultar a <bpt id="p1">[</bpt>referência project.json<ept id="p1">](project-json.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Building tools</source>
+          <target state="translated">Compilando ferramentas</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>As mentioned, tools are just portable console applications.</source>
+          <target state="translated">Como mencionado anteriormente, ferramentas são apenas aplicativos de console portáteis.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You would build one as you would build any console application.</source>
+          <target state="translated">Você poderia compilar uma delas da mesma maneira que qualquer aplicativo de console.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>After you build it, you would use <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> command to create a NuGet package (nupkg) that contains your code, information about its dependencies and so on.</source>
+          <target state="translated">Depois de compilá-la, você usaria o comando <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> para criar um pacote NuGet (nupkg) que contém o código, as informações sobre suas dependências e assim por diante.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The package name can be whatever the author wants, but the application inside, the actual tool binary, has to conform to the convention of <ph id="ph1">`dotnet-&lt;command&gt;`</ph> in order for <ph id="ph2">`dotnet`</ph> to be able to invoke it.</source>
+          <target state="translated">O nome do pacote pode ser o que o autor desejar, mas o aplicativo dentro dele, a real ferramenta binária, precisa estar em conformidade com a convenção de <ph id="ph1">`dotnet-&lt;command&gt;`</ph> para que <ph id="ph2">`dotnet`</ph> consiga invocá-lo.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Since tools are portable applications, the user consuming the tool has to have the version of the .NET Core libraries that the tool was built against in order to run the tool.</source>
+          <target state="translated">Como ferramentas são aplicativos portáteis, o usuário que a consume precisa ter a versão das bibliotecas do .NET Core para as quais a biblioteca foi criada para executar a ferramenta.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Any other dependency that the tool uses and that is not contained within the .NET Core libraries is restored and placed in the NuGet cache.</source>
+          <target state="translated">Qualquer outra dependência que a ferramenta usa e que não está contida em bibliotecas do .NET Core é restaurada e colocada no cache do NuGet.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The entire tool is, therefore, run using the assemblies from the .NET Core libraries as well as assemblies from the NuGet cache.</source>
+          <target state="translated">Toda a ferramenta é, portanto, executada usando os assemblies de bibliotecas .NET Core, bem como assemblies do cache do NuGet.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>These kind of tools have a dependency graph that is completely separate from the dependency graph of the project that uses them.</source>
+          <target state="translated">Esses tipos de ferramentas têm um gráfico de dependência completamente separado do gráfico de dependência do projeto que as utiliza.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The restore process will first restore the project's dependencies, and will then restore each of the tools and their dependencies.</source>
+          <target state="translated">O processo de restauração restaurará primeiro as dependências do projeto e, em seguida, cada uma das ferramentas e suas dependências.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can find richer examples and different combinations of this in the <bpt id="p1">[</bpt>.NET Core CLI repo<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept>.</source>
+          <target state="translated">Você pode encontrar exemplos mais sofisticados e diferentes combinações disso no <bpt id="p1">[</bpt>repositório da CLI do .NET Core<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You can also see the <bpt id="p1">[</bpt>implementation of tools used<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept> in the same repo.</source>
+          <target state="translated">Você também pode ver a <bpt id="p1">[</bpt>implementação das ferramentas utilizadas<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept> no mesmo repositório.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Building tools that load project's build outputs for execution is slightly different.</source>
+          <target state="translated">Compilar ferramentas que carregam as saídas de build do projeto para a execução é um processo ligeiramente diferente.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>As stated, for these kinds of tools there are two components:</source>
+          <target state="translated">Como mencionado, há dois componentes para esses tipos de ferramentas:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>A dispatcher tool that the user invokes</source>
+          <target state="translated">Uma ferramenta de dispatcher que o usuário invoca</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A framework-specific dependency that contains the logic on how to find the build outputs and what to do with it</source>
+          <target state="translated">Uma dependência específica de estrutura que contém a lógica sobre como localizar as saídas de build e o que fazer com elas</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>A prime example of this are <bpt id="p1">[</bpt>Entity Framework (EF)<ept id="p1">](https://github.com/aspnet/EntityFramework)</ept> commands as well as the <bpt id="p2">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p2">](dotnet-test.md)</ept> command.</source>
+          <target state="translated">Um exemplo perfeito disso são os comandos da <bpt id="p1">[</bpt>EF (Entity Framework)<ept id="p1">](https://github.com/aspnet/EntityFramework)</ept>, bem como o comando <bpt id="p2">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p2">](dotnet-test.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In both cases, there is a tool that is referenced in the <ph id="ph1">`tools`</ph> node of the <ph id="ph2">`project.json`</ph> and that is the main dispatcher.</source>
+          <target state="translated">Em ambos os casos, há uma ferramenta que é referenciada no nó <ph id="ph1">`tools`</ph> do <ph id="ph2">`project.json`</ph> e é o dispatcher principal.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The user invokes this tool on the command line.</source>
+          <target state="translated">O usuário invoca essa ferramenta na linha de comando.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The second piece of the puzzle is the dependency that is given in the project's main dependencies (either root ones or framework-specific ones).</source>
+          <target state="translated">A segunda parte do quebra-cabeça é a dependência que é determinada nas dependências principais do projeto (na raiz ou naquelas específicas de estrutura).</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This package contains the actual logic of the tool.</source>
+          <target state="translated">Este pacote contém a lógica real da ferramenta.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The package is a normal dependency, thus it will be restored as part of the restore process for the project.</source>
+          <target state="translated">O pacote é uma dependência normal, portanto, ele será restaurado como parte do processo de restauração para o projeto.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Unlike the previous kind of tools, these tool are actually part of the graph of the project that consumes them.</source>
+          <target state="translated">Ao contrário do tipo anterior de ferramentas, na verdade, essas fazem parte do gráfico do projeto que as consome.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This is because they need access to the project's code and potentially all of its dependencies.</source>
+          <target state="translated">Isso ocorre porque elas precisam de acesso ao código do projeto e, potencialmente, a todas as suas dependências.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>For instance, the EF tools need this because they need to scan the assemblies to find the code they need, such as migrations.</source>
+          <target state="translated">Por exemplo, as ferramentas do EF precisam disso porque é necessário verificar os assemblies para encontrar o código exigido, como as migrações.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Another reason why this two-pronged solution exists is to allow a cleaner invocation model.</source>
+          <target state="translated">Outro motivo pelo qual essa solução dupla existe é para permitir um modelo de invocação mais limpo.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Most CLI commands that drop certain artifacts on disk (for example, <ph id="ph1">`dotnet build`</ph>, <ph id="ph2">`dotnet publish`</ph>) allow users to redirect the outputs to a different path using the <ph id="ph3">`--output`</ph> argument or <ph id="ph4">`--build-base-path`</ph> argument or <ph id="ph5">`--configuration`</ph> argument.</source>
+          <target state="translated">A maioria dos comandos da CLI que removem determinados artefatos do disco (por exemplo, <ph id="ph1">`dotnet build`</ph>, <ph id="ph2">`dotnet publish`</ph>) permitem que os usuários redirecionem as saídas para um caminho diferente usando o argumento <ph id="ph3">`--output`</ph>, <ph id="ph4">`--build-base-path`</ph> ou <ph id="ph5">`--configuration`</ph>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For EF tools, for example, to be able to find the build output of your project, you would have to provide the same arguments with the same values to <bpt id="p1">*</bpt>both<ept id="p1">*</ept> <ph id="ph1">`dotnet`</ph> driver as well as the <ph id="ph2">`ef`</ph> command.</source>
+          <target state="translated">Por exemplo, para ferramentas do EF encontrarem a saída de build do seu projeto, você precisaria fornecer os mesmos argumentos com os mesmos valores para <bpt id="p1">*</bpt>ambos<ept id="p1">*</ept> o driver <ph id="ph1">`dotnet`</ph> e para o comando <ph id="ph2">`ef`</ph>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>With the invocation model, the users pass any arguments to the dispatcher tool which can then use that to find the needed binary that contains the logic in the output directories.</source>
+          <target state="translated">Com o modelo de invocação, os usuários passam argumentos para a ferramenta de dispatcher que pode usá-lo para localizar o binário necessário que contém a lógica nos diretórios de saída.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>A good example of this approach can be found in the <bpt id="p1">[</bpt>.NET Core CLI repo<ept id="p1">](https://github.com/dotnet/cli)</ept>:</source>
+          <target state="translated">Um bom exemplo dessa abordagem pode ser encontrado no <bpt id="p1">[</bpt>repositório da CLI do .NET Core<ept id="p1">](https://github.com/dotnet/cli)</ept>:</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Sample project.json file<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/TestAssets/DesktopTestProjects/AppWithDirectDependencyDesktopAndPortable/project.json)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Arquivo project.json de exemplo<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/TestAssets/DesktopTestProjects/AppWithDirectDependencyDesktopAndPortable/project.json)</ept></target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Implementation of the dispatcher<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-dependency-tool-invoker)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Implementação do dispatcher<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-dependency-tool-invoker)</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Implementation of the framework-specific dependency<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Implementação da dependência específica de estrutura<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)</ept></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility</source>
+          <target state="translated">Extensibilidade baseada em PATH</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility is usually used for development machines where you need a tool that conceptually covers more than a single project.</source>
+          <target state="translated">A extensibilidade do PATH geralmente é usada para computadores de desenvolvimento em que você precisa de uma ferramenta que abrange conceitualmente mais de um único projeto.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The main drawback of this extensions mechanism is that it is tied to the machine where the tool exists.</source>
+          <target state="translated">A principal desvantagem desse mecanismo de extensões é que ele está vinculado ao computador no qual a ferramenta existe.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If you need it on another machine, you would have to deploy it.</source>
+          <target state="translated">Se você precisar dela em outro computador, precisará implantá-la.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This pattern of CLI toolset extensibility is very simple.</source>
+          <target state="translated">Esse padrão de extensibilidade do conjunto de ferramentas da CLI é muito simples.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>As covered in the <bpt id="p1">[</bpt>.NET Core CLI overview<ept id="p1">](index.md)</ept>, <ph id="ph1">`dotnet`</ph> driver can run any command that is named after the <ph id="ph2">`dotnet-&lt;command&gt;`</ph> convention.</source>
+          <target state="translated">Conforme abordado na <bpt id="p1">[</bpt>Visão geral da CLI do .NET Core<ept id="p1">](index.md)</ept>, o driver <ph id="ph1">`dotnet`</ph> pode executar qualquer comando nomeado segundo a convenção <ph id="ph2">`dotnet-&lt;command&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The default resolution logic will first probe several locations and will finally fall to the system PATH.</source>
+          <target state="translated">A lógica de resolução padrão primeiro investigará os vários locais e finalmente recairá sobre o PATH do sistema.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>If the requested command exists in the system PATH and is a binary that can be invoked, <ph id="ph1">`dotnet`</ph> driver will invoke it.</source>
+          <target state="translated">Se o comando solicitado existir no PATH do sistema e for um binário que pode ser invocado, o driver <ph id="ph1">`dotnet`</ph> o invocará.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The binary can be pretty much anything that the operating system can execute.</source>
+          <target state="translated">O binário pode ser praticamente qualquer coisa que o sistema operacional puder executar.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>On Unix systems, this means anything that has the execute bit set via <ph id="ph1">`chmod +x`</ph>.</source>
+          <target state="translated">Em sistemas Unix, isso significa tudo que tiver o conjunto de bits execute por meio de <ph id="ph1">`chmod +x`</ph>.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>On Windows it means anything that Windows knows how to run.</source>
+          <target state="translated">No Windows, isso significa qualquer coisa que o Windows souber executar.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>As an example, let's take a look at a very simple implementation of a <ph id="ph1">`dotnet clean`</ph> command.</source>
+          <target state="translated">Por exemplo, vejamos uma implementação muito simples de um comando <ph id="ph1">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>We will use <ph id="ph1">`bash`</ph> to implement this command.</source>
+          <target state="translated">Usaremos o <ph id="ph1">`bash`</ph> para implementar esse comando.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The command will simply delete the <ph id="ph1">`bin/`</ph> and <ph id="ph2">`obj/`</ph> directories in the current directory.</source>
+          <target state="translated">O comando simplesmente excluirá os diretório <ph id="ph1">`bin/`</ph> e <ph id="ph2">`obj/`</ph> no diretório atual.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`--lock`</ph> argument is passed to it, it will also delete <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">Se o argumento <ph id="ph1">`--lock`</ph> for passado para ele, o arquivo <ph id="ph2">`project.lock.json`</ph> também será excluído.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The entirety of the command is given below.</source>
+          <target state="translated">Todo o comando é fornecido abaixo.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>On macOS, we can save this script as <ph id="ph1">`dotnet-clean`</ph> and set its executable bit with <ph id="ph2">`chmod +x dotnet-clean`</ph>.</source>
+          <target state="translated">No macOS, podemos eliminar esse script como <ph id="ph1">`dotnet-clean`</ph> e definir o bit executável com <ph id="ph2">`chmod +x dotnet-clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>We can then create a symbolic link to it in <ph id="ph1">`/usr/local/bin`</ph> using the command <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph>.</source>
+          <target state="translated">Podemos então criar um link simbólico para ele em <ph id="ph1">`/usr/local/bin`</ph> usando o comando <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph>.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This will make it possible to invoke the clean command using the <ph id="ph1">`dotnet clean`</ph> syntax.</source>
+          <target state="translated">Isso tornará possível invocar o comando limpo usando a sintaxe <ph id="ph1">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You can test this by creating an app, running <ph id="ph1">`dotnet build`</ph> on it and then running <ph id="ph2">`dotnet clean`</ph>.</source>
+          <target state="translated">Você pode testar isso criando um aplicativo, executando o <ph id="ph1">`dotnet build`</ph> nele e então executando <ph id="ph2">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">Conclusão</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The .NET Core CLI tools allow two main extensibility points.</source>
+          <target state="translated">As ferramentas da CLI do .NET Core permitem dois pontos de extensibilidade principais.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The per-project tools are contained within the project's context, but they allow easy installation through restoration.</source>
+          <target state="translated">As ferramentas por projeto estão contidas no contexto do projeto, mas permitem uma fácil instalação por meio da restauração.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>PATH-based tools are good for general, cross-project tools that are usable on a single machine.</source>
+          <target state="translated">Ferramentas baseadas em PATH são boas para ferramentas gerais de vários projetos que são usadas em um único computador.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
