@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2dc4d1deff8d1b72cbe433c45dda873e9caa26fb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\formatting-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0aad1c66fd4542b09f65909d7b69c99303fac946</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e11b2353ab977b4035ff84b067d78ac3ce6192fc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Formatting types</source>
+          <target state="translated">型の書式設定</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Formatting types</source>
+          <target state="translated">型の書式設定</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Formatting types</source>
+          <target state="translated">型の書式設定</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type.</source>
+          <target state="translated">書式設定とはクラス、構造体、または列挙値のインスタンスを文字列形式に変換するプロセスのことで、多くの場合、変換した文字列をユーザーに表示したり、逆シリアル化して元のデータ型を復元したりするために行います。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This conversion can pose a number of challenges:</source>
+          <target state="translated">この変換には次のような問題がある場合があります。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The way that values are stored internally does not necessarily reflect the way that users want to view them.</source>
+          <target state="translated">値の内部での格納方法に、ユーザーが望む表示方法が反映されない場合がある。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For example, a telephone number might be stored in the form <bpt id="p1">**</bpt>8009999999<ept id="p1">**</ept>, which is not user-friendly.</source>
+          <target state="translated">たとえば、電話番号が <bpt id="p1">**</bpt>8009999999<ept id="p1">**</ept> という形式で格納されることがあります。これではユーザーにはわかりにくいため、</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>It should instead be displayed as <bpt id="p1">**</bpt>800-999-9999<ept id="p1">**</ept>.</source>
+          <target state="translated">代わりに <bpt id="p1">**</bpt>800-999-9999<ept id="p1">**</ept> と表示する必要があります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>See the <bpt id="p1">[</bpt>Custom format strings<ept id="p1">](#custom-format-strings)</ept> section for an example that formats a number in this way.</source>
+          <target state="translated">数値をこのように書式指定する例については、「<bpt id="p1">[</bpt>カスタム書式指定文字列<ept id="p1">](#custom-format-strings)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Sometimes the conversion of an object to its string representation is not intuitive.</source>
+          <target state="translated">オブジェクトから文字列形式への変換が直観的に理解しづらい場合がある。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>For example, it is not clear how the string representation of a <bpt id="p1">**</bpt>Temperature<ept id="p1">**</ept> object or a <bpt id="p2">**</bpt>Person<ept id="p2">**</ept> object should appear.</source>
+          <target state="translated">たとえば、<bpt id="p1">**</bpt>Temperature<ept id="p1">**</ept> オブジェクトや <bpt id="p2">**</bpt>Person<ept id="p2">**</ept> オブジェクトの文字列形式がどのようになるのか、明確ではありません。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For an example that formats a <bpt id="p1">**</bpt>Temperature<ept id="p1">**</ept> object in a variety of ways, see the <bpt id="p2">[</bpt>Standard format strings<ept id="p2">](#standard-format-strings)</ept> section.</source>
+          <target state="translated"><bpt id="p1">**</bpt>Temperature<ept id="p1">**</ept> オブジェクトをさまざまな方法で書式指定する例については、「<bpt id="p2">[</bpt>標準書式指定文字列<ept id="p2">](#standard-format-strings)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Values often require culture-sensitive formatting.</source>
+          <target state="translated">通常、カルチャ依存の書式指定が必要になる。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture’s currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol.</source>
+          <target state="translated">たとえば、通貨値を数字で表すアプリケーションでは、数値文字列にカルチャ別の通貨記号、桁区切り記号 (ほとんどのカルチャでは 1000 単位)、および小数点を含める必要があります。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For an example, see the <bpt id="p1">[</bpt>Culture-sensitive formatting with format providers and the IFormatProvider interface<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept> section.</source>
+          <target state="translated">例については、「<bpt id="p1">[</bpt>書式プロバイダーと IFormatProvider インターフェイスによるカルチャに依存した書式指定<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>An application may have to display the same value in different ways.</source>
+          <target state="translated">アプリケーションによっては、同じ値をさまざまな方法で表示する必要がある。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For example, an application may represent an enumeration member by displaying a string representation of its name or by displaying its underlying value.</source>
+          <target state="translated">たとえば、列挙型のメンバーを表すために、その名前の文字列形式を表示する場合や、基になる値を表示する場合が考えられます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For an example that formats a member of the <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> enumeration in different ways, see the <bpt id="p2">[</bpt>Standard format strings<ept id="p2">](#standard-format-strings)</ept> section.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> 列挙体のメンバーをさまざまな方法で書式指定する例については、「<bpt id="p2">[</bpt>標準書式指定文字列<ept id="p2">](#standard-format-strings)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>.NET provides rich formatting support that enables developers to address these requirements.</source>
+          <target state="translated">.NET は書式設定機能が充実しているため、開発者はこうした要件を満たすことができます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Formatting converts the value of a type into a string representation.</source>
+          <target state="translated">書式設定は型の値を文字列形式に変換します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Parsing is the inverse of formatting.</source>
+          <target state="translated">解析は書式設定の逆の操作で、</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A parsing operation creates an instance of a data type from its string representation.</source>
+          <target state="translated">文字列形式からデータ型のインスタンスを作成します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For information about converting strings to other data types, see <bpt id="p1">[</bpt>Parsing strings<ept id="p1">](parsing-strings.md)</ept>.</source>
+          <target state="translated">他のデータ型への文字列の変換については、「<bpt id="p1">[</bpt>文字列の解析<ept id="p1">](parsing-strings.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This overview contains the following sections:</source>
+          <target state="translated">この概要は、次のセクションで構成されています。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formatting in .NET<ept id="p1">](#formatting-in-net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET での書式設定<ept id="p1">](#formatting-in-net)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Default formatting using the ToString method<ept id="p1">](#default-formatting-using-the-tostring-method)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ToString メソッドを使用した既定の書式設定<ept id="p1">](#default-formatting-using-the-tostring-method)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Overriding the ToString method<ept id="p1">](#overriding-the-tostring-method)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ToString メソッドのオーバーライド<ept id="p1">](#overriding-the-tostring-method)</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The ToString method and format strings<ept id="p1">](#the-tostring-method-and-format-strings)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ToString メソッドと書式指定文字列<ept id="p1">](#the-tostring-method-and-format-strings)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard format strings<ept id="p1">](#standard-format-strings)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準の書式指定文字列<ept id="p1">](#standard-format-strings)</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom format strings<ept id="p1">](#custom-format-strings)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム書式指定文字列<ept id="p1">](#custom-format-strings)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Format strings and .NET types<ept id="p1">](#format-strings-and-net-types)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>書式指定文字列と .NET 型<ept id="p1">](#format-strings-and-net-types)</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Culture-sensitive formatting with format providers and the IFormatProvider interface<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>書式プロバイダーと IFormatProvider インターフェイスによるカルチャに依存した書式指定<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Culture-sensitive formatting of numeric values<ept id="p1">](#culture-sensitive-formatting-of-numeric-values)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>数値のカルチャに依存した書式設定<ept id="p1">](#culture-sensitive-formatting-of-numeric-values)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Culture-sensitive formatting of date and time values<ept id="p1">](#culture-sensitive-formatting-of-date-and-time-values)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>日付と時刻の値のカルチャに依存した書式設定<ept id="p1">](#culture-sensitive-formatting-of-date-and-time-values)</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The IFormattable interface<ept id="p1">](#the-iformattable-interface)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormattable インターフェイス<ept id="p1">](#the-iformattable-interface)</ept></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Composite formatting<ept id="p1">](#composite-formatting)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>複合書式指定<ept id="p1">](#composite-formatting)</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom formatting with ICustomFormatter<ept id="p1">](#custom-formatting-with-icustomformatter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ICustomFormatter を使用したカスタム書式設定<ept id="p1">](#custom-formatting-with-icustomformatter)</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Related topics<ept id="p1">](#related-topics)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>関連トピック<ept id="p1">](#related-topics)</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Reference<ept id="p1">](#reference)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>参照<ept id="p1">](#reference)</ept></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Formatting in .NET</source>
+          <target state="translated">.NET での書式設定</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The basic mechanism for formatting is the default implementation of the <bpt id="p1">[</bpt>Object.ToString<ept id="p1">](xref:System.Object.ToString)</ept> method, which is discussed in the <bpt id="p2">[</bpt>Default formatting using the ToString method<ept id="p2">](#default-formatting-using-the-tostring-method)</ept> section later in this topic.</source>
+          <target state="translated">基本的な書式設定の方式は、<bpt id="p1">[</bpt>Object.ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドによって既定として実装されます。このメソッドについては、このトピックの「<bpt id="p2">[</bpt>ToString メソッドを使用した既定の書式設定<ept id="p2">](#default-formatting-using-the-tostring-method)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>However, .NET provides several ways to modify and extend its default formatting support.</source>
+          <target state="translated">ただし、.NET には、この既定の書式設定機能を変更および拡張する方法がいくつかあります。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>These include the following:</source>
+          <target state="translated">次に例を示します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Overriding the <bpt id="p1">[</bpt>Object.ToString<ept id="p1">](xref:System.Object.ToString)</ept> method to define a custom string representation of an object’s value.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Object.ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドをオーバーライドして、オブジェクトの値のカスタム文字列形式を定義する方法。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Overriding the ToString method<ept id="p1">](#overriding-the-tostring-method)</ept> section later in this topic.</source>
+          <target state="translated">詳細については、このトピックの「<bpt id="p1">[</bpt>ToString メソッドのオーバーライド<ept id="p1">](#overriding-the-tostring-method)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Defining format specifiers that enable the string representation of an object’s value to take multiple forms.</source>
+          <target state="translated">オブジェクトの値の文字列形式に複数の形式を持たせる書式指定子を定義する方法。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.</source>
+          <target state="translated">たとえば、次のステートメントでは "X" 書式指定子を使用して整数を 16 進値の文字列形式に変換します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For more information about format specifiers, see the <bpt id="p1">[</bpt>The ToString method and format strings<ept id="p1">](#the-tostring-method-and-format-strings)</ept> section.</source>
+          <target state="translated">書式指定子の詳細については、「<bpt id="p1">[</bpt>ToString メソッドと書式指定文字列<ept id="p1">](#the-tostring-method-and-format-strings)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Using format providers to take advantage of the formatting conventions of a specific culture.</source>
+          <target state="translated">書式プロバイダーを使用して、特定のカルチャの書式指定規則を利用する方法。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For example, the following statement displays a currency value by using the formatting conventions of the en-US culture.</source>
+          <target state="translated">たとえば、次のステートメントでは en-US カルチャの書式指定規則を使用して通貨値を表示します。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For more information about formatting with format providers, see the <bpt id="p1">[</bpt>Culture-sensitive formatting with format providers and the IFormatProvider interface<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept> section.</source>
+          <target state="translated">書式プロバイダーを使用した書式設定の詳細については、「<bpt id="p1">[</bpt>書式プロバイダーと IFormatProvider インターフェイスによるカルチャに依存した書式指定<ept id="p1">](#culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Implementing the <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> interface to support both string conversion with the <bpt id="p2">[</bpt>Convert<ept id="p2">](xref:System.Convert)</ept> class and composite formatting.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> インターフェイスを実装して、<bpt id="p2">[</bpt>Convert<ept id="p2">](xref:System.Convert)</ept> クラスによる文字列変換と複合書式指定の両方をサポートする方法。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>The IFormattable interface<ept id="p1">](#the-iformattable-interface)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>IFormattable インターフェイス<ept id="p1">](#the-iformattable-interface)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Using composite formatting to embed the string representation of a value in a larger string.</source>
+          <target state="translated">複合書式指定を使用して、値の文字列形式を大きな文字列に埋め込む方法。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Composite formatting<ept id="p1">](#composite-formatting)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>複合書式指定<ept id="p1">](#composite-formatting)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Implementing <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> and <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> to provide a complete custom formatting solution.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> および <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> を実装して、完全なカスタム書式設定ソリューションを提供する方法。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Custom formatting with ICustomFormatter<ept id="p1">](#custom-formatting-with-icustomformatter)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>ICustomFormatter を使用したカスタム書式設定<ept id="p1">](#custom-formatting-with-icustomformatter)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following sections examine these methods for converting an object to its string representation.</source>
+          <target state="translated">以降のセクションでは、オブジェクトを文字列形式に変換するこれらの方法について説明します。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Default formatting using the ToString method</source>
+          <target state="translated">ToString メソッドを使用した既定の書式設定</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Every type that is derived from <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> automatically inherits a parameterless <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> method, which returns the name of the type by default.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> から派生したすべての型は、既定で型の名前を返す、パラメーターなしの <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> メソッドを自動的に継承します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the default <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method.</source>
+          <target state="translated">既定の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドの例を次に示します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It defines a class named <ph id="ph1">`Automobile`</ph> that has no implementation.</source>
+          <target state="translated">このコード例では、実装を持たない <ph id="ph1">`Automobile`</ph> という名前のクラスを定義します。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>When the class is instantiated and its <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method is called, it displays its type name.</source>
+          <target state="translated">このクラスがインスタンス化され、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドが呼び出されると、その型の名前が表示されます。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method is not explicitly called in the example.</source>
+          <target state="translated">サンプルでは、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドが明示的に呼び出されないことに注意してください。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Console.WriteLine(Object)<ept id="p1">](xref:System.Console.WriteLine(System.Object))</ept> method implicitly calls the <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> method of the object passed to it as an argument.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Console.WriteLine(Object)<ept id="p1">](xref:System.Console.WriteLine(System.Object))</ept> メソッドは引数として渡されたオブジェクトの <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> メソッドを暗黙的に呼び出します。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Because all types other than interfaces are derived from <bpt id="p1">[</bpt>Object<ept id="p1">](xref:System.Object)</ept>, this functionality is automatically provided to your custom classes or structures.</source>
+          <target state="translated">インターフェイス以外の型はすべて <bpt id="p1">[</bpt>Object<ept id="p1">](xref:System.Object)</ept> から派生するため、この機能はカスタムのクラスまたは構造体に自動的に提供されます。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>However, the functionality offered by the default <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type.</source>
+          <target state="translated">ただし、既定の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドによって提供される機能には制限があり、型の識別は行いますが、型のインスタンスに関する情報は提供しません。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>To provide a string representation of an object that provides information about that object, you must override the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method.</source>
+          <target state="translated">それ自体に関する情報を提供するオブジェクトの文字列形式を提供するには、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドをオーバーライドする必要があります。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Structures inherit from <bpt id="p1">[</bpt>ValueType<ept id="p1">](xref:System.ValueType)</ept>, which in turn is derived from <bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept>.</source>
+          <target state="translated">構造体は、<bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept> から派生した <bpt id="p1">[</bpt>ValueType<ept id="p1">](xref:System.ValueType)</ept> を継承します。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Although <bpt id="p1">[</bpt>ValueType<ept id="p1">](xref:System.ValueType)</ept> overrides <bpt id="p2">[</bpt>Object.ToString<ept id="p2">](xref:System.Object.ToString)</ept>, its implementation is identical.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ValueType<ept id="p1">](xref:System.ValueType)</ept> は <bpt id="p2">[</bpt>Object.ToString<ept id="p2">](xref:System.Object.ToString)</ept> をオーバーライドしますが、その実装は同じです。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Overriding the ToString method</source>
+          <target state="translated">ToString メソッドのオーバーライド</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Displaying the name of a type is often of limited use and does not allow consumers of your types to differentiate one instance from another.</source>
+          <target state="translated">型の名前の表示は用途が限定され、型のコンシューマー側でインスタンスを別のインスタンスと区別することはできません。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>However, you can override the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method to provide a more useful representation of an object’s value.</source>
+          <target state="translated">ただし、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドをオーバーライドして、より役に立つオブジェクトの値の形式を作成することができます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`Temperature`</ph> object and overrides its <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method to display the temperature in degrees Celsius.</source>
+          <target state="translated">次の例では <ph id="ph1">`Temperature`</ph> オブジェクトを定義し、その <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドをオーバーライドして、温度を摂氏で表示します。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In .NET, the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method of each primitive value type has been overridden to display the object’s value instead of its name.</source>
+          <target state="translated">.NET では、各プリミティブ値型の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドは名前の代わりにオブジェクトの値を表示するようにオーバーライドされています。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The following table shows the override for each primitive type.</source>
+          <target state="translated">各プリミティブ型のオーバーライドを次の表に示します。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Note that most of the overridden methods call another overload of the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method and pass it the "G" format specifier, which defines the general format for its type, and an <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> object that represents the current culture.</source>
+          <target state="translated">オーバーライドされているメソッドのほとんどは <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドの別のオーバーロードを呼び出し、それにその型の一般書式を定義する "G" 書式指定子と、現在のカルチャを表す <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> オブジェクトを渡します。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="translated">型</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>ToString override</source>
+          <target state="translated">ToString のオーバーライド</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Returns either <bpt id="p1">[</bpt>Boolean.TrueString<ept id="p1">](xref:System.Boolean.TrueString)</ept> or <bpt id="p2">[</bpt>Boolean.FalseString<ept id="p2">](xref:System.Boolean.FalseString)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Boolean.TrueString<ept id="p1">](xref:System.Boolean.TrueString)</ept> または <bpt id="p2">[</bpt>Boolean.FalseString<ept id="p2">](xref:System.Boolean.FalseString)</ept> のいずれかを返します。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Byte.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Byte.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Returns the character as a string.</source>
+          <target state="translated">文字を文字列として返します。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`DateTime.ToString("G", DatetimeFormatInfo.CurrentInfo)`</ph> to format the date and time value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`DateTime.ToString("G", DatetimeFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて日付と時刻の値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Decimal.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Decimal.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Decimal<ept id="p1">](xref:System.Decimal)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Double.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Double.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Int16<ept id="p1">](xref:System.Int16)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept></target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept></target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept></source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて<bpt id="p1">[</bpt>SByte<ept id="p1">](xref:System.SByte)</ept> 値の</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>value for the current culture.</source>
+          <target state="translated">書式設定をします。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept></target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>Single<ept id="p1">](xref:System.Single)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept>value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>UInt32<ept id="p1">](xref:System.UInt32)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept></target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Calls <ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> to format the <bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept>  value for the current culture.</source>
+          <target state="translated"><ph id="ph1">`Int16.ToString("G", NumberFormatInfo.CurrentInfo)`</ph> を呼び出して、現在のカルチャに合わせて <bpt id="p1">[</bpt>UInt64<ept id="p1">](xref:System.UInt64)</ept> 値の書式設定をします。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The ToString method and format strings</source>
+          <target state="translated">ToString メソッドと書式指定文字列</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Relying on the default <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method or overriding <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> is appropriate when an object has a single string representation.</source>
+          <target state="translated">既定の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドや <bpt id="p2">[</bpt>ToString<ept id="p2">](xref:System.Object.ToString)</ept> のオーバーライドの使用は、オブジェクトの文字列形式が 1 つの場合に適しています。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>However, the value of an object often has multiple representations.</source>
+          <target state="translated">しかし、多くの場合オブジェクトの値には複数の形式があります。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For example, a temperature can be expressed in degrees Fahrenheit, degrees Celsius, or kelvins.</source>
+          <target state="translated">たとえば、温度は華氏、摂氏、またはケルビンで表現できます。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Similarly, the integer value 10 can be represented in numerous ways, including 10, 10.0, 1.0e01, or $10.00.</source>
+          <target state="translated">また、整数値 10 は 10、10.0、1.0e01、$10.00 などの多くの方法で表すことができます。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>To enable a single value to have multiple string representations, .NET uses format strings.</source>
+          <target state="translated">.NET では、書式指定文字列を使用することで、1 つの値に複数の文字列形式を持たせることができます。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>A format string is a string that contains one or more predefined format specifiers, which are single characters or groups of characters that define how the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method should format its output.</source>
+          <target state="translated">書式指定文字列とは定義済みの書式指定子を 1 つ以上含む文字列です。書式指定子とは、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドによるその出力の書式設定方法を定義する 1 文字または文字グループです。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>The format string is then passed as a parameter to the object's <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method and determines how the string representation of that object's value should appear.</source>
+          <target state="translated">書式指定文字列はパラメーターとしてオブジェクトの <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドに渡され、オブジェクトの値の文字列形式の表示方法を決定します。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>All numeric types, date and time types, and enumeration types in .NET support a predefined set of format specifiers.</source>
+          <target state="translated">.NET では、すべての数値型、日付/時刻型、および列挙型で、定義済みの一連の書式指定子をサポートしています。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>You can also use format strings to define multiple string representations of your application-defined data types.</source>
+          <target state="translated">書式指定文字列を使用して、アプリケーションで定義されたデータ型の文字列形式を複数定義することもできます。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Standard format strings</source>
+          <target state="translated">標準の書式指定文字列</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>A standard format string contains a single format specifier, which is an alphabetic character that defines the string representation of the object to which it is applied, along with an optional precision specifier that affects how many digits are displayed in the result string.</source>
+          <target state="translated">標準書式指定文字列には、適用先のオブジェクトの文字列形式を定義する英字の単一の書式指定子と、結果文字列に表示される桁数に影響するオプションの精度指定子が含まれます。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>If the precision specifier is omitted or is not supported, a standard format specifier is equivalent to a standard format string.</source>
+          <target state="translated">精度指定子が省略されるかサポートされていない場合、標準書式指定子は標準書式指定文字列と同じになります。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>.NET defines a set of standard format specifiers for all numeric types, all date and time types, and all enumeration types.</source>
+          <target state="translated">.NET では、すべての数値型、すべての日付/時刻型、およびすべての列挙型に対して一連の標準書式指定子が定義されています。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>For example, each of these categories supports a "G" standard format specifier, which defines a general string representation of a value of that type.</source>
+          <target state="translated">たとえば、それらのカテゴリごとに、対応する型の値の一般的な文字列形式を定義する "G" 標準書式指定子がサポートされています。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Standard format strings for enumeration types directly control the string representation of a value.</source>
+          <target state="translated">列挙型の標準書式指定文字列は、値の文字列形式を直接制御します。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The format strings passed to an enumeration value’s <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method determine whether the value is displayed using its string name (the "G" and "F" format specifiers), its underlying integral value (the "D" format specifier), or its hexadecimal value (the "X" format specifier).</source>
+          <target state="translated">列挙値の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドに渡された書式指定文字列によって、文字列名 ("G" 書式指定子および "F" 書式指定子)、基になる整数値 ("D" 書式指定子)、または 16 進値 ("X" 書式指定子) のどの形式で値を表示するかが決定します。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the use of standard format strings to format a <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> enumeration value.</source>
+          <target state="translated">次のコード例では、標準書式指定文字列を使用して、<bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> 列挙値の書式を設定する方法を示しています。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>For information about enumeration format strings, see <bpt id="p1">[</bpt>Enumeration format strings<ept id="p1">](enumeration-format.md)</ept>.</source>
+          <target state="translated">列挙型書式指定文字列については、「<bpt id="p1">[</bpt>列挙型書式指定文字列<ept id="p1">](enumeration-format.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Standard format strings for numeric types usually define a result string whose precise appearance is controlled by one or more property values.</source>
+          <target state="translated">数値型の標準書式指定文字列は、通常、表示される桁数が 1 つ以上のプロパティ値によって制御される結果文字列を定義します。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>For example, the "C" format specifier formats a number as a currency value.</source>
+          <target state="translated">たとえば、"C" 書式指定子は数字を通貨値として書式設定します。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>When you call the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method with the "C" format specifier as the only parameter, the following property values from the current culture’s <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> object are used to define the string representation of the numeric value:</source>
+          <target state="translated">唯一のパラメーターとして "C" 書式指定子を渡して <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドを呼び出した場合、現在のカルチャの <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> オブジェクトの次のプロパティ値を使用して数値の文字列形式を定義します。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept> property, which specifies the current culture’s currency symbol.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept> プロパティ。現在のカルチャの通貨記号を指定します。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencyNegativePattern<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern)</ept> or <bpt id="p2">[</bpt>CurrencyPositivePattern<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern)</ept> property, which returns an integer that determines the following:</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencyNegativePattern<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern)</ept> プロパティまたは <bpt id="p2">[</bpt>CurrencyPositivePattern<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern)</ept> プロパティ。次の情報を特定する整数を返します。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The placement of the currency symbol.</source>
+          <target state="translated">通貨記号の位置。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Whether negative values are indicated by a leading negative sign, a trailing negative sign, or parentheses.</source>
+          <target state="translated">負の値を表すために、先頭の負の符号、末尾の負の符号、またはかっこのどれを使用するか。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Whether a space appears between the numeric value and the currency symbol.</source>
+          <target state="translated">数値と通貨記号の間にスペース文字を表示するかどうか。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencyDecimalDigits<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits)</ept> property, which defines the number of fractional digits in the result string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencyDecimalDigits<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits)</ept> プロパティ。結果文字列の小数点以下の桁数を定義します。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencyDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept> property, which defines the decimal separator symbol in the result string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencyDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept> プロパティ。結果文字列の小数点の記号を定義します。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencyGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept> property, which defines the group separator symbol.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencyGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept> プロパティ。桁区切り記号を定義します。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CurrencyGroupSizes<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes)</ept> property, which defines the number of digits in each group to the left of the decimal.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CurrencyGroupSizes<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes)</ept> プロパティ。整数部の各グループの桁数を定義します。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>NegativeSign<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NegativeSign)</ept> property, which determines the negative sign used in the result string if parentheses are not used to indicate negative values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>NegativeSign<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NegativeSign)</ept> プロパティ。かっこを使用せずに負の値を表す場合に結果文字列で使用する負の符号を決定します。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>In addition, numeric format strings may include a precision specifier.</source>
+          <target state="translated">さらに、数値書式指定文字列には、精度指定子が含まれる場合があります。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The meaning of this specifier depends on the format string with which it is used, but it typically indicates either the total number of digits or the number of fractional digits that should appear in the result string.</source>
+          <target state="translated">この指定子の意味は一緒に使用される書式指定文字列によって異なりますが、通常は、結果文字列に表示される合計桁数か小数点以下の桁数を示します。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>For example, the following example uses the "X4" standard numeric string and a precision specifier to create a string value that has four hexadecimal digits.</source>
+          <target state="translated">たとえば、次の例では、"X4" の標準数値文字列と精度指定子を使用して、4 桁の 16 進数から成る文字列値を作成します。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>For more information about standard numeric formatting strings, see <bpt id="p1">[</bpt>Standard numeric format strings<ept id="p1">](standard-numeric.md)</ept>.</source>
+          <target state="translated">標準の数値書式指定文字列の詳細については、「<bpt id="p1">[</bpt>標準の数値書式指定文字列<ept id="p1">](standard-numeric.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Standard format strings for date and time values are aliases for custom format strings stored by a particular <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> class.</source>
+          <target state="translated">日付と時刻の値の標準書式指定文字列は、特定の <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> クラスに格納されているカスタム書式指定文字列のエイリアスです。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For example, calling the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <bpt id="p2">[</bpt>DateTimeFormatInfo.LongDatePattern<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.LongDatePattern)</ept> property.</source>
+          <target state="translated">たとえば、"D" 書式指定子を渡して日付と時刻の値の <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Object.ToString)</ept> メソッドを呼び出すと、現在のカルチャの <bpt id="p2">[</bpt>DateTimeFormatInfo.LongDatePattern<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.LongDatePattern)</ept> プロパティに格納されているカスタム書式指定文字列を使用して日付と時刻が表示されます</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>(For more information about custom format strings, see the <bpt id="p1">[</bpt>Custom format strings<ept id="p1">](#custom-format-strings)</ept> section.) The following example illustrates this relationship.</source>
+          <target state="translated">(カスタム書式指定文字列の詳細については、「<bpt id="p1">[</bpt>カスタム書式指定文字列<ept id="p1">](#custom-format-strings)</ept>」のセクションを参照してください)。この関係を次の例に示します。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>For more information about standard date and time format strings, see <bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept>.</source>
+          <target state="translated">標準の日時書式指定文字列の詳細については、「<bpt id="p1">[</bpt>標準の日時書式指定文字列<ept id="p1">](standard-datetime.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>You can also use standard format strings to define the string representation of an application-defined object that is produced by the object’s <ph id="ph1">`ToString(String)`</ph> method.</source>
+          <target state="translated">また、標準書式指定文字列を使用して、オブジェクトの <ph id="ph1">`ToString(String)`</ph> メソッドによって生成された、アプリケーション定義のオブジェクトの文字列形式を定義することもできます。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>You can define the specific standard format specifiers that your object supports, and you can determine whether they are case-sensitive or case-insensitive.</source>
+          <target state="translated">オブジェクトでサポートする特定の標準書式指定子を定義したり、それらで大文字と小文字を区別するかしないかを決定したりすることができます。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Your implementation of the <ph id="ph1">`ToString(String)`</ph> method should support the following:</source>
+          <target state="translated"><ph id="ph1">`ToString(String)`</ph> メソッドの実装で、以下がサポートされます。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>A "G" format specifier that represents a customary or common format of the object.</source>
+          <target state="translated">オブジェクトの一般的な書式または共通の書式を表す "G" 書式指定子。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The parameterless overload of your object's <ph id="ph1">`ToString`</ph> method should call its <ph id="ph2">`ToString(String)`</ph> overload and pass it the "G" standard format string.</source>
+          <target state="translated">オブジェクトの <ph id="ph1">`ToString`</ph> メソッドのパラメーターなしのオーバーロードで、その <ph id="ph2">`ToString(String)`</ph> オーバーロードを呼び出し、それに "G" 標準書式指定文字列を渡します。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Support for a format specifier that is equal to a null reference.</source>
+          <target state="translated">null 参照に相当する書式指定子。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>A format specifier that is equal to a null reference should be considered equivalent to the "G" format specifier.</source>
+          <target state="translated">null 参照に相当する書式指定子は "G" 書式指定子と同等に扱う必要があります。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For example, a <ph id="ph1">`Temperature`</ph> class can internally store the temperature in degrees Celsius and use format specifiers to represent the value of the <ph id="ph2">`Temperature`</ph> object in degrees Celsius, degrees Fahrenheit, and kelvins.</source>
+          <target state="translated">たとえば、<ph id="ph1">`Temperature`</ph> クラスの場合、内部的には温度を摂氏で格納し、書式指定子を使用して <ph id="ph2">`Temperature`</ph> オブジェクトの値を摂氏、華氏、およびケルビンで表すことができます。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The following example provides an illustration.</source>
+          <target state="translated">具体的な例を次に示します。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Custom format strings</source>
+          <target state="translated">カスタム書式指定文字列</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In addition to the standard format strings, .NET defines custom format strings for both numeric values and date and time values.</source>
+          <target state="translated">.NET では、標準書式指定文字列のほかに、数値および日付と時刻の値の両方のカスタム書式指定文字列が定義されています。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>A custom format string consists of one or more custom format specifiers that define the string representation of a value.</source>
+          <target state="translated">カスタム書式指定文字列は、値の文字列形式を定義する 1 つ以上のカスタム書式指定子で構成されます。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>For example, the custom date and time format string "yyyy/mm/dd hh:mm:ss.ffff t zzz" converts a date to its string representation in the form "2008/11/15 07:45:00.0000 P -08:00" for the en-US culture.</source>
+          <target state="translated">たとえば、"yyyy/mm/dd hh:mm:ss.ffff t zzz" というカスタム日時書式指定文字列の場合、en-US カルチャでは日付が "2008/11/15 07:45:00.0000 P -08:00" という文字列形式に変換されます。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Similarly, the custom format string "0000" converts the integer value 12 to "0012".</source>
+          <target state="translated">また、"0000" というカスタム書式指定文字列の場合、整数値 12 は "0012" に変換されます。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>For a complete list of custom format strings, see <bpt id="p1">[</bpt>Custom date and time format strings<ept id="p1">](custom-datetime.md)</ept> and <bpt id="p2">[</bpt>Custom numeric format strings<ept id="p2">](custom-numeric.md)</ept>.</source>
+          <target state="translated">カスタム書式指定文字列の一覧については、「<bpt id="p1">[</bpt>カスタム日時書式指定文字列<ept id="p1">](custom-datetime.md)</ept>」および「<bpt id="p2">[</bpt>カスタム数値書式指定文字列<ept id="p2">](custom-numeric.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>If a format string consists of a single custom format specifier, the format specifier should be preceded by the percent (%) symbol to avoid confusion with a standard format specifier.</source>
+          <target state="translated">書式指定文字列が単一のカスタム書式指定子で構成される場合は、標準書式指定子と混同しないように、書式指定子の前にパーセント (%) 記号を付ける必要があります。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The following example uses the "M" custom format specifier to display a one-digit or two-digit number of the month of a particular date.</source>
+          <target state="translated">次の例では、"M" カスタム書式指定子を使用して、特定の日付の月を表す 1 桁または 2 桁の数値を表示します。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Many standard format strings for date and time values are aliases for custom format strings that are defined by properties of the <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object.</source>
+          <target state="translated">日付および時刻の値の標準書式指定文字列の多くは、<bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> オブジェクトのプロパティによって定義されているカスタム書式指定文字列のエイリアスです。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Custom format strings also offer considerable flexibility in providing application-defined formatting for numeric values or date and time values.</source>
+          <target state="translated">また、カスタム書式指定文字列を使用することで、数値または日付と時刻の値に対して、柔軟にアプリケーション定義の書式を指定できます。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You can define your own custom result strings for both numeric values and date and time values by combining multiple custom format specifiers into a single custom format string.</source>
+          <target state="translated">複数のカスタム書式指定子を 1 つのカスタム書式指定文字列に結合することによって、数値および日付と時刻の値の両方に対するカスタムの結果文字列を独自に定義することができます。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>The following example defines a custom format string that displays the day of the week in parentheses after the month name, day, and year.</source>
+          <target state="translated">次の例では、月の名前、日付、および年の後に、かっこで囲んで曜日を表示するカスタム書式指定文字列を定義しています。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>The following example defines a custom format string that displays an <bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> value as a standard, seven-digit U.S. telephone number along with its area code.</source>
+          <target state="translated">次の例では、<bpt id="p1">[</bpt>Int64<ept id="p1">](xref:System.Int64)</ept> 値を米国で標準的な 7 桁の電話番号を市外局番と共に表示するカスタム書式指定文字列を定義します。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Although standard format strings can generally handle most of the formatting needs for your application-defined types, you may also define custom format specifiers to format your types.</source>
+          <target state="translated">一般には、アプリケーション定義の型に対する書式設定のほとんどのニーズに標準書式指定文字列を使用して対応できますが、カスタム書式指定子を定義して型の書式を設定することもできます。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Format strings and .NET types</source>
+          <target state="translated">書式指定文字列と .NET 型</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>All numeric types (that is, the <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>, <bpt id="p2">[</bpt>Decimal<ept id="p2">](xref:System.Decimal)</ept>, <bpt id="p3">[</bpt>Double<ept id="p3">](xref:System.Double)</ept>, <bpt id="p4">[</bpt>Int16<ept id="p4">](xref:System.Int16)</ept>, <bpt id="p5">[</bpt>Int32<ept id="p5">](xref:System.Int32)</ept>, <bpt id="p6">[</bpt>Int64<ept id="p6">](xref:System.Int64)</ept>, <bpt id="p7">[</bpt>SByte<ept id="p7">](xref:System.SByte)</ept>, <bpt id="p8">[</bpt>Single<ept id="p8">](xref:System.Single)</ept>, <bpt id="p9">[</bpt>UInt16<ept id="p9">](xref:System.UInt16)</ept>, <bpt id="p10">[</bpt>UInt32<ept id="p10">](xref:System.UInt32)</ept>, <bpt id="p11">[</bpt>UInt64<ept id="p11">](xref:System.UInt64)</ept>, and <bpt id="p12">[</bpt>BigInteger<ept id="p12">](xref:System.Numerics.BigInteger)</ept> types), as well as the <bpt id="p13">[</bpt>DateTime<ept id="p13">](xref:System.DateTime)</ept>, <bpt id="p14">[</bpt>DateTimeOffset<ept id="p14">](xref:System.DateTimeOffset)</ept>, <bpt id="p15">[</bpt>TimeSpan<ept id="p15">](xref:System.TimeSpan)</ept>, <bpt id="p16">[</bpt>Guid<ept id="p16">](xref:System.Guid)</ept>, and all enumeration types, support formatting with format strings.</source>
+          <target state="translated">すべての数値型 (つまり、<bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>、<bpt id="p2">[</bpt>Decimal<ept id="p2">](xref:System.Decimal)</ept>、<bpt id="p3">[</bpt>Double<ept id="p3">](xref:System.Double)</ept>、<bpt id="p4">[</bpt>Int16<ept id="p4">](xref:System.Int16)</ept>、<bpt id="p5">[</bpt>Int32<ept id="p5">](xref:System.Int32)</ept>、<bpt id="p6">[</bpt>Int64<ept id="p6">](xref:System.Int64)</ept>、<bpt id="p7">[</bpt>SByte<ept id="p7">](xref:System.SByte)</ept>、<bpt id="p8">[</bpt>Single<ept id="p8">](xref:System.Single)</ept>、<bpt id="p9">[</bpt>UInt16<ept id="p9">](xref:System.UInt16)</ept>、<bpt id="p10">[</bpt>UInt32<ept id="p10">](xref:System.UInt32)</ept>、<bpt id="p11">[</bpt>UInt64<ept id="p11">](xref:System.UInt64)</ept>、<bpt id="p12">[</bpt>BigInteger<ept id="p12">](xref:System.Numerics.BigInteger)</ept> 型)、および <bpt id="p13">[</bpt>DateTime<ept id="p13">](xref:System.DateTime)</ept>、<bpt id="p14">[</bpt>DateTimeOffset<ept id="p14">](xref:System.DateTimeOffset)</ept>、<bpt id="p15">[</bpt>TimeSpan<ept id="p15">](xref:System.TimeSpan)</ept>、<bpt id="p16">[</bpt>Guid<ept id="p16">](xref:System.Guid)</ept> と、すべての列挙型が書式指定文字列による書式設定に対応しています。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>For information on the specific format strings supported by each type, see the following topics:</source>
+          <target state="translated">各型でサポートされている特定の書式指定文字列については、次のトピックを参照してください。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">タイトル</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Definition</source>
+          <target state="translated">定義</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard numeric format strings<ept id="p1">](standard-numeric.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準の数値書式指定文字列<ept id="p1">](standard-numeric.md)</ept></target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of numeric values.</source>
+          <target state="translated">数値に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom numeric format strings<ept id="p1">](custom-numeric.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム数値書式指定文字列<ept id="p1">](custom-numeric.md)</ept></target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for numeric values.</source>
+          <target state="translated">数値に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準の日時書式指定文字列<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom date and time format strings<ept id="p1">](custom-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム日時書式指定文字列<ept id="p1">](custom-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard TimeSpan format Strings<ept id="p1">](standard-timespan.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準 TimeSpan 書式指定文字列<ept id="p1">](standard-timespan.md)</ept></target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of time intervals.</source>
+          <target state="translated">時間間隔に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom TimeSpan format strings<ept id="p1">](custom-timespan.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム TimeSpan 書式指定文字列<ept id="p1">](custom-timespan.md)</ept></target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for time intervals.</source>
+          <target state="translated">時間間隔に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumeration format strings<ept id="p1">](enumeration-format.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型書式指定文字列<ept id="p1">](enumeration-format.md)</ept></target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that are used to create string representations of enumeration values.</source>
+          <target state="translated">列挙型の文字列形式を作成するために使用される標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Guid.ToString(String)<ept id="p1">](xref:System.Guid.ToString(System.String))</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Guid.ToString(String)<ept id="p1">](xref:System.Guid.ToString(System.String))</ept></target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings for <bpt id="p1">[</bpt>Guid<ept id="p1">](xref:System.Guid)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Guid<ept id="p1">](xref:System.Guid)</ept> 値の標準的書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Culture-Sensitive Formatting with Format Providers and the IFormatProvider Interface</source>
+          <target state="translated">書式プロバイダーと IFormatProvider インターフェイスによるカルチャに依存した書式指定</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Although format specifiers let you customize the formatting of objects, producing a meaningful string representation of objects often requires additional formatting information.</source>
+          <target state="translated">書式指定子を利用することでオブジェクトの書式をカスタマイズできますが、多くの場合、意味のあるオブジェクトの文字列形式を生成するには追加の書式設定情報が必要です。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>For example, formatting a number as a currency value by using either the "C" standard format string or a custom format string such as "$ #,#.00" requires, at a minimum, information about the correct currency symbol, group separator, and decimal separator to be available to include in the formatted string.</source>
+          <target state="translated">たとえば、"C" 標準書式指定文字列または "$ #,#.00" などのカスタム書式指定文字列を使用して数字を通貨値として書式設定する場合、少なくとも、正しい通貨記号、桁区切り記号、および小数点記号についての情報を書式設定された文字列に含めることができる必要があります。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>In .NET, this additional formatting information is made available through the <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> interface, which is provided as a parameter to one or more overloads of the <ph id="ph1">`ToString`</ph> method of numeric types and date and time types.</source>
+          <target state="translated">.NET では、<bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> インターフェイスによって、この追加の書式設定情報を利用できるようにします。このインターフェイスは、数値型および日付/時刻型の <ph id="ph1">`ToString`</ph> メソッドの 1 つ以上のオーバーロードに対するパラメーターとして提供されます。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> implementations are used in .NET to support culture-specific formatting.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> の実装は .NET で使用され、カルチャ固有の書式指定をサポートします。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The following example illustrates how the string representation of an object changes when it is formatted with three <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> objects that represent different cultures.</source>
+          <target state="translated">それぞれ異なるカルチャを示す 3 つの <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> オブジェクトを使用してオブジェクトの書式を設定した場合に、その文字列形式がどのように変化するかを次の例に示します。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> interface includes one method, <bpt id="p2">[</bpt>GetFormat(Type)<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept>, which has a single parameter that specifies the type of object that provides formatting information.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> インターフェイスには、<bpt id="p2">[</bpt>GetFormat(Type)<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> という 1 つのメソッドが含まれています。このメソッドには、書式設定情報を提供するオブジェクトの型を指定する 1 つのパラメーターがあります。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>If the method can provide an object of that type, it returns it.</source>
+          <target state="translated">このメソッドがその型のオブジェクトを提供できる場合は、それが返されます。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>Otherwise, it returns a null reference.</source>
+          <target state="translated">それ以外の場合は、null 参照を返します。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> is a callback method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> はコールバック メソッドです。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>When you call a <ph id="ph1">`ToString`</ph> method overload that includes an <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> parameter, it calls the <bpt id="p2">[</bpt>GetFormat<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> method of that <bpt id="p3">[</bpt>IFormatProvider<ept id="p3">](xref:System.IFormatProvider)</ept> object.</source>
+          <target state="translated"><bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> パラメーターを含む <ph id="ph1">`ToString`</ph> メソッド オーバーロードを呼び出すと、その <bpt id="p3">[</bpt>IFormatProvider<ept id="p3">](xref:System.IFormatProvider)</ept> オブジェクトの <bpt id="p2">[</bpt>GetFormat<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> メソッドが呼び出されます。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> method is responsible for returning an object that provides the necessary formatting information, as specified by its <bpt id="p2">*</bpt>formatType<ept id="p2">*</ept> parameter, to the <ph id="ph1">`ToString`</ph> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> メソッドは、<bpt id="p2">*</bpt>formatType<ept id="p2">*</ept> パラメーターで指定された、必要な書式設定情報を提供するオブジェクトを <ph id="ph1">`ToString`</ph> メソッドに返します。</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>A number of formatting or string conversion methods include a parameter of type <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept>, but in many cases the value of the parameter is ignored when the method is called.</source>
+          <target state="translated">数多くの書式指定メソッドや文字列変換メソッドに <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> 型のパラメーターが含まれていますが、多くの場合、メソッドを呼び出すときはパラメーターの値は無視されます。</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The following table lists some of the formatting methods that use the parameter and the type of the <bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept> object that they pass to the <bpt id="p2">[</bpt>IFormatProvider.GetFormat<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> method.</source>
+          <target state="translated"><bpt id="p2">[</bpt>IFormatProvider.GetFormat<ept id="p2">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> メソッドに渡される <bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept> オブジェクトのパラメーターと型を使用する書式指定メソッドの一部を次の表に示します。</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Method</source>
+          <target state="translated">メソッド</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Type of <bpt id="p1">*</bpt>formatType<ept id="p1">*</ept> parameter</source>
+          <target state="translated"><bpt id="p1">*</bpt>formatType<ept id="p1">*</ept> パラメーターの型</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ToString`</ph> method of numeric types</source>
+          <target state="translated">数値型の <ph id="ph1">`ToString`</ph> メソッド</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Globalization.NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Globalization.NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept></target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ToString`</ph> method of date and time types</source>
+          <target state="translated">日付/時刻型の <ph id="ph1">`ToString`</ph> メソッド</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Globalization.DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Globalization.DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept></target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept></target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>StringBuilder.AppendFormat<ept id="p1">](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object))</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StringBuilder.AppendFormat<ept id="p1">](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object))</ept></target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>.NET provides three classes that implement <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept>:</source>
+          <target state="translated">.NET には、<bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> を実装する次の 3 つのクラスが用意されています。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept>, a class that provides formatting information for date and time values for a specific culture.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept>。このクラスは、特定のカルチャの日付と時刻の値に対する書式設定情報を提供します。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> implementation returns an instance of itself.</source>
+          <target state="translated">対応する <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> の実装では、それ自身のインスタンスが返されます。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept>, a class that provides numeric formatting information for a specific culture.</source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept>。このクラスは、特定のカルチャの数値に対する書式設定情報を提供します。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> implementation returns an instance of itself.</source>
+          <target state="translated">対応する <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> の実装では、それ自身のインスタンスが返されます。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> implementation can return either a <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> object to provide numeric formatting information or a <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> object to provide formatting information for date and time values.</source>
+          <target state="translated">対応する <bpt id="p1">[</bpt>IFormatProvider.GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> の実装では、数値に対する書式設定情報を提供する <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> オブジェクトか、日付と時刻の値に対する書式設定情報を提供する <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> オブジェクトのいずれかが返されます。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>You can also implement your own format provider to replace any one of these classes.</source>
+          <target state="translated">また、これらのクラスのうちのいずれかを置き換える独自の書式プロバイダーを実装できます。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>However, your implementation’s <ph id="ph1">`GetFormat`</ph> method must return an object of the type listed in the previous table if it has to provide formatting information to the <ph id="ph2">`ToString`</ph> method.</source>
+          <target state="translated">ただし、実装の <ph id="ph1">`GetFormat`</ph> メソッドは、書式設定情報を <ph id="ph2">`ToString`</ph> メソッドに渡す場合、前の表に示した型のオブジェクトを返す必要があります。</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>Culture-sensitive formatting of numeric values</source>
+          <target state="translated">数値のカルチャに依存した書式設定</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>By default, the formatting of numeric values is culture-sensitive.</source>
+          <target state="translated">既定では、数値の書式指定はカルチャに依存します。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used.</source>
+          <target state="translated">書式指定メソッドを呼び出すときにカルチャを指定しない場合は、現在のスレッド カルチャの書式指定規則が使用されます。</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>This is illustrated in the following example, which changes the current thread culture four times and then calls the <bpt id="p1">[</bpt>Decimal.ToString(String)<ept id="p1">](xref:System.Decimal.ToString(System.String))</ept> method.</source>
+          <target state="translated">次に示す例では、現在のスレッド カルチャを 4 回変更した後に、<bpt id="p1">[</bpt>Decimal.ToString(String)<ept id="p1">](xref:System.Decimal.ToString(System.String))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>In each case, the result string reflects the formatting conventions of the current culture.</source>
+          <target state="translated">各ケースでは、結果の文字列は、現在のカルチャの書式指定規則を反映します。</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>This is because the <ph id="ph1">`ToString`</ph> and <ph id="ph2">`ToString(String)`</ph> methods wrap calls to each numeric type's <ph id="ph3">`ToString(String, IFormatProvider)`</ph> method.</source>
+          <target state="translated">これは、各数値型の <ph id="ph1">`ToString`</ph> メソッドへの呼び出しを、<ph id="ph2">`ToString(String)`</ph> メソッドと <ph id="ph3">`ToString(String, IFormatProvider)`</ph> メソッドがラップするためです。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>You can also format a numeric value for a specific culture by calling a <ph id="ph1">`ToString`</ph> overload that has a <bpt id="p1">*</bpt>provider<ept id="p1">*</ept> parameter and passing it either of the following:</source>
+          <target state="translated">また、<bpt id="p1">*</bpt>provider<ept id="p1">*</ept> パラメーターを持つ <ph id="ph1">`ToString`</ph> オーバーロードを呼び出して、次のどちらかを渡すことにより、特定カルチャの数値を書式指定することもできます。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that represents the culture whose formatting conventions are to be used.</source>
+          <target state="translated">使用される書式指定規則のカルチャを表す <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> オブジェクト。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>CultureInfo.GetFormat<ept id="p1">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> method returns the value of the <bpt id="p2">[</bpt>CultureInfo.NumberFormat<ept id="p2">](xref:System.Globalization.CultureInfo.NumberFormat)</ept> property, which is the <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> object that provides culture-specific formatting information for numeric values.</source>
+          <target state="translated">その <bpt id="p1">[</bpt>CultureInfo.GetFormat<ept id="p1">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> メソッドは、<bpt id="p2">[</bpt>CultureInfo.NumberFormat<ept id="p2">](xref:System.Globalization.CultureInfo.NumberFormat)</ept> プロパティの値を返します。このプロパティは、数値にカルチャ固有の書式指定情報を提供する <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> オブジェクトです。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> object that defines the culture-specific formatting conventions to be used.</source>
+          <target state="translated">使用されるカルチャ固有の書式指定規則を定義する <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> オブジェクト。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept> method returns an instance of itself.</source>
+          <target state="translated">その <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept> メソッドでは、それ自身のインスタンスが返されます。</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>The following example uses <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> objects that represent the English (United States) and English (Great Britain) cultures and the French and Russian neutral cultures to format a floating-point number.</source>
+          <target state="translated">次の例では、浮動小数点数を書式指定する際に、英語 (米国) と英語 (英国) のカルチャおよびフランス語とロシア語のニュートラル カルチャを表す <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> オブジェクトを使用します。</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Culture-sensitive formatting of date and time values</source>
+          <target state="translated">日付と時刻の値のカルチャに依存した書式設定</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>By default, the formatting of date and time values is culture-sensitive.</source>
+          <target state="translated">既定では、日時の値の書式指定はカルチャに依存します。</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used.</source>
+          <target state="translated">書式指定メソッドを呼び出すときにカルチャを指定しない場合は、現在のスレッド カルチャの書式指定規則が使用されます。</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>This is illustrated in the following example, which changes the current thread culture four times and then calls the <bpt id="p1">[</bpt>DateTime.ToString(String)<ept id="p1">](xref:System.DateTime.ToString(System.String))</ept> method.</source>
+          <target state="translated">次に示す例では、現在のスレッド カルチャを 4 回変更した後に、<bpt id="p1">[</bpt>DateTime.ToString(String)<ept id="p1">](xref:System.DateTime.ToString(System.String))</ept> メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>In each case, the result string reflects the formatting conventions of the current culture.</source>
+          <target state="translated">各ケースでは、結果の文字列は、現在のカルチャの書式指定規則を反映します。</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>This is because the <bpt id="p1">[</bpt>DateTime.ToString()<ept id="p1">](xref:System.DateTime.ToString)</ept>, <bpt id="p2">[</bpt>DateTime.ToString(String)<ept id="p2">](xref:System.DateTime.ToString(System.String))</ept>, <bpt id="p3">[</bpt>DateTimeOffset.ToString()<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept>, and <bpt id="p4">[</bpt>DateTimeOffset.ToString(String)<ept id="p4">](xref:System.DateTimeOffset.ToString(System.String))</ept> methods wrap calls to the <bpt id="p5">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p5">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> and <bpt id="p6">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p6">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> methods.</source>
+          <target state="translated">これは、<bpt id="p1">[</bpt>DateTime.ToString()<ept id="p1">](xref:System.DateTime.ToString)</ept>、<bpt id="p2">[</bpt>DateTime.ToString(String)<ept id="p2">](xref:System.DateTime.ToString(System.String))</ept>、<bpt id="p3">[</bpt>DateTimeOffset.ToString()<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept>、<bpt id="p4">[</bpt>DateTimeOffset.ToString(String)<ept id="p4">](xref:System.DateTimeOffset.ToString(System.String))</ept> の各メソッドが、<bpt id="p5">[</bpt>DateTime.ToString(String, IFormatProvider)<ept id="p5">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> メソッドおよび <bpt id="p6">[</bpt>DateTimeOffset.ToString(String, IFormatProvider)<ept id="p6">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> メソッドへの呼び出しをラップするためです。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>You can also format a date and time value for a specific culture by calling a <bpt id="p1">[</bpt>DateTime.ToString<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> or <bpt id="p2">[</bpt>DateTimeOffset.ToString<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> overload that has a provider parameter and passing it either of the following:</source>
+          <target state="translated">provider パラメーターを持つ <bpt id="p1">[</bpt>DateTime.ToString<ept id="p1">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> または <bpt id="p2">[</bpt>DateTimeOffset.ToString<ept id="p2">](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider))</ept> オーバーロードを呼び出して、次のどちらかを渡すことにより、特定カルチャの日時の値を書式指定することもできます。</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that represents the culture whose formatting conventions are to be used.</source>
+          <target state="translated">使用される書式指定規則のカルチャを表す <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> オブジェクト。</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>CultureInfo.GetFormat<ept id="p1">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> method returns the value of the <bpt id="p2">[</bpt>CultureInfo.NumberFormat<ept id="p2">](xref:System.Globalization.CultureInfo.NumberFormat)</ept> property, which is the <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> object that provides culture-specific formatting information for numeric values.</source>
+          <target state="translated">その <bpt id="p1">[</bpt>CultureInfo.GetFormat<ept id="p1">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> メソッドは、<bpt id="p2">[</bpt>CultureInfo.NumberFormat<ept id="p2">](xref:System.Globalization.CultureInfo.NumberFormat)</ept> プロパティの値を返します。このプロパティは、数値にカルチャ固有の書式指定情報を提供する <bpt id="p3">[</bpt>DateTimeFormatInfo<ept id="p3">](xref:System.Globalization.DateTimeFormatInfo)</ept> オブジェクトです。</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> object that defines the culture-specific formatting conventions to be used.</source>
+          <target state="translated">使用されるカルチャ固有の書式指定規則を定義する <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> オブジェクト。</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Its <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.GetFormat(System.Type))</ept> method returns an instance of itself.</source>
+          <target state="translated">その <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.GetFormat(System.Type))</ept> メソッドでは、それ自身のインスタンスが返されます。</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>The following example uses <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> objects that represent the English (United States) and English (Great Britain) cultures and the French and Russian neutral cultures to format a date.</source>
+          <target state="translated">次の例では、日付を書式指定する際に、英語 (米国) と英語 (英国) のカルチャおよびフランス語とロシア語のニュートラル カルチャを表す <bpt id="p1">[</bpt>DateTimeFormatInfo<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo)</ept> オブジェクトを使用します。</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>The IFormattable interface</source>
+          <target state="translated">IFormattable インターフェイス</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Typically, types that overload the <ph id="ph1">`ToString`</ph> method with a format string and an <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> parameter also implement the <bpt id="p2">[</bpt>IFormattable<ept id="p2">](xref:System.IFormattable)</ept> interface.</source>
+          <target state="translated">通常、書式指定文字列および <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept> パラメーターを使用して <ph id="ph1">`ToString`</ph> メソッドをオーバーロードする型は、<bpt id="p2">[</bpt>IFormattable<ept id="p2">](xref:System.IFormattable)</ept> インターフェイスも実装します。</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>This interface has a single member, <bpt id="p1">[</bpt>IFormattable.ToString(String, IFormatProvider)<ept id="p1">](xref:System.IFormattable.ToString(System.String,System.IFormatProvider))</ept>, that includes both a format string and a format provider as parameters.</source>
+          <target state="translated">このインターフェイスには、<bpt id="p1">[</bpt>IFormattable.ToString(String, IFormatProvider)<ept id="p1">](xref:System.IFormattable.ToString(System.String,System.IFormatProvider))</ept> という単一のメンバーがあります。このメンバーには、パラメーターとして書式指定文字列と書式プロバイダーの両方が含まれています。</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>Implementing the <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> interface for your application-defined class offers two advantages:</source>
+          <target state="translated">アプリケーション定義のクラスに <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> インターフェイスを実装した場合、2 つの利点があります。</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Support for string conversion by the <bpt id="p1">[</bpt>Convert<ept id="p1">](xref:System.Convert)</ept> class.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Convert<ept id="p1">](xref:System.Convert)</ept> クラスによる文字列変換がサポートされます。</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Calls to the <bpt id="p1">[</bpt>Convert.ToString(Object)<ept id="p1">](xref:System.Convert.ToString(System.Object))</ept> and <bpt id="p2">[</bpt>Convert.ToString(Object, IFormatProvider)<ept id="p2">](xref:System.Convert.ToString(System.Object,System.IFormatProvider))</ept> methods call your <bpt id="p3">[</bpt>IFormattable<ept id="p3">](xref:System.IFormattable)</ept> implementation automatically.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Convert.ToString(Object)<ept id="p1">](xref:System.Convert.ToString(System.Object))</ept> メソッドおよび <bpt id="p2">[</bpt>Convert.ToString(Object, IFormatProvider)<ept id="p2">](xref:System.Convert.ToString(System.Object,System.IFormatProvider))</ept> メソッドを呼び出すと、自動的に <bpt id="p3">[</bpt>IFormattable<ept id="p3">](xref:System.IFormattable)</ept> の実装が呼び出されます。</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Support for composite formatting.</source>
+          <target state="translated">複合書式指定がサポートされます。</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>If a format item that includes a format string is used to format your custom type, the Common Language Runtime automatically calls your <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> implementation and passes it the format string.</source>
+          <target state="translated">書式指定文字列を含む書式指定項目を使用してカスタムの型の書式を設定する場合に、共通言語ランタイムによって自動的に <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> の実装が呼び出され、それに書式指定文字列が渡されます。</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>For more information about composite formatting with methods such as <ph id="ph1">`String.Format`</ph> or <ph id="ph2">`Console.WriteLine`</ph>, see the <bpt id="p1">[</bpt>Composite formatting<ept id="p1">](#composite-formatting)</ept> section.</source>
+          <target state="translated"><ph id="ph1">`String.Format`</ph> メソッドや <ph id="ph2">`Console.WriteLine`</ph> メソッドを使用した複合書式指定の詳細については、「<bpt id="p1">[</bpt>複合書式指定<ept id="p1">](#composite-formatting)</ept>」のセクションを参照してください。</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`Temperature`</ph> class that implements the <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> interface.</source>
+          <target state="translated">次の例では、<bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> インターフェイスを実装する <ph id="ph1">`Temperature`</ph> クラスを定義しています。</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>It supports the "C" or "G" format specifiers to display the temperature in Celsius, the "F" format specifier to display the temperature in Fahrenheit, and the "K" format specifier to display the temperature in Kelvin.</source>
+          <target state="translated">このクラスでは、温度を摂氏で表示するために "C" 書式指定子または "G" 書式指定子、華氏で表示するために "F" 書式指定子、ケルビンで表示するために "K" 書式指定子をそれぞれサポートしています。</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>The following example instantiates a <ph id="ph1">`Temperature`</ph> object.</source>
+          <target state="translated">次の例では、<ph id="ph1">`Temperature`</ph> オブジェクトをインスタンス化しています。</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>It then calls the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Convert.ToString(System.Object,System.IFormatProvider))</ept> method and uses several composite format strings to obtain different string representations of a <ph id="ph1">`Temperature`</ph> object.</source>
+          <target state="translated">その後、<bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.Convert.ToString(System.Object,System.IFormatProvider))</ept> メソッドを呼び出し、いくつかの複合書式指定文字列を使用して <ph id="ph1">`Temperature`</ph> オブジェクトのさまざまな文字列形式を取得します。</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>Each of these method calls, in turn, calls the <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> implementation of the <ph id="ph1">`Temperature`</ph> class.</source>
+          <target state="translated">さらに、それらの各メソッド呼び出しで、<ph id="ph1">`Temperature`</ph> クラスの <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> 実装を呼び出しています。</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>Composite formatting</source>
+          <target state="translated">複合書式指定</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Some methods, such as <ph id="ph1">`String.Format`</ph> and <ph id="ph2">`StringBuilder.AppendFormat`</ph>, support composite formatting.</source>
+          <target state="translated"><ph id="ph1">`String.Format`</ph> や <ph id="ph2">`StringBuilder.AppendFormat`</ph> などの一部のメソッドでは、複合書式指定がサポートされます。</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects.</source>
+          <target state="translated">複合書式指定文字列は一種のテンプレートで、0 個以上のオブジェクトの文字列形式が組み込まれた単一の文字列を返します。</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Each object is represented in the composite format string by an indexed format item.</source>
+          <target state="translated">各オブジェクトは、インデックス付きの書式指定項目によって、複合書式指定文字列で表現されます。</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>The index of the format item corresponds to the position of the object that it represents in the method's parameter list.</source>
+          <target state="translated">書式指定項目のインデックスは、それが表すオブジェクトのメソッドのパラメーター リスト内の位置と対応しています。</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Indexes are zero-based.</source>
+          <target state="translated">インデックスは 0 から始まります。</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>For example, in the following call to the <ph id="ph1">`String.Format`</ph> method, the first format item, <ph id="ph2">`{0:D}`</ph>, is replaced by the string representation of <ph id="ph3">`thatDate`</ph>; the second format item, <ph id="ph4">`{1}`</ph>, is replaced by the string representation of <ph id="ph5">`item1`</ph>; and the third format item, <ph id="ph6">`{2:C2}`</ph>, is replaced by the string representation of <ph id="ph7">`item1.Value`</ph>.</source>
+          <target state="translated">たとえば、<ph id="ph1">`String.Format`</ph> メソッドの次のメソッド呼び出しでは、最初の書式指定項目 <ph id="ph2">`{0:D}`</ph> は <ph id="ph3">`thatDate`</ph> の文字列形式に、2 番目の書式指定項目 <ph id="ph4">`{1}`</ph> は <ph id="ph5">`item1`</ph> の文字列形式に、3 番目の書式指定項目 <ph id="ph6">`{2:C2}`</ph> は <ph id="ph7">`item1.Value`</ph> の文字列形式に置き換えられます。</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>In addition to replacing a format item with the string representation of its corresponding object, format items also let you control the following:</source>
+          <target state="translated">書式項目をそれに対応するオブジェクトの文字列形式に置換することに加えて、書式項目は以下を制御することもできます。</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The specific way in which an object is represented as a string, if the object implements the <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> interface and supports format strings.</source>
+          <target state="translated">オブジェクトを文字列として表現する特定の方法 (オブジェクトが <bpt id="p1">[</bpt>IFormattable<ept id="p1">](xref:System.IFormattable)</ept> インターフェイスを実装し、書式文字列をサポートする場合)。</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>You do this by following the format item's index with a : (colon) followed by a valid format string.</source>
+          <target state="translated">これは、: (コロン) 付きの書式項目のインデックスに、有効な書式文字列を続けることによります。</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The previous example did this by formatting a date value with the "d" (short date pattern) format string (e.g., <ph id="ph1">`{0:d}`</ph>) and by formatting a numeric value with the "C2" format string (e.g., <ph id="ph2">`{2:C2}`</ph> to represent the number as a currency value with two fractional decimal digits.</source>
+          <target state="translated">前の例では、日付の値を "d" (短い日付のパターン) 書式文字列 (<ph id="ph1">`{0:d}`</ph> など) を書式設定し、数値を "C2" 書式文字列 (<ph id="ph2">`{2:C2}`</ph> など) で書式設定して数値を 2 桁の小数部を含む 10 進数を持つ通貨値で表していました。</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The width of the field that contains the object's string representation, and the alignment of the string representation in that field.</source>
+          <target state="translated">オブジェクトの文字列形式を含むフィールドの幅、およびそのフィールドの文字列形式の配置。</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>You do this by following the format item's index with a , (comma) followed the field width.</source>
+          <target state="translated">これは、, (コンマ) 付きの書式項目のインデックスに、フィールドの幅を続けることによります。</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>The string is right-aligned in the field if the field width is a positive value, and it is left-aligned if the field width is a negative value.</source>
+          <target state="translated">フィールドの幅が正の値の場合、文字列はフィールドで右揃えにし、フィールドの幅が負の値の場合、左揃えにします。</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>The following example left-aligns date values in a 20-character field, and it right-aligns decimal values with one fractional digit in an 11-character field.</source>
+          <target state="translated">次の例では、20 文字のフィールドで日付の値を左揃えにし、11 文字のフィールドで、1 桁の小数部を含む 10 進数値を右揃えにします。</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>Note that, if both the alignment string component and the format string component are present, the former precedes the latter (for example, <ph id="ph1">`{0,-20:g}`</ph>.</source>
+          <target state="translated">配置文字列コンポーネントと書式文字列コンポーネントの両方が存在する場合、前者は後者の前にきます (たとえば <ph id="ph1">`{0,-20:g}`</ph>)。</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>For more information about composite formatting, see <bpt id="p1">[</bpt>Composite formatting<ept id="p1">](composite-format.md)</ept>.</source>
+          <target state="translated">複合書式指定の詳細については、「<bpt id="p1">[</bpt>複合書式指定<ept id="p1">](composite-format.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Custom formatting with ICustomFormatter</source>
+          <target state="translated">ICustomFormatter を使用したカスタム書式設定</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Two composite formatting methods, <bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object[]))</ept> and <bpt id="p2">[</bpt>StringBuilder.AppendFormat(IFormatProvider, String, Object[])<ept id="p2">](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object))</ept>, include a format provider parameter that supports custom formatting.</source>
+          <target state="translated"><bpt id="p1">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object[]))</ept> および <bpt id="p2">[</bpt>StringBuilder.AppendFormat(IFormatProvider, String, Object[])<ept id="p2">](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object))</ept> の 2 つの複合書式指定メソッドには、カスタム書式設定をサポートしている書式プロバイダー パラメーターが含まれています。</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>When either of these formatting methods is called, it passes a <bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept> object that represents an <bpt id="p2">[</bpt>ICustomFormatter<ept id="p2">](xref:System.ICustomFormatter)</ept> interface to the format provider’s <ph id="ph1">`GetFormat`</ph> method.</source>
+          <target state="translated">これらの書式指定メソッドのいずれかを呼び出すと、書式プロバイダーの <ph id="ph1">`GetFormat`</ph> メソッドに <bpt id="p2">[</bpt>ICustomFormatter<ept id="p2">](xref:System.ICustomFormatter)</ept> インターフェイスを表す <bpt id="p1">[</bpt>Type<ept id="p1">](xref:System.Type)</ept> オブジェクトが渡されます。</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`GetFormat`</ph> method is then responsible for returning the <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> implementation that provides custom formatting.</source>
+          <target state="translated">次に、<ph id="ph1">`GetFormat`</ph> メソッドによって、カスタム書式設定を提供する <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> の実装が返されます。</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> interface has a single method, <bpt id="p2">[</bpt>Format(String, Object, IFormatProvider)<ept id="p2">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept>, that is called automatically by a composite formatting method, once for each format item in a composite format string.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> インターフェイスには、<bpt id="p2">[</bpt>Format(String, Object, IFormatProvider)<ept id="p2">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> という単一のメソッドがあります。このメソッドは、複合書式指定文字列の書式指定項目ごとに 1 回、複合書式指定メソッドによって自動的に呼び出されます。</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Format(String, Object, IFormatProvider)<ept id="p1">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> method has three parameters: a format string, which represents the <bpt id="p2">*</bpt>formatString<ept id="p2">*</ept> argument in a format item, an object to format, and an <bpt id="p3">[</bpt>IFormatProvider<ept id="p3">](xref:System.IFormatProvider)</ept> object that provides formatting services.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Format(String, Object, IFormatProvider)<ept id="p1">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> メソッドには、3 つのパラメーターがあります。書式指定項目の <bpt id="p2">*</bpt>formatString<ept id="p2">*</ept> 引数を表す書式指定文字列、書式を設定するオブジェクト、および書式指定サービスを提供する <bpt id="p3">[</bpt>IFormatProvider<ept id="p3">](xref:System.IFormatProvider)</ept> オブジェクトの 3 つです。</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Typically, the class that implements <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> also implements <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept>, so this last parameter is a reference to the custom formatting class itself.</source>
+          <target state="translated">通常は、<bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> を実装するクラスでは <bpt id="p2">[</bpt>IFormatProvider<ept id="p2">](xref:System.IFormatProvider)</ept> も実装するため、この最後のパラメーターはカスタム書式指定クラス自体への参照になります。</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>The method returns a custom formatted string representation of the object to be formatted.</source>
+          <target state="translated">このメソッドは、書式を設定するオブジェクトのカスタム書式の文字列形式を返します。</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>If the method cannot format the object, it should return a null reference.</source>
+          <target state="translated">オブジェクトの書式を設定できない場合は、null 参照を返します。</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>The following example provides an <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> implementation named <ph id="ph1">`ByteByByteFormatter`</ph> that displays integer values as a sequence of two-digit hexadecimal values followed by a space.</source>
+          <target state="translated">整数値を 2 桁の 16 進値とそれに続く 1 つの空白のシーケンスとして表示する、<ph id="ph1">`ByteByByteFormatter`</ph> という名前の <bpt id="p1">[</bpt>ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept> の実装の例を次に示します。</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>The following example uses the <ph id="ph1">`ByteByByteFormatter`</ph> class to format integer values.</source>
+          <target state="translated"><ph id="ph1">`ByteByByteFormatter`</ph> クラスを使用して整数値の書式を設定する例を次に示します。</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>Note that the <bpt id="p1">[</bpt>ICustomFormatter.Format<ept id="p1">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> method is called more than once in the second <bpt id="p2">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p2">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> method call, and that the default <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> provider is used in the third method call because the <ph id="ph1">`.ByteByByteFormatter.Format`</ph> method does not recognize the "N0" format string and returns a null reference.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ICustomFormatter.Format<ept id="p1">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> メソッドが 2 回目の <bpt id="p2">[</bpt>String.Format(IFormatProvider, String, Object[])<ept id="p2">](xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider))</ept> メソッド呼び出しで複数回呼び出されることに注意してください。また、<ph id="ph1">`.ByteByByteFormatter.Format`</ph> メソッドが "N0" 書式指定文字列を認識せず、null 参照を返すため、3 回目のメソッド呼び出しでは既定の <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> プロバイダーが使用されていることに注意してください。</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Related topics</source>
+          <target state="translated">関連トピック</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">タイトル</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Definition</source>
+          <target state="translated">定義</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard numeric format strings<ept id="p1">](standard-numeric.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準の数値書式指定文字列<ept id="p1">](standard-numeric.md)</ept></target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of numeric values.</source>
+          <target state="translated">数値に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom numeric format strings<ept id="p1">](custom-numeric.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム数値書式指定文字列<ept id="p1">](custom-numeric.md)</ept></target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for numeric values.</source>
+          <target state="translated">数値に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準の日時書式指定文字列<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom date and time format strings<ept id="p1">](custom-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム日時書式指定文字列<ept id="p1">](custom-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 値に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard TimeSpan format strings<ept id="p1">](standard-timespan.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>標準 TimeSpan 書式指定文字列<ept id="p1">](standard-timespan.md)</ept></target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that create commonly used string representations of time intervals.</source>
+          <target state="translated">時間間隔に対して一般的に使用される文字列形式を作成する標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom TimeSpan format strings<ept id="p1">](custom-timespan.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>カスタム TimeSpan 書式指定文字列<ept id="p1">](custom-timespan.md)</ept></target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>Describes custom format strings that create application-specific formats for time intervals.</source>
+          <target state="translated">時間間隔に対するアプリケーション固有の文字列形式を作成するカスタム書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumeration format strings<ept id="p1">](enumeration-format.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>列挙型書式指定文字列<ept id="p1">](enumeration-format.md)</ept></target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Describes standard format strings that are used to create string representations of enumeration values.</source>
+          <target state="translated">列挙型の文字列形式を作成するために使用される標準書式指定文字列について説明します。</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Composite formatting<ept id="p1">](composite-format.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>複合書式指定<ept id="p1">](composite-format.md)</ept></target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Describes how to embed one or more formatted values in a string.</source>
+          <target state="translated">文字列に 1 つ以上の書式指定された値を埋め込む方法について説明します。</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>The string can subsequently be displayed on the console or written to a stream.</source>
+          <target state="translated">この文字列は、コンソールに表示したり、ストリームに書き込んだりできます。</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>書式設定操作の実行<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>Lists topics that provide step-by-step instructions for performing specific formatting operations.</source>
+          <target state="translated">特定の書式設定操作を行うための手順を説明するトピックの一覧を示します。</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Parsing strings<ept id="p1">](parsing-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>文字列の解析<ept id="p1">](parsing-strings.md)</ept></target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Describes how to initialize objects to the values described by string representations of those objects.</source>
+          <target state="translated">オブジェクトの文字列表現によって指定された値にオブジェクトを初期化する方法について説明します。</target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Parsing is the inverse operation of formatting.</source>
+          <target state="translated">解析は書式設定の逆の操作です。</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">参照</target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IFormattable<ept id="p1">](xref:System.IFormattable)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IFormattable<ept id="p1">](xref:System.IFormattable)</ept></target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IFormatProvider<ept id="p1">](xref:System.IFormatProvider)</ept></target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.ICustomFormatter<ept id="p1">](xref:System.ICustomFormatter)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

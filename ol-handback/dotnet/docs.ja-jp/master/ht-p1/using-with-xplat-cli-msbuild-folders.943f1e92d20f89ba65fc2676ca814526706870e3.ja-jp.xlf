@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-e631009" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0a3122a3c10838b74801bcc910070745cb9bf0d5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tutorials\using-with-xplat-cli-msbuild-folders.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5b10e9932383ddc8d90bd74738272d76459bdcdf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e1b1945eb78c40052ee45746b4db06f6ad77d5cd</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Organizing and testing projects with the .NET Core command line (SDK Preview 3)</source>
+          <target state="translated">.NET Core コマンド ラインを使用したプロジェクトの整理およびテスト (SDK Preview 3)</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Organizing and testing projects with the .NET Core command line (SDK Preview 3)</source>
+          <target state="translated">.NET Core コマンド ラインを使用したプロジェクトの整理およびテスト (SDK Preview 3)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Organizing and testing projects with the .NET Core command line (SDK Preview 3)</source>
+          <target state="translated">.NET Core コマンド ラインを使用したプロジェクトの整理およびテスト (SDK Preview 3)</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This tutorial follows <bpt id="p1">[</bpt>Getting started with .NET Core on Windows/Linux/macOS using the command line (SDK Preview 3)<ept id="p1">](./using-with-xplat-cli-msbuild.md)</ept> to show how to go beyond simple "hello world" scenarios and pave the way for more advanced and well-organized applications.</source>
+          <target state="translated">このチュートリアルでは、「<bpt id="p1">[</bpt>Windows/Linux/macOS の .NET Core でのコマンド ラインの使用に関する概要 (SDK Preview 3)<ept id="p1">](./using-with-xplat-cli-msbuild.md)</ept>」に従って、簡単な "hello world" シナリオより高度なよく構成されたアプリケーションを作成するための準備方法を示します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Using folders to organize code</source>
+          <target state="translated">フォルダーを使用してコードを整理する</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Say you wanted to introduce some new types to do work on.</source>
+          <target state="translated">新しい種類の作業を導入したいものとします。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can do this by adding more files and making sure to give them namespaces you can include in your <ph id="ph1">`Program.cs`</ph> file.</source>
+          <target state="translated">そのためには、ファイルを追加し、<ph id="ph1">`Program.cs`</ph> ファイルに含めることができる名前空間を割り当てます。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This works great when the size of your project is relatively small.</source>
+          <target state="translated">プロジェクトのサイズが比較的小さい場合に適しています。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>However, if you have a larger app with many different data types and potentially multiple layers, you may wish to organize things logically.</source>
+          <target state="translated">しかし、多くの異なる種類のデータを含み、複数レイヤーになる可能性のある大規模なアプリケーションでは、論理的な整理が必要になります。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This is where folders come into play.</source>
+          <target state="translated">その場合はフォルダーを使用します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can either follow along with <bpt id="p1">[</bpt>the NewTypes sample project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild)</ept> that this guide covers, or create your own files and folders.</source>
+          <target state="translated">このガイドで説明する <bpt id="p1">[</bpt>NewTypes サンプル プロジェクト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild)</ept>に従うことも、独自のファイルとフォルダーを作成することもできます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To begin, create a new folder under the root of your project.</source>
+          <target state="translated">最初に、プロジェクトのルートの下に新しいフォルダーを作成します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`/Model`</ph> is chosen here.</source>
+          <target state="translated"><ph id="ph1">`/Model`</ph>がここでは選択されています。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Now add some new types to the folder:</source>
+          <target state="translated">フォルダーに新しい種類をいくつか追加します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Now, just as if they were files in the same directory, give them all the same namespace so you can include them in your <ph id="ph1">`Program.cs`</ph>.</source>
+          <target state="translated">同じディレクトリ内のファイルであった場合と同じように、すべてを同じ名前空間にするので、<ph id="ph1">`Program.cs`</ph> に含めることができます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Example: Pet Types</source>
+          <target state="translated">例: ペットの種類</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>This example creates two new types, <ph id="ph1">`Dog`</ph> and <ph id="ph2">`Cat`</ph>, and has them implement a common interface, <ph id="ph3">`IPet`</ph>.</source>
+          <target state="translated">この例では、<ph id="ph1">`Dog`</ph> と <ph id="ph2">`Cat`</ph> という 2 つの新しい種類を作成し、<ph id="ph3">`IPet`</ph> という共通インターフェイスを実装します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Folder Structure:</source>
+          <target state="translated">フォルダーの構造:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IPet.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`IPet.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Dog.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Dog.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Cat.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Cat.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Program.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`Program.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NewTypes.csproj`</ph>:</source>
+          <target state="translated"><ph id="ph1">`NewTypes.csproj`</ph>:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>And if you run this:</source>
+          <target state="translated">これを実行すると次のようになります。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>New pet types can be added (such as a <ph id="ph1">`Bird`</ph>), extending this project.</source>
+          <target state="translated">新しいペットの種類 (<ph id="ph1">`Bird`</ph> など) を追加して、このプロジェクトを拡張できます。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Testing your Console App</source>
+          <target state="translated">コンソール アプリのテスト</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You'll probably be wanting to test your projects at some point.</source>
+          <target state="translated">どこかの時点でプロジェクトをテストする必要があります。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Here's a good way to do it:</source>
+          <target state="translated">次に適切な方法を示します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Move any source of your existing project into a new <ph id="ph1">`src`</ph> folder.</source>
+          <target state="translated">既存プロジェクトのすべてのソースを、新しい <ph id="ph1">`src`</ph> フォルダーに移動します。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`/test`</ph> directory, then <ph id="ph2">`cd`</ph> into it.</source>
+          <target state="translated"><ph id="ph1">`/test`</ph> ディレクトリを作成し、そこに <ph id="ph2">`cd`</ph> します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Initialize the directory with a <ph id="ph1">`dotnet new -t Xunittest`</ph> command.</source>
+          <target state="translated"><ph id="ph1">`dotnet new -t Xunittest`</ph> コマンドを使用して、ディレクトリを初期化します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>This assumes Xunit, but you can also use MS Test by replacing <ph id="ph1">`Xunittest`</ph> with <ph id="ph2">`Mstest`</ph>.</source>
+          <target state="translated">ここでは Xunit を前提としますが、<ph id="ph1">`Xunittest`</ph> を <ph id="ph2">`Mstest`</ph> に置き換えて、MS Test を使用することもできます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Example: Extending the NewTypes project</source>
+          <target state="translated">例: NewTypes プロジェクトの拡張</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Now that the project system is in place, you can create your test project and start writing tests!</source>
+          <target state="translated">プロジェクト システムを設定したので、テスト プロジェクトを作成し、テストの作成を始めることができます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>From here on out, this guide will use and extend <bpt id="p1">[</bpt>the sample Types project<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild)</ept>.</source>
+          <target state="translated">これ以降このガイドでは、<bpt id="p1">[</bpt>サンプルの Types プロジェクト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/NewTypesMsBuild)</ept>を使用して拡張します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Additionally, it will use the <bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> test framework.</source>
+          <target state="translated">さらに、<bpt id="p1">[</bpt>Xunit<ept id="p1">](https://xunit.github.io/)</ept> テスト フレームワークを使用します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Feel free to follow along or create your own multi-project system with tests.</source>
+          <target state="translated">この手順に従っても、独自のマルチプロジェクト システムを作成してもかまいません。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The whole project structure should look like this:</source>
+          <target state="translated">プロジェクト全体の構造は、次のようになります。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>There are two new things to make sure you have in your test project:</source>
+          <target state="translated">テスト プロジェクトに必要な 2 つの新しい要素があります。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>A correct <ph id="ph1">`NewTypesTests.csproj`</ph> file with the following:</source>
+          <target state="translated">以下のものを含む正しい <ph id="ph1">`NewTypesTests.csproj`</ph> ファイル:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`xunit`</ph></source>
+          <target state="translated">次のものへの参照:<ph id="ph1">`xunit`</ph></target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph></source>
+          <target state="translated">次のものへの参照:<ph id="ph1">`dotnet-test-xunit`</ph></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A reference to the namespace corresponding to the code under test</source>
+          <target state="translated">テスト対象コードに対応する名前空間への参照</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This can be built by simply doing <ph id="ph1">`dotnet new -t Xunittest`</ph> from the command-line in the <ph id="ph2">`NewTypesTests`</ph> directory, then adding a project reference to the <ph id="ph3">`NewTypes`</ph> project.</source>
+          <target state="translated">これは、単に <ph id="ph2">`NewTypesTests`</ph> ディレクトリでコマンドラインから <ph id="ph1">`dotnet new -t Xunittest`</ph> をビルドし、プロジェクト参照を <ph id="ph3">`NewTypes`</ph> プロジェクトに追加することで実行できます。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NewTypesTests/NewTypesTests.csproj`</ph>:</source>
+          <target state="translated"><ph id="ph1">`NewTypesTests/NewTypesTests.csproj`</ph>:</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>An Xunit test class.</source>
+          <target state="translated">Xunit テスト クラス。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PetTests.cs`</ph>:</source>
+          <target state="translated"><ph id="ph1">`PetTests.cs`</ph>:</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Now you can run tests!</source>
+          <target state="translated">これでテストを実行することができます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> command runs the test runner you have specified in your project.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet test`</ph><ept id="p1">](../tools/dotnet-test.md)</ept> コマンドは、プロジェクトで指定したテスト ランナーを実行します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Make sure you start at the top-level directory.</source>
+          <target state="translated">最上位レベルのディレクトリで開始します。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Output should look like this:</source>
+          <target state="translated">出力は次のようになります。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d92549bf46f1c7a728bc6e2ac7cb183251115084</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\best-practices.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">29a81bfee1bf49fb6b417139448a333398f8a0b0</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f5f2f83420d224fc7138a8161f172550635ffde7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">正規表現に関するベスト プラクティス</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">正規表現に関するベスト プラクティス</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Best practices for regular expressions</source>
+          <target state="translated">正規表現に関するベスト プラクティス</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text.</source>
+          <target state="translated">.NET の正規表現エンジンは、リテラル テキストの比較と照合ではなくパターン一致に基づいてテキストを処理する、完全な機能を備えた強力なツールです。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In most cases, it performs pattern matching rapidly and efficiently.</source>
+          <target state="translated">ほとんどの場合は、すばやく効率的にパターン一致が実行されますが、</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, in some cases, the regular expression engine can appear to be very slow.</source>
+          <target state="translated">処理が非常に遅く見えることもあります。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.</source>
+          <target state="translated">極端なケースでは、比較的小さな入力の処理に何時間も何日もかかり、応答しなくなったように見えることさえあります。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance.</source>
+          <target state="translated">ここでは、正規表現で最適なパフォーマンスを確保するためのいくつかのベスト プラクティスの概要を説明します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It contains the following sections:</source>
+          <target state="translated">このチュートリアルは、次のセクションで構成されています。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Consider the input source<ept id="p1">](#consider-the-input-source)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>入力ソースを考慮に入れる<ept id="p1">](#consider-the-input-source)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Handle object instantiation appropriately<ept id="p1">](#handle-object-instantiation-appropriately)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>オブジェクトのインスタンス化を適切に処理する<ept id="p1">](#handle-object-instantiation-appropriately)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Take charge of backtracking<ept id="p1">](#take-charge-of-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>バックトラッキングを管理する<ept id="p1">](#take-charge-of-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Use time-out values<ept id="p1">](#use-time-out-values)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>タイムアウト値を使用する<ept id="p1">](#use-time-out-values)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Capture only when necessary<ept id="p1">](#capture-only-when-necessary)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>必要なときにのみキャプチャする<ept id="p1">](#capture-only-when-necessary)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Related topics<ept id="p1">](#related-topics)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>関連トピック<ept id="p1">](#related-topics)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Consider the input source</source>
+          <target state="translated">入力ソースを考慮に入れる</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In general, regular expressions can accept two types of input: constrained or unconstrained.</source>
+          <target state="translated">一般に、正規表現で受け入れられる入力には、制約のある入力と制約のない入力の 2 種類があります。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Constrained input is text that originates from a known or reliable source and follows a predefined format.</source>
+          <target state="translated">制約のある入力とは、あらかじめ定義された形式に従っている、既知のソースまたは信頼できるソースからのテキストです。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Unconstrained input is text that originates from an unreliable source, such as a web user, and may not follow a predefined or expected format.</source>
+          <target state="translated">制約のない入力とは、あらかじめ定義された形式や予想される形式に従っていない可能性のある、不確実なソース (Web ユーザーなど) からのテキストです。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns are typically written to match valid input.</source>
+          <target state="translated">正規表現パターンは、有効な入力に一致するように記述されるのが一般的です。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>That is, developers examine the text that they want to match and then write a regular expression pattern that matches it.</source>
+          <target state="translated">開発者はまず、対象となるテキストを調査して、そのテキストに一致する正規表現パターンを記述します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Developers then determine whether this pattern requires correction or further elaboration by testing it with multiple valid input items.</source>
+          <target state="translated">記述が完了すると、そのパターンを複数の有効な入力項目でテストして、修正や改善が必要かどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>When the pattern matches all presumed valid inputs, it is declared to be production-ready and can be included in a released application.</source>
+          <target state="translated">想定されるすべての有効な入力に一致するようになったら、そのパターンは運用環境で使用する準備が整ったと見なされ、リリースされるアプリケーションに含めることができます。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This makes a regular expression pattern suitable for matching constrained input.</source>
+          <target state="translated">こうして作成された正規表現パターンは、制約のある入力との照合には適していますが、</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>However, it does not make it suitable for matching unconstrained input.</source>
+          <target state="translated">制約のない入力との照合に適しているとは言えません。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To match unconstrained input, a regular expression must be able to efficiently handle three kinds of text:</source>
+          <target state="translated">制約のない入力と照合する正規表現は、次の 3 種類のテキストを効率的に処理できなければなりません。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>• Text that matches the regular expression pattern.</source>
+          <target state="translated">• 正規表現パターンに一致するテキスト。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>• Text that does not match the regular expression pattern.</source>
+          <target state="translated">• 正規表現パターンに一致しないテキスト。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>• Text that nearly matches the regular expression pattern.</source>
+          <target state="translated">• 正規表現パターンにほぼ一致するテキスト。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The last text type is especially problematic for a regular expression that has been written to handle constrained input.</source>
+          <target state="translated">制約のある入力を処理するために記述された正規表現で特に問題となるのは、最後の種類のテキストです。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If that regular expression also relies on extensive <bpt id="p1">[</bpt>backtracking<ept id="p1">](backtracking.md)</ept>, the regular expression engine can spend an inordinate amount of time (in some cases, many hours or days) processing seemingly innocuous text.</source>
+          <target state="translated">その正規表現が広範な<bpt id="p1">[</bpt>バックトラッキング<ept id="p1">](backtracking.md)</ept>にも依存している場合、一見何の問題もないように見えるテキストの処理に極端に長い時間 (場合によっては何時間も何日も) が費やされる可能性があります。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following example uses a regular expression that is prone to excessive backtracking and that is likely to reject valid email addresses.</source>
+          <target state="translated">次の例では、過度なバックトラッキングを生じる傾向があり、有効な電子メール アドレスを拒否する可能性がある正規表現を使用します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You should not use it in an email validation routine.</source>
+          <target state="translated">電子メールの検証ルーチンで使用しないでください。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If you would like a regular expression that validates email addresses, see <bpt id="p1">[</bpt>How to: Verify that strings are in valid email format<ept id="p1">](verify-format.md)</ept>.</source>
+          <target state="translated">メール アドレスを検証する正規表現が必要な場合は、「<bpt id="p1">[</bpt>方法: 文字列が有効な電子メール形式であるかどうかを検証する<ept id="p1">](verify-format.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, consider a very commonly used but extremely problematic regular expression for validating the alias of an email address.</source>
+          <target state="translated">例として、電子メール アドレスのエイリアスを検証するための正規表現について見てみましょう。このような正規表現はよく使用されますが、きわめて大きな問題もはらんでいます。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*$`</ph> is written to process what is considered to be a valid email address, which consists of an alphanumeric character, followed by zero or more characters that can be alphanumeric, periods, or hyphens.</source>
+          <target state="translated">有効と見なされる電子メール アドレスを処理するために、<ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*$`</ph> という正規表現を記述したとします。有効な電子メール アドレスは、英数字で始まり、その後に 0 個以上の文字 (英数字、ピリオド、またはハイフン) が続きます。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The regular expression must end with an alphanumeric character.</source>
+          <target state="translated">また、正規表現は英数字で終了する必要があります。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, as the following example shows, although this regular expression handles valid input easily, its performance is very inefficient when it is processing nearly valid input.</source>
+          <target state="translated">この正規表現は、次の例に示すように、有効な入力は簡単に処理できますが、有効に近い入力を処理するときに極端に処理効率が低下します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the regular expression engine processes the valid email alias in about the same time interval regardless of its length.</source>
+          <target state="translated">この出力を見るとわかるように、有効な電子メール エイリアスは、その長さに関係なくほとんど同じ時間で処理されます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>On the other hand, when the nearly valid email address has more than five characters, processing time approximately doubles for each additional character in the string.</source>
+          <target state="translated">一方、有効に近い電子メール アドレスでは、長さが 5 文字を超えると、文字列の文字が 1 文字増えるたびに処理時間が約 2 倍に増加します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This means that a nearly valid 28-character string would take over an hour to process, and a nearly valid 33-character string would take nearly a day to process.</source>
+          <target state="translated">つまり、有効に近い文字列の長さが 28 文字になると処理に 1 時間以上かかり、33 文字になるとほぼ 1 日かかることになります。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Because this regular expression was developed solely by considering the format of input to be matched, it fails to take account of input that does not match the pattern.</source>
+          <target state="translated">この正規表現は、一致する入力の形式ばかりを念頭に置いて開発されていて、パターンに一致しない入力のことが考慮されていません。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This, in turn, can allow unconstrained input that nearly matches the regular expression pattern to significantly degrade performance.</source>
+          <target state="translated">そのため、制約のない入力が正規表現パターンにほぼ一致する場合に、パフォーマンスが大幅に低下する可能性があります。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>To solve this problem, you can do the following:</source>
+          <target state="translated">この問題を解決する方法を以下に示します。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input.</source>
+          <target state="translated">パターンを開発するときには、バックトラッキングが正規表現エンジンのパフォーマンスに与える影響を考慮に入れます。特に、制約のない入力を処理する正規表現ではこれが重要です。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Take charge of backtracking<ept id="p1">](#take-charge-of-backtracking)</ept> section.</source>
+          <target state="translated">詳細については、このトピックの「<bpt id="p1">[</bpt>バックトラッキングを管理する<ept id="p1">](#take-charge-of-backtracking)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Thoroughly test your regular expression using invalid and near-valid input as well as valid input.</source>
+          <target state="translated">有効な入力だけでなく、無効な入力と有効に近い入力も使用して、正規表現を徹底的にテストします。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>To generate input for a particular regular expression randomly, you can use <bpt id="p1">[</bpt>Rex<ept id="p1">](http://research.microsoft.com/en-us/projects/rex/)</ept>, which is a regular expression exploration tool from Microsoft Research.</source>
+          <target state="translated">特定の正規表現に対する入力をランダムに生成するには、Microsoft Research の正規表現調査ツール <bpt id="p1">[</bpt>Rex<ept id="p1">](http://research.microsoft.com/en-us/projects/rex/)</ept> を使用できます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Handle object instantiation appropriately</source>
+          <target state="translated">オブジェクトのインスタンス化を適切に処理する</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>At the heart of .NET’s regular expression object model is the <bpt id="p1">[</bpt>System.Text.RegularExpressions.Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> class, which represents the regular expression engine.</source>
+          <target state="translated">.NET の正規表現オブジェクト モデルの中核となるのは、正規表現エンジンを表す <bpt id="p1">[</bpt>System.Text.RegularExpressions.Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> クラスです。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Often, the single greatest factor that affects regular expression performance is the way in which the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> engine is used.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> エンジンの使用方法は、多くの場合、正規表現のパフォーマンスを左右する最大の要因になります。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern.</source>
+          <target state="translated">正規表現を定義するときには、正規表現エンジンと正規表現パターンを密に結合する必要があります。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>That coupling process, whether it involves instantiating a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.</source>
+          <target state="translated">この結合のプロセスは、正規表現パターンをコンストラクターに渡して <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化する場合も、分析する文字列と共に正規表現パターンを渡して静的メソッドを呼び出す場合も、必然的にコストが高くなります。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can couple the regular expression engine with a particular regular expression pattern and then use the engine to match text in several ways:</source>
+          <target state="translated">正規表現エンジンを特定の正規表現パターンと結合し、そのエンジンを使用してテキストを照合するには、次のようにいくつかの方法があります。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can call a static pattern-matching method, such as <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept>.</source>
+          <target state="translated">パターン一致を実行する静的メソッド <bpt id="p1">[</bpt>Regex.Match(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String))</ept> などを呼び出します。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This does not require instantiation of a regular expression object.</source>
+          <target state="translated">この場合は、正規表現オブジェクトをインスタンス化する必要はありません。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You can instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object and call an instance pattern-matching method of an interpreted regular expression.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化し、解釈される正規表現のパターン一致を実行するインスタンス メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>This is the default method for binding the regular expression engine to a regular expression pattern.</source>
+          <target state="translated">これは、正規表現エンジンを正規表現パターンにバインドするための既定の方法です。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>It results when a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is instantiated without an options argument that includes the <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> flag.</source>
+          <target state="translated"><bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> フラグを含むオプション引数を使用せずに <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトがインスタンス化された場合にこのようになります。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object and call an instance pattern-matching method of a compiled regular expression.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化し、コンパイルされた正規表現のパターン一致を実行するインスタンス メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Regular expression objects represent compiled patterns when a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is instantiated with an options argument that includes the <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> flag.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化するときに、<bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> フラグを含むオプション引数を指定した場合、正規表現オブジェクトはコンパイル済みのパターンを表します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The form of the method call (static, interpreted, compiled) affects performance if the same regular expression is used repeatedly in method calls, or if an application makes extensive use of regular expression objects.</source>
+          <target state="translated">メソッド呼び出しの形式 (静的、解釈、コンパイル) は、メソッド呼び出しで同じ正規表現が繰り返し使用される場合や、アプリケーションで正規表現オブジェクトが多用される場合に、パフォーマンスに影響を与えます。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Static regular expressions</source>
+          <target state="translated">静的正規表現</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Static regular expression methods are recommended as an alternative to repeatedly instantiating a regular expression object with the same regular expression.</source>
+          <target state="translated">静的正規表現メソッドは、正規表現オブジェクトを同じ正規表現で繰り返しインスタンス化する代わりの方法として推奨されます。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Unlike regular expression patterns used by regular expression objects, either the operation codes or the compiled Microsoft intermediate language (MSIL) from patterns used in instance method calls is cached internally by the regular expression engine.</source>
+          <target state="translated">正規表現オブジェクトで使用される正規表現パターンとは異なり、インスタンス メソッドの呼び出しで使用されるパターンの場合は、そのオペレーション コードまたはコンパイルされた Microsoft Intermediate Language (MSIL) が正規表現エンジンによって内部にキャッシュされます。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example, you might call a method to validate user input.</source>
+          <target state="translated">たとえば、ユーザー入力を検証するメソッドを呼び出すことができます。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In this example, a method named <ph id="ph1">`IsValidCurrency`</ph> checks whether the user has entered a currency symbol followed by at least one decimal digit.</source>
+          <target state="translated">この例では <ph id="ph1">`IsValidCurrency`</ph> という名前のメソッドが、ユーザーが少なくとも 1 つの 10 進数を通貨記号の後に入力したかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>A very inefficient implementation of the <ph id="ph1">`IsValidCurrency`</ph> method is shown in the following example.</source>
+          <target state="translated">次の例は、<ph id="ph1">`IsValidCurrency`</ph> メソッドのきわめて非効率的な実装を示しています。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Note that each method call reinstantiates a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object with the same pattern.</source>
+          <target state="translated">この例では、このメソッドが呼び出されるたびに <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトが同じパターンでインスタンス化されます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>This, in turn, means that the regular expression pattern must be recompiled each time the method is called.</source>
+          <target state="translated">そのため、メソッドが呼び出されるたびに正規表現パターンを再コンパイルしなければならなくなります。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You should replace this inefficient code with a call to the static <bpt id="p1">[</bpt>Regex.IsMatch(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String))</ept> method.</source>
+          <target state="translated">この非効率的なコードは、静的な <bpt id="p1">[</bpt>Regex.IsMatch(String, String)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String))</ept> メソッドの呼び出しに置き換える必要があります。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This eliminates the need to instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object each time you want to call a pattern-matching method, and enables the regular expression engine to retrieve a compiled version of the regular expression from its cache.</source>
+          <target state="translated">これにより、パターン一致メソッドを呼び出すたびに <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化する必要がなくなり、正規表現エンジンがキャッシュからコンパイル済みの正規表現を取得できるようになります。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>By default, the last 15 most recently used static regular expression patterns are cached.</source>
+          <target state="translated">既定では、最近使用された静的正規表現パターンが 15 個までキャッシュされます。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For applications that require a larger number of cached static regular expressions, the size of the cache can be adjusted by setting the <bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept> property.</source>
+          <target state="translated">アプリケーションで多数の静的正規表現をキャッシュする必要がある場合は、<bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept> プロパティを設定してキャッシュのサイズを調整できます。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`\p{Sc}+\s*\d+`</ph> that is used in this example verifies that the input string consists of a currency symbol and at least one decimal digit.</source>
+          <target state="translated">この例で使用されている正規表現 <ph id="ph1">`\p{Sc}+\s*\d+`</ph> は、入力文字列が通貨記号と 1 文字以上の 10 進数の数字で構成されているかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The pattern is defined as shown in the following table.</source>
+          <target state="translated">このパターンは、次の表に示すように定義されます。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Match one or more characters in the Unicode Symbol, Currency category.</source>
+          <target state="translated">Unicode の Symbol, Currency カテゴリの 1 個以上の文字と一致します。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Match zero or more white-space characters.</source>
+          <target state="translated">0 個以上の空白文字と一致します。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Match one or more decimal digits.</source>
+          <target state="translated">1 個以上の 10 進数と一致します。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Interpreted vs. compiled regular expressions</source>
+          <target state="translated">解釈される正規表現とコンパイルされる正規表現</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns that are not bound to the regular expression engine through the specification of the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option are interpreted.</source>
+          <target state="translated"><bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> オプションを指定して正規表現エンジンにバインドされていない正規表現パターンは、解釈されます。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>When a regular expression object is instantiated, the regular expression engine converts the regular expression to a set of operation codes.</source>
+          <target state="translated">正規表現オブジェクトがインスタンス化されるとき、正規表現エンジンは、その正規表現を一連のオペレーション コードに変換します。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>When an instance method is called, the operation codes are converted to MSIL and executed by the JIT compiler.</source>
+          <target state="translated">インスタンス メソッドが呼び出されると、オペレーション コードが MSIL に変換され、JIT コンパイラによって実行されます。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Similarly, when a static regular expression method is called and the regular expression cannot be found in the cache, the regular expression engine converts the regular expression to a set of operation codes and stores them in the cache.</source>
+          <target state="translated">同様に、静的正規表現メソッドが呼び出され、その正規表現がキャッシュに見つからない場合、正規表現エンジンは、その正規表現を一連のオペレーション コードに変換し、キャッシュに格納します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>It then converts these operation codes to MSIL so that the JIT compiler can execute them.</source>
+          <target state="translated">それらのオペレーション コードは、その後、JIT コンパイラで実行できるように MSIL に変換されます。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Interpreted regular expressions reduce startup time at the cost of slower execution time.</source>
+          <target state="translated">解釈される正規表現では、実行時間が長くなる代わりに、スタートアップ時間が短縮されます。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Because of this, they are best used when the regular expression is used in a small number of method calls, or if the exact number of calls to regular expression methods is unknown but is expected to be small.</source>
+          <target state="translated">このため、正規表現を使用するメソッドの呼び出し回数が少ない場合、または正確な回数はわからなくても少ないと予想される場合に適しています。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As the number of method calls increases, the performance gain from reduced startup time is outstripped by the slower execution speed.</source>
+          <target state="translated">メソッド呼び出しの回数が増えるにつれて、スタートアップ時間の短縮というメリットよりも、実行速度の低下というデメリットの方が大きくなります。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Regular expression patterns that are bound to the regular expression engine through the specification of the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option are compiled.</source>
+          <target state="translated"><bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> オプションを指定して正規表現エンジンにバインドされている正規表現パターンは、コンパイルされます。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>This means that, when a regular expression object is instantiated, or when a static regular expression method is called and the regular expression cannot be found in the cache, the regular expression engine converts the regular expression to an intermediary set of operation codes, which it then converts to MSIL.</source>
+          <target state="translated">つまり、正規表現オブジェクトがインスタンス化されるとき、または静的正規表現メソッドが呼び出され、その正規表現がキャッシュに見つからないとき、正規表現エンジンは、その正規表現を一連の中間的なオペレーション コードに変換し、さらに MSIL に変換します。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>When a method is called, the JIT compiler executes the MSIL.</source>
+          <target state="translated">メソッドが呼び出されると、その MSIL が JIT コンパイラによって実行されます。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>In contrast to interpreted regular expressions, compiled regular expressions increase startup time but execute individual pattern-matching methods faster.</source>
+          <target state="translated">コンパイルされる正規表現では、解釈される正規表現とは対照的に、スタートアップ時間が長くなる一方で、個々のパターン一致メソッドの実行時間は短くなります。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>As a result, the performance benefit that results from compiling the regular expression increases in proportion to the number of regular expression methods called.</source>
+          <target state="translated">結果として、正規表現のコンパイルによって得られるパフォーマンス上のメリットは、正規表現メソッドが呼び出される回数に比例して大きくなります。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>To summarize, we recommend that you use interpreted regular expressions when you call regular expression methods with a specific regular expression relatively infrequently.</source>
+          <target state="translated">要約すると、特定の正規表現について正規表現メソッドを呼び出す回数が比較的少ない場合は、解釈される正規表現を使用することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>You should use compiled regular expressions when you call regular expression methods with a specific regular expression relatively frequently.</source>
+          <target state="translated">特定の正規表現について正規表現メソッドを呼び出す回数が比較的多い場合は、コンパイルされる正規表現を使用することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The exact threshold at which the slower execution speeds of interpreted regular expressions outweigh gains from their reduced startup time, or the threshold at which the slower startup times of compiled regular expressions outweigh gains from their faster execution speeds, is difficult to determine.</source>
+          <target state="translated">解釈される正規表現で実行速度の低下がスタートアップ時間の短縮を上回るしきい値や、コンパイルされる正規表現でスタートアップ時間の増加が実行速度の向上を上回るしきい値については、正確な値を特定するのは困難です。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>It depends on a variety of factors, including the complexity of the regular expression and the specific data that it processes.</source>
+          <target state="translated">これは、正規表現の複雑さや、処理される個々のデータなど、さまざまな要因に依存します。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>To determine whether interpreted or compiled regular expressions offer the best performance for your particular application scenario, you can use the <bpt id="p1">[</bpt>Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> class to compare their execution times.</source>
+          <target state="translated">特定のアプリケーションのシナリオにおいて、解釈される正規表現とコンパイルされる正規表現のどちらで最適なパフォーマンスが得られるかを特定するには、<bpt id="p1">[</bpt>Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> クラスを使用して実行時間を比較します。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The following example compares the performance of compiled and interpreted regular expressions when reading the first ten sentences and when reading all the sentences in the text of Theodore Dreiser's The Financier.</source>
+          <target state="translated">次の例では、Theodore Dreiser の『The Financier』の最初の 10 個の文を読み取る場合とすべての文を読み取る場合について、コンパイルされる正規表現と解釈される正規表現のパフォーマンスを比較しています。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, when only ten calls are made to regular expression matching methods, an interpreted regular expression offers better performance than a compiled regular expression.</source>
+          <target state="translated">出力を見るとわかるように、正規表現の一致メソッドの呼び出しが 10 回だけの場合は、解釈される正規表現の方がコンパイルされる正規表現よりパフォーマンスが高くなります。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>However, a compiled regular expression offers better performance when a large number of calls (in this case, over 13,000) are made.</source>
+          <target state="translated">しかし、多数の呼び出し (この場合は 13,000 回以上) が行われる場合は、コンパイルされる正規表現の方がパフォーマンスが高くなります。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern used in the example, <ph id="ph1">`\b(\w+((\r?\n)|,?\s))*\w+[.?:;!]`</ph>, is defined as shown in the following table.</source>
+          <target state="translated">この例で使用する正規表現パターン <ph id="ph1">`\b(\w+((\r?\n)|,?\s))*\w+[.?:;!]`</ph> は、次の表に示すように定義されています。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>`(\r?\n)</source>
+          <target state="translated">`(\r?\n)</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>,?\s)`</source>
+          <target state="translated">,?\s)`</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Match either zero or one carriage return followed by a newline character, or zero or one comma followed by a white-space character.</source>
+          <target state="translated">0 ～ 1 個の復帰とそれに続く改行文字、または 0 ～ 1 個のコンマとそれに続く空白文字に一致します。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>`(\w+((\r?\n)</source>
+          <target state="translated">`(\w+((\r?\n)</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>,?\s))*`</source>
+          <target state="translated">,?\s))*`</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of one or more word characters that are followed either by zero or one carriage return and a newline character, or by zero or one comma followed by a white-space character.</source>
+          <target state="translated">1 個以上の単語文字の後に 0 ～ 1 個の復帰と改行文字または 0 ～ 1 個のコンマと空白文字が続くパターンの 0 回以上の出現に一致します。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Match a period, question mark, colon, semicolon, or exclamation point.</source>
+          <target state="translated">ピリオド、疑問符、コロン、セミコロン、または感嘆符に一致します。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Take charge of backtracking</source>
+          <target state="translated">バックトラッキングを管理する</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern.</source>
+          <target state="translated">通常、正規表現エンジンは入力文字列内を直線的に進んで、入力文字列を正規表現パターンと比較します。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>However, when indeterminate quantifiers such as <bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept>, <bpt id="p2">**</bpt><ph id="ph2">+</ph><ept id="p2">**</ept>, and <bpt id="p3">**</bpt>?<ept id="p3">**</ept></source>
+          <target state="translated">しかし、正規表現パターン内で不定量指定子 (<bpt id="p1">__</bpt><ph id="ph1">*</ph><ept id="p1">__</ept>、<bpt id="p2">**</bpt><ph id="ph2">+</ph><ept id="p2">**</ept>、<bpt id="p3">**</bpt>?<ept id="p3">**</ept> など) </target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern.</source>
+          <target state="translated">が使用されていると、パターン全体に対する一致を検索するために、それまでに見つかった部分的な一致を放棄して、以前に保存した状態に戻る場合があります。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This process is known as backtracking.</source>
+          <target state="translated">このプロセスをバックトラッキングと呼びます。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>For more information on backtracking, see <bpt id="p1">[</bpt>Details of regular expression behavior<ept id="p1">](regex-behavior.md)</ept> and <bpt id="p2">[</bpt>Backtracking in regular expressions<ept id="p2">](backtracking.md)</ept>.</source>
+          <target state="translated">バックトラッキングの詳細については、「<bpt id="p1">[</bpt>正規表現の動作の詳細<ept id="p1">](regex-behavior.md)</ept>」と「<bpt id="p2">[</bpt>正規表現におけるバックトラッキング<ept id="p2">](backtracking.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Support for backtracking gives regular expressions power and flexibility.</source>
+          <target state="translated">バックトラッキングのサポートにより、正規表現はより強力かつ柔軟になります。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>It also places the responsibility for controlling the operation of the regular expression engine in the hands of regular expression developers.</source>
+          <target state="translated">同時に、正規表現エンジンの動作を正規表現の開発者が制御することにもなります。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Because developers are often not aware of this responsibility, their misuse of backtracking or reliance on excessive backtracking often plays the most significant role in degrading regular expression performance.</source>
+          <target state="translated">この責任を認識していない開発者によるバックトラッキングの誤用や過度なバックトラッキングへの依存が、多くの場合、正規表現のパフォーマンスを低下させる最大の要因になっています。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In a worst-case scenario, execution time can double for each additional character in the input string.</source>
+          <target state="translated">最悪のシナリオでは、入力文字列が 1 文字増えるたびに実行時間が倍増することもあります。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In fact, by using backtracking excessively, it is easy to create the programmatic equivalent of an endless loop if input nearly matches the regular expression pattern; the regular expression engine may take hours or even days to process a relatively short input string.</source>
+          <target state="translated">実際、バックトラッキングを過度に使用すると、入力が正規表現パターンにほぼ一致する場合に、プログラム的に無限ループと同等の状態に陥りやすくなります。そのような状態では、正規表現エンジンによる比較的短い入力文字列の処理に何時間も何日もかかることがあります。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Often, applications pay a performance penalty for using backtracking despite the fact that backtracking is not essential for a match.</source>
+          <target state="translated">照合に必要でないにもかかわらずバックトラッキングを使用した代償として、アプリケーションのパフォーマンスが低下することもよくあります。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`\b\p{Lu}\w*\b`</ph> matches all words that begin with an uppercase character, as the following table shows.</source>
+          <target state="translated">例として、<ph id="ph1">`\b\p{Lu}\w*\b`</ph> という正規表現について見てみましょう。この正規表現は、次の表に示すように、大文字で始まるすべての単語に一致します。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Match an uppercase character.</source>
+          <target state="translated">大文字に一致します。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Match zero or more word characters.</source>
+          <target state="translated">0 個以上の単語に使用される文字に一致します。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">ワード境界で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Because a word boundary is not the same as, or a subset of, a word character, there is no possibility that the regular expression engine will cross a word boundary when matching word characters.</source>
+          <target state="translated">ワード境界は単語文字と同じではなく、単語文字のサブセットでもないため、正規表現エンジンが単語文字の照合中にワード境界を越える可能性はありません。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>This means that for this regular expression, backtracking can never contribute to the overall success of any match -- it can only degrade performance, because the regular expression engine is forced to save its state for each successful preliminary match of a word character.</source>
+          <target state="translated">したがって、この正規表現では、バックトラッキングが照合の全体的な成功に寄与することはありません。バックトラッキングを使用すると、正規表現エンジンが単語文字の照合に成功するたびに状態を保存しなければならなくなるため、パフォーマンスを低下させるだけです。</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>If you determine that backtracking is not necessary, you can disable it by using the <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element.</source>
+          <target state="translated">バックトラッキングが不要であることがわかった場合は、<bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 言語要素を使用して無効にすることができます。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The following example parses an input string by using two regular expressions.</source>
+          <target state="translated">次の例では、2 つの正規表現を使用して入力文字列を解析しています。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The first, <ph id="ph1">`\b\p{Lu}\w*\b`</ph>, relies on backtracking.</source>
+          <target state="translated">1 つはバックトラッキングに依存する <ph id="ph1">`\b\p{Lu}\w*\b`</ph>、</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The second, <ph id="ph1">`\b\p{Lu}(?&gt;\w*)\b`</ph>, disables backtracking.</source>
+          <target state="translated">もう 1 つはバックトラッキングを無効にする <ph id="ph1">`\b\p{Lu}(?&gt;\w*)\b`</ph> です。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, they both produce the same result.</source>
+          <target state="translated">出力を見るとわかるように、どちらも結果は同じになります。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>In many cases, backtracking is essential for matching a regular expression pattern to input text.</source>
+          <target state="translated">正規表現パターンと入力テキストの照合にバックトラッキングが欠かせない場合もよくあります。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>However, excessive backtracking can severely degrade performance and create the impression that an application has stopped responding.</source>
+          <target state="translated">ただし、過度なバックトラッキングが発生すると、極端にパフォーマンスが低下して、アプリケーションが応答しなくなったように見えることがあります。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>In particular, this happens when quantifiers are nested and the text that matches the outer subexpression is a subset of the text that matches the inner subexpression.</source>
+          <target state="translated">この状況が発生するのは、たとえば、量指定子が入れ子になっていて、外側の部分式に一致するテキストが内側の部分式に一致するテキストのサブセットになっている場合です。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>In addition to avoiding excessive backtracking, you should use the timeout feature to ensure that excessive backtracking does not severely degrade regular expression performance.</source>
+          <target state="translated">過度なバックトラッキングの回避に加えて、タイムアウト機能を使用して、過度なバックトラッキングによって、正規表現のパフォーマンスが極端に低下するのを防ぐ必要があります。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Use time-out values<ept id="p1">](#use-time-out-values)</ept> section.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>タイムアウト値を使用する<ept id="p1">](#use-time-out-values)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression pattern <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$`</ph> is intended to match a part number that consists of at least one alphanumeric character.</source>
+          <target state="translated">例として、部品番号に一致するように作られた <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*\$$`</ph> という正規表現パターンについて見てみましょう。この部品番号は、少なくとも 1 文字の英数字で構成されます。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Any additional characters can consist of an alphanumeric character, a hyphen, an underscore, or a period, though the last character must be alphanumeric.</source>
+          <target state="translated">追加の文字では、英数字、ハイフン、アンダースコア、およびピリオドが許容されますが、最後の文字は英数字でなければなりません。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>A dollar sign terminates the part number.</source>
+          <target state="translated">部品番号の終わりはドル記号で示されます。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>In some cases, this regular expression pattern can exhibit extremely poor performance because quantifiers are nested, and because the subexpression <ph id="ph1">`[0-9A-Z]`</ph> is a subset of the subexpression <ph id="ph2">`[-.\w]*`</ph>.</source>
+          <target state="translated">この正規表現パターンは、量指定子が入れ子になっているうえに、部分式 <ph id="ph1">`[0-9A-Z]`</ph> が部分式 <ph id="ph2">`[-.\w]*`</ph> のサブセットであるため、パフォーマンスが極端に低下する可能性があります。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>In these cases, you can optimize regular expression performance by removing the nested quantifiers and replacing the outer subexpression with a zero-width lookahead or lookbehind assertion.</source>
+          <target state="translated">このような場合に正規表現のパフォーマンスを最適化するには、入れ子になった量指定子を削除して、外側の部分式をゼロ幅の先読みアサーションまたは後読みアサーションに置き換えます。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Lookahead and lookbehind assertions are anchors; they do not move the pointer in the input string, but instead look ahead or behind to check whether a specified condition is met.</source>
+          <target state="translated">先読みアサーションと後読みアサーションはアンカーなので、入力文字列内でポインターを移動させることなく、先読みまたは後読みによって、指定された条件が満たされているかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>For example, the part number regular expression can be rewritten as <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])\$$`</ph>.</source>
+          <target state="translated">たとえば、この部品番号の正規表現は <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])\$$`</ph> として書き直すことができます。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>This regular expression pattern is defined as shown in the following table.</source>
+          <target state="translated">この正規表現パターンは、次の表に示すように定義されます。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the input string.</source>
+          <target state="translated">入力文字列の先頭から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">英数字 1 文字に一致します。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The part number must consist of at least this character.</source>
+          <target state="translated">これは、部品番号に最低限必要な文字です。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of any word character, hyphen, or period.</source>
+          <target state="translated">任意の単語文字、ハイフン、またはピリオドの 0 回以上の出現に一致します。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`</ph><ph id="ph2">\$</ph>]</source>
+          <target state="translated"><ph id="ph1">`</ph><ph id="ph2">\$</ph>]</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Match a dollar sign.</source>
+          <target state="translated">ドル記号に一致します。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Look ahead of the ending dollar sign to ensure that the previous character is alphanumeric.</source>
+          <target state="translated">末尾のドル記号を先読みし、前の文字が英数字であることを確認します。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`$`</ph> End the match at the end of the input string.</source>
+          <target state="translated"><ph id="ph1">`$`</ph> 入力文字列の末尾で照合を終了します。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the use of this regular expression to match an array containing possible part numbers.</source>
+          <target state="translated">次の例では、この正規表現を使用して、部品番号を含む配列を照合しています。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers.</source>
+          <target state="translated">.NET の正規表現言語には、入れ子になった量指定子を取り除くために使用できる次の言語要素が含まれています。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>正規表現でのグループ化構成体<ept id="p1">](grouping.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Language element</source>
+          <target state="translated">言語要素</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>Zero-width positive lookahead.</source>
+          <target state="translated">ゼロ幅の肯定先読みです。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Look ahead of the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> matches the input string.</source>
+          <target state="translated">現在の位置からの先読みにより、<bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> が入力文字列に一致するかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Zero-width negative lookahead.</source>
+          <target state="translated">ゼロ幅の否定先読みです。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Look ahead of the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> does not match the input string.</source>
+          <target state="translated">現在の位置からの先読みにより、<bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> が入力文字列に一致しないかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Zero-width positive lookbehind.</source>
+          <target state="translated">ゼロ幅の肯定後読みです。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Look behind the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> matches the input string.</source>
+          <target state="translated">現在の位置からの後読みにより、<bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> が入力文字列に一致するかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>Zero-width negative lookbehind.</source>
+          <target state="translated">ゼロ幅の否定後読みです。</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>Look behind the current position to determine whether <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> does not match the input string.</source>
+          <target state="translated">現在の位置からの後読みにより、<bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> が入力文字列に一致しないかどうかを確認します。</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Use time-out values</source>
+          <target state="translated">タイムアウト値を使用する</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly.</source>
+          <target state="translated">正規表現が正規表現パターンにほぼ一致する入力を処理する場合は、パフォーマンスに大きな影響を与える過度なバックトラッキングに依存することがよくあります。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.</source>
+          <target state="translated">慎重にバックトラッキングの使用を検討し、ほぼ一致する入力に対して正規表現をテストすることに加えて、過度なバックトラッキングが発生した場合にその影響を確実に最小限に抑えるために、必ずタイムアウト値を設定する必要があります。</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The regular expression time-out interval defines the period of time that the regular expression engine will look for a single match before it times out.</source>
+          <target state="translated">正規表現のタイムアウト間隔は、タイムアウトする前に正規表現エンジンが単一の一致を検索する期間を定義します。</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>The default time-out interval is <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept>, which means that the regular expression will not time out.</source>
+          <target state="translated">既定のタイムアウト間隔は <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept> で、正規表現がタイムアウトしないことを意味します。</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>You can override this value and define a time-out interval as follows:</source>
+          <target state="translated">次のようにこの値をオーバーライドし、タイムアウト間隔を定義できます。</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>By providing a time-out value when you instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object by calling the <bpt id="p2">[</bpt>Regex(String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> constructor.</source>
+          <target state="translated"><bpt id="p2">[</bpt>Regex(String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.%23ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> コンストラクターを呼び出すことによって、<bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトをインスタンス化するときに、タイムアウト値を指定します。</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>By calling a static pattern matching method, such as <bpt id="p1">[</bpt>Regex.Match(String, String, RegexOptions, TimeSpan)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> or <bpt id="p2">[</bpt>Regex.Replace(String, String, String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept>, that includes a <bpt id="p3">*</bpt>matchTimeout<ept id="p3">*</ept> parameter.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.Match(String, String, RegexOptions, TimeSpan)<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept>、<bpt id="p2">[</bpt>Regex.Replace(String, String, String, RegexOptions, TimeSpan)<ept id="p2">](xref:System.Text.RegularExpressions.Regex.Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan))</ept> など、<bpt id="p3">*</bpt>matchTimeout<ept id="p3">*</ept> パラメーターを含む静的パターン一致メソッドを呼び出します。</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>If you have defined a time-out interval and a match is not found at the end of that interval, the regular expression method throws a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> exception.</source>
+          <target state="translated">タイムアウト間隔を定義していて、その間隔の終了時に一致が見つからない場合、正規表現メソッドは <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> 例外をスローします。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>In your exception handler, you can choose to retry the match with a longer time-out interval, abandon the match attempt and assume that there is no match, or abandon the match attempt and log the exception information for future analysis.</source>
+          <target state="translated">例外ハンドラーで、タイムアウト間隔を延長して一致を再試行する、一致操作を破棄して一致なしと見なす、または一致操作を破棄して今後の分析のために例外情報を記録することを選択できます。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`GetWordData`</ph> method that instantiates a regular expression with a time-out interval of 350 milliseconds to calculate the number of words and average number of characters in a word in a text document.</source>
+          <target state="translated">次の例では、テキスト ドキュメントの単語の数と 1 つの単語に含まれる平均文字数を計算するために、タイムアウト間隔が 350 ミリ秒の正規表現をインスタンス化する <ph id="ph1">`GetWordData`</ph> メソッドを定義します。</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>If the matching operation times out, the time-out interval is increased by 350 milliseconds and the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is re-instantiated.</source>
+          <target state="translated">一致操作がタイムアウトした場合、タイムアウト間隔は 350 ミリ秒ずつ延長され、<bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> オブジェクトが再インスタンス化されます。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If the new time-out interval exceeds 1 second, the method re-throws the exception to the caller.</source>
+          <target state="translated">新しいタイムアウト間隔が 1 秒を超える場合、メソッドは呼び出し元に例外を再スローします。</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Capture only when necessary</source>
+          <target state="translated">必要なときにのみキャプチャする</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Regular expressions in .NET support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions.</source>
+          <target state="translated">.NET の正規表現では、数多くのグループ化構成体がサポートされています。これらを使用すると、正規表現パターンを 1 つ以上の部分式にグループ化することができます。</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The most commonly used grouping constructs in .NET regular expression language are <bpt id="p1">**</bpt>(<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>, which defines a numbered capturing group, and <bpt id="p4">*</bpt><bpt id="p5">*</bpt>(?&lt;<ept id="p5">*</ept><bpt id="p6">_</bpt>name<ept id="p6">_</ept><ept id="p4">*</ept><bpt id="p7">*</bpt><ph id="ph1">&gt;</ph><ept id="p7">*</ept><bpt id="p8">*</bpt><bpt id="p9">_</bpt>subexpression<ept id="p9">_</ept><ept id="p8">*</ept><bpt id="p10">*</bpt>)<ept id="p10">*</ept>*, which defines a named capturing group.</source>
+          <target state="translated">.NET の正規表現言語で最もよく使用されるグループ化構成体は、番号付きのキャプチャ グループを定義する <bpt id="p1">**</bpt>(<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> と、名前付きのキャプチャ グループを定義する <bpt id="p4">*</bpt><bpt id="p5">*</bpt>(?&lt;<ept id="p5">*</ept><bpt id="p6">_</bpt>name<ept id="p6">_</ept><ept id="p4">*</ept><bpt id="p7">*</bpt><ph id="ph1">&gt;</ph><ept id="p7">*</ept><bpt id="p8">*</bpt><bpt id="p9">_</bpt>subexpression<ept id="p9">_</ept><ept id="p8">*</ept><bpt id="p10">*</bpt>)<ept id="p10">*</ept>* です。</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.</source>
+          <target state="translated">グループ化構成体は、前方参照を作成したり、量指定子を適用する部分式を定義したりするのに欠かせません。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>However, the use of these language elements has a cost.</source>
+          <target state="translated">しかし、これらの言語要素の使用にはコストが伴います。</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>They cause the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> object returned by the <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> property to be populated with the most recent unnamed or named captures, and if a single grouping construct has captured multiple substrings in the input string, they also populate the <bpt id="p3">[</bpt>CaptureCollection<ept id="p3">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> object returned by the <bpt id="p4">[</bpt>Group.Captures<ept id="p4">](xref:System.Text.RegularExpressions.Group.Captures)</ept> property of a particular capturing group with multiple <bpt id="p5">[</bpt>Capture<ept id="p5">](xref:System.Text.RegularExpressions.Capture)</ept> objects.</source>
+          <target state="translated">まず、<bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> プロパティから返される <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> オブジェクトに、最新の名前のないキャプチャまたは名前付きキャプチャが設定されます。また、1 つのグループ化構成体によって入力文字列の複数の部分文字列がキャプチャされた場合は、特定のキャプチャ グループの <bpt id="p4">[</bpt>Group.Captures<ept id="p4">](xref:System.Text.RegularExpressions.Group.Captures)</ept> プロパティから返される <bpt id="p3">[</bpt>CaptureCollection<ept id="p3">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトに複数の <bpt id="p5">[</bpt>Capture<ept id="p5">](xref:System.Text.RegularExpressions.Capture)</ept> オブジェクトが設定されます。</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Often, grouping constructs are used in a regular expression only so that quantifiers can be applied to them, and the groups captured by these subexpressions are not subsequently used.</source>
+          <target state="translated">正規表現内で量指定子を適用できるようにするためだけにグループ化構成体が使用されていて、それらの部分式によってキャプチャされたグループがその後に使用されていない場合もよくあります。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`\b(\w+[;,]?\s?)+[.?!]`</ph> is designed to capture an entire sentence.</source>
+          <target state="translated">例として、文全体をキャプチャするために作られた正規表現 <ph id="ph1">`\b(\w+[;,]?\s?)+[.?!]`</ph> について見てみましょう。</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>The following table describes the language elements in this regular expression pattern and their effect on the <bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> object's <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> and <bpt id="p3">[</bpt>Group.Captures<ept id="p3">](xref:System.Text.RegularExpressions.Group.Captures)</ept> collections.</source>
+          <target state="translated">次の表は、この正規表現パターン内の言語要素と、<bpt id="p1">[</bpt>Match<ept id="p1">](xref:System.Text.RegularExpressions.Match)</ept> オブジェクトの <bpt id="p2">[</bpt>Match.Groups<ept id="p2">](xref:System.Text.RegularExpressions.Match.Groups)</ept> コレクションおよび <bpt id="p3">[</bpt>Group.Captures<ept id="p3">](xref:System.Text.RegularExpressions.Group.Captures)</ept> コレクションに対する影響を示しています。</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">パターン</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">ワード境界から照合を開始します。</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">1 つ以上の単語文字に一致します。</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Match zero or one comma or semicolon.</source>
+          <target state="translated">0 個または 1 個のコンマまたはセミコロンに一致します。</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Match zero or one white-space character.</source>
+          <target state="translated">0 個または 1 個の空白文字と一致します。</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Match one or more occurrences of one or more word characters followed by an optional comma or semicolon followed by an optional white-space character.</source>
+          <target state="translated">1 個以上の単語文字の後に省略可能なコンマまたはセミコロンと省略可能な空白文字が続くパターンの 1 回以上の出現に一致します。</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>This defines the first capturing group, which is necessary so that the combination of multiple word characters (that is, a word) followed by an optional punctuation symbol will be repeated until the regular expression engine reaches the end of a sentence.</source>
+          <target state="translated">これにより、最初のキャプチャ グループが定義されます。このグループは、複数の単語文字の組み合わせ (つまり単語) の後に省略可能な区切り記号が続くパターンが、正規表現エンジンが文の終わりに到達するまで繰り返されるようにするために必要です。</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>Match a period, question mark, or exclamation point.</source>
+          <target state="translated">ピリオド、疑問符、または感嘆符に一致します。</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>As the following example shows, when a match is found, both the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> and <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> objects are populated with captures from the match.</source>
+          <target state="translated">次の例に示すように、一致が見つかると、<bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> オブジェクトと <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> オブジェクトの両方に一致からのキャプチャが設定されます。</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>In this case, the capturing group <ph id="ph1">`(\w+[;,]?\s?)`</ph> exists so that the <bpt id="p1">**</bpt><ph id="ph2">+</ph><ept id="p1">**</ept> quantifier can be applied to it, which enables the regular expression pattern to match each word in a sentence.</source>
+          <target state="translated">ここでは、<bpt id="p1">**</bpt><ph id="ph2">+</ph><ept id="p1">**</ept> 量指定子を適用できるようにするためにキャプチャ グループ <ph id="ph1">`(\w+[;,]?\s?)`</ph> が使用されているため、正規表現パターンが文の各単語に一致します。</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Otherwise, it would match the last word in a sentence.</source>
+          <target state="translated">そうでない場合は、文の最後の単語に一致します。</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>When you use subexpressions only to apply quantifiers to them, and you are not interested in the captured text, you should disable group captures.</source>
+          <target state="translated">量指定子を適用するためだけに部分式を使用していて、キャプチャされたテキストは特に必要ないという場合は、グループ キャプチャを無効にする必要があります。</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element prevents the group to which it applies from capturing matched substrings.</source>
+          <target state="translated">たとえば、<bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 言語要素をグループに適用すると、そのグループでは、一致した部分文字列がキャプチャされなくなります。</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>In the following example, the regular expression pattern from the previous example is changed to <ph id="ph1">`\b(?:\w+[;,]?\s?)+[.?!]`</ph>.</source>
+          <target state="translated">次の例では、前の例の正規表現パターンが <ph id="ph1">`\b(?:\w+[;,]?\s?)+[.?!]`</ph> に変更されています。</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>As the output shows, it prevents the regular expression engine from populating the <bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> and <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> collections.</source>
+          <target state="translated">出力を見るとわかるように、これにより、<bpt id="p1">[</bpt>GroupCollection<ept id="p1">](xref:System.Text.RegularExpressions.GroupCollection)</ept> コレクションと <bpt id="p2">[</bpt>CaptureCollection<ept id="p2">](xref:System.Text.RegularExpressions.CaptureCollection)</ept> コレクションが設定されなくなります。</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>You can disable captures in one of the following ways:</source>
+          <target state="translated">キャプチャを無効にするには次のような方法があります。</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?:<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 言語要素を使用します。</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>This element prevents the capture of matched substrings in the group to which it applies.</source>
+          <target state="translated">この要素をグループに適用すると、そのグループでは、一致した部分文字列がキャプチャされなくなります。</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>It does not disable substring captures in any nested groups.</source>
+          <target state="translated">入れ子になったグループによる部分文字列のキャプチャは無効になりません。</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>RegexOptions.ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> option.</source>
+          <target state="translated"><bpt id="p1">[</bpt>RegexOptions.ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> オプションを使用します。</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>It disables all unnamed or implicit captures in the regular expression pattern.</source>
+          <target state="translated">これにより、正規表現パターン内の名前のないキャプチャ (暗黙的なキャプチャ) がすべて無効になります。</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>When you use this option, only substrings that match named groups defined with the <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept><bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept> language element can be captured.</source>
+          <target state="translated">このオプションを使用した場合は、<bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept><bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept> 言語要素を使用して定義した名前付きグループに一致する部分文字列のみがキャプチャされます。</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> flag can be passed to the options parameter of a <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> class constructor or to the options parameter of a <bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept> static matching method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ExplicitCapture<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture)</ept> フラグは、<bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> クラス コンストラクターの options パラメーターか、<bpt id="p3">[</bpt>Regex<ept id="p3">](xref:System.Text.RegularExpressions.Regex)</ept> の静的な一致メソッドの options パラメーターに渡すことができます。</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>n<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>(?imnsx)<ept id="p2">**</ept> language element.</source>
+          <target state="translated"><bpt id="p2">**</bpt>(?imnsx)<ept id="p2">**</ept> 言語要素の <bpt id="p1">**</bpt>n<ept id="p1">**</ept> オプションを使用します。</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears.</source>
+          <target state="translated">これにより、正規表現パターンでこの要素が出現する位置以降の名前のないキャプチャ (暗黙的なキャプチャ) がすべて無効になります。</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>Captures are disabled either until the end of the pattern or until the <bpt id="p1">**</bpt>(-n)<ept id="p1">**</ept> option enables unnamed or implicit captures.</source>
+          <target state="translated">パターンの末尾に到達するか、<bpt id="p1">**</bpt>(-n)<ept id="p1">**</ept> オプションによって名前のないキャプチャ (暗黙的なキャプチャ) が有効になるまで、キャプチャは無効のままです。</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Miscellaneous constructs in regular expressions<ept id="p1">](miscellaneous.md)</ept>.</source>
+          <target state="translated">詳細については、「<bpt id="p1">[</bpt>正規表現でのその他の構成体<ept id="p1">](miscellaneous.md)</ept>」を参照してください。</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">**</bpt>n<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>(?imnsx:<ept id="p2">**</ept><bpt id="p3">_</bpt>subexpression<ept id="p3">_</ept><bpt id="p4">**</bpt>)<ept id="p4">**</ept> language element.</source>
+          <target state="translated"><bpt id="p2">**</bpt>(?imnsx:<ept id="p2">**</ept><bpt id="p3">_</bpt>subexpression<ept id="p3">_</ept><bpt id="p4">**</bpt>)<ept id="p4">**</ept> 言語要素の <bpt id="p1">**</bpt>n<ept id="p1">**</ept> オプションを使用します。</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>This option disables all unnamed or implicit captures in <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>.</source>
+          <target state="translated">これにより、<bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> 内の名前のないキャプチャ (暗黙的なキャプチャ) がすべて無効になります。</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Captures by any unnamed or implicit nested capturing groups are disabled as well.</source>
+          <target state="translated">入れ子になった名前のない (暗黙的な) キャプチャ グループによるキャプチャも無効になります。</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Related topics</source>
+          <target state="translated">関連トピック</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">タイトル</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Details of regular expression behavior<ept id="p1">](regex-behavior.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>正規表現の動作の詳細<ept id="p1">](regex-behavior.md)</ept></target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Examines the implementation of the regular expression engine in .NET.</source>
+          <target state="translated">.NET の正規表現エンジンの実装について検討します。</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.</source>
+          <target state="translated">正規表現の柔軟性に焦点を当てて、正規表現エンジンの効率的かつ堅牢な動作を確保するための開発者の責任について説明します。</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking in regular expressions<ept id="p1">](backtracking.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>正規表現におけるバックトラッキング<ept id="p1">](backtracking.md)</ept></target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>Explains what backtracking is and how it affects regular expression performance, and examines language elements that provide alternatives to backtracking.</source>
+          <target state="translated">バックトラッキングの概要と、正規表現のパフォーマンスに与える影響について説明し、バックトラッキングの代わりに使用できる言語要素について検討します。</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>正規表現言語 - クイック リファレンス<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.</source>
+          <target state="translated">.NET の正規表現言語の言語要素について説明します。各言語要素の詳細な説明へのリンクも含まれています。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
