@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85c9d450be48c553ea3a1f1a0f16c298941fa325</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\display-dates.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">62f798ead5a51e7d5f98f9d6adfc897b6016b74f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">24e5cd9876ee5e877c57270f20d350929e40499b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">Gewusst wie: Anzeigen von Datumsangaben in nicht gregorianischen Kalendern</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to display dates in non-gregorian calendars</source>
+          <target state="translated">Anzeigen von Datumsangaben in nicht gregorianischen Kalendern</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: display dates in non-gregorian calendars</source>
+          <target state="translated">Gewusst wie: Anzeigen von Datumsangaben in nicht gregorianischen Kalendern</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types use the Gregorian calendar as their default calendar.</source>
+          <target state="translated">Die Typen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> und <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> verwenden den gregorianischen Kalender als Standardkalender.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means that calling a date and time value's <ph id="ph1">`ToString`</ph> method displays the string representation of that date and time in the Gregorian calendar, even if that date and time was created using another calendar.</source>
+          <target state="translated">Das bedeutet, dass ein Aufruf der <ph id="ph1">`ToString`</ph>-Methode eines Datums- und Uhrzeitwerts die Zeichenfolgendarstellung dieses Datums und dieser Uhrzeit im gregorianischen Kalender anzeigt, selbst wenn dieses Datum und diese Uhrzeit in einem anderen Kalender erstellt wurden.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This is illustrated in the following example, which uses two different ways to create a date and time value with the Persian calendar, but still displays those date and time values in the Gregorian calendar when it calls the <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept> method.</source>
+          <target state="translated">Dies wird im folgenden Beispiel veranschaulicht. Hierbei werden zwei verschiedene Möglichkeiten verwendet, um einen Datums- und Uhrzeitwert mit dem persischen Kalender zu erstellen. Beim Aufruf der <bpt id="p1">[</bpt>ToString<ept id="p1">](xref:System.DateTime.ToString)</ept>-Methode werden diese Datums- und Uhrzeitwerte aber weiterhin im gregorianischen Kalender angezeigt.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This example reflects two commonly used but incorrect techniques for displaying the date in a particular calendar.</source>
+          <target state="translated">Dieses Beispiel zeigt zwei häufig verwendete, aber falsche Verfahren zum Anzeigen des Datums in einem bestimmten Kalender.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Two different techniques can be used to display the date in a particular calendar.</source>
+          <target state="translated">Zum Anzeigen des Datums in einem bestimmten Kalender können zwei verschiedene Verfahren verwendet werden.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The first requires that the calendar be the default calendar for a particular culture.</source>
+          <target state="translated">Für das erste Verfahren muss der Kalender der Standardkalender für eine bestimmte Kultur sein.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The second can be used with any calendar.</source>
+          <target state="translated">Das zweite kann mit jedem beliebigen Kalender verwendet werden.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To display the date for a culture's default calendar</source>
+          <target state="translated">Anzeigen des Datums für den Standardkalender einer Kultur</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">Instanziieren Sie ein aus der <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept>-Klasse abgeleitetes Kalenderobjekt, das den zu verwendenden Kalender darstellt.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Instantiate a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object representing the culture whose formatting will be used to display the date.</source>
+          <target state="translated">Instanziieren Sie ein <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt, das die Kultur darstellt, deren Formatierung für die Datumsanzeige verwendet wird.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method to determine whether the calendar object is a member of the array returned by the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated">Rufen Sie die <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept>-Methode auf, um zu ermitteln, ob das Kalenderobjekt ein Member des von der <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept>-Eigenschaft zurückgegebenen Arrays ist.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This indicates that the calendar can serve as the default calendar for the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object.</source>
+          <target state="translated">Wenn dies der Fall ist, kann der Kalender als Standardkalender für das <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt dienen.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If it is not a member of the array, follow the instructions in the "To Display the Date in Any Calendar" section.</source>
+          <target state="translated">Wenn das Objekt kein Member des Arrays ist, befolgen Sie die Anweisungen im Abschnitt „Anzeigen des Datums in einem beliebigen Kalender“.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Assign the calendar object to the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property of the <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept> object returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated">Weisen Sie das Kalenderobjekt der <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept>-Eigenschaft des <bpt id="p2">[</bpt>DateTimeFormatInfo<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo)</ept>-Objekts zu, das von der <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept>-Eigenschaft zurückgegeben wird.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> class also has a <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Klasse besitzt auch eine <bpt id="p2">[</bpt>Calendar<ept id="p2">](xref:System.Globalization.CultureInfo.Calendar)</ept>-Eigenschaft.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property.</source>
+          <target state="translated">Diese ist jedoch schreibgeschützt und konstant. Sie ändert sich nicht, um den neuen, der <bpt id="p1">[</bpt>DateTimeFormatInfo.Calendar<ept id="p1">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept>-Eigenschaft zugewiesenen Standardkalender widerzuspiegeln.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Call either the <bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept> or the <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept> method, and pass it the <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept> object whose default calendar was modified in the previous step.</source>
+          <target state="translated">Rufen Sie entweder die <bpt id="p1">[</bpt>DateTime.ToString(IFormatProvider)<ept id="p1">](xref:System.DateTime.ToString(System.IFormatProvider))</ept>-Methode oder die <bpt id="p2">[</bpt>DateTime.ToString(String,IFormatProvider)<ept id="p2">](xref:System.DateTime.ToString(System.String,System.IFormatProvider))</ept>-Methode auf, und übergeben Sie das <bpt id="p3">[</bpt>CultureInfo<ept id="p3">](xref:System.Globalization.CultureInfo)</ept>-Objekt, dessen Standardkalender im vorherigen Schritt geändert wurde.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To display the date in any calendar</source>
+          <target state="translated">Anzeigen des Datums in einem beliebigen Kalender</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Instantiate a calendar object derived from the <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> class that represents the calendar to be used.</source>
+          <target state="translated">Instanziieren Sie ein aus der <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept>-Klasse abgeleitetes Kalenderobjekt, das den zu verwendenden Kalender darstellt.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine which date and time elements should appear in the string representation of the date and time value.</source>
+          <target state="translated">Bestimmen Sie, welche Datums- und Uhrzeitelemente in der Zeichenfolgendarstellung des Datums- und Uhrzeitwerts angezeigt werden sollen.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>For each date and time element that you want to display, call the calendar object's <ph id="ph1">`Get…`</ph> method.</source>
+          <target state="translated">Rufen Sie für jedes Datums- und Uhrzeitelement, das Sie anzeigen möchten, die <ph id="ph1">`Get…`</ph>-Methode des Kalenderobjekts auf.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following methods are available:</source>
+          <target state="translated">Die folgenden Methoden sind verfügbar:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept>, to display the year in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetYear<ept id="p1">](xref:System.Globalization.Calendar.GetYear(System.DateTime))</ept> zum Anzeigen des Jahrs im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept>, to display the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMonth<ept id="p1">](xref:System.Globalization.Calendar.GetMonth(System.DateTime))</ept> zum Anzeigen des Monats im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept>, to display the number of the day of the month in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetDayOfMonth<ept id="p1">](xref:System.Globalization.Calendar.GetDayOfMonth(System.DateTime))</ept> zum Anzeigen der Zahl, die dem Tag des Monats im entsprechenden Kalender entspricht.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept>, to display the hour of the day in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetHour<ept id="p1">](xref:System.Globalization.Calendar.GetHour(System.DateTime))</ept> zum Anzeigen der Stunde des Tages im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept>, to display the minutes in the hour in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMinute<ept id="p1">](xref:System.Globalization.Calendar.GetMinute(System.DateTime))</ept> zum Anzeigen der Minuten in der Stunde im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept>, to display the seconds in the minute in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetSecond<ept id="p1">](xref:System.Globalization.Calendar.GetSecond(System.DateTime))</ept> zum Anzeigen der Sekunden in der Minute im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept> , to display the milliseconds in the second in the appropriate calendar.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GetMilliseconds<ept id="p1">](xref:System.Globalization.Calendar.GetMilliseconds(System.DateTime))</ept> zum Anzeigen der Millisekunden in der Sekunde im entsprechenden Kalender.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Beispiel</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The example displays a date using two different calendars.</source>
+          <target state="translated">Das Beispiel zeigt ein Datum mithilfe von zwei verschiedenen Kalendern an.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It displays the date after defining the Hijri calendar as the default calendar for the ar-JO culture, and displays the date using the Persian calendar, which is not supported as an optional calendar by the fa-IR culture.</source>
+          <target state="translated">Es zeigt das Datum an, nachdem der Hijri-Kalender als Standardkalender für die Kultur „ar-JO“ definiert wurde, und es zeigt das Datum unter Verwendung des persischen Kalenders an, der nicht als optionaler Kalender von der fa-IR-Kultur unterstützt wird.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Each <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object can support one or more calendars, which are indicated by the <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> property.</source>
+          <target state="translated">Jedes <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt kann mindestens einen Kalender unterstützen, die von der <bpt id="p2">[</bpt>OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept>-Eigenschaft angegeben werden.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>One of these is designated as the culture's default calendar and is returned by the read-only <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept> property.</source>
+          <target state="translated">Einer dieser Kalender ist als Standardkalender der Kultur festgelegt und wird von der schreibgeschützten <bpt id="p1">[</bpt>CultureInfo.Calendar<ept id="p1">](xref:System.Globalization.CultureInfo.Calendar)</ept>-Eigenschaft zurückgegeben.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Another of the optional calendars can be designated as the default by assigning a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object that represents that calendar to the <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept> property returned by the <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept> property.</source>
+          <target state="translated">Ein anderer der optionalen Kalender kann als Standard festgelegt werden, indem ein <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept>-Objekt zugewiesen wird, das diesen Kalender für die <bpt id="p2">[</bpt>DateTimeFormatInfo.Calendar<ept id="p2">](xref:System.Globalization.DateTimeFormatInfo.Calendar)</ept>-Eigenschaft darstellt, die von der <bpt id="p3">[</bpt>CultureInfo.DateTimeFormat<ept id="p3">](xref:System.Globalization.CultureInfo.DateTimeFormat)</ept>-Eigenschaft zurückgegeben wird.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>However, some calendars, such as the Persian calendar represented by the <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept> class, do not serve as optional calendars for any culture.</source>
+          <target state="translated">Einige Kalender jedoch, wie z.B. der von der <bpt id="p1">[</bpt>PersianCalendar<ept id="p1">](xref:System.Globalization.PersianCalendar)</ept>-Klasse dargestellte persische Kalender, dienen nicht als optionale Kalender für irgendeine Kultur.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The example defines a reusable calendar utility class, <ph id="ph1">`CalendarUtility`</ph>, to handle many of the details of generating the string representation of a date using a particular calendar.</source>
+          <target state="translated">Das Beispiel definiert eine wiederverwendbare Kalenderhilfsprogrammklasse, <ph id="ph1">`CalendarUtility`</ph>, um viele der Details beim Generieren der Zeichenfolgendarstellung eines Datums mithilfe eines bestimmten Kalenders zu verarbeiten.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CalendarUtility`</ph> class has the following members:</source>
+          <target state="translated">Die <ph id="ph1">`CalendarUtility`</ph>-Klasse verfügt über die folgenden Member:</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A parameterized constructor whose single parameter is a <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept> object in which a date is to be represented.</source>
+          <target state="translated">Einen parametrisierten Konstruktor, dessen einziger Parameter ein <bpt id="p1">[</bpt>Calendar<ept id="p1">](xref:System.Globalization.Calendar)</ept>-Objekt ist, in dem ein Datum dargestellt werden soll.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This is assigned to a private field of the class.</source>
+          <target state="translated">Dieser wird einem privaten Klassenfeld zugewiesen.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CalendarExists`</ph>, a private method that returns a Boolean value indicating whether the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object is supported by the <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object that is passed to the method as a parameter.</source>
+          <target state="translated"><ph id="ph1">`CalendarExists`</ph>, eine private Methode, die einen booleschen Wert zurückgibt, um anzugeben, ob der durch das <ph id="ph2">`CalendarUtility`</ph>-Objekt dargestellte Kalender von dem <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt unterstützt wird, das als Parameter an die Methode übergeben wird.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The method wraps a call to the <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method, to which it passes the <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept> array.</source>
+          <target state="translated">Die Methode umschließt einen Aufruf der <bpt id="p1">[</bpt>Array.Exists<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p1">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept>-Methode und übergibt dieser das <bpt id="p2">[</bpt>CultureInfo.OptionalCalendars<ept id="p2">](xref:System.Globalization.CultureInfo.OptionalCalendars)</ept>-Array.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`HasSameName`</ph>, a private method assigned to the <bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept> delegate that is passed as a parameter to the <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept> method.</source>
+          <target state="translated"><ph id="ph1">`HasSameName`</ph>, eine dem <bpt id="p1">[</bpt>Predicate<ph id="ph2">&amp;lt;</ph>T<ph id="ph3">&amp;gt;</ph><ept id="p1">](xref:System.Predicate%601)</ept>-Delegaten zugeordnete private Methode, die als Parameter an die <bpt id="p2">[</bpt>Array.Exists<ph id="ph4">&amp;lt;</ph>T<ph id="ph5">&amp;gt;</ph><ept id="p2">](xref:System.Array.Exists``1(``0[],System.Predicate{``0}))</ept>-Methode übergeben wird.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Each member of the array is passed to the method until the method returns <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">Jeder Member des Arrays wird an die Methode übergeben, bis die Methode <ph id="ph1">`true`</ph> zurückgibt.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The method determines whether the name of an optional calendar is the same as the calendar represented by the <ph id="ph1">`CalendarUtility`</ph> object.</source>
+          <target state="translated">Die Methode bestimmt, ob der Name eines optionalen Kalenders dem Kalender entspricht, der durch das <ph id="ph1">`CalendarUtility`</ph>-Objekt dargestellt wird.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DisplayDate`</ph>, an overloaded public method that is passed two parameters: either a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value to express in the calendar represented by the <ph id="ph2">`CalendarUtility`</ph> object; and the culture whose formatting rules are to be used.</source>
+          <target state="translated"><ph id="ph1">`DisplayDate`</ph>, eine überladene öffentliche Methode, an die zwei Parameter übergeben werden: erstens entweder ein <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- oder ein <bpt id="p2">[</bpt>DateTimeOffset-Wert<ept id="p2">](xref:System.DateTimeOffset)</ept>, der in dem durch das <ph id="ph2">`CalendarUtility`</ph>-Objekt dargestellten Kalender ausgedrückt werden soll. Zweitens wird die Kultur übergeben, deren Formatierungsregeln verwendet werden sollen.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.</source>
+          <target state="translated">Das Verhalten bei der Rückgabe der Zeichenfolgendarstellung eines Datums richtet sich danach, ob der Zielkalender von der Kultur unterstützt wird, deren Formatierungsregeln verwendet werden sollen.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Regardless of the calendar used to create a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value in this example, that value is typically expressed as a Gregorian date.</source>
+          <target state="translated">Unabhängig von dem Kalender, der in diesem Beispiel zum Erstellen eines <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept>- oder <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>-Werts verwendet wird, wird dieser Wert üblicherweise als Gregorianisches Datum ausgedrückt.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This is because the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> and <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> types do not preserve any calendar information.</source>
+          <target state="translated">Dies liegt daran, dass die Typen <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> und <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> keine Kalenderinformationen beibehalten.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001.</source>
+          <target state="translated">Intern werden sie als Anzahl von Zeiteinheiten (Ticks) dargestellt, die seit Mitternacht des 1. Januar 0001 verstrichen sind.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The interpretation of that number depends on the calendar.</source>
+          <target state="translated">Die Interpretation dieser Zahl hängt vom Kalender ab.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For most cultures, the default calendar is the Gregorian calendar.</source>
+          <target state="translated">In den meisten Kulturen ist der Gregorianische Kalender der Standardkalender.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Durchführen von Formatierungsvorgängen<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

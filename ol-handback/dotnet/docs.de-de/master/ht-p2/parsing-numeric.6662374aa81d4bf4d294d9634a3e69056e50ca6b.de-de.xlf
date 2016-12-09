@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">209d24d32eb3b235ff2fde2ef11ffd0ee4e930cf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\parsing-numeric.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fb77fd1d811f74aba29543daa35b6c396627dcb4</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3bcbc1ccfd94d660c1fa3e89c50e84c504b40f26</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">Analysieren numerischer Zeichenfolgen in .NET</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">Analysieren numerischer Zeichenfolgen in .NET</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Parsing numeric strings in .NET</source>
+          <target state="translated">Analysieren numerischer Zeichenfolgen in .NET</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>All numeric types have two static parsing methods, <ph id="ph1">`Parse`</ph> and <ph id="ph2">`TryParse`</ph>, that you can use to convert the string representation of a number into a numeric type.</source>
+          <target state="translated">Alle numerischen Typen weisen zwei statische Analysemethoden auf, <ph id="ph1">`Parse`</ph> und <ph id="ph2">`TryParse`</ph>, mit denen Sie die Zeichenfolgendarstellung einer Zahl in einen numerischen Typ konvertieren können.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>These methods enable you to parse strings that were produced by using the format strings documented in <bpt id="p1">[</bpt>Standard Numeric Format Strings<ept id="p1">](standard-numeric.md)</ept> and <bpt id="p2">[</bpt>Custom Numeric Format Strings<ept id="p2">](custom-numeric.md)</ept>.</source>
+          <target state="translated">Mit diesen Methoden können Sie Zeichenfolgen analysieren, die mithilfe der Formatzeichenfolgen erstellt wurden, die unter <bpt id="p1">[</bpt>Standardformatzeichenfolgen für Zahlen<ept id="p1">](standard-numeric.md)</ept> und <bpt id="p2">[</bpt>Benutzerdefinierte Zahlenformatzeichenfolgen<ept id="p2">](custom-numeric.md)</ept> dokumentiert sind.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>By default, the <ph id="ph1">`Parse`</ph> and <ph id="ph2">`TryParse`</ph> methods can successfully convert strings that contain integral decimal digits only to integer values.</source>
+          <target state="translated">In der Standardeinstellung können die Methoden <ph id="ph1">`Parse`</ph> und <ph id="ph2">`TryParse`</ph> Zeichenfolgen, die nur Vorkommastellen enthalten, erfolgreich in ganzzahlige Werte konvertieren.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values.</source>
+          <target state="translated">Sie können Zeichenfolgen, die Vor- und Nachkommastellen, Gruppentrennzeichen und ein Dezimaltrennzeichen enthalten, erfolgreich in Gleitkommawerte konvertieren.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Parse`</ph> method throws an exception if the operation fails, whereas the <ph id="ph2">`TryParse`</ph> method returns <ph id="ph3">`false`</ph>.</source>
+          <target state="translated">Die <ph id="ph1">`Parse`</ph>-Methode löst eine Ausnahme aus, wenn der Vorgang einen Fehler verursacht, wohingegen die <ph id="ph2">`TryParse`</ph>-Methode <ph id="ph3">`false`</ph> zurückgibt.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Parsing and format providers</source>
+          <target state="translated">Analyse und Formatanbieter</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Typically, the string representations of numeric values differ by culture.</source>
+          <target state="translated">In der Regel unterscheiden sich die Zeichenfolgendarstellungen numerischer Werte je nach Kultur.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Elements of numeric strings such as currency symbols, group (or thousands) separators, and decimal separators all vary by culture.</source>
+          <target state="translated">Elemente numerischer Zeichenfolgen wie Währungssymbole, Gruppentrennzeichen (oder Tausendertrennzeichen) und Dezimaltrennzeichen variieren alle je nach Kultur.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations.</source>
+          <target state="translated">Analysemethoden verwenden entweder implizit oder explizit einen Formatanbieter, der diese kulturspezifischen Variationen erkennt.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If no format provider is specified in a call to the <ph id="ph1">`Parse`</ph> or <ph id="ph2">`TryParse`</ph> method, the format provider associated with the current thread culture (the <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> object returned by the <bpt id="p2">[</bpt>NumberFormatInfo.CurrentInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> property) is used.</source>
+          <target state="translated">Wird in einem Aufruf der <ph id="ph1">`Parse`</ph>- oder der <ph id="ph2">`TryParse`</ph>-Methode kein Formatanbieter angegeben, so wird der der aktuellen Threadkultur zugeordnete Formatanbieter verwendet (das von der <bpt id="p2">[</bpt>NumberFormatInfo.CurrentInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept>-Eigenschaft zurückgegebene <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept>-Objekt).</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A format provider is represented by an <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> implementation.</source>
+          <target state="translated">Ein Formatanbieter wird durch eine <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept>-Implementierung dargestellt.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This interface has a single member, the <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept> method, whose single parameter is a <bpt id="p2">[</bpt>Type<ept id="p2">](xref:System.Type)</ept> object that represents the type to be formatted.</source>
+          <target state="translated">Diese Schnittstelle verfügt über einen einzelnen Member, die <bpt id="p1">[</bpt>GetFormat<ept id="p1">](xref:System.IFormatProvider.GetFormat(System.Type))</ept>-Methode, deren einziger Parameter ein <bpt id="p2">[</bpt>Type<ept id="p2">](xref:System.Type)</ept>-Objekt ist, das den zu formatierenden Typ darstellt.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This method returns the object that provides formatting information.</source>
+          <target state="translated">Diese Methode gibt das Objekt mit den Formatierungsinformationen zurück.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>.NET supports the following two <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept> implementations for parsing numeric strings:</source>
+          <target state="translated">.NET unterstützt die folgenden beiden <bpt id="p1">[</bpt>IFormatProvider<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrentInfo)</ept>-Implementierungen zur Analyse numerischer Zeichenfolgen:</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> object whose <bpt id="p2">[</bpt>CultureInfo.GetFormat<ept id="p2">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept> method returns a <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept> object that provides culture-specific formatting information.</source>
+          <target state="translated">Ein <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>-Objekt, dessen <bpt id="p2">[</bpt>CultureInfo.GetFormat<ept id="p2">](xref:System.Globalization.CultureInfo.GetFormat(System.Type))</ept>-Methode ein <bpt id="p3">[</bpt>NumberFormatInfo<ept id="p3">](xref:System.Globalization.NumberFormatInfo)</ept>-Objekt zurückgibt, das kulturspezifische Formatierungsinformationen bereitstellt.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept> object whose <bpt id="p2">[</bpt>NumberFormatInfo.GetFormat<ept id="p2">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept> method returns itself.</source>
+          <target state="translated">Ein <bpt id="p1">[</bpt>NumberFormatInfo<ept id="p1">](xref:System.Globalization.NumberFormatInfo)</ept>-Objekt, dessen <bpt id="p2">[</bpt>NumberFormatInfo.GetFormat<ept id="p2">](xref:System.Globalization.NumberFormatInfo.GetFormat(System.Type))</ept>-Methode sich selbst zurückgibt.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following example tries to convert each string in an array to a <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept> value.</source>
+          <target state="translated">Im folgenden Beispiel wird versucht, jede Zeichenfolge in einem Array in einen <bpt id="p1">[</bpt>Double<ept id="p1">](xref:System.Double)</ept>-Wert zu konvertieren.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>It first tries to parse the string by using a format provider that reflects the conventions of the English (United States) culture.</source>
+          <target state="translated">Zuerst wird versucht, die Zeichenfolge anhand eines Formatanbieters zu analysieren, der die Konventionen der Kultur „Englisch (USA)“ wiedergibt.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If this operation throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>, it tries to parse the string by using a format provider that reflects the conventions of the French (France) culture.</source>
+          <target state="translated">Wenn dieser Vorgang eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> auslöst, wird versucht, die Zeichenfolge anhand eines Formatanbieters zu analysieren, der die Konventionen der Kultur „Französisch (Frankreich)“ darstellt.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Parsing and NumberStyles values</source>
+          <target state="translated">Analyse und NumberStyles-Werte</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The style elements (such as white space, group separators, and decimal separator) that the parse operation can handle are defined by a <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration value.</source>
+          <target state="translated">Die Stilelemente (z.B. Leerzeichen, Gruppentrennzeichen und Dezimaltrennzeichen), die der Analysevorgang verarbeiten kann, werden durch einen <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept>-Enumerationswert definiert.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>By default, strings that represent integer values are parsed by using the <bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept> value, which permits only numeric digits, leading and trailing white space, and a leading sign.</source>
+          <target state="translated">Standardmäßig werden Zeichenfolgen, die ganzzahlige Werte darstellen, über den <bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept>-Wert analysiert, der nur Ziffern, vorangestellte und nachfolgende Leerzeichen sowie ein Vorzeichen zulässt.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Strings that represent floating-point values are parsed using a combination of the <bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept> and <bpt id="p2">[</bpt>NumberStyles.AllowThousands<ept id="p2">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> values; this composite style permits decimal digits along with leading and trailing white space, a leading sign, a decimal separator, a group separator, and an exponent.</source>
+          <target state="translated">Zeichenfolgen, die Gleitkommawerte darstellen, werden mithilfe einer Kombination der Werte <bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept> und <bpt id="p2">[</bpt>NumberStyles.AllowThousands<ept id="p2">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> analysiert. Dieser zusammengesetzte Stil lässt Dezimalstellen sowie vorangestellte und nachfolgende Leerzeichen, ein Vorzeichen, ein Dezimaltrennzeichen, ein Gruppentrennzeichen und einen Exponenten zu.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>By calling an overload of the <ph id="ph1">`Parse`</ph> or <ph id="ph2">`TryParse`</ph> method that includes a parameter of type <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> and setting one or more <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> flags, you can control the style elements that can be present in the string for the parse operation to succeed.</source>
+          <target state="translated">Durch den Aufruf einer Überladung der <ph id="ph1">`Parse`</ph>- oder der <ph id="ph2">`TryParse`</ph>-Methode mit einem Parameter vom Typ <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> und durch Festlegen von <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept>-Flags können Sie die Stilelemente steuern, die in der Zeichenfolge vorhanden sein dürfen, damit der Analysevorgang erfolgreich durchgeführt werden kann.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For example, a string that contains a group separator cannot be converted to an <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept> value by using the <bpt id="p2">[</bpt>Int32.Parse(String)<ept id="p2">](xref:System.Int32.Parse(System.String))</ept> method.</source>
+          <target state="translated">Beispielsweise kann eine Zeichenfolge, die ein Gruppentrennzeichen enthält, nicht mithilfe der <bpt id="p2">[</bpt>Int32.Parse(String)<ept id="p2">](xref:System.Int32.Parse(System.String))</ept>-Methode in einen <bpt id="p1">[</bpt>Int32<ept id="p1">](xref:System.Int32)</ept>-Wert konvertiert werden.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>However, the conversion succeeds if you use the <bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> flag, as the following example illustrates.</source>
+          <target state="translated">Die Konvertierung ist jedoch erfolgreich, wenn Sie das <bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept>-Flag verwenden, wie im folgenden Beispiel veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Warning<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Warnung<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The parse operation always uses the formatting conventions of a particular culture.</source>
+          <target state="translated">Beim Analysevorgang werden immer die Formatierungskonventionen einer bestimmten Kultur verwendet.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If you do not specify a culture by passing a <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept> object, the culture associated with the current thread is used.</source>
+          <target state="translated">Wenn Sie keine Kultur durch Übergabe eines <bpt id="p1">[</bpt>CultureInfo<ept id="p1">](xref:System.Globalization.CultureInfo)</ept>- oder <bpt id="p2">[</bpt>NumberFormatInfo<ept id="p2">](xref:System.Globalization.NumberFormatInfo)</ept>-Objekts angeben, wird die dem aktuellen Thread zugeordnete Kultur verwendet.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following table lists the members of the <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration and describes the effect that they have on the parsing operation.</source>
+          <target state="translated">Die folgende Tabelle enthält die Member der <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept>-Enumeration und beschreibt, wie diese sich auf den Analysevorgang auswirken.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>NumberStyles value</source>
+          <target state="translated">NumberStyles-Wert</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Effect on the string to be parsed</source>
+          <target state="translated">Auswirkung auf die zu analysierende Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.None<ept id="p1">](xref:System.Globalization.NumberStyles.None)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.None<ept id="p1">](xref:System.Globalization.NumberStyles.None)</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Only numeric digits are permitted.</source>
+          <target state="translated">Nur Ziffern sind zulässig.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p1">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p1">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The decimal separator and fractional digits are permitted.</source>
+          <target state="translated">Das Dezimaltrennzeichen und Nachkommastellen sind zulässig.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For integer values, only zero is permitted as a fractional digit.</source>
+          <target state="translated">Für ganzzahlige Werte ist nur 0 (null) als Nachkommastelle zulässig.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Valid decimal separators are determined by the <bpt id="p1">[</bpt>NumberFormatInfo.NumberDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyDecimalSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept> property.</source>
+          <target state="translated">Gültige Dezimaltrennzeichen werden über die <bpt id="p1">[</bpt>NumberFormatInfo.NumberDecimalSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator)</ept>- oder die <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyDecimalSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator)</ept>-Eigenschaft festgelegt.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The "e" or "E" character can be used to indicate exponential notation.</source>
+          <target state="translated">Das Zeichen „e“ oder „E“ kann zum Angeben der Exponentialschreibweise verwendet werden.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Leading white space is permitted.</source>
+          <target state="translated">Vorangestellte Leerzeichen sind zulässig.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Trailing white space is permitted.</source>
+          <target state="translated">Nachfolgende Leerzeichen sind zulässig.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowLeadingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowLeadingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>A positive or negative sign can precede numeric digits.</source>
+          <target state="translated">Ein positives oder negatives Vorzeichen kann numerischen Zeichen vorangestellt werden.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowTrailingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowTrailingSign<ept id="p1">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>A positive or negative sign can follow numeric digits.</source>
+          <target state="translated">Ein positives oder negatives Vorzeichen kann numerischen Zeichen nachfolgen.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowParentheses<ept id="p1">](xref:System.Globalization.NumberStyles.AllowParentheses)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowParentheses<ept id="p1">](xref:System.Globalization.NumberStyles.AllowParentheses)</ept></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Parentheses can be used to indicate negative values.</source>
+          <target state="translated">Klammern können zum Festlegen negativer Werte verwendet werden.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowThousands<ept id="p1">](xref:System.Globalization.NumberStyles.AllowThousands)</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The group separator is permitted.</source>
+          <target state="translated">Das Gruppentrennzeichen ist zulässig.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The group separator character is determined by the <bpt id="p1">[</bpt>NumberFormatInfo.NumberGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator)</ept> or <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyGroupSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept> property.</source>
+          <target state="translated">Das Gruppentrennzeichen wird durch die <bpt id="p1">[</bpt>NumberFormatInfo.NumberGroupSeparator<ept id="p1">](xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator)</ept>- oder die <bpt id="p2">[</bpt>NumberFormatInfo.CurrencyGroupSeparator<ept id="p2">](xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator)</ept>-Eigenschaft festgelegt.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowCurrencySymbol<ept id="p1">](xref:System.Globalization.NumberStyles.AllowCurrencySymbol)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowCurrencySymbol<ept id="p1">](xref:System.Globalization.NumberStyles.AllowCurrencySymbol)</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The currency symbol is permitted.</source>
+          <target state="translated">Das Währungssymbol ist zulässig.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The currency symbol is defined by the <bpt id="p1">[</bpt>NumberFormatInfo.CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept> property.</source>
+          <target state="translated">Das Währungssymbol wird über die <bpt id="p1">[</bpt>NumberFormatInfo.CurrencySymbol<ept id="p1">](xref:System.Globalization.NumberFormatInfo.CurrencySymbol)</ept>-Eigenschaft definiert.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The string to be parsed is interpreted as a hexadecimal number.</source>
+          <target state="translated">Die zu analysierende Zeichenfolge wird als Hexadezimalzahl interpretiert.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It can include the hexadecimal digits 0-9, A-F, and a-f.</source>
+          <target state="translated">Sie kann die Hexadezimalzeichen 0 bis 9, A bis F und a bis f enthalten.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This flag can be used only to parse integer values.</source>
+          <target state="translated">Dieses Flag kann nur für die Analyse ganzzahliger Werte verwendet werden.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In addition, the <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept> enumeration provides the following composite styles, which include multiple <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept> flags.</source>
+          <target state="translated">Darüber hinaus stellt die <bpt id="p1">[</bpt>NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept>-Enumeration die folgenden zusammengesetzten Stile bereit, die mehrere <bpt id="p2">[</bpt>NumberStyles<ept id="p2">](xref:System.Globalization.NumberStyles)</ept>-Flags umfassen.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Composite NumberStyles value</source>
+          <target state="translated">Zusammengesetzter NumberStyles-Wert</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Includes members</source>
+          <target state="translated">Umfasst folgende Member</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Integer<ept id="p1">](xref:System.Globalization.NumberStyles.Integer)</ept></target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, and <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept> styles.</source>
+          <target state="translated">Enthält die Stile <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept> und <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This is the default style used to parse integer values.</source>
+          <target state="translated">Dies ist der Standardstil für die Analyse ganzzahliger Werte.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Number<ept id="p1">](xref:System.Globalization.NumberStyles.Number)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Number<ept id="p1">](xref:System.Globalization.NumberStyles.Number)</ept></target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowTrailingSign<ept id="p4">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept>, <bpt id="p5">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p5">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept>, and <bpt id="p6">[</bpt>NumberStyles.AllowThousands<ept id="p6">](xref:System.Globalization.NumberStyles.AllowThousands)</ept> styles.</source>
+          <target state="translated">Enthält die Stile <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowTrailingSign<ept id="p4">](xref:System.Globalization.NumberStyles.AllowTrailingSign)</ept>, <bpt id="p5">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p5">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept> und <bpt id="p6">[</bpt>NumberStyles.AllowThousands<ept id="p6">](xref:System.Globalization.NumberStyles.AllowThousands)</ept>.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Float<ept id="p1">](xref:System.Globalization.NumberStyles.Float)</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p4">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept>, and <bpt id="p5">[</bpt>NumberStyles.AllowExponent<ept id="p5">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> styles.</source>
+          <target state="translated">Enthält die Stile <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, <bpt id="p3">[</bpt>NumberStyles.AllowLeadingSign<ept id="p3">](xref:System.Globalization.NumberStyles.AllowLeadingSign)</ept>, <bpt id="p4">[</bpt>NumberStyles.AllowDecimalPoint<ept id="p4">](xref:System.Globalization.NumberStyles.AllowDecimalPoint)</ept> und <bpt id="p5">[</bpt>NumberStyles.AllowExponent<ept id="p5">](xref:System.Globalization.NumberStyles.AllowExponent)</ept>.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Currency<ept id="p1">](xref:System.Globalization.NumberStyles.Currency)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Currency<ept id="p1">](xref:System.Globalization.NumberStyles.Currency)</ept></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Includes all styles except <bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> and <bpt id="p2">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p2">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</source>
+          <target state="translated">Enthält alle Stile mit Ausnahme von <bpt id="p1">[</bpt>NumberStyles.AllowExponent<ept id="p1">](xref:System.Globalization.NumberStyles.AllowExponent)</ept> und <bpt id="p2">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p2">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.Any<ept id="p1">](xref:System.Globalization.NumberStyles.Any)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.Any<ept id="p1">](xref:System.Globalization.NumberStyles.Any)</ept></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Includes all styles except <bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</source>
+          <target state="translated">Enthält alle Stile mit Ausnahme von <bpt id="p1">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p1">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>NumberStyles.HexNumber<ept id="p1">](xref:System.Globalization.NumberStyles.HexNumber)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>NumberStyles.HexNumber<ept id="p1">](xref:System.Globalization.NumberStyles.HexNumber)</ept></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Includes the <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept>, and <bpt id="p3">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p3">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept> styles.</source>
+          <target state="translated">Enthält die Stile <bpt id="p1">[</bpt>NumberStyles.AllowLeadingWhite<ept id="p1">](xref:System.Globalization.NumberStyles.AllowLeadingWhite)</ept>, <bpt id="p2">[</bpt>NumberStyles.AllowTrailingWhite<ept id="p2">](xref:System.Globalization.NumberStyles.AllowTrailingWhite)</ept> und <bpt id="p3">[</bpt>NumberStyles.AllowHexSpecifier<ept id="p3">](xref:System.Globalization.NumberStyles.AllowHexSpecifier)</ept>.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Parsing and Unicode digits</source>
+          <target state="translated">Analyse und Unicode-Ziffern</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The Unicode standard defines code points for digits in various writing systems.</source>
+          <target state="translated">Der Unicode-Standard definiert Codepunkte für Ziffern in verschiedenen Schreibsystemen.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>For example, code points from U+0030 to U+0039 represent the basic Latin digits 0 through 9, code points from U+09E6 to U+09EF represent the Bangla digits 0 through 9, and code points from U+FF10 to U+FF19 represent the Fullwidth digits 0 through 9.</source>
+          <target state="translated">Beispielsweise stehen Codepunkte von U+0030 bis U+0039 für die grundlegenden lateinischen Ziffern 0 bis 9, Codepunkte von U+09E6 bis U+09EF für die Bangla-Ziffern 0 bis 9 und Codepunkte von U+FF10 bis U+FF19 für Ziffern voller Breite von 0 bis 9.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>However, the only numeric digits recognized by parsing methods are the basic Latin digits 0-9 with code points from U+0030 to U+0039.</source>
+          <target state="translated">Allerdings werden von den Analysemethoden nur die grundlegenden lateinischen Ziffern von 0 bis 9 mit den Codepunkten von U+0030 bis U+0039 erkannt.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If a numeric parsing method is passed a string that contains any other digits, the method throws a <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept>.</source>
+          <target state="translated">Wenn einer numerische Analysemethode eine Zeichenfolge übergeben wird, die andere Ziffern enthält, löst die Methode eine <bpt id="p1">[</bpt>FormatException<ept id="p1">](xref:System.FormatException)</ept> aus.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The following example uses the <bpt id="p1">[</bpt>Int32.Parse<ept id="p1">](xref:System.Int32.Parse(System.String))</ept> method to parse strings that consist of digits in different writing systems.</source>
+          <target state="translated">Im folgenden Beispiel wird die <bpt id="p1">[</bpt>Int32.Parse<ept id="p1">](xref:System.Int32.Parse(System.String))</ept>-Methode zum Analysieren von Zeichenfolgen verwendet, die aus Ziffern unterschiedlicher Schreibsysteme bestehen.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the attempt to parse the basic Latin digits succeeds, but the attempt to parse the Fullwidth, Arabic-Indic, and Bangla digits fails.</source>
+          <target state="translated">Wie die Ausgabe des Beispiels zeigt, verläuft die Analyse der grundlegenden lateinischen Ziffern erfolgreich, aber der Versuch zum Analysieren der vollbreiten, der arabisch-indischen und der Bangla-Ziffern verursacht einen Fehler.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Globalization.NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Globalization.NumberStyles<ept id="p1">](xref:System.Globalization.NumberStyles)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Parsing strings in .NET<ept id="p1">](parsing-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Analysieren von Zeichenfolgen in .NET<ept id="p1">](parsing-strings.md)</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Formatting types in .NET<ept id="p1">](formatting-types.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Formatieren von Typen in .NET<ept id="p1">](formatting-types.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
