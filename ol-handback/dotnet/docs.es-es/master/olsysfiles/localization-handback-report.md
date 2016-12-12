@@ -1,27 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md) | InSyncHandedBackSuccess | [Details](#9f52e51f707d991c8210e46f178a09a9c6881c123388)
 
 ## Item Details
-##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123388'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\toc.md](https://github.com/dotnet/docs.es-es/blob/e68f54fb03e93ec7bd3694e931e41a0b38b7986d/docs/toc.md)
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/f0cf281951d89ed6d9b4ecc7cbf41854753916e5/ol-handoff/dotnet/docs.es-es/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf)
-* Handoff Datetime: 2016-12-08 19:57:11
-* Handoff Reason: Include
-* Archive File: [toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/9f63a0806fffa404f1f9e32dee04b5933348c685/ol-archive/dotnet/docs.es-es/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf)
-* Archive Datetime: 2016-12-08 20:04:36
-* Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf](https://github.com/dotnet/docs.handback/blob/f4b9dda8f4c52853b1bbb3c5ebbbbb34ce60c281/ol-handback/dotnet/docs.es-es/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.es-es.xlf)
-* Handback Datetime: 2016-12-12 11:50:25
-* Bilingual Error:[bilingual_uploading_failed](#9f52e51f707d991c8210e46f178a09a9c6881c123388bilingual_uploading_failed)
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
