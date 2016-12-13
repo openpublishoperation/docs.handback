@@ -6,32 +6,32 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md) | ArchivedSuccess | [Details](#9f52e51f707d991c8210e46f178a09a9c6881c123388)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md) | HandedOffSuccess | [Details](#91670fba8891e888de6bb9667d5e5262d4868aaf3407)
 
 ## Item Details
-##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123388'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md)
-* Status: ArchivedSuccess
+##### <a name='91670fba8891e888de6bb9667d5e5262d4868aaf3407'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/7b265b33a5a8c18384bc99a3e355e0ff699a089d/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
-* Handoff Datetime: 2016-12-08 19:57:19
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/868b68f1fde13996dc212813fa8f286110710dd9/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Handoff Datetime: 2016-12-12 18:14:06
 * Handoff Reason: Include
-* Archive File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/476515a805f3ba5e7c66e03b8e548faec4e18dc0/ol-archive/dotnet/docs.ru-ru/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
-* Archive Datetime: 2016-12-08 20:04:42
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.ru-ru/blob/11180fde86651e34a7a0dfcc4112f33b46b8b987/docs/toc.md)
-* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/b6bc3c600be730f5c559c37acba7c6aae8855789/ol-handback/dotnet/docs.ru-ru/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
-* Current Handback Datetime: 2016-11-25 14:47:54
-* Bilingual Error:[bilingual_uploading_failed](#9f52e51f707d991c8210e46f178a09a9c6881c123388bilingual_uploading_failed)
+* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.ru-ru/blob/ef1b286c4a50647088b0efbd600b8439e97173dd/docs/toc.md)
+* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/d058613bd5ff66b24cce6f3628168c0b566c6b6a/ol-handback/dotnet/docs.ru-ru/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Current Handback Datetime: 2016-12-13 08:28:14
+* Bilingual Error:[bilingual_uploading_failed](#91670fba8891e888de6bb9667d5e5262d4868aaf3407bilingual_uploading_failed)
 * [Back to Top](#report-top)
 
 
 ## Error Details
-##### <a name='9f52e51f707d991c8210e46f178a09a9c6881c123388handback_includes_older_version'></a> Source: [docs\toc.md](#9f52e51f707d991c8210e46f178a09a9c6881c123388)
+##### <a name='91670fba8891e888de6bb9667d5e5262d4868aaf3407handback_includes_older_version'></a> Source: [docs\toc.md](#91670fba8891e888de6bb9667d5e5262d4868aaf3407)
 * Error Code: handback_includes_older_version
-* Error Message: The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/toc.md, latest: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md.
+* Error Message: The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.
 * Retriable: False
-* Error Details: {"internal_error_code":"handback_includes_older_version","internal_error_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/toc.md, latest: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md.","internal_error_retriable":false,"exception_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/71eab6216e116b99927dfeaa8ce3cf70bcc08a5e/docs/toc.md, latest: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+* Error Details: {"internal_error_code":"handback_includes_older_version","internal_error_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.","internal_error_retriable":false,"exception_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
 
 
 Generated by OpenLocalization.
