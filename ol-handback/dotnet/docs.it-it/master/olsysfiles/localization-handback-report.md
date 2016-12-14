@@ -1,11 +1,31 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#87c332a97f00700ae31905d64690df013d841ad393)
 
 ## Item Details
+##### <a name='87c332a97f00700ae31905d64690df013d841ad393'></a> Source: [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/6ece58f46ac71bec15e5fdeb3aa2e46449d64a1f/ol-handoff/dotnet/docs.it-it/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf)
+* Handoff Datetime: 2016-12-14 20:14:20
+* Handoff Reason: Include
+* Archive File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/d0f6246cebd24953d45908c994391a12f77832c1/ol-archive/dotnet/docs.it-it/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf)
+* Archive Datetime: 2016-12-14 20:14:21
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\rid-catalog.md](https://github.com/dotnet/docs.it-it/blob/f7fbd04f2f26bfdf4a212f54f6dd4457d1baae31/docs/core/rid-catalog.md)
+* Current Handback File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf](https://github.com/dotnet/docs.handback/blob/e4c6596006bd421e68aea7ab2cb5c50ea458ea1b/ol-handback/dotnet/docs.it-it/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf)
+* Current Handback Datetime: 2016-12-14 20:15:38
+* Bilingual File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf](https://github.com/dotnet/docs.handback/blob/da62ac7ab99b8e50099c09fea2b9598ed29ae2b4/ol-handback/dotnet/docs.it-it/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.it-it.xlf)
+* Bilingual Datetime: 2016-12-09 21:28:58
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
