@@ -2,8 +2,8 @@
 > This report show how many files are handback automatically in this handoff.
 
 ## Summary
-* **Auto Archive Count**: 1
-* **Auto Handback Count**: 1
+* **Auto Archive Count**: 0
+* **Auto Handback Count**: 0
 
 ## Auto Handback List
 > The following xliff are handback automatically since the same xliff has been handback before with the same translation quality.
@@ -13,7 +13,6 @@
 
 | Handoff Xliff | Referenced Xliff | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/445676dff0f719dbdf346ed0a5d034a218732252/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf) | [ol-handback\dotnet\docs.zh-cn\master\ht-p1\rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf) | 
 
 ## Auto Archived List
 > The following xliff are archived automatically since the same xliff has been archived or it is already handback
@@ -23,5 +22,4 @@
 
 | Handoff Xliff | Archived Reason | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.zh-cn\master\ht-p1\rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/445676dff0f719dbdf346ed0a5d034a218732252/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.zh-cn.xlf) | Archived when 16/11/18 07:26 | 
 
