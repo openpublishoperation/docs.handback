@@ -1,11 +1,49 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#87c332a97f00700ae31905d64690df013d841ad393)
+ [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs/blob/098cb31bb79e47ebb2ad2e8c2f56d2d5d6da4079/docs/core/tutorials/target-dotnetcore-with-msbuild.md) | HandedOffSuccess | [Details](#6a992d985948a22da58db8317bc04d2f1828fc05125)
 
 ## Item Details
+##### <a name='87c332a97f00700ae31905d64690df013d841ad393'></a> Source: [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/f812b018d12c309cf157bd2d08aa7ad5ba2706a4/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
+* Handoff Datetime: 2016-12-14 20:15:10
+* Handoff Reason: Include
+* Archive File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/f9b86f0d1a445385caae98bb3c6effd141b5a9dc/ol-archive/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
+* Archive Datetime: 2016-12-14 20:15:10
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\rid-catalog.md](https://github.com/dotnet/docs.ko-kr/blob/e62bb7fc0c8d7cc259127bc8cad079f6cf2b01c4/docs/core/rid-catalog.md)
+* Current Handback File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
+* Current Handback Datetime: 2016-12-09 21:27:32
+* Bilingual File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
+* Bilingual Datetime: 2016-12-09 21:32:05
+* [Back to Top](#report-top)
+
+##### <a name='6a992d985948a22da58db8317bc04d2f1828fc05125'></a> Source: [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs/blob/098cb31bb79e47ebb2ad2e8c2f56d2d5d6da4079/docs/core/tutorials/target-dotnetcore-with-msbuild.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/f812b018d12c309cf157bd2d08aa7ad5ba2706a4/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf)
+* Handoff Datetime: 2016-12-14 20:15:10
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\tutorials\target-dotnetcore-with-msbuild.md](https://github.com/dotnet/docs.ko-kr/blob/e62bb7fc0c8d7cc259127bc8cad079f6cf2b01c4/docs/core/tutorials/target-dotnetcore-with-msbuild.md)
+* Current Handback File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf)
+* Current Handback Datetime: 2016-12-09 21:27:32
+* Bilingual File: [target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/target-dotnetcore-with-msbuild.89a13906467e804ceb90862ef0993a92e3f97334.ko-kr.xlf)
+* Bilingual Datetime: 2016-12-09 21:32:05
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
