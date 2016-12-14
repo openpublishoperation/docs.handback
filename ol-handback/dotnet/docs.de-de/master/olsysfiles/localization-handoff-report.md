@@ -1,11 +1,31 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs/blob/763433b00ae7d01cfa0c7fa250f51d23a95f6f15/docs/standard/collections/selecting-a-collection-class.md) | HandedOffSuccess | [Details](#d174d0cb910035340fb317521f3ad930d16853c23349)
 
 ## Item Details
+##### <a name='d174d0cb910035340fb317521f3ad930d16853c23349'></a> Source: [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs/blob/763433b00ae7d01cfa0c7fa250f51d23a95f6f15/docs/standard/collections/selecting-a-collection-class.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/e46787a79b9c8ca036334033dd9083757e132af0/ol-handoff/dotnet/docs.de-de/master/ht-p2/selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf)
+* Handoff Datetime: 2016-12-14 04:11:23
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\standard\collections\selecting-a-collection-class.md](https://github.com/dotnet/docs.de-de/blob/3415f0989950620d21c0badddbf353b1efafbb2d/docs/standard/collections/selecting-a-collection-class.md)
+* Current Handback File: [selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e953f494333363c8a4768bfe95907d6781c2ceb0/ol-handback/dotnet/docs.de-de/master/ht-p2/selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf)
+* Current Handback Datetime: 2016-12-09 21:26:00
+* Bilingual File: [selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e953f494333363c8a4768bfe95907d6781c2ceb0/ol-handback/dotnet/docs.de-de/master/ht-p2/selecting-a-collection-class.aa3adb37e1172576b891f4988de595d66a5011ba.de-de.xlf)
+* Bilingual Datetime: 2016-12-09 21:29:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
