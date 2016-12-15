@@ -1,11 +1,31 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\dotnet-install-script.md](https://github.com/dotnet/docs/blob/ae23d83d5ca03d1a9a248e375bc092e0d9d0cde0/docs/core/tools/dotnet-install-script.md) | HandedOffSuccess | [Details](#d6a420fa29107952020ddfa58ce0256fd882989099)
 
 ## Item Details
+##### <a name='d6a420fa29107952020ddfa58ce0256fd882989099'></a> Source: [docs\core\tools\dotnet-install-script.md](https://github.com/dotnet/docs/blob/ae23d83d5ca03d1a9a248e375bc092e0d9d0cde0/docs/core/tools/dotnet-install-script.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/d9b45f437022e8025d40fb0d87588ea3a03fa428/ol-handoff/dotnet/docs.ja-jp/master/ht-p1/dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf)
+* Handoff Datetime: 2016-12-15 00:11:57
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [docs\core\tools\dotnet-install-script.md](https://github.com/dotnet/docs.ja-jp/blob/384c864165319a8dfb3eef2ebde6587164ea53b2/docs/core/tools/dotnet-install-script.md)
+* Current Handback File: [dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/0992d94d5cbaebf547312475ce59d3cdd2118e35/ol-handback/dotnet/docs.ja-jp/master/ht-p1/dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-11 05:38:30
+* Bilingual File: [dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/0992d94d5cbaebf547312475ce59d3cdd2118e35/ol-handback/dotnet/docs.ja-jp/master/ht-p1/dotnet-install-script.6e82ea7bd7b9b2ea1a835cf96850b7989f7c8b2e.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-11 05:39:19
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
