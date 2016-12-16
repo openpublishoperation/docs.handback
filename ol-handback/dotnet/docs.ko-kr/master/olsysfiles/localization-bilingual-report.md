@@ -1,37 +1,19 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#87c332a97f00700ae31905d64690df013d841ad393)
- [docs\toc.md](https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md) | HandedOffSuccess | [Details](#91670fba8891e888de6bb9667d5e5262d4868aaf3408)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/82c4bc4ef9dd16a9db9384b9bd6804cfed24c30d/docs/toc.md) | HandedOffSuccess | [Details](#499b635176d06f5b807ed872005c5dcd677fad693412)
 
 ## Item Details
-##### <a name='87c332a97f00700ae31905d64690df013d841ad393'></a> Source: [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/0917900528d90fbf9bc9fbd77d20b3d9c8b901fe/docs/core/rid-catalog.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/f812b018d12c309cf157bd2d08aa7ad5ba2706a4/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
-* Handoff Datetime: 2016-12-14 20:15:10
-* Handoff Reason: Include
-* Archive File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/f9b86f0d1a445385caae98bb3c6effd141b5a9dc/ol-archive/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
-* Archive Datetime: 2016-12-14 20:15:10
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\rid-catalog.md](https://github.com/dotnet/docs.ko-kr/blob/a4027a79a29690b7a5163ac3a5cd391c99b8f247/docs/core/rid-catalog.md)
-* Current Handback File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a68a63315272f7ae2a8583c1b269243b9eaa9216/ol-handback/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
-* Current Handback Datetime: 2016-12-14 20:16:13
-* Bilingual File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a68a63315272f7ae2a8583c1b269243b9eaa9216/ol-handback/dotnet/docs.ko-kr/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ko-kr.xlf)
-* Bilingual Datetime: 2016-12-14 20:20:29
-* [Back to Top](#report-top)
-
-##### <a name='91670fba8891e888de6bb9667d5e5262d4868aaf3408'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md)
+##### <a name='499b635176d06f5b807ed872005c5dcd677fad693412'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/82c4bc4ef9dd16a9db9384b9bd6804cfed24c30d/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/7c67b69510fdbacc6beb29bf0ffbca030803de16/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf)
-* Handoff Datetime: 2016-12-12 18:14:40
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/9c326d31c7e67f5fde6d38d07a00cbce4dbbf5b3/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf)
+* Handoff Datetime: 2016-12-15 02:14:30
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -40,16 +22,16 @@
 * Current Target File: [docs\toc.md](https://github.com/dotnet/docs.ko-kr/blob/dcd922a742a5714cf5240d0db1e614f90d3a6560/docs/toc.md)
 * Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/64dce9c30393b7035070cc33c7dfa0160bec177e/ol-handback/dotnet/docs.ko-kr/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.ko-kr.xlf)
 * Current Handback Datetime: 2016-12-13 08:28:24
-* Bilingual Error:[bilingual_uploading_failed](#91670fba8891e888de6bb9667d5e5262d4868aaf3408bilingual_uploading_failed)
+* Bilingual Error:[bilingual_uploading_failed](#499b635176d06f5b807ed872005c5dcd677fad693412bilingual_uploading_failed)
 * [Back to Top](#report-top)
 
 
 ## Error Details
-##### <a name='91670fba8891e888de6bb9667d5e5262d4868aaf3408handback_includes_older_version'></a> Source: [docs\toc.md](#91670fba8891e888de6bb9667d5e5262d4868aaf3408)
+##### <a name='499b635176d06f5b807ed872005c5dcd677fad693412handback_includes_older_version'></a> Source: [docs\toc.md](#499b635176d06f5b807ed872005c5dcd677fad693412)
 * Error Code: handback_includes_older_version
-* Error Message: The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.
+* Error Message: The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/82c4bc4ef9dd16a9db9384b9bd6804cfed24c30d/docs/toc.md.
 * Retriable: False
-* Error Details: {"internal_error_code":"handback_includes_older_version","internal_error_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.","internal_error_retriable":false,"exception_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/97a29e60f5d861d848b85ef1e8ed8b1988f9ced1/docs/toc.md.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
+* Error Details: {"internal_error_code":"handback_includes_older_version","internal_error_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/82c4bc4ef9dd16a9db9384b9bd6804cfed24c30d/docs/toc.md.","internal_error_retriable":false,"exception_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/82c4bc4ef9dd16a9db9384b9bd6804cfed24c30d/docs/toc.md.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
 
 
 Generated by OpenLocalization.
