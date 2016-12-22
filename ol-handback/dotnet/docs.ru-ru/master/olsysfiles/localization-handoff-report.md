@@ -6,24 +6,24 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs/blob/572bec82e08d6b47a188e51964c8c2f440fa471c/docs/standard/choosing-core-framework-server.md) | HandedOffSuccess | [Details](#e23514daacb34739b26b7a31afea2ccb30296e793346)
+ [docs\core\tools\project-json.md](https://github.com/dotnet/docs/blob/4023c5ec72055fee78863a43b60989e1eb34fb22/docs/core/tools/project-json.md) | HandedOffSuccess | [Details](#68b152cda54b5356dce48f4a8330b2ecb9c9d2e0112)
 
 ## Item Details
-##### <a name='e23514daacb34739b26b7a31afea2ccb30296e793346'></a> Source: [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs/blob/572bec82e08d6b47a188e51964c8c2f440fa471c/docs/standard/choosing-core-framework-server.md)
+##### <a name='68b152cda54b5356dce48f4a8330b2ecb9c9d2e0112'></a> Source: [docs\core\tools\project-json.md](https://github.com/dotnet/docs/blob/4023c5ec72055fee78863a43b60989e1eb34fb22/docs/core/tools/project-json.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/351af75d84650f1699eae9ca7bf0546f023a2832/ol-handoff/dotnet/docs.ru-ru/master/ht-p2/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf)
-* Handoff Datetime: 2016-12-21 21:56:39
+* Handoff File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/a644eb9d487cdbc487a6b5ba4f91ae17186a5b2c/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf)
+* Handoff Datetime: 2016-12-22 20:01:37
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs.ru-ru/blob/11180fde86651e34a7a0dfcc4112f33b46b8b987/docs/standard/choosing-core-framework-server.md)
-* Current Handback File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/b6bc3c600be730f5c559c37acba7c6aae8855789/ol-handback/dotnet/docs.ru-ru/master/ht-p2/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf)
-* Current Handback Datetime: 2016-11-25 14:47:54
-* Bilingual File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/b6bc3c600be730f5c559c37acba7c6aae8855789/ol-handback/dotnet/docs.ru-ru/master/ht-p2/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-25 14:49:52
+* Current Target File: [docs\core\tools\project-json.md](https://github.com/dotnet/docs.ru-ru/blob/98b01d6c4903bdcd82643f58e86d59ab9523be93/docs/core/tools/project-json.md)
+* Current Handback File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/dbbebf479e19ee428f23855ddd3569201151a424/ol-handback/dotnet/docs.ru-ru/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf)
+* Current Handback Datetime: 2016-12-09 21:26:29
+* Bilingual File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/dbbebf479e19ee428f23855ddd3569201151a424/ol-handback/dotnet/docs.ru-ru/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ru-ru.xlf)
+* Bilingual Datetime: 2016-12-09 21:30:13
 * [Back to Top](#report-top)
 
 
