@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\tools\project-json.md](https://github.com/dotnet/docs/blob/4023c5ec72055fee78863a43b60989e1eb34fb22/docs/core/tools/project-json.md) | HandedOffSuccess | [Details](#68b152cda54b5356dce48f4a8330b2ecb9c9d2e0112)
 
 ## Item Details
-##### <a name='68b152cda54b5356dce48f4a8330b2ecb9c9d2e0112'></a> Source: [docs\core\tools\project-json.md](https://github.com/dotnet/docs/blob/4023c5ec72055fee78863a43b60989e1eb34fb22/docs/core/tools/project-json.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/b834512c0e143eb90c036b8e0da89bfb66655086/ol-handoff/dotnet/docs.ko-kr/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf)
-* Handoff Datetime: 2016-12-22 20:02:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [docs\core\tools\project-json.md](https://github.com/dotnet/docs.ko-kr/blob/e62bb7fc0c8d7cc259127bc8cad079f6cf2b01c4/docs/core/tools/project-json.md)
-* Current Handback File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf)
-* Current Handback Datetime: 2016-12-09 21:27:32
-* Bilingual File: [project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p1/project-json.bb712b7268803d4ec572b6dda9a808d28af173a9.ko-kr.xlf)
-* Bilingual Datetime: 2016-12-09 21:32:05
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
