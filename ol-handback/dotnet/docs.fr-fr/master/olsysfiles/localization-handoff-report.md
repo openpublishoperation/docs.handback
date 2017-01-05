@@ -1,11 +1,53 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/5687fc7ded899a478d1972ffea10a1e37d40124b/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#f1f08f550d7484869e67fe705dc789ca5dae8e2f96)
+ [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/6681c815535f82a01652fe40a6e25705ec60fc85/docs/core/windows-prerequisites.md) | HandedOffSuccess | [Details](#f403022a24d0d94ed52528748953204429ae3d6a131)
 
 ## Item Details
+##### <a name='f1f08f550d7484869e67fe705dc789ca5dae8e2f96'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/5687fc7ded899a478d1972ffea10a1e37d40124b/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/ea740213e768460b958c08a6d7a50086ff58f8a0/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Handoff Datetime: 2017-01-05 02:13:15
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Current Handback Datetime: 2016-11-11 13:11:11
+* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-11 13:11:55
+* [Back to Top](#report-top)
+
+##### <a name='f403022a24d0d94ed52528748953204429ae3d6a131'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/6681c815535f82a01652fe40a6e25705ec60fc85/docs/core/windows-prerequisites.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/ea740213e768460b958c08a6d7a50086ff58f8a0/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf)
+* Handoff Datetime: 2017-01-05 02:13:15
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.fr-fr/blob/5f07fea93344172c6659948deadd0d321a9d1c27/docs/core/windows-prerequisites.md)
+* Current Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/4d58e75ac49421580129e31ffdc0dbc6fc3dab42/ol-handback/dotnet/docs.fr-fr/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf)
+* Current Handback Datetime: 2016-11-18 09:19:51
+* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/4d58e75ac49421580129e31ffdc0dbc6fc3dab42/ol-handback/dotnet/docs.fr-fr/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-18 09:22:52
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
