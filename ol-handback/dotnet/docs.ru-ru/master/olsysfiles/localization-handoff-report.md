@@ -1,53 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/preview3/windows-prerequisites.md) | HandedOffSuccess | [Details](#fa172832ea849484230d2a8a77ed267689549a7892)
- [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/windows-prerequisites.md) | HandedOffSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190131)
 
 ## Item Details
-##### <a name='fa172832ea849484230d2a8a77ed267689549a7892'></a> Source: [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/preview3/windows-prerequisites.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/fb8417c570aa17fe7d5e4350f001e9309fcf2fc6/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf)
-* Handoff Datetime: 2017-01-06 20:14:49
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs.ru-ru/blob/98b01d6c4903bdcd82643f58e86d59ab9523be93/docs/core/preview3/windows-prerequisites.md)
-* Current Handback File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/dbbebf479e19ee428f23855ddd3569201151a424/ol-handback/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf)
-* Current Handback Datetime: 2016-12-09 21:26:29
-* Bilingual File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/dbbebf479e19ee428f23855ddd3569201151a424/ol-handback/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.ru-ru.xlf)
-* Bilingual Datetime: 2016-12-09 21:30:13
-* [Back to Top](#report-top)
-
-##### <a name='b5c088da7d1155414a08995ae0d72154af891190131'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/windows-prerequisites.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/fb8417c570aa17fe7d5e4350f001e9309fcf2fc6/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
-* Handoff Datetime: 2017-01-06 20:14:49
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.ru-ru/blob/808fa06e81a47cc4b539058c93b7b55087e1dce0/docs/core/windows-prerequisites.md)
-* Current Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/e3f72907edab9a06a7a3d8231eff5165133cb91f/ol-handback/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
-* Current Handback Datetime: 2016-11-18 11:45:24
-* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/e3f72907edab9a06a7a3d8231eff5165133cb91f/ol-handback/dotnet/docs.ru-ru/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-18 11:47:12
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
