@@ -1,19 +1,20 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/c954064337e3e77cbd09e61c64aa67a3c450743a/docs/toc.md) | HandedOffSuccess | [Details](#8df69e50534ed0ef31b8adb55e954f4eab0d97e53412)
+ [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/preview3/windows-prerequisites.md) | HandedOffSuccess | [Details](#fa172832ea849484230d2a8a77ed267689549a7892)
+ [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/windows-prerequisites.md) | HandedOffSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190131)
 
 ## Item Details
-##### <a name='8df69e50534ed0ef31b8adb55e954f4eab0d97e53412'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/c954064337e3e77cbd09e61c64aa67a3c450743a/docs/toc.md)
+##### <a name='fa172832ea849484230d2a8a77ed267689549a7892'></a> Source: [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/preview3/windows-prerequisites.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/fb8da6bef9f5aee219235240850590e05e071ed3/ol-handoff/dotnet/docs.zh-tw/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.zh-tw.xlf)
-* Handoff Datetime: 2017-01-06 18:11:58
+* Handoff File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/8c9e299ec06e1bb6c8371236ab07ae6a08a02e6b/ol-handoff/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf)
+* Handoff Datetime: 2017-01-06 20:15:16
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,19 +22,33 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.zh-tw/blob/a5f5316d286cf9d85867d292c44bb49f94d066b8/docs/toc.md)
-* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/4279be2497f2ceac3e112804332d014d20366aa2/ol-handback/dotnet/docs.zh-tw/master/ht-p1/toc.d55ff8e019666abd1da95f80900583861673879c.zh-tw.xlf)
-* Current Handback Datetime: 2016-12-12 13:49:37
-* Bilingual Error:[bilingual_uploading_failed](#8df69e50534ed0ef31b8adb55e954f4eab0d97e53412bilingual_uploading_failed)
+* Current Target File: [docs\core\preview3\windows-prerequisites.md](https://github.com/dotnet/docs.zh-tw/blob/5b2ac2d4ae8f3d21427802e31d408c00b3ff8c1e/docs/core/preview3/windows-prerequisites.md)
+* Current Handback File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/e7093bcbbe4e0944f019e99dc5baba7284f752b9/ol-handback/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf)
+* Current Handback Datetime: 2016-12-09 21:27:00
+* Bilingual File: [windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/e7093bcbbe4e0944f019e99dc5baba7284f752b9/ol-handback/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.a7830d3b1f17dee983c6f15f1cb5d0a715a52ce3.zh-tw.xlf)
+* Bilingual Datetime: 2016-12-09 21:31:01
+* [Back to Top](#report-top)
+
+##### <a name='b5c088da7d1155414a08995ae0d72154af891190131'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/c81b3b4785bff3bf8963e0ba1b917a5f797099ff/docs/core/windows-prerequisites.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/8c9e299ec06e1bb6c8371236ab07ae6a08a02e6b/ol-handoff/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf)
+* Handoff Datetime: 2017-01-06 20:15:16
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.zh-tw/blob/1caee0c34e9fb9b597fbfda8611a4e0b502abf19/docs/core/windows-prerequisites.md)
+* Current Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/2cce5b5faa54e11c35da8aefef6a137f0330c0fa/ol-handback/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf)
+* Current Handback Datetime: 2016-11-18 09:21:06
+* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/2cce5b5faa54e11c35da8aefef6a137f0330c0fa/ol-handback/dotnet/docs.zh-tw/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-18 09:23:55
 * [Back to Top](#report-top)
 
 
 ## Error Details
-##### <a name='8df69e50534ed0ef31b8adb55e954f4eab0d97e53412handback_includes_older_version'></a> Source: [docs\toc.md](#8df69e50534ed0ef31b8adb55e954f4eab0d97e53412)
-* Error Code: handback_includes_older_version
-* Error Message: The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/c954064337e3e77cbd09e61c64aa67a3c450743a/docs/toc.md.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_includes_older_version","internal_error_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/c954064337e3e77cbd09e61c64aa67a3c450743a/docs/toc.md.","internal_error_retriable":false,"exception_message":"The version of handback file is not the latest, current: https://github.com/dotnet/docs/blob/61844748621d9536134e3efcb4ac866c3e7bdc45/docs/toc.md, latest: https://github.com/dotnet/docs/blob/c954064337e3e77cbd09e61c64aa67a3c450743a/docs/toc.md.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
 
 Generated by OpenLocalization.
