@@ -1,20 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs/blob/1474b2869510d650b7ee69c88ec6b5a9d04a9b75/docs/core/preview3/tools/extensibility.md) | HandedOffSuccess | [Details](#c13349c34af944d5a55d57161246f865274cc88875)
- [docs\standard\framework-libraries.md](https://github.com/dotnet/docs/blob/9df468c7225dbf1e3317ea34bd8b2285361a69f4/docs/standard/framework-libraries.md) | HandedOffSuccess | [Details](#f14e6552b2f59694f5cf877ee8ab76ffa026f18f3384)
+ [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/2bd5d04cf896db6f74a4e0651fb7bd6315e1af4a/docs/core/tutorials/libraries-with-vs.md) | HandedOffSuccess | [Details](#a97c7fbefcab04ac817b77405755250079d6756b119)
 
 ## Item Details
-##### <a name='c13349c34af944d5a55d57161246f865274cc88875'></a> Source: [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs/blob/1474b2869510d650b7ee69c88ec6b5a9d04a9b75/docs/core/preview3/tools/extensibility.md)
+##### <a name='a97c7fbefcab04ac817b77405755250079d6756b119'></a> Source: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/2bd5d04cf896db6f74a4e0651fb7bd6315e1af4a/docs/core/tutorials/libraries-with-vs.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/d4e2e17094f9c973d50ae7ac7f9a111ed3d50a84/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf)
-* Handoff Datetime: 2017-01-09 20:06:04
+* Handoff File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/166589f044c4ece87463a55d424f3e74320534c6/ol-handoff/dotnet/docs.fr-fr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf)
+* Handoff Datetime: 2017-01-09 22:09:33
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -22,30 +21,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs.fr-fr/blob/2796142dc08d9155d452b01a7c19dac2d1c4d0f5/docs/core/preview3/tools/extensibility.md)
-* Current Handback File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/84e113b178e8c4e6d01dd766504abc2c59a4bf1d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf)
+* Current Target File: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs.fr-fr/blob/2796142dc08d9155d452b01a7c19dac2d1c4d0f5/docs/core/tutorials/libraries-with-vs.md)
+* Current Handback File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/84e113b178e8c4e6d01dd766504abc2c59a4bf1d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf)
 * Current Handback Datetime: 2016-12-09 21:25:27
-* Bilingual File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/84e113b178e8c4e6d01dd766504abc2c59a4bf1d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.fr-fr.xlf)
+* Bilingual File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/84e113b178e8c4e6d01dd766504abc2c59a4bf1d/ol-handback/dotnet/docs.fr-fr/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.fr-fr.xlf)
 * Bilingual Datetime: 2016-12-09 21:28:33
-* [Back to Top](#report-top)
-
-##### <a name='f14e6552b2f59694f5cf877ee8ab76ffa026f18f3384'></a> Source: [docs\standard\framework-libraries.md](https://github.com/dotnet/docs/blob/9df468c7225dbf1e3317ea34bd8b2285361a69f4/docs/standard/framework-libraries.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/d4e2e17094f9c973d50ae7ac7f9a111ed3d50a84/ol-handoff/dotnet/docs.fr-fr/master/ht-p2/framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf)
-* Handoff Datetime: 2017-01-09 20:06:04
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\standard\framework-libraries.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/standard/framework-libraries.md)
-* Current Handback File: [framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/cfe4d54c2ed8194e6de59d1fa47b3542489d226e/ol-handback/dotnet/docs.fr-fr/master/ht-p2/framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-11 14:12:46
-* Bilingual File: [framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/cfe4d54c2ed8194e6de59d1fa47b3542489d226e/ol-handback/dotnet/docs.fr-fr/master/ht-p2/framework-libraries.a910059a62e8080f3edc3e6a3141c5392e5f4840.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 14:13:27
 * [Back to Top](#report-top)
 
 
