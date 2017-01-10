@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/2bd5d04cf896db6f74a4e0651fb7bd6315e1af4a/docs/core/tutorials/libraries-with-vs.md) | HandedOffSuccess | [Details](#a97c7fbefcab04ac817b77405755250079d6756b119)
 
 ## Item Details
-##### <a name='a97c7fbefcab04ac817b77405755250079d6756b119'></a> Source: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs/blob/2bd5d04cf896db6f74a4e0651fb7bd6315e1af4a/docs/core/tutorials/libraries-with-vs.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f4397a87c382699f2fd0d95ef7c1888866b699a7/ol-handoff/dotnet/docs.zh-cn/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf)
-* Handoff Datetime: 2017-01-09 22:10:27
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\tutorials\libraries-with-vs.md](https://github.com/dotnet/docs.zh-cn/blob/26d13aaecbd66b552112d9124d9e1a6750bf2c08/docs/core/tutorials/libraries-with-vs.md)
-* Current Handback File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf)
-* Current Handback Datetime: 2016-12-09 21:26:45
-* Bilingual File: [libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/libraries-with-vs.00a7a4054bd2d8179615b9e121ed2b1265527de3.zh-cn.xlf)
-* Bilingual Datetime: 2016-12-09 21:30:38
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
