@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\components.md](https://github.com/dotnet/docs/blob/7741df222250f3746abb1e3c359bd9e89e6a732c/docs/standard/components.md) | HandedOffSuccess | [Details](#e93764ff4d3391110c79f73a34512bd073ce04993367)
 
 ## Item Details
+##### <a name='e93764ff4d3391110c79f73a34512bd073ce04993367'></a> Source: [docs\standard\components.md](https://github.com/dotnet/docs/blob/7741df222250f3746abb1e3c359bd9e89e6a732c/docs/standard/components.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/19a536250f6fa3fa38d14f86fc0fcb37eea87135/ol-handoff/dotnet/docs.pt-br/master/ht-p2/components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf)
+* Handoff Datetime: 2017-01-16 09:46:31
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\standard\components.md](https://github.com/dotnet/docs.pt-br/blob/7bfc0b12a4014bbe12a9fb251ffe7c8ed958a6cc/docs/standard/components.md)
+* Current Handback File: [components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1a4d799b9c73dbc652886f89514739459dc5a9d4/ol-handback/dotnet/docs.pt-br/master/ht-p2/components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf)
+* Current Handback Datetime: 2016-12-09 21:27:49
+* Bilingual File: [components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1a4d799b9c73dbc652886f89514739459dc5a9d4/ol-handback/dotnet/docs.pt-br/master/ht-p2/components.a3a3c1436f7cbf7494fdf65ba8f6dbd194215a01.pt-br.xlf)
+* Bilingual Datetime: 2016-12-09 21:32:29
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
