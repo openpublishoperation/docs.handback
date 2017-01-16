@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\garbagecollection\index.md](https://github.com/dotnet/docs/blob/ffc0530b2263db0e073f351aac2d539de6701ead/docs/standard/garbagecollection/index.md) | HandedOffSuccess | [Details](#4646a7e8c75315bb1a13bc5fddecd77888f6ae693389)
 
 ## Item Details
-##### <a name='4646a7e8c75315bb1a13bc5fddecd77888f6ae693389'></a> Source: [docs\standard\garbagecollection\index.md](https://github.com/dotnet/docs/blob/ffc0530b2263db0e073f351aac2d539de6701ead/docs/standard/garbagecollection/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/e2ddbaddd2d3107e17696a2baddad971eecf5686/ol-handoff/dotnet/docs.ko-kr/master/ht-p2/index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf)
-* Handoff Datetime: 2017-01-14 20:10:52
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\standard\garbagecollection\index.md](https://github.com/dotnet/docs.ko-kr/blob/e62bb7fc0c8d7cc259127bc8cad079f6cf2b01c4/docs/standard/garbagecollection/index.md)
-* Current Handback File: [index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p2/index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf)
-* Current Handback Datetime: 2016-12-09 21:27:32
-* Bilingual File: [index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/a08bda0c25f4f38536d6fbabbda613cebd0afeef/ol-handback/dotnet/docs.ko-kr/master/ht-p2/index.a87a9ea27e80239bedcce54e44deaa8bb04ab6d8.ko-kr.xlf)
-* Bilingual Datetime: 2016-12-09 21:32:05
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
