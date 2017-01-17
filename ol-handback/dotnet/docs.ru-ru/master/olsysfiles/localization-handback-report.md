@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/c8b9e166a49c86dcabfa89887db1dce3a8e45f4f/index.md) | InSyncHandedBackSuccess | [Details](#d8b2def6b766aa1af9318fe5b0620f4db4a2ee437391)
 
 ## Item Details
-##### <a name='d8b2def6b766aa1af9318fe5b0620f4db4a2ee437391'></a> Source: [index.md](https://github.com/dotnet/docs/blob/c8b9e166a49c86dcabfa89887db1dce3a8e45f4f/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [index.md](https://github.com/dotnet/docs.ru-ru/blob/d02c3393edd9bd5a0544254ced648dda101e6cd6/index.md)
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/e16a9b4511ad8a26b464617b92b5215f337ceb47/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Handoff Datetime: 2016-11-16 22:42:38
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/725463a0d3cb839e43f22c55db6f4af8b54af484/ol-archive/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Archive Datetime: 2016-11-18 07:26:08
-* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/cbbe2231859ea25dcdca69936693297660f2faee/ol-handback/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Handback Datetime: 2017-01-17 14:49:58
-* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-ru-ru_5
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/b6bc3c600be730f5c559c37acba7c6aae8855789/ol-handback/dotnet/docs.ru-ru/master/ht-p1/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-25 14:49:52
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
