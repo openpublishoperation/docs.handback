@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [index.md](https://github.com/dotnet/docs/blob/bfa92b99dc76f473f3c2dd67386df25ff60dd941/index.md) | ArchivedSuccess | [Details](#94c1f73fd460e4d8f560e0f5760348ab748844737397)
 
 ## Item Details
+##### <a name='94c1f73fd460e4d8f560e0f5760348ab748844737397'></a> Source: [index.md](https://github.com/dotnet/docs/blob/bfa92b99dc76f473f3c2dd67386df25ff60dd941/index.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/16f1d1ebd90113fb56a71ec7242492c3f9aa51a0/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Handoff Datetime: 2017-01-18 19:46:00
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/cd284345ca150e3a91e85e11e68008b021ed518c/ol-archive/dotnet/docs.pt-br/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Archive Datetime: 2017-01-18 19:46:01
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [index.md](https://github.com/dotnet/docs.pt-br/blob/aae4a9e253465f8398f6a77782a5db6f683046d0/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/fdb88ed43c685db73528651e0d7cc1ba8488d9f1/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Current Handback Datetime: 2017-01-18 19:48:38
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/9ec9870991e02e39f99a74d830b5fc39869bff52/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.pt-br.xlf)
+* Bilingual Datetime: 2017-01-18 05:54:52
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
