@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [index.md](https://github.com/dotnet/docs/blob/bfa92b99dc76f473f3c2dd67386df25ff60dd941/index.md) | ArchivedSuccess | [Details](#94c1f73fd460e4d8f560e0f5760348ab748844737397)
 
 ## Item Details
+##### <a name='94c1f73fd460e4d8f560e0f5760348ab748844737397'></a> Source: [index.md](https://github.com/dotnet/docs/blob/bfa92b99dc76f473f3c2dd67386df25ff60dd941/index.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/31404e600c93cbb148d658d81bc621736b030197/ol-handoff/dotnet/docs.es-es/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Handoff Datetime: 2017-01-18 19:44:53
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/4b13049e164c8bc3f3750830e936d0cd60a336ef/ol-archive/dotnet/docs.es-es/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Archive Datetime: 2017-01-18 19:44:53
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [index.md](https://github.com/dotnet/docs.es-es/blob/5e177c6a36de4fcf386d4a47179bc241619357fc/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handback/blob/d8632a47758582e3f8656183b94d7aea4ebfa30e/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Current Handback Datetime: 2017-01-18 19:47:13
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf](https://github.com/dotnet/docs.handback/blob/8ebe83b112ce37bd31d165cc1b66bf0da17a88c2/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.es-es.xlf)
+* Bilingual Datetime: 2017-01-18 05:51:33
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
