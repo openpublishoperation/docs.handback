@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-188fee3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e23514daacb34739b26b7a31afea2ccb30296e79</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\choosing-core-framework-server.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1fa555fd5e444767120028ad72419fa3439a56d3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e6c27ce57971b73633f55f31ff15978a3669700</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">서버 앱에 대해 .NET Core와 .NET Framework 중에 선택</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>A guide on which flavor of .NET you should consider when building a server app in .NET.</source>
+          <target state="translated">.NET에서 서버 앱을 구축할 때 고려해야 할 .NET 버전에 대한 가이드입니다.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Framework</source>
+          <target state="translated">.NET, .NET Core, .NET Framework</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">서버 앱에 대해 .NET Core와 .NET Framework 중에 선택</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>There are two supported choices of runtime for building server-side applications with .NET: .NET Framework and .NET Core.</source>
+          <target state="translated">.Net에서 서버 쪽 응용 프로그램을 구축하는 데 지원되는 두 가지 런타임은 .NET Framework 및 .NET Core입니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Both share a lot of the same .NET platform components and you can share code across the two.</source>
+          <target state="translated">이 두 런타임은 동일한 많은 .NET 플랫폼 구성 요소를 공유하므로 둘 간에 코드를 공유할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.</source>
+          <target state="translated">그러나 두 구성 요소 간에는 기본적인 차이가 있으며 수행할 항목에 따라 선택이 달라집니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article provides guidance on when to use each.</source>
+          <target state="translated">이 문서에서는 각각 사용하는 경우에 대한 지침을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You should use .NET Core for your server application when:</source>
+          <target state="translated">다음과 같은 경우에는 서버 응용 프로그램에 .NET Core를 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You have cross-platform needs.</source>
+          <target state="translated">플랫폼 간 요구 사항이 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You are targeting microservices.</source>
+          <target state="translated">마이크로 서비스를 대상으로 합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You are using Docker containers.</source>
+          <target state="translated">Docker 컨테이너를 사용하고 있습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You need high performance and scalable systems.</source>
+          <target state="translated">고성능 및 확장 가능한 시스템이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need side by side of .NET versions by application.</source>
+          <target state="translated">.NET 버전이 응용 프로그램별로 함께 필요합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You should use .NET Framework for your server application when:</source>
+          <target state="translated">다음과 같은 경우에는 서버 응용 프로그램에 .NET Framework를 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Your application currently uses .NET Framework (recommendation is to extend instead of migrating)</source>
+          <target state="translated">사용 중인 응용 프로그램이 현재 .NET Framework를 사용합니다(마이그레이션하는 대신 확장 권장).</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You need to use third-party .NET libraries or NuGet packages not available for .NET Core.</source>
+          <target state="translated">.NET Core에 사용할 수 없는 타사 .NET 라이브러리 또는 NuGet 패키지를 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You need to use .NET technologies that are not available for .NET Core.</source>
+          <target state="translated">.NET Core에 사용할 수 없는 .NET 기술을 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You need to use a platform that doesn’t support .NET Core.</source>
+          <target state="translated">.NET Core를 지원하지 않는 플랫폼을 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Core</source>
+          <target state="translated">.NET Core를 선택하는 경우</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following is a more detailed explanation of the previously-stated reasons for picking .NET Core.</source>
+          <target state="translated">다음은 .NET Core를 선택해야 하는 이전에 명시된 이유에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Cross-platform needs</source>
+          <target state="translated">플랫폼 간 요구 사항</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and macOS), the best choice is to use .NET Core.</source>
+          <target state="translated">플랫폼 전체(Windows, Linux 및 macOS)에서 실행할 수 있는 응용 프로그램을 구축하는 것이 목표라면 .NET Core를 사용하는 것이 가장 좋습니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>.NET Core also supports the previously-mentioned operating systems as your development workstation.</source>
+          <target state="translated">또한 .NET Core는 앞에서 언급한 운영 체제를 개발 워크스테이션으로 지원합니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Visual Studio provides an Integrated Development Environment (IDE) for Windows.</source>
+          <target state="translated">Visual Studio는 Windows용 IDE(통합 개발 환경)를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging.</source>
+          <target state="translated">macOS, Linux 및 Windows에서 IntelliSense 및 디버깅을 비롯하여 .NET Core를 완벽하게 지원하는 Visual Studio Code를 사용할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> project.</source>
+          <target state="translated">Sublime, Emacs, VI 같은 타사 편집기로 .NET Core를 대상으로 지정하고, 오픈 소스 <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> 프로젝트를 사용하여 편집기 IntelliSense를 가져올 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can also avoid any code editor and directly use the .NET Core command-line tools, available for all supported platforms.</source>
+          <target state="translated">어떤 코드 편집기도 사용하지 않고, 지원되는 모든 플랫폼에서 사용할 수 있는 .NET Core 명령줄 도구를 직접 사용할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Microservices architecture</source>
+          <target state="translated">마이크로 서비스 아키텍처</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>.NET Core is the best candidate if you are embracing a microservices oriented system composed of multiple independent, dynamically scalable, stateful or stateless microservices.</source>
+          <target state="translated">동적으로 확장 가능하고 독립적인 여러 상태 저장 또는 상태 비저장 마이크로 서비스로 구성된 마이크로 서비스 중심의 시스템을 수용하는 경우 .NET Core가 가장 적합한 대상입니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>.NET Core is lightweight and its API surface can be minimized to the scope of the microservice.</source>
+          <target state="translated">.NET Core는 간단하며, API 화면을 마이크로 서비스의 범위로 최소화할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>A microservices architecture also allows you to mix technologies across a service boundary, enabling a gradual embrace of .NET Core for new microservices that live in conjunction with other microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.</source>
+          <target state="translated">마이크로 서비스 아키텍처를 사용하면 서비스 경계를 벗어나 여러 기술을 융합할 수 있습니다. 이를 통해 .NET Framework, Java, Ruby 또는 다른 모놀리식 기술로 개발된 서비스나 다른 마이크로 서비스와 결합하여 사용되는 새로운 마이크로 서비스에 .NET Core를 점진적으로 적용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The infrastructure platforms you could use are many.</source>
+          <target state="translated">사용할 수 있는 인프라 플랫폼은 많습니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For large and complex microservice systems, you can use <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept>.</source>
+          <target state="translated">크고 복잡한 마이크로 서비스 시스템의 경우 <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept>을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For stateless microservices you can also use other products like <bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept>.</source>
+          <target state="translated">상태 비저장 마이크로 서비스의 경우 <bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept>와 같은 다른 제품을 사용할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Microservices alternatives based on Docker also fit any kind of microservices approach, as explained next.</source>
+          <target state="translated">또한 Docker를 바탕으로 하는 마이크로 서비스 대안의 경우 다음에 설명된 대로 모든 종류의 마이크로 서비스 접근 방식과 맞습니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>All these platforms support .NET Core and make them ideal for hosting your microservices.</source>
+          <target state="translated">이러한 모든 플랫폼은 .NET Core를 지원하므로 마이크로 서비스를 호스팅하는 데 적합합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Containers</source>
+          <target state="translated">컨테이너</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern.</source>
+          <target state="translated">컨테이너는 아키텍처 패턴을 따르는 웹앱 또는 서비스를 컨테이너화하는 데 사용할 수 있지만 일반적으로 마이크로 서비스 아키텍처와 연계하여 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.</source>
+          <target state="translated">Windows 컨테이너에 .NET Framework를 사용할 수 있지만 .NET Core의 모듈화된 간단한 특성은 컨테이너에 적합합니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.</source>
+          <target state="translated">컨테이너를 만들고 배포할 때 해당 이미지의 크기가 .NET Framework보다 .NET Core를 사용할 때 훨씬 작습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.</source>
+          <target state="translated">플랫폼 간 사용되므로 예를 들어 서버 앱을 Linux Docker 컨테이너에 배포할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as <bpt id="p1">[</bpt>Azure Container Service<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept> which can manage, orchestrate and scale your container-based application in the cloud.</source>
+          <target state="translated">그런 다음 고유한 Linux 또는 Windows 인프라에서 Docker 컨테이너를 호스트하거나, 컨테이너 기반 응용 프로그램을 클라우드에서 관리, 오케스트레이션, 확장할 수 있는 <bpt id="p1">[</bpt>Azure Container Service<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept>와 같은 클라우드 서비스를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A need for high performance and scalable systems</source>
+          <target state="translated">고성능 및 확장 가능한 시스템에 대한 요구 사항</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When your system needs the best possible performance and scalability, .NET Core and ASP.NET Core are your best options.</source>
+          <target state="translated">시스템에 가장 적합한 성능 및 확장성이 필요한 경우 .NET Core와 ASP.NET Core를 선택하는 것이 최고입니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>ASP.NET Core outperforms ASP.NET by a factor of 10, and it leads other popular industry technologies for microservices such as Java servlets, Go and node.js.</source>
+          <target state="translated">ASP.NET Core는 ASP.NET보다 10배 성능이 뛰어나며, Java 서블릿, Go 및 node.js와 같은 마이크로 서비스에 대한 업계의 다른 유명 기술을 선도합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This is especially relevant for microservices architectures, where you could have hundreds of microservices running.</source>
+          <target state="translated">수백 개의 마이크로 서비스를 실행하는 마이크로 서비스 아키텍처의 경우 특히 그렇습니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>With ASP.NET Core you’d be able to run your system with a much lower number of servers/VMs, ultimately saving costs in infrastructure and hosting.</source>
+          <target state="translated">ASP.NET Core를 사용하여 VM당 서버 수가 훨씬 적은 상태로 시스템을 실행할 수 있게 되어 궁극적으로 인프라와 호스팅에 대한 비용이 절감됩니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A need for side by side of .NET versions per application level</source>
+          <target state="translated">응용 프로그램 수준별로 .NET 버전이 함께 필요</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you want to be able to install applications with dependencies on different versions of frameworks in .NET, you need to use .NET Core, which provides 100% side-by-side.</source>
+          <target state="translated">여러 버전의 .NET 프레임워크에 대한 종속성이 있는 응용 프로그램을 설치하려면 응용 프로그램에 따라 100% 완벽하게 제공하는 .NET Core를 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Easy side-by-side installation of different versions of .NET Core on the same machine allows you to have multiple services on the same server, each of them on its own version of .NET Core, eliminating risks and saving money in application upgrades and IT operations.</source>
+          <target state="translated">동일한 컴퓨터에 여러 버전의 .NET Core을 쉽게 설치하면 동일한 서버에서 여러 서비스를 NET Core 각 버전에서 구현할 수 있어 응용 프로그램 업그레이드 및 IT 운영 비용을 절약할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Framework</source>
+          <target state="translated">.NET Framework를 선택하는 경우</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>While .NET Core offers significant benefits for new applications and application patterns, the .NET Framework will continue to be the natural choice for many existing scenarios and as such, it won’t be replaced by .NET Core for all server applications.</source>
+          <target state="translated">.NET Core은 새 응용 프로그램 및 응용 프로그램 패턴에 많은 혜택을 제공하는 반면 .NET Framework는 다양한 기존 시나리오에 대해 계속 자연스럽게 선택되므로 .NET Core가 모든 서버 응용 프로그램에 대해 대체되는 것이 아닙니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Current .NET Framework applications</source>
+          <target state="translated">현재 .NET Framework 응용 프로그램</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In most cases, you won’t need to migrate your existing applications to .NET Core.</source>
+          <target state="translated">대부분의 경우 .NET Core로 기존 응용 프로그램을 마이그레이션할 필요가 없습니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.</source>
+          <target state="translated">대신 ASP.NET 코어에서 새 웹 서비스를 작성하는 등 기존 응용 프로그램을 확장할 때 .NET Core를 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A need to use third-party .NET libraries or NuGet packages not available for .NET Core</source>
+          <target state="translated">.NET Core에 사용할 수 없는 타사 .NET 라이브러리 또는 NuGet 패키지를 사용해야 하는 필요성</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Libraries are quickly embracing .NET Standard, which enables sharing code across all .NET flavors including .NET Core.</source>
+          <target state="translated">라이브러리는 .NET 표준을 빠르게 수용하여 .NET Core를 포함하여 모든 .NET 버전에서 공유 코드를 사용할 수 있게 합니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>With .NET Standard 2.0 this will be even easier, as the .NET Core API surface will become significantly bigger and .NET Core applications can directly use existing .NET Framework libraries.</source>
+          <target state="translated">.NET 표준 2.0을 사용하면 이 작업은 더 간편해 집니다. .NET Core API 화면이 상당히 커지고, .NET Core 응용 프로그램에서 기존.NET Framework 라이브러리를 직접 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This transition won’t be immediate, though, so we recommend checking the specific libraries required by your application before making a decision one way or another.</source>
+          <target state="translated">하지만 이 전환은 즉시 발생하지는 않습니다. 따라서 결정을 여러 방법으로 내리기 전에 응용 프로그램에 필요한 특정 라이브러리를 검사하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A need to use .NET technologies not available for .NET Core</source>
+          <target state="translated">.NET Core에 사용할 수 없는 .NET 기술을 사용해야 하는 필요성</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some .NET Framework technologies are not available in .NET Core.</source>
+          <target state="translated">일부.NET Framework 기술은 .NET Core에서는 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Some of them will be available in later .NET Core releases, but others don’t apply to the new application patterns targeted by .NET Core and may never be available.</source>
+          <target state="translated">그 중 일부는 이후 .NET Core 릴리스에서 사용할 수 있겠지만 나머지는 .NET Core에서 대상으로 하는 새 응용 프로그램 패턴에 적용되지 않아 사용하지 못할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following list shows the most common technologies not found in .NET Core 1.0:</source>
+          <target state="translated">다음 목록은 .NET Core 1.0에서 제공되지 않는 가장 일반적인 기술입니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Forms applications: ASP.NET Web Forms is only available on the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario.</source>
+          <target state="translated">ASP.NET Web Forms 응용 프로그램: ASP.NET Web Forms는 .NET Framework에서만 사용할 수 있으므로 이 시나리오에서는 ASP.NET Core / .NET Core를 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Currently there are no plans to bring ASP.NET Web Forms to .NET Core.</source>
+          <target state="translated">현재 .NET Core에 ASP.NET Web Forms를 적용할 계획은 없습니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Pages applications: ASP.NET Web Pages are not included in ASP.NET Core 1.0, although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">ASP.NET Web Pages 응용 프로그램: ASP.NET Web Pages는 <bpt id="p1">[</bpt>.NET Core 로드맵<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>에 설명된 대로 이후 버전에 포함될 예정이지만 ASP.NET Core 1.0에는 포함되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>ASP.NET SignalR server/client implementation.</source>
+          <target state="translated">ASP.NET SignalR 서버/클라이언트 구현:</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">.NET Core 1.0 릴리스 시점부터(2016년 6월) ASP.NET SignalR은 ASP.NET Core에서 사용할 수 없습니다(클라이언트 또는 서버 모두). <bpt id="p1">[</bpt>.NET Core 로드맵<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>에 설명된 대로 이후 버전에는 포함될 예정입니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Preview state is available at the <bpt id="p1">[</bpt>Server-side<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept> and <bpt id="p2">[</bpt>Client Library<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept> GitHub repositories.</source>
+          <target state="translated">Preview 상태는 <bpt id="p1">[</bpt>서버 쪽<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept> 및 <bpt id="p2">[</bpt>클라이언트 라이브러리<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept> GitHub 리포지토리에서 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>WCF services implementation.</source>
+          <target state="translated">WCF 서비스 구현.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Even when there’s a <bpt id="p1">[</bpt>WCF-Client library<ept id="p1">](https://github.com/dotnet/wcf)</ept> to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework.</source>
+          <target state="translated">.NET Core에서 WCF 서비스를 사용할 수 있는 <bpt id="p1">[</bpt>WCF-클라이언트 라이브러리<ept id="p1">](https://github.com/dotnet/wcf)</ept>가 있더라도(2016년 6월 기준) WCF 서버 구현은 .NET Framework에서만 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This scenario is not part of the current plan for .NET Core but it’s being considered for the future.</source>
+          <target state="translated">이 시나리오는 .NET Core에 대한 현재 계획의 일부가 아니지만 차후에 고려될 예정입니다.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.</source>
+          <target state="translated">워크플로 관련 서비스: Windows WF(Workflow Foundation), 워크플로 서비스(단일 서비스에서 WCF + WF) 및 WCF Data Services(이전의 "ADO.NET 데이터 서비스")는 .NET Framework에서만 사용할 수 있으며 .NET Core에 적용할 계획은 아직 없습니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.</source>
+          <target state="translated">언어 지원: Visual Basic 및 F#에는 현재 도구 지원 .NET Core가 없지만 둘 다 Visual Studio 2017 이상 버전에서 지원될 예정입니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In addition to the official roadmap, there are other frameworks to be ported to .NET Core - For a full list, take a look at CoreFX issues marked as <bpt id="p1">[</bpt>port-to-core<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept>.</source>
+          <target state="translated">공식 로드맵 외에 .NET Core로 이식할 수 있는 다른 프레임워크가 있습니다. 이에 대한 전체 목록은 <bpt id="p1">[</bpt>포트-코어<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept>로 표시된 CoreFX 문제를 살펴보세요.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Please note that this list doesn’t represent a commitment from Microsoft to bring those components to .NET Core — they are simply capturing the desire from the community to do so.</source>
+          <target state="translated">이 목록은 이러한 구성 요소를 .NET Core에 적용하겠다는 Microsoft의 약속을 나타내는 것은 아닙니다. 단지 커뮤니티에서 원하는 항목을 캡처한 것입니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>That being said, if you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard.</source>
+          <target state="translated">즉 위에 나열된 구성 요소 중 하나에 관심이 있는 경우에는 의견을 낼 수 있도록 GitHub의 토론에 참여해 보세요.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>And if you think something is missing, please <bpt id="p1">[</bpt>file a new issue in the CoreFX repository<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>.</source>
+          <target state="translated">누락된 내용이 있다고 생각이 들면 <bpt id="p1">[</bpt>CoreFX 리포지토리에 새로운 문제를 등록<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>하세요.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A need to use a platform that doesn’t support .NET Core</source>
+          <target state="translated">.NET Core를 지원하지 않는 플랫폼을 사용하는 필요성</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Some Microsoft or third-party platforms don’t support .NET Core.</source>
+          <target state="translated">일부 Microsoft 또는 타사 플랫폼에서는 .NET Core를 지원하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework.</source>
+          <target state="translated">예를 들어 Service Fabric Stateful Reliable Services 및 Service Fabric Reliable Actors와 같은 일부 Azure Services에는 .NET Framework가 필요합니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Some other services provide an SDK not yet available for consumption on .NET Core.</source>
+          <target state="translated">일부 다른 서비스에서는 .NET Core에서 사용할 수 없는 SDK를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This is a transitional circumstance, as all of Azure services use .NET Core.</source>
+          <target state="translated">현재 Azure Services는 모두 .NET Core를 사용하므로 이 상황은 전환되고 있습니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the meantime, you can always use the equivalent REST API instead of the client SDK.</source>
+          <target state="translated">그 동안에는 클라이언트 SDK 대신 상응하는 REST API를 항상 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Further resources</source>
+          <target state="translated">추가 리소스</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core Guide<ept id="p1">](../core/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core 가이드<ept id="p1">](../core/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Porting from .NET Framework to .NET Core<ept id="p1">](../core/porting/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Framework에서 .NET Core로 이식<ept id="p1">](../core/porting/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Framework on Docker Guide<ept id="p1">](../framework/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker 가이드의 .NET Framework<ept id="p1">](../framework/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Components Overview<ept id="p1">](components.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 구성 요소 개요<ept id="p1">](components.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
