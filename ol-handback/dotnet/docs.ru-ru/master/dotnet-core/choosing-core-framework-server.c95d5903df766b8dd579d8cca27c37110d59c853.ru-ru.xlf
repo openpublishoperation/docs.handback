@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-188fee3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e23514daacb34739b26b7a31afea2ccb30296e79</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\choosing-core-framework-server.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1fa555fd5e444767120028ad72419fa3439a56d3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e6c27ce57971b73633f55f31ff15978a3669700</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">Выбор между .NET Core и .NET Framework для серверных приложений</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>A guide on which flavor of .NET you should consider when building a server app in .NET.</source>
+          <target state="translated">Рекомендации по использованию сред выполнения .NET для создания серверных приложений на платформе .NET.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Framework</source>
+          <target state="translated">.NET, .NET Core, .NET Framework</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">Выбор между .NET Core и .NET Framework для серверных приложений</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>There are two supported choices of runtime for building server-side applications with .NET: .NET Framework and .NET Core.</source>
+          <target state="translated">Серверные приложения на платформе .NET можно разрабатывать в двух поддерживаемых средах выполнения: .NET Framework и .NET Core.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Both share a lot of the same .NET platform components and you can share code across the two.</source>
+          <target state="translated">В них используется множество одинаковых компонентов этой платформы, а код можно использовать как в одной среде, так и в другой.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.</source>
+          <target state="translated">Однако между этими двумя средами также существуют и фундаментальные различия. Поэтому ваш выбор будет зависеть от поставленной задачи.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article provides guidance on when to use each.</source>
+          <target state="translated">В этой статье содержатся рекомендации по использованию каждой из двух сред выполнения.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You should use .NET Core for your server application when:</source>
+          <target state="translated">Используйте среду .NET Core для создания серверных приложений в следующих случаях:</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You have cross-platform needs.</source>
+          <target state="translated">для создания кроссплатформенных решений;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You are targeting microservices.</source>
+          <target state="translated">для создания решений, ориентированных на микрослужбы;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You are using Docker containers.</source>
+          <target state="translated">при использовании контейнеров Docker;</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You need high performance and scalable systems.</source>
+          <target state="translated">если нужны масштабируемые системы с высокой производительностью;</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need side by side of .NET versions by application.</source>
+          <target state="translated">для создания приложений с поддержкой разных версий .NET.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You should use .NET Framework for your server application when:</source>
+          <target state="translated">Используйте среду .NET Framework для создания серверных приложений в следующих случаях:</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Your application currently uses .NET Framework (recommendation is to extend instead of migrating)</source>
+          <target state="translated">приложение в настоящий момент использует среду .NET Framework (мы рекомендуем расширять приложения, а не переносить их в другую среду);</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You need to use third-party .NET libraries or NuGet packages not available for .NET Core.</source>
+          <target state="translated">требуются сторонние библиотеки .NET или пакеты NuGet, недоступные для .NET Core;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You need to use .NET technologies that are not available for .NET Core.</source>
+          <target state="translated">требуются технологии .NET, недоступные для .NET Core;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You need to use a platform that doesn’t support .NET Core.</source>
+          <target state="translated">требуется платформа, не поддерживающая .NET Core.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Core</source>
+          <target state="translated">Случаи использования .NET Core</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following is a more detailed explanation of the previously-stated reasons for picking .NET Core.</source>
+          <target state="translated">Ниже более детально описаны указанные ранее причины для выбора платформы .NET Core.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Cross-platform needs</source>
+          <target state="translated">Создание кроссплатформенных приложений</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and macOS), the best choice is to use .NET Core.</source>
+          <target state="translated">Если вам нужно создать приложение (веб-приложение или службу) с поддержкой разных платформ (Windows, Linux и macOS), мы рекомендуем использовать .NET Core.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>.NET Core also supports the previously-mentioned operating systems as your development workstation.</source>
+          <target state="translated">В среде .NET Core также можно использовать упомянутые ранее операционные системы в качестве рабочих станций для разработки.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Visual Studio provides an Integrated Development Environment (IDE) for Windows.</source>
+          <target state="translated">Visual Studio предоставляет интегрированную среду разработки (IDE) для Windows.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging.</source>
+          <target state="translated">Кроме того, редактор Visual Studio Code можно использовать в macOS, Linux и Windows. Он полностью поддерживает .NET Core, в том числе IntelliSense и отладку.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> project.</source>
+          <target state="translated">Для разработки на платформе .NET Core также можно использовать большинство сторонних редакторов, например Sublime, Emacs, VI. Поддержку редактора IntelliSense можно добавить с помощью проекта <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> с открытым исходным кодом.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can also avoid any code editor and directly use the .NET Core command-line tools, available for all supported platforms.</source>
+          <target state="translated">Платформа .NET Core полагается не только на редакторы. Приложения здесь можно создавать непосредственно с помощью средств командной строки, доступных для всех поддерживаемых платформ.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Microservices architecture</source>
+          <target state="translated">Архитектура микрослужб</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>.NET Core is the best candidate if you are embracing a microservices oriented system composed of multiple independent, dynamically scalable, stateful or stateless microservices.</source>
+          <target state="translated">Если вам нужна ориентированная на микрослужбы система, состоящая из нескольких независимых масштабируемых с течением времени микрослужб с отслеживанием или без отслеживания состояния, тогда .NET Core — это лучший вариант.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>.NET Core is lightweight and its API surface can be minimized to the scope of the microservice.</source>
+          <target state="translated">Платформа .NET Core имеет небольшой размер, а рабочую область API можно уменьшить до объема микрослужбы.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>A microservices architecture also allows you to mix technologies across a service boundary, enabling a gradual embrace of .NET Core for new microservices that live in conjunction with other microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.</source>
+          <target state="translated">Архитектура микрослужб также позволяет сочетать технологии разных служб, что, в свою очередь, предоставляет возможность постепенно добавлять новые микрослужбы в .NET Core. Эти службы используются параллельно с другими службами и микрослужбами, созданными на основе .NET Framework, Java, Ruby или других монолитных технологий.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The infrastructure platforms you could use are many.</source>
+          <target state="translated">Пользователям на выбор предоставляется множество инфраструктурных платформ.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For large and complex microservice systems, you can use <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept>.</source>
+          <target state="translated">Для больших и сложных систем микрослужб можно использовать <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept>,</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For stateless microservices you can also use other products like <bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept>.</source>
+          <target state="translated">а для микрослужб без отслеживания состояния — другие продукты, например <bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Microservices alternatives based on Docker also fit any kind of microservices approach, as explained next.</source>
+          <target state="translated">Микрослужбы на основе Docker поддерживают любые подходы, как описано дальше.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>All these platforms support .NET Core and make them ideal for hosting your microservices.</source>
+          <target state="translated">Все эти платформы поддерживают .NET Core и идеально подходят для размещения микрослужб.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Containers</source>
+          <target state="translated">Контейнеры</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern.</source>
+          <target state="translated">Контейнеры обычно используются вместе с архитектурой микрослужб, хотя их также можно использовать, чтобы поместить в контейнер веб-приложения или службы на базе любого архитектурного шаблона.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.</source>
+          <target state="translated">Среду .NET Framework можно использовать для контейнеров Windows, но упрощенные возможности и модульный принцип среды .NET Core делают ее оптимальной для контейнеров.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.</source>
+          <target state="translated">При создании и развертывании контейнера размер его образа гораздо меньше в среде .NET Core.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.</source>
+          <target state="translated">Так как эта среда поддерживает разные платформы, серверные приложения можно развертывать, например, в контейнеры Docker в Linux.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as <bpt id="p1">[</bpt>Azure Container Service<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept> which can manage, orchestrate and scale your container-based application in the cloud.</source>
+          <target state="translated">Затем эти контейнеры можно размещать в собственной инфраструктуре Linux или Windows. Кроме того, с помощью облачной службы, например <bpt id="p1">[</bpt>Службы контейнеров Azure<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept>, можно выполнять оркестрацию и масштабировать приложения на основе контейнеров, а также управлять ими в облаке.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A need for high performance and scalable systems</source>
+          <target state="translated">Масштабируемые системы с высокой производительностью</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When your system needs the best possible performance and scalability, .NET Core and ASP.NET Core are your best options.</source>
+          <target state="translated">Если для вашей системы требуется максимальная производительность и возможности масштабирования, мы рекомендуем использовать среды .NET Core и ASP.NET Core.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>ASP.NET Core outperforms ASP.NET by a factor of 10, and it leads other popular industry technologies for microservices such as Java servlets, Go and node.js.</source>
+          <target state="translated">Среда ASP.NET Core превышает производительность ASP.NET в 10 раз и поддерживает другие популярные отраслевые технологии микрослужб, такие как сервлеты Java, Go и Node.js.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This is especially relevant for microservices architectures, where you could have hundreds of microservices running.</source>
+          <target state="translated">Это особенно важно для архитектур микрослужб, где могут выполняться сотни микрослужб.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>With ASP.NET Core you’d be able to run your system with a much lower number of servers/VMs, ultimately saving costs in infrastructure and hosting.</source>
+          <target state="translated">Среда ASP.NET Core позволяет уменьшить количество серверов и виртуальных машин, необходимых для системы, и в конечном счете сократить расходы на архитектуру и размещение.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A need for side by side of .NET versions per application level</source>
+          <target state="translated">Создание приложений с поддержкой разных версий .NET</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you want to be able to install applications with dependencies on different versions of frameworks in .NET, you need to use .NET Core, which provides 100% side-by-side.</source>
+          <target state="translated">Если требуется установить приложения с зависимостями в разных версиях платформ .NET, используйте среду .NET Core, обеспечивающую полный параллелизм.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Easy side-by-side installation of different versions of .NET Core on the same machine allows you to have multiple services on the same server, each of them on its own version of .NET Core, eliminating risks and saving money in application upgrades and IT operations.</source>
+          <target state="translated">За счет простой параллельной установки разных версий .NET Core на одной виртуальной машине пользователи могут размещать на том же самом сервере несколько служб, разработанных в разных версиях .NET Core. Это позволяет устранить риски и сократить расходы на обновление приложений и ИТ-операции.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Framework</source>
+          <target state="translated">Случаи использования .NET Framework</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>While .NET Core offers significant benefits for new applications and application patterns, the .NET Framework will continue to be the natural choice for many existing scenarios and as such, it won’t be replaced by .NET Core for all server applications.</source>
+          <target state="translated">Хотя среда .NET Core предоставляет значительные преимущества для новых приложений и шаблонов приложений, мы рекомендуем использовать среду .NET Framework для большинства имеющихся сценариев и, исходя из этого, — для всех серверных приложений.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Current .NET Framework applications</source>
+          <target state="translated">Готовые приложения .NET Framework</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In most cases, you won’t need to migrate your existing applications to .NET Core.</source>
+          <target state="translated">В большинстве случаев вам не потребуется переносить готовые приложения в среду .NET Core.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.</source>
+          <target state="translated">Взамен мы советуем использовать .NET Core для расширения готовых приложений, например для написания новой веб-службы в ASP.NET Core.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A need to use third-party .NET libraries or NuGet packages not available for .NET Core</source>
+          <target state="translated">Поддержка сторонних библиотек .NET или пакетов NuGet, недоступных для .NET Core</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Libraries are quickly embracing .NET Standard, which enables sharing code across all .NET flavors including .NET Core.</source>
+          <target state="translated">Библиотеки .NET Standard позволяют совместно использовать код в различных средах выполнения .NET, в том числе в .NET Core.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>With .NET Standard 2.0 this will be even easier, as the .NET Core API surface will become significantly bigger and .NET Core applications can directly use existing .NET Framework libraries.</source>
+          <target state="translated">Благодаря тому, что библиотеки .NET Standard 2.0 значительно расширяют API-интерфейс .NET Core, а приложения .NET Core могут непосредственно использовать имеющиеся библиотеки .NET Framework, процесс совместного использования стал еще проще.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This transition won’t be immediate, though, so we recommend checking the specific libraries required by your application before making a decision one way or another.</source>
+          <target state="translated">Этот переход занимает некоторое время, поэтому перед принятием решения мы рекомендуем пересмотреть библиотеки, необходимые для приложения.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A need to use .NET technologies not available for .NET Core</source>
+          <target state="translated">Поддержка технологий .NET, недоступных для .NET Core</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some .NET Framework technologies are not available in .NET Core.</source>
+          <target state="translated">Некоторые технологии .NET Framework недоступны в среде .NET Core.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Some of them will be available in later .NET Core releases, but others don’t apply to the new application patterns targeted by .NET Core and may never be available.</source>
+          <target state="translated">Поддержка некоторых из них будет добавлена в последующих выпусках .NET Core, однако остальные технологии не применяются к новым шаблонам приложений, используемым в среде .NET Core, и будут недоступными всегда.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following list shows the most common technologies not found in .NET Core 1.0:</source>
+          <target state="translated">Ниже приведен список самых распространенных технологий, которые недоступны в .NET Core 1.0.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Forms applications: ASP.NET Web Forms is only available on the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario.</source>
+          <target state="translated">Приложения веб-форм ASP.NET. Веб-формы ASP.NET доступны только в среде .NET Framework, поэтому этот сценарий нельзя реализовать в среде ASP.NET Core или .NET Core.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Currently there are no plans to bring ASP.NET Web Forms to .NET Core.</source>
+          <target state="translated">В настоящее время добавление веб-форм ASP.NET в среду .NET Core не планируется.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Pages applications: ASP.NET Web Pages are not included in ASP.NET Core 1.0, although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">Приложения веб-страниц ASP.NET. Веб-страницы ASP.NET не добавлены в среду ASP.NET Core 1.0. Однако их планируют добавить в следующем выпуске. Дополнительные сведения см. в <bpt id="p1">[</bpt>плане развития .NET Core<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>ASP.NET SignalR server/client implementation.</source>
+          <target state="translated">Реализация сервера и клиента ASP.NET SignalR.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">В выпуске .NET Core 1.0 от июня 2016 года ASP.NET SignalR недоступен (ни клиент, ни сервер). Однако их планируют добавить в следующем выпуске. Дополнительные сведения см. в <bpt id="p1">[</bpt>плане развития .NET Core<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Preview state is available at the <bpt id="p1">[</bpt>Server-side<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept> and <bpt id="p2">[</bpt>Client Library<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept> GitHub repositories.</source>
+          <target state="translated">Предварительная пробная версия библиотеки для <bpt id="p1">[</bpt>сервера<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept> и <bpt id="p2">[</bpt>клиента<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept> доступна в репозиториях GitHub.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>WCF services implementation.</source>
+          <target state="translated">Реализация служб WCF.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Even when there’s a <bpt id="p1">[</bpt>WCF-Client library<ept id="p1">](https://github.com/dotnet/wcf)</ept> to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework.</source>
+          <target state="translated">Хотя в среду .NET Core и добавлена <bpt id="p1">[</bpt>библиотека клиента WCF<ept id="p1">](https://github.com/dotnet/wcf)</ept>, позволяющая использовать службы WCF, по состоянию на июнь 2016 г. сервер WCF можно реализовать только в среде .NET Framework.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This scenario is not part of the current plan for .NET Core but it’s being considered for the future.</source>
+          <target state="translated">Этот сценарий не входит в текущий план для .NET Core, но он будет рассмотрен в будущем.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.</source>
+          <target state="translated">Службы, связанные с рабочим процессом. Службы Windows Workflow Foundation (WF), Workflow Services (WCF и WF в одной службе) и WCF Data Services (ранее службы данных ADO.NET) доступны только в среде .NET Framework, и их добавление в .NET Core не планируется.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.</source>
+          <target state="translated">Поддержка языков. В настоящее время в среде .NET Core отсутствуют средства для поддержки языков Visual Basic и F#, но их поддержка будет добавлена в Visual Studio 2017 и более поздние версии.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In addition to the official roadmap, there are other frameworks to be ported to .NET Core - For a full list, take a look at CoreFX issues marked as <bpt id="p1">[</bpt>port-to-core<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept>.</source>
+          <target state="translated">Кроме платформ, указанных в официальной стратегии, существуют и другие платформы, которые можно перенести в среду .NET Core. Полный список см. в репозитории CoreFX. Эти платформы помечены как <bpt id="p1">[</bpt>port-to-core<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Please note that this list doesn’t represent a commitment from Microsoft to bring those components to .NET Core — they are simply capturing the desire from the community to do so.</source>
+          <target state="translated">Обратите внимание, что корпорация Майкрософт не намеревается добавлять эти компоненты в среду .NET Core. Компоненты, добавленные в список, отражают желания пользователей сообщества.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>That being said, if you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard.</source>
+          <target state="translated">Тем не менее, если вас заинтересовал любой из перечисленных выше компонентов, примите участие в обсуждениях на сайте GitHub и выразите свое мнение.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>And if you think something is missing, please <bpt id="p1">[</bpt>file a new issue in the CoreFX repository<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>.</source>
+          <target state="translated">Если вы думаете, что чего-то не хватает, <bpt id="p1">[</bpt>отправьте новый вопрос в репозиторий CoreFX<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A need to use a platform that doesn’t support .NET Core</source>
+          <target state="translated">Использование платформы, не поддерживающей .NET Core</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Some Microsoft or third-party platforms don’t support .NET Core.</source>
+          <target state="translated">Некоторые платформы Майкрософт и платформы сторонних поставщиков не поддерживают среду .NET Core.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework.</source>
+          <target state="translated">Например, для некоторых служб Azure, таких как Service Fabric Reliable Services с отслеживанием состояния и Service Fabric Reliable Actors, требуется среда .NET Framework.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Some other services provide an SDK not yet available for consumption on .NET Core.</source>
+          <target state="translated">Некоторые другие службы предоставляют пакеты SDK, недоступные в среде .NET Core.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This is a transitional circumstance, as all of Azure services use .NET Core.</source>
+          <target state="translated">Это временные обстоятельства, так как все службы Azure используют среду .NET Core.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the meantime, you can always use the equivalent REST API instead of the client SDK.</source>
+          <target state="translated">В то же время в качестве альтернативы клиентскому пакету SDK всегда можно использовать REST API.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Further resources</source>
+          <target state="translated">Дополнительные ресурсы</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core Guide<ept id="p1">](../core/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Руководство по .NET Core<ept id="p1">](../core/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Porting from .NET Framework to .NET Core<ept id="p1">](../core/porting/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Перенос кода в .NET Core из .NET Framework<ept id="p1">](../core/porting/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Framework on Docker Guide<ept id="p1">](../framework/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Руководство по Docker в .NET Framework<ept id="p1">](../framework/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Components Overview<ept id="p1">](components.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Общие сведения о компонентах .NET<ept id="p1">](components.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
