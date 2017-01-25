@@ -2,7 +2,7 @@
 > This report show how many files are handback automatically in this handoff.
 
 ## Summary
-* **Auto Archive Count**: 1
+* **Auto Archive Count**: 0
 * **Auto Handback Count**: 0
 
 ## Auto Handback List
@@ -22,5 +22,4 @@
 
 | Handoff Xliff | Archived Reason | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.pt-br\master\dotnet-core\getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/89367b8f40ab0eba3192e5d737d2d1a236b21a81/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.pt-br.xlf) | Archived when 16/11/28 06:10 | 
 
