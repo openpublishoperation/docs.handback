@@ -1,53 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/getting-started.md) | ArchivedSuccess | [Details](#5fa4fd69c6f5c427cb60af71b6c608975a8b36c743)
- [docs\core\tutorials\using-on-windows.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/tutorials/using-on-windows.md) | HandedOffSuccess | [Details](#446ada6d325a81f9c0078e4771866d99af341aed127)
 
 ## Item Details
-##### <a name='5fa4fd69c6f5c427cb60af71b6c608975a8b36c743'></a> Source: [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/getting-started.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c11781e24f6ad92c03c054d14dd61e7ed7f44da0/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Handoff Datetime: 2017-01-24 16:23:13
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/08999c69e457b69438ee171b598df0ad244e6ad8/ol-archive/dotnet/docs.zh-cn/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Archive Datetime: 2017-01-24 16:23:14
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\getting-started.md](https://github.com/dotnet/docs.zh-cn/blob/f6f3c142cc1e438f363a30a0685207c882a86631/docs/core/getting-started.md)
-* Current Handback File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Current Handback Datetime: 2016-11-30 15:08:11
-* Bilingual File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/2a5621c91620ea29d70c1d51f8fea3a7b5160790/ol-handback/dotnet/docs.zh-cn/master/ht-p1/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-30 15:10:47
-* [Back to Top](#report-top)
-
-##### <a name='446ada6d325a81f9c0078e4771866d99af341aed127'></a> Source: [docs\core\tutorials\using-on-windows.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/tutorials/using-on-windows.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c11781e24f6ad92c03c054d14dd61e7ed7f44da0/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf)
-* Handoff Datetime: 2017-01-24 16:23:13
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\tutorials\using-on-windows.md](https://github.com/dotnet/docs.zh-cn/blob/26d13aaecbd66b552112d9124d9e1a6750bf2c08/docs/core/tutorials/using-on-windows.md)
-* Current Handback File: [using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf)
-* Current Handback Datetime: 2016-12-09 21:26:45
-* Bilingual File: [using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/using-on-windows.6f63d31d24f569b9ee467193932149ce1f2af726.zh-cn.xlf)
-* Bilingual Datetime: 2016-12-09 21:30:38
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
