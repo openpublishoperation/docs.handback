@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | ArchivedSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456)
 
 ## Item Details
+##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/cfac8e9c1b43506913a44fc2a1d70911c55e2f0d/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Handoff Datetime: 2017-01-30 22:33:26
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/90096e2cdf17de828caa8d573f7db43f0ee530f3/ol-archive/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Archive Datetime: 2017-01-30 22:33:27
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/351a1ed25674ad55a3bbe3ad67eda6ed0d7f87ac/ol-handback/dotnet/docs.ja-jp/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Bilingual Datetime: 2016-12-09 21:31:39
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
