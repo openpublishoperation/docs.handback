@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/4bd90ac423134c67eb35836d417b09053c98f586/docs/standard/managed-code.md) | HandedOffSuccess | [Details](#7f761c4fc24b8d22d8d1f8116745ebb3f65833783449)
 
 ## Item Details
-##### <a name='7f761c4fc24b8d22d8d1f8116745ebb3f65833783449'></a> Source: [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/4bd90ac423134c67eb35836d417b09053c98f586/docs/standard/managed-code.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/117a4b876f6702d4ce32416be753ef01d5339cef/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf)
-* Handoff Datetime: 2017-01-26 18:35:19
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\standard\managed-code.md](https://github.com/dotnet/docs.zh-cn/blob/26d13aaecbd66b552112d9124d9e1a6750bf2c08/docs/standard/managed-code.md)
-* Current Handback File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p2/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf)
-* Current Handback Datetime: 2016-12-09 21:26:45
-* Bilingual File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p2/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.zh-cn.xlf)
-* Bilingual Datetime: 2016-12-09 21:30:38
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
