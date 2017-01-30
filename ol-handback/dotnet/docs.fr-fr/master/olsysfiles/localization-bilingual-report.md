@@ -6,18 +6,18 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/3115359729431ecbcc16058612da59b85621fa0f/docs/toc.md) | HandedOffSuccess | [Details](#ae505f903c26d03b00ffae877f7d05500713ac5f3461)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/3115359729431ecbcc16058612da59b85621fa0f/docs/toc.md) | ArchivedSuccess | [Details](#ae505f903c26d03b00ffae877f7d05500713ac5f3461)
 
 ## Item Details
 ##### <a name='ae505f903c26d03b00ffae877f7d05500713ac5f3461'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/3115359729431ecbcc16058612da59b85621fa0f/docs/toc.md)
-* Status: HandedOffSuccess
+* Status: ArchivedSuccess
 * Target File: 
 * Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/9e8813d6de88f65adaac073ed20ad1e53690da43/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.fr-fr.xlf)
 * Handoff Datetime: 2017-01-24 06:20:53
 * Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Handoff Name: docs_HT_OL#dotnet#20170130T000201
+* Archive File: [toc.d55ff8e019666abd1da95f80900583861673879c.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/55bdf61327828e4eb0143abb50c666ceed6380fe/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.fr-fr.xlf)
+* Archive Datetime: 2017-01-30 08:14:18
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
