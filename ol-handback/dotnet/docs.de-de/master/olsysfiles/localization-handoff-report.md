@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | ArchivedSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456)
 
 ## Item Details
+##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/e97ffbacd3f9872660a501c8cbc1b50d7f6d7d1a/ol-handoff/dotnet/docs.de-de/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
+* Handoff Datetime: 2017-01-30 22:32:28
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/86abe12a89f6114c960baa90bfa4268042f089a9/ol-archive/dotnet/docs.de-de/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
+* Archive Datetime: 2017-01-30 22:32:29
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\standard\native-interop.md](https://github.com/dotnet/docs.de-de/blob/3415f0989950620d21c0badddbf353b1efafbb2d/docs/standard/native-interop.md)
+* Current Handback File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e953f494333363c8a4768bfe95907d6781c2ceb0/ol-handback/dotnet/docs.de-de/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
+* Current Handback Datetime: 2016-12-09 21:26:00
+* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e953f494333363c8a4768bfe95907d6781c2ceb0/ol-handback/dotnet/docs.de-de/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.de-de.xlf)
+* Bilingual Datetime: 2016-12-09 21:29:25
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
