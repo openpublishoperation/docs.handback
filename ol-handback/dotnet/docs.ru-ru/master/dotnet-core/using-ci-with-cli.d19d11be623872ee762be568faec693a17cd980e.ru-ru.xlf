@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2acfb2bf7732aa17e850b9adcf03dfcb7993908b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\using-ci-with-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f58455cc14273ae119b595d530c29a233a67691a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d1e64dbd59650c4a0912891814961505889e764</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs</source>
+          <target state="translated">Использование пакета SDK и инструментов .NET Core при непрерывной интеграции (CI) | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">Использование пакета SDK и средств .NET Core при непрерывной интеграции (CI)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI) (Tooling Preview 4)</source>
+          <target state="translated">Использование пакета SDK и инструментов .NET Core при непрерывной интеграции (CI) (предварительная версия 4)</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4.</source>
+          <target state="translated">Эта статья применима к инструментам .NET Core (предварительная версия 4) для версии-кандидата Visual Studio 2017.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the .NET Core Tools Preview 2 version, see the <bpt id="p1">[</bpt>Using .NET Core SDK and tools in Continuous Integration (CI)<ept id="p1">](../../tools/using-ci-with-cli.md)</ept> topic.</source>
+          <target state="translated">Версия этой статьи об инструментах .NET Core (предварительная версия 2): <bpt id="p1">[</bpt>Использование пакета SDK и инструментов .NET Core при непрерывной интеграции (CI)<ept id="p1">](../../tools/using-ci-with-cli.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Обзор</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This document outlines the usage of .NET Core SDK and its tools on the build server.</source>
+          <target state="translated">В этой статье описывается использование пакета SDK для .NET Core и входящих в него средств на сервере сборки.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In general, on a CI build server, you want to automate the installation in some way.</source>
+          <target state="translated">Как правило, на сервере сборки CI требуется автоматизировать установку каким-либо образом.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The automation, ideally, should not require administrative privileges if at all possible.</source>
+          <target state="translated">В идеале для автоматизации, если она возможна, не должны требоваться права администратора.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For SaaS CI solutions, there are several options.</source>
+          <target state="translated">При использовании решений SaaS для непрерывной интеграции существует ряд вариантов.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This document will cover two very popular ones, <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> and <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</source>
+          <target state="translated">В этом разделе рассматриваются два из наиболее популярных: <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> и <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>There are, of course, many other services out there, but the installation and usage mechanisms should be similar.</source>
+          <target state="translated">Есть, конечно, много других служб, но механизмы установки и использования будут очень похожими.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Installation options for CI build servers</source>
+          <target state="translated">Варианты установки для серверов сборки CI</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Using the native installers</source>
+          <target state="translated">Использование собственных установщиков</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If using installers that require administrative privileges is not something that presents a problem, native installers for each platform can be used to set up the build server.</source>
+          <target state="translated">Если использование установщиков, требующих прав администратора, не вызовет проблем, для настройки сервера сборки можно применять собственные установщики для каждой платформы.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This approach, especially in the case of Linux build servers, has one advantage which is automatic installing of dependencies needed for the SDK to run.</source>
+          <target state="translated">Такой подход, особенно в случае с серверами сборки Linux, имеет одно преимущество, которое заключается в автоматической установке зависимостей, необходимых для работы пакета SDK.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The native installers will also install a system-wide version of the SDK, which may be desired; if it's not, you should look into the <bpt id="p1">[</bpt>installer script usage<ept id="p1">](#using-the-installer-script)</ept> outlined below.</source>
+          <target state="translated">Собственные установщики также устанавливают версию пакета SDK для всей системы, которая может оказаться необходимой. Если нет, можно <bpt id="p1">[</bpt>использовать скрипт установки<ept id="p1">](#using-the-installer-script)</ept>, о котором рассказывается ниже.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Using this approach is simple.</source>
+          <target state="translated">Этот подход прост.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For Linux, there is a choice of using a feed-based package manager, such as <ph id="ph1">`apt-get`</ph> for Ubuntu or <ph id="ph2">`yum`</ph> for CentOS, or using the packages themselves (that is, DEB or RPM).</source>
+          <target state="translated">В случае с Linux можно выбрать диспетчер пакетов на основе каналов, например <ph id="ph1">`apt-get`</ph> для Ubuntu или <ph id="ph2">`yum`</ph> для CentOS, или использовать сами пакеты (то есть DEB или RPM).</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The former would require setting up the feed that contains the packages.</source>
+          <target state="translated">В первом случае потребуется настроить канал, содержащий пакеты.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For Windows platforms, you can use the MSI.</source>
+          <target state="translated">Для платформ Windows можно использовать MSI.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>All of the binaries can be found on the <bpt id="p1">[</bpt>.NET Core getting started page<ept id="p1">](https://aka.ms/dotnetcoregs)</ept> which points to the latest stable releases.</source>
+          <target state="translated">Все двоичные файлы можно найти на <bpt id="p1">[</bpt>странице, посвященной началу работы с .NET Core<ept id="p1">](https://aka.ms/dotnetcoregs)</ept>, на которой имеются ссылки на последние стабильные выпуски.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you wish to use newer (and potentially unstable) releases or the latest, you can use the links from the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/cli)</ept>.</source>
+          <target state="translated">Чтобы использовать более новые или самые последние (возможно, нестабильные) выпуски, воспользуйтесь ссылками в <bpt id="p1">[</bpt>репозитории CLI<ept id="p1">](https://github.com/dotnet/cli)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Using the installer script</source>
+          <target state="translated">Использование скрипта установки</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Using the installer script allows for non-administrative installation on your build server.</source>
+          <target state="translated">Скрипт установки позволяет выполнять установку на сервере сборки без прав администратора.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>It also allows a very easy automation.</source>
+          <target state="translated">Кроме того, с его помощью очень легко обеспечить автоматизацию.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The script itself will download the ZIP/tarball files needed and will unpack them; it will also add the install location on the local machine to the PATH so that the tools become available for invocation immediately post-install.</source>
+          <target state="translated">Скрипт самостоятельно скачивает необходимые файлы ZIP или TAR и распаковывает их. Он также добавляет расположение установки на локальном компьютере в переменную PATH, благодаря чему средства становятся доступными для вызова сразу после установки.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The installer script can easily be automated at the start of the build to fetch and install the needed version of the SDK.</source>
+          <target state="translated">Работу скрипта установки можно легко автоматизировать в начале процесса сборки с целью получения и установки требуемой версии пакета SDK.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The "needed version" is whatever version application being built requires.</source>
+          <target state="translated">"Требуемая версия" — это версия, необходимая приложению, сборка которого выполняется.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can choose the installation path so you can install the SDK locally and then clean up after the build completes.</source>
+          <target state="translated">Вы можете выбрать путь установки для локальной установки пакета SDK, а затем выполнить очистку после завершения сборки.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This brings additional encapsulation and atomicity to the build process.</source>
+          <target state="translated">Это обеспечивают дополнительную инкапсуляцию и атомарность процесса сборки.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The installation script reference can be found in the <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> document.</source>
+          <target state="translated">Ссылку на скрипт установки можно найти в документе по команде <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Dealing with the dependencies</source>
+          <target state="translated">Работа с зависимостями</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Using the installer script means that the native dependencies are not installed automatically and that you have to install them if the operating system you are installing on already doesn't have them.</source>
+          <target state="translated">При использовании скрипта установки собственные зависимости не устанавливаются автоматически. Их необходимо установить вручную, если их еще нет в целевой операционной системе.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You can see the list of prerequisites in the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</source>
+          <target state="translated">Список предварительных требований см. в <bpt id="p1">[</bpt>репозитории CLI<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>CI services setup examples</source>
+          <target state="translated">Примеры установки с помощью служб CI</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The below sections show examples of configurations using the mentioned CI SaaS offerings.</source>
+          <target state="translated">В следующих разделах приведены примеры настройки при использовании упомянутых решений SaaS для непрерывной интеграции.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>TravisCI</source>
+          <target state="translated">TravisCI</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> can be configured to install the .NET Core SDK using the <ph id="ph1">`csharp`</ph> language and the <ph id="ph2">`dotnet`</ph> key.</source>
+          <target state="translated">Средство <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> можно настроить для установки пакета SDK для .NET Core с помощью языка <ph id="ph1">`csharp`</ph> и ключа <ph id="ph2">`dotnet`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">Просто используйте следующую команду:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Travis can run both <ph id="ph1">`osx`</ph> (OS X 10.11) and <ph id="ph2">`linux`</ph> ( Ubuntu 14.04 ) job in a build matrix, see <bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> for more information.</source>
+          <target state="translated">Travis может выполнять как задание <ph id="ph1">`osx`</ph> (OS X 10.11), так и задание <ph id="ph2">`linux`</ph> (Ubuntu 14.04) в матрице сборки. Дополнительные сведения см. в <bpt id="p1">[</bpt>примере .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>AppVeyor</source>
+          <target state="translated">AppVeyor</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> has .NET Core SDK preview2 already installed in the build worker image <ph id="ph1">`Visual Studio 2015`</ph>.</source>
+          <target state="translated">Средство <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> уже имеет предварительную версию 2 пакета SDK для .NET Core, установленную в рабочем образе сборки <ph id="ph1">`Visual Studio 2015`</ph>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">Просто используйте следующую команду:</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It's possible to install a specific version of .NET Core SDK, see <bpt id="p1">[</bpt>example appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept> for more info.</source>
+          <target state="translated">Есть возможность установить определенную версию пакета SDK для .NET Core. Дополнительные сведения см. в <bpt id="p1">[</bpt>примере appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to <ph id="ph1">`PATH`</ph> env var.</source>
+          <target state="translated">В этом примере двоичные файлы пакета SDK для .NET Core скачиваются, распаковываются в подкаталог и добавляются в переменную среды <ph id="ph1">`PATH`</ph>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>A build matrix can be added to run integration tests with multiple version of the .NET Core SDK.</source>
+          <target state="translated">Можно добавить матрицу сборки для выполнения тестов интеграции с разными версиями пакета SDK для .NET Core.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
