@@ -6,26 +6,26 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | ArchivedSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456)
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/27bf4bfcae6fdcabda2d5cc86f0d0cb530bf4cbb/docs/core/preview3/tools/dotnet-test.md) | ArchivedSuccess | [Details](#77c77d0111c828e447faab46d8f12c07f1516d2873)
 
 ## Item Details
-##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
+##### <a name='77c77d0111c828e447faab46d8f12c07f1516d2873'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/27bf4bfcae6fdcabda2d5cc86f0d0cb530bf4cbb/docs/core/preview3/tools/dotnet-test.md)
 * Status: ArchivedSuccess
 * Target File: 
-* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/7824bbc603726bf3c1e8bbdc930ae0639b663870/ol-handoff/dotnet/docs.it-it/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf)
-* Handoff Datetime: 2017-01-30 22:32:16
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/0c47cb79790b22a8e175c08a1c8d0232fdc9e9c5/ol-handoff/dotnet/docs.it-it/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf)
+* Handoff Datetime: 2017-01-31 04:34:52
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/b926b05a9164f337d1f9cdec0b9de5ec3c819b27/ol-archive/dotnet/docs.it-it/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf)
-* Archive Datetime: 2017-01-30 22:32:17
+* Archive File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/f8c80d7afcca444a17d8cf501ff158405f71a57e/ol-archive/dotnet/docs.it-it/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf)
+* Archive Datetime: 2017-01-31 04:34:53
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\standard\native-interop.md](https://github.com/dotnet/docs.it-it/blob/2fb86c8fecbefc45678c4c38b53ebb74e8086b95/docs/standard/native-interop.md)
-* Current Handback File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf)
-* Current Handback Datetime: 2016-11-15 21:31:10
-* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.it-it.xlf)
-* Bilingual Datetime: 2016-11-15 21:32:30
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.it-it/blob/a1391120b2a9f52245fbe1a4769a7466abba66b6/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf](https://github.com/dotnet/docs.handback/blob/da62ac7ab99b8e50099c09fea2b9598ed29ae2b4/ol-handback/dotnet/docs.it-it/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf)
+* Current Handback Datetime: 2016-12-09 21:25:43
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf](https://github.com/dotnet/docs.handback/blob/da62ac7ab99b8e50099c09fea2b9598ed29ae2b4/ol-handback/dotnet/docs.it-it/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.it-it.xlf)
+* Bilingual Datetime: 2016-12-09 21:28:58
 * [Back to Top](#report-top)
 
 
