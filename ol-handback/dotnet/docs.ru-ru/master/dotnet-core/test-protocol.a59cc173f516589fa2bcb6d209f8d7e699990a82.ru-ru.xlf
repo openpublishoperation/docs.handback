@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3315c8b0d2033643d81a7b14f31d6e8aed6a15b1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\test-protocol.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">39180a3a1c086c342abbc4414648d309e04df07d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f1ef8263d69f85dcbfc729a844a90ea2157e694</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol | Microsoft Docs</source>
+          <target state="translated">Протокол проверки связи интерфейса CLI в .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol</source>
+          <target state="translated">Протокол проверки связи интерфейса CLI для .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol</source>
+          <target state="translated">Протокол проверки связи интерфейса CLI для .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to .NET Core Tools Preview 2.</source>
+          <target state="translated">Эта статья применима к инструментам .NET Core (предварительная версия 2).</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 documentation, see the <bpt id="p1">[</bpt>.NET Core command-line interface tools (Tooling Preview 4)<ept id="p1">](../preview3/tools/index.md)</ept> section.</source>
+          <target state="translated">Документацию по инструментам .NET Core (предварительная версия 4) для версии-кандидата Visual Studio 2017 см. в статье <bpt id="p1">[</bpt>Программы с интерфейсом командной строки .NET Core (предварительная версия 4 инструментов)<ept id="p1">](../preview3/tools/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+          <target state="translated">Вступление</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Anytime you pass a port to dotnet test, the command will run in design time.</source>
+          <target state="translated">Каждый раз, когда вы указываете порт в команде dotnet test, команда выполняется во время разработки.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>That means that <ph id="ph1">`dotnet test`</ph> will connect to that port using TCP and will then exchange an established set of messages with whatever else is connected to that port.</source>
+          <target state="translated">Это означает, что команда <ph id="ph1">`dotnet test`</ph> подключится к этому порту по протоколу TCP, а затем произведет обмен фиксированным набором сообщений с другими компонентами, подключенными к этому же порту.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When this happens, the runner also receives a new port that <ph id="ph1">`dotnet test`</ph> will use to communicate with it.</source>
+          <target state="translated">При этом средство запуска также получает новый порт, который команда <ph id="ph1">`dotnet test`</ph> будет использовать для связи с этим средством.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The reason why the runner also uses TCP to communicate with <ph id="ph1">`dotnet test`</ph> is because in design mode, it is not sufficient to just output results to the console.</source>
+          <target state="translated">Причина использования протокола TCP средством запуска для взаимодействия с <ph id="ph1">`dotnet test`</ph> в том, что в режиме разработки недостаточно просто выводить результаты в консоли.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The command needs to send the adapter structure messages containing the results of the test execution.</source>
+          <target state="translated">Команде необходимо отправлять сообщения о структуре адаптера, содержащие результаты выполнения теста.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Communication protocol at design time.</source>
+          <target state="translated">Протокол связи во время разработки</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Because during design time, <ph id="ph1">`dotnet test`</ph> connects to a port when it starts up, the adapter needs to be listening on that port otherwise <ph id="ph2">`dotnet test`</ph> will fail.</source>
+          <target state="translated">Так как во время разработки команда <ph id="ph1">`dotnet test`</ph> подключается к порту при вызове, адаптер должен вести прослушивание по этому порту. В противном случае команда <ph id="ph2">`dotnet test`</ph> завершится сбоем.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>We did it like this so that the adapter could reserve all the ports it needs by binding and listening to them before <ph id="ph1">`dotnet test`</ph> ran and tried to get ports for the runner.</source>
+          <target state="translated">Мы сделали это для того, чтобы адаптер мог зарезервировать все необходимые ему порты путем привязки и прослушивания, прежде чем команда <ph id="ph1">`dotnet test`</ph> запустится и попытается получить порты для средства запуска.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Once <ph id="ph1">`dotnet test`</ph> starts, it sends a TestSession.Connected message to the adapter indicating that it is ready to receive messages.</source>
+          <target state="translated">После начала выполнения команды <ph id="ph1">`dotnet test`</ph> она отправляет сообщение TestSession.Connected адаптеру, означающее, что она готова получать сообщения.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is possible to send an optional <bpt id="p1">[</bpt>version check<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/ProtocolVersionMessage.cs)</ept> message with the adapter version of the protocol in it.</source>
+          <target state="translated">Можно отправить необязательное сообщение <bpt id="p1">[</bpt>проверки версии<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/ProtocolVersionMessage.cs)</ept>, содержащее версию адаптера протокола.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> will send back the version of the protocol that it supports.</source>
+          <target state="translated">Команда <ph id="ph1">`dotnet test`</ph> отправит обратно версию протокола, которую она поддерживает.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>All messages have the format described here: <bpt id="p1">[</bpt>Message.cs<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/Message.cs)</ept>.</source>
+          <target state="translated">Все сообщения имеют формат, который описывается в следующем файле: <bpt id="p1">[</bpt>Message.cs<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/Message.cs)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The payload formats for each message is described in links to the classes used to serialize/deserialize the information in the description of the protocol.</source>
+          <target state="translated">Описания форматов полезных данных для каждого сообщения можно найти по ссылкам на классы, используемые для сериализации или десериализации информации, в описании протокола.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Test Execution</source>
+          <target state="translated">Выполнение теста</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Test Execution</source>
+          <target state="translated">Выполнение теста</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>After the optional version check, the adapter sends a TestExecution.GetTestRunnerProcessStartInfo, with the <bpt id="p1">[</bpt>tests<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> it wants to execute inside of it.</source>
+          <target state="translated">После необязательной проверки версии адаптер отправляет сообщение TestExecution.GetTestRunnerProcessStartInfo, содержащее <bpt id="p1">[</bpt>тесты<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept>, которые необходимо выполнить.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> sends back a FileName and Arguments inside a <bpt id="p1">[</bpt>TestStartInfo<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/dotnet/commands/dotnet-test/TestStartInfo.cs)</ept> payload that the adapter can use to start the runner.</source>
+          <target state="translated">Команда <ph id="ph1">`dotnet test`</ph> отправляет обратно имя файла и аргументы в полезных данных <bpt id="p1">[</bpt>TestStartInfo<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/dotnet/commands/dotnet-test/TestStartInfo.cs)</ept>. Используя этих данные, адаптер может запустить средство запуска.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the past, we would send the list of tests to run as part of that argument, but we were actually going over the command line size limit for some test projects.</source>
+          <target state="translated">В прошлом в этом аргументе отправлялся список тестов для выполнения, но для некоторых тестовых проектов это приводило к превышению максимального размера командной строки.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As part of the arguments, we send a port that the runner should connect to and for executing tests, a --wait-command flag, that indicates that the runner should connect to the port and wait for commands, instead of going ahead and executing the tests.</source>
+          <target state="translated">В составе аргументов мы отправляем порт, к которому должно подключиться средство запуска для выполнения тестов, и флаг --wait-command, указывающий, что средство запуска должно подключиться к порту и ожидать команд, а не приступать к выполнению тестов немедленно.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>At this point, the adapter can launch the runner (and attach to it for debugging if it chooses to).</source>
+          <target state="translated">На этом этапе адаптер может запустить средство запуска (и подключиться к нему для отладки, если это необходимо).</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Once the runner starts, it sends <ph id="ph1">`dotnet test`</ph> a TestRunner.WaitCommand message that indicates it is ready to receive commands, at which point <ph id="ph2">`dotnet test`</ph> sends a TestRunner.Execute with the list of <bpt id="p1">[</bpt>tests<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> to run.</source>
+          <target state="translated">Когда средство запускается, оно отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestRunner.WaitCommand, которое указывает, что оно готово принимать команды. После этого команда <ph id="ph2">`dotnet test`</ph> отправляет сообщение TestRunner.Execute со списком <bpt id="p1">[</bpt>тестов<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> к выполнению.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This bypasses the command line size limit described above.</source>
+          <target state="translated">Оно превышает упомянутый выше максимальный размер командной строки.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The runner then sends <ph id="ph1">`dotnet test`</ph> (and it passes forward to the adapter) a TestExecution.TestStarted for each tests as they start with the <bpt id="p1">[</bpt>test<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept> information inside of it.</source>
+          <target state="translated">Затем средство запуска отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestExecution.TestStarted (которое пересылается адаптеру) для каждого запускаемого теста с информацией о <bpt id="p1">[</bpt>тесте<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept>.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The runner also sends <ph id="ph1">`dotnet test`</ph> (and it forwards to the adapter) a TestExecution.TestResult for each test with the <bpt id="p1">[</bpt>individual result<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/TestResult.cs)</ept> of the test.</source>
+          <target state="translated">Средство запуска также отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestExecution.TestResult (которое пересылается адаптеру) для каждого теста с <bpt id="p1">[</bpt>отдельным результатом<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/TestResult.cs)</ept> его выполнения.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>After all tests finish, the runner sends a TestRunner.Completed message to dotnet test, which <ph id="ph1">`dotnet test`</ph> sends as TestExecution.Completed to the adapter.</source>
+          <target state="translated">После завершения всех тестов средство запуска отправляет сообщение TestRunner.Completed команде <ph id="ph1">`dotnet test`</ph>, которое она пересылает как сообщение TestExecution.Completed адаптеру.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Once the adapter is done, it sends <ph id="ph1">`dotnet test`</ph> a TestSession.Terminate which will cause <ph id="ph2">`dotnet test`</ph> to shutdown.</source>
+          <target state="translated">Когда адаптер завершает обработку, он отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestSession.Terminate, которое инициирует завершение <ph id="ph2">`dotnet test`</ph> ее выполнения.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Test discovery</source>
+          <target state="translated">Обнаружение тестов</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Test discovery</source>
+          <target state="translated">Обнаружение тестов</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>After the optional version check, the adapter sends a TestDiscovery.Start message.</source>
+          <target state="translated">После необязательной проверки версии адаптер отправляет сообщение TestDiscovery.Start.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Because in this case, the adapter does not need to attach to the process, <ph id="ph1">`dotnet test`</ph> will start the runner itself.</source>
+          <target state="translated">Так как в этом случае адаптеру не нужно подключаться к процессу, команда <ph id="ph1">`dotnet test`</ph> запускает средство запуска самостоятельно.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Also, since there is no long list of arguments to be passed to the runner, no --wait-command flag is needed to be passed to the runner.</source>
+          <target state="translated">Кроме того, так как средству запуска не нужно передавать длинный список аргументов, ему не требуется передавать флаг --wait-command.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> only passes a --list argument to the runner, which means the runner should not run the tests, just list them.</source>
+          <target state="translated">Команда <ph id="ph1">`dotnet test`</ph> передает средству запуска только аргумент --list, который означает, что средство запуска должно не выполнять тесты, а просто перечислить их.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The runner then sends <ph id="ph1">`dotnet test`</ph> (and it passes forward to the adapter) a TestDiscovery.TestFound for each <bpt id="p1">[</bpt>test<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept> found.</source>
+          <target state="translated">Затем средство запуска отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestDiscovery.TestFound (которое пересылается адаптеру) для каждого найденного <bpt id="p1">[</bpt>теста<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>After all tests are discovered, the runner sends a TestRunner.Completed message to dotnet test, which <ph id="ph1">`dotnet test`</ph> sends as TestDiscovery.Completed to the adapter.</source>
+          <target state="translated">После обнаружения всех тестов средство запуска отправляет сообщение TestRunner.Completed команде <ph id="ph1">`dotnet test`</ph>, которое она пересылает как сообщение TestDiscovery.Completed адаптеру.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Once the adapter is done, it sends <ph id="ph1">`dotnet test`</ph> a TestSession.Terminate which will cause <ph id="ph2">`dotnet test`</ph> to shutdown.</source>
+          <target state="translated">Когда адаптер завершает обработку, он отправляет команде <ph id="ph1">`dotnet test`</ph> сообщение TestSession.Terminate, которое инициирует завершение <ph id="ph2">`dotnet test`</ph> ее выполнения.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
