@@ -6,25 +6,25 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | ArchivedSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456)
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/27bf4bfcae6fdcabda2d5cc86f0d0cb530bf4cbb/docs/core/preview3/tools/dotnet-test.md) | ArchivedSuccess | [Details](#77c77d0111c828e447faab46d8f12c07f1516d2873)
 
 ## Item Details
-##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43456'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
+##### <a name='77c77d0111c828e447faab46d8f12c07f1516d2873'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/27bf4bfcae6fdcabda2d5cc86f0d0cb530bf4cbb/docs/core/preview3/tools/dotnet-test.md)
 * Status: ArchivedSuccess
 * Target File: 
-* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/2f2d632987d70ce9758b9a47a3ee07eafbdbd041/ol-handoff/dotnet/docs.es-es/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf)
-* Handoff Datetime: 2017-01-30 22:32:40
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/acb57028b93c90985af93648459e19c719d80bb4/ol-handoff/dotnet/docs.es-es/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf)
+* Handoff Datetime: 2017-01-31 04:35:17
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/c94a89086084949c2d379b49f0387bd302b83667/ol-archive/dotnet/docs.es-es/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf)
-* Archive Datetime: 2017-01-30 22:32:40
+* Archive File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/e6559204c814f794557c3de0e29ca0f56084efa6/ol-archive/dotnet/docs.es-es/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf)
+* Archive Datetime: 2017-01-31 04:35:18
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\standard\native-interop.md](https://github.com/dotnet/docs.es-es/blob/261fd13943d8232ce4d070915efb653f84f934d0/docs/standard/native-interop.md)
-* Current Handback File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf)
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.es-es/blob/261fd13943d8232ce4d070915efb653f84f934d0/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf)
 * Current Handback Datetime: 2016-12-09 21:26:14
-* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.es-es.xlf)
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.es-es.xlf)
 * Bilingual Datetime: 2016-12-09 21:29:49
 * [Back to Top](#report-top)
 
