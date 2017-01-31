@@ -3,7 +3,7 @@
 
 ## Summary
 * **Auto Archive Count**: 1
-* **Auto Handback Count**: 1
+* **Auto Handback Count**: 0
 
 ## Auto Handback List
 > The following xliff are handback automatically since the same xliff has been handback before with the same translation quality.
@@ -13,7 +13,6 @@
 
 | Handoff Xliff | Referenced Xliff | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.ja-jp\master\dotnet-core\native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/cfac8e9c1b43506913a44fc2a1d70911c55e2f0d/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf) | [ol-handback\dotnet\docs.ja-jp\master\ht-p2\native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/351a1ed25674ad55a3bbe3ad67eda6ed0d7f87ac/ol-handback/dotnet/docs.ja-jp/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf) | 
 
 ## Auto Archived List
 > The following xliff are archived automatically since the same xliff has been archived or it is already handback
@@ -23,5 +22,5 @@
 
 | Handoff Xliff | Archived Reason | 
 | --- | --- | 
-| [ol-handoff\dotnet\docs.ja-jp\master\dotnet-core\native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/cfac8e9c1b43506913a44fc2a1d70911c55e2f0d/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf) | Archived when 16/11/18 07:26 | 
+| [ol-handoff\dotnet\docs.ja-jp\master\dotnet-core\dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/bf126c1f5b0017b0b391467c4dc505a8d0b25d06/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf) | Archived when 17/01/30 08:15 | 
 
