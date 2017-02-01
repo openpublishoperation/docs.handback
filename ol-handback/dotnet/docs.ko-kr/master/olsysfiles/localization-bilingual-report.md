@@ -18,11 +18,11 @@
 * Handoff Name: docs_HT_OL#dotnet#20170130T000201
 * Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/9d5269654e4aeea5957deea11882df19ed6013bb/ol-archive/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
 * Archive Datetime: 2017-01-30 08:15:44
-* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/36d9564e82fb3649e46857d9617ad2ce2369cf61/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
-* Handback Datetime: 2017-02-01 18:33:32
+* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/217354ca5e76d0f1f46d905a3ff91bba06507d95/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Handback Datetime: 2017-02-01 20:32:57
 * Handback Name: 
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/36d9564e82fb3649e46857d9617ad2ce2369cf61/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
-* Bilingual Datetime: 2017-02-01 18:35:59
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/217354ca5e76d0f1f46d905a3ff91bba06507d95/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Bilingual Datetime: 2017-02-01 20:35:48
 * [Back to Top](#report-top)
 
 
