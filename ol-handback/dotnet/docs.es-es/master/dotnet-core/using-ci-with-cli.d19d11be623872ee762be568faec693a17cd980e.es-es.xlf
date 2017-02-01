@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2acfb2bf7732aa17e850b9adcf03dfcb7993908b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\using-ci-with-cli.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f58455cc14273ae119b595d530c29a233a67691a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d1e64dbd59650c4a0912891814961505889e764</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI) | Microsoft Docs</source>
+          <target state="translated">Uso de .NET Core SDK y herramientas de integración continua (CI) | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI)</source>
+          <target state="translated">Uso de .NET Core SDK y herramientas de integración continua (CI)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using .NET Core SDK and tools in Continuous Integration (CI) (Tooling Preview 4)</source>
+          <target state="translated">Uso de .NET Core SDK y herramientas de integración continua (CI) (Tooling Preview 4)</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4.</source>
+          <target state="translated">Este tema se aplica a .NET Core Tools Preview 4 de Visual Studio 2017 RC.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the .NET Core Tools Preview 2 version, see the <bpt id="p1">[</bpt>Using .NET Core SDK and tools in Continuous Integration (CI)<ept id="p1">](../../tools/using-ci-with-cli.md)</ept> topic.</source>
+          <target state="translated">Para la versión .NET Core Tools Preview 2, consulte el tema <bpt id="p1">[</bpt>Uso de .NET Core SDK y herramientas de integración continua (CI)<ept id="p1">](../../tools/using-ci-with-cli.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Información general</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This document outlines the usage of .NET Core SDK and its tools on the build server.</source>
+          <target state="translated">En este documento se describe el uso del SDK de .NET Core y sus herramientas en el servidor de compilación.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In general, on a CI build server, you want to automate the installation in some way.</source>
+          <target state="translated">En general, en un servidor de compilación de CI, desea automatizar la instalación de alguna manera.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The automation, ideally, should not require administrative privileges if at all possible.</source>
+          <target state="translated">La automatización, idealmente, no debería requerir privilegios administrativos si fuera posible.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For SaaS CI solutions, there are several options.</source>
+          <target state="translated">Para las soluciones de CI de SaaS, hay varias opciones.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This document will cover two very popular ones, <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> and <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</source>
+          <target state="translated">En este documento se tratarán dos opciones muy populares, <bpt id="p1">[</bpt>TravisCI<ept id="p1">](https://travis-ci.org/)</ept> y <bpt id="p2">[</bpt>AppVeyor<ept id="p2">](https://www.appveyor.com/)</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>There are, of course, many other services out there, but the installation and usage mechanisms should be similar.</source>
+          <target state="translated">Por supuesto, hay muchos otros servicios, pero los mecanismos de uso y la instalación deben ser similares.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Installation options for CI build servers</source>
+          <target state="translated">Opciones de instalación para los servidores de compilación de CI</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Using the native installers</source>
+          <target state="translated">Uso de instaladores nativos</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If using installers that require administrative privileges is not something that presents a problem, native installers for each platform can be used to set up the build server.</source>
+          <target state="translated">Si no representa ningún problema usar instaladores que requieren privilegios de administrador, pueden usarse los instaladores nativos para cada plataforma para configurar el servidor de compilación.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This approach, especially in the case of Linux build servers, has one advantage which is automatic installing of dependencies needed for the SDK to run.</source>
+          <target state="translated">Este enfoque, especialmente en el caso de los servidores de compilación de Linux, tiene la ventaja de la instalación automática de las dependencias necesarias para que se pueda ejecutar el SDK.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The native installers will also install a system-wide version of the SDK, which may be desired; if it's not, you should look into the <bpt id="p1">[</bpt>installer script usage<ept id="p1">](#using-the-installer-script)</ept> outlined below.</source>
+          <target state="translated">Los instaladores nativos también instalarán una versión de todo el sistema del SDK, lo que puede ser deseable; si no es así, busque en el <bpt id="p1">[</bpt>uso de scripts del instalador<ept id="p1">](#using-the-installer-script)</ept> que se describe a continuación.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Using this approach is simple.</source>
+          <target state="translated">El uso de este enfoque es sencillo.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For Linux, there is a choice of using a feed-based package manager, such as <ph id="ph1">`apt-get`</ph> for Ubuntu or <ph id="ph2">`yum`</ph> for CentOS, or using the packages themselves (that is, DEB or RPM).</source>
+          <target state="translated">Para Linux, hay una opción de usar un administrador de paquetes basado en fuentes, como <ph id="ph1">`apt-get`</ph> para Ubuntu o <ph id="ph2">`yum`</ph> para CentOS o de usar los mismos paquetes (es decir, DEB o RPM).</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The former would require setting up the feed that contains the packages.</source>
+          <target state="translated">El primero requiere la configuración de la fuente que contiene los paquetes.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For Windows platforms, you can use the MSI.</source>
+          <target state="translated">Para las plataformas de Windows, puede utilizar el MSI.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>All of the binaries can be found on the <bpt id="p1">[</bpt>.NET Core getting started page<ept id="p1">](https://aka.ms/dotnetcoregs)</ept> which points to the latest stable releases.</source>
+          <target state="translated">Todos los archivos binarios se pueden encontrar en la <bpt id="p1">[</bpt>página de introducción de .NET Core<ept id="p1">](https://aka.ms/dotnetcoregs)</ept> que menciona los lanzamientos estables más recientes.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you wish to use newer (and potentially unstable) releases or the latest, you can use the links from the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/cli)</ept>.</source>
+          <target state="translated">Si desea utilizar las últimas versiones (y potencialmente inestables) o la versión más reciente, puede usar los vínculos del <bpt id="p1">[</bpt>repositorio CLI<ept id="p1">](https://github.com/dotnet/cli)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Using the installer script</source>
+          <target state="translated">Uso del script del instalador</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Using the installer script allows for non-administrative installation on your build server.</source>
+          <target state="translated">El uso del script del instalador permite la instalación sin derechos administrativos en el servidor de compilación.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>It also allows a very easy automation.</source>
+          <target state="translated">También permite una automatización muy fácil.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The script itself will download the ZIP/tarball files needed and will unpack them; it will also add the install location on the local machine to the PATH so that the tools become available for invocation immediately post-install.</source>
+          <target state="translated">El mismo script descargará los archivos ZIP o tarball necesarios y los descomprimirá. También agregará la ubicación de instalación en el equipo local a la ruta de acceso para que las herramientas estén disponibles para su invocación inmediatamente después de la instalación.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The installer script can easily be automated at the start of the build to fetch and install the needed version of the SDK.</source>
+          <target state="translated">El script del instalador se puede automatizar fácilmente al principio de la compilación para obtener e instalar la versión necesaria del SDK.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The "needed version" is whatever version application being built requires.</source>
+          <target state="translated">La "versión necesaria" es cualquier versión necesaria de la aplicación que se está desarrollando.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can choose the installation path so you can install the SDK locally and then clean up after the build completes.</source>
+          <target state="translated">Puede elegir la ruta de acceso de instalación para instalar el SDK de forma local y, después, limpiar una vez finalizada la compilación.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>This brings additional encapsulation and atomicity to the build process.</source>
+          <target state="translated">Esto ofrece encapsulación adicional y atomicidad al proceso de compilación.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The installation script reference can be found in the <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept> document.</source>
+          <target state="translated">La referencia del script de instalación puede encontrarse en el documento <bpt id="p1">[</bpt>dotnet-install<ept id="p1">](dotnet-install-script.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Dealing with the dependencies</source>
+          <target state="translated">Tratamiento de las dependencias</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Using the installer script means that the native dependencies are not installed automatically and that you have to install them if the operating system you are installing on already doesn't have them.</source>
+          <target state="translated">El uso del script del instalador significa que no se instalan automáticamente las dependencias nativas y que tiene que instalarlas si el sistema operativo en el que las va a instalar no las tiene.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>You can see the list of prerequisites in the <bpt id="p1">[</bpt>CLI repo<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</source>
+          <target state="translated">Puede ver la lista de requisitos previos en el <bpt id="p1">[</bpt>repositorio de CLI<ept id="p1">](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>CI services setup examples</source>
+          <target state="translated">Ejemplos de instalación de servicios de integración continua</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The below sections show examples of configurations using the mentioned CI SaaS offerings.</source>
+          <target state="translated">Las siguientes secciones muestran ejemplos de configuraciones con las ofertas de SaaS de CI mencionadas.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>TravisCI</source>
+          <target state="translated">TravisCI</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> can be configured to install the .NET Core SDK using the <ph id="ph1">`csharp`</ph> language and the <ph id="ph2">`dotnet`</ph> key.</source>
+          <target state="translated">La opción <bpt id="p1">[</bpt>travis-ci<ept id="p1">](https://travis-ci.org/)</ept> se puede configurar para instalar el SDK de .NET Core mediante el lenguaje <ph id="ph1">`csharp`</ph> y la clave <ph id="ph2">`dotnet`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">Solo use:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Travis can run both <ph id="ph1">`osx`</ph> (OS X 10.11) and <ph id="ph2">`linux`</ph> ( Ubuntu 14.04 ) job in a build matrix, see <bpt id="p1">[</bpt>example .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> for more information.</source>
+          <target state="translated">Travis se puede ejecutar en un trabajo de <ph id="ph1">`osx`</ph> (OS X 10.11) y de <ph id="ph2">`linux`</ph> (Ubuntu 14.04) en una matriz de compilación, consulte <bpt id="p1">[</bpt>el ejemplo .travis.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/.travis.yml)</ept> para más información.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>AppVeyor</source>
+          <target state="translated">AppVeyor</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> has .NET Core SDK preview2 already installed in the build worker image <ph id="ph1">`Visual Studio 2015`</ph>.</source>
+          <target state="translated">La opción <bpt id="p1">[</bpt>appveyor.com ci<ept id="p1">](https://www.appveyor.com/)</ept> ya tiene instalado el SDK .NET Core Preview 2 en la imagen de trabajo de compilación <ph id="ph1">`Visual Studio 2015`</ph>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Just use:</source>
+          <target state="translated">Solo use:</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>It's possible to install a specific version of .NET Core SDK, see <bpt id="p1">[</bpt>example appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept> for more info.</source>
+          <target state="translated">Es posible instalar una versión concreta del SDK de .NET Core, para ello, consulte <bpt id="p1">[</bpt>ejemplo de appveyor.yml<ept id="p1">](https://github.com/dotnet/docs/blob/master/appveyor.yml)</ept> para más información.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In the example, the .NET Core SDK binaries are downloaded, unzipped in a subdirectory and added to <ph id="ph1">`PATH`</ph> env var.</source>
+          <target state="translated">En el ejemplo, se han descargado los archivos binarios del SDK de .NET Core, se han descomprimido en un subdirectorio y se han agregado a la variable de entorno <ph id="ph1">`PATH`</ph>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>A build matrix can be added to run integration tests with multiple version of the .NET Core SDK.</source>
+          <target state="translated">Se puede agregar una matriz de compilación para ejecutar las pruebas de integración con varias versiones del SDK de .NET Core.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
