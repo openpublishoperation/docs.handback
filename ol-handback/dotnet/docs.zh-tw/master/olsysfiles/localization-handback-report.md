@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/2ad428dcda9ef213a8487c35a48b33929259abba/index.md) | InSyncHandedBackSuccess | [Details](#44b21665593717023aef7a85fe88a60d075193277446)
 
 ## Item Details
-##### <a name='44b21665593717023aef7a85fe88a60d075193277446'></a> Source: [index.md](https://github.com/dotnet/docs/blob/2ad428dcda9ef213a8487c35a48b33929259abba/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [index.md](https://github.com/dotnet/docs.zh-tw/blob/a9a04d5843313c900e3b9e54cb5e33e8fe3ff11a/index.md)
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/b4011160985b0420a0ddf6693efbfb6ca4d84549/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Handoff Datetime: 2017-01-21 08:37:44
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170130T000201
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/1bc44b4f241c2da4f838f106415c9d6444ac9067/ol-archive/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Archive Datetime: 2017-01-30 08:15:23
-* Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/b84dbf44b9c722a2266e225e1104869563de8aeb/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Handback Datetime: 2017-02-01 20:32:34
-* Handback Name: 
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/2d247d9bd39021c1fab6c2870df913c2e7331860/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Bilingual Datetime: 2017-02-01 17:10:01
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
