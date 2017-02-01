@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a1a27c6653d61ab612b76a4522dffdf82afecafc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\project-json.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b95f568edfaab1e985b80d6e93585eeeab91b017</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b8e22f03ceb2e7b9162f4bea0ea62776dc0d5aa2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>project.json reference | Microsoft Docs</source>
+          <target state="translated">project.json 참조 | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>project.json reference</source>
+          <target state="translated">project.json 참조</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, project.json</source>
+          <target state="translated">.NET, .NET Core, project.json</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>project.json reference</source>
+          <target state="translated">project.json 참조</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to .NET Core Tools Preview 2.</source>
+          <target state="translated">이 항목은 .NET Core Tools Preview 2에 적용됩니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 documentation, see the <bpt id="p1">[</bpt>.NET Core command-line interface tools (Tooling Preview 4)<ept id="p1">](../preview3/tools/index.md)</ept> section.</source>
+          <target state="translated">Visual Studio 2017 RC - .NET Core Tools Preview 4 설명서의 경우 <bpt id="p1">[</bpt>.NET Core 명령줄 인터페이스 도구(Tooling Preview 4)<ept id="p1">](../preview3/tools/index.md)</ept> 섹션을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies.</source>
+          <target state="translated">project.json 파일은 프로젝트 메타데이터, 컴파일 정보 및 종속성을 정의하기 위해 .NET Core 프로젝트에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In this reference topic, you'll see the list of all the properties you can define in your project.json file.</source>
+          <target state="translated">이 참조 항목에는 project.json 파일에서 정의할 수 있는 모든 속성의 목록이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The .NET Core tooling is going to move from project.json to MSBuild-based projects in a future release.</source>
+          <target state="translated">이후 릴리스에서 .NET Core 도구는 project.json에서 MSBuild 기반 프로젝트로 이동하고 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The recommendation is to still use project.json files for new .NET Core projects since there will be a path to convert your project to MSBuild when the tooling is released.</source>
+          <target state="translated">도구가 릴리스될 때 프로젝트를 MSBuild로 변환할 경로가 마련될 것이므로 새 .NET Core 프로젝트에는 여전히 project.json 파일을 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Changes to project.json<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> post on the .NET blog and the <bpt id="p2">[</bpt>Using MSBuild to build .NET Core projects<ept id="p2">](../tutorials/target-dotnetcore-with-msbuild.md)</ept> topic.</source>
+          <target state="translated">자세한 내용은 .NET 블로그의 <bpt id="p1">[</bpt>Changes to project.json(project.json으로 변경)<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> 게시물 및 <bpt id="p2">[</bpt>Using MSBuild to build .NET Core projects(MSBuild를 사용하여 .NET Core 프로젝트 빌드)<ept id="p2">](../tutorials/target-dotnetcore-with-msbuild.md)</ept> 항목을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">개요</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">name</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The name of the project, used for the assembly name as well as the name of the package.</source>
+          <target state="translated">어셈블리 이름은 물론 패키지의 이름에도 사용되는 프로젝트의 이름.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The top level folder name is used if this property is not specified.</source>
+          <target state="translated">이 속성을 지정하지 않으면 최상위 폴더 이름이 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">버전</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Semver<ept id="p1">](http://semver.org/spec/v1.0.0.html)</ept> version of the project, also used for the NuGet package.</source>
+          <target state="translated">NuGet 패키지에도 사용되는 프로젝트의 <bpt id="p1">[</bpt>Semver<ept id="p1">](http://semver.org/spec/v1.0.0.html)</ept> 버전.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A longer description of the project.</source>
+          <target state="translated">프로젝트의 긴 설명.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">어셈블리 속성에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>copyright</source>
+          <target state="translated">저작권</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The copyright information for the project.</source>
+          <target state="translated">프로젝트의 저작권 정보.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">어셈블리 속성에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>title</source>
+          <target state="translated">제목</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The friendly name of the project, can contain spaces and special characters not allowed when using the <ph id="ph1">`name`</ph> property.</source>
+          <target state="translated">프로젝트의 이름에는 <ph id="ph1">`name`</ph> 속성 사용 시에는 허용되지 않는 공백과 특수 문자를 포함할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">어셈블리 속성에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>entryPoint</source>
+          <target state="translated">entryPoint</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The entrypoint method for the project.</source>
+          <target state="translated">프로젝트에 대한 entrypoint 메서드.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Main`</ph> by default.</source>
+          <target state="translated">기본적으로 <ph id="ph1">`Main`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예를 들면 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>testRunner</source>
+          <target state="translated">testRunner</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The name of the test runner, such as <bpt id="p1">[</bpt>NUnit<ept id="p1">](http://nunit.org/)</ept> or <bpt id="p2">[</bpt>xUnit<ept id="p2">](http://xunit.github.io/)</ept>, to use with this project.</source>
+          <target state="translated">이 프로젝트와 사용할 Test Runner의 이름(예: <bpt id="p1">[</bpt>NUnit<ept id="p1">](http://nunit.org/)</ept> 또는 <bpt id="p2">[</bpt>xUnit<ept id="p2">](http://xunit.github.io/)</ept>).</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Setting this also marks the project as a test project.</source>
+          <target state="translated">또한 이를 설정하면 프로젝트가 테스트 프로젝트로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>authors</source>
+          <target state="translated">authors</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>An array of strings with the names of the authors of the project.</source>
+          <target state="translated">프로젝트 작성자의 이름이 포함된 문자열의 배열.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>language</source>
+          <target state="translated">language</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The (human) language of the project.</source>
+          <target state="translated">프로젝트의 언어(사람).</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Corresponds to the "neutral-language" compiler argument.</source>
+          <target state="translated">"중립 언어" 컴파일러 인수에 해당합니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>embedInteropTypes</source>
+          <target state="translated">embedInteropTypes</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to embed COM interop types in the assembly; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 어셈블리에 COM interop 형식을 포함할 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예를 들면 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>preprocess</source>
+          <target state="translated">preprocess</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[]</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Specifies which files are included in preprocessing.</source>
+          <target state="translated">전처리에 포함되어 있는 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>shared</source>
+          <target state="translated">공유</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[]</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Specifies which files are shared, this is used for library export.</source>
+          <target state="translated">어떤 파일이 공유되는지를 지정하며, 라이브러리 내보내기에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">종속성</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.</source>
+          <target state="translated">프로젝트의 패키지 종속성을 정의하는 개체. 이 개체의 각 키는 패키지의 이름이며 각 값은 버전 관리 정보를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Dependency resolution<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x)</ept> article on the NuGet documentation site.</source>
+          <target state="translated">자세한 내용은 NuGet 설명서 사이트의 <bpt id="p1">[</bpt>종속성 확인<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">버전</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Specifies the version or version range of the dependency.</source>
+          <target state="translated">종속성의 버전 또는 버전 범위를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">\*</ph> wildcard to specify a <bpt id="p1">[</bpt>floating dependency version<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions)</ept>.</source>
+          <target state="translated"><ph id="ph1">\*</ph> 와일드카드를 사용하여 <bpt id="p1">[</bpt>부동 종속성 버전<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions)</ept>을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>type</source>
+          <target state="translated">type</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the dependency.</source>
+          <target state="translated">종속성의 유형을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It can be one of the following values: <ph id="ph1">`default`</ph>, <ph id="ph2">`build`</ph> or <ph id="ph3">`platform`</ph>.</source>
+          <target state="translated">값은 <ph id="ph1">`default`</ph>, <ph id="ph2">`build`</ph> 또는 <ph id="ph3">`platform`</ph> 중 하나일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`default`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`default`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`build`</ph> is known as a development dependency and is only used for build-time.</source>
+          <target state="translated"><ph id="ph1">`build`</ph> - 개발 종속성이라고 하며 빌드 시간에만 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>It means that the package should not be published or added as a dependency to the output <ph id="ph1">`.nupkg`</ph> file.</source>
+          <target state="translated">즉, 패키지를 출력 <ph id="ph1">`.nupkg`</ph> 파일에 종속성으로서 게시하거나 추가해서는 안 됩니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>It has the same effect of setting <bpt id="p1">[</bpt>supressParent<ept id="p1">](#supressparent)</ept> to <ph id="ph1">`all`</ph>.</source>
+          <target state="translated">그 효과는 <bpt id="p1">[</bpt>supressParent<ept id="p1">](#supressparent)</ept>를 <ph id="ph1">`all`</ph>로 설정한 것과 동일합니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`platform`</ph> references the shared SDK.</source>
+          <target state="translated"><ph id="ph1">`platform`</ph> - 공유 SDK를 참조합니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the <bpt id="p1">[</bpt>.NET Core application deployment<ept id="p1">](../deploying/index.md)</ept> topic.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>.NET Core 응용 프로그램 배포<ept id="p1">](../deploying/index.md)</ept> 항목의 "타사 종속성으로 프레임워크 종속 배포를 배포하기" 섹션을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예를 들면 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>target</source>
+          <target state="translated">target</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Restricts the dependency to match only a <ph id="ph1">`project`</ph> or a <ph id="ph2">`package`</ph>.</source>
+          <target state="translated"><ph id="ph1">`project`</ph> 또는 <ph id="ph2">`package`</ph>만 일치하도록 종속성을 제한합니다.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Includes parts of dependency packages.</source>
+          <target state="translated">종속성 패키지의 부분을 포함합니다.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>It can use one or more of the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated"><ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> 또는 <ph id="ph8">`none`</ph> 플래그 중 하나 이상을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Multiple flags are defined by a comma-delimited list.</source>
+          <target state="translated">여러 플래그는 쉼표로 구분된 목록에 의해 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">자세한 내용은 NuGet 리포지토리에 대한 <bpt id="p1">[</bpt>종속성 패키지 자산 관리<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> 사양을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Excludes parts of dependency packages.</source>
+          <target state="translated">종속성 패키지의 부분을 제외합니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It can be one or more of the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated"><ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> 또는 <ph id="ph8">`none`</ph> 플래그 중 하나 이상일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Multiple flags are defined by a comma-delimited list.</source>
+          <target state="translated">여러 플래그는 쉼표로 구분된 목록에 의해 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">자세한 내용은 NuGet 리포지토리에 대한 <bpt id="p1">[</bpt>종속성 패키지 자산 관리<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> 사양을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>supressParent</source>
+          <target state="translated">supressParent</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Defines additional excludes for consumers of the project.</source>
+          <target state="translated">프로젝트 소비자에 대한 추가 예외를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>It can be one the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated"><ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> 또는 <ph id="ph8">`none`</ph> 플래그 중 하나일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">자세한 내용은 NuGet 리포지토리에 대한 <bpt id="p1">[</bpt>종속성 패키지 자산 관리<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> 사양을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>tools</source>
+          <target state="translated">도구</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>An object that defines package dependencies that are used as tools for the current project, not as references.</source>
+          <target state="translated">참조가 아니라 현재 프로젝트의 도구로 사용되는 패키지 종속성을 정의하는 개체.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Packages defined here are available in scripts that run during the build process, but they are not accessible to the code in the project itself.</source>
+          <target state="translated">여기에 정의된 패키지는 빌드 프로세스 중에 실행되는 스크립트에서는 사용할 수 있지만, 프로젝트 자체의 코드에는 액세스할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Tools can for example include code generators or post-build tools that perform tasks related to packing.</source>
+          <target state="translated">예를 들어 도구는 코드 생성기를 포함하거나 압축과 관련된 작업을 수행하는 빌드 후 도구를 포함할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>scripts</source>
+          <target state="translated">스크립트</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>An object that defines scripts run during the build process.</source>
+          <target state="translated">빌드 프로세스 중에 실행되는 스크립트를 정의하는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Each key in this object identifies where in the build the script is run.</source>
+          <target state="translated">이 개체의 각 키는 빌드에서 스크립트가 실행되는 위치를 식별합니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Each value is either a string with the script to run or an array of strings containing scripts that will run in order.</source>
+          <target state="translated">각 값은 스크립트를 실행하는 문자열 또는 순서대로 실행할 스크립트를 포함하는 문자열의 배열입니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The supported events are:</source>
+          <target state="translated">다음 이벤트가 지원됩니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>precompile</source>
+          <target state="translated">precompile</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>postcompile</source>
+          <target state="translated">postcompile</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>prepublish</source>
+          <target state="translated">prepublish</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>postpublish</source>
+          <target state="translated">postpublish</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>buildOptions</source>
+          <target state="translated">buildOptions</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>An object whose properties control various aspects of compilation.</source>
+          <target state="translated">컴파일의 여러 부분을 제어하는 속성이 포함된 개체.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The valid properties are listed below.</source>
+          <target state="translated">유효한 속성은 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Can also be specified per target framework as described in the <bpt id="p1">[</bpt>frameworks section<ept id="p1">](#frameworks)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>프레임워크 섹션<ept id="p1">](#frameworks)</ept>에 설명된 대로 대상 프레임워크당 지정할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>define</source>
+          <target state="translated">define</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>A list of defines such as "DEBUG" or "TRACE" that can be used in conditional compilation in the code.</source>
+          <target state="translated">코드의 조건부 컴파일에 사용할 수 있는 "DEBUG" 또는 "TRACE" 등의 정의 목록.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>nowarn</source>
+          <target state="translated">nowarn</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>A list of warnings to ignore.</source>
+          <target state="translated">무시할 경고의 목록.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This ignores the warnings <ph id="ph1">`The variable 'var' is declared but never used`</ph> and <ph id="ph2">`The variable 'var' is assigned but its value is never used`</ph>.</source>
+          <target state="translated"><ph id="ph1">`The variable 'var' is declared but never used`</ph> 및 <ph id="ph2">`The variable 'var' is assigned but its value is never used`</ph> 경고를 무시합니다.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>additionalArguments</source>
+          <target state="translated">additionalArguments</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>A list of extra arguments that will be passed to the compiler.</source>
+          <target state="translated">컴파일러에 전달되는 추가 인수 목록.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>warningsAsErrors</source>
+          <target state="translated">warningsAsErrors</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to treat warnings as errors; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 경고를 오류로 처리하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>allowUnsafe</source>
+          <target state="translated">allowUnsafe</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to allow unsafe code in this project; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 이 프로젝트에 안전하지 않은 코드를 허용하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>emitEntryPoint</source>
+          <target state="translated">emitEntryPoint</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to create an executable; <ph id="ph2">`false`</ph> to produce a library.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 실행 파일을 만드는 경우, <ph id="ph2">`false`</ph> - 라이브러리를 생성하는 경우.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>optimize</source>
+          <target state="translated">optimize</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable the compiler to optimize the code in this project; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 이 프로젝트의 코드를 최적화하기 위해 컴파일러를 사용하도록 설정하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>platform</source>
+          <target state="translated">platform</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The name of the target platform, such as AnyCpu, x86 or x64.</source>
+          <target state="translated">AnyCpu, x86 또는 x64 같은 대상 플랫폼의 이름.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>languageVersion</source>
+          <target state="translated">languageVersion</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default.</source>
+          <target state="translated">컴파일러에서 사용되는 언어의 버전: ISO-1, ISO-2, 3, 4, 5, 6 또는 기본값입니다.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>keyFile</source>
+          <target state="translated">keyFile</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The path for the key file used for signing this assembly.</source>
+          <target state="translated">이 어셈블리 서명에 사용되는 키 파일에 대한 경로.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>delaySign</source>
+          <target state="translated">delaySign</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to delay signing; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 서명을 지연하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>publicSign</source>
+          <target state="translated">publicSign</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable signing of the resulting assembly; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 결과 어셈블리의 서명을 사용하도록 설정하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>debugType</source>
+          <target state="translated">debugType</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Indicates the type of symbol file (PDB file) to generate.</source>
+          <target state="translated">생성할 기호 파일(PDB 파일) 형식을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The options are "portable" (for .NET Core projects) or "full" (the traditional Windows-only PDB files).</source>
+          <target state="translated">옵션은 "portable"(.NET Core 프로젝트) 또는 "full"(기존의 Windows 전용 PDB 파일)입니다.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>xmlDoc</source>
+          <target state="translated">xmlDoc</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to generate XML documentation from triple-slash comments in the source code; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 소스 코드의 삼중 슬래시 주석에서 XML 문서를 생성하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>preserveCompilationContext</source>
+          <target state="translated">preserveCompilationContext</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to preserve reference assemblies and other context data to allow for runtime compilation; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 참조 어셈블리 및 기타 컨텍스트 데이터를 유지하여 런타임 컴파일을 허용하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>outputName</source>
+          <target state="translated">outputName</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Change the name of the output file.</source>
+          <target state="translated">출력 파일의 이름을 변경합니다.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>compilerName</source>
+          <target state="translated">compilerName</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The name of the compiler used for this project.</source>
+          <target state="translated">이 프로젝트에 사용되는 컴파일러의 이름.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`csc`</ph> by default.</source>
+          <target state="translated">기본적으로 <ph id="ph1">`csc`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Currently, <ph id="ph1">`csc`</ph> (the C# compiler) or <ph id="ph2">`fsc`</ph> (the F# compiler) are supported.</source>
+          <target state="translated">현재 <ph id="ph1">`csc`</ph>(C# 컴파일러) 또는 <ph id="ph2">`fsc`</ph>(F# 컴파일러)가 지원됩니다.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>compile</source>
+          <target state="translated">compile</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">컴파일 구성에 대한 속성을 포함하는 개체.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Specifies which files to include in the build.</source>
+          <target state="translated">빌드에 포함할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The patterns are rooted at the project folder.</source>
+          <target state="translated">패턴은 프로젝트 폴더를 기반으로 합니다.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">기본값은 none입니다.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">빌드에서 제외할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded.</source>
+          <target state="translated">exclude 패턴은 include 패턴보다 우선 순위가 높습니다. 따라서 양쪽의 파일이 모두 제외됩니다.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The patterns are rooted at the project folder.</source>
+          <target state="translated">패턴은 프로젝트 폴더를 기반으로 합니다.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">기본값은 none입니다.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>A list of file paths to include.</source>
+          <target state="translated">포함할 파일 경로의 목록.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The paths are rooted at the project folder.</source>
+          <target state="translated">경로는 프로젝트 폴더를 기반으로 합니다.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>This list has a higher priority than the include and exclude globbing patterns, hence a file listed here and in the exclude globbing pattern will still be included.</source>
+          <target state="translated">이 목록은 include 및 exclude 와일드카드 사용 패턴보다 우선 순위가 높습니다. 따라서 여기 및 exclude 와일드카드 사용 패턴에 나열된 파일이 여전히 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">기본값은 none입니다.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>A list of file paths to exclude.</source>
+          <target state="translated">제외할 파일 경로의 목록.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The paths are rooted at the project folder.</source>
+          <target state="translated">경로는 프로젝트 폴더를 기반으로 합니다.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>This list has a higher priority than globbing patterns and the include paths, hence a file found in all will be excluded.</source>
+          <target state="translated">이 목록은 와일드카드 사용 패턴 및 include 경로보다 우선 순위가 높습니다. 따라서 모든 곳에서 발견된 파일이 제외됩니다.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">기본값은 none입니다.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The defaults provided by the system.</source>
+          <target state="translated">시스템에서 제공하는 기본값.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>It can have <ph id="ph1">`include`</ph> and <ph id="ph2">`exclude`</ph> globbing patterns which are merged with the corresponding values of the <ph id="ph3">`include`</ph> and <ph id="ph4">`exclude`</ph> properties.</source>
+          <target state="translated"><ph id="ph3">`include`</ph> 및 <ph id="ph4">`exclude`</ph> 속성의 해당 값과 병합되는 <ph id="ph1">`include`</ph> 및 <ph id="ph2">`exclude`</ph> 와일드카드 사용 패턴을 가질 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">매핑</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">개체에 대한 키는 출력 레이아웃의 대상 경로를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">값은 포함할 파일의 소스 경로를 나타내는 문자열 또는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">개체 표시에 자체 <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> 및 <ph id="ph4">`excludeFiles`</ph> 섹션이 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">문자열 예제:</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">개체 예제:</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>embed</source>
+          <target state="translated">embed</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">컴파일 구성에 대한 속성을 포함하는 개체.</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">빌드에서 제외할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">매핑</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">개체에 대한 키는 출력 레이아웃의 대상 경로를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">값은 포함할 파일의 소스 경로를 나타내는 문자열 또는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">개체 표시에 자체 <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> 및 <ph id="ph4">`excludeFiles`</ph> 섹션이 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">문자열 예제:</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">개체 예제:</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>copyToOutput</source>
+          <target state="translated">copyToOutput</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">컴파일 구성에 대한 속성을 포함하는 개체.</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">빌드에서 제외할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">매핑</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">개체에 대한 키는 출력 레이아웃의 대상 경로를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">값은 포함할 파일의 소스 경로를 나타내는 문자열 또는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">개체 표시에 자체 <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> 및 <ph id="ph4">`excludeFiles`</ph> 섹션이 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">문자열 예제:</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">개체 예제:</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>publishOptions</source>
+          <target state="translated">publishOptions</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">컴파일 구성에 대한 속성을 포함하는 개체.</target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">빌드에서 제외할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">매핑</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">개체에 대한 키는 출력 레이아웃의 대상 경로를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">값은 포함할 파일의 소스 경로를 나타내는 문자열 또는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">개체 표시에 자체 <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> 및 <ph id="ph4">`excludeFiles`</ph> 섹션이 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">문자열 예제:</target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">개체 예제:</target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>runtimeOptions</source>
+          <target state="translated">runtimeOptions</target>       </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Specifies parameters to be provided to the runtime during initialization.</source>
+          <target state="translated">초기화하는 동안 런타임에 제공하는 매개 변수를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>configProperties</source>
+          <target state="translated">configProperties</target>       </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Contains configuration properties to configure the runtime and the framework.</source>
+          <target state="translated">런타임 및 프레임워크를 구성할 구성 속성을 포함합니다.</target>       </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>System.GC.Server</source>
+          <target state="translated">System.GC.Server</target>       </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable server garbage collection; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 서버 가비지 수집을 사용하도록 설정하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>System.GC.Concurrent</source>
+          <target state="translated">System.GC.Concurrent</target>       </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable concurrent garbage collection; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 동시 가비지 수집을 사용하도록 설정하는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>System.GC.RetainVM</source>
+          <target state="translated">System.GC.RetainVM</target>       </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 삭제해야 할 세그먼트를 OS(운영 체제)에 다시 릴리스하는 대신 나중에 사용하기 위해 대기 목록에 두는 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>System.Threading.ThreadPool.MinThreads</source>
+          <target state="translated">System.Threading.ThreadPool.MinThreads</target>       </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Type: Integer</source>
+          <target state="translated">형식: Integer</target>       </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Overrides the number of minimum threads for the ThreadPool worker pool.</source>
+          <target state="translated">ThreadPool 작업자 풀에 대한 최소 스레드 수를 재정의합니다.</target>       </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>System.Threading.ThreadPool.MaxThreads</source>
+          <target state="translated">System.Threading.ThreadPool.MaxThreads</target>       </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Type: Integer</source>
+          <target state="translated">형식: Integer</target>       </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Overrides the number of maximum threads for the ThreadPool worker pool.</source>
+          <target state="translated">ThreadPool 작업자 풀에 대한 최대 스레드 수를 재정의합니다.</target>       </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>framework</source>
+          <target state="translated">프레임워크</target>       </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Contains shared framework properties to use when activating the application.</source>
+          <target state="translated">응용 프로그램을 활성화할 때 사용할 공유 프레임워크 속성을 포함합니다.</target>       </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.</source>
+          <target state="translated">이 섹션의 존재는 응용 프로그램이 재배포 가능한 공유 프레임워크를 사용하도록 설계된 이식 가능한 앱임을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">name</target>       </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>Name of the shared framework.</source>
+          <target state="translated">공유 프레임워크의 이름.</target>       </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">버전</target>       </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Version of the shared framework.</source>
+          <target state="translated">공유 프레임워크의 버전.</target>       </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>applyPatches</source>
+          <target state="translated">applyPatches</target>       </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to use the framework from either the same or a higher version that differs only in the <ph id="ph2">`SemVer`</ph> patch field.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - <ph id="ph2">`SemVer`</ph> 패치 필드에서만 다른 동일한 버전 또는 더 높은 버전의 프레임워크를 사용할 경우.</target>       </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`false`</ph> for the host to use only the exact framework version.</source>
+          <target state="translated"><ph id="ph1">`false`</ph> - 정확한 프레임워크 버전만을 사용해야 하는 호스트의 경우.</target>       </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`true`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>packOptions</source>
+          <target state="translated">packOptions</target>       </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>Defines options pertaining to the packaging of the project output into a NuGet package.</source>
+          <target state="translated">NuGet 패키지에 대한 프로젝트 출력의 패키징과 관련된 옵션을 정의합니다.</target>       </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="translated">요약</target>       </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>A short description of the project.</source>
+          <target state="translated">프로젝트에 대한 간단한 설명.</target>       </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>tags</source>
+          <target state="translated">태그</target>       </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>An array of strings with tags for the project, used for searching in NuGet.</source>
+          <target state="translated">NuGet에서 검색하는 데 사용되는, 프로젝트에 대한 태그가 포함된 문자열의 배열.</target>       </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>owners</source>
+          <target state="translated">owners</target>       </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">형식: String[]</target>       </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>An array of strings with the names of the owners of the project.</source>
+          <target state="translated">프로젝트 소유자의 이름이 포함된 문자열의 배열입니다.</target>       </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>releaseNotes</source>
+          <target state="translated">releaseNotes</target>       </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>Release notes for the project.</source>
+          <target state="translated">프로젝트에 대한 릴리스 정보.</target>       </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>iconUrl</source>
+          <target state="translated">iconUrl</target>       </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>The URL for an icon that will be used in various places such as the package explorer.</source>
+          <target state="translated">패키지 탐색기 등의 다양한 위치에서 사용될 아이콘에 대한 URL.</target>       </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>projectUrl</source>
+          <target state="translated">projectUrl</target>       </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>The URL for the homepage of the project.</source>
+          <target state="translated">프로젝트의 홈 페이지에 대한 URL.</target>       </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>licenseUrl</source>
+          <target state="translated">licenseUrl</target>       </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The URL for the license the project uses.</source>
+          <target state="translated">프로젝트 사용 라이선스에 대한 URL.</target>       </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>requireLicenseAcceptance</source>
+          <target state="translated">requireLicenseAcceptance</target>       </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">형식: Boolean</target>       </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to cause a prompt to accept the package license when installing the package to be shown; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> - 패키지 설치 시 패키지 라이선스를 수락할 프롬프트를 표시할 경우, <ph id="ph2">`false`</ph> - 아닌 경우.</target>       </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Only used for NuGet packages, ignored in other uses.</source>
+          <target state="translated">NuGet 패키지에만 사용되고 다른 용도에서는 무시됩니다.</target>       </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">기본값은 <ph id="ph1">`false`</ph>입니다.</target>       </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>repository</source>
+          <target state="translated">리포지토리</target>       </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Contains information about the repository where the project is stored.</source>
+          <target state="translated">프로젝트 저장된 저장소에 대한 정보를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>type</source>
+          <target state="translated">type</target>       </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Type of the repository.</source>
+          <target state="translated">저장소의 형식.</target>       </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>The default value is "git".</source>
+          <target state="translated">기본값은 "git"입니다.</target>       </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>url</source>
+          <target state="translated">url</target>       </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>URL of the repository where the project is stored.</source>
+          <target state="translated">프로젝트가 저장된 저장소의 URL.</target>       </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>files</source>
+          <target state="translated">파일</target>       </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">Exclude</target>       </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">빌드에서 제외할 파일을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">형식: 와일드카드 사용 패턴의 String 또는 String[].</target>       </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">매핑</target>       </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">개체에 대한 키는 출력 레이아웃의 대상 경로를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">값은 포함할 파일의 소스 경로를 나타내는 문자열 또는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The object representation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">개체 표시에 자체 <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> 및 <ph id="ph4">`excludeFiles`</ph> 섹션이 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">문자열 예제:</target>       </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">개체 예제:</target>       </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>analyzerOptions</source>
+          <target state="translated">analyzerOptions</target>       </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>An object with properties used by code analysers.</source>
+          <target state="translated">코드 분석기에서 사용하는 속성이 포함된 개체.</target>       </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>languageId</source>
+          <target state="translated">languageId</target>       </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>The id of the language to analyze.</source>
+          <target state="translated">분석할 언어의 ID.</target>       </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>"cs" represents C#, "vb" represents Visual Basic and "fs" represents F#.</source>
+          <target state="translated">"cs"는 C#, "vb"는 Visual Basic, "fs"는 F#을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>configurations</source>
+          <target state="translated">구성</target>       </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>An object whose properties define different configurations for this project, such as Debug and Release.</source>
+          <target state="translated">해당 속성이 이 프로젝트에 대한 서로 다른 구성을 정의하는 개체(예: Debug 및 Release).</target>       </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>Each value is an object that can contain a <ph id="ph1">`buildOptions`</ph> object with options specific for this configuration.</source>
+          <target state="translated">각 값은 이 구성에 대한 옵션과 함께 <ph id="ph1">`buildOptions`</ph> 개체를 포함할 수 있는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>frameworks</source>
+          <target state="translated">frameworks</target>       </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Specifies which frameworks this project supports, such as the .NET Framework or Universal Windows Platform (UWP).</source>
+          <target state="translated">.NET Framework 또는 UWP(유니버설 Windows 플랫폼) 등 이 프로젝트가 지원하는 프레임워크를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>Must be a valid Target Framework Moniker (TFM).</source>
+          <target state="translated">유효한 TFM(대상 프레임워크 모니커)이어야 합니다.</target>       </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Each value is an object that can contain information specific to this framework such as <ph id="ph1">`buildOptions`</ph>, <ph id="ph2">`analyzerOptions`</ph>, <ph id="ph3">`dependencies`</ph> as well as the properties in the following sections.</source>
+          <target state="translated">각 값은 <ph id="ph1">`buildOptions`</ph>, <ph id="ph2">`analyzerOptions`</ph>, <ph id="ph3">`dependencies`</ph> 및 다음 섹션의 속성 등 이 프레임워크에 대한 정보를 포함할 수 있는 개체입니다.</target>       </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">종속성</target>       </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>Dependencies that are specific for this framework.</source>
+          <target state="translated">이 프레임워크에 대한 종속성.</target>       </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>This is useful in scenarios where you cannot simply specify a package-level dependency across all targets.</source>
+          <target state="translated">이는 모든 대상에서 패키지 수준 종속성을 지정할 수 없는 시나리오에 유용합니다.</target>       </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets.</source>
+          <target state="translated">이에 대한 원인은 다른 대상에는 있는 기본 제공 지원이 부족하거나 다른 대상과는 다른 종속성 버전을 요구하는 대상이 포함되었기 때문일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>To see a list of the other properties for this node, see the earlier <bpt id="p1">[</bpt>dependencies<ept id="p1">](#dependencies)</ept> section.</source>
+          <target state="translated">이 노드에 대한 다른 속성의 목록을 보려면 이전의 <bpt id="p1">[</bpt>종속성<ept id="p1">](#dependencies)</ept> 섹션을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>frameworkAssemblies</source>
+          <target state="translated">frameworkAssemblies</target>       </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Similar to dependencies but contains reference to assemblies in the GAC that are not NuGet packages.</source>
+          <target state="translated">종속성과 유사하지만 NuGet 패키지에 없는 GAC의 어셈블리에 대한 참조를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>Can also specify the version to use as well as the dependency type.</source>
+          <target state="translated">종속성 유형뿐만 아니라 사용할 버전을 지정할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>This is used when targeting .NET Framework and Portable Class Library (PCL) targets.</source>
+          <target state="translated">.NET Framework 및 PCL(이식 가능한 클래스 라이브러리) 대상에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>You can only build a project with this specified on Windows.</source>
+          <target state="translated">Windows에서 지정된 것으로만 프로젝트를 빌드할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>wrappedProject</source>
+          <target state="translated">wrappedProject</target>       </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>Specifies the location of the dependency project.</source>
+          <target state="translated">종속성 프로젝트의 위치를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>bin</source>
+          <target state="translated">bin</target>       </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>This is used wrap a DLL file.</source>
+          <target state="translated">DLL 파일 래핑에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>You can reference and generate a package containing this DLL.</source>
+          <target state="translated">이 DLL이 포함된 패키지를 생성하고 참조할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>It contains a single String  property, <ph id="ph1">`assembly`</ph>, whose value is the assembly path.</source>
+          <target state="translated">값이 어셈블리 경로인 단일 문자열 속성 <ph id="ph1">`assembly`</ph>를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>runtimes</source>
+          <target state="translated">runtimes</target>       </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">형식: Object</target>       </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>List of <bpt id="p1">[</bpt>runtime identifiers (RIDs)<ept id="p1">](../rid-catalog.md)</ept> supported by the project (used when publishing <bpt id="p2">[</bpt>self-contained deployments<ept id="p2">](../deploying/index.md#self-contained-deployments-scd)</ept>).</source>
+          <target state="translated">프로젝트에서 지원하는 <bpt id="p1">[</bpt>RID(런타임 식별자)<ept id="p1">](../rid-catalog.md)</ept>의 목록(<bpt id="p2">[</bpt>자체 포함된 배포<ept id="p2">](../deploying/index.md#self-contained-deployments-scd)</ept>를 게시할 때 사용).</target>       </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>userSecretsId</source>
+          <target state="translated">userSecretsId</target>       </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">형식: String</target>       </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Specifies a user secret identifier to be used at development-time.</source>
+          <target state="translated">개발 시 사용할 사용자 암호 식별자를 지정합니다.</target>       </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Safe storage of app secrets during development<ept id="p1">](https://docs.microsoft.com/aspnet/core/security/app-secrets)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>Safe storage of app secrets during development(개발하는 동안 앱 암호의 안전한 저장소)<ept id="p1">](https://docs.microsoft.com/aspnet/core/security/app-secrets)</ept>를 참조하세요.</target>       </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">예:</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

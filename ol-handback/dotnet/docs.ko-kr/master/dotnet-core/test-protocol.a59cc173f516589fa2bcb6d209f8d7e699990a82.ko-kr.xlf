@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3315c8b0d2033643d81a7b14f31d6e8aed6a15b1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\test-protocol.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">39180a3a1c086c342abbc4414648d309e04df07d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f1ef8263d69f85dcbfc729a844a90ea2157e694</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol | Microsoft Docs</source>
+          <target state="translated">.NET Core CLI 테스트 통신 프로토콜 | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol</source>
+          <target state="translated">.NET Core CLI 테스트 통신 프로토콜</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI test communication protocol</source>
+          <target state="translated">.NET Core CLI 테스트 통신 프로토콜</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to .NET Core Tools Preview 2.</source>
+          <target state="translated">이 항목은 .NET Core Tools Preview 2에 적용됩니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the  Visual Studio 2017 RC - .NET Core Tools Preview 4 documentation, see the <bpt id="p1">[</bpt>.NET Core command-line interface tools (Tooling Preview 4)<ept id="p1">](../preview3/tools/index.md)</ept> section.</source>
+          <target state="translated">Visual Studio 2017 RC - .NET Core Tools Preview 4 설명서의 경우 <bpt id="p1">[</bpt>.NET Core 명령줄 인터페이스 도구(Tooling Preview 4)<ept id="p1">](../preview3/tools/index.md)</ept> 섹션을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+          <target state="translated">소개</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Anytime you pass a port to dotnet test, the command will run in design time.</source>
+          <target state="translated">포트를 dotnet 테스트로 전달할 때마다 디자인 타임에서 명령이 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>That means that <ph id="ph1">`dotnet test`</ph> will connect to that port using TCP and will then exchange an established set of messages with whatever else is connected to that port.</source>
+          <target state="translated">즉, <ph id="ph1">`dotnet test`</ph>는 TCP를 사용하여 해당 포트에 연결한 후 설정된 메시지 집합을 해당 포트에 연결된 다른 것과 교환합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When this happens, the runner also receives a new port that <ph id="ph1">`dotnet test`</ph> will use to communicate with it.</source>
+          <target state="translated">이 경우 Runner 역시 <ph id="ph1">`dotnet test`</ph>가 통신에 사용할 새 포트를 수신합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The reason why the runner also uses TCP to communicate with <ph id="ph1">`dotnet test`</ph> is because in design mode, it is not sufficient to just output results to the console.</source>
+          <target state="translated">Runner 역시 <ph id="ph1">`dotnet test`</ph>와의 통신에 TCP를 사용하는 이유는, 디자인 모드에서는 결과를 콘솔에만 출력하는 것으로 충분하지 않기 때문입니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The command needs to send the adapter structure messages containing the results of the test execution.</source>
+          <target state="translated">명령은 또한 테스트 실행 결과를 포함하는 어댑터 구조 메시지를 전송해야 합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Communication protocol at design time.</source>
+          <target state="translated">디자인 타임의 통신 프로토콜</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Because during design time, <ph id="ph1">`dotnet test`</ph> connects to a port when it starts up, the adapter needs to be listening on that port otherwise <ph id="ph2">`dotnet test`</ph> will fail.</source>
+          <target state="translated">디자인 타임 동안 <ph id="ph1">`dotnet test`</ph>는 시작할 때 포트에 연결되므로, 어댑터는 해당 포트에서 수신 대기해야 하며 그러지 않으면 <ph id="ph2">`dotnet test`</ph>가 실패합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>We did it like this so that the adapter could reserve all the ports it needs by binding and listening to them before <ph id="ph1">`dotnet test`</ph> ran and tried to get ports for the runner.</source>
+          <target state="translated">이와 같이 하는 이유는 <ph id="ph1">`dotnet test`</ph>가 실행되어 Runner에 대한 포트를 가져오려고 시도하기 전에 어댑터가 바인딩하고 수신 대기하여 필요한 모든 포트를 예약할 수 있도록 하려는 것입니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Once <ph id="ph1">`dotnet test`</ph> starts, it sends a TestSession.Connected message to the adapter indicating that it is ready to receive messages.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph>는 시작되면 TestSession.Connected 메시지를 어댑터에 전송하여, 메시지를 수신할 준비가 되었음을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>It is possible to send an optional <bpt id="p1">[</bpt>version check<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/ProtocolVersionMessage.cs)</ept> message with the adapter version of the protocol in it.</source>
+          <target state="translated">선택적인 <bpt id="p1">[</bpt>버전 검사<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/ProtocolVersionMessage.cs)</ept> 메시지를 프로토콜의 어댑터 버전과 함께 전송할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> will send back the version of the protocol that it supports.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph>는 지원하는 프로토콜의 버전을 다시 전송합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>All messages have the format described here: <bpt id="p1">[</bpt>Message.cs<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/Message.cs)</ept>.</source>
+          <target state="translated">모든 메시지는 <bpt id="p1">[</bpt>Message.cs<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/Message.cs)</ept>에 설명된 형식입니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The payload formats for each message is described in links to the classes used to serialize/deserialize the information in the description of the protocol.</source>
+          <target state="translated">각 메시지의 페이로드 형식은 프로토콜의 설명에서 정보를 직렬화/역직렬화하는 데 사용되는 클래스에 대한 링크에 설명되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Test Execution</source>
+          <target state="translated">테스트 실행</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Test Execution</source>
+          <target state="translated">테스트 실행</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>After the optional version check, the adapter sends a TestExecution.GetTestRunnerProcessStartInfo, with the <bpt id="p1">[</bpt>tests<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> it wants to execute inside of it.</source>
+          <target state="translated">선택적인 버전 확인 후 어댑터는 내부에서 실행할 <bpt id="p1">[</bpt>테스트<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept>와 함께 TestExecution.GetTestRunnerProcessStartInfo를 보냅니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> sends back a FileName and Arguments inside a <bpt id="p1">[</bpt>TestStartInfo<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/dotnet/commands/dotnet-test/TestStartInfo.cs)</ept> payload that the adapter can use to start the runner.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph>는 어댑터가 Runner를 시작하기 위해 사용할 수 있는 <bpt id="p1">[</bpt>TestStartInfo<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/dotnet/commands/dotnet-test/TestStartInfo.cs)</ept> 페이로드에 파일 이름과 인수를 포함하여 다시 전송합니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the past, we would send the list of tests to run as part of that argument, but we were actually going over the command line size limit for some test projects.</source>
+          <target state="translated">과거에는 실행할 테스트의 목록을 인수의 일부로 전송했지만, 일부 테스트 프로젝트에서 명령줄 크기 제한을 실제로 초과했습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As part of the arguments, we send a port that the runner should connect to and for executing tests, a --wait-command flag, that indicates that the runner should connect to the port and wait for commands, instead of going ahead and executing the tests.</source>
+          <target state="translated">인수의 일부로서 Runner가 연결해야 할 포트를 전송합니다. 그리고 계속 진행하여 테스트를 실행하는 대신 테스트 실행을 위해 Runner가 포트에 연결되어 명령을 기다려야 함을 나타내는 --wait-command 플래그도 전송합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>At this point, the adapter can launch the runner (and attach to it for debugging if it chooses to).</source>
+          <target state="translated">이 시점에서 어댑터가 Runner를 시작(그리고 선택한 경우 디버깅을 위해 Runner에 연결)할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Once the runner starts, it sends <ph id="ph1">`dotnet test`</ph> a TestRunner.WaitCommand message that indicates it is ready to receive commands, at which point <ph id="ph2">`dotnet test`</ph> sends a TestRunner.Execute with the list of <bpt id="p1">[</bpt>tests<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> to run.</source>
+          <target state="translated">Runner는 시작되면, 명령을 수신할 준비가 되었음을 나타내는 TestRunner.WaitCommand 메시지를 <ph id="ph1">`dotnet test`</ph>에 전송합니다. 그러면 <ph id="ph2">`dotnet test`</ph>는 실행할 <bpt id="p1">[</bpt>테스트<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Messages/RunTestsMessage.cs)</ept> 목록과 함께 TestRunner.Execute를 전송합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This bypasses the command line size limit described above.</source>
+          <target state="translated">여기서는 위에서 설명한 명령줄 크기 제한이 무시됩니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The runner then sends <ph id="ph1">`dotnet test`</ph> (and it passes forward to the adapter) a TestExecution.TestStarted for each tests as they start with the <bpt id="p1">[</bpt>test<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept> information inside of it.</source>
+          <target state="translated">그런 다음 Runner는 내부에 포함된 <bpt id="p1">[</bpt>테스트<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept>정보로 시작될 때 각 테스트에 대한 TestExecution.TestStarted를 <ph id="ph1">`dotnet test`</ph>에 전송하고 dotnet test는 이를 어댑터에 전달합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The runner also sends <ph id="ph1">`dotnet test`</ph> (and it forwards to the adapter) a TestExecution.TestResult for each test with the <bpt id="p1">[</bpt>individual result<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/TestResult.cs)</ept> of the test.</source>
+          <target state="translated">또한 Runner는 테스트의 <bpt id="p1">[</bpt>개별 결과<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/TestResult.cs)</ept>와 함께 각 테스트에 대한 TestExecution.TestResult를 <ph id="ph1">`dotnet test`</ph>에 전송하고 dotnet test는 이를 어댑터에 전달합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>After all tests finish, the runner sends a TestRunner.Completed message to dotnet test, which <ph id="ph1">`dotnet test`</ph> sends as TestExecution.Completed to the adapter.</source>
+          <target state="translated">모든 테스트가 끝나면 Runner는 TestRunner.Completed 메시지를 <ph id="ph1">`dotnet test`</ph>에 전송합니다. 그러면 dotnet test는 이를 TestExecution.Completed로 어댑터에 전송합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Once the adapter is done, it sends <ph id="ph1">`dotnet test`</ph> a TestSession.Terminate which will cause <ph id="ph2">`dotnet test`</ph> to shutdown.</source>
+          <target state="translated">어댑터는 작업이 완료되면 <ph id="ph2">`dotnet test`</ph>가 종료되도록 하는 TestSession.Terminate를 <ph id="ph1">`dotnet test`</ph>에 전송합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Test discovery</source>
+          <target state="translated">테스트 검색</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Test discovery</source>
+          <target state="translated">테스트 검색</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>After the optional version check, the adapter sends a TestDiscovery.Start message.</source>
+          <target state="translated">선택 사항인 버전 확인 후 어댑터는 TestDiscovery.Start 메시지를 전송합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Because in this case, the adapter does not need to attach to the process, <ph id="ph1">`dotnet test`</ph> will start the runner itself.</source>
+          <target state="translated">이 경우 어댑터를 프로세스에 연결할 필요가 없으므로 <ph id="ph1">`dotnet test`</ph>는 Runner 자체를 시작합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Also, since there is no long list of arguments to be passed to the runner, no --wait-command flag is needed to be passed to the runner.</source>
+          <target state="translated">또한 Runner에 전달할 긴 인수 목록이 없으므로 Runner에 전달하기 위한 --wait-command 플래그가 없습니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`dotnet test`</ph> only passes a --list argument to the runner, which means the runner should not run the tests, just list them.</source>
+          <target state="translated"><ph id="ph1">`dotnet test`</ph>는 Runner에 --list 인수만 전달합니다. 즉, Runner는 테스트를 실행하지 않고 단지 나열만 합니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The runner then sends <ph id="ph1">`dotnet test`</ph> (and it passes forward to the adapter) a TestDiscovery.TestFound for each <bpt id="p1">[</bpt>test<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept> found.</source>
+          <target state="translated">그러면 Runner는 발견하는 각 <bpt id="p1">[</bpt>테스트<ept id="p1">](https://github.com/dotnet/cli/blob/rel/1.0.0-preview2/src/Microsoft.Extensions.Testing.Abstractions/Test.cs)</ept>에 대해 TestDiscovery.TestFound를 <ph id="ph1">`dotnet test`</ph>전송하고 dotnet test는 이를 어댑터에 전달합니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>After all tests are discovered, the runner sends a TestRunner.Completed message to dotnet test, which <ph id="ph1">`dotnet test`</ph> sends as TestDiscovery.Completed to the adapter.</source>
+          <target state="translated">모든 테스트가 검색되면 Runner는 TestRunner.Completed 메시지를 <ph id="ph1">`dotnet test`</ph>에 전송합니다. 그러면 dotnet test는 이를 TestDiscovery.Completed로 어댑터에 전송합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Once the adapter is done, it sends <ph id="ph1">`dotnet test`</ph> a TestSession.Terminate which will cause <ph id="ph2">`dotnet test`</ph> to shutdown.</source>
+          <target state="translated">어댑터는 작업이 완료되면 <ph id="ph2">`dotnet test`</ph>가 종료되도록 하는 TestSession.Terminate를 <ph id="ph1">`dotnet test`</ph>에 전송합니다.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
