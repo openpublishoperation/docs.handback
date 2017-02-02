@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-188fee3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1a0178cc5763f06213d45b9b3826c56ce970776c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f409af333d69dfb4345c2d83c5cee6a5f0b64c15</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5c5cd6076b126b5a8c95e81d64c3fa5428c434cd</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>csproj reference | .NET Core SDK</source>
+          <target state="translated">csproj リファレンス | .NET Core SDK</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn about the differences between existing and .NET Core csproj files</source>
+          <target state="translated">既存の csproj ファイルと .NET Core の csproj ファイルの違いについて説明します</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>reference, csproj, .NET Core</source>
+          <target state="translated">リファレンス, csproj, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Additions to csproj format for .NET Core</source>
+          <target state="translated">.NET Core の csproj 形式に追加されたもの</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This document outlines the changes that were added to the csproj files as part of the move from project.json to csproj and <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/MSBuild)</ept>.</source>
+          <target state="translated">ここでは、project.json から csproj および <bpt id="p1">[</bpt>MSBuild<ept id="p1">](https://github.com/Microsoft/MSBuild)</ept> への移行に伴って csproj ファイルに追加された変更について説明します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This document outlines <bpt id="p1">**</bpt>only the deltas to non-core csproj files<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>非コア csproj ファイルに対する差分についてのみ<ept id="p1">**</ept>説明します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>If you need more information about general project file syntax and reference, please consult <bpt id="p1">[</bpt>the MSBuild project file<ept id="p1">]()</ept> documentation.</source>
+          <target state="translated">一般的なプロジェクト ファイルの構文とリファレンスの詳細が必要な場合は、<bpt id="p1">[</bpt>MSBuild プロジェクト ファイル<ept id="p1">]()</ept>のドキュメントをご覧ください。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>![NOTE] This document will grow in the future, so please check back to see new additions.</source>
+          <target state="translated">![注] このドキュメントの内容は今後増えるので、ときどき新しい追加項目を確認してください。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Additions</source>
+          <target state="translated">追加</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>PackageReference</source>
+          <target state="translated">PackageReference</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Specifies a NuGet dependency in the project.</source>
+          <target state="translated">プロジェクトでの NuGet の依存関係を指定します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Include`</ph> attribute specifies the package ID.</source>
+          <target state="translated"><ph id="ph1">`Include`</ph> 属性は、パッケージ ID を指定します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">バージョン</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;Version&gt;`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`&lt;Version&gt;`</ph> は、復元するパッケージのバージョンを指定します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The element respects the rules of the NuGet versioning scheme.</source>
+          <target state="translated">要素は、NuGet のバージョン管理スキームの規則に従います。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>IncludeAssets</source>
+          <target state="translated">IncludeAssets</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;IncludeAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed.</source>
+          <target state="translated"><ph id="ph1">`&lt;IncludeAssets&gt;`</ph> 子要素は、親の <ph id="ph2">`&lt;PackageReference&gt;`</ph> で指定されているパッケージに属するアセットで、使う必要があるものを指定します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">要素には、次の値の 1 つ以上を含めることができます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Compile – are the contents of the lib folder available to compile against</source>
+          <target state="translated">Compile - コンパイルで使用できる lib フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Runtime – are the contents of the runtime folder distributed</source>
+          <target state="translated">Runtime - 配布する runtime フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>ContentFiles – are the contents of the contentfiles folder used</source>
+          <target state="translated">ContentFiles - 使用する contentfiles フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Build – do the props/targets in the build folder get used</source>
+          <target state="translated">Build - 使用する build フォルダーのプロパティ/ターゲットです</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Native – are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">Native - ランタイムの output フォルダーにコピーするネイティブ アセットの内容です</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Analyzers – do the analyzers get used</source>
+          <target state="translated">Analyzers - 使用するアナライザーです</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">代わりに、次の値を要素に含めることもできます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>None – none of those things get used</source>
+          <target state="translated">None - これらのいずれも使用しません</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>All – all of those things get used.</source>
+          <target state="translated">All - これらのものをすべて使用します</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>ExcludeAssets</source>
+          <target state="translated">ExcludeAssets</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;ExcludeAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should not be consumed.</source>
+          <target state="translated"><ph id="ph1">`&lt;ExcludeAssets&gt;`</ph> 子要素は、親の <ph id="ph2">`&lt;PackageReference&gt;`</ph> で指定されているパッケージに属するアセットで、使ってはならないものを指定します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">要素には、次の値の 1 つ以上を含めることができます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Compile – are the contents of the lib folder available to compile against</source>
+          <target state="translated">Compile - コンパイルで使用できる lib フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Runtime – are the contents of the runtime folder distributed</source>
+          <target state="translated">Runtime - 配布する runtime フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>ContentFiles – are the contents of the contentfiles folder used</source>
+          <target state="translated">ContentFiles - 使用する contentfiles フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Build – do the props/targets in the build folder get used</source>
+          <target state="translated">Build - 使用する build フォルダーのプロパティ/ターゲットです</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Native – are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">Native - ランタイムの output フォルダーにコピーするネイティブ アセットの内容です</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Analyzers – do the analyzers get used</source>
+          <target state="translated">Analyzers - 使用するアナライザーです</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">代わりに、次の値を要素に含めることもできます。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>None – none of those things get used</source>
+          <target state="translated">None - これらのいずれも使用しません</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>All – all of those things get used.</source>
+          <target state="translated">All - これらのものをすべて使用します</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>PrivateAssets</source>
+          <target state="translated">PrivateAssets</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;PrivateAssets&gt;`</ph> child element specifies what assets belonging to the package specified by parent <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed but that they should not flow to the next project.</source>
+          <target state="translated"><ph id="ph1">`&lt;PrivateAssets&gt;`</ph> 子要素は、親の <ph id="ph2">`&lt;PackageReference&gt;`</ph> で指定されているパッケージに属するアセットで、使う必要はあるが、次のプロジェクトに渡してはならないものを指定します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This is a new term for project.json/xproj <ph id="ph1">`SuppressParent`</ph> element.</source>
+          <target state="translated">これは、project.json/xproj の <ph id="ph1">`SuppressParent`</ph> 要素に対する新しい用語です。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The element can contain one or more of the following values:</source>
+          <target state="translated">要素には、次の値の 1 つ以上を含めることができます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Compile – are the contents of the lib folder available to compile against</source>
+          <target state="translated">Compile - コンパイルで使用できる lib フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Runtime – are the contents of the runtime folder distributed</source>
+          <target state="translated">Runtime - 配布する runtime フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>ContentFiles – are the contents of the contentfiles folder used</source>
+          <target state="translated">ContentFiles - 使用する contentfiles フォルダーの内容です</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Build – do the props/targets in the build folder get used</source>
+          <target state="translated">Build - 使用する build フォルダーのプロパティ/ターゲットです</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Native – are the contents from native assets copied to the output folder for runtime</source>
+          <target state="translated">Native - ランタイムの output フォルダーにコピーするネイティブ アセットの内容です</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Analyzers – do the analyzers get used</source>
+          <target state="translated">Analyzers - 使用するアナライザーです</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Alternatively, the element can contain:</source>
+          <target state="translated">代わりに、次の値を要素に含めることもできます。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>None – none of those things get used</source>
+          <target state="translated">None - これらのいずれも使用しません</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>All – all of those things get used.</source>
+          <target state="translated">All - これらのものをすべて使用します</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>DotnetCliToolReference</source>
+          <target state="translated">DotnetCliToolReference</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> element specifies the CLI tool that the user wants restores in the context of the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> 要素は、プロジェクトのコンテキストでユーザーが復元を望む CLI ツールを指定します。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>It is a replacement for the <ph id="ph1">`tools`</ph> node in <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated"><ph id="ph2">`project.json`</ph> の <ph id="ph1">`tools`</ph> ノードに代わるものです。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">バージョン</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;Version&gt;`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`&lt;Version&gt;`</ph> は、復元するパッケージのバージョンを指定します。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The element respect the rules of the NuGet versioning scheme.</source>
+          <target state="translated">要素は、NuGet のバージョン管理スキームの規則に従います。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifiers</source>
+          <target state="translated">RuntimeIdentifiers</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> element allows specifying a semicolon-delimited list of <bpt id="p1">[</bpt>Runtime Identifiers<ept id="p1">](../../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> 要素では、プロジェクトの<bpt id="p1">[</bpt>ランタイム識別子<ept id="p1">](../../rid-catalog.md)</ept>のセミコロン区切りリストを指定できます。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>These allow publishing self-contained deployments.</source>
+          <target state="translated">これにより、自己完結型の展開を発行できます。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

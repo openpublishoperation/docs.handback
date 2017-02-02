@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-188fee3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e23514daacb34739b26b7a31afea2ccb30296e79</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\choosing-core-framework-server.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1fa555fd5e444767120028ad72419fa3439a56d3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e6c27ce57971b73633f55f31ff15978a3669700</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">サーバー アプリ用 .NET Core と .NET Framework の選択</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>A guide on which flavor of .NET you should consider when building a server app in .NET.</source>
+          <target state="translated">.NET でのサーバー アプリのビルド時に考慮する必要がある .NET の種類に関するガイドです。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Framework</source>
+          <target state="translated">.NET, .NET Core, .NET Framework</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between .NET Core and .NET Framework for server apps</source>
+          <target state="translated">サーバー アプリ用 .NET Core と .NET Framework の選択</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>There are two supported choices of runtime for building server-side applications with .NET: .NET Framework and .NET Core.</source>
+          <target state="translated">.NET を使用してサーバー側のアプリケーションをビルドする場合に選択できるサポート対象ランタイムには、.NET Framework と .NET Core の 2 つがあります。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Both share a lot of the same .NET platform components and you can share code across the two.</source>
+          <target state="translated">両方で同じ .NET プラットフォーム コンポーネントの多くが共有され、2 つの間でコードを共有することができます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, there are fundamental differences between the two and your choice will depend on what you want to accomplish.</source>
+          <target state="translated">ただし、2 つには基本的な違いがあり、どちらを選択するかは実行内容によって決まります。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article provides guidance on when to use each.</source>
+          <target state="translated">この記事では、それぞれを使用するタイミングに関するガイダンスを提供します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You should use .NET Core for your server application when:</source>
+          <target state="translated">次のような場合、サーバー アプリケーションには .NET Core を使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You have cross-platform needs.</source>
+          <target state="translated">クロスプラット フォームが必要である。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You are targeting microservices.</source>
+          <target state="translated">マイクロサービスが対象である。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You are using Docker containers.</source>
+          <target state="translated">Docker コンテナーを使用している。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You need high performance and scalable systems.</source>
+          <target state="translated">高パフォーマンスでスケーラブルなシステムが必要である。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You need side by side of .NET versions by application.</source>
+          <target state="translated">アプリケーションごとに異なる .NET バージョンが必要である。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You should use .NET Framework for your server application when:</source>
+          <target state="translated">次のような場合、サーバー アプリケーションには .NET Framework を使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Your application currently uses .NET Framework (recommendation is to extend instead of migrating)</source>
+          <target state="translated">現在、アプリケーションで .NET Framework を使用している (移行ではなく拡張することをお勧めします)。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You need to use third-party .NET libraries or NuGet packages not available for .NET Core.</source>
+          <target state="translated">.NET Core で使用できないサードパーティ製の .NET ライブラリまたは NuGet パッケージを使用する必要がある。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You need to use .NET technologies that are not available for .NET Core.</source>
+          <target state="translated">.NET Core で使用できない .NET テクノロジを使用する必要がある。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You need to use a platform that doesn’t support .NET Core.</source>
+          <target state="translated">.NET Core をサポートしていないプラットフォームを使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Core</source>
+          <target state="translated">どのような場合に .NET Core を選択すべきか</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following is a more detailed explanation of the previously-stated reasons for picking .NET Core.</source>
+          <target state="translated">以下に、前述の .NET Core を選択する理由について詳しく説明します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Cross-platform needs</source>
+          <target state="translated">クロスプラットフォームの必要性</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Clearly, if your goal is to have an application (web/service) that should be able to run across platforms (Windows, Linux and macOS), the best choice is to use .NET Core.</source>
+          <target state="translated">複数のプラットフォーム (Windows、Linux および macOS) でアプリケーション (Web/サービス) を実行できるようにすることが目的であれば、明らかに .NET Core は最良の選択です。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>.NET Core also supports the previously-mentioned operating systems as your development workstation.</source>
+          <target state="translated">.NET Core では、開発ワークステーションとして前述のオペレーティング システムもサポートします。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Visual Studio provides an Integrated Development Environment (IDE) for Windows.</source>
+          <target state="translated">Visual Studio では、Windows 用の統合開発環境 (IDE) が提供されます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can also use Visual Studio Code on macOS, Linux and Windows which fully support .NET Core, including IntelliSense and debugging.</source>
+          <target state="translated">Visual Studio コードは、IntelliSense とデバッグを含む、.NET Core を完全にサポートする macOS、Linux および Windows でも使用できます。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can also target .NET Core with most third-party editors like Sublime, Emacs, VI and can get editor IntelliSense using the open source <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> project.</source>
+          <target state="translated">また、Sublime、Emacs、VI などのサードパーティ製のほとんどのエディターを .NET Core で使用することができ、オープン ソースの <bpt id="p1">[</bpt>Omnisharp<ept id="p1">](http://www.omnisharp.net/)</ept> プロジェクトを使用してエディターの IntelliSense を取得できます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can also avoid any code editor and directly use the .NET Core command-line tools, available for all supported platforms.</source>
+          <target state="translated">さらに、コード エディターをまったく使用せずに、サポートされているすべてのプラットフォームで利用可能な .NET Core コマンドライン ツールを直接使用することもできます。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Microservices architecture</source>
+          <target state="translated">マイクロサービス アーキテクチャ</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>.NET Core is the best candidate if you are embracing a microservices oriented system composed of multiple independent, dynamically scalable, stateful or stateless microservices.</source>
+          <target state="translated">複数の独立した動的にスケーラブルなステートフルまたはステートレス マイクロサービスで構成されるマイクロサービス指向のシステムを採用する場合は、.NET Core が最適です。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>.NET Core is lightweight and its API surface can be minimized to the scope of the microservice.</source>
+          <target state="translated">.NET Core は軽量で、その API サーフェイスはマイクロサービスのスコープに合わせて最小化することができます。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>A microservices architecture also allows you to mix technologies across a service boundary, enabling a gradual embrace of .NET Core for new microservices that live in conjunction with other microservices or services developed with .NET Framework, Java, Ruby, or other monolithic technologies.</source>
+          <target state="translated">マイクロサービス アーキテクチャでは、サービスの境界をまたいでテクノロジを混在させることもできます。これにより、.NET Framework、Java、Ruby、またはその他のモノリシック テクノロジで開発された他のマイクロサービスやサービスと連動する新しいマイクロサービスで .NET Core を段階的に採用することができます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The infrastructure platforms you could use are many.</source>
+          <target state="translated">使用できるインフラストラクチャ プラットフォームは多数あります。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For large and complex microservice systems, you can use <bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept>.</source>
+          <target state="translated">大規模で複雑なマイクロサービス システムでは、<bpt id="p1">[</bpt>Azure Service Fabric<ept id="p1">](https://azure.microsoft.com/services/service-fabric/)</ept> を使用できます。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For stateless microservices you can also use other products like <bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept>.</source>
+          <target state="translated">ステートレス マイクロサービスでは、<bpt id="p1">[</bpt>Azure App Service<ept id="p1">](https://azure.microsoft.com/services/app-service/)</ept> などの他の製品を使用することもできます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Microservices alternatives based on Docker also fit any kind of microservices approach, as explained next.</source>
+          <target state="translated">Docker ベースのマイクロサービスの代替手段は、以下の説明のように、どのような種類のマイクロサービスのアプローチにもフィットします。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>All these platforms support .NET Core and make them ideal for hosting your microservices.</source>
+          <target state="translated">これらすべてのプラットフォームでは .NET Core がサポートされるため、マイクロサービスをホストするには最適です。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Containers</source>
+          <target state="translated">コンテナー</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services which follow any architectural pattern.</source>
+          <target state="translated">一般的に、コンテナーはマイクロサービス アーキテクチャと併用されますが、アーキテクチャ パターンに従う Web アプリやサービスをコンテナー化するために使用することもできます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You will be able to use the .NET Framework for Windows containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers.</source>
+          <target state="translated">Windows コンテナーで .NET Framework を使用できますが、モジュール性があり、軽量な .NET Core はコンテナーには最適です。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When creating and deploying a container the size of its image is far smaller with .NET Core than .NET Framework.</source>
+          <target state="translated">コンテナーを作成して展開する場合、そのイメージのサイズは .NET Framework より .NET Core の方がはるかに小さくなります。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Because it is cross-platform, you can deploy server apps to Linux Docker containers, for example.</source>
+          <target state="translated">また、クロスプラットフォームであるため、Linux Docker コンテナーなどにサーバー アプリを展開することができます。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can then host your Docker containers in your own Linux or Windows infrastructure, or use a cloud service such as <bpt id="p1">[</bpt>Azure Container Service<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept> which can manage, orchestrate and scale your container-based application in the cloud.</source>
+          <target state="translated">したがって、独自の Linux または Windows インフラストラクチャで Docker コンテナーをホストしたり、クラスターでコンテナー ベースのアプリケーションを管理、オーケストレーションおよびスケーリングできる <bpt id="p1">[</bpt>Azure Container Service<ept id="p1">](https://azure.microsoft.com/services/container-service/)</ept> などのクラウド サービスを使用したりすることができます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A need for high performance and scalable systems</source>
+          <target state="translated">高パフォーマンスでスケーラブルなシステムの必要性</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When your system needs the best possible performance and scalability, .NET Core and ASP.NET Core are your best options.</source>
+          <target state="translated">システムで考えられる最高のパフォーマンスとスケーラビリティが必要な場合、NET Core と ASP.NET Core が最適です。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>ASP.NET Core outperforms ASP.NET by a factor of 10, and it leads other popular industry technologies for microservices such as Java servlets, Go and node.js.</source>
+          <target state="translated">ASP.NET Core は ASP.NET よりパフォーマンスが 10 倍優れており、Java サーブレット、Go および node.js などのマイクロサービスの他の一般的な業界テクノロジをリードしています。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This is especially relevant for microservices architectures, where you could have hundreds of microservices running.</source>
+          <target state="translated">これは、特に何百ものマイクロサービスを実行している可能性があるマイクロサービス アーキテクチャに関連します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>With ASP.NET Core you’d be able to run your system with a much lower number of servers/VMs, ultimately saving costs in infrastructure and hosting.</source>
+          <target state="translated">ASP.NET Core を使用することで、はるかに少ない数のサーバー/VM でシステムを実行でき、最終的にインフラストラクチャやホストの費用を節約できます。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A need for side by side of .NET versions per application level</source>
+          <target state="translated">アプリケーション レベルごとに異なる .NET バージョンの必要性</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you want to be able to install applications with dependencies on different versions of frameworks in .NET, you need to use .NET Core, which provides 100% side-by-side.</source>
+          <target state="translated">.NET で異なるバージョンのフレームワークへの依存関係を持つアプリケーションをインストールできるようにする場合は、100% 共存可能な .NET Core を使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Easy side-by-side installation of different versions of .NET Core on the same machine allows you to have multiple services on the same server, each of them on its own version of .NET Core, eliminating risks and saving money in application upgrades and IT operations.</source>
+          <target state="translated">同じコンピューター上に異なるバージョンの .NET Core を簡単にサイド バイ サイド インストールできるため、同じサーバーの複数のサービスをそれぞれ別のバージョンの .NET Core で使用できます。これにより、アプリケーションのアップグレードや IT 運用におけるリスクがなくなり、費用を節約できます。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When to choose .NET Framework</source>
+          <target state="translated">どのような場合に .NET Framework を選択すべきか</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>While .NET Core offers significant benefits for new applications and application patterns, the .NET Framework will continue to be the natural choice for many existing scenarios and as such, it won’t be replaced by .NET Core for all server applications.</source>
+          <target state="translated">.NET Core は新しいアプリケーションとアプリケーション パターンには大きな利点がありますが、既存の多くのシナリオでは引き続き .NET Framework が自然な選択肢となります。そのため、すべてのサーバー アプリケーションで .NET Core が代わりに使用されることはありません。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Current .NET Framework applications</source>
+          <target state="translated">現在の .NET Framework アプリケーション</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In most cases, you won’t need to migrate your existing applications to .NET Core.</source>
+          <target state="translated">ほとんどの場合、既存のアプリケーションを .NET Core に移行する必要はありません。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Instead, a recommended approach is to use .NET Core as you extend an existing application, such as writing a new web service in ASP.NET Core.</source>
+          <target state="translated">ASP.NET Core で新しい Web サービスを作成するなど、既存のアプリケーションを拡張する際には、代わりに .NET Core を使用することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A need to use third-party .NET libraries or NuGet packages not available for .NET Core</source>
+          <target state="translated">.NET Core で使用できないサードパーティ製の .NET ライブラリや NuGet パッケージを使用する必要性</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Libraries are quickly embracing .NET Standard, which enables sharing code across all .NET flavors including .NET Core.</source>
+          <target state="translated">ライブラリでは .NET Standard の採用が迅速に進められています。これにより、.NET Core を含むすべての種類の .NET でコードを共有できるようになります。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>With .NET Standard 2.0 this will be even easier, as the .NET Core API surface will become significantly bigger and .NET Core applications can directly use existing .NET Framework libraries.</source>
+          <target state="translated">.NET Standard 2.0 では、これがさらに容易になります。.NET Core API サーフェイスがかなり大きくなり、.NET Core アプリケーションで既存の .NET Framework ライブラリを直接使用できるようになるためです。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This transition won’t be immediate, though, so we recommend checking the specific libraries required by your application before making a decision one way or another.</source>
+          <target state="translated">この移行はすぐには行われませんが、いずれにせよ、決定する前に、アプリケーションで必要な特定のライブラリを確認することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A need to use .NET technologies not available for .NET Core</source>
+          <target state="translated">.NET Core で使用できない .NET テクノロジを使用する必要性</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some .NET Framework technologies are not available in .NET Core.</source>
+          <target state="translated">一部の .NET Framework テクノロジは .NET Core では使用できません。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Some of them will be available in later .NET Core releases, but others don’t apply to the new application patterns targeted by .NET Core and may never be available.</source>
+          <target state="translated">.NET Core の今後のリリースで使用可能になるものもありますが、それ以外は .NET Core の対象となる新しいアプリケーション パターンには適用されず、使用可能にならない可能性があります。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following list shows the most common technologies not found in .NET Core 1.0:</source>
+          <target state="translated">.NET Core 1.0 にはない最も一般的なテクノロジを、以下のリストに示します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Forms applications: ASP.NET Web Forms is only available on the .NET Framework, so you cannot use ASP.NET Core / .NET Core for this scenario.</source>
+          <target state="translated">ASP.NET Web フォーム アプリケーション: ASP.NET Web フォームは .NET Framework でのみ使用可能であるため、このシナリオでは ASP.NET Core/.NET Core を使用することはできません。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Currently there are no plans to bring ASP.NET Web Forms to .NET Core.</source>
+          <target state="translated">現時点では、ASP.NET Web フォームを .NET Core で使用できるようにする予定はありません。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>ASP.NET Web Pages applications: ASP.NET Web Pages are not included in ASP.NET Core 1.0, although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">ASP.NET Web ページ アプリケーション: ASP.NET Web ページは ASP.NET Core 1.0 には含まれていませんが、<bpt id="p1">[</bpt>.NET Core のロードマップ<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>に関するページの説明のとおり、今度のリリースに含まれる予定です。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>ASP.NET SignalR server/client implementation.</source>
+          <target state="translated">ASP.NET SignalR サーバー/クライアントの実装。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>At .NET Core 1.0 release timeframe (June 2016), ASP.NET SignalR is not available for ASP.NET Core (neither client or server), although it is planned to be included in a future release as explained in the <bpt id="p1">[</bpt>.NET Core roadmap<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>.</source>
+          <target state="translated">.NET Core 1.0 リリース (2016 年 6 月) の時点では、ASP.NET SignalR は ASP.NET Core (クライアントとサーバーの両方) では使用できませんが、<bpt id="p1">[</bpt>.NET Core のロードマップ<ept id="p1">](https://github.com/aspnet/Home/wiki/Roadmap)</ept>に関するページの説明のとおり、今度のリリースに含まれる予定です。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Preview state is available at the <bpt id="p1">[</bpt>Server-side<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept> and <bpt id="p2">[</bpt>Client Library<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept> GitHub repositories.</source>
+          <target state="translated">Preview 版は、<bpt id="p1">[</bpt>サーバー側<ept id="p1">](https://github.com/aspnet/SignalR-Server)</ept>と<bpt id="p2">[</bpt>クライアント ライブラリ<ept id="p2">](https://github.com/aspnet/SignalR-Client-Net)</ept>の GitHub リポジトリで利用できます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>WCF services implementation.</source>
+          <target state="translated">WCF サービスの実装。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Even when there’s a <bpt id="p1">[</bpt>WCF-Client library<ept id="p1">](https://github.com/dotnet/wcf)</ept> to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework.</source>
+          <target state="translated">.NET Core から WCF サービスを利用する <bpt id="p1">[</bpt>WCF クライアント ライブラリ<ept id="p1">](https://github.com/dotnet/wcf)</ept>がある場合でも、2016 年 6 月の時点では、WCF サーバーの実装は .NET Framework でのみ可能です。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This scenario is not part of the current plan for .NET Core but it’s being considered for the future.</source>
+          <target state="translated">このシナリオは .NET Core の現在の計画に含まれていませんが、将来に向けて検討中です。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.</source>
+          <target state="translated">ワークフローに関連するサービス: .Windows Workflow Foundation (WF)、ワークフロー サービス (1 つのサービスに WCF と WF) および WCF Data Services (旧称: "ADO.NET Data Services") は、NET Framework でのみ使用できます。.NET Core で使用できるようにする予定はありません。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Language support: Visual Basic and F# don’t currently have tooling support .NET Core, but both will be supported in Visual Studio 2017 and later versions of Visual Studio.</source>
+          <target state="translated">言語サポート: 現在、Visual Basic と F# は .NET Core でサポートされていませんが、Visual Studio 2017 以降のバージョンの Visual Studio ではどちらもサポートされる予定です。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In addition to the official roadmap, there are other frameworks to be ported to .NET Core - For a full list, take a look at CoreFX issues marked as <bpt id="p1">[</bpt>port-to-core<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept>.</source>
+          <target state="translated">正式なロードマップに加え、.NET Core に移植される他のフレームワークもあります。完全なリストについては、<bpt id="p1">[</bpt>port-to-core<ept id="p1">](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core)</ept> というマークの付いた CoreFX の案件を参照してください。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Please note that this list doesn’t represent a commitment from Microsoft to bring those components to .NET Core — they are simply capturing the desire from the community to do so.</source>
+          <target state="translated">このリストは Microsoft がこれらのコンポーネントを .NET Core に提供することを約束するものではなく、単にコミュニティの要望を取り込んでいるだけであることに注意してください。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>That being said, if you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard.</source>
+          <target state="translated">上にリストされているコンポーネントが気になる場合には、GitHub でのディスカッションに参加して意見を述べることを検討してください。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>And if you think something is missing, please <bpt id="p1">[</bpt>file a new issue in the CoreFX repository<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>.</source>
+          <target state="translated">また、何か足りないと感じた場合は、<bpt id="p1">[</bpt>CoreFX リポジトリで新しい案件を作成<ept id="p1">](https://github.com/dotnet/corefx/issues/new)</ept>してください。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A need to use a platform that doesn’t support .NET Core</source>
+          <target state="translated">.NET Core をサポートしていないプラットフォームを使用する必要性</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Some Microsoft or third-party platforms don’t support .NET Core.</source>
+          <target state="translated">Microsoft やサードパーティ製のプラットフォームの中には、.NET Core をサポートしないものもあります。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>For example, some Azure services such as Service Fabric Stateful Reliable Services and Service Fabric Reliable Actors require .NET Framework.</source>
+          <target state="translated">たとえば、Service Fabric のステートフル Reliable Services や Service Fabric Reliable Actors などのいくつかの Azure サービスでは .NET Framework が必要です。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Some other services provide an SDK not yet available for consumption on .NET Core.</source>
+          <target state="translated">他のいくつかのサービスでは、.NET Core ではまだ使用できない SDK が提供されます。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>This is a transitional circumstance, as all of Azure services use .NET Core.</source>
+          <target state="translated">すべての Azure サービスでは .NET Core を使用しているために、これは過渡的な状況です。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In the meantime, you can always use the equivalent REST API instead of the client SDK.</source>
+          <target state="translated">その間、クライアント SDK の代わりに同等の REST API をいつでも使用できます。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Further resources</source>
+          <target state="translated">他のリソース</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Core Guide<ept id="p1">](../core/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core のガイド<ept id="p1">](../core/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Porting from .NET Framework to .NET Core<ept id="p1">](../core/porting/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Framework から .NET Core への移植<ept id="p1">](../core/porting/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Framework on Docker Guide<ept id="p1">](../framework/index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker 上の .NET Framework のガイド<ept id="p1">](../framework/index.md)</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET Components Overview<ept id="p1">](components.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET コンポーネントの概要<ept id="p1">](components.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
