@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4a95368" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7df8b8bd4ae96a344b279a2673906962beaf29a4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\extensibility.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2b9b9e19d016b2cc173e1211366b205f79fe40af</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b327a2008c99637d8b87e520b68bad5ec4849bf1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model | Microsoft Docs</source>
+          <target state="translated">Modello di estendibilità dell'interfaccia della riga di comando di .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model</source>
+          <target state="translated">Modello di estendibilità dell'interfaccia della riga di comando di .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">interfaccia della riga di comando, estendibilità, comandi personalizzati, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>.NET Core CLI extensibility model (Tooling Preview 4)</source>
+          <target state="translated">Modello di estendibilità dell'interfaccia della riga di comando di .NET Core (strumenti dell'anteprima 4)</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to Visual Studio 2017 RC - .NET Core Tools Preview 4.</source>
+          <target state="translated">Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC).</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the .NET Core Tools Preview 2 version, see the <bpt id="p1">[</bpt>.NET Core CLI extensibility model<ept id="p1">](../../tools/dotnet-test.md)</ept> topic.</source>
+          <target state="translated">Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento <bpt id="p1">[</bpt>Modello di estendibilità dell'interfaccia della riga di comando di .NET Core<ept id="p1">](../../tools/dotnet-test.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Panoramica</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This document will cover the main ways how to extend the CLI tools and explain the scenarios that drive each of them.</source>
+          <target state="translated">Questo documento analizza i principali metodi per estendere gli strumenti dell'interfaccia della riga di comando e illustra gli scenari relativi a ciascuno di essi.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>It will the outline how to consume the tools as well as provide short notes on how to build both types of tools.</source>
+          <target state="translated">Viene indicato come utilizzare gli strumenti e vengono fornite brevi note riguardanti la compilazione di entrambi i tipi di strumenti.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>How to extend CLI tools</source>
+          <target state="translated">Come estendere gli strumenti dell'interfaccia della riga di comando</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The Preview 4 CLI tools can be extended in three main ways:</source>
+          <target state="translated">Gli strumenti dell'interfaccia della riga di comando dell'anteprima 4 possono essere estesi in tre modi principali:</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Via NuGet packages on a per-project basis</source>
+          <target state="translated">Tramite pacchetti NuGet in base al progetto</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Via NuGet packages with custom targets</source>
+          <target state="translated">Tramite pacchetti NuGet con destinazioni personalizzate</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Via the system's PATH</source>
+          <target state="translated">Tramite il PATH di sistema</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The three extensibility mechanisms outlined above are not exclusive; you can use all or just one or combine them.</source>
+          <target state="translated">I tre meccanismi di estendibilità sopra indicati non sono mutualmente esclusivi: è possibile usarli tutti, usarne una combinazione o usarne uno soltanto.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Which one to pick depends largely on what is the goal you are trying to achieve with your extension.</source>
+          <target state="translated">La scelta dipende in larga misura dall'obiettivo che si intende raggiungere con l'estensione.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Per-project based extensibility</source>
+          <target state="translated">Estendibilità in base al progetto</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Per-project tools are <bpt id="p1">[</bpt>framework-dependented deployments<ept id="p1">](../deploying/index.md)</ept> that are distributed as NuGet packages.</source>
+          <target state="translated">Gli strumenti in base al progetto sono <bpt id="p1">[</bpt>installazioni dipendenti dal framework<ept id="p1">](../deploying/index.md)</ept> distribuite come pacchetti NuGet.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Tools are only available in the context of the project that references them and for which they are restored; invocation outside of the context of the project (for example, outside of the directory that contains the project) will fail as the command will not be able to be found.</source>
+          <target state="translated">Gli strumenti sono disponibili solo nel contesto del progetto che fa riferimento ad essi e per il quale vengono ripristinati. La chiamata all'esterno del contesto del progetto, ad esempio all'esterno della directory contenente il progetto, avrà esito negativo perché non sarà possibile trovare il comando.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>These tools are perfect for build servers, since nothing outside of the project file is needed.</source>
+          <target state="translated">Questi strumenti sono perfetti anche per i server di compilazione, dal momento che non è necessario nulla al di fuori del file di progetto.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The build process runs restore for the project it builds and tools will be available.</source>
+          <target state="translated">Il processo di compilazione esegue il ripristino del progetto compilato e gli strumenti saranno disponibili.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Language projects, such as F#, are also in this category; after all, each project can only be written in one specific language.</source>
+          <target state="translated">Rientrano in questa categoria anche i progetti in un particolare linguaggio, ad esempio F#. In definitiva, ogni progetto può essere scritto soltanto in uno specifico linguaggio.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Finally, this extensibility model provides support for creation of tools that need access to the built output of the project.</source>
+          <target state="translated">Questo modello di estendibilità, infine, fornisce il supporto per la creazione di strumenti che devono accedere all'output compilato del progetto.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For instance, various Razor view tools in <bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept> MVC applications fall into this category.</source>
+          <target state="translated">Ad esempio, rientrano in questa categoria diversi strumenti di visualizzazione Razor presenti in applicazioni MVC <bpt id="p1">[</bpt>ASP.NET<ept id="p1">](https://www.asp.net/)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Consuming per-project tools</source>
+          <target state="translated">Utilizzo di strumenti in base al progetto</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Consuming these tools requires you to add a <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element for each tool you want to use to your project file.</source>
+          <target state="translated">Per utilizzare questi strumenti, è necessario aggiungere al file di progetto un elemento <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> per ciascuno degli strumenti da usare.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Inside the <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element, you reference the package in which the tool resides and you specify the version you need.</source>
+          <target state="translated">All'interno dell'elemento <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> l'utente fa riferimento al pacchetto in cui si trova lo strumento e specifica la versione necessaria.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After running <ph id="ph1">`dotnet restore`</ph>, the tool and its dependencies are restored.</source>
+          <target state="translated">Dopo l'esecuzione di <ph id="ph1">`dotnet restore`</ph>, viene eseguito il ripristino dello strumento e delle relative dipendenze.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For tools that need to load the build output of the project for execution, there is usually another dependency which is listed under the regular dependencies in the project file.</source>
+          <target state="translated">Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Since the Preview 4 version of the CLI uses MSBuild as its build engine, it is recommended that these parts of the tool be written as custom MSBuild targets and tasks since that way they can take part in the overall build process.</source>
+          <target state="translated">Poiché la versione di anteprima 4 dell'interfaccia della riga di comando usa MSBuild come motore di compilazione, è consigliabile che queste parti dello strumento vengano scritte come destinazioni e attività MSBuild personalizzate per essere incluse nel processo di compilazione globale.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Also, they can get any and all data easily that is produced via the build, for example the location of the output files, the current configuration being built etc. All of this information in Preview 4 becomes a set of MSBuild properties that can be read from any target.</source>
+          <target state="translated">Tali destinazioni e attività, inoltre, possono ottenere facilmente alcuni o tutti i dati prodotti tramite la compilazione, ad esempio la posizione dei file di output, la configurazione corrente in fase di compilazione e così via. Nell'anteprima 4 tutte queste informazioni diventano un set di proprietà MSBuild leggibili da qualsiasi destinazione.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>We will see how to add a custom target using NuGet later in this document.</source>
+          <target state="translated">Nel documento verrà illustrato come aggiungere una destinazione personalizzata usando NuGet.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Let's review an example of adding a simple tools-only tool to a simple project.</source>
+          <target state="translated">Di seguito è riportato un esempio di aggiunta di un semplice strumento "tools" a un semplice progetto.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Given an example command called <ph id="ph1">`dotnet-api-search`</ph> that allows you to search through the NuGet packages for the specified API, here is a console application's project file that uses that tool:</source>
+          <target state="translated">Si consideri un comando di esempio denominato <ph id="ph1">`dotnet-api-search`</ph> che consente di cercare nei pacchetti NuGet l'API specificata. Di seguito è riportato un file di progetto di un'applicazione console che usa tale strumento:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> element is structured in a similar way as the <ph id="ph2">`&lt;PackageReference&gt;`</ph> element.</source>
+          <target state="translated">L'elemento <ph id="ph1">`&lt;DotNetCliToolReference&gt;`</ph> è strutturato in modo analogo all'elemento <ph id="ph2">`&lt;PackageReference&gt;`</ph></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It needs the package ID of the package containing the tool and its version at the very least.</source>
+          <target state="translated">e richiede l'ID pacchetto del pacchetto contenente almeno lo strumento e la relativa versione.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Building tools</source>
+          <target state="translated">Compilazione degli strumenti</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>As mentioned, tools are just portable console applications.</source>
+          <target state="translated">Come affermato in precedenza, gli strumenti sono essenzialmente applicazioni console portabili.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You would build one as you would build any console application.</source>
+          <target state="translated">La compilazione di uno strumento è analoga a quella di qualsiasi applicazione console.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>After you build it, you would use <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> command to create a NuGet package (nupkg) that contains your code, information about its dependencies and so on.</source>
+          <target state="translated">Dopo la compilazione, usare il comando <bpt id="p1">[</bpt><ph id="ph1">`dotnet pack`</ph><ept id="p1">](dotnet-pack.md)</ept> per creare un pacchetto NuGet (nupkg) contenente il codice, informazioni sulle relative dipendenze e così via.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The package name can be whatever the author wants, but the application inside, the actual tool binary, has to conform to the convention of <ph id="ph1">`dotnet-&lt;command&gt;`</ph> in order for <ph id="ph2">`dotnet`</ph> to be able to invoke it.</source>
+          <target state="translated">Il nome del pacchetto è a scelta dell'autore, ma è necessario che l'applicazione in esso contenuta, l'effettivo file binario dello strumento, sia conforme alla convenzione di <ph id="ph1">`dotnet-&lt;command&gt;`</ph> per consentire a <ph id="ph2">`dotnet`</ph> di richiamare il pacchetto.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In Preview 4 bits, the <ph id="ph1">`dotnet pack`</ph> command will not pack the <ph id="ph2">`runtimeconfig.json`</ph> file that is needed to run the tool.</source>
+          <target state="translated">Nei componenti dell'anteprima 4 il comando <ph id="ph1">`dotnet pack`</ph> non include il file <ph id="ph2">`runtimeconfig.json`</ph> necessario per eseguire lo strumento.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In order to package this file, you have two options:</source>
+          <target state="translated">Per includere questo file nel pacchetto sono disponibili due opzioni:</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Create a <ph id="ph1">`nuspec`</ph> file and use <ph id="ph2">`dotnet nuget pack`</ph> command newly available to Preview 4 CLI to include the file</source>
+          <target state="translated">Creare un file <ph id="ph1">`nuspec`</ph> e usare il nuovo comando <ph id="ph2">`dotnet nuget pack`</ph> disponibile nell'interfaccia della riga di comando dell'anteprima 4 per includere il file</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Use the new <ph id="ph1">`&lt;Content&gt;`</ph> element in an <ph id="ph2">`&lt;ItemGroup&gt;`</ph> in your project file to include the file manually</source>
+          <target state="translated">Usare il nuovo elemento <ph id="ph1">`&lt;Content&gt;`</ph> in un elemento <ph id="ph2">`&lt;ItemGroup&gt;`</ph> del file di progetto per includere il file manualmente</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Working with nuspec files is beyond the scope of this article, however you can find a lot of good information in the <bpt id="p1">[</bpt>official NuGet docs<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file)</ept>.</source>
+          <target state="translated">L'utilizzo dei file nuspec esula dall'ambito di questo articolo. È tuttavia possibile trovare informazioni utili nei <bpt id="p1">[</bpt>documenti ufficiali NuGet<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file)</ept>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If you decide on the second approach, you can see the example <ph id="ph1">`csproj`</ph> file and how it is configured below:</source>
+          <target state="translated">Se si sceglie il secondo approccio, di seguito è possibile esaminare il file di esempio <ph id="ph1">`csproj`</ph> e la relativa configurazione:</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This <ph id="ph1">`&lt;ItemGroup&gt;`</ph> instructs the <ph id="ph2">`dotnet pack`</ph> command to pack any <ph id="ph3">`runtimeconfig.json`</ph> files in the build output directory (designated by the <ph id="ph4">`$(OutputPath)`</ph> variable) and place it into the <ph id="ph5">`lib`</ph> folder for the built target framework.</source>
+          <target state="translated">Questo <ph id="ph1">`&lt;ItemGroup&gt;`</ph> indica al comando <ph id="ph2">`dotnet pack`</ph> di includere qualsiasi file <ph id="ph3">`runtimeconfig.json`</ph> nella directory di output della compilazione (designata dalla variabile <ph id="ph4">`$(OutputPath)`</ph>) e di inserirlo nella cartella <ph id="ph5">`lib`</ph> per il framework di destinazione della compilazione.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The built target framework is designated similarly to the output path by using a MSBuild property.</source>
+          <target state="translated">Il framework di destinazione della compilazione viene designato in modo analogo al percorso di output mediante la proprietà MSBuild.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>After this is set, the resulting tool nupkg file will contain all that is needed for running the tool.</source>
+          <target state="translated">Dopo l'impostazione di questa proprietà, il file nupkg dello strumento risultante conterrà tutti gli elementi necessari per l'esecuzione dello strumento stesso.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Since tools are portable applications, the user consuming the tool has to have the version of the .NET Core libraries that the tool was built against in order to run the tool.</source>
+          <target state="translated">Poiché gli strumenti sono applicazioni portabili, l'utente che utilizza lo strumento deve disporre della versione delle librerie .NET Core in base a cui tale strumento è stato creato. Solo in questo modo è possibile eseguire lo strumento.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Any other dependency that the tool uses and that is not contained within the .NET Core libraries is restored and placed in the NuGet cache.</source>
+          <target state="translated">Qualsiasi altra dipendenza usata dallo strumento e non contenuta nelle librerie .NET Core viene ripristinata e posizionata nella cache NuGet.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The entire tool is, therefore, run using the assemblies from the .NET Core libraries as well as assemblies from the NuGet cache.</source>
+          <target state="translated">Di conseguenza, l'intero strumento viene eseguito usando gli assembly delle librerie .NET Core oltre agli assembly della cache NuGet.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>These kind of tools have a dependency graph that is completely separate from the dependency graph of the project that uses them.</source>
+          <target state="translated">Gli strumenti di questo tipo hanno un grafico delle dipendenze completamente separato da quello del progetto che li usa.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The restore process will first restore the project's dependencies, and will then restore each of the tools and their dependencies.</source>
+          <target state="translated">Il processo di ripristino ripristinerà innanzitutto le dipendenze del progetto e quindi ciascuno degli strumenti e le relative dipendenze.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>You can find richer examples and different combinations of this in the <bpt id="p1">[</bpt>.NET Core CLI repo<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept>.</source>
+          <target state="translated">Esempi più dettagliati e differenti combinazioni sono disponibili in <bpt id="p1">[</bpt>.NET Core CLI repo<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects)</ept> (Archivio .NET Core dell'interfaccia della riga di comando).</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You can also see the <bpt id="p1">[</bpt>implementation of tools used<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept> in the same repo.</source>
+          <target state="translated">Nello stesso archivio è possibile vedere anche l'<bpt id="p1">[</bpt>implementazione degli strumenti usati<ept id="p1">](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages)</ept>.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Custom targets</source>
+          <target state="translated">Destinazioni personalizzate</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>NuGet has had the capability to package custom MSBuild target and props files for a while now and you can find the official documentation on this on the <bpt id="p1">[</bpt>NuGet documentation site<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)</ept>.</source>
+          <target state="translated">Per un determinato periodo NuGet ha consentito di includere destinazioni MSBuild personalizzate e file props. La documentazione ufficiale su questo argomento è disponibile nel <bpt id="p1">[</bpt>sito della documentazione NuGet<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package)</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>With the move in the CLI to using MSBuild, the same mechanism of extensibility applies to .NET Core projects.</source>
+          <target state="translated">Con il passaggio nell'interfaccia della riga di comando all'uso di MSBuild, lo stesso meccanismo di estendibilità viene applicato ai progetti .NET Core.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You would use this type of extensiblity when you want to extend the build process or when you want to access any of the artifacts in the build process, such as generated files or inspect the configuration under which the build is invoked etc.</source>
+          <target state="translated">È opportuno usare questo tipo di estendibilità quando si vuole estendere il processo di compilazione, quando si vuole accedere a qualsiasi elemento di tale processo, ad esempio i file generati, oppure quando si vuole esaminare la configurazione in cui viene richiamata la compilazione e così via.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The sample target's project file is included below for reference.</source>
+          <target state="translated">Il file di progetto della destinazione di esempio viene riportato di seguito a scopo di riferimento.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>It shows how to use the new <ph id="ph1">`csproj`</ph> syntax for instructing <ph id="ph2">`dotnet pack`</ph> command what to package to place the targets files as well as assemblies into the <ph id="ph3">`build`</ph> folder inside the package.</source>
+          <target state="translated">Mostra come usare la nuova sintassi <ph id="ph1">`csproj`</ph> per indicare al comando <ph id="ph2">`dotnet pack`</ph> gli elementi da includere per inserire i file di destinazione, nonché gli assembly, nella cartella <ph id="ph3">`build`</ph> all'interno del pacchetto.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Take note of the <ph id="ph1">`&lt;ItemGroup&gt;`</ph> below that has the <ph id="ph2">`Label`</ph> property set to "dotnet pack instructions".</source>
+          <target state="translated">Notare che l'elemento <ph id="ph1">`&lt;ItemGroup&gt;`</ph> riportato di seguito ha la proprietà <ph id="ph2">`Label`</ph> impostata su "dotnet pack instructions".</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Consuming custom targets is done by providing a <ph id="ph1">`&lt;PackageReference&gt;`</ph> that points to the package and its version inside the project that is being extended.</source>
+          <target state="translated">L'utilizzo delle destinazioni personalizzate è reso possibile dalla specifica di un elemento <ph id="ph1">`&lt;PackageReference&gt;`</ph> che punta al pacchetto e alla relativa versione all'interno del progetto in fase di estensione.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Unlike the tools, the custom targets package does get included into the consuming project's dependency closure.</source>
+          <target state="translated">A differenza degli strumenti, il pacchetto di destinazione personalizzato non viene incluso nella chiusura delle dipendenze del progetto.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Using the custom target depends solely on how you configure it.</source>
+          <target state="translated">L'uso della destinazione personalizzata dipende esclusivamente dal modo in cui questa viene configurata.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Since it is the usual MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the <ph id="ph1">`dotnet msbuild /t:&lt;target-name&gt;`</ph> command.</source>
+          <target state="translated">Dal momento che si tratta della normale destinazione MSBuild, può dipendere da una destinazione data, eseguita dopo un'altra destinazione, e può anche essere richiamata manualmente mediante il comando <ph id="ph1">`dotnet msbuild /t:&lt;target-name&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>However, if you wish to provide a better user experience to your users, you can combine per-project tools and custom targets.</source>
+          <target state="translated">Tuttavia, se si vuole offrire agli utenti una migliore esperienza di utilizzo, è possibile combinare gli strumenti in base al progetto e destinazioni personalizzate.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required <ph id="ph1">`dotnet msbuild`</ph> invocation that would execute the target.</source>
+          <target state="translated">In questo scenario, lo strumento in base al progetto si limita ad accettare qualsiasi parametro necessario e lo traduce nella chiamata a <ph id="ph1">`dotnet msbuild`</ph> richiesta che eseguirà la destinazione.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You can see a sample of this kind of sinergy on the <bpt id="p1">[</bpt>MVP Summit 2016 Hackathon samples<ept id="p1">](https://github.com/dotnet/MVPSummitHackathon2016)</ept> repo in the <bpt id="p2">[</bpt><ph id="ph1">`dotnet-packer`</ph><ept id="p2">](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer)</ept> project.</source>
+          <target state="translated">È possibile visualizzare un esempio di questo tipo di sinergia nel repository degli esempi di <bpt id="p1">[</bpt>MVP Summit 2016 Hackathon<ept id="p1">](https://github.com/dotnet/MVPSummitHackathon2016)</ept> nel progetto <bpt id="p2">[</bpt><ph id="ph1">`dotnet-packer`</ph><ept id="p2">](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer)</ept>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility</source>
+          <target state="translated">Estendibilità basata su PATH</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>PATH-based extensibility is usually used for development machines where you need a tool that conceptually covers more than a single project.</source>
+          <target state="translated">L'estendibilità basata sul PATH viene in genere usata per i computer di sviluppo in cui è necessario disporre di uno strumento in grado di coprire concettualmente più di un singolo progetto.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The main drawback of this extensions mechanism is that it is tied to the machine where the tool exists.</source>
+          <target state="translated">Il principale svantaggio di questo meccanismo di estensione è che è vincolato al computer in cui è presente lo strumento.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>If you need it on another machine, you would have to deploy it.</source>
+          <target state="translated">Se si vuole usare questo meccanismo in un altro computer, è necessario eseguire un'attività di distribuzione.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This pattern of CLI toolset extensibility is very simple.</source>
+          <target state="translated">Questo modello di estendibilità del set di strumenti dell'interfaccia della riga di comando è molto semplice.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>As covered in the <bpt id="p1">[</bpt>.NET Core CLI overview<ept id="p1">](index.md)</ept>, <ph id="ph1">`dotnet`</ph> driver can run any command that is named after the <ph id="ph2">`dotnet-&lt;command&gt;`</ph> convention.</source>
+          <target state="translated">Come illustrato in <bpt id="p1">[</bpt>.NET Core CLI overview<ept id="p1">](index.md)</ept> (Panoramica sull'interfaccia della riga di comando di .NET Core), il driver <ph id="ph1">`dotnet`</ph> può eseguire qualsiasi comando denominato in base alla convenzione <ph id="ph2">`dotnet-&lt;command&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The default resolution logic will first probe several locations and will finally fall to the system PATH.</source>
+          <target state="translated">La logica di risoluzione predefinita testerà prima diverse posizioni e alla fine sceglierà il percorso specificato dal PATH di sistema.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>If the requested command exists in the system PATH and is a binary that can be invoked, <ph id="ph1">`dotnet`</ph> driver will invoke it.</source>
+          <target state="translated">Se il comando richiesto è presente nel PATH di sistema ed è un file binario che è possibile richiamare, il driver <ph id="ph1">`dotnet`</ph> lo richiamerà.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The binary can be pretty much anything that the operating system can execute.</source>
+          <target state="translated">Il file binario può essere un qualsiasi file eseguibile dal sistema operativo.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>On Unix systems, this means anything that has the execute bit set via <ph id="ph1">`chmod +x`</ph>.</source>
+          <target state="translated">Nei sistemi Unix può trattarsi di qualsiasi file con il bit eseguibile impostato tramite <ph id="ph1">`chmod +x`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>On Windows it means anything that Windows knows how to run.</source>
+          <target state="translated">Nei sistemi Windows può trattarsi di qualsiasi file eseguibile da Windows.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>As an example, let's take a look at a very simple implementation of a <ph id="ph1">`dotnet clean`</ph> command.</source>
+          <target state="translated">Di seguito è riportata un'implementazione molto semplice di un comando <ph id="ph1">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>We will use <ph id="ph1">`bash`</ph> to implement this command.</source>
+          <target state="translated">Per implementare il comando verrà usato <ph id="ph1">`bash`</ph>.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The command will simply delete the <ph id="ph1">`bin/`</ph> and <ph id="ph2">`obj/`</ph> directories in the current directory.</source>
+          <target state="translated">Il comando eliminerà semplicemente le directory <ph id="ph1">`bin/`</ph> e <ph id="ph2">`obj/`</ph> nella directory corrente.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`--lock`</ph> argument is passed to it, it will also delete <ph id="ph2">`project.lock.json`</ph> file.</source>
+          <target state="translated">Se gli viene passato l'argomento <ph id="ph1">`--lock`</ph>, il comando eliminerà anche il file <ph id="ph2">`project.lock.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The entirety of the command is given below.</source>
+          <target state="translated">Il comando è riportato di seguito per intero.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>On macOS, we can save this script as <ph id="ph1">`dotnet-clean`</ph> and set its executable bit with <ph id="ph2">`chmod +x dotnet-clean`</ph>.</source>
+          <target state="translated">Nei sistemi MacOS è possibile salvare lo script come <ph id="ph1">`dotnet-clean`</ph> e impostarne il bit eseguibile con <ph id="ph2">`chmod +x dotnet-clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>We can then create a symbolic link to it in <ph id="ph1">`/usr/local/bin`</ph> using the command <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph>.</source>
+          <target state="translated">È quindi possibile creare un collegamento simbolico in <ph id="ph1">`/usr/local/bin`</ph> usando il comando <ph id="ph2">`ln -s dotnet-clean /usr/local/bin/`</ph>.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>This will make it possible to invoke the clean command using the <ph id="ph1">`dotnet clean`</ph> syntax.</source>
+          <target state="translated">In questo modo sarà possibile richiamare il comando Clean usando la sintassi <ph id="ph1">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>You can test this by creating an app, running <ph id="ph1">`dotnet build`</ph> on it and then running <ph id="ph2">`dotnet clean`</ph>.</source>
+          <target state="translated">È possibile testare questo scenario creando un'app, eseguendo <ph id="ph1">`dotnet build`</ph> su tale app e quindi eseguendo <ph id="ph2">`dotnet clean`</ph>.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">Conclusione</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The .NET Core CLI tools allow three main extensibility points.</source>
+          <target state="translated">Gli strumenti dell'interfaccia della riga di comando di .NET Core offrono tre approcci diversi all'estendibilità.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The per-project tools are contained within the project's context, but they allow easy installation through restoration.</source>
+          <target state="translated">Gli strumenti in base al progetto sono contenuti nel contesto del progetto stesso, ma consentono una facile installazione mediante il ripristino.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Custom targets allow you to easily extend the build process with custom tasks.</source>
+          <target state="translated">Le destinazioni personalizzate consentono di estendere facilmente il processo di compilazione con attività personalizzate.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>PATH-based tools are good for general, cross-project tools that are usable on a single machine.</source>
+          <target state="translated">Gli strumenti basati su PATH sono ottimi per scopi di carattere generale e validi per più progetti. Sono utilizzabili su un singolo computer.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
