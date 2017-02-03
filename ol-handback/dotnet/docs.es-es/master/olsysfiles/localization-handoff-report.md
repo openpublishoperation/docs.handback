@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/90ade65e167770bdbcbbf79707fe48e6fbc030c0/docs/standard/base-types/composite-format.md) | HandedOffSuccess | [Details](#5b61b4736880d57f02070150d8613d860505b2683359)
 
 ## Item Details
+##### <a name='5b61b4736880d57f02070150d8613d860505b2683359'></a> Source: [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/90ade65e167770bdbcbbf79707fe48e6fbc030c0/docs/standard/base-types/composite-format.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/d3fac3f1a91c738fc99f727313cd7a48b2c939b1/ol-handoff/dotnet/docs.es-es/master/dotnet-core/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf)
+* Handoff Datetime: 2017-02-03 00:32:37
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs.es-es/blob/261fd13943d8232ce4d070915efb653f84f934d0/docs/standard/base-types/composite-format.md)
+* Current Handback File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p2/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf)
+* Current Handback Datetime: 2016-12-09 21:26:14
+* Bilingual File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf](https://github.com/dotnet/docs.handback/blob/7752df8123c5e303aaa348acddeb5f9df37a4b6a/ol-handback/dotnet/docs.es-es/master/ht-p2/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.es-es.xlf)
+* Bilingual Datetime: 2016-12-09 21:29:49
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
