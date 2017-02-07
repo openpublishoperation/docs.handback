@@ -1,31 +1,43 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/811b9539019b7cc2817b5742760ae52fbc2f95dd/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#fc59a9f3333f01caf9622dd500a5de6e2ae5132b93)
+ [docs\core\versions\lts-current.md](https://github.com/dotnet/docs/blob/1ef17b16b85c81a0b96bb1712db3734dc67d801d/docs/core/versions/lts-current.md) | HandedOffSuccess | [Details](#582a521e6a30b740465890b6cb8c773061a98ea6130)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/1ef17b16b85c81a0b96bb1712db3734dc67d801d/docs/toc.md) | HandedOffSuccess | [Details](#a0e841331f13b0f52b83dbffc3fa2914f8ad94043471)
 
 ## Item Details
-##### <a name='fc59a9f3333f01caf9622dd500a5de6e2ae5132b93'></a> Source: [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/811b9539019b7cc2817b5742760ae52fbc2f95dd/docs/core/rid-catalog.md)
-* Status: ArchivedSuccess
+##### <a name='582a521e6a30b740465890b6cb8c773061a98ea6130'></a> Source: [docs\core\versions\lts-current.md](https://github.com/dotnet/docs/blob/1ef17b16b85c81a0b96bb1712db3734dc67d801d/docs/core/versions/lts-current.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/667ca180b05d1f202f9ac4257c16049b24bcb1af/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf)
-* Handoff Datetime: 2017-02-07 04:33:40
+* Handoff File: [lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/7f987e51163ce401ddafaa2de95bacde87c106e0/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.ru-ru.xlf)
+* Handoff Datetime: 2017-02-07 16:33:34
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/f57d54e5a97ea53ffd79b41776d32c17c2ab9ca1/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf)
-* Archive Datetime: 2017-02-07 04:33:41
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\rid-catalog.md](https://github.com/dotnet/docs.ru-ru/blob/c6dfa16b7f8677d81476076d8d849a05b30fd69e/docs/core/rid-catalog.md)
-* Current Handback File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/ed64de16a65c85c52ddf1b493b6486c94a87fe47/ol-handback/dotnet/docs.ru-ru/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf)
-* Current Handback Datetime: 2016-12-14 20:15:51
-* Bilingual File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/ed64de16a65c85c52ddf1b493b6486c94a87fe47/ol-handback/dotnet/docs.ru-ru/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.ru-ru.xlf)
-* Bilingual Datetime: 2016-12-14 20:18:48
+* [Back to Top](#report-top)
+
+##### <a name='a0e841331f13b0f52b83dbffc3fa2914f8ad94043471'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/1ef17b16b85c81a0b96bb1712db3734dc67d801d/docs/toc.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/7f987e51163ce401ddafaa2de95bacde87c106e0/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Handoff Datetime: 2017-02-07 16:33:34
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/988df754976d5e874eec05e78178fec140773cca/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Bilingual Datetime: 2017-01-31 17:47:35
 * [Back to Top](#report-top)
 
 
