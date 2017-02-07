@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/811b9539019b7cc2817b5742760ae52fbc2f95dd/docs/core/rid-catalog.md) | ArchivedSuccess | [Details](#fc59a9f3333f01caf9622dd500a5de6e2ae5132b93)
 
 ## Item Details
+##### <a name='fc59a9f3333f01caf9622dd500a5de6e2ae5132b93'></a> Source: [docs\core\rid-catalog.md](https://github.com/dotnet/docs/blob/811b9539019b7cc2817b5742760ae52fbc2f95dd/docs/core/rid-catalog.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/619a3a6302b14d44a0c0ed9f4ea6df8c5d9ed2d9/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf)
+* Handoff Datetime: 2017-02-07 04:34:47
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/e81cb48787467ac57fd5d2ef47397377907bd2dd/ol-archive/dotnet/docs.pt-br/master/dotnet-core/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf)
+* Archive Datetime: 2017-02-07 04:34:48
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Bilingual File: [rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/bff96661d2aaa33de345b9d538e53a68f418f3e1/ol-handback/dotnet/docs.pt-br/master/ht-p1/rid-catalog.dbc1e8e6dfdab6be7c33b1586c1d7bc02125dcb9.pt-br.xlf)
+* Bilingual Datetime: 2016-12-14 20:20:55
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
