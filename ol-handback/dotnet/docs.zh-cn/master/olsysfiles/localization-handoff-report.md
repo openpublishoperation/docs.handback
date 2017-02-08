@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/0402707f98af8b716b041ba1260162cd227918cc/docs/core/preview3/tools/csproj.md) | HandedOffSuccess | [Details](#98f6ced2a199bdbe2f91f46e48ffd3ac52438cf859)
 
 ## Item Details
-##### <a name='98f6ced2a199bdbe2f91f46e48ffd3ac52438cf859'></a> Source: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs/blob/0402707f98af8b716b041ba1260162cd227918cc/docs/core/preview3/tools/csproj.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/6307d356a8aed8e4215378f301a4e3a1f03bbc85/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf)
-* Handoff Datetime: 2017-02-08 20:35:48
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\preview3\tools\csproj.md](https://github.com/dotnet/docs.zh-cn/blob/51d8b2b39371a0b6e9c97ff879316529e87aebad/docs/core/preview3/tools/csproj.md)
-* Current Handback File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/805b8ee432caaaa951bb267e6de81379be76cc6e/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf)
-* Current Handback Datetime: 2017-01-20 10:54:12
-* Bilingual File: [csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/805b8ee432caaaa951bb267e6de81379be76cc6e/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/csproj.1b600c0883c504d6541738c250d63f0b79f7930a.zh-cn.xlf)
-* Bilingual Datetime: 2017-01-20 10:57:47
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
