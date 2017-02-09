@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md) | ArchivedSuccess | [Details](#d014d02fedfa9226869df6e2279b9752633ea5a57449)
 
 ## Item Details
-##### <a name='d014d02fedfa9226869df6e2279b9752633ea5a57449'></a> Source: [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/0d73390029514ed287e9463bfa1a7d92f9a64630/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Handoff Datetime: 2017-02-09 02:36:45
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/569351c145e58210c118ac4453863605a45a6511/ol-archive/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Archive Datetime: 2017-02-09 02:36:46
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [index.md](https://github.com/dotnet/docs.zh-tw/blob/69bcb8c249648c71f2df42c0e10279f439ea92a5/index.md)
-* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/f4c4abcf2413ac3e973709ac7c3b5cf479c209a7/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Current Handback Datetime: 2017-02-09 02:39:22
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/b84dbf44b9c722a2266e225e1104869563de8aeb/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.zh-tw.xlf)
-* Bilingual Datetime: 2017-02-01 20:35:15
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
