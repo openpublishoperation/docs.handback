@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md) | ArchivedSuccess | [Details](#d014d02fedfa9226869df6e2279b9752633ea5a57449)
 
 ## Item Details
+##### <a name='d014d02fedfa9226869df6e2279b9752633ea5a57449'></a> Source: [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/a94e28fa96d50d1de8ce6260a73bc826b387e113/ol-handoff/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Handoff Datetime: 2017-02-09 02:37:11
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/6b775c8df29ad9c7a8fb31eee81f89cb3761c461/ol-archive/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Archive Datetime: 2017-02-09 02:37:12
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [index.md](https://github.com/dotnet/docs.ko-kr/blob/e339bfe23da5feef08b15c05233c6cbdb8fc6e67/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/889a2f3dd25510a8bae667b044c741e3655564c4/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Current Handback Datetime: 2017-02-09 02:39:53
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/889a2f3dd25510a8bae667b044c741e3655564c4/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ko-kr.xlf)
+* Bilingual Datetime: 2017-02-09 02:43:56
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
