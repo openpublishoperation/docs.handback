@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md) | HandedOffSuccess | [Details](#204ebdb5a945dcd0c9277f1d95c113e829303b3274)
 
 ## Item Details
+##### <a name='204ebdb5a945dcd0c9277f1d95c113e829303b3274'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/a8e80d5141fea1ea7fb1e8ea393659914607b56c/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf)
+* Handoff Datetime: 2017-02-13 19:24:40
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.ru-ru/blob/e22af41c1d750ed931028db370742de271be9f5c/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/988df754976d5e874eec05e78178fec140773cca/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf)
+* Current Handback Datetime: 2017-01-31 17:46:11
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/988df754976d5e874eec05e78178fec140773cca/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ru-ru.xlf)
+* Bilingual Datetime: 2017-01-31 17:47:35
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
