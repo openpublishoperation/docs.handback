@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md) | HandedOffSuccess | [Details](#204ebdb5a945dcd0c9277f1d95c113e829303b3274)
 
 ## Item Details
+##### <a name='204ebdb5a945dcd0c9277f1d95c113e829303b3274'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/a80c7b1a12587e24b16456e998e7fa276460045b/ol-handoff/dotnet/docs.ko-kr/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf)
+* Handoff Datetime: 2017-02-13 19:25:24
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.ko-kr/blob/aed43687c60bd0754d79e5800bff0496f36b4be3/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/185559e3a04befa645e9d1e4fdea409c4bbbd9f6/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf)
+* Current Handback Datetime: 2017-02-01 18:27:33
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/185559e3a04befa645e9d1e4fdea409c4bbbd9f6/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ko-kr.xlf)
+* Bilingual Datetime: 2017-02-01 18:31:27
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
