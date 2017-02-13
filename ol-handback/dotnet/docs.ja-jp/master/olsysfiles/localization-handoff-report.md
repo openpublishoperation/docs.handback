@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md) | HandedOffSuccess | [Details](#204ebdb5a945dcd0c9277f1d95c113e829303b3274)
 
 ## Item Details
+##### <a name='204ebdb5a945dcd0c9277f1d95c113e829303b3274'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/939849746751b320bcd1a253b10fe8d186017f4a/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf)
+* Handoff Datetime: 2017-02-13 19:25:13
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.ja-jp/blob/bee5d8df68dcad29cf2b4c72b050725503207948/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cae7a343a8f1e5b84ac84a415fb390372956bcc6/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf)
+* Current Handback Datetime: 2017-02-06 20:50:49
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cae7a343a8f1e5b84ac84a415fb390372956bcc6/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.ja-jp.xlf)
+* Bilingual Datetime: 2017-02-06 20:52:44
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
