@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md) | HandedOffSuccess | [Details](#204ebdb5a945dcd0c9277f1d95c113e829303b3274)
 
 ## Item Details
+##### <a name='204ebdb5a945dcd0c9277f1d95c113e829303b3274'></a> Source: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/02f39bc959a56ab0fc2cfa57ce13f300a8a46107/docs/core/preview3/tools/dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/d30256c23cf76e67ba89d83ce29e6ec3c0fa5579/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf)
+* Handoff Datetime: 2017-02-13 19:24:51
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\preview3\tools\dotnet-test.md](https://github.com/dotnet/docs.zh-cn/blob/26d13aaecbd66b552112d9124d9e1a6750bf2c08/docs/core/preview3/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf)
+* Current Handback Datetime: 2016-12-09 21:26:45
+* Bilingual File: [dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p1/dotnet-test.d58129290333b8aabfd5bbc2a91804817be26067.zh-cn.xlf)
+* Bilingual Datetime: 2016-12-09 21:30:38
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
