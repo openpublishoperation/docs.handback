@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md) | ArchivedSuccess | [Details](#d014d02fedfa9226869df6e2279b9752633ea5a57449)
 
 ## Item Details
-##### <a name='d014d02fedfa9226869df6e2279b9752633ea5a57449'></a> Source: [index.md](https://github.com/dotnet/docs/blob/42beeff11ef03d36f4d61613c6adb4e9ea1c1244/index.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/fbb7d4e0c80da9f5d1a1caad6b2afcdae26e738a/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Handoff Datetime: 2017-02-09 02:36:21
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/14cb0662bb767187f489c94247a1c9c9481dc4af/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Archive Datetime: 2017-02-09 02:36:22
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [index.md](https://github.com/dotnet/docs.ru-ru/blob/944fe66f7a4a14e781965ee3c08bdca4fd2401ad/index.md)
-* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/ed03e519e45ea06c65b9a6491a43544e2cc06f45/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Current Handback Datetime: 2017-02-09 02:38:51
-* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/ed03e519e45ea06c65b9a6491a43544e2cc06f45/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ru-ru.xlf)
-* Bilingual Datetime: 2017-02-09 02:42:36
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
