@@ -6,15 +6,15 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\preview3\tools\dotnet-sln.md](https://github.com/dotnet/docs/blob/6c0474e2964043b6c090ecb4e68b46ff42ca670c/docs/core/preview3/tools/dotnet-sln.md) | HandedOffSuccess | [Details](#c5ed2482222b02b8b50599b48a28afa5922e013574)
- [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs/blob/5a1ba8984d93795e4628a7b911307d513e8de8d1/docs/core/preview3/tools/extensibility.md) | HandedOffSuccess | [Details](#1b6bc46639fda60e4a23c1ea66d0d0ca8b58acb777)
+ [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/fcfd1053cdb161b3ebe1ae61b84c90e68b94a26b/docs/framework/docker/aspnetmvc.md) | HandedOffSuccess | [Details](#6534435823e32aa5c61802ccc587c2761a3fe8933139)
+ [docs\standard\library.md](https://github.com/dotnet/docs/blob/eb98c703946d8be0757288ae9e00aab87b32e407/docs/standard/library.md) | HandedOffSuccess | [Details](#939c6dd0621e3b1121aca52915b04bf51af1d1ef3464)
 
 ## Item Details
-##### <a name='c5ed2482222b02b8b50599b48a28afa5922e013574'></a> Source: [docs\core\preview3\tools\dotnet-sln.md](https://github.com/dotnet/docs/blob/6c0474e2964043b6c090ecb4e68b46ff42ca670c/docs/core/preview3/tools/dotnet-sln.md)
+##### <a name='6534435823e32aa5c61802ccc587c2761a3fe8933139'></a> Source: [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs/blob/fcfd1053cdb161b3ebe1ae61b84c90e68b94a26b/docs/framework/docker/aspnetmvc.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dotnet-sln.f2db53f205db6c1ac5f20b11b964708bf67ff1c1.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/8b41c342ca9556fcb2d7a01d2386831faff8ce2c/ol-handoff/dotnet/docs.it-it/master/dotnet-core/dotnet-sln.f2db53f205db6c1ac5f20b11b964708bf67ff1c1.it-it.xlf)
-* Handoff Datetime: 2017-02-14 23:27:33
+* Handoff File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/fa776eea6a6d8e2d316edf96247e7b5f86028557/ol-handoff/dotnet/docs.it-it/master/dotnet-core/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf)
+* Handoff Datetime: 2017-02-15 01:24:34
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -22,13 +22,18 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
+* Current Target File: [docs\framework\docker\aspnetmvc.md](https://github.com/dotnet/docs.it-it/blob/44b3dc6786baa8fb59aab6e4b0112fb9313a5ec6/docs/framework/docker/aspnetmvc.md)
+* Current Handback File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf](https://github.com/dotnet/docs.handback/blob/4894e843404d7f8d0869ec5be128f1b838d096b2/ol-handback/dotnet/docs.it-it/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf)
+* Current Handback Datetime: 2016-11-18 09:20:06
+* Bilingual File: [aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf](https://github.com/dotnet/docs.handback/blob/4894e843404d7f8d0869ec5be128f1b838d096b2/ol-handback/dotnet/docs.it-it/master/ht-p2/aspnetmvc.837044d8b89bd011f6c03e6ee19a11af865e427a.it-it.xlf)
+* Bilingual Datetime: 2016-11-18 09:23:03
 * [Back to Top](#report-top)
 
-##### <a name='1b6bc46639fda60e4a23c1ea66d0d0ca8b58acb777'></a> Source: [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs/blob/5a1ba8984d93795e4628a7b911307d513e8de8d1/docs/core/preview3/tools/extensibility.md)
+##### <a name='939c6dd0621e3b1121aca52915b04bf51af1d1ef3464'></a> Source: [docs\standard\library.md](https://github.com/dotnet/docs/blob/eb98c703946d8be0757288ae9e00aab87b32e407/docs/standard/library.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/8b41c342ca9556fcb2d7a01d2386831faff8ce2c/ol-handoff/dotnet/docs.it-it/master/dotnet-core/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf)
-* Handoff Datetime: 2017-02-14 23:27:33
+* Handoff File: [library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/fa776eea6a6d8e2d316edf96247e7b5f86028557/ol-handoff/dotnet/docs.it-it/master/dotnet-core/library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf)
+* Handoff Datetime: 2017-02-15 01:24:34
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -36,11 +41,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\preview3\tools\extensibility.md](https://github.com/dotnet/docs.it-it/blob/93e9ac8ccc459a1d98828e5b93f7f2878d934a62/docs/core/preview3/tools/extensibility.md)
-* Current Handback File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf](https://github.com/dotnet/docs.handback/blob/ae59d31d7b17fe8965afbe2ff7423dbaae4ce7a3/ol-handback/dotnet/docs.it-it/master/dotnet-core/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf)
-* Current Handback Datetime: 2017-02-03 11:12:19
-* Bilingual File: [extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf](https://github.com/dotnet/docs.handback/blob/ae59d31d7b17fe8965afbe2ff7423dbaae4ce7a3/ol-handback/dotnet/docs.it-it/master/dotnet-core/extensibility.156f36099bf8f2ed4d1e858f5eed5a462097a506.it-it.xlf)
-* Bilingual Datetime: 2017-02-03 11:13:33
+* Current Target File: [docs\standard\library.md](https://github.com/dotnet/docs.it-it/blob/2fb86c8fecbefc45678c4c38b53ebb74e8086b95/docs/standard/library.md)
+* Current Handback File: [library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf)
+* Current Handback Datetime: 2016-11-15 21:31:10
+* Bilingual File: [library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/library.387c1e6b222531c2cedef18135a5fa775d5f0452.it-it.xlf)
+* Bilingual Datetime: 2016-11-15 21:32:30
 * [Back to Top](#report-top)
 
 
