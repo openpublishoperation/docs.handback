@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\toc.md](https://github.com/dotnet/docs/blob/2675e0b085ec7757c7ef851ea2aa985a9aa25255/docs/toc.md) | HandedOffSuccess | [Details](#3b8ffceb82b768c6d052073e70c23d87990a400a3474)
 
 ## Item Details
+##### <a name='3b8ffceb82b768c6d052073e70c23d87990a400a3474'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/2675e0b085ec7757c7ef851ea2aa985a9aa25255/docs/toc.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/494e9a6c4309e341ae344f8ed424163561749939/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf)
+* Handoff Datetime: 2017-02-16 19:28:29
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.ja-jp/blob/bee5d8df68dcad29cf2b4c72b050725503207948/docs/toc.md)
+* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cae7a343a8f1e5b84ac84a415fb390372956bcc6/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf)
+* Current Handback Datetime: 2017-02-06 20:50:49
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cae7a343a8f1e5b84ac84a415fb390372956bcc6/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ja-jp.xlf)
+* Bilingual Datetime: 2017-02-06 20:52:44
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
