@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md) | HandedOffSuccess | [Details](#f0c62647c5817db2057c60a7a95a62f08f7889a566)
 
 ## Item Details
-##### <a name='f0c62647c5817db2057c60a7a95a62f08f7889a566'></a> Source: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/00b6b7b881bd494431264174fa3f905c5faeaf08/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf)
-* Handoff Datetime: 2017-02-16 01:29:17
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs.de-de/blob/c5f98ed291aaa04599d4c59d804bdba4f0c15db9/docs/core/preview3/tools/dotnet-new.md)
-* Current Handback File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d6450e2c5e8c4689cd19fee3b172930668ebd036/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf)
-* Current Handback Datetime: 2017-01-21 21:45:35
-* Bilingual File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d6450e2c5e8c4689cd19fee3b172930668ebd036/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.de-de.xlf)
-* Bilingual Datetime: 2017-01-21 21:47:37
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
