@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md) | HandedOffSuccess | [Details](#f0c62647c5817db2057c60a7a95a62f08f7889a566)
 
 ## Item Details
-##### <a name='f0c62647c5817db2057c60a7a95a62f08f7889a566'></a> Source: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/c93c41bddf7369ae89538e0745d117fd71a27625/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf)
-* Handoff Datetime: 2017-02-16 01:30:11
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs.ja-jp/blob/917b732183c12cd2511722a497c1cb5165245b1b/docs/core/preview3/tools/dotnet-new.md)
-* Current Handback File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/07e055c49ccfcd1b9f2527756eb0b76acc2fbedf/ol-handback/dotnet/docs.ja-jp/master/ht-p1/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-25 10:15:59
-* Bilingual File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/07e055c49ccfcd1b9f2527756eb0b76acc2fbedf/ol-handback/dotnet/docs.ja-jp/master/ht-p1/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-25 10:19:57
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
