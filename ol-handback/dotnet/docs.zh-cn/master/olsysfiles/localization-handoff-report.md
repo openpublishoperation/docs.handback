@@ -1,50 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md) | HandedOffSuccess | [Details](#f0c62647c5817db2057c60a7a95a62f08f7889a566)
- [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/garbagecollection/fundamentals.md) | ArchivedSuccess | [Details](#02b0311559071147b38182076f60918b7351cc633447)
 
 ## Item Details
-##### <a name='f0c62647c5817db2057c60a7a95a62f08f7889a566'></a> Source: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs/blob/96fd8ea3e55ea33e0bdd0bf3c50a10d0de6db1a1/docs/core/preview3/tools/dotnet-new.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/8238e0ace9f40f0eb5010ec47b742eb851d98393/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf)
-* Handoff Datetime: 2017-02-16 01:29:48
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\preview3\tools\dotnet-new.md](https://github.com/dotnet/docs.zh-cn/blob/701051c373e69230f2e879734831816efe617d79/docs/core/preview3/tools/dotnet-new.md)
-* Current Handback File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/695698c9759541bd5f95848000d79d642bcbe27e/ol-handback/dotnet/docs.zh-cn/master/ht-p1/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf)
-* Current Handback Datetime: 2016-11-25 11:18:41
-* Bilingual File: [dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/695698c9759541bd5f95848000d79d642bcbe27e/ol-handback/dotnet/docs.zh-cn/master/ht-p1/dotnet-new.550175068e0117eda5c92441e0fcdb910097125b.zh-cn.xlf)
-* Bilingual Datetime: 2016-11-25 11:25:03
-* [Back to Top](#report-top)
-
-##### <a name='02b0311559071147b38182076f60918b7351cc633447'></a> Source: [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/garbagecollection/fundamentals.md)
-* Status: ArchivedSuccess
-* Target File: [docs\standard\garbagecollection\fundamentals.md](https://github.com/dotnet/docs.zh-cn/blob/f96a56234d0618a1d60695b7316a415de1f4771a/docs/standard/garbagecollection/fundamentals.md)
-* Handoff File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/8238e0ace9f40f0eb5010ec47b742eb851d98393/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf)
-* Handoff Datetime: 2017-02-16 01:29:48
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/c563b558be37579484dc8ed354e6f482b2f61421/ol-archive/dotnet/docs.zh-cn/master/dotnet-core/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf)
-* Archive Datetime: 2017-02-16 01:29:48
-* Handback File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/e6e2d96cc43a54a3d768a6a2d1dd238de636f021/ol-handback/dotnet/docs.zh-cn/master/ht-p2/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf)
-* Handback Datetime: 2017-02-15 19:02:23
-* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-zh-cn_5
-* Bilingual File: [fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/e6e2d96cc43a54a3d768a6a2d1dd238de636f021/ol-handback/dotnet/docs.zh-cn/master/ht-p2/fundamentals.e319dcfe892bc4f575f9356af8a79a5c663fa818.zh-cn.xlf)
-* Bilingual Datetime: 2017-02-15 19:06:01
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
