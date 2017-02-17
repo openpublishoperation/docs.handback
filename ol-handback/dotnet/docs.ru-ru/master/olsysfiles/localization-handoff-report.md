@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\toc.md](https://github.com/dotnet/docs/blob/2675e0b085ec7757c7ef851ea2aa985a9aa25255/docs/toc.md) | HandedOffSuccess | [Details](#3b8ffceb82b768c6d052073e70c23d87990a400a3474)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/6ff596e925d8c4f42ebbe9647597b3988aa0027a/docs/toc.md) | HandedOffSuccess | [Details](#bbbe2ed948dc35f3fb3bcb173e7badc0a2fd3b833474)
 
 ## Item Details
-##### <a name='3b8ffceb82b768c6d052073e70c23d87990a400a3474'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/2675e0b085ec7757c7ef851ea2aa985a9aa25255/docs/toc.md)
+##### <a name='bbbe2ed948dc35f3fb3bcb173e7badc0a2fd3b833474'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/6ff596e925d8c4f42ebbe9647597b3988aa0027a/docs/toc.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/0644b1f85d1cff1ea8571ae8042e396c65420284/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
-* Handoff Datetime: 2017-02-16 19:27:54
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/d6ea91c35cb68dfe716580fe1bebc4ae3c27995e/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Handoff Datetime: 2017-02-17 03:25:23
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
