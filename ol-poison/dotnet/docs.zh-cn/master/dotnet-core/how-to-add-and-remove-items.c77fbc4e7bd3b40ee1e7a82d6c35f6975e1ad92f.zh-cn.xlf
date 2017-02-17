@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3e99bcb1cfbcf0a4f6f372e481d41ec31d635749</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\how-to-add-and-remove-items.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2838f5af7ae475053be7ffb3453a7d249785cb61</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d6fe9aa9d1e7a6c3d7a50df43d7c64cac671ca9</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.zh-cn.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">如何：在 ConcurrentDictionary 中添加和移除项</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">如何：在 ConcurrentDictionary 中添加和移除项</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET、.NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">如何：在 ConcurrentDictionary 中添加和移除项</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This example shows how to add, retrieve, update, and remove items from a <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>.</source>
+          <target state="translated">本示例演示如何在 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> 中添加、检索、更新和移除项。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This collection class is a thread-safe implementation.</source>
+          <target state="translated">此集合类是一个线程安全实现。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.</source>
+          <target state="translated">建议在多个线程可能同时尝试访问元素时使用此集合类。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> provides several convenience methods that make it unnecessary for code to first check whether a key exists before it attempts to add or remove data.</source>
+          <target state="translated"><ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 提供了多个便捷的方法，这些方法使代码在尝试添加或移除数据之前无需先检查键是否存在。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following table lists these convenience methods and describes when to use them.</source>
+          <target state="translated">下表列出了这些便捷的方法，并说明在何种情况下这些方法。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Method</source>
+          <target state="translated">方法</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Use when...</source>
+          <target state="translated">在以下情况下使用...</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You want to add a new value for a specified key and, if the key already exists, you want to replace its value.</source>
+          <target state="translated">需要为指定键添加新值，如果此键已存在，则需要替换其值。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You want to retrieve the existing value for a specified key and, if the key does not exist, you want to specify a key/value pair.</source>
+          <target state="translated">需要检索指定键的现有值，如果此键不存在，则需要指定一个键/值对。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`TryAdd`</ph>, <ph id="ph2">`TryGetValue`</ph>, <ph id="ph3">`TryUpdate`</ph>, <ph id="ph4">`TryRemove`</ph></source>
+          <target state="translated"><ph id="ph1">`TryAdd`</ph>, <ph id="ph2">`TryGetValue`</ph>, <ph id="ph3">`TryUpdate`</ph>, <ph id="ph4">`TryRemove`</ph></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You want to add, get, update, or remove a key/value pair, and, if the key already exists or the attempt fails for any other reason, you want to take some alternative action.</source>
+          <target state="translated">需要添加、获取、更新或移除键/值对，如果此键已存在或因任何其他原因导致尝试失败，则需执行某种备选操作。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> is designed for multithreaded scenarios.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> 专为多线程方案而设计。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You do not have to use locks in your code to add or remove items from the collection.</source>
+          <target state="translated">无需在代码中使用锁定即可在集合中添加或移除项。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.</source>
+          <target state="translated">但始终可能出现以下情况：一个线程检索一个值，而另一线程通过为同一键赋予新值来立即更新集合。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Also, although all methods of <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> are thread-safe, not all methods are atomic, specifically <ph id="ph2">`GetOrAdd`</ph> and <ph id="ph3">`AddOrUpdate`</ph>.</source>
+          <target state="translated">此外，尽管 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> 的所有方法都是线程安全的，但并非所有方法都是原子的，尤其是 <ph id="ph2">`GetOrAdd`</ph> 和 <ph id="ph3">`AddOrUpdate`</ph>。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock.</source>
+          <target state="translated">传递给这些方法的用户委托将在词典的内部锁之外调用。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>(This is done to prevent unknown code from blocking all threads.) Therefore it is possible for this sequence of events to occur:</source>
+          <target state="translated">（这样做是为了防止未知代码阻塞所有线程。）因此，可能发生以下事件序列：</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>threadA calls <ph id="ph1">`GetOrAdd`</ph>, finds no item and creates a new item to Add by invoking the valueFactory delegate.</source>
+          <target state="translated">threadA 调用 <ph id="ph1">`GetOrAdd`</ph>，未找到项，通过调用 valueFactory 委托创建要添加的新项。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>threadB calls <ph id="ph1">`GetOrAdd`</ph> concurrently, its valueFactory delegate is invoked and it arrives at the internal lock before threadA, and so its new key-value pair is added to the dictionary.</source>
+          <target state="translated">threadB 并发调用 <ph id="ph1">`GetOrAdd`</ph>，其 valueFactory 委托受到调用，并且它在 threadA 之前到达内部锁，并将其新键值对添加到词典中。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>threadA's user delegate completes, and the thread arrives at the lock, but now sees that the item exists already</source>
+          <target state="translated">threadA 的用户委托完成，线程到达锁，但现在发现该项已存在</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>threadA performs a "Get", and returns the data that was previously added by threadB.</source>
+          <target state="translated">threadA 执行“Get”，返回之前由 threadB 添加的数据。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Therefore, it is not guaranteed that the data that is returned by <ph id="ph1">`GetOrAdd`</ph> is the same data that was created by the thread's valueFactory.</source>
+          <target state="translated">因此，无法保证 <ph id="ph1">`GetOrAdd`</ph> 返回的数据与线程的 valueFactory 创建的数据相同。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>A similar sequence of events can occur when <ph id="ph1">`AddOrUpdate`</ph> is called.</source>
+          <target state="translated">调用 <ph id="ph1">`AddOrUpdate`</ph> 时可能发生相似的事件序列。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>线程安全集合<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

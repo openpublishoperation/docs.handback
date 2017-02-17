@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">de44f103bef6006dd1a952c48c1e172f6277a95b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\libraries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6f2b04e8d5c448a63da146c4d53652c491dd6280</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc2affac42c561e4630e4e5f6d52ededbb77a46e</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file libraries.9cfbfeb7612cd8533c4ca1fee0c3e06739154905.zh-cn.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">使用跨平台工具开发库</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">使用跨平台工具开发库</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Developing Libraries with Cross Platform Tools</source>
+          <target state="translated">使用跨平台工具开发库</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Some details are subject to change as the toolchain evolves.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>一些详细信息会因工具链的变化而更改。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This article covers how to write libraries for .NET using cross-platform CLI tools.</source>
+          <target state="translated">本文介绍如何使用跨平台 CLI 工具编写 .NET 的库。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The CLI provides an efficient and low-level experience that works across any supported OS.</source>
+          <target state="translated">CLI 提供可跨任何支持的 OS 工作的高效低级别体验。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can still build libraries with Visual Studio, and if that is your preferred experience <bpt id="p1">[</bpt>refer to the Visual Studio guide<ept id="p1">](libraries-with-vs.md)</ept>.</source>
+          <target state="translated">仍可使用 Visual Studio 生成库，如果你首选这种体验，请<bpt id="p1">[</bpt>参阅 Visual Studio 指南<ept id="p1">](libraries-with-vs.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">先决条件</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You need <bpt id="p1">[</bpt>the .NET Core SDK and CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept> installed on your machine.</source>
+          <target state="translated">需要在计算机上安装 <bpt id="p1">[</bpt>.NET Core SDK 和 CLI<ept id="p1">](https://www.microsoft.com/net/core)</ept> 。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For the sections of this document dealing with .NET Framework versions or Portable Class Libraries (PCL), you need the <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept> installed on a Windows machine.</source>
+          <target state="translated">对于本文档中处理 .NET Framework 版本或可移植类库 (PCL) 的部分，需要在 Windows 计算机上安装 <bpt id="p1">[</bpt>.NET Framework<ept id="p1">](http://getdotnet.azurewebsites.net/)</ept>。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the <bpt id="p1">[</bpt>.NET target platforms page<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>.</source>
+          <target state="translated">此外，如果想要支持较旧的 .NET Framework 目标，需要从 <bpt id="p1">[</bpt>.NET 目标平台页面<ept id="p1">](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html)</ept>安装用于较旧 Framework 版本的目标包/开发人员工具包。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Refer to this table:</source>
+          <target state="translated">请参阅此表：</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>.NET Framework Version</source>
+          <target state="translated">.NET Framework 版本</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>What to download</source>
+          <target state="translated">下载内容</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6.1 Targeting Pack</source>
+          <target state="translated">.NET Framework 4.6.1 目标包</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.6 Targeting Pack</source>
+          <target state="translated">.NET Framework 4.6 目标包</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>4.5.2</source>
+          <target state="translated">4.5.2</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.2 Developer Pack</source>
+          <target state="translated">.NET Framework 4.5.2 开发人员工具包</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4.5.1 Developer Pack</source>
+          <target state="translated">.NET Framework 4.5.1 开发人员工具包</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Windows Software Development Kit for Windows 8</source>
+          <target state="translated">适用于 Windows 8 的 Windows 软件开发工具包</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>4.0</source>
+          <target state="translated">4.0</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Windows SDK for Windows 7 and .NET Framework 4</source>
+          <target state="translated">Windows SDK for Windows 7 和 .NET Framework 4</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>2.0, 3.0, and 3.5</source>
+          <target state="translated">2.0、3.0 和 3.5</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>.NET Framework 3.5 SP1 Runtime (or Windows 8+ version)</source>
+          <target state="translated">.NET Framework 3.5 SP1 运行时（或 Windows 8+ 版本）</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Standard</source>
+          <target state="translated">如何以 .NET Standard 为目标</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you're not quite familiar with the .NET Standard, refer to <bpt id="p1">[</bpt>the .NET Standard Library<ept id="p1">](../../standard/library.md)</ept> to learn more.</source>
+          <target state="translated">如果对 .NET Standard 不是很熟悉，请参阅 <bpt id="p1">[</bpt>.NET 标准库<ept id="p1">](../../standard/library.md)</ept>了解详细信息。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In that article, there is a table which maps .NET Standard versions to various implementations:</source>
+          <target state="translated">在该文中，提供有一个将 .NET Standard 版本映射到各种实现的表格：</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Platform Name</source>
+          <target state="translated">平台名称</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Alias</source>
+          <target state="translated">Alias</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>.NET Standard</source>
+          <target state="translated">.NET Standard</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>netstandard</source>
+          <target state="translated">netstandard</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>1.1</source>
+          <target state="translated">1.1</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>1.2</source>
+          <target state="translated">1.2</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>1.3</source>
+          <target state="translated">1.3</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>1.4</source>
+          <target state="translated">1.4</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>1.5</source>
+          <target state="translated">1.5</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>1.6</source>
+          <target state="translated">1.6</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>.NET Core</source>
+          <target state="translated">.NET Core</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>netcoreapp</source>
+          <target state="translated">netcoreapp</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>1.0</source>
+          <target state="translated">1.0</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>.NET Framework</source>
+          <target state="translated">.NET Framework</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>net</source>
+          <target state="translated">net</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>4.5</source>
+          <target state="translated">4.5</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>4.5.1</source>
+          <target state="translated">4.5.1</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>4.6</source>
+          <target state="translated">4.6</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>4.6.1</source>
+          <target state="translated">4.6.1</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>4.6.2</source>
+          <target state="translated">4.6.2</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>4.6.3</source>
+          <target state="translated">4.6.3</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Mono/Xamarin Platforms</source>
+          <target state="translated">Mono/Xamarin 平台</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Universal Windows Platform</source>
+          <target state="translated">通用 Windows 平台</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>uap</source>
+          <target state="translated">uap</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>10.0</source>
+          <target state="translated">10.0</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Windows</source>
+          <target state="translated">Windows</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>win</source>
+          <target state="translated">win</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Windows Phone</source>
+          <target state="translated">Windows Phone</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>wpa</source>
+          <target state="translated">wpa</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>8.1</source>
+          <target state="translated">8.1</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Windows Phone Silverlight</source>
+          <target state="translated">Windows Phone Silverlight</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>wp</source>
+          <target state="translated">wp</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>8.0</source>
+          <target state="translated">8.0</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Here's what this table means for the purposes of creating a library:</source>
+          <target state="translated">以下是此表格对于创建库的意义：</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The version of the .NET Platform Standard you pick will be a tradeoff between access to the newest APIs and ability to target more .NET platforms and Framework versions.</source>
+          <target state="translated">所选择的 .NET Platform Standard 版本将在对最新 API 的访问权限与面向更多 .NET 平台和 Framework 版本的能力之间进行权衡。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>You control the range of targetable platforms and versions by picking a version of <ph id="ph1">`netstandardX.X`</ph> (Where <ph id="ph2">`X.X`</ph> is a version number) and adding it to your <ph id="ph3">`project.json`</ph> file.</source>
+          <target state="translated">通过选择 <ph id="ph1">`netstandardX.X`</ph> 版本（其中 <ph id="ph2">`X.X`</ph> 是版本号）并将其添加到 <ph id="ph3">`project.json`</ph> 文件，控制可面向的平台和版本范围。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Additionally, the corresponding <bpt id="p1">[</bpt>NuGet package to depend on<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept> is <ph id="ph1">`NETStandard.Library`</ph> version <ph id="ph2">`1.6.0`</ph>.</source>
+          <target state="translated">此外，相应<bpt id="p1">[</bpt>要依赖的 NuGet 包<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library/)</ept>是 <ph id="ph1">`NETStandard.Library`</ph> 版本 <ph id="ph2">`1.6.0`</ph>。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although there's nothing preventing you from depending on <ph id="ph1">`Microsoft.NETCore.App`</ph> like with console apps, it's generally not recommended.</source>
+          <target state="translated">虽然就像控制台应用一样，不阻止依赖 <ph id="ph1">`Microsoft.NETCore.App`</ph>，但一般不建议这样做。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If you need APIs from a package not specified in <ph id="ph1">`NETStandard.Library`</ph>, you can always specify that package in addition to <ph id="ph2">`NETStandard.Library`</ph> in the <ph id="ph3">`dependencies`</ph> section of your <ph id="ph4">`project.json`</ph> file.</source>
+          <target state="translated">如果需要未在 <ph id="ph1">`NETStandard.Library`</ph> 中指定的包中的 API，可始终在 <ph id="ph4">`project.json`</ph> 文件的 <ph id="ph3">`dependencies`</ph> 部分指定除 <ph id="ph2">`NETStandard.Library`</ph> 外的包。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You have three primary options when targeting the .NET Standard, depending on your needs.</source>
+          <target state="translated">面向 .NET Standard 时，有三种主要选项，具体取决于你的需求。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can use the latest version of the .NET Standard - <ph id="ph1">`netstandard1.6`</ph> - which is for when you want access to the most APIs and don't mind if you have less reach across implementations.</source>
+          <target state="translated">可使用最新版本的 .NET Standard - <ph id="ph1">`netstandard1.6`</ph> - 它适用于想要访问大多数 API 且不介意实现的范围较小的情况。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can use a lower version of the .NET Standard to target earlier .NET implementations.</source>
+          <target state="translated">可使用较低版本的 .NET Standard，面向早期 .NET 实现。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The cost here is not having access to some of the latest APIs.</source>
+          <target state="translated">而代价是无法访问某些最新的 API。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For example, if you wanted to have guaranteed compatibility with .NET Framework 4.6 and higher, you would pick <ph id="ph1">`netstandard1.3`</ph>:</source>
+          <target state="translated">例如，如果想要与 .NET Framework 4.6 以及更高版本有可保证的兼容性，可选择 <ph id="ph1">`netstandard1.3`</ph>：</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>.NET Standard versions are backward compatible.</source>
+          <target state="translated">.NET Standard 版本可后向兼容。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>That means that <ph id="ph1">`netstandard1.0`</ph> libraries run on <ph id="ph2">`netstandard1.1`</ph> platforms and higher.</source>
+          <target state="translated">这意味着 <ph id="ph1">`netstandard1.0`</ph> 库可在 <ph id="ph2">`netstandard1.1`</ph> 平台以及更高版本上运行。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones.</source>
+          <target state="translated">但是，不可向前兼容，即版本较低的 .NET Standard 平台无法引用版本较高的平台。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>This means that <ph id="ph1">`netstandard1.0`</ph> libraries cannot reference libraries targeting <ph id="ph2">`netstandard1.1`</ph> or higher.</source>
+          <target state="translated">这意味着 <ph id="ph1">`netstandard1.0`</ph> 库不能引用面向 <ph id="ph2">`netstandard1.1`</ph> 或更高版本的库。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Select the Standard version that has the right mix of APIs and platform support for your needs.</source>
+          <target state="translated">选择适合所需、恰当混合有 API 和平台支持的 Standard 版本。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, <ph id="ph1">`System.Drawing`</ph>), read the following sections and learn how to multitarget.</source>
+          <target state="translated">如果希望面向 .NET Framework 版本 4.0 或更低版本，或者要使用 .NET Framework 中提供但 .NET Standard 中不提供的 API（例如 <ph id="ph1">`System.Drawing`</ph>），请阅读以下部分，了解如何设定多目标。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>How to target the .NET Framework</source>
+          <target state="translated">如何以 .NET Framework 为目标</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">这些说明假定计算机上安装有 .NET Framework。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">请参阅<bpt id="p1">[</bpt>先决条件<ept id="p1">](#prerequisites)</ept> 获取安装的依赖项。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Keep in mind that some of the .NET Framework versions used here are no longer in support.</source>
+          <target state="translated">请记住，此处使用的某些 .NET Framework 版本不再受支持。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>.NET Framework Support Lifecycle Policy FAQ<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept> about unsupported versions.</source>
+          <target state="translated">有关不受支持的版本信息，请参阅 <bpt id="p1">[</bpt>.NET Framework 支持生命周期策略常见问题<ept id="p1">](https://support.microsoft.com/gp/framework_faq/en-us)</ept>。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>If you want to reach the maximum number of developers and projects, use the .NET Framework 4 as your baseline target.</source>
+          <target state="translated">如果要达到最大数量的开发人员和项目，可将 .NET Framework 4 用作基线目标。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.</source>
+          <target state="translated">若要以 .NET Framework 为目标，首先需要使用与要支持的 .NET Framework 版本相对应的正确目标框架名字对象 (TFM)。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For example, here's how you would write a library which targets the .NET Framework 4:</source>
+          <target state="translated">例如，以下是如何编写面向 .NET Framework 4 的库：</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是这么简单！</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Although this compiled only for the .NET Framework 4, you can use the library on newer versions of the .NET Framework.</source>
+          <target state="translated">虽然此库仅针对 .NET Framework 4 编译，但可在较新版本的 .NET Framework 上使用此库。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>How to target a Portable Class Library (PCL)</source>
+          <target state="translated">如何以可移植类库 (PCL) 为目标</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>These instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">这些说明假定计算机上安装有 .NET Framework。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> to get dependencies installed.</source>
+          <target state="translated">请参阅<bpt id="p1">[</bpt>先决条件<ept id="p1">](#prerequisites)</ept> 获取安装的依赖项。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Targeting a PCL profile is a bit trickier than targeting .NET Standard or the .NET Framework.</source>
+          <target state="translated">面向 PCL 配置文件比面向 .NET Standard 或 .NET Framework 复杂一点。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For starters, <bpt id="p1">[</bpt>reference this list of PCL profiles<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> to find the NuGet target which corresponds to the PCL profile you are targeting.</source>
+          <target state="translated">对于初学者，<bpt id="p1">[</bpt>请参阅此 PCL 配置文件列表<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept>，查找对应于要面向的 PCL 配置文件的 NuGet 目标。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Then, you need to do the following:</source>
+          <target state="translated">然后，需要执行以下操作：</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Create a new entry under <ph id="ph1">`frameworks`</ph> in your <ph id="ph2">`project.json`</ph>, named <ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph>, where <ph id="ph4">`{version}`</ph> and <ph id="ph5">`{profile}`</ph> correspond to a PCL version number and Profile number, respectively.</source>
+          <target state="translated">在 <ph id="ph2">`project.json`</ph> 中的<ph id="ph1">`frameworks`</ph> 下新建一个名为 <ph id="ph3">`.NETPortable,Version=v{version},Profile=Profile{profile}`</ph> 的项，其中 <ph id="ph4">`{version}`</ph> 和 <ph id="ph5">`{profile}`</ph> 分别对应于 PCL 版本号和配置文件编号。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>In this new entry, list every single assembly used for that target under a <ph id="ph1">`frameworkAssemblies`</ph> entry.</source>
+          <target state="translated">在此新项中，列出 <ph id="ph1">`frameworkAssemblies`</ph> 项下用于该目标的每个程序集。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>This includes <ph id="ph1">`mscorlib`</ph>, <ph id="ph2">`System`</ph>, and <ph id="ph3">`System.Core`</ph>.</source>
+          <target state="translated">这包括 <ph id="ph1">`mscorlib`</ph>、<ph id="ph2">`System`</ph> 和 <ph id="ph3">`System.Core`</ph>。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting (see the next section), you must explicitly list dependencies for each target under their target entries.</source>
+          <target state="translated">如果要设定多目标（请参阅下一节），必须显式列出目标项下每个目标的依赖项。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>You won't be able to use a global <ph id="ph1">`dependencies`</ph> entry anymore.</source>
+          <target state="translated">无法再使用全局 <ph id="ph1">`dependencies`</ph> 项。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following is an example targeting PCL Profile 328.</source>
+          <target state="translated">以下是面向 PCL 配置文件 328 的示例。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Profile 328 supports: .NET Standard 1.4, .NET Framework 4, Windows 8, Windows Phone 8.1, Windows Phone Silverlight 8.1, and Silverlight 5.</source>
+          <target state="translated">配置文件 328 支持：.NET Standard 1.4、.NET Framework 4、Windows 8、Windows Phone 8.1、Windows Phone Silverlight 8.1 和 Silverlight 5。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 as a framework in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have this subfolder in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated">生成一个包含 PCL 配置文件 328 的项目作为 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 文件中的框架时，将在 <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 文件夹中包含此子文件夹：</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>This folder contains the <ph id="ph1">`.dll`</ph> files necessary to run your library.</source>
+          <target state="translated">此文件夹包含运行库所必需的 <ph id="ph1">`.dll`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>How to Multitarget</source>
+          <target state="translated">如何设定多目标</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following instructions assume you have the .NET Framework installed on your machine.</source>
+          <target state="translated">以下说明假定计算机上安装有 .NET Framework。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Refer to the <bpt id="p1">[</bpt>Prerequisites<ept id="p1">](#prerequisites)</ept> section to learn which dependencies you need to install and where to download them from.</source>
+          <target state="translated">请参阅<bpt id="p1">[</bpt>先决条件<ept id="p1">](#prerequisites)</ept>部分，了解需要安装哪些依赖项以及在何处下载。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>You may need to target older versions of the .NET Framework when your project supports both the .NET Framework and .NET Core.</source>
+          <target state="translated">如果项目同时支持 .NET Framework 和 .NET Core，可能需要面向较旧版本的 .NET Framework。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In this scenario, if you want to use newer APIs and language constructs for the newer targets, use <ph id="ph1">`#if`</ph> directives in your code.</source>
+          <target state="translated">在此方案中，如果要为较新目标使用较新的 API 和语言构造，请在代码中使用 <ph id="ph1">`#if`</ph> 指令。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>You also might need to add different packages and dependencies in your <ph id="ph1">`project.json file`</ph> for each platform you're targeting to include the different APIs needed for each case.</source>
+          <target state="translated">可能还需要为要面向的每个平台在 <ph id="ph1">`project.json file`</ph> 中添加不同包和依赖项，以包含每种情况所需的不同 API。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For example, let's say you have a library that performs networking operations over HTTP.</source>
+          <target state="translated">例如，假设有一个库，它通过 HTTP 执行联网操作。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>For .NET Standard and the .NET Framework versions 4.5 or higher, you can use the <ph id="ph1">`HttpClient`</ph> class from the <ph id="ph2">`System.Net.Http`</ph> namespace.</source>
+          <target state="translated">对于 .NET Standard 和 .NET Framework 版本 4.5 或更高版本，可从 <ph id="ph2">`System.Net.Http`</ph> 命名空间使用 <ph id="ph1">`HttpClient`</ph> 类。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>However, earlier versions of the .NET Framework don't have the <ph id="ph1">`HttpClient`</ph> class, so you could use the <ph id="ph2">`WebClient`</ph> class from the <ph id="ph3">`System.Net`</ph> namespace for those instead.</source>
+          <target state="translated">但是，.NET Framework 的早期版本没有 <ph id="ph1">`HttpClient`</ph> 类，因此可对早期版本使用 <ph id="ph3">`System.Net`</ph> 命名空间中的 <ph id="ph2">`WebClient`</ph> 类。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>So, the <ph id="ph1">`project.json`</ph> file could look like this:</source>
+          <target state="translated">因此，<ph id="ph1">`project.json`</ph> 文件可能如下所示：</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Note that the .NET Framework assemblies need to be referenced explicitly in the <ph id="ph1">`net40`</ph> and <ph id="ph2">`net452`</ph> target, and NuGet references are also explicitly listed in the <ph id="ph3">`netstandard1.6`</ph> target.</source>
+          <target state="translated">请注意：需要在 <ph id="ph1">`net40`</ph> 和 <ph id="ph2">`net452`</ph> 目标中显式引用 .NET Framework 程序集，NuGet 引用也在 <ph id="ph3">`netstandard1.6`</ph> 目标中显式列出。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>This is required in multitargeting scenarios.</source>
+          <target state="translated">这是多目标设定方案必需的。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Next, the <ph id="ph1">`using`</ph> statements in your source file can be adjusted like this:</source>
+          <target state="translated">接下来，源文件中的 <ph id="ph1">`using`</ph> 语句可进行如下调整：</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The build system is aware of the following preprocessor symbols used in <ph id="ph1">`#if`</ph> directives:</source>
+          <target state="translated">生成系统可识别以下用在 <ph id="ph1">`#if`</ph> 指令中的处理器符号：</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>And in the middle of the source, you can use <ph id="ph1">`#if`</ph> directives to use those libraries conditionally.</source>
+          <target state="translated">在源文件中间，可使用 <ph id="ph1">`#if`</ph> 指令以有条件地使用这些库。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">例如: </target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes <ph id="ph1">`net40`</ph>, <ph id="ph2">`net45`</ph>, and <ph id="ph3">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated">生成一个包含 <ph id="ph1">`net40`</ph>、<ph id="ph2">`net45`</ph> 和 <ph id="ph3">`netstandard1.6`</ph> 的项目作为 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 文件中的框架时，将在 <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 文件夹中包含这些子文件夹：</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>But What about Multitargeting with Portable Class Libraries?</source>
+          <target state="translated">但是如果要使用可移植类库进行多目标设定怎么办？</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>If you want to cross-compile with a PCL target, you must add a build definition in your <ph id="ph1">`project.json`</ph> file under <ph id="ph2">`buildOptions`</ph> in your PCL target.</source>
+          <target state="translated">如果要交叉编译 PCL 目标，必须在 PCL 目标中 <ph id="ph2">`buildOptions`</ph> 下的 <ph id="ph1">`project.json`</ph> 文件中添加生成定义。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>You can then use <ph id="ph1">`#if`</ph> directives in the source which use the build definition as a preprocessor symbol.</source>
+          <target state="translated">然后，可在将生成定义用作预处理器符号的源文件中使用 <ph id="ph1">`#if`</ph> 指令。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>For example, if you want to target <bpt id="p1">[</bpt>PCL profile 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept> (The .NET Framework 4, Windows 8, Windows Phone Silverlight 8, Windows Phone 8.1, Silverlight 5), you could to refer to it to as "PORTABLE328" when cross-compiling.</source>
+          <target state="translated">例如，如果要面向 <bpt id="p1">[</bpt>PCL 配置文件 328<ept id="p1">](http://embed.plnkr.co/03ck2dCtnJogBKHJ9EjY/preview)</ept>（.NET Framework 4、Windows 8、Windows Phone Silverlight 8、Windows Phone 8.1、Silverlight 5），可在交叉编译时将其作为“PORTABLE328”引用。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Simply add it to the <ph id="ph1">`project.json`</ph> file as a <ph id="ph2">`buildOptions`</ph> attribute:</source>
+          <target state="translated">只需将其作为 <ph id="ph2">`buildOptions`</ph> 属性添加到 <ph id="ph1">`project.json`</ph> 文件：</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Now you can conditionally compile against that target:</source>
+          <target state="translated">此时，可有条件地针对该目标进行编译：</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`PORTABLE328`</ph> is now recognized by the compiler, the PCL Profile 328 library generated by a compiler will not include <ph id="ph2">`System.Net.Http`</ph> or <ph id="ph3">`System.Threading.Tasks`</ph>.</source>
+          <target state="translated">因为 <ph id="ph1">`PORTABLE328`</ph> 现在由编译器识别，因此由编译器生成的 PCL 配置文件 328 库不包含 <ph id="ph2">`System.Net.Http`</ph> 或 <ph id="ph3">`System.Threading.Tasks`</ph>。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>When you build a project that includes PCL Profile 328 and <ph id="ph1">`netstandard1.6`</ph> as frameworks in the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> file, it will have these subfolders in the <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> folder:</source>
+          <target state="translated">生成一个包含 PCL 配置文件 328 和 <ph id="ph1">`netstandard1.6`</ph> 的项目作为 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 文件中的框架时，将在 <bpt id="p2">*</bpt>/bin/debug<ept id="p2">*</ept> 文件夹中包含这些子文件夹：</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>How to use native dependencies</source>
+          <target state="translated">如何使用本机依赖项</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>You may wish to write a library which depends on a native <ph id="ph1">`.dll`</ph> file.</source>
+          <target state="translated">你可能会想要编写依赖本机 <ph id="ph1">`.dll`</ph> 文件的库。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>If you're writing such a library, you have have two options:</source>
+          <target state="translated">如果要编写这样的库，有两个选择：</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Reference the native <ph id="ph1">`.dll`</ph> directly in your <ph id="ph2">`project.json`</ph>.</source>
+          <target state="translated">在 <ph id="ph2">`project.json`</ph> 中直接引用本机 <ph id="ph1">`.dll`</ph>。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Package that <ph id="ph1">`.dll`</ph> into its own NuGet package and depend on that package.</source>
+          <target state="translated">将 <ph id="ph1">`.dll`</ph> 打包到其自己的 NuGet 包并依赖该包。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For the first option, you'll need to include the following in your <ph id="ph1">`project.json`</ph> file:</source>
+          <target state="translated">对于第一个选择，需要在 <ph id="ph1">`project.json`</ph> 文件中包含以下内容：</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Setting <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in a <ph id="ph3">`buildOptions`</ph> section.</source>
+          <target state="translated">在 <ph id="ph3">`buildOptions`</ph> 部分，将 <ph id="ph1">`allowUnsafe`</ph> 设置为 <ph id="ph2">`true`</ph>。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Specifying a <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md)</ept> in a <ph id="ph1">`runtimes`</ph> section.</source>
+          <target state="translated">在 <ph id="ph1">`runtimes`</ph> 部分，指定<bpt id="p1">[</bpt>运行时标识符 (RID)<ept id="p1">](../rid-catalog.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Specifying the path to the native <ph id="ph1">`.dll`</ph> file(s) that you are referencing.</source>
+          <target state="translated">指定要引用的本机 <ph id="ph1">`.dll`</ph> 文件的路径。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Here's an example <ph id="ph1">`project.json`</ph> for a native <ph id="ph2">`.dll`</ph> file in the root directory of the project which runs on Windows:</source>
+          <target state="translated">以下是在 Windows 上运行的项目的根目录中的本机 <ph id="ph2">`.dll`</ph> 文件示例 <ph id="ph1">`project.json`</ph>：</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>If you're distributing your library as a package, it's recommended that you place the <ph id="ph1">`.dll`</ph> file at the root level of your project.</source>
+          <target state="translated">如果将库作为包分发，建议将 <ph id="ph1">`.dll`</ph> 文件置于项目的根级别。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For the second option, you'll need to build a NuGet package out of your <ph id="ph1">`.dll`</ph> file(s), host on a NuGet or MyGet feed, and depend on it directly.</source>
+          <target state="translated">对于第二个选项，需要从 <ph id="ph1">`.dll`</ph> 文件中生成 NuGet 包，在 NuGet 或 MyGet 源上托管并直接依赖它。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>You'll still need to set <ph id="ph1">`allowUnsafe`</ph> to <ph id="ph2">`true`</ph> in the <ph id="ph3">`buildOptions`</ph> section of your <ph id="ph4">`project.json`</ph>.</source>
+          <target state="translated">仍需要在 <ph id="ph4">`project.json`</ph> 的 <ph id="ph3">`buildOptions`</ph> 部分将 <ph id="ph1">`allowUnsafe`</ph> 设置为 <ph id="ph2">`true`</ph>。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Here's an example (assuming <ph id="ph1">`MyNativeLib`</ph> is a Nuget package at version <ph id="ph2">`1.2.0`</ph>):</source>
+          <target state="translated">以下是一个示例（假定 <ph id="ph1">`MyNativeLib`</ph> 是版本 <ph id="ph2">`1.2.0`</ph> 的 Nuget 包）：</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>To see an example of packaging up cross-platform native binaries, check out the <bpt id="p1">[</bpt>ASP.NET Libuv Package<ept id="p1">](https://github.com/aspnet/libuv-package)</ept> and the <bpt id="p2">[</bpt>corresponding reference in KestrelHttpServer<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>.</source>
+          <target state="translated">若要查看打包跨平台本机二进制文件的示例，请查看 <bpt id="p1">[</bpt>ASP.NET Libuv 包<ept id="p1">](https://github.com/aspnet/libuv-package)</ept>和 <bpt id="p2">[</bpt>KestrelHttpServer 中的相应引用<ept id="p2">](https://github.com/aspnet/KestrelHttpServer/blob/1.0.0/src/Microsoft.AspNetCore.Server.Kestrel/project.json#L19)</ept>。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>How to test libraries on .NET Core</source>
+          <target state="translated">如何在 .NET Core 上测试库</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>It's important to be able to test across platforms.</source>
+          <target state="translated">能够跨平台进行测试至关重要。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It's easiest to use <bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept>, which is also the testing tool used by .NET Core projects.</source>
+          <target state="translated">最简单的方法是使用 <bpt id="p1">[</bpt>xUnit<ept id="p1">](http://xunit.github.io/)</ept>，这也是 .NET Core 项目使用的测试工具。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>How you set up your solution with test projects will depend on the <bpt id="p1">[</bpt>structure of your solution<ept id="p1">](#structuring-a-solution)</ept>.</source>
+          <target state="translated">如何使用测试项目设置解决方案取决于<bpt id="p1">[</bpt>解决方案的结构<ept id="p1">](#structuring-a-solution)</ept>。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The following example assumes that all source projects are under a top-level <ph id="ph1">`/src`</ph> folder and all test projects are under a top-level <ph id="ph2">`/test`</ph> folder.</source>
+          <target state="translated">以下示例假设所有源项目位于顶级 <ph id="ph1">`/src`</ph> 文件夹下，且所有测试项目位于顶级 <ph id="ph2">`/test`</ph> 文件夹下。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Ensure you have a <ph id="ph1">`global.json`</ph> file at the solution level which understands where the test projects are:</source>
+          <target state="translated">确保解决方案级别处有一个了解测试项目位置的 <ph id="ph1">`global.json`</ph> 文件：</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Your solution folder structure should then look like this:</source>
+          <target state="translated">解决方案文件夹结构应如下所示：</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Create a new test project by creating a project folder under your <ph id="ph1">`/test`</ph> folder, and a <ph id="ph2">`project.json`</ph> file in the new project folder.</source>
+          <target state="translated">通过在 <ph id="ph1">`/test`</ph> 文件夹下创建项目文件夹，并在新项目文件夹中创建 <ph id="ph2">`project.json`</ph> 文件来创建新测试项目。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>To create the <ph id="ph1">`project.json`</ph> file you can run the <ph id="ph2">`dotnet new`</ph> command and modify the <ph id="ph3">`project.json`</ph> file afterwards.</source>
+          <target state="translated">若要创建 <ph id="ph1">`project.json`</ph> 文件，可以运行 <ph id="ph2">`dotnet new`</ph> 命令，并随后修改 <ph id="ph3">`project.json`</ph> 文件。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The file should have the following:</source>
+          <target state="translated">文件应具有以下内容：</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`netcoreapp1.0`</ph> listed as the only entry under <ph id="ph2">`frameworks`</ph>.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> 列为 <ph id="ph2">`frameworks`</ph> 下的唯一项。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`Microsoft.NETCore.App`</ph> version <ph id="ph2">`1.0.0`</ph>.</source>
+          <target state="translated">对 <ph id="ph1">`Microsoft.NETCore.App`</ph> 版本 <ph id="ph2">`1.0.0`</ph> 的引用。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>A reference to xUnit version <ph id="ph1">`2.2.0-beta2-build3300`</ph>.</source>
+          <target state="translated">对 xUnit 版本 <ph id="ph1">`2.2.0-beta2-build3300`</ph> 的引用。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>A reference to <ph id="ph1">`dotnet-test-xunit`</ph> version <ph id="ph2">`2.2.0-preview2-build1029`</ph></source>
+          <target state="translated">对 <ph id="ph1">`dotnet-test-xunit`</ph> 版本 <ph id="ph2">`2.2.0-preview2-build1029`</ph> 的引用</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>A project reference to the library being tested.</source>
+          <target state="translated">对被测库的项目引用。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The entry <ph id="ph1">`"testRunner":"xunit"`</ph>.</source>
+          <target state="translated">项 <ph id="ph1">`"testRunner":"xunit"`</ph>。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>Here's an example (<ph id="ph1">`LibraryUnderTest`</ph> version <ph id="ph2">`1.0.0`</ph> is the library being tested):</source>
+          <target state="translated">下面是一个示例（<ph id="ph1">`LibraryUnderTest`</ph> 版本 <ph id="ph2">`1.0.0`</ph> 是被测库）：</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Restore packages by running <ph id="ph1">`dotnet restore`</ph>.</source>
+          <target state="translated">通过运行 <ph id="ph1">`dotnet restore`</ph> 恢复包。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>You should do this at the solution level if you haven't restored packages yet.</source>
+          <target state="translated">如果尚未恢复包，应在解决方案级别执行此操作。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>Navigate to your test project and run tests with <ph id="ph1">`dotnet test`</ph>:</source>
+          <target state="translated">导航到测试项目并使用 <ph id="ph1">`dotnet test`</ph> 运行测试：</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是这么简单！</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can now test your library across all platforms using command line tools.</source>
+          <target state="translated">现在可以使用命令行工具跨所有平台测试库。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>To continue testing now that you have everything set up, testing your library is very simple:</source>
+          <target state="translated">若要继续测试，现已设置好了所有内容，测试库将非常简单：</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Make changes to your library.</source>
+          <target state="translated">对库进行更改。</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Run tests from the command line, in your test directory, with <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated">使用 <ph id="ph1">`dotnet test`</ph> 命令在测试目录中从命令行运行测试。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Your code will be automatically rebuilt when you invoke <ph id="ph1">`dotnet test`</ph> command.</source>
+          <target state="translated">调用 <ph id="ph1">`dotnet test`</ph> 命令时，将自动重新生成代码。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Just remember to run <ph id="ph1">`dotnet restore`</ph> from the command line any time you add a new dependency and you'll be good to go!</source>
+          <target state="translated">只需要记住，每次添加新依赖项时从命令行运行 <ph id="ph1">`dotnet restore`</ph> 就可以了！</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>How to use multiple projects</source>
+          <target state="translated">如何使用多个项目</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>A common need for larger libraries is to place functionality in different projects.</source>
+          <target state="translated">对于较大的库，通常需要将功能置于不同项目中。</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Imagine you wished to build a library which could be consumed in idiomatic C# and F#.</source>
+          <target state="translated">假设要生成一个可以惯用的 C# 和 F# 使用的库。</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>That would mean that consumers of your library consume them in ways which are natural to C# or F#.</source>
+          <target state="translated">这意味着库的使用者可通过对 C# 或 F# 来说很自然的方式来使用它们。</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>For example, in C# you might consume the library like this:</source>
+          <target state="translated">例如，在 C# 中，了能会这样使用库：</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>In F#, it might look like this:</source>
+          <target state="translated">在 F# 中可能是这样：</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.</source>
+          <target state="translated">这样的使用方案意味着被访问的 API 必须具有用于 C# 和 F# 的不同结构。</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.</source>
+          <target state="translated">通常的方法是将库的所有逻辑因子转化到核心项目中，C# 和 F# 项目定义调用到核心项目的 API 层。</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>The rest of the section will use the following names:</source>
+          <target state="translated">该部分的其余部分将使用以下名称：</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - A core project which contains all logic for the library</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> - 核心项目，其中包含库的所有逻辑</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in C</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> - 具有打算在 C 中使用的公共 API 的项目</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - A project with public APIs intended for consumption in F</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.FSharp<ept id="p1">**</ept> - 具有打算在 F 中使用的公共 API 的项目</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Project-to-project referencing</source>
+          <target state="translated">项目到项目的引用</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>The best way to reference a project is to do the following:</source>
+          <target state="translated">引用项目的最佳方法是执行以下操作：</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Make sure the project you wish to reference has a good name for its containing folder on disk.</source>
+          <target state="translated">确保要引用的项目对磁盘上其所属文件夹有一个正确的名称。</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>This will be the name used to reference your project.</source>
+          <target state="translated">这将是用来引用项目的名称。</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Reference the name from (1) in the <ph id="ph1">`project.json`</ph> file of the consuming project specifying <ph id="ph2">`"target":"project"`</ph>.</source>
+          <target state="translated">在指定 <ph id="ph2">`"target":"project"`</ph> 的使用项目的 <ph id="ph1">`project.json`</ph> 文件中，引用 (1) 中的名称。</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`project.json`</ph> files for both <bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> and <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> now need to reference <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept> as a <ph id="ph2">`project`</ph> target.</source>
+          <target state="translated"><bpt id="p1">**</bpt>AwesomeLibrary.CSharp<ept id="p1">**</ept> 和 <bpt id="p2">**</bpt>AwesomeLibrary.FSharp<ept id="p2">**</ept> 的 <ph id="ph1">`project.json`</ph> 文件现需要将 <bpt id="p3">**</bpt>AwesomeLibrary.Core<ept id="p3">**</ept> 作为 <ph id="ph2">`project`</ph> 目标引用。</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>If you aren't multitargeting, you can use the global <ph id="ph1">`dependencies`</ph> entry:</source>
+          <target state="translated">如果不是设定多目标，可使用全局 <ph id="ph1">`dependencies`</ph> 项：</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>If you are multitargeting, you may not be able to use a global <ph id="ph1">`dependencies`</ph> entry and may have to reference <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept> in a target-level <ph id="ph2">`dependencies`</ph> entry.</source>
+          <target state="translated">如果要设定多目标，则无法使用全局 <ph id="ph1">`dependencies`</ph> 项，可能必须在目标级别 <ph id="ph2">`dependencies`</ph> 项中引用 <bpt id="p1">**</bpt>AwesomeLibrary.Core<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>For example, if you were targeting <ph id="ph1">`netstandard1.6`</ph>, you could do so like this:</source>
+          <target state="translated">例如，如果面向 <ph id="ph1">`netstandard1.6`</ph>，可进行如下操作实现：</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Structuring a Solution</source>
+          <target state="translated">结构化解决方案</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Another important aspect of multi-project solutions is establishing a good overall project structure.</source>
+          <target state="translated">多项目解决方案的另一个重要方面是建立良好的整体项目结构。</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>To structure a multi-project library, you must use top-level <ph id="ph1">`/src`</ph> and <ph id="ph2">`/test`</ph> folders:</source>
+          <target state="translated">若要结构化多项目库，必须使用顶级 <ph id="ph1">`/src`</ph> 和 <ph id="ph2">`/test`</ph> 文件夹：</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`global.json`</ph> file for this solution would look like this:</source>
+          <target state="translated">此解决方案的 <ph id="ph1">`global.json`</ph> 文件如下所示：</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>This approach follows the same pattern established by project templates in the <ph id="ph1">`dotnet new`</ph> command establish, where all projects are placed under a <ph id="ph2">`/src`</ph> directory and all tests are placed under a <ph id="ph3">`/test`</ph> directory.</source>
+          <target state="translated">此方法遵循 <ph id="ph1">`dotnet new`</ph> 命令建立中项目模板建立的相同模式，其中，所有项目置于 <ph id="ph2">`/src`</ph> 目录下，所有测试置于 <ph id="ph3">`/test`</ph> 目录下。</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Here's how you could restore packages, build, and test your entire project:</source>
+          <target state="translated">以下是恢复包、生成和测试整个项目的方法：</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>And that's it!</source>
+          <target state="translated">就是这么简单！</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
