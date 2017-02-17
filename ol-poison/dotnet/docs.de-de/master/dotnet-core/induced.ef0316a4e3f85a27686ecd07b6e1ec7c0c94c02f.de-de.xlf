@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0bd8998cfb508294ffbc7a9619b571c9881ba294</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\induced.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a9baaf4b5ef4785d3ed2207e62d076e46e936925</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ac8364d8a2c07281efe1a8f69f030ad6d5503aff</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file induced.ef0316a4e3f85a27686ecd07b6e1ec7c0c94c02f.de-de.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">Induzierte Sammlungen</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">Induzierte Sammlungen</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Induced collections</source>
+          <target state="translated">Induzierte Sammlungen</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In most cases, the garbage collector can determine the best time to perform a collection, and you should let it run independently.</source>
+          <target state="translated">In den meisten Fällen können Sie es dem Garbage Collector überlassen, den am besten geeigneten Zeitpunkt für eine Collection zu bestimmen.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are rare situations when a forced collection might improve your application's performance.</source>
+          <target state="translated">In seltenen Fällen kann das Erzwingen einer Auflistung jedoch die Leistung der Anwendung erhöhen.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In these cases, you can induce garbage collection by using the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method to force a garbage collection.</source>
+          <target state="translated">In diesen Fällen können Sie die Garbage Collection auslösen, indem Sie die <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept>-Methode zum Erzwingen einer Garbage Collection wählen.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> method when there is a significant reduction in the amount of memory being used at a specific point in your application's code.</source>
+          <target state="translated">Verwenden Sie die <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept>-Methode, wenn es zu einem bestimmten Zeitpunkt während der Ausführung des Anwendungscodes zu einer erheblichen Reduzierung des verwendeten Arbeitsspeichers kommt.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For example, if your application uses a complex dialog box that has several controls, calling <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> when the dialog box is closed could improve performance by immediately reclaiming the memory used by the dialog box.</source>
+          <target state="translated">Wenn die Anwendung zum Beispiel ein kompliziertes Dialogfeld mit mehreren Steuerelementen verwendet, kann der Aufruf von <bpt id="p1">[</bpt>Collect<ept id="p1">](xref:System.GC.Collect)</ept> beim Schließen des Dialogfelds die Leistung erhöhen, indem der vom Dialogfeld verwendete Speicher sofort freigegeben wird.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Be sure that your application is not inducing garbage collection too frequently, because that can decrease performance if the garbage collector is trying to reclaim objects at non-optimal times.</source>
+          <target state="translated">Stellen Sie sicher, dass die Anwendung nicht zu häufig eine Garbage Collection durchführt, das sich dies negativ auf die Leistung auswirken kann, wenn der Garbage Collector vergeblich versucht, Objekte zu ungünstigen Zeitpunkten freizugeben.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can supply a <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept> enumeration value to the <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept> method to collect only when collection would be productive, as discussed in the next section.</source>
+          <target state="translated">Sie können einen <bpt id="p1">[</bpt>GCCollectionMode.Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept>-Enumerationswert an die <bpt id="p2">[</bpt>Collect<ept id="p2">](xref:System.GC.Collect)</ept>-Methode liefern, um nur zu sammeln, wenn die Sammlung produktiv ist, wie im nächsten Abschnitt erläutert wird.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>GC collection mode</source>
+          <target state="translated">Der GC-Sammlungsmodus</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can use one of the <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept> method overloads that includes a <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> value to specify the behavior for a forced collection as follows.</source>
+          <target state="translated">Sie können eine der <bpt id="p1">[</bpt>GC.Collect<ept id="p1">](xref:System.GC.Collect)</ept>-Methodenüberladungen verwenden, die einen <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept>-Wert enthält, um das Verhalten einer erzwungenen Sammlung wie folgt zu anzugeben.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>GCCollectionMode value</source>
+          <target state="translated">GCCollectionMode-Wert</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Default<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Default<ept id="p1">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Uses the default garbage collection setting for the running version of the .NET Framework.</source>
+          <target state="translated">Verwendet die Standard-Garbage Collection-Einstellung für die ausgeführte .NET Framework-Version.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Forces garbage collection to occur immediately.</source>
+          <target state="translated">Erzwingt die sofortige Durchführung der Garbage Collection.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This is equivalent to calling the <bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept> overload.</source>
+          <target state="translated">Dies entspricht dem Aufruf der <bpt id="p1">[</bpt>GC.Collect()<ept id="p1">](xref:System.GC.Collect)</ept>-Überladung.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It results in a full blocking collection of all generations.</source>
+          <target state="translated">Dies führt zu einer vollständigen blockierenden Auflistung aller Generationen.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also compact the large object heap by setting the <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept> property to <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept> before forcing an immediate full blocking garbage collection.</source>
+          <target state="translated">Sie können auch den großen Objektheap komprimieren, indem Sie die <bpt id="p1">[</bpt>GCSettings.LargeObjectHeapCompactionMode<ept id="p1">](xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode)</ept>-Eigenschaft auf <bpt id="p2">[</bpt>GCLargeObjectHeapCompactionMode.CompactOnce<ept id="p2">](xref:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce)</ept> festlegen, bevor Sie eine unmittelbare vollständige blockierende Garbage Collection erzwingen.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Enables the garbage collector to determine whether the current time is optimal to reclaim objects.</source>
+          <target state="translated">Ermöglicht dem Garbage Collector zu bestimmten, oder der aktuelle Zeitpunkt zum Freigeben von Objekten optimal ist.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The garbage collector could determine that a collection would not be productive enough to be justified, in which case it will return without reclaiming objects.</source>
+          <target state="translated">Der Garbage Collector kann ermitteln, dass eine Auflistung nicht produktiv genug wäre. In diesem Fall kehrt er zurück, ohne Objekte freizugeben.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Background or blocking collections</source>
+          <target state="translated">Hintergrund oder blockierende Auflistungen</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can call the <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method overload to specify whether an induced collection is blocking or not.</source>
+          <target state="translated">Sie können die Methodenüberladung <bpt id="p1">[</bpt>GC.Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> aufrufen, um anzugeben, ob eine induzierte Sammlung blockiert oder nicht.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The type of collection performed depends on a combination of the method's <bpt id="p1">*</bpt>mode<ept id="p1">*</ept> and <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept> parameters.</source>
+          <target state="translated">Der Typ der ausgeführten Sammlung hängt von einer Kombination der <bpt id="p1">*</bpt>mode<ept id="p1">*</ept>- und <bpt id="p2">*</bpt>blocking<ept id="p2">*</ept>-Parameter der Methode ab.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept> is a member of the <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept> enumeration, and <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept> is a <bpt id="p4">[</bpt>Boolean<ept id="p4">](xref:System.Boolean)</ept> value.</source>
+          <target state="translated"><bpt id="p1">*</bpt>mode<ept id="p1">*</ept> ist ein Member der <bpt id="p2">[</bpt>GCCollectionMode<ept id="p2">](xref:System.GCCollectionMode)</ept>-Enumeration, und <bpt id="p3">*</bpt>blocking<ept id="p3">*</ept> ist ein <bpt id="p4">[</bpt>boolescher<ept id="p4">](xref:System.Boolean)</ept> Wert.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following table summarizes the interaction of the mode and blocking arguments.</source>
+          <target state="translated">In der folgenden Tabelle wird die Interaktion der Argumente „mode“ und „blocking“ zusammengefasst.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>mode<ept id="p1">*</ept></source>
+          <target state="translated"><bpt id="p1">*</bpt>mode<ept id="p1">*</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = true</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</source>
+          <target state="translated"><bpt id="p1">*</bpt>blocking<ept id="p1">*</ept> = false</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> or <bpt id="p2">[</bpt>Default<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Forced<ept id="p1">](xref:System.GCCollectionMode.Forced)</ept> oder <bpt id="p2">[</bpt>Default<ept id="p2">](xref:System.GCCollectionMode.Default)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>A blocking collection is performed as soon as possible.</source>
+          <target state="translated">Eine blockierende Auflistung wird so schnell wie möglich ausgeführt.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and generation is 0 or 1, the <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method immediately triggers a blocking collection and returns when the collection is finished.</source>
+          <target state="translated">Wenn eine Hintergrundsammlung ausgeführt wird und die Generation 0 oder 1 ist, löst die Methode <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> sofort eine blockierende Sammlung aus und wird zurückgegeben, wenn die Sammlung abgeschlossen ist.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If a background collection is in progress and the generation parameter is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.</source>
+          <target state="translated">Wenn eine Hintergrundsammlung ausgeführt wird und der Generationsparameter 2 lautet, wartet die Methode, bis die Hintergrundsammlung beendet ist, löst eine blockierende Sammlung der Generation 2 aus und gibt dann zurück.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>A collection is performed as soon as possible.</source>
+          <target state="translated">Eine Auflistung wird so schnell wie möglich ausgeführt.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept>-Methode fordert eine Hintergrundsammlung an, dies ist jedoch nicht garantiert. Je nach den Umständen wird eine blockierende Sammlung möglicherweise weiterhin ausgeführt.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">Wenn eine Hintergrundauflistung bereits ausgeführt wird, gibt die Methode sofort zurück.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Optimized<ept id="p1">](xref:System.GCCollectionMode.Optimized)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A blocking collection may be performed, depending on the state of the garbage collector and the generation parameter.</source>
+          <target state="translated">Eine blockierende Sammlung kann je nach Zustand des Garbage Collectors und des Generationsparameters ausgeführt werden.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">Der Garbage Collector versucht, eine optimale Leistung bereitzustellen.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A collection may be performed, depending on the state of the garbage collector.</source>
+          <target state="translated">Eine Auflistung kann ausgeführt werden, je nach Zustand des Garbage Collectors.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Collect(Int32, GCCollectionMode, Boolean)<ept id="p1">](xref:System.GC.Collect(System.Int32,System.GCCollectionMode,System.Boolean))</ept>-Methode fordert eine Hintergrundsammlung an, dies ist jedoch nicht garantiert. Je nach den Umständen wird eine blockierende Sammlung möglicherweise weiterhin ausgeführt.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>The garbage collector tries to provide optimal performance.</source>
+          <target state="translated">Der Garbage Collector versucht, eine optimale Leistung bereitzustellen.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a background collection is already in progress, the method returns immediately.</source>
+          <target state="translated">Wenn eine Hintergrundauflistung bereits ausgeführt wird, gibt die Methode sofort zurück.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Latency modes<ept id="p1">](latency.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Latenzmodi<ept id="p1">](latency.md)</ept></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Garbage collection in .NET<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Garbage Collection in .NET<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

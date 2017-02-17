@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c0600eb27c27261f6496fb45310514f7f716b3b3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\garbagecollection\unmanaged.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f24afcc5d03776195e2a0871ffacc3da8df6e696</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c81a9f19dc91e275781469ab4912c05def133c12</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.de-de.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">Bereinigen von nicht verwalteten Ressourcen</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">Bereinigen von nicht verwalteten Ressourcen</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Cleaning up unmanaged resources</source>
+          <target state="translated">Bereinigen von nicht verwalteten Ressourcen</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For the majority of the objects that your app creates, you can rely on the .NET garbage collector to handle memory management.</source>
+          <target state="translated">Für die meisten von der App erstellten Objekte führt der Garbage Collector von .NET die Speicherverwaltung aus.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>However, when you create objects that include unmanaged resources, you must explicitly release those resources when you finish using them in your app.</source>
+          <target state="translated">Wenn Sie jedoch Objekte erstellen, die nicht verwaltete Ressourcen enthalten, müssen Sie diese Ressourcen explizit freigeben, wenn diese nicht mehr von der App verwendet werden.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The most common types of unmanaged resource are objects that wrap operating system resources, such as files, windows, network connections, or database connections.</source>
+          <target state="translated">Die geläufigsten Typen von nicht verwalteten Ressourcen sind Objekte, die Betriebssystemressourcen umschließen, wie etwa Dateien, Fenster, Netzwerkverbindungen oder Datenbankverbindungen.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Although the garbage collector is able to track the lifetime of an object that encapsulates an unmanaged resource, it doesn't know how to release and clean up the unmanaged resource.</source>
+          <target state="translated">Der Garbage Collector kann die Lebensdauer eines Objekts nachverfolgen, das eine nicht verwaltete Ressource kapselt, er kann jedoch die nicht verwaltete Ressource nicht freigeben und bereinigen.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If your types use unmanaged resources, you should do the following:</source>
+          <target state="translated">Wenn Ihre Typen nicht verwaltete Ressourcen verwenden, gehen Sie wie folgt vor:</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Implement the dispose pattern.</source>
+          <target state="translated">Implementieren Sie das Dispose-Muster.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This requires that you provide an <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation to enable the deterministic release of unmanaged resources.</source>
+          <target state="translated">Hierfür müssen Sie eine <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>-Implementierung bereitstellen, um die deterministische Freigabe von nicht verwalteten Ressourcen zu ermöglichen.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A consumer of your type calls <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> when the object (and the resources it uses) is no longer needed.</source>
+          <target state="translated">Ein Consumer Ihres Typs ruft <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> auf, wenn das Objekt (und die Ressourcen, die es verwendet), nicht mehr benötigt wird.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method immediately releases the unmanaged resources.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>-Methode gibt die nicht verwalteten Ressourcen sofort frei.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Provide for your unmanaged resources to be released in the event that a consumer of your type forgets to call <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>.</source>
+          <target state="translated">Sorgen Sie dafür, dass die nicht verwalteten Ressourcen freigegeben werden können, falls ein Consumer Ihres Typs vergisst, <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> aufzurufen.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>There are two ways to do this:</source>
+          <target state="translated">Hierfür gibt es zwei Möglichkeiten:</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Use a safe handle to wrap your unmanaged resource.</source>
+          <target state="translated">Verwenden Sie ein SafeHandle, um die nicht verwaltete Ressource zu umschließen.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This is the recommended technique.</source>
+          <target state="translated">Dies ist das empfohlene Verfahren.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Safe handles are derived from the <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept> class and include a robust <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">SafeHandles werden von der <bpt id="p1">[</bpt>System.Runtime.InteropServices.SafeHandle<ept id="p1">](xref:System.Runtime.InteropServices.SafeHandle)</ept>-Klasse abgeleitet und enthalten eine robuste <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept>-Methode.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When you use a safe handle, you simply implement the <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept> interface and call your safe handle's <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept> method in your <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept> implementation.</source>
+          <target state="translated">Wenn Sie ein SafeHandle verwenden, implementieren Sie einfach die <bpt id="p1">[</bpt>IDisposable<ept id="p1">](xref:System.IDisposable)</ept>-Schnittstelle, und rufen Sie die <bpt id="p2">[</bpt>Dispose<ept id="p2">](xref:System.IDisposable.Dispose)</ept>-Methode des SafeHandle in der <bpt id="p3">[</bpt>IDisposable.Dispose<ept id="p3">](xref:System.IDisposable.Dispose)</ept>-Implementierung auf.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The safe handle's finalizer is called automatically by the garbage collector if its <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method is not called.</source>
+          <target state="translated">Der Finalizer des SafeHandle wird automatisch vom Garbage Collector aufgerufen, wenn dessen <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>-Methode nicht aufgerufen wird.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>—or—</source>
+          <target state="translated">– oder –</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Override the <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> method.</source>
+          <target state="translated">Überschreiben Sie die <bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>-Methode.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Finalization enables the non-deterministic release of unmanaged resources when the consumer of a type fails to call <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> to dispose of them deterministically.</source>
+          <target state="translated">Der Abschluss aktiviert die nicht deterministische Freigabe von nicht verwalteten Ressourcen, wenn der Consumer eines Typs <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> nicht aufrufen kann, um sie deterministisch freizugeben.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>However, because object finalization can be a complex and error-prone operation, we recommend that you use a safe handle instead of providing your own finalizer.</source>
+          <target state="translated">Da aber der Objektabschluss ein komplexer und fehleranfälliger Vorgang sein kann, wird empfohlen, ein SafeHandle zu verwenden, anstatt einen eigenen Finalizer bereitzustellen.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Consumers of your type can then call your <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> implementation directly to free memory used by unmanaged resources.</source>
+          <target state="translated">Consumer Ihres Typs können dann die <bpt id="p1">[</bpt>IDisposable.Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>-Implementierung direkt aufrufen, um Arbeitsspeicher freizugeben, der von nicht verwalteten Ressourcen verwendet wird.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>When you properly implement a <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept> method, either your safe handle's <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept> method or your own override of the <bpt id="p3">[</bpt>Object.Finalize<ept id="p3">](xref:System.Object.Finalize)</ept> method becomes a safeguard to clean up resources in the event that the <bpt id="p4">[</bpt>Dispose<ept id="p4">](xref:System.IDisposable.Dispose)</ept> method is not called.</source>
+          <target state="translated">Wenn Sie eine <bpt id="p1">[</bpt>Dispose<ept id="p1">](xref:System.IDisposable.Dispose)</ept>-Methode ordnungsgemäß implementieren, stellt entweder die <bpt id="p2">[</bpt>Finalize<ept id="p2">](xref:System.Object.Finalize)</ept>-Methode des SafeHandle oder Ihre eigene Überschreibung der <bpt id="p3">[</bpt>Object.Finalize<ept id="p3">](xref:System.Object.Finalize)</ept>-Methode eine Absicherung zur Bereinigung der Ressourcen für den Fall dar, dass die <bpt id="p4">[</bpt>Dispose<ept id="p4">](xref:System.IDisposable.Dispose)</ept>-Methode nicht aufgerufen wird.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In This Section</source>
+          <target state="translated">In diesem Abschnitt</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Implementing a dispose method<ept id="p1">](implementing-dispose.md)</ept> - Describes how to implement the dispose pattern for releasing unmanaged resources.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Implementieren einer Dispose-Methode<ept id="p1">](implementing-dispose.md)</ept>: Beschreibt, wie das Dispose-Muster für die Freigabe von nicht verwalteten Ressourcen implementiert wird.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using objects that implement IDisposable<ept id="p1">](using-objects.md)</ept> - Describes how consumers of a type ensure that its Dispose implementation is called.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Verwenden von Objekten, die IDisposable implementieren<ept id="p1">](using-objects.md)</ept>: Beschreibt, wie Consumer eines Typs sicherstellen, dass dessen Dispose-Implementierung aufgerufen wird.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>We recommend using the C# using statement or the Visual Basic Using statement to do this.</source>
+          <target state="translated">Es wird empfohlen, die using-Anweisung in C# oder die Using-Anweisung in Visual Basic zu verwenden, um dies durchzuführen.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">Verweis</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.IDisposable<ept id="p1">](xref:System.IDisposable)</ept> - Defines the <ph id="ph1">`Dispose`</ph> method for releasing unmanaged resources.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.IDisposable<ept id="p1">](xref:System.IDisposable)</ept>: Definiert die <ph id="ph1">`Dispose`</ph>-Methode zum Freigeben von nicht verwalteten Ressourcen.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept> - Provides for object finalization if unmanaged resources are not released by the <ph id="ph1">`Dispose`</ph> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Object.Finalize<ept id="p1">](xref:System.Object.Finalize)</ept>: Ermöglicht den Objektabschluss, wenn nicht verwaltete Ressourcen nicht durch die <ph id="ph1">`Dispose`</ph>-Methode freigegeben werden.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>GC.SuppressFinalize<ept id="p1">](xref:System.GC#System_GC_SuppressFinalize_System_Object_)</ept> - Suppresses finalization.</source>
+          <target state="translated"><bpt id="p1">[</bpt>GC. SuppressFinalize<ept id="p1">](xref:System.GC#System_GC_SuppressFinalize_System_Object_)</ept>: Unterdrückt einen Abschluss.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This method is customarily called from a <ph id="ph1">`Dispose`</ph> method to prevent a finalizer from executing.</source>
+          <target state="translated">Diese Methode wird normalerweise von einer <ph id="ph1">`Dispose`</ph>-Methode aufgerufen, um zu verhindern, dass ein Finalizer ausgeführt wird.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
