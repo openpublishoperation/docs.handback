@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">da4c5aec6e02393c9e6201edd766eb7579a40b5e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\use-time-zones-in-arithmetic.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ea6ee3915696553ec04138b2d77fd1d244753e97</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3ac95fe710f9549fbe145cf9f9ec5d2a83c2544b</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file use-time-zones-in-arithmetic.68c1f381e8c25b939ed3c409976caaaf08599720.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">방법: 날짜 및 시간 산술 연산의 표준 시간대 사용</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to use time zones in date and time arithmetic</source>
+          <target state="translated">날짜 및 시간 산술 연산의 표준 시간대를 사용하는 방법</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: use time zones in date and time arithmetic</source>
+          <target state="translated">방법: 날짜 및 시간 산술 연산의 표준 시간대 사용</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Ordinarily, when you perform date and time arithmetic using <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values, the result does not reflect any time zone adjustment rules.</source>
+          <target state="translated">일반적으로 <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값을 사용하여 날짜 및 시간 산술 연산을 수행할 경우 결과는 표준 시간대 조정 규칙을 반영하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is true even when the time zone of the date and time value is clearly identifiable.</source>
+          <target state="translated">날짜의 표준 시간대 및 시간 값을 명확하게 식별할 수 있는 경우에도 동일합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how to perform arithmetic operations on date and time values that belong to a particular time zone.</source>
+          <target state="translated">이 문서에서는 특정 표준 시간대에 속하는 날짜 및 시간 값에 대한 산술 연산 작업을 수행하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The results of the arithmetic operations will reflect the time zone's adjustment rules.</source>
+          <target state="translated">산술 연산 작업의 결과는 표준 시간대의 조정 규칙을 반영합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To apply adjustment rules to date and time arithmetic</source>
+          <target state="translated">날짜 및 시간 산술 연산에 조정 규칙을 적용하려면</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Implement some method of closely coupling a date and time value with the time zone to which it belongs.</source>
+          <target state="translated">날짜 및 시간 값을 속해 있는 표준 시간대와 밀접하게 연결하는 몇 가지 메서드를 구현합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, declare a structure that includes both the date and time value and its time zone.</source>
+          <target state="translated">예를 들어, 날짜 및 시간 값 및 해당 표준 시간대를 모두 포함하는 구조체를 선언합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following example uses this approach to link a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value with its time zone.</source>
+          <target state="translated">다음 예제에서는이 방법을 사용하여 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값을 표준 시간대와 연결합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Convert a time to Coordinated Universal Time (UTC) by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime (DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> 메서드를 호출하여 시간을 UTC(협정 세계시)로 변환합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Perform the arithmetic operation on the UTC time.</source>
+          <target state="translated">UTC 시간에 대한 산술 연산을 수행합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Convert the time from UTC to the original time's associated time zone by calling the <bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> method.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo.ConvertTime(DateTime, TimeZoneInfo)<ept id="p1">](xref:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo))</ept> 메서드를 호출하여 UTC 시간을 원래 시간과 연관된 표준 시간대로 변환합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example adds two hours and thirty minutes to March 9, 2008, at 1:30 A.M.</source>
+          <target state="translated">다음 예제에서는 중부 표준시 2008년 3월 9일 오전 1시 30분에 2시간 30분을</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Central Standard Time.</source>
+          <target state="translated">추가합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The time zone's transition to daylight saving time occurs thirty minutes later, at 2:00 A.M.</source>
+          <target state="translated">30분 뒤인 2008년 3월 9일 오전 2시에 표준 시간대가 일광 절약 시간으로</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">전환됩니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Because the example follows the four steps listed in the previous section, it correctly reports the resulting time as 5:00 A.M.</source>
+          <target state="translated">이 예제에서는 이전 섹션의 네 단계를 수행하므로 결과 시간이 2008년 3월 9일 오전 5시로 올바르게</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>on March 9, 2008.</source>
+          <target state="translated">보고됩니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Note that if this addition is simply performed on the <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value without first converting it to UTC, the result reflects the correct point in time but its offset does not reflect that of the designated time zone for that time.</source>
+          <target state="translated">이 추가 작업이 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값을 UTC로 변환하지 않고 간단히 수행하는 경우 결과는 올바른 시점을 반영하지만 해당 오프셋은 해당 시간에 대한 지정된 표준 시간대의 시점을 반영하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are disassociated from any time zone to which they might belong.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 값은 속해 있는 표준 시간대에서 분리됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic in a way that automatically applies a time zone's adjustment rules, the time zone to which any date and time value belongs must be immediately identifiable.</source>
+          <target state="translated">자동으로 표준 시간대의 조정 규칙을 적용하는 방식으로 날짜 및 시간 산술 연산을 수행하려면 모든 날짜 및 시간 값이 속해 있는 표준 시간대를 즉시 식별할 수 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This means that a date and time and its associated time zone must be tightly coupled.</source>
+          <target state="translated">즉, 날짜 및 시간과 관련된 표준 시간대는 밀접하게 결합되어야 합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>There are several ways to do this, which include the following:</source>
+          <target state="translated">여러 가지 방법을 통해 다음을 포함하는 작업을 수행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Assume that all times used in an application belong to a particular time zone.</source>
+          <target state="translated">응용 프로그램에서 사용되는 모든 시간이 특정 표준 시간대에 속한다고 가정합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Although appropriate in some cases, this approach offers limited flexibility and possibly limited portability.</source>
+          <target state="translated">일부 경우에는 적합하지만 이 방식은 제한된 유연성과 이식성을 제공합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Define a type that tightly couples a date and time with its associated time zone by including both as fields of the type.</source>
+          <target state="translated">모두 형식의 필드로 포함하여 관련된 표준 시간대와 날짜 및 시간을 밀접하게 결합하는 형식을 정의합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This approach is used in the code example, which defines a structure to store the date and time and the time zone in two member fields.</source>
+          <target state="translated">이 방법은 코드 예제에 사용되며 여기서 두 개의 구성원 필드에 있는 날짜 및 시간과 표준 시간대를 저장하는 구조체를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>날짜, 시간 및 표준 시간대<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>날짜 및 시간에 대한 산술 연산 수행<ept id="p1">](performing-arithmetic-operations.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

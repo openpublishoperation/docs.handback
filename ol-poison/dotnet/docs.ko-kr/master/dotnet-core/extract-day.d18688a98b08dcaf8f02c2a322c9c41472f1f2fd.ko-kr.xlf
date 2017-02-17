@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b40f13e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">298d2faf847b8518eb5852c55972409e4e3cf29c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\extract-day.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aac3ae44332c3aa475c129fd37752fa585b017a0</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8244c9f04f77f4198d035a9383f67be5b6630516</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file extract-day.d18688a98b08dcaf8f02c2a322c9c41472f1f2fd.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: extract the day of the week from a specific date</source>
+          <target state="translated">방법: 특정 날짜의 요일 추출</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to extract the day of the week from a specific date</source>
+          <target state="translated">특정 날짜의 요일을 추출하는 방법</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: extract the day of the week from a specific date</source>
+          <target state="translated">방법: 특정 날짜의 요일 추출</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date.</source>
+          <target state="translated">.NET을 사용하면 쉽게 특정 날짜가 일주일 중 몇 번째 날인지 확인하고, 특정 날짜의 지역화된 요일 이름을 표시할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An enumerated value that indicates the day of the week corresponding to a particular date is available from the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> or <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> property.</source>
+          <target state="translated">특정 날짜에 해당하는 요일을 나타내는 열거형 값은 <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> 속성에서 제공합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's <ph id="ph1">`ToString`</ph> method or the <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> method.</source>
+          <target state="translated">이와 대조적으로 요일 이름 검색은 날짜 및 시간 값의 <ph id="ph1">`ToString`</ph> 메서드 또는 <bpt id="p1">[</bpt>String.Format<ept id="p1">](xref:System.String.Format(System.IFormatProvider,System.String,System.Object))</ept> 메서드와 같은 형식 지정 메서드를 호출하여 수행할 수 있는 형식 지정 작업입니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic shows how to perform these formatting operations.</source>
+          <target state="translated">이 항목에서는 이러한 서식 지정 작업을 수행하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To extract a number indicating the day of the week from a specific date</source>
+          <target state="translated">특정 날짜에서 요일을 나타내는 숫자를 추출하려면</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">날짜의 문자열 표현으로 작업하는 경우 정적 <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> 또는 <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> 메서드를 사용하여 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값으로 변환합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> or <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> property to retrieve a <bpt id="p3">[</bpt>DayOfWeek<ept id="p3">](xref:System.DayOfWeek)</ept> value that indicates the day of the week.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> 속성을 사용하여 요일을 나타내는 <bpt id="p3">[</bpt>DayOfWeek<ept id="p3">](xref:System.DayOfWeek)</ept> 값을 검색합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If necessary, cast the <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> value to an integer.</source>
+          <target state="translated">필요한 경우 <bpt id="p1">[</bpt>DayOfWeek<ept id="p1">](xref:System.DayOfWeek)</ept> 값을 정수로 캐스팅합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following example displays an integer that represents the day of the week of a specific date.</source>
+          <target state="translated">다음 예제에서는 특정 날짜의 요일을 나타내는 정수를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name from a specific date</source>
+          <target state="translated">특정 날짜에서 간략화된 요일 이름을 추출하려면</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">날짜의 문자열 표현으로 작업하는 경우 정적 <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> 또는 <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> 메서드를 사용하여 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값으로 변환합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can extract the abbreviated weekday name of the current culture or of a specific culture:</source>
+          <target state="translated">현재 문화권 또는 특정 문화권의 간략화된 요일 이름을 추출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> instance method, and pass the string "ddd" as the <bpt id="p2">*</bpt>format<ept id="p2">*</ept> parameter.</source>
+          <target state="translated">현재 문화권의 간략화된 요일 이름을 추출하려면 날짜 및 시간 값의 [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) 또는 <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> 인스턴스 메서드를 호출하고 문자열 "ddd"를 <bpt id="p2">*</bpt>format<ept id="p2">*</ept> 매개 변수로 전달합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the call to the <ph id="ph1">`ToString(String)`</ph> method.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`ToString(String)`</ph> 메서드를 호출하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To extract the full weekday name from a specific date</source>
+          <target state="translated">특정 날짜에서 전체 요일 이름을 추출하려면</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If you are working with the string representation of a date, convert it to a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> or a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> value by using the static <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> or <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> method.</source>
+          <target state="translated">날짜의 문자열 표현으로 작업하는 경우 정적 <bpt id="p3">[</bpt>DateTime.Parse<ept id="p3">](xref:System.DateTime.Parse(System.String))</ept> 또는 <bpt id="p4">[</bpt>DateTimeOffset.Parse<ept id="p4">](xref:System.DateTimeOffset.Parse(System.String))</ept> 메서드를 사용하여 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 또는 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 값으로 변환합니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can extract the abbreviated weekday name of the current culture or of a specific culture:</source>
+          <target state="translated">현재 문화권 또는 특정 문화권의 간략화된 요일 이름을 추출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>a.</source>
+          <target state="translated">a.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To extract the abbreviated weekday name for the current culture, call the date and time value's [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) or <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> instance method, and pass the string "dddd" as the <bpt id="p2">*</bpt>format<ept id="p2">*</ept> parameter.</source>
+          <target state="translated">현재 문화권의 간략화된 요일 이름을 추출하려면 날짜 및 시간 값의 [DateTime.ToString(String)](xref:System.DateTimeSystem.DateTime.ToString(System.String) 또는 <bpt id="p1">[</bpt>DateTimeOffset.ToString(String)<ept id="p1">](xref:System.DateTimeOffset.ToString(System.String))</ept> 인스턴스 메서드를 호출하고 문자열 "dddd"를 <bpt id="p2">*</bpt>format<ept id="p2">*</ept> 매개 변수로 전달합니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the call to the <ph id="ph1">`ToString(String)`</ph> method.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`ToString(String)`</ph> 메서드를 호출하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The example illustrates calls to the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> and <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> properties and the [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String) or <bpt id="p3">[</bpt>DateTimeOffset.ToString(String)<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept> methods to retrieve the number that represents the day of the week, the abbreviated weekday name, and the full weekday name for a particular date.</source>
+          <target state="translated">이 예제에서는 특정 날짜의 요일, 간략화된 요일 이름 및 전체 요일 이름을 나타내는 숫자를 검색하기 위한 <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> 및 <bpt id="p2">[</bpt>DateTimeOffset.DayOfWeek<ept id="p2">](xref:System.DateTimeOffset.DayOfWeek)</ept> 속성과 [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String) 또는 <bpt id="p3">[</bpt>DateTimeOffset.ToString(String)<ept id="p3">](xref:System.DateTimeOffset.ToString(System.String))</ept> 메서드 호출을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Individual languages may provide functionality that duplicates or supplements the functionality provided by .NET.</source>
+          <target state="translated">개별 언어는 .NET에서 제공하는 기능과 중복되거나 이러한 기능을 보완하는 기능을 제공할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For example, Visual Basic includes two such functions:</source>
+          <target state="translated">예를 들어, Visual Basic에는 다음과 같은 두 가지 함수가 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Weekday`</ph>, which returns a number that indicates the day of the week of a particular date.</source>
+          <target state="translated"><ph id="ph1">`Weekday`</ph>: 특정 날짜의 요일을 나타내는 숫자를 반환합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>It considers the ordinal value of the first day of the week to be one, whereas the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> property considers it to be zero.</source>
+          <target state="translated">이 함수는 요일의 첫날 서수 값을 1로 간주하는 반면, <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> 속성은 0으로 간주합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`WeekdayName`</ph>, which returns the name of the week in the current culture that corresponds to a particular weekday number.</source>
+          <target state="translated"><ph id="ph1">`WeekdayName`</ph>: 현재 문화권에서 특정 요일 숫자에 해당하는 요일 이름을 반환합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the use of the Visual Basic <ph id="ph1">`Weekday`</ph> and <ph id="ph2">`WeekdayName`</ph> functions.</source>
+          <target state="translated">다음 예제에서는 Visual Basic <ph id="ph1">`Weekday`</ph> 및 <ph id="ph2">`WeekdayName`</ph> 함수의 사용 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can also use the value returned by the <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> property to retrieve the weekday name of a particular date.</source>
+          <target state="translated">또한 <bpt id="p1">[</bpt>Datetime.DayOfWeek<ept id="p1">](xref:System.DateTime.DayOfWeek)</ept> 속성에서 반환하는 값을 사용하여 특정 날짜의 요일 이름을 검색할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This requires only a call to the <bpt id="p1">[</bpt>Enum.ToString<ept id="p1">](xref:System.Enum.ToString(System.String))</ept> method on the <bpt id="p2">[</bpt>DayOfWeek<ept id="p2">](xref:System.DayOfWeek)</ept> value returned by the property.</source>
+          <target state="translated">이렇게 하려면 속성에서 반환하는 <bpt id="p2">[</bpt>DayOfWeek<ept id="p2">](xref:System.DayOfWeek)</ept> 값에 대해 <bpt id="p1">[</bpt>Enum.ToString<ept id="p1">](xref:System.Enum.ToString(System.String))</ept> 메서드를 호출하기만 하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>However, this technique does not produce a localized weekday name for the current culture, as the following example illustrates.</source>
+          <target state="translated">그러나 이 방법은 다음 예제에 나와 있는 것처럼 현재 문화권의 지역화된 요일 이름을 생성하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performing formatting operations<ept id="p1">](performing-formatting-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>서식 지정 작업 수행<ept id="p1">](performing-formatting-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Standard date and time format strings<ept id="p1">](standard-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>표준 날짜 및 시간 서식 문자열<ept id="p1">](standard-datetime.md)</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Custom date and time format strings<ept id="p1">](custom-datetime.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>사용자 지정 날짜 및 시간 서식 문자열<ept id="p1">](custom-datetime.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

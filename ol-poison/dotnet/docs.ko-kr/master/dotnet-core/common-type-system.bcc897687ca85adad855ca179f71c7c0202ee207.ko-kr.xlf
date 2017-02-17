@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">35098ce238af88229fddf2adc7cf762848781ebc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\common-type-system.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f66d2394f5af4bc23f5a34be8d74d91b9969f4c7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">27ebc9a4a8a31450d653e65ed008ffe096e6a0cc</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file common-type-system.bcc897687ca85adad855ca179f71c7c0202ee207.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">심층 공용 형식 시스템</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">심층 공용 형식 시스템</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Common type system in depth</source>
+          <target state="translated">심층 공용 형식 시스템</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic contains the following sections that explore the common type system in depth:</source>
+          <target state="translated">이 항목은 공용 형식 시스템을 자세히 설명하는 다음 섹션으로 이루어져 있습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Types in .NET<ept id="p1">](#types-in-net)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET의 형식<ept id="p1">](#types-in-net)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type definitions<ept id="p1">](#type-definitions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>형식 정의<ept id="p1">](#type-definitions)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type members<ept id="p1">](#type-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>형식 멤버<ept id="p1">](#type-members)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Characteristics of type members<ept id="p1">](#characteristics-of-type-members)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>형식 멤버의 특성<ept id="p1">](#characteristics-of-type-members)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Types in .NET</source>
+          <target state="translated">.NET의 형식</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>All types in .NET are either value types or reference types.</source>
+          <target state="translated">.NET의 모든 형식은 값 형식 또는 참조 형식입니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Value types are data types whose objects are represented by the object's actual value.</source>
+          <target state="translated">값 형식은 해당 형식의 개체가 개체의 실제 값으로 나타나는 데이터 형식입니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If an instance of a value type is assigned to a variable, that variable is given a fresh copy of the value.</source>
+          <target state="translated">값 형식의 인스턴스가 변수에 할당되면 해당 변수에는 값의 새 사본이 부여됩니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Reference types are data types whose objects are represented by a reference (similar to a pointer) to the object's actual value.</source>
+          <target state="translated">참조 형식은 해당 형식의 개체가 개체의 실제 값에 대한 참조(포인터와 유사)로 나타나는 데이터 형식입니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If a reference type is assigned to a variable, that variable references (points to) the original value.</source>
+          <target state="translated">참조 형식이 변수에 할당되면 해당 변수는 원래 값을 참조하거나 가리키며</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>No copy is made.</source>
+          <target state="translated">복사는 수행되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The common type system in .NET supports the following five categories of types:</source>
+          <target state="translated">.NET의 공용 형식 시스템에서는 다음과 같은 다섯 가지 범주의 형식을 지원합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Classes<ept id="p1">](#classes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>클래스<ept id="p1">](#classes)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Structures<ept id="p1">](#structures)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>구조체<ept id="p1">](#structures)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Enumerations<ept id="p1">](#enumerations)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>열거형<ept id="p1">](#enumerations)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Interfaces<ept id="p1">](#interfaces)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>인터페이스<ept id="p1">](#interfaces)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Delegates<ept id="p1">](#delegates)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>대리자<ept id="p1">](#delegates)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Classes</source>
+          <target state="translated">클래스</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A class is a reference type that can be derived directly from another class and that is derived implicitly from <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>.</source>
+          <target state="translated">클래스는 다른 클래스에서 직접 파생될 수 있거나 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>에서 암시적으로 파생되는 참조 형식입니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The class defines the operations that an object (which is an instance of the class) can perform (methods, events, or properties) and the data that the object contains (fields).</source>
+          <target state="translated">클래스는 개체(클래스의 인스턴스)가 수행할 수 있는 작업(메서드, 이벤트 또는 속성)과 개체에 포함된 데이터(필드)를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Although a class generally includes both definition and implementation (unlike interfaces, for example, which contain only definition without implementation), it can have one or more members that have no implementation.</source>
+          <target state="translated">구현 없이 정의만이 포함된 인터페이스와는 달리, 클래스에는 대개 정의와 구현이 모두 포함되어 있지만 구현이 없는 멤버가 하나 이상 있을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The following table describes some of the characteristics that a class may have.</source>
+          <target state="translated">다음 표에는 클래스가 가질 수 있는 일부 특성에 대한 설명이 나와 있습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Each language that supports the runtime provides a way to indicate that a class or class member has one or more of these characteristics.</source>
+          <target state="translated">런타임을 지원하는 각 언어에는 클래스나 클래스 멤버가 이들 특성 중 하나 이상을 갖고 있음을 표시하는 방식이 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, individual programming languages that target .NET may not make all these characteristics available.</source>
+          <target state="translated">그러나 .NET을 대상으로 하는 개별 프로그래밍 언어에서 이 특성들을 모두 사용할 수 있는 것은 아닙니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Characteristic</source>
+          <target state="translated">특성</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>sealed</source>
+          <target state="translated">sealed</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Specifies that another class cannot be derived from this type.</source>
+          <target state="translated">이 형식에서 다른 클래스를 파생할 수 없도록 지정합니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>implements</source>
+          <target state="translated">구현</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Indicates that the class uses one or more interfaces by providing implementations of interface members.</source>
+          <target state="translated">인터페이스 멤버의 구현을 제공하여 클래스에서 하나 이상의 인터페이스를 사용할 수 있음을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>abstract</source>
+          <target state="translated">abstract</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Indicates that the class cannot be instantiated.</source>
+          <target state="translated">클래스를 인스턴스화할 수 없음을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>To use it, you must derive another class from it.</source>
+          <target state="translated">이러한 클래스를 사용하려면 다른 클래스를 파생해야 합니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>inherits</source>
+          <target state="translated">상속</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Indicates that instances of the class can be used anywhere the base class is specified.</source>
+          <target state="translated">기본 클래스를 지정한 곳에서 클래스의 인스턴스를 사용할 수 있음을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>A derived class that inherits from a base class can use the implementation of any public members provided by the base class, or the derived class can override the implementation of the public members with its own implementation.</source>
+          <target state="translated">기본 클래스에서 상속된 파생 클래스에서는 기본 클래스에서 제공하는 공용 멤버의 구현을 사용할 수도 있고, 파생 클래스의 고유한 구현을 사용하여 공용 멤버의 구현을 재정의할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>exported or not exported</source>
+          <target state="translated">exported 또는 not exported</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Indicates whether a class is visible outside the assembly in which it is defined.</source>
+          <target state="translated">클래스를 정의한 어셈블리 밖에서 클래스를 볼 수 있는지의 여부를 지정하며</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This characteristic applies only to top-level classes and not to nested classes.</source>
+          <target state="translated">이 특성은 중첩 클래스에는 적용되지 않고 최상위 클래스에만 적용됩니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A class can also be nested in a parent class or structure.</source>
+          <target state="translated">클래스는 부모 클래스 또는 구조체 내에 중첩될 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Nested classes also have member characteristics.</source>
+          <target state="translated">중첩된 클래스에도 멤버 특성이 있습니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Nested types<ept id="p1">](#nested-types)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>중첩 형식<ept id="p1">](#nested-types)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Class members that have no implementation are abstract members.</source>
+          <target state="translated">구현이 없는 클래스 멤버는 추상 멤버입니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A class that has one or more abstract members is itself abstract; new instances of it cannot be created.</source>
+          <target state="translated">하나 이상의 멤버가 있는 클래스는 그 자체가 추상적이기 때문에 이 클래스의 새 인스턴스를 만들 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract.</source>
+          <target state="translated">런타임을 대상으로 하는 일부 언어에서는 추상 멤버가 없는 클래스를 추상으로 표시할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate.</source>
+          <target state="translated">파생 클래스에서 상속하거나 재정의할 수 있는 기본 기능의 집합을 캡슐화하려는 경우 상황에 따라 추상 클래스를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Classes that are not abstract are referred to as concrete classes.</source>
+          <target state="translated">추상이 아닌 클래스를 구체적인 클래스라고 합니다.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>A class can implement any number of interfaces, but it can inherit from only one base class in addition to <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>, from which all classes inherit implicitly.</source>
+          <target state="translated">클래스는 인터페이스를 여러 개 구현할 수 있지만 모든 클래스가 암시적으로 상속받는 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 외에 하나의 기본 클래스에서만 상속받을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>All classes must have at least one constructor, which initializes new instances of the class.</source>
+          <target state="translated">모든 클래스에는 클래스의 새 인스턴스를 초기화하는 생성자가 최소한 하나는 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If you do not explicitly define a constructor, most compilers will automatically provide a default (parameterless) constructor.</source>
+          <target state="translated">생성자를 명시적으로 정의하지 않으면 대부분의 컴파일러는 자동으로 매개 변수가 없는 기본 생성자를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Structures</source>
+          <target state="translated">구조체</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A structure is a value type that derives implicitly from <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>, which in turn is derived from <bpt id="p2">[</bpt>System.Object<ept id="p2">](xref:System.Object)</ept>.</source>
+          <target state="translated">구조체는 <bpt id="p2">[</bpt>System.Object<ept id="p2">](xref:System.Object)</ept>에서 파생된 <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>에서 다시 암시적으로 파생되는 값 형식입니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>A structure is very useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters.</source>
+          <target state="translated">구조체는 적은 메모리를 요구하는 값을 나타낼 때 유용할 뿐 아니라 강력한 형식의 매개 변수를 갖는 메서드에 값으로 전달되는 매개 변수로 값을 전달할 때도 유용합니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In .NET, all primitive data types (<bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept>, <bpt id="p2">[</bpt>Byte<ept id="p2">](xref:System.Byte)</ept>, <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept>, <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept>, <bpt id="p5">[</bpt>Decimal<ept id="p5">](xref:System.Decimal)</ept>, <bpt id="p6">[</bpt>Double<ept id="p6">](xref:System.Double)</ept>, <bpt id="p7">[</bpt>Int16<ept id="p7">](xref:System.Int16)</ept>, <bpt id="p8">[</bpt>Int32<ept id="p8">](xref:System.Int32)</ept>, <bpt id="p9">[</bpt>Int64<ept id="p9">](xref:System.Int64)</ept>, <bpt id="p10">[</bpt>SByte<ept id="p10">](xref:System.SByte)</ept>, <bpt id="p11">[</bpt>Single<ept id="p11">](xref:System.Single)</ept>, <bpt id="p12">[</bpt>UInt16<ept id="p12">](xref:System.UInt16)</ept>, <bpt id="p13">[</bpt>UInt32<ept id="p13">](xref:System.UInt32)</ept>, and <bpt id="p14">[</bpt>UInt64<ept id="p14">](xref:System.UInt64)</ept>) are defined as structures.</source>
+          <target state="translated">.NET의 모든 기본 데이터 형식(<bpt id="p1">[</bpt>Boolean<ept id="p1">](xref:System.Boolean)</ept>, <bpt id="p2">[</bpt>Byte<ept id="p2">](xref:System.Byte)</ept>, <bpt id="p3">[</bpt>Char<ept id="p3">](xref:System.Char)</ept>, <bpt id="p4">[</bpt>DateTime<ept id="p4">](xref:System.DateTime)</ept>, <bpt id="p5">[</bpt>Decimal<ept id="p5">](xref:System.Decimal)</ept>, <bpt id="p6">[</bpt>Double<ept id="p6">](xref:System.Double)</ept>, <bpt id="p7">[</bpt>Int16<ept id="p7">](xref:System.Int16)</ept>, <bpt id="p8">[</bpt>Int32<ept id="p8">](xref:System.Int32)</ept>, <bpt id="p9">[</bpt>Int64<ept id="p9">](xref:System.Int64)</ept>, <bpt id="p10">[</bpt>SByte<ept id="p10">](xref:System.SByte)</ept>, <bpt id="p11">[</bpt>Single<ept id="p11">](xref:System.Single)</ept>, <bpt id="p12">[</bpt>UInt16<ept id="p12">](xref:System.UInt16)</ept>, <bpt id="p13">[</bpt>UInt32<ept id="p13">](xref:System.UInt32)</ept> 및 <bpt id="p14">[</bpt>UInt64<ept id="p14">](xref:System.UInt64)</ept>)은 구조체로 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Like classes, structures define both data (the fields of the structure) and the operations that can be performed on that data (the methods of the structure).</source>
+          <target state="translated">클래스와 마찬가지로 구조체는 데이터(구조체의 필드)와 해당 데이터에 대해 수행할 수 있는 작업(구조체의 메서드)을 정의합니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This means that you can call methods on structures, including the virtual methods defined on the <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> and <bpt id="p2">[</bpt>System.ValueType<ept id="p2">](xref:System.ValueType)</ept> classes, and any methods defined on the value type itself.</source>
+          <target state="translated">이는 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 및 <bpt id="p2">[</bpt>System.ValueType<ept id="p2">](xref:System.ValueType)</ept> 클래스에 정의된 가상 메서드와 값 형식 자체에 정의된 메서드를 비롯하여 구조체에서 메서드를 호출할 수 있음을 의미합니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In other words, structures can have fields, properties, and events, as well as static and nonstatic methods.</source>
+          <target state="translated">다시 말하면 구조체에는 필드, 속성, 이벤트뿐 아니라 정적 및 비정적 메서드가 포함될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You can create instances of structures, pass them as parameters, store them as local variables, or store them in a field of another value type or reference type.</source>
+          <target state="translated">구조체의 인스턴스를 만들어 매개 변수로 전달하고 지역 변수로 저장하거나 다른 값 형식 또는 참조 형식의 필드에 저장할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Structures can also implement interfaces.</source>
+          <target state="translated">구조체는 인터페이스를 구현할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Value types also differ from classes in several respects.</source>
+          <target state="translated">또한 값 형식이 몇 가지 측면에서 클래스와 다릅니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>First, although they implicitly inherit from <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>, they cannot directly inherit from any type.</source>
+          <target state="translated">먼저, 값 형식은 <bpt id="p1">[</bpt>System.ValueType<ept id="p1">](xref:System.ValueType)</ept>에서 암시적으로 상속되긴 하지만 형식에서 직접 상속받을 수는 없습니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Similarly, all value types are sealed, which means that no other type can be derived from them.</source>
+          <target state="translated">마찬가지로 모든 값 형식은 봉인되어 있으므로 이 형식에서 다른 형식을 파생할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>They also do not require constructors.</source>
+          <target state="translated">값 형식에는 생성자도 필요하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For each value type, the common language runtime supplies a corresponding boxed type, which is a class that has the same state and behavior as the value type.</source>
+          <target state="translated">공용 언어 런타임에서는 각 값 형식에 대해 해당 boxed 형식 클래스를 제공합니다. 이 클래스는 값 형식과 동일한 상태 및 동작을 가집니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An instance of a value type is boxed when it is passed to a method that accepts a parameter of type <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept>.</source>
+          <target state="translated">값 형식의 인스턴스가 <bpt id="p1">[</bpt>System.Object<ept id="p1">](xref:System.Object)</ept> 형식의 매개 변수를 허용하는 메서드에 전달될 때는 boxing됩니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>It is unboxed (that is, converted from an instance of a class back to an instance of a value type) when control returns from a method call that accepts a value type as a by-reference parameter.</source>
+          <target state="translated">하지만 참조로 전달되는 매개 변수로 값 형식을 허용하는 메서드 호출에서 컨트롤이 반환될 때는 이 인스턴스가 unboxing됩니다. 즉, 클래스의 인스턴스에서 값 형식의 인스턴스로 다시 변환됩니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Some languages require that you use special syntax when the boxed type is required; others automatically use the boxed type when it is needed.</source>
+          <target state="translated">일부 언어에서는 boxed 형식이 필요할 때 별도의 구문을 사용해야 하지만 그 밖의 언어에서는 필요할 때 자동으로 boxed 형식을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When you define a value type, you are defining both the boxed and the unboxed type.</source>
+          <target state="translated">값 형식을 정의하면 boxed 형식과 unboxed 형식이 모두 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Enumerations</source>
+          <target state="translated">열거형</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>An enumeration (enum) is a value type that inherits directly from <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept> and that supplies alternate names for the values of an underlying primitive type.</source>
+          <target state="translated">열거형(enum)은 <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept>에서 직접 상속받고 내부 기본 형식의 값에 대한 대체 이름을 제공하는 값 형식입니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>An enumeration type has a name, an underlying type that must be one of the built-in signed or unsigned integer types (such as <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>, <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>, or <bpt id="p3">[</bpt>UInt64<ept id="p3">](xref:System.UInt64)</ept>), and a set of fields.</source>
+          <target state="translated">열거형 형식은 이름, 내부 형식 및 필드 집합으로 구성됩니다. 내부 형식은 기본으로 제공되는 부호 있는 정수나 부호 없는 정수 형식(예: <bpt id="p1">[</bpt>Byte<ept id="p1">](xref:System.Byte)</ept>, <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept> 또는 <bpt id="p3">[</bpt>UInt64<ept id="p3">](xref:System.UInt64)</ept>) 중 하나여야 합니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The fields are static literal fields, each of which represents a constant.</source>
+          <target state="translated">각 필드는 상수를 나타내는 정적 리터럴 필드입니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The same value can be assigned to multiple fields.</source>
+          <target state="translated">여러 필드에 동일한 값을 할당할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When this occurs, you must mark one of the values as the primary enumeration value for reflection and string conversion.</source>
+          <target state="translated">이 경우 리플렉션 및 문자열 변환을 위해 값 중 하나를 기본 열거형 값으로 표시해야 합니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>You can assign a value of the underlying type to an enumeration and vice versa (no cast is required by the runtime).</source>
+          <target state="translated">내부 형식의 값을 열거형에 할당하거나 반대로도 할당할 수 있으며 이때 런타임에서 캐스팅할 필요가 없습니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You can create an instance of an enumeration and call the methods of <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept>, as well as any methods defined on the enumeration's underlying type.</source>
+          <target state="translated">열거형의 인스턴스를 만들고 열거형의 내부 형식에 정의된 메서드뿐 아니라 <bpt id="p1">[</bpt>System.Enum<ept id="p1">](xref:System.Enum)</ept>의 메서드도 호출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, some languages might not let you pass an enumeration as a parameter when an instance of the underlying type is required (or vice versa).</source>
+          <target state="translated">그러나 일부 언어에서는 내부 형식의 인스턴스가 필요한 경우 열거형을 매개 변수로 전달할 수 없고 그 반대로도 전달할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The following additional restrictions apply to enumerations:</source>
+          <target state="translated">다음은 열거형에 적용되는 추가 제약 조건입니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>They cannot define their own methods.</source>
+          <target state="translated">고유의 메서드를 정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>They cannot implement interfaces.</source>
+          <target state="translated">인터페이스를 구현할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>They cannot define properties or events.</source>
+          <target state="translated">속성 또는 이벤트를 정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>They cannot be generic, unless they are generic only because they are nested within a generic type.</source>
+          <target state="translated">열거형은 제네릭 형식 내에 중첩되어 있으므로 단독 제네릭이 아니면 제네릭이 될 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>That is, an enumeration cannot have type parameters of its own.</source>
+          <target state="translated">즉, 열거형에는 자체의 형식 매개 변수를 사용할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Nested types (including enumerations) created with C# include the type parameters of all enclosing generic types, and are therefore generic even if they do not have type parameters of their own.</source>
+          <target state="translated">C#으로 만든 중첩 형식(열거형 포함)은 모든 바깥쪽 제네릭 형식의 형식 매개 변수를 포함하므로 자체의 형식 매개 변수가 없더라도 제네릭입니다.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Type.MakeGenericType<ept id="p1">](xref:System.Type.MakeGenericType(System.Type[]))</ept> reference topic.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>Type.MakeGenericType<ept id="p1">](xref:System.Type.MakeGenericType(System.Type[]))</ept> 참조 항목을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> attribute denotes a special kind of enumeration called a bit field.</source>
+          <target state="translated"><bpt id="p1">[</bpt>FlagsAttribute<ept id="p1">](xref:System.FlagsAttribute)</ept> 특성은 비트 필드라는 특수한 열거형을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The runtime itself does not distinguish between traditional enumerations and bit fields, but your language might do so.</source>
+          <target state="translated">런타임 자체에서는 기존의 열거형과 비트 필드를 구분하지 않지만 언어에 따라서는 이를 구분할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>When this distinction is made, bitwise operators can be used on bit fields, but not on enumerations, to generate unnamed values.</source>
+          <target state="translated">이를 구분할 경우 열거형이 아니라 비트 필드에 비트 연산자를 적용하여 명명되지 않은 값을 생성할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Enumerations are generally used for lists of unique elements, such as days of the week, country or region names, and so on.</source>
+          <target state="translated">일반적으로 열거형은 요일, 국가 또는 지역 이름 등과 같은 고유한 요소의 목록에 사용하고,</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Bit fields are generally used for lists of qualities or quantities that might occur in combination, such as <ph id="ph1">`Red And Big And Fast`</ph>.</source>
+          <target state="translated">비트 필드는 <ph id="ph1">`Red And Big And Fast`</ph> 같은 조합에서 나타날 수 있는 특성 및 수량 목록에 사용합니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use both bit fields and traditional enumerations.</source>
+          <target state="translated">다음 예제에서는 비트 필드와 기존의 열거형을 둘 다 사용하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Interfaces</source>
+          <target state="translated">인터페이스</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>An interface defines a contract that specifies a "can do" relationship or a "has a" relationship.</source>
+          <target state="translated">인터페이스는 "실행 가능" 관계나 "소유" 관계를 지정하는 계약을 정의합니다.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Interfaces are often used to implement functionality, such as comparing and sorting (the <bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> interfaces), testing for equality (the <bpt id="p3">[</bpt>IEquatable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p3">](xref:System.IEquatable%601)</ept> interface), or enumerating items in a collection (the <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> and <bpt id="p5">[</bpt>IEnumerable<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p5">](xref:System.Collections.Generic.IEnumerable%601)</ept> interfaces).</source>
+          <target state="translated">인터페이스는 비교 및 정렬(<bpt id="p1">[</bpt>IComparable<ept id="p1">](xref:System.IComparable)</ept> and <bpt id="p2">[</bpt>IComparable<ph id="ph1">&amp;lt;</ph>T<ph id="ph2">&amp;gt;</ph><ept id="p2">](xref:System.IComparable%601)</ept> 인터페이스), 같은지 테스트(<bpt id="p3">[</bpt>IEquatable<ph id="ph3">&amp;lt;</ph>T<ph id="ph4">&amp;gt;</ph><ept id="p3">](xref:System.IEquatable%601)</ept> 인터페이스) 또는 컬렉션의 항목 열거(<bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> 및 <bpt id="p5">[</bpt>IEnumerable<ph id="ph5">&amp;lt;</ph>T<ph id="ph6">&amp;gt;</ph><ept id="p5">](xref:System.Collections.Generic.IEnumerable%601)</ept> 인터페이스)와 같은 기능을 구현하는 데 주로 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Interfaces can have properties, methods, and events, all of which are abstract members; that is, although the interface defines the members and their signatures, it leaves it to the type that implements the interface to define the functionality of each interface member.</source>
+          <target state="translated">인터페이스에는 속성, 메서드 및 이벤트가 있을 수 있으며 이러한 멤버는 모두 추상 멤버입니다. 즉, 인터페이스는 멤버와 시그니처를 정의하지만 각 인터페이스 멤버의 기능은 인터페이스를 구현하는 형식에서 정의해야 합니다.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This means that any class or structure that implements an interface must supply definitions for the abstract members declared in the interface.</source>
+          <target state="translated">따라서 인터페이스를 구현하는 모든 클래스나 구조체는 인터페이스에 선언된 추상 멤버에 대한 정의를 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>An interface can require any implementing class or structure to also implement one or more other interfaces.</source>
+          <target state="translated">인터페이스를 구현하는 클래스나 구조체에서 하나 이상의 다른 인터페이스를 함께 구현해야 할 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following restrictions apply to interfaces:</source>
+          <target state="translated">인터페이스에는 다음과 같은 제약 조건이 따릅니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>An interface can be declared with any accessibility, but interface members must all have public accessibility.</source>
+          <target state="translated">인터페이스의 액세스 가능성은 원하는 대로 선언할 수 있지만 모든 인터페이스 멤버는 공용 액세스 가능성을 가져야 합니다.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Interfaces cannot define constructors.</source>
+          <target state="translated">인터페이스는 생성자를 정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Interfaces cannot define fields.</source>
+          <target state="translated">인터페이스는 필드를 정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Interfaces can define only instance members.</source>
+          <target state="translated">인터페이스에서는 인스턴스 멤버만을 정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>They cannot define static members.</source>
+          <target state="translated">정적 멤버는 정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Each language must provide rules for mapping an implementation to the interface that requires the member, because more than one interface can declare a member with the same signature, and these members can have separate implementations.</source>
+          <target state="translated">둘 이상의 인터페이스에서 동일한 시그니처의 멤버를 선언할 수 있고 이들 멤버가 별도의 구현을 가질 수 있으므로 각 언어에서는 멤버를 요구하는 인터페이스에 구현을 매핑하기 위한 규칙을 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Delegates</source>
+          <target state="translated">대리자</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Delegates are reference types that serve a purpose similar to that of function pointers in C++.</source>
+          <target state="translated">대리자는 C++의 함수 포인터와 비슷한 목적으로 사용되는 참조 형식입니다.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>They are used for event handlers and callback functions in .NET.</source>
+          <target state="translated">대리자는 .NET의 이벤트 처리기와 콜백 함수에 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Unlike function pointers, delegates are secure, verifiable, and type safe.</source>
+          <target state="translated">함수 포인터와 달리 대리자는 안전하고, 확인할 수 있으며, 형식이 안전합니다.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>A delegate type can represent any instance method or static method that has a compatible signature.</source>
+          <target state="translated">대리자 형식은 호환되는 시그니처가 포함된 정적 메서드 또는 인스턴스 메서드를 나타낼 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>A parameter of a delegate is compatible with the corresponding parameter of a method if the type of the delegate parameter is more restrictive than the type of the method parameter, because this guarantees that an argument passed to the delegate can be passed safely to the method.</source>
+          <target state="translated">대리자 매개 변수의 형식이 메서드 매개 변수의 형식보다 제한적인 경우 대리자의 매개 변수는 메서드의 해당 매개 변수와 호환됩니다. 이 경우 대리자로 전달된 인수를 안전하게 메서드로 전달할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Similarly, the return type of a delegate is compatible with the return type of a method if the return type of the method is more restrictive than the return type of the delegate, because this guarantees that the return value of the method can be cast safely to the return type of the delegate.</source>
+          <target state="translated">마찬가지로 메서드의 반환 형식이 대리자의 반환 형식보다 제한적인 경우 대리자의 반환 형식은 메서드의 반환 형식과 호환됩니다. 이 경우 메서드의 반환 값을 안전하게 대리자의 반환 형식으로 캐스팅할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For example, a delegate that has a parameter of type <bpt id="p1">[</bpt>IEnumerable<ept id="p1">](xref:System.Collections.IEnumerable)</ept> and a return type of <bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept> can represent a method that has a parameter of type <bpt id="p3">[</bpt>Object<ept id="p3">](xref:System.Object)</ept> and a return value of type <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept>.</source>
+          <target state="translated">예를 들어 <bpt id="p1">[</bpt>IEnumerable<ept id="p1">](xref:System.Collections.IEnumerable)</ept> 형식의 매개 변수가 있고 반환 형식이 <bpt id="p2">[</bpt>Object<ept id="p2">](xref:System.Object)</ept>인 대리자는 <bpt id="p3">[</bpt>Object<ept id="p3">](xref:System.Object)</ept> 형식의 매개 변수가 있고 반환 값이 <bpt id="p4">[</bpt>IEnumerable<ept id="p4">](xref:System.Collections.IEnumerable)</ept> 형식인 메서드를 나타낼 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>A delegate is said to be bound to the method it represents.</source>
+          <target state="translated">대리자는 이 대리자가 나타내는 메서드에 바인딩됩니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>In addition to being bound to the method, a delegate can be bound to an object.</source>
+          <target state="translated">대리자는 메서드에 바인딩될 뿐 아니라 개체에도 바인딩될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>The object represents the first parameter of the method, and is passed to the method every time the delegate is invoked.</source>
+          <target state="translated">개체는 메서드의 첫 번째 매개 변수를 나타내며 대리자가 호출될 때마다 메서드에 전달됩니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>If the method is an instance method, the bound object is passed as the implicit <ph id="ph1">`this`</ph> parameter (<ph id="ph2">`Me`</ph> in Visual Basic); if the method is static, the object is passed as the first formal parameter of the method, and the delegate signature must match the remaining parameters.</source>
+          <target state="translated">메서드가 인스턴스 메서드이면 바인딩된 개체가 암시적 <ph id="ph1">`this`</ph> 매개 변수(Visual Basic의 경우 <ph id="ph2">`Me`</ph>)로 전달됩니다. 메서드가 정적이면 개체는 메서드의 첫 번째 정식 매개 변수로 전달되며 대리자 시그니처가 나머지 매개 변수와 일치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>All delegates inherit from <bpt id="p1">[</bpt>System.MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>, which inherits from <bpt id="p2">[</bpt>System.Delegate<ept id="p2">](xref:System.Delegate)</ept>.</source>
+          <target state="translated">모든 대리자는 <bpt id="p2">[</bpt>System.Delegate<ept id="p2">](xref:System.Delegate)</ept>에서 상속받는 <bpt id="p1">[</bpt>System.MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>에서 다시 상속받습니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The C# and Visual Basic languages don't allow inheritance from these types.</source>
+          <target state="translated">C# 및 Visual Basic 언어에서는 이러한 형식에서 상속받는 것을 허용하지 않으며,</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Instead, they provide keywords for declaring delegates.</source>
+          <target state="translated">대신 대리자를 선언하기 위한 키워드를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Because delegates inherit from <bpt id="p1">[</bpt>MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>, a delegate has an invocation list, which is a list of methods that the delegate represents and that are executed when the delegate is invoked.</source>
+          <target state="translated">대리자는 <bpt id="p1">[</bpt>MulticastDelegate<ept id="p1">](xref:System.MulticastDelegate)</ept>에서 상속받기 때문에 대리자에 호출 목록이 있습니다. 이 목록에는 대리자가 나타내는 메서드와 대리자가 호출될 때 실행되는 메서드가 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>All methods in the list receive the arguments supplied when the delegate is invoked.</source>
+          <target state="translated">이 목록의 모든 메서드는 대리자가 호출될 때 제공되는 인수를 받습니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The return value is not defined for a delegate that has more than one method in its invocation list, even if the delegate has a return type.</source>
+          <target state="translated">호출 목록에 하나 이상의 메서드가 있는 대리자에 대해서는 반환 형식을 가지고 있더라도 반환 값이 정의되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it.</source>
+          <target state="translated">대부분의 경우 콜백 메서드와 마찬가지로 대리자는 하나의 메서드만 나타내며, 대리자를 만들고 호출하는 것 외에는 필요한 작업이 없습니다.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>For delegates that represent multiple methods, .NET provides methods of the <bpt id="p1">[</bpt>Delegate<ept id="p1">](xref:System.Delegate)</ept> and <bpt id="p2">[</bpt>MulticastDelegate<ept id="p2">](xref:System.MulticastDelegate)</ept> delegate classes to support operations such as adding a method to a delegate's invocation list (the <bpt id="p3">[</bpt>Delegate.Combine<ept id="p3">](xref:System.Delegate.Combine(System.Delegate,System.Delegate))</ept> method), removing a method (the <bpt id="p4">[</bpt>Delegate.Remove<ept id="p4">](xref:System.Delegate.Remove(System.Delegate,System.Delegate))</ept> method), and getting the invocation list (the <bpt id="p5">[</bpt>Delegate.GetInvocationList<ept id="p5">](xref:System.Delegate.GetInvocationList)</ept> method).</source>
+          <target state="translated">.NET에서는 여러 메서드를 나타내는 대리자에 대해 <bpt id="p1">[</bpt>Delegate<ept id="p1">](xref:System.Delegate)</ept> 및 <bpt id="p2">[</bpt>MulticastDelegate<ept id="p2">](xref:System.MulticastDelegate)</ept> 대리자 클래스의 메서드를 제공하여 대리자 호출 목록에 메서드 추가(<bpt id="p3">[</bpt>Delegate.Combine<ept id="p3">](xref:System.Delegate.Combine(System.Delegate,System.Delegate))</ept> 메서드), 메서드 제거(<bpt id="p4">[</bpt>Delegate.Remove<ept id="p4">](xref:System.Delegate.Remove(System.Delegate,System.Delegate))</ept> 메서드), 호출 목록 가져오기(<bpt id="p5">[</bpt>Delegate.GetInvocationList<ept id="p5">](xref:System.Delegate.GetInvocationList)</ept> 메서드) 등의 작업을 지원합니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>It is not necessary to use these methods for event-handler delegates in C# or Visual Basic, because these languages provide syntax for adding and removing event handlers.</source>
+          <target state="translated">C# 또는 Visual Basic에서는 이벤트 처리기 대리자에 대해 이러한 메서드를 사용할 필요가 없습니다. 해당 언어에서 이벤트 처리기를 추가하고 제거하기 위한 구문을 제공하기 때문입니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Type definitions</source>
+          <target state="translated">형식 정의입니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>A type definition includes the following:</source>
+          <target state="translated">형식 정의에는 다음과 같은 요소가 포함됩니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Any attributes defined on the type.</source>
+          <target state="translated">형식에 정의되어 있는 특성</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The type's accessibility (visibility).</source>
+          <target state="translated">형식의 액세스 가능성(표시 여부)</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The type's name.</source>
+          <target state="translated">형식의 이름</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The type's base type.</source>
+          <target state="translated">형식의 기본 형식</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Any interfaces implemented by the type.</source>
+          <target state="translated">형식에서 구현하는 인터페이스</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Definitions for each of the type's members.</source>
+          <target state="translated">형식의 멤버 각각에 대한 정의</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <target state="translated">특성</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Attributes provide additional user-defined metadata.</source>
+          <target state="translated">특성에서는 추가적인 사용자 정의 메타데이터를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or run-time environment.</source>
+          <target state="translated">특성은 어셈블리의 형식에 대한 추가 정보를 저장하거나 디자인 타임 또는 런타임 환경에서 형식 멤버의 동작을 수정하는 데 주로 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Attributes are themselves classes that inherit from <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept>.</source>
+          <target state="translated">특성은 그 자체가 <bpt id="p1">[</bpt>System.Attribute<ept id="p1">](xref:System.Attribute)</ept>에서 상속받는 클래스입니다.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Languages that support the use of attributes each have their own syntax for applying attributes to a language element.</source>
+          <target state="translated">특성 사용을 지원하는 언어 각각에는 특성을 언어 요소에 적용하기 위한 자체 구문이 있습니다.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept> that is applied to that attribute class.</source>
+          <target state="translated">특성은 거의 대부분의 언어 요소에 적용될 수 있으며, 특성이 적용될 수 있는 특정 요소는 해당 특성 클래스에 적용된 <bpt id="p1">[</bpt>AttributeUsageAttribute<ept id="p1">](xref:System.AttributeUsageAttribute)</ept>에서 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Type accessibility</source>
+          <target state="translated">형식 액세스 가능성</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>All types have a modifier that governs their accessibility from other types.</source>
+          <target state="translated">모든 형식에는 다른 형식에서 액세스할 수 있는지를 제어하는 한정자가 있습니다.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>The following table describes the type accessibilities supported by the runtime.</source>
+          <target state="translated">다음 표에서는 런타임에서 지원하는 형식 액세스 가능성에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Accessibility</source>
+          <target state="translated">액세스 가능성</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>public</source>
+          <target state="translated">public</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The type is accessible by all assemblies.</source>
+          <target state="translated">모든 어셈블리에서 액세스할 수 있는 형식입니다.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>assembly</source>
+          <target state="translated">어셈블리</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The type is accessible only from within its assembly.</source>
+          <target state="translated">해당 어셈블리 안에서만 액세스할 수 있는 형식입니다.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>The accessibility of a nested type depends on its accessibility domain, which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type.</source>
+          <target state="translated">중첩된 형식의 액세스 가능성은 액세스 가능 도메인에 따라 다릅니다. 액세스 가능 도메인은 멤버에 대해 선언된 액세스 가능성 및 한 수준 위 형식의 액세스 가능 도메인에 의해 결정됩니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, the accessibility domain of a nested type cannot exceed that of the containing type.</source>
+          <target state="translated">그러나 중첩 형식의 액세스 가능 도메인은 포함하는 형식의 액세스 가능 도메인을 벗어날 수는 없습니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The accessibility domain of a nested member <ph id="ph1">`M`</ph> declared in a type <ph id="ph2">`T`</ph>within a program <ph id="ph3">`P`</ph> is defined as follows (noting that <ph id="ph4">`M`</ph> might itself be a type):</source>
+          <target state="translated"><ph id="ph3">`P`</ph> 프로그램 내의 <ph id="ph2">`T`</ph> 형식에서 선언된 중첩된 멤버 <ph id="ph1">`M`</ph>의 접근성 도메인은 다음과 같이 정의됩니다. <ph id="ph4">`M`</ph> 자체가 형식일 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`public`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the accessibility domain of <ph id="ph4">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M`</ph>에 대해 선언된 액세스 가능성이 <ph id="ph2">`public`</ph>인 경우 <ph id="ph3">`M`</ph>의 액세스 가능 도메인은 <ph id="ph4">`T`</ph>의 액세스 가능 도메인입니다.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`protected internal`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of <ph id="ph5">`P`</ph> and the program text of any type derived from <ph id="ph6">`T`</ph> declared outside <ph id="ph7">`P`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M`</ph>에 대해 선언된 액세스 가능성이 <ph id="ph2">`protected internal`</ph>인 경우 <ph id="ph3">`M`</ph>의 액세스 가능 도메인은 <ph id="ph4">`T`</ph>의 프로그램 텍스트를 가진 <ph id="ph5">`P`</ph>의 액세스 가능 도메인과 <ph id="ph6">`T`</ph> 외부에 선언된 <ph id="ph7">`P`</ph>에서 파생된 모든 형식의 프로그램 텍스트 사이의 교집합 부분입니다.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`protected`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of <ph id="ph5">`T`</ph> and any type derived from <ph id="ph6">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M`</ph>에 대해 선언된 액세스 가능성이 <ph id="ph2">`protected`</ph>인 경우 <ph id="ph3">`M`</ph>의 액세스 가능 도메인은 <ph id="ph4">`T`</ph>의 프로그램 텍스트를 가진 <ph id="ph5">`T`</ph>의 액세스 가능 도메인과 <ph id="ph6">`T`</ph>에서 파생된 모든 형식 사이의 교집합 부분입니다.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`internal`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the intersection of the accessibility domain of <ph id="ph4">`T`</ph> with the program text of<ph id="ph5">`P`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M`</ph>의 선언된 접근성이 <ph id="ph2">`internal`</ph>인 경우 <ph id="ph3">`M`</ph>의 접근성 도메인은 <ph id="ph5">`P`</ph>의 접근성 도메인과 프로그램 텍스트 <ph id="ph4">`T`</ph>의 교집합 부분입니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>If the declared accessibility of <ph id="ph1">`M`</ph> is <ph id="ph2">`private`</ph>, the accessibility domain of <ph id="ph3">`M`</ph> is the program text of <ph id="ph4">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`M`</ph>에 대해 선언된 액세스 가능성이 <ph id="ph2">`private`</ph>인 경우 <ph id="ph3">`M`</ph>의 액세스 가능 도메인은 <ph id="ph4">`T`</ph>의 프로그램 텍스트입니다.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Type names</source>
+          <target state="translated">형식 이름</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The common type system imposes only two restrictions on names:</source>
+          <target state="translated">공용 형식 시스템에서 형식 이름에는 두 가지 제약 조건이 있습니다.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>All names are encoded as strings of Unicode (16-bit) characters.</source>
+          <target state="translated">모든 이름은 유니코드(16비트) 문자의 문자열로 인코딩됩니다.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Names are not permitted to have an embedded (16-bit) value of 0x0000.</source>
+          <target state="translated">이름에 값 0x0000(16비트)을 포함할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>However, most languages impose additional restrictions on type names.</source>
+          <target state="translated">그러나 대부분의 언어에서는 형식 이름에 대해 추가적인 제한을 적용합니다.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>All comparisons are done on a byte-by-byte basis, and are therefore case-sensitive and locale-independent.</source>
+          <target state="translated">비교 연산은 바이트 단위로 수행되므로 대/소문자를 구분하며 로캘에 종속되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module.</source>
+          <target state="translated">형식은 다른 모듈 및 어셈블리의 형식을 참조할 수 있지만 하나의 .NET 모듈 내에서 완전히 정의되어야 합니다.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>(Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace.</source>
+          <target state="translated">컴파일러 지원에 따라 차이가 있지만 형식은 여러 소스 코드 파일로 분리될 수 있습니다. 형식 이름은 네임스페이스 내에서만 고유하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.</source>
+          <target state="translated">형식을 완전하게 식별하려면 형식의 구현을 포함하는 네임스페이스를 통해 형식 이름을 정규화해야 합니다.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Base types and interfaces</source>
+          <target state="translated">기본 형식 및 인터페이스</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>A type can inherit values and behaviors from another type.</source>
+          <target state="translated">형식은 다른 형식에서 값과 동작을 상속할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The common type system does not allow types to inherit from more than one base type.</source>
+          <target state="translated">공용 형식 시스템에서는 둘 이상의 기본 형식에서 형식을 상속할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>A type can implement any number of interfaces.</source>
+          <target state="translated">형식에서 구현할 수 있는 인터페이스의 수는 제한이 없습니다.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>To implement an interface, a type must implement all the virtual members of that interface.</source>
+          <target state="translated">인터페이스를 구현하려면 형식에서 해당 인터페이스의 모든 가상 멤버를 구현해야 합니다.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.</source>
+          <target state="translated">가상 메서드는 파생된 형식에서 구현할 수 있으며 정적으로 또는 동적으로 호출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>Type members</source>
+          <target state="translated">형식 멤버</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The runtime enables you to define members of your type, which specifies the behavior and state of a type.</source>
+          <target state="translated">런타임을 사용하면 형식의 동작과 상태를 지정하는 형식의 멤버를 정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Type members include the following:</source>
+          <target state="translated">다음과 같은 형식 멤버가 있습니다.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Fields<ept id="p1">](#fields)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>필드<ept id="p1">](#fields)</ept></target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Properties<ept id="p1">](#properties)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>속성<ept id="p1">](#properties)</ept></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Methods<ept id="p1">](#methods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>메서드<ept id="p1">](#methods)</ept></target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Constructors<ept id="p1">](#constructors)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>생성자<ept id="p1">](#constructors)</ept></target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Events<ept id="p1">](#events)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>이벤트<ept id="p1">](#events)</ept></target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Nested types<ept id="p1">](#nested-types)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>중첩 형식<ept id="p1">](#nested-types)</ept></target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">필드</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>A field describes and contains part of the type's state.</source>
+          <target state="translated">필드는 형식의 상태를 설명하고 상태의 일부를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>Fields can be of any type supported by the runtime.</source>
+          <target state="translated">필드는 런타임에서 지원하는 모든 형식일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>Most commonly, fields are either <ph id="ph1">`private`</ph> or <ph id="ph2">`protected`</ph>, so that they are accessible only from within the class or from a derived class.</source>
+          <target state="translated">필드는 대개 <ph id="ph1">`private`</ph> 또는 <ph id="ph2">`protected`</ph>이므로 클래스 내부나 파생 클래스에서만 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>If the value of a field can be modified from outside its type, a property set accessor is typically used.</source>
+          <target state="translated">필드의 값을 형식 외부에서 수정할 수 있는 경우 일반적으로 속성 집합 접근자가 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Publicly exposed fields are usually read-only and can be of two types:</source>
+          <target state="translated">공개적으로 노출된 필드는 대개 읽기 전용이며 다음 두 형식 중 하나일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Constants, whose value is assigned at design time.</source>
+          <target state="translated">상수. 해당 값은 디자인 타임에 할당됩니다.</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>These are static members of a class, although they are not defined using the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic) keyword.</source>
+          <target state="translated">상수는 <ph id="ph1">`static`</ph>(Visual Basic의 경우 <ph id="ph2">`Shared`</ph>) 키워드를 통해 정의되지는 않지만 클래스의 정적 멤버입니다.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Read-only variables, whose values can be assigned in the class constructor.</source>
+          <target state="translated">읽기 전용 변수. 해당 값은 클래스 생성자에서만 할당될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>The following example illustrates these two usages of read-only fields.</source>
+          <target state="translated">다음 예제에서는 이 두 가지 읽기 전용 필드를 사용하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source>Properties</source>
+          <target state="translated">속성</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>A property names a value or state of the type and defines methods for getting or setting the property's value.</source>
+          <target state="translated">속성은 형식의 값 또는 상태에 이름을 지정하고 속성의 값을 가져오거나 설정하는 데 사용하는 메서드를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>Properties can be primitive types, collections of primitive types, user-defined types, or collections of user-defined types.</source>
+          <target state="translated">속성은 기본 형식, 기본 형식의 컬렉션, 사용자 정의 형식 또는 사용자 정의 형식의 컬렉션일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>Properties are often used to keep the public interface of a type independent from the type's actual representation.</source>
+          <target state="translated">속성은 주로 형식의 공용 인터페이스를 형식의 실제 표시와 무관하게 유지하기 위해 사용합니다.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>This enables properties to reflect values that are not directly stored in the class (for example, when a property returns a computed value) or to perform validation before values are assigned to private fields.</source>
+          <target state="translated">따라서 속성은 클래스에 직접 저장되지 않은 값을 반영하거나(예를 들어 속성이 계산된 값을 반환하는 경우) 값이 전용 필드에 할당되기 전에 유효성 검사를 수행할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the latter pattern.</source>
+          <target state="translated">다음 예제에서는 후자의 패턴을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>In addition to including the property itself, the Microsoft intermediate language (MSIL) for a type that contains a readable property includes a <ph id="ph1">`get`</ph><bpt id="p1">*</bpt>_propertyname<ept id="p1">*</ept> method, and the MSIL for a type that contains a writable property includes a <ph id="ph2">`set`</ph><bpt id="p2">*</bpt>_propertyname<ept id="p2">*</ept> method.</source>
+          <target state="translated">읽기 가능한 속성이 포함된 형식의 MSIL(Microsoft Intermediate Language)에는 속성 자체뿐만 아니라 <ph id="ph1">`get`</ph><bpt id="p1">*</bpt>_propertyname<ept id="p1">*</ept> 메서드도 포함되어 있으며 쓰기 가능한 속성이 포함된 형식의 MSIL에는 <ph id="ph2">`set`</ph><bpt id="p2">*</bpt>_propertyname<ept id="p2">*</ept> 메서드가 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Methods</source>
+          <target state="translated">메서드</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>A method describes operations that are available on the type.</source>
+          <target state="translated">메서드는 형식에 대해 수행할 수 있는 작업을 설명합니다.</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>A method's signature specifies the allowable types of all its parameters and of its return value.</source>
+          <target state="translated">메서드의 시그니처에서는 모든 매개 변수 및 반환 값에 허용되는 형식을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Although most methods define the precise number of parameters required for method calls, some methods support a variable number of parameters.</source>
+          <target state="translated">대부분의 메서드는 메서드 호출에 필요한 매개 변수 개수를 정확하게 정의하지만, 일부 메서드는 일정하지 않은 수의 매개 변수를 지원합니다.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>The final declared parameter of these methods is marked with the <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> attribute.</source>
+          <target state="translated">이러한 메서드에 대해 선언된 최종 매개 변수는 <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> 특성으로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Language compilers typically provide a keyword, such as <ph id="ph1">`params`</ph> in C# and <ph id="ph2">`ParamArray`</ph> in Visual Basic, that makes explicit use of <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept> unnecessary.</source>
+          <target state="translated">일반적으로 언어 컴파일러는 C#의 <ph id="ph1">`params`</ph> 및 Visual Basic의 <ph id="ph2">`ParamArray`</ph> 등과 같이 <bpt id="p1">[</bpt>ParamArrayAttribute<ept id="p1">](xref:System.ParamArrayAttribute)</ept>를 명시적으로 사용할 필요가 없도록 하는 키워드를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Constructors</source>
+          <target state="translated">생성자</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>A constructor is a special kind of method that creates new instances of a class or structure.</source>
+          <target state="translated">생성자는 클래스 또는 구조체의 새 인스턴스를 만드는 특수한 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>Like any other method, a constructor can include parameters; however, constructors have no return value (that is, they return <ph id="ph1">`void`</ph>).</source>
+          <target state="translated">다른 메서드와 마찬가지로 생성자는 매개 변수를 포함할 수 있지만 반환 값은 가지지 않습니다. 즉, <ph id="ph1">`void`</ph>를 반환합니다.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>If the source code for a class does not explicitly define a constructor, the compiler includes a default (parameterless) constructor.</source>
+          <target state="translated">클래스의 소스 코드에서 생성자를 명시적으로 정의하지 않은 경우 컴파일러는 매개 변수가 없는 기본 생성자를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>However, if the source code for a class defines only parameterized constructors, the C# compiler doesn't generate a parameterless constructor.</source>
+          <target state="translated">그러나 클래스의 소스 코드에서 매개 변수가 있는 생성자만 정의하는 경우 C# 컴파일러는 매개 변수가 없는 생성자를 생성하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>If the source code for a structure defines constructors, they must be parameterized; a structure cannot define a default (parameterless) constructor, and compilers do not generate parameterless constructors for structures or other value types.</source>
+          <target state="translated">구조의 소스 코드에서 생성자를 정의하는 경우 해당 생성자에는 매개 변수가 있어야 합니다. 구조에서는 기본 생성자(매개 변수가 없는 생성자)를 정의할 수 없으며 컴파일러는 구조 또는 다른 값 형식에 대해 매개 변수가 없는 생성자를 생성하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>All value types do have an implicit default constructor.</source>
+          <target state="translated">모든 값 형식에는 암시적 기본 생성자가 없습니다.</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>This constructor is implemented by the common language runtime and initializes all fields of the structure to their default values.</source>
+          <target state="translated">이 생성자는 공용 언어 런타임에서 구현되며 구조의 모든 필드를 기본값으로 초기화합니다.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Events</source>
+          <target state="translated">이벤트</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event.</source>
+          <target state="translated">이벤트는 응답할 수 있는 인시던트를 정의하고 이벤트를 구독, 구독 취소 및 발생시키기 위한 메서드를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Events are often used to inform other types of state changes.</source>
+          <target state="translated">이벤트는 주로 다른 형식에 상태 변경 내용을 알려주는 데 사용합니다.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Nested types</source>
+          <target state="translated">중첩 형식</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>A nested type is a type that is a member of some other type.</source>
+          <target state="translated">중첩 형식은 다른 형식의 멤버인 형식을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Nested types should be tightly coupled to their containing type and must not be useful as a general-purpose type.</source>
+          <target state="translated">중첩 형식은 포함하는 형식과 밀접하게 결합되어야 하고 일반 용도의 형식으로 사용하면 안 됩니다.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Nested types are useful when the declaring type uses and creates instances of the nested type, and use of the nested type is not exposed in public members.</source>
+          <target state="translated">중첩 형식은 해당 선언 형식에서 중첩 형식의 인스턴스를 만들고 사용하며 중첩 형식의 사용이 공용 멤버에게 노출되지 않는 경우에 유용합니다.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Nested types are confusing to some developers and should not be publicly visible unless there is a compelling reason for visibility.</source>
+          <target state="translated">중첩 형식은 일부 개발자에게 혼란을 줄 수 있으므로 불가피한 경우를 제외하고는 공개적으로 표시하지 않아야 합니다.</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>In a well-designed library, developers should rarely have to use nested types to instantiate objects or declare variables.</source>
+          <target state="translated">잘 디자인된 라이브러리에서 개발자는 개체를 인스턴스화하거나 변수를 선언할 때 중첩 형식을 거의 사용하지 않아야 합니다.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Characteristics of type members</source>
+          <target state="translated">형식 멤버의 특성</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The common type system allows type members to have a variety of characteristics; however, languages are not required to support all these characteristics.</source>
+          <target state="translated">공용 형식 시스템에서 형식 멤버는 다양한 특성을 가질 수 있지만 언어에서 이런 특성을 모두 지원할 필요는 없습니다.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>The following table describes member characteristics.</source>
+          <target state="translated">다음 표에서는 멤버 특성에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Characteristic</source>
+          <target state="translated">특성</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>Can apply to</source>
+          <target state="translated">적용 대상</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>abstract</source>
+          <target state="translated">abstract</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">메서드, 속성 및 이벤트</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The type does not supply the method's implementation.</source>
+          <target state="translated">형식에서 메서드 구현을 제공하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Types that inherit or implement abstract methods must supply an implementation for the method.</source>
+          <target state="translated">추상 메서드를 구현하거나 상속하는 형식에서 메서드에 대한 구현을 제공해야 합니다.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>The only exception is when the derived type is itself an abstract type.</source>
+          <target state="translated">그러나 파생된 형식 자체가 추상 형식인 경우만은 예외입니다.</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>All abstract methods are virtual.</source>
+          <target state="translated">모든 추상 메서드는 가상 메서드입니다.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>private</source>
+          <target state="translated">private</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Accessible only from within the same type as the member, or within a nested type.</source>
+          <target state="translated">멤버와 동일한 형식 또는 중첩된 형식 내에서만 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>family</source>
+          <target state="translated">family</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>Accessible from within the same type as the member, and from derived types that inherit from it.</source>
+          <target state="translated">멤버와 동일한 형식 내에서, 그리고 그 멤버에서 상속된 파생된 형식에서 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>assemby</source>
+          <target state="translated">assemby</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Accessible only in the assembly in which the type is defined.</source>
+          <target state="translated">형식이 정의된 어셈블리에서만 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>family and assembly</source>
+          <target state="translated">family and assembly</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>Accessible only from types that qualify for both family and assembly access.</source>
+          <target state="translated">패밀리와 어셈블리 모두에 대한 액세스 자격이 있는 형식에서만 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>family or assemby</source>
+          <target state="translated">family or assemby</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Accessible only from types that qualify for either family or assembly access.</source>
+          <target state="translated">패밀리 또는 어셈블리에 대한 액세스 자격이 있는 형식에서만 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>public</source>
+          <target state="translated">public</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Accessible from any type.</source>
+          <target state="translated">모든 형식에서 액세스할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>final</source>
+          <target state="translated">final</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">메서드, 속성 및 이벤트</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>The virtual method cannot be overridden in a derived type.</source>
+          <target state="translated">가상 메서드는 파생된 형식에서 재정의할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>initialize-only</source>
+          <target state="translated">initialize-only</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">필드</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>The value can only be initialized, and cannot be written after initialization.</source>
+          <target state="translated">값을 초기화할 수만 있고 초기화 이후에는 작성할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>instance</source>
+          <target state="translated">인스턴스</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Fields, methods, properties, and events</source>
+          <target state="translated">필드, 메서드, 속성 및 이벤트</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>If a member is not marked as <ph id="ph1">`static`</ph> (C#), <ph id="ph2">`Shared`</ph> (Visual Basic), <ph id="ph3">`virtual`</ph> (C#), or <ph id="ph4">`Overridable`</ph> (Visual Basic),  it is an instance member (there is no instance keyword).</source>
+          <target state="translated"><ph id="ph1">`static`</ph>(C#), <ph id="ph2">`Shared`</ph>(Visual Basic), <ph id="ph3">`virtual`</ph>(C#) 또는 <ph id="ph4">`Overridable`</ph>(Visual Basic)로 표시되지 않은 멤버는 instance 키워드가 없는 인스턴스 멤버입니다.</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>There will be as many copies of such members in memory as there are objects that use it.</source>
+          <target state="translated">멤버를 사용하는 개체 수만큼의 멤버 복사본이 메모리에 있습니다.</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>literal</source>
+          <target state="translated">리터럴</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>Fields</source>
+          <target state="translated">필드</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>The value assigned to the field is a fixed value, known at compile time, of a built-in value type.</source>
+          <target state="translated">필드에 할당되는 값은 컴파일 타임에 알려지는 기본 제공 값 형식의 고정 값입니다.</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>Literal fields are sometimes referred to as constants.</source>
+          <target state="translated">리터럴 필드를 때로는 상수라고도 합니다.</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>newslot or override</source>
+          <target state="translated">newslot 또는 override</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <target state="translated">모두</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Defines how the member interacts with inherited members that have the same signature: <ph id="ph1">`newslot`</ph> hides inherited members that have the same signature; <ph id="ph2">`override`</ph> replaces the definition of an inherited virtual method.</source>
+          <target state="translated">멤버가 시그니처가 같은 상속된 멤버와 상호 작용하는 방법을 정의합니다. <ph id="ph1">`newslot`</ph>은 시그니처가 같은 상속된 멤버를 숨기고, <ph id="ph2">`override`</ph>는 상속된 가상 메서드의 정의를 바꿉니다.</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>The default is newslot.</source>
+          <target state="translated">기본값은 새 슬롯입니다.</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>static</source>
+          <target state="translated">정적</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>Fields, methods, properties, and events</source>
+          <target state="translated">필드, 메서드, 속성 및 이벤트</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>The member belongs to the type it is defined on, not to a particular instance of the type; the member exists even if an instance of the type is not created, and it is shared among all instances of the type.</source>
+          <target state="translated">멤버는 형식의 특정 인스턴스가 아니라 멤버가 정의된 형식에 속합니다. 멤버는 형식의 인스턴스가 작성되지 않은 경우에도 존재하며 형식의 모든 인스턴스 간에 공유됩니다.</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>virtual</source>
+          <target state="translated">virtual</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>Methods, properties, and events</source>
+          <target state="translated">메서드, 속성 및 이벤트</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>The method can be implemented by a derived type and can be invoked either statically or dynamically.</source>
+          <target state="translated">메서드는 파생된 형식에서 구현할 수 있으며 정적으로 또는 동적으로 호출할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>If dynamic invocation is used, the type of the instance that makes the call at run time (rather than the type known at compile time) determines which implementation of the method is called.</source>
+          <target state="translated">동적 호출을 사용하는 경우, 메서드의 어떤 구현을 호출할지 결정하는 것은 컴파일 타임에 알려진 형식이 아니라 런타임에 호출을 수행하는 인스턴스의 형식입니다.</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>To invoke a virtual method statically, the variable might have to be cast to a type that uses the desired version of the method.</source>
+          <target state="translated">가상 메서드를 정적으로 호출하려면 원하는 버전의 메서드를 사용하는 형식으로 변수를 캐스팅해야 합니다.</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Overloading</source>
+          <target state="translated">오버로딩</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>Each type member has a unique signature.</source>
+          <target state="translated">각 형식 멤버에는 고유의 시그니처가 있습니다.</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Method signatures consist of the method name and a parameter list (the order and types of the method's arguments).</source>
+          <target state="translated">메서드 시그니처는 메서드 이름과 매개 변수 목록(메서드 인수의 순서 및 형식)으로 구성됩니다.</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Multiple methods with the same name can be defined within a type as long as their signatures differ.</source>
+          <target state="translated">형식 내에서 시그니처를 다르게 하여 이름이 같은 여러 개의 메서드를 정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>When two or more methods with the same name are defined, the method is said to be overloaded.</source>
+          <target state="translated">이름이 같은 둘 이상의 메서드를 정의하면 메서드가 오버로드됩니다.</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>For example, in <bpt id="p1">[</bpt>System.Char<ept id="p1">](xref:System.Char)</ept>, the <ph id="ph1">`IsDigit`</ph> method is overloaded.</source>
+          <target state="translated">예를 들어 <bpt id="p1">[</bpt>System.Char<ept id="p1">](xref:System.Char)</ept>에서는 <ph id="ph1">`IsDigit`</ph> 메서드가 오버로드됩니다.</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>One method takes a <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept>.</source>
+          <target state="translated">한 메서드는 <bpt id="p1">[</bpt>Char<ept id="p1">](xref:System.Char)</ept>을 사용하고,</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>The other method takes a <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> and an <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>.</source>
+          <target state="translated">다른 메서드는 <bpt id="p1">[</bpt>String<ept id="p1">](xref:System.String)</ept> 및 <bpt id="p2">[</bpt>Int32<ept id="p2">](xref:System.Int32)</ept>를 사용합니다.</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>The return type is not considered part of a method's signature.</source>
+          <target state="translated">반환 형식은 메서드 시그니처의 일부로 간주되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>That is, methods cannot be overloaded if they differ only by return type.</source>
+          <target state="translated">즉, 메서드는 반환 형식만 다를 경우에는 오버로드될 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Inheriting, overriding, and hiding members</source>
+          <target state="translated">멤버 상속, 재정의 및 숨기기</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type.</source>
+          <target state="translated">파생된 형식에서는 기본 형식의 멤버를 모두 상속합니다. 즉, 파생된 형식에서 이러한 멤버를 정의하고 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>The behavior or qualities of inherited members can be modified in two ways:</source>
+          <target state="translated">상속된 멤버의 동작 또는 품질을 다음과 같은 두 가지 방법으로 수정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>A derived type can hide an inherited member by defining a new member with the same signature.</source>
+          <target state="translated">파생된 형식에서 동일한 시그니처를 가진 새 멤버를 정의하여 상속 멤버를 숨길 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as <ph id="ph1">`final`</ph>.</source>
+          <target state="translated">이는 이전의 공용 멤버를 전용 멤버로 변경하거나 <ph id="ph1">`final`</ph>로 표시된 상속된 메서드에 대해 새로운 동작을 정의하기 위해 수행될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>A derived type can override an inherited virtual method.</source>
+          <target state="translated">상속된 가상 메서드를 파생된 형식에서 재정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time.</source>
+          <target state="translated">메서드를 재정의하면 컴파일 타임에 알려진 변수의 형식이 아니라 런타임에 값의 형식을 기반으로 호출되는 메서드에 대한 새 정의가 제공됩니다.</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>A method can override a virtual method only if the virtual method is not marked as <ph id="ph1">`final`</ph> and the new method is at least as accessible as the virtual method.</source>
+          <target state="translated">가상 메서드가 <ph id="ph1">`final`</ph>로 표시되어 있지 않고 새 메서드에서 최소한 가상 메서드와 동일한 수준의 액세스 가능성을 갖는 경우에만 가상 메서드를 재정의할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Type conversion in the .NET Framework<ept id="p1">](type-conversion.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Framework의 형식 변환<ept id="p1">](type-conversion.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

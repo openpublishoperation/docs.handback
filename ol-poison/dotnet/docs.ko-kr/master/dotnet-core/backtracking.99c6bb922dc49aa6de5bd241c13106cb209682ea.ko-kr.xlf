@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">649dfd6752f0589eb396b00e7d0b5184bb65d488</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\backtracking.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d3c3f4b81cf190742fd47a71d366c45ef3d12d49</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">44f9547568980ddd9867439669c8bc02c62fd81a</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file backtracking.99c6bb922dc49aa6de5bd241c13106cb209682ea.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">정규식의 역추적</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">정규식의 역추적</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Backtracking in regular expressions</source>
+          <target state="translated">정규식의 역추적</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Backtracking occurs when a regular expression pattern contains optional <bpt id="p1">[</bpt>quantifiers<ept id="p1">](quantifiers.md)</ept> or <bpt id="p2">[</bpt>alternation constructs<ept id="p2">](alternation.md)</ept>, and the regular expression engine returns to a previous saved state to continue its search for a match.</source>
+          <target state="translated">역추적은 정규식 패턴에 선택적인 <bpt id="p1">[</bpt>수량자<ept id="p1">](quantifiers.md)</ept> 또는 <bpt id="p2">[</bpt>교체 구문<ept id="p2">](alternation.md)</ept>이 포함되어 있고 정규식 엔진이 일치 항목을 계속 검색하기 위해 이전에 저장한 상태로 되돌아갈 때 발생합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns.</source>
+          <target state="translated">역추적은 정규식 성능의 핵심입니다. 역추적을 사용하면 식의 성능과 유연성을 높일 수 있으며 매우 복잡한 패턴도 검색할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>At the same time, this power comes at a cost.</source>
+          <target state="translated">하지만 이러한 장점에는 단점이 수반됩니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Backtracking is often the single most important factor that affects the performance of the regular expression engine.</source>
+          <target state="translated">역추적은 종종 정규식 엔진의 성능에 영향을 주는 가장 중요한 단일 요소입니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking.</source>
+          <target state="translated">다행히도 개발자는 정규식 엔진의 동작과 역추적 사용 방식을 제어할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This topic explains how backtracking works and how it can be controlled.</source>
+          <target state="translated">이 항목에서는 역추적의 작동 방식 및 역추적을 제어할 수 있는 방법에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In general, a Nondeterministic Finite Automaton (NFA) engine like the  regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.</source>
+          <target state="translated">일반적으로 정규식 엔진과 같은 NFA(Nondeterministic Finite Automaton) 엔진에서는 개발자가 효율적이고 속도가 빠른 정규식을 작성하도록 노력해야 합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This topic contains the following sections:</source>
+          <target state="translated">이 항목에는 다음과 같은 단원이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Linear comparison without backtracking<ept id="p1">](#linear-comparison-without-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>역추적을 사용하지 않는 선형 비교<ept id="p1">](#linear-comparison-without-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking with optional quantifiers or alternation constructs<ept id="p1">](#backtracking-with-optional-quantifiers-or-alternation-constructs)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>선택적인 수량자 또는 교체 구문을 사용한 역추적<ept id="p1">](#backtracking-with-optional-quantifiers-or-alternation-constructs)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking with nested optional quantifiers<ept id="p1">](#backtracking-with-nested-optional-quantifiers)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>선택적인 중첩된 수량자를 사용한 역추적<ept id="p1">](#backtracking-with-nested-optional-quantifiers)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Controlling backtracking<ept id="p1">](#controlling-backtracking)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>역추적 제어<ept id="p1">](#controlling-backtracking)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Linear comparison without backtracking</source>
+          <target state="translated">역추적을 사용하지 않는 선형 비교</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If a regular expression pattern has no optional quantifiers or alternation constructs, the regular expression engine executes in linear time.</source>
+          <target state="translated">정규식 패턴에 선택적인 수량자 또는 교체 구문이 없으면 정규식 엔진이 선형 시간으로 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>That is, after the regular expression engine matches the first language element in the pattern with text in the input string, it tries to match the next language element in the pattern with the next character or group of characters in the input string.</source>
+          <target state="translated">즉, 정규식 엔진은 패턴에서 입력 문자열의 텍스트와 일치하는 첫 번째 언어 요소를 검색한 후 다시 패턴에서 입력 문자열의 다음 문자 또는 문자 그룹과 일치하는 다음 언어 요소를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This continues until the match either succeeds or fails.</source>
+          <target state="translated">이 작업은 검색이 성공할 때까지 계속되고, 그렇지 않으면 검색이 실패합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In either case, the regular expression engine advances by one character at a time in the input string.</source>
+          <target state="translated">어느 경우에든 정규식 엔진은 입력 문자열에서 한 번에 한 글자씩 검색을 진행합니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The following example provides an illustration.</source>
+          <target state="translated">다음 예제에서 이에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`e{2}\w\b`</ph> looks for two occurrences of the letter "e" followed by any word character followed by a word boundary.</source>
+          <target state="translated">정규식 <ph id="ph1">`e{2}\w\b`</ph>는 모든 단어 문자에서 단어 경계까지 "e"가 두 번 나오는 단어를 검색합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Although this regular expression includes the quantifier <ph id="ph1">`{2}`</ph>, it is evaluated in a linear manner.</source>
+          <target state="translated">이 정규식은 수량자 <ph id="ph1">`{2}`</ph>가 있더라도 선형 방식으로 평가됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The regular expression engine does not backtrack because <ph id="ph1">`{2}`</ph> is not an optional quantifier; it specifies an exact number and not a variable number of times that the previous subexpression must match.</source>
+          <target state="translated"><ph id="ph1">`{2}`</ph>는 선택적인 수량자가 아니기 때문에 정규식 엔진이 역추적을 수행하지 않습니다. 이 수량자는 정확한 숫자를 지정하며 이전 하위 식이 검색해야 하는 가변 횟수가 아닙니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As a result, the regular expression engine tries to match the regular expression pattern with the input string as shown in the following table.</source>
+          <target state="translated">따라서 정규식 엔진은 다음 표에서와 같이 입력 문자열에서 정규식 패턴과 일치하는 항목을 검색하려고 시도합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Operation</source>
+          <target state="translated">작업</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Position in pattern</source>
+          <target state="translated">패턴 내 위치</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Position in string</source>
+          <target state="translated">문자열 내 위치</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Result</source>
+          <target state="translated">결과</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>1</source>
+          <target state="translated">1</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>"needing a reed" (index 0)</source>
+          <target state="translated">"needing a reed"(인덱스 0)</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>2</source>
+          <target state="translated">2</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>"eeding a reed" (index 1)</source>
+          <target state="translated">"eeding a reed"(인덱스 1)</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>3</source>
+          <target state="translated">3</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>"eding a reed" (index 2)</source>
+          <target state="translated">"eding a reed"(인덱스 2)</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>4</source>
+          <target state="translated">4</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>\w</source>
+          <target state="translated">\w</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed"(인덱스 3)</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>5</source>
+          <target state="translated">5</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>\b</source>
+          <target state="translated">\b</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>"ing a reed" (index 4)</source>
+          <target state="translated">"ing a reed"(인덱스 4)</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Possible match fails.</source>
+          <target state="translated">일치 가능 실패</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>6</source>
+          <target state="translated">6</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>"eding a reed" (index 2)</source>
+          <target state="translated">"eding a reed"(인덱스 2)</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>7</source>
+          <target state="translated">7</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed"(인덱스 3)</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Possible match fails.</source>
+          <target state="translated">일치 가능 실패</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>8</source>
+          <target state="translated">8</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>"ding a reed" (index 3)</source>
+          <target state="translated">"ding a reed"(인덱스 3)</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Match fails.</source>
+          <target state="translated">검색이 실패합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>9</source>
+          <target state="translated">9</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>"ing a reed" (index 4)</source>
+          <target state="translated">"ing a reed"(인덱스 4)</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>10</source>
+          <target state="translated">10</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>"ng a reed" (index 5)</source>
+          <target state="translated">"ng a reed"(인덱스 5)</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>11</source>
+          <target state="translated">11</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>"g a reed" (index 6)</source>
+          <target state="translated">"g a reed"(인덱스 6)</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>12</source>
+          <target state="translated">12</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>" a reed" (index 7)</source>
+          <target state="translated">" a reed"(인덱스 7)</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>13</source>
+          <target state="translated">13</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>"a reed" (index 8)</source>
+          <target state="translated">"a reed"(인덱스 8)</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>14</source>
+          <target state="translated">14</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>" reed" (index 9)</source>
+          <target state="translated">" reed"(인덱스 9)</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>No match.</source>
+          <target state="translated">일치하는 항목이 없습니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>15</source>
+          <target state="translated">15</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>"reed" (index 10)</source>
+          <target state="translated">"reed"(인덱스 10)</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>No match</source>
+          <target state="translated">일치 없음</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>16</source>
+          <target state="translated">16</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>e</source>
+          <target state="translated">e</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>"eed" (index 11)</source>
+          <target state="translated">"eed"(인덱스 11)</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>17</source>
+          <target state="translated">17</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>e{2}</source>
+          <target state="translated">e{2}</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>"ed" (index 12)</source>
+          <target state="translated">"ed"(인덱스 12)</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>18</source>
+          <target state="translated">18</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>\w</source>
+          <target state="translated">\w</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>"d" (index 13)</source>
+          <target state="translated">"d"(인덱스 13)</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Possible match.</source>
+          <target state="translated">일치 가능</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>19</source>
+          <target state="translated">19</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>\b</source>
+          <target state="translated">\b</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>"" (index 14)</source>
+          <target state="translated">""(인덱스 14)</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Match.</source>
+          <target state="translated">일치</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string.</source>
+          <target state="translated">정규식 엔진에 선택적인 수량자가 없거나 교체 구문이 없는 경우 입력 문자열에서 정규식 패턴과 일치하는 항목을 찾기 위해 필요한 최대 비교 수는 입력 문자열에 있는 문자 수와 거의 동일합니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.</source>
+          <target state="translated">이 경우 정규식 엔진은 이 13자 길이의 문자열에서 가능한 일치 항목을 식별하기 위해 19가지를 비교합니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.</source>
+          <target state="translated">즉, 선택적인 수량자 또는 대체 생성 구문이 없는 경우 정규식 엔진이 선형에 가까운 시간으로 실행됩니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Backtracking with optional quantifiers or alternation constructs</source>
+          <target state="translated">선택적인 수량자 또는 교체 구문을 사용한 역추적</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>When a regular expression includes optional quantifiers or alternation constructs, the evaluation of the input string is no longer linear.</source>
+          <target state="translated">정규식에 선택적인 수량자 또는 교체 구문이 포함된 경우 입력 문자열에 대한 평가는 더 이상 선형으로 수행되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Pattern matching with an NFA engine is driven by the language elements in the regular expression and not by the characters to be matched in the input string.</source>
+          <target state="translated">NFA 엔진에서 패턴 일치는 입력 문자열에 있는 검색할 문자가 아니라 정규식의 언어 요소에 의해 영향을 받습니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Therefore, the regular expression engine tries to fully match optional or alternative subexpressions.</source>
+          <target state="translated">따라서 정규식 엔진은 선택적인 하위 식 또는 교체 하위 식에 대해 전체 검색을 수행합니다.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>When it advances to the next language element in the subexpression and the match is unsuccessful, the regular expression engine can abandon a portion of its successful match and return to an earlier saved state in the interest of matching the regular expression as a whole with the input string.</source>
+          <target state="translated">하위 식의 다음 언어 요소로 진행할 때 검색이 실패하면 정규식 엔진이 성공한 일치 부분을 버리고 입력 문자열 전체에 대한 정규식 검색을 수행하기 위해 이전에 저장된 상태로 돌아갈 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>This process of returning to a previous saved state to find a match is known as backtracking.</source>
+          <target state="translated">일치하는 항목을 찾기 위해 이전에 저장된 상태로 돌아가는 프로세스를 역추적이라고 부릅니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example, consider the regular expression pattern <ph id="ph1">`.*(es)`</ph>, which matches the characters "es" and all the characters that precede it.</source>
+          <target state="translated">예를 들어 임의의 문자로 시작해서 "es"가 포함된 항목을 검색하는 <ph id="ph1">`.*(es)`</ph>라는 정규식 패턴이 있다고 가정해보십시오.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>As the following example shows, if the input string is "Essential services are provided by regular expressions.", the pattern matches the whole string up to and including the "es" in "expressions".</source>
+          <target state="translated">다음 예제에서와 같이 입력 문자열이 "Essential services are provided by regular expressions."인 경우 이 패턴은 "expressions"의 "es"를 포함하여 전체 문자열을 끝까지 검색합니다.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>To do this, the regular expression engine uses backtracking as follows:</source>
+          <target state="translated">이를 위해 정규식 엔진은 다음과 같은 방식으로 역추적을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>It matches the <ph id="ph1">`.*`</ph> (which matches zero, one, or more occurrences of any character) with the whole input string.</source>
+          <target state="translated">전체 입력 문자열에서 <ph id="ph1">`.*`</ph>(0개 이상의 임의 문자 검색)를 검색합니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>It attempts to match "e" in the regular expression pattern.</source>
+          <target state="translated">정규식 패턴의 "e"와 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>However, the input string has no remaining characters available to match.</source>
+          <target state="translated">하지만 입력 문자열에는 검색에 사용할 수 있는 남은 문자가 없습니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>It backtracks to its last successful match, "Essential services are provided by regular expressions", and attempts to match "e" with the period at the end of the sentence.</source>
+          <target state="translated">마지막으로 일치한 항목인 "Essential services are provided by regular expressions"로 역추적하고 문장의 끝에 있는 마침표에서 "e"와 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The match fails.</source>
+          <target state="translated">그러면 검색이 실패합니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>It continues to backtrack to a previous successful match one character at a time until the tentatively matched substring is "Essential services are provided by regular expr".</source>
+          <target state="translated">계속해서 일시적으로 일치하는 하위 문자열이 "Essential services are provided by regular expr"이 될 때까지 한 번에 한 글자씩 이전에 성공한 일치 항목으로 역추적합니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>It then compares the "e" in the pattern to the second "e" in "expressions" and finds a match.</source>
+          <target state="translated">그런 다음 패턴에 있는 "e"와 "expressions"의 두 번째 "e"를 비교하여 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions").</source>
+          <target state="translated">패턴에 있는 "s"와 일치한 "e" 문자 다음의 "s"("expressions"의 첫 번째 "s")를 비교합니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The match is successful.</source>
+          <target state="translated">그러면 검색이 성공합니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations.</source>
+          <target state="translated">역추적을 사용할 경우 길이가 55자인 입력 문자열에서 정규식 패턴과 일치하는 항목을 검색하려면 67번의 비교 작업이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Interestingly, if the regular expression pattern included a lazy quantifier, <ph id="ph1">`.*?(es),`</ph> matching the regular expression would require additional comparisons.</source>
+          <target state="translated">흥미롭게도 정규식 패턴에 최소 일치 수량자 <ph id="ph1">`.*?(es),`</ph>가 포함되면 정규식과 일치하는 항목을 찾기 위해 필요한 비교 작업이 늘어납니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In this case, instead of having to backtrack from the end of the string to the "r" in "expressions", the regular expression engine would have to backtrack all the way to the beginning of the string to match "Es" and would require 113 comparisons.</source>
+          <target state="translated">이 경우에는 문자열 끝에서 "expressions"의 "r"까지 역추적하는 대신 정규식 엔진이 문자열의 시작 부분까지 역추적을 수행하여 "Es"를 찾게 되므로, 결국 113번의 비교 작업이 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.</source>
+          <target state="translated">일반적으로 정규식 엔진에 단일 교체 구문이 포함되었거나 선택적인 단일 수량자가 포함된 경우 패턴을 검색하는 데 필요한 비교 작업 수는 입력 문자열에 있는 문자 수의 두 배 이상입니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Backtracking with nested optional quantifiers</source>
+          <target state="translated">선택적인 중첩된 수량자를 사용한 역추적</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>The number of comparison operations required to match a regular expression pattern can increase exponentially if the pattern includes a large number of alternation constructs, if it includes nested alternation constructs, or, most commonly, if it includes nested optional quantifiers.</source>
+          <target state="translated">패턴에 교체 구문이 많이 포함되었거나 중첩된 교체 구문이 포함되었거나, 선택적인 중첩된 수량자가 포함된 경우(가장 일반적인 경우) 정규식 패턴과 일치하는 항목을 찾기 위해 필요한 비교 작업 수가 기하급수적으로 증가할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression pattern <ph id="ph1">`^(a+)+$`</ph> is designed to match a complete string that contains one or more "a" characters.</source>
+          <target state="translated">예를 들어 정규식 패턴 <ph id="ph1">`^(a+)+$`</ph>는 하나 이상의 "a" 문자가 포함된 전체 문자열을 검색하도록 디자인되었습니다.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The example provides two input strings of identical length, but only the first string matches the pattern.</source>
+          <target state="translated">예제에는 동일한 길이의 두 입력 문자열이 제공되지만 첫 번째 문자열만 패턴과 일치합니다.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.Diagnostics.Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> class is used to determine how long the match operation takes.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Diagnostics.Stopwatch<ept id="p1">](xref:System.Diagnostics.Stopwatch)</ept> 클래스는 일치 항목을 찾는 데 걸리는 시간을 확인하기 위해 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the regular expression engine took about twice as long to find that an input string did not match the pattern as it did to identify a matching string.</source>
+          <target state="translated">예제의 결과에서와 같이 정규식 엔진은 일치하는 문자열을 식별할 때 걸리는 시간에 비해 입력 문자열이 패턴과 일치하지 않는 것을 확인하는 데 약 두 배의 시간이 걸립니다.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>This is because an unsuccessful match always represents a worst-case scenario.</source>
+          <target state="translated">그 이유는 성공하지 못한 검색은 항상 최악의 경우를 나타내기 때문입니다.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>The regular expression engine must use the regular expression to follow all possible paths through the data before it can conclude that the match is unsuccessful, and the nested parentheses create many additional paths through the data.</source>
+          <target state="translated">정규식 엔진은 일치하는 항목이 없다는 결론을 내리기까지 정규식을 사용하여 데이터에서 가능한 모든 경로를 따라야 하며, 중첩된 괄호가 있으면 데이터에서 발생 가능한 경로 수가 추가로 늘어납니다.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The regular expression engine concludes that the second string did not match the pattern by doing the following:</source>
+          <target state="translated">정규식 엔진은 다음을 수행하여 두 번째 문자열이 패턴과 일치하지 않는다는 결론을 내립니다.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>It checks that it was at the beginning of the string, and then matches the first five characters in the string with the pattern a+.</source>
+          <target state="translated">문자열의 시작 위치에 있는지 확인한 후 a+ 패턴을 사용하여 문자열에서 처음 5개 문자를 검색합니다.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>It then determines that there are no additional groups of "a" characters in the string.</source>
+          <target state="translated">그런 후 문자열에 "a" 문자의 추가 그룹이 없는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Finally, it tests for the end of the string.</source>
+          <target state="translated">마지막으로 문자열의 끝인지 테스트합니다.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Because one additional character remains in the string, the match fails.</source>
+          <target state="translated">문자열에 하나의 추가 문자가 남아 있기 때문에 검색이 실패합니다.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>This failed match requires 9 comparisons.</source>
+          <target state="translated">이 실패한 검색에는 9번의 비교 작업이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>The regular expression engine also saves state information from its matches of "a" (which we will call match 1), "aa" (match 2), "aaa" (match 3), and "aaaa" (match 4).</source>
+          <target state="translated">정규식 엔진은 또한 "a"(이하 매치 1이라고 부름), "aa"(매치 2), "aaa"(매치 3) 및 "aaaa"(매치 4)의 일치 항목에 대한 상태 정보를 저장합니다.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>It returns to the previously saved match 4.</source>
+          <target state="translated">정규식 엔진이 이전에 저장된 매치 4로 돌아갑니다.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>It determines that there is one additional "a" character to assign to an additional captured group.</source>
+          <target state="translated">추가 캡처 그룹에 할당할 수 있도록 "a" 문자가 추가로 하나 더 있는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Finally, it tests for the end of the string.</source>
+          <target state="translated">마지막으로 문자열의 끝인지 테스트합니다.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Because one additional character remains in the string, the match fails.</source>
+          <target state="translated">문자열에 하나의 추가 문자가 남아 있기 때문에 검색이 실패합니다.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>This failed match requires 4 comparisons.</source>
+          <target state="translated">이 실패한 검색에는 4번의 비교 작업이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>So far, a total of 13 comparisons have been performed.</source>
+          <target state="translated">지금까지 총 13번의 비교 작업이 수행되었습니다.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>It returns to the previously saved match 3.</source>
+          <target state="translated">정규식 엔진이 이전에 저장된 매치 3으로 돌아갑니다.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>It determines that there are two additional "a" characters to assign to an additional captured group.</source>
+          <target state="translated">추가 캡처 그룹에 할당할 수 있도록 두 개의 추가 "a" 문자가 있는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, the end-of-string test fails.</source>
+          <target state="translated">하지만 문자열 끝 테스트가 실패합니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups.</source>
+          <target state="translated">그런 다음 매치 3으로 돌아가서 두 개의 추가 캡처 그룹에서 두 개의 추가 "a" 문자를 검색하려고 시도합니다.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>The end-of-string test still fails.</source>
+          <target state="translated">그래도 문자열 끝 테스트가 실패합니다.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>These failed matches require 12 comparisons.</source>
+          <target state="translated">이렇게 실패한 검색 작업에는 12번의 비교 작업이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>So far, a total of 25 comparisons have been performed.</source>
+          <target state="translated">지금까지 총 25번의 비교 작업이 수행되었습니다.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match.</source>
+          <target state="translated">입력 문자열을 정규식 엔진에서 비교하는 작업은 정규식이 검색 작업의 모든 가능한 조합을 시도하고 일치 항목이 없다는 결론을 내릴 때까지 이러한 방식으로 계속해서 수행됩니다.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Because of the nested quantifiers, this comparison is an O(2n) or an exponential operation, where n is the number of characters in the input string.</source>
+          <target state="translated">중첩된 수량자로 인해 이러한 비교는 O(2n) 또는 지수 연산으로 수행되며, 여기서 n은 입력 문자열에 있는 문자 수입니다.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons.</source>
+          <target state="translated">즉, 문자 수가 30개인 입력 문자열에서는 최악의 경우 약 1,073,741,824번의 비교 작업이 필요하고, 입력 문자열의 문자 수가 40개이면 약 1,099,511,627,776번의 비교 작업이 필요합니다.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern.</source>
+          <target state="translated">이정도 또는 심지어 더 긴 문자열을 사용하면 정규식 메서드가 정규식 패턴과 일치하지 않는 입력을 처리할 때 완료 시간이 극단적으로 길어질 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>Controlling backtracking</source>
+          <target state="translated">역추적 제어</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Backtracking lets you create powerful, flexible regular expressions.</source>
+          <target state="translated">역추적을 사용하면 강력하고 유연한 정규식을 만들 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>However, as the previous section showed, these benefits may be coupled with unacceptably poor performance.</source>
+          <target state="translated">하지만 이전 단원에 설명한 것처럼 이러한 장점 외에도 성능이 매우 크게 저하될 수 있음에 유의해야 합니다.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>To prevent excessive backtracking, you should define a time-out interval when you instantiate a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object or call a static regular expression matching method.</source>
+          <target state="translated">과도한 역추적을 방지하려면 <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> 개체를 인스턴스화하거나 정적 정규식 일치 메서드를 호출할 때 시간 제한 간격을 정의해야 합니다.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>This is discussed in the next section.</source>
+          <target state="translated">이에 대해서는 다음 섹션에서 설명합니다.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>In addition, .NET Core supports three regular expression language elements that limit or suppress backtracking and that support complex regular expressions with little or no performance penalty: <bpt id="p1">[</bpt>nonbacktracking subexpressions<ept id="p1">](#nonbacktracking-subexpression)</ept>, <bpt id="p2">[</bpt>lookbehind assertions<ept id="p2">](#lookbehind-assertions)</ept>, and <bpt id="p3">[</bpt>lookahead assertions<ept id="p3">](#lookahead-assertions)</ept>.</source>
+          <target state="translated">그 밖에도, .NET Core에서는 역추적을 제한하거나 억제하고, 성능 상의 제약이 거의 없거나 전혀 없이 복잡한 정규식을 지원하는 세 가지 정규식 언어 요소인 <bpt id="p1">[</bpt>역추적하지 않는 하위 식<ept id="p1">](#nonbacktracking-subexpression)</ept>, <bpt id="p2">[</bpt>lookbehind 어설션<ept id="p2">](#lookbehind-assertions)</ept> 및 <bpt id="p3">[</bpt>lookahead 어설션<ept id="p3">](#lookahead-assertions)</ept>을 지원합니다.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>For more information about each language element, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">각 언어 요소에 대한 자세한 내용은 <bpt id="p1">[</bpt>정규식의 그룹화 구문<ept id="p1">](grouping.md)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Defining a time-out interval</source>
+          <target state="translated">시간 제한 간격 정의</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>You can set a time-out value that represents the longest interval the regular expression engine will search for a single match before it abandons the attempt and throws a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> exception.</source>
+          <target state="translated">정규식 엔진이 시도를 포기하고 <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> 예외를 throw하기 전에 단일 일치 항목을 검색할 가장 긴 간격을 나타내는 시간 제한 값을 설정할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>You specify the time-out interval by supplying a <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value to the <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> constructor for instance regular expressions.</source>
+          <target state="translated">인스턴스 정규식에 대한 <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> 생성자에 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 값을 제공하여 시간 제한 간격을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>In addition, each static pattern matching method has an overload with a <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value to the [Regex.Regex(String, RegexOptions, TimeSpan)] parameter that allows you to specify a time-out value.</source>
+          <target state="translated">또한 각 정적 패턴 일치 메서드에는 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 값이 시간 제한 값을 지정할 수 있는 [Regex.Regex(String, RegexOptions, TimeSpan)] 매개 변수로 설정된 오버로드가 있습니다.</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>By default, the time-out interval is set to <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept> and the regular expression engine does not time out.</source>
+          <target state="translated">기본적으로 시간 제한 간격은 <bpt id="p1">[</bpt>Regex.InfiniteMatchTimeout<ept id="p1">](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout)</ept>으로 설정되며, 정규식 엔진이 시간을 초과하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>We recommend th&gt;at you always set a time-out interval if your regular expression relies on backtracking.</source>
+          <target state="translated">정규식이 역추적에 의존하는 경우에는 항상 시간 제한 간격을 설정하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>n exception indicates that the regular expression engine was unable to find a match within in the specified time-out interval but does not indicate why the exception was thrown.</source>
+          <target state="translated"><bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> 예외는 정규식이 지정된 시간 제한 간격 내에 일치 항목을 찾지 못했음을 나타내지만, 예외가 throw된 이유를 나타내지는 않습니다.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>The reason might be excessive backtracking, but it is also possible that the time-out interval was set too low given the system load at the time the exception was thrown.</source>
+          <target state="translated">과도한 역추적이 원인일 수 있지만, 예외가 throw된 시점의 시스템 부하에서 시간 제한 간격이 너무 낮게 설정되었을 가능성도 있습니다.</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>When you handle the exception, you can choose to abandon further matches with the input string or increase the time-out interval and retry the matching operation.</source>
+          <target state="translated">예외를 처리할 때 입력 문자열을 포함한 다른 일치 항목을 버리거나 시간 제한 간격을 늘리고 일치 검사 작업을 재시도하는 방법 중에서 선택할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>For example, the following code calls the <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> constructor to instantiate a Regex object with a time-out value of one second.</source>
+          <target state="translated">예를 들어 다음 코드는 <ph id="ph1">`Regex(String, RegexOptions, TimeSpan)`</ph> 생성자를 호출하여 1초의 시간 제한 값으로 Regex 개체를 인스턴스화합니다.</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`(a+)+$`</ph>, which matches one or more sequences of one or more "a" characters at the end of a line, is subject to excessive backtracking.</source>
+          <target state="translated">줄의 끝에 하나 이상의 "a" 문자가 포함된 하나 이상의 시퀀스와 일치하는 정규식 패턴 <ph id="ph1">`(a+)+$`</ph>는 과도한 역추적의 대상이 됩니다.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>If a <bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept> is thrown, the example increases the time-out value up to a maximum interval of three seconds.</source>
+          <target state="translated"><bpt id="p1">[</bpt>RegexMatchTimeoutException<ept id="p1">](xref:System.Text.RegularExpressions.RegexMatchTimeoutException)</ept>이 throw되는 경우, 이 예제에서는 시간 제한 값을 최대 간격인 3초까지 늘립니다.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>After that, it abandons the attempt to match the pattern.</source>
+          <target state="translated">그 후에는 패턴 일치를 찾는 시도를 취소합니다.</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpression</source>
+          <target state="translated">역추적하지 않는 하위 식</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept> <bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> language element suppresses backtracking in a subexpression.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept> <bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 언어 요소는 하위 식에서 역추적을 억제합니다.</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>It is useful for preventing the performance problems associated with failed matches.</source>
+          <target state="translated">실패한 검색과 연관된 성능 문제를 방지하는 데 유용합니다.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The following example illustrates how suppressing backtracking improves performance when using nested quantifiers.</source>
+          <target state="translated">다음 예제에서는 역추적을 억제하여 중첩된 수량자를 사용할 때 성능을 향상시키는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions.</source>
+          <target state="translated">이 예에서는 정규식 엔진이 입력 문자열이 두 개의 정규식과 일치하지 않는지 확인하기 위해 필요한 시간을 측정합니다.</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons.</source>
+          <target state="translated">첫 번째 정규식에서는 역추적을 사용하여 하나 이상의 16진수 숫자와 일치하는 하나 이상의 항목이 포함되고 콜론과 하나 이상의 16진수 숫자 그리고 두 개의 콜론이 이어지는 문자열을 검색하려고 시도합니다.</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>The second regular expression is identical to the first, except that it disables backtracking.</source>
+          <target state="translated">두 번째 정규식은 첫 번째와 동일하지만 역추적이 사용되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>As the output from the example shows, the performance improvement from disabling backtracking is significant.</source>
+          <target state="translated">예의 결과에서 보여 지듯이 역추적을 사용하지 않음으로써 얻게 되는 성능 향상 효과가 매우 큽니다.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>Lookbehind assertions</source>
+          <target state="translated">Lookbehind 어설션</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>.NET includes two language elements, <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> and <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, that match the previous character or characters in the input string.</source>
+          <target state="translated">.NET에는 입력 문자열에서 이전 문자와 일치하는 두 가지 언어 요소인 <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 및 <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately precede the current character can be matched by <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>, without advancing or backtracking.</source>
+          <target state="translated">두 언어 요소는 모두 너비가 0인 어설션입니다. 즉, 진행 또는 역추적 없이 현재 문자 바로 앞에 있는 문자를 <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>과 일치시킬 수 있는지 여부를 확인합니다.</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a positive lookbehind assertion; that is, the character or characters before the current position must match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>은 긍정 lookbehind 어설션입니다. 즉, 현재 위치 바로 앞의 문자가 <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>과 일치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a negative lookbehind assertion; that is, the character or characters before the current position must not match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?&lt;!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>은 부정 lookbehind 어설션입니다. 즉, 현재 위치 바로 앞의 문자가 <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>과 일치하면 안 됩니다.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>Both positive and negative lookbehind assertions are most useful when <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> is a subset of the previous <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>.</source>
+          <target state="translated">긍정 및 부정 lookbehind 어설션 모두 <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>이 이전 <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>의 하위 집합일 때 가장 유용합니다.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>The following example uses two equivalent regular expression patterns that validate the user name in an e-mail address.</source>
+          <target state="translated">다음 예제에서는 전자 메일 주소에서 사용자 이름의 유효성을 검사하는 두 개의 동일한 정규식 패턴이 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>The first pattern is subject to poor performance because of excessive backtracking.</source>
+          <target state="translated">첫 번째 패턴은 과도한 역추적으로 인해 성능이 크게 저하됩니다.</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>The second pattern modifies the first regular expression by replacing a nested quantifier with a positive lookbehind assertion.</source>
+          <target state="translated">두 번째 패턴은 중첩된 수량자를 긍정 lookbehind 어설션으로 바꿔서 첫 번째 정규식을 수정합니다.</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source>The output from the example displays the execution time of the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method.</source>
+          <target state="translated">예제의 출력에는 <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드의 실행 시간이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The first regular expression pattern, <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*@, is defined as shown in the following table.`</ph></source>
+          <target state="translated">첫 번째 정규식 패턴, <ph id="ph1">`^[0-9A-Z]([-.\w]*[0-9A-Z])*@, is defined as shown in the following table.`</ph></target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">패턴</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">문자열의 시작 부분에서 검색을 시작합니다.</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">일치하는 영숫자 문자를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드가 <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>Match zero, one, or more occurrences of a hyphen, period, or word character.</source>
+          <target state="translated">하이픈, 마침표 또는 단어 문자가 0개 이상 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">일치하는 영숫자 문자를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character.</source>
+          <target state="translated">영숫자 문자로 이어지는 하이픈, 마침표 또는 단어 문자가 0개 이상 조합된 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source>This is the first capturing group.</source>
+          <target state="translated">이 그룹은 첫 번째 캡처링 그룹입니다.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Match an at sign ("@").</source>
+          <target state="translated">"@" 기호를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>The second regular expression pattern, <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])@`</ph>, uses a positive lookbehind assertion.</source>
+          <target state="translated">두 번째 정규식 패턴 <ph id="ph1">`^[0-9A-Z][-.\w]*(?&lt;=[0-9A-Z])@`</ph>은 긍정 lookbehind 어설션을 사용합니다.</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>It is defined as shown in the following table.</source>
+          <target state="translated">이 패턴은 다음 표에서와 같이 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">패턴</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">문자열의 시작 부분에서 검색을 시작합니다.</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Match an alphanumeric character.</source>
+          <target state="translated">일치하는 영숫자 문자를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드가 <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of a hyphen, period, or word character.</source>
+          <target state="translated">하이픈, 마침표 또는 단어 문자가 0개 이상 포함된 일치하는 항목을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Look back at the last matched character and continue the match if it is alphanumeric.</source>
+          <target state="translated">마지막으로 일치한 문자를 다시 확인하고 영숫자인 경우 검색을 계속합니다.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.</source>
+          <target state="translated">영숫자 문자는 마침표, 하이픈 및 모든 단어 문자로 구성되는 집합의 하위 집합입니다.</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>Match an at sign ("@").</source>
+          <target state="translated">"@" 기호를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Lookahead assertions</source>
+          <target state="translated">Lookahead 어설션</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>.NET includes two language elements, <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> and <bpt id="p4">**</bpt>(?!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>, that match the next character or characters in the input string.</source>
+          <target state="translated">.NET에는 입력 문자열에서 다음 문자와 일치하는 두 가지 언어 요소인 <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> 및 <bpt id="p4">**</bpt>(?!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept>이 포함되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>Both language elements are zero-width assertions; that is, they determine whether the character or characters that immediately follow the current character can be matched by <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>, without advancing or backtracking.</source>
+          <target state="translated">두 언어 요소는 모두 너비가 0인 어설션입니다. 즉, 진행 또는 역추적 없이 현재 문자 바로 뒤에 있는 문자를 <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>과 일치시킬 수 있는지 여부를 확인합니다.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a positive lookahead assertion; that is, the character or characters after the current position must match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>은 긍정 lookahead 어설션입니다. 즉, 현재 위치 바로 뒤의 문자가 <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>과 일치해야 합니다.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> is a negative lookahead assertion; that is, the character or characters after the current position must not match <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>은 부정 lookahead 어설션입니다. 즉, 현재 위치 바로 뒤의 문자가 <bpt id="p4">*</bpt>subexpression<ept id="p4">*</ept>과 일치하면 안 됩니다.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>Both positive and negative lookahead assertions are most useful when <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept> is a subset of the next <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>.</source>
+          <target state="translated">긍정 및 부정 lookahead 어설션 모두 <bpt id="p1">*</bpt>subexpression<ept id="p1">*</ept>이 다음 <bpt id="p2">*</bpt>subexpression<ept id="p2">*</ept>의 하위 집합일 때 가장 유용합니다.</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>The following example uses two equivalent regular expression patterns that validate a fully qualified type name.</source>
+          <target state="translated">다음 예제에서는 정규화된 형식 이름의 유효성을 검사하는 두 개의 동일한 정규식 패턴이 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>The first pattern is subject to poor performance because of excessive backtracking.</source>
+          <target state="translated">첫 번째 패턴은 과도한 역추적으로 인해 성능이 크게 저하됩니다.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>The second modifies the first regular expression by replacing a nested quantifier with a positive lookahead assertion.</source>
+          <target state="translated">두 번째 패턴은 중첩된 수량자를 긍정 lookahead 어설션으로 바꿔서 첫 번째 정규식을 수정합니다.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The output from the example displays the execution time of the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method.</source>
+          <target state="translated">예제의 출력에는 <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드의 실행 시간이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>The first regular expression pattern, <ph id="ph1">`^(([A-Z]\w*)+\.)*[A-Z]\w*$`</ph>, is defined as shown in the following table.</source>
+          <target state="translated">첫 번째 정규식 패턴 <ph id="ph1">`^(([A-Z]\w*)+\.)*[A-Z]\w*$`</ph>은(는) 다음 표와 같이 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">패턴</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">문자열의 시작 부분에서 검색을 시작합니다.</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period.</source>
+          <target state="translated">0개 이상의 단어 문자와 마침표가 이어지는 영문자(A-Z)를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드가 <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>Match the previous pattern zero or more times.</source>
+          <target state="translated">이전 패턴을 0번 이상 검색합니다.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character followed by zero or more word characters.</source>
+          <target state="translated">0개 이상의 단어 문자로 이어지는 영문자를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the input string.</source>
+          <target state="translated">입력 문자열의 끝 부분에서 검색을 종료합니다.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>The second regular expression pattern, <ph id="ph1">`^((?=[A-Z])\w+\.)*[A-Z]\w*$`</ph>, uses a positive lookahead assertion.</source>
+          <target state="translated">두 번째 정규식 패턴 <ph id="ph1">`^((?=[A-Z])\w+\.)*[A-Z]\w*$`</ph>에는 긍정 lookahead 어설션이 사용됩니다.</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>It is defined as shown in the following table.</source>
+          <target state="translated">이 패턴은 다음 표에서와 같이 정의됩니다.</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">패턴</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">설명</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>Start the match at the beginning of the string.</source>
+          <target state="translated">문자열의 시작 부분에서 검색을 시작합니다.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>Look ahead to the first character and continue the match if it is alphabetical (A-Z).</source>
+          <target state="translated">첫 번째 문자를 검색하고 영문자(A-Z)인 경우 검색을 계속합니다.</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>This comparison is case-insensitive, because the <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions))</ept> 메서드가 <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> 옵션으로 호출되므로 이 비교는 대/소문자를 구분하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters followed by a period.</source>
+          <target state="translated">마침표로 이어지는 하나 이상의 문자를 검색합니다.</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Match the pattern of one or more word characters followed by a period zero or more times.</source>
+          <target state="translated">마침표가 0번 이상 이어지는 하나 이상의 단어 문자의 패턴을 검색합니다.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>The initial word character must be alphabetical.</source>
+          <target state="translated">초기 단어 문자는 영문자여야 합니다.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>Match an alphabetical character followed by zero or more word characters.</source>
+          <target state="translated">0개 이상의 단어 문자로 이어지는 영문자를 찾습니다.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the input string.</source>
+          <target state="translated">입력 문자열의 끝 부분에서 검색을 종료합니다.</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 정규식<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>정규식 언어 - 빠른 참조<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>정규식의 수량자<ept id="p1">](quantifiers.md)</ept></target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Alternation constructs in regular expressions<ept id="p1">](alternation.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>정규식의 교체 구문<ept id="p1">](alternation.md)</ept></target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>정규식의 그룹화 구문<ept id="p1">](grouping.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

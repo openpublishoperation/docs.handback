@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e4e96183484d102d102eeab97191f8be9b9be8a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\third-party-deps.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ae8a17177cbb1139a7720686f7c39bf3f83fdc59</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aaa84335bb92e5c84ad99be97a394ec93689466f</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file third-party-deps.18ddccf56c882bc7efa2138e10972ab6228ccca8.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Party Dependencies</source>
+          <target state="translated">.NET Core로 이식 - 타사 종속성 분석</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Dependencies</source>
+          <target state="translated">.NET Core로 이식 - 타사 종속성 분석</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Party Dependencies</source>
+          <target state="translated">.NET Core로 이식 - 타사 종속성 분석</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The first step in the porting process is to understand your third party dependencies.</source>
+          <target state="translated">이식 프로세스의 첫 번째 단계는 타사 종속성을 이해하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You need to figure out which of them, if any, don't yet run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.</source>
+          <target state="translated">.NET Core에서 아직 실행되지 않는 것이 무엇인지를 파악하고 이에 대한 대체 계획을 개발해야 합니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">필수 조건</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article will assume you are using Windows and Visual Studio, and that you have code which runs on the .NET Framework today.</source>
+          <target state="translated">이 문서에서는 사용자가 Windows 및 Visual Studio를 사용하며 .NET Framework에서 실행되는 코드를 가지고 있다고 가정합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Analyzing NuGet Packages</source>
+          <target state="translated">NuGet 패키지 분석</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Analyzing NuGet packages for portability is very easy.</source>
+          <target state="translated">이식성에 대한 NuGet 패키지 분석은 매우 쉽습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Because a NuGet package is itself a set of folders which contain platform-specific assemblies, all you have to do is check to see if there is a folder which contains a .NET Core assembly.</source>
+          <target state="translated">NuGet 패키지는 플랫폼별 어셈블리를 포함하는 폴더의 집합 자체이므로, .NET Core 어셈블리를 포함하는 폴더가 있는지만 확인하면 됩니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Inspecting NuGet Package folders is easiest with the <bpt id="p1">[</bpt>NuGet Package Explorer<ept id="p1">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept> tool.</source>
+          <target state="translated">NuGet 패키지 폴더 검사는 <bpt id="p1">[</bpt>NuGet 패키지 탐색기<ept id="p1">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept> 도구로 수행하는 것이 가장 쉽습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Here's how to do it.</source>
+          <target state="translated">방법은 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Download and open the NuGet Package Explorer.</source>
+          <target state="translated">NuGet 패키지 탐색기를 다운로드하여 엽니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Click "Open package from online feed".</source>
+          <target state="translated">"온라인 피드에서 패키지 열기"를 클릭합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Search for the name of the package.</source>
+          <target state="translated">패키지의 이름을 검색합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Expand the "lib" folder on the right-hand side and look at folder names.</source>
+          <target state="translated">오른쪽에서 "lib" 폴더를 확장하고 폴더 이름을 찾습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You can also see what a package supports on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> under the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> section of the page for that package.</source>
+          <target state="translated">패키지에 대한 페이지의 <bpt id="p2">**</bpt>종속성<ept id="p2">**</ept> 섹션에 있는 <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept>에서 패키지가 지원하는 내용을 확인할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In either case, you'll need to look for a folder or entry on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> with any of the following names:</source>
+          <target state="translated">어떤 경우든 <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept>에서 다음 이름의 폴더 또는 항목을 찾아야 합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>These are the Target Framework Monikers (TFM) which map to versions of <bpt id="p1">[</bpt>The .NET Standard Library<ept id="p1">](../../standard/library.md)</ept> and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.</source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET 표준 라이브러리<ept id="p1">](../../standard/library.md)</ept>의 버전에 매핑되는 TFM(대상 프레임워크 모니커) 및 .NET Core와 호환되는 기존의 PCL(이식 가능한 클래스 라이브러리) 프로필입니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Note that <ph id="ph1">`netcoreapp1.0`</ph>, while compatible, is for applications and not libraries.</source>
+          <target state="translated">호환되는 <ph id="ph1">`netcoreapp1.0`</ph>은 응용 프로그램용이며 라이브러리용이 아닙니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Although there's nothing wrong with using a library which is <ph id="ph1">`netcoreapp1.0`</ph>-based, that library may not be intended for anything <bpt id="p1">*</bpt>other<ept id="p1">*</ept> than consumption by other <ph id="ph2">`netcoreapp1.0`</ph> applications.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> 기반 라이브러리를 사용하는 것에는 문제가 없지만, 해당 라이브러리는 다른 <ph id="ph2">`netcoreapp1.0`</ph> 응용 프로그램이 사용하는 것 <bpt id="p1">*</bpt>이외의<ept id="p1">*</ept> 용도가 아닐 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:</source>
+          <target state="translated">호환 가능한 .NET Core의 시험판에서 사용되는 일부 레거시 TFM도 있습니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>While these will likely work with your code, there is no guarantee of compatibility<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>이러한 것도 코드와 호환될 수는 있지만 호환성이 보장되지는 않습니다.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Packages with these TFMs were built with pre-release .NET Core packages.</source>
+          <target state="translated">이러한 TFM이 포함된 패키지는 시험판 .NET Core 패키지로 빌드된 것입니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Take note of when (or if) packages like this are updated to be <ph id="ph1">`netstandard`</ph>-based.</source>
+          <target state="translated">이러한 패키지를 <ph id="ph1">`netstandard`</ph> 기반으로 업데이트할 경우에는 주의해야 합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use a package targeting a traditional PCL or pre-release .NET Core target, you must use the <ph id="ph1">`imports`</ph> directive in your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">기존 PCL 또는 시험판 .NET Core를 대상으로 하는 패키지를 사용하려면 <ph id="ph2">`project.json`</ph> 파일에서 <ph id="ph1">`imports`</ph> 지시문을 사용해야 합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>What to do when your NuGet package dependency doesn't run on .NET Core</source>
+          <target state="translated">NuGet 패키지 종속성이 .NET Core에서 실행되지 않는 경우 수행할 작업</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>There are a few things you can do if a NuGet package you depend on won't run on .NET Core.</source>
+          <target state="translated">종속된 NuGet 패키지가 .NET Core에서 실행되지 않을 경우 수행할 수 있는 몇 가지가 있습니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the project is open source and hosted somewhere like GitHub, you can engage the developer(s) directly.</source>
+          <target state="translated">프로젝트가 오픈 소스이고 GitHub 같은 곳에 호스트된 경우 개발자가 직접 참여하도록 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can contact the author directly on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> by searching for the package and clicking "Contact Owners" on the left hand side of the package's page.</source>
+          <target state="translated">패키지를 검색하고 패키지 페이지의 왼쪽에서 "연락처 소유자"를 클릭하여 <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept>에서 작성자에게 직접 연락할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can look for another package that runs on .NET Core which accomplishes the same task as the package you were using.</source>
+          <target state="translated">사용하던 패키지와 동일한 작업을 수행하는, .NET Core에서 실행되는 다른 패키지를 찾을 수도 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You can attempt to write the code the package was doing yourself.</source>
+          <target state="translated">패키지가 수행하고 있는 코드를 직접 작성해볼 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You could eliminate the dependency on the package by changing the functionality of your app, at least until a compatible version of the package becomes available.</source>
+          <target state="translated">적어도 패키지의 호환 버전을 사용할 수 있을 때까지는 앱의 기능을 변경하여 패키지에 대한 종속성을 없앨 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Please remember that open source project maintainers and NuGet package publishers are often volunteers who contribute because they care about a given domain, do it for free, and often have a different daytime job.</source>
+          <target state="translated">오픈 소스 프로젝트 유지 관리자 및 NuGet 패키지 게시자는 특정 도메인을 무료로 관리하며 낮에는 다른 업무가 있는 지원자인 경우가 많다는 점에 유의하세요.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If you do reach out, you might start with a positive statement about the library before asking about .NET Core support.</source>
+          <target state="translated">연락되는 경우 .NET Core 지원을 요청하기 전에 라이브러리에 대한 긍정적인 문장으로 시작할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you're unable to resolve your issue with any of the above, you may have to port to .NET Core at a later date.</source>
+          <target state="translated">위 방법으로 문제를 해결할 수 없는 경우 나중에 .NET Core로 이식해야 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The .NET Team would like to know which libraries are the most important to support next with .NET Core.</source>
+          <target state="translated">.NET 팀은 다음에 .NET Core를 지원하기 위해 어떤 라이브러리가 가장 중요한지 알고자 합니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can also send us mail at <ph id="ph1">dotnet@microsoft.com</ph> about the libraries you'd like to use.</source>
+          <target state="translated">또한 사용하고 싶은 라이브러리에 대해 <ph id="ph1">dotnet@microsoft.com</ph>으로 메일을 보낼 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Analyzing Dependencies which aren't NuGet Packages</source>
+          <target state="translated">NuGet 패키지가 아닌 종속성 분석</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>You may have a dependency that isn't a NuGet package, such as a DLL in the filesystem.</source>
+          <target state="translated">파일 시스템의 DLL처럼, NuGet 패키지가 아닌 종속성이 있을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The only way to determine the portability of that dependency is to run the <bpt id="p1">[</bpt>ApiPort tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>.</source>
+          <target state="translated">해당 종속성의 이식 가능성을 확인하는 유일한 방법은 <bpt id="p1">[</bpt>ApiPort 도구<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>를 실행하는 것입니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="translated">다음 단계</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you're porting a library, check out <bpt id="p1">[</bpt>Porting your Libraries<ept id="p1">](libraries.md)</ept>.</source>
+          <target state="translated">라이브러리를 이식하려는 경우 <bpt id="p1">[</bpt>라이브러리 이식<ept id="p1">](libraries.md)</ept>을 확인합니다.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

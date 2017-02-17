@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3e99bcb1cfbcf0a4f6f372e481d41ec31d635749</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\collections\threadsafe\how-to-add-and-remove-items.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2838f5af7ae475053be7ffb3453a7d249785cb61</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d6fe9aa9d1e7a6c3d7a50df43d7c64cac671ca9</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file how-to-add-and-remove-items.c77fbc4e7bd3b40ee1e7a82d6c35f6975e1ad92f.ko-kr.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">방법: ConcurrentDictionary에서 항목 추가 및 제거</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">방법: ConcurrentDictionary에서 항목 추가 및 제거</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: Add and Remove Items from a ConcurrentDictionary</source>
+          <target state="translated">방법: ConcurrentDictionary에서 항목 추가 및 제거</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This example shows how to add, retrieve, update, and remove items from a <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>.</source>
+          <target state="translated">이 예제에서는 <bpt id="p1">[</bpt>System.Collections.Concurrent.ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>의 항목을 추가, 검색, 업데이트 및 제거하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This collection class is a thread-safe implementation.</source>
+          <target state="translated">이 컬렉션 클래스는 스레드로부터 안전하게 구현됩니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>We recommend that you use it whenever multiple threads might be attempting to access the elements concurrently.</source>
+          <target state="translated">여러 스레드에서 컬렉션에 동시에 액세스할 수 있을 때는 언제든지 이 클래스를 사용하는 것이 좋습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> provides several convenience methods that make it unnecessary for code to first check whether a key exists before it attempts to add or remove data.</source>
+          <target state="translated"><ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>에서는 추가하거나 제거하려고 시도하기 전에 키의 존재 여부를 먼저 확인하는 코드가 필요하지 않게 하는 편리한 몇 가지 메서드를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following table lists these convenience methods and describes when to use them.</source>
+          <target state="translated">다음 표에서는 이처럼 편리한 메서드를 나열하고 해당 메서드가 사용되는 경우에 대해 설명합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Method</source>
+          <target state="translated">메서드</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Use when...</source>
+          <target state="translated">사용 시기</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You want to add a new value for a specified key and, if the key already exists, you want to replace its value.</source>
+          <target state="translated">지정된 키의 새 값을 추가하려는 경우 및 이미 존재하는 키의 값을 바꾸려는 경우</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You want to retrieve the existing value for a specified key and, if the key does not exist, you want to specify a key/value pair.</source>
+          <target state="translated">지정된 키의 기존 값을 검색하려는 경우 및 존재하지 않는 키/값 쌍을 지정하려는 경우</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`TryAdd`</ph>, <ph id="ph2">`TryGetValue`</ph>, <ph id="ph3">`TryUpdate`</ph>, <ph id="ph4">`TryRemove`</ph></source>
+          <target state="translated"><ph id="ph1">`TryAdd`</ph>, <ph id="ph2">`TryGetValue`</ph>, <ph id="ph3">`TryUpdate`</ph>, <ph id="ph4">`TryRemove`</ph></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You want to add, get, update, or remove a key/value pair, and, if the key already exists or the attempt fails for any other reason, you want to take some alternative action.</source>
+          <target state="translated">키/값 쌍 추가, 가져오기, 업데이트 또는 제거를 수행하려는 경우 및 어떤 이유로 인해 이러한 시도가 실패하거나 이미 키가 존재할 때 다른 작업을 대신 수행하려는 경우</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept> is designed for multithreaded scenarios.</source>
+          <target state="translated"><bpt id="p1">[</bpt>ConcurrentDictionary<ph id="ph1">&amp;lt;</ph>TKey, TValue<ph id="ph2">&amp;gt;</ph><ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)</ept>는 다중 스레드 시나리오에 맞게 만들어졌습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You do not have to use locks in your code to add or remove items from the collection.</source>
+          <target state="translated">이 컬렉션에서 항목을 추가하거나 제거하기 위해 코드에 잠금을 사용할 필요는 없습니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>However, it is always possible for one thread to retrieve a value, and another thread to immediately update the collection by giving the same key a new value.</source>
+          <target state="translated">그러나 동일한 키에 새 값을 지정하여 한 스레드에서 값을 검색하고 다른 스레드에서 컬렉션을 바로 업데이트하는 것은 언제든지 가능합니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Also, although all methods of <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph> are thread-safe, not all methods are atomic, specifically <ph id="ph2">`GetOrAdd`</ph> and <ph id="ph3">`AddOrUpdate`</ph>.</source>
+          <target state="translated">또한 <ph id="ph1">`ConcurrentDictionary&lt;TKey, TValue&gt;`</ph>의 모든 메서드가 스레드로부터 안전하지만 모든 메서드, 특히 <ph id="ph2">`GetOrAdd`</ph> 및 <ph id="ph3">`AddOrUpdate`</ph>가 원자성 메서드인 것은 아닙니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The user delegate that is passed to these methods is invoked outside of the dictionary's internal lock.</source>
+          <target state="translated">이러한 메서드에 전달되는 사용자 대리자는 사전의 내부 잠금 밖에서 호출됩니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>(This is done to prevent unknown code from blocking all threads.) Therefore it is possible for this sequence of events to occur:</source>
+          <target state="translated">알려지지 않은 코드에서 모든 스레드를 차단하지 않도록 하기 위해 이렇게 합니다. 따라서 다음과 같은 이벤트 시퀀스가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>threadA calls <ph id="ph1">`GetOrAdd`</ph>, finds no item and creates a new item to Add by invoking the valueFactory delegate.</source>
+          <target state="translated">threadA에서 <ph id="ph1">`GetOrAdd`</ph>를 호출하고, 항목을 찾지 못한 다음, valueFactory 대리자를 호출하여 Add에 새 항목을 만듭니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>threadB calls <ph id="ph1">`GetOrAdd`</ph> concurrently, its valueFactory delegate is invoked and it arrives at the internal lock before threadA, and so its new key-value pair is added to the dictionary.</source>
+          <target state="translated">threadB에서 <ph id="ph1">`GetOrAdd`</ph>를 동시에 호출하고, 해당 valueFactory 대리자가 호출된 다음 threadA보다 먼저 내부 잠금에 도달하여 threadB의 새 키-값 쌍이 사전에 추가됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>threadA's user delegate completes, and the thread arrives at the lock, but now sees that the item exists already</source>
+          <target state="translated">threadA의 사용자 대리자가 완료되고 스레드가 잠금에 도달하지만 이제는 해당 항목이 이미 존재하는 것으로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>threadA performs a "Get", and returns the data that was previously added by threadB.</source>
+          <target state="translated">threadA에서 "Get"을 수행하고 이전에 threadB에서 추가한 데이터를 반환합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Therefore, it is not guaranteed that the data that is returned by <ph id="ph1">`GetOrAdd`</ph> is the same data that was created by the thread's valueFactory.</source>
+          <target state="translated">따라서 <ph id="ph1">`GetOrAdd`</ph>에서 반환한 데이터가 스레드의 valueFactory에서 만든 것과 동일한 데이터라고 보장되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>A similar sequence of events can occur when <ph id="ph1">`AddOrUpdate`</ph> is called.</source>
+          <target state="translated"><ph id="ph1">`AddOrUpdate`</ph>를 호출할 때에도 비슷한 이벤트 시퀀스가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Collections.Concurrent<ept id="p1">](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread-Safe Collections<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>스레드로부터 안전한 컬렉션<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
