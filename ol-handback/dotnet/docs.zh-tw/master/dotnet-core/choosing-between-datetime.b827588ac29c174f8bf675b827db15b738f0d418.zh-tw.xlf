@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f8a603bab32afd0b8e7d13c9c5755e3f14a9d2bd</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\choosing-between-datetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2520616ec19791376d71c88023904683fab2909a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">46cffe4cedc1a9448d20091fe61127aa3944735f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">在 DateTime、DateTimeOffset、TimeSpan 與 TimeZoneInfo 之間選擇</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">在 DateTime、DateTimeOffset、TimeSpan 與 TimeZoneInfo 之間選擇</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</source>
+          <target state="translated">在 DateTime、DateTimeOffset、TimeSpan 與 TimeZoneInfo 之間選擇</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>.NET applications that use date and time information are very diverse and can use that information in several ways.</source>
+          <target state="translated">使用日期和時間資訊的 .NET 應用程式大不相同，並且可透過數種方式使用該資訊。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The more common uses of date and time information include one or more of the following:</source>
+          <target state="translated">日期和時間資訊的較常見用法包含下列一或多項：</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To reflect a date only, so that time information is not important.</source>
+          <target state="translated">只反映日期，使時間資訊不重要。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To reflect a time only, so that date information is not important.</source>
+          <target state="translated">只反映時間，使日期資訊不重要。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To reflect an abstract date and time that is not tied to a specific time and place (for example, most stores in an international chain open on weekdays at 9:00 A.M.).</source>
+          <target state="translated">反映抽象的日期和時間，這些並不會和特定時間或位置密切相關 (例如大多數國際連鎖的商店在工作日上午 9 點開始營業)。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To retrieve date and time information from sources outside of the .NET application, typically where date and time information is stored in a simple data type.</source>
+          <target state="translated">若要從 .NET 應用程式的外部來源中擷取日期和時間資訊，通常其中的日期和時間資訊會儲存為簡單資料類型。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">若要唯一且明確地識別單一時間點。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Some applications require that a date and time be unambiguous only on the host system; others require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).</source>
+          <target state="translated">有些應用程式只在主機系統上需要明確的日期和時間；有些則需要在不同系統上都明確 (也就是一個系統上已序列化的日期可以有意義地還原序列化，並且在世界各地的另一個系統上使用)。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To preserve multiple related times (such as the requestor's local time and the server's time of receipt for a Web request).</source>
+          <target state="translated">若要保留多個相關時間 (例如要求者的當地時間和 Web 要求的回條之伺服器時間)。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To perform date and time arithmetic, possibly with a result that uniquely and unambiguously identifies a single point in time.</source>
+          <target state="translated">若要執行日期和時間運算，且該運算可能有會唯一明確地識別單一時間點的結果。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>.NET includes the <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>, <bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>, <bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept>, and <bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> types, all of which can be used to build applications that work with dates and times.</source>
+          <target state="translated">.NET 包含 <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept>、<bpt id="p2">[</bpt>System.DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept>、<bpt id="p3">[</bpt>System.TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> 和 <bpt id="p4">[</bpt>System.TimeZoneInfo<ept id="p4">](xref:System.TimeZoneInfo)</ept> 類型，這些所有的類型都能用來建置使用日期和時間的應用程式。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This topic does not discuss the older <ph id="ph1">`TimeZone`</ph> type, because its functionality is almost entirely incorporated in the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class.</source>
+          <target state="translated">本主題不會討論較舊的 <ph id="ph1">`TimeZone`</ph> 類型，因為它的功能幾乎已完全併入 <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 類別。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Whenever possible, developers should use the <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class instead of the <ph id="ph1">`TimeZone`</ph> class.</source>
+          <target state="translated">可能的話，開發人員應該使用 <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 類別，而非 <ph id="ph1">`TimeZone`</ph> 類別。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The DateTime structure</source>
+          <target state="translated">DateTime 結構</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> value defines a particular date and time.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTime<ept id="p1">](xref:System.DateTime)</ept> 值會定義特定的日期和時間。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>It includes a <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property that provides limited information about the time zone to which that date and time belongs.</source>
+          <target state="translated">它包含 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 屬性，該屬性提供該日期和時間所屬之有限的時區資訊。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> value returned by the <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property indicates whether the <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> value represents the local time <bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>), Coordinated Universal Time (UTC) <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept>, or an unspecified time <bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>.</source>
+          <target state="translated"><bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> 屬性所傳回的 <bpt id="p1">[</bpt>DateTimeKind<ept id="p1">](xref:System.DateTimeKind)</ept> 值表示 <bpt id="p3">[</bpt>DateTime<ept id="p3">](xref:System.DateTime)</ept> 值代表當地時間 <bpt id="p4">[</bpt>DateTimeKind.Local<ept id="p4">](xref:System.DateTimeKind.Local)</ept>)、國際標準時間 (UTC) <bpt id="p5">[</bpt>DateTimeKind.Utc<ept id="p5">](xref:System.DateTimeKind.Utc)</ept> 還是未指定時間 <bpt id="p6">[</bpt>DateTimeKind.Unspecified<ept id="p6">](xref:System.DateTimeKind.Unspecified)</ept>。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure is suitable for applications that do the following:</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 結構適用於執行下列項目的應用程式：</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Work with dates only.</source>
+          <target state="translated">只使用日期。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Work with times only.</source>
+          <target state="translated">只使用時間。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Work with abstract dates and times.</source>
+          <target state="translated">使用抽象的日期和時間。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Work with dates and times for which time zone information is missing.</source>
+          <target state="translated">使用遺漏時區資訊的日期和時間。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Work with UTC dates and times only.</source>
+          <target state="translated">只使用 UTC 日期和時間。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Retrieve date and time information from sources outside the .NET Framework, such as SQL databases.</source>
+          <target state="translated">從 .NET Framework 的外部來源中擷取日期和時間資訊，例如 SQL 資料庫。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Typically, these sources store date and time information in a simple format that is compatible with the <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> structure.</source>
+          <target state="translated">一般而言，這些來源會將日期和時間資訊以和 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 結構相容的簡單格式儲存。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Perform date and time arithmetic, but are concerned with general results.</source>
+          <target state="translated">執行日期和時間運算，但關心其一般結果。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example, in an addition operation that adds six months to a particular date and time, it is often not important whether the result is adjusted for daylight saving time.</source>
+          <target state="translated">例如，在對特定日期和時間加入六個月的加法運算中，該結果是否對日光節約時間進行調整通常並不重要。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Unless a particular <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC, that date and time value is often ambiguous or limited in its portability.</source>
+          <target state="translated">除非特定的 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值代表 UTC，否則該日期和時間值的可攜性通常是不明確或受限制的。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents the local time, it is portable within that local time zone (that is, if the value is deserialized on another system in the same time zone, that value still unambiguously identifies a single point in time).</source>
+          <target state="translated">例如，如果 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值代表當地時間，則在該當地時區是可攜式的 (也就是說，如果值在相同時區的另一個系統上還原序列化，則該值仍會明確地識別單一時間點)。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Outside the local time zone, that <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value can have multiple interpretations.</source>
+          <target state="translated">在當地時區外，<bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值可以有多重解譯。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If the value's <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> property is <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>, it is even less portable: it is now ambiguous within the same time zone and possibly even on the same system on which it was first serialized.</source>
+          <target state="translated">如果該值的 <bpt id="p1">[</bpt>Kind<ept id="p1">](xref:System.DateTime.Kind)</ept> 屬性是 <bpt id="p2">[</bpt>DateTimeKind.Unspecified<ept id="p2">](xref:System.DateTimeKind.Unspecified)</ept>，則它的可攜性更差：現在它於相同的時區中不明確，即使在第一次序列化的同一個系統上也可能如此。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Only if a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value represents UTC does that value unambiguously identify a single point in time regardless of the system or time zone in which the value is used.</source>
+          <target state="translated">只有當 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值代表 UTC 時，該值才會明確地識別單一時間點，無論該值所使用的系統或時區為何。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When saving or sharing <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> data, UTC should be used and the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value's <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> property should be set to <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">當儲存或共用 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 資料時應該使用 UTC，且 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 值的 <bpt id="p3">[</bpt>Kind<ept id="p3">](xref:System.DateTime.Kind)</ept> 屬性應該設為 <bpt id="p4">[</bpt>DateTimeKind.Utc<ept id="p4">](xref:System.DateTimeKind.Utc)</ept>。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The DateTimeOffset structure</source>
+          <target state="translated">DateTimeOffset 結構</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 結構代表日期和時間值，以及表示該值與 UTC 差異大小的位移。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Thus, the value always unambiguously identifies a single point in time.</source>
+          <target state="translated">因此，該值一律明確地識別單一時間點。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type includes all of the functionality of the <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> type along with time zone awareness.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 類型包含 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 類型的所有功能並感知時區。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This makes it is suitable for applications that do the following:</source>
+          <target state="translated">因此適用於執行下列項目的應用程式：</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Uniquely and unambiguously identify a single point in time.</source>
+          <target state="translated">唯一且明確地識別單一時間點。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 類型可用來明確定義「現在」的意義，以記錄交易的時間、記錄系統或應用程式事件的時間以及記錄檔案建立及修改的時間。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Perform general date and time arithmetic.</source>
+          <target state="translated">執行一般日期和時間運算。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Preserve multiple related times, as long as those times are stored as two separate values or as two members of a structure.</source>
+          <target state="translated">只要時間已儲存為兩個不同的值或一個結構中的兩個成員，就可保留多個相關時間。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These uses for <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values are much more common than those for <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> values.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值的用途比 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 值的更為普遍。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>As a result, <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> should be considered the default date and time type for application development.</source>
+          <target state="translated">因此對於應用程式開發，應該考慮將 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 作為預設的日期和時間類型。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value is not tied to a particular time zone, but can originate from any of a variety of time zones.</source>
+          <target state="translated"><bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值與特定的時區並沒有密切的關係，但可能來自各種不同的時區。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>To illustrate this, the following example lists the time zones to which a number of <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> values (including a local Pacific Standard Time) can belong.</source>
+          <target state="translated">為了說明這點，下列範例會列出可和一些 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值有關的時區 (包括本機的太平洋標準時間)。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The output shows that each date and time value in this example can belong to at least three different time zones.</source>
+          <target state="translated">此輸出顯示在本範例中的每個日期和時間值可屬於至少三個不同時區。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value of 6/10/2007 shows that if a date and time value represents a daylight saving time, its offset from UTC does not even necessarily correspond to the originating time zone's base UTC offset or to the offset from UTC found in its display name.</source>
+          <target state="translated">2007 年 6 月 10 日的 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值顯示出若日期和時間值代表日光節約時間，則其相對於 UTC 的位移甚至不一定會對應於起始時區的基底 UTC 位移，或對應於從它的顯示名稱中找到的相對於 UTC 的位移。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This means that, because a single <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept>  value is not tightly coupled with its time zone, it cannot reflect a time zone's transition to and from daylight saving time.</source>
+          <target state="translated">這表示因為單一 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 的值並不會和時區緊密結合，所以它無法反映與日光節約時間相互轉換的時區。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This can be particularly problematic when date and time arithmetic is used to manipulate a <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> value.</source>
+          <target state="translated">特別是當使用日期和時間運算來管理 <bpt id="p1">[</bpt>DateTimeOffset<ept id="p1">](xref:System.DateTimeOffset)</ept> 值的時候，這會有問題。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For a discussion of how to perform date and time arithmetic in a way that takes account of a time zone's adjustment rules, see <bpt id="p1">[</bpt>Performing arithmetic operations with dates and times<ept id="p1">](performing-arithmetic-operations.md)</ept>.</source>
+          <target state="translated">如需在考慮時區調整規則的方式下該如何執行日期和時間運算的討論，請參閱<bpt id="p1">[</bpt>使用日期和時間執行算術運算<ept id="p1">](performing-arithmetic-operations.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The TimeSpan structure</source>
+          <target state="translated">TimeSpan 結構</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure represents a time interval.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 結構表示時間間隔。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Its two typical uses are:</source>
+          <target state="translated">其兩個一般用法為：</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Reflecting the time interval between two date and time values.</source>
+          <target state="translated">反映出兩個日期和時間值之間的時間間隔。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For example, subtracting one <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> value from another returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value.</source>
+          <target state="translated">例如，從另一個值中減去一個 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 值會傳回 <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Measuring elapsed time.</source>
+          <target state="translated">測量已耗用時間。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> property returns a <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> value that reflects the time interval that has elapsed since the call to one of the <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept> methods that begins to measure elapsed time.</source>
+          <target state="translated">例如，<bpt id="p1">[</bpt>Stopwatch.Elapsed<ept id="p1">](xref:System.Diagnostics.Stopwatch.Elapsed)</ept> 屬性會傳回 <bpt id="p2">[</bpt>TimeSpan<ept id="p2">](xref:System.TimeSpan)</ept> 值，該值反映出在呼叫開始測量已耗用時間的 <bpt id="p3">[</bpt>System.Diagnostics.Stopwatch<ept id="p3">](xref:System.Diagnostics.Stopwatch)</ept> 方法之其中一種之後已耗用的時間間隔。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> value can also be used as a replacement for a <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> value when that value reflects a time without reference to a particular time of day.</source>
+          <target state="translated">若在未參考一天中之特定時間的情況下反映時間，則 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 值也可用來取代 <bpt id="p2">[</bpt>DateTime<ept id="p2">](xref:System.DateTime)</ept> 值。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This usage is similar to the <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> and <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept> properties, which return a <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> value that represents the time without reference to a date.</source>
+          <target state="translated">這種用法類似於 <bpt id="p1">[</bpt>DateTime.TimeOfDay<ept id="p1">](xref:System.DateTime.TimeOfDay)</ept> 和 <bpt id="p2">[</bpt>DateTimeOffset.TimeOfDay<ept id="p2">](xref:System.DateTimeOffset.TimeOfDay)</ept> 屬性，在不參考日期之情況下，該屬性傳回的 <bpt id="p3">[</bpt>TimeSpan<ept id="p3">](xref:System.TimeSpan)</ept> 值代表時間。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, the <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> structure can be used to reflect a store's daily opening or closing time, or it can be used to represent the time at which any regular event occurs.</source>
+          <target state="translated">例如，<bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 結構可用來反映商店每日開始營業或打烊的時間，或可用來代表任何有規律事件發生的時間。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`StoreInfo`</ph> structure that includes <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> objects for store opening and closing times, as well as a <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> object that represents the store's time zone.</source>
+          <target state="translated">下列範例會定義 <ph id="ph1">`StoreInfo`</ph> 結構，其中包含用來儲存開始營業和打烊時間的 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 物件，以及代表商店所在時區的 <bpt id="p2">[</bpt>TimeZoneInfo<ept id="p2">](xref:System.TimeZoneInfo)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The structure also includes two methods, <ph id="ph1">`IsOpenNow`</ph> and <ph id="ph2">`IsOpenAt`</ph>, that indicates whether the store is open at a time specified by the user, who is assumed to be in the local time zone.</source>
+          <target state="translated">該結構也包含兩種方法，<ph id="ph1">`IsOpenNow`</ph> 和 <ph id="ph2">`IsOpenAt`</ph>，假定使用者處於當地時區，該結構會表示商店是否於使用者指定的時間開始營業。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`StoreInfo`</ph> structure can then be used by client code like the following.</source>
+          <target state="translated">然後 <ph id="ph1">`StoreInfo`</ph> 結構可供用戶端程式碼使用，如下所示。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The TimeZoneInfo class</source>
+          <target state="translated">TimeZoneInfo 類別</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class represents any of the earth's time zones, and enables the conversion of any date and time in one time zone to its equivalent in another time zone.</source>
+          <target state="translated"><bpt id="p1">[</bpt>System.TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 類別代表地球的任何時區，並可讓一個時區中的任何日期和時間轉換成在另一個時區中對等的日期和時間。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class makes it possible to work with dates and times so that any date and time value unambiguously identifies a single point in time.</source>
+          <target state="translated"><bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 類別讓您能夠處理日期和時間，讓任何日期和時間值能明確地識別單一時間點。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In some cases, taking full advantage of the <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> class may require further development work.</source>
+          <target state="translated">在某些情況下，若要充分利用 <bpt id="p1">[</bpt>TimeZoneInfo<ept id="p1">](xref:System.TimeZoneInfo)</ept> 類別，可能需要進一步的開發工作。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Date and time values are not tightly coupled with the time zones to which they belong.</source>
+          <target state="translated">日期和時間值與其所屬的時區並未緊密結合。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>As a result, unless your application provides some mechanism for linking a date and time with its associated time zone, it is easy for a particular date and time value to become disassociated from its time zone.</source>
+          <target state="translated">因此，除非您的應用程式提供讓日期和時間與相關聯時區連結的機制，否則很容易就會讓特定日期和時間值與其時區解除關聯。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>One method of linking this information is to define a class or structure that contains both the date and time value and its associated time zone object.</source>
+          <target state="translated">連結此資訊的一種方法是定義類別或結構，其中包含日期和時間值，以及與其相關聯的時區物件。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Taking advantage of time zone support in .NET is possible only if the time zone to which a date and time value belongs is known when that date and time object is instantiated.</source>
+          <target state="translated">當日期和時間物件已具現化後，僅當日期和時間值的所屬時區已知時，才有可能利用 .NET 支援的時區。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is often not the case, particularly in Web or network applications.</source>
+          <target state="translated">情況往往並非如此，特別是在 Web 或網路應用程式的情況下。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>日期、時間及時區<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
