@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e4e96183484d102d102eeab97191f8be9b9be8a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\porting\third-party-deps.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ae8a17177cbb1139a7720686f7c39bf3f83fdc59</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aaa84335bb92e5c84ad99be97a394ec93689466f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Party Dependencies</source>
+          <target state="translated">.NET Core への移植 - サードパーティの依存関係の分析</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Dependencies</source>
+          <target state="translated">.NET Core への移植 - サードパーティの依存関係の分析</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Porting to .NET Core - Analyzing your Third-Party Party Dependencies</source>
+          <target state="translated">.NET Core への移植 - サードパーティの依存関係の分析</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The first step in the porting process is to understand your third party dependencies.</source>
+          <target state="translated">移植プロセスの最初の手順は、サード パーティの依存関係を理解することです。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You need to figure out which of them, if any, don't yet run on .NET Core, and develop a contingency plan for those which don't run on .NET Core.</source>
+          <target state="translated">.NET Core でまだ実行されていないもの (がある場合) はどれかを確認し、それらに対して代替計画を作成する必要があります。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This article will assume you are using Windows and Visual Studio, and that you have code which runs on the .NET Framework today.</source>
+          <target state="translated">この記事は、Windows および Visual Studio を使用しており、最新の .NET Framework で実行されるコードがあることを前提にしています。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Analyzing NuGet Packages</source>
+          <target state="translated">NuGet パッケージの分析</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Analyzing NuGet packages for portability is very easy.</source>
+          <target state="translated">NuGet パッケージの移植性の分析は非常に簡単です。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Because a NuGet package is itself a set of folders which contain platform-specific assemblies, all you have to do is check to see if there is a folder which contains a .NET Core assembly.</source>
+          <target state="translated">NuGet パッケージはそれ自体がプラットフォーム固有のアセンブリを含むフォルダーのセットであるため、.NET Core のアセンブリが含まれるフォルダーがあるかどうかを確認するだけです。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Inspecting NuGet Package folders is easiest with the <bpt id="p1">[</bpt>NuGet Package Explorer<ept id="p1">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept> tool.</source>
+          <target state="translated"><bpt id="p1">[</bpt>NuGet Package Explorer<ept id="p1">](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)</ept> ツールを使用すると、最も簡単に NuGet パッケージ フォルダーを調べることができます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Here's how to do it.</source>
+          <target state="translated">これを行う方法を次に示します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Download and open the NuGet Package Explorer.</source>
+          <target state="translated">NuGet Package Explorer をダウンロードして開きます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Click "Open package from online feed".</source>
+          <target state="translated">「Open package from online feed」 (オンライン フィードからパッケージを開く) をクリックします。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Search for the name of the package.</source>
+          <target state="translated">パッケージの名前を検索します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Expand the "lib" folder on the right-hand side and look at folder names.</source>
+          <target state="translated">右側にある "lib" フォルダーを展開し、フォルダー名を確認します。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You can also see what a package supports on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> under the <bpt id="p2">**</bpt>Dependencies<ept id="p2">**</ept> section of the page for that package.</source>
+          <target state="translated">そのパッケージのページの <bpt id="p2">**</bpt>[Dependencies]<ept id="p2">**</ept> (依存関係) セクションで、<bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> でサポートされているパッケージを確認することもできます。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In either case, you'll need to look for a folder or entry on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> with any of the following names:</source>
+          <target state="translated">どちらの場合でも、次のいずれかの名前のフォルダーまたはエントリを <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> で探す必要があります。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>These are the Target Framework Monikers (TFM) which map to versions of <bpt id="p1">[</bpt>The .NET Standard Library<ept id="p1">](../../standard/library.md)</ept> and traditional Portable Class Library (PCL) profiles which are compatible with .NET Core.</source>
+          <target state="translated">これらは <bpt id="p1">[</bpt>.NET 標準ライブラリ<ept id="p1">](../../standard/library.md)</ept>のバージョンにマップされる Target Framework Moniker (TFM) および .NET Core と互換性がある従来のポータブル クラス ライブラリ (PCL) プロファイルです。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Note that <ph id="ph1">`netcoreapp1.0`</ph>, while compatible, is for applications and not libraries.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> には互換性はありますが、アプリケーションを対象としており、ライブラリは対象としていません。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Although there's nothing wrong with using a library which is <ph id="ph1">`netcoreapp1.0`</ph>-based, that library may not be intended for anything <bpt id="p1">*</bpt>other<ept id="p1">*</ept> than consumption by other <ph id="ph2">`netcoreapp1.0`</ph> applications.</source>
+          <target state="translated"><ph id="ph1">`netcoreapp1.0`</ph> をベースとするライブラリを使用する場合は問題ありませんが、そのライブラリが他の <ph id="ph2">`netcoreapp1.0`</ph> アプリケーションで使用される<bpt id="p1">*</bpt>以外<ept id="p1">*</ept>のことを想定していない場合があります。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>There are also some legacy TFMs used in pre-release versions of .NET Core that may also be compatible:</source>
+          <target state="translated">また、プレリリース版の .NET Core で使用されるレガシ TFM にも、互換性のあるものがあります。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>While these will likely work with your code, there is no guarantee of compatibility<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>これらは、あなたのコードで動作する可能性が高いですが、互換性は保証されていません<ept id="p1">**</ept>。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Packages with these TFMs were built with pre-release .NET Core packages.</source>
+          <target state="translated">このような TFM を含むパッケージは、プレリリース版の .NET Core パッケージで構築されています。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Take note of when (or if) packages like this are updated to be <ph id="ph1">`netstandard`</ph>-based.</source>
+          <target state="translated">このようなパッケージが <ph id="ph1">`netstandard`</ph> ベースに更新されるか、また、更新される場合はいつ行われるかを確認してください。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use a package targeting a traditional PCL or pre-release .NET Core target, you must use the <ph id="ph1">`imports`</ph> directive in your <ph id="ph2">`project.json`</ph> file.</source>
+          <target state="translated">従来の PCL またはプレリリースの .NET Core ターゲットを対象とするパッケージを使用するには、<ph id="ph2">`project.json`</ph> ファイルで <ph id="ph1">`imports`</ph> ディレクティブを使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>What to do when your NuGet package dependency doesn't run on .NET Core</source>
+          <target state="translated">NuGet パッケージの依存関係が .NET Core で動作しない場合の対処方法</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>There are a few things you can do if a NuGet package you depend on won't run on .NET Core.</source>
+          <target state="translated">依存している NuGet パッケージが .NET Core で動作しない場合の対処方法はいくつかあります。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the project is open source and hosted somewhere like GitHub, you can engage the developer(s) directly.</source>
+          <target state="translated">プロジェクトがオープン ソースで、GitHub のような場所にホストされている場合、直接開発者に連絡することができます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can contact the author directly on <bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> by searching for the package and clicking "Contact Owners" on the left hand side of the package's page.</source>
+          <target state="translated">パッケージを検索してパッケージのページの左側にある 「Contact Owners」 (オーナーに連絡する) をクリックすることで、<bpt id="p1">[</bpt>nuget.org<ept id="p1">](https://www.nuget.org/)</ept> の作成者に直接連絡することができます。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>You can look for another package that runs on .NET Core which accomplishes the same task as the package you were using.</source>
+          <target state="translated">.NET Core で実行され、使っていたパッケージと同じタスクを実行する別のパッケージを探すことができます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You can attempt to write the code the package was doing yourself.</source>
+          <target state="translated">パッケージが行っていたコードを自分で記述できます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You could eliminate the dependency on the package by changing the functionality of your app, at least until a compatible version of the package becomes available.</source>
+          <target state="translated">少なくともパッケージの互換バージョンが利用可能になるまでは、アプリの機能を変更することで、パッケージの依存関係を削除することができます。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Please remember that open source project maintainers and NuGet package publishers are often volunteers who contribute because they care about a given domain, do it for free, and often have a different daytime job.</source>
+          <target state="translated">オープン ソース プロジェクトの保守管理者および NuGet パッケージの発行者の多くは、その分野に関心があるために無償で作業を行っているボランティアであり、日中に別の仕事を抱えていることを忘れないでください。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If you do reach out, you might start with a positive statement about the library before asking about .NET Core support.</source>
+          <target state="translated">連絡を取る場合は、.NET Core サポートについて質問する前に、ライブラリについて肯定的なコメントを述べるとよいでしょう。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you're unable to resolve your issue with any of the above, you may have to port to .NET Core at a later date.</source>
+          <target state="translated">上記のいずれでも問題を解決できない場合、後日 .NET Core に移植しなければならない場合があります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The .NET Team would like to know which libraries are the most important to support next with .NET Core.</source>
+          <target state="translated">.NET チームは次の .NET Core のサポートでどのライブラリが最も重要かを知りたいと考えています。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can also send us mail at <ph id="ph1">dotnet@microsoft.com</ph> about the libraries you'd like to use.</source>
+          <target state="translated">使用したいライブラリについて、<ph id="ph1">dotnet@microsoft.com</ph>にメールを送ることもできます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Analyzing Dependencies which aren't NuGet Packages</source>
+          <target state="translated">NuGet パッケージではない依存関係の分析</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>You may have a dependency that isn't a NuGet package, such as a DLL in the filesystem.</source>
+          <target state="translated">ファイル システム内の DLL など、NuGet パッケージではない依存関係がある場合もあります。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The only way to determine the portability of that dependency is to run the <bpt id="p1">[</bpt>ApiPort tool<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>.</source>
+          <target state="translated">その依存関係の移植性を調べる唯一の方法が、<bpt id="p1">[</bpt>ApiPort ツール<ept id="p1">](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/HowTo/)</ept>を実行することです。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Next steps</source>
+          <target state="translated">次の手順</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you're porting a library, check out <bpt id="p1">[</bpt>Porting your Libraries<ept id="p1">](libraries.md)</ept>.</source>
+          <target state="translated">ライブラリを移植している場合は、「<bpt id="p1">[</bpt>Porting your Libraries<ept id="p1">](libraries.md)</ept>」(ライブラリへの移植) を参照してください。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
