@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e14e386a04c64726e4eacb63dc8855a356a18ba0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\compilation.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">56932ed1fd4d5840cde1afcc475dac369f319d67</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1464c9812435b68fb5ea64b9bef227f4b1a956e7</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file compilation.27191f9d6a714f50f84f3820d25cee49d425768b.ru-ru.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Compilation and reuse in regular expressions</source>
+          <target state="translated">Компиляция и многократное использование в регулярных выражениях</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Compilation and reuse in regular expressions</source>
+          <target state="translated">Компиляция и многократное использование в регулярных выражениях</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Compilation and reuse in regular expressions</source>
+          <target state="translated">Компиляция и многократное использование в регулярных выражениях</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can optimize the performance of applications that make extensive use of regular expressions by understanding how the regular expression engine compiles expressions and by understanding how regular expressions are cached.</source>
+          <target state="translated">Производительность приложений, активно использующих регулярные выражения, можно оптимизировать, если понимать, каким образом обработчик регулярных выражений компилирует выражения и как кэшируются регулярные выражения.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic discusses both compilation and caching.</source>
+          <target state="translated">В этом разделе описаны и компиляция, и кэширование.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Compiled Regular Expressions</source>
+          <target state="translated">Скомпилированные регулярные выражения</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>By default, the regular expression engine compiles a regular expression to a sequence of internal instructions (these are high-level codes that are different from Microsoft intermediate language, or MSIL).</source>
+          <target state="translated">По умолчанию обработчик регулярных выражений компилирует регулярные выражения в последовательность внутренних инструкций (это коды высокого уровня, которые отличаются от языка MSIL).</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When the engine executes a regular expression, it interprets the internal codes.</source>
+          <target state="translated">Когда обработчик выполняет регулярное выражение, он преобразовывает внутренние коды.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If a <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object is constructed with the <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option, it compiles the regular expression to explicit MSIL code instead of high-level regular expression internal instructions.</source>
+          <target state="translated">Если объект <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> создается с параметром <bpt id="p2">[</bpt>RegexOptions.Compiled<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>, то регулярное выражение явно компилируется в язык MSIL вместо внутренних инструкций высокого уровня.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This allows .NET's just-in-time (JIT) compiler to convert the expression to native machine code for higher performance.</source>
+          <target state="translated">Это позволяет JIT-компилятору платформы .NET преобразовывать выражение в изначальный машинный код данного объекта для повышения производительности.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>However, generated MSIL cannot be unloaded.</source>
+          <target state="translated">Однако созданный язык MSIL выгрузить невозможно.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The only way to unload code is to unload an entire application domain (that is, to unload all of your application's code.).</source>
+          <target state="translated">Выгрузить код можно, только выгрузив весь домен приложения (т. е. выгрузив весь код приложения).</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Effectively, once a regular expression is compiled with the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option, .NET never releases the resources used by the compiled expression, even if the regular expression was created by a <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> object that is itself released to garbage collection.</source>
+          <target state="translated">Фактически, если регулярное выражение компилируется с параметром <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>, то платформа .NET никогда не высвобождает ресурсы, использованные скомпилированным выражением, даже если регулярное выражение было создано объектом <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept>, который сам готов для сборки мусора.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You must be careful to limit the number of different regular expressions you compile with the <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> option to avoid consuming too many resources.</source>
+          <target state="translated">Необходимо соблюдать осторожность и ограничить число различных регулярных выражений, компилируемых с параметром <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept>, чтобы избежать потребления слишком большого количества ресурсов.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If an application must use a large or unbounded number of regular expressions, each expression should be interpreted, not compiled.</source>
+          <target state="translated">Если в приложении необходимо использовать большое или неограниченное число регулярных выражений, их необходимо преобразовывать, а не компилировать.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>However, if a small number of regular expressions are used repeatedly, they should be compiled with <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> for better performance.</source>
+          <target state="translated">Если же нужно многократно использовать небольшое число регулярных выражений, то их следует компилировать с параметром <bpt id="p1">[</bpt>RegexOptions.Compiled<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.Compiled)</ept> для повышения производительности.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The Regular Expressions Cache</source>
+          <target state="translated">Кэш регулярных выражений</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To improve performance, the regular expression engine maintains an application-wide cache of compiled regular expressions.</source>
+          <target state="translated">Для повышения производительности обработчик регулярных выражений поддерживает кэш скомпилированных регулярных выражений на уровне приложения.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The cache stores regular expression patterns that are used only in static method calls.</source>
+          <target state="translated">Кэш хранит шаблоны регулярных выражений, которые используются только при вызове статических методов.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>(Regular expression patterns supplied to instance methods are not cached.) This avoids the need to reparse an expression into high-level byte code each time it is used.</source>
+          <target state="translated">(Шаблоны регулярных выражений, предоставляемые методами экземпляра, не кэшируются.) Это устраняет потребность в повторном разборе выражения в байт-код высокого уровня при каждом его использовании.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The maximum number of cached regular expressions is determined by the value of the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic) <bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept> property.</source>
+          <target state="translated">Максимальное число кэшированных регулярных выражений определяется значением <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> в Visual Basic) свойства <bpt id="p1">[</bpt>Regex.CacheSize<ept id="p1">](xref:System.Text.RegularExpressions.Regex.CacheSize)</ept>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>By default, the regular expression engine caches up to 15 compiled regular expressions.</source>
+          <target state="translated">По умолчанию обработчик регулярных выражений кэширует до 15 скомпилированных регулярных выражений.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If the number of compiled regular expressions exceeds the cache size, the least recently used regular expression is discarded and the new regular expression is cached.</source>
+          <target state="translated">Если число скомпилированных регулярных выражений превышает размер кэша, из него удаляется наиболее давнее по использованию регулярное выражение и кэшируется новое регулярное выражение.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Your application can take advantage of precompiled regular expressions in one of the following two ways:</source>
+          <target state="translated">Приложение может воспользоваться преимуществом заранее скомпилированных регулярных выражений одним из указанных далее двух способов.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>By using a static method of the <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object to define the regular expression.</source>
+          <target state="translated">Используя статический метод объекта <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> для определения регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache.</source>
+          <target state="translated">Если используется шаблон регулярного выражения, который уже был определен при вызове другого статического метода, обработчик регулярных выражений будет извлекать его из кэша.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If not, the engine will compile the regular expression and add it to the cache.</source>
+          <target state="translated">Если нет, обработчик скомпилирует регулярное выражение и добавит его в кэш.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>By reusing an existing <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> object as long as its regular expression pattern is needed.</source>
+          <target state="translated">Путем многократного использования существующего объекта <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> до тех пор, пока необходим шаблон регулярного выражения.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Because of the overhead of object instantiation and regular expression compilation, creating and rapidly destroying numerous <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> objects is a very expensive process.</source>
+          <target state="translated">Из-за высоких издержек при создании объектов и компиляции регулярных выражений создание и быстрое уничтожение многочисленных объектов <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> объектов представляет собой очень ресурсоемкий процесс.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For applications that use a large number of different regular expressions, you can optimize performance by using calls to static <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept> methods and possibly by increasing the size of the regular expression cache.</source>
+          <target state="translated">Для приложений, использующих большое количество различных регулярных выражений, производительность можно оптимизировать с помощью вызова статических методов <bpt id="p1">[</bpt>Regex<ept id="p1">](xref:System.Text.RegularExpressions.Regex)</ept>, и, возможно, путем увеличения размера кэша регулярных выражений.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Регулярные выражения .NET<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
