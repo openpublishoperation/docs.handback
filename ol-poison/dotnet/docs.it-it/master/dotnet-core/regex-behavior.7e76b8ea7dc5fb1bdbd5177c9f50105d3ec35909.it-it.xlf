@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fa0513a5b450742995bd86fca495ba9904e7361b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\base-types\regex-behavior.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4487a8a5971b0098f55c989ab3c345500350eaad</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c84206223270960d50dfe758841e4cb5765524b6</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file regex-behavior.7e76b8ea7dc5fb1bdbd5177c9f50105d3ec35909.it-it.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">Dettagli sul comportamento delle espressioni regolari</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">Dettagli sul comportamento delle espressioni regolari</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Details of regular expression behavior</source>
+          <target state="translated">Dettagli sul comportamento delle espressioni regolari</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The .NET regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl.</source>
+          <target state="translated">Il motore delle espressioni regolari di .NET è un selettore di espressioni regolari di backtracking che incorpora un motore NFA (Nondeterministic Finite Automaton) tradizionale come quello usato da Perl, Python, Emacs e Tcl.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex.</source>
+          <target state="translated">Ciò lo distingue dai motori delle espressioni regolari puri DFA (Deterministic Finite Automaton), più veloci ma più limitati, come quelli usati in awk, egrep o lex.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This also distinguishes it from standardized, but slower, POSIX NFAs.</source>
+          <target state="translated">Lo distingue anche dai motori NFA POSIX, standardizzati ma più lenti.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following section describes the three types of regular expression engines, and explains why regular expressions in .NET are implemented by using a traditional NFA engine.</source>
+          <target state="translated">Nella sezione seguente vengono descritti i tre tipi di motori delle espressioni regolari e viene spiegato perché le espressioni regolari in .NET vengono implementate usando un motore NFA tradizionale.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Benefits of the NFA Engine</source>
+          <target state="translated">Vantaggi del motore NFA</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When DFA engines perform pattern matching, their processing order is driven by the input string.</source>
+          <target state="translated">Quando i motori DFA eseguono criteri di ricerca, l'ordine di elaborazione è basato sulla stringa di input.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The engine begins at the beginning of the input string and proceeds sequentially to determine whether the next character matches the regular expression pattern.</source>
+          <target state="translated">Il motore inizia all'inizio della stringa di input e procede in sequenza per determinare se il carattere successivo corrisponde al criterio di espressione regolare.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>They can guarantee to match the longest string possible.</source>
+          <target state="translated">È in grado di garantire la corrispondenza con la stringa più lunga possibile.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Because they never test the same character twice, DFA engines do not support backtracking.</source>
+          <target state="translated">Poiché non testano mai due volte lo stesso carattere, i motori DFA non supportano il backtracking.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>However, because a DFA engine contains only finite state, it cannot match a pattern with backreferences, and because it does not construct an explicit expansion, it cannot capture subexpressions.</source>
+          <target state="translated">Tuttavia, poiché un motore DFA contiene solo stati finiti, non è in grado di trovare corrispondenze con i backreference e dato che non crea un'espansione esplicita, non è in grado di acquisire sottoespressioni.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Unlike DFA engines, when traditional NFA engines perform pattern matching, their processing order is driven by the regular expression pattern.</source>
+          <target state="translated">A differenza dei motori DFA, quando i motori NFA tradizionali eseguono criteri di ricerca, l'ordine di elaborazione dipende dal criterio di espressione regolare.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>As it processes a particular language element, the engine uses greedy matching; that is, it matches as much of the input string as it possibly can.</source>
+          <target state="translated">Durante l'elaborazione di un elemento di linguaggio specifico, il motore usa la corrispondenza greedy, ossia trova la corrispondenza con la maggior parte possibile della stringa di input.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>But it also saves its state after successfully matching a subexpression.</source>
+          <target state="translated">Ma salva anche il proprio stato dopo aver trovato la corrispondenza con una sottoespressione.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If a match eventually fails, the engine can return to a saved state so it can try additional matches.</source>
+          <target state="translated">Se la ricerca di una corrispondenza ha esito negativo, il motore torna allo stato salvato in modo da tentare altre corrispondenze.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This process of abandoning a successful subexpression match so that later language elements in the regular expression can also match is known as backtracking.</source>
+          <target state="translated">Questo processo di abbandono una corrispondenza riuscita con una sottoespressione in modo da consentire la corrispondenza di altri elementi di linguaggio nell'espressione regolare è noto come backtracking.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>NFA engines use backtracking to test all possible expansions of a regular expression in a specific order and accept the first match.</source>
+          <target state="translated">I motori NFA usano il backtracking per testare tutte le possibili espansioni di un'espressione regolare in un ordine specifico e accettano la prima corrispondenza.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Because a traditional NFA engine constructs a specific expansion of the regular expression for a successful match, it can capture subexpression matches and matching backreferences.</source>
+          <target state="translated">Poiché un motore NFA tradizionale crea un'espansione specifica dell'espressione regolare per trovare una corrispondenza, è in grado di acquisire corrispondenze di sottoespressioni e backreference corrispondenti.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, because a traditional NFA backtracks, it can visit the same state multiple times if it arrives at the state over different paths.</source>
+          <target state="translated">Tuttavia, dato che un motore NFA tradizionale usa il backtracking, è possibile che visiti lo stesso stato più volte se arriva allo stato attraverso percorsi diversi.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>As a result, it can run exponentially slowly in the worst case.</source>
+          <target state="translated">Di conseguenza, può diventare estremamente lento nel peggiore dei casi.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Because a traditional NFA engine accepts the first match it finds, it can also leave other (possibly longer) matches undiscovered.</source>
+          <target state="translated">Un motore NFA tradizionale accetta la prima corrispondenza trovata, quindi tralascia altre corrispondenze che potrebbero essere più lunghe.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>POSIX NFA engines are like traditional NFA engines, except that they continue to backtrack until they can guarantee that they have found the longest match possible.</source>
+          <target state="translated">I motori NFA POSIX sono come i motori NFA tradizionali, ad eccezione del fatto che continuano a eseguire il backtracking fino a quando possono di aver trovato la corrispondenza più lunga possibile.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>As a result, a POSIX NFA engine is slower than a traditional NFA engine, and when you use a POSIX NFA engine, you cannot favor a shorter match over a longer one by changing the order of the backtracking search.</source>
+          <target state="translated">Di conseguenza, un motore NFA POSIX è più lento rispetto a un motore NFA tradizionale e quando si usa un motore NFA POSIX, non è possibile preferire una corrispondenza più breve rispetto a una più lunga modificando l'ordine di ricerca di backtracking.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Traditional NFA engines are favored by programmers because they offer greater control over string matching than either DFA or POSIX NFA engines.</source>
+          <target state="translated">I motori NFA tradizionali sono i preferiti dei programmatori perché offrono un maggiore controllo sulla corrispondenza delle stringhe rispetto ai motori DFA o NFA POSIX.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Although, in the worst case, they can run slowly, you can steer them to find matches in linear or polynomial time by using patterns that reduce ambiguities and limit backtracking.</source>
+          <target state="translated">Benché nel peggiore dei casi possano essere lenti, è possibile impostarli in modo che trovino le corrispondenze in tempo lineare o polinomiale usando criteri che riducono le ambiguità e limitano il backtracking.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In other words, although NFA engines trade performance for power and flexibility, in most cases they offer good to acceptable performance if a regular expression is well-written and avoids cases in which backtracking degrades performance exponentially.</source>
+          <target state="translated">In altre parole, anche se la potenza e la flessibilità dei motori NFA possono influire negativamente sulle prestazioni, nella maggior parte dei casi questi motori offrono prestazioni da buone ad accettabili se un'espressione regolare è ben scritta e si evitano situazioni in cui il backtracking peggiora notevolmente le prestazioni.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see <bpt id="p1">[</bpt>Backtracking in Regular Expressions<ept id="p1">](backtracking.md)</ept>.</source>
+          <target state="translated">Per informazioni sui problemi di prestazioni causati dall'uso eccessivo del backtracking e su come elaborare un'espressione regolare in modo da risolverli, vedere <bpt id="p1">[</bpt>Backtracking nelle espressioni regolari<ept id="p1">](backtracking.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>.NET Framework Engine Capabilities</source>
+          <target state="translated">Funzionalità del motore di .NET Framework</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To take advantage of the benefits of a traditional NFA engine, the .NET regular expression engine includes a complete set of constructs to enable programmers to steer the backtracking engine.</source>
+          <target state="translated">Per usufruire dei vantaggi offerti da un motore NFA tradizionale, il motore delle espressioni regolari di .NET include un set completo di costrutti per consentire ai programmatori di controllare il motore di backtracking.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>These constructs can be used to find matches faster or to favor specific expansions over others.</source>
+          <target state="translated">Tali costrutti possono essere usati per trovare più rapidamente le corrispondenze o per favorire espansioni specifiche rispetto ad altre.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Other features of the .NET regular expression engine include the following:</source>
+          <target state="translated">Altre funzionalità del motore delle espressioni regolari di .NET sono:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Lazy quantifiers</source>
+          <target state="translated">Quantificatori lazy</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Lazy quantifiers: <bpt id="p1">**</bpt>??<ept id="p1">**</ept>, <bpt id="p2">__</bpt>*?<ept id="p2">__</ept>, <bpt id="p3">**</bpt>+?<ept id="p3">**</ept>, <bpt id="p4">**</bpt>{<ept id="p4">**</ept><bpt id="p5">_</bpt>n<ept id="p5">_</ept><bpt id="p6">**</bpt>,<ept id="p6">**</ept><bpt id="p7">_</bpt>m<ept id="p7">_</ept><bpt id="p8">**</bpt>}?<ept id="p8">**</ept>.</source>
+          <target state="translated">Quantificatori lazy: <bpt id="p1">**</bpt>??<ept id="p1">**</ept>, <bpt id="p2">__</bpt>*?<ept id="p2">__</ept>, <bpt id="p3">**</bpt>+?<ept id="p3">**</ept>, <bpt id="p4">**</bpt>{<ept id="p4">**</ept><bpt id="p5">_</bpt>n<ept id="p5">_</ept><bpt id="p6">**</bpt>,<ept id="p6">**</ept><bpt id="p7">_</bpt>m<ept id="p7">_</ept><bpt id="p8">**</bpt>}?<ept id="p8">**</ept>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>These constructs tell the backtracking engine to search the minimum number of repetitions first.</source>
+          <target state="translated">Questi costrutti indicano al motore di backtracking di cercare prima il numero minimo di ripetizioni.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In contrast, ordinary greedy quantifiers try to match the maximum number of repetitions first.</source>
+          <target state="translated">Al contrario, i normali quantificatori greedy tentano di trovare prima il numero massimo di ripetizioni.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the difference between the two.</source>
+          <target state="translated">L'esempio che segue illustrata la differenza tra i due tipi.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A regular expression matches a sentence that ends in a number, and a capturing group is intended to extract that number.</source>
+          <target state="translated">Un'espressione regolare trova la corrispondenza con una frase che termina con un numero e un gruppo di acquisizione deve estrarre tale numero.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`.+(\d+)\.`</ph> includes the greedy quantifier <ph id="ph2">`.+`</ph>, which causes the regular expression engine to capture only the last digit of the number.</source>
+          <target state="translated">L'espressione regolare <ph id="ph1">`.+(\d+)\.`</ph> include il quantificatore greedy <ph id="ph2">`.+`</ph>, che fa in modo che il motore delle espressioni regolari acquisisca solo l'ultima cifra del numero.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In contrast, the regular expression <ph id="ph1">`.+?(\d+)\.`</ph> includes the lazy quantifier <ph id="ph2">`.+?`</ph>, which causes the regular expression engine to capture the entire number.</source>
+          <target state="translated">Al contrario, l'espressione regolare <ph id="ph1">`.+?(\d+)\.`</ph> include il quantificatore lazy <ph id="ph2">`.+?`</ph>, che fa in modo che il motore delle espressioni regolari acquisisca l'intero numero.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The greedy and lazy versions of this regular expression are defined as shown in the following table.</source>
+          <target state="translated">Le versioni greedy e lazy di questa espressione regolare vengono definite come illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Criterio</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`.+`</ph> (greedy quantifier)</source>
+          <target state="translated"><ph id="ph1">`.+`</ph> (quantificatore greedy)</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Match at least one occurrence of any character.</source>
+          <target state="translated">Trova almeno un'occorrenza di qualsiasi carattere.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>This causes the regular expression engine to match the entire string, and then to backtrack as needed to match the remainder of the pattern.</source>
+          <target state="translated">In questo modo il motore delle espressioni regolari considera soddisfatta la corrispondenza con l'intera stringa ed esegue il backtracking, necessario per verificare le corrispondenze con il resto del criterio.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`.+?`</ph> (lazy quantifier)</source>
+          <target state="translated"><ph id="ph1">`.+?`</ph> (quantificatore lazy)</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Match at least one occurrence of any character, but match as few as possible.</source>
+          <target state="translated">Trova almeno un'occorrenza di qualsiasi carattere, ma accetta la corrispondenza con il minor numero possibile di caratteri.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Match at least one numeric character, and assign it to the first capturing group.</source>
+          <target state="translated">Trova la corrispondenza con almeno un carattere alfanumerico e la assegna al primo gruppo di acquisizione.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Match a period.</source>
+          <target state="translated">Trova la corrispondenza con un punto.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For more information about lazy quantifiers, see <bpt id="p1">[</bpt>Quantifiers in regular expressions<ept id="p1">](quantifiers.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sui quantificatori lazy, vedere <bpt id="p1">[</bpt>Quantificatori nelle espressioni regolari<ept id="p1">](quantifiers.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Positive lookahead</source>
+          <target state="translated">Lookahead positivo</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Positive lookahead: <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">Lookahead positivo: <bpt id="p1">**</bpt>(?<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>This feature allows the backtracking engine to return to the same spot in the text after matching a subexpression.</source>
+          <target state="translated">Questa funzionalità consente al motore di backtracking tornare alla stessa posizione nel testo dopo aver trovato la corrispondenza con una sottoespressione.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>It is useful for searching throughout the text by verifying multiple patterns that start from the same position.</source>
+          <target state="translated">È utile per eseguire una ricerca in tutto il testo verificando più criteri a partire dalla stessa posizione.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>It also allows the engine to verify that a substring exists at the end of the match without including the substring in the matched text.</source>
+          <target state="translated">Ciò consente anche al motore di verificare che una sottostringa esista alla fine della corrispondenza senza includere la sottostringa nel testo di cui è stata trovata la corrispondenza.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following example uses positive lookahead to extract the words in a sentence that are not followed by punctuation symbols.</source>
+          <target state="translated">Nell'esempio seguente il lookahead positivo viene usato per estrarre le parole di una frase che non sono seguite da simboli di punteggiatura.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`\b[A-Z]+\b(?=\P{P})`</ph> is defined as shown in the following table.</source>
+          <target state="translated">L'espressione regolare <ph id="ph1">`\b[A-Z]+\b(?=\P{P})`</ph> viene definita come illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Criterio</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Inizia la corrispondenza sul confine di parola.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Match any alphabetic character one or more times.</source>
+          <target state="translated">Trova la corrispondenza con qualsiasi carattere alfabetico una o più volte.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Because the <bpt id="p1">[</bpt>Regex.Matches<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> method is called with the <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept> option, the comparison is case-insensitive.</source>
+          <target state="translated">Poiché il metodo <bpt id="p1">[</bpt>Regex.IsMatch<ept id="p1">](xref:System.Text.RegularExpressions.Regex.Matches(System.String))</ept> viene chiamato con l'opzione <bpt id="p2">[</bpt>RegexOptions.IgnoreCase<ept id="p2">](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase)</ept>, il confronto non rileva la distinzione tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">Termina la corrispondenza sul confine di parola.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Look ahead to determine whether the next character is a punctuation symbol.</source>
+          <target state="translated">Esegue il lookahead per determinare se il carattere successivo è un simbolo di punteggiatura.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>If it is not, the match succeeds.</source>
+          <target state="translated">In caso contrario, la corrispondenza ha esito positivo.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>For more information about positive lookahead assertions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sulle asserzioni per il lookahead positivo, vedere <bpt id="p1">[</bpt>Costrutti di raggruppamento nelle espressioni regolari<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Negative lookahead</source>
+          <target state="translated">Lookahead negativo</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Negative lookahead: <bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">Lookahead negativo: <bpt id="p1">**</bpt>(?!<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>This feature adds the ability to match an expression only if a subexpression fails to match.</source>
+          <target state="translated">Questa funzionalità aggiunge la capacità di considerare soddisfatta la corrispondenza con un'espressione solo se non trova la corrispondenza con una sottoespressione.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>This is particularly powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included.</source>
+          <target state="translated">Ciò risulta particolarmente utile per abbreviare una ricerca, poiché spesso è più semplice formulare un'espressione per un caso da eliminare che un'espressione che individua i casi da includere.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, it is difficult to write an expression for words that do not begin with "non".</source>
+          <target state="translated">Ad esempio, è difficile scrivere un'espressione per le parole che non iniziano con "non".</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>The following example uses negative lookahead to exclude them.</source>
+          <target state="translated">Nell'esempio seguente viene usato il lookahead negativo per escluderle.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`\b(?!non)\w+\b`</ph> is defined as shown in the following table.</source>
+          <target state="translated">Il criterio di ricerca di espressioni regolari <ph id="ph1">`\b(?!non)\w+\b`</ph> è definito nel modo illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Criterio</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Begin the match at a word boundary.</source>
+          <target state="translated">Inizia la corrispondenza sul confine di parola.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Look ahead to ensure that the current string does not begin with "non".</source>
+          <target state="translated">Esegue il lookahead per verificare che la stringa corrente non inizi con "non".</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If it does, the match fails.</source>
+          <target state="translated">In caso contrario, la corrispondenza ha esito negativo.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Match one or more word characters.</source>
+          <target state="translated">Trova la corrispondenza di uno o più caratteri alfanumerici.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>End the match at a word boundary.</source>
+          <target state="translated">Termina la corrispondenza sul confine di parola.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For more information about negative lookahead assertions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sulle asserzioni per il lookahead negativo, vedere <bpt id="p1">[</bpt>Costrutti di raggruppamento nelle espressioni regolari<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Conditional evaluation</source>
+          <target state="translated">Valutazione condizionale</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Conditional evaluation: <bpt id="p1">**</bpt>(?(<ept id="p1">**</ept><bpt id="p2">_</bpt>expression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept><bpt id="p4">_</bpt>yes<ept id="p4">_</ept>&amp;#124;<bpt id="p5">_</bpt>no<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> and<bpt id="p7">**</bpt>(?(<ept id="p7">**</ept><bpt id="p8">_</bpt>name<ept id="p8">_</ept><bpt id="p9">**</bpt>)<ept id="p9">**</ept><bpt id="p10">_</bpt>yes<ept id="p10">_</ept>&amp;#124;<bpt id="p11">_</bpt>no<ept id="p11">_</ept><bpt id="p12">**</bpt>)<ept id="p12">**</ept>, where <bpt id="p13">*</bpt>expression<ept id="p13">*</ept> is a subexpression to match, <bpt id="p14">*</bpt>name<ept id="p14">*</ept> is the name of a capturing group, <bpt id="p15">*</bpt>yes<ept id="p15">*</ept> is the string to match if <bpt id="p16">*</bpt>expression<ept id="p16">*</ept> is matched or <bpt id="p17">*</bpt>name<ept id="p17">*</ept> is a valid, non-empty captured group, and <bpt id="p18">*</bpt>no<ept id="p18">*</ept> is the subexpression to match if <bpt id="p19">*</bpt>expression<ept id="p19">*</ept> is not matched or <bpt id="p20">*</bpt>name<ept id="p20">*</ept> is not a valid, non-empty captured group.</source>
+          <target state="translated">Valutazione condizionale: <bpt id="p1">**</bpt>(?(<ept id="p1">**</ept><bpt id="p2">_</bpt>expression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept><bpt id="p4">_</bpt>yes<ept id="p4">_</ept>&amp;#124;<bpt id="p5">_</bpt>no<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> e <bpt id="p7">**</bpt>(?(<ept id="p7">**</ept><bpt id="p8">_</bpt>name<ept id="p8">_</ept><bpt id="p9">**</bpt>)<ept id="p9">**</ept><bpt id="p10">_</bpt>yes<ept id="p10">_</ept>&amp;#124;<bpt id="p11">_</bpt>no<ept id="p11">_</ept><bpt id="p12">**</bpt>)<ept id="p12">**</ept>, dove <bpt id="p13">*</bpt>expression<ept id="p13">*</ept> è una sottoespressione di cui trovare la corrispondenza, <bpt id="p14">*</bpt>name<ept id="p14">*</ept> è il nome di un gruppo di acquisizione, <bpt id="p15">*</bpt>yes<ept id="p15">*</ept> è la stringa di cui trovare la corrispondenza se viene soddisfatta la corrispondenza con <bpt id="p16">*</bpt>expression<ept id="p16">*</ept> o <bpt id="p17">*</bpt>name<ept id="p17">*</ept> è un gruppo valido, non vuoto e acquisito e <bpt id="p18">*</bpt>no<ept id="p18">*</ept> è la sottoespressione di cui trovare la corrispondenza se la corrispondenza con <bpt id="p19">*</bpt>expression<ept id="p19">*</ept> non è soddisfatta o <bpt id="p20">*</bpt>name<ept id="p20">*</ept> non è un gruppo valido, non vuoto e acquisito.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This feature allows the engine to search by using more than one alternate pattern, depending on the result of a previous subexpression match or the result of a zero-width assertion.</source>
+          <target state="translated">Questa funzionalità consente al motore di eseguire la ricerca usando più di un criterio alternativo, in base al risultato della corrispondenza di una sottoespressione precedente o al risultato di un'asserzione di larghezza zero.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This allows a more powerful form of backreference that permits, for example, matching a subexpression based on whether a previous subexpression was matched.</source>
+          <target state="translated">Ciò offre una forma più efficace di backreference che consente, ad esempio, di trovare la corrispondenza con una sottoespressione in base al fatto che sia stata trovata o meno la corrispondenza con una sottoespressione precedente.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The regular expression in the following example matches paragraphs that are intended for both public and internal use.</source>
+          <target state="translated">L'espressione regolare nell'esempio seguente trova la corrispondenza con paragrafi destinati all'uso sia pubblico che interno.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Paragraphs intended only for internal use begin with a <ph id="ph1">`&lt;PRIVATE&gt;`</ph> tag.</source>
+          <target state="translated">I paragrafi destinati solo all'uso interno iniziano con un tag <ph id="ph1">`&lt;PRIVATE&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern <ph id="ph1">`^(?&lt;Pvt&gt;\&lt;PRIVATE\&gt;\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$`</ph> uses conditional evaluation to assign the contents of paragraphs intended for public and for internal use to separate capturing groups.</source>
+          <target state="translated">Il criterio di espressione regolare <ph id="ph1">`^(?&lt;Pvt&gt;\&lt;PRIVATE\&gt;\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$`</ph> usa la valutazione condizionale per assegnare il contenuto dei paragrafi destinati all'uso pubblico e all'uso interno a gruppi di acquisizione separati.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>These paragraphs can then be handled differently.</source>
+          <target state="translated">I paragrafi possono quindi essere gestiti in modo diverso.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The regular expression pattern is defined as shown in the following table.</source>
+          <target state="translated">Il criterio di ricerca di espressioni regolari è definito nel modo illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Criterio</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of a line.</source>
+          <target state="translated">Inizia la corrispondenza all'inizio di una riga.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Match zero or one occurrence of the string <ph id="ph1">`&lt;PRIVATE&gt;`</ph> followed by a white-space character.</source>
+          <target state="translated">Trova la corrispondenza con zero o un'occorrenza della stringa <ph id="ph1">`&lt;PRIVATE&gt;`</ph> seguita da un carattere di spazio vuoto.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Assign the match to a capturing group named Pvt.</source>
+          <target state="translated">Assegna la corrispondenza a un gruppo di acquisizione denominato Pvt.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Pvt`</ph> capturing group exists, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character.</source>
+          <target state="translated">Se il gruppo di acquisizione <ph id="ph1">`Pvt`</ph> esiste, trova una o più occorrenze di uno o più caratteri alfanumerici seguiti da zero o un separatore di punteggiatura seguito da un carattere di spazio vuoto.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Assign the substring to the first capturing group.</source>
+          <target state="translated">Assegna la sottostringa al primo gruppo di acquisizione.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Pvt`</ph> capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character.</source>
+          <target state="translated">Se il gruppo di acquisizione <ph id="ph1">`Pvt`</ph> non esiste, trova una o più occorrenze di uno o più caratteri alfanumerici seguiti da zero o un separatore di punteggiatura seguito da un carattere di spazio vuoto.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Assign the substring to the third capturing group.</source>
+          <target state="translated">Assegna la sottostringa al terzo gruppo di acquisizione.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Match the end of a line or the end of the string.</source>
+          <target state="translated">Trova la corrispondenza alla fine di una riga o alla fine della stringa.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For more information about conditional evaluation, see <bpt id="p1">[</bpt>Alternation constructs in regular expressions<ept id="p1">](alternation.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sulla valutazione condizionale, vedere <bpt id="p1">[</bpt>Costrutti di alternanza nelle espressioni regolari<ept id="p1">](alternation.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Balancing group definitions</source>
+          <target state="translated">Definizioni di gruppo di bilanciamento</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Balancing group definitions: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>name1-name2<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept> <bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept>.</source>
+          <target state="translated">Definizioni di gruppo di bilanciamento: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><bpt id="p2">_</bpt>nome1-nome2<ept id="p2">_</ept><bpt id="p3">**</bpt><ph id="ph1">&gt;</ph><ept id="p3">**</ept> <bpt id="p4">_</bpt>subexpression<ept id="p4">_</ept><bpt id="p5">**</bpt>)<ept id="p5">**</ept>.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets.</source>
+          <target state="translated">Questa funzionalità consente al motore delle espressioni regolari di tenere traccia dei costrutti annidati, ad esempio parentesi o parentesi quadre di apertura e chiusura.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>For an example, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Per un esempio, vedere <bpt id="p1">[</bpt>Costrutti di raggruppamento nelle espressioni regolari<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpressions</source>
+          <target state="translated">Sottoespressioni di non backtracking</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Nonbacktracking subexpressions (also known as greedy subexpressions): <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</source>
+          <target state="translated">Sottoespressioni non di backtracking (note anche come sottoespressioni greedy): <bpt id="p1">**</bpt>(?&gt;<ept id="p1">**</ept><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>This feature allows the backtracking engine to guarantee that a subexpression matches only the first match found for that subexpression, as if the expression were running independent of its containing expression.</source>
+          <target state="translated">Questa funzionalità consente al motore di backtracking di garantire che una sottoespressione corrisponda solo alla prima corrispondenza trovata per tale sottoespressione, come se l'espressione venisse eseguita indipendentemente dall'espressione che la contiene.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If you do not use this construct, backtracking searches from the larger expression can change the behavior of a subexpression.</source>
+          <target state="translated">Se non si usa questo costrutto, il backtracking dall'espressione più ampia può modificare il comportamento di una sottoespressione.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>For example, the regular expression <ph id="ph1">`(a+)\w`</ph> matches one or more "a" characters, along with a word character that follows the sequence of "a" characters, and assigns the sequence of "a" characters to the first capturing group, However, if the final character of the input string is also an "a", it is matched by the <ph id="ph2">`\w`</ph> language element and is not included in the captured group.</source>
+          <target state="translated">Ad esempio, l'espressione regolare <ph id="ph1">`(a+)\w`</ph> trova la corrispondenza con uno o più caratteri "a", insieme a un carattere alfanumerico che segue la sequenza di caratteri "a", e assegna la sequenza di caratteri "a" al primo gruppo di acquisizione. Se però anche l'ultimo carattere della stringa di input è "a", l'elemento di linguaggio <ph id="ph2">`\w`</ph> ne determina la corrispondenza e il carattere non viene incluso nel gruppo acquisito.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`((?&gt;a+))\w`</ph> prevents this behavior.</source>
+          <target state="translated">L'espressione regolare <ph id="ph1">`((?&gt;a+))\w`</ph> evita questo comportamento.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Because all consecutive "a" characters are matched without backtracking, the first capturing group includes all consecutive "a" characters.</source>
+          <target state="translated">Poiché la corrispondenza di tutti i caratteri "a" consecutivi viene determinata senza backtracking, il primo gruppo di acquisizione include tutti i caratteri "a" consecutivi.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>If the "a" characters are not followed by at least one more character other than "a", the match fails.</source>
+          <target state="translated">Se i caratteri "a" non sono seguiti da almeno un carattere diverso da "a", la corrispondenza ha esito negativo.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>For more information about nonbacktracking subexpressions, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sulle sottoespressioni non di backtracking, vedere <bpt id="p1">[</bpt>Costrutti di raggruppamento nelle espressioni regolari<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Right-to-left matching</source>
+          <target state="translated">Corrispondenza da destra a sinistra</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Right-to-left matching, which is specified by supplying the <bpt id="p1">[</bpt>RegexOptions.RightToLeft<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft)</ept> option to a <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> class constructor or static instance matching method.</source>
+          <target state="translated">Corrispondenza da destra a sinistra specificata passando l'opzione <bpt id="p1">[</bpt>RegexOptions.RightToLeft<ept id="p1">](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft)</ept> a un costruttore della classe <bpt id="p2">[</bpt>Regex<ept id="p2">](xref:System.Text.RegularExpressions.Regex)</ept> o al metodo corrispondente dell'istanza statica.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left.</source>
+          <target state="translated">Questa funzionalità è utile durante la ricerca da destra verso sinistra anziché da sinistra verso destra oppure nei casi in cui risulta più efficace iniziare una corrispondenza nella parte destra del criterio anziché in quella sinistra.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers.</source>
+          <target state="translated">Come illustrato nell'esempio seguente, l'uso della corrispondenza da destra a sinistra può modificare il comportamento dei quantificatori greedy.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The example conducts two searches for a sentence that ends in a number.</source>
+          <target state="translated">Nell'esempio vengono condotte due ricerche di una frase che termina con un numero.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>The left-to-right search that uses the greedy quantifier <ph id="ph1">`+`</ph> matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits.</source>
+          <target state="translated">La ricerca da sinistra a destra che usa il quantificatore greedy <ph id="ph1">`+`</ph> trova la corrispondenza con una delle sei cifre nella frase, mentre la ricerca da destra a sinistra trova la corrispondenza con tutte le sei cifre.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>For an description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.</source>
+          <target state="translated">Per una descrizione del criterio di espressione regolare, vedere l'esempio che illustra i quantificatori lazy in precedenza in questa sezione.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>For more information about right-to-left matching, see <bpt id="p1">[</bpt>Regular expression options<ept id="p1">](options.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sulla corrispondenza da destra a sinistra, vedere <bpt id="p1">[</bpt>Opzioni di espressioni regolari<ept id="p1">](options.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind</source>
+          <target state="translated">Lookbehind positivo e negativo</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> for positive lookbehind, and <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> for negative lookbehind.</source>
+          <target state="translated">Lookbehind positivo e negativo: <bpt id="p1">**</bpt>(?&lt;<ept id="p1">**</ept><ph id="ph1">=</ph><bpt id="p2">_</bpt>subexpression<ept id="p2">_</ept><bpt id="p3">**</bpt>)<ept id="p3">**</ept> per lookbehind positivo e <bpt id="p4">**</bpt>(?&lt;!<ept id="p4">**</ept><bpt id="p5">_</bpt>subexpression<ept id="p5">_</ept><bpt id="p6">**</bpt>)<ept id="p6">**</ept> per lookbehind negativo.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>This feature is similar to lookahead, which is discussed earlier in this topic.</source>
+          <target state="translated">Questa funzionalità è simile a lookahead, illustrata in precedenza in questo argomento.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds.</source>
+          <target state="translated">Poiché il motore delle espressioni regolari consente la corrispondenza da destra a sinistra completa, le espressioni regolari consentono lookbehind illimitati.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression.</source>
+          <target state="translated">Il lookbehind positivo e negativo consente inoltre di evitare l'annidamento di quantificatori quando la sottoespressione annidata è un superset di un'espressione esterna.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Regular expressions with such nested quantifiers often offer poor performance.</source>
+          <target state="translated">Le espressioni regolari con tali quantificatori spesso influiscono negativamente sulle prestazioni.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset.</source>
+          <target state="translated">L'esempio seguente, ad esempio, verifica se una stringa inizia e termina con un carattere alfanumerico e se qualsiasi altro carattere nella stringa appartiene a un subset più ampio.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>It forms a portion of the regular expression used to validate e-mail addresses; for more information, see <bpt id="p1">[</bpt>How to: Verify that Strings Are in Valid Email Format<ept id="p1">](verify-format.md)</ept>.</source>
+          <target state="translated">Il criterio costituisce una parte dell'espressione regolare usata per convalidare gli indirizzi di posta elettronica. Per altre informazioni, vedere <bpt id="p1">[</bpt>Procedura: Verificare che le stringhe siano nel formato di posta elettronica valido<ept id="p1">](verify-format.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The regular expression <ph id="ph1">`^[A-Z0-9]([-!#$%&amp;'.*+/=?^`</ph>{}|~\w])*(?&lt;=[A-Z0-9])$` is defined as shown in the following table.</source>
+          <target state="translated">L'espressione regolare <ph id="ph1">`^[A-Z0-9]([-!#$%&amp;'.*+/=?^`</ph>{}|~\w])*(?&lt;=[A-Z0-9])$` è definita nel modo illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Pattern</source>
+          <target state="translated">Criterio</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Begin the match at the beginning of the string.</source>
+          <target state="translated">Inizia la ricerca della corrispondenza all'inizio della stringa.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Match any numeric or alphanumeric character.</source>
+          <target state="translated">Trova la corrispondenza con qualsiasi carattere numerico o alfanumerico.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>(The comparison is case-insensitive.)</source>
+          <target state="translated">Il confronto non rileva la differenza tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`([-!#$%&amp;'.*+/=?^`</ph>{}&amp;#124;~\w])*`</source>
+          <target state="translated"><ph id="ph1">`([-!#$%&amp;'.*+/=?^`</ph>{}&amp;#124;~\w])*`</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Match zero or more occurrences of any word character, or any of the following characters: -, !, #, $, %, &amp;, ', ., *, +, /, =, ?, ^, `, {, }, &amp;#124;, or ~.</source>
+          <target state="translated">Trova zero o più occorrenze di qualsiasi carattere alfanumerico o di uno qualsiasi dei seguenti caratteri: -, !, #, $, %, &amp;, ', ., *, +, /, =, ?, ^, `, {, }, &amp;#124; o ~.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Look behind to the previous character, which must be numeric or alphanumeric.</source>
+          <target state="translated">Esegue il lookbehind al carattere precedente, che deve essere numerico o alfanumerico.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>(The comparison is case-insensitive.)</source>
+          <target state="translated">Il confronto non rileva la differenza tra maiuscole e minuscole.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>End the match at the end of the string.</source>
+          <target state="translated">Terminare la corrispondenza alla fine della stringa.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>For more information about positive and negative lookbehind, see <bpt id="p1">[</bpt>Grouping constructs in regular expressions<ept id="p1">](grouping.md)</ept>.</source>
+          <target state="translated">Per altre informazioni sul lookbehind positivo e negativo, vedere <bpt id="p1">[</bpt>Costrutti di raggruppamento nelle espressioni regolari<ept id="p1">](grouping.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Related Topics</source>
+          <target state="translated">Argomenti correlati</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Titolo</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrizione</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Backtracking<ept id="p1">](backtracking.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Backtracking<ept id="p1">](backtracking.md)</ept></target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Provides information about how regular expression backtracking branches to find alternative matches.</source>
+          <target state="translated">Informazioni su come il backtracking delle espressioni regolari si dirama per trovare corrispondenze alternative.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Compilation and reuse<ept id="p1">](compilation.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Compilazione e riutilizzo<ept id="p1">](compilation.md)</ept></target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Provides information about compiling and reusing regular expressions to increase performance.</source>
+          <target state="translated">Informazioni sulla compilazione e sul riutilizzo di espressioni regolari per ottimizzare le prestazioni.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Thread safety<ept id="p1">](thread-safety.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Thread safety<ept id="p1">](thread-safety.md)</ept></target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.</source>
+          <target state="translated">Informazioni sulla modalità di thread safety delle espressioni regolari in cui viene spiegato quando è necessario sincronizzare l'accesso a oggetti di espressione regolare.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>.NET regular expressions<ept id="p1">](regular-expressions.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Espressioni regolari .NET<ept id="p1">](regular-expressions.md)</ept></target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Provides an overview of the programming language aspect of regular expressions.</source>
+          <target state="translated">Panoramica dell'aspetto del linguaggio di programmazione delle espressioni regolari.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>The regular expression Object Model<ept id="p1">](object-model.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Modello a oggetti delle espressioni regolari<ept id="p1">](object-model.md)</ept></target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Provides information and code examples illustrating how to use the regular expression classes.</source>
+          <target state="translated">Esempi di codice e informazioni che illustrano l'uso delle classi di espressioni regolari.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression examples<ept id="p1">](regex-examples.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Esempi di espressioni regolari<ept id="p1">](regex-examples.md)</ept></target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>Contains code examples that illustrate the use of regular expressions in common applications.</source>
+          <target state="translated">Esempi di codice che illustrano l'uso delle espressioni regolari nelle applicazioni comuni.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Regular expression language - quick reference<ept id="p1">](quick-ref.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Linguaggio di espressioni regolari - Riferimento rapido<ept id="p1">](quick-ref.md)</ept></target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.</source>
+          <target state="translated">Informazioni su set di caratteri, operatori e costrutti che è possibile usare per definire le espressioni regolari.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Reference</source>
+          <target state="translated">Riferimento</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>System.Text.RegularExpressions<ept id="p1">](xref:System.Text.RegularExpressions)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
