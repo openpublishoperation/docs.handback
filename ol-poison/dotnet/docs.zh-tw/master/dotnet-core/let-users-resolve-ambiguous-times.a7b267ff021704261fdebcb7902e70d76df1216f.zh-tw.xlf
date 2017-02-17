@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c54a3e742ea436c31fd238d5ecb5be98cbc6c6af</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\standard\datetime\let-users-resolve-ambiguous-times.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p2</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">07d37e001cb816af8cda46ffe49831aea5332587</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d60937250a497cd4693e1b3c7325c1ec99f9398</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">file let-users-resolve-ambiguous-times.a7b267ff021704261fdebcb7902e70d76df1216f.zh-tw.xlf is out of handoff scope</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: let users resolve ambiguous times</source>
+          <target state="translated">如何：讓使用者解決不明確的時間</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to let users resolve ambiguous times</source>
+          <target state="translated">如何讓使用者解決不明確的時間</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>How to: let users resolve ambiguous times</source>
+          <target state="translated">如何：讓使用者解決不明確的時間</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An ambiguous time is a time that maps to more than one Coordinated Universal Time (UTC).</source>
+          <target state="translated">不明確的時間是指對應到多個國際標準時間 (UTC) 的時間。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It occurs when the clock time is adjusted back in time, such as during the transition from a time zone's daylight saving time to its standard time.</source>
+          <target state="translated">發生時機是往回調整時鐘時間，例如從時區的日光節約時間轉換到其標準時間期間。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When handling an ambiguous time, you can do one of the following:</source>
+          <target state="translated">處理不明確的時間時，您可以執行下列其中一項：</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If the ambiguous time is an item of data entered by the user, you can leave it to the user to resolve the ambiguity.</source>
+          <target state="translated">如果不明確的時間是使用者所輸入的資料項目，可交由使用者解決此不明確狀況。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Make an assumption about how the time maps to UTC.</source>
+          <target state="translated">假設如何將時間對應至 UTC。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For example, you can assume that an ambiguous time is always expressed in the time zone's standard time.</source>
+          <target state="translated">例如，您可以假設不明確的時間一律是以時區的標準時間表示。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article shows how to let a user resolve an ambiguous time.</source>
+          <target state="translated">本文示範如何讓使用者解決不明確的時間。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To let a user resolve an ambiguous time</source>
+          <target state="translated">讓使用者解決不明確的時間</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Get the date and time input by the user.</source>
+          <target state="translated">取得使用者的時間和日期輸入。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Call the <bpt id="p1">[</bpt>IsAmbiguousTime(DateTime)<ept id="p1">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime))</ept> or <bpt id="p2">[</bpt>IsAmbiguousTime(DateTimeOffset)<ept id="p2">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset))</ept> method to determine whether the time is ambiguous.</source>
+          <target state="translated">呼叫 <bpt id="p1">[</bpt>IsAmbiguousTime(DateTime)<ept id="p1">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime))</ept> 或 <bpt id="p2">[</bpt>IsAmbiguousTime(DateTimeOffset)<ept id="p2">](xref:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset))</ept> 方法，以判斷時間是否不明確。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Let the user select the desired offset.</source>
+          <target state="translated">讓使用者選取想要的位移。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Get the UTC date and time by subtracting the offset selected by the user from the local time.</source>
+          <target state="translated">將當地時間減去使用者所選取的位移，以取得 UTC 日期和時間。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`static`</ph> (<ph id="ph2">`Shared`</ph> in Visual Basic ) <bpt id="p1">[</bpt>SpecifyKind<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept> method to set the UTC date and time value's <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> property to <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>.</source>
+          <target state="translated">呼叫 <ph id="ph1">`static`</ph> (在 Visual Basic 中為 <ph id="ph2">`Shared`</ph>) <bpt id="p1">[</bpt>SpecifyKind<ept id="p1">](xref:System.DateTime.SpecifyKind(System.DateTime,System.DateTimeKind))</ept> 方法，以將 UTC 日期和時間值的 <bpt id="p2">[</bpt>Kind<ept id="p2">](xref:System.DateTime.Kind)</ept> 屬性設定為 <bpt id="p3">[</bpt>DateTimeKind.Utc<ept id="p3">](xref:System.DateTimeKind.Utc)</ept>。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">範例</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following example prompts the user to enter a date and time and, if it is ambiguous, lets the user select the UTC time that the ambiguous time maps to.</source>
+          <target state="translated">下列範例會提示使用者輸入日期和時間，若其不明確，可讓使用者選取不明確時間所對應的 UTC 時間。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The example uses a <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> object; you can substitute a <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> object if desired.</source>
+          <target state="translated">本範例使用 <bpt id="p1">[</bpt>DateTime<ept id="p1">](xref:System.DateTime)</ept> 物件；您可以在需要時取代 <bpt id="p2">[</bpt>DateTimeOffset<ept id="p2">](xref:System.DateTimeOffset)</ept> 物件。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The core of the example code uses an array of <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> objects to indicate possible offsets of the ambiguous time from UTC.</source>
+          <target state="translated">範例程式碼的核心使用 <bpt id="p1">[</bpt>TimeSpan<ept id="p1">](xref:System.TimeSpan)</ept> 物件陣列表示不明確時間與 UTC 的可能位移。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, these offsets are unlikely to be meaningful to the user.</source>
+          <target state="translated">不過，這些位移不可能對使用者具有任何意義。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To clarify the meaning of the offsets, the code also notes whether an offset represents the local time zone's standard time or its daylight saving time.</source>
+          <target state="translated">若要釐清位移的意義，程式碼也會註明位移是否代表當地時區的標準時間或其日光節約時間。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The code determines which time is standard and which time is daylight by comparing the offset with the value of the <bpt id="p1">[</bpt>BaseUtcOffset<ept id="p1">](xref:System.TimeZoneInfo.BaseUtcOffset)</ept> property.</source>
+          <target state="translated">程式碼會比較位移與 <bpt id="p1">[</bpt>BaseUtcOffset<ept id="p1">](xref:System.TimeZoneInfo.BaseUtcOffset)</ept> 屬性值，來判斷哪一個是標準時間以及哪一個是日光節約時間。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This property indicates the difference between the UTC and the time zone's standard time.</source>
+          <target state="translated">這個屬性指出 UTC 與時區標準時間的差異。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In this example, all references to the local time zone are made through the <bpt id="p1">[</bpt>TimeZoneInfo.Local<ept id="p1">](xref:System.TimeZoneInfo.Local)</ept> property; the local time zone is never assigned to an object variable.</source>
+          <target state="translated">在此範例中，透過 <bpt id="p1">[</bpt>TimeZoneInfo.Local<ept id="p1">](xref:System.TimeZoneInfo.Local)</ept> 屬性進行當地時區的所有參考；當地時區絕不會指派給物件變數。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This is a recommended practice because another call could clear the cached data and invalidate any objects that the local time zone is assigned to.</source>
+          <target state="translated">這是建議作法，原因是另一個呼叫可能會清除快取的資料，並讓任何指派當地時區的物件失效。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Dates, times, and time zones<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>日期、時間及時區<ept id="p1">](index.md)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: resolve ambiguous times<ept id="p1">](resolve-ambiguous-times.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>如何：解決不明確的時間<ept id="p1">](resolve-ambiguous-times.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
