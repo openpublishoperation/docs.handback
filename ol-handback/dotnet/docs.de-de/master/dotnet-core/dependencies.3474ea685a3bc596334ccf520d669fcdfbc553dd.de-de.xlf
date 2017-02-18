@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f0362aa" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cef45d986eb9c4a84a03ee942c29a327c23cabf3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\preview3\tools\dependencies.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">44e819cc8e6c8f456b5d49afcbc312aeb0996e5a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">19c02b54e780dce912e321d93502f5fe1c1899a8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Managing dependencies in .NET Core tooling | Microsoft Docs</source>
+          <target state="translated">Verwalten von Abhängigkeiten in .NET Core-Tools | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Explains how to manage your dependencies with the .NET Core tools.</source>
+          <target state="translated">Erläutert, wie Abhängigkeiten mit den .NET Core-Tools verwaltet werden können.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>CLI, extensibility, custom commands, .NET Core</source>
+          <target state="translated">CLI, Erweiterbarkeit, benutzerdefinierte Befehle, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Managing dependencies in .NET Core RC4 tooling</source>
+          <target state="translated">Verwalten von Abhängigkeiten in .NET Core RC&amp;4;-Tools</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of depenencies.</source>
+          <target state="translated">Mit dem Wechsel von .NET Core-Projekten von „project.json“ zu CSPROJ und MSBuild wurde auch beträchtlicher Aufwand betrieben, der zu einer Vereinheitlichung der Projektdatei und Objekte geführt hat, sodass Abhängigkeiten nachverfolgt werden können.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For .NET Core projects this is similar to what project.json did.</source>
+          <target state="translated">Bei .NET Core-Projekten ist dies mit der Verwendung von „project.json“ vergleichbar.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>There is no separate JSON or XML file that tracks NuGet dependencies.</source>
+          <target state="translated">Es gibt keine separate JSON- oder XML-Datei, die NuGet-Abhängigkeiten nachverfolgt.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>With this change, we've also introduced another type of <bpt id="p1">*</bpt>reference<ept id="p1">*</ept> into the csproj syntax called the <ph id="ph1">`&lt;PackageReference&gt;`</ph>.</source>
+          <target state="translated">Mit dieser Änderung haben wir auch eine andere Art von <bpt id="p1">*</bpt>Verweis<ept id="p1">*</ept> in die CSPROJ-Syntax eingeführt: <ph id="ph1">`&lt;PackageReference&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This document describes the new reference type.</source>
+          <target state="translated">In diesem Dokument wird der neue Verweistyp beschrieben.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It also shows how to add a package dependency using this new reference type to your project.</source>
+          <target state="translated">Es wird außerdem gezeigt, wie mit diesem neuen Verweistyp eine Paketabhängigkeit zum Projekt hinzugefügt wird.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The new <ph id="ph1">&lt;PackageReference&gt;</ph> element</source>
+          <target state="translated">Das neue <ph id="ph1">&lt;PackageReference&gt;</ph>-Element</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;PackageReference&gt;`</ph> has the following basic structure:</source>
+          <target state="translated"><ph id="ph1">`&lt;PackageReference&gt;`</ph> weist die folgende grundlegende Struktur auf:</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If you are familiar with MSBuild, it will look familiar to the other reference types that already exist.</source>
+          <target state="translated">Wenn Sie mit MSBuild vertraut sind, kommt es Ihnen durch bereits vorhandene Verweistypen bekannt vor.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The key is the <ph id="ph1">`Include`</ph> statement which specifies the package id that you wish to add to the project.</source>
+          <target state="translated">Der Schlüssel ist die <ph id="ph1">`Include`</ph>-Anweisung, mit der die Paket-ID angegeben wird, die Sie dem Projekt hinzufügen möchten.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;Version&gt;`</ph> child element specifies the version to get.</source>
+          <target state="translated">Das untergeordnete <ph id="ph1">`&lt;Version&gt;`</ph>-Element gibt die abzurufende Version an.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The versions are specified as per <bpt id="p1">[</bpt>NuGet version rules<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges)</ept>.</source>
+          <target state="translated">Die Versionen werden gemäß den <bpt id="p1">[</bpt>NuGet-Versionsregeln<ept id="p1">](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges)</ept> angegeben.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you are not familiar with the overall <ph id="ph1">`csproj`</ph> syntax, see the <bpt id="p1">[</bpt>MSBuild project reference<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept> documentation for more information.</source>
+          <target state="translated">Wenn Ihnen die allgemeine <ph id="ph1">`csproj`</ph>-Syntax noch unbekannt ist, finden Sie weitere Informationen in der Dokumentation zu <bpt id="p1">[</bpt>MSBuild-Projektverweisen<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Adding a dependency that is available only in a specific target is done using conditions like in the following example:</source>
+          <target state="translated">Beim Hinzufügen einer Abhängigkeit, die nur für ein bestimmtes Ziel verfügbar ist, werden Bedingungen wie im folgenden Beispiel verwendet:</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The above means that the dependency will only be valid if the build is happening for that given target.</source>
+          <target state="translated">Der obige Code bedeutet, dass die Abhängigkeit nur gültig ist, wenn der Build für das angegebene Ziel erstellt wird.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`$(TargetFramework)`</ph> in the condition is a MSBuild property that is being set in the project.</source>
+          <target state="translated"><ph id="ph1">`$(TargetFramework)`</ph> in der Bedingung ist eine MSBuild-Eigenschaft, die im Projekt festgelegt wird.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For most common .NET Core applications, you will not need to do this.</source>
+          <target state="translated">Bei den gängigsten .NET Core-Anwendungen ist dies nicht erforderlich.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Adding a dependency to your project</source>
+          <target state="translated">Hinzufügen einer Abhängigkeit zu Ihrem Projekt</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Adding a dependency to your project is straightforward.</source>
+          <target state="translated">Es ist einfach, eine Abhängigkeit zu Ihrem Projekt hinzuzufügen.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Here is an example of how to add Json.NET version <ph id="ph1">`9.0.1`</ph> to your project.</source>
+          <target state="translated">Im folgenden Beispiel wird das Hinzufügen der Json.NET-Version <ph id="ph1">`9.0.1`</ph> zu Ihrem Projekt veranschaulicht.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Of course, it is applicable to any other NuGet dependency.</source>
+          <target state="translated">Natürlich gilt dies für alle anderen NuGet-Abhängigkeiten.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>When you open your project file, you will see two or more <ph id="ph1">`&lt;ItemGroup&gt;`</ph> nodes.</source>
+          <target state="translated">Wenn Sie Ihre Projektdatei öffnen, sehen Sie zwei oder mehr <ph id="ph1">`&lt;ItemGroup&gt;`</ph>-Knoten.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You will notice that one of the nodes already has <ph id="ph1">`&lt;PackageReference&gt;`</ph> elements in it.</source>
+          <target state="translated">Sie werden feststellen, dass einer der Knoten bereits <ph id="ph1">`&lt;PackageReference&gt;`</ph>-Elemente aufweist.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can add your new dependency to this node, or create a new one; it is completely up to you as the result will be the same.</source>
+          <target state="translated">Sie können Ihre neue Abhängigkeit zu diesem Knoten hinzufügen oder eine neue erstellen. Sie können frei entscheiden, da das Ergebnis gleich sein wird.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this example we will use the default template that is dropped by <ph id="ph1">`dotnet new`</ph>.</source>
+          <target state="translated">In diesem Beispiel verwenden wir die Standardvorlage, die von <ph id="ph1">`dotnet new`</ph> abgelegt wird.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This is a simple console application.</source>
+          <target state="translated">Dies ist eine einfache Konsolenanwendung.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When we open up the project, we first find the <ph id="ph1">`&lt;ItemGroup&gt;`</ph> with already existing <ph id="ph2">`&lt;PackageReference&gt;`</ph> in it.</source>
+          <target state="translated">Wenn wir das Projekt öffnen, suchen wir zuerst nach <ph id="ph1">`&lt;ItemGroup&gt;`</ph> mit dem bereits vorhandenen <ph id="ph2">`&lt;PackageReference&gt;`</ph>-Element.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>We then add the following to it:</source>
+          <target state="translated">Wir fügen dann Folgendes hinzu:</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>After this, we save the project and run the <ph id="ph1">`dotnet restore`</ph> command to install the dependency.</source>
+          <target state="translated">Anschließend speichern wir das Projekt und führen den Befehl <ph id="ph1">`dotnet restore`</ph> aus, um die Abhängigkeit zu installieren.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The full project looks like this:</source>
+          <target state="translated">Das vollständige Projekt sieht folgendermaßen aus:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Removing a dependency from the project</source>
+          <target state="translated">Entfernen einer Abhängigkeit aus dem Projekt</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Removing a dependency from the project file involves simply removing the <ph id="ph1">`&lt;PackageReference&gt;`</ph> from the project file.</source>
+          <target state="translated">Das Entfernen einer Abhängigkeit aus der Projektdatei bedeutet einfach, <ph id="ph1">`&lt;PackageReference&gt;`</ph> aus der Projektdatei zu entfernen.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

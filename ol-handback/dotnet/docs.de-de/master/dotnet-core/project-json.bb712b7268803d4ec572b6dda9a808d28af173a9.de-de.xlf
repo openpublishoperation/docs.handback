@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f0362aa" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2cdb43a9095217498c12c97548e4aa632b13a59c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\project-json.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ac988850b9f19d06d6d594ec302a7aa4e4d393e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dd59b999e34e49fc6d9eacfa26f0bd8b5be267dd</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>project.json reference | Microsoft Docs</source>
+          <target state="translated">project.json-Referenz | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>project.json reference</source>
+          <target state="translated">project.json-Verweis</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, project.json</source>
+          <target state="translated">.NET, .NET Core, project.json</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>project.json reference</source>
+          <target state="translated">project.json-Verweis</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic applies to .NET Core Tools Preview 2.</source>
+          <target state="translated">Dieses Thema gilt für .NET Core Preview 2-Tools.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For the .NET Core Tools RC4 documentation, see the <bpt id="p1">[</bpt>.NET Core command-line interface tools (.NET Core Tools RC4)<ept id="p1">](../preview3/tools/index.md)</ept> section.</source>
+          <target state="translated">Die Dokumentation zu .NET Core Tools RC4 finden Sie im Abschnitt <bpt id="p1">[</bpt>Tools für die .NET Core-Befehlszeilenschnittstelle (.NET Core Tools RC4)<ept id="p1">](../preview3/tools/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The project.json file is used on .NET Core projects to define project metadata, compilation information, and dependencies.</source>
+          <target state="translated">Die Datei „project.json“ wird auf Projekten unter .NET Core verwendet, um Projektmetadaten, Kompilierungsinformationen und Abhängigkeiten zu definieren.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In this reference topic, you'll see the list of all the properties you can define in your project.json file.</source>
+          <target state="translated">In diesem Referenzthema finden Sie die Liste aller Eigenschaften, die Sie in der Datei „project.json“ definieren können.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The .NET Core tooling is going to move from project.json to MSBuild-based projects in a future release.</source>
+          <target state="translated">Die .NET Core-Tools werden in einer zukünftigen Version von „project.json“ zu MSBuild-basierten Projekten verschoben.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The recommendation is to still use project.json files for new .NET Core projects since there will be a path to convert your project to MSBuild when the tooling is released.</source>
+          <target state="translated">Es wird empfohlen, weiterhin „project.json“-Dateien für neue Projekte von .NET Core zu verwenden, da es einen Pfad geben wird, um Ihr Projekt zu MSBuild zu konvertieren, wenn die Tools veröffentlicht werden.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Changes to project.json<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> post on the .NET blog and the <bpt id="p2">[</bpt>Using MSBuild to build .NET Core projects<ept id="p2">](../tutorials/target-dotnetcore-with-msbuild.md)</ept> topic.</source>
+          <target state="translated">Weitere Informationen finden Sie im Beitrag <bpt id="p1">[</bpt>Changes to project.json (Änderungen in „project.json“)<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)</ept> im .NET-Blog und im Thema <bpt id="p2">[</bpt>Using MSBuild to build .NET Core projects (.NET Core-Projekte mit MSBuild erstellen)<ept id="p2">](../tutorials/target-dotnetcore-with-msbuild.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="translated">Übersicht</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">Name</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The name of the project, used for the assembly name as well as the name of the package.</source>
+          <target state="translated">Der Name des Projekts, der sowohl für den Namen der Assembly als auch für den Namen des Pakets verwendet wird.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The top level folder name is used if this property is not specified.</source>
+          <target state="translated">Der Name des Ordners der obersten Ebene wird verwendet, wenn diese Eigenschaft nicht angegeben wird.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">Version</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Semver<ept id="p1">](http://semver.org/spec/v1.0.0.html)</ept> version of the project, also used for the NuGet package.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Semver<ept id="p1">](http://semver.org/spec/v1.0.0.html)</ept>-Version des Projekts. Wird auch für das NuGet-Paket verwendet.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>description</source>
+          <target state="translated">Beschreibung</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A longer description of the project.</source>
+          <target state="translated">Eine längere Beschreibung des Projekts.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">In den Assemblyeigenschaften verwendet.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>copyright</source>
+          <target state="translated">Copyright</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The copyright information for the project.</source>
+          <target state="translated">Die Urheberrechtsinformationen des Projekts.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">In den Assemblyeigenschaften verwendet.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>title</source>
+          <target state="translated">Titel</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The friendly name of the project, can contain spaces and special characters not allowed when using the <ph id="ph1">`name`</ph> property.</source>
+          <target state="translated">Der Anzeigename des Projekts kann Leerzeichen und Sonderzeichen enthalten, die beim Verwenden der Eigenschaft <ph id="ph1">`name`</ph> nicht zulässig sind.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Used in the assembly properties.</source>
+          <target state="translated">In den Assemblyeigenschaften verwendet.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>entryPoint</source>
+          <target state="translated">entryPoint</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The entrypoint method for the project.</source>
+          <target state="translated">Die Einstiegspunktmethode für das Projekt.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Main`</ph> by default.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph> standardmäßig.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Beispiel:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>testRunner</source>
+          <target state="translated">testRunner</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The name of the test runner, such as <bpt id="p1">[</bpt>NUnit<ept id="p1">](http://nunit.org/)</ept> or <bpt id="p2">[</bpt>xUnit<ept id="p2">](http://xunit.github.io/)</ept>, to use with this project.</source>
+          <target state="translated">Der Name des Test Runners, z.B. <bpt id="p1">[</bpt>NUnit<ept id="p1">](http://nunit.org/)</ept> oder <bpt id="p2">[</bpt>xUnit<ept id="p2">](http://xunit.github.io/)</ept>, der für dieses Projekt zu verwenden ist.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Setting this also marks the project as a test project.</source>
+          <target state="translated">Diese Einstellung markiert das Projekt auch als ein Testprojekt.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>authors</source>
+          <target state="translated">authors</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>An array of strings with the names of the authors of the project.</source>
+          <target state="translated">Ein Array von Zeichenfolgen mit den Namen der Autoren des Projekts.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>language</source>
+          <target state="translated">language</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The (human) language of the project.</source>
+          <target state="translated">Die (natürliche) Sprache des Projekts.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Corresponds to the "neutral-language" compiler argument.</source>
+          <target state="translated">Entspricht dem Compilerargument „neutrale Sprache“.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>embedInteropTypes</source>
+          <target state="translated">embedInteropTypes</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to embed COM interop types in the assembly; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Einbetten von COM-Interop-Typen in die Assembly, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Beispiel:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>preprocess</source>
+          <target state="translated">preprocess</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Specifies which files are included in preprocessing.</source>
+          <target state="translated">Gibt an, welche Daten in der Vorabverarbeitung enthalten sind.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>shared</source>
+          <target state="translated">Freigegeben</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Specifies which files are shared, this is used for library export.</source>
+          <target state="translated">Gibt an, welche Dateien freigegeben werden. Wird beim Exportieren von Bibliotheken verwendet.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">Abhängigkeiten</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An object that defines the package dependencies of the project, each key of this object is the name of a package and each value contains versioning information.</source>
+          <target state="translated">Ein Objekt, das die Abhängigkeiten des Projekts definiert. Jeder Schlüssel dieses Objekts ist der Name eines Pakets, und jeder Wert enthält Versionsinformationen.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Dependency resolution<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x)</ept> article on the NuGet documentation site.</source>
+          <target state="translated">Weitere Informationen finden Sie im Artikel <bpt id="p1">[</bpt>Dependency resolution (Abhängigkeitsauflösung)<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x)</ept> auf der NuGet-Dokumentationswebsite.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">Version</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Specifies the version or version range of the dependency.</source>
+          <target state="translated">Gibt die Version oder den Versionsbereich der Abhängigkeit an.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">\*</ph> wildcard to specify a <bpt id="p1">[</bpt>floating dependency version<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions)</ept>.</source>
+          <target state="translated">Verwenden des Platzhalters <ph id="ph1">\*</ph>, um eine <bpt id="p1">[</bpt>floating dependency version<ept id="p1">](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions)</ept> (unverankerte Abhängigkeitsversion) zu definieren.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>type</source>
+          <target state="translated">Typ</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the dependency.</source>
+          <target state="translated">Gibt den Typ der Abhängigkeit an.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>It can be one of the following values: <ph id="ph1">`default`</ph>, <ph id="ph2">`build`</ph> or <ph id="ph3">`platform`</ph>.</source>
+          <target state="translated">Kann einer der folgenden Werte sein: <ph id="ph1">`default`</ph>, <ph id="ph2">`build`</ph> oder <ph id="ph3">`platform`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`default`</ph>.</source>
+          <target state="translated">Der Standardwert ist <ph id="ph1">`default`</ph>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`build`</ph> is known as a development dependency and is only used for build-time.</source>
+          <target state="translated"><ph id="ph1">`build`</ph> wird als Abhängigkeitsentwicklung bezeichnet und nur für die Buildzeit verwendet.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>It means that the package should not be published or added as a dependency to the output <ph id="ph1">`.nupkg`</ph> file.</source>
+          <target state="translated">Das bedeutet, dass das Paket nicht veröffentlicht oder als Abhängigkeit zur Ausgabedatei <ph id="ph1">`.nupkg`</ph> hinzugefügt werden sollte.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>It has the same effect of setting <bpt id="p1">[</bpt>supressParent<ept id="p1">](#supressparent)</ept> to <ph id="ph1">`all`</ph>.</source>
+          <target state="translated">Es hat die gleiche Auswirkung wie das Festlegen von <bpt id="p1">[</bpt>supressParent<ept id="p1">](#supressparent)</ept> auf <ph id="ph1">`all`</ph>.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`platform`</ph> references the shared SDK.</source>
+          <target state="translated"><ph id="ph1">`platform`</ph> verweist auf das freigegebene SDK.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>For more information, see the section on "Deploying a framework-dependent deployment with third-party dependencies" on the <bpt id="p1">[</bpt>.NET Core application deployment<ept id="p1">](../deploying/index.md)</ept> topic.</source>
+          <target state="translated">Weitere Informationen finden Sie im Abschnitt „Deploying a framework-dependent deployment with third-party dependencies (Bereitstellen einer Framework-abhängigen Bereitstellung mit Drittanbieter-Abhängigkeiten)“ im Thema <bpt id="p1">[</bpt>.NET Core Application Deployment (.NET Core-Anwendungsbereitstellung)<ept id="p1">](../deploying/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Beispiel:</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>target</source>
+          <target state="translated">target</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Restricts the dependency to match only a <ph id="ph1">`project`</ph> or a <ph id="ph2">`package`</ph>.</source>
+          <target state="translated">Schränkt die Abhängigkeit ein, nur mit <ph id="ph1">`project`</ph> oder <ph id="ph2">`package`</ph> übereinzustimmen.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Includes parts of dependency packages.</source>
+          <target state="translated">Enthält Teile der Abhängigkeitspakete.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>It can use one or more of the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated">Eine oder mehrere der folgenden Flags können verwendet werden: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> oder <ph id="ph8">`none`</ph>.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Multiple flags are defined by a comma-delimited list.</source>
+          <target state="translated">Mehrere Flags werden durch eine durch Komma getrennte Liste definiert.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">Weitere Informationen finden Sie unter der Spezifikation <bpt id="p1">[</bpt>Managing dependency package asset (Verwalten von Objekten von Abhängigkeitspaketen)<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> im NuGet-Repository.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Excludes parts of dependency packages.</source>
+          <target state="translated">Schließt Teile der Abhängigkeitspakete aus.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>It can be one or more of the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated">Eine oder mehrere der folgenden Flags können verwendet werden: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> oder <ph id="ph8">`none`</ph>.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Multiple flags are defined by a comma-delimited list.</source>
+          <target state="translated">Mehrere Flags werden durch eine durch Komma getrennte Liste definiert.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">Weitere Informationen finden Sie unter der Spezifikation <bpt id="p1">[</bpt>Managing dependency package asset (Verwalten von Objekten von Abhängigkeitspaketen)<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> im NuGet-Repository.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>supressParent</source>
+          <target state="translated">supressParent</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Defines additional excludes for consumers of the project.</source>
+          <target state="translated">Definiert zusätzliche Ausschlüsse für Consumer des Projekts.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>It can be one the following flags: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph>, or <ph id="ph8">`none`</ph>.</source>
+          <target state="translated">Eine oder mehrere der folgenden Flags können verwendet werden: <ph id="ph1">`all`</ph>, <ph id="ph2">`runtime`</ph>, <ph id="ph3">`compile`</ph>, <ph id="ph4">`build`</ph>, <ph id="ph5">`contentFiles`</ph>, <ph id="ph6">`native`</ph>, <ph id="ph7">`analyzers`</ph> oder <ph id="ph8">`none`</ph>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Managing dependency package assets<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> specification on the NuGet repo.</source>
+          <target state="translated">Weitere Informationen finden Sie unter der Spezifikation <bpt id="p1">[</bpt>Managing dependency package asset (Verwalten von Objekten von Abhängigkeitspaketen)<ept id="p1">](https://github.com/NuGet/Home/wiki/%5BSpec%5D-Managing-dependency-package-assets)</ept> im NuGet-Repository.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>tools</source>
+          <target state="translated">Tools</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>An object that defines package dependencies that are used as tools for the current project, not as references.</source>
+          <target state="translated">Ein Objekt, das Paketabhängigkeiten definiert, die als Tools für das aktuelle Projekt verwendet werden, nicht als Verweise.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Packages defined here are available in scripts that run during the build process, but they are not accessible to the code in the project itself.</source>
+          <target state="translated">Pakete, die hier definiert werden, sind in Skripts verfügbar, die während des Buildprozesses ausgeführt werden, aber nicht auf den Code im Projekt selbst zugreifen können.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Tools can for example include code generators or post-build tools that perform tasks related to packing.</source>
+          <target state="translated">Tools können z.B. Codegeneratoren oder Postbuild-Tools umfassen, die Aufgaben im Zusammenhang mit dem Verpacken ausführen.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>scripts</source>
+          <target state="translated">Skripts</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>An object that defines scripts run during the build process.</source>
+          <target state="translated">Ein Objekt, das Skripts definiert, die während des Buildprozesses ausgeführt werden.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Each key in this object identifies where in the build the script is run.</source>
+          <target state="translated">Jeder Schlüssel in diesem Objekt identifiziert, wo im Build das Skript ausgeführt wird.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Each value is either a string with the script to run or an array of strings containing scripts that will run in order.</source>
+          <target state="translated">Jeder Wert ist entweder eine Zeichenfolge mit dem auszuführenden Skript oder ein Array von Zeichenfolgen, das Skripts enthält, die der Reihe nach ausgeführt werden.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The supported events are:</source>
+          <target state="translated">Die unterstützten Ereignisse sind:</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>precompile</source>
+          <target state="translated">precompile</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>postcompile</source>
+          <target state="translated">postcompile</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>prepublish</source>
+          <target state="translated">prepublish</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>postpublish</source>
+          <target state="translated">postpublish</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>buildOptions</source>
+          <target state="translated">buildOptions</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>An object whose properties control various aspects of compilation.</source>
+          <target state="translated">Ein Objekt, dessen Eigenschaften verschiedene Aspekte der Kompilierung steuern.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The valid properties are listed below.</source>
+          <target state="translated">Die gültigen Eigenschaften sind unten aufgelistet.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Can also be specified per target framework as described in the <bpt id="p1">[</bpt>frameworks section<ept id="p1">](#frameworks)</ept>.</source>
+          <target state="translated">Kann auch pro Zielframework angegeben werden, wie im Abschnitt <bpt id="p1">[</bpt>Frameworks<ept id="p1">](#frameworks)</ept> beschrieben.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>define</source>
+          <target state="translated">define</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>A list of defines such as "DEBUG" or "TRACE" that can be used in conditional compilation in the code.</source>
+          <target state="translated">Eine Liste von Defines wie „DEBUG“ oder „TRACE“, die in der bedingten Kompilierung im Code verwendet werden können.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>nowarn</source>
+          <target state="translated">nowarn</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>A list of warnings to ignore.</source>
+          <target state="translated">Eine Liste von Warnungen, die ignoriert werden können.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This ignores the warnings <ph id="ph1">`The variable 'var' is declared but never used`</ph> and <ph id="ph2">`The variable 'var' is assigned but its value is never used`</ph>.</source>
+          <target state="translated">Dies ignoriert die Warnungen <ph id="ph1">`The variable 'var' is declared but never used`</ph> und <ph id="ph2">`The variable 'var' is assigned but its value is never used`</ph>.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>additionalArguments</source>
+          <target state="translated">additionalArguments</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>A list of extra arguments that will be passed to the compiler.</source>
+          <target state="translated">Eine Liste mit zusätzlichen Argumenten, die an den Compiler übergeben werden.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>warningsAsErrors</source>
+          <target state="translated">warningsAsErrors</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to treat warnings as errors; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Behandeln aller Warnungen als Fehler, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>allowUnsafe</source>
+          <target state="translated">allowUnsafe</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to allow unsafe code in this project; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Erlauben von unsicherem Code in diesem Projekt, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>emitEntryPoint</source>
+          <target state="translated">emitEntryPoint</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to create an executable; <ph id="ph2">`false`</ph> to produce a library.</source>
+          <target state="translated"><ph id="ph1">`true`</ph>zum Erstellen einer ausführbaren Datei. <ph id="ph2">`false`</ph> zum Erstellen einer Bibliothek.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>optimize</source>
+          <target state="translated">optimize</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable the compiler to optimize the code in this project; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Aktivieren des Compilers, um den Code in diesem Projekt zu optimieren, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>platform</source>
+          <target state="translated">platform</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The name of the target platform, such as AnyCpu, x86 or x64.</source>
+          <target state="translated">Der Name der Zielplattform, z.B. AnyCpu, x86 oder x64.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>languageVersion</source>
+          <target state="translated">languageVersion</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The version of the language used by the compiler: ISO-1, ISO-2, 3, 4, 5, 6, or Default.</source>
+          <target state="translated">Die Version der vom Compiler verwendeten Sprache: ISO-1, ISO-2, 3, 4, 5, 6 oder Standard.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>keyFile</source>
+          <target state="translated">keyFile</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The path for the key file used for signing this assembly.</source>
+          <target state="translated">Der Pfad für die Schlüsseldatei zum Signieren der Assembly.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>delaySign</source>
+          <target state="translated">delaySign</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to delay signing; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zur Verzögerung des Signierens, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>publicSign</source>
+          <target state="translated">publicSign</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable signing of the resulting assembly; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Aktivieren des Signierens der resultierenden Assembly, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>debugType</source>
+          <target state="translated">debugType</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>Indicates the type of symbol file (PDB file) to generate.</source>
+          <target state="translated">Gibt den Typ der zu generierenden Symboldatei (PDB-Datei) an.</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>The options are "portable" (for .NET Core projects) or "full" (the traditional Windows-only PDB files).</source>
+          <target state="translated">Die Optionen sind „portabel“ (für .NET Core-Projekte) oder „voll“ (die herkömmlichen PDB-Dateien nur für Windows).</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source>xmlDoc</source>
+          <target state="translated">xmlDoc</target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="296" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to generate XML documentation from triple-slash comments in the source code; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Generieren von XML-Dokumentation aus Kommentaren mit drei Schrägstrichen im Quellcode, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="297" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="298" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="299" translate="yes" xml:space="preserve">
+          <source>preserveCompilationContext</source>
+          <target state="translated">preserveCompilationContext</target>       </trans-unit>
+        <trans-unit id="300" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="301" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to preserve reference assemblies and other context data to allow for runtime compilation; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Beibehalten von Verweisassemblys und anderen Kontextdaten zur Laufzeitkompilierung, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="302" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="303" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="304" translate="yes" xml:space="preserve">
+          <source>outputName</source>
+          <target state="translated">outputName</target>       </trans-unit>
+        <trans-unit id="305" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="306" translate="yes" xml:space="preserve">
+          <source>Change the name of the output file.</source>
+          <target state="translated">Ändern des Namens der Ausgabedatei.</target>       </trans-unit>
+        <trans-unit id="307" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="308" translate="yes" xml:space="preserve">
+          <source>compilerName</source>
+          <target state="translated">compilerName</target>       </trans-unit>
+        <trans-unit id="309" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="310" translate="yes" xml:space="preserve">
+          <source>The name of the compiler used for this project.</source>
+          <target state="translated">Der Name des Compilers, der für dieses Projekt verwendet wird.</target>       </trans-unit>
+        <trans-unit id="311" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`csc`</ph> by default.</source>
+          <target state="translated"><ph id="ph1">`csc`</ph> standardmäßig.</target>       </trans-unit>
+        <trans-unit id="312" translate="yes" xml:space="preserve">
+          <source>Currently, <ph id="ph1">`csc`</ph> (the C# compiler) or <ph id="ph2">`fsc`</ph> (the F# compiler) are supported.</source>
+          <target state="translated">Derzeit wird <ph id="ph1">`csc`</ph> (der C#-Compiler) oder <ph id="ph2">`fsc`</ph> (der F#-Compiler) unterstützt.</target>       </trans-unit>
+        <trans-unit id="313" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="314" translate="yes" xml:space="preserve">
+          <source>compile</source>
+          <target state="translated">compile</target>       </trans-unit>
+        <trans-unit id="315" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="316" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">Ein Objekt, das Eigenschaften für die Konfiguration der Kompilierung enthält.</target>       </trans-unit>
+        <trans-unit id="317" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="318" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="319" translate="yes" xml:space="preserve">
+          <source>Specifies which files to include in the build.</source>
+          <target state="translated">Gibt an, welche Dateien im Build enthalten sein sollen.</target>       </trans-unit>
+        <trans-unit id="320" translate="yes" xml:space="preserve">
+          <source>The patterns are rooted at the project folder.</source>
+          <target state="translated">Die Muster haben den Projektordner als Stamm.</target>       </trans-unit>
+        <trans-unit id="321" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">Der Standardwert ist „None“.</target>       </trans-unit>
+        <trans-unit id="322" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="323" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="324" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="325" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">Gibt an, welche Dateien vom Build ausgeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="326" translate="yes" xml:space="preserve">
+          <source>The exclude patterns have higher priority than the include patterns, so a file found in both will be excluded.</source>
+          <target state="translated">Die Muster in „exclude“ haben höhere Priorität als die Muster in „include“, deswegen wird eine Datei ausgeschlossen, die in beiden gefunden wird.</target>       </trans-unit>
+        <trans-unit id="327" translate="yes" xml:space="preserve">
+          <source>The patterns are rooted at the project folder.</source>
+          <target state="translated">Die Muster haben den Projektordner als Stamm.</target>       </trans-unit>
+        <trans-unit id="328" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">Der Standardwert ist „None“.</target>       </trans-unit>
+        <trans-unit id="329" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="330" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="331" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="332" translate="yes" xml:space="preserve">
+          <source>A list of file paths to include.</source>
+          <target state="translated">Eine Liste der Dateipfade, die aufgenommen werden sollen.</target>       </trans-unit>
+        <trans-unit id="333" translate="yes" xml:space="preserve">
+          <source>The paths are rooted at the project folder.</source>
+          <target state="translated">Die Pfade haben den Projektordner als Stamm.</target>       </trans-unit>
+        <trans-unit id="334" translate="yes" xml:space="preserve">
+          <source>This list has a higher priority than the include and exclude globbing patterns, hence a file listed here and in the exclude globbing pattern will still be included.</source>
+          <target state="translated">Diese Liste hat eine höhere Priorität als die Platzhaltermuster „include“ und „exclude“, daher wird eine Datei trotzdem eingeschlossen, die hier und im Platzhaltermuster „exclude“ aufgelistet ist.</target>       </trans-unit>
+        <trans-unit id="335" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">Der Standardwert ist „None“.</target>       </trans-unit>
+        <trans-unit id="336" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="337" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="338" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="339" translate="yes" xml:space="preserve">
+          <source>A list of file paths to exclude.</source>
+          <target state="translated">Eine Liste der Dateipfade, die ausgeschlossen werden sollen.</target>       </trans-unit>
+        <trans-unit id="340" translate="yes" xml:space="preserve">
+          <source>The paths are rooted at the project folder.</source>
+          <target state="translated">Die Pfade haben den Projektordner als Stamm.</target>       </trans-unit>
+        <trans-unit id="341" translate="yes" xml:space="preserve">
+          <source>This list has a higher priority than globbing patterns and the include paths, hence a file found in all will be excluded.</source>
+          <target state="translated">Diese Liste hat eine höhere Priorität als Platzhaltermuster und umfasst Pfade, daher wird eine Datei ausgeschlossen, die in allen gefunden wird.</target>       </trans-unit>
+        <trans-unit id="342" translate="yes" xml:space="preserve">
+          <source>Defaults to none.</source>
+          <target state="translated">Der Standardwert ist „None“.</target>       </trans-unit>
+        <trans-unit id="343" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="344" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="345" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="346" translate="yes" xml:space="preserve">
+          <source>The defaults provided by the system.</source>
+          <target state="translated">Die Standardwerte, die vom System bereitgestellt werden.</target>       </trans-unit>
+        <trans-unit id="347" translate="yes" xml:space="preserve">
+          <source>It can have <ph id="ph1">`include`</ph> and <ph id="ph2">`exclude`</ph> globbing patterns which are merged with the corresponding values of the <ph id="ph3">`include`</ph> and <ph id="ph4">`exclude`</ph> properties.</source>
+          <target state="translated">Kann Platzhaltermuster <ph id="ph1">`include`</ph> und <ph id="ph2">`exclude`</ph> enthalten, die mit den entsprechenden Werten der Eigenschaften <ph id="ph3">`include`</ph> und <ph id="ph4">`exclude`</ph> zusammengeführt werden.</target>       </trans-unit>
+        <trans-unit id="348" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="349" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">Zuordnungen</target>       </trans-unit>
+        <trans-unit id="350" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="351" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">Schlüssel zum Objekt stellen Zielpfade im Ausgabelayout dar.</target>       </trans-unit>
+        <trans-unit id="352" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">Werte sind entweder eine Zeichenfolge oder ein Objekt, das den Quellpfad der einzuschließenden Dateien darstellt.</target>       </trans-unit>
+        <trans-unit id="353" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">Die Objektdarstellung kann über eigene Abschnitte <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> und <ph id="ph4">`excludeFiles`</ph> verfügen.</target>       </trans-unit>
+        <trans-unit id="354" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">Beispiel für Zeichenfolge:</target>       </trans-unit>
+        <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">Beispiel für Objekt:</target>       </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>embed</source>
+          <target state="translated">embed</target>       </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">Ein Objekt, das Eigenschaften für die Konfiguration der Kompilierung enthält.</target>       </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="360" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="361" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="362" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="363" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">Gibt an, welche Dateien vom Build ausgeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="364" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="365" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="366" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="367" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="368" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="369" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="370" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="371" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">Zuordnungen</target>       </trans-unit>
+        <trans-unit id="372" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="373" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">Schlüssel zum Objekt stellen Zielpfade im Ausgabelayout dar.</target>       </trans-unit>
+        <trans-unit id="374" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">Werte sind entweder eine Zeichenfolge oder ein Objekt, das den Quellpfad der einzuschließenden Dateien darstellt.</target>       </trans-unit>
+        <trans-unit id="375" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">Die Objektdarstellung kann über eigene Abschnitte <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> und <ph id="ph4">`excludeFiles`</ph> verfügen.</target>       </trans-unit>
+        <trans-unit id="376" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">Beispiel für Zeichenfolge:</target>       </trans-unit>
+        <trans-unit id="377" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">Beispiel für Objekt:</target>       </trans-unit>
+        <trans-unit id="378" translate="yes" xml:space="preserve">
+          <source>copyToOutput</source>
+          <target state="translated">copyToOutput</target>       </trans-unit>
+        <trans-unit id="379" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="380" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">Ein Objekt, das Eigenschaften für die Konfiguration der Kompilierung enthält.</target>       </trans-unit>
+        <trans-unit id="381" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="382" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="383" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="384" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="385" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">Gibt an, welche Dateien vom Build ausgeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="386" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="387" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="388" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="389" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="390" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="391" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="392" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="393" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">Zuordnungen</target>       </trans-unit>
+        <trans-unit id="394" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="395" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">Schlüssel zum Objekt stellen Zielpfade im Ausgabelayout dar.</target>       </trans-unit>
+        <trans-unit id="396" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">Werte sind entweder eine Zeichenfolge oder ein Objekt, das den Quellpfad der einzuschließenden Dateien darstellt.</target>       </trans-unit>
+        <trans-unit id="397" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">Die Objektdarstellung kann über eigene Abschnitte <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> und <ph id="ph4">`excludeFiles`</ph> verfügen.</target>       </trans-unit>
+        <trans-unit id="398" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">Beispiel für Zeichenfolge:</target>       </trans-unit>
+        <trans-unit id="399" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">Beispiel für Objekt:</target>       </trans-unit>
+        <trans-unit id="400" translate="yes" xml:space="preserve">
+          <source>publishOptions</source>
+          <target state="translated">publishOptions</target>       </trans-unit>
+        <trans-unit id="401" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="402" translate="yes" xml:space="preserve">
+          <source>An object containing properties for compilation configuration.</source>
+          <target state="translated">Ein Objekt, das Eigenschaften für die Konfiguration der Kompilierung enthält.</target>       </trans-unit>
+        <trans-unit id="403" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="404" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="405" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="406" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="407" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">Gibt an, welche Dateien vom Build ausgeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="408" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="409" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="410" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="411" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="412" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="413" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="414" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="415" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">Zuordnungen</target>       </trans-unit>
+        <trans-unit id="416" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="417" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">Schlüssel zum Objekt stellen Zielpfade im Ausgabelayout dar.</target>       </trans-unit>
+        <trans-unit id="418" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">Werte sind entweder eine Zeichenfolge oder ein Objekt, das den Quellpfad der einzuschließenden Dateien darstellt.</target>       </trans-unit>
+        <trans-unit id="419" translate="yes" xml:space="preserve">
+          <source>The object represtation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">Die Objektdarstellung kann über eigene Abschnitte <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> und <ph id="ph4">`excludeFiles`</ph> verfügen.</target>       </trans-unit>
+        <trans-unit id="420" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">Beispiel für Zeichenfolge:</target>       </trans-unit>
+        <trans-unit id="421" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">Beispiel für Objekt:</target>       </trans-unit>
+        <trans-unit id="422" translate="yes" xml:space="preserve">
+          <source>runtimeOptions</source>
+          <target state="translated">runtimeOptions</target>       </trans-unit>
+        <trans-unit id="423" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="424" translate="yes" xml:space="preserve">
+          <source>Specifies parameters to be provided to the runtime during initialization.</source>
+          <target state="translated">Gibt Parameter für die Laufzeit während der Initialisierung an.</target>       </trans-unit>
+        <trans-unit id="425" translate="yes" xml:space="preserve">
+          <source>configProperties</source>
+          <target state="translated">configProperties</target>       </trans-unit>
+        <trans-unit id="426" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="427" translate="yes" xml:space="preserve">
+          <source>Contains configuration properties to configure the runtime and the framework.</source>
+          <target state="translated">Enthält Eigenschaften zum Konfigurieren der Laufzeit und des Frameworks.</target>       </trans-unit>
+        <trans-unit id="428" translate="yes" xml:space="preserve">
+          <source>System.GC.Server</source>
+          <target state="translated">System.GC.Server</target>       </trans-unit>
+        <trans-unit id="429" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="430" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable server garbage collection; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Aktivieren der Garbage Collection für Server, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="431" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="432" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="433" translate="yes" xml:space="preserve">
+          <source>System.GC.Concurrent</source>
+          <target state="translated">System.GC.Concurrent</target>       </trans-unit>
+        <trans-unit id="434" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="435" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to enable concurrent garbage collection; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Aktivieren von gleichzeitigen Garbage Collection-Vorgängen, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="436" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="437" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="438" translate="yes" xml:space="preserve">
+          <source>System.GC.RetainVM</source>
+          <target state="translated">System.GC.RetainVM</target>       </trans-unit>
+        <trans-unit id="439" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="440" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to put segments that should be deleted on a standby list for future use instead of releasing them back to the operating system (OS); otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Platzieren von zu löschenden Segmenten auf einer Standby-Liste für die zukünftige Verwendung statt erneuter Freigabe an das Betriebssystem (OS), andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="441" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="442" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="443" translate="yes" xml:space="preserve">
+          <source>System.Threading.ThreadPool.MinThreads</source>
+          <target state="translated">System.Threading.ThreadPool.MinThreads</target>       </trans-unit>
+        <trans-unit id="444" translate="yes" xml:space="preserve">
+          <source>Type: Integer</source>
+          <target state="translated">Typ: Ganze Zahl</target>       </trans-unit>
+        <trans-unit id="445" translate="yes" xml:space="preserve">
+          <source>Overrides the number of minimum threads for the ThreadPool worker pool.</source>
+          <target state="translated">Überschreibt die Mindestanzahl von Threads für den Arbeitspool von ThreadPool.</target>       </trans-unit>
+        <trans-unit id="446" translate="yes" xml:space="preserve">
+          <source>System.Threading.ThreadPool.MaxThreads</source>
+          <target state="translated">System.Threading.ThreadPool.MaxThreads</target>       </trans-unit>
+        <trans-unit id="447" translate="yes" xml:space="preserve">
+          <source>Type: Integer</source>
+          <target state="translated">Typ: Ganze Zahl</target>       </trans-unit>
+        <trans-unit id="448" translate="yes" xml:space="preserve">
+          <source>Overrides the number of maximum threads for the ThreadPool worker pool.</source>
+          <target state="translated">Überschreibt die Höchstanzahl von Threads für den Arbeitspool von ThreadPool.</target>       </trans-unit>
+        <trans-unit id="449" translate="yes" xml:space="preserve">
+          <source>framework</source>
+          <target state="translated">Framework</target>       </trans-unit>
+        <trans-unit id="450" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="451" translate="yes" xml:space="preserve">
+          <source>Contains shared framework properties to use when activating the application.</source>
+          <target state="translated">Enthält freigegebene Frameworkeigenschaften, die beim Aktivieren der Anwendung verwendet werden sollen.</target>       </trans-unit>
+        <trans-unit id="452" translate="yes" xml:space="preserve">
+          <source>The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.</source>
+          <target state="translated">Wenn dieser Bereich vorhanden ist bedeutet das, dass die Anwendung eine portable App ist, die für die Verwendung von freigegebenen verteilbaren Frameworks konzipiert ist.</target>       </trans-unit>
+        <trans-unit id="453" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">Name</target>       </trans-unit>
+        <trans-unit id="454" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="455" translate="yes" xml:space="preserve">
+          <source>Name of the shared framework.</source>
+          <target state="translated">Name des freigegebenen Frameworks.</target>       </trans-unit>
+        <trans-unit id="456" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">Version</target>       </trans-unit>
+        <trans-unit id="457" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="458" translate="yes" xml:space="preserve">
+          <source>Version of the shared framework.</source>
+          <target state="translated">Version des freigegebenen Frameworks.</target>       </trans-unit>
+        <trans-unit id="459" translate="yes" xml:space="preserve">
+          <source>applyPatches</source>
+          <target state="translated">applyPatches</target>       </trans-unit>
+        <trans-unit id="460" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="461" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to use the framework from either the same or a higher version that differs only in the <ph id="ph2">`SemVer`</ph> patch field.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Verwenden des Frameworks über die gleiche oder eine höhere Version, die sich nur im Patchfeld <ph id="ph2">`SemVer`</ph> unterscheidet.</target>       </trans-unit>
+        <trans-unit id="462" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`false`</ph> for the host to use only the exact framework version.</source>
+          <target state="translated"><ph id="ph1">`false`</ph> als Angabe für den Host, ausschließlich die genaue Version des Frameworks zu verwenden.</target>       </trans-unit>
+        <trans-unit id="463" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`true`</ph>.</target>       </trans-unit>
+        <trans-unit id="464" translate="yes" xml:space="preserve">
+          <source>packOptions</source>
+          <target state="translated">packOptions</target>       </trans-unit>
+        <trans-unit id="465" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="466" translate="yes" xml:space="preserve">
+          <source>Defines options pertaining to the packaging of the project output into a NuGet package.</source>
+          <target state="translated">Definiert Optionen, die das Verpacken der Projektausgabe in ein NuGet-Paket betreffen.</target>       </trans-unit>
+        <trans-unit id="467" translate="yes" xml:space="preserve">
+          <source>summary</source>
+          <target state="translated">Zusammenfassung</target>       </trans-unit>
+        <trans-unit id="468" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="469" translate="yes" xml:space="preserve">
+          <source>A short description of the project.</source>
+          <target state="translated">Eine kurze Beschreibung des Projekts.</target>       </trans-unit>
+        <trans-unit id="470" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="471" translate="yes" xml:space="preserve">
+          <source>tags</source>
+          <target state="translated">Tags</target>       </trans-unit>
+        <trans-unit id="472" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="473" translate="yes" xml:space="preserve">
+          <source>An array of strings with tags for the project, used for searching in NuGet.</source>
+          <target state="translated">Ein Array von Zeichenfolgen mit Tags für das Projekt, die für die Suche in NuGet verwendet werden.</target>       </trans-unit>
+        <trans-unit id="474" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="475" translate="yes" xml:space="preserve">
+          <source>owners</source>
+          <target state="translated">owners</target>       </trans-unit>
+        <trans-unit id="476" translate="yes" xml:space="preserve">
+          <source>Type: String[]</source>
+          <target state="translated">Typ: Zeichenfolge[]</target>       </trans-unit>
+        <trans-unit id="477" translate="yes" xml:space="preserve">
+          <source>An array of strings with the names of the owners of the project.</source>
+          <target state="translated">Ein Array von Zeichenfolgen mit den Namen der Besitzer des Projekts.</target>       </trans-unit>
+        <trans-unit id="478" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="479" translate="yes" xml:space="preserve">
+          <source>releaseNotes</source>
+          <target state="translated">releaseNotes</target>       </trans-unit>
+        <trans-unit id="480" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="481" translate="yes" xml:space="preserve">
+          <source>Release notes for the project.</source>
+          <target state="translated">Anmerkungen zu diesem Projekt.</target>       </trans-unit>
+        <trans-unit id="482" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="483" translate="yes" xml:space="preserve">
+          <source>iconUrl</source>
+          <target state="translated">iconUrl</target>       </trans-unit>
+        <trans-unit id="484" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="485" translate="yes" xml:space="preserve">
+          <source>The URL for an icon that will be used in various places such as the package explorer.</source>
+          <target state="translated">Die URL für ein Symbol, das in verschiedenen Orten wie z.B. im Paket-Explorer verwendet wird.</target>       </trans-unit>
+        <trans-unit id="486" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="487" translate="yes" xml:space="preserve">
+          <source>projectUrl</source>
+          <target state="translated">projectUrl</target>       </trans-unit>
+        <trans-unit id="488" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="489" translate="yes" xml:space="preserve">
+          <source>The URL for the homepage of the project.</source>
+          <target state="translated">Die URL für die Startseite des Projekts.</target>       </trans-unit>
+        <trans-unit id="490" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="491" translate="yes" xml:space="preserve">
+          <source>licenseUrl</source>
+          <target state="translated">licenseUrl</target>       </trans-unit>
+        <trans-unit id="492" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="493" translate="yes" xml:space="preserve">
+          <source>The URL for the license the project uses.</source>
+          <target state="translated">Die URL für die Lizenz, die das Projekt verwendet.</target>       </trans-unit>
+        <trans-unit id="494" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="495" translate="yes" xml:space="preserve">
+          <source>requireLicenseAcceptance</source>
+          <target state="translated">requireLicenseAcceptance</target>       </trans-unit>
+        <trans-unit id="496" translate="yes" xml:space="preserve">
+          <source>Type: Boolean</source>
+          <target state="translated">Typ: Boolesch</target>       </trans-unit>
+        <trans-unit id="497" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`true`</ph> to cause a prompt to accept the package license when installing the package to be shown; otherwise, <ph id="ph2">`false`</ph>.</source>
+          <target state="translated"><ph id="ph1">`true`</ph> zum Verursachen einer Eingabeaufforderung, um die Lizenz des Pakets zu akzeptieren, wenn das Paket, das angezeigt werden soll, installiert wird, andernfalls <ph id="ph2">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="498" translate="yes" xml:space="preserve">
+          <source>Only used for NuGet packages, ignored in other uses.</source>
+          <target state="translated">Nur für NuGet-Pakete, bei anderen Verwendungen ignoriert.</target>       </trans-unit>
+        <trans-unit id="499" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">Die Standardeinstellung ist <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="500" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="501" translate="yes" xml:space="preserve">
+          <source>repository</source>
+          <target state="translated">Repository</target>       </trans-unit>
+        <trans-unit id="502" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="503" translate="yes" xml:space="preserve">
+          <source>Contains information about the repository where the project is stored.</source>
+          <target state="translated">Enthält Informationen über das Repository, in dem das Projekt gespeichert ist.</target>       </trans-unit>
+        <trans-unit id="504" translate="yes" xml:space="preserve">
+          <source>type</source>
+          <target state="translated">Typ</target>       </trans-unit>
+        <trans-unit id="505" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="506" translate="yes" xml:space="preserve">
+          <source>Type of the repository.</source>
+          <target state="translated">Der Typ des Repositorys.</target>       </trans-unit>
+        <trans-unit id="507" translate="yes" xml:space="preserve">
+          <source>The default value is "git".</source>
+          <target state="translated">Der Standardwert ist „git“.</target>       </trans-unit>
+        <trans-unit id="508" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="509" translate="yes" xml:space="preserve">
+          <source>url</source>
+          <target state="translated">url</target>       </trans-unit>
+        <trans-unit id="510" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="511" translate="yes" xml:space="preserve">
+          <source>URL of the repository where the project is stored.</source>
+          <target state="translated">URL des Repositorys, in dem das Projekt gespeichert ist.</target>       </trans-unit>
+        <trans-unit id="512" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="513" translate="yes" xml:space="preserve">
+          <source>files</source>
+          <target state="translated">Dateien</target>       </trans-unit>
+        <trans-unit id="514" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="515" translate="yes" xml:space="preserve">
+          <source>include</source>
+          <target state="translated">include</target>       </trans-unit>
+        <trans-unit id="516" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="517" translate="yes" xml:space="preserve">
+          <source>exclude</source>
+          <target state="translated">exclude</target>       </trans-unit>
+        <trans-unit id="518" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="519" translate="yes" xml:space="preserve">
+          <source>Specifies which files to exclude from the build.</source>
+          <target state="translated">Gibt an, welche Dateien vom Build ausgeschlossen werden.</target>       </trans-unit>
+        <trans-unit id="520" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="521" translate="yes" xml:space="preserve">
+          <source>includeFiles</source>
+          <target state="translated">includeFiles</target>       </trans-unit>
+        <trans-unit id="522" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="523" translate="yes" xml:space="preserve">
+          <source>excludeFiles</source>
+          <target state="translated">excludeFiles</target>       </trans-unit>
+        <trans-unit id="524" translate="yes" xml:space="preserve">
+          <source>Type: String or String[] with a globbing pattern.</source>
+          <target state="translated">Typ: Zeichenfolge oder Zeichenfolge[] mit einem Platzhaltermuster.</target>       </trans-unit>
+        <trans-unit id="525" translate="yes" xml:space="preserve">
+          <source>builtIns</source>
+          <target state="translated">builtIns</target>       </trans-unit>
+        <trans-unit id="526" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="527" translate="yes" xml:space="preserve">
+          <source>mappings</source>
+          <target state="translated">Zuordnungen</target>       </trans-unit>
+        <trans-unit id="528" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="529" translate="yes" xml:space="preserve">
+          <source>Keys to the object represent destination paths in the output layout.</source>
+          <target state="translated">Schlüssel zum Objekt stellen Zielpfade im Ausgabelayout dar.</target>       </trans-unit>
+        <trans-unit id="530" translate="yes" xml:space="preserve">
+          <source>Values are either a string or an object representing the source path of files to include.</source>
+          <target state="translated">Werte sind entweder eine Zeichenfolge oder ein Objekt, das den Quellpfad der einzuschließenden Dateien darstellt.</target>       </trans-unit>
+        <trans-unit id="531" translate="yes" xml:space="preserve">
+          <source>The object representation can have its own <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> and <ph id="ph4">`excludeFiles`</ph> sections.</source>
+          <target state="translated">Die Objektdarstellung kann über eigene Abschnitte <ph id="ph1">`include`</ph>, <ph id="ph2">`exclude`</ph>, <ph id="ph3">`includeFiles`</ph> und <ph id="ph4">`excludeFiles`</ph> verfügen.</target>       </trans-unit>
+        <trans-unit id="532" translate="yes" xml:space="preserve">
+          <source>String example:</source>
+          <target state="translated">Beispiel für Zeichenfolge:</target>       </trans-unit>
+        <trans-unit id="533" translate="yes" xml:space="preserve">
+          <source>Object example:</source>
+          <target state="translated">Beispiel für Objekt:</target>       </trans-unit>
+        <trans-unit id="534" translate="yes" xml:space="preserve">
+          <source>analyzerOptions</source>
+          <target state="translated">analyzerOptions</target>       </trans-unit>
+        <trans-unit id="535" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="536" translate="yes" xml:space="preserve">
+          <source>An object with properties used by code analysers.</source>
+          <target state="translated">Ein Objekt mit Eigenschaften, die bei der Analyse von Code verwendet werden.</target>       </trans-unit>
+        <trans-unit id="537" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="538" translate="yes" xml:space="preserve">
+          <source>languageId</source>
+          <target state="translated">languageId</target>       </trans-unit>
+        <trans-unit id="539" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="540" translate="yes" xml:space="preserve">
+          <source>The id of the language to analyze.</source>
+          <target state="translated">Die ID der zu analysierenden Sprache.</target>       </trans-unit>
+        <trans-unit id="541" translate="yes" xml:space="preserve">
+          <source>"cs" represents C#, "vb" represents Visual Basic and "fs" represents F#.</source>
+          <target state="translated">„cs“ steht für C#, „vb“ steht für Visual Basic und „fs“ steht für F#.</target>       </trans-unit>
+        <trans-unit id="542" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="543" translate="yes" xml:space="preserve">
+          <source>configurations</source>
+          <target state="translated">Konfigurationen</target>       </trans-unit>
+        <trans-unit id="544" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="545" translate="yes" xml:space="preserve">
+          <source>An object whose properties define different configurations for this project, such as Debug and Release.</source>
+          <target state="translated">Ein Objekt, dessen Eigenschaften verschiedene Konfigurationen für dieses Projekt angeben, wie Debug und Release.</target>       </trans-unit>
+        <trans-unit id="546" translate="yes" xml:space="preserve">
+          <source>Each value is an object that can contain a <ph id="ph1">`buildOptions`</ph> object with options specific for this configuration.</source>
+          <target state="translated">Jeder Wert ist ein Objekt, das ein <ph id="ph1">`buildOptions`</ph>-Objekt mit für diese Konfiguration spezifischen Optionen enthalten kann.</target>       </trans-unit>
+        <trans-unit id="547" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="548" translate="yes" xml:space="preserve">
+          <source>frameworks</source>
+          <target state="translated">frameworks</target>       </trans-unit>
+        <trans-unit id="549" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="550" translate="yes" xml:space="preserve">
+          <source>Specifies which frameworks this project supports, such as the .NET Framework or Universal Windows Platform (UWP).</source>
+          <target state="translated">Gibt an, welche Frameworks dieses Projekt unterstützt, z.B. .NET Framework oder Universelle Windows-Plattform (UWP).</target>       </trans-unit>
+        <trans-unit id="551" translate="yes" xml:space="preserve">
+          <source>Must be a valid Target Framework Moniker (TFM).</source>
+          <target state="translated">Es muss ein gültiger Zielframeworkmoniker (Target Framework Moniker, TMF) sein.</target>       </trans-unit>
+        <trans-unit id="552" translate="yes" xml:space="preserve">
+          <source>Each value is an object that can contain information specific to this framework such as <ph id="ph1">`buildOptions`</ph>, <ph id="ph2">`analyzerOptions`</ph>, <ph id="ph3">`dependencies`</ph> as well as the properties in the following sections.</source>
+          <target state="translated">Jeder Wert ist ein Objekt, das Informationen zu diesem Framework enthalten kann, z.B. <ph id="ph1">`buildOptions`</ph>, <ph id="ph2">`analyzerOptions`</ph>, <ph id="ph3">`dependencies`</ph>, sowie die Eigenschaften in den folgenden Abschnitten.</target>       </trans-unit>
+        <trans-unit id="553" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="554" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">Abhängigkeiten</target>       </trans-unit>
+        <trans-unit id="555" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="556" translate="yes" xml:space="preserve">
+          <source>Dependencies that are specific for this framework.</source>
+          <target state="translated">Abhängigkeiten, die für dieses Framework spezifisch sind.</target>       </trans-unit>
+        <trans-unit id="557" translate="yes" xml:space="preserve">
+          <source>This is useful in scenarios where you cannot simply specify a package-level dependency across all targets.</source>
+          <target state="translated">Dies ist in Szenarios nützlich, in denen Sie nicht einfach eine Abhängigkeit auf Paketebene auf allen Zielen angeben können.</target>       </trans-unit>
+        <trans-unit id="558" translate="yes" xml:space="preserve">
+          <source>Reasons for this can include one target lacking built-in support that other targets have, or requiring a different version of a dependency than other targets.</source>
+          <target state="translated">Ursachen hierfür können sein, dass einem Ziel die integrierte Unterstützung fehlt, die andere Ziele haben, oder dass eine andere Version einer Abhängigkeit benötigt wird als bei anderen Zielen.</target>       </trans-unit>
+        <trans-unit id="559" translate="yes" xml:space="preserve">
+          <source>To see a list of the other properties for this node, see the earlier <bpt id="p1">[</bpt>dependencies<ept id="p1">](#dependencies)</ept> section.</source>
+          <target state="translated">Eine Liste der anderen Eigenschaften für diesen Knoten finden Sie im obigen Abschnitt <bpt id="p1">[</bpt>dependencies<ept id="p1">](#dependencies)</ept>.</target>       </trans-unit>
+        <trans-unit id="560" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="561" translate="yes" xml:space="preserve">
+          <source>frameworkAssemblies</source>
+          <target state="translated">frameworkAssemblies</target>       </trans-unit>
+        <trans-unit id="562" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="563" translate="yes" xml:space="preserve">
+          <source>Similar to dependencies but contains reference to assemblies in the GAC that are not NuGet packages.</source>
+          <target state="translated">Ähnlich wie Abhängigkeiten, enthält jedoch Verweise auf Assemblys im GAC, die keine NuGet-Pakete sind.</target>       </trans-unit>
+        <trans-unit id="564" translate="yes" xml:space="preserve">
+          <source>Can also specify the version to use as well as the dependency type.</source>
+          <target state="translated">Kann auch die zu verwendende Version sowie den Typ der Abhängigkeit angeben.</target>       </trans-unit>
+        <trans-unit id="565" translate="yes" xml:space="preserve">
+          <source>This is used when targeting .NET Framework and Portable Class Library (PCL) targets.</source>
+          <target state="translated">Wird benutzt, wenn Ziele von .NET Frameworks und Portable Klassenbibliothek (PCL) als Ziel gesetzt werden.</target>       </trans-unit>
+        <trans-unit id="566" translate="yes" xml:space="preserve">
+          <source>You can only build a project with this specified on Windows.</source>
+          <target state="translated">Sie können ein Projekt mit dieser Angabe nur auf Windows erstellen.</target>       </trans-unit>
+        <trans-unit id="567" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="568" translate="yes" xml:space="preserve">
+          <source>wrappedProject</source>
+          <target state="translated">wrappedProject</target>       </trans-unit>
+        <trans-unit id="569" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="570" translate="yes" xml:space="preserve">
+          <source>Specifies the location of the dependency project.</source>
+          <target state="translated">Gibt den Speicherort des Abhängigkeitsprojekts an.</target>       </trans-unit>
+        <trans-unit id="571" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="572" translate="yes" xml:space="preserve">
+          <source>bin</source>
+          <target state="translated">bin</target>       </trans-unit>
+        <trans-unit id="573" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="574" translate="yes" xml:space="preserve">
+          <source>This is used wrap a DLL file.</source>
+          <target state="translated">Wird verwendet, um eine DLL-Datei zu umschließen.</target>       </trans-unit>
+        <trans-unit id="575" translate="yes" xml:space="preserve">
+          <source>You can reference and generate a package containing this DLL.</source>
+          <target state="translated">Sie können auf ein Paket, das diese DLL enthält, verweisen und es erzeugen.</target>       </trans-unit>
+        <trans-unit id="576" translate="yes" xml:space="preserve">
+          <source>It contains a single String  property, <ph id="ph1">`assembly`</ph>, whose value is the assembly path.</source>
+          <target state="translated">Es enthält eine Eigenschaft einer einzelnen Zeichenfolge, <ph id="ph1">`assembly`</ph>, deren Wert der Assemblypfad ist.</target>       </trans-unit>
+        <trans-unit id="577" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="578" translate="yes" xml:space="preserve">
+          <source>runtimes</source>
+          <target state="translated">Laufzeiten</target>       </trans-unit>
+        <trans-unit id="579" translate="yes" xml:space="preserve">
+          <source>Type: Object</source>
+          <target state="translated">Typ: Objekt</target>       </trans-unit>
+        <trans-unit id="580" translate="yes" xml:space="preserve">
+          <source>List of <bpt id="p1">[</bpt>runtime identifiers (RIDs)<ept id="p1">](../rid-catalog.md)</ept> supported by the project (used when publishing <bpt id="p2">[</bpt>self-contained deployments<ept id="p2">](../deploying/index.md#self-contained-deployments-scd)</ept>).</source>
+          <target state="translated">Liste der <bpt id="p1">[</bpt>Runtime-IDs (RIDs)<ept id="p1">](../rid-catalog.md)</ept>, die vom Projekt (bei der Veröffentlichung von <bpt id="p2">[</bpt>self-contained deployments (eigenständigen Bereitstellungen)<ept id="p2">](../deploying/index.md#self-contained-deployments-scd)</ept>) unterstützt werden.</target>       </trans-unit>
+        <trans-unit id="581" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="582" translate="yes" xml:space="preserve">
+          <source>userSecretsId</source>
+          <target state="translated">userSecretsId</target>       </trans-unit>
+        <trans-unit id="583" translate="yes" xml:space="preserve">
+          <source>Type: String</source>
+          <target state="translated">Typ: Zeichenfolge</target>       </trans-unit>
+        <trans-unit id="584" translate="yes" xml:space="preserve">
+          <source>Specifies a user secret identifier to be used at development-time.</source>
+          <target state="translated">Gibt eine geheime Benutzer-ID an, die zum Zeitpunkt der Entwicklung verwendet wird.</target>       </trans-unit>
+        <trans-unit id="585" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Safe storage of app secrets during development<ept id="p1">](https://docs.microsoft.com/aspnet/core/security/app-secrets)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie im Dokument <bpt id="p1">[</bpt>Safe storage of app secrets during development (Sicheres Speichern geheimer App-Daten während der Entwicklung)<ept id="p1">](https://docs.microsoft.com/aspnet/core/security/app-secrets)</ept>.</target>       </trans-unit>
+        <trans-unit id="586" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
