@@ -1,20 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\preview3\tools\layering.md](https://github.com/dotnet/docs/blob/36ceedbb0013af52900cd91b382a11f34f0154ae/docs/core/preview3/tools/layering.md) | HandedOffSuccess | [Details](#6082cd7757389f185c278e3453313e5d588d4d4a80)
- [docs\toc.md](https://github.com/dotnet/docs/blob/093828f5788ff37a45b1834572d1da3d31cd4ae5/docs/toc.md) | HandedOffSuccess | [Details](#b9be4bf90c94cc494d5b2614db7cbbadc7dbc20e3474)
+ [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md) | HandedOffSuccess | [Details](#dd14dc23b14e45569f0fdb9a37954b34c4e654d13475)
 
 ## Item Details
-##### <a name='6082cd7757389f185c278e3453313e5d588d4d4a80'></a> Source: [docs\core\preview3\tools\layering.md](https://github.com/dotnet/docs/blob/36ceedbb0013af52900cd91b382a11f34f0154ae/docs/core/preview3/tools/layering.md)
+##### <a name='dd14dc23b14e45569f0fdb9a37954b34c4e654d13475'></a> Source: [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f86c5ee9931617e6a700318636a71535b58faa8a/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf)
-* Handoff Datetime: 2017-02-21 19:27:59
+* Handoff File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/e72085c551b1a7022929c8ed8a61dd8d3cd835d3/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.zh-cn.xlf)
+* Handoff Datetime: 2017-02-21 23:26:20
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -22,30 +21,8 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\preview3\tools\layering.md](https://github.com/dotnet/docs.zh-cn/blob/351f4c7077efbabb697e7a27a60df84b799d0097/docs/core/preview3/tools/layering.md)
-* Current Handback File: [layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf)
-* Current Handback Datetime: 2017-02-21 08:37:45
-* Bilingual File: [layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/layering.d5959d31e867010572042cfd402c3e40afa72bac.zh-cn.xlf)
-* Bilingual Datetime: 2017-02-21 08:39:11
-* [Back to Top](#report-top)
-
-##### <a name='b9be4bf90c94cc494d5b2614db7cbbadc7dbc20e3474'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/093828f5788ff37a45b1834572d1da3d31cd4ae5/docs/toc.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/f86c5ee9931617e6a700318636a71535b58faa8a/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Handoff Datetime: 2017-02-21 19:27:59
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.zh-cn/blob/351f4c7077efbabb697e7a27a60df84b799d0097/docs/toc.md)
-* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Current Handback Datetime: 2017-02-21 08:37:45
-* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
-* Bilingual Datetime: 2017-02-21 08:39:11
+* Bilingual File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/0c987586dcb8152816d73314e346e472b10b6ede/ol-handback/dotnet/docs.zh-cn/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.zh-cn.xlf)
+* Bilingual Datetime: 2016-12-09 21:30:38
 * [Back to Top](#report-top)
 
 
