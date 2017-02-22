@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md) | HandedOffSuccess | [Details](#dd14dc23b14e45569f0fdb9a37954b34c4e654d13475)
 
 ## Item Details
-##### <a name='dd14dc23b14e45569f0fdb9a37954b34c4e654d13475'></a> Source: [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/f17095f52f2437aa1d0c6aa09cd1981efc1fbd97/ol-handoff/dotnet/docs.it-it/master/dotnet-core/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf)
-* Handoff Datetime: 2017-02-21 23:25:37
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs.it-it/blob/2fb86c8fecbefc45678c4c38b53ebb74e8086b95/docs/standard/portability-analyzer.md)
-* Current Handback File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf)
-* Current Handback Datetime: 2016-11-15 21:31:10
-* Bilingual File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf](https://github.com/dotnet/docs.handback/blob/579d068d78e869bc8ffd2f8a335e3a073d39ed47/ol-handback/dotnet/docs.it-it/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.it-it.xlf)
-* Bilingual Datetime: 2016-11-15 21:32:30
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
