@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md) | HandedOffSuccess | [Details](#dd14dc23b14e45569f0fdb9a37954b34c4e654d13475)
 
 ## Item Details
-##### <a name='dd14dc23b14e45569f0fdb9a37954b34c4e654d13475'></a> Source: [docs\standard\portability-analyzer.md](https://github.com/dotnet/docs/blob/2dcfc9e725a9776e810f23a505e2c6fb157161c4/docs/standard/portability-analyzer.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d17fc36311f145a439038455a6ebbfded8cf5097/ol-handoff/dotnet/docs.de-de/master/dotnet-core/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf)
-* Handoff Datetime: 2017-02-21 23:25:47
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Bilingual File: [portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e953f494333363c8a4768bfe95907d6781c2ceb0/ol-handback/dotnet/docs.de-de/master/ht-p2/portability-analyzer.e8a40fb40eb97b83690447183edbd03a56509a87.de-de.xlf)
-* Bilingual Datetime: 2016-12-09 21:29:25
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
