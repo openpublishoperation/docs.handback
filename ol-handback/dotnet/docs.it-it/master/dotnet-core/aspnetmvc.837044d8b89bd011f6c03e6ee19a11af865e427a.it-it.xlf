@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f0362aa" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6534435823e32aa5c61802ccc587c2761a3fe893</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\framework\docker\aspnetmvc.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">653f4b38b717540dbdb2dedf91321d0e01babc4a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">071b0fc8344db6a8184d8f5ddae87618430a767f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">Migrazione di applicazioni ASP.NET MVC ai contenitori di Windows</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container</source>
+          <target state="translated">Informazioni su come eseguire un'applicazione ASP.NET MVC esistente in un contenitore Docker di Windows</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Windows Containers, Docker, ASP.NET MVC</source>
+          <target state="translated">Contenitori di Windows, Docker, ASP.NET MVC</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">Migrazione di applicazioni ASP.NET MVC ai contenitori di Windows</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Running an existing .NET Framework-based application in a Windows container doesn't require any changes to your app.</source>
+          <target state="translated">Per l'esecuzione di un'applicazione basata su .NET Framework esistente in un contenitore di Windows non sono richieste modifiche dell'app.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To run your app in a Windows container you create a Docker image containing your app and start the container.</source>
+          <target state="translated">Per eseguire l'app in un contenitore di Windows si crea un'immagine Docker contenente l'app e si avvia il contenitore.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic explains how to take an existing <bpt id="p1">[</bpt>ASP.NET MVC application<ept id="p1">](http://www.asp.net/mvc)</ept> and deploy it in a Windows container.</source>
+          <target state="translated">Questo argomento illustra come distribuire un'<bpt id="p1">[</bpt>applicazione ASP.NET MVC<ept id="p1">](http://www.asp.net/mvc)</ept> esistente in un contenitore di Windows.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You start with an existing ASP.NET MVC app, then build the published assets using Visual Studio.</source>
+          <target state="translated">Si parte da un'app esistente ASP.NET MVC e quindi si compilano gli asset pubblicati usando Visual Studio.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You use Docker to create the image that contains and runs your app.</source>
+          <target state="translated">Si usa Docker per creare l'immagine che contiene ed esegue l'app.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You'll browse to the site running in a Windows container and verify the app is working.</source>
+          <target state="translated">Si passerà poi al sito in esecuzione in un contenitore di Windows per verificare il funzionamento dell'app.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article assumes a basic understanding of Docker.</source>
+          <target state="translated">In questo articolo si presuppone che l'utente abbia una conoscenza di base di Docker.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can learn about Docker by reading the <bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>.</source>
+          <target state="translated">Per informazioni su Docker, è possibile leggere la <bpt id="p1">[</bpt>panoramica su Docker<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The app you'll run in a container is a simple website that answers questions randomly.</source>
+          <target state="translated">L'app che verrà eseguita in un contenitore è un semplice sito Web che risponde alle domande in modo casuale.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This app is a basic MVC application with no authentication or database storage; it lets you focus on moving the web tier to a container.</source>
+          <target state="translated">Questa app è un'applicazione MVC di base senza supporto per l'autenticazione né l'archiviazione in database, che consente di concentrarsi sullo spostamento del livello Web in un contenitore.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Future topics will show how to move and manage persistent storage in containerized applications.</source>
+          <target state="translated">Gli argomenti successivi spiegheranno come spostare e gestire l'archiviazione permanente nelle applicazioni eseguite nei contenitori.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Moving your application involves these steps:</source>
+          <target state="translated">Per spostare l'applicazione sono necessari i passaggi seguenti:</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a publish task to build the assets for an image.<ept id="p1">](#publish-script)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Creazione di un'attività di pubblicazione per compilare le risorse necessarie per un'immagine.<ept id="p1">](#publish-script)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Building a Docker image that will run your application.<ept id="p1">](#build-the-image)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Creazione di un'immagine Docker che eseguirà l'applicazione.<ept id="p1">](#build-the-image)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Starting a Docker container that runs your image.<ept id="p1">](#start-a-container)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Avvio di un contenitore Docker che esegue l'immagine.<ept id="p1">](#start-a-container)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Verifying the application using your browser.<ept id="p1">](#verify-in-the-browser)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Verifica dell'applicazione con il browser.<ept id="p1">](#verify-in-the-browser)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>finished application<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept> is on GitHub.</source>
+          <target state="translated">L'<bpt id="p1">[</bpt>applicazione completata<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept> è disponibile in GitHub.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Prerequisiti</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The development machine must be running</source>
+          <target state="translated">Il computer di sviluppo deve disporre di</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> (or higher) or <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept> (or higher).</source>
+          <target state="translated"><bpt id="p1">[</bpt>Aggiornamento dell'anniversario di Windows 10<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> (o versione successiva) oppure <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept> (o versione successiva).</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Docker for Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept> - version Stable 1.13.0 or 1.12 Beta 26 (or newer versions)</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker per Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept> - versione Stable 1.13.0 o 1.12 Beta 26 (o versioni successive)</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Visual Studio 2015<ept id="p1">](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Visual Studio 2015<ept id="p1">](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)</ept>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If you are using Windows Server 2016, follow the instructions for <bpt id="p1">[</bpt>Container Host Deployment - Windows Server<ept id="p1">](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)</ept>.</source>
+          <target state="translated">Se si usa Windows Server 2016, seguire le istruzioni riportate in <bpt id="p1">[</bpt>Distribuzione di host contenitore - Windows Server<ept id="p1">](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)</ept>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After installing and starting Docker,  right-click on the tray icon and select <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept>.</source>
+          <target state="translated">Dopo aver installato e avviato Docker, è necessario fare clic con il pulsante destro del mouse sull'icona della barra delle applicazioni e scegliere l'opzione <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept> (Passa ai contenitori Windows).</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This is required to run Docker images based on Windows.</source>
+          <target state="translated">Ciò è necessario per eseguire le immagini Docker basate su Windows.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This command takes a few seconds to execute:</source>
+          <target state="translated">L'esecuzione del comando richiede alcuni secondi:</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Windows Container<ept id="p1">][windows-container]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Contenitore di Windows<ept id="p1">][windows-container]</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Publish script</source>
+          <target state="translated">Pubblicare lo script</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Collect all the assets that you need to load into a Docker image in one place.</source>
+          <target state="translated">Riunire in un'unica posizione tutti gli asset da caricare in un'immagine Docker.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use the Visual Studio <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> command to create a publish profile for your app.</source>
+          <target state="translated">È possibile usare il comando <bpt id="p1">**</bpt>Pubblica<ept id="p1">**</ept> di Visual Studio per creare un profilo di pubblicazione per l'app.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This profile will put all the assets in one directory tree that you copy to your target image later in this tutorial.</source>
+          <target state="translated">Tale profilo consente di inserire tutti gli asset in un'unica struttura di directory che verrà copiata nell'immagine di destinazione più avanti in questa esercitazione.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Publish Steps<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Procedura di pubblicazione<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Right click on the web project in Visual Studio, and select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.</source>
+          <target state="translated">Fare clic con il pulsante destro del mouse sul progetto Web in Visual Studio e selezionare <bpt id="p1">**</bpt>Pubblica<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Custom profile button<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>File System<ept id="p2">**</ept> as the method.</source>
+          <target state="translated">Fare clic sul <bpt id="p1">**</bpt>pulsante del profilo personalizzato<ept id="p1">**</ept> e quindi selezionare <bpt id="p2">**</bpt>File system<ept id="p2">**</ept> come metodo.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Choose the directory.</source>
+          <target state="translated">Scegliere la directory.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>By convention, the downloaded sample uses <ph id="ph1">`bin/PublishOutput`</ph>.</source>
+          <target state="translated">Per convenzione, l'esempio scaricato usa <ph id="ph1">`bin/PublishOutput`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Publish Connection<ept id="p1">][publish-connection]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Connessione di pubblicazione<ept id="p1">][publish-connection]</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>File Publish Options<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> tab.</source>
+          <target state="translated">Aprire la sezione <bpt id="p1">**</bpt>Opzioni pubblicazione file<ept id="p1">**</ept> della scheda <bpt id="p2">**</bpt>Impostazioni<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Precompile during publishing<ept id="p1">**</ept>.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>Precompila durante la pubblicazione<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This optimization means that you'll be compiling views in the Docker container, you are copying the precompiled views.</source>
+          <target state="translated">Questa ottimizzazione significa che compilando le viste nel contenitore Docker, si stanno copiando le viste precompilate.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Publish Settings<ept id="p1">][publish-settings]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Impostazioni di pubblicazione<ept id="p1">][publish-settings]</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>, and Visual Studio will copy all the needed assets to the destination folder.</source>
+          <target state="translated">Fare clic su <bpt id="p1">**</bpt>Pubblica<ept id="p1">**</ept> in modo che Visual Studio copi tutti gli asset necessari nella cartella di destinazione.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Build the image</source>
+          <target state="translated">Creare l'immagine</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Define your Docker image in a Dockerfile.</source>
+          <target state="translated">Definire l'immagine Docker in un Dockerfile.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The Dockerfile contains instructions for the base image, additional components, the app you want to run, and other configuration images.</source>
+          <target state="translated">Il Dockerfile contiene le istruzioni per l'immagine di base, eventuali componenti aggiuntivi, l'app da eseguire e altre immagini di configurazione.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The Dockerfile is the input to the <ph id="ph1">`docker build`</ph> command, which creates the image.</source>
+          <target state="translated">Il Dockerfile costituisce l'input per il comando <ph id="ph1">`docker build`</ph> che crea l'immagine.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You will build an image based on the <ph id="ph1">`microsft/aspnet`</ph> image located on <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept>.</source>
+          <target state="translated">Verrà creata un'immagine basata sull'immagine <ph id="ph1">`microsft/aspnet`</ph> situata nell'<bpt id="p1">[</bpt>hub Docker<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The base image, <ph id="ph1">`microsoft/aspnet`</ph>, is a Windows Server image.</source>
+          <target state="translated">L'immagine di base, <ph id="ph1">`microsoft/aspnet`</ph>, è un'immagine di Windows Server.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In contains Windows Server Core, IIS and ASP.NET 4.6.2.</source>
+          <target state="translated">Contiene Windows Server Core, IIS e ASP.NET 4.6.2.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>When you run this image in your container, it will automatically start IIS and installed websites.</source>
+          <target state="translated">Quando si esegue questa immagine in un contenitore, verranno avviati automaticamente IIS e i siti Web installati.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Dockerfile that creates your image looks like this:</source>
+          <target state="translated">Il documento Dockerfile che crea l'immagine è simile al seguente:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>There is no <ph id="ph1">`ENTRYPOINT`</ph> command in this Dockerfile.</source>
+          <target state="translated">Non esiste alcun comando <ph id="ph1">`ENTRYPOINT`</ph> in questo Dockerfile.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You don't need one.</source>
+          <target state="translated">Non è necessario.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The base image ensures that IIS starts when the container starts.</source>
+          <target state="translated">L'immagine di base assicura che IIS venga avviato all'avvio del contenitore.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Run the Docker build command to create the image that runs your ASP.NET app.</source>
+          <target state="translated">Eseguire il comando di compilazione di Docker per creare l'immagine che esegue l'app ASP.NET.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To do this, open a PowerShell window and type the following command in the solution directory:</source>
+          <target state="translated">A tale scopo, aprire una finestra di PowerShell e digitare il comando seguente nella directory della soluzione:</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This command will build the new image using the instructions in your Dockerfile.</source>
+          <target state="translated">Questo comando compilerà la nuova immagine usando le istruzioni nel Dockerfile.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This may include pulling the base image from <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](http://hub.docker.com)</ept>, and then adding your app to that image.</source>
+          <target state="translated">L'operazione potrebbe includere il pull dell'immagine di base dall'<bpt id="p1">[</bpt>hub Docker<ept id="p1">](http://hub.docker.com)</ept> e l'aggiunta dell'app a tale immagine.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Once that command completes, you can run the <ph id="ph1">`docker images`</ph> command to see information on the new image:</source>
+          <target state="translated">Dopo aver completato il comando è possibile eseguire il comando <ph id="ph1">`docker images`</ph> per visualizzare informazioni sulla nuova immagine:</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The IMAGE ID will be different on your machine.</source>
+          <target state="translated">L'ID immagine sarà diverso nel computer in uso.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Now, let's run the app.</source>
+          <target state="translated">A questo punto è possibile eseguire l'app.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Start a container</source>
+          <target state="translated">Avviare un contenitore</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Start a container by executing the following <ph id="ph1">`docker run`</ph> command:</source>
+          <target state="translated">Avviare un contenitore eseguendo il comando <ph id="ph1">`docker run`</ph> seguente:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-d`</ph> argument tells Docker to start the image in detached mode.</source>
+          <target state="translated">L'argomento <ph id="ph1">`-d`</ph> indica a Docker di avviare l'immagine senza collegamento.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>That means the Docker image runs disconnected from the current shell.</source>
+          <target state="translated">Ciò significa che l'immagine Docker viene eseguita scollegata dalla shell corrente.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-p 8000:8000`</ph> argument tells Docker how to map incoming ports.</source>
+          <target state="translated">L'argomento <ph id="ph1">`-p 8000:8000`</ph> indica a Docker in che modo devono essere mappate le porte in ingresso.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In this example, we're using port 8000 on both the host and the container.</source>
+          <target state="translated">In questo esempio viene usata la porta 8000 sia per l'host che per il contenitore.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`--name randomanswers`</ph> gives a name to the running container.</source>
+          <target state="translated">Il valore <ph id="ph1">`--name randomanswers`</ph> assegna un nome al contenitore in esecuzione.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>You can use this name instead of the container ID in most commands.</source>
+          <target state="translated">È possibile usare questo nome anziché l'ID del contenitore nella maggior parte dei comandi.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`mvcrandomanswers`</ph> is the name of the image to start.</source>
+          <target state="translated">Il valore <ph id="ph1">`mvcrandomanswers`</ph> è il nome dell'immagine da avviare.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Verify in the browser</source>
+          <target state="translated">Verificare nel browser</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>With the current release, you can't browse to <ph id="ph1">`http://localhost`</ph>.</source>
+          <target state="translated">Con la versione corrente è possibile passare a <ph id="ph1">`http://localhost`</ph>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is a known behavior in WinNAT, and it will be resolved in the future.</source>
+          <target state="translated">Questo è un comportamento noto in WinNAT e verrà risolto in futuro.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Until that is addressed, you need to use the IP address of the container.</source>
+          <target state="translated">Fino a quel momento sarà necessario usare l'indirizzo IP del contenitore.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Once the container starts, find its IP address so that you can connect to your running container from a browser:</source>
+          <target state="translated">Dopo l'avvio del contenitore, trovarne l'indirizzo IP in modo da consentire la connessione al contenitore in esecuzione da un browser:</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Connect to the running container using the IPv4 address and the configured port (8000), <ph id="ph1">`http://172.31.194.61:8000`</ph> in the example shown.</source>
+          <target state="translated">Connettersi al contenitore in esecuzione usando l'indirizzo IPv4 e la porta configurata (8000), <ph id="ph1">`http://172.31.194.61:8000`</ph> nell'esempio illustrato.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Type that URL into your browser, and you should see the running site.</source>
+          <target state="translated">Digitando l'URL nel browser viene visualizzato il sito in esecuzione.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Some VPN or proxy software may prevent you from navigating to your site.</source>
+          <target state="translated">Alcuni software VPN o proxy possono impedire la navigazione nel sito.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You can temporarily disable it to make sure your container is working.</source>
+          <target state="translated">È possibile disabilitarli temporaneamente per verificare che il contenitore funzioni.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The sample directory on GitHub contains a <bpt id="p1">[</bpt>PowerShell script<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept> that executes these commands for you.</source>
+          <target state="translated">La directory di esempio su GitHub contiene un <bpt id="p1">[</bpt>script di PowerShell<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept> che esegue automaticamente questi comandi.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Open a PowerShell window, change directory to your solution directory, and type:</source>
+          <target state="translated">Aprire una finestra di PowerShell, passare alla directory soluzione e digitare:</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The command above builds the image, displays the list of images on your machine, starts a container, and displays the IP address for that container.</source>
+          <target state="translated">Il comando precedente crea l'immagine, visualizza l'elenco di immagini presenti nel computer, avvia un contenitore e visualizza l'indirizzo IP per tale contenitore.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To stop your container, issue a <ph id="ph1">`docker
+stop`</ph> command:</source>
+          <target state="translated">Per arrestare il contenitore, eseguire un comando <ph id="ph1">`docker
+stop`</ph>:</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>To remove the container, issue a <ph id="ph1">`docker rm`</ph> command:</source>
+          <target state="translated">Per rimuovere il contenitore, eseguire un comando <ph id="ph1">`docker rm`</ph>:</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">windows-container]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>Switch to Windows Container<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">windows-container]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>Passare a un contenitore di Windows<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">publish-connection]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>Publish to File System<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">publish-connection]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>Pubblicare nel file system<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">publish-settings]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>Publish Settings<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">publish-settings]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>Impostazioni di pubblicazione<ept id="p2">"</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
