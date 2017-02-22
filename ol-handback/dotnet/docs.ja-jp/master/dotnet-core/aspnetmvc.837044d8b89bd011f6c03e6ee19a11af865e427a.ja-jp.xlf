@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f0362aa" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6534435823e32aa5c61802ccc587c2761a3fe893</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\framework\docker\aspnetmvc.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">653f4b38b717540dbdb2dedf91321d0e01babc4a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">071b0fc8344db6a8184d8f5ddae87618430a767f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">Windows コンテナーへの ASP.NET MVC アプリケーションの移行</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn how to take an existing ASP.NET MVC application and run it in a Windows Docker Container</source>
+          <target state="translated">既存の ASP.NET MVC アプリケーションを取得し、Windows Docker コンテナーで実行する方法について説明します。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Windows Containers, Docker, ASP.NET MVC</source>
+          <target state="translated">Windows コンテナー, Docker, ASP.NET MVC</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrating ASP.NET MVC Applications to Windows Containers</source>
+          <target state="translated">Windows コンテナーへの ASP.NET MVC アプリケーションの移行</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Running an existing .NET Framework-based application in a Windows container doesn't require any changes to your app.</source>
+          <target state="translated">Windows コンテナーで既存の .NET Framework ベース アプリケーションを実行するとき、アプリに変更を加える必要はありません。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>To run your app in a Windows container you create a Docker image containing your app and start the container.</source>
+          <target state="translated">Windows コンテナーでアプリを実行するには、アプリを含む Docker イメージを作成し、コンテナーを起動します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic explains how to take an existing <bpt id="p1">[</bpt>ASP.NET MVC application<ept id="p1">](http://www.asp.net/mvc)</ept> and deploy it in a Windows container.</source>
+          <target state="translated">このトピックでは、既存の <bpt id="p1">[</bpt>ASP.NET MVC アプリケーション<ept id="p1">](http://www.asp.net/mvc)</ept>を取得し、Windows コンテナーに展開する方法について説明します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You start with an existing ASP.NET MVC app, then build the published assets using Visual Studio.</source>
+          <target state="translated">既存の ASP.NET MVC アプリから開始し、Visual Studio を使用して発行した資産をビルドします。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You use Docker to create the image that contains and runs your app.</source>
+          <target state="translated">Docker を使用し、アプリを含み、これを実行するイメージを作成します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You'll browse to the site running in a Windows container and verify the app is working.</source>
+          <target state="translated">Windows コンテナーで実行されているサイトに移動し、アプリが動作していることを確認します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This article assumes a basic understanding of Docker.</source>
+          <target state="translated">この記事を読むには、Docker の基本的な知識があることが前提となります。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You can learn about Docker by reading the <bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>.</source>
+          <target state="translated">Docker の詳細については、「<bpt id="p1">[</bpt>Docker Overview<ept id="p1">](https://docs.docker.com/engine/understanding-docker/)</ept>」 (Docker の概要) を参照してください。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The app you'll run in a container is a simple website that answers questions randomly.</source>
+          <target state="translated">コンテナーで実行するアプリは、質問にランダムに回答する単純な Web サイトです。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This app is a basic MVC application with no authentication or database storage; it lets you focus on moving the web tier to a container.</source>
+          <target state="translated">このアプリは基本的な MVC アプリケーションであり、認証やデータベース ストレージはないため Web 層をコンテナーに移動することに集中できます。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Future topics will show how to move and manage persistent storage in containerized applications.</source>
+          <target state="translated">今後のトピックで、コンテナー化されたアプリケーションに永続的な記憶域を移動して管理する方法を説明します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Moving your application involves these steps:</source>
+          <target state="translated">アプリケーションを移行する手順は次のとおりです。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a publish task to build the assets for an image.<ept id="p1">](#publish-script)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イメージの資産をビルドする発行タスクを作成します。<ept id="p1">](#publish-script)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Building a Docker image that will run your application.<ept id="p1">](#build-the-image)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>アプリケーションを実行する Docker イメージをビルドします。<ept id="p1">](#build-the-image)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Starting a Docker container that runs your image.<ept id="p1">](#start-a-container)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>イメージを実行する Docker コンテナーを開始します。<ept id="p1">](#start-a-container)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Verifying the application using your browser.<ept id="p1">](#verify-in-the-browser)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ブラウザーを使用してアプリケーションを検証します。<ept id="p1">](#verify-in-the-browser)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>finished application<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept> is on GitHub.</source>
+          <target state="translated"><bpt id="p1">[</bpt>完成したアプリケーション<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator)</ept>が GitHub にあります。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The development machine must be running</source>
+          <target state="translated">開発用コンピューターを実行している必要があります</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> (or higher) or <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept> (or higher).</source>
+          <target state="translated"><bpt id="p1">[</bpt>Windows 10 Anniversary Update<ept id="p1">](https://www.microsoft.com/en-us/software-download/windows10/)</ept> (以降) または <bpt id="p2">[</bpt>Windows Server 2016<ept id="p2">](https://www.microsoft.com/en-us/cloud-platform/windows-server)</ept> (以降)。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Docker for Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept> - version Stable 1.13.0 or 1.12 Beta 26 (or newer versions)</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker for Windows<ept id="p1">](https://docs.docker.com/docker-for-windows/)</ept> - バージョン Stable 1.13.0 または 1.12 Beta 26 (以降のバージョン)</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Visual Studio 2015<ept id="p1">](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Visual Studio 2015<ept id="p1">](https://www.visualstudio.com/en-us/visual-studio-homepage-vs.aspx)</ept>。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If you are using Windows Server 2016, follow the instructions for <bpt id="p1">[</bpt>Container Host Deployment - Windows Server<ept id="p1">](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)</ept>.</source>
+          <target state="translated">Windows Server 2016 を使用している場合は、「<bpt id="p1">[</bpt>コンテナー ホストの展開 - Windows Server<ept id="p1">](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment)</ept>」の指示に従ってください。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After installing and starting Docker,  right-click on the tray icon and select <bpt id="p1">**</bpt>Switch to Windows containers<ept id="p1">**</ept>.</source>
+          <target state="translated">Docker をインストールして開始した後、トレイ アイコンを右クリックし、<bpt id="p1">**</bpt>[Switch to Windows containers]<ept id="p1">**</ept> (Windows コンテナーに切り替え) を選択します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>This is required to run Docker images based on Windows.</source>
+          <target state="translated">これは Windows をベースに Docker イメージを実行するために必要です。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This command takes a few seconds to execute:</source>
+          <target state="translated">このコマンドの実行には数秒かかります。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Windows Container<ept id="p1">][windows-container]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Windows コンテナー<ept id="p1">][windows-container]</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Publish script</source>
+          <target state="translated">発行スクリプト</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Collect all the assets that you need to load into a Docker image in one place.</source>
+          <target state="translated">Docker イメージに読み込む必要があるすべての資産を&amp;1; か所に集めます。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can use the Visual Studio <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> command to create a publish profile for your app.</source>
+          <target state="translated">Visual Studio の <bpt id="p1">**</bpt>[発行]<ept id="p1">**</ept> コマンドを使用してアプリの発行プロファイルを作成できます。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This profile will put all the assets in one directory tree that you copy to your target image later in this tutorial.</source>
+          <target state="translated">このプロファイルですべての資産を&amp;1; つのディレクトリ ツリーに集めます。このチュートリアルの後半で、そのディレクトリ ツリーをターゲット イメージにコピーします。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Publish Steps<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>発行の手順<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Right click on the web project in Visual Studio, and select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.</source>
+          <target state="translated">Visual Studio で Web プロジェクトを右クリックし、<bpt id="p1">**</bpt>[発行]<ept id="p1">**</ept> を選択します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Custom profile button<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>File System<ept id="p2">**</ept> as the method.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[カスタム プロファイル]<ept id="p1">**</ept> ボタンをクリックし、方法として <bpt id="p2">**</bpt>[ファイル システム]<ept id="p2">**</ept> を選択します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Choose the directory.</source>
+          <target state="translated">ディレクトリを選択します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>By convention, the downloaded sample uses <ph id="ph1">`bin/PublishOutput`</ph>.</source>
+          <target state="translated">規則により、ダウンロードしたサンプルには <ph id="ph1">`bin/PublishOutput`</ph> が使用されます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Publish Connection<ept id="p1">][publish-connection]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>接続の発行<ept id="p1">][publish-connection]</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Open the <bpt id="p1">**</bpt>File Publish Options<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> tab.</source>
+          <target state="translated"><bpt id="p2">**</bpt>[設定]<ept id="p2">**</ept> タブの <bpt id="p1">**</bpt>[ファイル発行オプション]<ept id="p1">**</ept> のセクションを開きます。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Precompile during publishing<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[発行中にプリコンパイルする]<ept id="p1">**</ept> を選択します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This optimization means that you'll be compiling views in the Docker container, you are copying the precompiled views.</source>
+          <target state="translated">この最適化は、Docker コンテナー内のビューをコンパイルすることを意味し、プリコンパイル済みのビューをコピーすることになります。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Publish Settings<ept id="p1">][publish-settings]</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>発行の設定<ept id="p1">][publish-settings]</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>, and Visual Studio will copy all the needed assets to the destination folder.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[発行]<ept id="p1">**</ept> をクリックすると、Visual Studio で必要なすべての資産がコピー先フォルダーにコピーされます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Build the image</source>
+          <target state="translated">イメージのビルド</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Define your Docker image in a Dockerfile.</source>
+          <target state="translated">Dockerfile に Docker イメージを定義します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The Dockerfile contains instructions for the base image, additional components, the app you want to run, and other configuration images.</source>
+          <target state="translated">Dockerfile は、基本イメージ、追加のコンポーネント、実行するアプリ、その他の構成イメージに関する指示を含みます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The Dockerfile is the input to the <ph id="ph1">`docker build`</ph> command, which creates the image.</source>
+          <target state="translated">Dockerfile は、イメージを作成する <ph id="ph1">`docker build`</ph> コマンドの入力です。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You will build an image based on the <ph id="ph1">`microsft/aspnet`</ph> image located on <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept>.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Docker Hub<ept id="p1">](https://hub.docker.com/r/microsoft/aspnet/)</ept> にある <ph id="ph1">`microsft/aspnet`</ph> イメージに基づいてイメージをビルドします。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The base image, <ph id="ph1">`microsoft/aspnet`</ph>, is a Windows Server image.</source>
+          <target state="translated">基本イメージである <ph id="ph1">`microsoft/aspnet`</ph> は、Windows Server イメージです。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In contains Windows Server Core, IIS and ASP.NET 4.6.2.</source>
+          <target state="translated">Windows Server Core、IIS、ASP.NET 4.6.2 が含まれます。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>When you run this image in your container, it will automatically start IIS and installed websites.</source>
+          <target state="translated">このイメージをコンテナー内で実行すると、IIS とインストールされている Web サイトが自動的に起動します。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The Dockerfile that creates your image looks like this:</source>
+          <target state="translated">イメージを作成する Dockerfile は、次のようになります。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>There is no <ph id="ph1">`ENTRYPOINT`</ph> command in this Dockerfile.</source>
+          <target state="translated">この Dockfile に <ph id="ph1">`ENTRYPOINT`</ph> コマンドは使用されていません。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>You don't need one.</source>
+          <target state="translated">使用する必要はありません。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The base image ensures that IIS starts when the container starts.</source>
+          <target state="translated">基本イメージにより、コンテナー開始時に IIS が起動します。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Run the Docker build command to create the image that runs your ASP.NET app.</source>
+          <target state="translated">Docker ビルド コマンドを実行し、ASP.NET アプリを実行するイメージを作成します。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To do this, open a PowerShell window and type the following command in the solution directory:</source>
+          <target state="translated">これを行うには、PowerShell ウィンドウを開き、ソリューション ディレクトリで次のコマンドを入力します。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This command will build the new image using the instructions in your Dockerfile.</source>
+          <target state="translated">このコマンドは、Dockerfile 内の手順に従って新しいイメージをビルドします。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This may include pulling the base image from <bpt id="p1">[</bpt>Docker Hub<ept id="p1">](http://hub.docker.com)</ept>, and then adding your app to that image.</source>
+          <target state="translated">その手順には、<bpt id="p1">[</bpt>Docker Hub<ept id="p1">](http://hub.docker.com)</ept> から基本イメージをプルし、それからそのイメージにアプリを追加する作業が含まれることがあります。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Once that command completes, you can run the <ph id="ph1">`docker images`</ph> command to see information on the new image:</source>
+          <target state="translated">そのコマンドの完了後、<ph id="ph1">`docker images`</ph> コマンドを実行して新しいイメージの情報を参照できます。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The IMAGE ID will be different on your machine.</source>
+          <target state="translated">IMAGE ID はコンピューターによって異なります。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Now, let's run the app.</source>
+          <target state="translated">では、アプリを実行しましょう。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Start a container</source>
+          <target state="translated">コンテナーの開始</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Start a container by executing the following <ph id="ph1">`docker run`</ph> command:</source>
+          <target state="translated">コンテナーを開始するには、次の <ph id="ph1">`docker run`</ph> コマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-d`</ph> argument tells Docker to start the image in detached mode.</source>
+          <target state="translated"><ph id="ph1">`-d`</ph> 引数は、デタッチ モードでイメージを開始するよう Docker に指示します。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>That means the Docker image runs disconnected from the current shell.</source>
+          <target state="translated">つまり、Docker イメージは現在のシェルから切断された状態で実行されます。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`-p 8000:8000`</ph> argument tells Docker how to map incoming ports.</source>
+          <target state="translated"><ph id="ph1">`-p 8000:8000`</ph> 引数は、Docker に対して受信ポートのマップ方法を指示します。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>In this example, we're using port 8000 on both the host and the container.</source>
+          <target state="translated">この例では、ホストとコンテナーの両方でポート 8000 を使用しています。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`--name randomanswers`</ph> gives a name to the running container.</source>
+          <target state="translated"><ph id="ph1">`--name randomanswers`</ph> は、実行するコンテナーに名前を付けます。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>You can use this name instead of the container ID in most commands.</source>
+          <target state="translated">この名前は、ほとんどのコマンドでコンテナー ID の代わりに使用できます。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`mvcrandomanswers`</ph> is the name of the image to start.</source>
+          <target state="translated"><ph id="ph1">`mvcrandomanswers`</ph> は、開始するイメージの名前です。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Verify in the browser</source>
+          <target state="translated">ブラウザーでの確認</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>With the current release, you can't browse to <ph id="ph1">`http://localhost`</ph>.</source>
+          <target state="translated">現在のリリースでは、<ph id="ph1">`http://localhost`</ph> を参照できません。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>This is a known behavior in WinNAT, and it will be resolved in the future.</source>
+          <target state="translated">これは WinNAT での既知の動作によるものであり、将来のリリースで修正される予定です。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Until that is addressed, you need to use the IP address of the container.</source>
+          <target state="translated">解決されるまでは、コンテナーの IP アドレスを使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Once the container starts, find its IP address so that you can connect to your running container from a browser:</source>
+          <target state="translated">コンテナーの開始後、実行中のコンテナーにブラウザーから接続できるように、コンテナーの IP アドレスを見つけます。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Connect to the running container using the IPv4 address and the configured port (8000), <ph id="ph1">`http://172.31.194.61:8000`</ph> in the example shown.</source>
+          <target state="translated">IPv4 アドレスと構成したポート (8000) を使用し、実行中のコンテナーに接続します。ここに示す例では <ph id="ph1">`http://172.31.194.61:8000`</ph> となっています。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Type that URL into your browser, and you should see the running site.</source>
+          <target state="translated">その URL をブラウザーに入力すると、実行中のサイトが表示されます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Some VPN or proxy software may prevent you from navigating to your site.</source>
+          <target state="translated">一部の VPN またはプロキシ ソフトウェアが原因でサイトに移動できない場合があります。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>You can temporarily disable it to make sure your container is working.</source>
+          <target state="translated">コンテナーが動作していることを確認するために、それらを一時的に無効にできます。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The sample directory on GitHub contains a <bpt id="p1">[</bpt>PowerShell script<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept> that executes these commands for you.</source>
+          <target state="translated">GitHub のサンプル ディレクトリに含まれる <bpt id="p1">[</bpt>PowerShell スクリプト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/framework/docker/MVCRandomAnswerGenerator/run.ps1)</ept>は、これらのコマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Open a PowerShell window, change directory to your solution directory, and type:</source>
+          <target state="translated">PowerShell ウィンドウを開き、ソリューション ディレクトリに移動して、次のように入力します。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The command above builds the image, displays the list of images on your machine, starts a container, and displays the IP address for that container.</source>
+          <target state="translated">上のコマンドによりイメージをビルドし、コンピューターにイメージの一覧を表示して、コンテナーを開始した後、そのコンテナーの IP アドレスを表示します。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To stop your container, issue a <ph id="ph1">`docker
+stop`</ph> command:</source>
+          <target state="translated">コンテナーを停止するには、<ph id="ph1">`docker
+stop`</ph> コマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>To remove the container, issue a <ph id="ph1">`docker rm`</ph> command:</source>
+          <target state="translated">コンテナーを削除するには、<ph id="ph1">`docker rm`</ph> コマンドを実行します。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">windows-container]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>Switch to Windows Container<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">windows-container]: media/aspnetmvc/SwitchContainer.png</ept><bpt id="p2"> "</bpt>Windows コンテナーへの切り替え<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">publish-connection]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>Publish to File System<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">publish-connection]: media/aspnetmvc/PublishConnection.png</ept><bpt id="p2"> "</bpt>ファイル システムへの発行<ept id="p2">"</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ept id="p1">publish-settings]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>Publish Settings<ept id="p2">"</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt><ept id="p1">publish-settings]: media/aspnetmvc/PublishSettings.png</ept><bpt id="p2"> "</bpt>発行の設定<ept id="p2">"</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
