@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/796df1549a7553aa93158598d62338c02d4df73e/docs/core/tools/test-protocol.md) | InSyncHandedBackSuccess | [Details](#83555650a5a3ce9ed28d329aa82f5ead75e2d9cb116)
 
 ## Item Details
+##### <a name='83555650a5a3ce9ed28d329aa82f5ead75e2d9cb116'></a> Source: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs/blob/796df1549a7553aa93158598d62338c02d4df73e/docs/core/tools/test-protocol.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\tools\test-protocol.md](https://github.com/dotnet/docs.ru-ru/blob/1305634fcda0ff5b474ed61902ab4cbc55498444/docs/core/tools/test-protocol.md)
+* Handoff File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/67419946ce4cfbf5dc2c525f10750b880c2ec69e/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf)
+* Handoff Datetime: 2017-02-10 08:33:10
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#dotnet#20170216T002900
+* Archive File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/1666485d824c27418c620d2899f9e7b62c5eae01/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf)
+* Archive Datetime: 2017-02-16 08:42:50
+* Handback File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/65a56775d87f2ffad494f408332ab32ccc7d73ef/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf)
+* Handback Datetime: 2017-02-22 15:02:03
+* Handback Name: docs_HT_OL#dotnet#20170216T002900-ru-ru_2
+* Bilingual File: [test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/65a56775d87f2ffad494f408332ab32ccc7d73ef/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/test-protocol.a59cc173f516589fa2bcb6d209f8d7e699990a82.ru-ru.xlf)
+* Bilingual Datetime: 2017-02-22 15:02:56
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
