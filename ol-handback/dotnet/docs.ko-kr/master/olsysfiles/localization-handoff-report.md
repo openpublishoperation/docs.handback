@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/28625def4199a660fe0ea04ab75f4f65d2e0c9c4/docs/standard/base-types/custom-datetime.md) | HandedOffSuccess | [Details](#285e4bfd6a53d576ce4538b09a2561065c93e3993371)
 
 ## Item Details
-##### <a name='285e4bfd6a53d576ce4538b09a2561065c93e3993371'></a> Source: [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/28625def4199a660fe0ea04ab75f4f65d2e0c9c4/docs/standard/base-types/custom-datetime.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/21cde216d14ad35ce73a05a0eab8c7abdb9a3a44/ol-handoff/dotnet/docs.ko-kr/master/dotnet-core/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.ko-kr.xlf)
-* Handoff Datetime: 2017-02-23 03:10:37
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
