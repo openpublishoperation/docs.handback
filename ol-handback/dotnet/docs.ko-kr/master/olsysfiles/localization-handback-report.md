@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-migrate.md](https://github.com/dotnet/docs/blob/796df1549a7553aa93158598d62338c02d4df73e/docs/core/preview3/tools/dotnet-migrate.md) | InSyncHandedBackSuccess | [Details](#57ae01419c6f7a75970816e1245094c38c5247fa64)
 
 ## Item Details
+##### <a name='57ae01419c6f7a75970816e1245094c38c5247fa64'></a> Source: [docs\core\preview3\tools\dotnet-migrate.md](https://github.com/dotnet/docs/blob/796df1549a7553aa93158598d62338c02d4df73e/docs/core/preview3/tools/dotnet-migrate.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\preview3\tools\dotnet-migrate.md](https://github.com/dotnet/docs.ko-kr/blob/cdf0ea73eceeda2813047e71663311bcd9edbf2f/docs/core/preview3/tools/dotnet-migrate.md)
+* Handoff File: [dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/fbe007cfcf042ed47829d16bddcd0be31f8b4ce1/ol-handoff/dotnet/docs.ko-kr/master/dotnet-core/dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf)
+* Handoff Datetime: 2017-02-10 08:34:11
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#dotnet#20170216T002900
+* Archive File: [dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf](https://github.com/dotnet/docs.handoff/blob/0ad2da1074ae1dd9db423456af61e2c5dbba6cfd/ol-archive/dotnet/docs.ko-kr/master/dotnet-core/dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf)
+* Archive Datetime: 2017-02-16 08:43:31
+* Handback File: [dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/611eca3c7057fbf2a6d15500d5f5b4b017efc154/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf)
+* Handback Datetime: 2017-02-23 10:01:49
+* Handback Name: docs_HT_OL#dotnet#20170216T002900-ko-kr_2
+* Bilingual File: [dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf](https://github.com/dotnet/docs.handback/blob/3e4d37d28a5c45465067bc2fc10464869959a099/ol-handback/dotnet/docs.ko-kr/master/dotnet-core/dotnet-migrate.d9476f7aea9d488b184aabc928b47621ce21ad65.ko-kr.xlf)
+* Bilingual Datetime: 2017-02-22 07:45:49
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
