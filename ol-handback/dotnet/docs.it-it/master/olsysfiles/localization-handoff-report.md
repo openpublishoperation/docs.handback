@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs/blob/053e296db67b9dde23c4d6295dbc7246d2b486ed/docs/standard/choosing-core-framework-server.md) | HandedOffSuccess | [Details](#816fb524000eb96ed5a157934cabc51b90f11dc03412)
 
 ## Item Details
+##### <a name='816fb524000eb96ed5a157934cabc51b90f11dc03412'></a> Source: [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs/blob/053e296db67b9dde23c4d6295dbc7246d2b486ed/docs/standard/choosing-core-framework-server.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/d967edee770d7664605eb7ca76a526016c4df607/ol-handoff/dotnet/docs.it-it/master/dotnet-core/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf)
+* Handoff Datetime: 2017-02-23 07:10:08
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\standard\choosing-core-framework-server.md](https://github.com/dotnet/docs.it-it/blob/51451cf33c89f165eefa3b40d7ec1214137aa475/docs/standard/choosing-core-framework-server.md)
+* Current Handback File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf](https://github.com/dotnet/docs.handback/blob/435c1cb6f9de8753f9e6c80dc65089e9f5c76810/ol-handback/dotnet/docs.it-it/master/ht-p2/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf)
+* Current Handback Datetime: 2016-11-25 10:46:40
+* Bilingual File: [choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf](https://github.com/dotnet/docs.handback/blob/435c1cb6f9de8753f9e6c80dc65089e9f5c76810/ol-handback/dotnet/docs.it-it/master/ht-p2/choosing-core-framework-server.c95d5903df766b8dd579d8cca27c37110d59c853.it-it.xlf)
+* Bilingual Datetime: 2016-11-25 10:47:08
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
