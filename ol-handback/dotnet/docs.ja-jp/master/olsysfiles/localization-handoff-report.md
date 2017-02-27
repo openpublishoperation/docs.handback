@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/40cb18f650ac59d3c817c12dca06ec558a3b791b/docs/core/tools/project-json-to-csproj.md) | HandedOffSuccess | [Details](#ce1c47fd8ac73aa3b353a21e0a580ba72ce8799c114)
 
 ## Item Details
+##### <a name='ce1c47fd8ac73aa3b353a21e0a580ba72ce8799c114'></a> Source: [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/40cb18f650ac59d3c817c12dca06ec558a3b791b/docs/core/tools/project-json-to-csproj.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/5f9c6e8048d76f97fe4939ea109731f51789c51c/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.ja-jp.xlf)
+* Handoff Datetime: 2017-02-27 20:26:57
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
