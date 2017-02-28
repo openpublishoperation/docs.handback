@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md) | InSyncHandedBackSuccess | [Details](#aaa29f82cc89593fd29d469d5633bc60fa434ad734)
 
 ## Item Details
-##### <a name='aaa29f82cc89593fd29d469d5633bc60fa434ad734'></a> Source: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs.zh-tw/blob/4b96bb288d0bbbbe23142e01cef5a9aa352010f1/docs/core/deploying/reducing-dependencies.md)
-* Handoff File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/8889d043ae8f982b0000cf7d07b9776d0f49260d/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf)
-* Handoff Datetime: 2017-02-17 19:27:33
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f9fb64f2fa90a1f59abea56accd4d7a3512c1a49/ol-archive/dotnet/docs.zh-tw/master/dotnet-core/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf)
-* Archive Datetime: 2017-02-17 19:27:35
-* Handback File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/eec160466d6604e942fc1380528da3a013ecd5e2/ol-handback/dotnet/docs.zh-tw/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf)
-* Handback Datetime: 2017-02-28 21:54:44
-* Handback Name: 
-* Bilingual File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/e7093bcbbe4e0944f019e99dc5baba7284f752b9/ol-handback/dotnet/docs.zh-tw/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.zh-tw.xlf)
-* Bilingual Datetime: 2016-12-09 21:31:01
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
