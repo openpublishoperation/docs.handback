@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md) | InSyncHandedBackSuccess | [Details](#657981a05e831ffb849d0cd5b3ea25c079cb4fc132)
 
 ## Item Details
-##### <a name='657981a05e831ffb849d0cd5b3ea25c079cb4fc132'></a> Source: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs.ru-ru/blob/1346441deb193f6c437da6708cc55dfd83c206dd/docs/core/deploying/creating-nuget-packages.md)
-* Handoff File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/52d8e9bffe84df86a203a17527ff6f37b0fdca4d/ol-handoff/dotnet/docs.ru-ru/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf)
-* Handoff Datetime: 2016-12-09 21:21:57
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/e5cf6efca38142a81450152b10fcd27c4901bb10/ol-archive/dotnet/docs.ru-ru/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf)
-* Archive Datetime: 2016-12-09 21:22:01
-* Handback File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/8518b7ccede4dd870487835003729d2ed7d9e9cc/ol-handback/dotnet/docs.ru-ru/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf)
-* Handback Datetime: 2017-02-28 18:38:41
-* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-ru-ru-zh-tw
-* Bilingual File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/791daedda0274a4e274361b54c76d50785d56a44/ol-handback/dotnet/docs.ru-ru/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ru-ru.xlf)
-* Bilingual Datetime: 2016-11-11 15:47:16
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
