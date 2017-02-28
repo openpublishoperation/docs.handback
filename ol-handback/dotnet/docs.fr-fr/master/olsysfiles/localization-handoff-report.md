@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md) | HandedOffSuccess | [Details](#96f626d15d6c203cdac5920e496291a1a512da05129)
 
 ## Item Details
+##### <a name='96f626d15d6c203cdac5920e496291a1a512da05129'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/76e2ba3b60f3e98fa7b05de7d1988c1398a65bac/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
+* Handoff Datetime: 2017-02-28 21:50:51
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/tutorials/using-on-macos.md)
+* Current Handback File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
+* Current Handback Datetime: 2016-11-11 13:11:11
+* Bilingual File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
+* Bilingual Datetime: 2016-11-11 13:11:55
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
