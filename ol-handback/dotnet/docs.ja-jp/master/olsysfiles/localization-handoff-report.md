@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md) | HandedOffSuccess | [Details](#96f626d15d6c203cdac5920e496291a1a512da05129)
 
 ## Item Details
+##### <a name='96f626d15d6c203cdac5920e496291a1a512da05129'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/f793c3976e8515d2d10b780fee68e713baa57965/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf)
+* Handoff Datetime: 2017-02-28 21:52:20
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs.ja-jp/blob/d12ef71aeb96760793b1905b11ca6970e99ec0e2/docs/core/tutorials/using-on-macos.md)
+* Current Handback File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/46f662cc185843cb5acb0f57571b70e028186bb1/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf)
+* Current Handback Datetime: 2017-02-02 21:26:43
+* Bilingual File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/46f662cc185843cb5acb0f57571b70e028186bb1/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.ja-jp.xlf)
+* Bilingual Datetime: 2017-02-02 21:29:33
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
