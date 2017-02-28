@@ -1,11 +1,53 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md) | HandedOffSuccess | [Details](#96f626d15d6c203cdac5920e496291a1a512da05129)
+ [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md) | ArchivedSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190135)
 
 ## Item Details
+##### <a name='96f626d15d6c203cdac5920e496291a1a512da05129'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/1660112e9de49ad8b5326665a6a0b8db766a4e5f/docs/core/tutorials/using-on-macos.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/41893585888721fb60bd0ff5ab1232385023a5a9/ol-handoff/dotnet/docs.de-de/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf)
+* Handoff Datetime: 2017-02-28 21:51:20
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs.de-de/blob/c5f98ed291aaa04599d4c59d804bdba4f0c15db9/docs/core/tutorials/using-on-macos.md)
+* Current Handback File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d6450e2c5e8c4689cd19fee3b172930668ebd036/ol-handback/dotnet/docs.de-de/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf)
+* Current Handback Datetime: 2017-01-21 21:45:35
+* Bilingual File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf](https://github.com/dotnet/docs.handback/blob/d6450e2c5e8c4689cd19fee3b172930668ebd036/ol-handback/dotnet/docs.de-de/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.de-de.xlf)
+* Bilingual Datetime: 2017-01-21 21:47:37
+* [Back to Top](#report-top)
+
+##### <a name='b5c088da7d1155414a08995ae0d72154af891190135'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md)
+* Status: ArchivedSuccess
+* Target File: 
+* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/41893585888721fb60bd0ff5ab1232385023a5a9/ol-handoff/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
+* Handoff Datetime: 2017-02-28 21:51:20
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/40276190448e6f19019bb8d107c585ddcc0dc940/ol-archive/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
+* Archive Datetime: 2017-02-28 21:51:21
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.de-de/blob/b68b5693381c30ef5ca757bc09c99d9cc4e5be3f/docs/core/windows-prerequisites.md)
+* Current Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e626612178bd6758ee9fab409c22b1c699c04079/ol-handback/dotnet/docs.de-de/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
+* Current Handback Datetime: 2016-11-11 14:44:49
+* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handback/blob/e626612178bd6758ee9fab409c22b1c699c04079/ol-handback/dotnet/docs.de-de/master/ht-p1/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
+* Bilingual Datetime: 2016-11-11 14:45:26
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
