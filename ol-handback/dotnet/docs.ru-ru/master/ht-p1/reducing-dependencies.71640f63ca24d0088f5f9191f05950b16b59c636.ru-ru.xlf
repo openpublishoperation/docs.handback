@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-6a73dd2" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">77d49a1df361823c3f8f676923960d4bef2eeb08</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\deploying\reducing-dependencies.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ht-p1</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f092be6e8b03fa8f1e8c2408f261d26993d078ea</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">125c2cfce4f4b8c92242176197de35db9ecfbc1b</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">Сокращение зависимостей пакетов с помощью файла project.json</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">Сокращение зависимостей пакетов с помощью файла project.json</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core</source>
+          <target state="translated">.NET, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Reducing Package Dependencies with project.json</source>
+          <target state="translated">Сокращение зависимостей пакетов с помощью файла project.json</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This article covers what you need to know about reducing your package dependencies when authoring <ph id="ph1">`project.json`</ph> libraries.</source>
+          <target state="translated">В этой статье приводятся необходимые сведения о сокращении зависимостей пакетов при разработке библиотек <ph id="ph1">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>By the end of this article, you will learn how to compose your library such that it only uses the dependencies it needs.</source>
+          <target state="translated">К концу этой статьи вы научитесь составлять библиотеки так, чтобы в них использовались только необходимые зависимости.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Why it's Important</source>
+          <target state="translated">Почему это важно</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>.NET Core is a product made up of NuGet packages.</source>
+          <target state="translated">.NET Core — это продукт, состоящий из пакетов NuGet.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>An essential package is the <bpt id="p1">[</bpt>.NET Standard Library metapackage<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library)</ept>, which is a NuGet package composed of other packages.</source>
+          <target state="translated">Базовый пакет — это <bpt id="p1">[</bpt>метапакет библиотеки .NET Standard<ept id="p1">](https://www.nuget.org/packages/NETStandard.Library)</ept>. Он представляет собой пакет NuGet, состоящий из других пакетов.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It provides you with the set of packages that are guaranteed to work on multiple .NET implementations, such as .NET Framework, .NET Core and Xamarin/Mono.</source>
+          <target state="translated">Этот метапакет предоставляет набор пакетов, которые гарантированно работают в различных реализациях .NET, таких как .NET Framework, .NET Core и Xamarin/Mono.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>However, there's a good chance that your library won't use every single package it contains.</source>
+          <target state="translated">Однако высока вероятность того, что ваша библиотека будет использовать не все входящие в него пакеты.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When authoring a library and distributing it over NuGet, it's a best practice to "trim" your dependencies down to only the packages you actually use.</source>
+          <target state="translated">При разработке библиотеки и ее распространении посредством NuGet рекомендуется "усекать" зависимости, оставляя только действительно необходимые.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This results in a smaller overall footprint for NuGet packages.</source>
+          <target state="translated">Результатом является уменьшение общего размера пакетов NuGet.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>How to do it</source>
+          <target state="translated">Как это сделать</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Currently, there is no official <ph id="ph1">`dotnet`</ph> command which trims package references.</source>
+          <target state="translated">В настоящее время нет официальной команды <ph id="ph1">`dotnet`</ph>, которая усекает ссылки на пакеты.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Instead, you'll have to do it manually.</source>
+          <target state="translated">Вам потребуется сделать это вручную.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The general process looks like the following:</source>
+          <target state="translated">Ниже описывается общая процедура:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Reference <ph id="ph1">`NETStandard.Library`</ph> version <ph id="ph2">`1.6.0`</ph> in a <ph id="ph3">`dependencies`</ph> section of your <ph id="ph4">`project.json`</ph>.</source>
+          <target state="translated">Укажите ссылку на <ph id="ph1">`NETStandard.Library`</ph> версии <ph id="ph2">`1.6.0`</ph> в разделе <ph id="ph3">`dependencies`</ph> файла <ph id="ph4">`project.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Restore packages with <ph id="ph1">`dotnet restore`</ph> from the command line.</source>
+          <target state="translated">Восстановите пакеты, выполнив команду <ph id="ph1">`dotnet restore`</ph> в командной строке.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Inspect the <ph id="ph1">`project.lock.json`</ph> file and find the <ph id="ph2">`NETSTandard.Library`</ph> section.</source>
+          <target state="translated">Просмотрите файл <ph id="ph1">`project.lock.json`</ph> и найдите раздел <ph id="ph2">`NETSTandard.Library`</ph>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It's near the beginning of the file.</source>
+          <target state="translated">Он находится ближе к началу файла.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Copy all of the listed packages under <ph id="ph1">`dependencies`</ph>.</source>
+          <target state="translated">Скопируйте все пакеты, перечисленные в разделе <ph id="ph1">`dependencies`</ph>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Remove the <ph id="ph1">`.NETStandard.Library`</ph> reference and replace it with the copied packages.</source>
+          <target state="translated">Удалите ссылку на <ph id="ph1">`.NETStandard.Library`</ph> и замените ее скопированными пакетами.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Remove references to packages you don't need.</source>
+          <target state="translated">Удалите ссылки на пакеты, которые вам не нужны.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can find out which packages you don't need by one of the following ways:</source>
+          <target state="translated">Узнать, какие пакеты вам не нужны, можно одним из указанных ниже способов:</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Trial and error.</source>
+          <target state="translated">Методом проб и ошибок.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.</source>
+          <target state="translated">То есть вам нужно удалить пакет, выполнить восстановление, проверить, компилируется ли по-прежнему библиотека, а затем повторить этот процесс.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Using a tool such as <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> or <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> to peek at references to see what your code is actually using.</source>
+          <target state="translated">С помощью такого средства, как <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> или <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept>, изучить ссылки, чтобы узнать, какие из них действительно используются в коде.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can then remove packages which don't correspond to types you're using.</source>
+          <target state="translated">Затем можно удалить пакеты, которые не соответствуют используемым типам.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Пример</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Imagine that you wrote a library which provided additional functionality to generic collection types.</source>
+          <target state="translated">Представьте, что вы написали библиотеку, расширяющую функциональность универсальных типов коллекций.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Such a library would need to depend on packages such as <ph id="ph1">`System.Collections`</ph>, but may not at all depend on packages such as <ph id="ph2">`System.Net.Http`</ph>.</source>
+          <target state="translated">Подобная библиотека обязательно будет зависеть от таких пакетов, как <ph id="ph1">`System.Collections`</ph>, но может совершенно не использовать такие пакеты, как <ph id="ph2">`System.Net.Http`</ph>.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>As such, it would be good to trim package dependencies down to only what this library required!</source>
+          <target state="translated">Поэтому было бы неплохо ограничить зависимости пакетов только теми, которые действительно требуются библиотеке.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To trim this library, you start with the <ph id="ph1">`project.json`</ph> file and add a reference to <ph id="ph2">`NETStandard.Library`</ph> version <ph id="ph3">`1.6.0`</ph>.</source>
+          <target state="translated">Чтобы усечь зависимости в этой библиотеке, необходимо начать с файла <ph id="ph1">`project.json`</ph> и добавить ссылку на <ph id="ph2">`NETStandard.Library`</ph> версии <ph id="ph3">`1.6.0`</ph>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Next, you restore packages with <ph id="ph1">`dotnet restore`</ph>, inspect the <ph id="ph2">`project.lock.json`</ph> file, and find all the packages restored for <ph id="ph3">`NETSTandard.Library`</ph>.</source>
+          <target state="translated">Затем следует восстановить пакеты с помощью команды <ph id="ph1">`dotnet restore`</ph>, просмотреть файл <ph id="ph2">`project.lock.json`</ph> и найти все пакеты, восстановленные для <ph id="ph3">`NETSTandard.Library`</ph>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Here's what the relevant section in the <ph id="ph1">`project.lock.json`</ph> file looks like when targeting <ph id="ph2">`netstandard1.0`</ph>:</source>
+          <target state="translated">Вот как выглядит соответствующий раздел в файле <ph id="ph1">`project.lock.json`</ph> при нацеливании на <ph id="ph2">`netstandard1.0`</ph>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Next, copy over the package references into the <ph id="ph1">`dependencies`</ph> section of the library's <ph id="ph2">`project.json`</ph> file, replacing the <ph id="ph3">`NETStandard.Library`</ph> reference:</source>
+          <target state="translated">Далее скопируйте ссылки на пакеты в раздел <ph id="ph1">`dependencies`</ph> файла <ph id="ph2">`project.json`</ph> библиотеки, заменив ссылку на <ph id="ph3">`NETStandard.Library`</ph>:</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>That's quite a lot of packages, many of which which certainly aren't necessary for extending collection types.</source>
+          <target state="translated">Получилось весьма много пакетов, многие из которых определенно не требуются для расширения типов коллекций.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You can either remove packages manually or use a tool such as <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> or <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept> to identify which packages your code actually uses.</source>
+          <target state="translated">Вы можете удалить пакеты вручную или использовать такое средство, как <bpt id="p1">[</bpt>ILSpy<ept id="p1">](http://ilspy.net)</ept> или <bpt id="p2">[</bpt>.NET Reflector<ept id="p2">](http://www.red-gate.com/products/dotnet-development/reflector)</ept>, для определения пакетов, которые действительно используются в коде.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Here's what a trimmed package could look like:</source>
+          <target state="translated">Вот как может выглядеть усеченный пакет.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Now, it has a smaller footprint than if it had depended on the <ph id="ph1">`NETStandard.Library`</ph> metapackage.</source>
+          <target state="translated">Теперь он имеет меньший размер, чем если бы он зависел от метапакета <ph id="ph1">`NETStandard.Library`</ph>.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
