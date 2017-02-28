@@ -1,11 +1,47 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md) | InSyncHandedBackSuccess | [Details](#aaa29f82cc89593fd29d469d5633bc60fa434ad734)
+ [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md) | InSyncHandedBackSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190135)
 
 ## Item Details
+##### <a name='aaa29f82cc89593fd29d469d5633bc60fa434ad734'></a> Source: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs.ru-ru/blob/ba174b6518e06e0cf633d7f9b500f2a4c6644aa5/docs/core/deploying/reducing-dependencies.md)
+* Handoff File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/2cb41846822aa0ea89c94c6dc9ad88c002de00fe/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf)
+* Handoff Datetime: 2017-02-17 19:27:02
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/061235a52405ea31582721af3228b1dfa1409afc/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf)
+* Archive Datetime: 2017-02-17 19:27:04
+* Handback File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f0f44c9a8209c43a28541063d04f3dabbc452db9/ol-handback/dotnet/docs.ru-ru/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf)
+* Handback Datetime: 2017-02-28 21:54:15
+* Handback Name: 
+* Bilingual File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f0f44c9a8209c43a28541063d04f3dabbc452db9/ol-handback/dotnet/docs.ru-ru/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.ru-ru.xlf)
+* Bilingual Datetime: 2017-02-28 21:57:51
+* [Back to Top](#report-top)
+
+##### <a name='b5c088da7d1155414a08995ae0d72154af891190135'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.ru-ru/blob/ba174b6518e06e0cf633d7f9b500f2a4c6644aa5/docs/core/windows-prerequisites.md)
+* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/43da8be5ed4c2f1815ccfa1d89f9213ec9bbd2df/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
+* Handoff Datetime: 2017-02-28 21:51:44
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/1744e24b22776cd42f3fd638a74e7e2226b7c7e8/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
+* Archive Datetime: 2017-02-28 21:51:45
+* Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f0f44c9a8209c43a28541063d04f3dabbc452db9/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
+* Handback Datetime: 2017-02-28 21:54:15
+* Handback Name: 
+* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/f0f44c9a8209c43a28541063d04f3dabbc452db9/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.ru-ru.xlf)
+* Bilingual Datetime: 2017-02-28 21:57:51
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
