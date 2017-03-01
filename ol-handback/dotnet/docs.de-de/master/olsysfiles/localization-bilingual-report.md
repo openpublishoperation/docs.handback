@@ -1,45 +1,28 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md) | InSyncHandedBackSuccess | [Details](#aaa29f82cc89593fd29d469d5633bc60fa434ad734)
- [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md) | InSyncHandedBackSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190135)
+ [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md) | InSyncHandedBackSuccess | [Details](#657981a05e831ffb849d0cd5b3ea25c079cb4fc132)
 
 ## Item Details
-##### <a name='aaa29f82cc89593fd29d469d5633bc60fa434ad734'></a> Source: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/reducing-dependencies.md)
+##### <a name='657981a05e831ffb849d0cd5b3ea25c079cb4fc132'></a> Source: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\deploying\reducing-dependencies.md](https://github.com/dotnet/docs.de-de/blob/3c6dd6de00582d10b2a61444ac977b04e7273f12/docs/core/deploying/reducing-dependencies.md)
-* Handoff File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/7cca6da54f6c172b4a99b994c1d67b52fac23fde/ol-handoff/dotnet/docs.de-de/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf)
-* Handoff Datetime: 2016-12-09 21:20:43
+* Target File: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs.de-de/blob/3c6dd6de00582d10b2a61444ac977b04e7273f12/docs/core/deploying/creating-nuget-packages.md)
+* Handoff File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/fed7ebea797b4c4007c2cbbc85db8ef7e21e17dd/ol-handoff/dotnet/docs.de-de/master/dotnet-core/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf)
+* Handoff Datetime: 2017-02-17 19:26:32
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d8474e1d7f522cf5395ab8e7638a782cd8b4f4b5/ol-archive/dotnet/docs.de-de/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf)
-* Archive Datetime: 2016-12-09 21:20:47
-* Handback File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf](https://github.com/dotnet/docs.handback/blob/8592617064db1523e3e7ec0236d3bbea75b060d1/ol-handback/dotnet/docs.de-de/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf)
-* Handback Datetime: 2017-02-28 21:53:46
-* Handback Name: 
-* Bilingual File: [reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf](https://github.com/dotnet/docs.handback/blob/8592617064db1523e3e7ec0236d3bbea75b060d1/ol-handback/dotnet/docs.de-de/master/ht-p1/reducing-dependencies.71640f63ca24d0088f5f9191f05950b16b59c636.de-de.xlf)
-* Bilingual Datetime: 2017-02-28 21:57:36
-* [Back to Top](#report-top)
-
-##### <a name='b5c088da7d1155414a08995ae0d72154af891190135'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.de-de/blob/3c6dd6de00582d10b2a61444ac977b04e7273f12/docs/core/windows-prerequisites.md)
-* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/41893585888721fb60bd0ff5ab1232385023a5a9/ol-handoff/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
-* Handoff Datetime: 2017-02-28 21:51:20
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/40276190448e6f19019bb8d107c585ddcc0dc940/ol-archive/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
-* Archive Datetime: 2017-02-28 21:51:21
-* Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handback/blob/8592617064db1523e3e7ec0236d3bbea75b060d1/ol-handback/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
-* Handback Datetime: 2017-02-28 21:53:46
-* Handback Name: 
-* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf](https://github.com/dotnet/docs.handback/blob/8592617064db1523e3e7ec0236d3bbea75b060d1/ol-handback/dotnet/docs.de-de/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.de-de.xlf)
-* Bilingual Datetime: 2017-02-28 21:57:36
+* Archive File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/833e9989b9a37dc633342b10af86aa81cd79f5ee/ol-archive/dotnet/docs.de-de/master/dotnet-core/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf)
+* Archive Datetime: 2017-02-17 19:26:34
+* Handback File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf](https://github.com/dotnet/docs.handback/blob/742a1dcaee7ae529b31c0e08897a0ff295e94b16/ol-handback/dotnet/docs.de-de/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf)
+* Handback Datetime: 2017-03-01 12:25:12
+* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-ru-ru-zh-cn-zh-tw_4
+* Bilingual File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf](https://github.com/dotnet/docs.handback/blob/742a1dcaee7ae529b31c0e08897a0ff295e94b16/ol-handback/dotnet/docs.de-de/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.de-de.xlf)
+* Bilingual Datetime: 2017-03-01 12:26:43
 * [Back to Top](#report-top)
 
 
