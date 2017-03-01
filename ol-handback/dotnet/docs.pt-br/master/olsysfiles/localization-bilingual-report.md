@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md) | InSyncHandedBackSuccess | [Details](#b5c088da7d1155414a08995ae0d72154af891190135)
 
 ## Item Details
-##### <a name='b5c088da7d1155414a08995ae0d72154af891190135'></a> Source: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs/blob/a8019c9fc25ef458aa555743e61cd83a3beb11ed/docs/core/windows-prerequisites.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\windows-prerequisites.md](https://github.com/dotnet/docs.pt-br/blob/317d11b486a9df2f6b6ff33b0a2e7e0603e918a7/docs/core/windows-prerequisites.md)
-* Handoff File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/5e8a51cab63bdef17a3688b871c65ad9b8e5f205/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf)
-* Handoff Datetime: 2017-02-28 21:52:42
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/3564b0b841c9997655aab2b10588d12c5c488736/ol-archive/dotnet/docs.pt-br/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf)
-* Archive Datetime: 2017-02-28 21:52:43
-* Handback File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3a1bf75c1d4b558e802de162af5c3f1b65631d8d/ol-handback/dotnet/docs.pt-br/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf)
-* Handback Datetime: 2017-02-28 21:55:29
-* Handback Name: 
-* Bilingual File: [windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3a1bf75c1d4b558e802de162af5c3f1b65631d8d/ol-handback/dotnet/docs.pt-br/master/dotnet-core/windows-prerequisites.8a7e42c4e05f933f36694fb44fe90ca4e73ec886.pt-br.xlf)
-* Bilingual Datetime: 2017-02-28 21:58:22
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
