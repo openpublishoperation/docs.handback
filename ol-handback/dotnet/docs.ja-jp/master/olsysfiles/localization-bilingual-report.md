@@ -6,23 +6,23 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md) | InSyncHandedBackSuccess | [Details](#657981a05e831ffb849d0cd5b3ea25c079cb4fc132)
+ [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | InSyncHandedBackSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43469)
 
 ## Item Details
-##### <a name='657981a05e831ffb849d0cd5b3ea25c079cb4fc132'></a> Source: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/deploying/creating-nuget-packages.md)
+##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43469'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\deploying\creating-nuget-packages.md](https://github.com/dotnet/docs.ja-jp/blob/338ab65e2644e05cfe12c62e3d6924add02f5a8b/docs/core/deploying/creating-nuget-packages.md)
-* Handoff File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/96a657c23d6575d3f9f1c11d1b8bc70b32df691f/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf)
-* Handoff Datetime: 2017-02-17 19:27:48
+* Target File: [docs\standard\native-interop.md](https://github.com/dotnet/docs.ja-jp/blob/e943ee649ee3f421ae08e0718a3974d2188e681f/docs/standard/native-interop.md)
+* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/cfac8e9c1b43506913a44fc2a1d70911c55e2f0d/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Handoff Datetime: 2017-01-30 22:33:26
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/5e7b4bd31decfc451cfbce6a6de25adc924c106b/ol-archive/dotnet/docs.ja-jp/master/dotnet-core/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf)
-* Archive Datetime: 2017-02-17 19:27:50
-* Handback File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/3318518dd9173457a1b68a9e296815dd100d0528/ol-handback/dotnet/docs.ja-jp/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf)
-* Handback Datetime: 2017-03-01 12:25:50
-* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-ru-ru-zh-cn-zh-tw_4
-* Bilingual File: [creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/3318518dd9173457a1b68a9e296815dd100d0528/ol-handback/dotnet/docs.ja-jp/master/ht-p1/creating-nuget-packages.c475fc5750d46475259536fb5517ba3038e56d3b.ja-jp.xlf)
-* Bilingual Datetime: 2017-03-01 12:27:14
+* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/90096e2cdf17de828caa8d573f7db43f0ee530f3/ol-archive/dotnet/docs.ja-jp/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Archive Datetime: 2017-01-30 22:33:27
+* Handback File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/4d9185b534f576d28cc9b0df27b1ebd4f98bd661/ol-handback/dotnet/docs.ja-jp/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Handback Datetime: 2017-03-02 00:57:17
+* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-ru-ru-zh-cn-zh-tw_5
+* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/4d9185b534f576d28cc9b0df27b1ebd4f98bd661/ol-handback/dotnet/docs.ja-jp/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.ja-jp.xlf)
+* Bilingual Datetime: 2017-03-02 00:58:50
 * [Back to Top](#report-top)
 
 
