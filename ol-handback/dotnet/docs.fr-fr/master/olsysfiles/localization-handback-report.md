@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/quick-ref.md) | InSyncHandedBackSuccess | [Details](#a6644fc2431beafa2128287eeac73bd598ee304a3397)
 
 ## Item Details
+##### <a name='a6644fc2431beafa2128287eeac73bd598ee304a3397'></a> Source: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/quick-ref.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs.fr-fr/blob/e70162825dbf6acee5c7d4d6a448dc6ece5f0899/docs/standard/base-types/quick-ref.md)
+* Handoff File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8459e0f790dde9ac09d0276921484558d628fe2e/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
+* Handoff Datetime: 2017-03-02 16:18:35
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#BugFix#20170302T081332
+* Archive File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/f387f08b5d026c8f47c366be884b32430329173f/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
+* Archive Datetime: 2017-03-02 16:27:28
+* Handback File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/63de59a78342e11fe163af3b24db5ef9c8d15505/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
+* Handback Datetime: 2017-03-02 19:37:31
+* Handback Name: docs_HT_OL#BugFix#20170302T081332-fr-fr
+* Bilingual File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/84e113b178e8c4e6d01dd766504abc2c59a4bf1d/ol-handback/dotnet/docs.fr-fr/master/ht-p2/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
+* Bilingual Datetime: 2016-12-09 21:28:33
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
