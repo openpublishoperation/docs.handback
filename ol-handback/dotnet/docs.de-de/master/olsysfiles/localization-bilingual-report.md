@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/db8e3cea228e6c14fe2a546c9098910f82101925/docs/core/preview3/tools/dotnet-build.md) | InSyncHandedBackSuccess | [Details](#fe04148957606a14b499c5e4175368ec5416b08063)
 
 ## Item Details
+##### <a name='fe04148957606a14b499c5e4175368ec5416b08063'></a> Source: [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/db8e3cea228e6c14fe2a546c9098910f82101925/docs/core/preview3/tools/dotnet-build.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs.de-de/blob/a82fdd477972f0b2f2d0dc08fde83dd7819e1553/docs/core/preview3/tools/dotnet-build.md)
+* Handoff File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/4da0172a7006a34e93d604c717a96433977a5272/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf)
+* Handoff Datetime: 2017-03-02 20:15:38
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/851ba72bd17a7f3eacf326ef503c4ed43d79fe1d/ol-archive/dotnet/docs.de-de/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf)
+* Archive Datetime: 2017-03-02 20:15:39
+* Handback File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf](https://github.com/dotnet/docs.handback/blob/726ce692b8c9e6631eb5db03fff5c1bbfa99a2b4/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf)
+* Handback Datetime: 2017-03-02 20:19:45
+* Handback Name: 
+* Bilingual File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf](https://github.com/dotnet/docs.handback/blob/726ce692b8c9e6631eb5db03fff5c1bbfa99a2b4/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.de-de.xlf)
+* Bilingual Datetime: 2017-03-02 20:22:11
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
