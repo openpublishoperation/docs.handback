@@ -6,23 +6,23 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/quick-ref.md) | InSyncHandedBackSuccess | [Details](#a6644fc2431beafa2128287eeac73bd598ee304a3397)
+ [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/db8e3cea228e6c14fe2a546c9098910f82101925/docs/core/preview3/tools/dotnet-build.md) | InSyncHandedBackSuccess | [Details](#fe04148957606a14b499c5e4175368ec5416b08063)
 
 ## Item Details
-##### <a name='a6644fc2431beafa2128287eeac73bd598ee304a3397'></a> Source: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/quick-ref.md)
+##### <a name='fe04148957606a14b499c5e4175368ec5416b08063'></a> Source: [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/db8e3cea228e6c14fe2a546c9098910f82101925/docs/core/preview3/tools/dotnet-build.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\quick-ref.md](https://github.com/dotnet/docs.fr-fr/blob/e70162825dbf6acee5c7d4d6a448dc6ece5f0899/docs/standard/base-types/quick-ref.md)
-* Handoff File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/8459e0f790dde9ac09d0276921484558d628fe2e/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
-* Handoff Datetime: 2017-03-02 16:18:35
+* Target File: [docs\core\preview3\tools\dotnet-build.md](https://github.com/dotnet/docs.fr-fr/blob/45e079a860ca45a064f6739a17b9f8ff90761bbb/docs/core/preview3/tools/dotnet-build.md)
+* Handoff File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/9ed3532fba2ccd120f97b48bfe64d350b316fa61/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf)
+* Handoff Datetime: 2017-03-02 20:15:12
 * Handoff Reason: Include
-* Handoff Name: docs_HT_OL#BugFix#20170302T081332
-* Archive File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/f387f08b5d026c8f47c366be884b32430329173f/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
-* Archive Datetime: 2017-03-02 16:27:28
-* Handback File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/63de59a78342e11fe163af3b24db5ef9c8d15505/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
-* Handback Datetime: 2017-03-02 19:37:31
-* Handback Name: docs_HT_OL#BugFix#20170302T081332-fr-fr
-* Bilingual File: [quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/63de59a78342e11fe163af3b24db5ef9c8d15505/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/quick-ref.dfe2e34ec66c0b71a784596bed07e36efaf9e256.fr-fr.xlf)
-* Bilingual Datetime: 2017-03-02 19:38:10
+* Handoff Name: 
+* Archive File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/3ca16fdb1f239d58c4cdb5021ae16fed8435b90f/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf)
+* Archive Datetime: 2017-03-02 20:15:13
+* Handback File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/8a88854925688eaf8c86e800115f90e6c452c8b3/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf)
+* Handback Datetime: 2017-03-02 20:19:18
+* Handback Name: 
+* Bilingual File: [dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/8a88854925688eaf8c86e800115f90e6c452c8b3/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/dotnet-build.d03644e9a880d30faaf538aef62795ad3d7db520.fr-fr.xlf)
+* Bilingual Datetime: 2017-03-02 20:21:57
 * [Back to Top](#report-top)
 
 
