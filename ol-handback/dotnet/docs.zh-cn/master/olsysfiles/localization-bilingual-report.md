@@ -6,23 +6,26 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md) | InSyncHandedBackSuccess | [Details](#13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43469)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/166dc5d2f22d5ada11dfe59e26cbf2afeb4e4ffb/docs/toc.md) | HandedOffSuccess | [Details](#448c8b6449dc6d32f10574909f4f6a4fd7041b473474)
 
 ## Item Details
-##### <a name='13a4e4e7a588d55e82c5c4cde8f825c3b4502bb43469'></a> Source: [docs\standard\native-interop.md](https://github.com/dotnet/docs/blob/d18b21b67c154c4a8cf8211aa5d1473066c53656/docs/standard/native-interop.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\native-interop.md](https://github.com/dotnet/docs.zh-cn/blob/10c1787e9ff71c3bd1a79e877cbd08d16af47344/docs/standard/native-interop.md)
-* Handoff File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/7cb839b2f9ff1d8ccafceee1a6f44bce361a9b81/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf)
-* Handoff Datetime: 2017-01-30 22:33:03
+##### <a name='448c8b6449dc6d32f10574909f4f6a4fd7041b473474'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/166dc5d2f22d5ada11dfe59e26cbf2afeb4e4ffb/docs/toc.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/121295bda70912390a253889621a423ed806612c/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
+* Handoff Datetime: 2017-02-25 06:26:05
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/4e5a2388d763ba58bf43063a32543051ddf80c19/ol-archive/dotnet/docs.zh-cn/master/dotnet-core/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf)
-* Archive Datetime: 2017-01-30 22:33:04
-* Handback File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/d18be2943947d73ebc6a1eaaee24aad67ae7b98b/ol-handback/dotnet/docs.zh-cn/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf)
-* Handback Datetime: 2017-03-02 00:56:49
-* Handback Name: docs_HT_P1#OL#dotnet#20161117T231230-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-ru-ru-zh-cn-zh-tw_5
-* Bilingual File: [native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/d18be2943947d73ebc6a1eaaee24aad67ae7b98b/ol-handback/dotnet/docs.zh-cn/master/ht-p2/native-interop.8f6566123608155a52a2ab93eca340fe3087fb34.zh-cn.xlf)
-* Bilingual Datetime: 2017-03-02 00:58:36
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.zh-cn/blob/51b5731703ca76bbcaa4894f22fd0003fc438e36/docs/toc.md)
+* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/19983e5000499b1743a5449a629d6c966806be5b/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
+* Current Handback Datetime: 2017-03-02 17:19:09
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/19983e5000499b1743a5449a629d6c966806be5b/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.zh-cn.xlf)
+* Bilingual Datetime: 2017-03-02 17:21:24
 * [Back to Top](#report-top)
 
 
