@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/custom-timespan.md) | InSyncHandedBackSuccess | [Details](#bec60437d4345decaf38f2bbb9434922ac8896833374)
 
 ## Item Details
-##### <a name='bec60437d4345decaf38f2bbb9434922ac8896833374'></a> Source: [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/custom-timespan.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\custom-timespan.md](https://github.com/dotnet/docs.fr-fr/blob/c3ffa42119dd95cedfb549af32d0dd6b48e948f4/docs/standard/base-types/custom-timespan.md)
-* Handoff File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/709944b0342598d42fa17a58b2078cf8216b03c8/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf)
-* Handoff Datetime: 2017-03-03 13:06:02
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#BugFix#20170303T050112
-* Archive File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a4f791050186deb01495fb1d01d66d6ddeea053e/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf)
-* Archive Datetime: 2017-03-03 13:14:07
-* Handback File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/d44281951c0e001595d39780af0883de034b972d/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf)
-* Handback Datetime: 2017-03-03 19:30:35
-* Handback Name: docs_HT_OL#BugFix#20170303T050112-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-ru-ru-zh-cn-zh-tw_2
-* Bilingual File: [custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/994b31151b830229a03d1b4e0cc43f849ee72ca4/ol-handback/dotnet/docs.fr-fr/master/ht-p2/custom-timespan.b279740eb84d1e6f163809c9e7f14a33b05f852b.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-15 21:32:03
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
