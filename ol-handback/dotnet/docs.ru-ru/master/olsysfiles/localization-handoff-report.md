@@ -1,19 +1,21 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/0da4bbfb7834e1ef6d1bee237c1b0dc63179c3d3/docs/core/getting-started.md) | HandedOffSuccess | [Details](#38af11b82f4f507e0bd6ab30de49659af86453cb43)
+ [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/core/tutorials/index.md) | HandedOffSuccess | [Details](#1d15cd757ad95f8ee6eb4e1944b1083941c7888b126)
+ [docs\core\tutorials\netcore-hosting.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/core/tutorials/netcore-hosting.md) | HandedOffSuccess | [Details](#01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf133)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/toc.md) | HandedOffSuccess | [Details](#7dcd728ab51b84a8cf63e491593c15c87ef1007e3480)
 
 ## Item Details
-##### <a name='38af11b82f4f507e0bd6ab30de49659af86453cb43'></a> Source: [docs\core\getting-started.md](https://github.com/dotnet/docs/blob/0da4bbfb7834e1ef6d1bee237c1b0dc63179c3d3/docs/core/getting-started.md)
+##### <a name='1d15cd757ad95f8ee6eb4e1944b1083941c7888b126'></a> Source: [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/core/tutorials/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/c4811e871a291e3aea727076a6f454f8bc92803b/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf)
-* Handoff Datetime: 2017-03-03 19:41:14
+* Handoff File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/a18b00e73ec8cbe8f61148de553eaf7a44e5b698/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf)
+* Handoff Datetime: 2017-03-03 21:38:33
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,11 +23,44 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\getting-started.md](https://github.com/dotnet/docs.ru-ru/blob/04fdad337cac89df4b103891be9c1a1a5a5d199a/docs/core/getting-started.md)
-* Current Handback File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/17fc108846f637f583d1eeeef2df589eb5869208/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf)
-* Current Handback Datetime: 2017-02-22 13:02:09
-* Bilingual File: [getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/17fc108846f637f583d1eeeef2df589eb5869208/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/getting-started.367dc2930aef7c77a5a117c7bc3b6ecc0f43b683.ru-ru.xlf)
-* Bilingual Datetime: 2017-02-22 13:03:03
+* Current Target File: [docs\core\tutorials\index.md](https://github.com/dotnet/docs.ru-ru/blob/95e86d1c351cd10f944d39f3d01ce17eef544f89/docs/core/tutorials/index.md)
+* Current Handback File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/c10842a9ee030ea8f5e85e0dc027d249f666773a/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf)
+* Current Handback Datetime: 2017-01-31 15:04:17
+* Bilingual File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/c10842a9ee030ea8f5e85e0dc027d249f666773a/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.ru-ru.xlf)
+* Bilingual Datetime: 2017-01-31 15:07:36
+* [Back to Top](#report-top)
+
+##### <a name='01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf133'></a> Source: [docs\core\tutorials\netcore-hosting.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/core/tutorials/netcore-hosting.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [netcore-hosting.e92a996ed2ac0180d8662cbea9297aac7797347a.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/a18b00e73ec8cbe8f61148de553eaf7a44e5b698/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/netcore-hosting.e92a996ed2ac0180d8662cbea9297aac7797347a.ru-ru.xlf)
+* Handoff Datetime: 2017-03-03 21:38:33
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
+##### <a name='7dcd728ab51b84a8cf63e491593c15c87ef1007e3480'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/0a9d42f59e48a790e83a5a46b1559b613340136a/docs/toc.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/a18b00e73ec8cbe8f61148de553eaf7a44e5b698/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Handoff Datetime: 2017-03-03 21:38:33
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.ru-ru/blob/0de3faaa1c9fcedcb7b4f2bbd2f421320507b702/docs/toc.md)
+* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/6633461ec7650c3d3b49fb49264f07912985a596/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Current Handback Datetime: 2017-03-02 17:18:54
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/6633461ec7650c3d3b49fb49264f07912985a596/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.ru-ru.xlf)
+* Bilingual Datetime: 2017-03-02 17:21:16
 * [Back to Top](#report-top)
 
 
