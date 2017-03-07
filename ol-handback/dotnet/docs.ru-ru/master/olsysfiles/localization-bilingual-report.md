@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\index.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/index.md) | InSyncHandedBackSuccess | [Details](#26210b19de4f7bf70c085735771b0175945f38d445)
 
 ## Item Details
+##### <a name='26210b19de4f7bf70c085735771b0175945f38d445'></a> Source: [docs\core\index.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/core/index.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\index.md](https://github.com/dotnet/docs.ru-ru/blob/46d06a0bdbc4606ea79260739dccf7a794f1029d/docs/core/index.md)
+* Handoff File: [index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/bac5ff592bd3f2898fee380ebb01510e7cf338ea/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf)
+* Handoff Datetime: 2017-03-02 16:19:38
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#BugFix#20170302T081332
+* Archive File: [index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/568ac9677dbe28ea8980fb2b83ba2014bea68341/ol-archive/dotnet/docs.ru-ru/master/dotnet-core/index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf)
+* Archive Datetime: 2017-03-02 16:28:14
+* Handback File: [index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/5480b1b8733b870623fcde6745b44fb65a406cfe/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf)
+* Handback Datetime: 2017-03-07 14:27:47
+* Handback Name: 
+* Bilingual File: [index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/5480b1b8733b870623fcde6745b44fb65a406cfe/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.e290000c29850e3aea16828e0cef48f5e6ff9019.ru-ru.xlf)
+* Bilingual Datetime: 2017-03-07 14:38:38
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
