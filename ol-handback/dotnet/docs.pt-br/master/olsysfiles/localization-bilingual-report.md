@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\welcome.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/welcome.md) | ArchivedSuccess | [Details](#9fd18f4f842ad7e1c43f8093648fe3dd7769c65b7478)
 
 ## Item Details
-##### <a name='9fd18f4f842ad7e1c43f8093648fe3dd7769c65b7478'></a> Source: [docs\welcome.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/welcome.md)
-* Status: ArchivedSuccess
-* Target File: 
-* Handoff File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/773b8456c12f9a9ccd6e806adbf28dc033ca82b1/ol-handoff/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Handoff Datetime: 2016-12-09 21:24:52
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/aaf198998a45d7b643cc4b00fdff147108a39d21/ol-archive/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Archive Datetime: 2016-12-09 21:24:56
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\welcome.md](https://github.com/dotnet/docs.pt-br/blob/77685aeecd8509be72373d498775f99ec0157ec0/docs/welcome.md)
-* Current Handback File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/c0e8b376ad3c20f42e3f3fc7d36709a50ca5cc41/ol-handback/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Current Handback Datetime: 2017-03-04 06:53:00
-* Bilingual File: [welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/c0e8b376ad3c20f42e3f3fc7d36709a50ca5cc41/ol-handback/dotnet/docs.pt-br/master/ht-p1/welcome.cf84032b4d2e283cbf5c69d78077d1efb10a3c58.pt-br.xlf)
-* Bilingual Datetime: 2017-03-04 06:54:13
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
