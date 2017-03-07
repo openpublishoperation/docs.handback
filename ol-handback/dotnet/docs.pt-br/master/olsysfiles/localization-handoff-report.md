@@ -1,11 +1,53 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/0b781de119f59677bd8cc8e06bea63ba4e11c8ad/docs/core/tools/dotnet-test.md) | HandedOffSuccess | [Details](#42c8827788a63f4e27429e8392c213144be706c5114)
+ [docs\toc.md](https://github.com/dotnet/docs/blob/0b781de119f59677bd8cc8e06bea63ba4e11c8ad/docs/toc.md) | HandedOffSuccess | [Details](#9726490a2eca9aeca626645b0ec8b2534bc4834e3476)
 
 ## Item Details
+##### <a name='42c8827788a63f4e27429e8392c213144be706c5114'></a> Source: [docs\core\tools\dotnet-test.md](https://github.com/dotnet/docs/blob/0b781de119f59677bd8cc8e06bea63ba4e11c8ad/docs/core/tools/dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/873ee0c136ed14cd5c393a4560f512bb87c86be5/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf)
+* Handoff Datetime: 2017-03-07 03:41:30
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tools\dotnet-test.md](https://github.com/dotnet/docs.pt-br/blob/72862efa15807651be56666eddf6e7fbea466bc9/docs/core/tools/dotnet-test.md)
+* Current Handback File: [dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/4fe4374ae29f6591dfe1ee88835e29523afd19fe/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf)
+* Current Handback Datetime: 2017-02-22 15:35:16
+* Bilingual File: [dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/4fe4374ae29f6591dfe1ee88835e29523afd19fe/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-test.6f5b0518d5e55e059424b5a3544f93a6d2f900ea.pt-br.xlf)
+* Bilingual Datetime: 2017-02-22 15:36:33
+* [Back to Top](#report-top)
+
+##### <a name='9726490a2eca9aeca626645b0ec8b2534bc4834e3476'></a> Source: [docs\toc.md](https://github.com/dotnet/docs/blob/0b781de119f59677bd8cc8e06bea63ba4e11c8ad/docs/toc.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/873ee0c136ed14cd5c393a4560f512bb87c86be5/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf)
+* Handoff Datetime: 2017-03-07 03:41:30
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\toc.md](https://github.com/dotnet/docs.pt-br/blob/16b1077eb534d4bed1466cf53757df0021986e12/docs/toc.md)
+* Current Handback File: [toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/5669e8f38fb4751d92d1d0827116d8ef369e607e/ol-handback/dotnet/docs.pt-br/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf)
+* Current Handback Datetime: 2017-03-04 01:29:35
+* Bilingual File: [toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/5669e8f38fb4751d92d1d0827116d8ef369e607e/ol-handback/dotnet/docs.pt-br/master/dotnet-core/toc.d55ff8e019666abd1da95f80900583861673879c.pt-br.xlf)
+* Bilingual Datetime: 2017-03-04 01:31:09
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
