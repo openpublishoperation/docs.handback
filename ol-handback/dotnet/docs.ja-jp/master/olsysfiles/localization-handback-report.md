@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/4bd90ac423134c67eb35836d417b09053c98f586/docs/standard/managed-code.md) | InSyncHandedBackSuccess | [Details](#7f761c4fc24b8d22d8d1f8116745ebb3f65833783431)
 
 ## Item Details
-##### <a name='7f761c4fc24b8d22d8d1f8116745ebb3f65833783431'></a> Source: [docs\standard\managed-code.md](https://github.com/dotnet/docs/blob/4bd90ac423134c67eb35836d417b09053c98f586/docs/standard/managed-code.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\managed-code.md](https://github.com/dotnet/docs.ja-jp/blob/64d123c476c91f2447b65481129c924b6903275d/docs/standard/managed-code.md)
-* Handoff File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/b42e3e36f6f7f99b15cbceee53bfb20bda1cd5ac/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf)
-* Handoff Datetime: 2017-01-26 18:35:41
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170130T000201
-* Archive File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/207bc7a02f8a13a9c55ab1679d9e9cf53f6f0883/ol-archive/dotnet/docs.ja-jp/master/dotnet-core/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf)
-* Archive Datetime: 2017-01-30 08:15:33
-* Handback File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/33892239f0c0e1b00689ae134a09c20fb7d6c6a5/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf)
-* Handback Datetime: 2017-03-08 04:03:44
-* Handback Name: docs_HT_OL#dotnet#20170130T000201-ja-jp_2
-* Bilingual File: [managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/b475daf8581e2344e3b7a352b4c1ce907ec9b526/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/managed-code.c074f35f86522ea606301f15657bc0ee24da87df.ja-jp.xlf)
-* Bilingual Datetime: 2017-03-03 21:55:22
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
