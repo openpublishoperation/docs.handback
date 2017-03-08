@@ -1,147 +1,62 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 8
+ Total Files | 3
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tools\dotnet-msbuild.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-msbuild.md) | InSyncHandedBackSuccess | [Details](#a000e49a8672affe5b3bb9bd8a5f7e8095ab0aa977)
- [docs\core\tools\dotnet-nuget-delete.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-nuget-delete.md) | InSyncHandedBackSuccess | [Details](#2ce157e3f32f3e899245e38bb4520b17be3e0b3279)
- [docs\core\tools\dotnet-nuget-locals.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-nuget-locals.md) | InSyncHandedBackSuccess | [Details](#3d8ca57c3c9c25a59b98552784b057182c9100a380)
- [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-restore.md) | InSyncHandedBackSuccess | [Details](#a55cd932045a59f08146dff367a87eb6fe61f6e586)
- [docs\core\tools\telemetry.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/telemetry.md) | InSyncHandedBackSuccess | [Details](#c816bf4c93430a009e61ddf2a3673c43f49b8de997)
- [docs\core\tools\using-ci-with-cli.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/using-ci-with-cli.md) | InSyncHandedBackSuccess | [Details](#0579d59e8da24428d9e174baf0cc865d62c0819598)
- [docs\core\tutorials\using-on-windows-full-solution.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tutorials/using-on-windows-full-solution.md) | InSyncHandedBackSuccess | [Details](#b8505f88b324fcdf3a51d75c455ec5869e058774113)
- [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/28625def4199a660fe0ea04ab75f4f65d2e0c9c4/docs/standard/base-types/custom-datetime.md) | InSyncHandedBackSuccess | [Details](#285e4bfd6a53d576ce4538b09a2561065c93e3993336)
+ [docs\standard\base-types\parsing-strings.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/parsing-strings.md) | InSyncHandedBackSuccess | [Details](#c741ae793d491f691a355df6ad064b81d609c7e53358)
+ [docs\standard\base-types\regex-examples.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/regex-examples.md) | InSyncHandedBackSuccess | [Details](#630a5c9ebd1ca85980d8f64cfe755642aefdbb633363)
+ [docs\standard\garbagecollection\unmanaged.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/garbagecollection/unmanaged.md) | InSyncHandedBackSuccess | [Details](#43ad8829de51775b23d1e00d9b4e2a4f4b240e943423)
 
 ## Item Details
-##### <a name='a000e49a8672affe5b3bb9bd8a5f7e8095ab0aa977'></a> Source: [docs\core\tools\dotnet-msbuild.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-msbuild.md)
+##### <a name='c741ae793d491f691a355df6ad064b81d609c7e53358'></a> Source: [docs\standard\base-types\parsing-strings.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/parsing-strings.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\dotnet-msbuild.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/dotnet-msbuild.md)
-* Handoff File: [dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
+* Target File: [docs\standard\base-types\parsing-strings.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/standard/base-types/parsing-strings.md)
+* Handoff File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/3acc90c7fa8c8359222e1596b6a0eb5829b6ef39/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf)
+* Handoff Datetime: 2017-03-03 13:07:43
 * Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-msbuild.9c701e60b53e7c29988d9ec22d4a46f29b3e4a4a.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
+* Handoff Name: docs_HT_OL#BugFix#20170303T050112
+* Archive File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/4094849047402bd1d2de0303e474e5baedea2d40/ol-archive/dotnet/docs.pt-br/master/dotnet-core/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf)
+* Archive Datetime: 2017-03-03 13:15:29
+* Handback File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf)
+* Handback Datetime: 2017-03-08 21:14:20
+* Handback Name: docs_HT_OL#BugFix#20170303T050112-de-de-es-es-it-it-pt-br-zh-cn-zh-tw
+* Bilingual File: [parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/parsing-strings.76f17ccaf8b16766eb906d657216fb7cd537dee5.pt-br.xlf)
+* Bilingual Datetime: 2017-03-08 21:15:47
 * [Back to Top](#report-top)
 
-##### <a name='2ce157e3f32f3e899245e38bb4520b17be3e0b3279'></a> Source: [docs\core\tools\dotnet-nuget-delete.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-nuget-delete.md)
+##### <a name='630a5c9ebd1ca85980d8f64cfe755642aefdbb633363'></a> Source: [docs\standard\base-types\regex-examples.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/base-types/regex-examples.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\dotnet-nuget-delete.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/dotnet-nuget-delete.md)
-* Handoff File: [dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
+* Target File: [docs\standard\base-types\regex-examples.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/standard/base-types/regex-examples.md)
+* Handoff File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/3acc90c7fa8c8359222e1596b6a0eb5829b6ef39/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf)
+* Handoff Datetime: 2017-03-03 13:07:43
 * Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-delete.e8fcd08997b24e6c6094310b9c271f680dc0ce52.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
+* Handoff Name: docs_HT_OL#BugFix#20170303T050112
+* Archive File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/4094849047402bd1d2de0303e474e5baedea2d40/ol-archive/dotnet/docs.pt-br/master/dotnet-core/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf)
+* Archive Datetime: 2017-03-03 13:15:29
+* Handback File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf)
+* Handback Datetime: 2017-03-08 21:14:20
+* Handback Name: docs_HT_OL#BugFix#20170303T050112-de-de-es-es-it-it-pt-br-zh-cn-zh-tw
+* Bilingual File: [regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/regex-examples.fe3792ccf9e541ce6747f3a5b296147f8a2a491f.pt-br.xlf)
+* Bilingual Datetime: 2017-03-08 21:15:47
 * [Back to Top](#report-top)
 
-##### <a name='3d8ca57c3c9c25a59b98552784b057182c9100a380'></a> Source: [docs\core\tools\dotnet-nuget-locals.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-nuget-locals.md)
+##### <a name='43ad8829de51775b23d1e00d9b4e2a4f4b240e943423'></a> Source: [docs\standard\garbagecollection\unmanaged.md](https://github.com/dotnet/docs/blob/90fe68f7f3c4b46502b5d3770b1a2d57c6af748a/docs/standard/garbagecollection/unmanaged.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\dotnet-nuget-locals.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/dotnet-nuget-locals.md)
-* Handoff File: [dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
+* Target File: [docs\standard\garbagecollection\unmanaged.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/standard/garbagecollection/unmanaged.md)
+* Handoff File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/3acc90c7fa8c8359222e1596b6a0eb5829b6ef39/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf)
+* Handoff Datetime: 2017-03-03 13:07:43
 * Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-nuget-locals.2796fc0eb1a1c77f3003e6d328212d5ec4c8ffde.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
-* [Back to Top](#report-top)
-
-##### <a name='a55cd932045a59f08146dff367a87eb6fe61f6e586'></a> Source: [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/dotnet-restore.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/dotnet-restore.md)
-* Handoff File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
-* [Back to Top](#report-top)
-
-##### <a name='c816bf4c93430a009e61ddf2a3673c43f49b8de997'></a> Source: [docs\core\tools\telemetry.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/telemetry.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\telemetry.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/telemetry.md)
-* Handoff File: [telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/telemetry.1c2d2f66e2f7ddb65a3162d84b46390eaf6c700e.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
-* [Back to Top](#report-top)
-
-##### <a name='0579d59e8da24428d9e174baf0cc865d62c0819598'></a> Source: [docs\core\tools\using-ci-with-cli.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tools/using-ci-with-cli.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tools\using-ci-with-cli.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tools/using-ci-with-cli.md)
-* Handoff File: [using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/using-ci-with-cli.aeb9bf03ecb439e411bf19a7b3b234950e477308.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
-* [Back to Top](#report-top)
-
-##### <a name='b8505f88b324fcdf3a51d75c455ec5869e058774113'></a> Source: [docs\core\tutorials\using-on-windows-full-solution.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/tutorials/using-on-windows-full-solution.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\tutorials\using-on-windows-full-solution.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/core/tutorials/using-on-windows-full-solution.md)
-* Handoff File: [using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/250fb471c1f51a94c9d13168113e41cd2029c93b/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 14:31:34
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/using-on-windows-full-solution.4787ea721b00689da159f3daa2612266100d4350.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
-* [Back to Top](#report-top)
-
-##### <a name='285e4bfd6a53d576ce4538b09a2561065c93e3993336'></a> Source: [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs/blob/28625def4199a660fe0ea04ab75f4f65d2e0c9c4/docs/standard/base-types/custom-datetime.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\custom-datetime.md](https://github.com/dotnet/docs.pt-br/blob/d2dabfe6b35ff8102fb7d8fa7ba55164108b7d12/docs/standard/base-types/custom-datetime.md)
-* Handoff File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/ed3a242a99c10f09633eb4a4b4a4f8b56fe13e37/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf)
-* Handoff Datetime: 2017-02-23 03:10:47
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf)
-* Handback Datetime: 2017-03-08 13:06:35
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
-* Bilingual File: [custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/3726ccb0f335caa27597838c1a5191d48b81d99c/ol-handback/dotnet/docs.pt-br/master/dotnet-core/custom-datetime.cb0e530143a3a11ad78c6491838b23eb9939f17c.pt-br.xlf)
-* Bilingual Datetime: 2017-03-08 13:08:03
+* Handoff Name: docs_HT_OL#BugFix#20170303T050112
+* Archive File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/4094849047402bd1d2de0303e474e5baedea2d40/ol-archive/dotnet/docs.pt-br/master/dotnet-core/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf)
+* Archive Datetime: 2017-03-03 13:15:29
+* Handback File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf)
+* Handback Datetime: 2017-03-08 21:14:20
+* Handback Name: docs_HT_OL#BugFix#20170303T050112-de-de-es-es-it-it-pt-br-zh-cn-zh-tw
+* Bilingual File: [unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/1ccf652f92921c00fcb997fb2eec5ad3a0d72bba/ol-handback/dotnet/docs.pt-br/master/dotnet-core/unmanaged.bbfd2c5291e4fe5a7a8152017a43aa7a4e3e4b63.pt-br.xlf)
+* Bilingual Datetime: 2017-03-08 21:15:47
 * [Back to Top](#report-top)
 
 
