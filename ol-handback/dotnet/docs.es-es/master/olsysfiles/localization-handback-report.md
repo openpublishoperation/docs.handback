@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/2ad428dcda9ef213a8487c35a48b33929259abba/docs/core/docker/index.md) | InSyncHandedBackSuccess | [Details](#7146e08095260361af1263cf79072476664eee2337)
 
 ## Item Details
+##### <a name='7146e08095260361af1263cf79072476664eee2337'></a> Source: [docs\core\docker\index.md](https://github.com/dotnet/docs/blob/2ad428dcda9ef213a8487c35a48b33929259abba/docs/core/docker/index.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\docker\index.md](https://github.com/dotnet/docs.es-es/blob/eb6def36f1a3039744e13ec30af8d0f10a0fc2e5/docs/core/docker/index.md)
+* Handoff File: [index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/b9bdb4e6c31b52f5fbcec2c299716cb344b0b194/ol-handoff/dotnet/docs.es-es/master/dotnet-core/index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf)
+* Handoff Datetime: 2017-01-21 08:36:49
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#dotnet#20170130T000201
+* Archive File: [index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/e0f44ded90317373829d7259bc77093b1292267b/ol-archive/dotnet/docs.es-es/master/dotnet-core/index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf)
+* Archive Datetime: 2017-01-30 08:14:51
+* Handback File: [index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf](https://github.com/dotnet/docs.handback/blob/d3cc939c435cda944f297c9b1d3c94c8a230c666/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf)
+* Handback Datetime: 2017-03-08 01:23:33
+* Handback Name: docs_HT_OL#dotnet#20170130T000201-de-de-es-es-fr-fr-it-it-pt-br-zh-cn
+* Bilingual File: [index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf](https://github.com/dotnet/docs.handback/blob/ca00f59d2c5ef03177275514412f94505e7bbd2f/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.7e07f39a8d4f9e607f5ed19e92b6620cfd2be93a.es-es.xlf)
+* Bilingual Datetime: 2017-03-03 21:55:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
