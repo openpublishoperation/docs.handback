@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\standard\tour.md](https://github.com/dotnet/docs/blob/48563be13dc07000ced2e6817b3028e6117abd93/docs/standard/tour.md) | HandedOffSuccess | [Details](#ee6ced104137a453267b409fea05716d781ef83f3441)
+ [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/91acc5f36294b02b28ab2f84381c9674b7c98d8d/docs/core/deploying/index.md) | HandedOffSuccess | [Details](#fb04ab4d7996e3213a247527745821aa1aa31f3234)
 
 ## Item Details
-##### <a name='ee6ced104137a453267b409fea05716d781ef83f3441'></a> Source: [docs\standard\tour.md](https://github.com/dotnet/docs/blob/48563be13dc07000ced2e6817b3028e6117abd93/docs/standard/tour.md)
+##### <a name='fb04ab4d7996e3213a247527745821aa1aa31f3234'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/91acc5f36294b02b28ab2f84381c9674b7c98d8d/docs/core/deploying/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/af96cfd12f260c85dc988078ef1244f282ed84fd/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf)
-* Handoff Datetime: 2017-03-08 04:12:43
+* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/e0508adb5fad881e595448a8c6134097241b5d1d/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Handoff Datetime: 2017-03-08 08:14:51
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,11 +21,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\standard\tour.md](https://github.com/dotnet/docs.fr-fr/blob/bcec81dd8113af5fd8e5a1fc4b4f5d7dde9fd9ec/docs/standard/tour.md)
-* Current Handback File: [tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/b2fabbd258d74b0b94ca8d2392d1f82c33b8be83/ol-handback/dotnet/docs.fr-fr/master/ht-p2/tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-25 11:18:21
-* Bilingual File: [tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/b2fabbd258d74b0b94ca8d2392d1f82c33b8be83/ol-handback/dotnet/docs.fr-fr/master/ht-p2/tour.7de9ea039fee03a1997570e541120915ca7437da.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-25 11:50:29
+* Current Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.fr-fr/blob/aa1243debf89f9339bc7a5d4afedbb46799e2ee0/docs/core/deploying/index.md)
+* Current Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/c72c362428971e112ac2e934fc31dcfdc74cf8d0/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Current Handback Datetime: 2017-02-21 16:42:03
+* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/c72c362428971e112ac2e934fc31dcfdc74cf8d0/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Bilingual Datetime: 2017-02-21 16:42:45
 * [Back to Top](#report-top)
 
 
