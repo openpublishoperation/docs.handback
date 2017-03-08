@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\testing\using-mstest-on-windows.md](https://github.com/dotnet/docs/blob/095ebad90e3f0b188d208d22f6f16b9552f8ea86/docs/core/testing/using-mstest-on-windows.md) | InSyncHandedBackSuccess | [Details](#954eaa33198caa220b9979298dfd6224909aef7066)
 
 ## Item Details
+##### <a name='954eaa33198caa220b9979298dfd6224909aef7066'></a> Source: [docs\core\testing\using-mstest-on-windows.md](https://github.com/dotnet/docs/blob/095ebad90e3f0b188d208d22f6f16b9552f8ea86/docs/core/testing/using-mstest-on-windows.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\testing\using-mstest-on-windows.md](https://github.com/dotnet/docs.es-es/blob/0d46f0a4100c006973b9d1d140947ff4f13d0424/docs/core/testing/using-mstest-on-windows.md)
+* Handoff File: [using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/d5bb42ac0a106dff8e1c5b2651412bc9945e21fc/ol-handoff/dotnet/docs.es-es/master/dotnet-core/using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf)
+* Handoff Datetime: 2017-03-06 09:42:39
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#dotnet#20170307T120448
+* Archive File: [using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/19bf6a94ce9938c244b472f1303ebe032fbc3abc/ol-archive/dotnet/docs.es-es/master/dotnet-core/using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf)
+* Archive Datetime: 2017-03-07 20:15:01
+* Handback File: [using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf](https://github.com/dotnet/docs.handback/blob/952d1df29f44407bed31a03e15260e2864cfad40/ol-handback/dotnet/docs.es-es/master/dotnet-core/using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf)
+* Handback Datetime: 2017-03-08 07:54:12
+* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-es-es-fr-fr-ja-jp-ko-kr-pt-br-zh-cn-zh-tw
+* Bilingual File: [using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf](https://github.com/dotnet/docs.handback/blob/952d1df29f44407bed31a03e15260e2864cfad40/ol-handback/dotnet/docs.es-es/master/dotnet-core/using-mstest-on-windows.be87ab01f91967df5135e0aadaef93c5bf6ee893.es-es.xlf)
+* Bilingual Datetime: 2017-03-08 07:56:10
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
