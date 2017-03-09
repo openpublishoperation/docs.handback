@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/7c05b4d23e808d5ceae501b9bfe7d5a783a863ba/docs/core/tools/dotnet-build.md) | HandedOffSuccess | [Details](#48a5b070a80bb1676e663a006edbfb200911c76372)
 
 ## Item Details
+##### <a name='48a5b070a80bb1676e663a006edbfb200911c76372'></a> Source: [docs\core\tools\dotnet-build.md](https://github.com/dotnet/docs/blob/7c05b4d23e808d5ceae501b9bfe7d5a783a863ba/docs/core/tools/dotnet-build.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/bfccb567a565aa01ee52f37bd80361d1c1fb28de/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf)
+* Handoff Datetime: 2017-03-09 18:13:06
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tools\dotnet-build.md](https://github.com/dotnet/docs.zh-cn/blob/67336e7c60cc61ca71c61b1173365769c22a83cd/docs/core/tools/dotnet-build.md)
+* Current Handback File: [dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/d7d3e9506f30e86212a4ee7cdb343833a48a7016/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf)
+* Current Handback Datetime: 2017-02-21 08:51:59
+* Bilingual File: [dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/d7d3e9506f30e86212a4ee7cdb343833a48a7016/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/dotnet-build.49fca737e1e9cf15e960c32f3dee6836c99b8799.zh-cn.xlf)
+* Bilingual Datetime: 2017-02-21 08:54:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
