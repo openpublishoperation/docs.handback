@@ -1,33 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/91acc5f36294b02b28ab2f84381c9674b7c98d8d/docs/core/deploying/index.md) | HandedOffSuccess | [Details](#fb04ab4d7996e3213a247527745821aa1aa31f3234)
 
 ## Item Details
-##### <a name='fb04ab4d7996e3213a247527745821aa1aa31f3234'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/91acc5f36294b02b28ab2f84381c9674b7c98d8d/docs/core/deploying/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f8ce0ddca1e2a94c89ef60e6939f83ada57a230b/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Handoff Datetime: 2017-03-08 08:15:58
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.zh-tw/blob/370b46c41ff4cf4cb4607d9c92c401755e3a697f/docs/core/deploying/index.md)
-* Current Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/63a204b0d3b8a657b40800181d0a0b059c42431c/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Current Handback Datetime: 2017-02-22 02:14:41
-* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/63a204b0d3b8a657b40800181d0a0b059c42431c/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Bilingual Datetime: 2017-02-22 02:15:37
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
