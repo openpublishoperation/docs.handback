@@ -1,11 +1,53 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/29f283db1876a91ccde27690a7b4320f369f160b/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#0c6c92c84966eb576b755a29ff559d4871918e5064)
+ [docs\core\tutorials\using-with-xplat-cli.md](https://github.com/dotnet/docs/blob/29f283db1876a91ccde27690a7b4320f369f160b/docs/core/tutorials/using-with-xplat-cli.md) | HandedOffSuccess | [Details](#db4cfed7e55e875b3f3aaf80b84c8b36b3a01784115)
 
 ## Item Details
+##### <a name='0c6c92c84966eb576b755a29ff559d4871918e5064'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/29f283db1876a91ccde27690a7b4320f369f160b/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/bfa8a83558e04dcedbf5024792602d3fb4c7dcb6/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf)
+* Handoff Datetime: 2017-03-10 08:15:00
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.zh-cn/blob/51d8b2b39371a0b6e9c97ff879316529e87aebad/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/805b8ee432caaaa951bb267e6de81379be76cc6e/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf)
+* Current Handback Datetime: 2017-01-20 10:54:12
+* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/805b8ee432caaaa951bb267e6de81379be76cc6e/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-cn.xlf)
+* Bilingual Datetime: 2017-01-20 10:57:47
+* [Back to Top](#report-top)
+
+##### <a name='db4cfed7e55e875b3f3aaf80b84c8b36b3a01784115'></a> Source: [docs\core\tutorials\using-with-xplat-cli.md](https://github.com/dotnet/docs/blob/29f283db1876a91ccde27690a7b4320f369f160b/docs/core/tutorials/using-with-xplat-cli.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf](https://github.com/dotnet/docs.handoff/blob/bfa8a83558e04dcedbf5024792602d3fb4c7dcb6/ol-handoff/dotnet/docs.zh-cn/master/dotnet-core/using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf)
+* Handoff Datetime: 2017-03-10 08:15:00
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\tutorials\using-with-xplat-cli.md](https://github.com/dotnet/docs.zh-cn/blob/351f4c7077efbabb697e7a27a60df84b799d0097/docs/core/tutorials/using-with-xplat-cli.md)
+* Current Handback File: [using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf)
+* Current Handback Datetime: 2017-02-21 08:37:45
+* Bilingual File: [using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf](https://github.com/dotnet/docs.handback/blob/c392f7cd83b1fddf39561f35727e7f4aebe9ab42/ol-handback/dotnet/docs.zh-cn/master/dotnet-core/using-with-xplat-cli.734363a82b722d7bc2ca1e083484465a54399ccf.zh-cn.xlf)
+* Bilingual Datetime: 2017-02-21 08:39:11
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
