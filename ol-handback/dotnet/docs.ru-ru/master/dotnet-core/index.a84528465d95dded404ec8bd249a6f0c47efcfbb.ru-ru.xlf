@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b5c25fc" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5872201f705c07bf692d0dc7f962068632f6b540</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\migration\index.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1a8b6220634b48f903457109f8354e4dbf515aed</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b5a17d825dd7004db86fc4c3e46ee8af797ef7c8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>.NET Core migration to the csproj format | Microsoft Docs</source>
+          <target state="translated">Перенос проектов .NET Core в формат csproj | Документация Майкрософт</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>.NET Core project.json to csproj migration</source>
+          <target state="translated">Перенос проекта .NET Core project.json в формат csproj</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, .NET Core migration</source>
+          <target state="translated">.NET, .NET Core, перенос .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Migrating .NET Core projects to the .csproj format</source>
+          <target state="translated">Перенос проектов .NET Core в формат .csproj</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This document will cover migration scenarios for .NET Core projects and will go over the following three migration scenarios:</source>
+          <target state="translated">В этом документе рассматриваются сценарии переноса для проектов .NET Core. В частности, три следующие сценарии переноса:</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Migration from a valid latest schema of <bpt id="p2">*</bpt>project.json<ept id="p2">*</ept> to <bpt id="p3">*</bpt>csproj<ept id="p3">*</ept><ept id="p1">](#migration-from-projectjson-to-csproj)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Перенос последней действительной схемы проекта <bpt id="p2">*</bpt>project.json<ept id="p2">*</ept> в формат <bpt id="p3">*</bpt>csproj<ept id="p3">*</ept><ept id="p1">](#migration-from-projectjson-to-csproj)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Migration from DNX to csproj<ept id="p1">](#migration-from-dnx-to-csproj)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Перенос проекта DNX в формат csproj<ept id="p1">](#migration-from-dnx-to-csproj)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Migration from RC3 and previous .NET Core csproj projects to the final format<ept id="p1">](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Перенос проектов RC3 и проектов .NET Core csproj предыдущих версий в окончательный формат<ept id="p1">](#migration-from-earlier-net-core-csproj-formats-to-rtm-csproj)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Migration from project.json to csproj</source>
+          <target state="translated">Перенос проекта project.json в формат csproj</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Migration from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept> can be done using one of the following methods:</source>
+          <target state="translated">Перенос проекта <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> в формат <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept> можно выполнить с помощью одного из следующих методов:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Visual Studio 2017<ept id="p1">](#visual-studio-2017)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Visual Studio 2017<ept id="p1">](#visual-studio-2017)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>dotnet migrate command-line tool<ept id="p1">](#dotnet-migrate)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Команда dotnet migrate<ept id="p1">](#dotnet-migrate)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Both methods use the same underlying engine to migrate the projects, so the results will be the same for both.</source>
+          <target state="translated">В обоих методах используется один и тот же базовый механизм переноса, поэтому результаты будут одинаковыми.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In most cases, using one of these two ways to migrate the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept> is the only thing that is needed and no further manual editing of the project file is necessary.</source>
+          <target state="translated">В большинстве случаев достаточно использовать один из методов переноса проекта <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> в формат <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept>. Никакого дальнейшего редактирования файла проекта вручную не требуется.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The resulting <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> file will be named the same as the containing directory name.</source>
+          <target state="translated">Имя полученного файла <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> будет совпадать с именем каталога, в котором находится проект.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Visual Studio 2017</source>
+          <target state="translated">Visual Studio 2017</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>When you open a <bpt id="p1">*</bpt>.xproj<ept id="p1">*</ept> file or a solution file which references <bpt id="p2">*</bpt>.xproj<ept id="p2">*</ept> files, the <bpt id="p3">**</bpt>One-way upgrade<ept id="p3">**</ept> dialog appears.</source>
+          <target state="translated">При открытии файла <bpt id="p1">*</bpt>.xproj<ept id="p1">*</ept> или файла решения, который ссылается на файлы <bpt id="p2">*</bpt>.xproj<ept id="p2">*</ept>, появится диалоговое окно <bpt id="p3">**</bpt>Одностороннее обновление<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The dialog displays the projects to be migrated.</source>
+          <target state="translated">В диалоговом окне отображаются проекты для переноса.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you open a solution file, all the projects specified in the solution file will be listed.</source>
+          <target state="translated">Если открыть файл решения, будут показаны все проекты, содержащиеся в файле решения.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Review the list of projects to be migrated and select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Просмотрите список проектов для переноса и нажмите кнопку <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>One-way upgrade dialog showing the list of projects to be migrated</source>
+          <target state="translated">Диалоговое окно "Одностороннее обновление" со списком проектов для переноса</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Visual Studio will migrate the projects chosen automatically.</source>
+          <target state="translated">Visual Studio выполнит перенос для выбранных проектов автоматически.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When migrating a solution, if you don't choose all projects, the same dialog will appear asking you to upgrade the remaining projects from that solution.</source>
+          <target state="translated">Если при переносе решений не выбрать все проекты, откроется то же диалоговое окно с предложением обновить остальные проекты для этого решения.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Files that were migrated (<bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, <bpt id="p2">*</bpt>global.json<ept id="p2">*</ept>, <bpt id="p3">*</bpt>.xproj<ept id="p3">*</ept> and solution file) will be moved to a <bpt id="p4">*</bpt>Backup<ept id="p4">*</ept> folder.</source>
+          <target state="translated">Перенесенные файлы (<bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, <bpt id="p2">*</bpt>global.json<ept id="p2">*</ept>, <bpt id="p3">*</bpt>.xproj<ept id="p3">*</ept> и файл решения) будут перемещены в папку <bpt id="p4">*</bpt>Backup<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The solution file that is migrated will be upgraded to Visual Studio 2017 and you won't be able to open that solution file in previous versions of Visual Studio.</source>
+          <target state="translated">Перенесенный файл решения будет обновлен до Visual Studio 2017, и вы не сможете открыть этот файл решения в предыдущих версиях Visual Studio.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>A file named <bpt id="p1">*</bpt>UpgradeLog.htm<ept id="p1">*</ept> is also saved and automatically opened that contains a migration report.</source>
+          <target state="translated">Также будет сохранен и автоматически открыт файл <bpt id="p1">*</bpt>UpgradeLog.htm<ept id="p1">*</ept>, содержащий отчет о переносе.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The new tooling is not available in Visual Studio 2015, so you cannot migrate your projects using that version of Visual Studio.</source>
+          <target state="translated">Новые средства недоступны в Visual Studio 2015, поэтому вы не сможете выполнить перенос проектов с помощью этой версии Visual Studio.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>dotnet migrate</source>
+          <target state="translated">dotnet migrate</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the command-line scenario, you can use the <bpt id="p1">[</bpt><ph id="ph1">`dotnet migrate`</ph><ept id="p1">](../tools/dotnet-migrate.md)</ept> command.</source>
+          <target state="translated">В сценарии для командной строки можно использовать команду <bpt id="p1">[</bpt><ph id="ph1">`dotnet migrate`</ph><ept id="p1">](../tools/dotnet-migrate.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It will migrate a project, a solution or a set of folders in that order, depending on which ones were found.</source>
+          <target state="translated">Она переносит проект, решение или набор папок в указанном порядке, в зависимости от того, какие объекты были найдены.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When you migrate a project, the project and all its dependencies are migrated.</source>
+          <target state="translated">При переносе проекта переносятся сам проект и его зависимости.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Files that were migrated (<bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, <bpt id="p2">*</bpt>global.json<ept id="p2">*</ept> and <bpt id="p3">*</bpt>.xproj<ept id="p3">*</ept>) will be moved to a <bpt id="p4">*</bpt>backup<ept id="p4">*</ept> folder.</source>
+          <target state="translated">Перенесенные файлы (<bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, <bpt id="p2">*</bpt>global.json<ept id="p2">*</ept> и <bpt id="p3">*</bpt>.xproj<ept id="p3">*</ept>) будут перемещены в папку <bpt id="p4">*</bpt>backup<ept id="p4">*</ept>.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If you are using VS Code, the <ph id="ph1">`dotnet migrate`</ph> command will not modify VS Code-specific files such as <ph id="ph2">`tasks.json`</ph>.</source>
+          <target state="translated">Если вы используете VS Code, команда <ph id="ph1">`dotnet migrate`</ph> не будет изменять файлы, связанные с VS Code, такие как <ph id="ph2">`tasks.json`</ph>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>These files need to be changed manually.</source>
+          <target state="translated">Эти файлы нужно будет изменить вручную.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>This is also true if you are using Project Ryder or any editor or Integrated Development Environment (IDE) other than Visual Studio.</source>
+          <target state="translated">Это также справедливо, если используется проект Райдер, другой редактор или интегрированная среда разработки (IDE), отличные от Visual Studio.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Common issues</source>
+          <target state="translated">Распространенные проблемы</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If you get an error: “No executable found matching command dotnet-migrate":</source>
+          <target state="translated">Если вы получили сообщение ошибки: "Исполняемый файл, соответствующий команде dotnet-migrate, не найден", выполните следующие действия:</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Run <ph id="ph1">`dotnet --version`</ph> to see which version you are using.</source>
+          <target state="translated">Выполните команду <ph id="ph1">`dotnet --version`</ph>, чтобы просмотреть используемую версию интерфейса.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt><ph id="ph1">`dotnet migrate`</ph><ept id="p1">](../tools/dotnet-migrate.md)</ept> requires .NET Core CLI RC3 or higher.</source>
+          <target state="translated"><bpt id="p1">[</bpt><ph id="ph1">`dotnet migrate`</ph><ept id="p1">](../tools/dotnet-migrate.md)</ept> требует использования интерфейса командной строки .NET Core версии RC3 или более поздней версии.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You’ll get this error if you have a <bpt id="p1">*</bpt>global.json<ept id="p1">*</ept> file in the current or parent directory and the <ph id="ph1">`sdk`</ph> version is set to an older version.</source>
+          <target state="translated">Вы также получите эту ошибку, если в текущем или родительском каталоге есть файл <bpt id="p1">*</bpt>global.json<ept id="p1">*</ept> и версия <ph id="ph1">`sdk`</ph> установлена в более раннюю.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Migration from DNX to csproj</source>
+          <target state="translated">Перенос проекта DNX в формат csproj</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If you are still using DNX for .NET Core development, your migration process should be done in two stages:</source>
+          <target state="translated">Если все еще используете DNX для разработки .NET Core, перенос необходимо выполнять в два этапа:</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Use the <bpt id="p1">[</bpt>existing DNX migration guidance<ept id="p1">](from-dnx.md)</ept> to migrate from DNX to project-json enabled CLI.</source>
+          <target state="translated">Используйте <bpt id="p1">[</bpt>существующие руководства по переносу DNX<ept id="p1">](from-dnx.md)</ept> для переноса проекта из DNX в проект project-json с активированным интерфейсом командной строки.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Follow the steps from the previous section to migrate from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept>.</source>
+          <target state="translated">Выполните действия, описанные в предыдущем разделе, для переноса проекта из формата <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> в формат <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>DNX has become officially deprecated during the Preview 1 release of the .NET Core CLI.</source>
+          <target state="translated">Формат DNX официально признан устаревшим при выпуске предварительной версии 1 интерфейса командной строки .NET Core.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Migration from earlier .NET Core csproj formats to RTM csproj</source>
+          <target state="translated">Перенос из более ранних форматов csproj NET Core в формат csproj RTM</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The .NET Core csproj format has been changing and evolving with each new pre-release version of the tooling.</source>
+          <target state="translated">Формат csproj .NET Core изменяется и развивается с выпуском каждой новой предварительной версии инструментов.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>There is no tool that will migrate your project file from earlier versions of csproj to the latest, so you need to manually edit the project file.</source>
+          <target state="translated">Инструмента, с помощью которого можно перенести файл проекта из ранних версий csproj до последней версии, не существует, поэтому вам придется вручную изменить файл проекта.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The actual steps depend on the version of the project file you are migrating.</source>
+          <target state="translated">Фактические действия зависят от версии файла проекта, который вы переносите.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The following is some guidance to consider based on the changes that happened between versions:</source>
+          <target state="translated">Вот некоторые рекомендации, которые следует учитывать. Они основаны на изменениях, произошедших между версиями:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Remove the tools version property from the <ph id="ph1">`&lt;Project&gt;`</ph> element, if it exists.</source>
+          <target state="translated">Удалите свойство версии инструмента из элемента <ph id="ph1">`&lt;Project&gt;`</ph>, если оно задано.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Remove the XML namespace (<ph id="ph1">`xmlns`</ph>) from the <ph id="ph2">`&lt;Project&gt;`</ph> element.</source>
+          <target state="translated">Удалите пространство имен XML (<ph id="ph1">`xmlns`</ph>) из элемента <ph id="ph2">`&lt;Project&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>If it doesn't exist, add the <ph id="ph1">`Sdk`</ph> attribute to the <ph id="ph2">`&lt;Project&gt;`</ph> element and set it to <ph id="ph3">`Microsoft.NET.Sdk`</ph> or <ph id="ph4">`Microsoft.NET.Sdk.Web`</ph>.</source>
+          <target state="translated">Если атрибут <ph id="ph1">`Sdk`</ph> не существует, добавьте этот атрибут к элементу <ph id="ph2">`&lt;Project&gt;`</ph> и установите значение атрибута в <ph id="ph3">`Microsoft.NET.Sdk`</ph> или <ph id="ph4">`Microsoft.NET.Sdk.Web`</ph>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>This attribute specifies that the project uses the SDK to be used.</source>
+          <target state="translated">Этот атрибут означает, что в проекте используется указанный пакет SDK.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Microsoft.NET.Sdk.Web`</ph> is used for web apps.</source>
+          <target state="translated"><ph id="ph1">`Microsoft.NET.Sdk.Web`</ph> используется для веб-приложений.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Remove the <ph id="ph1">`&lt;Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" /&gt;`</ph> and <ph id="ph2">`&lt;Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /&gt;`</ph> statements from the top and bottom of the project.</source>
+          <target state="translated">Удалите инструкции <ph id="ph1">`&lt;Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" /&gt;`</ph> и <ph id="ph2">`&lt;Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" /&gt;`</ph> в верхней и нижней частях проекта.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>These import statements are implied by the SDK, so there is no need for them to be in the project.</source>
+          <target state="translated">Эти инструкции импорта выполняются пакетом SDK, поэтому включать их в проект не нужно.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If you have <ph id="ph1">`Microsoft.NETCore.App`</ph> or <ph id="ph2">`NETStandard.Library`</ph> <ph id="ph3">`&lt;PackageReference&gt;`</ph> items in your project, you should remove them.</source>
+          <target state="translated">Если в проекте есть элементы <ph id="ph1">`Microsoft.NETCore.App`</ph> или <ph id="ph2">`NETStandard.Library`</ph> <ph id="ph3">`&lt;PackageReference&gt;`</ph>, их следует удалить.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>These package references are <bpt id="p1">[</bpt>implied by the SDK<ept id="p1">](https://aka.ms/sdkimplicitrefs)</ept>.</source>
+          <target state="translated">Эти ссылки на пакет <bpt id="p1">[</bpt>содержатся в пакете SDK<ept id="p1">](https://aka.ms/sdkimplicitrefs)</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Remove the <ph id="ph1">`Microsoft.NET.Sdk`</ph> <ph id="ph2">`&lt;PackageReference&gt;`</ph> element, if it exists.</source>
+          <target state="translated">Удалите элемент <ph id="ph1">`Microsoft.NET.Sdk`</ph> <ph id="ph2">`&lt;PackageReference&gt;`</ph>, если он существует.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The SDK reference comes through the <ph id="ph1">`Sdk`</ph> attribute on the <ph id="ph2">`&lt;Project&gt;`</ph> element.</source>
+          <target state="translated">Пакет SDK ссылается на атрибут <ph id="ph1">`Sdk`</ph> элемента <ph id="ph2">`&lt;Project&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Remove the globs that are <bpt id="p1">[</bpt>implied by the SDK<ept id="p1">](https://aka.ms/sdkimplicititems)</ept>.</source>
+          <target state="translated">Удалите объекты glob, так как они <bpt id="p1">[</bpt>содержатся в пакете SDK<ept id="p1">](https://aka.ms/sdkimplicititems)</ept>.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Leaving these globs in your project will cause an error on build because compile items will be duplicated.</source>
+          <target state="translated">Если оставить эти объекты glob в проекте, это приведет к ошибке сборки из-за дублирования элементов компиляции.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>After these steps your project should be fully compatible with the RTM .NET Core csproj format.</source>
+          <target state="translated">После выполнения этих действий ваш проект должен быть полностью совместим с форматом csproj RTM .NET Core.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For examples of before and after the migration from old csproj format to the new one, see the <bpt id="p1">[</bpt>Updating Visual Studio 2017 RC – .NET Core Tooling improvements<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/)</ept> article on the .NET blog.</source>
+          <target state="translated">Примеры проектов до и после перехода от старого формата csproj к новому см. в статье <bpt id="p1">[</bpt>Обновление версии-кандидата Visual Studio 2017 — улучшение инструментов .NET Core<ept id="p1">](https://blogs.msdn.microsoft.com/dotnet/2016/12/12/updating-visual-studio-2017-rc-net-core-tooling-improvements/)</ept> в блоге .NET.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
