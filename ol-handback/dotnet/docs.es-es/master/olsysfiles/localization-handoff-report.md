@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tools\csproj.md](https://github.com/dotnet/docs/blob/4a48b322050b092f792402da8a59a169e980c596/docs/core/tools/csproj.md) | HandedOffSuccess | [Details](#1e68562ddf5842e4caa182029ee3fb5333a64bb768)
+ [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/fd4a7f823828f1d7074cdef3ad98a9f341c88051/docs/core/tutorials/index.md) | HandedOffSuccess | [Details](#f12d60a44bc004920ba72c58eeea2795429401fb101)
 
 ## Item Details
-##### <a name='1e68562ddf5842e4caa182029ee3fb5333a64bb768'></a> Source: [docs\core\tools\csproj.md](https://github.com/dotnet/docs/blob/4a48b322050b092f792402da8a59a169e980c596/docs/core/tools/csproj.md)
+##### <a name='f12d60a44bc004920ba72c58eeea2795429401fb101'></a> Source: [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/fd4a7f823828f1d7074cdef3ad98a9f341c88051/docs/core/tutorials/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [csproj.329b52e181ce1289e29cc9679291ff8afb73dfc0.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/5d2162f9fa570b7214f8972d9992d9550abe3580/ol-handoff/dotnet/docs.es-es/master/dotnet-core/csproj.329b52e181ce1289e29cc9679291ff8afb73dfc0.es-es.xlf)
-* Handoff Datetime: 2017-03-10 20:16:59
+* Handoff File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf](https://github.com/dotnet/docs.handoff/blob/68bf784bd226839900a73133f50e34123e41b231/ol-handoff/dotnet/docs.es-es/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf)
+* Handoff Datetime: 2017-03-11 02:16:52
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,6 +21,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
+* Current Target File: [docs\core\tutorials\index.md](https://github.com/dotnet/docs.es-es/blob/bd8d90a9b53906d6cd039b0dc38caeabb92b1881/docs/core/tutorials/index.md)
+* Current Handback File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf](https://github.com/dotnet/docs.handback/blob/98d161164fef3091491bbbf748f786e5909dc555/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf)
+* Current Handback Datetime: 2017-03-10 14:45:01
+* Bilingual File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf](https://github.com/dotnet/docs.handback/blob/98d161164fef3091491bbbf748f786e5909dc555/ol-handback/dotnet/docs.es-es/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.es-es.xlf)
+* Bilingual Datetime: 2017-03-10 14:46:36
 * [Back to Top](#report-top)
 
 
