@@ -6,26 +6,26 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/fd4a7f823828f1d7074cdef3ad98a9f341c88051/docs/core/tutorials/index.md) | HandedOffSuccess | [Details](#f12d60a44bc004920ba72c58eeea2795429401fb101)
+ [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/505d21354ef540cd17d9837589ed7b76ed5b3868/docs/core/tutorials/using-on-macos.md) | ArchivedSuccess | [Details](#976bc3196bec0cdc0a1b2d051bc082edc0e0c1a1112)
 
 ## Item Details
-##### <a name='f12d60a44bc004920ba72c58eeea2795429401fb101'></a> Source: [docs\core\tutorials\index.md](https://github.com/dotnet/docs/blob/fd4a7f823828f1d7074cdef3ad98a9f341c88051/docs/core/tutorials/index.md)
-* Status: HandedOffSuccess
+##### <a name='976bc3196bec0cdc0a1b2d051bc082edc0e0c1a1112'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/505d21354ef540cd17d9837589ed7b76ed5b3868/docs/core/tutorials/using-on-macos.md)
+* Status: ArchivedSuccess
 * Target File: 
-* Handoff File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/7f16460985a093e266be42a008617b48c7eed60d/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf)
-* Handoff Datetime: 2017-03-11 02:17:26
+* Handoff File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/be18978a700f500ecc3ec921d1fa3b8b050d3396/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf)
+* Handoff Datetime: 2017-03-11 18:17:46
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
+* Archive File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/1f67fe3e25fbc4b43d7c40304f0a1103acd08e7b/ol-archive/dotnet/docs.zh-tw/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf)
+* Archive Datetime: 2017-03-11 18:17:47
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\tutorials\index.md](https://github.com/dotnet/docs.zh-tw/blob/b6daac07404ff8faf092ac5db2c506d0f2b0f6a5/docs/core/tutorials/index.md)
-* Current Handback File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/88b60267a0e5748de5a6f03696991c9556c647f4/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf)
-* Current Handback Datetime: 2017-03-10 04:25:26
-* Bilingual File: [index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/88b60267a0e5748de5a6f03696991c9556c647f4/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.71dad99a3d8a9a5457c33f8b214681ce0bb0e302.zh-tw.xlf)
-* Bilingual Datetime: 2017-03-10 04:26:18
+* Current Target File: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs.zh-tw/blob/5b2ac2d4ae8f3d21427802e31d408c00b3ff8c1e/docs/core/tutorials/using-on-macos.md)
+* Current Handback File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/e7093bcbbe4e0944f019e99dc5baba7284f752b9/ol-handback/dotnet/docs.zh-tw/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf)
+* Current Handback Datetime: 2016-12-09 21:27:00
+* Bilingual File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/e7093bcbbe4e0944f019e99dc5baba7284f752b9/ol-handback/dotnet/docs.zh-tw/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.zh-tw.xlf)
+* Bilingual Datetime: 2016-12-09 21:31:01
 * [Back to Top](#report-top)
 
 
