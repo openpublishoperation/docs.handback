@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b5c25fc" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">beaae03add6f90692189325c0e1cff5ab761abb5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\project-json-to-csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">903208aeebd0af4c5fb9a91e202fb6b6f6850599</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">313ee5e727767a0daeac6af79542c80b5521a6e8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>project.json and csproj comparison - .NET Core | Microsoft Docs</source>
+          <target state="translated">project.json 與 csproj 的比較 - .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>See a mapping between project.json and csproj elements.</source>
+          <target state="translated">查看 project.json 與 csproj 項目的對應。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>project.json, csproj, .NET Core, MSBuild</source>
+          <target state="translated">project.json, csproj, .NET Core, MSBuild</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A mapping between project.json and csproj properties</source>
+          <target state="translated">project.json 與 csproj 屬性的對應</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>By <bpt id="p1">[</bpt>Nate McMaster<ept id="p1">](http://github.com/natemcmaster)</ept></source>
+          <target state="translated">作者：<bpt id="p1">[</bpt>Nate McMaster<ept id="p1">](http://github.com/natemcmaster)</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>During the development of the .NET Core tooling, an important design change was made to no longer support <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> files and instead move the .NET Core projects to the MSBuild/csproj format.</source>
+          <target state="translated">在 .NET Core 工具開發期間，有項重要的設計變更導致不再支援 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 檔案，相反地，.NET Core 專案會改為使用 MSBuild/csproj 格式。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how the settings in <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> are represented in the MSBuild/csproj format so you can learn how to use the new format and understand the changes made by the migration tools when you're upgrading your project to the latest version of the tooling.</source>
+          <target state="translated">本文說明如何以 MSBuild/csproj 格式表示 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 中的設定，讓您了解如何使用此新的格式，並了解將專案升級至最新版的工具時，移轉工具所做的變更。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The csproj format</source>
+          <target state="translated">csproj 格式</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The new format, <ph id="ph1">\*</ph>.csproj, is an XML-based format.</source>
+          <target state="translated">新格式 <ph id="ph1">\*</ph>.csproj 是以 XML 為基礎的格式。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following example shows the root node of a .NET Core project using the <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</source>
+          <target state="translated">下列範例顯示使用 <ph id="ph1">`Microsoft.NET.Sdk`</ph> 之 .NET Core 專案的根節點。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For web projects, the SDK used is <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph>.</source>
+          <target state="translated">若是 Web 專案，所使用的 SDK 會是 <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph>。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Common top-level properties</source>
+          <target state="translated">常見的最上層屬性</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">name</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>No longer supported.</source>
+          <target state="translated">不再受支援。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In csproj, this is determined by the project filename, which is defined by the directory name.</source>
+          <target state="translated">在 csproj 中，這是由目錄名稱所定義的專案檔名所決定。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`MyProjectName.csproj`</ph>.</source>
+          <target state="translated">例如，<ph id="ph1">`MyProjectName.csproj`</ph>。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the project filename also specifies the value of the <ph id="ph1">`&lt;AssemblyName&gt;`</ph> and <ph id="ph2">`&lt;PackageId&gt;`</ph> properties.</source>
+          <target state="translated">根據預設，專案檔名也會指定 <ph id="ph1">`&lt;AssemblyName&gt;`</ph> 和 <ph id="ph2">`&lt;PackageId&gt;`</ph> 屬性的值。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;AssemblyName&gt;`</ph> will have a different value then <ph id="ph2">`&lt;PackageId&gt;`</ph> if <ph id="ph3">`buildOptions\outputName`</ph> property was defined in project.json.</source>
+          <target state="translated">如果 <ph id="ph3">`buildOptions\outputName`</ph> 屬性定義於 project.json，則 <ph id="ph1">`&lt;AssemblyName&gt;`</ph> 會有與 <ph id="ph2">`&lt;PackageId&gt;`</ph> 不同的值。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Other common build options<ept id="p1">](#other-common-build-options)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱<bpt id="p1">[</bpt>其他常見的建置選項<ept id="p1">](#other-common-build-options)</ept>。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">version</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`VersionPrefix`</ph> and <ph id="ph2">`VersionSuffix`</ph> properties:</source>
+          <target state="translated">使用 <ph id="ph1">`VersionPrefix`</ph> 和 <ph id="ph2">`VersionSuffix`</ph> 屬性：</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also use the <ph id="ph1">`Version`</ph> property, but this may override version settings during packaging:</source>
+          <target state="translated">您也可以使用 <ph id="ph1">`Version`</ph> 屬性，但此屬性可能會在封裝期間覆寫版本設定：</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Other common root-level options</source>
+          <target state="translated">其他常見的根層級選項</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>frameworks</source>
+          <target state="translated">frameworks</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>One target framework</source>
+          <target state="translated">一個目標架構</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Multiple target frameworks</source>
+          <target state="translated">多個目標架構</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`TargetFrameworks`</ph> property to define your list of target frameworks.</source>
+          <target state="translated">使用 <ph id="ph1">`TargetFrameworks`</ph> 屬性，定義您的目標架構清單。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Use semi-colon to separate multiple framework values.</source>
+          <target state="translated">使用分號來分隔多個架構值。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">相依性</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the dependency is a <bpt id="p1">**</bpt>project<ept id="p1">**</ept> and not a package, the format is different.</source>
+          <target state="translated">如果相依性是<bpt id="p1">**</bpt>專案<ept id="p1">**</ept>而不是套件，則格式會不同。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>dependency type<ept id="p1">](#dependency-type)</ept> section.</source>
+          <target state="translated">如需詳細資訊，請參閱<bpt id="p1">[</bpt>相依性類型<ept id="p1">](#dependency-type)</ept>一節。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>NETStandard.Library metapackage</source>
+          <target state="translated">NETStandard.Library 中繼套件</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Microsoft.NETCore.App metapackage</source>
+          <target state="translated">Microsoft.NETCore.App 中繼套件</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Note that the <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> value in the migrated project is determined by the version of the SDK you have installed.</source>
+          <target state="translated">請注意，移轉專案中的 <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> 值取決於您已安裝的 SDK 版本。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Top-level dependencies</source>
+          <target state="translated">最上層相依性</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Per-framework dependencies</source>
+          <target state="translated">每個架構相依性</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>imports</source>
+          <target state="translated">匯入</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>dependency type</source>
+          <target state="translated">相依性類型</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>type: project</source>
+          <target state="translated">類型︰專案</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This will break the way that <ph id="ph1">`dotnet pack --version-suffix $suffix`</ph> determines the dependency version of a project reference.</source>
+          <target state="translated">這會破壞 <ph id="ph1">`dotnet pack --version-suffix $suffix`</ph> 判斷專案參考之相依性版本的方式。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>type: build</source>
+          <target state="translated">類型︰組建</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>type: platform</source>
+          <target state="translated">類型：平台</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>There is no equivalent in csproj.</source>
+          <target state="translated">csproj 中沒有對應項。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>runtimes</source>
+          <target state="translated">runtimes</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Standalone apps (self-contained deployment)</source>
+          <target state="translated">獨立應用程式 (獨立性部署)</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In project.json, defining a <ph id="ph1">`runtimes`</ph> section means the app was standalone during build and publish.</source>
+          <target state="translated">在 project.json 中，定義 <ph id="ph1">`runtimes`</ph> 區段表示應用程式在建置和發行期間是獨立的。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In MSBuild, all projects are <bpt id="p1">*</bpt>portable<ept id="p1">*</ept> during build, but can be published as standalone.</source>
+          <target state="translated">在 MSBuild 中，所有專案在建置期間都是「可攜式」，但可發行為獨立專案。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Self-contained deployments (SCD)<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱<bpt id="p1">[</bpt>獨立性部署 (SCD)<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept>。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>tools</source>
+          <target state="translated">工具</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`imports`</ph> on tools are not supported in csproj.</source>
+          <target state="translated">在 csproj 中不支援對工具進行 <ph id="ph1">`imports`</ph>。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Tools that need imports will not work with the new <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</source>
+          <target state="translated">需要 imports 的工具將無法搭配新的 <ph id="ph1">`Microsoft.NET.Sdk`</ph> 使用。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>buildOptions</source>
+          <target state="translated">buildOptions</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>See also <bpt id="p1">[</bpt>Files<ept id="p1">](#files)</ept>.</source>
+          <target state="translated">另請參閱<bpt id="p1">[</bpt>檔案<ept id="p1">](#files)</ept>。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>emitEntryPoint</source>
+          <target state="translated">emitEntryPoint</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`emitEntryPoint`</ph> was <ph id="ph2">`false`</ph>, the value of <ph id="ph3">`OutputType`</ph> is converted to <ph id="ph4">`Library`</ph>, which is the default value:</source>
+          <target state="translated">如果 <ph id="ph1">`emitEntryPoint`</ph> 為 <ph id="ph2">`false`</ph>，則 <ph id="ph3">`OutputType`</ph> 的值會轉換成預設值 <ph id="ph4">`Library`</ph>：</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>keyFile</source>
+          <target state="translated">keyFile</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`keyFile`</ph> element expands to three properties in MSBuild:</source>
+          <target state="translated"><ph id="ph1">`keyFile`</ph> 項目在 MSBuild 中已擴充成三個屬性：</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Other common build options</source>
+          <target state="translated">其他常見的建置選項</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>packOptions</source>
+          <target state="translated">packOptions</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>See also <bpt id="p1">[</bpt>Files<ept id="p1">](#files)</ept>.</source>
+          <target state="translated">另請參閱<bpt id="p1">[</bpt>檔案<ept id="p1">](#files)</ept>。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Common pack options</source>
+          <target state="translated">常見的封裝選項</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>There is no equivalent for the <ph id="ph1">`owners`</ph> element in MSBuild.</source>
+          <target state="translated">MSBuild 中的 <ph id="ph1">`owners`</ph> 項目沒有對應項。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For <ph id="ph1">`summary`</ph>, you can use the MSBuild <ph id="ph2">`&lt;Description&gt;`</ph> property, even though the value of <ph id="ph3">`summary`</ph> is not migrated automatically to that property, since that property is mapped to the <bpt id="p1">[</bpt><ph id="ph4">`description`</ph><ept id="p1">](#-other-common-root-level-options)</ept> element.</source>
+          <target state="translated">對於 <ph id="ph1">`summary`</ph>，您可以使用 MSBuild <ph id="ph2">`&lt;Description&gt;`</ph> 屬性，即使 <ph id="ph3">`summary`</ph> 的值不會自動移轉至該屬性亦然，因為該屬性會對應至 <bpt id="p1">[</bpt><ph id="ph4">`description`</ph><ept id="p1">](#-other-common-root-level-options)</ept> 項目。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>scripts</source>
+          <target state="translated">指令碼</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Their equivalent in MSBuild are <bpt id="p1">[</bpt>targets<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept>:</source>
+          <target state="translated">其在 MSBuild 中的對應項是 <bpt id="p1">[</bpt>targets<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept>：</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>runtimeOptions</source>
+          <target state="translated">runtimeOptions</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>All settings in this group, except for the "System.GC.Server" property, are placed into a file called <bpt id="p1">*</bpt>runtimeconfig.template.json<ept id="p1">*</ept> in the project folder, with options lifted to the root object during the migration process:</source>
+          <target state="translated">除了 "System.GC.Server" 屬性，此群組中的所有其他設定都會放置在專案資料夾中名為 <bpt id="p1">*</bpt>runtimeconfig.template.json<ept id="p1">*</ept> 的檔案，其選項會在移轉程序期間上移至根物件：</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The "System.GC.Server" property is migrated into the csproj file:</source>
+          <target state="translated">"System.GC.Server" 屬性會移轉至 csproj 檔案：</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>However, you can set all those values in the csproj as well as MSBuild properties:</source>
+          <target state="translated">不過，您可以在 csproj as 中設定上述所有值及 MSBuild 屬性：</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>shared</source>
+          <target state="translated">共用</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Not supported in csproj.</source>
+          <target state="translated">在 csproj 中不支援。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You must instead create include content files in your <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file.</source>
+          <target state="translated">您必須改為在 <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> 檔案中建立包含內容檔。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Including content files<ept id="p1">](https://docs.microsoft.com/nuget/schema/nuspec#including-content-files)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱<bpt id="p1">[</bpt>包含內容檔<ept id="p1">](https://docs.microsoft.com/nuget/schema/nuspec#including-content-files)</ept>。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>files</source>
+          <target state="translated">個檔案</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, build and pack could be extended to compile and embed from different folders.</source>
+          <target state="translated">在 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 中，可擴充組建和套件以從其他資料夾進行編譯和內嵌。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In MSBuild, this is done using <bpt id="p1">[</bpt>items<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)</ept>.</source>
+          <target state="translated">在 MSBuild 中，這會使用<bpt id="p1">[</bpt>目<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)</ept>來完成。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The following example is a common conversion:</source>
+          <target state="translated">以下是常見慣例範例：</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Many of default globbing patterns are added automatically by the .NET Core SDK.</source>
+          <target state="translated">.NET Core SDK 會自動新增許多預設萬用字元模式。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Default Compile Item Values<ept id="p1">](https://aka.ms/sdkimplicititems)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱 <bpt id="p1">[</bpt>Default Compile Item Values<ept id="p1">](https://aka.ms/sdkimplicititems)</ept> (預設編譯項目值)。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>All MSBuild <ph id="ph1">`ItemGroup`</ph> elements support <ph id="ph2">`Include`</ph>, <ph id="ph3">`Exclude`</ph>, and <ph id="ph4">`Remove`</ph>.</source>
+          <target state="translated">所有 MSBuild <ph id="ph1">`ItemGroup`</ph> 項目都支援 <ph id="ph2">`Include`</ph>、<ph id="ph3">`Exclude`</ph> 和 <ph id="ph4">`Remove`</ph>。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Package layout inside the .nupkg can be modified with <ph id="ph1">`PackagePath="path"`</ph>.</source>
+          <target state="translated">您可以使用 <ph id="ph1">`PackagePath="path"`</ph> 修改 .nupkg 內的套件配置。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Except for <ph id="ph1">`Content`</ph>, most item groups require explicitly adding <ph id="ph2">`Pack="true"`</ph> to be included in the package.</source>
+          <target state="translated">除了 <ph id="ph1">`Content`</ph>，大多數項目群組都需要明確地新增 <ph id="ph2">`Pack="true"`</ph>，以包含在套件中。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Content`</ph> will be put in the <bpt id="p1">*</bpt>content<ept id="p1">*</ept> folder in a package since the MSBuild <ph id="ph2">`&lt;IncludeContentInPack&gt;`</ph> property is set to <ph id="ph3">`true`</ph> by default.</source>
+          <target state="translated">因為 MSBuild <ph id="ph2">`&lt;IncludeContentInPack&gt;`</ph> 屬性預設會設定為 <ph id="ph3">`true`</ph>，所以會將 <ph id="ph1">`Content`</ph> 放在套件的 <bpt id="p1">*</bpt>content<ept id="p1">*</ept> 資料夾中。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Including content in a package<ept id="p1">](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱 <bpt id="p1">[</bpt>Including content in a package<ept id="p1">](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package)</ept> (在套件中包含內容)。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PackagePath="%(Identity)"`</ph> is a short way of setting package path to the project-relative file path.</source>
+          <target state="translated"><ph id="ph1">`PackagePath="%(Identity)"`</ph> 是將套件路徑設定為專案相關檔案路徑的捷徑。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>testRunner</source>
+          <target state="translated">testRunner</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>xUnit</source>
+          <target state="translated">xUnit</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>MSTest</source>
+          <target state="translated">MSTest</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>project.json reference<ept id="p1">](project-json.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>project.json 參考<ept id="p1">](project-json.md)</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>High-level overview of changes in CLI<ept id="p1">](../tools/cli-msbuild-architecture.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>CLI 中變更的高階概觀<ept id="p1">](../tools/cli-msbuild-architecture.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-0ca64c3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\netcore-hosting.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e542b525b8245c7b60beb5f2bf0ec4ec1f8be20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f82402e2298ea66394108d5b3488949b76dad04d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core | Microsoft Docs</source>
+          <target state="translated">裝載 .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime from native code</source>
+          <target state="translated">從機器碼裝載 .NET Core 執行階段</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, Hosting, Hosting .NET Core</source>
+          <target state="translated">.NET, .NET Core, 裝載, 裝載 .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core</source>
+          <target state="translated">裝載 .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Like all managed code, .NET Core applications are executed by a host.</source>
+          <target state="translated">如同所有 Managed 程式碼，.NET Core 應用程式是由主機執行。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.</source>
+          <target state="translated">該主機會負責啟動執行階段 (包括 JIT 和記憶體回收行程等元件)、建立 AppDomain 及叫用 Managed 進入點。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario and, in most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications.</source>
+          <target state="translated">裝載 .NET Core 執行階段是進階案例，在大多數情況下，由於 .NET Core 建置程序會提供預設主機來執行 .NET Core 應用程式，因此 .NET Core 開發人員不需要擔心裝載相關事宜。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.</source>
+          <target state="translated">不過在某些特殊情況下，明確裝載 .NET Core 執行階段可能會很有用，像是用來叫用原生處理序中的 Managed 程式碼，或是用來增加對執行階段運作方式的更多控制。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (<ph id="ph1">@System.AppDomain</ph>), and execute managed code in it.</source>
+          <target state="translated">本文概述從機器碼啟動 .NET Core 執行階段、建立初始應用程式定義域 (<ph id="ph1">@System.AppDomain</ph>) 及在其中執行 Managed 程式碼的必要步驟。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必要條件</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core.</source>
+          <target state="translated">由於主機是原生應用程式，因此本教學課程將說明如何建構 C++ 應用程式以裝載 .NET Core。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You will need a C++ development environment (such as that provided by <bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept>).</source>
+          <target state="translated">您將需要 C++ 開發環境 (例如 <bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept> 所提供的環境)。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You will also want a simple .NET Core application to test the host with, so you should install the <bpt id="p1">[</bpt>.NET Core SDK<ept id="p1">](https://www.microsoft.com/net/core)</ept> and <bpt id="p2">[</bpt>build a small .NET Core test app<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept> (such as a 'Hello World' app).</source>
+          <target state="translated">您也需要一個簡單的 .NET Core 應用程式來測試主機，因此您必須安裝 <bpt id="p1">[</bpt>.NET Core SDK<ept id="p1">](https://www.microsoft.com/net/core)</ept> 並<bpt id="p2">[</bpt>建置一個小型的.NET Core 測試應用程式<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept> (例如 'Hello World' 應用程式)。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The 'Hello World' app created by the new .NET Core console project template is sufficient.</source>
+          <target state="translated">由新的 .NET Core 主控台專案範本建立的 'Hello World' 應用程式就已足夠。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This tutorial and its <bpt id="p1">[</bpt>associated sample<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> build a Windows host, but please see the notes at the end of this article about hosting on Unix.</source>
+          <target state="translated">本教學課程及其<bpt id="p1">[</bpt>相關範例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>會建立 Windows 主機，但請同時參閱本文結尾有關裝載於 Unix 的注意事項。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Creating the host</source>
+          <target state="translated">建立主機</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A sample host demonstrating the steps outlined in this article is available in our <bpt id="p1">[</bpt>.NET Core samples<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> repository.</source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core 範例<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>存放庫中提供示範本文所述步驟的範例主機。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.</source>
+          <target state="translated">範例 host.cpp 檔案中的註解清楚地將本教學課程中的編號步驟關聯到範例中的執行位置。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency.</source>
+          <target state="translated">請記住，範例主機是為了用於學習，因此錯誤檢查較不嚴謹，並設計成可讀性比效率更重要。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>More real-world host samples are available in the <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept> repository.</source>
+          <target state="translated">如需更多真實世界主機範例，請參閱 <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept> 存放庫。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>, in particular, is a good general-purpose host to study after reading through the simpler sample.</source>
+          <target state="translated">特別是 <bpt id="p1">[</bpt>CoreRun 主機<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>，這是適合在讀完較簡單範例之後進行研究的一般用途主機。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A note about mscoree.h</source>
+          <target state="translated">mscoree.h 的相關注意事項</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The primary .NET Core hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>) is defined in <bpt id="p1">[</bpt>MSCOREE.IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept>.</source>
+          <target state="translated">主要的 .NET Core 裝載介面 (<ph id="ph1">`ICLRRuntimeHost2`</ph>) 定義於 <bpt id="p1">[</bpt>MSCOREE.IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the <bpt id="p1">[</bpt>.NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr/)</ept> is built.</source>
+          <target state="translated">您的主機必須參考此檔案的標頭版本 (mscoree.h)，該檔案會在建置 <bpt id="p1">[</bpt>.NET Core 執行階段<ept id="p1">](https://github.com/dotnet/coreclr/)</ept>時透過 MIDL 產生。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you do not want to build the .NET Core runtime, mscoree.h is also available as a <bpt id="p1">[</bpt>pre-built header<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept> in the dotnet/coreclr repository.</source>
+          <target state="translated">如果不想建置 .NET Core 執行階段，mscoree.h 也會當作 dotnet/coreclr 存放庫中<bpt id="p1">[</bpt>預先建立的標頭<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept>使用。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Instructions on building the .NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept> can be found in its GitHub repository.</source>
+          <target state="translated">您可以在 GitHub 存放庫中找到<bpt id="p1">[</bpt>建置 .NET Core 執行階段的指示<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept>。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Step 1 - Identify the managed entry point</source>
+          <target state="translated">步驟 1 - 識別 Managed 進入點</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After referencing necessary headers (<bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using.</source>
+          <target state="translated">參考必要的標頭 (例如 <bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> 和 stdio.h) 之後，.NET Core 主機必須先找出所要使用的 Managed 進入點。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose <ph id="ph1">`main`</ph> method will be executed.</source>
+          <target state="translated">在我們的範例主機中，只要將第一個命令列引數傳遞至主機作為 Managed 二進位檔 (將執行其 <ph id="ph1">`main`</ph> 方法) 的路徑，即可完成此作業。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Step 2 - Find and load CoreCLR.dll</source>
+          <target state="translated">步驟 2 - 找到並載入 CoreCLR.dll</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The .NET Core runtime APIs are in <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> (on Windows).</source>
+          <target state="translated">.NET Core 執行階段 API 位於 <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> (Windows 上)。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To get our hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>), it's necessary to find and load <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">若要取得我們的裝載介面 (<ph id="ph1">`ICLRRuntimeHost2`</ph>)，您必須找到並載入 <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is up to the host to define a convention for how it will locate <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">主機會定義尋找 <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> 的方式慣例。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Some hosts expect the file to be present in a well-known machine-wide location (such as %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0).</source>
+          <target state="translated">某些主機預期此檔案會出現在已知的全機器位置 (例如 %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0)。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Others expect that <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> will be loaded from a location next to either the host itself or the app to be hosted.</source>
+          <target state="translated">其他主機則預期會從主機本身或所要裝載之應用程式旁的位置載入 <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Still others might consult an environment variable to find the library.</source>
+          <target state="translated">不過，其他主機還是可以參考環境變數以尋找程式庫。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On Linux or Mac, the core runtime library is <bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> or <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept>, respectively.</source>
+          <target state="translated">在 Linux 或 Mac 上，Core 執行階段程式庫分別是 <bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> 或 <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept>。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Our sample host probes a few common locations for <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">我們的範例主機會在一些常見的位置中探查 <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Once found, it must be loaded via <ph id="ph1">`LoadLibrary`</ph> (or <ph id="ph2">`dlopen`</ph> on Linux/Mac).</source>
+          <target state="translated">找到後，必須透過 <ph id="ph1">`LoadLibrary`</ph> (若是 Linux/Mac 則為 <ph id="ph2">`dlopen`</ph>) 載入。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Step 3 - Get an ICLRRuntimeHost2 Instance</source>
+          <target state="translated">步驟 3 - 取得 ICLRRuntimeHost2 執行個體</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ICLRRuntimeHost2`</ph> hosting interface is retrieved by calling <ph id="ph2">`GetProcAddress`</ph> (or <ph id="ph3">`dlsym`</ph> on Linux/Mac) on <ph id="ph4">`GetCLRRuntimeHost`</ph>, and then invoking that function.</source>
+          <target state="translated">若要擷取 <ph id="ph1">`ICLRRuntimeHost2`</ph> 裝載介面，請在 <ph id="ph4">`GetCLRRuntimeHost`</ph> 上呼叫 <ph id="ph2">`GetProcAddress`</ph> (若是 Linux/Mac 則為 <ph id="ph3">`dlsym`</ph>)，然後叫用該函式。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Step 4 - Setting startup flags and starting the runtime</source>
+          <target state="translated">步驟 4 - 設定啟動旗標並啟動執行階段</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>With an <ph id="ph1">`ICLRRuntimeHost2`</ph> in-hand, we can now specify runtime-wide startup flags and start the runtime.</source>
+          <target state="translated">準備好 <ph id="ph1">`ICLRRuntimeHost2`</ph> 之後，現在可以指定全執行階段啟動旗標並啟動執行階段。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Startup flags will determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).</source>
+          <target state="translated">啟動旗標會決定所要使用的記憶體回收行程 (GC) (並行或伺服器)，而不論使用的是單一 AppDomain 或多個 AppDomain；它也會決定 (為了以定義域中性方式載入組件) 所要使用的載入器最佳化原則。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The runtime is started with a call to the <ph id="ph1">`Start`</ph> function.</source>
+          <target state="translated">呼叫 <ph id="ph1">`Start`</ph> 函式以啟動執行階段。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Step 5 - Preparing AppDomain settings</source>
+          <target state="translated">步驟 5 - 準備 AppDomain 設定</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Once the runtime is started, we will want to set up an AppDomain.</source>
+          <target state="translated">啟動執行階段之後，我們想要設定 AppDomain。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.</source>
+          <target state="translated">不過，建立 .NET AppDomain 時必須指定一些選項，因此必須先準備這些選項。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>AppDomain flags specify AppDomain behaviors related to security and interop.</source>
+          <target state="translated">AppDomain 旗標會指定與安全性和 Interop 相關的 AppDomain 行為。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.</source>
+          <target state="translated">舊版的 Silverlight 主機使用這些設定來沙箱化使用者程式碼，但最新式的 .NET Core 主機則會以完全信任的方式來執行使用者程式碼並啟用 Interop。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>After deciding which AppDomain flags to use, AppDomain properties must be defined.</source>
+          <target state="translated">決定要使用的 AppDomain 旗標之後，必須定義 AppDomain 屬性。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The properties are key/value pairs of strings.</source>
+          <target state="translated">這些屬性是字串的索引鍵/值組。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Many of the properties relate to how the AppDomain will load assemblies.</source>
+          <target state="translated">許多屬性與 AppDomain 載入組件的方式相關。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Common AppDomain properties include:</source>
+          <target state="translated">常見的 AppDomain 屬性包括：</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph> This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains).</source>
+          <target state="translated"><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph>：這是 AppDomain 應設定載入優先權並授與完全信任 (即使是部分信任的定義域) 的組件路徑清單 (在 Windows 上會以 ';' 分隔，而在 Unix 上則以 ':' 分隔)。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios.</source>
+          <target state="translated">此清單可用來包含 'Framework' 組件及其他信任的模組，類似於 .NET Framework 案例中的 GAC。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some hosts will put any library next to <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> on this list, others have hard-coded manifests listing trusted assemblies for their purposes.</source>
+          <target state="translated">某些主機會將任何程式庫放在此清單中的 <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> 旁，其他主機則會有針對其用途列出信任組件的硬式編碼資訊清單。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_PATHS`</ph> This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list.</source>
+          <target state="translated"><ph id="ph1">`APP_PATHS`</ph>：這是在信賴平台組件 (TPA) 清單中找不到組件時，要在其中探查組件的路徑清單。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>These paths are meant to be the locations where users' assemblies can be found.</source>
+          <target state="translated">這些路徑會是使用者組件所在的位置。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In a sandboxed AppDomain, assemblies loaded from these paths will only be granted partial trust.</source>
+          <target state="translated">在沙箱化 AppDomain 中，從這些路徑載入的組件只會被授與部分信任。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Common APP_PATH paths include the path the target app was loaded from or other locations where user assets are known to live.</source>
+          <target state="translated">常見的 APP_PATH 路徑包括載入目標應用程式的來源路徑，或使用者資產已知存留的其他位置。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_NI_PATHS`</ph> This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.</source>
+          <target state="translated"><ph id="ph1">`APP_NI_PATHS`</ph>：此清單與 APP_PATHS 非常類似，不同之處在於其用途是作為探查原生影像的路徑。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph> This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.</source>
+          <target state="translated"><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph>：此屬性是想要透過 p/invoke 呼叫原生 DLL 時，載入器應探查的路徑清單。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph> This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).</source>
+          <target state="translated"><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph>：此清單包含要在其中探查資源附屬組件的路徑 (位於文化特性專屬子目錄中)。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AppDomainCompatSwitch`</ph> This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against).</source>
+          <target state="translated"><ph id="ph1">`AppDomainCompatSwitch`</ph>：此字串指定針對沒有明確目標 Framework Moniker (指出組件要執行之架構的組件層級屬性) 的組件，所應使用的相容性 Quirks。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Typically, this should be set to <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph> but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.</source>
+          <target state="translated">一般而言，這應該設定為 <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph>，但某些主機可能會想要改為取得舊版 Silverlight 或 Windows Phone 相容性 Quirks。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In our <bpt id="p1">[</bpt>simple sample host<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>, these properties are set up as follows:</source>
+          <target state="translated">在我們的<bpt id="p1">[</bpt>簡單範例主機<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>中，這些屬性會設定如下：</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Step 6 - Create the AppDomain</source>
+          <target state="translated">步驟 6 - 建立 AppDomain</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Once all AppDomain flags and properties are prepared, <ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> can be used to set up the AppDomain.</source>
+          <target state="translated">準備好所有 AppDomain 旗標和屬性之後，即可使用 <ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> 來設定 AppDomain。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This function optionally takes a fully qualified assembly name and type name to use as the domain's AppDomain manager.</source>
+          <target state="translated">此函式會選擇性地接受完整組件名稱和類型名稱，以用作定義域的 AppDomain 管理員。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.</source>
+          <target state="translated">AppDomain 管理員可讓主機控制 AppDomain 行為的某些層面，並可在主機不想直接叫用使用者程式碼時，提供進入點以啟動 Managed 程式碼。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Step 7 - Run managed code!</source>
+          <target state="translated">步驟 7 - 執行 Managed 程式碼！</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>With an AppDomain up and running, the host can now start executing managed code.</source>
+          <target state="translated">在 AppDomain 啟動並執行之後，主機現在可以開始執行 Managed 程式碼。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The easiest way to do this is to use <ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> to invoke a managed assembly's entry point method.</source>
+          <target state="translated">最簡單的做法是使用 <ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> 叫用 Managed 組件的進入點方法。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Note that this function only works in single-domain scenarios.</source>
+          <target state="translated">請注意，此函式僅適用於單一定義域案例。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Another option, if <ph id="ph1">`ExecuteAssembly`</ph> doesn't meet your host's needs, is to use <ph id="ph2">`CreateDelegate`</ph> to create a function pointer to a static managed method.</source>
+          <target state="translated">如果 <ph id="ph1">`ExecuteAssembly`</ph> 不符合您的主機需求，另一個選擇是使用 <ph id="ph2">`CreateDelegate`</ph> 建立靜態 Managed 方法的函式指標。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point.</source>
+          <target state="translated">雖然此做法要求主機必須知道所呼叫的方法簽章 (以便建立函式指標類型)，但允許主機彈性地叫用組件進入點以外的程式碼。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Step 8 - Clean up</source>
+          <target state="translated">步驟 8 - 清除</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the <ph id="ph1">`ICLRRuntimeHost2`</ph> reference.</source>
+          <target state="translated">最後，主機應該藉由卸載 AppDomain、停止執行階段並釋放 <ph id="ph1">`ICLRRuntimeHost2`</ph> 參考來清除自身。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>About Hosting .NET Core on Unix</source>
+          <target state="translated">關於在 Unix 上裝載 .NET Core</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>.NET Core is a cross-platform product, running on Windows, Linux, and Mac operating systems.</source>
+          <target state="translated">.NET Core 是在 Windows、Linux 和 Mac 作業系統上執行的跨平台產品。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As native applications, though, hosts for different platforms will have some differences between them.</source>
+          <target state="translated">不過如同原生應用程式，不同平台的主機之間會有一些差異。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The process described above of using <ph id="ph1">`ICLRRuntimeHost2`</ph> to start the runtime, create an AppDomain, and execute managed code, should work on any supported operating system.</source>
+          <target state="translated">上述使用 <ph id="ph1">`ICLRRuntimeHost2`</ph> 啟動執行階段、建立 AppDomain 及執行 Managed 程式碼的程序，在任何支援的作業系統上都應該正常運作。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>However, the interfaces defined in mscoree.h can be cumbersome to work with on Unix platforms since mscoree makes many Win32 assumptions.</source>
+          <target state="translated">不過，由於 mscoree 提出許多 Win32 假設，因此定義於 mscoree.h 的介面可能很難搭配 Unix 平台使用。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To make hosting on Unix platforms easier, a set of more platform-neutral hosting API wrappers are available in <bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept>.</source>
+          <target state="translated">為了讓 Unix 平台上的裝載作業更容易，<bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept> 中提供由多個非平台相關的裝載 API 包裝函式組成的集合。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>An example of using coreclrhost.h (instead of mscoree.h directly) can be seen in the <bpt id="p1">[</bpt>UnixCoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>.</source>
+          <target state="translated">您可以在 <bpt id="p1">[</bpt>UnixCoreRun 主機<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>中查看使用 coreclrhost.h (而不是直接使用 mscoree.h) 的範例。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The steps to use the APIs from coreclrhost.h to host the runtime are similar to the steps when using mscoree.h:</source>
+          <target state="translated">從 coreclrhost.h 使用 API 裝載執行階段的步驟，類似於使用 mscoree.h 時的步驟：</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Identify the managed code to execute (from command line parameters, for example).</source>
+          <target state="translated">識別要執行的 Managed 程式碼 (例如從命令列參數)。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Load the CoreCLR library.</source>
+          <target state="translated">載入 CoreCLR 程式庫。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Get function pointers to CoreCLR's <ph id="ph1">`coreclr_initialize`</ph>, <ph id="ph2">`coreclr_create_delegate`</ph>, <ph id="ph3">`coreclr_execute_assembly`</ph>, and <ph id="ph4">`coreclr_shutdown`</ph> functions using <ph id="ph5">`dlsym`</ph></source>
+          <target state="translated">使用 <ph id="ph5">`dlsym`</ph> 取得 CoreCLR 之 <ph id="ph1">`coreclr_initialize`</ph>、<ph id="ph2">`coreclr_create_delegate`</ph>、<ph id="ph3">`coreclr_execute_assembly`</ph> 和 <ph id="ph4">`coreclr_shutdown`</ph> 的函式指標</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Set up AppDomain properties (such as the TPA list).</source>
+          <target state="translated">設定 AppDomain 屬性 (例如 TPA 清單)。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This is the same as step 5 from the mscoree workflow, above.</source>
+          <target state="translated">這會與上述 mscoree 工作流程的步驟 5 相同。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_initialize`</ph> to start the runtime and create an AppDomain.</source>
+          <target state="translated">使用 <ph id="ph1">`coreclr_initialize`</ph> 啟動執行階段並建立 AppDomain。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This will also create a <ph id="ph1">`hostHandle`</ph> pointer that will be used in future hosting calls.</source>
+          <target state="translated">這也會建立將在未來裝載呼叫中使用的 <ph id="ph1">`hostHandle`</ph> 指標。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Note that this function performs the roles of both steps 4 and 6 from the previous workflow.</source>
+          <target state="translated">請注意，此函式會執行上一個工作流程之步驟 4 和 6 的角色。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Use either <ph id="ph1">`coreclr_execute_assembly`</ph> or <ph id="ph2">`coreclr_create_delegate`</ph> to execute managed code.</source>
+          <target state="translated">使用 <ph id="ph1">`coreclr_execute_assembly`</ph> 或 <ph id="ph2">`coreclr_create_delegate`</ph> 執行 Managed 程式碼。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>These functions are analogous to mscoree's <ph id="ph1">`ExecuteAssembly`</ph> and <ph id="ph2">`CreateDelegate`</ph> functions from step 7 of the previous workflow.</source>
+          <target state="translated">這些函式類似於上一個工作流程的步驟 7 中 mscoree 的 <ph id="ph1">`ExecuteAssembly`</ph> 和 <ph id="ph2">`CreateDelegate`</ph> 函式。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_shutdown`</ph> to unload the AppDomain and shut down the runtime.</source>
+          <target state="translated">使用 <ph id="ph1">`coreclr_shutdown`</ph> 卸載 AppDomain 並關閉執行階段。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">結論</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects.</source>
+          <target state="translated">建立主機之後，您可以藉由從命令列執行主機，並傳遞主機預期的任何引數 (例如所要執行的 Managed 應用程式)，來進行測試。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by <ph id="ph1">`dotnet build`</ph>.</source>
+          <target state="translated">指定主機要執行的 .NET Core 應用程式時，請務必使用 <ph id="ph1">`dotnet build`</ph> 所產生的 .dll。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Executables produced by <ph id="ph1">`dotnet publish`</ph> for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.</source>
+          <target state="translated">針對獨立性應用程式執行 <ph id="ph1">`dotnet publish`</ph> 所產生的可執行檔，其實就是預設 .NET Core 主機 (因此應用程式可在主要情況下從命令列直接啟動)；使用者程式碼會編譯成同名的 DLL。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If things don't work initially, double-check that <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.</source>
+          <target state="translated">如果一開始未正常運作，請再確認一次主機預期的位置中有 <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept>、所有必要的 Framework 程式庫都在 TPA 清單中，而且 CoreCLR 的位元 (32 或 64 位元) 符合主機的建立方式。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario that many developers won't require, but for those who need to launch managed code from a native process, or who need more control over the .NET Core runtime's behavior, it can be very useful.</source>
+          <target state="translated">裝載 .NET Core 執行階段是進階案例，許多開發人員並不需要，但對於需要從原生處理序啟動 Managed 程式碼的人員，或需要更能掌控 .NET Core 執行階段行為的人員而言，這項作業可能很實用。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is able to run side-by-side with itself, it's even possible to create hosts which initialize and start multiple versions of the .NET Core runtime and execute apps on all of them in the same process.</source>
+          <target state="translated">由於 .NET Core 能夠與本身並存執行，因此您甚至可以建立主機，以初始化並啟動多個版本的 .NET Core 執行階段，並在相同處理序的這些執行階段上執行應用程式。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

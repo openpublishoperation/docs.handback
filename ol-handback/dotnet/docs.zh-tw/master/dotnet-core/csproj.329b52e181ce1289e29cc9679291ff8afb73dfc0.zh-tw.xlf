@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b5c25fc" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e67270cf713857a5fea16ebdd0abab774f555808</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">09db10cd830b9ce2638f9d3f65389244af876c5c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">50ddfc14bca5f978202608cf2bce8784e63dd6fc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>csproj reference | Microsoft Docs</source>
+          <target state="translated">csproj 參考 | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn about the differences between existing and .NET Core csproj files</source>
+          <target state="translated">深入了解現有和 .NET Core csproj 檔案之間的差異</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>reference, csproj, .NET Core</source>
+          <target state="translated">參考, csproj, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Additions to the csproj format for .NET Core</source>
+          <target state="translated">適用於 .NET Core 之 csproj 格式的新增項目</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This document outlines the changes that were added to the project files as part of the move from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept> and <bpt id="p3">[</bpt>MSBuild<ept id="p3">](https://github.com/Microsoft/MSBuild)</ept>.</source>
+          <target state="translated">本文件概述從 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 改為使用 <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept> 和 <bpt id="p3">[</bpt>MSBuild<ept id="p3">](https://github.com/Microsoft/MSBuild)</ept> 時，新增至專案檔的變更。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For more information about general project file syntax and reference, see <bpt id="p1">[</bpt>the MSBuild project file<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept> documentation.</source>
+          <target state="translated">如需一般專案檔語法以及參考的詳細資訊，請參閱 <bpt id="p1">[</bpt>MSBuild 專案檔<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept>文件。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Implicit package references</source>
+          <target state="translated">隱含套件參考</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Metapackages are now implicitly referenced based on the target framework specified in the <ph id="ph1">`&lt;TargetFramework&gt;`</ph> or <ph id="ph2">`&lt;TargetFrameworks&gt;`</ph> property of your project file.</source>
+          <target state="translated">現在會根據您專案檔之 <ph id="ph1">`&lt;TargetFramework&gt;`</ph> 或 <ph id="ph2">`&lt;TargetFrameworks&gt;`</ph> 屬性中指定的目標架構來隱含參考中繼套件。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If the target framework is <ph id="ph1">`netcoreap1.x`</ph>, the proper version of the <ph id="ph2">`Microsoft.NETCore.App`</ph> metapackage is referenced.</source>
+          <target state="translated">如果目標架構是 <ph id="ph1">`netcoreap1.x`</ph>，則會參考 <ph id="ph2">`Microsoft.NETCore.App`</ph> 中繼套件的適當版本。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Otherwise, if the target framework is <ph id="ph1">`netstandard1.x`</ph>, the proper version of the <ph id="ph2">`NetStandard.Library`</ph> metapackage is referenced.</source>
+          <target state="translated">如果目標架構是 <ph id="ph1">`netstandard1.x`</ph>，則會參考 <ph id="ph2">`NetStandard.Library`</ph> 中繼套件的適當版本。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, <ph id="ph1">`dotnet restore`</ph>).</source>
+          <target state="translated">至於其餘行為，工具會如預期般運作，且大部分動作會保持相同 (例如 <ph id="ph1">`dotnet restore`</ph>)。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Recommendations</source>
+          <target state="translated">建議</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Since <ph id="ph1">`Microsoft.NETCore.App`</ph> or <ph id="ph2">`NetStandard.Library`</ph> metapackages are now implicitly referenced, the following are our recommended best practices:</source>
+          <target state="translated">由於現在會隱含參考 <ph id="ph1">`Microsoft.NETCore.App`</ph> 或 <ph id="ph2">`NetStandard.Library`</ph> 中繼套件，因此建議使用下列最佳做法：</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Never have an explicit reference to the <ph id="ph1">`Microsoft.NETCore.App`</ph> or <ph id="ph2">`NetStandard.Library`</ph> metapackages via the <ph id="ph3">`&lt;PackageReference&gt;`</ph> property in your project file.</source>
+          <target state="translated">絕不透過專案檔中的 <ph id="ph3">`&lt;PackageReference&gt;`</ph> 屬性明確參考 <ph id="ph1">`Microsoft.NETCore.App`</ph> 或 <ph id="ph2">`NetStandard.Library`</ph> 中繼套件。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you need a specific version of the runtime, you should use the <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> property in your project (for example, <ph id="ph2">`1.0.4`</ph>) instead of referencing the metapackage.</source>
+          <target state="translated">如果您需要特定版本的執行階段，您應該使用專案中的 <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> 屬性 (例如 <ph id="ph2">`1.0.4`</ph>)，而不是參考中繼套件。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This might happen if you are using <bpt id="p1">[</bpt>self-contained deployments<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept> and you need a specific patch version of 1.0.0 LTS runtime, for example.</source>
+          <target state="translated">如果您使用<bpt id="p1">[</bpt>獨立性部署<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept>，並需要 1.0.0 LTS 執行階段的特定更新程式版本，就可能會發生此情況。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you need a specific version of the <ph id="ph1">`NetStandard.Library`</ph> metapackage, you can use the <ph id="ph2">`&lt;NetStandardImplicitPackageVersion&gt;`</ph> property and set the version you need.</source>
+          <target state="translated">如果您需要特定版本的 <ph id="ph1">`NetStandard.Library`</ph> 中繼套件，您可以使用 <ph id="ph2">`&lt;NetStandardImplicitPackageVersion&gt;`</ph> 屬性並設定所需的版本。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Default compilation includes in .NET Core projects</source>
+          <target state="translated">.NET Core 專案中包含預設編譯</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>With the move to the <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files.</source>
+          <target state="translated">隨著改為使用最新 SDK 版本中的 <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> 格式，編譯項目的預設包含項目和排除項目以及內嵌資源都已移至 SDK 屬性檔。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This means that you no longer need to specify these items in your project file.</source>
+          <target state="translated">這表示您不再需要於專案檔中指定這些項目。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The main reason for doing this is to reduce the clutter on your project file.</source>
+          <target state="translated">這樣做的主要原因是為了減少專案檔中的雜亂內容。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create.</source>
+          <target state="translated">SDK 中的預設值應該涵蓋最常見的使用案例，而不需要在每個建立的專案中重複這些項目。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This leads to smaller project files that are much easier to understand as well as edit by hand, if needed.</source>
+          <target state="translated">這會產生較小的專案檔，而更容易了解及視需要手動編輯。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following table shows which element and which globs are both included and excluded in the SDK:</source>
+          <target state="translated">下表顯示有哪些項目，以及 SDK 中會包含及排除哪些 Glob：</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Element</source>
+          <target state="translated">項目</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Include glob</source>
+          <target state="translated">包含 Glob</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Exclude glob</source>
+          <target state="translated">排除 Glob</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Remove glob</source>
+          <target state="translated">移除 Glob</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Compile</source>
+          <target state="translated">編譯</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.cs (or other language extensions)</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.cs (或其他語言副檔名)</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user;  <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj;  <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln;  <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user;  <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj;  <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln;  <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target state="translated">N/A</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>EmbeddedResource</source>
+          <target state="translated">內嵌資源</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.resx</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.resx</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target state="translated">N/A</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="translated">無</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">- </ph><ph id="ph2">\*</ph><ph id="ph3">\*</ph><ph id="ph4">/</ph><ph id="ph5">\*</ph>.cs; <ph id="ph6">\*</ph><ph id="ph7">\*</ph><ph id="ph8">/</ph><ph id="ph9">\*</ph>.resx</source>
+          <target state="translated"><ph id="ph1">- </ph><ph id="ph2">\*</ph><ph id="ph3">\*</ph><ph id="ph4">/</ph><ph id="ph5">\*</ph>.cs; <ph id="ph6">\*</ph><ph id="ph7">\*</ph><ph id="ph8">/</ph><ph id="ph9">\*</ph>.resx</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:</source>
+          <target state="translated">如果您的專案有 Glob，而且您嘗試使用最新的 SDK 建置專案，您會收到下列錯誤：</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Duplicate Compile items were included.</source>
+          <target state="translated">包含了重複的編譯項目。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The .NET SDK includes Compile items from your project directory by default.</source>
+          <target state="translated">.NET SDK 預設會包含您專案目錄中的編譯項目。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.</source>
+          <target state="translated">您可以從專案檔中移除這些項目；如果您想要在專案檔中明確包含這些項目，您可以將 'EnableDefaultCompileItems' 屬性設定為 'false'。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In order to get around this error, you can either remove the explicit <ph id="ph1">`Compile`</ph> items that match the ones listed on the previous table, or you can set the <ph id="ph2">`&lt;EnableDefaultCompileItems&gt;`</ph> property to <ph id="ph3">`false`</ph>, like this:</source>
+          <target state="translated">若要解決此錯誤，您可以明確移除符合上表所列項目的 <ph id="ph1">`Compile`</ph> 項目，或將 <ph id="ph2">`&lt;EnableDefaultCompileItems&gt;`</ph> 屬性設定為 <ph id="ph3">`false`</ph>，如下所示：</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Setting this property to <ph id="ph1">`false`</ph> will override implicit inclusion and the behavior will revert back to the previous SDKs where you had to specify the default globs in your project.</source>
+          <target state="translated">將此屬性設定為 <ph id="ph1">`false`</ph> 會覆寫隱含包含項目，而且其行為會還原成必須在專案中指定預設 Glob 的舊版 SDK。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This change does not modify the main mechanics of other includes.</source>
+          <target state="translated">這項變更不會修改其他包含項目的主要機制。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> for that (for example, the <ph id="ph1">`&lt;Content&gt;`</ph> element).</source>
+          <target state="translated">不過，如果您想要指定某些檔案由應用程式發行，您仍然可以使用 <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> 中已知的機制來執行這項作業 (例如 <ph id="ph1">`&lt;Content&gt;`</ph> 項目)。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Recommendation</source>
+          <target state="translated">建議</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>With csproj, we recommend that you remove the default globs from your project and only add globs file paths for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)</source>
+          <target state="translated">使用 csproj 時，建議您從專案中移除預設 Glob，並只新增您的應用程式/程式庫在各種情況下所需之成品 (執行階段、NuGet 套件等) 的 Glob 檔案路徑。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Additions</source>
+          <target state="translated">新增項目</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Sdk attribute</source>
+          <target state="translated">Sdk 屬性</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;Project&gt;`</ph> element of the <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> file has a new attribute called <ph id="ph2">`Sdk`</ph>.</source>
+          <target state="translated"><bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> 檔案的 <ph id="ph1">`&lt;Project&gt;`</ph> 項目有一個新屬性，稱為 <ph id="ph2">`Sdk`</ph>。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Sdk`</ph> specifies which SDK will be used by the project.</source>
+          <target state="translated"><ph id="ph1">`Sdk`</ph> 會指定專案將使用的 SDK。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The SDK, as the <bpt id="p1">[</bpt>layering document<ept id="p1">](cli-msbuild-architecture.md)</ept> describes, is a set of MSBuild <bpt id="p2">[</bpt>tasks<ept id="p2">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)</ept> and <bpt id="p3">[</bpt>targets<ept id="p3">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept> that can build .NET Core code.</source>
+          <target state="translated">如<bpt id="p1">[</bpt>分層文件<ept id="p1">](cli-msbuild-architecture.md)</ept>所述，SDK 是可建置 .NET Core 程式碼的一組 MSBuild <bpt id="p2">[</bpt>工作<ept id="p2">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)</ept>和<bpt id="p3">[</bpt>目標<ept id="p3">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept>。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>We ship two main SDKs with the .NET Core tools:</source>
+          <target state="translated">我們提供內含 .NET Core 工具的兩個主要 SDK：</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The .NET Core SDK with the ID of <ph id="ph1">`Microsoft.NET.Sdk`</ph></source>
+          <target state="translated">識別碼為 <ph id="ph1">`Microsoft.NET.Sdk`</ph> 的 .NET Core SDK</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The .NET Core web SDK with the ID of <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph></source>
+          <target state="translated">識別碼為 <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph> 的 .NET Core Web SDK</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You need to have the <ph id="ph1">`Sdk`</ph> attribute set to one of those IDs on the <ph id="ph2">`&lt;Project&gt;`</ph> element in order to use the .NET Core tools and build your code.</source>
+          <target state="translated">您必須在 <ph id="ph2">`&lt;Project&gt;`</ph> 項目中將 <ph id="ph1">`Sdk`</ph> 屬性設定為上述其中一個識別碼，才能使用 .NET Core 工具並建置您的程式碼。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>PackageReference</source>
+          <target state="translated">PackageReference</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Item that specifies a NuGet dependency in the project.</source>
+          <target state="translated">在專案中指定 NuGet 相依性的項目。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Include`</ph> attribute specifies the package ID.</source>
+          <target state="translated"><ph id="ph1">`Include`</ph> 屬性會指定套件識別碼。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">版本</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Version`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`Version`</ph> 指定要還原的套件版本。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The element respects the rules of the NuGet versioning scheme.</source>
+          <target state="translated">該元素採用 NuGet 版本設定配置的規則。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>IncludeAssets, ExcludeAssets and PrivateAssets</source>
+          <target state="translated">IncludeAssets、ExcludeAssets 和 PrivateAssets</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IncludeAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed.</source>
+          <target state="translated"><ph id="ph1">`IncludeAssets`</ph> 屬性指定應取用由 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 所指定屬於套件的何種資產。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ExcludeAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should not be consumed.</source>
+          <target state="translated"><ph id="ph1">`ExcludeAssets`</ph> 屬性指定不應取用屬於由 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 所指定套件的何種資產。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PrivateAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed but that they should not flow to the next project.</source>
+          <target state="translated"><ph id="ph1">`PrivateAssets`</ph> 屬性指定應取用屬於由 <ph id="ph2">`&lt;PackageReference&gt;`</ph> 所指定套件的何種資產，但是它們不應該傳遞至下一個專案。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PrivateAssets`</ph> is equivalent to the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept><ph id="ph2">/</ph><bpt id="p2">*</bpt>xproj<ept id="p2">*</ept> <ph id="ph3">`SuppressParent`</ph> element.</source>
+          <target state="translated"><ph id="ph1">`PrivateAssets`</ph> 相當於 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept><ph id="ph2">/</ph><bpt id="p2">*</bpt>xproj<ept id="p2">*</ept> <ph id="ph3">`SuppressParent`</ph> 項目。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>These attributes can contain one or more of the following items:</source>
+          <target state="translated">這些屬性可包含下列一或多個項目：</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Compile`</ph> – the contents of the lib folder are available to compile against.</source>
+          <target state="translated"><ph id="ph1">`Compile`</ph> – lib 資料夾的內容可供編譯。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Runtime`</ph> – the contents of the runtime folder are distributed.</source>
+          <target state="translated"><ph id="ph1">`Runtime`</ph> – 會散發 runtime 資料夾的內容。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ContentFiles`</ph> – the contents of the <bpt id="p1">*</bpt>contentfiles<ept id="p1">*</ept> folder are used.</source>
+          <target state="translated"><ph id="ph1">`ContentFiles`</ph> - 會使用 <bpt id="p1">*</bpt>contentfiles<ept id="p1">*</ept> 資料夾的內容。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Build`</ph> – the props/targets in the build folder are used.</source>
+          <target state="translated"><ph id="ph1">`Build`</ph> – 會使用組建資料夾中的屬性/目標。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Native`</ph> – the contents from native assets are copied to the output folder for runtime.</source>
+          <target state="translated"><ph id="ph1">`Native`</ph> – 原生資產內容會複製到執行階段輸出資料夾。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Analyzers`</ph> – the analyzers are used.</source>
+          <target state="translated"><ph id="ph1">`Analyzers`</ph> – 會使用分析器。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Alternatively, the attribute can contain:</source>
+          <target state="translated">另外，該屬性也可以包含︰</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`None`</ph> – none of the assets are used.</source>
+          <target state="translated"><ph id="ph1">`None`</ph> – 未使用任何資產。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`All`</ph> – all assets are used.</source>
+          <target state="translated"><ph id="ph1">`All`</ph> – 會使用所有資產。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>DotnetCliToolReference</source>
+          <target state="translated">DotnetCliToolReference</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> item element specifies the CLI tool that the user wants to restore in the context of the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> 項目指定使用者想要在專案內容中還原的 CLI 工具。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>It's a replacement for the <ph id="ph1">`tools`</ph> node in <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>.</source>
+          <target state="translated">它會取代 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 中的 <ph id="ph1">`tools`</ph> 節點。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">版本</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Version`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`Version`</ph> 指定要還原的套件版本。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The attribute respect the rules of the NuGet versioning scheme.</source>
+          <target state="translated">該屬性採用 NuGet 版本控制配置的規則。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifiers</source>
+          <target state="translated">RuntimeIdentifiers</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> element lets you specify a semicolon-delimited list of <bpt id="p1">[</bpt>Runtime Identifiers (RIDs)<ept id="p1">](../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> 項目可讓您針對專案指定以分號分隔的<bpt id="p1">[</bpt>執行階段識別碼 (RID)<ept id="p1">](../rid-catalog.md)</ept> 清單。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>RIDs enable publishing a self-contained deployments.</source>
+          <target state="translated">RID 允許發行獨立部署。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifier</source>
+          <target state="translated">RuntimeIdentifier</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;RuntimeIdentifier&gt;`</ph> element allows you to specify only one <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated"><ph id="ph1">`&lt;RuntimeIdentifier&gt;`</ph> 項目可讓您針對專案只指定一個<bpt id="p1">[</bpt>執行階段識別項 (RID)<ept id="p1">](../rid-catalog.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>RIDs enable publishing a self-contained deployment.</source>
+          <target state="translated">RID 允許發行獨立部署。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>PackageTargetFallback</source>
+          <target state="translated">PackageTargetFallback</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> element allows you to specify a set of compatible targets to be used when restoring packages.</source>
+          <target state="translated"><ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> 項目可讓您指定一組要在還原套件時使用的相容目標。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>It's designed to allow packages that use the dotnet <bpt id="p1">[</bpt>TxM (Target x Moniker)<ept id="p1">](https://docs.microsoft.com/nuget/schema/target-frameworks)</ept> to operate with packages that don't declare a dotnet TxM.</source>
+          <target state="translated">其設計目的是為了讓使用 dotnet <bpt id="p1">[</bpt>TxM (目標 x Moniker)<ept id="p1">](https://docs.microsoft.com/nuget/schema/target-frameworks)</ept> 的套件能和未宣告 dotnet TxM 的套件一起運作。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> to your project in order to allow non-dotnet platforms to be compatible with dotnet.</source>
+          <target state="translated">如果您的專案使用 dotnet TxM，除非您將 <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> 新增至專案，以讓非 dotnet 平台變成能與 dotnet 相容，否則其相依的所有套件也必須要有 dotnet TxM。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The following example provides the fallbacks for all targets in your project:</source>
+          <target state="translated">下列範例可為專案中的所有目標提供後援：</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The following example specifies the fallbacks only for the <ph id="ph1">`netcoreapp1.0`</ph> target:</source>
+          <target state="translated">下列範例只會為 <ph id="ph1">`netcoreapp1.0`</ph> 目標指定後援︰</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>NuGet metadata properties</source>
+          <target state="translated">NuGet 中繼資料屬性</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept> files.</source>
+          <target state="translated">隨著改為使用 MSbuild，我們已經將封裝 NuGet 套件時使用的輸入中繼資料從 <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> 移動到 <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept> 檔。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The inputs are MSBuild properties so they have to go within a <ph id="ph1">`&lt;PropertyGroup&gt;`</ph> group.</source>
+          <target state="translated">此輸入是 MSBuild 屬性，因此必須移至 <ph id="ph1">`&lt;PropertyGroup&gt;`</ph> 群組。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The following is the list of properties that are used as inputs to the packing process when using the <ph id="ph1">`dotnet pack`</ph> command or the <ph id="ph2">`Pack`</ph> MSBuild target that is part of the SDK.</source>
+          <target state="translated">使用 <ph id="ph1">`dotnet pack`</ph> 命令或屬於 SDK 一部分的 <ph id="ph2">`Pack`</ph> MSBuild 目標時，會將下列的屬性清單當成封裝處理序的輸入使用。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>IsPackable</source>
+          <target state="translated">IsPackable</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>A Boolean value that specifies whether the project can be packed.</source>
+          <target state="translated">布林值，指定是否可封裝專案。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">預設值是 <ph id="ph1">`true`</ph>。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>PackageVersion</source>
+          <target state="translated">PackageVersion</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Specifies the version that the resulting package will have.</source>
+          <target state="translated">指定所產生之套件的版本。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Accepts all forms of NuGet version string.</source>
+          <target state="translated">接受所有形式的 NuGet 版本字串。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Default is the value of <ph id="ph1">`$(Version)`</ph>, that is, of the property <ph id="ph2">`Version`</ph> in the project.</source>
+          <target state="translated">預設為 <ph id="ph1">`$(Version)`</ph> 的值，也就是專案中的屬性 <ph id="ph2">`Version`</ph>。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>PackageId</source>
+          <target state="translated">PackageId</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Specifies the name for the resulting package.</source>
+          <target state="translated">指定所產生之套件的名稱。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>If not specified, the <ph id="ph1">`pack`</ph> operation will default to using the <ph id="ph2">`AssemblyName`</ph> or directory name as the name of the package.</source>
+          <target state="translated">如果未指定，<ph id="ph1">`pack`</ph> 作業會預設為使用 <ph id="ph2">`AssemblyName`</ph> 或目錄名稱作為套件的名稱。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">標題</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>A human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio.</source>
+          <target state="translated">套件的易記標題，通常會用於 UI 顯示，以及 nuget.org 和 Visual Studio 套件管理員中。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>If not specified, the package ID is used instead.</source>
+          <target state="translated">如果未指定，則會改用套件識別碼。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Authors</source>
+          <target state="translated">作者</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>A semicolon-separated list of packages authors, matching the profile names on nuget.org.</source>
+          <target state="translated">以分號分隔的套件作者清單，與 nuget.org 上的設定檔名稱相符。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.</source>
+          <target state="translated">這些名稱會顯示在 nuget.org 的 NuGet 組件庫中，並用來交互參照相同作者的其他套件。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">說明</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>A long description of the package for UI display.</source>
+          <target state="translated">UI 顯示中的套件詳細描述。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Copyright</source>
+          <target state="translated">Copyright</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Copyright details for the package.</source>
+          <target state="translated">套件的著作權詳細資料。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>PackageRequireLicenseAcceptance</source>
+          <target state="translated">PackageRequireLicenseAcceptance</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package.</source>
+          <target state="translated">布林值，指定在安裝套件時，用戶端是否必須提示取用者接受套件授權。</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">預設為 <ph id="ph1">`false`</ph>。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>PackageLicenseUrl</source>
+          <target state="translated">PackageLicenseUrl</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>An URL to the license that is applicable to the package.</source>
+          <target state="translated">適用於套件的授權 URL。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>PackageProjectUrl</source>
+          <target state="translated">PackageProjectUrl</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>A URL for the package's home page, often shown in UI displays as well as nuget.org.</source>
+          <target state="translated">套件首頁的 URL，通常會顯示在 UI 顯示及 nuget.org 中。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>PackageIconUrl</source>
+          <target state="translated">PackageIconUrl</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.</source>
+          <target state="translated">具有透明背景之 64x64 映像的 URL，該映像會用作套件在 UI 顯示中的圖示。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>PackageReleaseNotes</source>
+          <target state="translated">PackageReleaseNotes</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Release notes for the package.</source>
+          <target state="translated">套件的版本資訊。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>PackageTags</source>
+          <target state="translated">PackageTags</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A semicolon-delimited list of tags that designates the package.</source>
+          <target state="translated">以分號分隔的標記清單，用以指定套件。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>PackageOutputPath</source>
+          <target state="translated">PackageOutputPath</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Determines the output path in which the packed package will be dropped.</source>
+          <target state="translated">決定要置放所封裝之套件的輸出路徑。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Default is <ph id="ph1">`$(OutputPath)`</ph>.</source>
+          <target state="translated">預設為 <ph id="ph1">`$(OutputPath)`</ph>。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>IncludeSymbols</source>
+          <target state="translated">IncludeSymbols</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>This Boolean value indicates whether the package should create an additional symbols package when the project is packed.</source>
+          <target state="translated">此布林值會指出在封裝專案時，套件是否應該建立額外的符號套件。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This package will have a <bpt id="p1">*</bpt>.symbols.nupkg<ept id="p1">*</ept> extension and will copy the PDB files along with the DLL and other output files.</source>
+          <target state="translated">此套件的副檔名為 <bpt id="p1">*</bpt>.symbols.nupkg<ept id="p1">*</ept>，將連同 DLL 和其他輸出檔一起複製 PDB 檔案。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>IncludeSource</source>
+          <target state="translated">IncludeSource</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This Boolean value indicates whether the pack process should create a source package.</source>
+          <target state="translated">此布林值會指出封裝處理序是否應該建立來源套件。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The source package contains the library's source code as well as PDB files.</source>
+          <target state="translated">來源套件包含程式庫的原始程式碼及 PDB 檔案。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Source files are put under the <ph id="ph1">`src/ProjectName`</ph> directory in the resulting package file.</source>
+          <target state="translated">原始程式檔會放在所產生之套件檔案中的 <ph id="ph1">`src/ProjectName`</ph> 目錄底下。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>IsTool</source>
+          <target state="translated">IsTool</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Specifies whether all output files are copied to the <bpt id="p1">*</bpt>tools<ept id="p1">*</ept> folder instead of the <bpt id="p2">*</bpt>lib<ept id="p2">*</ept> folder.</source>
+          <target state="translated">指定是否要將所有輸出檔複製到 <bpt id="p1">*</bpt>tools<ept id="p1">*</ept> 資料夾，而不是 <bpt id="p2">*</bpt>lib<ept id="p2">*</ept> 資料夾。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Note that this is different from a <ph id="ph1">`DotNetCliTool`</ph> which is specified by setting the <ph id="ph2">`PackageType`</ph> in the <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> file.</source>
+          <target state="translated">請注意，這與 <ph id="ph1">`DotNetCliTool`</ph> 不同，該項目是藉由在 <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> 檔案中設定 <ph id="ph2">`PackageType`</ph> 所指定。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>RepositoryUrl</source>
+          <target state="translated">RepositoryUrl</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Specifies the URL for the repository where the source code for the package resides and/or from which it's being built.</source>
+          <target state="translated">指定存放庫的 URL，此存放庫是套件原始程式碼的所在位置及 (或) 正在建置的來源位置。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>RepositoryType</source>
+          <target state="translated">RepositoryType</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the repository.</source>
+          <target state="translated">指定存放庫的類型。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Default is "git".</source>
+          <target state="translated">預設值為 "git"。</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>NoPackageAnalysis</source>
+          <target state="translated">NoPackageAnalysis</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Specifies that pack should not run package analysis after building the package.</source>
+          <target state="translated">指定封裝不應該在建置套件之後執行套件分析。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>MinClientVersion</source>
+          <target state="translated">MinClientVersion</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.</source>
+          <target state="translated">指定可安裝此套件的最低 NuGet 用戶端版本，此作業是由 nuget.exe 和 Visual Studio 套件管理員強制執行。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>IncludeBuildOutput</source>
+          <target state="translated">IncludeBuildOutput</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This Boolean values specifies whether the build output assemblies should be packed into the <bpt id="p1">*</bpt>.nupkg<ept id="p1">*</ept> file or not.</source>
+          <target state="translated">此布林值會指定是否應該將建置輸出組建封裝成 <bpt id="p1">*</bpt>.nupkg<ept id="p1">*</ept> 檔案。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>IncludeContentInPack</source>
+          <target state="translated">IncludeContentInPack</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This Boolean value specifies whether any items that have a type of <ph id="ph1">`Content`</ph> will be included in the resulting package automatically.</source>
+          <target state="translated">此布林值會指定是否有任何類型為 <ph id="ph1">`Content`</ph> 的項目會自動包含於所產生的套件中。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">預設為 <ph id="ph1">`true`</ph>。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>BuildOutputTargetFolder</source>
+          <target state="translated">BuildOutputTargetFolder</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Specifies the folder where to place the output assemblies..</source>
+          <target state="translated">指定要放置輸出組件的資料夾。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The output assemblies (and other output files) are copied into their respective framework folders.</source>
+          <target state="translated">輸出組件 (及其他輸出檔) 會複製到其相關的架構資料夾中。</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>ContentTargetFolders</source>
+          <target state="translated">ContentTargetFolders</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>This property specifies the default location of where all the content files should go if <ph id="ph1">`PackagePath`</ph> is not specified for them.</source>
+          <target state="translated">如果未指定 <ph id="ph1">`PackagePath`</ph>，此屬性會指定所有內容檔案應移至的預設位置。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The default value is "content;contentFiles".</source>
+          <target state="translated">預設值為 "content;contentFiles"。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>NuspecFile</source>
+          <target state="translated">NuspecFile</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Relative or absolute path to the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file being used for packing.</source>
+          <target state="translated">正用於封裝之 <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> 檔案的相對或絕對路徑。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file is specified, it's used <bpt id="p2">**</bpt>exclusively<ept id="p2">**</ept> for packaging information and any information in the projects is not used.</source>
+          <target state="translated">如果指定 <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> 檔案，則會<bpt id="p2">**</bpt>單獨<ept id="p2">**</ept>使用此檔案來封裝資訊，而不會使用專案中的任何資訊。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>NuspecBasePath</source>
+          <target state="translated">NuspecBasePath</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Base path for the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file.</source>
+          <target state="translated"><bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> 檔案的基底路徑。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>NuspecProperties</source>
+          <target state="translated">NuspecProperties</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Semicolon separated list of key=value pairs.</source>
+          <target state="translated">以分號分隔的索引鍵=值組清單。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
