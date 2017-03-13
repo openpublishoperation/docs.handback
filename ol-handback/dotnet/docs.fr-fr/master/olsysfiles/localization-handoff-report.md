@@ -1,31 +1,51 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/505d21354ef540cd17d9837589ed7b76ed5b3868/docs/core/tutorials/using-on-macos.md) | ArchivedSuccess | [Details](#976bc3196bec0cdc0a1b2d051bc082edc0e0c1a1112)
+ [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/deploying/index.md) | HandedOffSuccess | [Details](#953693cb1ebe273393abc69bc7f0481874b4f0fc34)
+ [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#4d9bfe658f9c3257d53466268c608c6a2bd968e564)
 
 ## Item Details
-##### <a name='976bc3196bec0cdc0a1b2d051bc082edc0e0c1a1112'></a> Source: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs/blob/505d21354ef540cd17d9837589ed7b76ed5b3868/docs/core/tutorials/using-on-macos.md)
-* Status: ArchivedSuccess
+##### <a name='953693cb1ebe273393abc69bc7f0481874b4f0fc34'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/deploying/index.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/434b99d9494f53dadaca28918c502764e7d312c1/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
-* Handoff Datetime: 2017-03-11 18:14:36
+* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/29d805aef345fd2b09adabc0eee08344f5b12315/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Handoff Datetime: 2017-03-13 07:36:30
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/be3dd13abff30a207f61b59e2a9e014b3ff38c78/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
-* Archive Datetime: 2017-03-11 18:14:37
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\tutorials\using-on-macos.md](https://github.com/dotnet/docs.fr-fr/blob/ca036cdfa6d7e354153284d6e6d110a6e2b0eb12/docs/core/tutorials/using-on-macos.md)
-* Current Handback File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
-* Current Handback Datetime: 2016-11-11 13:11:11
-* Bilingual File: [using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/251d2e82ffe1d7746f1bc6903265b348d2d78502/ol-handback/dotnet/docs.fr-fr/master/ht-p1/using-on-macos.3d5cac8bdb9c8dbdda504aa6310f220a1ec07af3.fr-fr.xlf)
-* Bilingual Datetime: 2016-11-11 13:11:55
+* Current Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.fr-fr/blob/991cb801e11b5f5c016b9e799276ece58a89e0d9/docs/core/deploying/index.md)
+* Current Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/5db45d6d78b34a1e891667e56338bf4aaa5a7257/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Current Handback Datetime: 2017-03-10 16:29:29
+* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/5db45d6d78b34a1e891667e56338bf4aaa5a7257/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.fr-fr.xlf)
+* Bilingual Datetime: 2017-03-10 16:30:11
+* [Back to Top](#report-top)
+
+##### <a name='4d9bfe658f9c3257d53466268c608c6a2bd968e564'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/29d805aef345fd2b09adabc0eee08344f5b12315/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Handoff Datetime: 2017-03-13 07:36:30
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.fr-fr/blob/89f986994f199fbef639c3f93029b7e54900f15e/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/3b5530510ac6d5cb83553ff9e8c09eaa19f93fbe/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Current Handback Datetime: 2017-03-08 02:52:40
+* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/3b5530510ac6d5cb83553ff9e8c09eaa19f93fbe/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
+* Bilingual Datetime: 2017-03-08 02:53:48
 * [Back to Top](#report-top)
 
 
