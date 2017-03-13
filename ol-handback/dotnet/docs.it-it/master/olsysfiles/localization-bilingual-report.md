@@ -1,30 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/programming-guide/linq-query-expressions/index.md) | InSyncHandedBackSuccess | [Details](#ade0ec01fa6dc919953385aedbf59c448bc7ba912806)
 
 ## Item Details
-##### <a name='ade0ec01fa6dc919953385aedbf59c448bc7ba912806'></a> Source: [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/programming-guide/linq-query-expressions/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs.it-it/blob/4fe2210bbfdc053819e2897f8a24fe5c150ef854/docs/csharp/programming-guide/linq-query-expressions/index.md)
-* Handoff File: [index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/e9d0c3347e4fd4a6986ba976ec50613fbee3c168/ol-handoff/dotnet/docs.it-it/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf)
-* Handoff Datetime: 2017-03-13 16:50:23
-* Handoff Reason: Include
-* Handoff Name: docs_HT_P1#OL#CPubP1#20170313T151011
-* Archive File: [index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf](https://github.com/dotnet/docs.handoff/blob/29827aeaa7bee3cf13e6a8794eaf746ebfa6e093/ol-archive/dotnet/docs.it-it/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf)
-* Archive Datetime: 2017-03-13 22:21:16
-* Handback File: [index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf](https://github.com/dotnet/docs.handback/blob/f5dde3c34b390e84755a17bdaac16a2ea98922e4/ol-handback/dotnet/docs.it-it/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf)
-* Handback Datetime: 2017-03-13 23:02:25
-* Handback Name: docs_HT_P1#OL#CPubP1#20170313T151011-es-es-fr-fr-it-it-ja-jp-pt-br-ru-ru-zh-cn-zh-tw
-* Bilingual File: [index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf](https://github.com/dotnet/docs.handback/blob/f5dde3c34b390e84755a17bdaac16a2ea98922e4/ol-handback/dotnet/docs.it-it/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.it-it.xlf)
-* Bilingual Datetime: 2017-03-13 23:06:53
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
