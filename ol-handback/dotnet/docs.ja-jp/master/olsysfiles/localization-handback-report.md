@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/programming-guide/linq-query-expressions/index.md) | InSyncHandedBackSuccess | [Details](#ade0ec01fa6dc919953385aedbf59c448bc7ba912806)
 
 ## Item Details
-##### <a name='ade0ec01fa6dc919953385aedbf59c448bc7ba912806'></a> Source: [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/programming-guide/linq-query-expressions/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\csharp\programming-guide\linq-query-expressions\index.md](https://github.com/dotnet/docs.ja-jp/blob/20b91dc19580450b548ac44fac3e6c254953821f/docs/csharp/programming-guide/linq-query-expressions/index.md)
-* Handoff File: [index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/2ac1c1ebdff22210e4e142c062462dcc13fbb9a4/ol-handoff/dotnet/docs.ja-jp/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf)
-* Handoff Datetime: 2017-03-13 16:58:04
-* Handoff Reason: Include
-* Handoff Name: docs_HT_P1#OL#CPubP1#20170313T151011
-* Archive File: [index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/4f56ac581d24e4b3146859a0bff76651dfedb550/ol-archive/dotnet/docs.ja-jp/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf)
-* Archive Datetime: 2017-03-13 22:22:58
-* Handback File: [index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/45ca9c1449e1518f67880dc84eb1bded5fc46854/ol-handback/dotnet/docs.ja-jp/master/p1-ht/index.433c861d6bb4641dad2bf28116ed03273a129018.ja-jp.xlf)
-* Handback Datetime: 2017-03-13 23:04:18
-* Handback Name: docs_HT_P1#OL#CPubP1#20170313T151011-es-es-fr-fr-it-it-ja-jp-pt-br-ru-ru-zh-cn-zh-tw
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
