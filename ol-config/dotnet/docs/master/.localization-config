@@ -35,7 +35,85 @@
                "Type":"ht"
             }
          ]
-      }
+      },
+      {
+        "files":[ 
+            "docs/csharp/index.md",
+            "docs/csharp/TOC.md",
+            "docs/csharp/**/index.md",
+            "docs/csharp/**/TOC.md",
+            "docs/visual-basic/index.md",
+            "docs/visual-basic/TOC.md",
+            "docs/visual-basic/**/index.md",
+            "docs/visual-basic/**/TOC.md"
+        ],
+        "priorities":[
+            {
+               "priority":"P1-HT",
+               "locales":[ "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "pt-br", "zh-cn", "zh-tw" ],
+               "Type":"HT"
+            }
+         ]
+     },
+     {
+        "files":[ 
+            "docs/csharp/getting-started/**/*.md",
+            "docs/csharp/getting-started/*.md",
+            "docs/csharp/includes/**/*.md",
+            "docs/csharp/includes/*.md",
+            "docs/csharp/tour-of-csharp/**/*.md",
+            "docs/csharp/tour-of-csharp/*.md",
+            "docs/csharp/tutorials/**/*.md",
+            "docs/csharp/tutorials/*.md",
+            "docs/csharp/whats-new.md"
+      ],
+        "priorities":[
+            {
+               "priority":"VBCS_Hi-HT",
+               "locales":[ "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "pt-br", "zh-cn", "zh-tw" ],
+               "Type":"HT"
+            }
+         ]
+     },
+     {
+        "files":[ 
+            "docs/csharp/interactive/**/*.md",
+            "docs/csharp/interactive/*.md",
+            "docs/csharp/language-reference/**/*.md",
+            "docs/csharp/language-reference/*.md",
+            "docs/csharp/linq/**/*.md",
+            "docs/csharp/linq/*.md",
+            "docs/csharp/programming-guide/**/*.md",
+            "docs/csharp/programming-guide/*.md",
+            "docs/csharp/*.md",
+            "docs/visual-basic/developing-apps/programming/**/*.md",
+            "docs/visual-basic/developing-apps/programming/*.md",
+            "docs/visual-basic/developing-apps/*.md",
+            "docs/visual-basic/getting-started/**/*.md",
+            "docs/visual-basic/getting-started/*.md",
+            "docs/visual-basic/*.md"      
+        ],
+        "priorities":[           
+            {
+               "priority":"VBCS_Med-HT",
+               "locales":[ "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "pt-br", "zh-cn", "zh-tw" ],
+               "Type":"HT"
+            }
+         ]
+     },
+     {
+        "files":[ 
+            "docs/csharp/**/*.md",
+            "docs/visual-basic/**/*.md"
+         ],
+        "priorities":[
+            {
+               "priority":"VBCS_Lo-MT",
+               "locales":[ "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "pt-br", "zh-cn", "zh-tw" ],
+               "Type":"MT"
+            }
+         ]
+     }
    ],
    "includeDependencies":false,
    "autoPush":true,
@@ -47,4 +125,3 @@
       "preset":"CnE"
    }
 }
-
