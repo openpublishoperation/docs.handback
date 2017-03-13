@@ -1,47 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/f829714f545314daaa218b241008b5a2955ec589/docs/core/migration/index.md) | InSyncHandedBackSuccess | [Details](#5872201f705c07bf692d0dc7f962068632f6b54049)
- [docs\core\versions\index.md](https://github.com/dotnet/docs/blob/519253bd6dc105afb138268c62347c29a6072fbb/docs/core/versions/index.md) | InSyncHandedBackSuccess | [Details](#7be49f3ac7a7806e631eacf5004343919654881e116)
 
 ## Item Details
-##### <a name='5872201f705c07bf692d0dc7f962068632f6b54049'></a> Source: [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/f829714f545314daaa218b241008b5a2955ec589/docs/core/migration/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\migration\index.md](https://github.com/dotnet/docs.pt-br/blob/347125ed27a557e88fd77a476b1e0acd2bfaf562/docs/core/migration/index.md)
-* Handoff File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/179d4b8e191215100fe4fca58797ecb26cbd8d45/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 18:15:06
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/eff5ec3e14dfea3f84faebd60a78f384ee0b62e6/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf)
-* Handback Datetime: 2017-03-13 20:28:22
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-ja-jp-pt-br-ru-ru
-* Bilingual File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/f9da2844d83ba76642fcb188265e97a4f2cf5e9d/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.pt-br.xlf)
-* Bilingual Datetime: 2017-03-10 15:30:28
-* [Back to Top](#report-top)
-
-##### <a name='7be49f3ac7a7806e631eacf5004343919654881e116'></a> Source: [docs\core\versions\index.md](https://github.com/dotnet/docs/blob/519253bd6dc105afb138268c62347c29a6072fbb/docs/core/versions/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\versions\index.md](https://github.com/dotnet/docs.pt-br/blob/347125ed27a557e88fd77a476b1e0acd2bfaf562/docs/core/versions/index.md)
-* Handoff File: [index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/96f0a360b842bb36944b767b9ba7b6dfba919a16/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf)
-* Handoff Datetime: 2017-03-07 05:38:55
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#dotnet#20170307T120448
-* Archive File: [index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/8bdb2e2afa8517096f394c553654fd677a6562c1/ol-archive/dotnet/docs.pt-br/master/dotnet-core/index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf)
-* Archive Datetime: 2017-03-07 20:15:59
-* Handback File: [index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/eff5ec3e14dfea3f84faebd60a78f384ee0b62e6/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf)
-* Handback Datetime: 2017-03-13 20:28:22
-* Handback Name: docs_HT_OL#dotnet#20170307T120448-de-de-ja-jp-pt-br-ru-ru
-* Bilingual File: [index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/f9da2844d83ba76642fcb188265e97a4f2cf5e9d/ol-handback/dotnet/docs.pt-br/master/dotnet-core/index.b30cf6bccbcaf31708d07e58451f5973b2020242.pt-br.xlf)
-* Bilingual Datetime: 2017-03-10 15:30:28
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
