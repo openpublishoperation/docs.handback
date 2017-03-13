@@ -1,53 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/deploying/index.md) | HandedOffSuccess | [Details](#953693cb1ebe273393abc69bc7f0481874b4f0fc34)
- [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#4d9bfe658f9c3257d53466268c608c6a2bd968e564)
 
 ## Item Details
-##### <a name='953693cb1ebe273393abc69bc7f0481874b4f0fc34'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/deploying/index.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/8c8790da0f9046b1498db6e05f27595da8916da2/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 07:41:24
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.zh-tw/blob/b6daac07404ff8faf092ac5db2c506d0f2b0f6a5/docs/core/deploying/index.md)
-* Current Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/88b60267a0e5748de5a6f03696991c9556c647f4/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Current Handback Datetime: 2017-03-10 04:25:26
-* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/88b60267a0e5748de5a6f03696991c9556c647f4/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.zh-tw.xlf)
-* Bilingual Datetime: 2017-03-10 04:26:18
-* [Back to Top](#report-top)
-
-##### <a name='4d9bfe658f9c3257d53466268c608c6a2bd968e564'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/testing/unit-testing-with-dotnet-test.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/8c8790da0f9046b1498db6e05f27595da8916da2/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 07:41:24
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Handback Name: 
-* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.zh-tw/blob/d2107ed8c661cfa5f66c0d1b385a3031fea1cbf1/docs/core/testing/unit-testing-with-dotnet-test.md)
-* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/ce87006b64dd4069d4964be846c71e036d5d9141/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf)
-* Current Handback Datetime: 2017-03-13 01:48:45
-* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/ce87006b64dd4069d4964be846c71e036d5d9141/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.zh-tw.xlf)
-* Bilingual Datetime: 2017-03-13 01:49:47
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
