@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\migration\from-dnx.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/migration/from-dnx.md) | InSyncHandedBackSuccess | [Details](#a6f90a43b5f129cd246546f2cc36c4b97c3fb15c48)
 
 ## Item Details
+##### <a name='a6f90a43b5f129cd246546f2cc36c4b97c3fb15c48'></a> Source: [docs\core\migration\from-dnx.md](https://github.com/dotnet/docs/blob/195664ae6409be02ca132900d9c513a7b412acd4/docs/core/migration/from-dnx.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\migration\from-dnx.md](https://github.com/dotnet/docs.zh-tw/blob/0edefe0e24a9dd9a2a06d4ce7d921cfce6664588/docs/core/migration/from-dnx.md)
+* Handoff File: [from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/db792a140a0d8ffe4432302984c4a4989476eaf5/ol-handoff/dotnet/docs.zh-tw/master/dotnet-core/from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf)
+* Handoff Datetime: 2017-03-07 14:30:47
+* Handoff Reason: Include
+* Handoff Name: docs_HT_OL#dotnet#20170307T120448
+* Archive File: [from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/90cb85c80c23d524bb8dd16c302a63b496d0b4a2/ol-archive/dotnet/docs.zh-tw/master/dotnet-core/from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf)
+* Archive Datetime: 2017-03-07 20:15:31
+* Handback File: [from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/8203f65866e4de66d840c13bc65ac692fbc98b98/ol-handback/dotnet/docs.zh-tw/master/dotnet-core/from-dnx.07ca3d19eaf9e5e94dea11cf4e69b50b45d732c3.zh-tw.xlf)
+* Handback Datetime: 2017-03-13 11:35:35
+* Handback Name: docs_HT_OL#dotnet#20170307T120448-zh-tw_4
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
