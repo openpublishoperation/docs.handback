@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#771f2b5137164aac7eeb6fbb753f940d4803858d64)
+ [index.md](https://github.com/dotnet/docs/blob/408431d84f49e3184693303ebe01f3b534776012/index.md) | HandedOffSuccess | [Details](#0d382c5625c089db16ce14ab5bc54beb2d85b59c7449)
 
 ## Item Details
-##### <a name='771f2b5137164aac7eeb6fbb753f940d4803858d64'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md)
+##### <a name='0d382c5625c089db16ce14ab5bc54beb2d85b59c7449'></a> Source: [index.md](https://github.com/dotnet/docs/blob/408431d84f49e3184693303ebe01f3b534776012/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/fefd53e696c464b4f3d77a2211ddc04bb7b777aa/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf)
-* Handoff Datetime: 2017-03-14 17:34:58
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handoff/blob/e65919dc59cb5ba13ccc8592e4ebcfbce5aa9c16/ol-handoff/dotnet/docs.ja-jp/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
+* Handoff Datetime: 2017-03-14 19:31:59
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -21,11 +21,11 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.ja-jp/blob/d12ef71aeb96760793b1905b11ca6970e99ec0e2/docs/core/testing/unit-testing-with-dotnet-test.md)
-* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/46f662cc185843cb5acb0f57571b70e028186bb1/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf)
-* Current Handback Datetime: 2017-02-02 21:26:43
-* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/46f662cc185843cb5acb0f57571b70e028186bb1/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ja-jp.xlf)
-* Bilingual Datetime: 2017-02-02 21:29:33
+* Current Target File: [index.md](https://github.com/dotnet/docs.ja-jp/blob/c74f1bfe0a2296dd364104d5da8afd493278f65d/index.md)
+* Current Handback File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cc7e32c178ceb4256f8dd42af0b0b9404611c88e/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
+* Current Handback Datetime: 2017-02-09 02:39:37
+* Bilingual File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf](https://github.com/dotnet/docs.handback/blob/cc7e32c178ceb4256f8dd42af0b0b9404611c88e/ol-handback/dotnet/docs.ja-jp/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.ja-jp.xlf)
+* Bilingual Datetime: 2017-02-09 02:43:49
 * [Back to Top](#report-top)
 
 
