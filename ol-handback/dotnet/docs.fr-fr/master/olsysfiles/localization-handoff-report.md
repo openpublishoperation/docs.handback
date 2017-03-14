@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#771f2b5137164aac7eeb6fbb753f940d4803858d64)
+ [index.md](https://github.com/dotnet/docs/blob/408431d84f49e3184693303ebe01f3b534776012/index.md) | HandedOffSuccess | [Details](#0d382c5625c089db16ce14ab5bc54beb2d85b59c7449)
 
 ## Item Details
-##### <a name='771f2b5137164aac7eeb6fbb753f940d4803858d64'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md)
+##### <a name='0d382c5625c089db16ce14ab5bc54beb2d85b59c7449'></a> Source: [index.md](https://github.com/dotnet/docs/blob/408431d84f49e3184693303ebe01f3b534776012/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/18f7aa2f0984b90401083ab1fdefa1afc9810111/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.fr-fr.xlf)
-* Handoff Datetime: 2017-03-14 17:30:49
+* Handoff File: [index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/f950feaac9eaa5b70e123d66ee671898d1b7e7fa/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/index.b8d322cca13b7303167b216a3efe71db4e1687a1.fr-fr.xlf)
+* Handoff Datetime: 2017-03-14 19:27:33
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
