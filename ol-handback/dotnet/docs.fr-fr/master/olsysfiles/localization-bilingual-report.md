@@ -1,47 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [docs\core\versions\lts-current.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/versions/lts-current.md) | InSyncHandedBackSuccess | [Details](#582a521e6a30b740465890b6cb8c773061a98ea6117)
- [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/standard/base-types/composite-format.md) | InSyncHandedBackSuccess | [Details](#5b61b4736880d57f02070150d8613d860505b2683332)
 
 ## Item Details
-##### <a name='582a521e6a30b740465890b6cb8c773061a98ea6117'></a> Source: [docs\core\versions\lts-current.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/core/versions/lts-current.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\core\versions\lts-current.md](https://github.com/dotnet/docs.fr-fr/blob/baf94f0a664b7b7b49ccec8fb97a211a5cf1e5c5/docs/core/versions/lts-current.md)
-* Handoff File: [lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/3696b1d5a29279b3bea53ba920251b48bfd4d8f9/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf)
-* Handoff Datetime: 2017-03-13 09:31:55
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a68d5b613fb4d28734fc30e307c606126bf56c05/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf)
-* Archive Datetime: 2017-03-13 09:31:58
-* Handback File: [lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/6bcc50b43f48f46297049fa4b8fee8f3c326ce7b/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf)
-* Handback Datetime: 2017-03-14 02:35:27
-* Handback Name: docs_HT_OL#dotnet#20170216T002900-fr-fr_2
-* Bilingual File: [lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/6bcc50b43f48f46297049fa4b8fee8f3c326ce7b/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/lts-current.9cd306b2bb001d9adb711c4f3df93725038ccf75.fr-fr.xlf)
-* Bilingual Datetime: 2017-03-14 02:36:55
-* [Back to Top](#report-top)
-
-##### <a name='5b61b4736880d57f02070150d8613d860505b2683332'></a> Source: [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs/blob/3845ec46cbd1f65abd9b78f7b81487efed9de2f2/docs/standard/base-types/composite-format.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [docs\standard\base-types\composite-format.md](https://github.com/dotnet/docs.fr-fr/blob/baf94f0a664b7b7b49ccec8fb97a211a5cf1e5c5/docs/standard/base-types/composite-format.md)
-* Handoff File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/3696b1d5a29279b3bea53ba920251b48bfd4d8f9/ol-handoff/dotnet/docs.fr-fr/master/dotnet-core/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf)
-* Handoff Datetime: 2017-03-13 09:31:55
-* Handoff Reason: Include
-* Handoff Name: 
-* Archive File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf](https://github.com/dotnet/docs.handoff/blob/a68d5b613fb4d28734fc30e307c606126bf56c05/ol-archive/dotnet/docs.fr-fr/master/dotnet-core/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf)
-* Archive Datetime: 2017-03-13 09:31:58
-* Handback File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/6bcc50b43f48f46297049fa4b8fee8f3c326ce7b/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf)
-* Handback Datetime: 2017-03-14 02:35:27
-* Handback Name: docs_HT_OL#dotnet#20170216T002900-fr-fr_2
-* Bilingual File: [composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf](https://github.com/dotnet/docs.handback/blob/6bcc50b43f48f46297049fa4b8fee8f3c326ce7b/ol-handback/dotnet/docs.fr-fr/master/dotnet-core/composite-format.973661d9a744ed78de87e17fcd3a9dc277bea625.fr-fr.xlf)
-* Bilingual Datetime: 2017-03-14 02:36:55
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
