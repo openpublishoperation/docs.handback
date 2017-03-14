@@ -1,11 +1,33 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md) | HandedOffSuccess | [Details](#771f2b5137164aac7eeb6fbb753f940d4803858d64)
 
 ## Item Details
+##### <a name='771f2b5137164aac7eeb6fbb753f940d4803858d64'></a> Source: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs/blob/8ece5eba1fc284b8ddffecb9fdc4f24ae5f5fa72/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/f78d84fd6a75d53b15913afaa1208c4a01ceb263/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf)
+* Handoff Datetime: 2017-03-14 17:33:11
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\testing\unit-testing-with-dotnet-test.md](https://github.com/dotnet/docs.ru-ru/blob/fffdedcc90976f7f1176a4fd56058df607d66c55/docs/core/testing/unit-testing-with-dotnet-test.md)
+* Current Handback File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/622abdb71f658ac418a99509eb765c79ca52f7ba/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf)
+* Current Handback Datetime: 2017-01-20 17:15:17
+* Bilingual File: [unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/622abdb71f658ac418a99509eb765c79ca52f7ba/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/unit-testing-with-dotnet-test.ac456b50cdaf9eaf743ffc66cb459ad9ec585b4b.ru-ru.xlf)
+* Bilingual Datetime: 2017-01-20 17:18:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
