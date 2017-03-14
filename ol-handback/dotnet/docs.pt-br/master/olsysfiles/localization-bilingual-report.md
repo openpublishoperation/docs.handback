@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/project-json-to-csproj.md) | InSyncHandedBackSuccess | [Details](#8e2841ab6ff6fc93f0b86af84b91eb2c07a5a3a096)
 
 ## Item Details
+##### <a name='8e2841ab6ff6fc93f0b86af84b91eb2c07a5a3a096'></a> Source: [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/project-json-to-csproj.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs.pt-br/blob/62386ee490a6b52b2401e825140552c2f4d8ed6c/docs/core/tools/project-json-to-csproj.md)
+* Handoff File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/9541574edb9b4602a9815e7691ad2eb5a7a185c1/ol-handoff/dotnet/docs.pt-br/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf)
+* Handoff Datetime: 2017-03-14 21:36:39
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf](https://github.com/dotnet/docs.handoff/blob/3440842963cf18dfd78a46855a800dbda38aaa01/ol-archive/dotnet/docs.pt-br/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf)
+* Archive Datetime: 2017-03-14 21:36:42
+* Handback File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/d0c4a5d2801f590e5e3e163050836781b8473451/ol-handback/dotnet/docs.pt-br/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf)
+* Handback Datetime: 2017-03-14 21:39:55
+* Handback Name: 
+* Bilingual File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf](https://github.com/dotnet/docs.handback/blob/d0c4a5d2801f590e5e3e163050836781b8473451/ol-handback/dotnet/docs.pt-br/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.pt-br.xlf)
+* Bilingual Datetime: 2017-03-14 21:41:58
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
