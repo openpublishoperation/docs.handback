@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b5c25fc" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e67270cf713857a5fea16ebdd0abab774f555808</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">09db10cd830b9ce2638f9d3f65389244af876c5c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">50ddfc14bca5f978202608cf2bce8784e63dd6fc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>csproj reference | Microsoft Docs</source>
+          <target state="translated">Referência csproj | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Learn about the differences between existing and .NET Core csproj files</source>
+          <target state="translated">Saiba mais sobre as diferenças entre arquivos existentes e de csproj do .NET Core</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>reference, csproj, .NET Core</source>
+          <target state="translated">referência, csproj, .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Additions to the csproj format for .NET Core</source>
+          <target state="translated">Adições ao formato csproj para .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This document outlines the changes that were added to the project files as part of the move from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept> and <bpt id="p3">[</bpt>MSBuild<ept id="p3">](https://github.com/Microsoft/MSBuild)</ept>.</source>
+          <target state="translated">Este documento descreve as alterações adicionadas aos arquivos de projeto como parte da mudança de <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> para <bpt id="p2">*</bpt>csproj<ept id="p2">*</ept> e o <bpt id="p3">[</bpt>MSBuild<ept id="p3">](https://github.com/Microsoft/MSBuild)</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For more information about general project file syntax and reference, see <bpt id="p1">[</bpt>the MSBuild project file<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept> documentation.</source>
+          <target state="translated">Para mais informações sobre a sintaxe e a referência do arquivo de projeto geral, consulte a documentação do <bpt id="p1">[</bpt>arquivo de projeto MSBuild<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Implicit package references</source>
+          <target state="translated">Referências de pacote implícitas</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Metapackages are now implicitly referenced based on the target framework specified in the <ph id="ph1">`&lt;TargetFramework&gt;`</ph> or <ph id="ph2">`&lt;TargetFrameworks&gt;`</ph> property of your project file.</source>
+          <target state="translated">Os metapacotes agora são referenciados implicitamente de acordo com a estrutura de destino especificada na propriedade <ph id="ph1">`&lt;TargetFramework&gt;`</ph> ou <ph id="ph2">`&lt;TargetFrameworks&gt;`</ph> do arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If the target framework is <ph id="ph1">`netcoreap1.x`</ph>, the proper version of the <ph id="ph2">`Microsoft.NETCore.App`</ph> metapackage is referenced.</source>
+          <target state="translated">Se a estrutura de destino for <ph id="ph1">`netcoreap1.x`</ph>, a versão apropriada do metapacote <ph id="ph2">`Microsoft.NETCore.App`</ph> será referenciada.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Otherwise, if the target framework is <ph id="ph1">`netstandard1.x`</ph>, the proper version of the <ph id="ph2">`NetStandard.Library`</ph> metapackage is referenced.</source>
+          <target state="translated">Caso contrário, se a estrutura de destino for <ph id="ph1">`netstandard1.x`</ph>, a versão apropriada do metapacote <ph id="ph2">`NetStandard.Library`</ph> será referenciada.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>As far as the rest of the behavior is concerned, the tools will work as expected and most of the gestures will remain the same (for example, <ph id="ph1">`dotnet restore`</ph>).</source>
+          <target state="translated">Quanto ao restante do comportamento, as ferramentas funcionarão como esperado e a maioria dos gestos permanecerá igual (por exemplo, <ph id="ph1">`dotnet restore`</ph>).</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Recommendations</source>
+          <target state="translated">Recomendações</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Since <ph id="ph1">`Microsoft.NETCore.App`</ph> or <ph id="ph2">`NetStandard.Library`</ph> metapackages are now implicitly referenced, the following are our recommended best practices:</source>
+          <target state="translated">Como os metapacotes <ph id="ph1">`Microsoft.NETCore.App`</ph> ou <ph id="ph2">`NetStandard.Library`</ph> agora são referenciados implicitamente, estas são nossas melhores práticas:</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Never have an explicit reference to the <ph id="ph1">`Microsoft.NETCore.App`</ph> or <ph id="ph2">`NetStandard.Library`</ph> metapackages via the <ph id="ph3">`&lt;PackageReference&gt;`</ph> property in your project file.</source>
+          <target state="translated">Nunca tenha uma referência explícita aos metapacotes <ph id="ph1">`Microsoft.NETCore.App`</ph> ou <ph id="ph2">`NetStandard.Library`</ph> por meio da propriedade <ph id="ph3">`&lt;PackageReference&gt;`</ph> no arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you need a specific version of the runtime, you should use the <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> property in your project (for example, <ph id="ph2">`1.0.4`</ph>) instead of referencing the metapackage.</source>
+          <target state="translated">Se precisar de uma versão específica do tempo de execução, use a propriedade <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> no projeto (por exemplo, <ph id="ph2">`1.0.4`</ph>) em vez de referenciar o metapacote.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This might happen if you are using <bpt id="p1">[</bpt>self-contained deployments<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept> and you need a specific patch version of 1.0.0 LTS runtime, for example.</source>
+          <target state="translated">Isso poderá ocorrer se você estiver usando <bpt id="p1">[</bpt>implantações independentes<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept> e precisar de uma versão de patch específica do tempo de execução do 1.0.0 LTS, por exemplo.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you need a specific version of the <ph id="ph1">`NetStandard.Library`</ph> metapackage, you can use the <ph id="ph2">`&lt;NetStandardImplicitPackageVersion&gt;`</ph> property and set the version you need.</source>
+          <target state="translated">Se precisar de uma versão específica do metapacote <ph id="ph1">`NetStandard.Library`</ph>, poderá usar a propriedade <ph id="ph2">`&lt;NetStandardImplicitPackageVersion&gt;`</ph> e definir a versão necessária.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Default compilation includes in .NET Core projects</source>
+          <target state="translated">Inclusões de compilação padrão em projetos do .NET Core</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>With the move to the <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files.</source>
+          <target state="translated">Com a mudança para o formato <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> nas últimas versões do SDK, mudamos as inclusões e exclusões padrão de itens de compilação e recursos inseridos dos arquivos de propriedades do SDK.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This means that you no longer need to specify these items in your project file.</source>
+          <target state="translated">Isso significa que você não precisa mais especificar esses itens no arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The main reason for doing this is to reduce the clutter on your project file.</source>
+          <target state="translated">O principal motivo disso é reduzir a desordem no arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create.</source>
+          <target state="translated">Os padrões presentes no SDK devem abranger os casos de uso mais comuns e, portanto, não há necessidade de repeti-los em cada projeto criado.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This leads to smaller project files that are much easier to understand as well as edit by hand, if needed.</source>
+          <target state="translated">Isso resulta em arquivos de projeto menores que são mais fáceis de serem entendidos, bem como editados manualmente, se necessário.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following table shows which element and which globs are both included and excluded in the SDK:</source>
+          <target state="translated">A seguinte tabela mostra qual elemento e quais globs são incluídos e excluídos do SDK:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Element</source>
+          <target state="translated">Elemento</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Include glob</source>
+          <target state="translated">Incluir glob</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Exclude glob</source>
+          <target state="translated">Excluir glob</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Remove glob</source>
+          <target state="translated">Remover glob</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Compile</source>
+          <target state="translated">Compilar</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.cs (or other language extensions)</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.cs (ou outras extensões de linguagem)</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user;  <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj;  <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln;  <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target state="translated">N/D</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>EmbeddedResource</source>
+          <target state="translated">EmbeddedResource</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.resx</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.resx</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>N/A</source>
+          <target state="translated">N/D</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <target state="translated">Nenhum</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</source>
+          <target state="translated"><ph id="ph1">\*</ph><ph id="ph2">\*</ph><ph id="ph3">/</ph><ph id="ph4">\*</ph>.user; <ph id="ph5">\*</ph><ph id="ph6">\*</ph><ph id="ph7">/</ph><ph id="ph8">\*</ph>.<ph id="ph9">\*</ph>proj; <ph id="ph10">\*</ph><ph id="ph11">\*</ph><ph id="ph12">/</ph><ph id="ph13">\*</ph>.sln; <ph id="ph14">\*</ph><ph id="ph15">\*</ph><ph id="ph16">/</ph><ph id="ph17">\*</ph>.vssscc</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">- </ph><ph id="ph2">\*</ph><ph id="ph3">\*</ph><ph id="ph4">/</ph><ph id="ph5">\*</ph>.cs; <ph id="ph6">\*</ph><ph id="ph7">\*</ph><ph id="ph8">/</ph><ph id="ph9">\*</ph>.resx</source>
+          <target state="translated"><ph id="ph1">- </ph><ph id="ph2">\*</ph><ph id="ph3">\*</ph><ph id="ph4">/</ph><ph id="ph5">\*</ph>.cs; <ph id="ph6">\*</ph><ph id="ph7">\*</ph><ph id="ph8">/</ph><ph id="ph9">\*</ph>.resx</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If you have globs in your project and you try to build it using the newest SDK, you'll get the following error:</source>
+          <target state="translated">Se você tiver globs no projeto e tentar compilá-lo usando o SDK mais novo, receberá o seguinte erro:</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Duplicate Compile items were included.</source>
+          <target state="translated">Itens de compilação duplicados foram incluídos.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The .NET SDK includes Compile items from your project directory by default.</source>
+          <target state="translated">Por padrão, o SDK do .NET inclui itens de Compilação do diretório de projeto.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.</source>
+          <target state="translated">É possível remover esses itens do arquivo de projeto ou definir a propriedade “EnableDefaultCompileItems” como “false” se desejar incluí-los explicitamente no arquivo de projeto.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In order to get around this error, you can either remove the explicit <ph id="ph1">`Compile`</ph> items that match the ones listed on the previous table, or you can set the <ph id="ph2">`&lt;EnableDefaultCompileItems&gt;`</ph> property to <ph id="ph3">`false`</ph>, like this:</source>
+          <target state="translated">Para corrigir esse erro, é possível remover os itens <ph id="ph1">`Compile`</ph> explícitos que correspondem aos listados na tabela anterior ou definir a propriedade <ph id="ph2">`&lt;EnableDefaultCompileItems&gt;`</ph> como <ph id="ph3">`false`</ph>, desta maneira:</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Setting this property to <ph id="ph1">`false`</ph> will override implicit inclusion and the behavior will revert back to the previous SDKs where you had to specify the default globs in your project.</source>
+          <target state="translated">A configuração dessa propriedade como <ph id="ph1">`false`</ph> substituirá a inclusão implícita e o comportamento será revertido para os SDKs anteriores em que era necessário especificar os globs padrão no projeto.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This change does not modify the main mechanics of other includes.</source>
+          <target state="translated">Essa alteração não modifica a mecânica principal de outras inclusões.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> for that (for example, the <ph id="ph1">`&lt;Content&gt;`</ph> element).</source>
+          <target state="translated">No entanto, se desejar especificar, por exemplo, alguns arquivos para serem publicados com o aplicativo, ainda poderá usar os mecanismos conhecidos em <bpt id="p1">*</bpt>csproj<ept id="p1">*</ept> para fazer isso (por exemplo, o elemento <ph id="ph1">`&lt;Content&gt;`</ph>).</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Recommendation</source>
+          <target state="translated">Recomendação</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>With csproj, we recommend that you remove the default globs from your project and only add globs file paths for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)</source>
+          <target state="translated">Com csproj, recomendamos a remoção dos globs padrão do projeto e a adição de apenas caminhos de arquivo de globs desses artefatos necessários para o aplicativo ou a biblioteca para vários cenários (tempo de execução, pacotes NuGet, etc.)</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Additions</source>
+          <target state="translated">Adições</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Sdk attribute</source>
+          <target state="translated">Atributo do SDK</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;Project&gt;`</ph> element of the <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> file has a new attribute called <ph id="ph2">`Sdk`</ph>.</source>
+          <target state="translated">O elemento <ph id="ph1">`&lt;Project&gt;`</ph> do arquivo <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> tem um novo atributo chamado <ph id="ph2">`Sdk`</ph>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Sdk`</ph> specifies which SDK will be used by the project.</source>
+          <target state="translated"><ph id="ph1">`Sdk`</ph> especifica qual SDK será usado pelo projeto.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The SDK, as the <bpt id="p1">[</bpt>layering document<ept id="p1">](cli-msbuild-architecture.md)</ept> describes, is a set of MSBuild <bpt id="p2">[</bpt>tasks<ept id="p2">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)</ept> and <bpt id="p3">[</bpt>targets<ept id="p3">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept> that can build .NET Core code.</source>
+          <target state="translated">O SDK, como o <bpt id="p1">[</bpt>documento de camadas<ept id="p1">](cli-msbuild-architecture.md)</ept> descreve, é um conjunto de <bpt id="p2">[</bpt>tarefas<ept id="p2">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks)</ept> e <bpt id="p3">[</bpt>destinos<ept id="p3">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept> do MSBuild que podem compilar o código do .NET Core.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>We ship two main SDKs with the .NET Core tools:</source>
+          <target state="translated">Fornecemos dois SDKs principais com as ferramentas do .NET Core:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The .NET Core SDK with the ID of <ph id="ph1">`Microsoft.NET.Sdk`</ph></source>
+          <target state="translated">O SDK do .NET Core com a ID <ph id="ph1">`Microsoft.NET.Sdk`</ph></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The .NET Core web SDK with the ID of <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph></source>
+          <target state="translated">O SDK da Web do .NET Core com a ID <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You need to have the <ph id="ph1">`Sdk`</ph> attribute set to one of those IDs on the <ph id="ph2">`&lt;Project&gt;`</ph> element in order to use the .NET Core tools and build your code.</source>
+          <target state="translated">É necessário ter o atributo <ph id="ph1">`Sdk`</ph> definido com uma dessas IDs no elemento <ph id="ph2">`&lt;Project&gt;`</ph> para usar as ferramentas do .NET Core e compilar o código.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>PackageReference</source>
+          <target state="translated">PackageReference</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Item that specifies a NuGet dependency in the project.</source>
+          <target state="translated">Item que especifica uma dependência NuGet no projeto.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Include`</ph> attribute specifies the package ID.</source>
+          <target state="translated">O atributo <ph id="ph1">`Include`</ph> especifica a ID do pacote.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">Versão</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Version`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`Version`</ph> especifica a versão do pacote para restauração.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The element respects the rules of the NuGet versioning scheme.</source>
+          <target state="translated">O elemento respeita as regras do esquema de controle de versão do NuGet.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>IncludeAssets, ExcludeAssets and PrivateAssets</source>
+          <target state="translated">IncludeAssets, ExcludeAssets e PrivateAssets</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`IncludeAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed.</source>
+          <target state="translated">O atributo <ph id="ph1">`IncludeAssets`</ph> especifica quais ativos que pertencem ao pacote especificado pelo <ph id="ph2">`&lt;PackageReference&gt;`</ph> devem ser consumidos.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ExcludeAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should not be consumed.</source>
+          <target state="translated">O atributo <ph id="ph1">`ExcludeAssets`</ph> especifica quais ativos que pertencem ao pacote especificado pelo <ph id="ph2">`&lt;PackageReference&gt;`</ph> não devem ser consumidos.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PrivateAssets`</ph> attribute specifies what assets belonging to the package specified by <ph id="ph2">`&lt;PackageReference&gt;`</ph> should be consumed but that they should not flow to the next project.</source>
+          <target state="translated">O atributo <ph id="ph1">`PrivateAssets`</ph> especifica quais ativos que pertencem ao pacote especificado pelo <ph id="ph2">`&lt;PackageReference&gt;`</ph> devem ser consumidos, mas que eles não devem fluir para o próximo projeto.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PrivateAssets`</ph> is equivalent to the <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept><ph id="ph2">/</ph><bpt id="p2">*</bpt>xproj<ept id="p2">*</ept> <ph id="ph3">`SuppressParent`</ph> element.</source>
+          <target state="translated"><ph id="ph1">`PrivateAssets`</ph> é equivalente ao elemento <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept><ph id="ph2">/</ph><bpt id="p2">*</bpt>xproj<ept id="p2">*</ept> <ph id="ph3">`SuppressParent`</ph>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>These attributes can contain one or more of the following items:</source>
+          <target state="translated">Esses atributos podem conter um ou mais dos seguintes itens:</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Compile`</ph> – the contents of the lib folder are available to compile against.</source>
+          <target state="translated"><ph id="ph1">`Compile`</ph> – o conteúdo da pasta lib está disponível para compilação.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Runtime`</ph> – the contents of the runtime folder are distributed.</source>
+          <target state="translated"><ph id="ph1">`Runtime`</ph> – o conteúdo da pasta de tempo de execução é distribuído.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ContentFiles`</ph> – the contents of the <bpt id="p1">*</bpt>contentfiles<ept id="p1">*</ept> folder are used.</source>
+          <target state="translated"><ph id="ph1">`ContentFiles`</ph> – o conteúdo da pasta <bpt id="p1">*</bpt>contentfiles<ept id="p1">*</ept> é usado.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Build`</ph> – the props/targets in the build folder are used.</source>
+          <target state="translated"><ph id="ph1">`Build`</ph> – as propriedades/destinos na pasta build são usados.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Native`</ph> – the contents from native assets are copied to the output folder for runtime.</source>
+          <target state="translated"><ph id="ph1">`Native`</ph> – o conteúdo de ativos nativos é copiado para a pasta de saída para o tempo de execução.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Analyzers`</ph> – the analyzers are used.</source>
+          <target state="translated"><ph id="ph1">`Analyzers`</ph> – os analisadores são usados.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Alternatively, the attribute can contain:</source>
+          <target state="translated">Como alternativa, o atributo pode conter:</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`None`</ph> – none of the assets are used.</source>
+          <target state="translated"><ph id="ph1">`None`</ph> – nenhum dos ativos é usado.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`All`</ph> – all assets are used.</source>
+          <target state="translated"><ph id="ph1">`All`</ph> – todos os ativos são usados.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>DotnetCliToolReference</source>
+          <target state="translated">DotnetCliToolReference</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> item element specifies the CLI tool that the user wants to restore in the context of the project.</source>
+          <target state="translated">O elemento do item <ph id="ph1">`&lt;DotnetCliToolReference&gt;`</ph> especifica a ferramenta da CLI que o usuário deseja restaurar no contexto do projeto.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>It's a replacement for the <ph id="ph1">`tools`</ph> node in <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>.</source>
+          <target state="translated">É uma substituição do nó <ph id="ph1">`tools`</ph> em <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Version</source>
+          <target state="translated">Versão</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Version`</ph> specifies the version of the package to restore.</source>
+          <target state="translated"><ph id="ph1">`Version`</ph> especifica a versão do pacote para restauração.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The attribute respect the rules of the NuGet versioning scheme.</source>
+          <target state="translated">O atributo respeita as regras do esquema de controle de versão do NuGet.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifiers</source>
+          <target state="translated">RuntimeIdentifiers</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> element lets you specify a semicolon-delimited list of <bpt id="p1">[</bpt>Runtime Identifiers (RIDs)<ept id="p1">](../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated">O elemento <ph id="ph1">`&lt;RuntimeIdentifiers&gt;`</ph> permite especificar uma lista delimitada por ponto e vírgula de <bpt id="p1">[</bpt>RIDs (Identificadores de Tempo de Execução)<ept id="p1">](../rid-catalog.md)</ept> para o projeto.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>RIDs enable publishing a self-contained deployments.</source>
+          <target state="translated">Os RIDs permitem publicar uma implantação autocontida.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>RuntimeIdentifier</source>
+          <target state="translated">RuntimeIdentifier</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;RuntimeIdentifier&gt;`</ph> element allows you to specify only one <bpt id="p1">[</bpt>Runtime Identifier (RID)<ept id="p1">](../rid-catalog.md)</ept> for the project.</source>
+          <target state="translated">O elemento <ph id="ph1">`&lt;RuntimeIdentifier&gt;`</ph> permite especificar somente um <bpt id="p1">[</bpt>RID (Identificador de Tempo de Execução)<ept id="p1">](../rid-catalog.md)</ept> para o projeto.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>RIDs enable publishing a self-contained deployment.</source>
+          <target state="translated">Os RIDs permitem publicar implantações autocontidas.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>PackageTargetFallback</source>
+          <target state="translated">PackageTargetFallback</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> element allows you to specify a set of compatible targets to be used when restoring packages.</source>
+          <target state="translated">O elemento <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> permite especificar um conjunto de destinos compatíveis a serem usados ao restaurar os pacotes.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>It's designed to allow packages that use the dotnet <bpt id="p1">[</bpt>TxM (Target x Moniker)<ept id="p1">](https://docs.microsoft.com/nuget/schema/target-frameworks)</ept> to operate with packages that don't declare a dotnet TxM.</source>
+          <target state="translated">Ele foi criado para permitir que os pacotes que usam o dotnet <bpt id="p1">[</bpt>TxM (Destino x Moniker)<ept id="p1">](https://docs.microsoft.com/nuget/schema/target-frameworks)</ept> operem com pacotes que não declaram um dotnet TxM.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> to your project in order to allow non-dotnet platforms to be compatible with dotnet.</source>
+          <target state="translated">Se o projeto usar o dotnet TxM, todos os pacotes dos quais ele depende também deverão ter um dotnet TxM, a menos que você adicione o <ph id="ph1">`&lt;PackageTargetFallback&gt;`</ph> ao projeto para permitir que plataformas não dotnet sejam compatíveis com o dotnet.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The following example provides the fallbacks for all targets in your project:</source>
+          <target state="translated">O exemplo a seguir fornece os fallbacks para todos os destinos em seu projeto:</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The following example specifies the fallbacks only for the <ph id="ph1">`netcoreapp1.0`</ph> target:</source>
+          <target state="translated">O exemplo a seguir especifica os fallbacks apenas para o destino <ph id="ph1">`netcoreapp1.0`</ph>:</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>NuGet metadata properties</source>
+          <target state="translated">Propriedades de metadados do NuGet</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> to <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept> files.</source>
+          <target state="translated">Com a mudança para o MSBuild, mudamos os metadados de entrada usados ao empacotar um pacote NuGet de arquivos <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> para <bpt id="p2">*</bpt>.csproj<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The inputs are MSBuild properties so they have to go within a <ph id="ph1">`&lt;PropertyGroup&gt;`</ph> group.</source>
+          <target state="translated">As entradas são propriedades do MSBuild e, portanto, precisam estar em um grupo <ph id="ph1">`&lt;PropertyGroup&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The following is the list of properties that are used as inputs to the packing process when using the <ph id="ph1">`dotnet pack`</ph> command or the <ph id="ph2">`Pack`</ph> MSBuild target that is part of the SDK.</source>
+          <target state="translated">A seguir está a lista de propriedades que são usadas como entradas para o processo de empacotamento ao usar o comando <ph id="ph1">`dotnet pack`</ph> ou o destino do MSBuild <ph id="ph2">`Pack`</ph> que faz parte do SDK.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>IsPackable</source>
+          <target state="translated">IsPackable</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>A Boolean value that specifies whether the project can be packed.</source>
+          <target state="translated">Um valor booliano que especifica se o projeto pode ser empacotado.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The default value is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">O valor padrão é <ph id="ph1">`true`</ph>.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>PackageVersion</source>
+          <target state="translated">PackageVersion</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Specifies the version that the resulting package will have.</source>
+          <target state="translated">Especifica a versão que o pacote resultante terá.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Accepts all forms of NuGet version string.</source>
+          <target state="translated">Aceita todos os formatos de cadeia de caracteres de versão do NuGet.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Default is the value of <ph id="ph1">`$(Version)`</ph>, that is, of the property <ph id="ph2">`Version`</ph> in the project.</source>
+          <target state="translated">O padrão é o valor <ph id="ph1">`$(Version)`</ph>, ou seja, da propriedade <ph id="ph2">`Version`</ph> no projeto.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>PackageId</source>
+          <target state="translated">PackageId</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Specifies the name for the resulting package.</source>
+          <target state="translated">Especifica o nome para o pacote resultante.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>If not specified, the <ph id="ph1">`pack`</ph> operation will default to using the <ph id="ph2">`AssemblyName`</ph> or directory name as the name of the package.</source>
+          <target state="translated">Se não for especificado, a operação <ph id="ph1">`pack`</ph> usará como padrão o <ph id="ph2">`AssemblyName`</ph> ou o nome do diretório como o nome do pacote.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Título</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>A human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio.</source>
+          <target state="translated">Um título amigável do pacote, geralmente usado em exibições de interface do usuário como em nuget.org e no Gerenciador de Pacotes do Visual Studio.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>If not specified, the package ID is used instead.</source>
+          <target state="translated">Se não for especificado, a ID do pacote será usada em seu lugar.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Authors</source>
+          <target state="translated">Autores</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>A semicolon-separated list of packages authors, matching the profile names on nuget.org.</source>
+          <target state="translated">Uma lista separada por ponto e vírgula de autores de pacotes, que correspondem aos nomes de perfil em nuget.org.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.</source>
+          <target state="translated">Eles são exibidos na Galeria do NuGet em nuget.org e são usados para fazer referência cruzada aos pacotes dos mesmos autores.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">Descrição</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>A long description of the package for UI display.</source>
+          <target state="translated">Uma descrição longa do pacote para exibição de interface do usuário.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Copyright</source>
+          <target state="translated">Copyright</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Copyright details for the package.</source>
+          <target state="translated">Detalhes sobre direitos autorais do pacote.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>PackageRequireLicenseAcceptance</source>
+          <target state="translated">PackageRequireLicenseAcceptance</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package.</source>
+          <target state="translated">Um valor booliano que especifica se o cliente deve solicitar que o consumidor aceite a licença do pacote antes de instalá-lo.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`false`</ph>.</source>
+          <target state="translated">O padrão é <ph id="ph1">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>PackageLicenseUrl</source>
+          <target state="translated">PackageLicenseUrl</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>An URL to the license that is applicable to the package.</source>
+          <target state="translated">Uma URL para a licença aplicável ao pacote.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>PackageProjectUrl</source>
+          <target state="translated">PackageProjectUrl</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>A URL for the package's home page, often shown in UI displays as well as nuget.org.</source>
+          <target state="translated">Uma URL para a home page do pacote, geralmente mostrada em exibições de interface do usuário, bem como em nuget.org.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>PackageIconUrl</source>
+          <target state="translated">PackageIconUrl</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.</source>
+          <target state="translated">Uma URL para uma imagem 64x64 com a tela de fundo transparente a ser usada como o ícone do pacote na exibição de interface do usuário.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>PackageReleaseNotes</source>
+          <target state="translated">PackageReleaseNotes</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Release notes for the package.</source>
+          <target state="translated">Notas de versão do projeto.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>PackageTags</source>
+          <target state="translated">PackageTags</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>A semicolon-delimited list of tags that designates the package.</source>
+          <target state="translated">Uma lista delimitada por ponto e vírgula de marcas que designam o pacote.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>PackageOutputPath</source>
+          <target state="translated">PackageOutputPath</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Determines the output path in which the packed package will be dropped.</source>
+          <target state="translated">Determina o caminho de saída no qual o pacote empacotado será solto.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Default is <ph id="ph1">`$(OutputPath)`</ph>.</source>
+          <target state="translated">O padrão é <ph id="ph1">`$(OutputPath)`</ph>.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>IncludeSymbols</source>
+          <target state="translated">IncludeSymbols</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>This Boolean value indicates whether the package should create an additional symbols package when the project is packed.</source>
+          <target state="translated">Esse valor booliano indica se o pacote deve criar um pacote de símbolos adicionais quando o projeto é empacotado.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>This package will have a <bpt id="p1">*</bpt>.symbols.nupkg<ept id="p1">*</ept> extension and will copy the PDB files along with the DLL and other output files.</source>
+          <target state="translated">Esse pacote terá uma extensão <bpt id="p1">*</bpt>.symbols.nupkg<ept id="p1">*</ept> e copiará os arquivos PDB junto com a DLL e outros arquivos de saída.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>IncludeSource</source>
+          <target state="translated">IncludeSource</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>This Boolean value indicates whether the pack process should create a source package.</source>
+          <target state="translated">Esse valor booliano indica se o processo do pacote deve criar um pacote de origem.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The source package contains the library's source code as well as PDB files.</source>
+          <target state="translated">O pacote de origem contém o código-fonte da biblioteca, bem como arquivos PDB.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Source files are put under the <ph id="ph1">`src/ProjectName`</ph> directory in the resulting package file.</source>
+          <target state="translated">Os arquivos de origem são colocados no diretório <ph id="ph1">`src/ProjectName`</ph>, no arquivo de pacote resultante.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>IsTool</source>
+          <target state="translated">IsTool</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Specifies whether all output files are copied to the <bpt id="p1">*</bpt>tools<ept id="p1">*</ept> folder instead of the <bpt id="p2">*</bpt>lib<ept id="p2">*</ept> folder.</source>
+          <target state="translated">Especifica se todos os arquivos de saída são copiados para a pasta <bpt id="p1">*</bpt>tools<ept id="p1">*</ept> em vez da pasta <bpt id="p2">*</bpt>lib<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Note that this is different from a <ph id="ph1">`DotNetCliTool`</ph> which is specified by setting the <ph id="ph2">`PackageType`</ph> in the <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept> file.</source>
+          <target state="translated">Observe que isso é diferente de um <ph id="ph1">`DotNetCliTool`</ph> que é especificado pela configuração do <ph id="ph2">`PackageType`</ph> no arquivo <bpt id="p1">*</bpt>.csproj<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>RepositoryUrl</source>
+          <target state="translated">RepositoryUrl</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Specifies the URL for the repository where the source code for the package resides and/or from which it's being built.</source>
+          <target state="translated">Especifica a URL para o repositório em que reside o código-fonte do pacote e/ou do qual ele está sendo compilado.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>RepositoryType</source>
+          <target state="translated">RepositoryType</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Specifies the type of the repository.</source>
+          <target state="translated">Especifica o tipo do repositório.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Default is "git".</source>
+          <target state="translated">O padrão é “git”.</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>NoPackageAnalysis</source>
+          <target state="translated">NoPackageAnalysis</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Specifies that pack should not run package analysis after building the package.</source>
+          <target state="translated">Especifica que o pacote não deve executar a análise de pacote após a compilação do pacote.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>MinClientVersion</source>
+          <target state="translated">MinClientVersion</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.</source>
+          <target state="translated">Especifica a versão mínima do cliente NuGet que pode instalar esse pacote, imposta pelo nuget.exe e pelo Gerenciador de Pacotes do Visual Studio.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>IncludeBuildOutput</source>
+          <target state="translated">IncludeBuildOutput</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>This Boolean values specifies whether the build output assemblies should be packed into the <bpt id="p1">*</bpt>.nupkg<ept id="p1">*</ept> file or not.</source>
+          <target state="translated">Esses valores boolianos especificam se os assemblies de saída do build devem ser empacotados ou não no arquivo <bpt id="p1">*</bpt>.nupkg<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>IncludeContentInPack</source>
+          <target state="translated">IncludeContentInPack</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>This Boolean value specifies whether any items that have a type of <ph id="ph1">`Content`</ph> will be included in the resulting package automatically.</source>
+          <target state="translated">Esse valor booliano especifica se todos os itens que têm um tipo <ph id="ph1">`Content`</ph> serão incluídos automaticamente no pacote resultante.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`true`</ph>.</source>
+          <target state="translated">O padrão é <ph id="ph1">`true`</ph>.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>BuildOutputTargetFolder</source>
+          <target state="translated">BuildOutputTargetFolder</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>Specifies the folder where to place the output assemblies..</source>
+          <target state="translated">Especifica a pasta na qual os assemblies de saída serão colocados.</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The output assemblies (and other output files) are copied into their respective framework folders.</source>
+          <target state="translated">Os assemblies de saída (e outros arquivos de saída) são copiados para suas respectivas pastas de estrutura.</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>ContentTargetFolders</source>
+          <target state="translated">ContentTargetFolders</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>This property specifies the default location of where all the content files should go if <ph id="ph1">`PackagePath`</ph> is not specified for them.</source>
+          <target state="translated">Essa propriedade especifica o local padrão para o qual todos os arquivos de conteúdo deverão ir se <ph id="ph1">`PackagePath`</ph> não for especificado para eles.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>The default value is "content;contentFiles".</source>
+          <target state="translated">O valor padrão é “content;contentFiles”.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>NuspecFile</source>
+          <target state="translated">NuspecFile</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Relative or absolute path to the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file being used for packing.</source>
+          <target state="translated">Caminho relativo ou absoluto para o arquivo <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> que está sendo usado para o empacotamento.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file is specified, it's used <bpt id="p2">**</bpt>exclusively<ept id="p2">**</ept> for packaging information and any information in the projects is not used.</source>
+          <target state="translated">Se o arquivo <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> for especificado, ele será usado <bpt id="p2">**</bpt>exclusivamente<ept id="p2">**</ept> para as informações de empacotamento e as informações nos projetos não serão usadas.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>NuspecBasePath</source>
+          <target state="translated">NuspecBasePath</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Base path for the <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file.</source>
+          <target state="translated">O caminho base para o arquivo <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>NuspecProperties</source>
+          <target state="translated">NuspecProperties</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>Semicolon separated list of key=value pairs.</source>
+          <target state="translated">Lista separada por ponto e vírgula de pares chave-valor.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-b5c25fc" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">beaae03add6f90692189325c0e1cff5ab761abb5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tools\project-json-to-csproj.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">903208aeebd0af4c5fb9a91e202fb6b6f6850599</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">313ee5e727767a0daeac6af79542c80b5521a6e8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>project.json and csproj comparison - .NET Core | Microsoft Docs</source>
+          <target state="translated">Comparação entre project.json e csproj – .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>See a mapping between project.json and csproj elements.</source>
+          <target state="translated">Veja um mapeamento entre os elementos project.json e csproj.</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>project.json, csproj, .NET Core, MSBuild</source>
+          <target state="translated">project.json, csproj, .NET Core, MSBuild</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A mapping between project.json and csproj properties</source>
+          <target state="translated">Um mapeamento entre as propriedades de project.json e csproj</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>By <bpt id="p1">[</bpt>Nate McMaster<ept id="p1">](http://github.com/natemcmaster)</ept></source>
+          <target state="translated">Por <bpt id="p1">[</bpt>Nate McMaster<ept id="p1">](http://github.com/natemcmaster)</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>During the development of the .NET Core tooling, an important design change was made to no longer support <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> files and instead move the .NET Core projects to the MSBuild/csproj format.</source>
+          <target state="translated">Durante o desenvolvimento das ferramentas do .NET Core, foi feita uma importante alteração de design para que os arquivos <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> não tivessem mais suporte e, em vez disso, os projetos do .NET Core fossem movidos para o formato MSBuild/csproj.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This article shows how the settings in <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> are represented in the MSBuild/csproj format so you can learn how to use the new format and understand the changes made by the migration tools when you're upgrading your project to the latest version of the tooling.</source>
+          <target state="translated">Este artigo mostra como as configurações em <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept> são representadas no formato MSBuild/csproj para que você saiba como usar o novo formato e entenda as alterações feitas pelas ferramentas de migração ao atualizar o projeto para a última versão da ferramenta.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The csproj format</source>
+          <target state="translated">O formato csproj</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The new format, <ph id="ph1">\*</ph>.csproj, is an XML-based format.</source>
+          <target state="translated">O novo formato, <ph id="ph1">\*</ph>.csproj, é um formato baseado em XML.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following example shows the root node of a .NET Core project using the <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</source>
+          <target state="translated">O exemplo a seguir mostra o nó raiz de um projeto do .NET Core que usa o <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For web projects, the SDK used is <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph>.</source>
+          <target state="translated">Para projetos Web, o SDK usado é <ph id="ph1">`Microsoft.NET.Sdk.Web`</ph>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Common top-level properties</source>
+          <target state="translated">Propriedades comuns de nível superior</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>name</source>
+          <target state="translated">name</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>No longer supported.</source>
+          <target state="translated">Não há mais suporte.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In csproj, this is determined by the project filename, which is defined by the directory name.</source>
+          <target state="translated">Em csproj, isso é determinado pelo nome de arquivo do projeto, que é definido como o nome do diretório.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`MyProjectName.csproj`</ph>.</source>
+          <target state="translated">Por exemplo, <ph id="ph1">`MyProjectName.csproj`</ph>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the project filename also specifies the value of the <ph id="ph1">`&lt;AssemblyName&gt;`</ph> and <ph id="ph2">`&lt;PackageId&gt;`</ph> properties.</source>
+          <target state="translated">Por padrão, o nome de arquivo do projeto também especifica o valor das propriedades <ph id="ph1">`&lt;AssemblyName&gt;`</ph> e <ph id="ph2">`&lt;PackageId&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`&lt;AssemblyName&gt;`</ph> will have a different value then <ph id="ph2">`&lt;PackageId&gt;`</ph> if <ph id="ph3">`buildOptions\outputName`</ph> property was defined in project.json.</source>
+          <target state="translated">O <ph id="ph1">`&lt;AssemblyName&gt;`</ph> terá um valor diferente de <ph id="ph2">`&lt;PackageId&gt;`</ph> se a propriedade <ph id="ph3">`buildOptions\outputName`</ph> tiver sido definida em project.json.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Other common build options<ept id="p1">](#other-common-build-options)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>Outras opções comuns de build<ept id="p1">](#other-common-build-options)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>version</source>
+          <target state="translated">version</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`VersionPrefix`</ph> and <ph id="ph2">`VersionSuffix`</ph> properties:</source>
+          <target state="translated">Use as propriedades <ph id="ph1">`VersionPrefix`</ph> e <ph id="ph2">`VersionSuffix`</ph>:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also use the <ph id="ph1">`Version`</ph> property, but this may override version settings during packaging:</source>
+          <target state="translated">Também é possível usar a propriedade <ph id="ph1">`Version`</ph>, mas isso poderá substituir as configurações de versão durante o empacotamento:</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Other common root-level options</source>
+          <target state="translated">Outras opções comuns de nível raiz</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>frameworks</source>
+          <target state="translated">estruturas</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>One target framework</source>
+          <target state="translated">Uma estrutura de destino</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Multiple target frameworks</source>
+          <target state="translated">Várias estruturas de destino</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`TargetFrameworks`</ph> property to define your list of target frameworks.</source>
+          <target state="translated">Use a propriedade <ph id="ph1">`TargetFrameworks`</ph> para definir a lista de estruturas de destino.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Use semi-colon to separate multiple framework values.</source>
+          <target state="translated">Use ponto e vírgula para separar vários valores de estrutura.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>dependencies</source>
+          <target state="translated">dependências</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If the dependency is a <bpt id="p1">**</bpt>project<ept id="p1">**</ept> and not a package, the format is different.</source>
+          <target state="translated">Se a dependência for um <bpt id="p1">**</bpt>projeto<ept id="p1">**</ept> e não um pacote, o formato será diferente.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>dependency type<ept id="p1">](#dependency-type)</ept> section.</source>
+          <target state="translated">Para obter mais informações, consulte a seção <bpt id="p1">[</bpt>Tipo de dependência<ept id="p1">](#dependency-type)</ept>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>NETStandard.Library metapackage</source>
+          <target state="translated">Metapacote .NETStandard.Library</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Microsoft.NETCore.App metapackage</source>
+          <target state="translated">Metapacote Microsoft.NETCore.App</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Note that the <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> value in the migrated project is determined by the version of the SDK you have installed.</source>
+          <target state="translated">Observe que o valor <ph id="ph1">`&lt;RuntimeFrameworkVersion&gt;`</ph> do projeto migrado é determinado pela versão do SDK instalada.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Top-level dependencies</source>
+          <target state="translated">Dependências de nível superior</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Per-framework dependencies</source>
+          <target state="translated">Dependências por estrutura</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>imports</source>
+          <target state="translated">importações</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>dependency type</source>
+          <target state="translated">tipo de dependência</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>type: project</source>
+          <target state="translated">tipo: projeto</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This will break the way that <ph id="ph1">`dotnet pack --version-suffix $suffix`</ph> determines the dependency version of a project reference.</source>
+          <target state="translated">Isso detalhará a maneira pela qual o <ph id="ph1">`dotnet pack --version-suffix $suffix`</ph> determina a versão de dependência de uma referência de projeto.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>type: build</source>
+          <target state="translated">tipo: build</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>type: platform</source>
+          <target state="translated">tipo: plataforma</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>There is no equivalent in csproj.</source>
+          <target state="translated">Não há nenhum equivalente em csproj.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>runtimes</source>
+          <target state="translated">runtimes</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Standalone apps (self-contained deployment)</source>
+          <target state="translated">Aplicativos independentes (implantação independente)</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In project.json, defining a <ph id="ph1">`runtimes`</ph> section means the app was standalone during build and publish.</source>
+          <target state="translated">Em project.json, a definição de uma seção <ph id="ph1">`runtimes`</ph> significa que o aplicativo era independente durante o build e a publicação.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In MSBuild, all projects are <bpt id="p1">*</bpt>portable<ept id="p1">*</ept> during build, but can be published as standalone.</source>
+          <target state="translated">No MSBuild, todos os projetos são <bpt id="p1">*</bpt>portáteis<ept id="p1">*</ept> durante o build, mas podem ser publicados como independentes.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Self-contained deployments (SCD)<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>SCD (implantações independentes)<ept id="p1">](../deploying/index.md#self-contained-deployments-scd)</ept>.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>tools</source>
+          <target state="translated">ferramentas</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`imports`</ph> on tools are not supported in csproj.</source>
+          <target state="translated">Não há suporte para <ph id="ph1">`imports`</ph> em ferramentas em csproj.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Tools that need imports will not work with the new <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</source>
+          <target state="translated">As ferramentas que precisam de importações não funcionarão com o novo <ph id="ph1">`Microsoft.NET.Sdk`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>buildOptions</source>
+          <target state="translated">buildOptions</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>See also <bpt id="p1">[</bpt>Files<ept id="p1">](#files)</ept>.</source>
+          <target state="translated">Consulte também <bpt id="p1">[</bpt>Arquivos<ept id="p1">](#files)</ept>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>emitEntryPoint</source>
+          <target state="translated">emitEntryPoint</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`emitEntryPoint`</ph> was <ph id="ph2">`false`</ph>, the value of <ph id="ph3">`OutputType`</ph> is converted to <ph id="ph4">`Library`</ph>, which is the default value:</source>
+          <target state="translated">Se <ph id="ph1">`emitEntryPoint`</ph> era <ph id="ph2">`false`</ph>, o valor de <ph id="ph3">`OutputType`</ph> é convertido em <ph id="ph4">`Library`</ph>, que é o valor padrão:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>keyFile</source>
+          <target state="translated">keyFile</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`keyFile`</ph> element expands to three properties in MSBuild:</source>
+          <target state="translated">O elemento <ph id="ph1">`keyFile`</ph> se expande para três propriedades no MSBuild:</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Other common build options</source>
+          <target state="translated">Outras opções comuns de build</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>packOptions</source>
+          <target state="translated">packOptions</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>See also <bpt id="p1">[</bpt>Files<ept id="p1">](#files)</ept>.</source>
+          <target state="translated">Consulte também <bpt id="p1">[</bpt>Arquivos<ept id="p1">](#files)</ept>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Common pack options</source>
+          <target state="translated">Opções comuns de pacote</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>There is no equivalent for the <ph id="ph1">`owners`</ph> element in MSBuild.</source>
+          <target state="translated">Não há nenhum equivalente do elemento <ph id="ph1">`owners`</ph> no MSBuild.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For <ph id="ph1">`summary`</ph>, you can use the MSBuild <ph id="ph2">`&lt;Description&gt;`</ph> property, even though the value of <ph id="ph3">`summary`</ph> is not migrated automatically to that property, since that property is mapped to the <bpt id="p1">[</bpt><ph id="ph4">`description`</ph><ept id="p1">](#-other-common-root-level-options)</ept> element.</source>
+          <target state="translated">Para <ph id="ph1">`summary`</ph>, é possível usar a propriedade <ph id="ph2">`&lt;Description&gt;`</ph> do MSBuild, mesmo que o valor de <ph id="ph3">`summary`</ph> não seja migrado automaticamente para essa propriedade, já que ela é mapeada para o elemento <bpt id="p1">[</bpt><ph id="ph4">`description`</ph><ept id="p1">](#-other-common-root-level-options)</ept>.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>scripts</source>
+          <target state="translated">scripts</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Their equivalent in MSBuild are <bpt id="p1">[</bpt>targets<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept>:</source>
+          <target state="translated">Seu equivalente no MSBuild são <bpt id="p1">[</bpt>destinos<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)</ept>:</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>runtimeOptions</source>
+          <target state="translated">runtimeOptions</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>All settings in this group, except for the "System.GC.Server" property, are placed into a file called <bpt id="p1">*</bpt>runtimeconfig.template.json<ept id="p1">*</ept> in the project folder, with options lifted to the root object during the migration process:</source>
+          <target state="translated">Todas as configurações desse grupo, com exceção da propriedade “System.GC.Server”, são colocadas em um arquivo chamado <bpt id="p1">*</bpt>runtimeconfig.template.json<ept id="p1">*</ept> na pasta do projeto, com as opções elevadas para o objeto raiz durante o processo de migração:</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The "System.GC.Server" property is migrated into the csproj file:</source>
+          <target state="translated">A propriedade “System.GC.Server” é migrada para o arquivo csproj:</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>However, you can set all those values in the csproj as well as MSBuild properties:</source>
+          <target state="translated">No entanto, é possível definir todos esses valores em csproj, bem como propriedades do MSBuild:</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>shared</source>
+          <target state="translated">shared</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Not supported in csproj.</source>
+          <target state="translated">Sem suporte em csproj.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>You must instead create include content files in your <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept> file.</source>
+          <target state="translated">Em vez disso, é necessário criar e incluir arquivos de conteúdo no arquivo <bpt id="p1">*</bpt>.nuspec<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Including content files<ept id="p1">](https://docs.microsoft.com/nuget/schema/nuspec#including-content-files)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>Incluindo arquivos de conteúdo<ept id="p1">](https://docs.microsoft.com/nuget/schema/nuspec#including-content-files)</ept>.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>files</source>
+          <target state="translated">arquivos</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, build and pack could be extended to compile and embed from different folders.</source>
+          <target state="translated">Em <bpt id="p1">*</bpt>project.json<ept id="p1">*</ept>, o build e o pacote poderão ser estendidos para serem compilados e inseridos de pastas diferentes.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>In MSBuild, this is done using <bpt id="p1">[</bpt>items<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)</ept>.</source>
+          <target state="translated">No MSBuild, isso é feito com <bpt id="p1">[</bpt>itens<ept id="p1">](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The following example is a common conversion:</source>
+          <target state="translated">O seguinte exemplo é uma conversão comum:</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Many of default globbing patterns are added automatically by the .NET Core SDK.</source>
+          <target state="translated">Muitos dos padrões glob padrão são adicionados automaticamente pelo SDK do .NET Core.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Default Compile Item Values<ept id="p1">](https://aka.ms/sdkimplicititems)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>Valores de item de compilação padrão<ept id="p1">](https://aka.ms/sdkimplicititems)</ept>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>All MSBuild <ph id="ph1">`ItemGroup`</ph> elements support <ph id="ph2">`Include`</ph>, <ph id="ph3">`Exclude`</ph>, and <ph id="ph4">`Remove`</ph>.</source>
+          <target state="translated">Todos os elementos <ph id="ph1">`ItemGroup`</ph> do MSBuild dão suporte a <ph id="ph2">`Include`</ph>, <ph id="ph3">`Exclude`</ph> e <ph id="ph4">`Remove`</ph>.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Package layout inside the .nupkg can be modified with <ph id="ph1">`PackagePath="path"`</ph>.</source>
+          <target state="translated">O layout do pacote dentro do .nupkg pode ser modificado com <ph id="ph1">`PackagePath="path"`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Except for <ph id="ph1">`Content`</ph>, most item groups require explicitly adding <ph id="ph2">`Pack="true"`</ph> to be included in the package.</source>
+          <target state="translated">Com exceção de <ph id="ph1">`Content`</ph>, a maioria dos grupos de itens exige a adição explícita de <ph id="ph2">`Pack="true"`</ph> a ser incluída no pacote.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Content`</ph> will be put in the <bpt id="p1">*</bpt>content<ept id="p1">*</ept> folder in a package since the MSBuild <ph id="ph2">`&lt;IncludeContentInPack&gt;`</ph> property is set to <ph id="ph3">`true`</ph> by default.</source>
+          <target state="translated"><ph id="ph1">`Content`</ph> será colocado na pasta <bpt id="p1">*</bpt>conteúdo<ept id="p1">*</ept> de um pacote, pois a propriedade <ph id="ph2">`&lt;IncludeContentInPack&gt;`</ph> do MSBuild está definida como <ph id="ph3">`true`</ph> por padrão.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Including content in a package<ept id="p1">](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>Incluindo conteúdo em um pacote<ept id="p1">](https://docs.microsoft.com/nuget/schema/msbuild-targets#including-content-in-a-package)</ept>.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PackagePath="%(Identity)"`</ph> is a short way of setting package path to the project-relative file path.</source>
+          <target state="translated"><ph id="ph1">`PackagePath="%(Identity)"`</ph> é uma maneira curta de configurar o caminho do pacote para o caminho do arquivo relativo do projeto.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>testRunner</source>
+          <target state="translated">testRunner</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>xUnit</source>
+          <target state="translated">xUnit</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>MSTest</source>
+          <target state="translated">MSTest</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>project.json reference<ept id="p1">](project-json.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Referência de project.json<ept id="p1">](project-json.md)</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>High-level overview of changes in CLI<ept id="p1">](../tools/cli-msbuild-architecture.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Visão geral de alto nível das alterações na CLI<ept id="p1">](../tools/cli-msbuild-architecture.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
