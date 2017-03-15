@@ -1,21 +1,24 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 6
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/deploying/index.md) | HandedOffSuccess | [Details](#ef742b932a3a76359e3f06129dce0bf127a1977e34)
- [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/dotnet-restore.md) | HandedOffSuccess | [Details](#448c7723adbd73de43fc0babcba243d0a4c8f74c86)
- [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/project-json-to-csproj.md) | ArchivedSuccess | [Details](#8e2841ab6ff6fc93f0b86af84b91eb2c07a5a3a096)
+ [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/migration/index.md) | HandedOffSuccess | [Details](#59c1d0b1d0747350b5e056fc00f04781086a2d0549)
+ [docs\core\tools\csproj.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/csproj.md) | HandedOffSuccess | [Details](#cd0b59b4a91dc4a83d73db55d8d0e611f73f63a668)
+ [docs\core\tools\dotnet-add-reference.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-add-reference.md) | HandedOffSuccess | [Details](#721dd16614a190731edafd80557e3c65a6e2f2e071)
+ [docs\core\tools\dotnet-remove-reference.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-remove-reference.md) | HandedOffSuccess | [Details](#28f983b36febe02a26b6a43f8509d7a7405397e085)
+ [docs\core\tools\dotnet-sln.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-sln.md) | HandedOffSuccess | [Details](#cc71aac467c791ffb91dd49e83ec50776e60ff3b88)
+ [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/project-json-to-csproj.md) | HandedOffSuccess | [Details](#9d0af9769264b7f22c90ffb6a831b42f06c6bb9496)
 
 ## Item Details
-##### <a name='ef742b932a3a76359e3f06129dce0bf127a1977e34'></a> Source: [docs\core\deploying\index.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/deploying/index.md)
+##### <a name='59c1d0b1d0747350b5e056fc00f04781086a2d0549'></a> Source: [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/migration/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/cd276bb2582f0b1b97ddca9b1975b4a1a008cfb4/ol-handoff/dotnet/docs.de-de/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf)
-* Handoff Datetime: 2017-03-14 21:32:10
+* Handoff File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -23,18 +26,18 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\deploying\index.md](https://github.com/dotnet/docs.de-de/blob/4dc1707ac3fd2fa5834371b609a8dffca6cb2369/docs/core/deploying/index.md)
-* Current Handback File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf](https://github.com/dotnet/docs.handback/blob/1108f9f78260c6ae299ffe0dde7ff733de042942/ol-handback/dotnet/docs.de-de/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf)
-* Current Handback Datetime: 2017-03-10 14:44:45
-* Bilingual File: [index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf](https://github.com/dotnet/docs.handback/blob/1108f9f78260c6ae299ffe0dde7ff733de042942/ol-handback/dotnet/docs.de-de/master/dotnet-core/index.67220a95f2cab22dfe4dd5dc24845270f94ccf92.de-de.xlf)
-* Bilingual Datetime: 2017-03-10 14:45:50
+* Current Target File: [docs\core\migration\index.md](https://github.com/dotnet/docs.de-de/blob/e4c29e288428fe1d1754f5d67b0c848a070983c7/docs/core/migration/index.md)
+* Current Handback File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf](https://github.com/dotnet/docs.handback/blob/14120d8b0f23e33b1a35902b4147ead7dc65e232/ol-handback/dotnet/docs.de-de/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf)
+* Current Handback Datetime: 2017-03-13 20:27:43
+* Bilingual File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf](https://github.com/dotnet/docs.handback/blob/14120d8b0f23e33b1a35902b4147ead7dc65e232/ol-handback/dotnet/docs.de-de/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.de-de.xlf)
+* Bilingual Datetime: 2017-03-13 20:30:06
 * [Back to Top](#report-top)
 
-##### <a name='448c7723adbd73de43fc0babcba243d0a4c8f74c86'></a> Source: [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/dotnet-restore.md)
+##### <a name='cd0b59b4a91dc4a83d73db55d8d0e611f73f63a668'></a> Source: [docs\core\tools\csproj.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/csproj.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/cd276bb2582f0b1b97ddca9b1975b4a1a008cfb4/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf)
-* Handoff Datetime: 2017-03-14 21:32:10
+* Handoff File: [csproj.329b52e181ce1289e29cc9679291ff8afb73dfc0.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/csproj.329b52e181ce1289e29cc9679291ff8afb73dfc0.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
 * Handoff Reason: Include
 * Handoff Name: 
 * Archive File: 
@@ -42,22 +45,59 @@
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
-* Current Target File: [docs\core\tools\dotnet-restore.md](https://github.com/dotnet/docs.de-de/blob/d70c07528b08e9fffc850776990c01cbc8e888ca/docs/core/tools/dotnet-restore.md)
-* Current Handback File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf](https://github.com/dotnet/docs.handback/blob/141a5da209e86d6f730d131240306ea8c431e033/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf)
-* Current Handback Datetime: 2017-03-08 13:05:09
-* Bilingual File: [dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf](https://github.com/dotnet/docs.handback/blob/141a5da209e86d6f730d131240306ea8c431e033/ol-handback/dotnet/docs.de-de/master/dotnet-core/dotnet-restore.0c97b14cf1c3a5b0dcfa5635a6283cdf555c65c5.de-de.xlf)
-* Bilingual Datetime: 2017-03-08 13:07:23
 * [Back to Top](#report-top)
 
-##### <a name='8e2841ab6ff6fc93f0b86af84b91eb2c07a5a3a096'></a> Source: [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/24bca179bc153a6bb469e38067e457fa61a9d2b3/docs/core/tools/project-json-to-csproj.md)
-* Status: ArchivedSuccess
+##### <a name='721dd16614a190731edafd80557e3c65a6e2f2e071'></a> Source: [docs\core\tools\dotnet-add-reference.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-add-reference.md)
+* Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/cd276bb2582f0b1b97ddca9b1975b4a1a008cfb4/ol-handoff/dotnet/docs.de-de/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf)
-* Handoff Datetime: 2017-03-14 21:32:10
+* Handoff File: [dotnet-add-reference.b6c05537734ff59e3f8dc606842983b1781b4f6f.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-add-reference.b6c05537734ff59e3f8dc606842983b1781b4f6f.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
 * Handoff Reason: Include
 * Handoff Name: 
-* Archive File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/f469a21941606eae84b02b201317a01e877e64e6/ol-archive/dotnet/docs.de-de/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf)
-* Archive Datetime: 2017-03-14 21:32:13
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
+##### <a name='28f983b36febe02a26b6a43f8509d7a7405397e085'></a> Source: [docs\core\tools\dotnet-remove-reference.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-remove-reference.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-remove-reference.8eabaf999c0e5fcb29c8cd64dcc4d20c6347a796.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-remove-reference.8eabaf999c0e5fcb29c8cd64dcc4d20c6347a796.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
+##### <a name='cc71aac467c791ffb91dd49e83ec50776e60ff3b88'></a> Source: [docs\core\tools\dotnet-sln.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/dotnet-sln.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [dotnet-sln.f01b33bb76cc86e080aaeb8e22c1c94b9891fa4e.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/dotnet-sln.f01b33bb76cc86e080aaeb8e22c1c94b9891fa4e.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
+##### <a name='9d0af9769264b7f22c90ffb6a831b42f06c6bb9496'></a> Source: [docs\core\tools\project-json-to-csproj.md](https://github.com/dotnet/docs/blob/b4fb772973607b94e120377879a5dbdde2a25271/docs/core/tools/project-json-to-csproj.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf](https://github.com/dotnet/docs.handoff/blob/d5a08c156c02d15377963d224d70807e17ae91f7/ol-handoff/dotnet/docs.de-de/master/dotnet-core/project-json-to-csproj.c3ec2480cf55fe638d0d02fd4a77a6aa02b4d266.de-de.xlf)
+* Handoff Datetime: 2017-03-15 01:29:01
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * Handback Name: 
