@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-0ca64c3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\netcore-hosting.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e542b525b8245c7b60beb5f2bf0ec4ec1f8be20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f82402e2298ea66394108d5b3488949b76dad04d</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">The translationStateItem 01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf is not found.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core | Microsoft Docs</source>
+          <target state="translated">Hébergement de .NET Core | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime from native code</source>
+          <target state="translated">Hébergement du runtime .NET Core à partir du code natif</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, Hosting, Hosting .NET Core</source>
+          <target state="translated">.NET, .NET Core, Hébergement, Hébergement de .NET Core</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core</source>
+          <target state="translated">Hébergement de .NET Core</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Like all managed code, .NET Core applications are executed by a host.</source>
+          <target state="translated">Comme tout code managé, les applications .NET Core sont exécutées par un hôte.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.</source>
+          <target state="translated">L’hôte est chargé du démarrage du runtime (y compris des composants comme le JIT et le récupérateur de mémoire), de la création de domaines d’application et de l’appel de points d’entrée managés.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario and, in most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications.</source>
+          <target state="translated">L’hébergement du runtime .NET Core est un scénario avancé et, dans la plupart des cas, les développeurs .NET Core n’ont pas à se soucier de l’hébergement, car les processus de génération .NET Core fournissent un hôte par défaut pour exécuter les applications .NET Core.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.</source>
+          <target state="translated">Toutefois, dans certains cas spécifiques, il peut être utile d’héberger explicitement le runtime .NET Core, pour appeler le code managé dans un processus natif ou pour mieux contrôler le fonctionnement du runtime.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (<ph id="ph1">@System.AppDomain</ph>), and execute managed code in it.</source>
+          <target state="translated">Cet article donne une vue d’ensemble des étapes nécessaires pour démarrer le runtime .NET Core à partir du code natif, créer un domaine d’application initial (<ph id="ph1">@System.AppDomain</ph>) et y exécuter du code managé.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Prérequis</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core.</source>
+          <target state="translated">Comme les hôtes sont des applications natives, ce didacticiel aborde la construction d’une application C++ pour héberger .NET Core.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You will need a C++ development environment (such as that provided by <bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept>).</source>
+          <target state="translated">Vous avez besoin d’un environnement de développement C++ (comme celui fourni par <bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept>).</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You will also want a simple .NET Core application to test the host with, so you should install the <bpt id="p1">[</bpt>.NET Core SDK<ept id="p1">](https://www.microsoft.com/net/core)</ept> and <bpt id="p2">[</bpt>build a small .NET Core test app<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept> (such as a 'Hello World' app).</source>
+          <target state="translated">Vous avez également besoin d’une application .NET Core simple pour tester l’hôte, vous devez donc installer le <bpt id="p1">[</bpt>SDK .NET Core<ept id="p1">](https://www.microsoft.com/net/core)</ept> et <bpt id="p2">[</bpt>créer une petite application de test .NET Core<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept> (par exemple, une application « Hello World »).</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The 'Hello World' app created by the new .NET Core console project template is sufficient.</source>
+          <target state="translated">L’application « Hello World » créée par le nouveau modèle de projet de console .NET Core est suffisante.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This tutorial and its <bpt id="p1">[</bpt>associated sample<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> build a Windows host, but please see the notes at the end of this article about hosting on Unix.</source>
+          <target state="translated">Ce didacticiel et son <bpt id="p1">[</bpt>exemple associé<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> créent un hôte Windows, mais nous vous recommandons de consultez les remarques à la fin de cet article concernant l’hébergement sur Unix.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Creating the host</source>
+          <target state="translated">Création de l'hôte</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A sample host demonstrating the steps outlined in this article is available in our <bpt id="p1">[</bpt>.NET Core samples<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> repository.</source>
+          <target state="translated">Un exemple d’hôte illustrant les étapes décrites dans cet article est disponible dans notre dépôt d’<bpt id="p1">[</bpt>exemples .NET Core<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.</source>
+          <target state="translated">Les commentaires du fichier host.cpp de l’exemple associent clairement les étapes numérotées de ce didacticiel à l’endroit où elles sont exécutées dans l’exemple.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency.</source>
+          <target state="translated">N’oubliez pas que l’exemple d’hôte est destiné à être utilisé dans un contexte d’apprentissage, il ne s’attarde donc pas sur la vérification des erreurs et privilégie la lisibilité par rapport à l’efficacité.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>More real-world host samples are available in the <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept> repository.</source>
+          <target state="translated">D’autres exemples d’hôtes réels sont disponibles dans le dépôt <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>, in particular, is a good general-purpose host to study after reading through the simpler sample.</source>
+          <target state="translated">L’<bpt id="p1">[</bpt>hôte CoreRun<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>, en particulier, est un bon exemple d’hôte généraliste à étudier après avoir parcouru l’exemple simple.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A note about mscoree.h</source>
+          <target state="translated">Remarque concernant mscoree.h</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The primary .NET Core hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>) is defined in <bpt id="p1">[</bpt>MSCOREE.IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept>.</source>
+          <target state="translated">L’interface d’hébergement .NET Core principale (<ph id="ph1">`ICLRRuntimeHost2`</ph>) est définie dans <bpt id="p1">[</bpt>MSCOREE. IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the <bpt id="p1">[</bpt>.NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr/)</ept> is built.</source>
+          <target state="translated">Une version d’en-tête de ce fichier (mscoree.h), que votre hôte doit référencer, est produite via MIDL pendant la génération du <bpt id="p1">[</bpt>runtime .NET Core<ept id="p1">](https://github.com/dotnet/coreclr/)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you do not want to build the .NET Core runtime, mscoree.h is also available as a <bpt id="p1">[</bpt>pre-built header<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept> in the dotnet/coreclr repository.</source>
+          <target state="translated">Si vous ne voulez pas générer le runtime .NET Core, mscoree.h est également disponible sous forme d’<bpt id="p1">[</bpt>en-tête prédéfini<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept> dans le dépôt dotnet/coreclr.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Instructions on building the .NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept> can be found in its GitHub repository.</source>
+          <target state="translated">Des <bpt id="p1">[</bpt>instructions pour la génération du runtime .NET Core<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept> se trouvent dans le dépôt GitHub correspondant.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Step 1 - Identify the managed entry point</source>
+          <target state="translated">Étape 1 : Identifier le point d’entrée managé</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After referencing necessary headers (<bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using.</source>
+          <target state="translated">Après avoir référencé les en-têtes nécessaires (<bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> et stdio.h, par exemple), l’une des premières choses que doit faire un hôte .NET Core est de localiser le point d’entrée managé à utiliser.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose <ph id="ph1">`main`</ph> method will be executed.</source>
+          <target state="translated">Dans notre exemple d’hôte, il suffit de prendre le premier argument de ligne de commande de notre hôte comme chemin d’un fichier binaire managé dont la méthode <ph id="ph1">`main`</ph> doit être exécutée.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Step 2 - Find and load CoreCLR.dll</source>
+          <target state="translated">Étape 2 : Rechercher et charger CoreCLR.dll</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The .NET Core runtime APIs are in <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> (on Windows).</source>
+          <target state="translated">Les API du runtime .NET Core se trouvent dans <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> (sur Windows).</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To get our hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>), it's necessary to find and load <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">Pour obtenir l’interface d’hébergement (<ph id="ph1">`ICLRRuntimeHost2`</ph>), vous devez rechercher et charger <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is up to the host to define a convention for how it will locate <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">C’est à l’hôte de définir une convention de recherche de <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Some hosts expect the file to be present in a well-known machine-wide location (such as %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0).</source>
+          <target state="translated">Certains hôtes s’attendent à trouver le fichier dans un emplacement connu sur l’ordinateur (par exemple, %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0).</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Others expect that <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> will be loaded from a location next to either the host itself or the app to be hosted.</source>
+          <target state="translated">D’autres considèrent que <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> est chargé à partir d’un emplacement à côté de l’ordinateur lui-même ou de l’application à héberger.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Still others might consult an environment variable to find the library.</source>
+          <target state="translated">D’autres encore peuvent consulter une variable d’environnement pour rechercher la bibliothèque.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On Linux or Mac, the core runtime library is <bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> or <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept>, respectively.</source>
+          <target state="translated">Sur Linux ou Mac, la bibliothèque de runtime principale est <bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> ou <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept>, respectivement.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Our sample host probes a few common locations for <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">Notre exemple d’hôte effectue la recherche dans certains emplacements courants pour <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Once found, it must be loaded via <ph id="ph1">`LoadLibrary`</ph> (or <ph id="ph2">`dlopen`</ph> on Linux/Mac).</source>
+          <target state="translated">Une fois le fichier trouvé, il doit être chargé via <ph id="ph1">`LoadLibrary`</ph> (ou <ph id="ph2">`dlopen`</ph> sur Linux/Mac).</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Step 3 - Get an ICLRRuntimeHost2 Instance</source>
+          <target state="translated">Étape 3 : Obtenir une instance de ICLRRuntimeHost2</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ICLRRuntimeHost2`</ph> hosting interface is retrieved by calling <ph id="ph2">`GetProcAddress`</ph> (or <ph id="ph3">`dlsym`</ph> on Linux/Mac) on <ph id="ph4">`GetCLRRuntimeHost`</ph>, and then invoking that function.</source>
+          <target state="translated">L’interface d’hébergement <ph id="ph1">`ICLRRuntimeHost2`</ph> est récupérée en appelant <ph id="ph2">`GetProcAddress`</ph> (ou <ph id="ph3">`dlsym`</ph> sur Linux/Mac) sur <ph id="ph4">`GetCLRRuntimeHost`</ph>, puis en appelant cette fonction.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Step 4 - Setting startup flags and starting the runtime</source>
+          <target state="translated">Étape 4 : Définir des indicateurs de démarrage et démarrer le runtime</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>With an <ph id="ph1">`ICLRRuntimeHost2`</ph> in-hand, we can now specify runtime-wide startup flags and start the runtime.</source>
+          <target state="translated">Avec une interface <ph id="ph1">`ICLRRuntimeHost2`</ph>, nous pouvons maintenant spécifier des indicateurs de démarrage pour le runtime et le démarrer.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Startup flags will determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).</source>
+          <target state="translated">Les indicateurs de démarrage déterminent le récupérateur de mémoire à utiliser (concurrent ou serveur), s’il faut utiliser un ou plusieurs domaines d’application et la stratégie d’optimisation de chargeur à utiliser (pour le chargement d’assemblys indépendant du domaine).</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The runtime is started with a call to the <ph id="ph1">`Start`</ph> function.</source>
+          <target state="translated">Le runtime est démarré par un appel à la fonction <ph id="ph1">`Start`</ph>.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Step 5 - Preparing AppDomain settings</source>
+          <target state="translated">Étape 5 : Préparer les paramètres AppDomain</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Once the runtime is started, we will want to set up an AppDomain.</source>
+          <target state="translated">Une fois le runtime démarré, nous devons configurer un AppDomain.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.</source>
+          <target state="translated">Il existe un certain nombre d’options qui doivent être spécifiées pendant la création d’un AppDomain .NET, vous devez donc d’abord les préparer.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>AppDomain flags specify AppDomain behaviors related to security and interop.</source>
+          <target state="translated">Les indicateurs AppDomain spécifient le comportement des domaines d’application en relation avec la sécurité et l’interopérabilité.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.</source>
+          <target state="translated">Les anciens hôtes Silverlight utilisaient ces paramètres pour isoler le code utilisateur dans un bac à sable (sandbox), mais la plupart des hôtes .NET Core modernes exécutent le code utilisateur avec une confiance totale et activent l’interopérabilité.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>After deciding which AppDomain flags to use, AppDomain properties must be defined.</source>
+          <target state="translated">Une fois que vous avez choisi les indicateurs AppDomain à utiliser, vous devez définir les propriétés AppDomain.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The properties are key/value pairs of strings.</source>
+          <target state="translated">Les propriétés sont des paires de chaînes clé/valeur.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Many of the properties relate to how the AppDomain will load assemblies.</source>
+          <target state="translated">La plupart des propriétés gèrent la façon dont l’AppDomain charge les assemblys.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Common AppDomain properties include:</source>
+          <target state="translated">Propriétés AppDomain courantes :</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph> This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains).</source>
+          <target state="translated"><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph> Il s’agit d’une liste de chemins d’assemblys (séparés par « ; » sur Windows et « : » sur Unix) que l’AppDomain doit charger par ordre de priorité et à qui il doit accorder une confiance totale (même dans les domaines partiellement approuvés).</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios.</source>
+          <target state="translated">Cette liste doit contenir des assemblys « Framework » et d’autres modules approuvés, similaires au Global Assembly Cache dans les scénarios .NET Framework.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some hosts will put any library next to <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> on this list, others have hard-coded manifests listing trusted assemblies for their purposes.</source>
+          <target state="translated">Certains hôtes placent toutes les bibliothèques à côté de <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> dans cette liste, d’autres ont des manifestes codés en dur qui répertorient les assemblys de confiance qui les concernent.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_PATHS`</ph> This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list.</source>
+          <target state="translated"><ph id="ph1">`APP_PATHS`</ph> Il s’agit d’une liste de chemins où rechercher un assembly s’il est introuvable dans la liste TPA (liste d’assemblys de plateforme sécurisée).</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>These paths are meant to be the locations where users' assemblies can be found.</source>
+          <target state="translated">Ces chemins doivent correspondre à l’emplacement des assemblys d’utilisateurs.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In a sandboxed AppDomain, assemblies loaded from these paths will only be granted partial trust.</source>
+          <target state="translated">Dans un AppDomain bac à sable (sandbox), les assemblys chargés à partir de ces chemins ne reçoivent qu’une confiance partielle.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Common APP_PATH paths include the path the target app was loaded from or other locations where user assets are known to live.</source>
+          <target state="translated">Les chemins APP_PATH courants sont notamment le chemin à partir duquel l’application cible a été chargée ou d’autres emplacements où se trouvent généralement les ressources de l’utilisateur.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_NI_PATHS`</ph> This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.</source>
+          <target state="translated"><ph id="ph1">`APP_NI_PATHS`</ph> Cette liste est très similaire à APP_PATHS, sauf qu’il s’agit de chemins où rechercher des images natives.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph> This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.</source>
+          <target state="translated"><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph> Cette propriété est une liste de chemins où le chargeur doit rechercher les DLL natives appelées via p/invoke.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph> This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).</source>
+          <target state="translated"><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph> Cette liste inclut des chemins où rechercher les assemblys satellites de ressources (dans les sous-répertoires spécifiques de la culture).</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AppDomainCompatSwitch`</ph> This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against).</source>
+          <target state="translated"><ph id="ph1">`AppDomainCompatSwitch`</ph> Cette chaîne spécifie les particularités de compatibilité qui doivent être utilisées pour les assemblys sans moniker de framework cible explicite (attribut de niveau assembly indiquant le framework dans lequel doit s’exécuter un assembly).</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Typically, this should be set to <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph> but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.</source>
+          <target state="translated">En général, elle doit être définie sur <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph>, mais certains hôtes peuvent préférer obtenir d’anciennes particularités de compatibilité Silverlight ou Windows Phone à la place.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In our <bpt id="p1">[</bpt>simple sample host<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>, these properties are set up as follows:</source>
+          <target state="translated">Dans notre <bpt id="p1">[</bpt>exemple d’hôte simple<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>, ces propriétés sont configurées de la façon suivante :</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Step 6 - Create the AppDomain</source>
+          <target state="translated">Étape 6 : Créer l’AppDomain</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Once all AppDomain flags and properties are prepared, <ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> can be used to set up the AppDomain.</source>
+          <target state="translated">Une fois que tous les indicateurs et les propriétés AppDomain sont prêts, <ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> peut être utilisé pour configurer l’AppDomain.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This function optionally takes a fully qualified assembly name and type name to use as the domain's AppDomain manager.</source>
+          <target state="translated">Cette fonction prend éventuellement un nom d’assembly complet et un nom de type à utiliser comme gestionnaire AppDomain du domaine.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.</source>
+          <target state="translated">Un gestionnaire AppDomain peut permettre à un hôte de contrôler certains aspects du comportement de l’AppDomain et peut fournir des points d’entrée pour le lancement du code managé si l’hôte ne souhaite pas directement appeler le code utilisateur.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Step 7 - Run managed code!</source>
+          <target state="translated">Étape 7 : Exécuter le code managé.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>With an AppDomain up and running, the host can now start executing managed code.</source>
+          <target state="translated">Avec un AppDomain opérationnel, l’hôte peut maintenant exécuter du code managé.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The easiest way to do this is to use <ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> to invoke a managed assembly's entry point method.</source>
+          <target state="translated">Le moyen le plus simple consiste à utiliser <ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> pour appeler la méthode de point d’entrée d’un assembly managé.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Note that this function only works in single-domain scenarios.</source>
+          <target state="translated">Notez que cette fonction n’est valide que dans les scénarios de domaine unique.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Another option, if <ph id="ph1">`ExecuteAssembly`</ph> doesn't meet your host's needs, is to use <ph id="ph2">`CreateDelegate`</ph> to create a function pointer to a static managed method.</source>
+          <target state="translated">Si <ph id="ph1">`ExecuteAssembly`</ph> ne répond pas aux besoins de l’hôte, une autre option consiste à utiliser <ph id="ph2">`CreateDelegate`</ph> pour créer un pointeur de fonction vers une méthode managée statique.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point.</source>
+          <target state="translated">Cette option implique que l’hôte connaisse la signature de la méthode qu’il appelle (afin de créer le type de pointeur de fonction), mais donne aux hôtes la possibilité d’appeler du code autre qu’un point d’entrée d’assembly.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Step 8 - Clean up</source>
+          <target state="translated">Étape 8 : Nettoyer</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the <ph id="ph1">`ICLRRuntimeHost2`</ph> reference.</source>
+          <target state="translated">Enfin, l’hôte doit effectuer un nettoyage en déchargeant les domaines d’application, en arrêtant le runtime et en libérant la référence <ph id="ph1">`ICLRRuntimeHost2`</ph>.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>About Hosting .NET Core on Unix</source>
+          <target state="translated">À propos de l’hébergement de .NET Core sur Unix</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>.NET Core is a cross-platform product, running on Windows, Linux, and Mac operating systems.</source>
+          <target state="translated">.NET Core est un produit multiplateforme qui s’exécute sur les systèmes d’exploitation Windows, Linux et Mac.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As native applications, though, hosts for different platforms will have some differences between them.</source>
+          <target state="translated">Toutefois, les hôtes étant des applications natives, ils diffèrent les uns des autres selon la plateforme dont ils sont issus.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The process described above of using <ph id="ph1">`ICLRRuntimeHost2`</ph> to start the runtime, create an AppDomain, and execute managed code, should work on any supported operating system.</source>
+          <target state="translated">Le processus, décrit ci-dessus, d’utilisation de <ph id="ph1">`ICLRRuntimeHost2`</ph> pour démarrer le runtime, créer un AppDomain et exécuter le code managé doit fonctionner sur n’importe quel système d’exploitation pris en charge.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>However, the interfaces defined in mscoree.h can be cumbersome to work with on Unix platforms since mscoree makes many Win32 assumptions.</source>
+          <target state="translated">Toutefois, les interfaces définies dans mscoree.h peuvent être lourdes à utiliser sur les plateformes Unix, car mscoree fait de nombreuses hypothèses Win32.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To make hosting on Unix platforms easier, a set of more platform-neutral hosting API wrappers are available in <bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept>.</source>
+          <target state="translated">Pour faciliter l’hébergement sur les plateformes Unix, un ensemble de wrappers d’API d’hébergement plus indépendant de la plateforme est disponible dans <bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept>.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>An example of using coreclrhost.h (instead of mscoree.h directly) can be seen in the <bpt id="p1">[</bpt>UnixCoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>.</source>
+          <target state="translated">Un exemple d’utilisation de coreclrhost.h (au lieu de mscoree.h directement) peut être consulté dans l’<bpt id="p1">[</bpt>hôte UnixCoreRun<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The steps to use the APIs from coreclrhost.h to host the runtime are similar to the steps when using mscoree.h:</source>
+          <target state="translated">La procédure d’utilisation des API de coreclrhost.h pour héberger le runtime est semblable à celle de mscoree.h :</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Identify the managed code to execute (from command line parameters, for example).</source>
+          <target state="translated">Identifier le code managé à exécuter (à partir des paramètres de la ligne de commande, par exemple).</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Load the CoreCLR library.</source>
+          <target state="translated">Charger la bibliothèque CoreCLR.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Get function pointers to CoreCLR's <ph id="ph1">`coreclr_initialize`</ph>, <ph id="ph2">`coreclr_create_delegate`</ph>, <ph id="ph3">`coreclr_execute_assembly`</ph>, and <ph id="ph4">`coreclr_shutdown`</ph> functions using <ph id="ph5">`dlsym`</ph></source>
+          <target state="translated">Obtenir des pointeurs de fonction vers les fonctions <ph id="ph1">`coreclr_initialize`</ph>, <ph id="ph2">`coreclr_create_delegate`</ph>, <ph id="ph3">`coreclr_execute_assembly`</ph> et <ph id="ph4">`coreclr_shutdown`</ph> de CoreCLR à l’aide de <ph id="ph5">`dlsym`</ph></target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Set up AppDomain properties (such as the TPA list).</source>
+          <target state="translated">Configurer les propriétés AppDomain (par exemple, la liste TPA).</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This is the same as step 5 from the mscoree workflow, above.</source>
+          <target state="translated">C’est la même étape que l’étape 5 du flux de travail mscoree, ci-dessus.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_initialize`</ph> to start the runtime and create an AppDomain.</source>
+          <target state="translated">Utiliser <ph id="ph1">`coreclr_initialize`</ph> pour démarrer le runtime et créer un AppDomain.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This will also create a <ph id="ph1">`hostHandle`</ph> pointer that will be used in future hosting calls.</source>
+          <target state="translated">Cette étape permet de créer également un pointeur <ph id="ph1">`hostHandle`</ph> à utiliser dans les futurs appels d’hébergement.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Note that this function performs the roles of both steps 4 and 6 from the previous workflow.</source>
+          <target state="translated">Notez que cette fonction exécute les rôles des étapes 4 et 6 du flux de travail précédent.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Use either <ph id="ph1">`coreclr_execute_assembly`</ph> or <ph id="ph2">`coreclr_create_delegate`</ph> to execute managed code.</source>
+          <target state="translated">Utiliser <ph id="ph1">`coreclr_execute_assembly`</ph> ou <ph id="ph2">`coreclr_create_delegate`</ph> pour exécuter le code managé.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>These functions are analogous to mscoree's <ph id="ph1">`ExecuteAssembly`</ph> and <ph id="ph2">`CreateDelegate`</ph> functions from step 7 of the previous workflow.</source>
+          <target state="translated">Ces fonctions sont analogues aux fonctions <ph id="ph1">`ExecuteAssembly`</ph> et <ph id="ph2">`CreateDelegate`</ph> de mscoree de l’étape 7 du flux de travail précédent.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_shutdown`</ph> to unload the AppDomain and shut down the runtime.</source>
+          <target state="translated">Utiliser <ph id="ph1">`coreclr_shutdown`</ph> pour décharger l’AppDomain et arrêter le runtime.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">Conclusion</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects.</source>
+          <target state="translated">Une fois que votre hôte est créé, il peut être testé en l’exécutant à partir de la ligne de commande et en passant n’importe quel argument (comme l’application managée à exécuter) que l’hôte attend.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by <ph id="ph1">`dotnet build`</ph>.</source>
+          <target state="translated">Quand vous spécifiez l’application .NET Core que l’hôte doit exécuter, utilisez le fichier .dll généré par <ph id="ph1">`dotnet build`</ph>.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Executables produced by <ph id="ph1">`dotnet publish`</ph> for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.</source>
+          <target state="translated">Les fichiers exécutables générés par <ph id="ph1">`dotnet publish`</ph> pour les applications autonomes sont l’hôte .NET Core par défaut (pour que l’application puisse être lancée directement à partir de la ligne de commande dans les scénarios principaux) ; le code utilisateur est compilé dans un fichier dll du même nom.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If things don't work initially, double-check that <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.</source>
+          <target state="translated">Si vous n’obtenez pas les résultats attendus, vérifiez que <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> est disponible dans l’emplacement attendu par l’hôte, que toutes les bibliothèques Framework nécessaires sont dans la liste TPA et que le nombre de bits de CoreCLR (32 ou 64 bits) correspond au mode de génération de l’hôte.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario that many developers won't require, but for those who need to launch managed code from a native process, or who need more control over the .NET Core runtime's behavior, it can be very useful.</source>
+          <target state="translated">L’hébergement du runtime .NET Core est un scénario avancé sans utilité pour un grand nombre de développeurs, mais qui peut être très utile pour ceux qui doivent lancer du code managé à partir d’un processus natif ou qui ont besoin de davantage de contrôle sur le comportement du runtime .NET Core.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is able to run side-by-side with itself, it's even possible to create hosts which initialize and start multiple versions of the .NET Core runtime and execute apps on all of them in the same process.</source>
+          <target state="translated">Comme .NET Core est capable de s’exécuter côte à côte avec lui-même, il est même possible de créer des hôtes qui initialisent et démarrent plusieurs versions du runtime .NET Core et exécutent des applications sur chacun d'eux dans le même processus.</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
