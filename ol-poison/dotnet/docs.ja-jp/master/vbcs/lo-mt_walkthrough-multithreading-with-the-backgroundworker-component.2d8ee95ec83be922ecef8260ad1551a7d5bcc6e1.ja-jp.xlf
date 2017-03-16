@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3686eb230349876f6cfffd2ad94ed1f547779ab1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\walkthrough-multithreading-with-the-backgroundworker-component.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">334b9d691ea38d9888a2b8f56eefb400f9e0dd3b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a00f3fd3f16df0abf6a2133b0c65fbc7ea99606</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-multithreading-with-the-backgroundworker-component.2d8ee95ec83be922ecef8260ad1551a7d5bcc6e1.ja-jp is different with handoff file name: walkthrough-multithreading-with-the-backgroundworker-component.2d8ee95ec83be922ecef8260ad1551a7d5bcc6e1.ja-jp.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Multithreading with the BackgroundWorker Component (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">BackgroundWorker コンポーネント (Visual Basic) でのマルチ スレッド |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)</source>
+          <target state="translated">チュートリアル: BackgroundWorker コンポーネント (Visual Basic) でのマルチ スレッド</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word.</source>
+          <target state="translated">このチュートリアルは、単語の出現回数をテキスト ファイルを検索するマルチ スレッドの Windows フォーム アプリケーションを作成する方法を示します。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>It demonstrates:</source>
+          <target state="translated">これを示しています。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Defining a class with a method that can be called by the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">呼び出すことができるメソッドを使用してクラスを定義する、&lt;xref:System.ComponentModel.BackgroundWorker&gt;コンポーネント&lt;/xref:System.ComponentModel.BackgroundWorker&gt;。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Handling events raised by the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">によって生成されるイベントを処理、&lt;xref:System.ComponentModel.BackgroundWorker&gt;コンポーネント&lt;/xref:System.ComponentModel.BackgroundWorker&gt;。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Starting a &lt;xref:System.ComponentModel.BackgroundWorker&gt; component to run a method.</source>
+          <target state="translated">以降、&lt;xref:System.ComponentModel.BackgroundWorker&gt;メソッドを実行するコンポーネント&lt;/xref:System.ComponentModel.BackgroundWorker&gt;。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Implementing a <ph id="ph1">`Cancel`</ph> button that stops the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">実装する、<ph id="ph1">`Cancel`</ph>停止ボタン、&lt;xref:System.ComponentModel.BackgroundWorker&gt;コンポーネント&lt;/xref:System.ComponentModel.BackgroundWorker&gt;。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To create the user interface</source>
+          <target state="translated">ユーザー インターフェイスを作成するには</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Open a new Visual Basic Windows Forms Application project, and create a form named <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">新しい Visual Basic Windows フォーム アプリケーション プロジェクトを開き、という名前のフォームを作成<ph id="ph1">`Form1`</ph>します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Add two buttons and four text boxes to <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">2 つのボタンと&amp;4; つのテキスト ボックスに追加<ph id="ph1">`Form1`</ph>します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Name the objects as shown in the following table.</source>
+          <target state="translated">次の表に示すように、オブジェクトの名前を付けます。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">オブジェクト</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>First button</source>
+          <target state="translated">最初のボタン</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Start, Start</source>
+          <target state="translated">スタート、開始</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Second button</source>
+          <target state="translated">2 番目のボタン</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Cancel, Cancel</source>
+          <target state="translated">[キャンセル]、[キャンセル]</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>First text box</source>
+          <target state="translated">最初のテキスト ボックス</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>SourceFile, ""</source>
+          <target state="translated">SourceFile、""</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Second text box</source>
+          <target state="translated">2 つ目のテキスト ボックス</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>CompareString, ""</source>
+          <target state="translated">通常、""</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Third text box</source>
+          <target state="translated">3 番目のテキスト ボックス</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>WordsCounted, "0"</source>
+          <target state="translated">WordsCounted、「0」</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Fourth text box</source>
+          <target state="translated">4 番目のテキスト ボックス</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>LinesCounted, "0"</source>
+          <target state="translated">LinesCounted、「0」</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Add a label next to each text box.</source>
+          <target state="translated">各テキスト ボックスの横にあるラベルを追加します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Set the <ph id="ph1">`Text`</ph> property for each label as shown in the following table.</source>
+          <target state="translated">設定、<ph id="ph1">`Text`</ph>次の表に示すように、各ラベルのプロパティです。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">オブジェクト</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>First label</source>
+          <target state="translated">最初のラベル</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Source File</source>
+          <target state="translated">[ソース ファイル]</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Second label</source>
+          <target state="translated">2 番目のラベル</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Compare String</source>
+          <target state="translated">文字列を比較します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Third label</source>
+          <target state="translated">3 番目のラベル</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Matching Words</source>
+          <target state="translated">単語に一致します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Fourth label</source>
+          <target state="translated">4 番目のラベル</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Lines Counted</source>
+          <target state="translated">行のカウント</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>To create a BackgroundWorker component and subscribe to its events</source>
+          <target state="translated">BackgroundWorker コンポーネントを作成し、そのイベントをサブスクライブするには</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Add a &lt;xref:System.ComponentModel.BackgroundWorker&gt; component from the <bpt id="p1">**</bpt>Components<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>ToolBox<ept id="p2">**</ept> to the form.</source>
+          <target state="translated">追加、&lt;xref:System.ComponentModel.BackgroundWorker&gt;コンポーネントから、<bpt id="p1">**</bpt>コンポーネント<ept id="p1">**</ept>のセクションで、<bpt id="p2">**</bpt>ツールボックス<ept id="p2">**</ept>をフォームにします&lt;/xref:System.ComponentModel.BackgroundWorker&gt;。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>It will appear in the form's component tray.</source>
+          <target state="translated">フォームのコンポーネント トレイに表示されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Set the following properties for the BackgroundWorker1 object.</source>
+          <target state="translated">BackgroundWorker1 オブジェクトの次のプロパティを設定します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>True</source>
+          <target state="translated">True</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>True</source>
+          <target state="translated">True</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>To define the method that will run on a separate thread</source>
+          <target state="translated">別のスレッドで実行されるメソッドを定義するには</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add Class<ept id="p2">**</ept> to add a class to the project.</source>
+          <target state="translated"><bpt id="p1">**</bpt>プロジェクト<ept id="p1">**</ept>] メニューの [選択<bpt id="p2">**</bpt>クラスの追加<ept id="p2">**</ept>クラスをプロジェクトに追加します。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog box is displayed.</source>
+          <target state="translated"><bpt id="p1">**</bpt>新しい項目の追加<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class<ept id="p1">**</ept> from the templates window and enter <ph id="ph1">`Words.vb`</ph> in the name field.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>クラス<ept id="p1">**</ept>テンプレート ウィンドウから入力<ph id="ph1">`Words.vb`</ph>名 フィールドにします。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[追加]<ept id="p1">**</ept>をクリックします。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Words`</ph> class is displayed.</source>
+          <target state="translated"><ph id="ph1">`Words`</ph>クラスが表示されます。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Add the following code to the <ph id="ph1">`Words`</ph> class:</source>
+          <target state="translated"><ph id="ph1">`Words`</ph> クラスに次のコードを追加します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>To handle events from the thread</source>
+          <target state="translated">スレッドからイベントを処理するには</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Add the following event handlers to your main form:</source>
+          <target state="translated">メイン フォームに次のイベント ハンドラーを追加します。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>To start and call a new thread that runs the WordCount method</source>
+          <target state="translated">WordCount メソッドを実行して開始し、新しいスレッドを呼び出します</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Add the following procedures to your program:</source>
+          <target state="translated">プログラムを次の手順を追加します。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`StartThread`</ph> method from the <ph id="ph2">`Start`</ph> button on your form:</source>
+          <target state="translated">呼び出す、<ph id="ph1">`StartThread`</ph>メソッドから、<ph id="ph2">`Start`</ph>フォーム上のボタン。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To implement a Cancel button that stops the thread</source>
+          <target state="translated">[キャンセル] ボタンを実装するには、スレッドを停止します。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`StopThread`</ph> procedure from the <ph id="ph2">`Click`</ph> event handler for the <ph id="ph3">`Cancel`</ph> button.</source>
+          <target state="translated">呼び出す、<ph id="ph1">`StopThread`</ph>プロシージャから、<ph id="ph2">`Click`</ph>のイベント ハンドラー、 <ph id="ph3">`Cancel`</ph>  ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Testing</source>
+          <target state="translated">テスト中</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can now test the application to make sure it works correctly.</source>
+          <target state="translated">正常に動作を確認するアプリケーションをテストできます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To test the application</source>
+          <target state="translated">アプリケーションをテストするには</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Press F5 to run the application.</source>
+          <target state="translated">F5 キーを押してアプリケーションを実行します。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When the form is displayed, enter the file path for the file you want to test in the <ph id="ph1">`sourceFile`</ph> box.</source>
+          <target state="translated">フォームが表示されたら、ファイルのパスを入力でテストするファイル、<ph id="ph1">`sourceFile`</ph>ボックス。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, assuming your test file is named Test.txt, enter C:\Test.txt.</source>
+          <target state="translated">たとえば、テスト ファイルと仮定した場合は、Test.txt という名前を C:\Test.txt を入力します。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the second text box, enter a word or phrase for the application to search for in the text file.</source>
+          <target state="translated">2 つ目のテキスト ボックスには、アプリケーションでテキスト ファイル内で検索する語句を入力します。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Start`</ph> button.</source>
+          <target state="translated">[<ph id="ph1">`Start`</ph>] ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`LinesCounted`</ph> button should begin incrementing immediately.</source>
+          <target state="translated"><ph id="ph1">`LinesCounted`</ph>ボタンがすぐに増分する操作を始める必要があります。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The application displays the message "Finished Counting" when it is done.</source>
+          <target state="translated">アプリケーションでは、処理が完了したら、「終了カウント」メッセージが表示されます。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>To test the Cancel button</source>
+          <target state="translated">[キャンセル] ボタンをテストするには</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Press F5 to start the application, and enter the file name and search word as described in the previous procedure.</source>
+          <target state="translated">F5 キーを押して、アプリケーションを起動し、前の手順に従って、ファイル名と検索語を入力します。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Make sure that the file you choose is large enough to ensure you will have time to cancel the procedure before it is finished.</source>
+          <target state="translated">選択したファイルが完了する前に、プロシージャをキャンセルする時間があることを確認するために十分であることを確認してください。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Start`</ph> button to start the application.</source>
+          <target state="translated">クリックして、<ph id="ph1">`Start`</ph>アプリケーションを起動するボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Cancel`</ph> button.</source>
+          <target state="translated">[<ph id="ph1">`Cancel`</ph>] ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The application should stop counting immediately.</source>
+          <target state="translated">アプリケーションは、カウントをすぐに停止する必要があります。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Next Steps</source>
+          <target state="translated">次の手順</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>This application contains some basic error handling.</source>
+          <target state="translated">このアプリケーションには、基本的なエラー処理が含まれています。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It detects blank search strings.</source>
+          <target state="translated">空白の検索文字列を検出します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>You can make this program more robust by handling other errors, such as exceeding the maximum number of words or lines that can be counted.</source>
+          <target state="translated">単語やカウントできる行の最大数を超えた場合など、他のエラーを処理することによって行うと、このプログラムがより堅牢です。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>スレッド処理 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic<ept id="p1">](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>チュートリアル: Visual Basic による簡単なマルチ スレッド コンポーネントの作成<ept id="p1">](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Subscribe to and Unsubscribe from Events<ept id="p1">](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>方法: イベント サブスクリプションとサブスクリプションの解除<ept id="p1">](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
