@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3686eb230349876f6cfffd2ad94ed1f547779ab1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\walkthrough-multithreading-with-the-backgroundworker-component.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">334b9d691ea38d9888a2b8f56eefb400f9e0dd3b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a00f3fd3f16df0abf6a2133b0c65fbc7ea99606</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Multithreading with the BackgroundWorker Component (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Multithreading con el componente BackgroundWorker (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)</source>
+          <target state="translated">Tutorial: Multithreading con el componente BackgroundWorker (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough demonstrates how to create a multithreaded Windows Forms application that searches a text file for occurrences of a word.</source>
+          <target state="translated">Este tutorial muestra cómo crear una aplicación de formularios Windows Forms multiproceso que busque las apariciones de una palabra en una archivo de texto.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>It demonstrates:</source>
+          <target state="translated">Muestra:</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Defining a class with a method that can be called by the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">Definir una clase con un método que se puede llamar mediante el &lt;xref:System.ComponentModel.BackgroundWorker&gt;componente.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Handling events raised by the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">Controlar eventos provocados por la &lt;xref:System.ComponentModel.BackgroundWorker&gt;componente.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Starting a &lt;xref:System.ComponentModel.BackgroundWorker&gt; component to run a method.</source>
+          <target state="translated">A partir de un &lt;xref:System.ComponentModel.BackgroundWorker&gt;un método de ejecución del componente.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Implementing a <ph id="ph1">`Cancel`</ph> button that stops the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component.</source>
+          <target state="translated">Implementar un <ph id="ph1">`Cancel`</ph> botón que detiene el &lt;xref:System.ComponentModel.BackgroundWorker&gt;componente.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To create the user interface</source>
+          <target state="translated">Para crear la interfaz de usuario</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Open a new Visual Basic Windows Forms Application project, and create a form named <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">Abra un nuevo proyecto de aplicación de Windows Forms de Visual Basic y cree un formulario denominado <ph id="ph1">`Form1`</ph>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Add two buttons and four text boxes to <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">Agregue dos botones y cuatro cuadros de texto para <ph id="ph1">`Form1`</ph>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Name the objects as shown in the following table.</source>
+          <target state="translated">Nombre de los objetos como se muestra en la tabla siguiente.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">Objeto</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Propiedad</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">Parámetro</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>First button</source>
+          <target state="translated">Primer botón</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Start, Start</source>
+          <target state="translated">Inicio, inicio</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Second button</source>
+          <target state="translated">Segundo botón</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Cancel, Cancel</source>
+          <target state="translated">Cancelar, Cancelar</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>First text box</source>
+          <target state="translated">Primer cuadro de texto</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>SourceFile, ""</source>
+          <target state="translated">SourceFile, ""</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Second text box</source>
+          <target state="translated">Segundo cuadro de texto</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>CompareString, ""</source>
+          <target state="translated">CompareString, ""</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Third text box</source>
+          <target state="translated">Tercer cuadro de texto</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>WordsCounted, "0"</source>
+          <target state="translated">WordsCounted, "0"</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Fourth text box</source>
+          <target state="translated">Cuarto cuadro de texto</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`Name`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>LinesCounted, "0"</source>
+          <target state="translated">LinesCounted, "0"</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Add a label next to each text box.</source>
+          <target state="translated">Agregue una etiqueta al lado de cada cuadro de texto.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Set the <ph id="ph1">`Text`</ph> property for each label as shown in the following table.</source>
+          <target state="translated">Establecer el <ph id="ph1">`Text`</ph> propiedad para cada etiqueta, como se muestra en la tabla siguiente.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">Objeto</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Propiedad</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">Parámetro</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>First label</source>
+          <target state="translated">Primera etiqueta</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Source File</source>
+          <target state="translated">Archivo de código fuente</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Second label</source>
+          <target state="translated">Segunda etiqueta</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Compare String</source>
+          <target state="translated">Comparar cadenas</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Third label</source>
+          <target state="translated">Tercera etiqueta</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Matching Words</source>
+          <target state="translated">Coincidencia de palabras</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Fourth label</source>
+          <target state="translated">Cuarta etiqueta</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Lines Counted</source>
+          <target state="translated">Recuento de líneas</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>To create a BackgroundWorker component and subscribe to its events</source>
+          <target state="translated">Para crear un componente BackgroundWorker y suscribirse a sus eventos</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Add a &lt;xref:System.ComponentModel.BackgroundWorker&gt; component from the <bpt id="p1">**</bpt>Components<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>ToolBox<ept id="p2">**</ept> to the form.</source>
+          <target state="translated">Agregar un &lt;xref:System.ComponentModel.BackgroundWorker&gt;componente desde la <bpt id="p1">**</bpt>componentes<ept id="p1">**</ept> sección de la <bpt id="p2">**</bpt>herramientas<ept id="p2">**</ept> al formulario.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>It will appear in the form's component tray.</source>
+          <target state="translated">Aparecerá en la Bandeja de componentes del formulario.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Set the following properties for the BackgroundWorker1 object.</source>
+          <target state="translated">Establezca las siguientes propiedades del objeto BackgroundWorker1.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Propiedad</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">Configuración</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>True</source>
+          <target state="translated">True</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>True</source>
+          <target state="translated">True</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>To define the method that will run on a separate thread</source>
+          <target state="translated">Para definir el método que se ejecutará en un subproceso independiente</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add Class<ept id="p2">**</ept> to add a class to the project.</source>
+          <target state="translated">Desde el <bpt id="p1">**</bpt>proyecto<ept id="p1">**</ept> menú, elija <bpt id="p2">**</bpt>Agregar clase<ept id="p2">**</ept> para agregar una clase al proyecto.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog box is displayed.</source>
+          <target state="translated">El <bpt id="p1">**</bpt>Agregar nuevo elemento<ept id="p1">**</ept> se muestra el cuadro de diálogo.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class<ept id="p1">**</ept> from the templates window and enter <ph id="ph1">`Words.vb`</ph> in the name field.</source>
+          <target state="translated">Seleccione <bpt id="p1">**</bpt>clase<ept id="p1">**</ept> desde la ventana de plantillas y escriba <ph id="ph1">`Words.vb`</ph> en el campo nombre.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+          <target state="translated">Haga clic en <bpt id="p1">**</bpt>Agregar<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Words`</ph> class is displayed.</source>
+          <target state="translated">El <ph id="ph1">`Words`</ph> se muestra la clase.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Add the following code to the <ph id="ph1">`Words`</ph> class:</source>
+          <target state="translated">Agregue el código siguiente a la clase <ph id="ph1">`Words`</ph> :</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>To handle events from the thread</source>
+          <target state="translated">Controlar eventos desde el subproceso</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Add the following event handlers to your main form:</source>
+          <target state="translated">Agregue los siguientes controladores de eventos a su formulario principal:</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>To start and call a new thread that runs the WordCount method</source>
+          <target state="translated">Para iniciar y llamar a un nuevo subproceso que ejecuta el método WordCount</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Add the following procedures to your program:</source>
+          <target state="translated">Agregue los siguientes procedimientos en el programa:</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`StartThread`</ph> method from the <ph id="ph2">`Start`</ph> button on your form:</source>
+          <target state="translated">Llame a la <ph id="ph1">`StartThread`</ph> método desde el <ph id="ph2">`Start`</ph> botón en el formulario:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>To implement a Cancel button that stops the thread</source>
+          <target state="translated">Para implementar un botón Cancel que detiene el subproceso</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Call the <ph id="ph1">`StopThread`</ph> procedure from the <ph id="ph2">`Click`</ph> event handler for the <ph id="ph3">`Cancel`</ph> button.</source>
+          <target state="translated">Llame a la <ph id="ph1">`StopThread`</ph> procedimiento desde el <ph id="ph2">`Click`</ph> controlador de eventos para el <ph id="ph3">`Cancel`</ph> botón.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Testing</source>
+          <target state="translated">Pruebas</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can now test the application to make sure it works correctly.</source>
+          <target state="translated">Ahora puede probar la aplicación para asegurarse de que funciona correctamente.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To test the application</source>
+          <target state="translated">Para probar la aplicación</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Press F5 to run the application.</source>
+          <target state="translated">Presione F5 para ejecutar la aplicación.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When the form is displayed, enter the file path for the file you want to test in the <ph id="ph1">`sourceFile`</ph> box.</source>
+          <target state="translated">Cuando se muestre el formulario, escriba la ruta de acceso de archivo para el archivo que desea probar en la <ph id="ph1">`sourceFile`</ph> cuadro.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For example, assuming your test file is named Test.txt, enter C:\Test.txt.</source>
+          <target state="translated">Por ejemplo, suponiendo que el archivo de prueba denominado Test.txt, escriba C:\Test.txt.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the second text box, enter a word or phrase for the application to search for in the text file.</source>
+          <target state="translated">En el segundo cuadro de texto, escriba una palabra o frase para la aplicación buscar en el archivo de texto.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Start`</ph> button.</source>
+          <target state="translated">Haga clic en el botón <ph id="ph1">`Start`</ph>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`LinesCounted`</ph> button should begin incrementing immediately.</source>
+          <target state="translated">El <ph id="ph1">`LinesCounted`</ph> botón empezará a incrementar inmediatamente.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The application displays the message "Finished Counting" when it is done.</source>
+          <target state="translated">La aplicación muestra el mensaje "Finished Counting" cuando termine.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>To test the Cancel button</source>
+          <target state="translated">Para probar el botón Cancelar</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Press F5 to start the application, and enter the file name and search word as described in the previous procedure.</source>
+          <target state="translated">Presione F5 para iniciar la aplicación y escriba la palabra de búsqueda y de nombre de archivo como se describe en el procedimiento anterior.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Make sure that the file you choose is large enough to ensure you will have time to cancel the procedure before it is finished.</source>
+          <target state="translated">Asegúrese de que el archivo que elige es lo suficientemente grande como para asegurarse de que tendrá tiempo para cancelar el procedimiento antes de que finalice.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Start`</ph> button to start the application.</source>
+          <target state="translated">Haga clic en el <ph id="ph1">`Start`</ph> botón para iniciar la aplicación.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Click the <ph id="ph1">`Cancel`</ph> button.</source>
+          <target state="translated">Haga clic en el botón <ph id="ph1">`Cancel`</ph>.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The application should stop counting immediately.</source>
+          <target state="translated">La aplicación parará de contar inmediatamente.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Next Steps</source>
+          <target state="translated">Pasos siguientes</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>This application contains some basic error handling.</source>
+          <target state="translated">Esta aplicación contiene un control de errores básico.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>It detects blank search strings.</source>
+          <target state="translated">Detecta las cadenas de búsqueda en blanco.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>You can make this program more robust by handling other errors, such as exceeding the maximum number of words or lines that can be counted.</source>
+          <target state="translated">Puede hacer que este programa más sólido por otros errores, por ejemplo, si se supera el número máximo de palabras o líneas que se pueden contar.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Subprocesamiento (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Authoring a Simple Multithreaded Component with Visual Basic<ept id="p1">](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tutorial: Crear un componente sencillo multiproceso con Visual Basic<ept id="p1">](http://msdn.microsoft.com/library/05693b70-3566-4d91-9f2c-c9bc4ccb3001)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Subscribe to and Unsubscribe from Events<ept id="p1">](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Cómo: Suscribir y cancelar la suscripción a eventos<ept id="p1">](../../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

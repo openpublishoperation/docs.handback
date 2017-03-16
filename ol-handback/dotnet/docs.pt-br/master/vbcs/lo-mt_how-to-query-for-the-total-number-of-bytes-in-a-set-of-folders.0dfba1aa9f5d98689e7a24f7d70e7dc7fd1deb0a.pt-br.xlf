@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">668a8a4d89f7b81c3aef9b4e1a46ad749c4a8341</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">30db851ce3c0a5988537da6ad178fdc27a0bc0d1</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e72f342d3bff74a28634842ed0898c566f2f7cfc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Como: consultar o número Total de Bytes em um conjunto de pastas (LINQ) (Visual Basic) | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (Visual Basic)</source>
+          <target state="translated">Como: consultar o número Total de Bytes em um conjunto de pastas (LINQ) (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example shows how to retrieve the total number of bytes used by all the files in a specified folder and all its subfolders.</source>
+          <target state="translated">Este exemplo mostra como recuperar o número total de bytes usado por todos os arquivos em uma pasta especificada e todas as suas subpastas.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Exemplo</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Linq.Enumerable.Sum%2A&gt; method adds the values of all the items selected in the <ph id="ph1">`select`</ph> clause.</source>
+          <target state="translated">O &lt;xref:System.Linq.Enumerable.Sum%2A&gt;método adiciona os valores de todos os itens selecionados de <ph id="ph1">`select`</ph> cláusula.&lt;/xref:System.Linq.Enumerable.Sum%2A&gt;</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can easily modify this query to retrieve the biggest or smallest file in the specified directory tree by calling the &lt;xref:System.Linq.Enumerable.Min%2A&gt; or &lt;xref:System.Linq.Enumerable.Max%2A&gt; method instead of &lt;xref:System.Linq.Enumerable.Sum%2A&gt;.</source>
+          <target state="translated">Você pode facilmente modificar essa consulta para recuperar o arquivo maior ou menor na árvore de diretório especificado chamando o &lt;xref:System.Linq.Enumerable.Min%2A&gt; &lt;xref:System.Linq.Enumerable.Max%2A&gt;método em vez de &lt;xref:System.Linq.Enumerable.Sum%2A&gt;.&lt;/xref:System.Linq.Enumerable.Sum%2A&gt; &lt;/xref:System.Linq.Enumerable.Max%2A&gt; ou&lt;/xref:System.Linq.Enumerable.Min%2A&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>If you only have to count the number of bytes in a specified directory tree, you can do this more efficiently without creating a LINQ query, which incurs the overhead of creating the list collection as a data source.</source>
+          <target state="translated">Se você tiver apenas contar o número de bytes em uma árvore de diretório especificado, você pode fazer isso com mais eficiência sem criar uma consulta LINQ, que gera a sobrecarga de criação da coleção de lista como uma fonte de dados.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The usefulness of the LINQ approach increases as the query becomes more complex, or when you have to run multiple queries against the same data source.</source>
+          <target state="translated">A utilidade da abordagem do LINQ aumenta, a consulta se torna mais complexa ou quando você precisa executar várias consultas em relação a mesma fonte de dados.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The query calls out to a separate method to obtain the file length.</source>
+          <target state="translated">A consulta chama um método separado para obter o comprimento de arquivo.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It does this in order to consume the possible exception that will be raised if the file was deleted on another thread after the &lt;xref:System.IO.FileInfo&gt; object was created in the call to <ph id="ph1">`GetFiles`</ph>.</source>
+          <target state="translated">Ele faz isso para consumir a possível exceção será gerada se o arquivo foi excluído em outro thread após o &lt;xref:System.IO.FileInfo&gt;objeto foi criado na chamada para <ph id="ph1">`GetFiles`</ph>.&lt;/xref:System.IO.FileInfo&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Even though the &lt;xref:System.IO.FileInfo&gt; object has already been created, the exception can occur because a &lt;xref:System.IO.FileInfo&gt; object will try to refresh its &lt;xref:System.IO.FileInfo.Length%2A&gt; property with the most current length the first time the property is accessed.</source>
+          <target state="translated">Embora o &lt;xref:System.IO.FileInfo&gt;objeto já foi criado, a exceção pode ocorrer porque um &lt;xref:System.IO.FileInfo&gt;objeto tentará atualizar seu &lt;xref:System.IO.FileInfo.Length%2A&gt;propriedade com o comprimento máximo atual na primeira vez em que a propriedade é acessada.&lt;/xref:System.IO.FileInfo.Length%2A&gt; &lt;/xref:System.IO.FileInfo&gt; &lt;/xref:System.IO.FileInfo&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>By putting this operation in a try-catch block outside the query, the code follows the rule of avoiding operations in queries that can cause side-effects.</source>
+          <target state="translated">Ao colocar essa operação em um bloco try-catch fora da consulta, o código segue a regra de evitar operações em consultas que podem causar efeitos colaterais.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In general, great care must be taken when you consume exceptions to make sure that an application is not left in an unknown state.</source>
+          <target state="translated">Em geral, ótimo deve ter cuidado ao consumir exceções para certificar-se de que um aplicativo não seja deixado em um estado desconhecido.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">Compilando o código</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a   <ph id="ph1">`Imports`</ph> statement for the System.Linq namespace.</source>
+          <target state="translated">Criar um projeto que tem como alvo o .NET Framework versão 3.5 ou superior com uma referência a System.Core.dll e uma <ph id="ph1">`Imports`</ph> declaração para o namespace System. Linq.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ and File Directories (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ e diretórios de arquivos (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

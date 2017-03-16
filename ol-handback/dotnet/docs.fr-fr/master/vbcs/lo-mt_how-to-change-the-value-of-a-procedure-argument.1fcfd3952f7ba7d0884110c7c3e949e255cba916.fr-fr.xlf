@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6c42a50b75bcc70ae0a3f70771b9e1f85626004b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\procedures\how-to-change-the-value-of-a-procedure-argument.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e1b823e2168df6e1546f97eb8d3871743ffe0f76</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7f69f899c2f269f06ce981cf4674d7d85d45c340</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Change the Value of a Procedure Argument (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Comment : modifier la valeur d’un Argument de procédure (Visual Basic) | Documents Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Change the Value of a Procedure Argument (Visual Basic)</source>
+          <target state="translated">Comment : modifier la valeur d’un argument de la procédure (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you call a procedure, each argument you supply corresponds to one of the parameters defined in the procedure.</source>
+          <target state="translated">Lorsque vous appelez une procédure, chaque argument que vous fournissez correspond à l’un des paramètres définis dans la procédure.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In some cases, the procedure code can change the value underlying an argument in the calling code.</source>
+          <target state="translated">Dans certains cas, le code de procédure peut modifier la valeur sous-jacente à un argument dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In other cases, the procedure can change only its local copy of an argument.</source>
+          <target state="translated">Dans d’autres cas, la procédure peut modifier uniquement sa copie locale d’un argument.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When you call the procedure, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> makes a local copy of every argument that is passed <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept>.</source>
+          <target state="translated">Lorsque vous appelez la procédure, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> fait une copie locale de chaque argument est passé <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For each argument passed <bpt id="p1">[</bpt>ByRef<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept>, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> gives the procedure code a direct reference to the programming element underlying the argument in the calling code.</source>
+          <target state="translated">Pour chaque argument passé <bpt id="p1">[</bpt>ByRef<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept>, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> donne le code de procédure une référence directe à l’élément de programmation sous-jacent à l’argument dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If the underlying element in the calling code is a modifiable element and the argument is passed <ph id="ph1">`ByRef`</ph>, the procedure code can use the direct reference to change the element's value in the calling code.</source>
+          <target state="translated">Si l’élément sous-jacent dans le code appelant est un élément modifiable et que l’argument est passé <ph id="ph1">`ByRef`</ph>, le code de procédure peut utiliser la référence directe pour modifier la valeur de l’élément dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Changing the Underlying Value</source>
+          <target state="translated">Modification de la valeur sous-jacente</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To change the underlying value of a procedure argument in the calling code</source>
+          <target state="translated">Pour modifier la valeur sous-jacente d’un argument de procédure dans le code appelant</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In the procedure declaration, specify <bpt id="p1">[</bpt>ByRef<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept> for the parameter corresponding to the argument.</source>
+          <target state="translated">Dans la déclaration de procédure, spécifiez <bpt id="p1">[</bpt>ByRef<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept> pour le paramètre correspondant à l’argument.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In the calling code, pass a modifiable programming element as the argument.</source>
+          <target state="translated">Dans le code appelant, passez un élément de programmation modifiable comme argument.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the calling code, do not enclose the argument in parentheses in the argument list.</source>
+          <target state="translated">Dans le code appelant, ne placez pas l’argument entre parenthèses dans la liste d’arguments.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the procedure code, use the parameter name to assign a value to the underlying element in the calling code.</source>
+          <target state="translated">Dans le code de procédure, utilisez le nom de paramètre pour assigner une valeur à l’élément sous-jacent dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>See the example further down for a demonstration.</source>
+          <target state="translated">Consultez l’exemple ci-dessous pour une démonstration.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Changing Local Copies</source>
+          <target state="translated">Modification de Copies locales</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If the underlying element in the calling code is a nonmodifiable element, or if the argument is passed <ph id="ph1">`ByVal`</ph>, the procedure cannot change its value in the calling code.</source>
+          <target state="translated">Si l’élément sous-jacent dans le code appelant est un élément non modifiable, ou si l’argument est passé <ph id="ph1">`ByVal`</ph>, la procédure ne peut pas modifier sa valeur dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>However, the procedure can change its local copy of such an argument.</source>
+          <target state="translated">Toutefois, la procédure peut modifier sa copie locale de l’argument.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To change the copy of a procedure argument in the procedure code</source>
+          <target state="translated">Pour modifier la copie d’un argument de procédure dans le code de procédure</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In the procedure declaration, specify <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept> for the parameter corresponding to the argument.</source>
+          <target state="translated">Dans la déclaration de procédure, spécifiez <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept> pour le paramètre correspondant à l’argument.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>-or-</source>
+          <target state="translated">ou</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>In the calling code, enclose the argument in parentheses in the argument list.</source>
+          <target state="translated">Dans le code appelant, mettez l’argument entre parenthèses dans la liste d’arguments.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This forces <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> to pass the argument by value, even if the corresponding parameter specifies <ph id="ph2">`ByRef`</ph>.</source>
+          <target state="translated">Cette option force <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> pour passer l’argument par valeur, même si le paramètre correspondant spécifie <ph id="ph2">`ByRef`</ph>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the procedure code, use the parameter name to assign a value to the local copy of the argument.</source>
+          <target state="translated">Dans le code de procédure, utilisez le nom de paramètre pour assigner une valeur à la copie locale de l’argument.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The underlying value in the calling code is not changed.</source>
+          <target state="translated">La valeur sous-jacente dans le code appelant n’est pas modifiée.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Exemple</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The following example shows two procedures that take an array variable and operate on its elements.</source>
+          <target state="translated">L’exemple suivant illustre deux procédures qui acceptent une variable tableau et opèrent sur ses éléments.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`increase`</ph> procedure simply adds one to each element.</source>
+          <target state="translated">Le <ph id="ph1">`increase`</ph> procédure ajoute simplement la valeur&amp;1; à chaque élément.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`replace`</ph> procedure assigns a new array to the parameter <ph id="ph2">`a()`</ph> and then adds one to each element.</source>
+          <target state="translated">Le <ph id="ph1">`replace`</ph> procédure assigne un nouveau tableau au paramètre <ph id="ph2">`a()`</ph> , puis l’ajoute à chaque élément.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#35<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures&amp;#35;<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#36<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures n °&amp;36;<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#37<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures&amp;#37;<ept id="p2">](./codesnippet/VisualBasic/how-to-change-the-value-of-a-procedure-argument_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The first <ph id="ph1">`MsgBox`</ph> call displays "After increase(n): 11, 21, 31, 41".</source>
+          <target state="translated">Le premier <ph id="ph1">`MsgBox`</ph> appel affiche « après Increase (n) : 11, 21, 31, 41 ».</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Because the array <ph id="ph1">`n`</ph> is a reference type, <ph id="ph2">`replace`</ph> can change its members, even though the passing mechanism is <ph id="ph3">`ByVal`</ph>.</source>
+          <target state="translated">Étant donné que le tableau <ph id="ph1">`n`</ph> est un type référence, <ph id="ph2">`replace`</ph> peut modifier ses membres, même si le mécanisme de passage est <ph id="ph3">`ByVal`</ph>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The second <ph id="ph1">`MsgBox`</ph> call displays "After replace(n): 101, 201, 301".</source>
+          <target state="translated">La seconde <ph id="ph1">`MsgBox`</ph> appel affiche « après Replace (n) : 101, 201, 301 ».</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`n`</ph> is passed <ph id="ph2">`ByRef`</ph>, <ph id="ph3">`replace`</ph> can modify the variable <ph id="ph4">`n`</ph> in the calling code and assign a new array to it.</source>
+          <target state="translated">Étant donné que <ph id="ph1">`n`</ph> est passée <ph id="ph2">`ByRef`</ph>, <ph id="ph3">`replace`</ph> peut modifier la variable <ph id="ph4">`n`</ph> dans le code appelant et affecter un nouveau tableau.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`n`</ph> is a reference type, <ph id="ph2">`replace`</ph> can also change its members.</source>
+          <target state="translated">Étant donné que <ph id="ph1">`n`</ph> est un type référence, <ph id="ph2">`replace`</ph> peut également modifier ses membres.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>You can prevent the procedure from modifying the variable itself in the calling code.</source>
+          <target state="translated">Vous pouvez empêcher la procédure de modification de la variable elle-même dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>How to: Protect a Procedure Argument Against Value Changes<ept id="p1">](./how-to-protect-a-procedure-argument-against-value-changes.md)</ept>.</source>
+          <target state="translated">Consultez la page <bpt id="p1">[</bpt>Comment : protéger un Argument de procédure contre les modifications de valeur<ept id="p1">](./how-to-protect-a-procedure-argument-against-value-changes.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">Compilation du code</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When you pass a variable by reference, you must use the <ph id="ph1">`ByRef`</ph> keyword to specify this mechanism.</source>
+          <target state="translated">Lorsque vous passez une variable par référence, vous devez utiliser le <ph id="ph1">`ByRef`</ph> (mot clé) pour spécifier ce mécanisme.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The default in <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> is to pass arguments by value.</source>
+          <target state="translated">La valeur par défaut dans <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> consiste à passer des arguments par valeur.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>However, it is good programming practice to include either the <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept> or <bpt id="p2">[</bpt>ByRef<ept id="p2">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept> keyword with every declared parameter.</source>
+          <target state="translated">Toutefois, il est conseillé de comprennent le <bpt id="p1">[</bpt>ByVal<ept id="p1">](../../../../visual-basic/language-reference/modifiers/byval.md)</ept> ou <bpt id="p2">[</bpt>ByRef<ept id="p2">](../../../../visual-basic/language-reference/modifiers/byref.md)</ept> mot-clé avec chaque paramètre déclaré.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This makes your code easier to read.</source>
+          <target state="translated">Cela rend votre code plus facile à lire.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>.NET Framework Security</source>
+          <target state="translated">Sécurité .NET Framework</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code.</source>
+          <target state="translated">Il existe toujours un risque potentiel en autorisant une procédure modifier la valeur sous-jacente à un argument dans le code appelant.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Make sure you expect this value to be changed, and be prepared to check it for validity before using it.</source>
+          <target state="translated">Assurez-vous que cette valeur pour être modifiée et préparez-vous à vérifier la validité avant de l’utiliser.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Voir aussi</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Procedures<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Procédures<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Procedure Parameters and Arguments<ept id="p1">](./procedure-parameters-and-arguments.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Arguments et paramètres de procédure<ept id="p1">](./procedure-parameters-and-arguments.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Pass Arguments to a Procedure<ept id="p1">](./how-to-pass-arguments-to-a-procedure.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Comment : passer des Arguments à une procédure<ept id="p1">](./how-to-pass-arguments-to-a-procedure.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Passing Arguments by Value and by Reference<ept id="p1">](./passing-arguments-by-value-and-by-reference.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Passage des Arguments par valeur et par référence<ept id="p1">](./passing-arguments-by-value-and-by-reference.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Differences Between Modifiable and Nonmodifiable Arguments<ept id="p1">](./differences-between-modifiable-and-nonmodifiable-arguments.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Différences entre les Arguments modifiables et non modifiables<ept id="p1">](./differences-between-modifiable-and-nonmodifiable-arguments.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Differences Between Passing an Argument By Value and By Reference<ept id="p1">](./differences-between-passing-an-argument-by-value-and-by-reference.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Différences entre le passage d’un Argument par valeur et par référence<ept id="p1">](./differences-between-passing-an-argument-by-value-and-by-reference.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Protect a Procedure Argument Against Value Changes<ept id="p1">](./how-to-protect-a-procedure-argument-against-value-changes.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Comment : protéger un Argument de procédure contre les modifications de valeur<ept id="p1">](./how-to-protect-a-procedure-argument-against-value-changes.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Force an Argument to Be Passed by Value<ept id="p1">](./how-to-force-an-argument-to-be-passed-by-value.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Comment : forcer un Argument à passer par valeur<ept id="p1">](./how-to-force-an-argument-to-be-passed-by-value.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Passing Arguments by Position and by Name<ept id="p1">](./passing-arguments-by-position-and-by-name.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Passage des Arguments par Position et par nom<ept id="p1">](./passing-arguments-by-position-and-by-name.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Value Types and Reference Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Types valeur et types référence<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4cd3b9b643bbf511b4b85d6d4cddcdab61b8d11b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\declared-elements\how-to-hide-an-inherited-variable.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7d79a508ce98e6fe04241a075cd27872c12eb134</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2a5cd3fb27d20676f8710537682129c0e8883e74</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Hide an Inherited Variable (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Como: ocultar uma variável herdada (Visual Basic) | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Hide an Inherited Variable (Visual Basic)</source>
+          <target state="translated">Como ocultar uma variável herdada (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A derived class inherits all the definitions of its base class.</source>
+          <target state="translated">Uma classe derivada herda todas as definições de sua classe base.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If you want to define a variable using the same name as an element of the base class, you can hide, or <bpt id="p1">*</bpt>shadow<ept id="p1">*</ept>, that base class element when you define your variable in the derived class.</source>
+          <target state="translated">Se você quiser definir uma variável usando o mesmo nome como um elemento da classe base, você pode ocultar, ou <bpt id="p1">*</bpt>sombra<ept id="p1">*</ept>, esse elemento de classe base quando você define sua variável na classe derivada.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you do this, code in the derived class accesses your variable unless it explicitly bypasses the shadowing mechanism.</source>
+          <target state="translated">Se você fizer isso, o código na classe derivada acessa sua variável, a menos que explicitamente ignora o mecanismo de sombreamento.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Another reason you might want to hide an inherited variable is to protect against base class revision.</source>
+          <target state="translated">Outro motivo, que talvez você queira ocultar uma variável herdada é proteger contra a revisão de classe base.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The base class might undergo a change that alters the element you are inheriting.</source>
+          <target state="translated">A classe base pode passar por uma mudança que altere o elemento que você está herdando.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If this happens, the <ph id="ph1">`Shadows`</ph> modifier forces references from the derived class to be resolved to your variable, instead of to the base class element.</source>
+          <target state="translated">Se isso acontecer, o <ph id="ph1">`Shadows`</ph> modificador obriga referências da classe derivada a ser resolvido para a variável, em vez de para o elemento de classe base.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To hide an inherited variable</source>
+          <target state="translated">Para ocultar uma variável herdada</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Be sure the variable you want to hide is declared at class level (outside any procedure).</source>
+          <target state="translated">Certifique-se de que a variável que você deseja ocultar é declarada no nível de classe (fora de qualquer procedimento).</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Otherwise you do not need to hide it.</source>
+          <target state="translated">Caso contrário, você não precisa ocultá-lo.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Inside your derived class, write a <bpt id="p1">[</bpt>Dim Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/dim-statement.md)</ept> declaring your variable.</source>
+          <target state="translated">Dentro de sua classe derivada, escreva um <bpt id="p1">[</bpt>instrução Dim<ept id="p1">](../../../../visual-basic/language-reference/statements/dim-statement.md)</ept> declarando sua variável.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Use the same name as that of the inherited variable.</source>
+          <target state="translated">Use o mesmo nome da variável herdada.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Include the <bpt id="p1">[</bpt>Shadows<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shadows.md)</ept> keyword in the declaration.</source>
+          <target state="translated">Incluir o <bpt id="p1">[</bpt>sombras<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shadows.md)</ept> palavra-chave na declaração.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When code in the derived class refers to the variable name, the compiler resolves the reference to your variable.</source>
+          <target state="translated">Quando o código na classe derivada refere-se ao nome da variável, o compilador resolve a referência à variável.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following example illustrates shadowing of an inherited variable.</source>
+          <target state="translated">O exemplo a seguir ilustra sombreamento de uma variável herdada.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The preceding example declares the variable <ph id="ph1">`shadowString`</ph> in the base class and shadows it in the derived class.</source>
+          <target state="translated">O exemplo anterior declara a variável <ph id="ph1">`shadowString`</ph> na classe base e a sombreia na classe derivada.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The procedure <ph id="ph1">`showStrings`</ph> in the derived class displays the shadowing version of the string when the name <ph id="ph2">`shadowString`</ph> is not qualified.</source>
+          <target state="translated">O procedimento <ph id="ph1">`showStrings`</ph> na classe derivada exibe a versão sombreada da cadeia de caracteres quando o nome <ph id="ph2">`shadowString`</ph> não está qualificado.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>It then displays the shadowed version when <ph id="ph1">`shadowString`</ph> is qualified with the <ph id="ph2">`MyBase`</ph> keyword.</source>
+          <target state="translated">Em seguida, exibe a versão sombreada quando <ph id="ph1">`shadowString`</ph> qualificado com o <ph id="ph2">`MyBase`</ph> palavra-chave.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Robust Programming</source>
+          <target state="translated">Programação robusta</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Shadowing introduces more than one version of a variable with the same name.</source>
+          <target state="translated">Sombreamento introduz mais de uma versão de uma variável com o mesmo nome.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>When a code statement refers to the variable name, the version to which the compiler resolves the reference depends on factors such as the location of the code statement and the presence of a qualifying string.</source>
+          <target state="translated">Quando uma declaração de código refere-se ao nome da variável, a versão para que o compilador resolve a referência depende de fatores como o local da instrução do código e a presença de uma cadeia de caracteres de qualificação.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This can increase the risk of referring to an unintended version of a shadowed variable.</source>
+          <target state="translated">Isso pode aumentar o risco de se referir a uma versão não intencional de uma variável sombreada.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can lower that risk by fully qualifying all references to a shadowed variable.</source>
+          <target state="translated">Você pode diminuir esse risco qualificar totalmente todas as referências a uma variável sombreada.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>References to Declared Elements<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Referências a elementos declarados<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Shadowing in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Sombreamento no Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Differences Between Shadowing and Overriding<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Diferenças entre sombreamento e sobreposição<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Hide a Variable with the Same Name as Your Variable<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-a-variable-with-the-same-name-as-your-variable.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Como: ocultar uma variável com o mesmo nome que sua variável<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-a-variable-with-the-same-name-as-your-variable.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Access a Variable Hidden by a Derived Class<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Como: acessar uma variável ocultada por uma classe derivada<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Overrides<ept id="p1">](../../../../visual-basic/language-reference/modifiers/overrides.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Substituições<ept id="p1">](../../../../visual-basic/language-reference/modifiers/overrides.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Me, My, MyBase, and MyClass<ept id="p1">](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Me, My, MyBase e MyClass<ept id="p1">](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Inheritance Basics<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Noções Básicas de Herança<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

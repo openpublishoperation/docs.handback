@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fb4e818eed7d6547e091c914d40b3ce87af59512</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\expression-trees\how-to-modify-expression-trees.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8b1c590bf013fc25372871d19cfeb63d826eabe6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">147ae499f81990d234fdf8eb03cfeab181e17b15</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Modify Expression Trees (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Cómo: Modificar árboles de expresión (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Modify Expression Trees (Visual Basic)</source>
+          <target state="translated">Cómo: Modificar árboles de expresión (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This topic shows you how to modify an expression tree.</source>
+          <target state="translated">En este tema se muestra cómo modificar un árbol de expresión.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Expression trees are immutable, which means that they cannot be modified directly.</source>
+          <target state="translated">Árboles de expresiones son inmutables, lo que significa no pueden modificarse directamente.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To change an expression tree, you must create a copy of an existing expression tree and when you create the copy, make the required changes.</source>
+          <target state="translated">Para cambiar un árbol de expresión, debe crear una copia de un árbol de expresión existente y cuando se crea la copia, realice los cambios necesarios.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can use the &lt;xref:System.Linq.Expressions.ExpressionVisitor&gt; class to traverse an existing expression tree and to copy each node that it visits.</source>
+          <target state="translated">Puede usar el &lt;xref:System.Linq.Expressions.ExpressionVisitor&gt;clase para recorrer un árbol de expresión existente y copiar cada nodo que visita.&lt;/xref:System.Linq.Expressions.ExpressionVisitor&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To modify an expression tree</source>
+          <target state="translated">Para modificar un árbol de expresión</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Create a new <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> project.</source>
+          <target state="translated">Crear un nuevo <bpt id="p1">**</bpt>aplicación de consola<ept id="p1">**</ept> proyecto.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Add an <ph id="ph1">`Imports`</ph> statement to the file for the <ph id="ph2">`System.Linq.Expressions`</ph> namespace.</source>
+          <target state="translated">Agregar una <ph id="ph1">`Imports`</ph> instrucción al archivo para el <ph id="ph2">`System.Linq.Expressions`</ph> espacio de nombres.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Add the <ph id="ph1">`AndAlsoModifier`</ph> class to your project.</source>
+          <target state="translated">Agregar la <ph id="ph1">`AndAlsoModifier`</ph> clase al proyecto.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This class inherits the &lt;xref:System.Linq.Expressions.ExpressionVisitor&gt; class and is specialized to modify expressions that represent conditional <ph id="ph1">`AND`</ph> operations.</source>
+          <target state="translated">Esta clase hereda la &lt;xref:System.Linq.Expressions.ExpressionVisitor&gt;clase y está especializado para modificar las expresiones que representan condicionales <ph id="ph1">`AND`</ph> operations.&lt;/xref:System.Linq.Expressions.ExpressionVisitor&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>It changes these operations from a conditional <ph id="ph1">`AND`</ph> to a conditional <ph id="ph2">`OR`</ph>.</source>
+          <target state="translated">Cambia estas operaciones de una instrucción condicional <ph id="ph1">`AND`</ph> en una instrucción condicional <ph id="ph2">`OR`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>To do this, the class overrides the &lt;xref:System.Linq.Expressions.ExpressionVisitor.VisitBinary%2A&gt; method of the base type, because conditional <ph id="ph1">`AND`</ph> expressions are represented as binary expressions.</source>
+          <target state="translated">Para ello, las invalidaciones de clase del &lt;xref:System.Linq.Expressions.ExpressionVisitor.VisitBinary%2A&gt;método del tipo base, porque condicional <ph id="ph1">`AND`</ph> expresiones se representan como expresiones binarias.&lt;/xref:System.Linq.Expressions.ExpressionVisitor.VisitBinary%2A&gt;</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`VisitBinary`</ph> method, if the expression that is passed to it represents a conditional <ph id="ph2">`AND`</ph> operation, the code constructs a new expression that contains the conditional <ph id="ph3">`OR`</ph> operator instead of the conditional <ph id="ph4">`AND`</ph> operator.</source>
+          <target state="translated">En el <ph id="ph1">`VisitBinary`</ph> método, si la expresión que se pasa representa una instrucción condicional <ph id="ph2">`AND`</ph> operación, el código construye una nueva expresión que contiene el operador condicional <ph id="ph3">`OR`</ph> operador en lugar del operador condicional <ph id="ph4">`AND`</ph> operador.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If the expression that is passed to <ph id="ph1">`VisitBinary`</ph> does not represent a conditional <ph id="ph2">`AND`</ph> operation, the method defers to the base class implementation.</source>
+          <target state="translated">Si la expresión que se pasa a <ph id="ph1">`VisitBinary`</ph> no representa una instrucción condicional <ph id="ph2">`AND`</ph> operación, el método pasa a la implementación de la clase base.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The base class methods construct nodes that are like the expression trees that are passed in, but the nodes have their sub trees replaced with the expression trees that are produced recursively by the visitor.</source>
+          <target state="translated">Los métodos de clase base nodos de construcción que son como los árboles de expresión que se pasan, pero los nodos tienen sus árboles sub reemplazados por los árboles de expresión que genera de forma recursiva por el visitante.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Add an <ph id="ph1">`Imports`</ph> statement to the file for the <ph id="ph2">`System.Linq.Expressions`</ph> namespace.</source>
+          <target state="translated">Agregar una <ph id="ph1">`Imports`</ph> instrucción al archivo para el <ph id="ph2">`System.Linq.Expressions`</ph> espacio de nombres.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Add code to the <ph id="ph1">`Main`</ph> method in the Module1.vb file to create an expression tree and pass it to the method that will modify it.</source>
+          <target state="translated">Agregue código a la <ph id="ph1">`Main`</ph> método en el archivo Module1.vb para crear un árbol de expresión y pasarlo al método que lo modificará.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The code creates an expression that contains a conditional <ph id="ph1">`AND`</ph> operation.</source>
+          <target state="translated">El código crea una expresión que contiene una instrucción condicional <ph id="ph1">`AND`</ph> operación.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>It then creates an instance of the <ph id="ph1">`AndAlsoModifier`</ph> class and passes the expression to the <ph id="ph2">`Modify`</ph> method of this class.</source>
+          <target state="translated">A continuación se crea una instancia de la <ph id="ph1">`AndAlsoModifier`</ph> clase y pasa la expresión a la <ph id="ph2">`Modify`</ph> método de esta clase.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Both the original and the modified expression trees are outputted to show the change.</source>
+          <target state="translated">Tanto el original como el árbol de expresión modificado se genera para mostrar el cambio.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Compile and run the application.</source>
+          <target state="translated">Compile y ejecute la aplicación.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>How to: Execute Expression Trees (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Cómo: Ejecutar árboles de expresión (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Expression Trees (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Árboles de expresión (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

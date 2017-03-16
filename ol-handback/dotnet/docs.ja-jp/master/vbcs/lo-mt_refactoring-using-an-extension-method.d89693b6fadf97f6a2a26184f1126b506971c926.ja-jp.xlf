@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">83934292a57b5830cc6a3b002b61c6ad657d4eb7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\refactoring-using-an-extension-method.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">78ba74a82ac398ad15a4d742f45e5391f2b90263</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3de76cf5c26f74fe11770cc08b7ad83664541f27</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Refactoring Using an Extension Method (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">拡張メソッド (Visual Basic) を使用してリファクタリングする |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Refactoring Using an Extension Method (Visual Basic)</source>
+          <target state="translated">拡張メソッド (Visual Basic) を使用してリファクタリングします。</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example builds on the previous example, <bpt id="p1">[</bpt>Retrieving the Text of the Paragraphs (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md)</ept>, by refactoring the concatenation of strings using a pure function that is implemented as an extension method.</source>
+          <target state="translated">この例は前の例に基づいて<bpt id="p1">[</bpt>(Visual Basic) の段落のテキストを取得して<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md)</ept>、拡張メソッドとして実装される純粋関数を使用して文字列の連結をリファクターします。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The previous example used the &lt;xref:System.Linq.Enumerable.Aggregate%2A&gt; standard query operator to concatenate multiple strings into one string.</source>
+          <target state="translated">使用前の例、&lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;標準クエリ演算子を&amp;1; つの文字列に複数の文字列を連結します&lt;/xref:System.Linq.Enumerable.Aggregate%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>However, it is more convenient to write an extension method to do this, because the resulting query smaller and more simple.</source>
+          <target state="translated">ただし、拡張メソッドでこの処理を記述した方が、結果のクエリが小さく簡単になるので便利です。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This example processes a WordprocessingML document, retrieving the paragraphs, the style of each paragraph, and the text of each paragraph.</source>
+          <target state="translated">この例では、WordprocessingML ドキュメントを処理して、段落、各段落のスタイル、および各段落のテキストを取得します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This example builds on the previous examples in this tutorial.</source>
+          <target state="translated">この例は、このチュートリアルのこれまでの例に基づいています。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The example contains multiple overloads of the <ph id="ph1">`StringConcatenate`</ph> method.</source>
+          <target state="translated">この例には、<ph id="ph1">`StringConcatenate`</ph> メソッドの複数のオーバーロードが含まれています。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can find instructions for creating the source document for this example in <bpt id="p1">[</bpt>Creating the Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</source>
+          <target state="translated">この例ではのソース ドキュメントを作成するための手順を参照して<bpt id="p1">[</bpt>ソース Office Open XML ドキュメント (Visual Basic) を作成する<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>です。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This example uses classes from the WindowsBase assembly.</source>
+          <target state="translated">この例では、WindowsBase アセンブリのクラスを使用します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>It uses types in the &lt;xref:System.IO.Packaging?displayProperty=fullName&gt; namespace.</source>
+          <target state="translated">内の型を使用して、&lt;xref:System.IO.Packaging?displayProperty=fullName&gt;名前空間&lt;/xref:System.IO.Packaging?displayProperty=fullName&gt;。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>There are four overloads of the <ph id="ph1">`StringConcatenate`</ph> method.</source>
+          <target state="translated"><ph id="ph1">`StringConcatenate`</ph> メソッドには&amp;4; つのオーバーロードがあります。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>One overload simply takes a collection of strings and returns a single string.</source>
+          <target state="translated">あるオーバーロードは、文字列のコレクションを受け取って&amp;1; つの文字列を返します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Another overload can take a collection of any type, and a delegate that projects from a singleton of the collection to a string.</source>
+          <target state="translated">別のオーバーロードは、任意の型のコレクション、および単一のコレクションを文字列に射影するデリゲートを受け取ります。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>There are two more overloads that allow you to specify a separator string.</source>
+          <target state="translated">残りの&amp;2; つのオーバーロードでは、区切り文字列を指定できます。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The following code uses all four overloads.</source>
+          <target state="translated">次のコードでは、4 つのオーバーロードがすべて使用されています。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">この例を実行すると、次の出力が生成されます。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Now, the example can be modified to take advantage of the new extension method:</source>
+          <target state="translated">ここで、新しい拡張メソッドを利用するように例を変更します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This example produces the following output when applied to the document described in <bpt id="p1">[</bpt>Creating the Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</source>
+          <target state="translated">この例で、次の出力に示されるドキュメントに適用すると生成<bpt id="p1">[</bpt>ソース Office Open XML ドキュメント (Visual Basic) を作成する<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>です。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Note that this refactoring is a variant of refactoring into a pure function.</source>
+          <target state="translated">このリファクタリングは、純粋関数へのリファクタリングの変化形であることに注意してください。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The next topic will introduce the idea of factoring into pure functions in more detail.</source>
+          <target state="translated">次のトピックでは、純粋関数へのリファクタリングに関する考え方について詳しく紹介します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Next Steps</source>
+          <target state="translated">次の手順</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The next example shows how to refactor this code in another way, by using pure functions:</source>
+          <target state="translated">次の例は、純粋関数を使用してこのコードをリファクターする方法を示しています。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Refactoring Using a Pure Function (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>純粋関数 (Visual Basic) を使用してリファクタリングします。<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>チュートリアル: WordprocessingML ドキュメント (Visual Basic) 内のコンテンツの操作<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Refactoring Into Pure Functions (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>純粋関数 (Visual Basic) へのリファクタリング<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

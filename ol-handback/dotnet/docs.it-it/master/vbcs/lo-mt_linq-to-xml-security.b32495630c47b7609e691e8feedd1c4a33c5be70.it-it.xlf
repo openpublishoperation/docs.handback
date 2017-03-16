@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">559bf330640840a310ff947cac118953d1df1a13</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\linq-to-xml-security.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c3e028d278a890879da49e91d70c71f00e01a53d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">69b11564e33037fecb602325ee5331c54238dde3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>LINQ to XML Security (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">LINQ to XML sicurezza (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>LINQ to XML Security (Visual Basic)</source>
+          <target state="translated">LINQ to XML sicurezza (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This topic describes security issues associated with LINQ to XML.</source>
+          <target state="translated">In questo argomento vengono descritti i problemi di sicurezza associati a LINQ to XML.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In addition, it provides some guidance for mitigating security exposure.</source>
+          <target state="translated">Vengono inoltre fornite alcune indicazioni per ridurre l'esposizione ai rischi.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>LINQ to XML Security Overview</source>
+          <target state="translated">Cenni preliminari sulla sicurezza in LINQ to XML</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>LINQ to XML is designed more for programming convenience than for server-side applications with stringent security requirements.</source>
+          <target state="translated">LINQ to XML è progettato più per semplificare la programmazione che per applicazioni lato server con requisiti rigorosi di sicurezza.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Most XML scenarios consist of processing trusted XML documents, rather than processing untrusted XML documents that are uploaded to a server.</source>
+          <target state="translated">La maggior parte degli scenari XML sono costituiti dall'elaborazione di documenti XML attendibili, anziché dall'elaborazione di documenti XML non attendibili caricati in un server.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>LINQ to XML is optimized for these scenarios.</source>
+          <target state="translated">LINQ to XML è ottimizzato per questi scenari.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If you must process untrusted data from unknown sources, Microsoft recommends that you use an instance of the &lt;xref:System.Xml.XmlReader&gt; class that has been configured to filter out known XML denial of service (DoS) attacks.</source>
+          <target state="translated">Se è necessario elaborare dati non attendibili provenienti da origini sconosciute, Microsoft consiglia di utilizzare un'istanza di &lt;xref:System.Xml.XmlReader&gt;classe che è stato configurato per filtrare le note XML attacchi denial of service (DoS).&lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If you have configured an &lt;xref:System.Xml.XmlReader&gt; to mitigate denial of service attacks, you can use that reader to populate a LINQ to XML tree and still benefit from the programmer productivity enhancements of LINQ to XML.</source>
+          <target state="translated">Se è stato configurato un &lt;xref:System.Xml.XmlReader&gt;per evitare attacchi denial of service, è possibile utilizzare tale lettore per popolare un albero LINQ to XML e trarre comunque vantaggio i miglioramenti di produttività del programmatore di LINQ to XML.&lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Many mitigation techniques involve creating readers that are configured to mitigate the security issue, and then instantiating an XML tree through the configured reader.</source>
+          <target state="translated">Diverse tecniche implicano la creazione di lettori configurati per limitare i problemi di sicurezza e quindi la creazione di istanze di un albero XML tramite il lettore configurato.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>XML is intrinsically vulnerable to denial of service attacks because documents are unbounded in size, depth, element name size, and more.</source>
+          <target state="translated">XML è intrinsecamente vulnerabile agli attacchi di tipo Denial of Service, perché i documenti non presentano vincoli in termine di dimensioni, complessità, dimensioni dei nomi degli elementi e così via.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Regardless of the component that you use to process XML, you should always be prepared to recycle the application domain if it uses excessive resources.</source>
+          <target state="translated">Indipendentemente dal componente usato per l'elaborazione XML, è necessario essere sempre pronti a riciclare il dominio dell'applicazione se usa una quantità eccessiva di risorse.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Mitigation of XML, XSD, XPath, and XSLT Attacks</source>
+          <target state="translated">Limitazione degli attacchi XML, XSD, XPath e XSLT</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>LINQ to XML is built upon &lt;xref:System.Xml.XmlReader&gt; and &lt;xref:System.Xml.XmlWriter&gt;.</source>
+          <target state="translated">LINQ to XML si basa su &lt;xref:System.Xml.XmlReader&gt;e &lt;xref:System.Xml.XmlWriter&gt;.&lt;/xref:System.Xml.XmlWriter&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>LINQ to XML supports XSD and XPath through extension methods in the &lt;xref:System.Xml.Schema?displayProperty=fullName&gt; and &lt;xref:System.Xml.XPath?displayProperty=fullName&gt; namespaces.</source>
+          <target state="translated">LINQ to XML supporta XSD e XPath tramite metodi di estensione di &lt;xref:System.Xml.Schema?displayProperty=fullName&gt;e &lt;xref:System.Xml.XPath?displayProperty=fullName&gt;gli spazi dei nomi.&lt;/xref:System.Xml.XPath?displayProperty=fullName&gt; &lt;/xref:System.Xml.Schema?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Using the &lt;xref:System.Xml.XmlReader&gt;, &lt;xref:System.Xml.XPath.XPathNavigator&gt;, and &lt;xref:System.Xml.XmlWriter&gt; classes in conjunction with LINQ to XML, you can invoke XSLT to transform XML trees.</source>
+          <target state="translated">Utilizzo di &lt;xref:System.Xml.XmlReader&gt;, &lt;xref:System.Xml.XPath.XPathNavigator&gt;, e &lt;xref:System.Xml.XmlWriter&gt;le classi in combinazione con LINQ to XML, è possibile richiamare XSLT per trasformare strutture ad albero XML.&lt;/xref:System.Xml.XmlWriter&gt; &lt;/xref:System.Xml.XPath.XPathNavigator&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If you are operating in a less secure environment, there are a number of security issues that are associated with XML and the use of the classes in &lt;xref:System.Xml?displayProperty=fullName&gt;, &lt;xref:System.Xml.Schema?displayProperty=fullName&gt;, &lt;xref:System.Xml.XPath?displayProperty=fullName&gt;, and &lt;xref:System.Xml.Xsl?displayProperty=fullName&gt;.</source>
+          <target state="translated">Se si opera in un ambiente meno protetto, esistono un numero di problemi di sicurezza associati a XML e l'utilizzo delle classi in &lt;xref:System.Xml?displayProperty=fullName&gt;, &lt;xref:System.Xml.Schema?displayProperty=fullName&gt;, &lt;xref:System.Xml.XPath?displayProperty=fullName&gt;e &lt;xref:System.Xml.Xsl?displayProperty=fullName&gt;.&lt;/xref:System.Xml.Xsl?displayProperty=fullName&gt; &lt;/xref:System.Xml.XPath?displayProperty=fullName&gt; &lt;/xref:System.Xml.Schema?displayProperty=fullName&gt; &lt;/xref:System.Xml?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>These issues include, but are not limited to, the following:</source>
+          <target state="translated">Di seguito sono riportati solo alcuni di questi problemi:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>XSD, XPath, and XSLT are string-based languages in which you can specify operations that consume a lot of time or memory.</source>
+          <target state="translated">XSD, XPath e XSLT sono linguaggi basati su stringa in cui è possibile specificare operazioni che richiedono quantità elevate di tempo o memoria.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It is the responsibility of application programmers who take XSD, XPath, or XSLT strings from untrusted sources to validate that the strings are not malicious, or to monitor and mitigate the possibility that evaluating these strings will lead to excessive system resource consumption.</source>
+          <target state="translated">È responsabilità dei programmatori di applicazioni che ottengono stringhe XSD, XPath o XSLT da origini non attendibili verificare che tali stringhe non siano dannose o monitorare e limitare la possibilità che la valutazione delle stringhe comporti un consumo eccessivo delle risorse di sistema.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>XSD schemas (including inline schemas) are inherently vulnerable to denial of service attacks; you should not accept schemas from untrusted sources.</source>
+          <target state="translated">Gli schemi XSD (compresi quelli inline) sono intrinsecamente vulnerabili ad attacchi di tipo Denial of Service. Non accettare schemi da origini non attendibili.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>XSD and XSLT can include references to other files, and such references can result in cross-zone and cross-domain attacks.</source>
+          <target state="translated">XSD e XSLT possono includere riferimenti ad altri file, ad esempio riferimenti che generano attacchi tra zone e tra domini diversi.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>External entities in DTDs can result in cross-zone and cross-domain attacks.</source>
+          <target state="translated">Le entità esterne nelle dichiarazioni DTD possono generare attacchi tra zone e tra domini diversi.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>DTDs are vulnerable to denial of service attacks.</source>
+          <target state="translated">Le dichiarazioni DTD sono vulnerabili ad attacchi di tipo Denial of Service</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Exceptionally deep XML documents can pose denial of service issues; you might want to limit the depth of XML documents.</source>
+          <target state="translated">I documenti XML particolarmente complessi possono presentare problemi di Denial of Service. È preferibile limitare la complessità dei documenti XML.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Do not accept supporting components, such as &lt;xref:System.Xml.NameTable&gt;, &lt;xref:System.Xml.XmlNamespaceManager&gt;, and &lt;xref:System.Xml.XmlResolver&gt; objects, from untrusted assemblies.</source>
+          <target state="translated">Non accettare componenti di supporto, ad esempio &lt;xref:System.Xml.NameTable&gt;, &lt;xref:System.Xml.XmlNamespaceManager&gt;, e &lt;xref:System.Xml.XmlResolver&gt;oggetti, dagli assembly non attendibili.&lt;/xref:System.Xml.XmlResolver&gt; &lt;/xref:System.Xml.XmlNamespaceManager&gt; &lt;/xref:System.Xml.NameTable&gt;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Read data in chunks to mitigate large document attacks.</source>
+          <target state="translated">Leggere i dati in blocchi per limitare gli attacchi a documenti di grandi dimensioni.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Script blocks in XSLT style sheets can expose a number of attacks.</source>
+          <target state="translated">I blocchi di script nei fogli di stile XSLT possono esporre numerosi attacchi.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Validate carefully before constructing dynamic XPath expressions.</source>
+          <target state="translated">Effettuare convalide accurate prima di costruire espressioni XPath dinamiche.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>LINQ to XML Security Issues</source>
+          <target state="translated">Problemi di sicurezza in LINQ to XML</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The security issues in this topic are not presented in any particular order.</source>
+          <target state="translated">I problemi di sicurezza illustrati in questo argomento non vengono presentati in un ordine specifico.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>All issues are important and should be addressed as appropriate.</source>
+          <target state="translated">Tutti i problemi sono importanti e devono essere affrontati nel modo appropriato.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A successful elevation of privilege attack gives a malicious assembly more control over its environment.</source>
+          <target state="translated">Un attacco riuscito di tipo elevazione dei privilegi offre a un assembly dannoso un maggior controllo sull'ambiente.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>A successful elevation of privilege attack can result in disclosure of data, denial of service, and more.</source>
+          <target state="translated">Può inoltre provocare la diffusione di dati, problemi di Denial of Service e così via.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Applications should not disclose data to users who are not authorized to see that data.</source>
+          <target state="translated">Le applicazioni non devono diffondere dati agli utenti che non sono autorizzati a visualizzarli.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Denial of service attacks cause the XML parser or LINQ to XML to consume excessive amounts of memory or CPU time.</source>
+          <target state="translated">Gli attacchi di tipo Denial of Service causano il consumo di quantità eccessive di memoria o tempo CPU da parte di LINQ to XML.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Denial of service attacks are considered to be less severe than elevation of privilege attacks or disclosure of data attacks.</source>
+          <target state="translated">Sono considerati meno gravi degli attacchi di tipo elevazione dei privilegi o di quelli che comportano la diffusione di dati.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, they are important in a scenario where a server needs to process XML documents from untrusted sources.</source>
+          <target state="translated">Tuttavia, sono estremamente importanti negli scenari in cui un server deve elaborare documenti XML provenienti da origini non attendibili.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Exceptions and Error Messages Might Reveal Data</source>
+          <target state="translated">Eccezioni e messaggi di errore possono rivelare dati</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The description of an error might reveal data, such as the data being transformed, file names, or implementation details.</source>
+          <target state="translated">La descrizione di un errore può rivelare dati, ad esempio i dati che vengono trasformati, nomi file o dettagli sull'implementazione.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Error messages should not be exposed to callers that are not trusted.</source>
+          <target state="translated">I messaggio di errore non devono essere esposti a chiamanti non attendibili.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You should catch all errors and report errors with your own custom error messages.</source>
+          <target state="translated">È necessario intercettare tutti gli errori e segnalarli con messaggi di errore personalizzati.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Do Not Call CodeAccessPermissions.Assert in an Event Handler</source>
+          <target state="translated">Non eseguire chiamate a CodeAccessPermissions.Assert in un gestore eventi</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>An assembly can have lesser or greater permissions.</source>
+          <target state="translated">A un assembly possono essere associate autorizzazioni minori o maggiori.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>An assembly that has greater permissions has greater control over the computer and its environments.</source>
+          <target state="translated">Gli assembly con autorizzazioni maggiori hanno un maggior controllo sul computer e sugli ambienti.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If code in an assembly with greater permissions calls &lt;xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt; in an event handler, and then the XML tree is passed to a malicious assembly that has restricted permissions, the malicious assembly can cause an event to be raised.</source>
+          <target state="translated">Se il codice in un assembly con autorizzazioni maggiori chiama &lt;xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt;in un gestore eventi, quindi il codice XML della struttura viene passata a un assembly dannoso con autorizzazioni limitate, l'assembly dannoso può causare la generazione di un evento.&lt;/xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Because the event runs code that is in the assembly with greater permissions, the malicious assembly would then be operating with elevated privileges.</source>
+          <target state="translated">Poiché l'evento esegue codice incluso nell'assembly con autorizzazioni maggiori, l'assembly dannoso opererebbe in questo caso con privilegi elevati.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Microsoft recommends that you never call &lt;xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt; in an event handler.</source>
+          <target state="translated">Microsoft consiglia di non eseguire mai chiamate &lt;xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt;in un gestore eventi.&lt;/xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>DTDs are Not Secure</source>
+          <target state="translated">Le dichiarazioni DTD non sono protette</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Entities in DTDs are inherently not secure.</source>
+          <target state="translated">Le entità nelle dichiarazioni DTD sono intrinsecamente non protette.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>It is possible for a malicious XML document that contains a DTD to cause the parser to use all memory and CPU time, causing a denial of service attack.</source>
+          <target state="translated">È possibile che un documento XML dannoso contenente una dichiarazione DTD provochi l'uso di tutta la memoria e il tempo CPU disponibili da parte del parser, generando un attacco Denial of Service.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Therefore, in LINQ to XML, DTD processing is turned off by default.</source>
+          <target state="translated">Pertanto, in LINQ to XML l'elaborazione DTD è disattivata per impostazione predefinita.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>You should not accept DTDs from untrusted sources.</source>
+          <target state="translated">Non accettare DTD provenienti da origini non attendibili.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>One example of accepting DTDs from untrusted sources is a Web application that allows Web users to upload an XML file that references a DTD and a DTD file.</source>
+          <target state="translated">È ad esempio possibile che vengano accettate DTD da origini non attendibili nel caso di un'applicazione Web che consente agli utenti Web di caricare un file XML che fa riferimento a una DTD e a un file DTD.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Upon validation of the file, a malicious DTD could execute a denial of service attack on your server.</source>
+          <target state="translated">Dopo la convalida del file, una DTD dannosa potrebbe eseguire un attacco Denial of Service sul server.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Another example of accepting DTDs from untrusted sources is to reference a DTD on a network share that also allows anonymous FTP access.</source>
+          <target state="translated">Un altro esempio di DTD accettate da origini non attendibili è il riferimento a una DTD su una condivisione di rete che consente anche l'accesso FTP anonimo.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Avoid Excessive Buffer Allocation</source>
+          <target state="translated">Evitare allocazioni eccessive di buffer</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Application developers should be aware that extremely large data sources can lead to resource exhaustion and denial of service attacks.</source>
+          <target state="translated">Gli sviluppatori di applicazioni devono essere consapevoli che origini dati di dimensioni estremamente grandi possono portare all'esaurimento delle risorse e ad attacchi Denial of Service.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If a malicious user submits or uploads a very large XML document, it could cause LINQ to XML to consume excessive system resources.</source>
+          <target state="translated">Se un utente malintenzionato invia o carica un documento XML di grandi dimensioni, può causare un consumo eccessivo di risorse di sistema da parte di LINQ to XML.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This can constitute a denial of service attack.</source>
+          <target state="translated">Ciò costituisce un attacco di tipo Denial of Service.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>To prevent this, you can set the &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt; property, and create a reader that is then limited in the size of document that it can load.</source>
+          <target state="translated">Per evitare questo problema, è possibile impostare il &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt;, proprietà e creare un lettore che è quindi limitato le dimensioni del documento che è possibile caricare.&lt;/xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>You then use the reader to create the XML tree.</source>
+          <target state="translated">Usare quindi il lettore per creare l'albero XML.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>For example, if you know that the maximum expected size of your XML documents coming from an untrusted source will be less than 50K bytes, set &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt; to 100,000.</source>
+          <target state="translated">Ad esempio, se è noto che le dimensioni massime previste dei documenti XML provenienti da un'origine non attendibile saranno meno di 50 K byte, impostare &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt;su 100.000.&lt;/xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>This will not encumber your processing of XML documents, and at the same time it will mitigate denial of service threats where documents might be uploaded that would consume large amounts of memory.</source>
+          <target state="translated">In questo modo l'elaborazione dei documenti XML non viene ostacolata e allo stesso tempo è possibile limitare le minacce di Denial of Service che si presenterebbero se fosse possibile caricare documenti che consumano grandi quantità di memoria.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Avoid Excess Entity Expansion</source>
+          <target state="translated">Evitare un'eccessiva espansione delle entità</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>One of the known denial of service attacks when using a DTD is a document that causes excessive entity expansion.</source>
+          <target state="translated">Un tipo noto di attacco Denial of Service associato all'utilizzo di una dichiarazione DTD si verifica quando un documento provoca un'eccessiva espansione delle entità.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>To prevent this, you can set the &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A?displayProperty=fullName&gt; property, and create a reader that is then limited in the number of characters that result from entity expansion.</source>
+          <target state="translated">Per evitare questo problema, è possibile impostare il &lt;xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A?displayProperty=fullName&gt;, proprietà e creare un lettore che è quindi limitato il numero di caratteri risultanti dall'espansione di entità.&lt;/xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You then use the reader to create the XML tree.</source>
+          <target state="translated">Usare quindi il lettore per creare l'albero XML.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Limit the Depth of the XML Hierarchy</source>
+          <target state="translated">Limitare la profondità della gerarchia XML</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>One possible denial of service attack is when a document is submitted that has excessive depth of hierarchy.</source>
+          <target state="translated">Un possibile attacco di tipo Denial of Service si verifica quando viene inviato un documento con una profondità della gerarchia eccessiva.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>To prevent this, you can wrap a &lt;xref:System.Xml.XmlReader&gt; in your own class that counts the depth of elements.</source>
+          <target state="translated">Per evitare questo problema, è possibile eseguire il wrapping un &lt;xref:System.Xml.XmlReader&gt;in una classe che conteggia la profondità degli elementi.&lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If the depth exceeds a predetermined reasonable level, you can terminate the processing of the malicious document.</source>
+          <target state="translated">Se la profondità supera un predeterminato livello ragionevole, è possibile terminare l'elaborazione del documento dannoso.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Protect Against Untrusted XmlReader or XmlWriter Implementations</source>
+          <target state="translated">Proteggersi da implementazioni XmlReader o XmlWriter non attendibili</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Administrators should verify that any externally supplied &lt;xref:System.Xml.XmlReader&gt; or &lt;xref:System.Xml.XmlWriter&gt; implementations have strong names and have been registered in the machine configuration.</source>
+          <target state="translated">Gli amministratori devono verificare che qualsiasi fornite esternamente &lt;xref:System.Xml.XmlReader&gt;o &lt;xref:System.Xml.XmlWriter&gt;implementazioni avere nomi sicuri e siano state registrate nella configurazione del computer.&lt;/xref:System.Xml.XmlWriter&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This prevents malicious code masquerading as a reader or writer from being loaded.</source>
+          <target state="translated">In questo modo è possibile evitare il caricamento di malware camuffato da lettore o writer.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Periodically Free Objects that Reference XName</source>
+          <target state="translated">Liberare periodicamente gli oggetti che fanno riferimento a XName</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>To protect against certain kinds of attacks, application programmers should free all objects that reference an &lt;xref:System.Xml.Linq.XName&gt; object in the application domain on a regular basis.</source>
+          <target state="translated">Per proteggersi da determinati tipi di attacco, i programmatori di applicazioni devono liberare tutti gli oggetti che fanno riferimento a un &lt;xref:System.Xml.Linq.XName&gt;oggetto nel dominio dell'applicazione a intervalli regolari.&lt;/xref:System.Xml.Linq.XName&gt;</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Protect Against Random XML Names</source>
+          <target state="translated">Proteggersi da nomi XML casuali</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Applications that take data from untrusted sources should consider using an &lt;xref:System.Xml.XmlReader&gt; that is wrapped in custom code to inspect for the possibility of random XML names and namespaces.</source>
+          <target state="translated">Le applicazioni che accettano dati da origini non attendibili dovrebbero utilizzando un &lt;xref:System.Xml.XmlReader&gt;che è stato eseguito il wrapping in codice personalizzato per controllare la presenza di spazi dei nomi e nomi XML casuali.&lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If such random XML names and namespaces are detected, the application can then terminate the processing of the malicious document.</source>
+          <target state="translated">Se vengono individuati nomi e spazi dei nomi XML casuali, l'applicazione può terminare l'elaborazione del documento dannoso.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>You might want to limit the number of names in any given namespace (including names in no namespace) to a reasonable limit.</source>
+          <target state="translated">È possibile limitare il numero di nomi in un determinato spazio dei nomi (inclusi i nomi non inseriti in uno spazio dei nomi) a un livello ragionevole.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Annotations Are Accessible by Software Components that Share a LINQ to XML Tree</source>
+          <target state="translated">Annotazioni accessibili a componenti software che condividono un albero LINQ to XML</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>LINQ to XML could be used to build processing pipelines in which different application components load, validate, query, transform, update, and save XML data that is passed between components as XML trees.</source>
+          <target state="translated">È possibile usare LINQ to XML per compilare pipeline di elaborazione in cui componenti diversi dell'applicazione caricano, convalidano, eseguono query, trasformano, aggiornano e salvano i dati XML passati tra componenti come alberi XML.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This can help optimize performance, because the overhead of loading and serializing objects to XML text is done only at the ends of the pipeline.</source>
+          <target state="translated">In questo modo è possibile ottimizzare le prestazioni, perché l'overhead associato al caricamento e alla serializzazione di oggetti in testo XML viene eseguito solo fino alle estremità della pipeline.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Developers must be aware, however, that all annotations and event handlers created by one component are accessible to other components.</source>
+          <target state="translated">Gli sviluppatori devono tenere presente, tuttavia, che tutte le annotazioni e i gestori eventi creati da un componente sono accessibili ad altri componenti.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>This can create a number of vulnerabilities if the components have different levels of trust.</source>
+          <target state="translated">Ciò può creare numerose vulnerabilità se i componenti presentano livelli di attendibilità diverse.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>To build secure pipelines across less trusted components, you must serialize LINQ to XML objects to XML text before passing the data to an untrusted component.</source>
+          <target state="translated">Per compilare pipeline protette tra componenti meno attendibili, è necessario serializzare gli oggetti LINQ to XML in testo XML prima di passare i dati a un componente non attendibile.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Some security is provided by the common language runtime (CLR).</source>
+          <target state="translated">CLR (Common Language Runtime) rende disponibile un certo grado di sicurezza.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>For example, a component that does not include a private class cannot access annotations keyed by that class.</source>
+          <target state="translated">Ad esempio, un componente che non include una classe privata non può accedere alle annotazioni immesse da tale classe.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>However, annotations can be deleted by components that cannot read them.</source>
+          <target state="translated">Tuttavia, le annotazioni possono essere eliminate dai componenti che non sono in grado di leggerle.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This could be used as a tampering attack.</source>
+          <target state="translated">Questa situazione può essere sfruttata in un attacco di tipo manomissione.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Programming Guide (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Guida per programmatori (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
