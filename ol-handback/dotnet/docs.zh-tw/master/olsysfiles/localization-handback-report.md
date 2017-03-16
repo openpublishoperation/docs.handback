@@ -1,168 +1,29 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 7
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [docs\csharp\includes\vs_dev11_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/includes/vs_dev11_long_md.md) | HandedBackFailed | [Details](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec220)
- [docs\csharp\misc\includes\vs_current_long_md.md](https://github.com/dotnet/docs/blob/405bac1faa446687a4acdcf2d5536ee31f31f246/docs/csharp/misc/includes/vs_current_long_md.md) | HandedBackFailed | [Details](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec1721)
- [docs\csharp\misc\includes\vs_orcas_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/misc/includes/vs_orcas_long_md.md) | HandedBackFailed | [Details](#4930178c655c8889f9f2bacb9b36f485499102591722)
- [docs\csharp\misc\includes\vsprvslong_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/misc/includes/vsprvslong_md.md) | HandedBackFailed | [Details](#cde890024656cad16bc4687980e2abf3c4720a171723)
- [docs\visual-basic\developing-apps\printing\includes\ndptecclick_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/developing-apps/printing/includes/ndptecclick_md.md) | HandedBackFailed | [Details](#0d7cdb4487464eccfebd09792c1cbb4d78acd56a3488)
- [docs\visual-basic\language-reference\objects\includes\vbprvbruntime_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/language-reference/objects/includes/vbprvbruntime_md.md) | HandedBackFailed | [Details](#449a676028b0cc7b2a9a2c5675850018219fb89a4365)
- [docs\visual-basic\misc\includes\vb_orcas_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/misc/includes/vb_orcas_long_md.md) | HandedBackFailed | [Details](#51aa3a84a05a8f64fcc7b74ea144dd435de9eee86238)
+ [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/language-reference/operators/toc.md) | InSyncHandedBackSuccess | [Details](#d15667bd55e69fd822684df9a81cc2c996ca039f880)
 
 ## Item Details
-##### <a name='1af7ecd39f8f86f1f8c897aca8a519998e78ceec220'></a> Source: [docs\csharp\includes\vs_dev11_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/includes/vs_dev11_long_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf)
+##### <a name='d15667bd55e69fd822684df9a81cc2c996ca039f880'></a> Source: [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/language-reference/operators/toc.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs.zh-tw/blob/2ccce8bbf8201b88bdf4380e4c543f16b2e84eaf/docs/csharp/language-reference/operators/toc.md)
+* Handoff File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
 * Handoff Datetime: 2017-03-13 16:56:52
 * Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec220handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='1af7ecd39f8f86f1f8c897aca8a519998e78ceec1721'></a> Source: [docs\csharp\misc\includes\vs_current_long_md.md](https://github.com/dotnet/docs/blob/405bac1faa446687a4acdcf2d5536ee31f31f246/docs/csharp/misc/includes/vs_current_long_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec1721handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='4930178c655c8889f9f2bacb9b36f485499102591722'></a> Source: [docs\csharp\misc\includes\vs_orcas_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/misc/includes/vs_orcas_long_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#4930178c655c8889f9f2bacb9b36f485499102591722handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='cde890024656cad16bc4687980e2abf3c4720a171723'></a> Source: [docs\csharp\misc\includes\vsprvslong_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/misc/includes/vsprvslong_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#cde890024656cad16bc4687980e2abf3c4720a171723handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='0d7cdb4487464eccfebd09792c1cbb4d78acd56a3488'></a> Source: [docs\visual-basic\developing-apps\printing\includes\ndptecclick_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/developing-apps/printing/includes/ndptecclick_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#0d7cdb4487464eccfebd09792c1cbb4d78acd56a3488handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='449a676028b0cc7b2a9a2c5675850018219fb89a4365'></a> Source: [docs\visual-basic\language-reference\objects\includes\vbprvbruntime_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#449a676028b0cc7b2a9a2c5675850018219fb89a4365handback_validate_file_name_invalide)
-* [Back to Top](#report-top)
-
-##### <a name='51aa3a84a05a8f64fcc7b74ea144dd435de9eee86238'></a> Source: [docs\visual-basic\misc\includes\vb_orcas_long_md.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/visual-basic/misc/includes/vb_orcas_long_md.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/vbcs_lo-mt/vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.xlf)
-* Handoff Datetime: 2017-03-13 16:56:52
-* Handoff Reason: Include
-* Handoff Name: docs_HT_OL#LoMT#20170315T151141
-* Archive File: [vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/f2cbf726c2b765e5187ca44ef859e8982ad4f540/ol-archive/dotnet/docs.zh-tw/master/vbcs_lo-mt/vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.xlf)
-* Archive Datetime: 2017-03-15 22:46:22
-* Handback File: 
-* Handback Datetime: 2017-03-16 22:45:03
-* Handback Name: docs_HT_OL#LoMT#20170315T151141-de-de-es-es-ko-kr-pt-br-ru-ru-zh-cn-zh-tw
-* Handback Error: [handback_validate_file_name_invalide](#51aa3a84a05a8f64fcc7b74ea144dd435de9eee86238handback_validate_file_name_invalide)
+* Handoff Name: docs_HT_P1#OL#CPubP1#20170313T151011
+* Archive File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/20e94a136a0a37f61645a4e664db0b4cc8d98aa9/ol-archive/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Archive Datetime: 2017-03-13 22:22:43
+* Handback File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/796c8fb01a7e1ae4a0b2a6ba5b69ab7bcbae4ea9/ol-handback/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Handback Datetime: 2017-03-16 23:12:21
+* Handback Name: docs_HT_P1#OL#CPubP1#20170313T151011-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-ru-ru-zh-cn-zh-tw_2
 * [Back to Top](#report-top)
 
 
 ## Error Details
-##### <a name='1af7ecd39f8f86f1f8c897aca8a519998e78ceec220handback_validate_file_name_invalide'></a> Source: [docs\csharp\includes\vs_dev11_long_md.md](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec220)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='1af7ecd39f8f86f1f8c897aca8a519998e78ceec1721handback_validate_file_name_invalide'></a> Source: [docs\csharp\misc\includes\vs_current_long_md.md](#1af7ecd39f8f86f1f8c897aca8a519998e78ceec1721)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw is different with handoff file name: vs_dev11_long_md.01650bf569fba9c147d39a814e04050e4a1d6a30.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='4930178c655c8889f9f2bacb9b36f485499102591722handback_validate_file_name_invalide'></a> Source: [docs\csharp\misc\includes\vs_orcas_long_md.md](#4930178c655c8889f9f2bacb9b36f485499102591722)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw is different with handoff file name: vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw is different with handoff file name: vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw is different with handoff file name: vs_orcas_long_md.b137064a9f028658510408806cdb477890292d76.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='cde890024656cad16bc4687980e2abf3c4720a171723handback_validate_file_name_invalide'></a> Source: [docs\csharp\misc\includes\vsprvslong_md.md](#cde890024656cad16bc4687980e2abf3c4720a171723)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw is different with handoff file name: vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw is different with handoff file name: vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw is different with handoff file name: vsprvslong_md.1e2fe659bdf48110641257401ed18cdb3ffbf838.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='0d7cdb4487464eccfebd09792c1cbb4d78acd56a3488handback_validate_file_name_invalide'></a> Source: [docs\visual-basic\developing-apps\printing\includes\ndptecclick_md.md](#0d7cdb4487464eccfebd09792c1cbb4d78acd56a3488)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw is different with handoff file name: ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw is different with handoff file name: ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw is different with handoff file name: ndptecclick_md.d23adacb8a18398f2a795b53081844ae58dd7b33.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='449a676028b0cc7b2a9a2c5675850018219fb89a4365handback_validate_file_name_invalide'></a> Source: [docs\visual-basic\language-reference\objects\includes\vbprvbruntime_md.md](#449a676028b0cc7b2a9a2c5675850018219fb89a4365)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw is different with handoff file name: vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw is different with handoff file name: vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw is different with handoff file name: vbprvbruntime_md.f033920dc5cac836df3c58d7dced4135c16ef986.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
-##### <a name='51aa3a84a05a8f64fcc7b74ea144dd435de9eee86238handback_validate_file_name_invalide'></a> Source: [docs\visual-basic\misc\includes\vb_orcas_long_md.md](#51aa3a84a05a8f64fcc7b74ea144dd435de9eee86238)
-* Error Code: handback_validate_file_name_invalide
-* Error Message: Handback file name: lo-mt_vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw is different with handoff file name: vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.
-* Retriable: False
-* Error Details: {"internal_error_code":"handback_validate_file_name_invalide","internal_error_message":"Handback file name: lo-mt_vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw is different with handoff file name: vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.","internal_error_retriable":false,"exception_message":"Handback file name: lo-mt_vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw is different with handoff file name: vb_orcas_long_md.89e8ff82ecfdaf5d7ab01f8d723be319c9e52a82.zh-tw.","exception_type":"Microsoft.OpenLocalization.Common.ErrorHandling.OpenLocalizationException","stack_trace":null,"extended_information":null}
-
 
 Generated by OpenLocalization.
