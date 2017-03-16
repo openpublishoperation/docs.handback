@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">64a708e3b88f48ad30d3f3ad25141a31f3d8f73d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\handling-reentrancy-in-async-apps.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1503b3af885759c017f95a09f8967f65b19ceb4f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ec232669ce5f9d58b704b75c31564a2d09eb83f</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_handling-reentrancy-in-async-apps.f9caeb49799f0abd33d730d0bbc5d8d323ef9f2f.ko-kr is different with handoff file name: handling-reentrancy-in-async-apps.f9caeb49799f0abd33d730d0bbc5d8d323ef9f2f.ko-kr.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling Reentrancy in Async Apps (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">비동기 응용 프로그램 (Visual Basic)에서 재진입 처리 | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Handling Reentrancy in Async Apps (Visual Basic)</source>
+          <target state="translated">비동기 응용 프로그램 (Visual Basic)에서 재진입 처리</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you include asynchronous code in your app, you should consider and possibly prevent reentrancy, which refers to reentering an asynchronous operation before it has completed.</source>
+          <target state="translated">앱에 비동기 코드를 포함하는 경우 완료되기 전에 비동기 작업을 다시 입력하는 것을 나타내는 재입력을 고려하고 방지할 수 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If you don't identify and handle possibilities for reentrancy, it can cause unexpected results.</source>
+          <target state="translated">재입력 가능성을 식별하고 처리하지 못하면 예기치 않은 결과가 발생할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In this topic<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>항목 내용<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Recognizing Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>재진입 인식<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Handling Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>재진입 처리<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>시작 단추를 사용 하지 않도록 설정<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cancel and Restart the Operation<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>취소 하 고 작업을 다시 시작<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Run Multiple Operations and Queue the Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>여러 작업을 실행 하 고 출력 큐<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>검토 및 예제 응용 프로그램 실행<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">예제를 실행 하려면 Visual Studio 2012 이상 및.NET Framework 4.5 또는 있어야 사용자의 컴퓨터에 설치 되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_RecognizingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Recognizing Reentrancy</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_RecognizingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>재진입 인식</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the example in this topic, users choose a <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button to initiate an asynchronous app that downloads a series of websites and calculates the total number of bytes that are downloaded.</source>
+          <target state="translated">이 항목의 예제에서는 사용자가 선택 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 일련의 웹 사이트를 다운로드 하 고 다운로드 하는 바이트의 총 수를 계산 하는 비동기 응용 프로그램을 시작 하려면 단추입니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A synchronous version of the example would respond the same way regardless of how many times a user chooses the button because, after the first time, the UI thread ignores those events until the app finishes running.</source>
+          <target state="translated">예제의 동기 버전은 처음 실행 후 앱 실행이 완료될 때까지 UI 스레드에서 해당 이벤트를 무시하므로 사용자가 단추를 선택하는 횟수에 관계없이 동일한 방식으로 응답합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In an asynchronous app, however, the UI thread continues to respond, and you might reenter the asynchronous operation before it has completed.</source>
+          <target state="translated">그러나 비동기 앱에서 UI 스레드는 계속 응답하므로 완료되기 전에 비동기 작업을 다시 입력할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example shows the expected output if the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button only once.</source>
+          <target state="translated">다음 예제에서는 예상 되는 사용자가 선택 하는 경우 출력은 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 두 번만 합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>A list of the downloaded websites appears with the size, in bytes, of each site.</source>
+          <target state="translated">다운로드된 웹 사이트 목록이 각 사이트의 크기(바이트)와 함께 나타납니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The total number of bytes appears at the end.</source>
+          <target state="translated">총 바이트 수는 끝에 나타납니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, if the user chooses the button more than once, the event handler is invoked repeatedly, and the download process is reentered each time.</source>
+          <target state="translated">그러나 사용자가 단추를 두 번 이상 선택하면 이벤트 처리기가 반복적으로 호출되고 다운로드 프로세스가 매번 다시 입력됩니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>As a result, several asynchronous operations are running at the same time, the output interleaves the results, and the total number of bytes is confusing.</source>
+          <target state="translated">따라서 여러 개의 비동기 작업이 동시에 실행되고 출력에서 결과를 인터리브하며 총 바이트 수가 혼동됩니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can review the code that produces this output by scrolling to the end of this topic.</source>
+          <target state="translated">이 항목의 끝으로 스크롤하면 이 출력을 생성하는 코드를 검토할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project For more information and instructions, see <bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</source>
+          <target state="translated">로컬 컴퓨터에 솔루션을 다운로드 하 고 다음 WebsiteDownload 프로젝트를 실행 하 여 코드를 시험해 하거나 자세한 내용 및 지침에 대 한 고유한 프로젝트를 만들려면이 항목의 끝에 코드를 사용, 참조 수 <bpt id="p1">[</bpt>검토 및 예제 응용 프로그램을 실행<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_HandlingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Handling Reentrancy</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_HandlingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>재진입 처리</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can handle reentrancy in a variety of ways, depending on what you want your app to do.</source>
+          <target state="translated">앱에서 수행하려는 작업에 따라 다양한 방법으로 재진입을 처리할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This topic presents the following examples:</source>
+          <target state="translated">이 항목에서는 다음 예제를 제공합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>시작 단추를 사용 하지 않도록 설정<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Disable the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button while the operation is running so that the user can't interrupt it.</source>
+          <target state="translated">사용 하지 않도록 설정 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 사용자가 중단 하지 않도록 작업이 실행 되는 동안 단추입니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cancel and Restart the Operation<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>취소 하 고 작업을 다시 시작<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Cancel any operation that is still running when the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button again, and then let the most recently requested operation continue.</source>
+          <target state="translated">사용자가 여전히 실행 되 고 모든 작업이 취소 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 다시 선택한 다음 let 가장 최근 요청 된 작업을 계속 합니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Run Multiple Operations and Queue the Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>여러 작업을 실행 하 고 출력 큐<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Allow all requested operations to run asynchronously, but coordinate the display of output so that the results from each operation appear together and in order.</source>
+          <target state="translated">요청한 모든 작업이 비동기적으로 실행되도록 허용하지만 각 작업의 결과가 함께 순서대로 나타나도록 출력의 표시를 조정합니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_DisableTheStartButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Disable the Start Button</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_DisableTheStartButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>시작 단추를 사용 하지 않도록 설정</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can block the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button while an operation is running by disabling the button at the top of the <ph id="ph1">`StartButton_Click`</ph> event handler.</source>
+          <target state="translated">차단할 수는 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 맨 위에 있는 단추를 비활성화 하 여 작업이 실행 되는 동안 단추는 <ph id="ph1">`StartButton_Click`</ph> 이벤트 처리기입니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You can then reenable the button from within a  <ph id="ph1">`Finally`</ph> block when the operation finishes so that users can run the app again.</source>
+          <target state="translated">그런 다음 작업이 완료되면 <ph id="ph1">`Finally`</ph> 블록 내에서 단추를 다시 사용하도록 설정하여 사용자가 앱을 다시 실행하도록 할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes, which are marked with asterisks.</source>
+          <target state="translated">다음 코드에서는 이러한 변경 내용을 보여 주며, 별표로 표시되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You can add the changes to the code at the end of this topic, or you can download the finished app from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">변경 내용을이 항목의 끝에 코드를 추가 하거나에서 완성된 된 응용 프로그램을 다운로드할 수 있습니다 <bpt id="p1">[</bpt>Async 샘플:.NET 데스크톱 응용 프로그램에서 재진입<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The project name is DisableStartButton.</source>
+          <target state="translated">프로젝트 이름은 DisableStartButton입니다.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>As a result of the changes, the button doesn't respond while <ph id="ph1">`AccessTheWebAsync`</ph> is downloading the websites, so the process can’t be reentered.</source>
+          <target state="translated">변경의 결과로 <ph id="ph1">`AccessTheWebAsync`</ph>에서 웹 사이트를 다운로드하는 동안 단추가 응답하지 않으므로 프로세스를 다시 입력할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CancelAndRestart"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Cancel and Restart the Operation</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CancelAndRestart"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>취소 하 고 작업을 다시 시작</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Instead of disabling the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, you can keep the button active but, if the user chooses that button again, cancel the operation that's already running and let the most recently started operation continue.</source>
+          <target state="translated">사용 하지 않도록 설정 하는 대신는 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 단추는 활성 상태로 유지 하지만 수, 사용자가 단추를 다시 선택 하는 경우 이미 실행 하 고 가장 최근에 시작한 작업을 계속 할 작업을 취소 합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For more information about cancellation, see <bpt id="p1">[</bpt>Fine-Tuning Your Async Application (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept>.</source>
+          <target state="translated">취소에 대 한 자세한 내용은 참조 <bpt id="p1">[</bpt>미세 조정 Your 비동기 응용 프로그램 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To set up this scenario, make the following changes to the basic code that is provided in <bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</source>
+          <target state="translated">이 시나리오를 설정 하려면 다음과 같이 변경에 제공 되는 기본 코드가 <bpt id="p1">[</bpt>검토 및 예제 응용 프로그램을 실행<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You also can download the finished app from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">완성된 된 응용 프로그램에서 다운로드할 수 <bpt id="p1">[</bpt>Async 샘플:.NET 데스크톱 응용 프로그램에서 재진입<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The name of this project is CancelAndRestart.</source>
+          <target state="translated">이 프로젝트의 이름은 CancelAndRestart입니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Declare a &lt;xref:System.Threading.CancellationTokenSource&gt; variable, <ph id="ph1">`cts`</ph>, that’s in scope for all methods.</source>
+          <target state="translated">선언는 &lt;xref:System.Threading.CancellationTokenSource&gt;변수인 <ph id="ph1">`cts`</ph>, 모든 메서드에 대 한 범위에는.&lt;/xref:System.Threading.CancellationTokenSource&gt;</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`StartButton_Click`</ph>, determine whether an operation is already underway.</source>
+          <target state="translated"><ph id="ph1">`StartButton_Click`</ph>에서 작업이 이미 진행 중인지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If the value of <ph id="ph1">`cts`</ph> is <ph id="ph2">`Nothing`</ph>, no operation is already active.</source>
+          <target state="translated">하는 경우의 값 <ph id="ph1">`cts`</ph> 는 <ph id="ph2">`Nothing`</ph>, 작업이 이미 활성화 되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If the value isn't <ph id="ph1">`Nothing`</ph>, the operation that is already running is canceled.</source>
+          <target state="translated">값이 없으면 <ph id="ph1">`Nothing`</ph>, 이미 실행 중인 작업이 취소 됩니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Set <ph id="ph1">`cts`</ph> to a different value that represents the current process.</source>
+          <target state="translated"><ph id="ph1">`cts`</ph>를 현재 프로세스를 나타내는 다른 값으로 설정합니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>At the end of <ph id="ph1">`StartButton_Click`</ph>, the current process is complete, so set the value of <ph id="ph2">`cts`</ph> back to <ph id="ph3">`Nothing`</ph>.</source>
+          <target state="translated">끝에 <ph id="ph1">`StartButton_Click`</ph>, 현재 프로세스가 완료 되의 값을 설정 하므로 <ph id="ph2">`cts`</ph> 다시 <ph id="ph3">`Nothing`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The following code shows all the changes in <ph id="ph1">`StartButton_Click`</ph>.</source>
+          <target state="translated">다음 코드에서는 <ph id="ph1">`StartButton_Click`</ph>의 모든 변경 내용을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The additions are marked with asterisks.</source>
+          <target state="translated">추가된 내용은 별표로 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`AccessTheWebAsync`</ph>, make the following changes.</source>
+          <target state="translated"><ph id="ph1">`AccessTheWebAsync`</ph>에서 다음과 같이 변경합니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Add a parameter to accept the cancellation token from <ph id="ph1">`StartButton_Click`</ph>.</source>
+          <target state="translated"><ph id="ph1">`StartButton_Click`</ph>에서 취소 토큰을 허용하도록 매개 변수를 추가합니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Use the &lt;xref:System.Net.Http.HttpClient.GetAsync%2A&gt; method to download the websites because <ph id="ph1">`GetAsync`</ph> accepts a &lt;xref:System.Threading.CancellationToken&gt; argument.</source>
+          <target state="translated">사용 된 &lt;xref:System.Net.Http.HttpClient.GetAsync%2A&gt;때문에 웹 사이트를 다운로드 하려면 <ph id="ph1">`GetAsync`</ph> 허용는 &lt;xref:System.Threading.CancellationToken&gt;인수.&lt;/xref:System.Threading.CancellationToken&gt; &lt;/xref:System.Net.Http.HttpClient.GetAsync%2A&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Before calling <ph id="ph1">`DisplayResults`</ph> to display the results for each downloaded website, check <ph id="ph2">`ct`</ph> to verify that the current operation hasn’t been canceled.</source>
+          <target state="translated"><ph id="ph1">`DisplayResults`</ph>를 호출하여 다운로드한 각 웹 사이트에 대한 결과를 표시하려면 먼저 <ph id="ph2">`ct`</ph>를 확인하여 현재 작업이 취소되었는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes, which are marked with asterisks.</source>
+          <target state="translated">다음 코드에서는 이러한 변경 내용을 보여 주며, 별표로 표시되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button several times while this app is running, it should produce results that resemble the following output.</source>
+          <target state="translated">선택 하는 경우는 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 몇 번이이 앱이 실행 되는 동안 다음과 같은 출력을 유사한 결과 생성 해야 합니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To eliminate the partial lists, uncomment the first line of code in <ph id="ph1">`StartButton_Click`</ph> to clear the text box each time the user restarts the operation.</source>
+          <target state="translated">부분 목록을 제거하려면 <ph id="ph1">`StartButton_Click`</ph>에서 코드 첫 줄의 주석 처리를 제거하여 사용자가 작업을 다시 시작할 때마다 텍스트 상자의 선택을 취소합니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_RunMultipleOperations"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Run Multiple Operations and Queue the Output</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_RunMultipleOperations"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>여러 작업을 실행 하 고 출력 큐</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, and all the operations run to completion.</source>
+          <target state="translated">이 세 번째 예제는 앱이 시작 될 때마다 사용자가 선택 하는 다른 비동기 작업에는 가장 복잡 한는 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추 및 모든 작업 실행을 완료 합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially.</source>
+          <target state="translated">요청한 모든 작업은 목록에서 비동기적으로 웹 사이트를 다운로드하지만 작업의 출력은 순차적으로 제공됩니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>That is, the actual downloading activity is interleaved, as the output in <bpt id="p1">[</bpt>Recognizing Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> shows, but the list of results for each group is presented separately.</source>
+          <target state="translated">즉, 실제 다운로드 활동 인터리브되지에서 출력으로 <bpt id="p1">[</bpt>재진입 인식<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> 표시 되지만 각 그룹에 대 한 결과 목록은 개별적으로 표시 됩니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The operations share a global &lt;xref:System.Threading.Tasks.Task&gt;, <ph id="ph1">`pendingWork`</ph>, which serves as a gatekeeper for the display process.</source>
+          <target state="translated">작업 공유 전역 &lt;xref:System.Threading.Tasks.Task&gt;, <ph id="ph1">`pendingWork`</ph>, 디스플레이 프로세스에 대 한 게이트 키퍼도 작동 합니다.&lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You can run this example by pasting the changes into the code in <bpt id="p1">[</bpt>Building the App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or you can follow the instructions in <bpt id="p2">[</bpt>Downloading the App<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to download the sample and then run the QueueResults project.</source>
+          <target state="translated">변경 내용을 코드에 붙여넣어이 예제를 실행할 수 있습니다 <bpt id="p1">[</bpt>응용 프로그램 작성<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, 지침에 따르면 또는 <bpt id="p2">[</bpt>응용 프로그램 다운로드<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> 샘플을 다운로드 하 고 다음 QueueResults 프로젝트를 실행 합니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following output shows the result if the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button only once.</source>
+          <target state="translated">다음과 같은 출력 결과 표시 하는 경우 사용자가 선택 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 두 번만 합니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The letter label, A, indicates that the result is from the first time the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button is chosen.</source>
+          <target state="translated">결과에서 처음으로 문자, 레이블 및 A 나타냅니다는 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 선택 합니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The numbers show the order of the URLs in the list of download targets.</source>
+          <target state="translated">숫자는 다운로드 대상 목록에서 URL의 순서를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>If the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button three times, the app produces output that resembles the following lines.</source>
+          <target state="translated">사용자가 선택 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 세 번, 다음 줄을 유사한 출력을 생성 하는 응용 프로그램입니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The information lines that start with a pound sign (#) trace the progress of the application.</source>
+          <target state="translated">파운드 기호(#)로 시작하는 정보 줄은 응용 프로그램의 진행률을 추적합니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Groups B and C start before group A has finished, but the output for the each group appears separately.</source>
+          <target state="translated">그룹 B와 C는 그룹 A가 완료되기 전에 시작되지만 각 그룹에 대한 출력은 별도로 나타납니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>All the output for group A appears first, followed by all the output for group B, and then all the output for group C. The app always displays the groups in order and, for each group, always displays the information about the individual websites in the order that the URLs appear in the list of URLs.</source>
+          <target state="translated">그룹 A에 대 한 모든 출력 그룹 B에 대 한 모든 출력 한 다음 모든 출력&amp;3;. 그룹에 대 한 다음, 첫 번째로 표시 앱 항상 순서에 그룹을 표시 하며, 각 그룹에 대해 항상 표시는 개별 웹 사이트에 대 한 정보 Url은 Url의 목록에 표시 되는 순서 대로.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>However, you can't predict the order in which the downloads actually happen.</source>
+          <target state="translated">그러나 다운로드가 실제로 수행되는 순서는 예측할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>After multiple groups have been started, the download tasks that they generate are all active.</source>
+          <target state="translated">여러 그룹이 시작된 후에는 그룹이 생성하는 다운로드 작업이 모두 활성화됩니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can't assume that A-1 will be downloaded before B-1, and you can't assume that A-1 will be downloaded before A-2.</source>
+          <target state="translated">A-1이 B-1보다 먼저 다운로드된다고 가정할 수 없으며 A-1이 A-2보다 먼저 다운로드된다고 가정할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Global Definitions</source>
+          <target state="translated">전역 정의</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The sample code contains the following two global declarations that are visible from all methods.</source>
+          <target state="translated">샘플 코드는 모든 메서드에서 표시되는 다음과 같은 두 가지 전역 선언을 포함합니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Task`</ph> variable, <ph id="ph2">`pendingWork`</ph>, oversees the display process and prevents any group from interrupting another group's display operation.</source>
+          <target state="translated"><ph id="ph1">`Task`</ph> 변수 <ph id="ph2">`pendingWork`</ph>는 표시 프로세스를 감독하고 모든 그룹이 다른 그룹의 표시 작업을 방해하지 않도록 합니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The character variable, <ph id="ph1">`group`</ph>, labels the output from different groups to verify that results appear in the expected order.</source>
+          <target state="translated">문자 변수 <ph id="ph1">`group`</ph>은 다른 그룹의 출력에 레이블을 지정하여 해당 결과가 예상 순서대로 나타나는지 확인합니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The Click Event Handler</source>
+          <target state="translated">Click 이벤트 처리기</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The event handler, <ph id="ph1">`StartButton_Click`</ph>, increments the group letter each time the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">이벤트 처리기 <ph id="ph1">`StartButton_Click`</ph>, 그룹 문자를 선택할 때마다 증가 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추입니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Then the handler calls <ph id="ph1">`AccessTheWebAsync`</ph> to run the downloading operation.</source>
+          <target state="translated">그런 다음 처리기에서 <ph id="ph1">`AccessTheWebAsync`</ph>를 호출하여 다운로드 중인 작업을 실행합니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The AccessTheWebAsync Method</source>
+          <target state="translated">AccessTheWebAsync 메서드</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This example splits <ph id="ph1">`AccessTheWebAsync`</ph> into two methods.</source>
+          <target state="translated">이 예제에서는 <ph id="ph1">`AccessTheWebAsync`</ph>를 두 개의 메서드로 분할합니다.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The first method, <ph id="ph1">`AccessTheWebAsync`</ph>, starts all the download tasks for a group and sets up <ph id="ph2">`pendingWork`</ph> to control the display process.</source>
+          <target state="translated">첫 번째 메서드 <ph id="ph1">`AccessTheWebAsync`</ph>는 그룹에 대해 모든 다운로드 작업을 시작하고 <ph id="ph2">`pendingWork`</ph>를 설정하여 표시 프로세스를 제어합니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The method uses a Language Integrated Query (LINQ query) and &lt;xref:System.Linq.Enumerable.ToArray%2A&gt; to start all the download tasks at the same time.</source>
+          <target state="translated">언어 통합 쿼리 (LINQ 쿼리)를 사용 하는 메서드 및 &lt;xref:System.Linq.Enumerable.ToArray%2A&gt;를 동시에 모든 다운로드 작업을 시작 합니다.&lt;/xref:System.Linq.Enumerable.ToArray%2A&gt;</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AccessTheWebAsync`</ph> then calls <ph id="ph2">`FinishOneGroupAsync`</ph> to await the completion of each download and display its length.</source>
+          <target state="translated">그런 다음 <ph id="ph1">`AccessTheWebAsync`</ph>는 <ph id="ph2">`FinishOneGroupAsync`</ph>를 호출하여 각 다운로드가 완료될 때까지 대기하고 해당 길이를 표시합니다.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`FinishOneGroupAsync`</ph> returns a task that's assigned to <ph id="ph2">`pendingWork`</ph> in <ph id="ph3">`AccessTheWebAsync`</ph>.</source>
+          <target state="translated"><ph id="ph1">`FinishOneGroupAsync`</ph>는 <ph id="ph3">`AccessTheWebAsync`</ph>의 <ph id="ph2">`pendingWork`</ph>에 할당되는 작업을 반환합니다.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>That value prevents interruption by another operation before the task is complete.</source>
+          <target state="translated">해당 값은 작업이 완료되기 전에 다른 작업에 의한 중단을 방지합니다.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The FinishOneGroupAsync Method</source>
+          <target state="translated">FinishOneGroupAsync 메서드</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This method cycles through the download tasks in a group, awaiting each one, displaying the length of the downloaded website, and adding the length to the total.</source>
+          <target state="translated">이 메서드는 한 그룹의 다운로드 작업을 순환하여 각 작업을 대기하고 다운로드한 웹 사이트의 길이를 표시하고 길이를 합계에 추가합니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The first statement in <ph id="ph1">`FinishOneGroupAsync`</ph> uses <ph id="ph2">`pendingWork`</ph> to make sure that entering the method doesn't interfere with an operation that is already in the display process or that's already waiting.</source>
+          <target state="translated">첫 번째 문에 <ph id="ph1">`FinishOneGroupAsync`</ph> 사용 하 여 <ph id="ph2">`pendingWork`</ph> 되도록 하는 이미 디스플레이 프로세스 중이거나 이미 대기 되는 작업을 방해 하지 메서드를 입력 하십시오.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>If such an operation is in progress, the entering operation must wait its turn.</source>
+          <target state="translated">이러한 작업이 진행 중인 경우 입력 작업은 해당 순서를 기다려야 합니다.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>You can run this example by pasting the changes into the code in <bpt id="p1">[</bpt>Building the App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or you can follow the instructions in <bpt id="p2">[</bpt>Downloading the App<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to download the sample, and then run the QueueResults project.</source>
+          <target state="translated">변경 내용을 코드에 붙여넣어이 예제를 실행할 수 있습니다 <bpt id="p1">[</bpt>응용 프로그램 작성<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, 지침에 따르면 또는 <bpt id="p2">[</bpt>응용 프로그램 다운로드<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> 샘플을 다운로드 하 고 다음 QueueResults 프로젝트를 실행 합니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Points of Interest</source>
+          <target state="translated">관심 영역</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The information lines that start with a pound sign (#) in the output clarify how this example works.</source>
+          <target state="translated">출력에서 파운드 기호(#)로 시작하는 정보 줄은 이 예제의 작동 방식을 명확히 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The output shows the following patterns.</source>
+          <target state="translated">출력은 다음과 같은 패턴을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>A group can be started while a previous group is displaying its output, but the display of the previous group's output isn't interrupted.</source>
+          <target state="translated">이전 그룹이 출력을 표시하는 동안 그룹이 시작될 수 있지만 이전 그룹의 출력 표시가 중단되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`pendingWork`</ph> task is <ph id="ph2">`Nothing`</ph> at the start of <ph id="ph3">`FinishOneGroupAsync`</ph> only for group A, which started first.</source>
+          <target state="translated"><ph id="ph1">`pendingWork`</ph> 작업은 <ph id="ph2">`Nothing`</ph> 의 시작 부분에 <ph id="ph3">`FinishOneGroupAsync`</ph> 그룹 A에 대해서만 먼저 시작 합니다.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Group A hasn’t yet completed an await expression when it reaches <ph id="ph1">`FinishOneGroupAsync`</ph>.</source>
+          <target state="translated">그룹 A는 <ph id="ph1">`FinishOneGroupAsync`</ph>에 도달할 때 await 식을 아직 완료하지 않았습니다.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Therefore, control hasn't returned to <ph id="ph1">`AccessTheWebAsync`</ph>, and the first assignment to <ph id="ph2">`pendingWork`</ph> hasn't occurred.</source>
+          <target state="translated">따라서 컨트롤이 <ph id="ph1">`AccessTheWebAsync`</ph>로 반환되지 않았으며 <ph id="ph2">`pendingWork`</ph>에 대한 첫 번째 할당이 발생되지 않았습니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following two lines always appear together in the output.</source>
+          <target state="translated">다음 두 줄은 항상 출력에 함께 나타납니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The code is never interrupted between starting a group's operation in <ph id="ph1">`StartButton_Click`</ph> and assigning a task for the group to <ph id="ph2">`pendingWork`</ph>.</source>
+          <target state="translated">코드는 <ph id="ph1">`StartButton_Click`</ph>의 그룹 작업 시작과 <ph id="ph2">`pendingWork`</ph>에 그룹에 대한 작업 할당 사이에서 중단되지 않습니다.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>After a group enters <ph id="ph1">`StartButton_Click`</ph>, the operation doesn't complete an await expression until the operation enters <ph id="ph2">`FinishOneGroupAsync`</ph>.</source>
+          <target state="translated">그룹이 <ph id="ph1">`StartButton_Click`</ph>을 입력한 후 작업은 <ph id="ph2">`FinishOneGroupAsync`</ph>를 입력한 다음에야 await 식을 완료합니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Therefore, no other operation can gain control during that segment of code.</source>
+          <target state="translated">따라서 코드의 해당 세그먼트 중에는 다른 작업에서 제어할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMD_SettingUpTheExample"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Reviewing and Running the Example App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMD_SettingUpTheExample"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>검토 및 예제 응용 프로그램 실행</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>To better understand the example app, you can download it, build it yourself, or review the code at the end of this topic without implementing the app.</source>
+          <target state="translated">예제 앱을 더 잘 이해하려면 다운로드하거나, 직접 빌드하거나, 앱을 구현하지 않고 이 항목의 끝에 있는 코드를 검토할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Windows Presentation Foundation (WPF) 데스크톱 응용 프로그램으로는 예제를 실행 하려면 Visual Studio 2012 이상 및.NET Framework 4.5 또는 있어야 사용자의 컴퓨터에 설치 되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_DownloadingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Downloading the App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_DownloadingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>응용 프로그램 다운로드</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Download the compressed file from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">압축 된 파일을 다운로드할 <bpt id="p1">[</bpt>Async 샘플:.NET 데스크톱 응용 프로그램에서 재진입<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Decompress the file that you downloaded, and then start Visual Studio.</source>
+          <target state="translated">다운로드한 파일의 압축을 푼 다음 Visual Studio를 시작합니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">메뉴 모음에서 <bpt id="p1">**</bpt>파일<ept id="p1">**</ept>, <bpt id="p2">**</bpt>열기<ept id="p2">**</ept>, <bpt id="p3">**</bpt>프로젝트/솔루션<ept id="p3">**</ept>을 선택합니다.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.</source>
+          <target state="translated">압축을 푼 샘플 코드가 저장된 폴더로 이동한 다음 솔루션(.sln) 파일을 엽니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for the project that you want to run, and then choose <bpt id="p2">**</bpt>Set as StartUpProject<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>를 실행 하 고 다음을 선택 하려는 프로젝트에 대 한 바로 가기 메뉴를 열고 <bpt id="p2">**</bpt>StartUpProject으로 설정<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Choose the CTRL+F5 keys to build and run the project.</source>
+          <target state="translated">CTRL+F5를 선택하여 프로젝트를 빌드하고 실행합니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_BuildingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Building the App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_BuildingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>응용 프로그램 빌드</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following section provides the code to build the example as a WPF app.</source>
+          <target state="translated">다음 섹션으로 WPF 응용 프로그램 예제를 빌드하려면 코드를 제공 합니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To build a WPF app</source>
+          <target state="translated">WPF 응용 프로그램을 빌드하려면</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Visual Studio를 시작합니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">메뉴 모음에서 <bpt id="p1">**</bpt>파일<ept id="p1">**</ept>, <bpt id="p2">**</bpt>새로 만들기<ept id="p2">**</ept>, <bpt id="p3">**</bpt>프로젝트<ept id="p3">**</ept>를 차례로 선택합니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated"><bpt id="p1">**</bpt>새 프로젝트<ept id="p1">**</ept> 대화 상자가 열립니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed Templates<ept id="p1">**</ept> pane, expand <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>, and then expand <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept>.</source>
+          <target state="translated">에 <bpt id="p1">**</bpt>설치 된 템플릿<ept id="p1">**</ept> 창 확장 <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>를 차례로 확장 한 다음 <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the list of project types, choose <bpt id="p1">**</bpt>WPF Application<ept id="p1">**</ept>.</source>
+          <target state="translated">프로젝트 형식 목록에서 선택 <bpt id="p1">**</bpt>WPF 응용 프로그램<ept id="p1">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Name the project <ph id="ph1">`WebsiteDownloadWPF`</ph>, and then choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">프로젝트 이름을 <ph id="ph1">`WebsiteDownloadWPF`</ph>를 선택한 다음는 <bpt id="p1">**</bpt>확인<ept id="p1">**</ept> 단추입니다.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">새 프로젝트가 표시 <bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Visual Studio 코드 편집기에서 <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> 탭을 선택합니다.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">탭이 표시 되지 않으면 mainwindow.xaml의 바로 가기 메뉴를 열고 <bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>를 선택한 다음 <bpt id="p2">**</bpt>코드 보기<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> view of MainWindow.xaml, replace the code with the following code.</source>
+          <target state="translated">에 <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> MainWindow.xaml의 보기에서 코드를 다음 코드로 바꿉니다.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>A simple window that contains a text box and a button appears in the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> view of MainWindow.xaml.</source>
+          <target state="translated">에 텍스트 상자와 단추가 포함 된 간단한 창이 표시는 <bpt id="p1">**</bpt>디자인<ept id="p1">**</ept> MainWindow.xaml의 보기입니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Add a reference for &lt;xref:System.Net.Http&gt;.</source>
+          <target state="translated">&lt;xref:System.Net.Http&gt;.&lt;/xref:System.Net.Http&gt; 에 대 한 참조를 추가 합니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>, MainWindow.xaml.vb에 대 한 바로 가기 메뉴를 열고 선택한 다음 <bpt id="p2">**</bpt>코드 보기<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In MainWindow.xaml.vb , replace the code with the following code.</source>
+          <target state="translated">MainWindow.xaml.vb에서 코드를 다음 코드로 바꿉니다.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Choose the CTRL+F5 keys to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button several times.</source>
+          <target state="translated">프로그램을 실행 한 다음 CTRL + F5 키를 선택 된 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 여러 번입니다.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Make the changes from <bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, <bpt id="p2">[</bpt>Cancel and Restart the Operation<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or <bpt id="p3">[</bpt>Run Multiple Operations and Queue the Output<ept id="p3">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to handle the reentrancy.</source>
+          <target state="translated">변경 <bpt id="p1">[</bpt>시작 단추를 사용 하지 않도록 설정<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, <bpt id="p2">[</bpt>취소 하 고 작업을 다시 시작<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, 또는 <bpt id="p3">[</bpt>여러 작업을 실행 하 고 출력 큐<ept id="p3">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> 는 재진입 처리 하도록 합니다.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>연습: Async를 사용 하 여 웹 서비스에 액세스 및 Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>비동기 프로그래밍 async 및 Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

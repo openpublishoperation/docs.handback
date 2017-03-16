@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">25f504d862ef2176dc90a31fbccf18777b9d3d0a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-populate-object-collections-from-multiple-sources-linq.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">28387cf18ef8077257690513163d4408c52635eb</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">35b7c9bcaa8dcd479ba2f2bdfcf9329aad7ca474</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_how-to-populate-object-collections-from-multiple-sources-linq.0f7bab3bcb326322e84da4aa193b2c63546701f6.ko-kr is different with handoff file name: how-to-populate-object-collections-from-multiple-sources-linq.0f7bab3bcb326322e84da4aa193b2c63546701f6.ko-kr.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">방법: 여러 소스로 (LINQ) (Visual Basic) 개체 컬렉션 채우기 | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)</source>
+          <target state="translated">방법: 개체 컬렉션 (Visual Basic) (LINQ) 여러 소스에서 채우기</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example shows how to merge data from different sources into a sequence of new types.</source>
+          <target state="translated">이 예제에는 새 형식의 시퀀스에 서로 다른 원본의 데이터를 병합 하는 방법을 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Do not try to join in-memory data or data in the file system with data that is still in a database.</source>
+          <target state="translated">아직 데이터베이스에에서 있는 데이터와 파일 시스템의 메모리 내 데이터 또는 데이터를 조인 하지 마십시오.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Such cross-domain joins can yield undefined results because of different ways in which join operations might be defined for database queries and other types of sources.</source>
+          <target state="translated">이러한 도메인 간 조인은 조인 작업 수 정의 되어 있는 데이터베이스 쿼리 및 다른 유형의 원본에 대 한 다양 한 방법으로 인해 정의 되지 않은 결과 얻을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Additionally, there is a risk that such an operation could cause an out-of-memory exception if the amount of data in the database is large enough.</source>
+          <target state="translated">또한 위험이 데이터베이스의 데이터 크기가 충분 하는 경우 이러한 작업이 메모리 부족 예외를 일으킬 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To join data from a database to in-memory data, first call <ph id="ph1">`ToList`</ph> or <ph id="ph2">`ToArray`</ph> on the database query, and then perform the join on the returned collection.</source>
+          <target state="translated">메모리 내 데이터를 데이터베이스에서 데이터를 결합 하려면 먼저 호출 <ph id="ph1">`ToList`</ph> 또는 <ph id="ph2">`ToArray`</ph> 데이터베이스에서 쿼리하고 다음 반환된 된 컬렉션에서 조인을 수행 합니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>To create the data file</source>
+          <target state="translated">데이터 파일을 만들려면</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Copy the names.csv and scores.csv files into your project folder, as described in <bpt id="p1">[</bpt>How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)</ept>.</source>
+          <target state="translated">에 설명 된 대로 names.csv 및 scores.csv 파일을 프로젝트 폴더로 복사 <bpt id="p1">[</bpt>하는 방법: 콘텐츠 조인에서 서로 다른 파일 (LINQ) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use a named type <ph id="ph1">`Student`</ph> to store merged data from two in-memory collections of strings that simulate spreadsheet data in .csv format.</source>
+          <target state="translated">다음 예제에서는 명명된 된 형식을 사용 하 여 <ph id="ph1">`Student`</ph> .csv 형식으로 스프레드시트 데이터를 시뮬레이션 하는 문자열의 두 가지 메모리 내 컬렉션의 병합 된 데이터를 저장 합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The first collection of strings represents the student names and IDs, and the second collection represents the student ID (in the first column) and four exam scores.</source>
+          <target state="translated">문자열의 첫 번째 컬렉션은 학생 이름과 Id를 나타내고 두 번째 컬렉션의 첫 번째 열에서 학생 ID와&amp;4; 개의 시험 점수를 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The ID is used as the foreign key.</source>
+          <target state="translated">ID는 외래 키로 사용 됩니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">[</bpt>Select Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept> clause, an object initializer is used to instantiate each new <ph id="ph1">`Student`</ph> object by using the data from the two sources.</source>
+          <target state="translated">에 <bpt id="p1">[</bpt>Select 절<ept id="p1">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept> 절, 개체 이니셜라이저는 인스턴스화하는 데 사용 각 새로운 <ph id="ph1">`Student`</ph> 두 원본의 데이터를 사용 하 여 개체입니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you do not have to store the results of a query, anonymous types can be more convenient than named types.</source>
+          <target state="translated">쿼리 결과 저장 해야 하는 경우 익명 형식은 명명 된 형식 보다 더 편리할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Named types are required if you pass the query results outside the method in which the query is executed.</source>
+          <target state="translated">쿼리가 실행 되는 메서드 외부에 쿼리 결과 전달 하는 경우에 명명 된 형식이 필요 합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example performs the same task as the previous example, but uses anonymous types instead of named types:</source>
+          <target state="translated">다음 예제에서는 앞의 예제와 같은 작업을 수행 하지만 명명 된 형식 대신 익명 형식을 사용 합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">코드 컴파일</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a <ph id="ph1">`Imports`</ph> statement for the System.Linq namespace.</source>
+          <target state="translated">.NET Framework 버전 3.5 이상 System.Core.dll에 대 한 참조를 대상으로 하는 프로젝트 만들기 및 <ph id="ph1">`Imports`</ph> System.Linq 네임 스페이스에 대 한 정보입니다.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LINQ and Strings (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>LINQ 및 문자열 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
