@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">87af2816ba42e2901c53bec5e9c19f34c676ed5c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\early-late-binding\calling-a-property-or-method-using-a-string-name.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca5f1d6d04e16d18cd038d873683e1c0e153a9ab</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0ec014b5e94bdf3d00a37ea0fab43c86ecb61e90</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_calling-a-property-or-method-using-a-string-name.510ce14e243d1a9e909dddacb80414329d9673fc.ru-ru is different with handoff file name: calling-a-property-or-method-using-a-string-name.510ce14e243d1a9e909dddacb80414329d9673fc.ru-ru.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Calling a Property or Method Using a String Name (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Вызов свойства или метода с помощью строкового имени (Visual Basic) | Документы Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Calling a Property or Method Using a String Name (Visual Basic)</source>
+          <target state="translated">Вызов свойства или метода с помощью строкового имени (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>In most cases, you can discover the properties and methods of an object at design time, and write code to handle them.</source>
+          <target state="translated">В большинстве случаев доступ к свойствам и методам объекта во время разработки и писать код для их обработки.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>However, in some cases you may not know about an object's properties and methods in advance, or you may just want the flexibility of enabling an end user to specify properties or execute methods at run time.</source>
+          <target state="translated">Однако в некоторых случаях может не известно, какие свойства и методы объекта заранее или необходима гибкость конечному пользователю для указания свойств или выполнения методов во время выполнения.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>CallByName Function</source>
+          <target state="translated">CallByName-функция</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Consider, for example, a client application that evaluates expressions entered by the user by passing an operator to a COM component.</source>
+          <target state="translated">Рассмотрим, например, клиентское приложение, которое вычисляет выражения, введенные пользователем с помощью передачи оператора COM-компонент.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Suppose you are constantly adding new functions to the component that require new operators.</source>
+          <target state="translated">Предположим, что постоянно добавляются новые функции для компонентов, которым необходимы новые операторы.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>When you use standard object access techniques, you must recompile and redistribute the client application before it could use the new operators.</source>
+          <target state="translated">При использовании методов доступа к объекту standard, необходимо перекомпилировать и переустановке клиентского приложения, прежде чем его можно будет использовать.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To avoid this, you can use the <ph id="ph1">`CallByName`</ph> function to pass the new operators as strings, without changing the application.</source>
+          <target state="translated">Чтобы избежать этого, можно использовать <ph id="ph1">`CallByName`</ph> функции для передачи новых операторов в виде строк без изменения приложения.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CallByName`</ph> function lets you use a string to specify a property or method at run time.</source>
+          <target state="translated"><ph id="ph1">`CallByName`</ph> Функция позволяет использовать строку для указания свойства или метода во время выполнения.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The signature for the <ph id="ph1">`CallByName`</ph> function looks like this:</source>
+          <target state="translated">Сигнатура для <ph id="ph1">`CallByName`</ph> выглядит следующим образом:</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>Result<ept id="p1">*</ept><ph id="ph1"> = </ph><ph id="ph2">`CallByName`</ph>(<bpt id="p2">*</bpt>Object<ept id="p2">*</ept>, <bpt id="p3">*</bpt>ProcedureName<ept id="p3">*</ept>, <bpt id="p4">*</bpt>CallType<ept id="p4">*</ept>, <bpt id="p5">*</bpt>Arguments<ept id="p5">*</ept>())</source>
+          <target state="translated"><bpt id="p1">*</bpt>Result<ept id="p1">*</ept><ph id="ph1"> = </ph><ph id="ph2">`CallByName`</ph>(<bpt id="p2">*</bpt>Object<ept id="p2">*</ept>, <bpt id="p3">*</bpt>ProcedureName<ept id="p3">*</ept>, <bpt id="p4">*</bpt>CallType<ept id="p4">*</ept>, <bpt id="p5">*</bpt>Arguments<ept id="p5">*</ept>())</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The first argument, <bpt id="p1">*</bpt>Object<ept id="p1">*</ept>, takes the name of the object you want to act upon.</source>
+          <target state="translated">Первый аргумент, <bpt id="p1">*</bpt>объекта<ept id="p1">*</ept>, принимает имя объекта, нужно действовать.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>ProcedureName<ept id="p1">*</ept> argument takes a string that contains the name of the method or property procedure to be invoked.</source>
+          <target state="translated"><bpt id="p1">*</bpt>ProcedureName<ept id="p1">*</ept> аргумент принимает строку, содержащую имя метода или свойства вызываемой процедуры.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>CallType<ept id="p1">*</ept> argument takes a constant that represents the type of procedure to invoke: a method (<ph id="ph1">`Microsoft.VisualBasic.CallType.Method`</ph>), a property read (<ph id="ph2">`Microsoft.VisualBasic.CallType.Get`</ph>), or a property set (<ph id="ph3">`Microsoft.VisualBasic.CallType.Set`</ph>).</source>
+          <target state="translated"><bpt id="p1">*</bpt>CallType<ept id="p1">*</ept> аргумент принимает константу, представляющую тип процедуры для вызова: метод (<ph id="ph1">`Microsoft.VisualBasic.CallType.Method`</ph>), чтение свойства (<ph id="ph2">`Microsoft.VisualBasic.CallType.Get`</ph>), или свойства (<ph id="ph3">`Microsoft.VisualBasic.CallType.Set`</ph>).</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>Arguments<ept id="p1">*</ept> argument, which is optional, takes an array of type <ph id="ph1">`Object`</ph> that contains any arguments to the procedure.</source>
+          <target state="translated"><bpt id="p1">*</bpt>Аргументы<ept id="p1">*</ept> аргумент, который является необязательным, принимает массив объектов типа <ph id="ph1">`Object`</ph> , содержащий любые аргументы для процедуры.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You can use <ph id="ph1">`CallByName`</ph> with classes in your current solution, but it is most often used to access COM objects or objects from <ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> assemblies.</source>
+          <target state="translated">Можно использовать <ph id="ph1">`CallByName`</ph> с классами в текущем решении, но чаще всего используется для доступа к объектам COM или объектам из <ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> сборки.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Suppose you add a reference to an assembly that contains a class named <ph id="ph1">`MathClass`</ph>, which has a new function named <ph id="ph2">`SquareRoot`</ph>, as shown in the following code:</source>
+          <target state="translated">Предположим, добавьте ссылку на сборку, содержащую класс с именем <ph id="ph1">`MathClass`</ph>, который имеет новую функцию с именем <ph id="ph2">`SquareRoot`</ph>, как показано в следующем коде:</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#53<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#53;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Your application could use text box controls to control which method will be called and its arguments.</source>
+          <target state="translated">Приложение может использовать текстовые поля для элемента управления, какой метод будет вызван и ее аргументов.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example, if <ph id="ph1">`TextBox1`</ph> contains the expression to be evaluated, and <ph id="ph2">`TextBox2`</ph> is used to enter the name of the function, you can use the following code to invoke the <ph id="ph3">`SquareRoot`</ph> function on the expression in <ph id="ph4">`TextBox1`</ph>:</source>
+          <target state="translated">Например если <ph id="ph1">`TextBox1`</ph> содержит выражение для вычисления, и <ph id="ph2">`TextBox2`</ph> — используется для ввода имени функции, можно использовать следующий код для вызова <ph id="ph3">`SquareRoot`</ph> выражения в <ph id="ph4">`TextBox1`</ph>:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#54<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#54;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If you enter "64" in <ph id="ph1">`TextBox1`</ph>, "SquareRoot" in <ph id="ph2">`TextBox2`</ph>, and then call the <ph id="ph3">`CallMath`</ph> procedure, the square root of the number in <ph id="ph4">`TextBox1`</ph> is evaluated.</source>
+          <target state="translated">Если ввести «64» в <ph id="ph1">`TextBox1`</ph>, «SquareRoot» в <ph id="ph2">`TextBox2`</ph>и затем вызвать <ph id="ph3">`CallMath`</ph> процедура, квадратный корень числа в <ph id="ph4">`TextBox1`</ph> вычисляется.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The code in the example invokes the <ph id="ph1">`SquareRoot`</ph> function (which takes a string that contains the expression to be evaluated as a required argument) and returns "8" in <ph id="ph2">`TextBox1`</ph> (the square root of 64).</source>
+          <target state="translated">Код в примере вызывает <ph id="ph1">`SquareRoot`</ph> функции (которая принимает строку, содержащую выражение, проверяемое как обязательный аргумент) и возвращает «8» в <ph id="ph2">`TextBox1`</ph> (квадратный корень из 64).</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Of course, if the user enters an invalid string in <ph id="ph1">`TextBox2`</ph>, if the string contains the name of a property instead of a method, or if the method had an additional required argument, a run-time error occurs.</source>
+          <target state="translated">Конечно, если пользователь введет недопустимую строку в <ph id="ph1">`TextBox2`</ph>, если строка содержит имя свойства вместо метода или если метод имеет дополнительный аргумент, то во время выполнения возникает ошибка.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You have to add robust error-handling code when you use <ph id="ph1">`CallByName`</ph> to anticipate these or any other errors.</source>
+          <target state="translated">Необходимо добавить надлежащий код обработки ошибок при использовании <ph id="ph1">`CallByName`</ph> чтобы реагировать на эти или другие ошибки.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>While the <ph id="ph1">`CallByName`</ph> function may be useful in some cases, you must weigh its usefulness against the performance implications — using <ph id="ph2">`CallByName`</ph> to invoke a procedure is slightly slower than a late-bound call.</source>
+          <target state="translated">Хотя <ph id="ph1">`CallByName`</ph> функция может быть полезной в некоторых случаях, необходимо учитывать ее влияние на производительность — использование <ph id="ph2">`CallByName`</ph> для вызова процедуры немного медленнее, чем вызов с поздним связыванием.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If you are invoking a function that is called repeatedly, such as inside a loop, <ph id="ph1">`CallByName`</ph> can have a severe effect on performance.</source>
+          <target state="translated">Если вы вызываете функцию, которая вызывается несколько раз, например в цикле, <ph id="ph1">`CallByName`</ph> может иметь существенно повлиять на производительность.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.Interaction.CallByName%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.Interaction.CallByName%2A&gt;&lt;/xref:Microsoft.VisualBasic.Interaction.CallByName%2A&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Determining Object Type<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Определение типа объекта<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
