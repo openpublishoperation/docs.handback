@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d1e957536f35b81a9672994c9d4d261afb764ea</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\developing-apps\customizing-extending-my\extending-the-my-namespace.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">649fe56dd8b393d472156899046fb1d3466cbda7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cf506f6a1afa29ad0c10c1dcf922a60d98dc5bf3</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_extending-the-my-namespace.bc1920c12a4f345fc66cad3888a0778ecc83888b.pt-br is different with handoff file name: extending-the-my-namespace.bc1920c12a4f345fc66cad3888a0778ecc83888b.pt-br.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Extending the My Namespace in Visual Basic | Microsoft Docs</source>
+          <target state="translated">Estendendo o My Namespace no Visual Basic | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Extending the My Namespace in Visual Basic</source>
+          <target state="translated">Estendendo o namespace My no Visual Basic</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`My`</ph> namespace in Visual Basic exposes properties and methods that enable you to easily take advantage of the power of the .NET Framework.</source>
+          <target state="translated">O <ph id="ph1">`My`</ph> namespace em Visual Basic expõe propriedades e métodos que permitem que você facilmente aproveite o poder do .NET Framework.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`My`</ph> namespace simplifies common programming problems, often reducing a difficult task to a single line of code.</source>
+          <target state="translated">O <ph id="ph1">`My`</ph> namespace simplifica problemas comuns de programação, reduzindo frequentemente uma tarefa difícil para uma única linha de código.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Additionally, the <ph id="ph1">`My`</ph> namespace is fully extensible so that you can customize the behavior of <ph id="ph2">`My`</ph> and add new services to its hierarchy to adapt to specific application needs.</source>
+          <target state="translated">Além disso, o <ph id="ph1">`My`</ph> namespace é totalmente extensível para que você pode personalizar o comportamento de <ph id="ph2">`My`</ph> e adicionar novos serviços para sua hierarquia para adaptar-se às necessidades de aplicativos específicos.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This topic discusses both how to customize existing members of the <ph id="ph1">`My`</ph> namespace and how to add your own custom classes to the <ph id="ph2">`My`</ph> namespace.</source>
+          <target state="translated">Este tópico aborda como personalizar membros existentes do <ph id="ph1">`My`</ph> namespace e como adicionar suas próprias classes personalizadas para o <ph id="ph2">`My`</ph> namespace.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Topic Contents<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Conteúdo do tópico<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Customizing Existing My Namespace Members<ept id="p1">](#customizing)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Personalizando meu Namespace membros existentes<ept id="p1">](#customizing)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding Members to My Objects<ept id="p1">](#addingtoobjects)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Adicionando membros a meus objetos<ept id="p1">](#addingtoobjects)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding Custom Objects to the My Namespace<ept id="p1">](#addingcustom)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Adicionando objetos personalizados para o My Namespace<ept id="p1">](#addingcustom)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding Members to the My Namespace<ept id="p1">](#addingtonamespace)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Adicionando membros para o My Namespace<ept id="p1">](#addingtonamespace)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Adding Events to Custom My Objects<ept id="p1">](#addingevents)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Adicionando eventos a objetos My personalizados<ept id="p1">](#addingevents)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Design Guidelines<ept id="p1">](#design)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Diretrizes de design<ept id="p1">](#design)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Designing Class Libraries for My<ept id="p1">](#designing)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Criando bibliotecas de classes para meu<ept id="p1">](#designing)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Packaging and Deploying Extensions<ept id="p1">](#packaging)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Empacotando e implantando extensões<ept id="p1">](#packaging)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="customizing"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Customizing Existing My Namespace Members</source>
+          <target state="translated"><bpt id="p1">&lt;a name="customizing"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Personalizando meu Namespace membros existentes</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`My`</ph> namespace in Visual Basic exposes frequently used information about your application, your computer, and more.</source>
+          <target state="translated">O <ph id="ph1">`My`</ph> namespace em Visual Basic expõe informações sobre seu aplicativo, seu computador e mais usados com frequência.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For a complete list of the objects in the <ph id="ph1">`My`</ph> namespace, see <bpt id="p1">[</bpt>My Reference<ept id="p1">](../../../visual-basic/language-reference/keywords/my-reference.md)</ept>.</source>
+          <target state="translated">Para obter uma lista completa dos objetos no <ph id="ph1">`My`</ph> namespace, consulte <bpt id="p1">[</bpt>referência My<ept id="p1">](../../../visual-basic/language-reference/keywords/my-reference.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You may have to customize existing members of the <ph id="ph1">`My`</ph> namespace so that they better match the needs of your application.</source>
+          <target state="translated">Talvez você precise personalizar membros existentes do <ph id="ph1">`My`</ph> namespace para que eles melhor atender às necessidades do seu aplicativo.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Any property of an object in the <ph id="ph1">`My`</ph> namespace that is not read-only can be set to a custom value.</source>
+          <target state="translated">Qualquer propriedade de um objeto de <ph id="ph1">`My`</ph> namespace que não é somente leitura pode ser definida como um valor personalizado.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example, assume that you frequently use the <ph id="ph1">`My.User`</ph> object to access the current security context for the user running your application.</source>
+          <target state="translated">Por exemplo, suponha que você frequentemente use o <ph id="ph1">`My.User`</ph> objeto para acessar o contexto de segurança atual para o usuário executar o aplicativo.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, your company uses a custom user object to expose additional information and capabilities for users within the company.</source>
+          <target state="translated">No entanto, sua empresa usa um objeto de usuário personalizado para expor informações adicionais e recursos para usuários dentro da empresa.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>In this scenario, you can replace the default value of the <ph id="ph1">`My.User.CurrentPrincipal`</ph> property with an instance of your own custom principal object, as shown in the following example.</source>
+          <target state="translated">Nesse cenário, você pode substituir o valor padrão de <ph id="ph1">`My.User.CurrentPrincipal`</ph> propriedade com uma instância do seu próprio objeto principal personalizado, como mostrado no exemplo a seguir.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#1<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;1;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Setting the <ph id="ph1">`CurrentPrincipal`</ph> property on the <ph id="ph2">`My.User`</ph> object changes the identity under which the application runs.</source>
+          <target state="translated">Definindo o <ph id="ph1">`CurrentPrincipal`</ph> propriedade o <ph id="ph2">`My.User`</ph> objeto altera a identidade sob a qual o aplicativo é executado.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`My.User`</ph> object, in turn, returns information about the newly specified user.</source>
+          <target state="translated">O <ph id="ph1">`My.User`</ph> objeto, por sua vez, retorna informações sobre o usuário recém-especificado.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="addingtoobjects"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Adding Members to My Objects</source>
+          <target state="translated"><bpt id="p1">&lt;a name="addingtoobjects"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Adicionando membros a meus objetos</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The types returned from <ph id="ph1">`My.Application`</ph> and <ph id="ph2">`My.Computer`</ph> are defined as <ph id="ph3">`Partial`</ph> classes.</source>
+          <target state="translated">Os tipos retornados de <ph id="ph1">`My.Application`</ph> e <ph id="ph2">`My.Computer`</ph> são definidos como <ph id="ph3">`Partial`</ph> classes.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Therefore, you can extend the <ph id="ph1">`My.Application`</ph> and <ph id="ph2">`My.Computer`</ph> objects by creating a <ph id="ph3">`Partial`</ph> class named <ph id="ph4">`MyApplication`</ph> or <ph id="ph5">`MyComputer`</ph>.</source>
+          <target state="translated">Portanto, você pode estender o <ph id="ph1">`My.Application`</ph> e <ph id="ph2">`My.Computer`</ph> objetos criando uma <ph id="ph3">`Partial`</ph> classe denominada <ph id="ph4">`MyApplication`</ph> ou <ph id="ph5">`MyComputer`</ph>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The class cannot be a <ph id="ph1">`Private`</ph> class.</source>
+          <target state="translated">A classe não pode ser um <ph id="ph1">`Private`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you specify the class as part of the <ph id="ph1">`My`</ph> namespace, you can add properties and methods that will be included with the <ph id="ph2">`My.Application`</ph> or <ph id="ph3">`My.Computer`</ph> objects.</source>
+          <target state="translated">Se você especificar a classe como parte do <ph id="ph1">`My`</ph> namespace, você pode adicionar propriedades e métodos que serão incluídos com o <ph id="ph2">`My.Application`</ph> ou <ph id="ph3">`My.Computer`</ph> objetos.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For example, the following example adds a property named <ph id="ph1">`DnsServerIPAddresses`</ph> to the <ph id="ph2">`My.Computer`</ph> object.</source>
+          <target state="translated">Por exemplo, o exemplo a seguir adiciona uma propriedade chamada <ph id="ph1">`DnsServerIPAddresses`</ph> para o <ph id="ph2">`My.Computer`</ph> objeto.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#2<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;2;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="addingcustom"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Adding Custom Objects to the My Namespace</source>
+          <target state="translated"><bpt id="p1">&lt;a name="addingcustom"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Adicionando objetos personalizados para o My Namespace</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Although the <ph id="ph1">`My`</ph> namespace provides solutions for many common programming tasks, you may encounter tasks that the <ph id="ph2">`My`</ph> namespace does not address.</source>
+          <target state="translated">Embora o <ph id="ph1">`My`</ph> namespace fornece soluções para várias tarefas comuns de programação, você poderá encontrar tarefas que o <ph id="ph2">`My`</ph> namespace não aborda.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, your application might access custom directory services for user data, or your application might use assemblies that are not installed by default with Visual Basic.</source>
+          <target state="translated">Por exemplo, seu aplicativo pode acessar serviços de diretório personalizados para dados de usuário, ou seu aplicativo pode usar assemblies que não são instalados por padrão com o Visual Basic.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You can extend the <ph id="ph1">`My`</ph> namespace to include custom solutions to common tasks that are specific to your environment.</source>
+          <target state="translated">Você pode estender o <ph id="ph1">`My`</ph> namespace para incluir soluções personalizadas para tarefas comuns que são específicas para seu ambiente.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`My`</ph> namespace can easily be extended to add new members to meet growing application needs.</source>
+          <target state="translated">O <ph id="ph1">`My`</ph> namespace pode ser estendido facilmente para adicionar novos membros para atender às crescentes necessidades do aplicativo.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Additionally, you can deploy your <ph id="ph1">`My`</ph> namespace extensions to other developers as a Visual Basic template.</source>
+          <target state="translated">Além disso, você pode implantar seu <ph id="ph1">`My`</ph> extensões do namespace para outros desenvolvedores como um modelo Visual Basic.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="addingtonamespace"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Adding Members to the My Namespace</source>
+          <target state="translated"><bpt id="p1">&lt;a name="addingtonamespace"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Adicionando membros para o My Namespace</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`My`</ph> is a namespace like any other namespace, you can add top-level properties to it by just adding a module and specifying a <ph id="ph2">`Namespace`</ph> of <ph id="ph3">`My`</ph>.</source>
+          <target state="translated">Porque <ph id="ph1">`My`</ph> é um namespace como qualquer outro namespace, você pode adicionar propriedades de nível superior para ele, simplesmente adicionando um módulo e especificando um <ph id="ph2">`Namespace`</ph> de <ph id="ph3">`My`</ph>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Annotate the module with the <ph id="ph1">`HideModuleName`</ph> attribute as shown in the following example.</source>
+          <target state="translated">Anote o módulo com o <ph id="ph1">`HideModuleName`</ph> atributo conforme mostrado no exemplo a seguir.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`HideModuleName`</ph> attribute ensures that IntelliSense will not display the module name when it displays the members of the <ph id="ph2">`My`</ph> namespace.</source>
+          <target state="translated">O <ph id="ph1">`HideModuleName`</ph> atributo assegura que o IntelliSense não exibirá o nome do módulo quando ele exibe os membros de <ph id="ph2">`My`</ph> namespace.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#3<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;3;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>To add members to the <ph id="ph1">`My`</ph> namespace, add properties as needed to the module.</source>
+          <target state="translated">Para adicionar membros a <ph id="ph1">`My`</ph> namespace, adicione propriedades conforme necessário para o módulo.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For each property added to the <ph id="ph1">`My`</ph> namespace, add a private field of type <ph id="ph2">`ThreadSafeObjectProvider(Of T)`</ph>, where the type is the type returned by your custom property.</source>
+          <target state="translated">Para cada propriedade adicionada para o <ph id="ph1">`My`</ph> namespace, adicione um campo particular do tipo <ph id="ph2">`ThreadSafeObjectProvider(Of T)`</ph>, onde o tipo é o tipo retornado pela sua propriedade personalizada.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This field is used to create thread-safe object instances to be returned by the property by calling the <ph id="ph1">`GetInstance`</ph> method.</source>
+          <target state="translated">Esse campo é usado para criar instâncias de objeto de thread de segurança a ser retornado pela propriedade chamando o <ph id="ph1">`GetInstance`</ph> método.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>As a result, each thread that is accessing the extended property receives its own instance of the returned type.</source>
+          <target state="translated">Como resultado, cada thread que está acessando a propriedade estendida recebe sua própria instância do tipo retornado.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following example adds a property named <ph id="ph1">`SampleExtension`</ph> that is of type <ph id="ph2">`SampleExtension`</ph> to the <ph id="ph3">`My`</ph> namespace:</source>
+          <target state="translated">O exemplo a seguir adiciona uma propriedade chamada <ph id="ph1">`SampleExtension`</ph> que é do tipo <ph id="ph2">`SampleExtension`</ph> para o <ph id="ph3">`My`</ph> namespace:</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#4<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;4;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="addingevents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Adding Events to Custom My Objects</source>
+          <target state="translated"><bpt id="p1">&lt;a name="addingevents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Adicionando eventos a objetos My personalizados</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">`My.Application`</ph> object to expose events for your custom <ph id="ph2">`My`</ph> objects by extending the <ph id="ph3">`MyApplication`</ph> partial class in the <ph id="ph4">`My`</ph> namespace.</source>
+          <target state="translated">Você pode usar o <ph id="ph1">`My.Application`</ph> objeto para expor os eventos para seu personalizado <ph id="ph2">`My`</ph> objetos estendendo o <ph id="ph3">`MyApplication`</ph> classe parcial no <ph id="ph4">`My`</ph> namespace.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For Windows-based projects, you can double-click the <bpt id="p1">**</bpt>My Project<ept id="p1">**</ept> node in for your project in <bpt id="p2">**</bpt>Solution Explorer<ept id="p2">**</ept>.</source>
+          <target state="translated">Para projetos baseados em Windows, você pode clicar duas vezes o <bpt id="p1">**</bpt>meu projeto<ept id="p1">**</ept> nó em seu projeto no <bpt id="p2">**</bpt>Solution Explorer<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the Visual Basic <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, click the <ph id="ph1">`Application`</ph> tab and then click the <ph id="ph2">`View Application Events`</ph> button.</source>
+          <target state="translated">No Visual Basic <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, clique o <ph id="ph1">`Application`</ph> guia e, em seguida, clique no <ph id="ph2">`View Application Events`</ph> botão.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>A new file that is named ApplicationEvents.vb will be created.</source>
+          <target state="translated">Será criado um novo arquivo chamado Project.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>It contains the following code for extending the <ph id="ph1">`MyApplication`</ph> class.</source>
+          <target state="translated">Ele contém o seguinte código para estender a <ph id="ph1">`MyApplication`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#5<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;5;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>You can add event handlers for your custom <ph id="ph1">`My`</ph> objects by adding custom event handlers to the <ph id="ph2">`MyApplication`</ph> class.</source>
+          <target state="translated">Você pode adicionar manipuladores de eventos para seu personalizado <ph id="ph1">`My`</ph> objetos, adicionando manipuladores de eventos personalizados para o <ph id="ph2">`MyApplication`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Custom events enable you to add code that will execute when an event handler is added, removed, or the event is raised.</source>
+          <target state="translated">Eventos personalizados permitem que você adicione o código que será executado quando um manipulador de eventos é adicionado, removido, ou o evento é gerado.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Note that the <ph id="ph1">`AddHandler`</ph> code for a custom event runs only if code is added by a user to handle the event.</source>
+          <target state="translated">Observe que o <ph id="ph1">`AddHandler`</ph> de código para um evento personalizado é executado somente se o código é adicionado por um usuário para manipular o evento.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For example, consider that the <ph id="ph1">`SampleExtension`</ph> object from the previous section has a <ph id="ph2">`Load`</ph> event that you want to add a custom event handler for.</source>
+          <target state="translated">Por exemplo, considere que o <ph id="ph1">`SampleExtension`</ph> objeto da seção anterior tem um <ph id="ph2">`Load`</ph> evento que você deseja adicionar um manipulador de eventos personalizado.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The following code example shows a custom event handler named <ph id="ph1">`SampleExtensionLoad`</ph> that will be invoked when the <ph id="ph2">`My.SampleExtension.Load`</ph> event occurs.</source>
+          <target state="translated">O exemplo de código a seguir mostra um manipulador de eventos personalizado chamado <ph id="ph1">`SampleExtensionLoad`</ph> que será chamado quando o <ph id="ph2">`My.SampleExtension.Load`</ph> evento ocorre.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>When code is added to handle the new <ph id="ph1">`My.SampleExtensionLoad`</ph> event, the <ph id="ph2">`AddHandler`</ph> part of this custom event code is executed.</source>
+          <target state="translated">Quando o código é adicionado ao lidar com o novo <ph id="ph1">`My.SampleExtensionLoad`</ph> evento, o <ph id="ph2">`AddHandler`</ph> parte desse código de evento personalizado é executado.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`MyApplication_SampleExtensionLoad`</ph> method is included in the code example to show an example of an event handler that handles the <ph id="ph2">`My.SampleExtensionLoad`</ph> event.</source>
+          <target state="translated">O <ph id="ph1">`MyApplication_SampleExtensionLoad`</ph> método estiver incluído no exemplo de código para mostrar um exemplo de um manipulador de eventos que trata o <ph id="ph2">`My.SampleExtensionLoad`</ph> evento.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Note that the <ph id="ph1">`SampleExtensionLoad`</ph> event will be available when you select the <bpt id="p1">**</bpt>My Application Events<ept id="p1">**</ept> option in the left drop-down list above the Code Editor when you are editing the ApplicationEvents.vb file.</source>
+          <target state="translated">Observe que o <ph id="ph1">`SampleExtensionLoad`</ph> eventos estarão disponíveis quando você seleciona o <bpt id="p1">**</bpt>Meus eventos<ept id="p1">**</ept> opção na lista suspensa à esquerda acima do Editor de código quando você estiver editando o arquivo Project.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy#6<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnExtendingMy n º&amp;6;<ept id="p2">](../../../visual-basic/developing-apps/customizing-extending-my/codesnippet/VisualBasic/extending-the-my-namespace_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="design"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Design Guidelines</source>
+          <target state="translated"><bpt id="p1">&lt;a name="design"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Diretrizes de design</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>When you develop extensions to the <ph id="ph1">`My`</ph> namespace, use the following guidelines to help minimize the maintenance costs of your extension components.</source>
+          <target state="translated">Ao desenvolver extensões para o <ph id="ph1">`My`</ph> namespace, use as seguintes diretrizes para ajudar a minimizar os custos de manutenção de seus componentes de extensão.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Include only the extension logic.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Inclua somente a extensão lógica.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The logic included in the <ph id="ph1">`My`</ph> namespace extension should include only the code that is needed to expose the required functionality in the <ph id="ph2">`My`</ph> namespace.</source>
+          <target state="translated">A lógica incluída no <ph id="ph1">`My`</ph> extensão do namespace deve incluir somente o código que é necessário para expor a funcionalidade necessária no <ph id="ph2">`My`</ph> namespace.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Because your extension will reside in user projects as source code, updating the extension component incurs a high maintenance cost and should be avoided if possible.</source>
+          <target state="translated">Porque sua extensão será residente em projetos de usuário como código-fonte, atualizar o componente de extensão provoca um custo alto de manutenção e deve ser evitado se possível.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Minimize project assumptions.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Minimize as suposições do projeto.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When you create your extensions of the <ph id="ph1">`My`</ph> namespace, do not assume a set of references, project-level imports, or specific compiler settings (for example, <ph id="ph2">`Option Strict`</ph> off).</source>
+          <target state="translated">Quando você cria suas extensões do <ph id="ph1">`My`</ph> namespace, não pressuponha que um conjunto de referências, importações no nível do projeto ou configurações específicas do compilador (por exemplo, <ph id="ph2">`Option Strict`</ph> off).</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Instead, minimize dependencies and fully qualify all type references by using the <ph id="ph1">`Global`</ph> keyword.</source>
+          <target state="translated">Em vez disso, minimize as dependências e qualifique totalmente todas as referências de tipo usando o <ph id="ph1">`Global`</ph> palavra-chave.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Also, ensure that the extension compiles with <ph id="ph1">`Option Strict`</ph> on to minimize errors in the extension.</source>
+          <target state="translated">Além disso, certifique-se de que a extensão compila com <ph id="ph1">`Option Strict`</ph> em minimizar os erros na extensão.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Isolate the extension code.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Isole o código de extensão.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Placing the code in a single file makes your extension easily deployable as a Visual Studio item template.</source>
+          <target state="translated">Colocando o código em um único arquivo torna a extensão mais facilmente implantáveis como um modelo de item do Visual Studio.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For more information, see "Packaging and Deploying Extensions" later in this topic.</source>
+          <target state="translated">Para obter mais informações, consulte "Empacotamento e implantação de extensões" posteriormente neste tópico.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Placing all the <ph id="ph1">`My`</ph> namespace extension code in a single file or a separate folder in a project will also help users locate the <ph id="ph2">`My`</ph> namespace extension.</source>
+          <target state="translated">Colocando todo o <ph id="ph1">`My`</ph> código de extensão do namespace em um único arquivo ou uma pasta separada em um projeto também ajudará os usuários a localizar o <ph id="ph2">`My`</ph> extensão do namespace.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="designing"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Designing Class Libraries for My</source>
+          <target state="translated"><bpt id="p1">&lt;a name="designing"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Criando bibliotecas de classes para meu</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>As is the case with most object models, some design patterns work well in the <ph id="ph1">`My`</ph> namespace and others do not.</source>
+          <target state="translated">Como é o caso com a maioria dos modelos de objeto, alguns padrões de design funcionam bem no <ph id="ph1">`My`</ph> namespace e outros não.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>When designing an extension to the <ph id="ph1">`My`</ph> namespace, consider the following principles:</source>
+          <target state="translated">Ao projetar uma extensão para o <ph id="ph1">`My`</ph> namespace, considere os seguintes princípios:</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Stateless methods.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Métodos sem monitoração de estado.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Methods in the <ph id="ph1">`My`</ph> namespace should provide a complete solution to a specific task.</source>
+          <target state="translated">Métodos de <ph id="ph1">`My`</ph> namespace deve fornecer uma solução completa para uma tarefa específica.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Ensure that the parameter values that are passed to the method provide all the input required to complete the particular task.</source>
+          <target state="translated">Certifique-se de que os valores de parâmetro que são passados para o método fornecem todas as entradas necessárias para concluir uma tarefa específica.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Avoid creating methods that rely on prior state, such as open connections to resources.</source>
+          <target state="translated">Evite a criação de métodos que se baseiam no estado anterior, como conexões abertas para recursos.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Global instances.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Instâncias globais.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The only state that is maintained in the <ph id="ph1">`My`</ph> namespace is global to the project.</source>
+          <target state="translated">O único estado que é mantido no <ph id="ph1">`My`</ph> namespace é global para o projeto.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`My.Application.Info`</ph> encapsulates state that is shared throughout the application.</source>
+          <target state="translated">Por exemplo, <ph id="ph1">`My.Application.Info`</ph> encapsula o estado que é compartilhado por todo o aplicativo.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Simple parameter types.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Tipos de parâmetro simples.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Keep things simple by avoiding complex parameter types.</source>
+          <target state="translated">Manter as coisas simples, evitando tipos complexos de parâmetro.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Instead, create methods that either take no parameter input or that take simple input types such as strings, primitive types, and so on.</source>
+          <target state="translated">Em vez disso, crie métodos que não tomem nenhum parâmetro de entrada ou que levam tipos simples de entrada como cadeias de caracteres, tipos primitivos e assim por diante.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Factory methods.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Métodos de fábrica.<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Some types are necessarily difficult to instantiate.</source>
+          <target state="translated">Alguns tipos são necessariamente difíceis de instanciar.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Providing factory methods as extensions to the <ph id="ph1">`My`</ph> namespace enables you to more easily discover and consume types that fall into this category.</source>
+          <target state="translated">Fornecer métodos de fábrica como extensões para o <ph id="ph1">`My`</ph> namespace permite que você descubra mais facilmente e consuma tipos que se enquadram nesta categoria.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>An example of a factory method that works well is <ph id="ph1">`My.Computer.FileSystem.OpenTextFileReader`</ph>.</source>
+          <target state="translated">Um exemplo de um método de fábrica que funciona bem é <ph id="ph1">`My.Computer.FileSystem.OpenTextFileReader`</ph>.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>There are several stream types available in the .NET Framework.</source>
+          <target state="translated">Há vários tipos de fluxo disponíveis no .NET Framework.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>By specifying text files specifically, the <ph id="ph1">`OpenTextFileReader`</ph> helps the user understand which stream to use.</source>
+          <target state="translated">Especificando arquivos de texto especificamente, o <ph id="ph1">`OpenTextFileReader`</ph> ajuda o usuário a entender o fluxo a ser usado.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>These guidelines do not preclude general design principles for class libraries.</source>
+          <target state="translated">Essas diretrizes não eliminam princípios gerais de design para bibliotecas de classes.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Rather, they are recommendations that are optimized for developers who are using Visual Basic and the <ph id="ph1">`My`</ph> namespace.</source>
+          <target state="translated">Em vez disso, eles são recomendações que são otimizadas para os desenvolvedores que estão usando o Visual Basic e o <ph id="ph1">`My`</ph> namespace.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>For general design principles for creating class libraries, see <bpt id="p1">[</bpt>Framework Design Guidelines<ept id="p1">](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)</ept>.</source>
+          <target state="translated">Para princípios gerais de design para criar bibliotecas de classes, consulte <bpt id="p1">[</bpt>as diretrizes de Design do Framework<ept id="p1">](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)</ept>.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="packaging"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Packaging and Deploying Extensions</source>
+          <target state="translated"><bpt id="p1">&lt;a name="packaging"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Empacotando e implantando extensões</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>You can include <ph id="ph1">`My`</ph> namespace extensions in a Visual Studio project template, or you can package your extensions and deploy them as a Visual Studio item template.</source>
+          <target state="translated">Você pode incluir <ph id="ph1">`My`</ph> extensões do namespace em um modelo de projeto do Visual Studio, ou podem compactar as extensões e implantá-los como um modelo de item do Visual Studio.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>When you package your <ph id="ph1">`My`</ph> namespace extensions as a Visual Studio item template, you can take advantage of additional capabilities provided by Visual Basic.</source>
+          <target state="translated">Quando você compacta sua <ph id="ph1">`My`</ph> extensões do namespace como um modelo de item do Visual Studio, você pode tirar proveito dos recursos adicionais fornecidos pelo Visual Basic.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>These capabilities enable you to include an extension when a project references a particular assembly, or enable users to explicitly add your <ph id="ph1">`My`</ph> namespace extension by using the <bpt id="p1">**</bpt>My Extensions<ept id="p1">**</ept> page of the Visual Basic Project Designer.</source>
+          <target state="translated">Esses recursos permitem que você incluía uma extensão quando um projeto referencia um assembly específico, ou habilita usuários adicionar explicitamente o <ph id="ph1">`My`</ph> extensão do namespace usando o <bpt id="p1">**</bpt>extensões My<ept id="p1">**</ept> página do Designer de projeto do Visual Basic.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>For details about how to deploy <ph id="ph1">`My`</ph> namespace extensions, see <bpt id="p1">[</bpt>Packaging and Deploying Custom My Extensions<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)</ept>.</source>
+          <target state="translated">Para obter detalhes sobre como implantar <ph id="ph1">`My`</ph> extensões do namespace, consulte <bpt id="p1">[</bpt>empacotamento e implantação de extensões My Custom<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Packaging and Deploying Custom My Extensions<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Empacotando e implantando Minhas Extensões personalizadas<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Extending the Visual Basic Application Model<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Estendendo o modelo de aplicativo do Visual Basic<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Customizing Which Objects are Available in My<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Personalizando quais objetos estão disponíveis em meu<ept id="p1">](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>My Extensions Page, Project Designer<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Página Minhas extensões, Designer de projeto<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/my-extensions-page-project-designer-visual-basic)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Application Page, Project Designer (Visual Basic)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Página de Aplicativo, Designer de Projeto (Visual Basic)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Partial<ept id="p1">](../../../visual-basic/language-reference/modifiers/partial.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Parcial<ept id="p1">](../../../visual-basic/language-reference/modifiers/partial.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
