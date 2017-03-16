@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dce1adb5b918674bc8ee8fc48c8ff5b3c3814a88</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\join-operations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aacae65f460c5fcf6af648967eb97e6964527b65</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">99218bf64ecf0884bff96b6a6117938175c18a43</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_join-operations.6b52c98ff332d870eb29d302bcb5ee846263a99d.zh-cn is different with handoff file name: join-operations.6b52c98ff332d870eb29d302bcb5ee846263a99d.zh-cn.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Join Operations (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">联接操作 (Visual Basic 中) |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Join Operations (Visual Basic)</source>
+          <target state="translated">联接操作 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>join<ept id="p1">*</ept> of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.</source>
+          <target state="translated">一个<bpt id="p1">*</bpt>联接<ept id="p1">*</ept>两个数据源就是一个数据源中的对象具有共享一个公共属性，另一个数据源中的对象相关联。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Joining is an important operation in queries that target data sources whose relationships to each other cannot be followed directly.</source>
+          <target state="translated">当查询所面向的数据源相互之间具有无法直接领会的关系时，联接就成为一项重要的运算。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In object-oriented programming, this could mean a correlation between objects that is not modeled, such as the backwards direction of a one-way relationship.</source>
+          <target state="translated">在面向对象的编程中，这可能意味着在未建模对象之间进行关联，例如对单向关系进行反向推理。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An example of a one-way relationship is a Customer class that has a property of type City, but the City class does not have a property that is a collection of Customer objects.</source>
+          <target state="translated">下面是单向关系的一个示例：Customer 类有一个类型为 City 的属性，但 City 类没有作为 Customer 对象集合的属性。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>If you have a list of City objects and you want to find all the customers in each city, you could use a join operation to find them.</source>
+          <target state="translated">如果你具有一个 City 对象列表，并且要查找每个城市中的所有客户，则可以使用联接运算完成此项查找。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The join methods provided in the LINQ framework are &lt;xref:System.Linq.Enumerable.Join%2A&gt; and &lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt;.</source>
+          <target state="translated">LINQ 框架中提供的联接方法有&lt;xref:System.Linq.Enumerable.Join%2A&gt;和&lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt;。&lt;/xref:System.Linq.Enumerable.GroupJoin%2A&gt; &lt;/xref:System.Linq.Enumerable.Join%2A&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>These methods perform equijoins, or joins that match two data sources based on equality of their keys.</source>
+          <target state="translated">这些方法执行同等联接，即来匹配基于的键相等对两个数据源的联接。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>(For comparison, Transact-SQL supports join operators other than 'equals', for example the 'less than' operator.) In relational database terms, &lt;xref:System.Linq.Enumerable.Join%2A&gt; implements an inner join, a type of join in which only those objects that have a match in the other data set are returned.</source>
+          <target state="translated">（与此相较，Transact-SQL 支持除“等于”之外的联接运算符，例如“小于”运算符。）在关系数据库术语&lt;xref:System.Linq.Enumerable.Join%2A&gt;实现内部联接中，一种联接类型仅在另一个数据集中具有匹配项的那些对象返回。&lt;/xref:System.Linq.Enumerable.Join%2A&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt; method has no direct equivalent in relational database terms, but it implements a superset of inner joins and left outer joins.</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt;方法在关系数据库术语中，有没有直接等效项，但它实现了内部联接和左外部联接的超集。&lt;/xref:System.Linq.Enumerable.GroupJoin%2A&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A left outer join is a join that returns each element of the first (left) data source, even if it has no correlated elements in the other data source.</source>
+          <target state="translated">左外部联接是一种联接，返回第一个 （左） 数据源，每个元素，即使它具有其他数据源中没有关联的元素。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following illustration shows a conceptual view of two sets and the elements within those sets that are included in either an inner join or a left outer join.</source>
+          <target state="translated">下图显示了一个概念性视图，其中包含两个集合以及这两个集合中的包含在内部联接或左外部联接中的元素。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Two overlapping circles showing inner&amp;#47;outer.<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "</bpt>JoinCircles<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>显示内部/外部的两个重叠圆圈。<ept id="p1">]</ept> <bpt id="p2">(../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "</bpt>JoinCircles<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Methods</source>
+          <target state="translated">方法</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Method Name</source>
+          <target state="translated">方法名</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Visual Basic Query Expression Syntax</source>
+          <target state="translated">Visual Basic 查询表达式语法</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>More Information</source>
+          <target state="translated">更多信息</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Join</source>
+          <target state="translated">联接</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Joins two sequences based on key selector functions and extracts pairs of values.</source>
+          <target state="translated">根据键选择器函数联接两个序列并提取值对。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>-or-</source>
+          <target state="translated">- 或 -</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Join%2A?displayProperty=fullName&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Join%2A?displayProperty=fullName&gt;&lt;/xref:System.Linq.Enumerable.Join%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Queryable.Join%2A?displayProperty=fullName&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Queryable.Join%2A?displayProperty=fullName&gt;&lt;/xref:System.Linq.Queryable.Join%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>GroupJoin</source>
+          <target state="translated">GroupJoin</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Joins two sequences based on key selector functions and groups the resulting matches for each element.</source>
+          <target state="translated">根据键选择器函数联接两个序列，并对每个元素的结果匹配项进行分组。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=fullName&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=fullName&gt;&lt;/xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=fullName&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=fullName&gt;&lt;/xref:System.Linq.Queryable.GroupJoin%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq&gt;</source>
+          <target state="translated">&lt;xref:System.Linq&gt;&lt;/xref:System.Linq&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Standard Query Operators Overview (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>标准查询运算符概述 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Anonymous Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>匿名类型<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Formulate Joins and Cross-Product Queries<ept id="p1">](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>构建联接和叉积查询<ept id="p1">](http://msdn.microsoft.com/library/d8072ede-0521-4670-9bec-1778ceeb875b)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Join Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/join-clause.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Join 子句<ept id="p1">](../../../../visual-basic/language-reference/queries/join-clause.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>如何︰ 联接不同文件 (LINQ) (Visual Basic 中) 的内容<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>如何︰ 从多个源 (LINQ) (Visual Basic 中) 填充对象集合<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
