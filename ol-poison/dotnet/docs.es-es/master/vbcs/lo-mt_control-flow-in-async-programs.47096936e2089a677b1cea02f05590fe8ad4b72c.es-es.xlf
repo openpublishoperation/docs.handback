@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">15e02fbc023db9ae2f3ee9f40598faa7c9c027a0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\control-flow-in-async-programs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">47eb82f5369b89caf2e6f4c88e9053625fa7905e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">92f3041b31405b2b386c0e3bc9a68023e49ebfc2</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_control-flow-in-async-programs.47096936e2089a677b1cea02f05590fe8ad4b72c.es-es is different with handoff file name: control-flow-in-async-programs.47096936e2089a677b1cea02f05590fe8ad4b72c.es-es.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Control Flow in Async Programs (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Controlar el flujo en programas Async (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Control Flow in Async Programs (Visual Basic)</source>
+          <target state="translated">Flujo de control en programas Async (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can write and maintain asynchronous programs more easily by using the <ph id="ph1">`Async`</ph> and <ph id="ph2">`Await`</ph> keywords.</source>
+          <target state="translated">Puede escribir y mantener más fácilmente programas asincrónicas utilizando la <ph id="ph1">`Async`</ph> y <ph id="ph2">`Await`</ph> palabras clave.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>However, the results might surprise you if you don't understand how your program operates.</source>
+          <target state="translated">Sin embargo, los resultados pueden sorprenderle si no comprende cómo funciona su programa.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This topic traces the flow of control through a simple async program to show you when control moves from one method to another and what information is transferred each time.</source>
+          <target state="translated">Seguimientos de este tema del flujo de control a través de un programa asincrónico simple para mostrar cuando el control se mueve de un método a otra y qué información se transfiere cada vez.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Async`</ph> and <ph id="ph2">`Await`</ph> keywords were introduced in Visual Studio 2012.</source>
+          <target state="translated">Las palabras clave <ph id="ph1">`Async`</ph> y <ph id="ph2">`Await`</ph> se incluyeron en Visual Studio 2012.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In general, you mark methods that contain asynchronous code with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier.</source>
+          <target state="translated">En general, marcar los métodos que contienen código asincrónico con la <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modificador.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In a method that's marked with an async modifier, you can use an <bpt id="p1">[</bpt>Await (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept> operator to specify where the method pauses to wait for a called asynchronous process to complete.</source>
+          <target state="translated">En un método que está marcado con un modificador async, puede usar un <bpt id="p1">[</bpt>Await (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept> (operador) para especificar que el método pausa para esperar un proceso denominado asincrónico completar.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</source>
+          <target state="translated">Para obtener más información, consulte <bpt id="p1">[</bpt>la programación asincrónica con Async y Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following example uses async methods to download the contents of a specified website as a string and to display the length of the string.</source>
+          <target state="translated">En el ejemplo siguiente se utiliza métodos asincrónicos para descargar el contenido de un sitio Web especificado como una cadena y mostrar la longitud de la cadena.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The example contains the following two methods.</source>
+          <target state="translated">El ejemplo contiene los dos métodos siguientes.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`startButton_Click`</ph>, which calls <ph id="ph2">`AccessTheWebAsync`</ph> and displays the result.</source>
+          <target state="translated"><ph id="ph1">`startButton_Click`</ph>, que llama <ph id="ph2">`AccessTheWebAsync`</ph> y muestra el resultado.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AccessTheWebAsync`</ph>, which downloads the contents of a website as a string and returns the length of the string.</source>
+          <target state="translated"><ph id="ph1">`AccessTheWebAsync`</ph>, que descarga el contenido de un sitio Web como una cadena y devuelve la longitud de la cadena.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AccessTheWebAsync`</ph> uses an asynchronous &lt;xref:System.Net.Http.HttpClient&gt; method, &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;, to download the contents.</source>
+          <target state="translated"><ph id="ph1">`AccessTheWebAsync`</ph>usa asincrónico &lt;xref:System.Net.Http.HttpClient&gt;método, &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;, para descargar el contenido.&lt;/xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt; &lt;/xref:System.Net.Http.HttpClient&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Numbered display lines appear at strategic points throughout the program to help you understand how the program runs and to explain what happens at each point that is marked.</source>
+          <target state="translated">Numeran mostrar líneas aparecen en puntos estratégicos en todo el programa para ayudarle a entender cómo se ejecuta el programa y explican lo que ocurre en cada punto marcado.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The display lines are labeled "ONE" through "SIX."</source>
+          <target state="translated">Las líneas de la pantalla se etiquetan "Uno"a "seis."</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The labels represent the order in which the program reaches these lines of code.</source>
+          <target state="translated">Las etiquetas representan el orden en el que el programa llegue a estas líneas de código.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The following code shows an outline of the program.</source>
+          <target state="translated">El código siguiente muestra un esquema del programa.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program.</source>
+          <target state="translated">Cada una de las ubicaciones con la etiqueta "Uno"a "seis," muestra información sobre el estado actual del programa.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The following output is produced.</source>
+          <target state="translated">Se produce el siguiente resultado.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Set Up the Program</source>
+          <target state="translated">Configurar el programa</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can download the code that this topic uses from MSDN, or you can build it yourself.</source>
+          <target state="translated">Puede descargar el código que utiliza en este tema de MSDN o crearla usted mismo.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To run the example, you must have Visual Studio 2012 or newer and  the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Para ejecutar el ejemplo, debe tener Visual Studio 2012 o posterior y .NET Framework 4.5 o posterior, instalado en el equipo.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Download the Program</source>
+          <target state="translated">Descargue el programa</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can download the application for this topic from <bpt id="p1">[</bpt>Async Sample: Control Flow in Async Programs<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255285)</ept>.</source>
+          <target state="translated">Puede descargar la aplicación de este tema de <bpt id="p1">[</bpt>ejemplo Async: flujo de Control en programas Async<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255285)</ept>.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following steps open and run the program.</source>
+          <target state="translated">Los siguientes pasos se abra y ejecuten el programa.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Unzip the downloaded file, and then start Visual Studio.</source>
+          <target state="translated">Descomprima el archivo descargado y, a continuación, inicie Visual Studio.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">En la barra de menús, elija <bpt id="p1">**</bpt>Archivo<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Abrir<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Proyecto o solución<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Navigate to the folder that holds the unzipped sample code, open the solution (.sln) file, and then choose the F5 key to build and run the project.</source>
+          <target state="translated">Navegue hasta la carpeta que contiene el código de ejemplo sin comprimir, abra el archivo de solución (.sln) y, a continuación, elija la tecla F5 para compilar y ejecutar el proyecto.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Build the Program Yourself</source>
+          <target state="translated">Compilar el programa usted mismo</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The following Windows Presentation Foundation (WPF) project contains the code example for this topic.</source>
+          <target state="translated">El siguiente proyecto de Windows Presentation Foundation (WPF) contiene el ejemplo de código de este tema.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>To run the project, perform the following steps:</source>
+          <target state="translated">Para ejecutar el proyecto, realice los pasos siguientes:</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Inicie Visual Studio.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">En la barra de menús, elija <bpt id="p1">**</bpt>Archivo<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Nuevo<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Proyecto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated">Aparece el cuadro de diálogo <bpt id="p1">**</bpt>Nuevo proyecto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed Templates<ept id="p1">**</ept> pane, choose <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>, and then choose <bpt id="p3">**</bpt>WPF Application<ept id="p3">**</ept> from the list of project types.</source>
+          <target state="translated">En el <bpt id="p1">**</bpt>plantillas instaladas<ept id="p1">**</ept> panel, elija <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>y, a continuación, elija <bpt id="p3">**</bpt>aplicación WPF<ept id="p3">**</ept> de la lista de tipos de proyecto.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Enter <ph id="ph1">`AsyncTracer`</ph> as the name of the project, and then choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">Escriba <ph id="ph1">`AsyncTracer`</ph> como el nombre del proyecto y, a continuación, elija la <bpt id="p1">**</bpt>Aceptar<ept id="p1">**</ept> botón.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">El proyecto nuevo aparece en <bpt id="p1">**</bpt>el Explorador de soluciones<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">En el Editor de código de Visual Studio, elija la pestaña <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">Si la ficha no está visible, abra el menú contextual de MainWindow.xaml en <bpt id="p1">**</bpt>el Explorador de soluciones<ept id="p1">**</ept>y, a continuación, elija <bpt id="p2">**</bpt>ver código<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> view of MainWindow.xaml, replace the code with the following code.</source>
+          <target state="translated">En el <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> ver de MainWindow.xaml, reemplace el código por el código siguiente.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>A simple window that contains a text box and a button appears in the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> view of MainWindow.xaml.</source>
+          <target state="translated">Aparece una ventana simple que contiene un cuadro de texto y un botón en la <bpt id="p1">**</bpt>diseño<ept id="p1">**</ept> vista de MainWindow.xaml.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Add a reference for &lt;xref:System.Net.Http&gt;.</source>
+          <target state="translated">Agregue una referencia de &lt;xref:System.Net.Http&gt;.&lt;/xref:System.Net.Http&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">En <bpt id="p1">**</bpt>el Explorador de soluciones<ept id="p1">**</ept>, abra el menú contextual para MainWindow.xaml.vb y, a continuación, elija <bpt id="p2">**</bpt>ver código<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In MainWindow.xaml.vb , replace the code with the following code.</source>
+          <target state="translated">En MainWindow.xaml.vb, reemplace el código con el código siguiente.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Presione la tecla F5 para ejecutar el programa y elija el botón <bpt id="p1">**</bpt>Inicio<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The following output should appear.</source>
+          <target state="translated">Debe aparecer los siguientes resultados.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Trace the Program</source>
+          <target state="translated">El programa de seguimiento</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Steps ONE and TWO</source>
+          <target state="translated">Pasos UNO y DOS</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The first two display lines trace the path as <ph id="ph1">`startButton_Click`</ph> calls <ph id="ph2">`AccessTheWebAsync`</ph>, and <ph id="ph3">`AccessTheWebAsync`</ph> calls the asynchronous &lt;xref:System.Net.Http.HttpClient&gt; method &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;.</source>
+          <target state="translated">Las dos primeros mostrar las líneas rastrear la ruta de acceso como <ph id="ph1">`startButton_Click`</ph> llamadas <ph id="ph2">`AccessTheWebAsync`</ph>, y <ph id="ph3">`AccessTheWebAsync`</ph> llama al &lt;xref:System.Net.Http.HttpClient&gt;método &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;.&lt;/xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt; &lt;/xref:System.Net.Http.HttpClient&gt; de asincrónica</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following image outlines the calls from method to method.</source>
+          <target state="translated">La imagen siguiente describe las llamadas de método a método.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Steps ONE and TWO<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "</bpt>AsyncTrace-ONETWO<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Pasos uno y dos<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "</bpt>AsyncTrace ONETWO<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The return type of both <ph id="ph1">`AccessTheWebAsync`</ph> and <ph id="ph2">`client.GetStringAsync`</ph> is &lt;xref:System.Threading.Tasks.Task%601&gt;.</source>
+          <target state="translated">El tipo de valor devuelto de ambos <ph id="ph1">`AccessTheWebAsync`</ph> y <ph id="ph2">`client.GetStringAsync`</ph> es &lt;xref:System.Threading.Tasks.Task%601&gt;.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For <ph id="ph1">`AccessTheWebAsync`</ph>, TResult is an integer.</source>
+          <target state="translated">Para <ph id="ph1">`AccessTheWebAsync`</ph>, TResult es un entero.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For <ph id="ph1">`GetStringAsync`</ph>, TResult is a string.</source>
+          <target state="translated">Para <ph id="ph1">`GetStringAsync`</ph>, TResult es una cadena.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>For more information about async method return types, see <bpt id="p1">[</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</source>
+          <target state="translated">Para obtener más información sobre los tipos de valor devuelto de método asincrónico, vea <bpt id="p1">[</bpt>Async devolver tipos (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>A task-returning async method returns a task instance when control shifts back to the caller.</source>
+          <target state="translated">Un método asincrónico de devolución de tarea devuelve una instancia de la tarea cuando se desplaza el control al llamador.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Control returns from an async method to its caller either when an <ph id="ph1">`Await`</ph> operator is encountered in the called method or when the called method ends.</source>
+          <target state="translated">Devuelve el control de un método asincrónico a su llamador cuando un <ph id="ph1">`Await`</ph> operador se encuentra en el método llamado o cuando finaliza el método llamado.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The display lines that are labeled "THREE" through "SIX" trace this part of the process.</source>
+          <target state="translated">Mostrar líneas que tienen la etiqueta "Tres"a "seis" esta parte del proceso de seguimiento.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Step THREE</source>
+          <target state="translated">Paso TRES</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`AccessTheWebAsync`</ph>, the asynchronous method &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt; is called to download the contents of the target webpage.</source>
+          <target state="translated">En <ph id="ph1">`AccessTheWebAsync`</ph>, el método asincrónico &lt;xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;se llama para descargar el contenido de la página Web de destino.&lt;/xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29&gt;</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Control returns from <ph id="ph1">`client.GetStringAsync`</ph> to <ph id="ph2">`AccessTheWebAsync`</ph> when <ph id="ph3">`client.GetStringAsync`</ph> returns.</source>
+          <target state="translated">Devuelve el control de <ph id="ph1">`client.GetStringAsync`</ph> a <ph id="ph2">`AccessTheWebAsync`</ph> cuando <ph id="ph3">`client.GetStringAsync`</ph> devuelve.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`client.GetStringAsync`</ph> method returns a task of string that’s assigned to the <ph id="ph2">`getStringTask`</ph> variable in <ph id="ph3">`AccessTheWebAsync`</ph>.</source>
+          <target state="translated">El <ph id="ph1">`client.GetStringAsync`</ph> método devuelve una tarea de la cadena que se asigna a la <ph id="ph2">`getStringTask`</ph> variable <ph id="ph3">`AccessTheWebAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following line in the example program shows the call to <ph id="ph1">`client.GetStringAsync`</ph> and the assignment.</source>
+          <target state="translated">La siguiente línea en el programa de ejemplo muestra la llamada a <ph id="ph1">`client.GetStringAsync`</ph> y la asignación.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You can think of the task as a promise by <ph id="ph1">`client.GetStringAsync`</ph> to produce an actual string eventually.</source>
+          <target state="translated">Puede pensar de la tarea como un compromiso por <ph id="ph1">`client.GetStringAsync`</ph> para generar una cadena real finalmente.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In the meantime, if <ph id="ph1">`AccessTheWebAsync`</ph> has work to do that doesn't depend on the promised string from <ph id="ph2">`client.GetStringAsync`</ph>, that work can continue while  <ph id="ph3">`client.GetStringAsync`</ph> waits.</source>
+          <target state="translated">Mientras tanto, si <ph id="ph1">`AccessTheWebAsync`</ph> tiene trabajo que no dependa de la cadena de Promise <ph id="ph2">`client.GetStringAsync`</ph>, que puede continuar el trabajo mientras <ph id="ph3">`client.GetStringAsync`</ph> espera.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In the example, the following lines of output, which are labeled "THREE,” represent the opportunity to do independent work</source>
+          <target state="translated">En el ejemplo, las siguientes líneas de salida, que se denomina "Tres", representan la oportunidad de realizar un trabajo independiente</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The following statement suspends progress in <ph id="ph1">`AccessTheWebAsync`</ph> when <ph id="ph2">`getStringTask`</ph> is awaited.</source>
+          <target state="translated">La siguiente instrucción suspende el progreso en <ph id="ph1">`AccessTheWebAsync`</ph> cuando <ph id="ph2">`getStringTask`</ph> esperado.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>The following image shows the flow of control from <ph id="ph1">`client.GetStringAsync`</ph> to the assignment to <ph id="ph2">`getStringTask`</ph> and from the creation of <ph id="ph3">`getStringTask`</ph> to the application of an Await operator.</source>
+          <target state="translated">La siguiente imagen muestra el flujo de control de <ph id="ph1">`client.GetStringAsync`</ph> para la asignación a <ph id="ph2">`getStringTask`</ph> y desde la creación de <ph id="ph3">`getStringTask`</ph> a la aplicación de un operador Await.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Step THREE<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "</bpt>AsyncTrace-Three<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Paso tres<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "</bpt>AsyncTrace tres<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The await expression suspends <ph id="ph1">`AccessTheWebAsync`</ph> until <ph id="ph2">`client.GetStringAsync`</ph> returns.</source>
+          <target state="translated">La expresión await suspende <ph id="ph1">`AccessTheWebAsync`</ph> hasta que <ph id="ph2">`client.GetStringAsync`</ph> devuelve.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the meantime, control returns to the caller of <ph id="ph1">`AccessTheWebAsync`</ph>, <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">Mientras tanto, el control vuelve al llamador del <ph id="ph1">`AccessTheWebAsync`</ph>, <ph id="ph2">`startButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Typically, you await the call to an asynchronous method immediately.</source>
+          <target state="translated">Normalmente, espera la llamada a un método asincrónico inmediatamente.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>For example, the following assignment could replace the previous code that creates and then awaits <ph id="ph1">`getStringTask`</ph>: <ph id="ph2">`Dim urlContents As String = Await client.GetStringAsync("http://msdn.microsoft.com")`</ph></source>
+          <target state="translated">Por ejemplo, la siguiente asignación podría reemplazar el código anterior que crea y, a continuación, espera <ph id="ph1">`getStringTask`</ph>:<ph id="ph2">`Dim urlContents As String = Await client.GetStringAsync("http://msdn.microsoft.com")`</ph></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>In this topic, the await operator is applied later to accommodate the output lines that mark the flow of control through the program.</source>
+          <target state="translated">En este tema, el operador await se aplica más adelante para dar cabida a las líneas de salida que marcan el flujo de control a través del programa.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Step FOUR</source>
+          <target state="translated">Paso CUATRO</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The declared return type of <ph id="ph1">`AccessTheWebAsync`</ph> is <ph id="ph2">`Task(Of Integer)`</ph>.</source>
+          <target state="translated">El declarado tipo de valor devuelto de <ph id="ph1">`AccessTheWebAsync`</ph> es <ph id="ph2">`Task(Of Integer)`</ph>.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Therefore, when <ph id="ph1">`AccessTheWebAsync`</ph> is suspended, it returns a task of integer to <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">Por lo tanto, cuando <ph id="ph1">`AccessTheWebAsync`</ph> está suspendido, devuelve una tarea de entero en <ph id="ph2">`startButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>You should understand that the returned task isn’t <ph id="ph1">`getStringTask`</ph>.</source>
+          <target state="translated">Debe entender que la tarea devuelta no es <ph id="ph1">`getStringTask`</ph>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The returned task is a new task of integer that represents what remains to be done in the suspended method, <ph id="ph1">`AccessTheWebAsync`</ph>.</source>
+          <target state="translated">La tarea devuelta es una nueva tarea de entero que representa lo que falta por hacer en el método suspendido, <ph id="ph1">`AccessTheWebAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The task is a promise from <ph id="ph1">`AccessTheWebAsync`</ph> to produce an integer when the task is complete.</source>
+          <target state="translated">La tarea es una promesa de <ph id="ph1">`AccessTheWebAsync`</ph> para producir un entero cuando se completa la tarea.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The following statement assigns this task to the <ph id="ph1">`getLengthTask`</ph> variable.</source>
+          <target state="translated">La instrucción siguiente asigna esta tarea a la <ph id="ph1">`getLengthTask`</ph> variable.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>As in <ph id="ph1">`AccessTheWebAsync`</ph>, <ph id="ph2">`startButton_Click`</ph> can continue with work that doesn’t depend on the results of the asynchronous task (<ph id="ph3">`getLengthTask`</ph>) until the task is awaited.</source>
+          <target state="translated">Como en <ph id="ph1">`AccessTheWebAsync`</ph>, <ph id="ph2">`startButton_Click`</ph> puede continuar con el trabajo que no dependa de los resultados de la tarea asincrónica (<ph id="ph3">`getLengthTask`</ph>) hasta que la tarea se espera.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The following output lines represent that work.</source>
+          <target state="translated">Las siguientes líneas de salida representan ese trabajo.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Progress in <ph id="ph1">`startButton_Click`</ph> is suspended when <ph id="ph2">`getLengthTask`</ph> is awaited.</source>
+          <target state="translated">Progreso de <ph id="ph1">`startButton_Click`</ph> se suspende cuando <ph id="ph2">`getLengthTask`</ph> esperado.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The following assignment statement suspends <ph id="ph1">`startButton_Click`</ph> until <ph id="ph2">`AccessTheWebAsync`</ph> is complete.</source>
+          <target state="translated">Suspende la siguiente instrucción de asignación <ph id="ph1">`startButton_Click`</ph> hasta <ph id="ph2">`AccessTheWebAsync`</ph> completada.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>10<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>10<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>In the following illustration, the arrows show the flow of control from the await expression in <ph id="ph1">`AccessTheWebAsync`</ph> to the assignment of a value to <ph id="ph2">`getLengthTask`</ph>, followed by normal processing in <ph id="ph3">`startButton_Click`</ph> until <ph id="ph4">`getLengthTask`</ph> is awaited.</source>
+          <target state="translated">En la siguiente ilustración, las flechas muestran el flujo de control de la expresión await en <ph id="ph1">`AccessTheWebAsync`</ph> a la asignación de un valor a <ph id="ph2">`getLengthTask`</ph>, seguido por el procesamiento normal en <ph id="ph3">`startButton_Click`</ph> hasta <ph id="ph4">`getLengthTask`</ph> esperado.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Step FOUR<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "</bpt>AsyncTrace-FOUR<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Paso cuatro<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "</bpt>AsyncTrace cuatro<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Step FIVE</source>
+          <target state="translated">Paso CINCO</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`client.GetStringAsync`</ph> signals that it’s complete, processing in <ph id="ph2">`AccessTheWebAsync`</ph> is released from suspension and can continue past the await statement.</source>
+          <target state="translated">Cuando <ph id="ph1">`client.GetStringAsync`</ph> indica que ha finalizado, el procesamiento en <ph id="ph2">`AccessTheWebAsync`</ph> se libera de la suspensión y puede continuar más allá de la instrucción await.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The following lines of output represent the resumption of processing.</source>
+          <target state="translated">Las siguientes líneas de salida representan la reanudación del procesamiento.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>11<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>11<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The operand of the return statement, <ph id="ph1">`urlContents.Length`</ph>, is stored in the task that  <ph id="ph2">`AccessTheWebAsync`</ph> returns.</source>
+          <target state="translated">El operando de la instrucción return, <ph id="ph1">`urlContents.Length`</ph>, se almacena en la tarea que <ph id="ph2">`AccessTheWebAsync`</ph> devuelve.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The await expression retrieves that value from <ph id="ph1">`getLengthTask`</ph> in <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">La expresión await recupera ese valor de <ph id="ph1">`getLengthTask`</ph> en <ph id="ph2">`startButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The following image shows the transfer of control after <ph id="ph1">`client.GetStringAsync`</ph> (and <ph id="ph2">`getStringTask`</ph>) are complete.</source>
+          <target state="translated">La siguiente imagen muestra la transferencia de control después de <ph id="ph1">`client.GetStringAsync`</ph> (y <ph id="ph2">`getStringTask`</ph>) están completos.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Step FIVE<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-five.png "</bpt>AsyncTrace-FIVE<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Paso cinco<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-five.png "</bpt>AsyncTrace cinco<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AccessTheWebAsync`</ph> runs to completion, and control returns to <ph id="ph2">`startButton_Click`</ph>, which is awaiting the completion.</source>
+          <target state="translated"><ph id="ph1">`AccessTheWebAsync`</ph>se ejecuta hasta el final y el control se devuelve a <ph id="ph2">`startButton_Click`</ph>, que está esperando la finalización.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Step SIX</source>
+          <target state="translated">Paso SEIS</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`AccessTheWebAsync`</ph> signals that it’s complete, processing can continue past the await statement in <ph id="ph2">`startButton_Async`</ph>.</source>
+          <target state="translated">Cuando <ph id="ph1">`AccessTheWebAsync`</ph> señala que haya finalizado, el procesamiento puede continuar más allá de la instrucción await en <ph id="ph2">`startButton_Async`</ph>.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>In fact, the program has nothing more to do.</source>
+          <target state="translated">De hecho, el programa no tiene nada más que hacer.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>The following lines of output represent the resumption of processing in <ph id="ph1">`startButton_Async`</ph>:</source>
+          <target state="translated">Las siguientes líneas de salida representan la reanudación del procesamiento en <ph id="ph1">`startButton_Async`</ph>:</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>12<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>12<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The await expression retrieves from <ph id="ph1">`getLengthTask`</ph> the integer value that’s the operand of the return statement in <ph id="ph2">`AccessTheWebAsync`</ph>.</source>
+          <target state="translated">La expresión await recupera de <ph id="ph1">`getLengthTask`</ph> el valor entero que es el operando de la instrucción return en <ph id="ph2">`AccessTheWebAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The following statement assigns that value to the <ph id="ph1">`contentLength`</ph> variable.</source>
+          <target state="translated">La instrucción siguiente asigna ese valor a la <ph id="ph1">`contentLength`</ph> variable.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>13<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>13<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The following image shows the return of control from <ph id="ph1">`AccessTheWebAsync`</ph> to <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">La siguiente imagen muestra la devolución del control de <ph id="ph1">`AccessTheWebAsync`</ph> a <ph id="ph2">`startButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Step SIX<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "</bpt>AsyncTrace-SIX<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Paso seis<ept id="p1">]</ept><bpt id="p2">(../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "</bpt>AsyncTrace seis<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Programación asincrónica con Async y Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipos de valor devueltos de Async (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tutorial: Acceso a la Web usando Async y Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Sample: Control Flow in Async Programs (C# and Visual Basic)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255285)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Ejemplo ASYNC: Flujo de Control en programas asincrónicos (C# y Visual Basic)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255285)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

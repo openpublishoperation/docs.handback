@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c7e09bd482e35c7ce7f28a6cc7de0379b7cc89f6</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\procedures\how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bddd58beef3c5a073fa0def77d809126f3f1bfef</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b284dc3bff383e31fb589af8d822e14b583e49c8</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.4529227cf3598df915638a21fc1337e2c279493e.es-es is different with handoff file name: how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.4529227cf3598df915638a21fc1337e2c279493e.es-es.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Cómo: sobrecargar un procedimiento que toma un número indefinido de parámetros (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)</source>
+          <target state="translated">Cómo: Sobrecargar un procedimiento que toma un número indefinido de parámetros (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>If a procedure has a <bpt id="p1">[</bpt>ParamArray<ept id="p1">](../../../../visual-basic/language-reference/modifiers/paramarray.md)</ept> parameter, you cannot define an overloaded version taking a one-dimensional array for the parameter array.</source>
+          <target state="translated">Si un procedimiento tiene un <bpt id="p1">[</bpt>ParamArray<ept id="p1">](../../../../visual-basic/language-reference/modifiers/paramarray.md)</ept> parámetro, no se puede definir una versión sobrecargada que tome una matriz unidimensional para la matriz de parámetros.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For more information, see "Implicit Overloads for a ParamArray Parameter" in <bpt id="p1">[</bpt>Considerations in Overloading Procedures<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</source>
+          <target state="translated">Para obtener más información, vea "Implícita sobrecargas de un parámetro ParamArray" en <bpt id="p1">[</bpt>consideraciones en sobrecarga de procedimientos<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To overload a procedure that takes a variable number of parameters</source>
+          <target state="translated">Para sobrecargar un procedimiento que toma un número variable de parámetros</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Ascertain that the procedure and calling code logic benefits from overloaded versions more than from a <ph id="ph1">`ParamArray`</ph> parameter.</source>
+          <target state="translated">Comprobar que el procedimiento y llamar a los beneficios de la lógica de código desde sobrecargado versiones más de un <ph id="ph1">`ParamArray`</ph> parámetro.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>See "Overloads and ParamArrays" in <bpt id="p1">[</bpt>Considerations in Overloading Procedures<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</source>
+          <target state="translated">Vea "Sobrecargas y matrices de parámetros" en <bpt id="p1">[</bpt>consideraciones sobre la sobrecarga de procedimientos<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Determine which numbers of supplied values the procedure should accept in the variable part of the parameter list.</source>
+          <target state="translated">Determinar qué número de valores proporcionados debe aceptar el procedimiento en la parte variable de la lista de parámetros.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This might include the case of no value, and it might include the case of a single one-dimensional array.</source>
+          <target state="translated">Esto puede incluir el caso de ningún valor y podrían incluir el caso de una matriz unidimensional.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For each acceptable number of supplied values, write a <ph id="ph1">`Sub`</ph> or <ph id="ph2">`Function`</ph> declaration statement that defines the corresponding parameter list.</source>
+          <target state="translated">Para cada número aceptable de valores proporcionados, escribir una <ph id="ph1">`Sub`</ph> o <ph id="ph2">`Function`</ph> instrucción de declaración que define la lista de parámetros correspondiente.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Do not use either the <ph id="ph1">`Optional`</ph> or the <ph id="ph2">`ParamArray`</ph> keyword in this overloaded version.</source>
+          <target state="translated">No usar la <ph id="ph1">`Optional`</ph> o <ph id="ph2">`ParamArray`</ph> (palabra clave) en esta versión sobrecargada.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In each declaration, precede the <ph id="ph1">`Sub`</ph> or <ph id="ph2">`Function`</ph> keyword with the <bpt id="p1">[</bpt>Overloads<ept id="p1">](../../../../visual-basic/language-reference/modifiers/overloads.md)</ept> keyword.</source>
+          <target state="translated">En cada declaración, anteponga la <ph id="ph1">`Sub`</ph> o <ph id="ph2">`Function`</ph> palabra clave con la <bpt id="p1">[</bpt>sobrecargas<ept id="p1">](../../../../visual-basic/language-reference/modifiers/overloads.md)</ept> (palabra clave).</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Following each declaration, write the procedure code that should execute when the calling code supplies values corresponding to that declaration's parameter list.</source>
+          <target state="translated">Después de cada declaración, escriba el código de procedimiento que debería ejecutarse cuando el código de llamada proporcione los valores correspondientes a la lista de parámetros de esa declaración.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Terminate each procedure with the <ph id="ph1">`End Sub`</ph> or <ph id="ph2">`End Function`</ph> statement as appropriate.</source>
+          <target state="translated">Finalizar cada procedimiento con el <ph id="ph1">`End Sub`</ph> o <ph id="ph2">`End Function`</ph> instrucción según corresponda.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Ejemplo</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The following example shows a procedure defined with a <bpt id="p1">[</bpt>ParamArray<ept id="p1">](../../../../visual-basic/language-reference/modifiers/paramarray.md)</ept> parameter, and then an equivalent set of overloaded procedures.</source>
+          <target state="translated">En el ejemplo siguiente se muestra un procedimiento definido con un <bpt id="p1">[</bpt>ParamArray<ept id="p1">](../../../../visual-basic/language-reference/modifiers/paramarray.md)</ept> parámetro y, a continuación, un conjunto equivalente de procedimientos sobrecargados.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#69<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures&amp;#69;<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#70<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures&amp;#70;<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You cannot overload such a procedure with a parameter list that takes a one-dimensional array for the parameter array.</source>
+          <target state="translated">No se puede sobrecargar un procedimiento con una lista de parámetros que toma una matriz unidimensional para la matriz de parámetros.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, you can use the signatures of the other implicit overloads.</source>
+          <target state="translated">Sin embargo, puede utilizar las firmas de las otras sobrecargas implícitas.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The following declarations illustrate this.</source>
+          <target state="translated">Las siguientes declaraciones ilustran esto.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#71<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures&amp;#71;<ept id="p2">](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The code in the overloaded versions does not have to test whether the calling code supplied one or more values for the <ph id="ph1">`ParamArray`</ph> parameter, or if so, how many.</source>
+          <target state="translated">El código de las versiones sobrecargadas no tiene que comprobar si el código de llamada proporciona uno o más valores para la <ph id="ph1">`ParamArray`</ph> parámetro, o si es así, ¿cuántos.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> passes control to the version matching the calling argument list.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>pasa el control a la versión correspondiente de la lista de argumentos de llamada.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">Compilar el código</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Because a procedure with a <ph id="ph1">`ParamArray`</ph> parameter is equivalent to a set of overloaded versions, you cannot overload such a procedure with a parameter list corresponding to any of these implicit overloads.</source>
+          <target state="translated">Dado que un procedimiento con un <ph id="ph1">`ParamArray`</ph> parámetro es equivalente a un conjunto de versiones sobrecargadas, no se puede sobrecargar un procedimiento con una lista de parámetros que se corresponda con alguna de estas sobrecargas implícitas.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Considerations in Overloading Procedures<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</source>
+          <target state="translated">Para obtener más información, consulte <bpt id="p1">[</bpt>consideraciones en sobrecarga de procedimientos<ept id="p1">](./considerations-in-overloading-procedures.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>.NET Framework Security</source>
+          <target state="translated">Seguridad de .NET Framework</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application.</source>
+          <target state="translated">Si se trabaja con una matriz que puede ser excesivamente grande, hay un riesgo de saturar alguna capacidad interna de la aplicación.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If you accept a parameter array, you should test for the length of the array the calling code passed to it, and take appropriate steps if it is too large for your application.</source>
+          <target state="translated">Si acepta una matriz de parámetros, debe comprobar la longitud de la matriz que se pasa el código de llamada y seguir los pasos adecuados si es demasiado grande para la aplicación.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Procedures<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Procedimientos<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Procedure Parameters and Arguments<ept id="p1">](./procedure-parameters-and-arguments.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Argumentos y parámetros de procedimiento<ept id="p1">](./procedure-parameters-and-arguments.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Optional Parameters<ept id="p1">](./optional-parameters.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Parámetros opcionales<ept id="p1">](./optional-parameters.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Parameter Arrays<ept id="p1">](./parameter-arrays.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Matrices de parámetros<ept id="p1">](./parameter-arrays.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Procedure Overloading<ept id="p1">](./procedure-overloading.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Sobrecarga de procedimientos<ept id="p1">](./procedure-overloading.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Troubleshooting Procedures<ept id="p1">](./troubleshooting-procedures.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedimientos de solución de problemas<ept id="p1">](./troubleshooting-procedures.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Define Multiple Versions of a Procedure<ept id="p1">](./how-to-define-multiple-versions-of-a-procedure.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Cómo: definir varias versiones de un procedimiento<ept id="p1">](./how-to-define-multiple-versions-of-a-procedure.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Call an Overloaded Procedure<ept id="p1">](./how-to-call-an-overloaded-procedure.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Cómo: llamar a un procedimiento sobrecargado<ept id="p1">](./how-to-call-an-overloaded-procedure.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Overload a Procedure that Takes Optional Parameters<ept id="p1">](./how-to-overload-a-procedure-that-takes-optional-parameters.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Cómo: sobrecargar un procedimiento que toma parámetros opcionales<ept id="p1">](./how-to-overload-a-procedure-that-takes-optional-parameters.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Overload Resolution<ept id="p1">](./overload-resolution.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Resolución de sobrecargas<ept id="p1">](./overload-resolution.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

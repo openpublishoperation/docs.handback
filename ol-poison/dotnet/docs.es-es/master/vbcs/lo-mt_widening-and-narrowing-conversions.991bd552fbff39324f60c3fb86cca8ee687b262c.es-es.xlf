@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">88c5db6e7e82a88ae8015b581e5a795ec389d003</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\data-types\widening-and-narrowing-conversions.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d6353feb117098a8fc19881c9376c972ba9ac016</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b559c4ba31ed4a473338f0e323677a3639b9794a</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_widening-and-narrowing-conversions.991bd552fbff39324f60c3fb86cca8ee687b262c.es-es is different with handoff file name: widening-and-narrowing-conversions.991bd552fbff39324f60c3fb86cca8ee687b262c.es-es.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Widening and Narrowing Conversions (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">(Visual Basic) de las conversiones de restricción y ampliación | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Widening and Narrowing Conversions (Visual Basic)</source>
+          <target state="translated">Conversiones de ampliación y de restricción (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An important consideration with a type conversion is whether the result of the conversion is within the range of the destination data type.</source>
+          <target state="translated">Una consideración importante de una conversión de tipos es si el resultado de la conversión está dentro del intervalo del tipo de datos de destino.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>widening conversion<ept id="p1">*</ept> changes a value to a data type that can allow for any possible value of the original data.</source>
+          <target state="translated">Un <bpt id="p1">*</bpt>conversión de ampliación<ept id="p1">*</ept> cambia un valor a un tipo de datos que permita que para cualquier valor posible de los datos originales.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Widening conversions preserve the source value but can change its representation.</source>
+          <target state="translated">Las conversiones de ampliación conservan el valor de origen pero pueden cambiar su representación.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This occurs if you convert from an integral type to <ph id="ph1">`Decimal`</ph>, or from <ph id="ph2">`Char`</ph> to <ph id="ph3">`String`</ph>.</source>
+          <target state="translated">Esto sucede si se convierte de un tipo integral a <ph id="ph1">`Decimal`</ph>, o de <ph id="ph2">`Char`</ph> a <ph id="ph3">`String`</ph>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>narrowing conversion<ept id="p1">*</ept> changes a value to a data type that might not be able to hold some of the possible values.</source>
+          <target state="translated">Una <bpt id="p1">*</bpt>conversión de restricción<ept id="p1">*</ept> cambia un valor a un tipo de datos que no pueda mantener algunos de los valores posibles.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For example, a fractional value is rounded when it is converted to an integral type, and a numeric type being converted to <ph id="ph1">`Boolean`</ph> is reduced to either <ph id="ph2">`True`</ph> or <ph id="ph3">`False`</ph>.</source>
+          <target state="translated">Por ejemplo, un valor fraccionario se redondea cuando se convierte en un tipo integral y un tipo numérico que se va a convertir a <ph id="ph1">`Boolean`</ph> se reduce a uno <ph id="ph2">`True`</ph> o <ph id="ph3">`False`</ph>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Widening Conversions</source>
+          <target state="translated">Conversiones de ampliación</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following table shows the standard widening conversions.</source>
+          <target state="translated">La tabla siguiente muestra la conversiones de ampliación estándar.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Data type</source>
+          <target state="translated">Tipo de datos</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Widens to data types <bpt id="p1">&lt;sup&gt;</bpt>1<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated">Se amplía a tipos de datos <bpt id="p1">&lt;sup&gt;</bpt>1<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SByte<ept id="p1">](../../../../visual-basic/language-reference/data-types/sbyte-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SByte<ept id="p1">](../../../../visual-basic/language-reference/data-types/sbyte-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`SByte`</ph>, <ph id="ph2">`Short`</ph>, <ph id="ph3">`Integer`</ph>, <ph id="ph4">`Long`</ph>, <ph id="ph5">`Decimal`</ph>, <ph id="ph6">`Single`</ph>, <ph id="ph7">`Double`</ph></source>
+          <target state="translated"><ph id="ph1">`SByte`</ph>, <ph id="ph2">`Short`</ph>, <ph id="ph3">`Integer`</ph>, <ph id="ph4">`Long`</ph>, <ph id="ph5">`Decimal`</ph>, <ph id="ph6">`Single`</ph>, <ph id="ph7">`Double`</ph></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Byte<ept id="p1">](../../../../visual-basic/language-reference/data-types/byte-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Byte<ept id="p1">](../../../../visual-basic/language-reference/data-types/byte-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Byte`</ph>, <ph id="ph2">`Short`</ph>, <ph id="ph3">`UShort`</ph>, <ph id="ph4">`Integer`</ph>, <ph id="ph5">`UInteger`</ph>, <ph id="ph6">`Long`</ph>, <ph id="ph7">`ULong`</ph>, <ph id="ph8">`Decimal`</ph>, <ph id="ph9">`Single`</ph>, <ph id="ph10">`Double`</ph></source>
+          <target state="translated"><ph id="ph1">`Byte`</ph>, <ph id="ph2">`Short`</ph>, <ph id="ph3">`UShort`</ph>, <ph id="ph4">`Integer`</ph>, <ph id="ph5">`UInteger`</ph>, <ph id="ph6">`Long`</ph>, <ph id="ph7">`ULong`</ph>, <ph id="ph8">`Decimal`</ph>, <ph id="ph9">`Single`</ph>, <ph id="ph10">`Double`</ph></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Short<ept id="p1">](../../../../visual-basic/language-reference/data-types/short-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Breve<ept id="p1">](../../../../visual-basic/language-reference/data-types/short-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Short`</ph>, <ph id="ph2">`Integer`</ph>, <ph id="ph3">`Long`</ph>, <ph id="ph4">`Decimal`</ph>, <ph id="ph5">`Single`</ph>, <ph id="ph6">`Double`</ph></source>
+          <target state="translated"><ph id="ph1">`Short`</ph>, <ph id="ph2">`Integer`</ph>, <ph id="ph3">`Long`</ph>, <ph id="ph4">`Decimal`</ph>, <ph id="ph5">`Single`</ph>, <ph id="ph6">`Double`</ph></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UShort<ept id="p1">](../../../../visual-basic/language-reference/data-types/ushort-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UShort<ept id="p1">](../../../../visual-basic/language-reference/data-types/ushort-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`UShort`</ph>, <ph id="ph2">`Integer`</ph>, <ph id="ph3">`UInteger`</ph>, <ph id="ph4">`Long`</ph>, <ph id="ph5">`ULong`</ph>, <ph id="ph6">`Decimal`</ph>, <ph id="ph7">`Single`</ph>, <ph id="ph8">`Double`</ph></source>
+          <target state="translated"><ph id="ph1">`UShort`</ph>, <ph id="ph2">`Integer`</ph>, <ph id="ph3">`UInteger`</ph>, <ph id="ph4">`Long`</ph>, <ph id="ph5">`ULong`</ph>, <ph id="ph6">`Decimal`</ph>, <ph id="ph7">`Single`</ph>, <ph id="ph8">`Double`</ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Integer<ept id="p1">](../../../../visual-basic/language-reference/data-types/integer-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Entero<ept id="p1">](../../../../visual-basic/language-reference/data-types/integer-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Integer`</ph>, <ph id="ph2">`Long`</ph>, <ph id="ph3">`Decimal`</ph>, <ph id="ph4">`Single`</ph>, <ph id="ph5">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated"><ph id="ph1">`Integer`</ph>, <ph id="ph2">`Long`</ph>, <ph id="ph3">`Decimal`</ph>, <ph id="ph4">`Single`</ph>, <ph id="ph5">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>UInteger<ept id="p1">](../../../../visual-basic/language-reference/data-types/uinteger-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>UInteger<ept id="p1">](../../../../visual-basic/language-reference/data-types/uinteger-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`UInteger`</ph>, <ph id="ph2">`Long`</ph>, <ph id="ph3">`ULong`</ph>, <ph id="ph4">`Decimal`</ph>, <ph id="ph5">`Single`</ph>, <ph id="ph6">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated"><ph id="ph1">`UInteger`</ph>, <ph id="ph2">`Long`</ph>, <ph id="ph3">`ULong`</ph>, <ph id="ph4">`Decimal`</ph>, <ph id="ph5">`Single`</ph>, <ph id="ph6">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Long<ept id="p1">](../../../../visual-basic/language-reference/data-types/long-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Long<ept id="p1">](../../../../visual-basic/language-reference/data-types/long-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Long`</ph>, <ph id="ph2">`Decimal`</ph>, <ph id="ph3">`Single`</ph>, <ph id="ph4">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated"><ph id="ph1">`Long`</ph>, <ph id="ph2">`Decimal`</ph>, <ph id="ph3">`Single`</ph>, <ph id="ph4">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>ULong<ept id="p1">](../../../../visual-basic/language-reference/data-types/ulong-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ULong<ept id="p1">](../../../../visual-basic/language-reference/data-types/ulong-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`ULong`</ph>, <ph id="ph2">`Decimal`</ph>, <ph id="ph3">`Single`</ph>, <ph id="ph4">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated"><ph id="ph1">`ULong`</ph>, <ph id="ph2">`Decimal`</ph>, <ph id="ph3">`Single`</ph>, <ph id="ph4">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Decimal<ept id="p1">](../../../../visual-basic/language-reference/data-types/decimal-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Decimal<ept id="p1">](../../../../visual-basic/language-reference/data-types/decimal-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Decimal`</ph>, <ph id="ph2">`Single`</ph>, <ph id="ph3">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></source>
+          <target state="translated"><ph id="ph1">`Decimal`</ph>, <ph id="ph2">`Single`</ph>, <ph id="ph3">`Double`</ph><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Single<ept id="p1">](../../../../visual-basic/language-reference/data-types/single-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Single<ept id="p1">](../../../../visual-basic/language-reference/data-types/single-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Single`</ph>, <ph id="ph2">`Double`</ph></source>
+          <target state="translated"><ph id="ph1">`Single`</ph>, <ph id="ph2">`Double`</ph></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Double<ept id="p1">](../../../../visual-basic/language-reference/data-types/double-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Double<ept id="p1">](../../../../visual-basic/language-reference/data-types/double-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Any enumerated type (<bpt id="p1">[</bpt>Enum<ept id="p1">](../../../../visual-basic/language-reference/statements/enum-statement.md)</ept>)</source>
+          <target state="translated">Cualquier tipo enumerado (<bpt id="p1">[</bpt>Enum<ept id="p1">](../../../../visual-basic/language-reference/statements/enum-statement.md)</ept>)</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Its underlying integral type and any type to which the underlying type widens.</source>
+          <target state="translated">Su tipo integral subyacente y cualquier tipo al que se amplía el tipo subyacente.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Char<ept id="p1">](../../../../visual-basic/language-reference/data-types/char-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Char<ept id="p1">](../../../../visual-basic/language-reference/data-types/char-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Char`</ph>, <ph id="ph2">`String`</ph></source>
+          <target state="translated"><ph id="ph1">`Char`</ph>, <ph id="ph2">`String`</ph></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Char`</ph> array</source>
+          <target state="translated">Matriz <ph id="ph1">`Char`</ph></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Char`</ph> array, <ph id="ph2">`String`</ph></source>
+          <target state="translated"><ph id="ph1">`Char`</ph>matriz,<ph id="ph2">`String`</ph></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Any type</source>
+          <target state="translated">Cualquier tipo</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Object<ept id="p1">](../../../../visual-basic/language-reference/data-types/object-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Objeto<ept id="p1">](../../../../visual-basic/language-reference/data-types/object-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Any derived type</source>
+          <target state="translated">Cualquier tipo derivado</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Any base type from which it is derived <bpt id="p1">&lt;sup&gt;</bpt>3<ept id="p1">&lt;/sup&gt;</ept>.</source>
+          <target state="translated">Cualquier tipo del que se deriva de base <bpt id="p1">&lt;sup&gt;</bpt>3<ept id="p1">&lt;/sup&gt;</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Any type</source>
+          <target state="translated">Cualquier tipo</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Any interface it implements.</source>
+          <target state="translated">Cualquier interfaz que implementa.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Nothing<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Nothing<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Any data type or object type.</source>
+          <target state="translated">Cualquier tipo de datos o el tipo de objeto.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;sup&gt;</bpt>1<ept id="p1">&lt;/sup&gt;</ept> By definition, every data type widens to itself.</source>
+          <target state="translated"><bpt id="p1">&lt;sup&gt;</bpt>1<ept id="p1">&lt;/sup&gt;</ept> por definición, todos los tipos de datos se amplía a sí mismo.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept> Conversions from <ph id="ph1">`Integer`</ph>, <ph id="ph2">`UInteger`</ph>, <ph id="ph3">`Long`</ph>, <ph id="ph4">`ULong`</ph>, or <ph id="ph5">`Decimal`</ph> to <ph id="ph6">`Single`</ph> or <ph id="ph7">`Double`</ph> might result in loss of precision, but never in loss of magnitude.</source>
+          <target state="translated"><bpt id="p1">&lt;sup&gt;</bpt>2<ept id="p1">&lt;/sup&gt;</ept> conversiones de <ph id="ph1">`Integer`</ph>, <ph id="ph2">`UInteger`</ph>, <ph id="ph3">`Long`</ph>, <ph id="ph4">`ULong`</ph>, o <ph id="ph5">`Decimal`</ph> a <ph id="ph6">`Single`</ph> o <ph id="ph7">`Double`</ph> podría producir pérdida de precisión, pero nunca una pérdida de magnitud.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In this sense they do not incur information loss.</source>
+          <target state="translated">En este sentido, no provocan pérdida de información.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;sup&gt;</bpt>3<ept id="p1">&lt;/sup&gt;</ept> It might seem surprising that a conversion from a derived type to one of its base types is widening.</source>
+          <target state="translated"><bpt id="p1">&lt;sup&gt;</bpt>3<ept id="p1">&lt;/sup&gt;</ept> puede parecer sorprendente que una conversión de un tipo derivado en uno de sus tipos base es de ampliación.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The justification is that the derived type contains all the members of the base type, so it qualifies as an instance of the base type.</source>
+          <target state="translated">La justificación es que el tipo derivado contiene a todos los miembros del tipo base, por lo que se califica como una instancia del tipo base.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the opposite direction, the base type does not contain any new members defined by the derived type.</source>
+          <target state="translated">En la dirección opuesta, el tipo base no contiene a nuevos miembros definidos por el tipo derivado.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Widening conversions always succeed at run time and never incur data loss.</source>
+          <target state="translated">Las conversiones de ampliación siempre se realizan correctamente en tiempo de ejecución y no provocan nunca pérdida de datos.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>You can always perform them implicitly, whether the <bpt id="p1">[</bpt>Option Strict Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept> sets the type checking switch to <ph id="ph1">`On`</ph> or to <ph id="ph2">`Off`</ph>.</source>
+          <target state="translated">Siempre puede realizarlas implícitamente, si la <bpt id="p1">[</bpt>Option Strict (instrucción)<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept> establece el tipo de conmutador para la comprobación <ph id="ph1">`On`</ph> o <ph id="ph2">`Off`</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Narrowing Conversions</source>
+          <target state="translated">Conversiones de restricción</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The standard narrowing conversions include the following:</source>
+          <target state="translated">Las conversiones de restricción estándares incluyen lo siguiente:</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The reverse directions of the widening conversions in the preceding table (except that every type widens to itself)</source>
+          <target state="translated">Las direcciones inversas de las conversiones de ampliación en la tabla (excepto en que cada tipo se amplía a sí mismo)</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Conversions in either direction between <bpt id="p1">[</bpt>Boolean<ept id="p1">](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)</ept> and any numeric type</source>
+          <target state="translated">Conversiones en ambas direcciones entre <bpt id="p1">[</bpt>booleano<ept id="p1">](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)</ept> y cualquier tipo numérico</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Conversions from any numeric type to any enumerated type (<ph id="ph1">`Enum`</ph>)</source>
+          <target state="translated">Conversiones de cualquier tipo numérico a cualquier tipo enumeran (<ph id="ph1">`Enum`</ph>)</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Conversions in either direction between <bpt id="p1">[</bpt>String<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept> and any numeric type, <ph id="ph1">`Boolean`</ph>, or <bpt id="p2">[</bpt>Date<ept id="p2">](../../../../visual-basic/language-reference/data-types/date-data-type.md)</ept></source>
+          <target state="translated">Conversiones en ambas direcciones entre <bpt id="p1">[</bpt>cadena<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept> y cualquier tipo numérico, <ph id="ph1">`Boolean`</ph>, o <bpt id="p2">[</bpt>fecha<ept id="p2">](../../../../visual-basic/language-reference/data-types/date-data-type.md)</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Conversions from a data type or object type to a type derived from it</source>
+          <target state="translated">Conversiones de un tipo de datos o un objeto de tipo a un tipo derivado de éste</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Narrowing conversions do not always succeed at run time, and can fail or incur data loss.</source>
+          <target state="translated">Las conversiones de restricción no siempre sea correcta en tiempo de ejecución y pueden producir errores o provocar pérdida de datos.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>An error occurs if the destination data type cannot receive the value being converted.</source>
+          <target state="translated">Se produce un error si el tipo de datos de destino no puede recibir el valor que se va a convertir.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, a numeric conversion can result in an overflow.</source>
+          <target state="translated">Por ejemplo, una conversión numérica puede producir un desbordamiento.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The compiler does not allow you to perform narrowing conversions implicitly unless the <bpt id="p1">[</bpt>Option Strict Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept> sets the type checking switch to <ph id="ph1">`Off`</ph>.</source>
+          <target state="translated">El compilador no permite realizar conversiones de restricción implícitamente a menos que la <bpt id="p1">[</bpt>Option Strict (instrucción)<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept> establece el tipo de conmutador para la comprobación <ph id="ph1">`Off`</ph>.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The narrowing-conversion error is suppressed for conversions from the elements in a <ph id="ph1">`For Each…Next`</ph> collection to the loop control variable.</source>
+          <target state="translated">El error de conversión de restricción se suprime en las conversiones de los elementos en una <ph id="ph1">`For Each…Next`</ph> colección a la variable de control de bucle.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>For more information and examples, see the "Narrowing Conversions" section in <bpt id="p1">[</bpt>For Each...Next Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>.</source>
+          <target state="translated">Para obtener más información y ejemplos, vea la sección "Conversiones de restricción" en <bpt id="p1">[</bpt>For Each... Next (instrucción)<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>When to Use Narrowing Conversions</source>
+          <target state="translated">Cuándo utilizar las conversiones de restricción</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You use a narrowing conversion when you know the source value can be converted to the destination data type without error or data loss.</source>
+          <target state="translated">Utilice una conversión de restricción cuando se sabe que el valor de origen se puede convertir al tipo de datos de destino sin error o pérdida de datos.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>For example, if you have a <ph id="ph1">`String`</ph> that you know contains either "True" or "False," you can use the <ph id="ph2">`CBool`</ph> keyword to convert it to <ph id="ph3">`Boolean`</ph>.</source>
+          <target state="translated">Por ejemplo, si tiene un <ph id="ph1">`String`</ph> que sabe que contiene "True" o "False", puede utilizar el <ph id="ph2">`CBool`</ph> palabra clave que se va a convertir en <ph id="ph3">`Boolean`</ph>.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Exceptions During Conversion</source>
+          <target state="translated">Excepciones durante la conversión</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Because widening conversions always succeed, they do not throw exceptions.</source>
+          <target state="translated">Dado que las conversiones de ampliación siempre correctamente, no producir excepciones.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Narrowing conversions, when they fail, most commonly throw the following exceptions:</source>
+          <target state="translated">Conversiones de restricción, cuando produce un error, suelen producen las excepciones siguientes:</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.InvalidCastException&gt; — if no conversion is defined between the two types</source>
+          <target state="translated">&lt;xref:System.InvalidCastException&gt;: si no se define ninguna conversión entre los dos tipos&lt;/xref:System.InvalidCastException&gt;</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.OverflowException&gt; — (integral types only) if the converted value is too large for the target type</source>
+          <target state="translated">&lt;xref:System.OverflowException&gt;: (tipos integrales sólo) si el valor convertido es demasiado grande para el tipo de destino&lt;/xref:System.OverflowException&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If a class or structure defines a <bpt id="p1">[</bpt>CType Function<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept> to serve as a conversion operator to or from that class or structure, that <ph id="ph1">`CType`</ph> can throw any exception it deems appropriate.</source>
+          <target state="translated">Si una clase o estructura define un <bpt id="p1">[</bpt>CType (función)<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept> para que actúe como un operador de conversión a o desde esa clase o estructura, que <ph id="ph1">`CType`</ph> puede producir cualquier excepción que considere apropiada.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>In addition, that <ph id="ph1">`CType`</ph> might call <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> functions or <ph id="ph3">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> methods, which in turn could throw a variety of exceptions.</source>
+          <target state="translated">Además, que <ph id="ph1">`CType`</ph> podría llamar a <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> funciones o <ph id="ph3">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> métodos, que a su vez pueden producir una variedad de excepciones.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Changes During Reference Type Conversions</source>
+          <target state="translated">Cambios durante las conversiones de tipo de referencia</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A conversion from a <bpt id="p1">*</bpt>reference type<ept id="p1">*</ept> copies only the pointer to the value.</source>
+          <target state="translated">Una conversión de un <bpt id="p1">*</bpt>tipo de referencia<ept id="p1">*</ept> sólo copia el puntero al valor.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The value itself is neither copied nor changed in any way.</source>
+          <target state="translated">El valor en sí no se copia ni se cambia en modo alguno.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The only thing that can change is the data type of the variable holding the pointer.</source>
+          <target state="translated">Lo único que puede cambiar es el tipo de datos de la variable que contiene el puntero.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>In the following example, the data type is converted from the derived class to its base class, but the object that both variables now point to is unchanged.</source>
+          <target state="translated">En el ejemplo siguiente, se convierte el tipo de datos de la clase derivada a su clase base, pero el objeto al que apuntan ahora ambas variables no se modifica.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Tipos de datos<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Conversions in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Conversiones de tipos en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Implicit and Explicit Conversions<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Conversiones implícitas y explícitas<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Conversions Between Strings and Other Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Conversiones entre cadenas y otros tipos<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Convert an Object to Another Type in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Cómo: convertir un objeto a otro tipo en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Array Conversions<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Conversiones de matrices<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Data Types<ept id="p1">](../../../../visual-basic/language-reference/data-types/data-type-summary.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipos de datos<ept id="p1">](../../../../visual-basic/language-reference/data-types/data-type-summary.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Conversion Functions<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Funciones de conversión de tipos<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
