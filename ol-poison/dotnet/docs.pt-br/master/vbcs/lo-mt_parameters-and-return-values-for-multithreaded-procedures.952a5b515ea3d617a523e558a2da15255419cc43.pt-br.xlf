@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d5d8adde531d31aa6bf353f53bd4cfecc084f515</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\parameters-and-return-values-for-multithreaded-procedures.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d82971cc34855170db05f73f54455efe6227712a</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5845bf1168ec218b27e1402d4a924488e7824893</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_parameters-and-return-values-for-multithreaded-procedures.952a5b515ea3d617a523e558a2da15255419cc43.pt-br is different with handoff file name: parameters-and-return-values-for-multithreaded-procedures.952a5b515ea3d617a523e558a2da15255419cc43.pt-br.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Parameters and Return Values for Multithreaded Procedures (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Parâmetros e valores de retorno para procedimentos multithread (Visual Basic) | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Parameters and Return Values for Multithreaded Procedures (Visual Basic)</source>
+          <target state="translated">Parâmetros e valores de retorno para procedimentos multithread (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Supplying and returning values in a multithreaded application is complicated because the constructor for the thread class must be passed a reference to a procedure that takes no arguments and returns no value.</source>
+          <target state="translated">Fornecer e retornar valores em um aplicativo multithread é complicado porque o construtor para a classe thread deve ser passado como uma referência para um procedimento que não leva argumentos e não retorna nenhum valor.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following sections show some simple ways to supply parameters and return values from procedures on separate threads.</source>
+          <target state="translated">As seções a seguir mostram algumas maneiras simples de fornecer parâmetros e retornar valores de procedimentos em segmentos separados.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Supplying Parameters for Multithreaded Procedures</source>
+          <target state="translated">Fornecer parâmetros para procedimentos multithread</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The best way to supply parameters for a multithreaded method call is to wrap the target method in a class and define fields for that class that will serve as parameters for the new thread.</source>
+          <target state="translated">A melhor maneira de fornecer parâmetros para uma chamada de método com vários segmentos é encapsular o método de destino em uma classe e definir campos para a classe que servirá como parâmetros para o novo thread.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The advantage of this approach is that you can create a new instance of the class, with its own parameters, every time you want to start a new thread.</source>
+          <target state="translated">A vantagem dessa abordagem é que você pode criar uma nova instância da classe, com seus próprios parâmetros, toda vez que você deseja iniciar um novo segmento.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a function that calculates the area of a triangle, as in the following code:</source>
+          <target state="translated">Por exemplo, suponha que você tenha uma função que calcula a área de um triângulo, como no seguinte código:</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>You can write a class that wraps the <ph id="ph1">`CalcArea`</ph> function and creates fields to store input parameters, as follows:</source>
+          <target state="translated">Você pode escrever uma classe que encapsula o <ph id="ph1">`CalcArea`</ph> de função e cria campos para armazenar parâmetros de entrada, da seguinte maneira:</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To use the <ph id="ph1">`AreaClass`</ph>, you can create an <ph id="ph2">`AreaClass`</ph> object, and set the <ph id="ph3">`Base`</ph> and <ph id="ph4">`Height`</ph> properties as shown in the following code:</source>
+          <target state="translated">Para usar o <ph id="ph1">`AreaClass`</ph>, você pode criar um <ph id="ph2">`AreaClass`</ph> do objeto e defina o <ph id="ph3">`Base`</ph> e <ph id="ph4">`Height`</ph> propriedades conforme mostrado no código a seguir:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Notice that the <ph id="ph1">`TestArea`</ph> procedure does not check the value of the <ph id="ph2">`Area`</ph> field after calling the <ph id="ph3">`CalcArea`</ph> method.</source>
+          <target state="translated">Observe que o <ph id="ph1">`TestArea`</ph> procedimento verifica se o valor da <ph id="ph2">`Area`</ph> campo depois de chamar o <ph id="ph3">`CalcArea`</ph> método.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`CalcArea`</ph> runs on a separate thread, the <ph id="ph2">`Area`</ph> field is not guaranteed to be set if you check it immediately after calling <ph id="ph3">`Thread.Start`</ph>.</source>
+          <target state="translated">Porque <ph id="ph1">`CalcArea`</ph> é executado em um thread separado, o <ph id="ph2">`Area`</ph> campo não é garantido para ser definido se você verificar imediatamente depois de chamar <ph id="ph3">`Thread.Start`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The next section discusses a better way to return values from multithreaded procedures.</source>
+          <target state="translated">A próxima seção discute uma melhor forma para retornar valores de procedimentos multithread.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Returning Values from Multithreaded Procedures</source>
+          <target state="translated">Retornar valores de procedimentos multithread</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Returning values from procedures that run on separate threads is complicated by the fact that the procedures cannot be functions and cannot use <ph id="ph1">`ByRef`</ph> arguments.</source>
+          <target state="translated">Retornar valores de procedimentos executados em segmentos separados é complicado pelo fato de que os procedimentos não podem ser funções e não é possível usar <ph id="ph1">`ByRef`</ph> argumentos.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The easiest way to return values is to use the &lt;xref:System.ComponentModel.BackgroundWorker&gt; component to manage your threads and raise an event when the task is done, and process the results with an event handler.</source>
+          <target state="translated">A maneira mais fácil de retornar valores é usar o &lt;xref:System.ComponentModel.BackgroundWorker&gt;componente para gerenciar seus segmentos e disparar um evento quando a tarefa estiver concluída e processar os resultados com um manipulador de eventos.&lt;/xref:System.ComponentModel.BackgroundWorker&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example returns a value by raising an event from a procedure running on a separate thread:</source>
+          <target state="translated">O exemplo a seguir retorna um valor ao disparar um evento de um procedimento em execução em um thread separado:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>You can provide parameters and return values to thread-pool threads by using the optional <ph id="ph1">`ByVal`</ph> state-object variable of the &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt; method.</source>
+          <target state="translated">Você pode fornecer parâmetros e retornar valores para segmentos de pool de segmentos usando opcional <ph id="ph1">`ByVal`</ph> variável de objeto de estado de &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;método.&lt;/xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Thread-timer threads also support a state object for this purpose.</source>
+          <target state="translated">Segmentos timer de segmento também oferecem suporte a um objeto de estado para essa finalidade.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For information on thread pooling and thread timers, see <bpt id="p1">[</bpt>Thread Pooling (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)</ept><bpt id="p2">[</bpt>Thread Pooling<ept id="p2">](http://msdn.microsoft.com/library/4b8bb2c8-8ca4-457c-9afd-d11bc9a05701)</ept> and <bpt id="p3">[</bpt>Thread Timers (Visual Basic)<ept id="p3">](../../../../visual-basic/programming-guide/concepts/threading/thread-timers.md)</ept>.</source>
+          <target state="translated">Para obter informações sobre o pool de segmento e timers de thread, consulte <bpt id="p1">[</bpt>(Visual Basic) do pool de segmentos<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)</ept><bpt id="p2">[</bpt>Thread Pooling<ept id="p2">](http://msdn.microsoft.com/library/4b8bb2c8-8ca4-457c-9afd-d11bc9a05701)</ept> e <bpt id="p3">[</bpt>Timers de Thread (Visual Basic)<ept id="p3">](../../../../visual-basic/programming-guide/concepts/threading/thread-timers.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Multithreading with the BackgroundWorker Component (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Passo a passo: Multithreading com o componente BackgroundWorker (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Thread Pooling (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Thread Pooling (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Thread Synchronization (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Sincronização de thread (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Eventos<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Multithreaded Applications (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Aplicativos multithread (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Delegates<ept id="p1">](../../../../visual-basic/programming-guide/language-features/delegates/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Delegados<ept id="p1">](../../../../visual-basic/programming-guide/language-features/delegates/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Multithreading in Components<ept id="p1">](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Multithreading em componentes<ept id="p1">](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
