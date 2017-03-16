@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0ff6320aee65850b8b445f445f80b4bbe2c9c254</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\serialization\walkthrough-persisting-an-object-in-visual-studio.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bbf5eb60355e96601fbbc1bfc5a1180d27829a0e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d5d79c22bc2313b12c722d358a326e6b100ba6b0</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-persisting-an-object-in-visual-studio.3fe9bdc8c7c69012961aabec8527921637820c10.de-de is different with handoff file name: walkthrough-persisting-an-object-in-visual-studio.3fe9bdc8c7c69012961aabec8527921637820c10.de-de.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Persisting an Object in Visual Studio (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Beibehalten eines Objekts in Visual Studio (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Persisting an Object in Visual Studio (Visual Basic)</source>
+          <target state="translated">Exemplarische Vorgehensweise: Beibehalten eines Objekts in Visual Studio (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed.</source>
+          <target state="translated">Obwohl Sie die Eigenschaften eines Objekts mit Standardwerten zur Entwurfszeit festlegen können, sind zur Laufzeit eingegebene Werte verloren, wenn das Objekt zerstört wird.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.</source>
+          <target state="translated">Sie können die Serialisierung verwenden, zum Beibehalten der Daten eines Objekts zwischen Instanzen ermöglicht es Ihnen, Werte zu speichern und Abrufen der nächsten, der das Objekt instanziiert wird.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, to store simple data, such as a name or number, you can use the <ph id="ph1">`My.Settings`</ph> object.</source>
+          <target state="translated">In Visual Basic zum Speichern einfacher Daten, wie Name oder Zahl, können Sie die <ph id="ph1">`My.Settings`</ph> Objekt.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>My.Settings Object<ept id="p1">](../../../../visual-basic/language-reference/objects/my-settings-object.md)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>My.Settings-Objekt<ept id="p1">](../../../../visual-basic/language-reference/objects/my-settings-object.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In this walkthrough, you will create a simple <ph id="ph1">`Loan`</ph> object and persist its data to a file.</source>
+          <target state="translated">In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache <ph id="ph1">`Loan`</ph> -Objekt und dessen Daten in einer Datei beibehalten.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You will then retrieve the data from the file when you re-create the object.</source>
+          <target state="translated">Die Daten werden dann aus der Datei abgerufen werden, wenn das Objekt neu erstellen.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This example creates a new file, if the file does not already exist.</source>
+          <target state="translated">Mit diesem Beispiel wird eine neue Datei erstellt, wenn diese noch nicht vorhanden ist.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If an application must create a file, that application must <ph id="ph1">`Create`</ph> permission for the folder.</source>
+          <target state="translated">Wenn eine Anwendung eine Datei erstellen muss, muss die Anwendung <ph id="ph1">`Create`</ph> Berechtigung für den Ordner.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Permissions are set by using access control lists.</source>
+          <target state="translated">Berechtigungen werden mit Zugriffssteuerungslisten festgelegt.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If the file already exists, the application needs only <ph id="ph1">`Write`</ph> permission, a lesser permission.</source>
+          <target state="translated">Wenn die Datei bereits vorhanden ist, benötigt die Anwendung lediglich <ph id="ph1">`Write`</ph> Berechtigung, eine geringere Berechtigung.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Where possible, it is more secure to create the file during deployment, and only grant <ph id="ph1">`Read`</ph> permissions to a single file (instead of Create permissions for a folder).</source>
+          <target state="translated">Falls möglich, ist sicherer, erstellen die Datei während der Bereitstellung, und gewähren nur <ph id="ph1">`Read`</ph> Berechtigungen für eine einzelne Datei (anstelle von Berechtigungen für einen Ordner erstellen).</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.</source>
+          <target state="translated">Darüber hinaus ist es sicherer, Daten in Benutzerordner statt in den Stammordner oder den Ordner Programme zu schreiben.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This example stores data in a binary.</source>
+          <target state="translated">In diesem Beispiel speichert Daten in eine Binärdatei.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>These formats should not be used for sensitive data, such as passwords or credit-card information.</source>
+          <target state="translated">Diese Formate sollten nicht für vertrauliche Daten wie Kennwörter oder Kreditkarteninformationen verwendet werden.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition.</source>
+          <target state="translated">Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To change your settings, click <bpt id="p1">**</bpt>Import and Export Settings<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Tools<ept id="p2">**</ept> menu.</source>
+          <target state="translated">Klicken Sie im Menü <bpt id="p1">**</bpt>Extras<ept id="p1">**</ept> auf <bpt id="p2">**</bpt>Einstellungen importieren und exportieren<ept id="p2">**</ept> , um die Einstellungen zu ändern.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Customizing Development Settings in Visual Studio<ept id="p1">](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Anpassen der Entwicklungseinstellungen in Visual Studio<ept id="p1">](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Creating the Loan Object</source>
+          <target state="translated">Erstellen des Loan-Objekts</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The first step is to create a <ph id="ph1">`Loan`</ph> class and a test application that uses the class.</source>
+          <target state="translated">Der erste Schritt ist die Erstellung einer <ph id="ph1">`Loan`</ph> Klasse und einer Anwendung, die die Klasse verwendet.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To create the Loan class</source>
+          <target state="translated">So erstellen Sie die Loan-Klasse</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Create a new Class Library project and name it "LoanClass".</source>
+          <target state="translated">Erstellen Sie ein neues Klassenbibliotheksprojekt, und nennen Sie es "LoanClass".</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Creating Solutions and Projects<ept id="p1">](http://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)</ept>.</source>
+          <target state="translated">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Erstellen von Projekten und Projektmappen<ept id="p1">](http://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for the Class1 file and choose <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Projektmappen-Explorer<ept id="p1">**</ept>, öffnen Sie das Kontextmenü für die Datei Class1, und wählen Sie <bpt id="p2">**</bpt>umbenennen<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Rename the file to <ph id="ph1">`Loan`</ph> and press ENTER.</source>
+          <target state="translated">Benennen Sie die Datei <ph id="ph1">`Loan`</ph> , und drücken Sie die EINGABETASTE.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Renaming the file will also rename the class to <ph id="ph1">`Loan`</ph>.</source>
+          <target state="translated">Umbenennen der Datei wird auch die Klasse umbenennen <ph id="ph1">`Loan`</ph>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Add the following public members to the class:</source>
+          <target state="translated">Fügen Sie die folgenden öffentlichen Member der Klasse:</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You will also have to create a simple application that uses the <ph id="ph1">`Loan`</ph> class.</source>
+          <target state="translated">Sie müssen auch eine einfache Anwendung erstellen, verwendet die <ph id="ph1">`Loan`</ph> Klasse.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To create a test application</source>
+          <target state="translated">So erstellen Sie eine testanwendung</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>To add a Windows Forms Application project to your solution, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>,<bpt id="p3">**</bpt>New Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Um der Projektmappe ein Windows Forms-Anwendungsprojekt hinzuzufügen der <bpt id="p1">**</bpt>Datei<ept id="p1">**</ept> Menü wählen <bpt id="p2">**</bpt>hinzufügen<ept id="p2">**</ept>,<bpt id="p3">**</bpt>neues Projekt<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add New Project<ept id="p1">**</ept> dialog box, choose <bpt id="p2">**</bpt>Windows Forms Application<ept id="p2">**</ept>, and enter <ph id="ph1">`LoanApp`</ph> as the name of the project, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept> to close the dialog box.</source>
+          <target state="translated">In der <bpt id="p1">**</bpt>neues Projekt hinzufügen<ept id="p1">**</ept> Dialogfeld Wählen Sie <bpt id="p2">**</bpt>Windows Forms-Anwendung<ept id="p2">**</ept>, und geben Sie <ph id="ph1">`LoanApp`</ph> als Namen für das Projekt, und klicken Sie dann auf <bpt id="p3">**</bpt>OK<ept id="p3">**</ept> um das Dialogfeld zu schließen.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, choose the LoanApp project.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Projektmappen-Explorer<ept id="p1">**</ept>, wählen Sie das LoanApp-Projekt.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Set as StartUp Project<ept id="p2">**</ept>.</source>
+          <target state="translated">Auf der <bpt id="p1">**</bpt>Projekt<ept id="p1">**</ept> Menü wählen <bpt id="p2">**</bpt>Set as StartUp Project<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add Reference<ept id="p2">**</ept>.</source>
+          <target state="translated">Wählen Sie im Menü <bpt id="p1">**</bpt>Projekt<ept id="p1">**</ept> den Eintrag <bpt id="p2">**</bpt>Verweis hinzufügen<ept id="p2">**</ept>aus.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept> dialog box, choose the <bpt id="p2">**</bpt>Projects<ept id="p2">**</ept> tab and then choose the LoanClass project.</source>
+          <target state="translated">In der <bpt id="p1">**</bpt>Verweis hinzufügen<ept id="p1">**</ept> Dialogfeld Wählen Sie die <bpt id="p2">**</bpt>Projekte<ept id="p2">**</ept> Registerkarte, und wählen Sie dann das Projekt LoanClass aus.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to close the dialog box.</source>
+          <target state="translated">Klicken Sie auf <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> um das Dialogfeld zu schließen.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>In the designer, add four &lt;xref:System.Windows.Forms.TextBox&gt; controls to the form.</source>
+          <target state="translated">Fügen Sie im Designer vier &lt;xref:System.Windows.Forms.TextBox&gt;Steuerelemente im Formular.&lt;/xref:System.Windows.Forms.TextBox&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In the Code Editor, add the following code:</source>
+          <target state="translated">Fügen Sie im Code-Editor folgenden Code hinzu:</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Add an event handler for the <ph id="ph1">`PropertyChanged`</ph> event to the form by using the following code:</source>
+          <target state="translated">Fügen Sie einen Ereignishandler für das <ph id="ph1">`PropertyChanged`</ph> Ereignis, um das Formular mit dem folgenden Code:</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>At this point, you can build and run the application.</source>
+          <target state="translated">An diesem Punkt können Sie erstellen und Ausführen der Anwendung.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Note that the default values from the <ph id="ph1">`Loan`</ph> class appear in the text boxes.</source>
+          <target state="translated">Beachten Sie, das die Standardwerte aus der <ph id="ph1">`Loan`</ph> Klasse, die in den Textfeldern angezeigt.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Try to change the interest-rate value from 7.5 to 7.1, and then close the application and run it again—the value reverts to the default of 7.5.</source>
+          <target state="translated">Ändern den Zinssatz-Wert von 7.5 7.1, und schließen Sie die Anwendung und führen Sie sie erneut versuchen, der auf den Standardwert von 7.5 wird zurückgesetzt.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>In the real world, interest rates change periodically, but not necessarily every time that the application is run.</source>
+          <target state="translated">In der realen Welt ändern, Zinssätze in regelmäßigen Abständen, aber nicht unbedingt bei jedem Ausführen der Anwendung.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Rather than making the user update the interest rate every time that the application runs, it is better to preserve the most recent interest rate between instances of the application.</source>
+          <target state="translated">Anstatt den Benutzer, der den Zinssatz jedes Mal aktualisieren, die die Anwendung ausgeführt wird, ist es besser, den aktuellen Zinssatz zwischen Instanzen der Anwendung beibehalten.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>In the next step, you will do just that by adding serialization to the Loan class.</source>
+          <target state="translated">Im nächsten Schritt werden Sie nur dazu Serialisierung die Loan-Klasse hinzufügen.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Using Serialization to Persist the Object</source>
+          <target state="translated">Mithilfe der Serialisierung des Objekts</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In order to persist the values for the Loan class, you must first mark the class with the <ph id="ph1">`Serializable`</ph> attribute.</source>
+          <target state="translated">Um die Werte für die Loan-Klasse erhalten bleiben, müssen Sie zunächst die Klasse mit markieren die <ph id="ph1">`Serializable`</ph> Attribut.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>To mark a class as serializable</source>
+          <target state="translated">Eine Klasse als serialisierbar markiert</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Change the class declaration for the Loan class as follows:</source>
+          <target state="translated">Ändern Sie die Klassendeklaration für die Loan-Klasse wie folgt:</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Serializable`</ph> attribute tells the compiler that everything in the class can be persisted to a file.</source>
+          <target state="translated">Das <ph id="ph1">`Serializable`</ph> -Attribut weist den Compiler, dass alles in der Klasse in einer Datei beibehalten werden kann.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Because the <ph id="ph1">`PropertyChanged`</ph> event is handled by a Windows Form object, it cannot be serialized.</source>
+          <target state="translated">Da die <ph id="ph1">`PropertyChanged`</ph> -Ereignis von einem Windows Form-Objekt behandelt werden, können nicht serialisiert werden.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`NonSerialized`</ph> attribute can be used to mark class members that should not be persisted.</source>
+          <target state="translated">Die <ph id="ph1">`NonSerialized`</ph> Attribut kann verwendet werden, um Klassenmember zu markieren, die nicht beibehalten werden sollen.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To prevent a member from being serialized</source>
+          <target state="translated">Um zu verhindern, dass einen Member serialisiert werden</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Change the declaration for the <ph id="ph1">`PropertyChanged`</ph> event as follows:</source>
+          <target state="translated">Ändern Sie die Deklaration für die <ph id="ph1">`PropertyChanged`</ph> Ereignis wie folgt:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The next step is to add the serialization code to the LoanApp application.</source>
+          <target state="translated">Im nächste Schritt wird der LoanApp-Anwendung den Serialisierungscode hinzu.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In order to serialize the class and write it to a file, you will use the &lt;xref:System.IO&gt; and &lt;xref:System.Xml.Serialization&gt; namespaces.</source>
+          <target state="translated">Um die Klasse zu serialisieren und in eine Datei zu schreiben, verwenden Sie die &lt;xref:System.IO&gt;und &lt;xref:System.Xml.Serialization&gt;Namespaces.&lt;/xref:System.Xml.Serialization&gt; &lt;/xref:System.IO&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>To avoid typing the fully qualified names, you can add references to the necessary class libraries.</source>
+          <target state="translated">Um zu vermeiden, die vollqualifizierten Namen eingeben, können Sie Verweise auf die erforderlichen Klassenbibliotheken hinzufügen.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>To add references to namespaces</source>
+          <target state="translated">Hinzufügen von Verweisen auf namespaces</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Add the following statements to the top of the <ph id="ph1">`Form1`</ph> class:</source>
+          <target state="translated">Fügen Sie die folgenden Anweisungen am Anfang der <ph id="ph1">`Form1`</ph> Klasse:</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In this case, you are using a binary formatter to save the object in a binary format.</source>
+          <target state="translated">In diesem Fall verwenden Sie ein binäres Formatierungsprogramm, um das Objekt in einem binären Format zu speichern.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The next step is to add code to deserialize the object from the file when the object is created.</source>
+          <target state="translated">Der nächste Schritt ist, Code hinzufügen, um das Objekt aus der Datei deserialisiert, wenn das Objekt erstellt wird.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>To deserialize an object</source>
+          <target state="translated">So deserialisieren Sie ein Objekt</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Add a constant to the class for the serialized data's file name.</source>
+          <target state="translated">Fügen Sie eine Konstante zur Klasse für den Dateinamen der serialisierten Daten.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Modify the code in the <ph id="ph1">`Form1_Load`</ph> event procedure as follows:</source>
+          <target state="translated">Ändern Sie den Code in der <ph id="ph1">`Form1_Load`</ph> -Ereignisprozedur wie folgt:</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Note that you first must check that the file exists.</source>
+          <target state="translated">Beachten Sie, dass zuerst Sie sich vergewissern müssen, dass die Datei vorhanden ist.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>If it exists, create a &lt;xref:System.IO.Stream&gt; class to read the binary file and a &lt;xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter&gt; class to translate the file.</source>
+          <target state="translated">Wenn vorhanden, erstellen Sie eine &lt;xref:System.IO.Stream&gt;Klasse zum Lesen der Binärdatei und eine &lt;xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter&gt;Klasse zum Übersetzen der Datei.&lt;/xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter&gt; &lt;/xref:System.IO.Stream&gt;</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You also need to convert from the stream type to the Loan object type.</source>
+          <target state="translated">Sie müssen auch in den Loan-Objekttyp aus dem Streamtyp zu konvertieren.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Next you must add code to save the data entered in the text boxes to the <ph id="ph1">`Loan`</ph> class, and then you must serialize the class to a file.</source>
+          <target state="translated">Als Nächstes müssen Sie Code zum Speichern der Daten in die Textfelder eingegebenen Hinzufügen der <ph id="ph1">`Loan`</ph> -Klasse, und dann die Klasse in einer Datei serialisieren.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>To save the data and serialize the class</source>
+          <target state="translated">Speichern Sie die Daten und die Klasse serialisieren</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Add the following code to the <ph id="ph1">`Form1_FormClosing`</ph> event procedure:</source>
+          <target state="translated">Fügen Sie den folgenden Code der <ph id="ph1">`Form1_FormClosing`</ph> Ereignisprozedur:</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>At this point, you can again build and run the application.</source>
+          <target state="translated">An diesem Punkt können Sie erneut erstellen und Ausführen der Anwendung.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Initially, the default values appear in the text boxes.</source>
+          <target state="translated">Zunächst werden die Standardwerte in den Textfeldern angezeigt.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Try to change the values and enter a name in the fourth text box.</source>
+          <target state="translated">Versuchen Sie, die Werte ändern, und geben im vierten Textfeld.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Close the application and then run it again.</source>
+          <target state="translated">Schließen Sie die Anwendung, und führen Sie sie erneut aus.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Note that the new values now appear in the text boxes.</source>
+          <target state="translated">Beachten Sie, dass die neuen Werte jetzt in den Textfeldern angezeigt.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Serialization (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/serialization/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Serialisierung (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/serialization/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Visual Basic Programming Guide<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic-Programmierhandbuch<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
