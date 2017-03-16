@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">63228a40897b29d0324be73ca1a17bcb19af2a16</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\strings\how-culture-affects-strings.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">129c54d84f1194b6bd4b6041a2c7ec9813da9897</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d3aceaa957b1e37372ce2a96177d38e6fda9b597</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How Culture Affects Strings in Visual Basic | Microsoft Docs</source>
+          <target state="translated">文化特性如何影響在 Visual Basic 中的字串 |Microsoft 文件</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How Culture Affects Strings in Visual Basic</source>
+          <target state="translated">在 Visual Basic 中文化特性如何影響字串</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This Help page discusses how <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> uses culture information to perform string conversions and comparisons.</source>
+          <target state="translated">這個說明網頁會討論如何<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>使用文化特性資訊來執行字串轉換和比較。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When to Use Culture-Specific Strings</source>
+          <target state="translated">何時使用特定文化特性的字串</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Typically, you should use culture-specific strings for all data presented to and read from users, and use culture-invariant strings for your application's internal data.</source>
+          <target state="translated">一般而言，您應該使用特定文化特性的字串的所有資料呈現給讀取使用者，和用於應用程式的內部資料的文化特性而異的字串。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For example, if your application asks users to enter a date as a string, it should expect users to format the strings according to their culture, and the application should convert the string appropriately.</source>
+          <target state="translated">例如，如果您的應用程式會要求使用者輸入日期做為字串，它應預期使用者會根據其文化特性，將字串格式化，而應用程式應該適當地轉換字串。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>If your application then presents that date in its user interface, it should present it in the user's culture.</source>
+          <target state="translated">如果您的應用程式然後顯示該日期在其使用者介面，它應該呈現使用者的文化特性。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>However, if the application uploads the date to a central server, it should format the string according to one specific culture, to prevent confusion between potentially different date formats.</source>
+          <target state="translated">不過，如果應用程式會將日期上載到中央伺服器，它應該格式根據某一特定文化特性，以避免混淆之間可能有不同的日期格式字串。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Culture-Sensitive Functions</source>
+          <target state="translated">區分文化特性的函式</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>All of the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> string-conversion functions (except for the <ph id="ph2">`Str`</ph> and <ph id="ph3">`Val`</ph> functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.</source>
+          <target state="translated">所有的<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>字串轉換函式 (除了<ph id="ph2">`Str`</ph>和<ph id="ph3">`Val`</ph>函式) 以確定轉換和比較都適合使用的文化特性的應用程式的使用者使用應用程式的文化特性資訊。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting.</source>
+          <target state="translated">要成功地在不同的文化特性設定的電腦執行的應用程式中使用字串轉換函式的索引鍵是了解哪些函式會使用特定文化特性設定，並使用目前文化特性設定。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system.</source>
+          <target state="translated">請注意，應用程式的文化特性設定，根據預設，繼承自作業系統的文化特性設定。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:Microsoft.VisualBasic.Strings.Asc%2A&gt;, &lt;xref:Microsoft.VisualBasic.Strings.AscW%2A&gt;, &lt;xref:Microsoft.VisualBasic.Strings.Chr%2A&gt;, &lt;xref:Microsoft.VisualBasic.Strings.ChrW%2A&gt;, &lt;xref:Microsoft.VisualBasic.Strings.Format%2A&gt;, &lt;xref:Microsoft.VisualBasic.Conversion.Hex%2A&gt;, &lt;xref:Microsoft.VisualBasic.Conversion.Oct%2A&gt;, and <bpt id="p1">[</bpt>Type Conversion Functions<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept>.</source>
+          <target state="translated">如需詳細資訊，請參閱&lt;xref:Microsoft.VisualBasic.Strings.Asc%2A&gt;， &lt;xref:Microsoft.VisualBasic.Strings.AscW%2A&gt;， &lt;xref:Microsoft.VisualBasic.Strings.Chr%2A&gt;， &lt;xref:Microsoft.VisualBasic.Strings.ChrW%2A&gt;， &lt;xref:Microsoft.VisualBasic.Strings.Format%2A&gt;， &lt;xref:Microsoft.VisualBasic.Conversion.Hex%2A&gt;， &lt;xref:Microsoft.VisualBasic.Conversion.Oct%2A&gt;，和<bpt id="p1">[</bpt>類型轉換函式<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept>。&lt;/xref:Microsoft.VisualBasic.Conversion.Oct%2A&gt; &lt;/xref:Microsoft.VisualBasic.Conversion.Hex%2A&gt; &lt;/xref:Microsoft.VisualBasic.Strings.Format%2A&gt; &lt;/xref:Microsoft.VisualBasic.Strings.ChrW%2A&gt; &lt;/xref:Microsoft.VisualBasic.Strings.Chr%2A&gt; &lt;/xref:Microsoft.VisualBasic.Strings.AscW%2A&gt; &lt;/xref:Microsoft.VisualBasic.Strings.Asc%2A&gt;</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Str`</ph> (converts numbers to strings) and <ph id="ph2">`Val`</ph> (converts strings to numbers) functions do not use the application's culture information when converting between strings and numbers.</source>
+          <target state="translated"><ph id="ph1">`Str`</ph> （將數字轉換為字串） 和<ph id="ph2">`Val`</ph>（將數字字串） 函式不會使用應用程式的文化特性資訊字串和數字之間轉換時。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Instead, they recognize only the period (.) as a valid decimal separator.</source>
+          <target state="translated">相反地，它們只將句點 （.） 辨識為有效的十進位分隔符號。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The culturally-aware analogues of these functions are:</source>
+          <target state="translated">這些函式的文化特性感知類似情況如下︰</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Conversions that use the current culture.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>使用目前文化特性的轉換。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CStr`</ph> and <ph id="ph2">`Format`</ph> functions convert a number to a string, and the <ph id="ph3">`CDbl`</ph> and <ph id="ph4">`CInt`</ph> functions convert a string to a number.</source>
+          <target state="translated"><ph id="ph1">`CStr`</ph>和<ph id="ph2">`Format`</ph>函式會將數字轉換為字串，而<ph id="ph3">`CDbl`</ph>和<ph id="ph4">`CInt`</ph>函式會將字串轉換為數字。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Conversions that use a specific culture.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>使用特定文化特性的轉換。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Each number object has a <ph id="ph1">`ToString(IFormatProvider)`</ph> method that converts a number to a string, and a <ph id="ph2">`Parse(String, IFormatProvider)`</ph> method that converts a string to a number.</source>
+          <target state="translated">每一個數字的物件有<ph id="ph1">`ToString(IFormatProvider)`</ph>方法，將數字轉換為字串，和<ph id="ph2">`Parse(String, IFormatProvider)`</ph>方法，將字串轉換為數字。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`Double`</ph> type provides the &lt;xref:System.Double.ToString%28System.IFormatProvider%29&gt; and &lt;xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29&gt; methods.</source>
+          <target state="translated">例如，<ph id="ph1">`Double`</ph>類型提供&lt;xref:System.Double.ToString%28System.IFormatProvider%29&gt;和&lt;xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29&gt;方法。&lt;/xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29&gt; &lt;/xref:System.Double.ToString%28System.IFormatProvider%29&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:Microsoft.VisualBasic.Conversion.Str%2A&gt; and &lt;xref:Microsoft.VisualBasic.Conversion.Val%2A&gt;.</source>
+          <target state="translated">如需詳細資訊，請參閱&lt;xref:Microsoft.VisualBasic.Conversion.Str%2A&gt;和&lt;xref:Microsoft.VisualBasic.Conversion.Val%2A&gt;.&lt;/xref:Microsoft.VisualBasic.Conversion.Val%2A&gt; &lt;/xref:Microsoft.VisualBasic.Conversion.Str%2A&gt;</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Using a Specific Culture</source>
+          <target state="translated">使用特定文化特性</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Imagine that you are developing an application that sends a date (formatted as a string) to a Web service.</source>
+          <target state="translated">假設您正在開發的應用程式傳送至 Web 服務的日期 （格式為字串）。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In this case, your application must use a specific culture for the string conversion.</source>
+          <target state="translated">在此情況下，您的應用程式必須使用特定文化特性的字串轉換。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>To illustrate why, consider the result of using the date's &lt;xref:System.DateTime.ToString&gt; method: If your application uses that method to format the date July 4, 2005, it returns "7/4/2005 12:00:00 AM" when run with the United States English (en-US) culture, but it returns "04.07.2005 00:00:00" when run with the German (de-DE) culture.</source>
+          <target state="translated">為了說明原因，請考慮使用的日期，導致&lt;xref:System.DateTime.ToString&gt;方法︰ 如果您的應用程式會使用該方法，若要格式化日期為 2005 年 7 月 4 日，則會傳回 「 2005 年 7 月 4 日 12:00:00 AM 」 使用美式英文 (EN-US) 文化特性執行時，但它會傳回"04.07.2005 00:00:00 」 使用德國 (DE-DE) 文化特性執行時。&lt;/xref:System.DateTime.ToString&gt;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When you need to perform a string conversion in a specific culture format, you should use the <ph id="ph1">`CultureInfo`</ph> class that is built into the <ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</source>
+          <target state="translated">當您需要執行的特定文化特性格式的字串轉換時，您應該使用<ph id="ph1">`CultureInfo`</ph>類別是內建於<ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can create a new <ph id="ph1">`CultureInfo`</ph> object for a specific culture by passing the culture's name to the &lt;xref:System.Globalization.CultureInfo.%23ctor%2A&gt; constructor.</source>
+          <target state="translated">您可以建立新<ph id="ph1">`CultureInfo`</ph>物件的特定文化特性的文化特性將名稱傳遞給&lt;xref:System.Globalization.CultureInfo.%23ctor%2A&gt;建構函式。&lt;/xref:System.Globalization.CultureInfo.%23ctor%2A&gt;</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The supported culture names are listed in the &lt;xref:System.Globalization.CultureInfo&gt; class Help page.</source>
+          <target state="translated">支援的文化特性名稱會列在&lt;xref:System.Globalization.CultureInfo&gt;類別說明頁面。&lt;/xref:System.Globalization.CultureInfo&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can get an instance of the <bpt id="p1">*</bpt>invariant culture<ept id="p1">*</ept> from the &lt;xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName&gt; property.</source>
+          <target state="translated">或者，您可以取得的執行個體<bpt id="p1">*</bpt>文化特性而異<ept id="p1">*</ept>從&lt;xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName&gt;屬性。&lt;/xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The invariant culture is based on the English culture, but there are some differences.</source>
+          <target state="translated">而異的文化特性為基礎的英文文化特性，但有一些差異。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>For example, the invariant culture specifies a 24-hour clock instead of a 12-hour clock.</source>
+          <target state="translated">例如，文化特性而異指定 24 小時制時鐘，而不是採用 12 小時制。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To convert a date to the culture's string, pass the &lt;xref:System.Globalization.CultureInfo&gt; object to the date object's &lt;xref:System.DateTime.ToString%28System.IFormatProvider%29&gt; method.</source>
+          <target state="translated">若要將日期轉換成文化特性的字串，傳遞&lt;xref:System.Globalization.CultureInfo&gt;date 物件的物件&lt;xref:System.DateTime.ToString%28System.IFormatProvider%29&gt;方法。&lt;/xref:System.DateTime.ToString%28System.IFormatProvider%29&gt; &lt;/xref:System.Globalization.CultureInfo&gt;</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>For example, the following code displays "07/04/2005 00:00:00", regardless of the application's culture settings.</source>
+          <target state="translated">例如，下列程式碼會顯示 「 07/04/2005年 00:00:00"，不論應用程式的文化特性設定。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrConcepts#1<ept id="p2">](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrConcepts #&amp;1;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Date literals are always interpreted according to the English culture.</source>
+          <target state="translated">日期常值一律會解譯為根據英文的文化特性。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Comparing Strings</source>
+          <target state="translated">比較字串</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>There are two important situations where string comparisons are needed:</source>
+          <target state="translated">有兩個重要的情況需要字串比較的。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Sorting data for display to the user.<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>排序資料以供顯示給使用者。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Use operations based on the current culture so the strings sort appropriately.</source>
+          <target state="translated">使用根據目前文化特性，因此能適當地排序字串的作業。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Determining if two application-internal strings exactly match (typically for security purposes).<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>決定是否兩個應用程式內部的字串完全符合 （通常是針對安全性目的）。<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Use operations that disregard the current culture.</source>
+          <target state="translated">使用忽略目前的文化特性的作業。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You can perform both types of comparisons with the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> &lt;xref:Microsoft.VisualBasic.Strings.StrComp%2A&gt; function.</source>
+          <target state="translated">您可以執行這兩種類型的比較與<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>&lt;xref:Microsoft.VisualBasic.Strings.StrComp%2A&gt;函式。&lt;/xref:Microsoft.VisualBasic.Strings.StrComp%2A&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Specify the optional <ph id="ph1">`Compare`</ph> argument to control the type of comparison: <ph id="ph2">`Text`</ph> for most input and output <ph id="ph3">`Binary`</ph> for determining exact matches.</source>
+          <target state="translated">指定選擇性<ph id="ph1">`Compare`</ph>控制的比較類型的引數︰<ph id="ph2">`Text`</ph>大部分的輸入和輸出<ph id="ph3">`Binary`</ph>判斷完全相符項目。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`StrComp`</ph> function returns an integer that indicates the relationship between the two compared strings based on the sorting order.</source>
+          <target state="translated"><ph id="ph1">`StrComp`</ph>函式會傳回一個整數，表示排序順序為基礎的比較兩個字串之間的關聯性。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A positive value for the result indicates that the first string is greater than the second string.</source>
+          <target state="translated">結果為正值表示第一個字串大於第二個字串。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>A negative result indicates the first string is smaller, and zero indicates equality between the strings.</source>
+          <target state="translated">負數的結果會指出第一個字串較小，且零表示字串相等。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#22<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;22;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can also use the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> partner of the <ph id="ph2">`StrComp`</ph> function, the &lt;xref:System.String.Compare%2A?displayProperty=fullName&gt; method.</source>
+          <target state="translated">您也可以使用<ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>夥伴<ph id="ph2">`StrComp`</ph>函式，&lt;xref:System.String.Compare%2A?displayProperty=fullName&gt;方法。&lt;/xref:System.String.Compare%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>This is a static, overloaded method of the base string class.</source>
+          <target state="translated">這是字串基底類別的靜態多載方法。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following example illustrates how this method is used:</source>
+          <target state="translated">下列範例將說明如何使用這個方法︰</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#48<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;48;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For finer control over how the comparisons are performed, you can use additional overloads of the &lt;xref:System.String.Compare%2A&gt; method.</source>
+          <target state="translated">更精細地控制如何執行比較的詳細資訊，您可以使用的其他多載&lt;xref:System.String.Compare%2A&gt;方法。&lt;/xref:System.String.Compare%2A&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>With the &lt;xref:System.String.Compare%2A?displayProperty=fullName&gt; method, you can use the <ph id="ph1">`comparisonType`</ph> argument to specify which type of comparison to use.</source>
+          <target state="translated">使用&lt;xref:System.String.Compare%2A?displayProperty=fullName&gt;方法中，您可以使用<ph id="ph1">`comparisonType`</ph>引數指定要使用的比較類型。&lt;/xref:System.String.Compare%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Value for <ph id="ph1">`comparisonType`</ph> argument</source>
+          <target state="translated">值<ph id="ph1">`comparisonType`</ph>引數</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Type of comparison</source>
+          <target state="translated">比較的類型</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>When to use</source>
+          <target state="translated">使用時機</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Comparison based on strings' component bytes.</source>
+          <target state="translated">依據字串元件位元組的比較。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Use this value when comparing: case-sensitive identifiers, security-related settings, or other non-linguistic identifiers where the bytes must match exactly.</source>
+          <target state="translated">比較時使用此值︰ 區分大小寫的識別項、 安全性相關的設定或位元組必須完全符合其他非語言識別項。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Comparison based on strings' component bytes.</source>
+          <target state="translated">依據字串元件位元組的比較。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`OrdinalIgnoreCase`</ph> uses the invariant culture information to determine when two characters differ only in capitalization.</source>
+          <target state="translated"><ph id="ph1">`OrdinalIgnoreCase`</ph>使用不變文化特性資訊來判斷兩個字元不同大小寫。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Use this value when comparing: case-insensitive identifiers, security-related settings, and data stored in Windows.</source>
+          <target state="translated">比較時使用此值︰ 不區分大小寫的識別項、 安全性相關設定，以及儲存在 Windows 中的資料。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`CurrentCulture`</ph> or <ph id="ph2">`CurrentCultureIgnoreCase`</ph></source>
+          <target state="translated"><ph id="ph1">`CurrentCulture`</ph> 或 <ph id="ph2">`CurrentCultureIgnoreCase`</ph></target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Comparison based on the strings' interpretation in the current culture.</source>
+          <target state="translated">在目前的文化特性的字串解譯為基礎的比較。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Use these values when comparing: data that is displayed to the user, most user input, and other data that requires linguistic interpretation.</source>
+          <target state="translated">比較時使用這些值︰ 資料顯示給使用者，大部分使用者輸入，以及其他需要語言解譯的資料。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`InvariantCulture`</ph> or <ph id="ph2">`InvariantCultureIgnoreCase`</ph></source>
+          <target state="translated"><ph id="ph1">`InvariantCulture`</ph> 或 <ph id="ph2">`InvariantCultureIgnoreCase`</ph></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Comparison based on the strings' interpretation in the invariant culture.</source>
+          <target state="translated">而異的文化特性的字串解譯為基礎的比較。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This is different than the <ph id="ph1">`Ordinal`</ph> and <ph id="ph2">`OrdinalIgnoreCase`</ph>, because the invariant culture treats characters outside its accepted range as equivalent invariant characters.</source>
+          <target state="translated">這是不同於<ph id="ph1">`Ordinal`</ph>和<ph id="ph2">`OrdinalIgnoreCase`</ph>，因為文化特性而異視為相等的非變異字元可接受的範圍之外的字元。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Use these values only when comparing persisting data or displaying linguistically-relevant data that requires a fixed sort order.</source>
+          <target state="translated">只比較持續資料或顯示的語言相關資料時，需要固定的排序次序，請使用這些值。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Security Considerations</source>
+          <target state="translated">安全性考量</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the &lt;xref:System.String.Compare%2A?displayProperty=fullName&gt; method, and pass <ph id="ph1">`Ordinal`</ph> or <ph id="ph2">`OrdinalIgnoreCase`</ph> for the <ph id="ph3">`comparisonType`</ph> argument.</source>
+          <target state="translated">如果您的應用程式進行比較或大小寫變更作業的結果為基礎的安全性決策，則作業應該使用&lt;xref:System.String.Compare%2A?displayProperty=fullName&gt;方法，然後傳遞<ph id="ph1">`Ordinal`</ph>或<ph id="ph2">`OrdinalIgnoreCase`</ph>的<ph id="ph3">`comparisonType`</ph>引數。&lt;/xref:System.String.Compare%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Globalization.CultureInfo&gt;</source>
+          <target state="translated">&lt;xref:System.Globalization.CultureInfo&gt;&lt;/xref:System.Globalization.CultureInfo&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Introduction to Strings in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>在 Visual Basic 中的字串簡介<ept id="p1">](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Conversion Functions<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>類型轉換函式<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2486d989801fc4866a50747aa963b509a627994d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\early-late-binding\determining-object-type.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c4118fbfddfd60dd2d4ee2754ce7491a48a54b3f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">175bd749d8eb742016dfd818e4f3ffdcff42cc37</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Determining Object Type (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Determinando o tipo de objeto (Visual Basic) | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Determining Object Type (Visual Basic)</source>
+          <target state="translated">Determinando o tipo de objeto (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Generic object variables (that is, variables you declare as <ph id="ph1">`Object`</ph>) can hold objects from any class.</source>
+          <target state="translated">Variáveis de objeto genérico (ou seja, variáveis que você declara como <ph id="ph1">`Object`</ph>) pode conter objetos de qualquer classe.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When using variables of type <ph id="ph1">`Object`</ph>, you may need to take different actions based on the class of the object; for example, some objects might not support a particular property or method.</source>
+          <target state="translated">Ao usar variáveis do tipo <ph id="ph1">`Object`</ph>, talvez você precise executar ações diferentes com base na classe de objeto; por exemplo, alguns objetos podem não oferecer suporte a uma determinada propriedade ou método.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> provides two means of determining which type of object is stored in an object variable: the <ph id="ph2">`TypeName`</ph> function and the <ph id="ph3">`TypeOf...Is`</ph> operator.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>fornece dois meios de determinar qual tipo de objeto é armazenado em uma variável de objeto: o <ph id="ph2">`TypeName`</ph> função e o <ph id="ph3">`TypeOf...Is`</ph> operador.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>TypeName and TypeOf…Is</source>
+          <target state="translated">TypeName e TypeOf... É</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TypeName`</ph> function returns a string and is the best choice when you need to store or display the class name of an object, as shown in the following code fragment:</source>
+          <target state="translated">O <ph id="ph1">`TypeName`</ph> função retorna uma cadeia de caracteres e é a melhor opção quando você precisa armazenar ou exibir o nome da classe de um objeto, conforme mostrado no fragmento de código a seguir:</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#92<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#92;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TypeOf...Is`</ph> operator is the best choice for testing an object's type, because it is much faster than an equivalent string comparison using <ph id="ph2">`TypeName`</ph>.</source>
+          <target state="translated">O <ph id="ph1">`TypeOf...Is`</ph> operador é a melhor opção para testar tipo de um objeto, pois é muito mais rápido do que uma comparação de cadeia de caracteres equivalente usando <ph id="ph2">`TypeName`</ph>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following code fragment uses <ph id="ph1">`TypeOf...Is`</ph> within an <ph id="ph2">`If...Then...Else`</ph> statement:</source>
+          <target state="translated">O fragmento de código a seguir usa <ph id="ph1">`TypeOf...Is`</ph> dentro de um <ph id="ph2">`If...Then...Else`</ph> instrução:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#93<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#93;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>A word of caution is due here.</source>
+          <target state="translated">Uma nota de advertência aqui é devida.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TypeOf...Is`</ph> operator returns <ph id="ph2">`True`</ph> if an object is of a specific type, or is derived from a specific type.</source>
+          <target state="translated">O <ph id="ph1">`TypeOf...Is`</ph> operador retorna <ph id="ph2">`True`</ph> se um objeto for de um tipo específico, ou é derivado de um tipo específico.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Almost everything you do with <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> involves objects, which include some elements not normally thought of as objects, such as strings and integers.</source>
+          <target state="translated">Quase tudo o que fazer com <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> envolve objetos, que incluem alguns elementos que normalmente não são considerados objetos, como cadeias de caracteres e inteiros.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>These objects are derived from and inherit methods from &lt;xref:System.Object&gt;.</source>
+          <target state="translated">Esses objetos são derivados de e herdam métodos de &lt;xref:System.Object&gt;.&lt;/xref:System.Object&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>When passed an <ph id="ph1">`Integer`</ph> and evaluated with <ph id="ph2">`Object`</ph>, the <ph id="ph3">`TypeOf...Is`</ph> operator returns <ph id="ph4">`True`</ph>.</source>
+          <target state="translated">Quando passado um <ph id="ph1">`Integer`</ph> e avaliadas com <ph id="ph2">`Object`</ph>, o <ph id="ph3">`TypeOf...Is`</ph> retornará <ph id="ph4">`True`</ph>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example reports that the parameter <ph id="ph1">`InParam`</ph> is both an <ph id="ph2">`Object`</ph> and an <ph id="ph3">`Integer`</ph>:</source>
+          <target state="translated">O exemplo a seguir relata que o parâmetro <ph id="ph1">`InParam`</ph> tanto uma <ph id="ph2">`Object`</ph> e um <ph id="ph3">`Integer`</ph>:</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#94<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#94;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The following example uses both <ph id="ph1">`TypeOf...Is`</ph> and <ph id="ph2">`TypeName`</ph> to determine the type of object passed to it in the <ph id="ph3">`Ctrl`</ph> argument.</source>
+          <target state="translated">O exemplo a seguir usa <ph id="ph1">`TypeOf...Is`</ph> e <ph id="ph2">`TypeName`</ph> para determinar o tipo de objeto passado para ele no <ph id="ph3">`Ctrl`</ph> argumento.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TestObject`</ph> procedure calls <ph id="ph2">`ShowType`</ph> with three different kinds of controls.</source>
+          <target state="translated">O <ph id="ph1">`TestObject`</ph> chamadas de procedimento <ph id="ph2">`ShowType`</ph> com três tipos diferentes de controles.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>To run the example</source>
+          <target state="translated">Para executar o exemplo</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Create a new Windows Application project and add a &lt;xref:System.Windows.Forms.Button&gt; control, a &lt;xref:System.Windows.Forms.CheckBox&gt; control, and a &lt;xref:System.Windows.Forms.RadioButton&gt; control to the form.</source>
+          <target state="translated">Criar um novo projeto de aplicativo do Windows e adicionar um &lt;xref:System.Windows.Forms.Button&gt;controle, um &lt;xref:System.Windows.Forms.CheckBox&gt;controle e um &lt;xref:System.Windows.Forms.RadioButton&gt;controle ao formulário.&lt;/xref:System.Windows.Forms.RadioButton&gt; &lt;/xref:System.Windows.Forms.CheckBox&gt; &lt;/xref:System.Windows.Forms.Button&gt;</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>From the button on your form, call the <ph id="ph1">`TestObject`</ph> procedure.</source>
+          <target state="translated">Com o botão no formulário, chame o <ph id="ph1">`TestObject`</ph> procedimento.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add the following code to your form:</source>
+          <target state="translated">Adicione o seguinte código ao seu formulário:</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#95<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#95;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.Information.TypeName%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.Information.TypeName%2A&gt;&lt;/xref:Microsoft.VisualBasic.Information.TypeName%2A&gt;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Calling a Property or Method Using a String Name<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Chamando uma propriedade ou método usando um nome de cadeia de caracteres<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Object Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/object-data-type.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipo de dados Object<ept id="p1">](../../../../visual-basic/language-reference/data-types/object-data-type.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>If...Then...Else Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>If... Then... Instrução else<ept id="p1">](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>String Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipo de dados String<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Integer Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/integer-data-type.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipo de Dados Integer<ept id="p1">](../../../../visual-basic/language-reference/data-types/integer-data-type.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

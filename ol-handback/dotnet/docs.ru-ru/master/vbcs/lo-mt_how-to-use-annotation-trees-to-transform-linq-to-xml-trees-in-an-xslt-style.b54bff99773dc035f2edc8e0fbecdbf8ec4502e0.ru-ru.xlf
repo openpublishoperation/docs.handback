@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">17324fb6dca653aa3c15e3bad2fcc5ac35828bef</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-use-annotation-trees-to-transform-linq-to-xml-trees-in-an-xslt-style.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b944c4dc4ba979ee448051a03493d1755466425f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fd49b1daddbcbbd088ce85c8bb2b413dc2c57b16</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Практическое руководство: использование примечаний для преобразования деревьев LINQ to XML в стиль XSLT (Visual Basic) | Документы Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic)</source>
+          <target state="translated">Практическое руководство: использование примечаний для преобразования деревьев LINQ to XML в стиль XSLT (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Annotations can be used to facilitate transforms of an XML tree.</source>
+          <target state="translated">Заметки можно использовать для упрощения преобразований XML-дерева.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Some XML documents are "document centric with mixed content."</source>
+          <target state="translated">Некоторые XML-документы рассматриваются как «предназначенные для обработки в виде документов со смешанным содержимым».</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>With such documents, you don't necessarily know the shape of child nodes of an element.</source>
+          <target state="translated">При использовании таких документов не требуется знать форму дочерних узлов элемента.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For instance, a node that contains text may look like this:</source>
+          <target state="translated">Например, узел, содержащий текст, может выглядеть так:</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For any given text node, there may be any number of child <ph id="ph1">`&lt;b&gt;`</ph> and <ph id="ph2">`&lt;i&gt;`</ph> elements.</source>
+          <target state="translated">У любого заданного текстового узла может быть любое количество дочерних элементов <ph id="ph1">`&lt;b&gt;`</ph> и <ph id="ph2">`&lt;i&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This approach extends to a number of other situations: such as, pages that can contain a variety of child elements, such as regular paragraphs, bulleted paragraphs, and bitmaps.</source>
+          <target state="translated">Данный подход распространяется на ряд других ситуациях: например, страницы, которые может содержать множество дочерних элементов, таких как обычные абзацы, маркированные абзацы и битовые карты.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Cells in a table may contain text, drop down lists, or bitmaps.</source>
+          <target state="translated">Ячейки таблицы могут содержать текст, раскрывающиеся списки или битовые карты.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>One of the primary characteristics of document centric XML is that you do not know which child element any particular element will have.</source>
+          <target state="translated">Одной из основных отличительных особенностей кода XML, предназначенного для представления документов, является то, что неизвестно, какие дочерние элементы будет иметь тот или иной конкретный элемент.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If you want to transform elements in a tree where you don't necessarily know much about the children of the elements that you want to transform, then this approach that uses annotations is an effective approach.</source>
+          <target state="translated">Если требуется преобразовать элементы в дереве, о дочерних элементах которого знать не обязательно, то данный подход, использующий заметки, становится эффективным.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The summary of the approach is:</source>
+          <target state="translated">Сводка этого подхода состоит в следующем.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>First, annotate elements in the tree with a replacement element.</source>
+          <target state="translated">Во-первых, обозначить элементы в дереве заметками в виде элемента замены.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Second, iterate through the entire tree, creating a new tree where you replace each element with its annotation.</source>
+          <target state="translated">Во-вторых, провести итерацию по всему дереву, создавая новое дерево, в котором каждый элемент заменяется его заметкой.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This example implements the iteration and creation of the new tree in a function named <ph id="ph1">`XForm`</ph>.</source>
+          <target state="translated">В этом примере реализуются итерация и создание нового дерева в функции с именем <ph id="ph1">`XForm`</ph>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In detail, the approach consists of:</source>
+          <target state="translated">В более подробном изложении этот подход состоит в следующем.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Execute one or more LINQ to XML queries that return the set of elements that you want to transform from one shape to another.</source>
+          <target state="translated">Выполняются один или несколько запросов LINQ to XML, возвращающих набор элементов, которые требуется преобразовать из одной формы в другую.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For each element in the query, add a new &lt;xref:System.Xml.Linq.XElement&gt; object as an annotation to the element.</source>
+          <target state="translated">Для каждого элемента в запросе, добавьте новый &lt;xref:System.Xml.Linq.XElement&gt;объект как заметки к элементу.&lt;/xref:System.Xml.Linq.XElement&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This new element will replace the annotated element in the new, transformed tree.</source>
+          <target state="translated">Новый элемент заменяет элемент с заметкой в новом, преобразованном дереве.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This is simple code to write, as demonstrated by the example.</source>
+          <target state="translated">Как видно из примера, этот код прост для написания.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The new element that is added as an annotation can contain new child nodes; it can form a sub-tree with any desired shape.</source>
+          <target state="translated">Новый элемент, добавляемый в виде заметки, может содержать новые дочерние узлы. Он может формировать поддерево любой необходимой формы.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>There is a special rule: If a child node of the new element is in a different namespace, a namespace that is made up for this purpose (in this example, the namespace is <ph id="ph1">`http://www.microsoft.com/LinqToXmlTransform/2007`</ph>), then that child element is not copied to the new tree.</source>
+          <target state="translated">Предусмотрено специальное правило. Если дочерний узел нового элемента находится в другом пространстве имен, специально созданном для этой цели (в данном примере таким пространством имен является <ph id="ph1">`http://www.microsoft.com/LinqToXmlTransform/2007`</ph>), то дочерний элемент не копируется в новое дерево.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Instead, if the namespace is the above mentioned special namespace, and the local name of the element is <ph id="ph1">`ApplyTransforms`</ph>, then the child nodes of the element in the source tree are iterated, and copied to the new tree (with the exception that annotated child elements are themselves transformed according to these rules).</source>
+          <target state="translated">Вместо этого, если пространство имен представляет собой упомянутое выше специальное пространство имен, а локальным именем элемента является <ph id="ph1">`ApplyTransforms`</ph>, последовательно производится итерация по дочерним узлам элемента в исходном дереве и копирование их в новое дерево (за исключением того, что обозначенные заметками дочерние элементы преобразуются сами согласно этим правилам).</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>This is somewhat analogous to the specification of transforms in XSL.</source>
+          <target state="translated">Это в какой-то мере аналогично спецификации преобразований в XSL.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The query that selects a set of nodes is analogous to the XPath expression for a template.</source>
+          <target state="translated">Запрос, выбирающий набор узлов, аналогичен выражению XPath для шаблона.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The code to create the new &lt;xref:System.Xml.Linq.XElement&gt; that is saved as an annotation is analogous to the sequence constructor in XSL, and the <ph id="ph1">`ApplyTransforms`</ph> element is analogous in function to the <ph id="ph2">`xsl:apply-templates`</ph> element in XSL.</source>
+          <target state="translated">Код для создания нового &lt;xref:System.Xml.Linq.XElement&gt;, сохраняемого в виде заметки, аналогичен конструктору последовательности в XSL и <ph id="ph1">`ApplyTransforms`</ph> аналогичен функции <ph id="ph2">`xsl:apply-templates`</ph> элемент в XSL.&lt;/xref:System.Xml.Linq.XElement&gt;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>One advantage to taking this approach - as you formulate queries, you are always writing queries on the unmodified source tree.</source>
+          <target state="translated">Одним из преимуществ данного подхода является то, что запросы при формировании всегда создаются применительно к неизмененному исходному дереву.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You need not worry about how modifications to the tree affect the queries that you are writing.</source>
+          <target state="translated">Можно не беспокоиться о том, как изменения в дереве повлияют на формируемые запросы.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Transforming a Tree</source>
+          <target state="translated">Преобразование дерева</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This first example renames all <ph id="ph1">`Paragraph`</ph> nodes to <ph id="ph2">`para`</ph>.</source>
+          <target state="translated">В этом первом примере переименовываются все узлы <ph id="ph1">`Paragraph`</ph> в <ph id="ph2">`para`</ph>.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">В этом примере выводятся следующие данные:</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>A More Complicated Transform</source>
+          <target state="translated">Более сложное преобразование</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following example queries the tree and calculates the average and sum of the <ph id="ph1">`Data`</ph> elements, and adds them as new elements to the tree.</source>
+          <target state="translated">В следующем примере выполняется запрос к дереву и вычисляются среднее арифметическое и сумма элементов <ph id="ph1">`Data`</ph>, а затем происходит их добавление в дерево в виде новых элементов.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">В этом примере выводятся следующие данные:</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Effecting the Transform</source>
+          <target state="translated">Влияние на преобразование</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A small function, <ph id="ph1">`XForm`</ph>, creates a new transformed tree from the original, annotated tree.</source>
+          <target state="translated">Небольшая функция <ph id="ph1">`XForm`</ph> создает новое преобразованное дерево из исходного дерева, обозначенного заметками.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The pseudo code for the function is quite simple:</source>
+          <target state="translated">Псевдокод для функции достаточно прост:</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Following is the implementation of this function:</source>
+          <target state="translated">Далее приводится реализация этой функции:</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Complete Example</source>
+          <target state="translated">Полный пример</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following code is a complete example that includes the <ph id="ph1">`XForm`</ph> function.</source>
+          <target state="translated">Следующий код является полным примером, включающим функцию <ph id="ph1">`XForm`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>It includes a few of the typical uses of this type of transform:</source>
+          <target state="translated">Он включает несколько типичных вариантов использования преобразования данного типа:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">В этом примере выводятся следующие данные:</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Advanced LINQ to XML Programming (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Дополнительно программированию LINQ to XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

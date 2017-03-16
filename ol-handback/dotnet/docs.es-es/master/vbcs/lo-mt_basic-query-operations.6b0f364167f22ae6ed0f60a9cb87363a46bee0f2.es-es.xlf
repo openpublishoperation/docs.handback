@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">87ff9173b5ff72385c8ecdc3ff13735e7be2a21d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\basic-query-operations.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3479d10206398b8494c046ec70c5b847cca51999</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c2fa599856b8b3913d2dd2aa9673ab7282698d62</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Basic Query Operations (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Operaciones básicas de consulta (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Basic Query Operations (Visual Basic)</source>
+          <target state="translated">Operaciones básicas de consulta (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This topic provides a brief introduction to <ph id="ph1">[!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)]</ph> expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query.</source>
+          <target state="translated">Este tema proporciona una breve introducción a <ph id="ph1">[!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext_md.md)]</ph> expresiones en Visual Basic y algunos de los tipos de operaciones que se realizan en una consulta.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For more information, see the following topics:</source>
+          <target state="translated">Para obtener más información, vea los temas siguientes:</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Introduction to LINQ in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Introducción a LINQ en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Queries<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Consultas<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Writing Queries in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Tutorial: Escribir consultas en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Specifying the Data Source (From)</source>
+          <target state="translated">Especificar el origen de datos (desde)</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In a <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> query, the first step is to specify the data source that you want to query.</source>
+          <target state="translated">En un <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> consulta, el primer paso es especificar el origen de datos que desea consultar.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Therefore, the <ph id="ph1">`From`</ph> clause in a query always comes first.</source>
+          <target state="translated">Por lo tanto, la <ph id="ph1">`From`</ph> cláusula en una consulta siempre viene primero.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Query operators select and shape the result based on the type of the source.</source>
+          <target state="translated">Operadores de consulta seleccionan y forma al resultado basándose en el tipo de origen.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#1<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>1 VbLINQBasicOps<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`From`</ph> clause specifies the data source, <ph id="ph2">`customers`</ph>, and a <bpt id="p1">*</bpt>range variable<ept id="p1">*</ept>, <ph id="ph3">`cust`</ph>.</source>
+          <target state="translated">El <ph id="ph1">`From`</ph> cláusula especifica el origen de datos, <ph id="ph2">`customers`</ph>y un <bpt id="p1">*</bpt>variable de rango<ept id="p1">*</ept>, <ph id="ph3">`cust`</ph>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The range variable is like a loop iteration variable, except that in a query expression, no actual iteration occurs.</source>
+          <target state="translated">La variable de rango es como una variable de iteración del bucle, excepto que en una expresión de consulta, se produce ninguna iteración real.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>When the query is executed, often by using a <ph id="ph1">`For Each`</ph> loop, the range variable serves as a reference to each successive element in <ph id="ph2">`customers`</ph>.</source>
+          <target state="translated">Cuando se ejecuta la consulta, a menudo mediante un <ph id="ph1">`For Each`</ph> el bucle, la variable de rango actúa como una referencia a cada elemento sucesivo de <ph id="ph2">`customers`</ph>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Because the compiler can infer the type of <ph id="ph1">`cust`</ph>, you do not have to specify it explicitly.</source>
+          <target state="translated">Dado que el compilador puede inferir el tipo de <ph id="ph1">`cust`</ph>, no es necesario especificar explícitamente.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>For examples of queries written with and without explicit typing, see <bpt id="p1">[</bpt>Type Relationships in Query Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/type-relationships-in-query-operations.md)</ept>.</source>
+          <target state="translated">Para obtener ejemplos de las consultas escritas con y sin establecimiento explícito de tipos, vea <bpt id="p1">[</bpt>relaciones entre tipos en operaciones de consulta (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/type-relationships-in-query-operations.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>For more information about how to use the <ph id="ph1">`From`</ph> clause in Visual Basic, see <bpt id="p1">[</bpt>From Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/from-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de cómo utilizar el <ph id="ph1">`From`</ph> en Visual Basic, consulte <bpt id="p1">[</bpt>cláusula From<ept id="p1">](../../../../visual-basic/language-reference/queries/from-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Filtering Data (Where)</source>
+          <target state="translated">Filtrar datos (dónde)</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Probably the most common query operation is applying a filter in the form of a Boolean expression.</source>
+          <target state="translated">Probablemente la operación de consulta más común es aplicar un filtro en forma de una expresión booleana.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The query then returns only those elements for which the expression is true.</source>
+          <target state="translated">La consulta devuelve sólo los elementos para los que la expresión es verdadera.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Where`</ph> clause is used to perform the filtering.</source>
+          <target state="translated">Un <ph id="ph1">`Where`</ph> cláusula se utiliza para realizar el filtrado.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The filter specifies which elements in the data source to include in the resulting sequence.</source>
+          <target state="translated">El filtro especifica qué elementos del origen de datos para incluir en la secuencia resultante.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In the following example, only those customers who have an address in London are included.</source>
+          <target state="translated">En el ejemplo siguiente, se incluyen sólo los clientes que tienen una dirección en Londres.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#2<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#2;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>You can use logical operators such as <ph id="ph1">`And`</ph> and <ph id="ph2">`Or`</ph> to combine filter expressions in a <ph id="ph3">`Where`</ph> clause.</source>
+          <target state="translated">Puede usar operadores lógicos como <ph id="ph1">`And`</ph> y <ph id="ph2">`Or`</ph> para combinar expresiones de filtro en un <ph id="ph3">`Where`</ph> cláusula.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, to return only those customers who are from London and whose name is Devon, use the following code:</source>
+          <target state="translated">Por ejemplo, para devolver a sólo los clientes de Londres y cuyo nombre es Devon, utilice el siguiente código:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>To return customers from London or Paris, use the following code:</source>
+          <target state="translated">Para devolver a los clientes de Londres o París, utilice el código siguiente:</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>For more information about how to use the <ph id="ph1">`Where`</ph> clause in Visual Basic, see <bpt id="p1">[</bpt>Where Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/where-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de cómo utilizar el <ph id="ph1">`Where`</ph> en Visual Basic, consulte <bpt id="p1">[</bpt>cláusula Where<ept id="p1">](../../../../visual-basic/language-reference/queries/where-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Ordering Data (Order By)</source>
+          <target state="translated">Ordenar datos (Order By)</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>It often is convenient to sort returned data into a particular order.</source>
+          <target state="translated">A menudo es conveniente ordenar los datos devueltos en un orden concreto.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Order By`</ph> clause will cause the elements in the returned sequence to be sorted on a specified field or fields.</source>
+          <target state="translated">El <ph id="ph1">`Order By`</ph> cláusula hará que los elementos de la secuencia devuelta se ordenen en un campo o campos especificados.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>For example, the following query sorts the results based on the <ph id="ph1">`Name`</ph> property.</source>
+          <target state="translated">Por ejemplo, la siguiente consulta ordena los resultados según la <ph id="ph1">`Name`</ph> propiedad.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`Name`</ph> is a string, the returned data will be sorted alphabetically, from A to Z.</source>
+          <target state="translated">Porque <ph id="ph1">`Name`</ph> es una cadena, los datos devueltos se ordenarán alfabéticamente, de A Z.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#3<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;3;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>To order the results in reverse order, from Z to A, use the <ph id="ph1">`Order By...Descending`</ph> clause.</source>
+          <target state="translated">Para ordenar los resultados en orden inverso, de Z a, utilice el <ph id="ph1">`Order By...Descending`</ph> cláusula.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The default is <ph id="ph1">`Ascending`</ph> when neither <ph id="ph2">`Ascending`</ph> nor <ph id="ph3">`Descending`</ph> is specified.</source>
+          <target state="translated">El valor predeterminado es <ph id="ph1">`Ascending`</ph> cuando ninguno <ph id="ph2">`Ascending`</ph> ni <ph id="ph3">`Descending`</ph> especificado.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For more information about how to use the <ph id="ph1">`Order By`</ph> clause in Visual Basic, see <bpt id="p1">[</bpt>Order By Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/order-by-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de cómo utilizar el <ph id="ph1">`Order By`</ph> en Visual Basic, consulte <bpt id="p1">[</bpt>cláusula Order By<ept id="p1">](../../../../visual-basic/language-reference/queries/order-by-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Selecting Data (Select)</source>
+          <target state="translated">Seleccionar (Select) de datos</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Select`</ph> clause specifies the form and content of returned elements.</source>
+          <target state="translated">El <ph id="ph1">`Select`</ph> cláusula especifica la forma y el contenido de elementos devueltos.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, you can specify whether your results will consist of complete <ph id="ph1">`Customer`</ph> objects, just one <ph id="ph2">`Customer`</ph> property, a subset of properties, a combination of properties from various data sources, or some new result type based on a computation.</source>
+          <target state="translated">Por ejemplo, puede especificar si sus resultados estarán compuestos de completa <ph id="ph1">`Customer`</ph> objetos, sólo uno <ph id="ph2">`Customer`</ph> propiedad, un subconjunto de propiedades, una combinación de propiedades de diversos orígenes de datos o algún tipo de resultado nuevo basado en un cálculo.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>When the <ph id="ph1">`Select`</ph> clause produces something other than a copy of the source element, the operation is called a <bpt id="p1">*</bpt>projection<ept id="p1">*</ept>.</source>
+          <target state="translated">Cuando el <ph id="ph1">`Select`</ph> cláusula genera un valor distinto de una copia del elemento de origen, la operación se denomina un <bpt id="p1">*</bpt>proyección<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To retrieve a collection that consists of complete <ph id="ph1">`Customer`</ph> objects, select the range variable itself:</source>
+          <target state="translated">Para recuperar una colección formada por completo <ph id="ph1">`Customer`</ph> objetos, seleccione la variable de rango:</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#4<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps Nº&amp;4;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>If a <ph id="ph1">`Customer`</ph> instance is a large object that has many fields, and all that you want to retrieve is the name, you can select <ph id="ph2">`cust.Name`</ph>, as shown in the following example.</source>
+          <target state="translated">Si un <ph id="ph1">`Customer`</ph> instancia es un objeto grande que tiene muchos campos, y todo lo que van a recuperar es el nombre, puede seleccionar <ph id="ph2">`cust.Name`</ph>, como se muestra en el ejemplo siguiente.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Local type inference recognizes that this changes the result type from a collection of <ph id="ph1">`Customer`</ph> objects to a collection of strings.</source>
+          <target state="translated">Inferencia de tipo local reconoce que se cambia el tipo de resultado de una colección de <ph id="ph1">`Customer`</ph> objetos a una colección de cadenas.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#5<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#5;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>To select multiple fields from the data source, you have two choices:</source>
+          <target state="translated">Para seleccionar varios campos del origen de datos, tiene dos opciones:</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`Select`</ph> clause, specify the fields you want to include in the result.</source>
+          <target state="translated">En el <ph id="ph1">`Select`</ph> cláusula, especificar los campos que desea incluir en el resultado.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The compiler will define an anonymous type that has those fields as its properties.</source>
+          <target state="translated">El compilador definirá un tipo anónimo que tiene esos campos como propiedades.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Anonymous Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept>.</source>
+          <target state="translated">Para obtener más información, consulte <bpt id="p1">[</bpt>tipos anónimos<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Because the returned elements in the following example are instances of an anonymous type, you cannot refer to the type by name elsewhere in your code.</source>
+          <target state="translated">Dado que los elementos devueltos en el ejemplo siguiente son instancias de un tipo anónimo, imposible hacer referencia al tipo por su nombre en otra parte en el código.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The compiler-designated name for the type contains characters that are not valid in normal Visual Basic code.</source>
+          <target state="translated">El nombre designado por el compilador del tipo contiene caracteres que no son válidos en el código de Visual Basic normal.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In the following example, the elements in the collection that is returned by the query in <ph id="ph1">`londonCusts4`</ph> are instances of an anonymous type</source>
+          <target state="translated">En el ejemplo siguiente, los elementos de la colección devuelta por la consulta en <ph id="ph1">`londonCusts4`</ph> son instancias de un tipo anónimo</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#6<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps Nº&amp;6;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>-or-</source>
+          <target state="translated">O bien</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Define a named type that contains the particular fields that you want to include in the result, and create and initialize instances of the type in the <ph id="ph1">`Select`</ph> clause.</source>
+          <target state="translated">Definir un tipo con nombre que contenga los campos concretos que desea incluir en el resultado y cree e inicialice instancias del tipo en el <ph id="ph1">`Select`</ph> cláusula.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Use this option only if you have to use individual results outside the collection in which they are returned, or if you have to pass them as parameters in method calls.</source>
+          <target state="translated">Utilice esta opción sólo si tiene que utilizar los resultados individuales fuera de la colección en la que se devuelven, o si tiene que pasarlos como parámetros en llamadas a métodos.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The type of <ph id="ph1">`londonCusts5`</ph> in the following example is IEnumerable(Of NamePhone).</source>
+          <target state="translated">El tipo de <ph id="ph1">`londonCusts5`</ph> en el ejemplo siguiente es IEnumerable (Of NamePhone).</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#7<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#7;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#8<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps Nº&amp;8;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For more information about how to use the <ph id="ph1">`Select`</ph> clause in Visual Basic, see <bpt id="p1">[</bpt>Select Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de cómo utilizar el <ph id="ph1">`Select`</ph> en Visual Basic, consulte <bpt id="p1">[</bpt>cláusula Select<ept id="p1">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Joining Data (Join and Group Join)</source>
+          <target state="translated">Combinar los datos (Join y Group Join)</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>You can combine more than one data source in the <ph id="ph1">`From`</ph> clause in several ways.</source>
+          <target state="translated">Puede combinar más de un origen de datos en el <ph id="ph1">`From`</ph> cláusula de varias maneras.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, the following code uses two data sources and implicitly combines properties from both of them in the result.</source>
+          <target state="translated">Por ejemplo, el código siguiente utiliza dos orígenes de datos y combina implícitamente las propiedades de ambos en el resultado.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The query selects students whose last names start with a vowel.</source>
+          <target state="translated">La consulta selecciona los estudiantes cuyos apellidos comiencen con una vocal.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#9<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_9.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#9;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_9.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You can run this code with the list of students created in <bpt id="p1">[</bpt>How to: Create a List of Items<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)</ept>.</source>
+          <target state="translated">Puede ejecutar este código con la lista de estudiantes creada en <bpt id="p1">[</bpt>Cómo: crear una lista de elementos<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Join`</ph> keyword is equivalent to an <ph id="ph2">`INNER JOIN`</ph> in SQL.</source>
+          <target state="translated">El <ph id="ph1">`Join`</ph> palabra clave es equivalente a una <ph id="ph2">`INNER JOIN`</ph> en SQL.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>It combines two collections based on matching key values between elements in the two collections.</source>
+          <target state="translated">Combina dos colecciones basándose en los valores de clave coincidentes entre los elementos de las dos colecciones.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The query returns all or part of the collection elements that have matching key values.</source>
+          <target state="translated">La consulta devuelve todo o parte de los elementos de colección que tienen valores de clave coincidentes.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For example, the following code duplicates the action of the previous implicit join.</source>
+          <target state="translated">Por ejemplo, el código siguiente duplica la acción de la combinación implícita anterior.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#10<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_10.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#10;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_10.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Group Join`</ph> combines collections into a single hierarchical collection, just like a <ph id="ph2">`LEFT JOIN`</ph> in SQL.</source>
+          <target state="translated"><ph id="ph1">`Group Join`</ph>combina las colecciones en una sola colección jerárquica, igual que un <ph id="ph2">`LEFT JOIN`</ph> en SQL.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Join Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/join-clause.md)</ept> and <bpt id="p2">[</bpt>Group Join Clause<ept id="p2">](../../../../visual-basic/language-reference/queries/group-join-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información, consulte <bpt id="p1">[</bpt>cláusula Join<ept id="p1">](../../../../visual-basic/language-reference/queries/join-clause.md)</ept> y <bpt id="p2">[</bpt>cláusula Join de grupo<ept id="p2">](../../../../visual-basic/language-reference/queries/group-join-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Grouping Data (Group By)</source>
+          <target state="translated">Agrupar datos (Group By)</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can add a <ph id="ph1">`Group By`</ph> clause to group the elements in a query result according to one or more fields of the elements.</source>
+          <target state="translated">Puede agregar un <ph id="ph1">`Group By`</ph> cláusula para agrupar los elementos de un resultado de consulta según uno o más campos de los elementos.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For example, the following code groups students by class year.</source>
+          <target state="translated">Por ejemplo, el siguiente código agrupa los estudiantes por año de clase.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#11<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_11.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#11;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_11.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>If you run this code using the list of students created in <bpt id="p1">[</bpt>How to: Create a List of Items<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)</ept>, the output from the <ph id="ph1">`For Each`</ph> statement is:</source>
+          <target state="translated">Si ejecuta este código utilizando la lista de estudiantes creada en <bpt id="p1">[</bpt>Cómo: crear una lista de elementos<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md)</ept>, el resultado de la <ph id="ph1">`For Each`</ph> instrucción es:</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Year: Junior</source>
+          <target state="translated">Año: Junior</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Tucker, Michael</source>
+          <target state="translated">Tucker, Michael</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Garcia, Hugo</source>
+          <target state="translated">Garcia, Hugo</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Garcia, Debra</source>
+          <target state="translated">Garcia, Gustavo</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Tucker, Lance</source>
+          <target state="translated">Tucker, Lance</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Year: Senior</source>
+          <target state="translated">Año: Senior</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Omelchenko, Svetlana</source>
+          <target state="translated">Omelchenko, Svetlana</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Osada, Michiko</source>
+          <target state="translated">Osada, Michiko</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Fakhouri, Fadi</source>
+          <target state="translated">Fakhouri, Delia</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Feng, Hanying</source>
+          <target state="translated">Feng, Hanying</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Adams, Terry</source>
+          <target state="translated">Adams, Terry</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Year: Freshman</source>
+          <target state="translated">Año: Freshman</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Mortensen, Sven</source>
+          <target state="translated">Maldonado Guerra, Sven</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Garcia, Cesar</source>
+          <target state="translated">Garcia, Cesar</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The variation shown in the following code orders the class years, and then orders the students within each year by last name.</source>
+          <target state="translated">La variación que se muestra en el código siguiente ordena los años de clase y, a continuación, ordena los estudiantes de cada año por apellido.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps#12<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_12.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQBasicOps&amp;#12;<ept id="p2">](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/basic-query-operations_12.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>For more information about <ph id="ph1">`Group By`</ph>, see <bpt id="p1">[</bpt>Group By Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/group-by-clause.md)</ept>.</source>
+          <target state="translated">Para obtener más información acerca de <ph id="ph1">`Group By`</ph>, consulte <bpt id="p1">[</bpt>Group By Clause<ept id="p1">](../../../../visual-basic/language-reference/queries/group-by-clause.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Getting Started with LINQ in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Introducción a LINQ en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Queries<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Consultas<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Standard Query Operators Overview (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Información general sobre operadores de consulta estándar (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

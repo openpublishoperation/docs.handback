@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">34bdc4e056d982799eac35eb2398dd3f23f6f351</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\enabling-a-data-source-for-linq-querying.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4feeba2c8eb91a16fa340f9d479d538b02087a1c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0611b6c4d44b04568935a611bd008fcce640cbdf</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Enabling a Data Source for LINQ Querying2 | Microsoft Docs</source>
+          <target state="translated">啟用資料來源的 LINQ Querying2 |Microsoft 文件</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Enabling a Data Source for LINQ Querying</source>
+          <target state="translated">啟用資料來源以進行 LINQ 查詢</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>There are various ways to extend <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to enable any data source to be queried in the <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> pattern.</source>
+          <target state="translated">有很多方法來擴充<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>啟用任何資料來源進行查詢<ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>模式。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The data source might be a data structure, a Web service, a file system, or a database, to name some.</source>
+          <target state="translated">資料來源可能是資料結構、Web 服務、檔案系統或資料庫等等。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> pattern makes it easy for clients to query a data source for which <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying is enabled, because the syntax and pattern of the query does not change.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> 模式可以讓用戶端輕鬆查詢已啟用 <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> 查詢的資料來源，因為查詢的語法和模式並未改變。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The ways in which <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> can be extended to these data sources include the following:</source>
+          <target state="translated">方式<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>可以擴充至這些資料來源包括下列︰</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Implementing the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface in a type to enable <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to Objects querying of that type.</source>
+          <target state="translated">實作&lt;xref:System.Collections.Generic.IEnumerable%601&gt;介面中輸入，以啟用<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>to Objects 查詢該型別的。&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Creating standard query operator methods such as &lt;xref:System.Linq.Enumerable.Where%2A&gt; and &lt;xref:System.Linq.Enumerable.Select%2A&gt; that extend a type, to enable custom <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of that type.</source>
+          <target state="translated">例如，建立標準查詢運算子方法&lt;xref:System.Linq.Enumerable.Where%2A&gt;和&lt;xref:System.Linq.Enumerable.Select%2A&gt;擴充型別，若要啟用自訂<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>該類型的查詢。&lt;/xref:System.Linq.Enumerable.Select%2A&gt; &lt;/xref:System.Linq.Enumerable.Where%2A&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Creating a provider for your data source that implements the &lt;xref:System.Linq.IQueryable%601&gt; interface.</source>
+          <target state="translated">建立資料來源實作的提供者&lt;xref:System.Linq.IQueryable%601&gt;介面。&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A provider that implements this interface receives <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> queries in the form of expression trees, which it can execute in a custom way, for example remotely.</source>
+          <target state="translated">實作此介面的提供者是以運算式樹狀架構的形式接收 <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> 查詢，而它可以自訂方式 (例如從遠端) 執行這些查詢。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Creating a provider for your data source that takes advantage of an existing <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> technology.</source>
+          <target state="translated">建立您利用現有的資料來源的提供者<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>技術。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Such a provider would enable not only querying, but also insert, update, and delete operations and mapping for user-defined types.</source>
+          <target state="translated">這種提供者不只會啟用查詢功能，也會插入、更新及刪除使用者定義類型的作業和對應。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This topic discusses these options.</source>
+          <target state="translated">本主題將討論這些選項。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>How to Enable LINQ Querying of Your Data Source</source>
+          <target state="translated">如何啟用資料來源的 LINQ 查詢功能</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In-Memory Data</source>
+          <target state="translated">記憶體中的資料</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>There are two ways you can enable <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of in-memory data.</source>
+          <target state="translated">有兩種方式，您可以啟用<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>記憶體中資料的查詢。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If the data is of a type that implements &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, you can query the data by using <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to Objects.</source>
+          <target state="translated">如果資料是實作之型別的&lt;xref:System.Collections.Generic.IEnumerable%601&gt;，您可以藉由查詢資料<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>物件。&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If it does not make sense to enable enumeration of your type by implementing the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface, you can define <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> standard query operator methods in that type or create <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> standard query operator methods that extend the type.</source>
+          <target state="translated">如果它毫無意義，以啟動列舉型別之型別實作&lt;xref:System.Collections.Generic.IEnumerable%601&gt;介面，您可以定義<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>標準查詢運算子方法，該型別中的，或是建立<ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>可擴充類型的標準查詢運算子方法。&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Custom implementations of the standard query operators should use deferred execution to return the results.</source>
+          <target state="translated">標準查詢運算子的自訂實作 (Implementation) 應該會使用延後執行 (Deferred Execution) 來傳回結果。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Remote Data</source>
+          <target state="translated">遠端資料</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The best option for enabling <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of a remote data source is to implement the &lt;xref:System.Linq.IQueryable%601&gt; interface.</source>
+          <target state="translated">啟用的最佳選項<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>遠端資料來源的查詢是實作&lt;xref:System.Linq.IQueryable%601&gt;介面。&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, this differs from extending a provider such as <ph id="ph1">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> for a data source.</source>
+          <target state="translated">不過，這與擴充資料來源之提供者 (例如 <ph id="ph1">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph>) 不同。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>No provider models for extending existing <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> technologies, such as <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph>, to other types of data source are available in <ph id="ph3">[!INCLUDE[vs_orcas_long](../../../../csharp/misc/includes/vs_orcas_long_md.md)]</ph>.</source>
+          <target state="translated">不含任何提供者模型擴充現有<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>技術，例如<ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph>至其他資料來源類型可用於<ph id="ph3">[!INCLUDE[vs_orcas_long](../../../../csharp/misc/includes/vs_orcas_long_md.md)]</ph>。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>IQueryable LINQ Providers</source>
+          <target state="translated">IQueryable LINQ 提供者</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> providers that implement &lt;xref:System.Linq.IQueryable%601&gt; can vary widely in their complexity.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>實作提供者，&lt;xref:System.Linq.IQueryable%601&gt;可能大不相同在複雜度。&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This section discusses the different levels of complexity.</source>
+          <target state="translated">本節將討論不同層次的複雜度。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>A less complex <ph id="ph1">`IQueryable`</ph> provider might interface with a single method of a Web service.</source>
+          <target state="translated">複雜度較低的 <ph id="ph1">`IQueryable`</ph> 提供者可能會與 Web 服務的單一方法互動。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This type of provider is very specific because it expects specific information in the queries that it handles.</source>
+          <target state="translated">這種類型的提供者非常特別，因為它預期本身所處理的查詢中應該有特定的資訊。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>It has a closed type system, perhaps exposing a single result type.</source>
+          <target state="translated">這種提供者具有封閉類型系統，可能會公開單一結果類型。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Most of the execution of the query occurs locally, for example by using the &lt;xref:System.Linq.Enumerable&gt; implementations of the standard query operators.</source>
+          <target state="translated">大部分的查詢執行在本機進行，例如使用&lt;xref:System.Linq.Enumerable&gt;標準查詢運算子的實作。&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.</source>
+          <target state="translated">複雜度較低的提供者可能只會在代表查詢的運算式樹狀架構中檢查一個方法呼叫運算式，並讓查詢的其餘邏輯在其他地方處理。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">`IQueryable`</ph> provider of medium complexity might target a data source that has a partially expressive query language.</source>
+          <target state="translated">複雜度中等的 <ph id="ph1">`IQueryable`</ph> 提供者可能以具有部分表示查詢語言的資料來源為目標。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If it targets a Web service, it might interface with more than one method of the Web service and select the method to call based on the question that the query poses.</source>
+          <target state="translated">若以 Web 服務做為目標，則其可能與該 Web 服務的多個方法連結，並依據查詢所提出的問題來選取要呼叫的方法。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A provider of medium complexity would have a richer type system than a simple provider, but it would still be a fixed type system.</source>
+          <target state="translated">中等複雜度的提供者擁有的類型系統雖然比簡單提供者更為多樣化，但仍然為固定類型系統。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, the provider might expose types that have one-to-many relationships that can be traversed, but it would not provide mapping technology for user-defined types.</source>
+          <target state="translated">例如，提供者可能會公開具有可周遊的一對多關聯性 (One-To-Many Relationship)，但卻不會提供使用者定義類型的對應。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A complex <ph id="ph1">`IQueryable`</ph> provider, such as the <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> provider, might translate complete <ph id="ph3">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> queries to an expressive query language, such as SQL.</source>
+          <target state="translated">複雜的 <ph id="ph1">`IQueryable`</ph> 提供者 (例如 <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> 提供者) 可能會將完整的 <ph id="ph3">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> 查詢解譯成表示查詢語言，例如 SQL。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A complex provider is more general than a less complex provider, because it can handle a wider variety of questions in the query.</source>
+          <target state="translated">複雜的提供者比複雜度較低的提供者更為廣泛，因為它可以在查詢中處理更多種類的問題。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It also has an open type system and therefore must contain extensive infrastructure to map user-defined types.</source>
+          <target state="translated">它也具有開放類型系統，因此必須包含廣泛的基礎結構，以對應使用者定義的類型。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Developing a complex provider requires a significant amount of effort.</source>
+          <target state="translated">開發複雜的提供者需要花費相當大量的心力。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IQueryable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IQueryable%601&gt;&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable&gt;&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Standard Query Operators Overview (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>標準查詢運算子概觀 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

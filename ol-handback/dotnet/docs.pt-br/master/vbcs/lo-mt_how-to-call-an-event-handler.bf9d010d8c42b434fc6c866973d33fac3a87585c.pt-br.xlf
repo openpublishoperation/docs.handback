@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c5b300feca3415d1283d24179795a4ae92c61e52</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\procedures\how-to-call-an-event-handler.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2742692ca2129a75ecdb5c4dfaed6764840089ba</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5a859965456cb1ab2a7696267dc3b7ffe02baa55</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Call an Event Handler in Visual Basic | Microsoft Docs</source>
+          <target state="translated">Como: chamar um manipulador de eventos no Visual Basic | Documentos do Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Call an Event Handler in Visual Basic</source>
+          <target state="translated">Como chamar um manipulador de eventos no Visual Basic</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>event<ept id="p1">*</ept> is an action or occurrence — such as a mouse click or a credit limit exceeded — that is recognized by some program component, and for which you can write code to respond.</source>
+          <target state="translated">Um <bpt id="p1">*</bpt>evento<ept id="p1">*</ept> é uma ação ou ocorrência — como um mouse clique ou um limite de crédito excedido — que é reconhecida pelo componente algum programa, e para o qual você pode escrever código para responder.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>event handler<ept id="p1">*</ept> is the code you write to respond to an event.</source>
+          <target state="translated">Um <bpt id="p1">*</bpt>manipulador de eventos<ept id="p1">*</ept> é o código que você escreve para responder a um evento.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An event handler in <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> is a <ph id="ph2">`Sub`</ph> procedure.</source>
+          <target state="translated">Um manipulador de eventos em <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> é uma <ph id="ph2">`Sub`</ph> procedimento.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>However, you do not normally call it the same way as other <ph id="ph1">`Sub`</ph> procedures.</source>
+          <target state="translated">No entanto, você não chamá-lo normalmente a mesma maneira que outras <ph id="ph1">`Sub`</ph> procedimentos.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Instead, you identify the procedure as a handler for the event.</source>
+          <target state="translated">Em vez disso, você deve identificar o procedimento como um manipulador para o evento.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You can do this either with a <bpt id="p1">[</bpt>Handles<ept id="p1">](../../../../visual-basic/language-reference/statements/handles-clause.md)</ept> clause and a <bpt id="p2">[</bpt>WithEvents<ept id="p2">](../../../../visual-basic/language-reference/modifiers/withevents.md)</ept> variable, or with an <bpt id="p3">[</bpt>AddHandler Statement<ept id="p3">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept>.</source>
+          <target state="translated">Você pode fazer isso com um <bpt id="p1">[</bpt>manipula<ept id="p1">](../../../../visual-basic/language-reference/statements/handles-clause.md)</ept> cláusula e um <bpt id="p2">[</bpt>WithEvents<ept id="p2">](../../../../visual-basic/language-reference/modifiers/withevents.md)</ept> variável, ou com um <bpt id="p3">[</bpt>instrução AddHandler<ept id="p3">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Using a <ph id="ph1">`Handles`</ph> clause is the default way to declare an event handler in <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>.</source>
+          <target state="translated">Usando um <ph id="ph1">`Handles`</ph> cláusula é a maneira padrão para declarar um manipulador de eventos em <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This is the way the event handlers are written by the designers when you program in the integrated development environment (IDE).</source>
+          <target state="translated">Essa é a maneira que os manipuladores de eventos são gravados pelos designers quando você programa no ambiente de desenvolvimento integrado (IDE).</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`AddHandler`</ph> statement is suitable for raising events dynamically at run time.</source>
+          <target state="translated">O <ph id="ph1">`AddHandler`</ph> instrução é adequada para elevar eventos dinamicamente em tempo de execução.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When the event occurs, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> automatically calls the event handler procedure.</source>
+          <target state="translated">Quando o evento ocorre, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> automaticamente chama o procedimento de manipulador de eventos.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Any code that has access to the event can cause it to occur by executing a <bpt id="p1">[</bpt>RaiseEvent Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/raiseevent-statement.md)</ept>.</source>
+          <target state="translated">Qualquer código que tenha acesso ao evento pode fazer com que ele ocorrer ao executar uma <bpt id="p1">[</bpt>instrução RaiseEvent<ept id="p1">](../../../../visual-basic/language-reference/statements/raiseevent-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>You can associate more than one event handler with the same event.</source>
+          <target state="translated">Você pode associar mais de um manipulador de eventos com o mesmo evento.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In some cases you can dissociate a handler from an event.</source>
+          <target state="translated">Em alguns casos você pode dissociar um manipulador de um evento.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept>.</source>
+          <target state="translated">Para obter mais informações, consulte <bpt id="p1">[</bpt>eventos<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>To call an event handler using Handles and WithEvents</source>
+          <target state="translated">Para chamar um manipulador de eventos usando identificadores e WithEvents</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Make sure the event is declared with an <bpt id="p1">[</bpt>Event Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/event-statement.md)</ept>.</source>
+          <target state="translated">Verifique se o evento é declarado com um <bpt id="p1">[</bpt>declaração de evento<ept id="p1">](../../../../visual-basic/language-reference/statements/event-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Declare an object variable at module or class level, using the <bpt id="p1">[</bpt>WithEvents<ept id="p1">](../../../../visual-basic/language-reference/modifiers/withevents.md)</ept> keyword.</source>
+          <target state="translated">Declare uma variável de objeto no módulo ou classe de nível, usando o <bpt id="p1">[</bpt>WithEvents<ept id="p1">](../../../../visual-basic/language-reference/modifiers/withevents.md)</ept> palavra-chave.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`As`</ph> clause for this variable must specify the class that raises the event.</source>
+          <target state="translated">O <ph id="ph1">`As`</ph> cláusula para esta variável deve especificar a classe que gera o evento.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In the declaration of the event-handling <ph id="ph1">`Sub`</ph> procedure, add a <bpt id="p1">[</bpt>Handles<ept id="p1">](../../../../visual-basic/language-reference/statements/handles-clause.md)</ept> clause that specifies the <ph id="ph2">`WithEvents`</ph> variable and the event name.</source>
+          <target state="translated">Na declaração do manipulador de eventos <ph id="ph1">`Sub`</ph> procedimento, adicione uma <bpt id="p1">[</bpt>manipula<ept id="p1">](../../../../visual-basic/language-reference/statements/handles-clause.md)</ept> cláusula que especifica o <ph id="ph2">`WithEvents`</ph> variável e o nome do evento.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>When the event occurs, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> automatically calls the <ph id="ph2">`Sub`</ph> procedure.</source>
+          <target state="translated">Quando o evento ocorre, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> chama automaticamente o <ph id="ph2">`Sub`</ph> procedimento.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Your code can use a <ph id="ph1">`RaiseEvent`</ph> statement to make the event occur.</source>
+          <target state="translated">Seu código pode usar uma <ph id="ph1">`RaiseEvent`</ph> instrução para fazer com que o evento ocorrer.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The following example defines an event and a <ph id="ph1">`WithEvents`</ph> variable that refers to the class that raises the event.</source>
+          <target state="translated">O exemplo a seguir define um evento e um <ph id="ph1">`WithEvents`</ph> variável que faz referência à classe que gera o evento.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The event-handling <ph id="ph1">`Sub`</ph> procedure uses a <ph id="ph2">`Handles`</ph> clause to specify the class and event it handles.</source>
+          <target state="translated">A manipulação de eventos <ph id="ph1">`Sub`</ph> procedimento usa um <ph id="ph2">`Handles`</ph> cláusula para especificar a classe e o evento manipula.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#4<ept id="p2">](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures n º&amp;4;<ept id="p2">](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To call an event handler using AddHandler</source>
+          <target state="translated">Para chamar um manipulador de eventos usando AddHandler</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Make sure the event is declared with an <ph id="ph1">`Event`</ph> statement.</source>
+          <target state="translated">Verifique se o evento é declarado com um <ph id="ph1">`Event`</ph> instrução.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Execute an <bpt id="p1">[</bpt>AddHandler Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept> to dynamically connect the event-handling <ph id="ph1">`Sub`</ph> procedure with the event.</source>
+          <target state="translated">Executar uma <bpt id="p1">[</bpt>instrução AddHandler<ept id="p1">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept> conectem dinamicamente a manipulação de eventos <ph id="ph1">`Sub`</ph> procedimento com o evento.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>When the event occurs, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> automatically calls the <ph id="ph2">`Sub`</ph> procedure.</source>
+          <target state="translated">Quando o evento ocorre, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> chama automaticamente o <ph id="ph2">`Sub`</ph> procedimento.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Your code can use a <ph id="ph1">`RaiseEvent`</ph> statement to make the event occur.</source>
+          <target state="translated">Seu código pode usar uma <ph id="ph1">`RaiseEvent`</ph> instrução para fazer com que o evento ocorrer.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The following example defines a <ph id="ph1">`Sub`</ph> procedure to handle the &lt;xref:System.Windows.Forms.Form.Closing&gt; event of a form.</source>
+          <target state="translated">O exemplo a seguir define uma <ph id="ph1">`Sub`</ph> procedimento para manipular o &lt;xref:System.Windows.Forms.Form.Closing&gt;evento de um formulário.&lt;/xref:System.Windows.Forms.Form.Closing&gt;</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>It then uses the <bpt id="p1">[</bpt>AddHandler Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept> to associate the <ph id="ph1">`catchClose`</ph> procedure as an event handler for &lt;xref:System.Windows.Forms.Form.Closing&gt;.</source>
+          <target state="translated">Ele usa o <bpt id="p1">[</bpt>instrução AddHandler<ept id="p1">](../../../../visual-basic/language-reference/statements/addhandler-statement.md)</ept> para associar o <ph id="ph1">`catchClose`</ph> procedimento como um manipulador de eventos &lt;xref:System.Windows.Forms.Form.Closing&gt;.&lt;/xref:System.Windows.Forms.Form.Closing&gt;</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures#5<ept id="p2">](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnProcedures n º&amp;5;<ept id="p2">](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You can dissociate an event handler from an event by executing the <bpt id="p1">[</bpt>RemoveHandler Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/removehandler-statement.md)</ept>.</source>
+          <target state="translated">Você pode dissociar um manipulador de eventos de um evento executando o <bpt id="p1">[</bpt>Instrução RemoveHandler<ept id="p1">](../../../../visual-basic/language-reference/statements/removehandler-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Consulte também</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Procedures<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Procedimentos<ept id="p1">](./index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Sub Procedures<ept id="p1">](./sub-procedures.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedimentos Sub<ept id="p1">](./sub-procedures.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Sub Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/sub-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Instrução sub<ept id="p1">](../../../../visual-basic/language-reference/statements/sub-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>AddressOf Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/addressof-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Operador AddressOf<ept id="p1">](../../../../visual-basic/language-reference/operators/addressof-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Create a Procedure<ept id="p1">](./how-to-create-a-procedure.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Como: criar um procedimento<ept id="p1">](./how-to-create-a-procedure.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Call a Procedure that Does Not Return a Value<ept id="p1">](./how-to-call-a-procedure-that-does-not-return-a-value.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Como chamar um procedimento que não retorne um valor<ept id="p1">](./how-to-call-a-procedure-that-does-not-return-a-value.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

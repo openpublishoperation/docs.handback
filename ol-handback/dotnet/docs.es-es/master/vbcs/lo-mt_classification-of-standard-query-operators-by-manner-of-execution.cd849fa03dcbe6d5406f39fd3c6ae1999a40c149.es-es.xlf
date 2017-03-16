@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a13f2fcf33c2faacd5b2662cd96d0f962b54322f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\classification-of-standard-query-operators-by-manner-of-execution.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7ba9a367bb028da1d4de5f9ad2338ee5069b10f3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b45093e3eb27778f94fabbf44f2454dd05a5a339</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Classification of Standard Query Operators by Manner of Execution (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Clasificación de operadores de consulta estándar por modo de ejecución (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Classification of Standard Query Operators by Manner of Execution (Visual Basic)</source>
+          <target state="translated">Clasificación de operadores de consulta estándar por modo de ejecución (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The LINQ to Objects implementations of the standard query operator methods execute in one of two main ways: immediate or deferred.</source>
+          <target state="translated">Para implementaciones de objetos de los métodos de operador de consulta estándar LINQ que se ejecutan en uno de dos formas principales: inmediata o aplazada.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The query operators that use deferred execution can be additionally divided into two categories: streaming and non-streaming.</source>
+          <target state="translated">Los operadores de consulta que utilizan la ejecución aplazada pueden dividirse además en dos categorías: transmisión por secuencias y sin transmisión por secuencias.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you know how the different query operators execute, it may help you understand the results that you get from a given query.</source>
+          <target state="translated">Si sabe cómo ejecutan los operadores de consulta diferentes, puede ser útil entender los resultados que obtendrá de una consulta determinada.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is especially true if the data source is changing or if you are building a query on top of another query.</source>
+          <target state="translated">Esto es especialmente cierto si está cambiando el origen de datos o si está creando una consulta sobre otra.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This topic classifies the standard query operators according to their manner of execution.</source>
+          <target state="translated">Este tema clasifican los operadores de consulta estándar según su modo de ejecución.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Manners of Execution</source>
+          <target state="translated">Modos de ejecución</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Immediate</source>
+          <target state="translated">Inmediato</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Immediate execution means that the data source is read and the operation is performed at the point in the code where the query is declared.</source>
+          <target state="translated">Ejecución inmediata significa que el origen de datos es de lectura y la operación se realiza en el punto en el código donde se declara la consulta.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>All the standard query operators that return a single, non-enumerable result execute immediately.</source>
+          <target state="translated">Todos los operadores de consulta estándar que devuelven un resultado único no enumerable se ejecutan inmediatamente.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Deferred</source>
+          <target state="translated">Aplazada</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Deferred execution means that the operation is not performed at the point in the code where the query is declared.</source>
+          <target state="translated">Ejecución diferida significa que la operación no se realiza en el punto en el código donde se declara la consulta.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The operation is performed only when the query variable is enumerated, for example by using a <ph id="ph1">`For Each`</ph> statement.</source>
+          <target state="translated">La operación se realiza solo cuando se enumera la variable de consulta, por ejemplo, con un <ph id="ph1">`For Each`</ph> instrucción.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This means that the results of executing the query depend on the contents of the data source when the query is executed rather than when the query is defined.</source>
+          <target state="translated">Esto significa que los resultados de ejecutar la consulta dependen del contenido del origen de datos cuando se ejecuta la consulta en lugar de cuando se define la consulta.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If the query variable is enumerated multiple times, the results might differ every time.</source>
+          <target state="translated">Si la variable de consulta se enumera varias veces, los resultados pueden diferir cada vez.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Almost all the standard query operators whose return type is &lt;xref:System.Collections.Generic.IEnumerable%601&gt; or &lt;xref:System.Linq.IOrderedEnumerable%601&gt; execute in a deferred manner.</source>
+          <target state="translated">Casi todos los operadores de consulta estándar cuyo tipo de valor devuelto es &lt;xref:System.Collections.Generic.IEnumerable%601&gt;o &lt;xref:System.Linq.IOrderedEnumerable%601&gt;ejecutar de manera aplazada.&lt;/xref:System.Linq.IOrderedEnumerable%601&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Query operators that use deferred execution can be additionally classified as streaming or non-streaming.</source>
+          <target state="translated">Operadores de consulta que utilizan la ejecución aplazada pueden clasificarse como de transmisión por secuencias o sin transmisión por secuencias.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Streaming</source>
+          <target state="translated">Streaming</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Streaming operators do not have to read all the source data before they yield elements.</source>
+          <target state="translated">Operadores de transmisión por secuencias no deben leer todos los datos de origen antes de que producen los elementos.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>At the time of execution, a streaming operator performs its operation on each source element as it is read and yields the element if appropriate.</source>
+          <target state="translated">En tiempo de ejecución, un operador realice su operación en cada elemento de origen, tal como se lee y proporciona el elemento si es necesario.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A streaming operator continues to read source elements until a result element can be produced.</source>
+          <target state="translated">Un operador de flujo continúa leer los elementos de origen hasta que se puede generar un elemento de resultado.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>This means that more than one source element might be read to produce one result element.</source>
+          <target state="translated">Esto significa que se pueden leer más de un elemento de origen para generar un elemento de resultado.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Non-Streaming</source>
+          <target state="translated">Sin transmisión por secuencias</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Non-streaming operators must read all the source data before they can yield a result element.</source>
+          <target state="translated">Operadores sin transmisión por secuencias deben leer todos los datos de origen para poder proporcionar un elemento de resultado.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Operations such as sorting or grouping fall into this category.</source>
+          <target state="translated">Las operaciones como la ordenación o agrupación pertenecen a esta categoría.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>At the time of execution, non-streaming query operators read all the source data, put it into a data structure, perform the operation, and yield the resulting elements.</source>
+          <target state="translated">En tiempo de ejecución, los operadores de consulta sin transmisión por secuencias leen todos los datos de origen, ponerla en una estructura de datos, realizan la operación y proporcionan los elementos resultantes.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Classification Table</source>
+          <target state="translated">Tabla de clasificación</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following table classifies each standard query operator method according to its method of execution.</source>
+          <target state="translated">En la tabla siguiente se clasifica cada método de operador de consulta estándar según su método de ejecución.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>If an operator is marked in two columns, two input sequences are involved in the operation, and each sequence is evaluated differently.</source>
+          <target state="translated">Si un operador aparece en dos columnas, dos secuencias de entrada intervienen en la operación, y cada secuencia se evalúa de manera diferente.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In these cases, it is always the first sequence in the parameter list that is evaluated in a deferred, streaming manner.</source>
+          <target state="translated">En estos casos, siempre es la primera secuencia de la lista de parámetros que se evalúa en diferido, modo de transmisión.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Standard Query Operator</source>
+          <target state="translated">Operador de consulta estándar</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Return Type</source>
+          <target state="translated">Tipo devuelto</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Immediate Execution</source>
+          <target state="translated">Ejecución inmediata</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Deferred Streaming Execution</source>
+          <target state="translated">Ejecución aplazada de transmisión por secuencias</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Deferred Non-Streaming Execution</source>
+          <target state="translated">Aplaza la ejecución de secuencias no</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;&lt;/xref:System.Linq.Enumerable.Aggregate%2A&gt;</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.All%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.All%2A&gt;&lt;/xref:System.Linq.Enumerable.All%2A&gt;</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Boolean&gt;</source>
+          <target state="translated">&lt;xref:System.Boolean&gt;&lt;/xref:System.Boolean&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Any%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Any%2A&gt;&lt;/xref:System.Linq.Enumerable.Any%2A&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Boolean&gt;</source>
+          <target state="translated">&lt;xref:System.Boolean&gt;&lt;/xref:System.Boolean&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.AsEnumerable%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.AsEnumerable%2A&gt;&lt;/xref:System.Linq.Enumerable.AsEnumerable%2A&gt;</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Average%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Average%2A&gt;&lt;/xref:System.Linq.Enumerable.Average%2A&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Single numeric value</source>
+          <target state="translated">Valor numérico único</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Cast%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Cast%2A&gt;&lt;/xref:System.Linq.Enumerable.Cast%2A&gt;</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Concat%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Concat%2A&gt;&lt;/xref:System.Linq.Enumerable.Concat%2A&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Contains%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Contains%2A&gt;&lt;/xref:System.Linq.Enumerable.Contains%2A&gt;</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Boolean&gt;</source>
+          <target state="translated">&lt;xref:System.Boolean&gt;&lt;/xref:System.Boolean&gt;</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Count%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Count%2A&gt;&lt;/xref:System.Linq.Enumerable.Count%2A&gt;</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Int32&gt;</source>
+          <target state="translated">&lt;xref:System.Int32&gt;&lt;/xref:System.Int32&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.DefaultIfEmpty%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.DefaultIfEmpty%2A&gt;&lt;/xref:System.Linq.Enumerable.DefaultIfEmpty%2A&gt;</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Distinct%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Distinct%2A&gt;&lt;/xref:System.Linq.Enumerable.Distinct%2A&gt;</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ElementAt%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ElementAt%2A&gt;&lt;/xref:System.Linq.Enumerable.ElementAt%2A&gt;</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ElementAtOrDefault%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ElementAtOrDefault%2A&gt;&lt;/xref:System.Linq.Enumerable.ElementAtOrDefault%2A&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Empty%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Empty%2A&gt;&lt;/xref:System.Linq.Enumerable.Empty%2A&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Except%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Except%2A&gt;&lt;/xref:System.Linq.Enumerable.Except%2A&gt;</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.First%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.First%2A&gt;&lt;/xref:System.Linq.Enumerable.First%2A&gt;</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.FirstOrDefault%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.FirstOrDefault%2A&gt;&lt;/xref:System.Linq.Enumerable.FirstOrDefault%2A&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.GroupBy%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.GroupBy%2A&gt;&lt;/xref:System.Linq.Enumerable.GroupBy%2A&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.GroupJoin%2A&gt;&lt;/xref:System.Linq.Enumerable.GroupJoin%2A&gt;</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Intersect%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Intersect%2A&gt;&lt;/xref:System.Linq.Enumerable.Intersect%2A&gt;</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Join%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Join%2A&gt;&lt;/xref:System.Linq.Enumerable.Join%2A&gt;</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Last%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Last%2A&gt;&lt;/xref:System.Linq.Enumerable.Last%2A&gt;</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.LastOrDefault%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.LastOrDefault%2A&gt;&lt;/xref:System.Linq.Enumerable.LastOrDefault%2A&gt;</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.LongCount%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.LongCount%2A&gt;&lt;/xref:System.Linq.Enumerable.LongCount%2A&gt;</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Int64&gt;</source>
+          <target state="translated">&lt;xref:System.Int64&gt;&lt;/xref:System.Int64&gt;</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Max%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Max%2A&gt;&lt;/xref:System.Linq.Enumerable.Max%2A&gt;</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Single numeric value, TSource, or TResult</source>
+          <target state="translated">Valor numérico único, TSource o TResult</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Min%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Min%2A&gt;&lt;/xref:System.Linq.Enumerable.Min%2A&gt;</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Single numeric value, TSource, or TResult</source>
+          <target state="translated">Valor numérico único, TSource o TResult</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.OfType%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.OfType%2A&gt;&lt;/xref:System.Linq.Enumerable.OfType%2A&gt;</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.OrderBy%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.OrderBy%2A&gt;&lt;/xref:System.Linq.Enumerable.OrderBy%2A&gt;</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IOrderedEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IOrderedEnumerable%601&gt;&lt;/xref:System.Linq.IOrderedEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.OrderByDescending%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.OrderByDescending%2A&gt;&lt;/xref:System.Linq.Enumerable.OrderByDescending%2A&gt;</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IOrderedEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IOrderedEnumerable%601&gt;&lt;/xref:System.Linq.IOrderedEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Range%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Range%2A&gt;&lt;/xref:System.Linq.Enumerable.Range%2A&gt;</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Repeat%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Repeat%2A&gt;&lt;/xref:System.Linq.Enumerable.Repeat%2A&gt;</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Reverse%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Reverse%2A&gt;&lt;/xref:System.Linq.Enumerable.Reverse%2A&gt;</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Select%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Select%2A&gt;&lt;/xref:System.Linq.Enumerable.Select%2A&gt;</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.SelectMany%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.SelectMany%2A&gt;&lt;/xref:System.Linq.Enumerable.SelectMany%2A&gt;</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.SequenceEqual%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.SequenceEqual%2A&gt;&lt;/xref:System.Linq.Enumerable.SequenceEqual%2A&gt;</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Boolean&gt;</source>
+          <target state="translated">&lt;xref:System.Boolean&gt;&lt;/xref:System.Boolean&gt;</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Single%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Single%2A&gt;&lt;/xref:System.Linq.Enumerable.Single%2A&gt;</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.SingleOrDefault%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.SingleOrDefault%2A&gt;&lt;/xref:System.Linq.Enumerable.SingleOrDefault%2A&gt;</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>TSource</source>
+          <target state="translated">TSource</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Skip%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Skip%2A&gt;&lt;/xref:System.Linq.Enumerable.Skip%2A&gt;</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.SkipWhile%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.SkipWhile%2A&gt;&lt;/xref:System.Linq.Enumerable.SkipWhile%2A&gt;</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Sum%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Sum%2A&gt;&lt;/xref:System.Linq.Enumerable.Sum%2A&gt;</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Single numeric value</source>
+          <target state="translated">Valor numérico único</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Take%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Take%2A&gt;&lt;/xref:System.Linq.Enumerable.Take%2A&gt;</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.TakeWhile%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.TakeWhile%2A&gt;&lt;/xref:System.Linq.Enumerable.TakeWhile%2A&gt;</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ThenBy%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ThenBy%2A&gt;&lt;/xref:System.Linq.Enumerable.ThenBy%2A&gt;</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IOrderedEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IOrderedEnumerable%601&gt;&lt;/xref:System.Linq.IOrderedEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ThenByDescending%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ThenByDescending%2A&gt;&lt;/xref:System.Linq.Enumerable.ThenByDescending%2A&gt;</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IOrderedEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IOrderedEnumerable%601&gt;&lt;/xref:System.Linq.IOrderedEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ToArray%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ToArray%2A&gt;&lt;/xref:System.Linq.Enumerable.ToArray%2A&gt;</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>TSource array</source>
+          <target state="translated">Matriz de TSource</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ToDictionary%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ToDictionary%2A&gt;&lt;/xref:System.Linq.Enumerable.ToDictionary%2A&gt;</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.Dictionary%602&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.Dictionary%602&gt;&lt;/xref:System.Collections.Generic.Dictionary%602&gt;</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ToList%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ToList%2A&gt;&lt;/xref:System.Linq.Enumerable.ToList%2A&gt;</target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IList%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IList%601&gt;&lt;/xref:System.Collections.Generic.IList%601&gt;</target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.ToLookup%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.ToLookup%2A&gt;&lt;/xref:System.Linq.Enumerable.ToLookup%2A&gt;</target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.ILookup%602&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.ILookup%602&gt;&lt;/xref:System.Linq.ILookup%602&gt;</target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Union%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Union%2A&gt;&lt;/xref:System.Linq.Enumerable.Union%2A&gt;</target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="287" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="288" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable.Where%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable.Where%2A&gt;&lt;/xref:System.Linq.Enumerable.Where%2A&gt;</target>       </trans-unit>
+        <trans-unit id="289" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="290" translate="yes" xml:space="preserve">
+          <source>X</source>
+          <target state="translated">x</target>       </trans-unit>
+        <trans-unit id="291" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="292" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable&gt;&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="293" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Standard Query Operators Overview (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Información general sobre operadores de consulta estándar (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="294" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Query Expression Syntax for Standard Query Operators (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Sintaxis de expresiones de consulta para operadores de consulta estándar (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="295" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

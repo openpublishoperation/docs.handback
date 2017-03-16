@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4347ba0e740419b53a1aa662c43933dead107e9c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\assemblies-gac\walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ad0147f504643b2668cffe184c4c313f4bfe8825</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6d0ff6ea70031d6ace4521b98fbf93991138acf9</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Пошаговое руководство: Внедрение сведений о типах из сборок Microsoft Office в Visual Studio (Visual Basic) | Документы Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)</source>
+          <target state="translated">Пошаговое руководство: Внедрение сведений о типах из сборок Microsoft Office в Visual Studio (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>If you embed type information in an application that references COM objects, you can eliminate the need for a primary interop assembly (PIA).</source>
+          <target state="translated">Если внедрить сведения о типах в приложении, которое ссылается на COM-объекты, можно исключить потребность в основной сборки взаимодействия (PIA).</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Additionally, the embedded type information enables you to achieve version independence for your application.</source>
+          <target state="translated">Кроме того внедренные сведения о типах позволяет обеспечить независимость от версии приложения.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>That is, your program can be written to use types from multiple versions of a COM library without requiring a specific PIA for each version.</source>
+          <target state="translated">То есть программы могут записываться использовать типы из нескольких версий библиотеки COM без конкретной основной сборки ВЗАИМОДЕЙСТВИЯ для каждой версии.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This is a common scenario for applications that use objects from Microsoft Office libraries.</source>
+          <target state="translated">Это типично для приложений, использующих объекты из библиотек Microsoft Office.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers without the need to redeploy either the program or the PIA for each version of Microsoft Office.</source>
+          <target state="translated">Внедрение данных о типе позволяет одному построению программы работать с различными версиями Microsoft Office на разных компьютерах без необходимости повторного развертывания программы или основной сборки ВЗАИМОДЕЙСТВИЯ для каждой версии Microsoft Office.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Предварительные требования</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This walkthrough requires the following:</source>
+          <target state="translated">Необходимо выполнить следующие требования.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A computer on which Visual Studio and Microsoft Excel are installed.</source>
+          <target state="translated">Компьютер, на котором установлена Visual Studio и Microsoft Excel.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>A second computer on which the .NET Framework 4 or higher and a different version of Excel are installed.</source>
+          <target state="translated">Второй компьютер, на котором установлена .NET Framework 4 или более поздней версии и разными версиями Excel.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_createapp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To create an application that works with multiple versions of Microsoft Office</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_createapp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Чтобы создать приложение, которое работает с различными версиями Microsoft Office</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio on a computer on which Excel is installed.</source>
+          <target state="translated">Запустите Visual Studio на компьютере, на котором установлен Microsoft Excel.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">В меню <bpt id="p1">**</bpt>Файл<ept id="p1">**</ept> последовательно выберите пункты <bpt id="p2">**</bpt>Создать<ept id="p2">**</ept>и <bpt id="p3">**</bpt>Проект<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> pane, make sure that <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> is selected.</source>
+          <target state="translated">В <bpt id="p1">**</bpt>новый проект<ept id="p1">**</ept> в диалоговом <bpt id="p2">**</bpt>типы проектов<ept id="p2">**</ept> область, убедитесь, что <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> выбран.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> pane.</source>
+          <target state="translated">Выберите <bpt id="p1">**</bpt>консольное приложение<ept id="p1">**</ept> в <bpt id="p2">**</bpt>шаблоны<ept id="p2">**</ept> области.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> box, enter <ph id="ph1">`CreateExcelWorkbook`</ph>, and then choose the <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> button.</source>
+          <target state="translated">В <bpt id="p1">**</bpt>имя<ept id="p1">**</ept> введите <ph id="ph1">`CreateExcelWorkbook`</ph>, а затем выберите <bpt id="p2">**</bpt>ОК<ept id="p2">**</ept> кнопки.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The new project is created.</source>
+          <target state="translated">Создан новый проект.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Open the shortcut menu for the CreateExcelWorkbook project and then choose <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+          <target state="translated">Откройте контекстное меню для проекта CreateExcelWorkbook, а затем выберите <bpt id="p1">**</bpt>свойства<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Choose the <bpt id="p1">**</bpt>References<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Выберите <bpt id="p1">**</bpt>ссылки<ept id="p1">**</ept> вкладки.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Choose the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> button.</source>
+          <target state="translated">Нажмите кнопку <bpt id="p1">**</bpt>Добавить<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>.NET<ept id="p1">**</ept> tab, choose the most recent version of <ph id="ph1">`Microsoft.Office.Interop.Excel`</ph>.</source>
+          <target state="translated">На <bpt id="p1">**</bpt>.NET<ept id="p1">**</ept> выберите последнюю версию <ph id="ph1">`Microsoft.Office.Interop.Excel`</ph>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>For example, <bpt id="p1">**</bpt>Microsoft.Office.Interop.Excel 14.0.0.0<ept id="p1">**</ept>.</source>
+          <target state="translated">Например <bpt id="p1">**</bpt>Microsoft.Office.Interop.Excel 14.0.0.0<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">Нажмите кнопку <bpt id="p1">**</bpt>ОК<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In the list of references for the <bpt id="p1">**</bpt>CreateExcelWorkbook<ept id="p1">**</ept> project, select the reference for <ph id="ph1">`Microsoft.Office.Interop.Excel`</ph> that you added in the previous step.</source>
+          <target state="translated">В списке ссылок для <bpt id="p1">**</bpt>CreateExcelWorkbook<ept id="p1">**</ept> проекта, выберите ссылку для <ph id="ph1">`Microsoft.Office.Interop.Excel`</ph> , добавленного на предыдущем шаге.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> window, make sure that the <ph id="ph1">`Embed Interop Types`</ph> property is set to <ph id="ph2">`True`</ph>.</source>
+          <target state="translated">В <bpt id="p1">**</bpt>свойства<ept id="p1">**</ept> окна, убедитесь, что <ph id="ph1">`Embed Interop Types`</ph> свойству <ph id="ph2">`True`</ph>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>The application created in this walkthrough runs with different versions of Microsoft Office because of the embedded interop type information.</source>
+          <target state="translated">Приложения, созданного в этом пошаговом руководстве выполняется с различными версиями Microsoft Office благодаря сведениям о внедренного типа взаимодействия.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`Embed Interop Types`</ph> property is set to <ph id="ph2">`False`</ph>, you must include a PIA for each version of Microsoft Office that the application will run with.</source>
+          <target state="translated">Если <ph id="ph1">`Embed Interop Types`</ph> свойству <ph id="ph2">`False`</ph>, должен включать основные сборки ВЗАИМОДЕЙСТВИЯ для каждой версии Microsoft Office, приложение будет работать с.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Open the Module1.vb file.</source>
+          <target state="translated">Откройте файл Module1.vb.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Replace the code in the file with the following code:</source>
+          <target state="translated">Замените код в файле следующим кодом:</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+          <target state="translated">Сохраните проект.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Press CTRL+F5 to build and run the project.</source>
+          <target state="translated">Нажмите CTRL + F5, чтобы построить и запустить проект.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Verify that an Excel workbook has been created at the location specified in the example code: C:\SampleFolder\SampleWorkbook.xls.</source>
+          <target state="translated">Убедитесь, что книга Excel был создан в расположении, указанном в примере кода: C:\SampleFolder\SampleWorkbook.xls.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_publishapp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To publish the application to a computer on which a different version of Microsoft Office is installed</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_publishapp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Для публикации приложения на компьютере, на котором установлен другой версии Microsoft Office</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Open the project created by this walkthrough in Visual Studio.</source>
+          <target state="translated">Откройте проект, созданный в ходе этого пошагового руководства в Visual Studio.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Build<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Publish CreateExcelWorkbook<ept id="p2">**</ept>.</source>
+          <target state="translated">На <bpt id="p1">**</bpt>построения<ept id="p1">**</ept> меню, выберите <bpt id="p2">**</bpt>CreateExcelWorkbook публикации<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Follow the steps of the Publish Wizard to create an installable version of the application.</source>
+          <target state="translated">Следуйте указаниям мастера публикации, чтобы создать устанавливаемую версию приложения.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Publish Wizard (Office Development in Visual Studio)<ept id="p1">](https://msdn.microsoft.com/library/bb625071)</ept>.</source>
+          <target state="translated">Дополнительные сведения см. в разделе <bpt id="p1">[</bpt>мастер публикации (Разработка решений Office в Visual Studio)<ept id="p1">](https://msdn.microsoft.com/library/bb625071)</ept>.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Install the application on a computer on which the .NET Framework 4 or higher and a different version of Excel are installed.</source>
+          <target state="translated">Установите приложение на компьютере, на котором установлена .NET Framework 4 или более поздней версии и разными версиями Excel.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>When the installation is finished, run the installed program.</source>
+          <target state="translated">После завершения установки запустите установленную программу.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Verify that an Excel workbook has been created at the location specified in the sample code: C:\SampleFolder\SampleWorkbook.xls.</source>
+          <target state="translated">Убедитесь, что книга Excel был создан в расположении, указанном в образце кода: C:\SampleFolder\SampleWorkbook.xls.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Пошаговое руководство: Внедрение типов из управляемых сборок в Visual Studio (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>/link (Visual Basic)<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/link.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>/ LINK (Visual Basic)<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/link.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

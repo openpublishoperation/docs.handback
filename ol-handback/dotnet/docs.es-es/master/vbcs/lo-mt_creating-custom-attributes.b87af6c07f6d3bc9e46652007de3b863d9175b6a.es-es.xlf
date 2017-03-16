@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1aa97a591fdbdfab931a8b5e4f70ec3c00762332</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\attributes\creating-custom-attributes.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d789b86e919780564160094a64a319e73a66b48</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">316825e9d601284cc3d4675827b4c83eee53cfab</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Creating Custom Attributes (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Crear atributos personalizados (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Creating Custom Attributes (Visual Basic)</source>
+          <target state="translated">Crear atributos personalizados (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can create your own custom attributes by defining an attribute class, a class that derives directly or indirectly from &lt;xref:System.Attribute&gt;, which makes identifying attribute definitions in metadata fast and easy.</source>
+          <target state="translated">Puede crear sus propios atributos personalizados definiendo una clase de atributo, una clase que deriva directa o indirectamente de &lt;xref:System.Attribute&gt;, que hace que las definiciones de atributos en metadatos rápido y fácil de identificar.&lt;/xref:System.Attribute&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Suppose you want to tag types with the name of the programmer who wrote the type.</source>
+          <target state="translated">Suponga que desea etiquetar tipos con el nombre del programador que escribió el tipo.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You might define a custom <ph id="ph1">`Author`</ph> attribute class:</source>
+          <target state="translated">Puede definir una personalizada <ph id="ph1">`Author`</ph> clase de atributos:</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The class name is the attribute's name, <ph id="ph1">`Author`</ph>.</source>
+          <target state="translated">El nombre de clase es el nombre del atributo, <ph id="ph1">`Author`</ph>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It is derived from <ph id="ph1">`System.Attribute`</ph>, so it is a custom attribute class.</source>
+          <target state="translated">Se deriva de <ph id="ph1">`System.Attribute`</ph>, por lo que es una clase de atributo personalizado.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The constructor's parameters are the custom attribute's positional parameters.</source>
+          <target state="translated">Los parámetros del constructor son los parámetros posicionales del atributo personalizado.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In this example, <ph id="ph1">`name`</ph> is a positional parameter.</source>
+          <target state="translated">En este ejemplo, <ph id="ph1">`name`</ph> es un parámetro posicional.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Any public read-write fields or properties are named parameters.</source>
+          <target state="translated">Las propiedades o campos públicos de lectura y escritura son parámetros con nombre.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In this case, <ph id="ph1">`version`</ph> is the only named parameter.</source>
+          <target state="translated">En este caso, <ph id="ph1">`version`</ph> es el único parámetro con nombre.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Note the use of the <ph id="ph1">`AttributeUsage`</ph> attribute to make the <ph id="ph2">`Author`</ph> attribute valid only on class and <ph id="ph3">`Structure`</ph> declarations.</source>
+          <target state="translated">Tenga en cuenta el uso de la <ph id="ph1">`AttributeUsage`</ph> atributo para realizar la <ph id="ph2">`Author`</ph> válido solamente en la clase de atributo y <ph id="ph3">`Structure`</ph> declaraciones.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You could use this new attribute as follows:</source>
+          <target state="translated">Puede utilizar este nuevo atributo de la siguiente manera:</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AttributeUsage`</ph> has a named parameter, <ph id="ph2">`AllowMultiple`</ph>, with which you can make a custom attribute single-use or multiuse.</source>
+          <target state="translated"><ph id="ph1">`AttributeUsage`</ph>tiene un parámetro con nombre, <ph id="ph2">`AllowMultiple`</ph>, con lo que puede hacer un atributo personalizado solo uso o bien multiuso.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the following code example, a multiuse attribute is created.</source>
+          <target state="translated">En el ejemplo de código siguiente se crea un atributo multiuso.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In the following code example, multiple attributes of the same type are applied to a class.</source>
+          <target state="translated">En el ejemplo de código siguiente, se aplican varios atributos del mismo tipo a una clase.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If your attribute class contains a property, that property must be read-write.</source>
+          <target state="translated">Si la clase de atributo contiene una propiedad, dicha propiedad debe ser de lectura y escritura.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Reflection&gt;</source>
+          <target state="translated">&lt;xref:System.Reflection&gt;&lt;/xref:System.Reflection&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Visual Basic Programming Guide<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Guía de programación de Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Writing Custom Attributes<ept id="p1">](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Escribir atributos personalizados<ept id="p1">](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Reflection (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/reflection.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Reflexión (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/reflection.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Attributes (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/attributes.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Atributos (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/attributes.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Accessing Attributes by Using Reflection (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Acceso a atributos mediante reflexión (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>AttributeUsage (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>AttributeUsage (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

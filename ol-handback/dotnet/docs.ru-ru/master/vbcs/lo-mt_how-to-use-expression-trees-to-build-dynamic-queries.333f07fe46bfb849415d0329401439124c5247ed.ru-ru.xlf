@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d69be78a9f3568535dffe54e21af80c6eb12f70</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\expression-trees\how-to-use-expression-trees-to-build-dynamic-queries.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">373b8a8fc0c201e4eed272ad879402d41b6f3d07</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b9817e7381cf934a3f18c41b5c1ba90dd3226148</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Use Expression Trees to Build Dynamic Queries (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Практическое руководство: использование деревьев выражений для построения динамических запросов (Visual Basic) | Документы Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)</source>
+          <target state="translated">Практическое руководство: использование деревьев выражений для построения динамических запросов (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>In LINQ, expression trees are used to represent structured queries that target sources of data that implement &lt;xref:System.Linq.IQueryable%601&gt;.</source>
+          <target state="translated">В LINQ деревья выражений используются для представления источников данных, которые реализуют &lt;xref:System.Linq.IQueryable%601&gt;.&lt;/xref:System.Linq.IQueryable%601&gt; , целевой структурированных запросов</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For example, the LINQ provider implements the &lt;xref:System.Linq.IQueryable%601&gt; interface for querying relational data stores.</source>
+          <target state="translated">Например, поставщик LINQ реализует &lt;xref:System.Linq.IQueryable%601&gt;интерфейс для выполнения запросов к реляционным хранилищам данных.&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The Visual Basic compiler compiles queries that target such data sources into code that builds an expression tree at runtime.</source>
+          <target state="translated">Компилятор Visual Basic компилирует запросы к источникам данных в код, который строит дерево выражений во время выполнения.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The query provider can then traverse the expression tree data structure and translate it into a query language appropriate for the data source.</source>
+          <target state="translated">Поставщик запросов можно просматривать структуру данных для дерева выражений и преобразовать ее в язык запросов, соответствующий для источника данных.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Expression trees are also used in LINQ to represent lambda expressions that are assigned to variables of type &lt;xref:System.Linq.Expressions.Expression%601&gt;.</source>
+          <target state="translated">Деревья выражений также используются в LINQ для представления лямбда-выражений, которые присваиваются переменным типа &lt;xref:System.Linq.Expressions.Expression%601&gt;.&lt;/xref:System.Linq.Expressions.Expression%601&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This topic describes how to use expression trees to create dynamic LINQ queries.</source>
+          <target state="translated">В этом разделе описывается использование деревьев выражений для создания динамических запросов LINQ.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Dynamic queries are useful when the specifics of a query are not known at compile time.</source>
+          <target state="translated">Динамические запросы полезны в тех случаях, когда характеристики запроса неизвестны во время компиляции.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For example, an application might provide a user interface that enables the end user to specify one or more predicates to filter the data.</source>
+          <target state="translated">Например приложение может предоставлять пользовательский интерфейс, который позволяет пользователю указать один или несколько предикатов для фильтрации данных.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In order to use LINQ for querying, this kind of application must use expression trees to create the LINQ query at runtime.</source>
+          <target state="translated">Для использования LINQ для запросов, такой тип приложений должен применять деревья выражений для создания запроса LINQ во время выполнения.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Пример</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following example shows you how to use expression trees to construct a query against an <ph id="ph1">`IQueryable`</ph> data source and then execute it.</source>
+          <target state="translated">В следующем примере показано использование деревьев выражений для создания запроса к <ph id="ph1">`IQueryable`</ph> источника данных и затем выполнить его.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The code builds an expression tree to represent the following query:</source>
+          <target state="translated">В коде создается дерево выражения для представления следующего запроса:</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The factory methods in the &lt;xref:System.Linq.Expressions&gt; namespace are used to create expression trees that represent the expressions that make up the overall query.</source>
+          <target state="translated">Фабричные методы в &lt;xref:System.Linq.Expressions&gt;пространства имен используются для создания деревьев выражений, представляющих общий запрос.&lt;/xref:System.Linq.Expressions&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The expressions that represent calls to the standard query operator methods refer to the &lt;xref:System.Linq.Queryable&gt; implementations of these methods.</source>
+          <target state="translated">Выражения, которые представляют вызовы методов стандартных операторов запросов ссылаются &lt;xref:System.Linq.Queryable&gt;реализации этих методов.&lt;/xref:System.Linq.Queryable&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The final expression tree is passed to the &lt;xref:System.Linq.IQueryProvider.CreateQuery%60%601%28System.Linq.Expressions.Expression%29&gt; implementation of the provider of the <ph id="ph1">`IQueryable`</ph> data source to create an executable query of type <ph id="ph2">`IQueryable`</ph>.</source>
+          <target state="translated">Итоговое дерево выражения передается &lt;xref:System.Linq.IQueryProvider.CreateQuery%60%601%28System.Linq.Expressions.Expression%29&gt;реализацию поставщика <ph id="ph1">`IQueryable`</ph> источник данных для создания исполняемого запроса типа <ph id="ph2">`IQueryable`</ph>.&lt;/xref:System.Linq.IQueryProvider.CreateQuery%60%601%28System.Linq.Expressions.Expression%29&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The results are obtained by enumerating that query variable.</source>
+          <target state="translated">Результаты получаются путем перечисление переменных запроса.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This code uses a fixed number of expressions in the predicate that is passed to the <ph id="ph1">`Queryable.Where`</ph> method.</source>
+          <target state="translated">Этот код использует фиксированное число выражений в предикате, передаваемый <ph id="ph1">`Queryable.Where`</ph> метод.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>However, you can write an application that combines a variable number of predicate expressions that depends on the user input.</source>
+          <target state="translated">Тем не менее можно написать приложение, объединяющее переменное число выражений предиката, зависящее от вводимых пользователем данных.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can also vary the standard query operators that are called in the query, depending on the input from the user.</source>
+          <target state="translated">Также можно изменять стандартные операторы, которые вызываются в запросе, в зависимости от входных данных от пользователя.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">Компиляция кода</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Create a new <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> project.</source>
+          <target state="translated">Создайте новый <bpt id="p1">**</bpt>консольное приложение<ept id="p1">**</ept> проекта.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Add a reference to System.Core.dll if it is not already referenced.</source>
+          <target state="translated">Добавьте ссылку на System.Core.dll, если нет ссылок.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Include the System.Linq.Expressions namespace.</source>
+          <target state="translated">Включите пространство имен System.Linq.Expressions.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Copy the code from the example and paste it into the <ph id="ph1">`Main`</ph> <ph id="ph2">`Sub`</ph> procedure.</source>
+          <target state="translated">Скопируйте код из примера и вставьте его в <ph id="ph1">`Main`</ph> <ph id="ph2">`Sub`</ph> процедуры.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Expression Trees (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Деревья выражений (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Execute Expression Trees (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Практическое руководство: выполнение деревьев выражений (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
