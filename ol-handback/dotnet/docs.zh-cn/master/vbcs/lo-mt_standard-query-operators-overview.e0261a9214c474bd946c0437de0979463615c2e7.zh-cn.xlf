@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eb28988ef49e0583fb7e9197c4e13c84665074ac</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\standard-query-operators-overview.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">eb8ff3439cc478864f407a70d8e36a2eae13d4a5</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">83bce3cce91f4ed2db146f8692afa9e82b21a420</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Standard Query Operators Overview (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">标准查询运算符概述 (Visual Basic 中) |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Standard Query Operators Overview (Visual Basic)</source>
+          <target state="translated">标准查询运算符概述 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>standard query operators<ept id="p1">*</ept> are the methods that form the LINQ pattern.</source>
+          <target state="translated"><bpt id="p1">*</bpt>标准查询运算符<ept id="p1">*</ept>是窗体中的 LINQ 模式的方法。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Most of these methods operate on sequences, where a sequence is an object whose type implements the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface or the &lt;xref:System.Linq.IQueryable%601&gt; interface.</source>
+          <target state="translated">这些方法中的大多数作用于序列，其中的序列是其类型实现的对象&lt;xref:System.Collections.Generic.IEnumerable%601&gt;接口或&lt;xref:System.Linq.IQueryable%601&gt;接口。&lt;/xref:System.Linq.IQueryable%601&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The standard query operators provide query capabilities including filtering, projection, aggregation, sorting and more.</source>
+          <target state="translated">标准查询运算符提供了查询功能包括筛选、 投影、 聚合、 排序和的详细信息。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>There are two sets of LINQ standard query operators, one that operates on objects of type &lt;xref:System.Collections.Generic.IEnumerable%601&gt; and the other that operates on objects of type &lt;xref:System.Linq.IQueryable%601&gt;.</source>
+          <target state="translated">有两套 LINQ 标准查询运算符，一种类型&lt;xref:System.Collections.Generic.IEnumerable%601&gt;，另一个操作类型&lt;xref:System.Linq.IQueryable%601&gt;。&lt;/xref:System.Linq.IQueryable%601&gt;的对象&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;的对象上运行</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The methods that make up each set are static members of the &lt;xref:System.Linq.Enumerable&gt; and &lt;xref:System.Linq.Queryable&gt; classes, respectively.</source>
+          <target state="translated">构成每个集合的方法是静态成员&lt;xref:System.Linq.Enumerable&gt;和&lt;xref:System.Linq.Queryable&gt;类，分别。&lt;/xref:System.Linq.Queryable&gt; &lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>They are defined as <bpt id="p1">*</bpt>extension methods<ept id="p1">*</ept> of the type that they operate on.</source>
+          <target state="translated">它们定义为<bpt id="p1">*</bpt>扩展方法<ept id="p1">*</ept>它们对操作的类型。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This means that they can be called by using either static method syntax or instance method syntax.</source>
+          <target state="translated">这意味着可以通过使用静态方法的语法或实例方法语法调用它们。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In addition, several standard query operator methods operate on types other than those based on &lt;xref:System.Collections.Generic.IEnumerable%601&gt; or &lt;xref:System.Linq.IQueryable%601&gt;.</source>
+          <target state="translated">此外，多个标准查询运算符方法操作类型而不是基于&lt;xref:System.Collections.Generic.IEnumerable%601&gt;或&lt;xref:System.Linq.IQueryable%601&gt;。&lt;/xref:System.Linq.IQueryable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;上</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Linq.Enumerable&gt; type defines two such methods that both operate on objects of type &lt;xref:System.Collections.IEnumerable&gt;.</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable&gt;类型定义了两个此类方法的类型&lt;xref:System.Collections.IEnumerable&gt;。&lt;/xref:System.Collections.IEnumerable&gt;对象上同时运行&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>These methods, &lt;xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29&gt; and &lt;xref:System.Linq.Enumerable.OfType%60%601%28System.Collections.IEnumerable%29&gt;, let you enable a non-parameterized, or non-generic, collection to be queried in the LINQ pattern.</source>
+          <target state="translated">这些方法，&lt;xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29&gt;和&lt;xref:System.Linq.Enumerable.OfType%60%601%28System.Collections.IEnumerable%29&gt;，可让您启用要在 LINQ 模式中查询的非参数化或非泛型集合。&lt;/xref:System.Linq.Enumerable.OfType%60%601%28System.Collections.IEnumerable%29&gt; &lt;/xref:System.Linq.Enumerable.Cast%60%601%28System.Collections.IEnumerable%29&gt;</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>They do this by creating a strongly-typed collection of objects.</source>
+          <target state="translated">他们通过创建强类型化对象的集合来执行此操作。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Linq.Queryable&gt; class defines two similar methods, &lt;xref:System.Linq.Queryable.Cast%60%601%28System.Linq.IQueryable%29&gt; and &lt;xref:System.Linq.Queryable.OfType%60%601%28System.Linq.IQueryable%29&gt;, that operate on objects of type &lt;xref:System.Linq.Queryable&gt;.</source>
+          <target state="translated">&lt;xref:System.Linq.Queryable&gt;类定义了两个类似的方法，&lt;xref:System.Linq.Queryable.Cast%60%601%28System.Linq.IQueryable%29&gt;并且&lt;xref:System.Linq.Queryable.OfType%60%601%28System.Linq.IQueryable%29&gt;，针对对象类型&lt;xref:System.Linq.Queryable&gt;。&lt;/xref:System.Linq.Queryable&gt;运行&lt;/xref:System.Linq.Queryable.OfType%60%601%28System.Linq.IQueryable%29&gt;&lt;/xref:System.Linq.Queryable.Cast%60%601%28System.Linq.IQueryable%29&gt;&lt;/xref:System.Linq.Queryable&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The standard query operators differ in the timing of their execution, depending on whether they return a singleton value or a sequence of values.</source>
+          <target state="translated">标准查询运算符在其执行，具体取决于它们返回单一实例值或一系列值的时间会有所不同。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Those methods that return a singleton value (for example, &lt;xref:System.Linq.Enumerable.Average%2A&gt; and &lt;xref:System.Linq.Enumerable.Sum%2A&gt;) execute immediately.</source>
+          <target state="translated">返回单一实例值的那些方法 (例如，&lt;xref:System.Linq.Enumerable.Average%2A&gt;和&lt;xref:System.Linq.Enumerable.Sum%2A&gt;) 将会立即执行。&lt;/xref:System.Linq.Enumerable.Sum%2A&gt; &lt;/xref:System.Linq.Enumerable.Average%2A&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Methods that return a sequence defer the query execution and return an enumerable object.</source>
+          <target state="translated">延迟查询执行和返回一个可枚举对象返回一系列的方法。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In the case of the methods that operate on in-memory collections, that is, those methods that extend &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, the returned enumerable object captures the arguments that were passed to the method.</source>
+          <target state="translated">在对集合执行运算内存中，即，将扩展这些方法的方法的情况下&lt;xref:System.Collections.Generic.IEnumerable%601&gt;，返回的可枚举对象捕获已传递到方法的参数。&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When that object is enumerated, the logic of the query operator is employed and the query results are returned.</source>
+          <target state="translated">当枚举该对象时，使用查询运算符的逻辑，并返回查询结果。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In contrast, methods that extend &lt;xref:System.Linq.IQueryable%601&gt; do not implement any querying behavior, but build an expression tree that represents the query to be performed.</source>
+          <target state="translated">与此相反，用于扩展的方法&lt;xref:System.Linq.IQueryable%601&gt;不实现任何查询行为，但创建表示要执行该查询的表达式树。&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The query processing is handled by the source &lt;xref:System.Linq.IQueryable%601&gt; object.</source>
+          <target state="translated">查询处理源&lt;xref:System.Linq.IQueryable%601&gt;对象。&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Calls to query methods can be chained together in one query, which enables queries to become arbitrarily complex.</source>
+          <target state="translated">对查询方法的调用可以链接在一起在一个查询中，这就使得查询变得很复杂。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The following code example demonstrates how the standard query operators can be used to obtain information about a sequence.</source>
+          <target state="translated">下面的代码示例演示如何使用标准查询运算符来获取有关序列的信息。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Query Expression Syntax</source>
+          <target state="translated">查询表达式语法</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Some of the more frequently used standard query operators have dedicated C# and Visual Basic language keyword syntax that enables them to be called as part of a <bpt id="p1">*</bpt>query<ept id="p1">*</ept> <bpt id="p2">*</bpt>expression<ept id="p2">*</ept>.</source>
+          <target state="translated">一些经常使用的标准查询运算符包含专用使他们能够作为的一部分调用的 C# 和 Visual Basic 语言关键字语法<bpt id="p1">*</bpt>查询<ept id="p1">*</ept><bpt id="p2">*</bpt>表达式<ept id="p2">*</ept>。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For more information about standard query operators that have dedicated keywords and their corresponding syntaxes, see <bpt id="p1">[</bpt>Query Expression Syntax for Standard Query Operators (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept>.</source>
+          <target state="translated">有关具有专用的关键字和其对应的语法的标准查询运算符的详细信息，请参阅<bpt id="p1">[</bpt>标准查询运算符 (Visual Basic 中) 的查询表达式语法<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Extending the Standard Query Operators</source>
+          <target state="translated">扩展标准查询运算符</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You can augment the set of standard query operators by creating domain-specific methods that are appropriate for your target domain or technology.</source>
+          <target state="translated">您可以通过创建适合于目标域或技术的特定于域的方法扩展的一套标准查询运算符。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can also replace the standard query operators with your own implementations that provide additional services such as remote evaluation, query translation, and optimization.</source>
+          <target state="translated">您还可以用您自己提供其他服务，如远程评估、 查询转换和优化的实现替换标准查询运算符。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>See &lt;xref:System.Linq.Enumerable.AsEnumerable%2A&gt; for an example.</source>
+          <target state="translated">请参阅&lt;xref:System.Linq.Enumerable.AsEnumerable%2A&gt;以举例。&lt;/xref:System.Linq.Enumerable.AsEnumerable%2A&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Related Sections</source>
+          <target state="translated">相关章节</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The following links take you to topics that provide additional information about the various standard query operators based on functionality.</source>
+          <target state="translated">以下链接可转至主题提供了有关各种基于功能的标准查询运算符的其他信息。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Sorting Data<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>对数据进行排序<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Set Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/set-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Set 运算 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/set-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Filtering Data (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/filtering-data.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>筛选数据 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/filtering-data.md)</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Quantifier Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>限定符操作 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Projection Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>投影运算 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Partitioning Data (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/partitioning-data.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>分区数据 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/partitioning-data.md)</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Join Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/join-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>联接操作 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/join-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Grouping Data (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/grouping-data.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>对数据进行分组 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/grouping-data.md)</ept></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generation Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/generation-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>生成操作 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/generation-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Equality Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/equality-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>相等运算 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/equality-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Element Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/element-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>元素操作 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/element-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Converting Data Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>转换数据类型 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Concatenation Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/concatenation-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>串联运算 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/concatenation-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Aggregation Operations (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>聚合操作 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)</ept></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable&gt;&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Queryable&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Queryable&gt;&lt;/xref:System.Linq.Queryable&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Introduction to LINQ (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>(Visual Basic 中) 的 LINQ 简介<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Query Expression Syntax for Standard Query Operators (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>标准查询运算符 (Visual Basic 中) 的查询表达式语法<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Classification of Standard Query Operators by Manner of Execution (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>标准查询运算符按执行 (Visual Basic 中) 的方式的分类<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Extension Methods<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>扩展方法<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

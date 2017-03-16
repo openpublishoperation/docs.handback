@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ceddb35c306f72c8927deda326d9fcca6c75d786</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\assemblies-gac\how-to-create-unsigned-friend-assemblies.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3cbcd249f410e42ffad8f2b5ee05206e4e0781d3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">292120d586482472050ec20de27fae349ecd51f1</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Create Unsigned Friend Assemblies (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Procedura: creare assembly Friend non firmati (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Create Unsigned Friend Assemblies (Visual Basic)</source>
+          <target state="translated">Procedura: creare assembly Friend non firmati (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example shows how to use friend assemblies with assemblies that are unsigned.</source>
+          <target state="translated">In questo esempio viene illustrato come utilizzare gli assembly friend con assembly non firmati.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>To create an assembly and a friend assembly</source>
+          <target state="translated">Per creare un assembly e un assembly friend</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Open a command prompt.</source>
+          <target state="translated">Aprire un prompt dei comandi.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Create a Visual Basic file named <ph id="ph1">`friend_signed_A.`</ph> that contains the following code.</source>
+          <target state="translated">Creare un file di Visual Basic denominato <ph id="ph1">`friend_signed_A.`</ph> che contiene il codice seguente.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The code uses the &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt; attribute to declare friend_signed_B as a friend assembly.</source>
+          <target state="translated">Il codice utilizza il &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;attributo per dichiarare friend_signed_B come assembly friend.&lt;/xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Compile and sign friend_signed_A by using the following command.</source>
+          <target state="translated">Compilare e firmare friend_signed_A utilizzando il comando seguente.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Create a Visual Basic file named <ph id="ph1">`friend_unsigned_B`</ph> that contains the following code.</source>
+          <target state="translated">Creare un file di Visual Basic denominato <ph id="ph1">`friend_unsigned_B`</ph> che contiene il codice seguente.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Because friend_unsigned_A specifies friend_unsigned_B as a friend assembly, the code in friend_unsigned_B can access <ph id="ph1">`Friend`</ph> types and members from friend_unsigned_A.</source>
+          <target state="translated">Poiché friend_unsigned_A specifica friend_unsigned_B come assembly friend, il codice di friend_unsigned_B può accedere <ph id="ph1">`Friend`</ph> tipi e membri da friend_unsigned_A.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Compile friend_signed_B by using the following command.</source>
+          <target state="translated">Compilare friend_signed_B utilizzando il comando seguente.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The name of the assembly that is generated by the compiler must match the friend assembly name that is passed to the &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt; attribute.</source>
+          <target state="translated">Il nome dell'assembly generato dal compilatore deve corrispondere il nome dell'assembly friend che viene passato per il &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;attributo.&lt;/xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can explicitly set the assembly by using the <ph id="ph1">`/out`</ph> compiler option.</source>
+          <target state="translated">È possibile impostare in modo esplicito l'assembly utilizzando il <ph id="ph1">`/out`</ph> l'opzione del compilatore.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Run the friend_signed_B.exe file.</source>
+          <target state="translated">Eseguire il file friend_signed_B.exe.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The program prints two strings: "Class1.Test" and "Class2.Test".</source>
+          <target state="translated">Il programma stampa due stringhe: "Class1" e "Class2. test".</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>.NET Framework Security</source>
+          <target state="translated">Sicurezza di .NET Framework</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>There are similarities between the &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt; attribute and the &lt;xref:System.Security.Permissions.StrongNameIdentityPermission&gt; class.</source>
+          <target state="translated">Esistono analogie tra l' &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;attributo e la &lt;xref:System.Security.Permissions.StrongNameIdentityPermission&gt;classe.&lt;/xref:System.Security.Permissions.StrongNameIdentityPermission&gt; &lt;/xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The main difference is that &lt;xref:System.Security.Permissions.StrongNameIdentityPermission&gt; can demand security permissions to run a particular section of code, whereas the &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt; attribute controls the visibility of <ph id="ph1">`Friend`</ph> types and members.</source>
+          <target state="translated">La differenza principale è che &lt;xref:System.Security.Permissions.StrongNameIdentityPermission&gt;può richiedere le autorizzazioni di sicurezza per l'esecuzione di una particolare sezione di codice, mentre il &lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;attributo controlla la visibilità di <ph id="ph1">`Friend`</ph> tipi e membri.&lt;/xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt; &lt;/xref:System.Security.Permissions.StrongNameIdentityPermission&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;</source>
+          <target state="translated">&lt;xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;&lt;/xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Assemblies and the Global Assembly Cache (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Gli assembly e Global Assembly Cache (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Friend Assemblies (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Assembly Friend (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Create Signed Friend Assemblies (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedura: creare assembly Friend firmati (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Programming Guide Concepts<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Concetti relativi alla Guida di programmazione<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

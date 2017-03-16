@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2e58363369ae4420879310bf09ed89cdd4f5b5cc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\assemblies-gac\how-to-determine-if-a-file-is-an-assembly.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">58d34d4748f5b26ca3bbb359f9da1a3ec896507d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">add0c247ed14c8808aeab1a3c8b256e1e5e7d3a2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Determine If a File Is an Assembly (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">如何︰ 确定文件是否为程序集 (Visual Basic 中) |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Determine If a File Is an Assembly (Visual Basic)</source>
+          <target state="translated">如何︰ 确定文件是否为程序集 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A file is an assembly if and only if it is managed, and contains an assembly entry in its metadata.</source>
+          <target state="translated">当且仅当它处于托管状态，并包含其元数据中的程序集条目，则文件是程序集。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For more information on assemblies and metadata, see the topic <bpt id="p1">[</bpt>Assembly Manifest<ept id="p1">](https://msdn.microsoft.com/library/1w45z383)</ept>.</source>
+          <target state="translated">程序集和元数据的详细信息，请参阅主题<bpt id="p1">[</bpt>程序集清单<ept id="p1">](https://msdn.microsoft.com/library/1w45z383)</ept>。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>How to manually determine if a file is an assembly</source>
+          <target state="translated">如何手动确定文件是否为程序集</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Start the <bpt id="p1">[</bpt>Ildasm.exe (IL Disassembler)<ept id="p1">](https://msdn.microsoft.com/library/f7dy01k1)</ept>.</source>
+          <target state="translated">启动<bpt id="p1">[</bpt>Ildasm.exe （IL 反汇编程序）<ept id="p1">](https://msdn.microsoft.com/library/f7dy01k1)</ept>。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Load the file you wish to test.</source>
+          <target state="translated">加载你要测试的文件。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If <bpt id="p1">**</bpt>ILDASM<ept id="p1">**</ept> reports that the file is not a portable executable (PE) file, then it is not an assembly.</source>
+          <target state="translated">如果<bpt id="p1">**</bpt>ILDASM<ept id="p1">**</ept>报表文件不是一个可移植可执行 (PE) 文件，则它不是程序集。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information, see the topic <bpt id="p1">[</bpt>How to: View Assembly Contents<ept id="p1">](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709)</ept>.</source>
+          <target state="translated">有关详细信息，请参阅主题<bpt id="p1">[</bpt>如何︰ 查看程序集内容<ept id="p1">](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709)</ept>。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>How to programmatically determine if a file is an assembly</source>
+          <target state="translated">如何以编程方式确定文件是否为程序集</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Call the &lt;xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt; method, passing the full file path and name of the file you are testing.</source>
+          <target state="translated">调用&lt;xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt;方法，并传递的完整文件路径和要测试的文件的名称。&lt;/xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If a &lt;xref:System.BadImageFormatException&gt; exception is thrown, the file is not an assembly.</source>
+          <target state="translated">如果&lt;xref:System.BadImageFormatException&gt;引发异常，该文件不是程序集。&lt;/xref:System.BadImageFormatException&gt;</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This example tests a DLL to see if it is an assembly.</source>
+          <target state="translated">此示例测试以查看它是否为程序集 DLL。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt; method loads the test file, and then releases it once the information is read.</source>
+          <target state="translated">&lt;xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt;方法加载测试文件，并将读取的信息之后，然后释放它。&lt;/xref:System.Reflection.AssemblyName.GetAssemblyName%2A&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Reflection.AssemblyName&gt;</source>
+          <target state="translated">&lt;xref:System.Reflection.AssemblyName&gt;&lt;/xref:System.Reflection.AssemblyName&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Programming Concepts<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>编程概念<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Assemblies and the Global Assembly Cache (Visual Basic)<ept id="p1">](index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>程序集和全局程序集缓存 (Visual Basic)<ept id="p1">](index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

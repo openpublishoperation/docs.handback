@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ea1e21bd8cc392889c477e78338384ed05d4cbb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\iterators.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b40d34676075d1a70e8aa929762edacc5a512b07</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">273debdea7e97bf5b55ca691a81a3a48dddc1409</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">반복기 (Visual Basic) | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic)</source>
+          <target state="translated">반복기 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>iterator<ept id="p1">*</ept> can be used to step through collections such as lists and arrays.</source>
+          <target state="translated"><bpt id="p1">*</bpt>반복기<ept id="p1">*</ept> 컬렉션을 나열 하 고 배열 같은 단계별로 데 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>An iterator method or <ph id="ph1">`get`</ph> accessor performs a custom iteration over a collection.</source>
+          <target state="translated">반복기 메서드 또는 <ph id="ph1">`get`</ph> 접근자 컬렉션 사용자 지정 반복을 수행 합니다.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An iterator method uses the <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> statement to return each element one at a time.</source>
+          <target state="translated">반복기 메서드에서 사용 하 여는 <bpt id="p1">[</bpt>생성<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> 문을 한 번에 각 요소를 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When a <ph id="ph1">`Yield`</ph> statement is reached, the current location in code is remembered.</source>
+          <target state="translated">경우는 <ph id="ph1">`Yield`</ph> 문에 도달 하면, 코드에서 현재 위치 기억 됩니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Execution is restarted from that location the next time the iterator function is called.</source>
+          <target state="translated">실행이 다시 시작 해당 위치에서 다음에 반복기 함수가 호출 됩니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You consume an iterator from client code by using a <bpt id="p1">[</bpt>For Each…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept> statement, or by using a LINQ query.</source>
+          <target state="translated">클라이언트 코드에서 반복기를 사용 하 여 소비는 <bpt id="p1">[</bpt>각각에 대해... 다음<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept> 문 또는 LINQ 쿼리를 사용 합니다.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In the following example, the first iteration of the <ph id="ph1">`For Each`</ph> loop causes execution to proceed  in the <ph id="ph2">`SomeNumbers`</ph> iterator method until the first <ph id="ph3">`Yield`</ph> statement is reached.</source>
+          <target state="translated">다음 예제에서는의 첫 번째 반복에에서는 <ph id="ph1">`For Each`</ph> 루프 하면 실행이 계속는 <ph id="ph2">`SomeNumbers`</ph> 첫 번째 때까지 반복기 메서드 <ph id="ph3">`Yield`</ph> 문이 도달 합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 3, and the current location in the iterator method is retained.</source>
+          <target state="translated">이 반복 3의 값을 반환 하 고 반복기 메서드의 현재 위치는 유지 됩니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">어디에서 계속 반복기 메서드의 실행 하는 루프의 다음 반복에서 중단, 다시에 도달할 때 실행을 중지 한 <ph id="ph1">`Yield`</ph> 문.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 5, and the current location in the iterator method is again retained.</source>
+          <target state="translated">이 반복 값 5 반환 하 고 반복기 메서드 내의 현재 위치는 다시 유지 합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The loop completes when the end of the iterator method is reached.</source>
+          <target state="translated">루프는 반복기 메서드의 끝에 도달 하면 완료 됩니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The return type of an iterator method or <ph id="ph1">`get`</ph> accessor can be &lt;xref:System.Collections.IEnumerable&gt;, &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, &lt;xref:System.Collections.IEnumerator&gt;, or &lt;xref:System.Collections.Generic.IEnumerator%601&gt;.</source>
+          <target state="translated">반복기 메서드의 반환 형식 또는 <ph id="ph1">`get`</ph> 접근자 수 &lt;xref:System.Collections.IEnumerable&gt;, &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, &lt;xref:System.Collections.IEnumerator&gt;, 또는 &lt;xref:System.Collections.Generic.IEnumerator%601&gt;.&lt;/xref:System.Collections.Generic.IEnumerator%601&gt; &lt;/xref:System.Collections.IEnumerator&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt; &lt;/xref:System.Collections.IEnumerable&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can use an <ph id="ph1">`Exit Function`</ph> or <ph id="ph2">`Return`</ph> statement to end the iteration.</source>
+          <target state="translated">사용할 수는 <ph id="ph1">`Exit Function`</ph> 또는 <ph id="ph2">`Return`</ph> 문을 반복을 종료 합니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>A Visual Basic iterator function or <ph id="ph1">`get`</ph> accessor declaration includes an <bpt id="p1">[</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept> modifier.</source>
+          <target state="translated">Visual Basic 반복기 함수 또는 <ph id="ph1">`get`</ph> 접근자 선언에 포함 되어 있는 <bpt id="p1">[</bpt>반복기<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept> 한정자입니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Iterators were introduced in Visual Basic in Visual Studio 2012.</source>
+          <target state="translated">반복기는 Visual Studio 2012의 Visual Basic에서 도입 되었습니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In this topic<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>항목 내용<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Simple Iterator<ept id="p1">](#BKMK_SimpleIterator)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>단순 반복기<ept id="p1">](#BKMK_SimpleIterator)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a Collection Class<ept id="p1">](#BKMK_CollectionClass)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>컬렉션 클래스 만들기<ept id="p1">](#BKMK_CollectionClass)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Try Blocks<ept id="p1">](#BKMK_TryBlocks)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Try 블록<ept id="p1">](#BKMK_TryBlocks)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Anonymous Methods<ept id="p1">](#BKMK_AnonymousMethods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>무명 메서드<ept id="p1">](#BKMK_AnonymousMethods)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using Iterators with a Generic List<ept id="p1">](#BKMK_GenericList)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>제네릭 목록과 함께 반복기 사용<ept id="p1">](#BKMK_GenericList)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Syntax Information<ept id="p1">](#BKMK_SyntaxInformation)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>구문 정보<ept id="p1">](#BKMK_SyntaxInformation)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Technical Implementation<ept id="p1">](#BKMK_Technical)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>기술 구현<ept id="p1">](#BKMK_Technical)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Use of Iterators<ept id="p1">](#BKMK_UseOfIterators)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>반복기 사용<ept id="p1">](#BKMK_UseOfIterators)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For all examples in the topic except the Simple Iterator example, include <bpt id="p1">[</bpt>Imports<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> statements for the <ph id="ph1">`System.Collections`</ph> and <ph id="ph2">`System.Collections.Generic`</ph> namespaces.</source>
+          <target state="translated">단순 반복기 예제를 제외 하 고 항목의 모든 예제에 대 한 포함 <bpt id="p1">[</bpt>Imports<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> 에 대 한 문을 <ph id="ph1">`System.Collections`</ph> 및 <ph id="ph2">`System.Collections.Generic`</ph> 네임 스페이스입니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Simple Iterator</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>단순 반복기</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following example has a single <ph id="ph1">`Yield`</ph> statement that is inside a <bpt id="p1">[</bpt>For…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept> loop.</source>
+          <target state="translated">다음 예제에는 단일 <ph id="ph1">`Yield`</ph> 문 내에 있는 한 <bpt id="p1">[</bpt>에 대 한... 다음<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept> 루프입니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`Main`</ph>, each iteration of the <ph id="ph2">`For Each`</ph> statement body creates a call to the iterator function, which proceeds to the next <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph>의 각 반복에서 <ph id="ph2">`For Each`</ph> 문 본문에서 다음 단계로 진행 하는 반복기 함수에 대 한 호출을 만듭니다 <ph id="ph3">`Yield`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Creating a Collection Class</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>컬렉션 클래스 만들기</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`DaysOfTheWeek`</ph> class implements the &lt;xref:System.Collections.IEnumerable&gt; interface, which requires a &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`DaysOfTheWeek`</ph> 클래스가 구현 하는 &lt;xref:System.Collections.IEnumerable&gt;인터페이스를 필요로 하는 &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;메서드.&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; &lt;/xref:System.Collections.IEnumerable&gt;</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The compiler implicitly calls the <ph id="ph1">`GetEnumerator`</ph> method, which returns an &lt;xref:System.Collections.IEnumerator&gt;.</source>
+          <target state="translated">컴파일러는 암시적으로 호출 된 <ph id="ph1">`GetEnumerator`</ph> &lt;xref:System.Collections.IEnumerator&gt;.&lt;/xref:System.Collections.IEnumerator&gt; 를 반환 하는 메서드</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`GetEnumerator`</ph> method returns each string one at a time by using the <ph id="ph2">`Yield`</ph> statement, and  an <ph id="ph3">`Iterator`</ph> modifier is in the function declaration.</source>
+          <target state="translated"><ph id="ph1">`GetEnumerator`</ph> 메서드를 사용 하 여 한 번에 하나의 각 문자열을 반환는 <ph id="ph2">`Yield`</ph> 문 및 <ph id="ph3">`Iterator`</ph> 한정자는 함수 선언에 있습니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following example creates a <ph id="ph1">`Zoo`</ph> class that contains a collection of animals.</source>
+          <target state="translated">다음 예제에서는 한 <ph id="ph1">`Zoo`</ph> 동물의 컬렉션을 포함 하는 클래스입니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statement that refers to the class instance (<ph id="ph2">`theZoo`</ph>) implicitly calls the <ph id="ph3">`GetEnumerator`</ph> method.</source>
+          <target state="translated"><ph id="ph1">`For Each`</ph> 클래스 인스턴스를 참조 하는 문 (<ph id="ph2">`theZoo`</ph>) 암시적으로 호출 된 <ph id="ph3">`GetEnumerator`</ph> 메서드.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statements that refer to the <ph id="ph2">`Birds`</ph> and <ph id="ph3">`Mammals`</ph> properties use the <ph id="ph4">`AnimalsForType`</ph> named iterator method.</source>
+          <target state="translated"><ph id="ph1">`For Each`</ph> 를 참조 하는 문에 <ph id="ph2">`Birds`</ph> 및 <ph id="ph3">`Mammals`</ph> 속성 사용은 <ph id="ph4">`AnimalsForType`</ph> 반복기 메서드 라는 합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Try Blocks</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Try 블록</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Visual Basic allows a <ph id="ph1">`Yield`</ph> statement in the <ph id="ph2">`Try`</ph> block of a <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">Visual Basic에서는 <ph id="ph1">`Yield`</ph> 문에서 <ph id="ph2">`Try`</ph> 블록는 <bpt id="p1">[</bpt>시도 중... Catch... Finally 문<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Try`</ph> block that has a <ph id="ph2">`Yield`</ph> statement can have <ph id="ph3">`Catch`</ph> blocks, and can have a <ph id="ph4">`Finally`</ph> block.</source>
+          <target state="translated">A <ph id="ph1">`Try`</ph> 블록은 <ph id="ph2">`Yield`</ph> 문의 <ph id="ph3">`Catch`</ph> 을 차단 하 고 있을 수 있습니다는 <ph id="ph4">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The following example includes <ph id="ph1">`Try`</ph>, <ph id="ph2">`Catch`</ph>, and <ph id="ph3">`Finally`</ph> blocks in an iterator function.</source>
+          <target state="translated">다음 예제에서는 포함 <ph id="ph1">`Try`</ph>, <ph id="ph2">`Catch`</ph>, 및 <ph id="ph3">`Finally`</ph> 반복기 함수를 차단 합니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finally`</ph> block in the iterator function executes before the <ph id="ph2">`For Each`</ph> iteration finishes.</source>
+          <target state="translated"><ph id="ph1">`Finally`</ph> 반복기 함수에는 블록이 실행 하기 전에 <ph id="ph2">`For Each`</ph> 반복 완료 합니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Yield`</ph> statement cannot be inside a <ph id="ph2">`Catch`</ph> block or a <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated">A <ph id="ph1">`Yield`</ph> 문 내 야는 <ph id="ph2">`Catch`</ph> 블록 또는 <ph id="ph3">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`For Each`</ph> body (instead of the iterator method) throws an exception, a <ph id="ph2">`Catch`</ph> block in the iterator function is not executed, but a <ph id="ph3">`Finally`</ph> block in the iterator function is executed.</source>
+          <target state="translated">하는 경우는 <ph id="ph1">`For Each`</ph> 본문 (반복기 메서드) 하는 대신 예외를 throw 한 <ph id="ph2">`Catch`</ph> 블록 반복기 함수에이 실행 되지 않으면 하지만 <ph id="ph3">`Finally`</ph> 반복기 함수 블록이 실행 됩니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Catch`</ph> block inside an iterator function catches only exceptions that occur inside the iterator function.</source>
+          <target state="translated">A <ph id="ph1">`Catch`</ph> 반복기 함수 내의 블록 반복기 함수 내 발생 하는 예외에만 catch 합니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Anonymous Methods</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>무명 메서드</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an anonymous function can be an iterator function.</source>
+          <target state="translated">Visual basic에서는 익명 함수는 반복기 함수를 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following example illustrates this.</source>
+          <target state="translated">다음은 이에 대한 예입니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following example has a non-iterator method that validates the arguments.</source>
+          <target state="translated">다음 예제에는 인수의 유효성을 검사 하는 반복기가 아닌 메서드.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The method returns the result of an anonymous iterator that describes the collection elements.</source>
+          <target state="translated">메서드는 컬렉션 요소에 설명 하는 익명 반복기의 결과 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If validation is instead inside the iterator function, the validation cannot be performed until the start of the first iteration of the <ph id="ph1">`For Each`</ph> body.</source>
+          <target state="translated">첫 번째 반복이 시작 될 때까지 유효성 검사를 수행할 수 없습니다 이면 유효성 검사 대신 반복기 함수 내에서 <ph id="ph1">`For Each`</ph> 본문입니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Using Iterators with a Generic List</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>제네릭 목록과 함께 반복기 사용</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`Stack(Of T)`</ph> generic class implements the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; generic interface.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`Stack(Of T)`</ph> 제네릭 클래스가 구현 하는 &lt;xref:System.Collections.Generic.IEnumerable%601&gt;제네릭 인터페이스.&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Push`</ph> method assigns values to an array of type <ph id="ph2">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Push`</ph> 형식의 배열에 값을 할당 하는 메서드 <ph id="ph2">`T`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method returns the array values by using the <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;메서드를 사용 하 여 배열 값을 반환 된 <ph id="ph1">`Yield`</ph> 문.&lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In addition to the generic &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method, the non-generic &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method must also be implemented.</source>
+          <target state="translated">제네릭 외에도 &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;메서드, 제네릭이 아닌 &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;도 구현 해야 합니다.&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This is because &lt;xref:System.Collections.Generic.IEnumerable%601&gt; inherits from &lt;xref:System.Collections.IEnumerable&gt;.</source>
+          <target state="translated">즉, &lt;xref:System.Collections.Generic.IEnumerable%601&gt; &lt;xref:System.Collections.IEnumerable&gt;.&lt;/xref:System.Collections.IEnumerable&gt; 에서 상속&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The non-generic implementation defers to the generic implementation.</source>
+          <target state="translated">제네릭이 아닌 구현 제네릭 구현의 설정을 따릅니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The example uses named iterators to support various ways of iterating through the same collection of data.</source>
+          <target state="translated">예제에서는 데이터의 동일한 컬렉션을 반복 하는 다양 한 방법을 지원 하기 위해 명명 된 반복기를 사용 합니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>These named iterators are the <ph id="ph1">`TopToBottom`</ph> and <ph id="ph2">`BottomToTop`</ph> properties, and the <ph id="ph3">`TopN`</ph> method.</source>
+          <target state="translated">이러한 반복기 명명 되는 <ph id="ph1">`TopToBottom`</ph> 및 <ph id="ph2">`BottomToTop`</ph> 속성 및 <ph id="ph3">`TopN`</ph> 메서드.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`BottomToTop`</ph> property declaration includes the <ph id="ph2">`Iterator`</ph> keyword.</source>
+          <target state="translated"><ph id="ph1">`BottomToTop`</ph> 속성 선언에서 <ph id="ph2">`Iterator`</ph> 키워드입니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Syntax Information</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>구문 정보</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>An iterator can occur as a method or <ph id="ph1">`get`</ph> accessor.</source>
+          <target state="translated">반복기는 방법으로 발생할 수 또는 <ph id="ph1">`get`</ph> 접근자입니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.</source>
+          <target state="translated">반복기는 이벤트, 생성자, 정적 생성자 또는 정적 소멸자에서 발생할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>An implicit conversion must exist from the expression type in the <ph id="ph1">`Yield`</ph> statement to the return type of the iterator.</source>
+          <target state="translated">식 형식에서 암시적 변환이 있어야 합니다.는 <ph id="ph1">`Yield`</ph> 문을 반복기의 반환 형식입니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an iterator method cannot have any <ph id="ph1">`ByRef`</ph> parameters.</source>
+          <target state="translated">Visual Basic의 반복기 메서드를 사용할 수 없습니다 <ph id="ph1">`ByRef`</ph> 매개 변수입니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, "Yield" is not a reserved word and has special meaning only when it is used in an <ph id="ph1">`Iterator`</ph> method or <ph id="ph2">`get`</ph> accessor.</source>
+          <target state="translated">Visual Basic에서 "생성" 예약어 아니며에 사용 될 때만 특별 한 의미가 있는 <ph id="ph1">`Iterator`</ph> 메서드 또는 <ph id="ph2">`get`</ph> 접근자입니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Technical Implementation</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>기술 구현</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine.</source>
+          <target state="translated">반복기를 메서드로 작성 해도 컴파일러도 변환 중첩된 클래스 즉, 실제로 상태 시스템.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This class keeps track of the position of the iterator as long the <ph id="ph1">`For Each...Next`</ph> loop in the client code continues.</source>
+          <target state="translated">이 클래스는 동안 반복기의 위치는 추적 <ph id="ph1">`For Each...Next`</ph> 클라이언트 코드에서 루프를 계속 합니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that is generated for an iterator method.</source>
+          <target state="translated">컴파일러의 용도 확인 하려면 반복기 메서드에 대해 생성 되는 Microsoft 중간 언어 코드를 보려면 Ildasm.exe 도구를 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you create an iterator for a <bpt id="p1">[</bpt>class<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept> or <bpt id="p2">[</bpt>struct<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>, you do not have to implement the whole &lt;xref:System.Collections.IEnumerator&gt; interface.</source>
+          <target state="translated">에 대 한 반복기를 만들 때 한 <bpt id="p1">[</bpt>클래스<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept> 또는 <bpt id="p2">[</bpt>구조체<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>, 전체를 구현할 필요가 없습니다 &lt;xref:System.Collections.IEnumerator&gt;인터페이스.&lt;/xref:System.Collections.IEnumerator&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When the compiler detects the iterator, it automatically generates the <ph id="ph1">`Current`</ph>, <ph id="ph2">`MoveNext`</ph>, and <ph id="ph3">`Dispose`</ph> methods of the &lt;xref:System.Collections.IEnumerator&gt; or &lt;xref:System.Collections.Generic.IEnumerator%601&gt; interface.</source>
+          <target state="translated">컴파일러에서 반복기를 발견 하면 자동으로 생성 된 <ph id="ph1">`Current`</ph>, <ph id="ph2">`MoveNext`</ph>, 및 <ph id="ph3">`Dispose`</ph> 의 메서드는 &lt;xref:System.Collections.IEnumerator&gt;또는 &lt;xref:System.Collections.Generic.IEnumerator%601&gt;인터페이스.&lt;/xref:System.Collections.Generic.IEnumerator%601&gt; &lt;/xref:System.Collections.IEnumerator&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On each successive iteration of the <ph id="ph1">`For Each…Next`</ph> loop (or the direct call to <ph id="ph2">`IEnumerator.MoveNext`</ph>), the next iterator code body resumes after the previous <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated">각 연속 반복에는 <ph id="ph1">`For Each…Next`</ph> 루프 (또는 직접 호출이 <ph id="ph2">`IEnumerator.MoveNext`</ph>), 이전 후 다음 반복기 코드 본문을 다시 시작 <ph id="ph3">`Yield`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It then continues to the next <ph id="ph1">`Yield`</ph> statement until the end of the iterator body is reached, or until an <ph id="ph2">`Exit Function`</ph> or <ph id="ph3">`Return`</ph> statement is encountered.</source>
+          <target state="translated">다음 다음 계속 <ph id="ph1">`Yield`</ph> 반복기 본문의 끝에 도달할 때까지 문을 때까지 또는 <ph id="ph2">`Exit Function`</ph> 또는 <ph id="ph3">`Return`</ph> 문이 있습니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Iterators do not support the &lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt; method.</source>
+          <target state="translated">반복기를 지원 하지 않는 &lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;메서드.&lt;/xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To re-iterate from the start, you must obtain a new iterator.</source>
+          <target state="translated">처음부터 다시 반복, 새 반복기를 가져와야 합니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For additional information, see the <bpt id="p1">[</bpt>Visual Basic Language Specification<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>.</source>
+          <target state="translated">자세한 내용은 참조는 <bpt id="p1">[</bpt>Visual Basic 언어 사양<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Use of Iterators</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>반복기 사용</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Iterators enable you to maintain the simplicity of a <ph id="ph1">`For Each`</ph> loop when you need to use complex code to populate a list sequence.</source>
+          <target state="translated">반복기를 사용 하면의 단순성을 유지 관리할 수는 <ph id="ph1">`For Each`</ph> 복잡 한 코드는 목록 순서를 채우는 데 사용 해야 하는 경우 반복 합니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This can be useful when you want to do the following:</source>
+          <target state="translated">다음을 수행 하려는 경우에 유용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Modify the list sequence after the first <ph id="ph1">`For Each`</ph> loop iteration.</source>
+          <target state="translated">목록 순서는 첫 번째 이후 수정 <ph id="ph1">`For Each`</ph> 루프 반복 합니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Avoid fully loading a large list before the first iteration of a <ph id="ph1">`For Each`</ph> loop.</source>
+          <target state="translated">첫 번째 반복 하기 전에 큰 목록 완전히 로드 되지 않도록는 <ph id="ph1">`For Each`</ph> 루프입니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>An example is a paged fetch to load a batch of table rows.</source>
+          <target state="translated">예로 페이징된 fetch 테이블 행 일괄 처리를 로드할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Another example is the &lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt; method, which implements iterators within the .NET Framework.</source>
+          <target state="translated">또 다른 예로 &lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;메서드는.NET Framework 내에서 반복기를 구현 하는.&lt;/xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Encapsulate building the list in the iterator.</source>
+          <target state="translated">반복기에서 목록 작성을 캡슐화 합니다.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the iterator method, you can build the list and then yield each result in a loop.</source>
+          <target state="translated">반복기 메서드의 목록을 빌드하고 루프에서 각 결과 생성 합니다.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic&gt;&lt;/xref:System.Collections.Generic&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>For Each...Next Statement<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>각각에 대해... Next 문<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Yield Statement<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Yield 문<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>반복기<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

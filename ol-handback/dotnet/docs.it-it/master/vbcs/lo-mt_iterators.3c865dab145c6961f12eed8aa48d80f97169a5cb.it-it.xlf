@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ea1e21bd8cc392889c477e78338384ed05d4cbb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\iterators.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b40d34676075d1a70e8aa929762edacc5a512b07</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">273debdea7e97bf5b55ca691a81a3a48dddc1409</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Iteratori (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic)</source>
+          <target state="translated">Iteratori (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>iterator<ept id="p1">*</ept> can be used to step through collections such as lists and arrays.</source>
+          <target state="translated">Un <bpt id="p1">*</bpt>iteratore<ept id="p1">*</ept> può essere utilizzato per scorrere le raccolte quali elenchi e matrici.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>An iterator method or <ph id="ph1">`get`</ph> accessor performs a custom iteration over a collection.</source>
+          <target state="translated">Un metodo iteratore o <ph id="ph1">`get`</ph> della funzione di accesso esegue un'iterazione personalizzata su una raccolta.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An iterator method uses the <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> statement to return each element one at a time.</source>
+          <target state="translated">Utilizza un metodo iteratore il <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> istruzione per restituire un elemento alla volta.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When a <ph id="ph1">`Yield`</ph> statement is reached, the current location in code is remembered.</source>
+          <target state="translated">Quando un <ph id="ph1">`Yield`</ph> viene raggiunta l'istruzione, viene memorizzata la posizione corrente nel codice.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Execution is restarted from that location the next time the iterator function is called.</source>
+          <target state="translated">L'esecuzione viene riavviata da quella posizione la volta successiva che viene chiamata la funzione iteratore.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You consume an iterator from client code by using a <bpt id="p1">[</bpt>For Each…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept> statement, or by using a LINQ query.</source>
+          <target state="translated">Si utilizza un iteratore dal codice client tramite un <bpt id="p1">[</bpt>For Each... Avanti<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept> istruzione, o tramite una query LINQ.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In the following example, the first iteration of the <ph id="ph1">`For Each`</ph> loop causes execution to proceed  in the <ph id="ph2">`SomeNumbers`</ph> iterator method until the first <ph id="ph3">`Yield`</ph> statement is reached.</source>
+          <target state="translated">Nell'esempio seguente, la prima iterazione del <ph id="ph1">`For Each`</ph> cause dei cicli di esecuzione continuare con la <ph id="ph2">`SomeNumbers`</ph> metodo iteratore al primo <ph id="ph3">`Yield`</ph> viene raggiunta l'istruzione.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 3, and the current location in the iterator method is retained.</source>
+          <target state="translated">Questa iterazione restituisce un valore pari a 3, e viene mantenuta la posizione corrente nel metodo iteratore.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">Nell'iterazione successiva del ciclo, l'esecuzione nel metodo iteratore continua da dove è stata interrotta, fermandosi ancora quando raggiunge un <ph id="ph1">`Yield`</ph> istruzione.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 5, and the current location in the iterator method is again retained.</source>
+          <target state="translated">Questa iterazione restituisce un valore pari a 5 e anche in questo caso viene mantenuta la posizione corrente nel metodo iteratore.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The loop completes when the end of the iterator method is reached.</source>
+          <target state="translated">Il ciclo termina quando viene raggiunta la fine del metodo iteratore.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The return type of an iterator method or <ph id="ph1">`get`</ph> accessor can be &lt;xref:System.Collections.IEnumerable&gt;, &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, &lt;xref:System.Collections.IEnumerator&gt;, or &lt;xref:System.Collections.Generic.IEnumerator%601&gt;.</source>
+          <target state="translated">Il tipo restituito di un metodo iteratore o <ph id="ph1">`get`</ph> funzione di accesso può essere &lt;xref:System.Collections.IEnumerable&gt;, &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, &lt;xref:System.Collections.IEnumerator&gt;, o &lt;xref:System.Collections.Generic.IEnumerator%601&gt;.&lt;/xref:System.Collections.Generic.IEnumerator%601&gt; &lt;/xref:System.Collections.IEnumerator&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt; &lt;/xref:System.Collections.IEnumerable&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can use an <ph id="ph1">`Exit Function`</ph> or <ph id="ph2">`Return`</ph> statement to end the iteration.</source>
+          <target state="translated">È possibile utilizzare un <ph id="ph1">`Exit Function`</ph> o <ph id="ph2">`Return`</ph> istruzione per terminare l'iterazione.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>A Visual Basic iterator function or <ph id="ph1">`get`</ph> accessor declaration includes an <bpt id="p1">[</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept> modifier.</source>
+          <target state="translated">Una funzione iteratore di Visual Basic o <ph id="ph1">`get`</ph> la dichiarazione di funzione di accesso include un <bpt id="p1">[</bpt>iteratore<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept> modificatore.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Iterators were introduced in Visual Basic in Visual Studio 2012.</source>
+          <target state="translated">Gli iteratori sono state introdotte in Visual Basic in Visual Studio 2012.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In this topic<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Contenuto dell'argomento<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Simple Iterator<ept id="p1">](#BKMK_SimpleIterator)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Iteratore semplice<ept id="p1">](#BKMK_SimpleIterator)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a Collection Class<ept id="p1">](#BKMK_CollectionClass)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Creazione di una classe di raccolta<ept id="p1">](#BKMK_CollectionClass)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Try Blocks<ept id="p1">](#BKMK_TryBlocks)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Blocchi try<ept id="p1">](#BKMK_TryBlocks)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Anonymous Methods<ept id="p1">](#BKMK_AnonymousMethods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Metodi anonimi<ept id="p1">](#BKMK_AnonymousMethods)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using Iterators with a Generic List<ept id="p1">](#BKMK_GenericList)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Utilizzo di iteratori con un elenco generico<ept id="p1">](#BKMK_GenericList)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Syntax Information<ept id="p1">](#BKMK_SyntaxInformation)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Informazioni sulla sintassi<ept id="p1">](#BKMK_SyntaxInformation)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Technical Implementation<ept id="p1">](#BKMK_Technical)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Implementazione tecnica<ept id="p1">](#BKMK_Technical)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Use of Iterators<ept id="p1">](#BKMK_UseOfIterators)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Utilizzo di iteratori<ept id="p1">](#BKMK_UseOfIterators)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For all examples in the topic except the Simple Iterator example, include <bpt id="p1">[</bpt>Imports<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> statements for the <ph id="ph1">`System.Collections`</ph> and <ph id="ph2">`System.Collections.Generic`</ph> namespaces.</source>
+          <target state="translated">Per tutti gli esempi nell'argomento, ad eccezione di esempio iteratore semplice, includere <bpt id="p1">[</bpt>importazioni<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> le istruzioni per la <ph id="ph1">`System.Collections`</ph> e <ph id="ph2">`System.Collections.Generic`</ph> gli spazi dei nomi.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Simple Iterator</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Iteratore semplice</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following example has a single <ph id="ph1">`Yield`</ph> statement that is inside a <bpt id="p1">[</bpt>For…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept> loop.</source>
+          <target state="translated">Nell'esempio seguente ha un solo <ph id="ph1">`Yield`</ph> istruzione all'interno di un <bpt id="p1">[</bpt>per... Avanti<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept> ciclo.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`Main`</ph>, each iteration of the <ph id="ph2">`For Each`</ph> statement body creates a call to the iterator function, which proceeds to the next <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated">In <ph id="ph1">`Main`</ph>, ogni iterazione del <ph id="ph2">`For Each`</ph> corpo dell'istruzione crea una chiamata alla funzione iteratore, che procede alla successiva <ph id="ph3">`Yield`</ph> istruzione.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Creating a Collection Class</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Creazione di una classe di raccolta</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`DaysOfTheWeek`</ph> class implements the &lt;xref:System.Collections.IEnumerable&gt; interface, which requires a &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method.</source>
+          <target state="translated">Nell'esempio seguente, il <ph id="ph1">`DaysOfTheWeek`</ph> implementa il &lt;xref:System.Collections.IEnumerable&gt;interfaccia, che richiede un &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;(metodo).&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; &lt;/xref:System.Collections.IEnumerable&gt;</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The compiler implicitly calls the <ph id="ph1">`GetEnumerator`</ph> method, which returns an &lt;xref:System.Collections.IEnumerator&gt;.</source>
+          <target state="translated">Il compilatore chiama implicitamente il <ph id="ph1">`GetEnumerator`</ph> metodo, che restituisce un &lt;xref:System.Collections.IEnumerator&gt;.&lt;/xref:System.Collections.IEnumerator&gt;</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`GetEnumerator`</ph> method returns each string one at a time by using the <ph id="ph2">`Yield`</ph> statement, and  an <ph id="ph3">`Iterator`</ph> modifier is in the function declaration.</source>
+          <target state="translated">Il <ph id="ph1">`GetEnumerator`</ph> metodo restituisce ogni stringa uno alla volta utilizzando il <ph id="ph2">`Yield`</ph> istruzione e un <ph id="ph3">`Iterator`</ph> modificatore è nella dichiarazione di funzione.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following example creates a <ph id="ph1">`Zoo`</ph> class that contains a collection of animals.</source>
+          <target state="translated">Nell'esempio seguente viene creato un <ph id="ph1">`Zoo`</ph> classe che contiene una raccolta di animali.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statement that refers to the class instance (<ph id="ph2">`theZoo`</ph>) implicitly calls the <ph id="ph3">`GetEnumerator`</ph> method.</source>
+          <target state="translated">Il <ph id="ph1">`For Each`</ph> istruzione che fa riferimento all'istanza della classe (<ph id="ph2">`theZoo`</ph>) chiama implicitamente il <ph id="ph3">`GetEnumerator`</ph> metodo.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statements that refer to the <ph id="ph2">`Birds`</ph> and <ph id="ph3">`Mammals`</ph> properties use the <ph id="ph4">`AnimalsForType`</ph> named iterator method.</source>
+          <target state="translated">Il <ph id="ph1">`For Each`</ph> istruzioni che fanno riferimento le <ph id="ph2">`Birds`</ph> e <ph id="ph3">`Mammals`</ph> proprietà il <ph id="ph4">`AnimalsForType`</ph> denominato iterator (metodo).</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Try Blocks</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Blocchi try</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Visual Basic allows a <ph id="ph1">`Yield`</ph> statement in the <ph id="ph2">`Try`</ph> block of a <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">Visual Basic consente una <ph id="ph1">`Yield`</ph> istruzione nel <ph id="ph2">`Try`</ph> blocco di un <bpt id="p1">[</bpt>Try... Catch... Istruzione finally<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Try`</ph> block that has a <ph id="ph2">`Yield`</ph> statement can have <ph id="ph3">`Catch`</ph> blocks, and can have a <ph id="ph4">`Finally`</ph> block.</source>
+          <target state="translated">Oggetto <ph id="ph1">`Try`</ph> blocco che ha un <ph id="ph2">`Yield`</ph> istruzione possono essere presenti <ph id="ph3">`Catch`</ph> blocca e può avere un <ph id="ph4">`Finally`</ph> blocco.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The following example includes <ph id="ph1">`Try`</ph>, <ph id="ph2">`Catch`</ph>, and <ph id="ph3">`Finally`</ph> blocks in an iterator function.</source>
+          <target state="translated">L'esempio seguente include <ph id="ph1">`Try`</ph>, <ph id="ph2">`Catch`</ph>, e <ph id="ph3">`Finally`</ph> blocchi in una funzione iteratore.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finally`</ph> block in the iterator function executes before the <ph id="ph2">`For Each`</ph> iteration finishes.</source>
+          <target state="translated">Il <ph id="ph1">`Finally`</ph> blocco nella funzione iteratore esegue prima la <ph id="ph2">`For Each`</ph> al termine dell'iterazione.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Yield`</ph> statement cannot be inside a <ph id="ph2">`Catch`</ph> block or a <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated">Oggetto <ph id="ph1">`Yield`</ph> istruzione non può essere all'interno di un <ph id="ph2">`Catch`</ph> blocco o un <ph id="ph3">`Finally`</ph> blocco.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`For Each`</ph> body (instead of the iterator method) throws an exception, a <ph id="ph2">`Catch`</ph> block in the iterator function is not executed, but a <ph id="ph3">`Finally`</ph> block in the iterator function is executed.</source>
+          <target state="translated">Se il <ph id="ph1">`For Each`</ph> corpo (anziché il metodo iteratore) genera un'eccezione, un <ph id="ph2">`Catch`</ph> blocco nella funzione iteratore non viene eseguita, ma un <ph id="ph3">`Finally`</ph> try nella funzione iteratore.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Catch`</ph> block inside an iterator function catches only exceptions that occur inside the iterator function.</source>
+          <target state="translated">Oggetto <ph id="ph1">`Catch`</ph> blocco all'interno di una funzione iteratore intercetta solo le eccezioni che si verificano all'interno della funzione iteratore.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Anonymous Methods</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Metodi anonimi</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an anonymous function can be an iterator function.</source>
+          <target state="translated">In Visual Basic, una funzione anonima può essere una funzione iteratore.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following example illustrates this.</source>
+          <target state="translated">Questa condizione è illustrata nell'esempio seguente.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following example has a non-iterator method that validates the arguments.</source>
+          <target state="translated">Nell'esempio seguente è un metodo iteratore non convalida gli argomenti.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The method returns the result of an anonymous iterator that describes the collection elements.</source>
+          <target state="translated">Il metodo restituisce il risultato di un iteratore anonimo che descrive gli elementi della raccolta.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If validation is instead inside the iterator function, the validation cannot be performed until the start of the first iteration of the <ph id="ph1">`For Each`</ph> body.</source>
+          <target state="translated">Se la convalida è invece all'interno della funzione iteratore, la convalida non può essere eseguita fino all'inizio della prima iterazione del <ph id="ph1">`For Each`</ph> corpo.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Using Iterators with a Generic List</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Utilizzo di iteratori con un elenco generico</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`Stack(Of T)`</ph> generic class implements the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; generic interface.</source>
+          <target state="translated">Nell'esempio seguente, il <ph id="ph1">`Stack(Of T)`</ph> classe generica implementa il &lt;xref:System.Collections.Generic.IEnumerable%601&gt;interfaccia generica.&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Push`</ph> method assigns values to an array of type <ph id="ph2">`T`</ph>.</source>
+          <target state="translated">Il <ph id="ph1">`Push`</ph> metodo assegna valori a una matrice di tipo <ph id="ph2">`T`</ph>.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method returns the array values by using the <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">Il &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;metodo restituisce i valori della matrice utilizzando la <ph id="ph1">`Yield`</ph> istruzione.&lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In addition to the generic &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method, the non-generic &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method must also be implemented.</source>
+          <target state="translated">Oltre a generica &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;metodo, non generica &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;metodo deve anche essere implementato.&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This is because &lt;xref:System.Collections.Generic.IEnumerable%601&gt; inherits from &lt;xref:System.Collections.IEnumerable&gt;.</source>
+          <target state="translated">In questo modo &lt;xref:System.Collections.Generic.IEnumerable%601&gt;eredita da &lt;xref:System.Collections.IEnumerable&gt;.&lt;/xref:System.Collections.IEnumerable&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The non-generic implementation defers to the generic implementation.</source>
+          <target state="translated">L'implementazione non generica rinvia all'implementazione generica.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The example uses named iterators to support various ways of iterating through the same collection of data.</source>
+          <target state="translated">L'esempio Usa iteratori denominati per supportare diversi modi per scorrere la raccolta dei dati stessa.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>These named iterators are the <ph id="ph1">`TopToBottom`</ph> and <ph id="ph2">`BottomToTop`</ph> properties, and the <ph id="ph3">`TopN`</ph> method.</source>
+          <target state="translated">Questi denominato iteratori sono il <ph id="ph1">`TopToBottom`</ph> e <ph id="ph2">`BottomToTop`</ph> proprietà e <ph id="ph3">`TopN`</ph> metodo.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`BottomToTop`</ph> property declaration includes the <ph id="ph2">`Iterator`</ph> keyword.</source>
+          <target state="translated">Il <ph id="ph1">`BottomToTop`</ph> dichiarazione di proprietà include il <ph id="ph2">`Iterator`</ph> (parola chiave).</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Syntax Information</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Informazioni sulla sintassi</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>An iterator can occur as a method or <ph id="ph1">`get`</ph> accessor.</source>
+          <target state="translated">Un iteratore può verificarsi come un metodo o <ph id="ph1">`get`</ph> della funzione di accesso.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.</source>
+          <target state="translated">Un iteratore non può trovarsi in un evento, costruttore di istanza, un costruttore statico o distruttore statico.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>An implicit conversion must exist from the expression type in the <ph id="ph1">`Yield`</ph> statement to the return type of the iterator.</source>
+          <target state="translated">Deve esistere una conversione implicita dal tipo di espressione nel <ph id="ph1">`Yield`</ph> istruzione per il tipo restituito dell'iteratore.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an iterator method cannot have any <ph id="ph1">`ByRef`</ph> parameters.</source>
+          <target state="translated">In Visual Basic, un metodo iteratore non può contenere <ph id="ph1">`ByRef`</ph> parametri.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, "Yield" is not a reserved word and has special meaning only when it is used in an <ph id="ph1">`Iterator`</ph> method or <ph id="ph2">`get`</ph> accessor.</source>
+          <target state="translated">In Visual Basic "Yield" non è una parola riservata e ha un significato speciale solo quando viene utilizzato in un <ph id="ph1">`Iterator`</ph> metodo o <ph id="ph2">`get`</ph> della funzione di accesso.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Technical Implementation</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Implementazione tecnica</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine.</source>
+          <target state="translated">Anche se si scrive un iteratore di un metodo, il compilatore traduce in una classe annidata che, in pratica, una macchina a stati.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This class keeps track of the position of the iterator as long the <ph id="ph1">`For Each...Next`</ph> loop in the client code continues.</source>
+          <target state="translated">Questa classe tiene traccia della posizione dell'iteratore purché il <ph id="ph1">`For Each...Next`</ph> ciclo nel codice client continua.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that is generated for an iterator method.</source>
+          <target state="translated">Per visualizzare il compilatore esegue, è possibile utilizzare lo strumento Ildasm.exe per visualizzare il codice Microsoft intermediate language che viene generato per un metodo iteratore.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you create an iterator for a <bpt id="p1">[</bpt>class<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept> or <bpt id="p2">[</bpt>struct<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>, you do not have to implement the whole &lt;xref:System.Collections.IEnumerator&gt; interface.</source>
+          <target state="translated">Quando si crea un iteratore per un <bpt id="p1">[</bpt>classe<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept> o <bpt id="p2">[</bpt>struct<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>, non è necessario implementare l'intera &lt;xref:System.Collections.IEnumerator&gt;interfaccia.&lt;/xref:System.Collections.IEnumerator&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When the compiler detects the iterator, it automatically generates the <ph id="ph1">`Current`</ph>, <ph id="ph2">`MoveNext`</ph>, and <ph id="ph3">`Dispose`</ph> methods of the &lt;xref:System.Collections.IEnumerator&gt; or &lt;xref:System.Collections.Generic.IEnumerator%601&gt; interface.</source>
+          <target state="translated">Quando il compilatore rileva l'iteratore, viene generato automaticamente il <ph id="ph1">`Current`</ph>, <ph id="ph2">`MoveNext`</ph>, e <ph id="ph3">`Dispose`</ph> metodi di &lt;xref:System.Collections.IEnumerator&gt;o &lt;xref:System.Collections.Generic.IEnumerator%601&gt;interfaccia.&lt;/xref:System.Collections.Generic.IEnumerator%601&gt; &lt;/xref:System.Collections.IEnumerator&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On each successive iteration of the <ph id="ph1">`For Each…Next`</ph> loop (or the direct call to <ph id="ph2">`IEnumerator.MoveNext`</ph>), the next iterator code body resumes after the previous <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated">In ogni iterazione successiva del <ph id="ph1">`For Each…Next`</ph> ciclo (o alla chiamata diretta a <ph id="ph2">`IEnumerator.MoveNext`</ph>), il corpo di codice successivo iteratore riprende dopo la precedente <ph id="ph3">`Yield`</ph> istruzione.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It then continues to the next <ph id="ph1">`Yield`</ph> statement until the end of the iterator body is reached, or until an <ph id="ph2">`Exit Function`</ph> or <ph id="ph3">`Return`</ph> statement is encountered.</source>
+          <target state="translated">Quindi continua fino alla successiva <ph id="ph1">`Yield`</ph> istruzione fino a quando non viene raggiunta la fine del corpo dell'iteratore, o fino a quando un <ph id="ph2">`Exit Function`</ph> o <ph id="ph3">`Return`</ph> viene rilevata un'istruzione.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Iterators do not support the &lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt; method.</source>
+          <target state="translated">Gli iteratori non supportano il &lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;(metodo).&lt;/xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To re-iterate from the start, you must obtain a new iterator.</source>
+          <target state="translated">Per reiterare dall'inizio, è necessario ottenere un nuovo iteratore.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For additional information, see the <bpt id="p1">[</bpt>Visual Basic Language Specification<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere il <bpt id="p1">[</bpt>specifiche del linguaggio Visual Basic<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Use of Iterators</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Utilizzo di iteratori</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Iterators enable you to maintain the simplicity of a <ph id="ph1">`For Each`</ph> loop when you need to use complex code to populate a list sequence.</source>
+          <target state="translated">Gli iteratori consentono di gestire la semplicità di un <ph id="ph1">`For Each`</ph> ciclo quando è necessario utilizzare codice complesso per popolare una sequenza di elenco.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This can be useful when you want to do the following:</source>
+          <target state="translated">Ciò può risultare utile quando si desidera eseguire le operazioni seguenti:</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Modify the list sequence after the first <ph id="ph1">`For Each`</ph> loop iteration.</source>
+          <target state="translated">Modificare la sequenza elenco dopo il primo <ph id="ph1">`For Each`</ph> iterazione del ciclo.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Avoid fully loading a large list before the first iteration of a <ph id="ph1">`For Each`</ph> loop.</source>
+          <target state="translated">Evitare completamente il caricamento di un elenco di grandi dimensioni prima della prima iterazione di un <ph id="ph1">`For Each`</ph> ciclo.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>An example is a paged fetch to load a batch of table rows.</source>
+          <target state="translated">Un esempio è un'operazione di recupero di paging per caricare un batch di righe della tabella.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Another example is the &lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt; method, which implements iterators within the .NET Framework.</source>
+          <target state="translated">Un altro esempio è il &lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;metodo, che implementa gli iteratori all'interno di .NET Framework.&lt;/xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Encapsulate building the list in the iterator.</source>
+          <target state="translated">Incapsulare la generazione dell'elenco nell'iteratore.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the iterator method, you can build the list and then yield each result in a loop.</source>
+          <target state="translated">Nel metodo iteratore, è possibile compilare l'elenco e restituisce quindi ogni risultato in un ciclo.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic&gt;&lt;/xref:System.Collections.Generic&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>For Each...Next Statement<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Per ogni corso... Next (istruzione)<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Yield Statement<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Istruzione yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Iteratore<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

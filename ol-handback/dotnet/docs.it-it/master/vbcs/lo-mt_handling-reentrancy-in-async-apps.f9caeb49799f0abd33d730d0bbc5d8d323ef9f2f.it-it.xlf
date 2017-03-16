@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">64a708e3b88f48ad30d3f3ad25141a31f3d8f73d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\handling-reentrancy-in-async-apps.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1503b3af885759c017f95a09f8967f65b19ceb4f</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ec232669ce5f9d58b704b75c31564a2d09eb83f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Handling Reentrancy in Async Apps (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Gestione della Reentrancy nelle applicazioni asincrone (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Handling Reentrancy in Async Apps (Visual Basic)</source>
+          <target state="translated">Gestione della Reentrancy nelle applicazioni asincrone (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you include asynchronous code in your app, you should consider and possibly prevent reentrancy, which refers to reentering an asynchronous operation before it has completed.</source>
+          <target state="translated">Quando si include codice asincrono nell'applicazione, è consigliabile prevedere ed evitare la reentrancy, ovvero il reinserimento di un'operazione asincrona prima del suo completamento.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If you don't identify and handle possibilities for reentrancy, it can cause unexpected results.</source>
+          <target state="translated">Se non vengono identificate e gestite le possibilità di reentrancy, esse possono causare risultati imprevisti.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In this topic<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>Contenuto dell'argomento<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Recognizing Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Riconoscimento della Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Handling Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Gestione della Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Disabilitare il pulsante Start<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cancel and Restart the Operation<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Annullare e riavviare l'operazione<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Run Multiple Operations and Queue the Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Eseguire più operazioni e mettere in coda di Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Esame ed esecuzione dell'applicazione di esempio<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Per eseguire l'esempio, è necessario disporre di Visual Studio 2012 o versione successiva e .NET Framework 4.5 o versioni successive installato nel computer in uso.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_RecognizingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Recognizing Reentrancy</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_RecognizingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Riconoscimento della Reentrancy</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the example in this topic, users choose a <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button to initiate an asynchronous app that downloads a series of websites and calculates the total number of bytes that are downloaded.</source>
+          <target state="translated">Nell'esempio in questo argomento, gli utenti scegliere un <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante per avviare un'applicazione asincrona che scarica una serie di siti Web e calcola il numero totale di byte che sono stati scaricati.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>A synchronous version of the example would respond the same way regardless of how many times a user chooses the button because, after the first time, the UI thread ignores those events until the app finishes running.</source>
+          <target state="translated">Una versione sincrona dell'esempio avrebbe risposto allo stesso modo indipendentemente dal numero di volte che un utente sceglie il pulsante perché, dopo la prima volta, il thread dell'interfaccia utente ignora tali eventi fino al termine dell'esecuzione dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In an asynchronous app, however, the UI thread continues to respond, and you might reenter the asynchronous operation before it has completed.</source>
+          <target state="translated">In un'applicazione asincrona, tuttavia, il thread dell'interfaccia utente continua a rispondere e potrebbe essere possibile riattivare l'operazione asincrona prima del suo completamento.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The following example shows the expected output if the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button only once.</source>
+          <target state="translated">Nell'esempio seguente viene previsto output se l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> solo una volta.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>A list of the downloaded websites appears with the size, in bytes, of each site.</source>
+          <target state="translated">Viene visualizzato un elenco dei siti Web scaricati con la dimensione, espressa in byte, di ogni sito.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The total number of bytes appears at the end.</source>
+          <target state="translated">Il numero totale di byte viene visualizzato alla fine.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>However, if the user chooses the button more than once, the event handler is invoked repeatedly, and the download process is reentered each time.</source>
+          <target state="translated">Tuttavia, se l'utente sceglie il pulsante più volte, il gestore eventi viene chiamato più volte e il processo di download viene riattivato ogni volta.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>As a result, several asynchronous operations are running at the same time, the output interleaves the results, and the total number of bytes is confusing.</source>
+          <target state="translated">Di conseguenza, diverse operazioni asincrone sono in esecuzione contemporaneamente, l'output si sovrappone ai risultati e il numero totale di byte è poco chiaro.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>You can review the code that produces this output by scrolling to the end of this topic.</source>
+          <target state="translated">È possibile esaminare il codice che genera l'output andando alla fine di questo argomento.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>You can experiment with the code by downloading the solution to your local computer and then running the WebsiteDownload project or by using the code at the end of this topic to create your own project For more information and instructions, see <bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</source>
+          <target state="translated">È possibile sperimentare il codice per scaricare la soluzione nel computer locale e quindi eseguire il progetto WebsiteDownload o utilizzando il codice alla fine di questo argomento per creare un progetto per ulteriori informazioni e istruzioni, vedere <bpt id="p1">[</bpt>esame ed esecuzione dell'applicazione di esempio<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_HandlingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Handling Reentrancy</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_HandlingReentrancy"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Gestione della Reentrancy</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can handle reentrancy in a variety of ways, depending on what you want your app to do.</source>
+          <target state="translated">È possibile gestire la reentrancy in diversi modi, a seconda delle operazioni che si desidera che l'applicazione esegua.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This topic presents the following examples:</source>
+          <target state="translated">In questo argomento vengono illustrati gli esempi seguenti:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Disabilitare il pulsante Start<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Disable the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button while the operation is running so that the user can't interrupt it.</source>
+          <target state="translated">Disabilitare il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante mentre l'operazione è in esecuzione in modo che l'utente non comporta l'interruzione.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Cancel and Restart the Operation<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Annullare e riavviare l'operazione<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Cancel any operation that is still running when the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button again, and then let the most recently requested operation continue.</source>
+          <target state="translated">Annullare qualsiasi operazione che è ancora in esecuzione quando l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> nuovamente clic sul pulsante e quindi continuare con consentono l'operazione richiesta più recente.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Run Multiple Operations and Queue the Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Eseguire più operazioni e mettere in coda di Output<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept></target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Allow all requested operations to run asynchronously, but coordinate the display of output so that the results from each operation appear together and in order.</source>
+          <target state="translated">Consentire l'esecuzione asincrona di tutte le operazioni richieste, ma coordinare la visualizzazione dell'output in modo che vengano visualizzati i risultati di ogni operazione tutti insieme e ordinati.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_DisableTheStartButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Disable the Start Button</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_DisableTheStartButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Disabilitare il pulsante Start</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>You can block the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button while an operation is running by disabling the button at the top of the <ph id="ph1">`StartButton_Click`</ph> event handler.</source>
+          <target state="translated">È possibile bloccare la <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante mentre è in esecuzione un'operazione disattivando il pulsante in cima il <ph id="ph1">`StartButton_Click`</ph> gestore dell'evento.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You can then reenable the button from within a  <ph id="ph1">`Finally`</ph> block when the operation finishes so that users can run the app again.</source>
+          <target state="translated">È possibile riabilitare il pulsante dall'interno un blocco <ph id="ph1">`Finally`</ph> al termine dell'operazione in modo che gli utenti possano eseguire nuovamente l'applicazione.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes, which are marked with asterisks.</source>
+          <target state="translated">Il codice seguente illustra queste modifiche, contrassegnate da asterischi.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You can add the changes to the code at the end of this topic, or you can download the finished app from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">È possibile aggiungere le modifiche al codice alla fine di questo argomento, oppure è possibile scaricare l'applicazione finita da <bpt id="p1">[</bpt>Async esempi: della Reentrancy nelle applicazioni Desktop di .NET<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The project name is DisableStartButton.</source>
+          <target state="translated">Il nome del progetto è DisableStartButton.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>As a result of the changes, the button doesn't respond while <ph id="ph1">`AccessTheWebAsync`</ph> is downloading the websites, so the process can’t be reentered.</source>
+          <target state="translated">In seguito alle modifiche, il pulsante non risponde mentre <ph id="ph1">`AccessTheWebAsync`</ph> sta scaricando i siti Web. Pertanto, il processo non potrà essere riattivato.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CancelAndRestart"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Cancel and Restart the Operation</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CancelAndRestart"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Annullare e riavviare l'operazione</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Instead of disabling the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, you can keep the button active but, if the user chooses that button again, cancel the operation that's already running and let the most recently started operation continue.</source>
+          <target state="translated">Anziché la disabilitazione di <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante, è possibile mantenere attivo il pulsante ma, se l'utente sceglie il pulsante nuovo, annullare l'operazione che è già in esecuzione e consente di continuare l'operazione avviata più di recente.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For more information about cancellation, see <bpt id="p1">[</bpt>Fine-Tuning Your Async Application (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sull'annullamento, vedere <bpt id="p1">[</bpt>ottimizzazione Async applicazione (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To set up this scenario, make the following changes to the basic code that is provided in <bpt id="p1">[</bpt>Reviewing and Running the Example App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</source>
+          <target state="translated">Per configurare questo scenario, apportare le modifiche seguenti al codice di base fornita in <bpt id="p1">[</bpt>esame ed esecuzione dell'applicazione di esempio<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You also can download the finished app from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">È inoltre possibile scaricare l'applicazione finita da <bpt id="p1">[</bpt>Async esempi: della Reentrancy nelle applicazioni Desktop di .NET<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The name of this project is CancelAndRestart.</source>
+          <target state="translated">Il nome di questo progetto è CancelAndRestart.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Declare a &lt;xref:System.Threading.CancellationTokenSource&gt; variable, <ph id="ph1">`cts`</ph>, that’s in scope for all methods.</source>
+          <target state="translated">Dichiarare un &lt;xref:System.Threading.CancellationTokenSource&gt;variabile, <ph id="ph1">`cts`</ph>, nell'ambito per tutti i metodi.&lt;/xref:System.Threading.CancellationTokenSource&gt;</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`StartButton_Click`</ph>, determine whether an operation is already underway.</source>
+          <target state="translated">In <ph id="ph1">`StartButton_Click`</ph> determinare se un'operazione è già in corso.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If the value of <ph id="ph1">`cts`</ph> is <ph id="ph2">`Nothing`</ph>, no operation is already active.</source>
+          <target state="translated">Se il valore di <ph id="ph1">`cts`</ph> è <ph id="ph2">`Nothing`</ph>, nessuna operazione è già attiva.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If the value isn't <ph id="ph1">`Nothing`</ph>, the operation that is already running is canceled.</source>
+          <target state="translated">Se il valore non è <ph id="ph1">`Nothing`</ph>, l'operazione che è già in esecuzione viene annullata.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Set <ph id="ph1">`cts`</ph> to a different value that represents the current process.</source>
+          <target state="translated">Impostare <ph id="ph1">`cts`</ph> su un valore diverso che rappresenti il processo corrente.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>At the end of <ph id="ph1">`StartButton_Click`</ph>, the current process is complete, so set the value of <ph id="ph2">`cts`</ph> back to <ph id="ph3">`Nothing`</ph>.</source>
+          <target state="translated">Alla fine di <ph id="ph1">`StartButton_Click`</ph>, il processo corrente è stato completato, quindi impostare il valore di <ph id="ph2">`cts`</ph> al <ph id="ph3">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The following code shows all the changes in <ph id="ph1">`StartButton_Click`</ph>.</source>
+          <target state="translated">Il codice seguente illustra tutte le modifiche in <ph id="ph1">`StartButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The additions are marked with asterisks.</source>
+          <target state="translated">Le aggiunte sono contrassegnate con asterischi.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`AccessTheWebAsync`</ph>, make the following changes.</source>
+          <target state="translated">In <ph id="ph1">`AccessTheWebAsync`</ph>, apportare le seguenti modifiche.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Add a parameter to accept the cancellation token from <ph id="ph1">`StartButton_Click`</ph>.</source>
+          <target state="translated">Aggiungere un parametro per accettare il token di annullamento da <ph id="ph1">`StartButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Use the &lt;xref:System.Net.Http.HttpClient.GetAsync%2A&gt; method to download the websites because <ph id="ph1">`GetAsync`</ph> accepts a &lt;xref:System.Threading.CancellationToken&gt; argument.</source>
+          <target state="translated">Utilizzare il &lt;xref:System.Net.Http.HttpClient.GetAsync%2A&gt;metodo per scaricare i siti Web perché <ph id="ph1">`GetAsync`</ph> accetta un &lt;xref:System.Threading.CancellationToken&gt;argomento.&lt;/xref:System.Threading.CancellationToken&gt; &lt;/xref:System.Net.Http.HttpClient.GetAsync%2A&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Before calling <ph id="ph1">`DisplayResults`</ph> to display the results for each downloaded website, check <ph id="ph2">`ct`</ph> to verify that the current operation hasn’t been canceled.</source>
+          <target state="translated">Prima di chiamare <ph id="ph1">`DisplayResults`</ph> per visualizzare i risultati per ogni sito Web scaricato, controllare <ph id="ph2">`ct`</ph> per verificare che l'operazione corrente non sia stata annullata.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes, which are marked with asterisks.</source>
+          <target state="translated">Il codice seguente illustra queste modifiche, contrassegnate da asterischi.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>If you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button several times while this app is running, it should produce results that resemble the following output.</source>
+          <target state="translated">Se si sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> diverse volte durante l'esecuzione di questa app deve produrre risultati simili all'output seguente.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>To eliminate the partial lists, uncomment the first line of code in <ph id="ph1">`StartButton_Click`</ph> to clear the text box each time the user restarts the operation.</source>
+          <target state="translated">Per eliminare gli elenchi parziali, rimuovere la prima riga di codice in <ph id="ph1">`StartButton_Click`</ph> per cancellare la casella di testo ogni volta che l'utente riavvia l'operazione.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_RunMultipleOperations"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Run Multiple Operations and Queue the Output</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_RunMultipleOperations"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Eseguire più operazioni e mettere in coda di Output</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>This third example is the most complicated in that the app starts another asynchronous operation each time that the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, and all the operations run to completion.</source>
+          <target state="translated">Il terzo esempio è la più complicata in quanto l'app viene avviata un'altra operazione asincrona ogni volta che l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante e tutte le operazioni eseguite fino al completamento.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>All the requested operations download websites from the list asynchronously, but the output from the operations is presented sequentially.</source>
+          <target state="translated">Tutte le operazioni richieste scaricano i siti Web dall'elenco in modo asincrono, ma l'output delle operazioni viene visualizzato in sequenza.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>That is, the actual downloading activity is interleaved, as the output in <bpt id="p1">[</bpt>Recognizing Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> shows, but the list of results for each group is presented separately.</source>
+          <target state="translated">Vale a dire l'effettiva attività di download viene interfacciato, come output in <bpt id="p1">[</bpt>il riconoscimento della Reentrancy<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> illustrato, ma l'elenco dei risultati per ogni gruppo viene presentato separatamente.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The operations share a global &lt;xref:System.Threading.Tasks.Task&gt;, <ph id="ph1">`pendingWork`</ph>, which serves as a gatekeeper for the display process.</source>
+          <target state="translated">Le operazioni di condividono globale &lt;xref:System.Threading.Tasks.Task&gt;, <ph id="ph1">`pendingWork`</ph>, che funge da gatekeeper per il processo di visualizzazione.&lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>You can run this example by pasting the changes into the code in <bpt id="p1">[</bpt>Building the App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or you can follow the instructions in <bpt id="p2">[</bpt>Downloading the App<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to download the sample and then run the QueueResults project.</source>
+          <target state="translated">È possibile eseguire questo esempio incollando le modifiche nel codice <bpt id="p1">[</bpt>compilazione dell'applicazione<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, oppure è possibile seguire le istruzioni in <bpt id="p2">[</bpt>download dell'applicazione<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> per scaricare l'esempio e quindi eseguire il progetto QueueResults.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>The following output shows the result if the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button only once.</source>
+          <target state="translated">L'output seguente viene illustrato il risultato se l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> solo una volta.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>The letter label, A, indicates that the result is from the first time the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button is chosen.</source>
+          <target state="translated">L'etichetta, lettera A, indica che il risultato è dalla prima volta il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante viene scelto.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The numbers show the order of the URLs in the list of download targets.</source>
+          <target state="translated">I numeri indicano l'ordine degli URL nell'elenco delle destinazioni di download.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>If the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button three times, the app produces output that resembles the following lines.</source>
+          <target state="translated">Se l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante tre volte, l'applicazione produce un output simile le righe seguenti.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The information lines that start with a pound sign (#) trace the progress of the application.</source>
+          <target state="translated">Le righe di informazioni che iniziano con un cancelletto (#) tengono traccia dello stato di avanzamento dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Groups B and C start before group A has finished, but the output for the each group appears separately.</source>
+          <target state="translated">I gruppi B e C vengono avviati prima del completamento del gruppo A, ma l'output per ogni gruppo viene visualizzato separatamente.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>All the output for group A appears first, followed by all the output for group B, and then all the output for group C. The app always displays the groups in order and, for each group, always displays the information about the individual websites in the order that the URLs appear in the list of URLs.</source>
+          <target state="translated">Tutto l'output per il gruppo viene visualizzata per prima, seguita da tutto l'output per il gruppo B e quindi tutto l'output per il gruppo C. L'applicazione sempre vengono visualizzati i gruppi in ordine e, per ogni gruppo, viene visualizzato sempre le informazioni sui singoli siti Web nell'ordine in cui gli URL vengono visualizzati nell'elenco di URL.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>However, you can't predict the order in which the downloads actually happen.</source>
+          <target state="translated">Tuttavia, è possibile prevedere l'ordine in cui vengono eseguiti i download.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>After multiple groups have been started, the download tasks that they generate are all active.</source>
+          <target state="translated">Dopo l'avvio di più gruppi, tutte le attività di download generate sono attive.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>You can't assume that A-1 will be downloaded before B-1, and you can't assume that A-1 will be downloaded before A-2.</source>
+          <target state="translated">Non è possibile presupporre che A-1 venga scaricato prima di B-1 e che A-1 venga scaricato prima A&amp;2;.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Global Definitions</source>
+          <target state="translated">Definizioni globali</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The sample code contains the following two global declarations that are visible from all methods.</source>
+          <target state="translated">Il codice di esempio contiene le seguenti dichiarazioni globali visibili da tutti i metodi.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Task`</ph> variable, <ph id="ph2">`pendingWork`</ph>, oversees the display process and prevents any group from interrupting another group's display operation.</source>
+          <target state="translated">La variabile <ph id="ph1">`Task`</ph>, <ph id="ph2">`pendingWork`</ph>, controlla il processo di visualizzazione e impedisce a qualsiasi gruppo di interrompere l'operazione di visualizzazione di un altro gruppo.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The character variable, <ph id="ph1">`group`</ph>, labels the output from different groups to verify that results appear in the expected order.</source>
+          <target state="translated">La variabile di tipo carattere, <ph id="ph1">`group`</ph>, etichetta l'output dei vari gruppi per far sì che i risultati vengano visualizzati nell'ordine previsto.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The Click Event Handler</source>
+          <target state="translated">Il gestore eventi Click</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The event handler, <ph id="ph1">`StartButton_Click`</ph>, increments the group letter each time the user chooses the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Il gestore dell'evento, <ph id="ph1">`StartButton_Click`</ph>, la lettera di gruppo viene incrementato ogni volta che l'utente sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Then the handler calls <ph id="ph1">`AccessTheWebAsync`</ph> to run the downloading operation.</source>
+          <target state="translated">Il gestore chiama quindi <ph id="ph1">`AccessTheWebAsync`</ph> per eseguire l'operazione di download.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>The AccessTheWebAsync Method</source>
+          <target state="translated">Il metodo AccessTheWebAsync</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This example splits <ph id="ph1">`AccessTheWebAsync`</ph> into two methods.</source>
+          <target state="translated">Questo esempio suddivide <ph id="ph1">`AccessTheWebAsync`</ph> in due metodi.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>The first method, <ph id="ph1">`AccessTheWebAsync`</ph>, starts all the download tasks for a group and sets up <ph id="ph2">`pendingWork`</ph> to control the display process.</source>
+          <target state="translated">Il primo metodo, <ph id="ph1">`AccessTheWebAsync`</ph>, avvia tutte le attività di download per un gruppo e configura <ph id="ph2">`pendingWork`</ph> per il controllo del processo di visualizzazione.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>The method uses a Language Integrated Query (LINQ query) and &lt;xref:System.Linq.Enumerable.ToArray%2A&gt; to start all the download tasks at the same time.</source>
+          <target state="translated">Il metodo utilizza una Language Integrated Query (LINQ) e &lt;xref:System.Linq.Enumerable.ToArray%2A&gt;per avviare tutte le attività di download nello stesso momento.&lt;/xref:System.Linq.Enumerable.ToArray%2A&gt;</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AccessTheWebAsync`</ph> then calls <ph id="ph2">`FinishOneGroupAsync`</ph> to await the completion of each download and display its length.</source>
+          <target state="translated"><ph id="ph1">`AccessTheWebAsync`</ph> quindi chiama <ph id="ph2">`FinishOneGroupAsync`</ph> per attendere il completamento di ogni download e visualizzare la relativa lunghezza.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`FinishOneGroupAsync`</ph> returns a task that's assigned to <ph id="ph2">`pendingWork`</ph> in <ph id="ph3">`AccessTheWebAsync`</ph>.</source>
+          <target state="translated"><ph id="ph1">`FinishOneGroupAsync`</ph> restituisce un'attività assegnata a <ph id="ph2">`pendingWork`</ph> in <ph id="ph3">`AccessTheWebAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>That value prevents interruption by another operation before the task is complete.</source>
+          <target state="translated">Tale valore impedisce l'interruzione da parte di un'altra operazione prima del completamento dell'attività.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The FinishOneGroupAsync Method</source>
+          <target state="translated">Il metodo FinishOneGroupAsync</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>This method cycles through the download tasks in a group, awaiting each one, displaying the length of the downloaded website, and adding the length to the total.</source>
+          <target state="translated">Questo metodo consente di scorrere le attività di download in reciproca attesa in un gruppo, nonché visualizza la lunghezza del sito Web scaricato e aggiunge la lunghezza al totale.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The first statement in <ph id="ph1">`FinishOneGroupAsync`</ph> uses <ph id="ph2">`pendingWork`</ph> to make sure that entering the method doesn't interfere with an operation that is already in the display process or that's already waiting.</source>
+          <target state="translated">La prima istruzione in <ph id="ph1">`FinishOneGroupAsync`</ph> utilizza <ph id="ph2">`pendingWork`</ph> per assicurarsi che il metodo non interferisca con un'operazione che è già in corso la visualizzazione o che è già in attesa.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>If such an operation is in progress, the entering operation must wait its turn.</source>
+          <target state="translated">Se tale operazione è in corso, l'operazione di attivazione deve attendere il suo turno.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>You can run this example by pasting the changes into the code in <bpt id="p1">[</bpt>Building the App<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or you can follow the instructions in <bpt id="p2">[</bpt>Downloading the App<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to download the sample, and then run the QueueResults project.</source>
+          <target state="translated">È possibile eseguire questo esempio incollando le modifiche nel codice <bpt id="p1">[</bpt>compilazione dell'applicazione<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, oppure è possibile seguire le istruzioni in <bpt id="p2">[</bpt>download dell'applicazione<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> per scaricare l'esempio e quindi eseguire il progetto QueueResults.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Points of Interest</source>
+          <target state="translated">Punti di interesse</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>The information lines that start with a pound sign (#) in the output clarify how this example works.</source>
+          <target state="translated">Le righe di informazioni che iniziano con un segno di cancelletto (#) nell'output descrivono il funzionamento dell'esempio.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>The output shows the following patterns.</source>
+          <target state="translated">L'output mostra i modelli seguenti.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>A group can be started while a previous group is displaying its output, but the display of the previous group's output isn't interrupted.</source>
+          <target state="translated">Un gruppo può essere avviato anche se un gruppo precedente è visualizzato nel relativo output, ma la visualizzazione dell'output del gruppo precedente non viene interrotta.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`pendingWork`</ph> task is <ph id="ph2">`Nothing`</ph> at the start of <ph id="ph3">`FinishOneGroupAsync`</ph> only for group A, which started first.</source>
+          <target state="translated">Il <ph id="ph1">`pendingWork`</ph> attività <ph id="ph2">`Nothing`</ph> all'inizio di <ph id="ph3">`FinishOneGroupAsync`</ph> solo per il gruppo, quale avviato per primo.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Group A hasn’t yet completed an await expression when it reaches <ph id="ph1">`FinishOneGroupAsync`</ph>.</source>
+          <target state="translated">Il gruppo A non ha ancora completato un'espressione await quando raggiunge <ph id="ph1">`FinishOneGroupAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Therefore, control hasn't returned to <ph id="ph1">`AccessTheWebAsync`</ph>, and the first assignment to <ph id="ph2">`pendingWork`</ph> hasn't occurred.</source>
+          <target state="translated">Pertanto, il controllo non è stato restituito a <ph id="ph1">`AccessTheWebAsync`</ph> e non è stata eseguita la prima assegnazione a <ph id="ph2">`pendingWork`</ph>.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The following two lines always appear together in the output.</source>
+          <target state="translated">Le due righe seguenti sono sempre visualizzate insieme nell'output.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The code is never interrupted between starting a group's operation in <ph id="ph1">`StartButton_Click`</ph> and assigning a task for the group to <ph id="ph2">`pendingWork`</ph>.</source>
+          <target state="translated">Il codice non viene mai interrotto tra l'avvio dell'operazione di un gruppo in <ph id="ph1">`StartButton_Click`</ph> e l'assegnazione di un'attività per il gruppo a <ph id="ph2">`pendingWork`</ph>.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>After a group enters <ph id="ph1">`StartButton_Click`</ph>, the operation doesn't complete an await expression until the operation enters <ph id="ph2">`FinishOneGroupAsync`</ph>.</source>
+          <target state="translated">Dopo che un gruppo entra in <ph id="ph1">`StartButton_Click`</ph>, l'operazione non completa un'espressione await fino a quando l'operazione non entra in <ph id="ph2">`FinishOneGroupAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Therefore, no other operation can gain control during that segment of code.</source>
+          <target state="translated">Pertanto, nessuna operazione può assumere il controllo durante l'esecuzione di tale segmento di codice.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMD_SettingUpTheExample"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Reviewing and Running the Example App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMD_SettingUpTheExample"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Esame ed esecuzione dell'applicazione di esempio</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>To better understand the example app, you can download it, build it yourself, or review the code at the end of this topic without implementing the app.</source>
+          <target state="translated">Per comprendere meglio l'applicazione di esempio, è possibile scaricarla, compilarla manualmente o esaminare il codice alla fine di questo argomento senza implementare l'applicazione.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Per eseguire l'esempio come un'applicazione desktop di Windows Presentation Foundation (WPF), è necessario disporre di Visual Studio 2012 o versione successiva e .NET Framework 4.5 o versioni successive installato nel computer in uso.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_DownloadingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Downloading the App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_DownloadingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Download dell'applicazione</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Download the compressed file from <bpt id="p1">[</bpt>Async Samples: Reentrancy in .NET Desktop Apps<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</source>
+          <target state="translated">Scaricare il file compresso da <bpt id="p1">[</bpt>Async esempi: della Reentrancy nelle applicazioni Desktop di .NET<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=266571)</ept>.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Decompress the file that you downloaded, and then start Visual Studio.</source>
+          <target state="translated">Decomprimere il file scaricato e quindi avviare Visual Studio.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">Nella barra dei menu scegliere <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Apri<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Progetto/Soluzione<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Navigate to the folder that holds the decompressed sample code, and then open the solution (.sln) file.</source>
+          <target state="translated">Passare alla cartella che contiene il codice di esempio decompresso e quindi aprire il file di soluzione (sln).</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for the project that you want to run, and then choose <bpt id="p2">**</bpt>Set as StartUpProject<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, aprire il menu di scelta rapida per il progetto che si desidera eseguire, quindi scegliere <bpt id="p2">**</bpt>impostato come StartUpProject<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Choose the CTRL+F5 keys to build and run the project.</source>
+          <target state="translated">Premere CTRL+F5 per compilare ed eseguire il progetto.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_BuildingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Building the App</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_BuildingTheApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Compilazione dell'applicazione</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>The following section provides the code to build the example as a WPF app.</source>
+          <target state="translated">Nella sezione seguente fornisce il codice per compilare l'esempio come un'applicazione WPF.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>To build a WPF app</source>
+          <target state="translated">Per compilare un'applicazione WPF</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Avviare Visual Studio.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Nella barra dei menu scegliere <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Nuovo<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated">Verrà visualizzata la finestra di dialogo <bpt id="p1">**</bpt>Nuovo progetto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed Templates<ept id="p1">**</ept> pane, expand <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>, and then expand <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>modelli installati<ept id="p1">**</ept> riquadro, espandere <bpt id="p2">**</bpt>Visual Basic<ept id="p2">**</ept>, quindi espandere <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In the list of project types, choose <bpt id="p1">**</bpt>WPF Application<ept id="p1">**</ept>.</source>
+          <target state="translated">Nell'elenco dei tipi di progetto, scegliere <bpt id="p1">**</bpt>applicazione WPF<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Name the project <ph id="ph1">`WebsiteDownloadWPF`</ph>, and then choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">Denominare il progetto <ph id="ph1">`WebsiteDownloadWPF`</ph>, quindi scegliere il <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">Il nuovo progetto verrà visualizzato <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Nell'Editor di codice di Visual Studio scegliere la scheda <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>If the tab isn’t visible, open the shortcut menu for MainWindow.xaml in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">Se la scheda non è visibile, aprire il menu di scelta rapida per MainWindow. XAML in <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, quindi scegliere <bpt id="p2">**</bpt>Visualizza codice<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> view of MainWindow.xaml, replace the code with the following code.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> visualizzazione di MainWindow. XAML, sostituire il codice con il codice seguente.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>A simple window that contains a text box and a button appears in the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> view of MainWindow.xaml.</source>
+          <target state="translated">Viene visualizzata una finestra semplice che contiene una casella di testo e un pulsante nel <bpt id="p1">**</bpt>progettazione<ept id="p1">**</ept> visualizzazione di MainWindow. Xaml.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Add a reference for &lt;xref:System.Net.Http&gt;.</source>
+          <target state="translated">Aggiungere un riferimento per &lt;xref:System.Net.Http&gt;.&lt;/xref:System.Net.Http&gt;</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, aprire il menu di scelta rapida per MainWindow.xaml.vb e quindi scegliere <bpt id="p2">**</bpt>Visualizza codice<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>In MainWindow.xaml.vb , replace the code with the following code.</source>
+          <target state="translated">Nel file MainWindow.xaml.vb, sostituire il codice con il codice seguente.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Choose the CTRL+F5 keys to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button several times.</source>
+          <target state="translated">Premere i tasti CTRL + F5 per eseguire il programma, quindi scegliere il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> più volte.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Make the changes from <bpt id="p1">[</bpt>Disable the Start Button<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, <bpt id="p2">[</bpt>Cancel and Restart the Operation<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, or <bpt id="p3">[</bpt>Run Multiple Operations and Queue the Output<ept id="p3">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> to handle the reentrancy.</source>
+          <target state="translated">Apportare le modifiche da <bpt id="p1">[</bpt>disabilitare il pulsante Start<ept id="p1">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, <bpt id="p2">[</bpt>annullare e riavviare l'operazione<ept id="p2">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept>, o <bpt id="p3">[</bpt>eseguire più operazioni e coda di Output<ept id="p3">](http://msdn.microsoft.com/library/5b54de66-6be3-459e-b869-65070b020645)</ept> per gestire la reentrancy.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Procedura dettagliata: Accesso al Web tramite Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Programmazione asincrona con Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

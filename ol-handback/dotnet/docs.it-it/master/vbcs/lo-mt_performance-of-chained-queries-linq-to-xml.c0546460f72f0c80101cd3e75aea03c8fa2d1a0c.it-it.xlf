@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dd5b63f255107c5864108cfbb87bef6e53a971a0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\performance-of-chained-queries-linq-to-xml.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bd0852ba9befbcbc87765aaf50a4eb6cfd4b03ed</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b962c3b7319a6ccc7117a935b0713488d5d73925</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Performance of Chained Queries (LINQ to XML) (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Prestazioni delle query concatenate (LINQ to XML) (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Performance of Chained Queries (LINQ to XML) (Visual Basic)</source>
+          <target state="translated">Prestazioni delle query concatenate (LINQ to XML) (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>One of the most important benefits of LINQ (and LINQ to XML) is that chained queries can perform as well as a single larger, more complicated query.</source>
+          <target state="translated">Uno dei più importanti vantaggi di LINQ (e di LINQ to XML) consiste nel fatto che le query concatenate possono offrire le stesse prestazioni di una singola query di dimensioni maggiori e più complessa.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A chained query is a query that uses another query as its source.</source>
+          <target state="translated">Una query concatenata è una query che usa un'altra query come origine.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For example, in the following simple code, <ph id="ph1">`query2`</ph> has <ph id="ph2">`query1`</ph> as its source:</source>
+          <target state="translated">Nel semplice codice seguente, ad esempio, <ph id="ph1">`query2`</ph> è l'origine di <ph id="ph2">`query1`</ph>:</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">Questo esempio produce il seguente output:</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This chained query provides the same performance profile as iterating through a linked list.</source>
+          <target state="translated">Questa query concatenata offre lo stesso profilo di prestazioni dell'iterazione in un elenco collegato.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt; axis has essentially the same performance as iterating through a linked list.</source>
+          <target state="translated">Il &lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt;asse ha essenzialmente le stesse prestazioni come scorrere un elenco collegato.&lt;/xref:System.Xml.Linq.XContainer.Elements%2A&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt; is implemented as an iterator with deferred execution.</source>
+          <target state="translated">&lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt;viene implementato come iteratore con esecuzione posticipata.&lt;/xref:System.Xml.Linq.XContainer.Elements%2A&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This means that it does some work in addition to iterating through the linked list, such as allocating the iterator object and keeping track of execution state.</source>
+          <target state="translated">Questo significa che esegue alcune operazioni in aggiunta all'iterazione nell'elenco collegato, ad esempio l'allocazione dell'oggetto iteratore e la registrazione dello stato di esecuzione.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>This work can be divided into two categories: the work that is done at the time the iterator is set up, and the work that is done during each iteration.</source>
+          <target state="translated">Queste operazioni possono essere divise in due categorie: le operazioni eseguite al momento della configurazione dell'iteratore e quelle eseguite durante ogni iterazione.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The setup work is a small, fixed amount of work and the work done during each iteration is proportional to the number of items in the source collection.</source>
+          <target state="translated">Le operazioni di configurazione implicano una quantità di lavoro piccola e fissa, mentre quelle eseguite durante ogni iterazione sono proporzionali al numero di elementi nella raccolta di origine.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`query1`</ph>, the <ph id="ph2">`Where`</ph> clause causes the query to call the &lt;xref:System.Linq.Enumerable.Where%2A&gt; method.</source>
+          <target state="translated">In <ph id="ph1">`query1`</ph>, <ph id="ph2">`Where`</ph> clausola, la query di chiamare il &lt;xref:System.Linq.Enumerable.Where%2A&gt;(metodo).&lt;/xref:System.Linq.Enumerable.Where%2A&gt;</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This method is also implemented as an iterator.</source>
+          <target state="translated">Questo metodo è implementato anche come iteratore.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The setup work consists of instantiating the delegate that will reference the lambda expression, plus the normal setup for an iterator.</source>
+          <target state="translated">Le operazioni di configurazione consistono nella creazione di un'istanza del delegato che fa riferimento all'espressione lambda, nonché nelle normali operazioni di configurazione per un iteratore.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>With each iteration, the delegate is called to execute the predicate.</source>
+          <target state="translated">A ogni iterazione, il delegato viene chiamato per eseguire il predicato.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The setup work and the work done during each iteration is the similar to the work done while iterating through the axis.</source>
+          <target state="translated">Le operazioni di configurazione e quelle eseguite durante ogni iterazione sono simili a quelle eseguite durante l'iterazione nell'asse.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`query1`</ph>, the select clause causes the query to call the &lt;xref:System.Linq.Enumerable.Select%2A&gt; method.</source>
+          <target state="translated">In <ph id="ph1">`query1`</ph>, la clausola select fa sì che la query di chiamare il &lt;xref:System.Linq.Enumerable.Select%2A&gt;(metodo).&lt;/xref:System.Linq.Enumerable.Select%2A&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This method has the same performance profile as the &lt;xref:System.Linq.Enumerable.Where%2A&gt; method.</source>
+          <target state="translated">Questo metodo ha lo stesso profilo delle prestazioni di &lt;xref:System.Linq.Enumerable.Where%2A&gt;(metodo).&lt;/xref:System.Linq.Enumerable.Where%2A&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`query2`</ph>, both the <ph id="ph2">`Where`</ph> clause and the <ph id="ph3">`Select`</ph> clause have the same performance profile as in <ph id="ph4">`query1`</ph>.</source>
+          <target state="translated">In <ph id="ph1">`query2`</ph> sia la clausola <ph id="ph2">`Where`</ph> che la clausola <ph id="ph3">`Select`</ph> hanno lo stesso profilo di prestazioni, come in <ph id="ph4">`query1`</ph>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The iteration through <ph id="ph1">`query2`</ph> is therefore directly proportional to the number of items in the source of the first query, in other words, linear time.</source>
+          <target state="translated">L'iterazione in <ph id="ph1">`query2`</ph> è pertanto direttamente proporzionale al numero di elementi nell'origine della prima query, in altre parole un tempo lineare.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Performance (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Prestazioni (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

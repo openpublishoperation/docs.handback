@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">379359e3a338746ccd440dbe1ad58c483e562dbe</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\language-reference\statements\try-catch-finally-statement.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5b921289ea855bcedff299c9aabf2debd637dcab</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dfd3d978ccc9bd35935fbe8240dd53f4b5b0a57e</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Try...Catch...Finally Statement (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">시도 중... Catch... Finally 문 (Visual Basic) | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Try...Catch...Finally Statement (Visual Basic)</source>
+          <target state="translated">Try...Catch...Finally 문(Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Provides a way to handle some or all possible errors that may occur in a given block of code, while still running code.</source>
+          <target state="translated">코드 실행 하면서 코드의 블록에서 발생할 수 있는 일부 또는 모든 가능한 오류를 처리 하는 방법을 제공 합니다.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+          <target state="translated">구문</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Parts</source>
+          <target state="translated">요소</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Term</source>
+          <target state="translated">용어</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Definition</source>
+          <target state="translated">정의</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Statement(s) where an error can occur.</source>
+          <target state="translated">오류가 발생할 수 있는 문을 지정 합니다.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Can be a compound statement.</source>
+          <target state="translated">복합 문일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Multiple <ph id="ph1">`Catch`</ph> blocks permitted.</source>
+          <target state="translated">여러 <ph id="ph1">`Catch`</ph> 블록을 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>If an exception occurs when processing the <ph id="ph1">`Try`</ph> block, each <ph id="ph2">`Catch`</ph> statement is examined in textual order to determine whether it handles the exception, with <ph id="ph3">`exception`</ph> representing the exception that has been thrown.</source>
+          <target state="translated">예외를 처리할 때 발생 하는 경우는 <ph id="ph1">`Try`</ph> 각 차단 <ph id="ph2">`Catch`</ph> 문을와 예외를 처리 하는지 여부를 확인 하려면 텍스트 순서 대로 검사 <ph id="ph3">`exception`</ph> throw 된 예외를 나타내는 합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Any variable name.</source>
+          <target state="translated">임의의 변수 이름입니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The initial value of <ph id="ph1">`exception`</ph> is the value of the thrown error.</source>
+          <target state="translated"><ph id="ph1">`exception`</ph>의 초기 값은 throw된 오류 값입니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Used with <ph id="ph1">`Catch`</ph> to specify the error caught.</source>
+          <target state="translated">사용한 <ph id="ph1">`Catch`</ph> 발생 한 예외를 지정 합니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If omitted, the <ph id="ph1">`Catch`</ph> statement catches any exception.</source>
+          <target state="translated">생략 한 경우는 <ph id="ph1">`Catch`</ph> 문은 예외를 catch 합니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Specifies the type of class filter.</source>
+          <target state="translated">필터 클래스의 형식을 지정합니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If the value of <ph id="ph1">`exception`</ph> is of the type specified by <ph id="ph2">`type`</ph> or of a derived type, the identifier becomes bound to the exception object.</source>
+          <target state="translated">하는 경우의 값 <ph id="ph1">`exception`</ph> 로 지정 된 형식의 <ph id="ph2">`type`</ph> 또는 파생 형식의 식별자가 예외 개체에 바인딩됩니다.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Catch`</ph> statement with a <ph id="ph2">`When`</ph> clause catches exceptions only when <ph id="ph3">`expression`</ph> evaluates to <ph id="ph4">`True`</ph>.</source>
+          <target state="translated">A <ph id="ph1">`Catch`</ph> 문을 <ph id="ph2">`When`</ph> 절 예외를 catch 합니다. 경우에만 <ph id="ph3">`expression`</ph> 계산 <ph id="ph4">`True`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`When`</ph> clause is applied only after checking the type of the exception, and <ph id="ph2">`expression`</ph> may refer to the identifier representing the exception.</source>
+          <target state="translated">A <ph id="ph1">`When`</ph> 절에는 예외의 유형을 확인 한 후에 적용 됩니다 및 <ph id="ph2">`expression`</ph> 예외를 나타내는 식별자를 참조할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Must be implicitly convertible to <ph id="ph1">`Boolean`</ph>.</source>
+          <target state="translated">암시적으로 변환할 수 있어야 <ph id="ph1">`Boolean`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Any expression that describes a generic filter.</source>
+          <target state="translated">일반 필터를 설명 하는 모든 식입니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Typically used to filter by error number.</source>
+          <target state="translated">일반적으로 오류 번호로 필터링 하는 데 사용 합니다.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Used with <ph id="ph1">`When`</ph> keyword to specify circumstances under which the error is caught.</source>
+          <target state="translated">사용한 <ph id="ph1">`When`</ph> 키워드 오류가 발생 하는 상황을 지정 합니다.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Statement(s) to handle errors that occur in the associated <ph id="ph1">`Try`</ph> block.</source>
+          <target state="translated">연결 된에서 발생 하는 오류를 처리 하는 문 <ph id="ph1">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Can be a compound statement.</source>
+          <target state="translated">복합 문일 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Keyword that breaks out of the <ph id="ph1">`Try...Catch...Finally`</ph> structure.</source>
+          <target state="translated">밖으로 중단 하는 키워드는 <ph id="ph1">`Try...Catch...Finally`</ph> 구조입니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Execution resumes with the code immediately following the <ph id="ph1">`End Try`</ph> statement.</source>
+          <target state="translated">실행을 다시 시작 바로 다음 코드는 <ph id="ph1">`End Try`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finally`</ph> statement will still be executed.</source>
+          <target state="translated"><ph id="ph1">`Finally`</ph> 문을 계속 실행 됩니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Not allowed in <ph id="ph1">`Finally`</ph> blocks.</source>
+          <target state="translated">에 사용할 수 없습니다 <ph id="ph1">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Finally`</ph> block is always executed when execution leaves any part of the <ph id="ph2">`Try...Catch`</ph> statement.</source>
+          <target state="translated">A <ph id="ph1">`Finally`</ph> 블록은 실행의 모든 부분을 벗어나면 항상 실행은 <ph id="ph2">`Try...Catch`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Optional.</source>
+          <target state="translated">선택적 요소.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Statement(s) that are executed after all other error processing has occurred.</source>
+          <target state="translated">다른 모든 오류 처리를 수행한 후 실행 되는 문입니다.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Terminates the <ph id="ph1">`Try...Catch...Finally`</ph> structure.</source>
+          <target state="translated">종료는 <ph id="ph1">`Try...Catch...Finally`</ph> 구조입니다.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Remarks</source>
+          <target state="translated">주의</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you expect that a particular exception might occur during a particular section of code, put the code in a <ph id="ph1">`Try`</ph> block and use a <ph id="ph2">`Catch`</ph> block to retain control and handle the exception if it occurs.</source>
+          <target state="translated">특정 예외를 코드의 특정 섹션 중에 발생할 수 있는지를 려 할 경우에 코드를 입력 한 <ph id="ph1">`Try`</ph> 블록과 사용 하는 <ph id="ph2">`Catch`</ph> 제어 유지 하 고 발생 하는 경우는 예외를 처리 하기 위해 블록입니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Try…Catch`</ph> statement consists of a <ph id="ph2">`Try`</ph> block followed by one or more <ph id="ph3">`Catch`</ph> clauses, which specify handlers for various exceptions.</source>
+          <target state="translated">A <ph id="ph1">`Try…Catch`</ph> 문을 이루어져는 <ph id="ph2">`Try`</ph> 블록 뒤에 하나 이상의 <ph id="ph3">`Catch`</ph> 다양 한 예외에 대 한 처리기를 지정 하는 절.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When an exception is thrown in a <ph id="ph1">`Try`</ph> block, <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> looks for the <ph id="ph3">`Catch`</ph> statement that handles the exception.</source>
+          <target state="translated">예외가 throw 되 면는 <ph id="ph1">`Try`</ph> 블록 <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 찾습니다는 <ph id="ph3">`Catch`</ph> 예외를 처리 하는 문입니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If a matching <ph id="ph1">`Catch`</ph> statement is not found, <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> examines the method that called the current method, and so on up the call stack.</source>
+          <target state="translated">일치 하는 경우 <ph id="ph1">`Catch`</ph> 문을 발견 되지 않으면 <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 호출 스택에서 등 현재 메서드를 호출한 메서드를 검사 합니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If no <ph id="ph1">`Catch`</ph> block is found, <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> displays an unhandled exception message to the user and stops execution of the program.</source>
+          <target state="translated">없으면 <ph id="ph1">`Catch`</ph> 블록을 찾지 <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 처리 되지 않은 예외 메시지가 사용자에 게 표시 하 고 프로그램의 실행을 중지 합니다.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>You can use more than one <ph id="ph1">`Catch`</ph> statement in a <ph id="ph2">`Try…Catch`</ph> statement.</source>
+          <target state="translated">하나 이상 사용할 수 있습니다 <ph id="ph1">`Catch`</ph> 문에서 <ph id="ph2">`Try…Catch`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>If you do this, the order of the <ph id="ph1">`Catch`</ph> clauses is significant because they are examined in order.</source>
+          <target state="translated">이 순서는 <ph id="ph1">`Catch`</ph> 절은 순서 대로 검사 되므로 중요 합니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Catch the more specific exceptions before the less specific ones.</source>
+          <target state="translated">더 구체적인 예외를 덜 구체적인 예외보다 먼저 catch합니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The following <ph id="ph1">`Catch`</ph> statement conditions are the least specific, and will catch all exceptions that derive from the &lt;xref:System.Exception&gt; class.</source>
+          <target state="translated">다음 <ph id="ph1">`Catch`</ph> 문 가장 일반적인 조건과 모든 catch 할 &lt;xref:System.Exception&gt;클래스&lt;/xref:System.Exception&gt; 에서 파생 되는 예외</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>You should ordinarily use one of these variations as the last <ph id="ph1">`Catch`</ph> block in the <ph id="ph2">`Try...Catch...Finally`</ph> structure, after catching all the specific exceptions you expect.</source>
+          <target state="translated">마지막으로 이러한 종류의 일반적으로 사용 해야 <ph id="ph1">`Catch`</ph> 블록은 <ph id="ph2">`Try...Catch...Finally`</ph> 예상 된 특정 한 예외를 catch 한 후 구조입니다.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Control flow can never reach a <ph id="ph1">`Catch`</ph> block that follows either of these variations.</source>
+          <target state="translated">제어 흐름 도달할 수 없다고는 <ph id="ph1">`Catch`</ph> 이러한 차이 중 하나를 따르는 블록입니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`type`</ph> is <ph id="ph2">`Exception`</ph>, for example: <ph id="ph3">`Catch ex As Exception`</ph></source>
+          <target state="translated"><ph id="ph1">`type`</ph> 는 <ph id="ph2">`Exception`</ph>, 예:<ph id="ph3">`Catch ex As Exception`</ph></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>The statement has no <ph id="ph1">`exception`</ph> variable, for example: <ph id="ph2">`Catch`</ph></source>
+          <target state="translated">문이 아무런 <ph id="ph1">`exception`</ph> 예를 들어 변수:<ph id="ph2">`Catch`</ph></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>When a <ph id="ph1">`Try…Catch…Finally`</ph> statement is nested in another <ph id="ph2">`Try`</ph> block, <ph id="ph3">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> first examines each <ph id="ph4">`Catch`</ph> statement in the innermost <ph id="ph5">`Try`</ph> block.</source>
+          <target state="translated">때는 <ph id="ph1">`Try…Catch…Finally`</ph> 다른 문이 중첩 되 <ph id="ph2">`Try`</ph> 블록 <ph id="ph3">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 먼저 각 검사 <ph id="ph4">`Catch`</ph> 문의 가장 안쪽에서 <ph id="ph5">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If no matching <ph id="ph1">`Catch`</ph> statement is found, the search proceeds to the <ph id="ph2">`Catch`</ph> statements of the outer <ph id="ph3">`Try…Catch…Finally`</ph> block.</source>
+          <target state="translated">일치 하는 경우 <ph id="ph1">`Catch`</ph> 문을 발견 되 면 검색 진행는 <ph id="ph2">`Catch`</ph> 외부 문을 <ph id="ph3">`Try…Catch…Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Local variables from a <ph id="ph1">`Try`</ph> block are not available in a <ph id="ph2">`Catch`</ph> block because they are separate blocks.</source>
+          <target state="translated">지역 변수는 <ph id="ph1">`Try`</ph> 블록에서 사용할 수 없는 <ph id="ph2">`Catch`</ph> 별도 블록 있기 때문에 차단 합니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>If you want to use a variable in more than one block, declare the variable outside the <ph id="ph1">`Try...Catch...Finally`</ph> structure.</source>
+          <target state="translated">둘 이상의 블록에서 변수를 사용 하려는 경우 외부에서 변수 선언에서 <ph id="ph1">`Try...Catch...Finally`</ph> 구조입니다.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Try…Catch…Finally`</ph> statement is available as an IntelliSense code snippet.</source>
+          <target state="translated"><ph id="ph1">`Try…Catch…Finally`</ph> 문을 IntelliSense 코드 조각으로 제공 됩니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In the Code Snippets Manager, expand <bpt id="p1">**</bpt>Code Patterns - If, For Each, Try Catch, Property, etc<ept id="p1">**</ept>, and then <bpt id="p2">**</bpt>Error Handling (Exceptions)<ept id="p2">**</ept>.</source>
+          <target state="translated">코드 조각 관리자에서 확장 <bpt id="p1">**</bpt>코드 패턴-경우, 각각에 대해 Try Catch 속성 등<ept id="p1">**</ept>, 차례로 <bpt id="p2">**</bpt>오류 처리 (예외)<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Code Snippets<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/code-snippets)</ept>.</source>
+          <target state="translated">자세한 내용은 <bpt id="p1">[</bpt>코드 조각<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/code-snippets)</ept>을 참조하세요.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Finally Block</source>
+          <target state="translated">Finally 블록</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If you have one or more statements that must run before you exit the <ph id="ph1">`Try`</ph> structure, use a <ph id="ph2">`Finally`</ph> block.</source>
+          <target state="translated">종료 하기 전에 실행 해야 하는 하나 이상의 문이 있으면는 <ph id="ph1">`Try`</ph> 구조를 사용 하 여 한 <ph id="ph2">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Control passes to the <ph id="ph1">`Finally`</ph> block just before it passes out of the <ph id="ph2">`Try…Catch`</ph> structure.</source>
+          <target state="translated">제어 전달는 <ph id="ph1">`Finally`</ph> 부재 중 전달 하기 직전 차단는 <ph id="ph2">`Try…Catch`</ph> 구조입니다.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This is true even if an exception occurs anywhere inside the <ph id="ph1">`Try`</ph> structure.</source>
+          <target state="translated">내에서 예외가 발생 하는 경우에 마찬가지입니다는 <ph id="ph1">`Try`</ph> 구조입니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Finally`</ph> block is useful for running any code that must execute even if there is an exception.</source>
+          <target state="translated">A <ph id="ph1">`Finally`</ph> 블록은 예외가 있을 경우에 실행 해야 하는 모든 코드를 실행 하는 데 유용 합니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Control is passed to the <ph id="ph1">`Finally`</ph> block regardless of how the <ph id="ph2">`Try...Catch`</ph> block exits.</source>
+          <target state="translated">제어가 전달 됩니다는 <ph id="ph1">`Finally`</ph> 방식과 관계 없이 블록 <ph id="ph2">`Try...Catch`</ph> 종료를 차단 합니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The code in a <ph id="ph1">`Finally`</ph> block runs even if your code encounters a <ph id="ph2">`Return`</ph> statement in a <ph id="ph3">`Try`</ph> or <ph id="ph4">`Catch`</ph> block.</source>
+          <target state="translated">코드는 <ph id="ph1">`Finally`</ph> 블록이 실행 코드에서 발견 한 경우에는 <ph id="ph2">`Return`</ph> 문에서 <ph id="ph3">`Try`</ph> 또는 <ph id="ph4">`Catch`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Control does not pass from a <ph id="ph1">`Try`</ph> or <ph id="ph2">`Catch`</ph> block to the corresponding <ph id="ph3">`Finally`</ph> block in the following cases:</source>
+          <target state="translated">제어를 전달 하지 않는 한 <ph id="ph1">`Try`</ph> 또는 <ph id="ph2">`Catch`</ph> 블록에서 해당 <ph id="ph3">`Finally`</ph> 다음과 같은 경우에 차단:</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">[</bpt>End Statement<ept id="p1">](../../../visual-basic/language-reference/statements/end-statement.md)</ept> is encountered in the <ph id="ph1">`Try`</ph> or <ph id="ph2">`Catch`</ph> block.</source>
+          <target state="translated"><bpt id="p1">[</bpt>End 문<ept id="p1">](../../../visual-basic/language-reference/statements/end-statement.md)</ept> 에서 발견 되는 <ph id="ph1">`Try`</ph> 또는 <ph id="ph2">`Catch`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>A &lt;xref:System.StackOverflowException&gt; is thrown in the <ph id="ph1">`Try`</ph> or <ph id="ph2">`Catch`</ph> block.</source>
+          <target state="translated">A &lt;xref:System.StackOverflowException&gt;에서 throw 되는 <ph id="ph1">`Try`</ph> 또는 <ph id="ph2">`Catch`</ph> 블록.&lt;/xref:System.StackOverflowException&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>It is not valid to explicitly transfer execution into a <ph id="ph1">`Finally`</ph> block.</source>
+          <target state="translated">유효 하지 않은 명시적으로 실행을 전송할 수에 <ph id="ph1">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Transferring execution out of a <ph id="ph1">`Finally`</ph> block is not valid, except through an exception.</source>
+          <target state="translated">실행을 전송는 <ph id="ph1">`Finally`</ph> 블록이 예외 사항을 제외 하 고 잘못 되었습니다.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If a <ph id="ph1">`Try`</ph> statement does not contain at least one <ph id="ph2">`Catch`</ph> block, it must contain a <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated">경우는 <ph id="ph1">`Try`</ph> 문을 하나 이상 포함 하지 않는 <ph id="ph2">`Catch`</ph> 블록을 포함 해야는 <ph id="ph3">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If you do not have to catch specific exceptions, the <ph id="ph1">`Using`</ph> statement behaves like a <ph id="ph2">`Try…Finally`</ph> block, and guarantees disposal of the resources, regardless of how you exit the block.</source>
+          <target state="translated">특정 예외를 catch 하지 않은 경우는 <ph id="ph1">`Using`</ph> 문 처럼 동작을 <ph id="ph2">`Try…Finally`</ph> 블록과 블록을 종료 하는 방법에 관계 없이 리소스를 삭제할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This is true even with an unhandled exception.</source>
+          <target state="translated">처리 되지 않은 예외가 있는 경우에 마찬가지입니다.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Using Statement<ept id="p1">](../../../visual-basic/language-reference/statements/using-statement.md)</ept>.</source>
+          <target state="translated">자세한 내용은 참조 <bpt id="p1">[</bpt>문을 사용 하 여<ept id="p1">](../../../visual-basic/language-reference/statements/using-statement.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Exception Argument</source>
+          <target state="translated">예외 인수입니다.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Catch`</ph> block <ph id="ph2">`exception`</ph> argument is an instance of the &lt;xref:System.Exception&gt; class or a class that derives from the <ph id="ph3">`Exception`</ph> class.</source>
+          <target state="translated"><ph id="ph1">`Catch`</ph> 블록 <ph id="ph2">`exception`</ph> 인수는의 인스턴스는 &lt;xref:System.Exception&gt;클래스 또는 클래스에서 파생 되는 <ph id="ph3">`Exception`</ph> 클래스&lt;/xref:System.Exception&gt;</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Exception`</ph> class instance corresponds to the error that occurred in the <ph id="ph2">`Try`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`Exception`</ph> 에서 발생 한 오류에 해당 하는 클래스 인스턴스는 <ph id="ph2">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The properties of the <ph id="ph1">`Exception`</ph> object help to identify the cause and location of an exception.</source>
+          <target state="translated">속성은 <ph id="ph1">`Exception`</ph> 원인과 예외 위치를 식별 하는 도움말 개체입니다.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>For example, the &lt;xref:System.Exception.StackTrace%2A&gt; property lists the called methods that led to the exception, helping you find where the error occurred in the code.</source>
+          <target state="translated">예를 들어는 &lt;xref:System.Exception.StackTrace%2A&gt;속성 코드에 오류가 발생 하는 위치를 찾을 수 있도록 하는 예외를 초래한 호출된 메서드를 보여 줍니다.&lt;/xref:System.Exception.StackTrace%2A&gt;</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Exception.Message%2A&gt; returns a message that describes the exception.</source>
+          <target state="translated">&lt;xref:System.Exception.Message%2A&gt;예외를 설명 하는 메시지를 반환 합니다.&lt;/xref:System.Exception.Message%2A&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Exception.HelpLink%2A&gt; returns a link to an associated Help file.</source>
+          <target state="translated">&lt;xref:System.Exception.HelpLink%2A&gt;연결된 된 도움말 파일에 대 한 링크를 반환합니다.&lt;/xref:System.Exception.HelpLink%2A&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Exception.InnerException%2A&gt; returns the <ph id="ph1">`Exception`</ph> object that caused the current exception, or it returns <ph id="ph2">`Nothing`</ph> if there is no original <ph id="ph3">`Exception`</ph>.</source>
+          <target state="translated">&lt;xref:System.Exception.InnerException%2A&gt;반환 된 <ph id="ph1">`Exception`</ph> 현재 예외를 발생 시킨 개체를 반환 <ph id="ph2">`Nothing`</ph> 원본 있으면 <ph id="ph3">`Exception`</ph>합니다.&lt;/xref:System.Exception.InnerException%2A&gt;</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Considerations When Using a Try…Catch Statement</source>
+          <target state="translated">Try 사용 시 고려 사항 중... Catch 문</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Use a <ph id="ph1">`Try…Catch`</ph> statement only to signal the occurrence of unusual or unanticipated program events.</source>
+          <target state="translated">사용 하는 <ph id="ph1">`Try…Catch`</ph> 프로그램 비정상적 이거나 예기치 않은 이벤트의 발생을 신호에 문.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Reasons for this include the following:</source>
+          <target state="translated">이 문제의 원인은 다음과 같습니다.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Catching exceptions at runtime creates additional overhead, and is likely to be slower than pre-checking to avoid exceptions.</source>
+          <target state="translated">추가 오버 헤드를를 만들고 예외를 방지 하려면 사전 검사 보다 속도가 떨어지므로 런타임 시 예외를 catch 합니다.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If a <ph id="ph1">`Catch`</ph> block is not handled correctly, the exception might not be reported correctly to users.</source>
+          <target state="translated">경우에 <ph id="ph1">`Catch`</ph> 블록을 올바르게 처리 하지 않으면, 예외 사용자에 게 제대로 보고 하지 않을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Exception handling makes a program more complex.</source>
+          <target state="translated">예외 처리를 사용 하면 프로그램이 더 복잡 한 합니다.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>You do not always need a <ph id="ph1">`Try…Catch`</ph> statement to check for a condition that is likely to occur.</source>
+          <target state="translated">항상 원하지 않는 한 <ph id="ph1">`Try…Catch`</ph> 발생할 가능성이 있는 조건을 확인 하는 문이 있습니다.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The following example checks whether a file exists before trying to open it.</source>
+          <target state="translated">다음 예제에서는 파일을 열기 전에 있는지 여부를 확인 합니다.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>This reduces the need for catching an exception thrown by the &lt;xref:System.IO.File.OpenText%2A&gt; method.</source>
+          <target state="translated">Throw 된 예외를 catch 하기 위한 필요성을 줄이고이 &lt;xref:System.IO.File.OpenText%2A&gt;메서드.&lt;/xref:System.IO.File.OpenText%2A&gt;</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#94<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;94;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Ensure that code in <ph id="ph1">`Catch`</ph> blocks can properly report exceptions to users, whether through thread-safe logging or appropriate messages.</source>
+          <target state="translated">해당 코드를 확인 <ph id="ph1">`Catch`</ph> 블록 스레드로부터 안전한 로깅 또는 적절 한 메시지 통해 사용자에 게 예외를 올바르게 보고할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Otherwise, exceptions might remain unknown.</source>
+          <target state="translated">그렇지 않으면 예외를 알 수 없는 남아 있을 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Async Methods</source>
+          <target state="translated">비동기 메서드</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>If you mark a method with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier, you can use the <bpt id="p2">[</bpt>Await<ept id="p2">](../../../visual-basic/language-reference/operators/await-operator.md)</ept> operator in the method.</source>
+          <target state="translated">사용 하 여 메서드를 표시 하는 경우는 <bpt id="p1">[</bpt>비동기<ept id="p1">](../../../visual-basic/language-reference/modifiers/async.md)</ept> 사용할 수 있습니다 한정자는 <bpt id="p2">[</bpt>Await<ept id="p2">](../../../visual-basic/language-reference/operators/await-operator.md)</ept> 연산자를 메서드에서.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>A statement with the <ph id="ph1">`Await`</ph> operator suspends execution of the method until the awaited task completes.</source>
+          <target state="translated">사용 하 여 문을 <ph id="ph1">`Await`</ph> 연산자 대기 중인된 작업이 완료 될 때까지 메서드 실행을 일시 중단 합니다.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>The task represents ongoing work.</source>
+          <target state="translated">작업은 진행 중인 작업을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>When the task that's associated with the <ph id="ph1">`Await`</ph> operator finishes, execution resumes in the same method.</source>
+          <target state="translated">때 연결 된 작업은 <ph id="ph1">`Await`</ph> 연산자가 완료 되 면 동일한 메서드에서 실행이 다시 시작 합니다.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Control Flow in Async Programs<ept id="p1">](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept>.</source>
+          <target state="translated">자세한 내용은 참조 <bpt id="p1">[</bpt>비동기 프로그램의 제어 흐름<ept id="p1">](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>A task returned by an Async method may end in a faulted state, indicating that it completed due to an unhandled exception.</source>
+          <target state="translated">비동기 메서드에서 반환 된 작업은 처리 되지 않은 예외로 인해 완료 되었음을 나타내는 오류 상태로 종료 될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>A task may also end in a canceled state, which results in an <ph id="ph1">`OperationCanceledException`</ph> being thrown out of the await expression.</source>
+          <target state="translated">그 결과 취소 된 상태에서 작업을 종료할 수 있습니다는 <ph id="ph1">`OperationCanceledException`</ph> await 식에서 throw 되 고 있습니다.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>To catch either type of exception, place the <ph id="ph1">`Await`</ph> expression that's associated with the task in a <ph id="ph2">`Try`</ph> block, and catch the exception in the <ph id="ph3">`Catch`</ph> block.</source>
+          <target state="translated">어떤 유형의 예외를 catch 하는 경우, 배치는 <ph id="ph1">`Await`</ph> 식에서 해당 작업을 연관 된는 <ph id="ph2">`Try`</ph> 블록을에서 예외를 catch는 <ph id="ph3">`Catch`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>An example is provided later in this topic.</source>
+          <target state="translated">예제는이 항목의 뒷부분에 제공 됩니다.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>A task can be in a faulted state because multiple exceptions were responsible for its faulting.</source>
+          <target state="translated">작업 여러 예외가 그 안에서 오류가 발생 하는 일을 담당 되었기 때문에 오류가 발생 한 상태가 될 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>For example, the task might be the result of a call to &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;.</source>
+          <target state="translated">예를 들어, 작업 &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;.&lt;/xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt; 에 대 한 호출의 결과 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>When you await such a task, the caught exception is only one of the exceptions, and you can't predict which exception will be caught.</source>
+          <target state="translated">이러한 작업을 기다리는 경우 예외가 발생 했습니다 예외 중 하나만 이며 예외는 발생을 예측할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>An example is provided later in this topic.</source>
+          <target state="translated">예제는이 항목의 뒷부분에 제공 됩니다.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">`Await`</ph> expression can't be inside a <ph id="ph2">`Catch`</ph> block or <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`Await`</ph> 내 식이 될 수 없습니다는 <ph id="ph2">`Catch`</ph> 블록 또는 <ph id="ph3">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Iterators</source>
+          <target state="translated">반복기</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>An iterator function or <ph id="ph1">`Get`</ph> accessor performs a custom iteration over a collection.</source>
+          <target state="translated">반복기 함수 또는 <ph id="ph1">`Get`</ph> 접근자 컬렉션 사용자 지정 반복을 수행 합니다.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>An iterator uses a <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> statement to return each element of the collection one at a time.</source>
+          <target state="translated">반복기를 사용 하 여는 <bpt id="p1">[</bpt>생성<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> 문을 한 번에 컬렉션의 각 요소를 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>You call an iterator function by using a <bpt id="p1">[</bpt>For Each...Next Statement<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>.</source>
+          <target state="translated">반복기 함수를 사용 하 여 호출을 <bpt id="p1">[</bpt>각각에 대해... 다음 문<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Yield`</ph> statement can be inside a <ph id="ph2">`Try`</ph> block.</source>
+          <target state="translated">A <ph id="ph1">`Yield`</ph> 내부 문을 수는 <ph id="ph2">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Try`</ph> block that contains a <ph id="ph2">`Yield`</ph> statement can have <ph id="ph3">`Catch`</ph> blocks, and can have a <ph id="ph4">`Finally`</ph> block.</source>
+          <target state="translated">A <ph id="ph1">`Try`</ph> 포함 된 블록은 <ph id="ph2">`Yield`</ph> 문의 <ph id="ph3">`Catch`</ph> 을 차단 하 고 있을 수 있습니다는 <ph id="ph4">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>See the "Try Blocks in Visual Basic" section of <bpt id="p1">[</bpt>Iterators<ept id="p1">](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)</ept> for an example.</source>
+          <target state="translated">"Visual Basic에서 시도 블록" 섹션을 참조 <bpt id="p1">[</bpt>반복기<ept id="p1">](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)</ept> 대 한 예제입니다.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Yield`</ph> statement cannot be inside a <ph id="ph2">`Catch`</ph> block or a <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated">A <ph id="ph1">`Yield`</ph> 문 내 야는 <ph id="ph2">`Catch`</ph> 블록 또는 <ph id="ph3">`Finally`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`For Each`</ph> body (outside of the iterator function) throws an exception, a <ph id="ph2">`Catch`</ph> block in the iterator function is not executed, but a <ph id="ph3">`Finally`</ph> block in the iterator function is executed.</source>
+          <target state="translated">하는 경우는 <ph id="ph1">`For Each`</ph> 예외를 throw 하는 본문 (반복기 함수) 외부는 <ph id="ph2">`Catch`</ph> 블록 반복기 함수에이 실행 되지 않으면 하지만 <ph id="ph3">`Finally`</ph> 반복기 함수 블록이 실행 됩니다.</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Catch`</ph> block inside an iterator function catches only exceptions that occur inside the iterator function.</source>
+          <target state="translated">A <ph id="ph1">`Catch`</ph> 반복기 함수 내의 블록 반복기 함수 내 발생 하는 예외에만 catch 합니다.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Partial-Trust Situations</source>
+          <target state="translated">부분 신뢰 상황</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>In partial-trust situations, such as an application hosted on a network share, <ph id="ph1">`Try...Catch...Finally`</ph> does not catch security exceptions that occur before the method that contains the call is invoked.</source>
+          <target state="translated">네트워크 공유에서 호스팅되는 응용 프로그램과 같은 부분 신뢰 상황에서 <ph id="ph1">`Try...Catch...Finally`</ph> 호출을 포함 하는 메서드를 호출 하기 전에 발생 하는 보안 예외를 catch 하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>The following example, when you put it on a server share and run from there, produces the error "System.Security.SecurityException: Request Failed."</source>
+          <target state="translated">다음 예제에서는 할 때 서버 공유 및 실행에 여기에서 오류가 발생 하는 "System.Security.SecurityException: 실패 한 요청입니다."</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>For more information about security exceptions, see the &lt;xref:System.Security.SecurityException&gt; class.</source>
+          <target state="translated">보안 예외에 대 한 자세한 내용은 &lt;xref:System.Security.SecurityException&gt;클래스&lt;/xref:System.Security.SecurityException&gt; 를 참조 하십시오.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#85<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;85;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>In such a partial-trust situation, you have to put the <ph id="ph1">`Process.Start`</ph> statement in a separate <ph id="ph2">`Sub`</ph>.</source>
+          <target state="translated">이러한 부분 신뢰 상황에서 입력할 필요가 <ph id="ph1">`Process.Start`</ph> 문을 별도의 <ph id="ph2">`Sub`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>The initial call to the <ph id="ph1">`Sub`</ph> will fail.</source>
+          <target state="translated">에 대 한 초기 호출은 <ph id="ph1">`Sub`</ph> 실패 합니다.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>This enables <ph id="ph1">`Try...Catch`</ph> to catch it before the <ph id="ph2">`Sub`</ph> that contains <ph id="ph3">`Process.Start`</ph> is started and the security exception produced.</source>
+          <target state="translated">이 통해 <ph id="ph1">`Try...Catch`</ph> 를 하기 전에 catch는 <ph id="ph2">`Sub`</ph> 포함 하는 <ph id="ph3">`Process.Start`</ph> 시작 되 고 보안 예외를 생성 합니다.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the structure of the <ph id="ph1">`Try...Catch...Finally`</ph> statement.</source>
+          <target state="translated">다음 예제에서는의 구조는 <ph id="ph1">`Try...Catch...Finally`</ph> 문입니다.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#86<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;86;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`CreateException`</ph> method throws a <ph id="ph2">`NullReferenceException`</ph>.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`CreateException`</ph> 메서드가 throw 한 <ph id="ph2">`NullReferenceException`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>The code that generates the exception is not in a <ph id="ph1">`Try`</ph> block.</source>
+          <target state="translated">예외를 생성 하는 코드에 없는 <ph id="ph1">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Therefore, the <ph id="ph1">`CreateException`</ph> method does not handle the exception.</source>
+          <target state="translated">따라서는 <ph id="ph1">`CreateException`</ph> 메서드는 예외를 처리 하지 않습니다.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`RunSample`</ph> method does handle the exception because the call to the <ph id="ph2">`CreateException`</ph> method is in a <ph id="ph3">`Try`</ph> block.</source>
+          <target state="translated"><ph id="ph1">`RunSample`</ph> 때문에 메서드는 예외를 처리에 대 한 호출의 <ph id="ph2">`CreateException`</ph> 방법은에 <ph id="ph3">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The example includes <ph id="ph1">`Catch`</ph> statements for several types of exceptions, ordered from the most specific to the most general.</source>
+          <target state="translated">이 예제에서는 포함 <ph id="ph1">`Catch`</ph> 에서 정렬 된 여러 유형의 예외에 대 한 문을 가장 일반적인 가장 구체적인 합니다.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#91<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;91;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The following example shows how to use a <ph id="ph1">`Catch When`</ph> statement to filter on a conditional expression.</source>
+          <target state="translated">다음 예제를 사용 하는 방법을 보여 줍니다는 <ph id="ph1">`Catch When`</ph> 문을 조건 식에 필터를 적용 합니다.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>If the conditional expression evaluates to <ph id="ph1">`True`</ph>, the code in the <ph id="ph2">`Catch`</ph> block runs.</source>
+          <target state="translated">조건 식에 계산 되는 경우 <ph id="ph1">`True`</ph>의 코드는 <ph id="ph2">`Catch`</ph> 블록이 실행 됩니다.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#92<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;92;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>The following example has a <ph id="ph1">`Try…Catch`</ph> statement that is contained in a <ph id="ph2">`Try`</ph> block.</source>
+          <target state="translated">다음 예제에는 <ph id="ph1">`Try…Catch`</ph> 에 포함 된 문에 <ph id="ph2">`Try`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>The inner <ph id="ph1">`Catch`</ph> block throws an exception that has its <ph id="ph2">`InnerException`</ph> property set to the original exception.</source>
+          <target state="translated">내부 <ph id="ph1">`Catch`</ph> 있는 예외를 throw 하는 블록의 <ph id="ph2">`InnerException`</ph> 속성이 원래 예외로 설정 합니다.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The outer <ph id="ph1">`Catch`</ph> block reports its own exception and the inner exception.</source>
+          <target state="translated">외부 <ph id="ph1">`Catch`</ph> 블록 자체 예외와 내부 예외를 보고 합니다.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements#93<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStatements #&amp;93;<ept id="p2">](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/try-catch-finally-statement_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The following example illustrates exception handling for async methods.</source>
+          <target state="translated">다음 예제에서는 비동기 메서드에 대한 예외 처리를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>To catch an exception that applies to an async task, the <ph id="ph1">`Await`</ph> expression is in a <ph id="ph2">`Try`</ph> block of the caller, and the exception is caught in the <ph id="ph3">`Catch`</ph> block.</source>
+          <target state="translated">비동기 작업에 적용 되는 예외를 catch 하는 <ph id="ph1">`Await`</ph> 식이 <ph id="ph2">`Try`</ph> 호출자에 게, 그리고 예외 블록에 걸린는 <ph id="ph3">`Catch`</ph> 블록입니다.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Uncomment the <ph id="ph1">`Throw New Exception`</ph> line in the example to demonstrate exception handling.</source>
+          <target state="translated">예제에서 <ph id="ph1">`Throw New Exception`</ph> 줄의 주석 처리를 제거하여 예외 처리를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The exception is caught in the <ph id="ph1">`Catch`</ph> block, the task's <ph id="ph2">`IsFaulted`</ph> property is set to <ph id="ph3">`True`</ph>, and the task's <ph id="ph4">`Exception.InnerException`</ph> property is set to the exception.</source>
+          <target state="translated">예외에 걸린는 <ph id="ph1">`Catch`</ph> 블록을 작업의 <ph id="ph2">`IsFaulted`</ph> 속성이 <ph id="ph3">`True`</ph>, 및 작업의 <ph id="ph4">`Exception.InnerException`</ph> 예외 속성입니다.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>Uncomment the <ph id="ph1">`Throw New OperationCancelledException`</ph> line to demonstrate what happens when you cancel an asynchronous process.</source>
+          <target state="translated">주석 처리를 제거는 <ph id="ph1">`Throw New OperationCancelledException`</ph> 줄에는 비동기 프로세스를 취소 하면 결과 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The exception is caught in the <ph id="ph1">`Catch`</ph> block, and the task's <ph id="ph2">`IsCanceled`</ph> property is set to <ph id="ph3">`True`</ph>.</source>
+          <target state="translated">예외에 걸린는 <ph id="ph1">`Catch`</ph> 블록과 작업의 <ph id="ph2">`IsCanceled`</ph> 속성이 <ph id="ph3">`True`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>However, under some conditions that don't apply to this example, <ph id="ph1">`IsFaulted`</ph> is set to <ph id="ph2">`True`</ph> and <ph id="ph3">`IsCanceled`</ph> is set to <ph id="ph4">`False`</ph>.</source>
+          <target state="translated">그러나이 예에는 적용 되지 않는 몇 가지 상황에서 <ph id="ph1">`IsFaulted`</ph> 로 설정 된 <ph id="ph2">`True`</ph> 및 <ph id="ph3">`IsCanceled`</ph> 로 설정 된 <ph id="ph4">`False`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>csAsyncExceptions#1<ept id="p2">](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>csAsyncExceptions&amp;#1;<ept id="p2">](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">예제</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>The following example illustrates exception handling where multiple tasks can result in multiple exceptions.</source>
+          <target state="translated">다음 예제에서는 여러 작업에서 여러 예외가 발생할 수 있는 경우 예외 처리를 보여 줍니다.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Try`</ph> block has the <ph id="ph2">`Await`</ph> expression for the task that &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt; returned.</source>
+          <target state="translated"><ph id="ph1">`Try`</ph> 블록에는 <ph id="ph2">`Await`</ph> 작업에 대 한 식을 &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;반환 됩니다.&lt;/xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>The task is complete when the three tasks to which &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt; is applied are complete.</source>
+          <target state="translated">세 가지 작업을 하는 경우 작업이 완료 되 &lt;xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;적용 완료.&lt;/xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>Each of the three tasks causes an exception.</source>
+          <target state="translated">세 작업에서 각각 예외가 발생합니다.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Catch`</ph> block iterates through the exceptions, which are found in the <ph id="ph2">`Exception.InnerExceptions`</ph> property of the task that <ph id="ph3">`Task.WhenAll`</ph> returned.</source>
+          <target state="translated"><ph id="ph1">`Catch`</ph> 블록에 있는 예외를 통해 반복 하는 <ph id="ph2">`Exception.InnerExceptions`</ph> 는 작업의 속성 하 <ph id="ph3">`Task.WhenAll`</ph> 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>csAsyncExceptions#3<ept id="p2">](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>csAsyncExceptions&amp;#3;<ept id="p2">](../../../csharp/language-reference/keywords/codesnippet/VisualBasic/try-catch-finally-statement_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.Information.Err%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.Information.Err%2A&gt;&lt;/xref:Microsoft.VisualBasic.Information.Err%2A&gt;</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Exception&gt;</source>
+          <target state="translated">&lt;xref:System.Exception&gt;&lt;/xref:System.Exception&gt;</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Exit Statement<ept id="p1">](../../../visual-basic/language-reference/statements/exit-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Exit 문<ept id="p1">](../../../visual-basic/language-reference/statements/exit-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>On Error Statement<ept id="p1">](../../../visual-basic/language-reference/statements/on-error-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>On Error 문<ept id="p1">](../../../visual-basic/language-reference/statements/on-error-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Best Practices for Using Code Snippets<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/best-practices-for-using-code-snippets)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>코드 조각 사용 모범 사례<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/best-practices-for-using-code-snippets)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Exception Handling<ept id="p1">](https://msdn.microsoft.com/library/dd997415)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>예외 처리<ept id="p1">](https://msdn.microsoft.com/library/dd997415)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Throw Statement<ept id="p1">](../../../visual-basic/language-reference/statements/throw-statement.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Throw 문<ept id="p1">](../../../visual-basic/language-reference/statements/throw-statement.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">15d8f131aa834321fcf7e8ca633929385c666e6a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\strings\using-regular-expressions-with-the-maskedtextbox-control.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">80702c7e0e9fe39542497990201cc36cf0125507</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e5ae2ba3dacc188281a1be1a092d78f7c3d79f3</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using Regular Expressions with the MaskedTextBox Control in Visual Basic | Microsoft Docs</source>
+          <target state="translated">在 Visual Basic 中 MaskedTextBox 控件中使用正则表达式 |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using Regular Expressions with the MaskedTextBox Control in Visual Basic</source>
+          <target state="translated">在 MaskedTextBox 控件中使用正则表达式 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example demonstrates how to convert simple regular expressions to work with the &lt;xref:System.Windows.Forms.MaskedTextBox&gt; control.</source>
+          <target state="translated">此示例演示如何转换简单的正则表达式，以使用&lt;xref:System.Windows.Forms.MaskedTextBox&gt;控件。&lt;/xref:System.Windows.Forms.MaskedTextBox&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Description of the Masking Language</source>
+          <target state="translated">掩码语言的说明</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The standard &lt;xref:System.Windows.Forms.MaskedTextBox&gt; masking language is based on the one used by the <ph id="ph1">`Masked Edit`</ph> control in <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 6.0 and should be familiar to users migrating from that platform.</source>
+          <target state="translated">标准&lt;xref:System.Windows.Forms.MaskedTextBox&gt;掩码语言取决于使用的<ph id="ph1">`Masked Edit`</ph>控制<ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>6.0 应该熟悉该平台中迁移的用户。&lt;/xref:System.Windows.Forms.MaskedTextBox&gt;</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt; property of the &lt;xref:System.Windows.Forms.MaskedTextBox&gt; control specifies what input mask to use.</source>
+          <target state="translated">&lt;xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt;属性&lt;xref:System.Windows.Forms.MaskedTextBox&gt;控件指定要使用哪些输入的掩码。&lt;/xref:System.Windows.Forms.MaskedTextBox&gt; &lt;/xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The mask must be a string composed of one or more of the masking elements from the following table.</source>
+          <target state="translated">掩码必须是一个或多个从下表中的屏蔽元素构成的字符串。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Masking element</source>
+          <target state="translated">屏蔽元素</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">描述</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Regular expression element</source>
+          <target state="translated">正则表达式元素</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>0</source>
+          <target state="translated">0</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Any single digit between 0 and 9.</source>
+          <target state="translated">0 到 9 之间的任何单个数字。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Entry required.</source>
+          <target state="translated">所需的项。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>\d</source>
+          <target state="translated">\d</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>9</source>
+          <target state="translated">9</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Digit or space.</source>
+          <target state="translated">数字或空格。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Entry optional.</source>
+          <target state="translated">可选的输入。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>[ \d]?</source>
+          <target state="translated">[ \d]?</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Digit or space.</source>
+          <target state="translated">数字或空格。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Entry optional.</source>
+          <target state="translated">可选的输入。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If this position is left blank in the mask, it will be rendered as a space.</source>
+          <target state="translated">如果此位置为空掩码中，它将呈现为一个空格。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Plus (+) and minus (-) signs are allowed.</source>
+          <target state="translated">加号 （+） 和减号 （-） 允许符号。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>[ \d+-]?</source>
+          <target state="translated">[ \d+-]?</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>L</source>
+          <target state="translated">L</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>ASCII letter.</source>
+          <target state="translated">ASCII 字母。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Entry required.</source>
+          <target state="translated">所需的项。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>[a-zA-Z]</source>
+          <target state="translated">[-zA-A-z]</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>?</source>
+          <target state="translated">?</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>ASCII letter.</source>
+          <target state="translated">ASCII 字母。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Entry optional.</source>
+          <target state="translated">可选的输入。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>[a-zA-Z]?</source>
+          <target state="translated">[-zA-A-z]？</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Character.</source>
+          <target state="translated">字符。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Entry required.</source>
+          <target state="translated">所需的项。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]</source>
+          <target state="translated">[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="translated">C</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Character.</source>
+          <target state="translated">字符。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Entry optional.</source>
+          <target state="translated">可选的输入。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]?</source>
+          <target state="translated">[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]？</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>A</source>
+          <target state="translated">包含当前请求的 URL 的</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Alphanumeric.</source>
+          <target state="translated">字母数字。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Entry optional.</source>
+          <target state="translated">可选的输入。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>\W</source>
+          <target state="translated">\W</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="translated">。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Culture-appropriate decimal placeholder.</source>
+          <target state="translated">相应于区域性的小数点占位符。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>,</source>
+          <target state="translated">,</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Culture-appropriate thousands placeholder.</source>
+          <target state="translated">相应的区域性的千位占位符。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>:</source>
+          <target state="translated">:</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Culture-appropriate time separator.</source>
+          <target state="translated">相应于区域性的时间分隔符。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Culture-appropriate date separator.</source>
+          <target state="translated">相应于区域性的日期分隔符。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Culture-appropriate currency symbol.</source>
+          <target state="translated">相应于区域性的货币符号。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Converts all characters that follow to lowercase.</source>
+          <target state="translated">将转换为小写后面的所有字符。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Converts all characters that follow to uppercase.</source>
+          <target state="translated">将转换为大写后面的所有字符。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>&amp;#124;</source>
+          <target state="translated">&amp;#124;</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Undoes a previous shift up or shift down.</source>
+          <target state="translated">撤消上一个班次向上或向下移动。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Not available.</source>
+          <target state="translated">不可用。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Escapes a mask character, turning it into a literal.</source>
+          <target state="translated">掩码字符，将其转变为文字进行转义。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>"<ph id="ph1">\\</ph><ph id="ph2">\\</ph>" is the escape sequence for a backslash.</source>
+          <target state="translated">"<ph id="ph1">\\</ph><ph id="ph2">\\</ph>"是一个反斜杠的转义序列。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>All other characters.</source>
+          <target state="translated">所有其他字符。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Literals.</source>
+          <target state="translated">原义字符。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>All non-mask elements will appear as themselves within &lt;xref:System.Windows.Forms.MaskedTextBox&gt;.</source>
+          <target state="translated">所有非掩码元素将显示为自身内&lt;xref:System.Windows.Forms.MaskedTextBox&gt;。&lt;/xref:System.Windows.Forms.MaskedTextBox&gt;</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>All other characters.</source>
+          <target state="translated">所有其他字符。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The decimal (.), thousandths (,), time (:), date (/), and currency ($) symbols default to displaying those symbols as defined by the application's culture.</source>
+          <target state="translated">小数点 （.），千分位 （，）、 时间 （:）、 （/）、 日期和货币 （$） 符号默认为显示这些符号由应用程序的区域性。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>You can force them to display symbols for another culture by using the &lt;xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A&gt; property.</source>
+          <target state="translated">您可以强制其使用显示用于另一个区域性的符号&lt;xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A&gt;属性。&lt;/xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A&gt;</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Regular Expressions and Masks</source>
+          <target state="translated">正则表达式和蒙板</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Although you can use regular expressions and masks to validate user input, they are not completely equivalent.</source>
+          <target state="translated">尽管可以使用正则表达式和蒙板来验证用户输入，但它们并不完全相同。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Regular expressions can express more complex patterns than masks, but masks can express the same information more succinctly and in a culturally relevant format.</source>
+          <target state="translated">正则表达式可以表示掩码，相比更复杂的模式，但更简洁地采用与区域相关的格式掩码可以表达相同的信息。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The following table compares four regular expressions and the equivalent mask for each.</source>
+          <target state="translated">下表比较了每个四个正则表达式和等效的掩码。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Regular Expression</source>
+          <target state="translated">正则表达式</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Mask</source>
+          <target state="translated">掩码</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Notes</source>
+          <target state="translated">备注</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`/`</ph> character in the mask is a logical date separator, and it will appear to the user as the date separator appropriate to the application's current culture.</source>
+          <target state="translated"><ph id="ph1">`/`</ph>掩码中的字符是逻辑日期分隔符，并且它将向用户显示适合于应用程序的当前区域性的日期分隔符。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>A date (day, month abbreviation, and year) in United States format in which the three-letter month abbreviation is displayed with an initial uppercase letter followed by two lowercase letters.</source>
+          <target state="translated">在其中三个字母月份的缩写显示为首字母大写、 两个小写字母后跟与美国格式的日期 （日、 月缩写和年）。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>United States phone number, area code optional.</source>
+          <target state="translated">美国电话号码，区号为可选项。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>If the user does not wish to enter the optional characters, she can either enter spaces or place the mouse pointer directly at the position in the mask represented by the first 0.</source>
+          <target state="translated">如果用户不希望输入的可选字符，她可以输入空格，或将鼠标指针放直接由第一个 0 表示掩码中的位置。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>A currency value in the range of 0 to 999999.</source>
+          <target state="translated">0 到 999999 的范围中的货币值。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The currency, thousandth, and decimal characters will be replaced at run-time with their culture-specific equivalents.</source>
+          <target state="translated">货币、 千分位和十进制字符将替换在运行时它们特定于区域性的等效项。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt;&lt;/xref:System.Windows.Forms.MaskedTextBox.Mask%2A&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Windows.Forms.MaskedTextBox&gt;</source>
+          <target state="translated">&lt;xref:System.Windows.Forms.MaskedTextBox&gt;&lt;/xref:System.Windows.Forms.MaskedTextBox&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Validating Strings in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>验证在 Visual Basic 中的字符串<ept id="p1">](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>MaskedTextBox Control<ept id="p1">](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>MaskedTextBox 控件<ept id="p1">](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

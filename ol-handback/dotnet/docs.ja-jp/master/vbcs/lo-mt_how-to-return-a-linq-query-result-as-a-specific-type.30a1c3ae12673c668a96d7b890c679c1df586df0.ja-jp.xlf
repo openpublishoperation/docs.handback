@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2031e24ca0fe5aa86ca6c0bcd0e0e4f27238c8ae</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\linq\how-to-return-a-linq-query-result-as-a-specific-type.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ee2a752d24bf13b5b63467eb8d003af0b03d955d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8c8ce8b5251fa3784640d255b074356a49f2c46c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Return a LINQ Query Result as a Specific Type (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">方法: 特定の型 (Visual Basic) での LINQ クエリ結果を返す |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Return a LINQ Query Result as a Specific Type (Visual Basic)</source>
+          <target state="translated">方法 : LINQ クエリ結果を特定の型で返す (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.</source>
+          <target state="translated">統合言語クエリ (LINQ) により、簡単にデータベース情報にアクセスし、クエリを実行します。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>By default, LINQ queries return a list of objects as an anonymous type.</source>
+          <target state="translated">既定では、LINQ クエリは、匿名型としてオブジェクトの一覧を返します。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can also specify that a query return a list of a specific type by using the <ph id="ph1">`Select`</ph> clause.</source>
+          <target state="translated">クエリを使用して、特定の種類の一覧を返すことを指定することも、<ph id="ph1">`Select`</ph>句。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The following example shows how to create a new application that performs queries against a SQL Server database and projects the results as a specific named type.</source>
+          <target state="translated">次の例では、新しいアプリケーションは SQL Server データベースに対してクエリを実行し、結果を特定の名前付きの型を作成する方法を示します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Anonymous Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept> and <bpt id="p2">[</bpt>Select Clause<ept id="p2">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。<bpt id="p1">[</bpt>匿名型<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept>と<bpt id="p2">[</bpt>Select 句<ept id="p2">](../../../../visual-basic/language-reference/queries/select-clause.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The examples in this topic use the Northwind sample database.</source>
+          <target state="translated">このトピックの例では、Northwind サンプル データベースを使用します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If you do not have the Northwind sample database on your development computer, you can download it from the <bpt id="p1">[</bpt>Microsoft Download Center<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=98088)</ept> Web site.</source>
+          <target state="translated">開発用コンピューターに Northwind サンプル データベースがないをからダウンロードできます、 <bpt id="p1">[</bpt>Microsoft ダウンロード センター<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=98088)</ept> Web サイトです。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For instructions, see <bpt id="p1">[</bpt>Downloading Sample Databases<ept id="p1">](https://msdn.microsoft.com/library/bb399411)</ept>.</source>
+          <target state="translated">手順については、次を参照してください。<bpt id="p1">[</bpt>サンプル データベースのダウンロード<ept id="p1">](https://msdn.microsoft.com/library/bb399411)</ept>します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To create a connection to a database</source>
+          <target state="translated">データベースへの接続を作成するには</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, open <bpt id="p1">**</bpt>Server Explorer<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Database Explorer<ept id="p2">**</ept> by clicking <bpt id="p3">**</bpt>Server Explorer<ept id="p3">**</ept><ph id="ph2">/</ph><bpt id="p4">**</bpt>Database Explorer<ept id="p4">**</ept> on the <bpt id="p5">**</bpt>View<ept id="p5">**</ept> menu.</source>
+          <target state="translated">Visual Studio で開きます<bpt id="p1">**</bpt>サーバー エクスプ ローラー<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>データベース エクスプ ローラー<ept id="p2">**</ept>をクリックして<bpt id="p3">**</bpt>サーバー エクスプ ローラー<ept id="p3">**</ept><ph id="ph2">/</ph><bpt id="p4">**</bpt>データベース エクスプ ローラー<ept id="p4">**</ept>上、<bpt id="p5">**</bpt>ビュー<ept id="p5">**</ept>メニュー。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Right-click <bpt id="p1">**</bpt>Data Connections<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Server Explorer<ept id="p2">**</ept><ph id="ph1">/</ph><bpt id="p3">**</bpt>Database Explorer<ept id="p3">**</ept> and then click <bpt id="p4">**</bpt>Add Connection<ept id="p4">**</ept>.</source>
+          <target state="translated">右クリック<bpt id="p1">**</bpt>データ接続<ept id="p1">**</ept>で<bpt id="p2">**</bpt>サーバー エクスプ ローラー<ept id="p2">**</ept><ph id="ph1">/</ph><bpt id="p3">**</bpt>データベース エクスプ ローラー<ept id="p3">**</ept>  をクリックし、<bpt id="p4">**</bpt>接続の追加<ept id="p4">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Specify a valid connection to the Northwind sample database.</source>
+          <target state="translated">Northwind サンプル データベースに有効な接続を指定します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>To add a project that contains a LINQ to SQL file</source>
+          <target state="translated">LINQ to SQL ファイルを含むプロジェクトを追加するのには</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Visual Studio での<bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept> メニューをポイント<bpt id="p2">**</bpt>新規<ept id="p2">**</ept> をクリックし、<bpt id="p3">**</bpt>プロジェクト<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Select Visual Basic <bpt id="p1">**</bpt>Windows Forms Application<ept id="p1">**</ept> as the project type.</source>
+          <target state="translated">Visual Basic を選択して<bpt id="p1">**</bpt>Windows フォーム アプリケーション<ept id="p1">**</ept>プロジェクトの種類として。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Add New Item<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[プロジェクト]<ept id="p1">**</ept> メニューの <bpt id="p2">**</bpt>[新しい項目の追加]<ept id="p2">**</ept>をクリックします。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>LINQ to SQL Classes<ept id="p1">**</ept> item template.</source>
+          <target state="translated">選択、 <bpt id="p1">**</bpt>LINQ to SQL クラス<ept id="p1">**</ept>項目テンプレートです。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Name the file <ph id="ph1">`northwind.dbml`</ph>.</source>
+          <target state="translated">そのファイルに <ph id="ph1">`northwind.dbml`</ph> という名前を付けます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[追加]<ept id="p1">**</ept>をクリックします。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The Object Relational Designer (O/R Designer) is opened for the northwind.dbml file.</source>
+          <target state="translated">Northwind.dbml ファイルには、オブジェクト リレーショナル デザイナー (O/R デザイナー) が開かれます。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To add tables to query to the O/R Designer</source>
+          <target state="translated">O/R デザイナーをクエリにテーブルを追加するには</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Server Explorer<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>Database Explorer<ept id="p2">**</ept>, expand the connection to the Northwind database.</source>
+          <target state="translated"><bpt id="p1">**</bpt>サーバー エクスプ ローラー<ept id="p1">**</ept><ph id="ph1">/</ph><bpt id="p2">**</bpt>データベース エクスプ ローラー<ept id="p2">**</ept>、Northwind データベースへの接続を展開します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Expand the <bpt id="p1">**</bpt>Tables<ept id="p1">**</ept> folder.</source>
+          <target state="translated">展開、<bpt id="p1">**</bpt>テーブル<ept id="p1">**</ept>フォルダーです。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If you have closed the O/R Designer, you can reopen it by double-clicking the northwind.dbml file that you added earlier.</source>
+          <target state="translated">O/R デザイナーを閉じていた場合は、前に追加した northwind.dbml ファイルをダブルクリックして開くことができます。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Click the Customers table and drag it to the left pane of the designer.</source>
+          <target state="translated">Customers テーブルをクリックし、デザイナーの左ペインにドラッグします。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The designer creates a new <ph id="ph1">`Customer`</ph> object for your project.</source>
+          <target state="translated">デザイナーが、新たに作成<ph id="ph1">`Customer`</ph>プロジェクトのオブジェクト。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>You can project a query result as the <ph id="ph1">`Customer`</ph> type or as a type that you create.</source>
+          <target state="translated">クエリ結果を射影する、<ph id="ph1">`Customer`</ph>型または作成する型として。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>This sample will create a new type in a later procedure and project a query result as that type.</source>
+          <target state="translated">このサンプルでは、後の手順で新しい型が作成され、クエリ結果をその型としてすることができます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Save your changes and close the designer.</source>
+          <target state="translated">変更内容を保存してデザイナーを閉じます。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Save your project.</source>
+          <target state="translated">プロジェクトを保存します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To add code to query the database and display the results</source>
+          <target state="translated">データベースを照会し、結果を表示するコードを追加するには</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>From the <bpt id="p1">**</bpt>Toolbox<ept id="p1">**</ept>, drag a &lt;xref:System.Windows.Forms.DataGridView&gt; control onto the default Windows Form for your project, Form1.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ツールボックス<ept id="p1">**</ept>、ドラッグ、&lt;xref:System.Windows.Forms.DataGridView&gt;コントロールをプロジェクトの Form1 の既定の Windows フォームにします&lt;/xref:System.Windows.Forms.DataGridView&gt;。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Double-click Form1 to modify the Form1 class.</source>
+          <target state="translated">Form1 クラスを変更する Form1 をダブルクリックします。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>After the <ph id="ph1">`End Class`</ph> statement of the Form1 class, add the following code to create a <ph id="ph2">`CustomerInfo`</ph> type to hold the query results for this sample.</source>
+          <target state="translated">後に、 <ph id="ph1">`End Class`</ph> Form1 クラスのステートメントを作成する次のコードを追加する、<ph id="ph2">`CustomerInfo`</ph>このサンプルのクエリ結果を保持する型。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQToSQLHowTos#16<ept id="p2">](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQToSQLHowTos&amp;#16;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When you added tables to the O/R Designer, the designer added a &lt;xref:System.Data.Linq.DataContext&gt; object to your project.</source>
+          <target state="translated">O/R デザイナーにテーブルを追加したときに、デザイナーが追加、&lt;xref:System.Data.Linq.DataContext&gt;オブジェクトをプロジェクトにします&lt;/xref:System.Data.Linq.DataContext&gt;。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>This object contains the code that you must have to access those tables, and to access individual objects and collections for each table.</source>
+          <target state="translated">このオブジェクトには、これらのテーブルにアクセスして、個々 のオブジェクトと各テーブルのコレクションにアクセスに必要なコードが含まれています。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Data.Linq.DataContext&gt; object for your project is named based on the name of your .dbml file.</source>
+          <target state="translated">&lt;xref:System.Data.Linq.DataContext&gt;オブジェクトは、プロジェクトの名前に基づいての .dbml ファイルの名前&lt;/xref:System.Data.Linq.DataContext&gt;。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For this project, the &lt;xref:System.Data.Linq.DataContext&gt; object is named <ph id="ph1">`northwindDataContext`</ph>.</source>
+          <target state="translated">このプロジェクトで、&lt;xref:System.Data.Linq.DataContext&gt;オブジェクトの名前は<ph id="ph1">`northwindDataContext`</ph>&lt;/xref:System.Data.Linq.DataContext&gt;。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>You can create an instance of the &lt;xref:System.Data.Linq.DataContext&gt; in your code and query the tables specified by the O/R Designer.</source>
+          <target state="translated">インスタンスを作成することができます、 &lt;xref:System.Data.Linq.DataContext&gt;O/R デザイナーで指定されたテーブル内のコードとクエリ&lt;/xref:System.Data.Linq.DataContext&gt;。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`Load`</ph> event of the Form1 class, add the following code to query the tables that are exposed as properties of your data context.</source>
+          <target state="translated"><ph id="ph1">`Load`</ph> Form1 クラスのイベントは、データ コンテキストのプロパティとして公開されているテーブルを照会する次のコードを追加します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Select`</ph> clause of the query will create a new <ph id="ph2">`CustomerInfo`</ph> type instead of an anonymous type for each item of the query result.</source>
+          <target state="translated"><ph id="ph1">`Select`</ph>新しいクエリの句が作成されます<ph id="ph2">`CustomerInfo`</ph>クエリ結果の項目ごとに匿名型ではなく行型です。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQToSQLHowTos#15<ept id="p2">](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbLINQToSQLHowTos&amp;#15;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Press F5 to run your project and view the results.</source>
+          <target state="translated">F5 キーを押してプロジェクトを実行し、結果を表示します。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LINQ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>LINQ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Queries<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>クエリ<ept id="p1">](../../../../visual-basic/language-reference/queries/queries.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ to SQL<ept id="p1">](https://msdn.microsoft.com/library/bb386976)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ to SQL<ept id="p1">](https://msdn.microsoft.com/library/bb386976)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>DataContext Methods (O/R Designer)<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>DataContext メソッド (O/R デザイナー)<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/datacontext-methods-o-r-designer)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

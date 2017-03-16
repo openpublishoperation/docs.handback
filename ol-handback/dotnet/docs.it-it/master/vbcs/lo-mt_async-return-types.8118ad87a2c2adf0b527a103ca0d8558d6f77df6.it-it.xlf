@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">703d3fc3f503017edf38521d77f9b15a92d0ebf3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\async-return-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14d5c5c08d314d8cba1e1d008bca242e49b0ebaf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">95d6b73c1a0412eea0b716e496a460af7e228958</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Async Return Types (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Tipi restituiti asincroni (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Async Return Types (Visual Basic)</source>
+          <target state="translated">Tipi restituiti asincroni (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Async methods have three possible return types: &lt;xref:System.Threading.Tasks.Task%601&gt;, &lt;xref:System.Threading.Tasks.Task&gt;, and void.</source>
+          <target state="translated">I metodi asincroni sono tre possibili tipi restituiti: &lt;xref:System.Threading.Tasks.Task%601&gt;, &lt;xref:System.Threading.Tasks.Task&gt;e void.&lt;/xref:System.Threading.Tasks.Task&gt; &lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, the void return type is written as a <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedure.</source>
+          <target state="translated">In Visual Basic, il tipo restituito void viene scritto come un <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedura.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For more information about async methods, see <bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sui metodi asincroni, vedere <bpt id="p1">[</bpt>la programmazione asincrona con Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.</source>
+          <target state="translated">Ogni tipo restituito viene esaminato in una delle sezioni seguenti e alla fine dell'argomento è disponibile un esempio completo che usa tutti i tre tipi.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Per eseguire l'esempio, è necessario disporre di Visual Studio 2012 o versione successiva e .NET Framework 4.5 o versioni successive installato nel computer in uso.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TaskTReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Task(T) Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TaskTReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Tipo restituito Task(T)</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.Tasks.Task%601&gt; return type is used for an async method that contains a <bpt id="p1">[</bpt>Return<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> statement in which the operand has type <ph id="ph1">`TResult`</ph>.</source>
+          <target state="translated">Il &lt;xref:System.Threading.Tasks.Task%601&gt;tipo restituito viene utilizzato per un metodo asincrono che contiene un <bpt id="p1">[</bpt>restituire<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> istruzione in cui l'operando è di tipo <ph id="ph1">`TResult`</ph>.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`TaskOfT_MethodAsync`</ph> async method contains a return statement that returns an integer.</source>
+          <target state="translated">Nell'esempio seguente, il <ph id="ph1">`TaskOfT_MethodAsync`</ph> metodo asincrono contiene un'istruzione return che restituisce un valore integer.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Therefore, the method declaration must specify a return type of <ph id="ph1">`Task(Of Integer)`</ph>.</source>
+          <target state="translated">Pertanto, la dichiarazione del metodo deve specificare un tipo restituito di <ph id="ph1">`Task(Of Integer)`</ph>.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`TaskOfT_MethodAsync`</ph> is called from within an await expression, the await expression retrieves the integer value (the value of <ph id="ph2">`leisureHours`</ph>) that's stored in the task that's returned by <ph id="ph3">`TaskOfT_MethodAsync`</ph>.</source>
+          <target state="translated">Quando <ph id="ph1">`TaskOfT_MethodAsync`</ph> viene chiamato dall'interno di un'espressione await, l'espressione await recupera il valore integer (il valore di <ph id="ph2">`leisureHours`</ph>) che viene archiviato nell'attività restituito da <ph id="ph3">`TaskOfT_MethodAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For more information about await expressions, see <bpt id="p1">[</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sulle espressioni await, vedere <bpt id="p1">[</bpt>operatore Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following code calls and awaits method <ph id="ph1">`TaskOfT_MethodAsync`</ph>.</source>
+          <target state="translated">Il codice seguente chiama e attende metodo <ph id="ph1">`TaskOfT_MethodAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The result is assigned to the <ph id="ph1">`result1`</ph> variable.</source>
+          <target state="translated">Il risultato viene assegnato per il <ph id="ph1">`result1`</ph> variabile.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can better understand how this happens by separating the call to <ph id="ph1">`TaskOfT_MethodAsync`</ph> from the application of <ph id="ph2">`Await`</ph>, as the following code shows.</source>
+          <target state="translated">È possibile comprendere meglio come ciò separando la chiamata a <ph id="ph1">`TaskOfT_MethodAsync`</ph> dall'applicazione di <ph id="ph2">`Await`</ph>, come mostrato nel codice seguente.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A call to method <ph id="ph1">`TaskOfT_MethodAsync`</ph> that isn't immediately awaited returns a <ph id="ph2">`Task(Of Integer)`</ph>, as you would expect from the declaration of the method.</source>
+          <target state="translated">Una chiamata al metodo <ph id="ph1">`TaskOfT_MethodAsync`</ph> che non restituisce immediatamente atteso un <ph id="ph2">`Task(Of Integer)`</ph>, come previsto dalla dichiarazione del metodo.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The task is assigned to the <ph id="ph1">`integerTask`</ph> variable in the example.</source>
+          <target state="translated">L'attività viene assegnata per il <ph id="ph1">`integerTask`</ph> variabile nell'esempio.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`integerTask`</ph> is a &lt;xref:System.Threading.Tasks.Task%601&gt;, it contains a &lt;xref:System.Threading.Tasks.Task%601.Result&gt; property of type <ph id="ph2">`TResult`</ph>.</source>
+          <target state="translated">Poiché <ph id="ph1">`integerTask`</ph> è un &lt;xref:System.Threading.Tasks.Task%601&gt;, contiene un &lt;xref:System.Threading.Tasks.Task%601.Result&gt;proprietà di tipo <ph id="ph2">`TResult`</ph>.&lt;/xref:System.Threading.Tasks.Task%601.Result&gt; &lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In this case, TResult represents an integer type.</source>
+          <target state="translated">In questo caso, TResult rappresenta un tipo Integer.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`Await`</ph> is applied to <ph id="ph2">`integerTask`</ph>, the await expression evaluates to the contents of the &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt; property of <ph id="ph3">`integerTask`</ph>.</source>
+          <target state="translated">Quando <ph id="ph1">`Await`</ph> viene applicato a <ph id="ph2">`integerTask`</ph>, l'espressione await restituisce il contenuto della &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt;proprietà di <ph id="ph3">`integerTask`</ph>.&lt;/xref:System.Threading.Tasks.Task%601.Result%2A&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The value is assigned to the <ph id="ph1">`result2`</ph> variable.</source>
+          <target state="translated">Il valore viene assegnato per il <ph id="ph1">`result2`</ph> variabile.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt; property is a blocking property.</source>
+          <target state="translated">Il &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt;è una proprietà di blocco.&lt;/xref:System.Threading.Tasks.Task%601.Result%2A&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available.</source>
+          <target state="translated">Se si prova ad accedervi prima del completamento dell'attività, il thread attualmente attivo viene bloccato fino a quando l'attività non viene completata e il valore non è disponibile.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In most cases, you should access the value by using <ph id="ph1">`Await`</ph> instead of accessing the property directly.</source>
+          <target state="translated">Nella maggior parte dei casi, è necessario accedere al valore utilizzando <ph id="ph1">`Await`</ph> anziché accedere direttamente alla proprietà.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The display statements in the following code verify that the values of the <ph id="ph1">`result1`</ph> variable, the <ph id="ph2">`result2`</ph> variable, and the <ph id="ph3">`Result`</ph> property are the same.</source>
+          <target state="translated">Le istruzioni di visualizzazione nel codice seguente verificare che i valori di <ph id="ph1">`result1`</ph> variabile, il <ph id="ph2">`result2`</ph> variabile e <ph id="ph3">`Result`</ph> proprietà sono uguali.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Remember that the <ph id="ph1">`Result`</ph> property is a blocking property and shouldn't be accessed before its task has been awaited.</source>
+          <target state="translated">Tenere presente che la <ph id="ph1">`Result`</ph> proprietà è una proprietà di blocco e non deve avvenire prima che l'attività è stata attesa.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TaskReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Task Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TaskReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Tipo restituito dell'attività</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Async methods that don't contain a return statement or that contain a return statement that doesn't return an operand usually have a return type of &lt;xref:System.Threading.Tasks.Task&gt;.</source>
+          <target state="translated">I metodi asincroni che non contengono un'istruzione return o che contiene un'istruzione return che non restituisce un operando in genere con un tipo restituito di &lt;xref:System.Threading.Tasks.Task&gt;.&lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Such methods would be <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedures if they were written to run synchronously.</source>
+          <target state="translated">Tali metodi sarebbero <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedure se sono stati scritti per eseguire in modo sincrono.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you use a <ph id="ph1">`Task`</ph> return type for an async method, a calling method can use an <ph id="ph2">`Await`</ph> operator to suspend the caller's completion until the called async method has finished.</source>
+          <target state="translated">Se si utilizza un <ph id="ph1">`Task`</ph> tipo restituito per un metodo asincrono, è possibile utilizzare un metodo chiamante un <ph id="ph2">`Await`</ph> operatore di sospendere il completamento del chiamante fino al termine il metodo asincrono chiamato.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the following example, async method <ph id="ph1">`Task_MethodAsync`</ph> doesn't contain a return statement.</source>
+          <target state="translated">Nell'esempio seguente, il metodo asincrono <ph id="ph1">`Task_MethodAsync`</ph> non contiene un'istruzione return.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Therefore, you specify a return type of <ph id="ph1">`Task`</ph> for the method, which enables <ph id="ph2">`Task_MethodAsync`</ph> to be awaited.</source>
+          <target state="translated">È pertanto necessario specificare un tipo restituito di <ph id="ph1">`Task`</ph> per il metodo, che consente di <ph id="ph2">`Task_MethodAsync`</ph> per essere atteso.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The definition of the <ph id="ph1">`Task`</ph> type doesn't include a <ph id="ph2">`Result`</ph> property to store a return value.</source>
+          <target state="translated">La definizione di <ph id="ph1">`Task`</ph> tipo non include un <ph id="ph2">`Result`</ph> proprietà per archiviare un valore restituito.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task_MethodAsync`</ph> is called and awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous <ph id="ph2">`Sub`</ph> or void-returning method.</source>
+          <target state="translated"><ph id="ph1">`Task_MethodAsync`</ph>viene chiamato e atteso utilizzando un'istruzione await anziché un'espressione await, simile all'istruzione di chiamata per sincrona <ph id="ph2">`Sub`</ph> o un metodo che restituisce void.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The application of an <ph id="ph1">`Await`</ph> operator in this case doesn't produce a value.</source>
+          <target state="translated">L'applicazione di un <ph id="ph1">`Await`</ph> operatore in questo caso, non genera un valore.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The following code calls and awaits method <ph id="ph1">`Task_MethodAsync`</ph>.</source>
+          <target state="translated">Il codice seguente chiama e attende metodo <ph id="ph1">`Task_MethodAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>As in the previous &lt;xref:System.Threading.Tasks.Task%601&gt; example, you can separate the call to <ph id="ph1">`Task_MethodAsync`</ph> from the application of an <ph id="ph2">`Await`</ph> operator, as the following code shows.</source>
+          <target state="translated">Come il precedente &lt;xref:System.Threading.Tasks.Task%601&gt;esempio, è possibile separare la chiamata a <ph id="ph1">`Task_MethodAsync`</ph> dall'applicazione di un <ph id="ph2">`Await`</ph> operatore, come illustrato nel codice seguente.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, remember that a <ph id="ph1">`Task`</ph> doesn't have a <ph id="ph2">`Result`</ph> property, and that no value is produced when an await operator is applied to a <ph id="ph3">`Task`</ph>.</source>
+          <target state="translated">Tuttavia, tenere presente che un <ph id="ph1">`Task`</ph> non dispone di un <ph id="ph2">`Result`</ph> , proprietà e che nessun valore viene generato quando un operatore await viene applicato a un <ph id="ph3">`Task`</ph>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following code separates calling <ph id="ph1">`Task_MethodAsync`</ph> from awaiting the task that <ph id="ph2">`Task_MethodAsync`</ph> returns.</source>
+          <target state="translated">Il codice seguente separa chiamata <ph id="ph1">`Task_MethodAsync`</ph> da attendere l'attività che <ph id="ph2">`Task_MethodAsync`</ph> restituisce.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_VoidReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Void Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_VoidReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Tipo restituito void</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The primary use of <ph id="ph1">`Sub`</ph> procedures is in event handlers, where there is no return type (referred to as a void return type in other languages).</source>
+          <target state="translated">L'utilizzo principale di <ph id="ph1">`Sub`</ph> procedure sia nei gestori eventi, in cui è presente alcun tipo restituito (definito per un tipo restituito void in altri linguaggi).</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget."</source>
+          <target state="translated">Un tipo restituito void può essere usato anche per eseguire l'override di metodi che restituiscono void o per metodi che eseguono attività che possono essere categorizzate come "Fire and Forget".</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, you should return a <ph id="ph1">`Task`</ph> wherever possible, because a void-returning async method can't be awaited.</source>
+          <target state="translated">Tuttavia, è necessario restituire un <ph id="ph1">`Task`</ph> laddove possibile, perché un metodo asincrono che restituisce void non può essere atteso.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.</source>
+          <target state="translated">Qualsiasi chiamante di questo metodo deve poter continuare fino al completamento senza attendere il completamento del metodo asincrono chiamato e il chiamante deve essere indipendente da qualsiasi eccezione o valore generato dal metodo asincrono.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail.</source>
+          <target state="translated">Il chiamante di un metodo asincrono che restituisce void non può intercettare le eccezioni generate dal metodo ed è probabile che queste eccezioni non gestite provochino un errore dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If an exception occurs in an async method that returns a &lt;xref:System.Threading.Tasks.Task&gt; or &lt;xref:System.Threading.Tasks.Task%601&gt;, the exception is stored in the returned task, and rethrown when the task is awaited.</source>
+          <target state="translated">Se si verifica un'eccezione in un metodo asincrono che restituisce un &lt;xref:System.Threading.Tasks.Task&gt;o &lt;xref:System.Threading.Tasks.Task%601&gt;, l'eccezione viene archiviata nell'attività restituita e nuovamente generata quando l'attività è atteso.&lt;/xref:System.Threading.Tasks.Task%601&gt; &lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Therefore, make sure that any async method that can produce an exception has a return type of &lt;xref:System.Threading.Tasks.Task&gt; or &lt;xref:System.Threading.Tasks.Task%601&gt; and that calls to the method are awaited.</source>
+          <target state="translated">Pertanto, assicurarsi che qualsiasi metodo asincrono che può generare un'eccezione con un tipo restituito della &lt;xref:System.Threading.Tasks.Task&gt;o &lt;xref:System.Threading.Tasks.Task%601&gt;e che le chiamate al metodo sono atteso.&lt;/xref:System.Threading.Tasks.Task%601&gt; &lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For more information about how to catch exceptions in async methods, see <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni su come rilevare le eccezioni nei metodi asincroni, vedere <bpt id="p1">[</bpt>Try... Catch... Istruzione finally<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following code defines an async event handler.</source>
+          <target state="translated">Il codice seguente definisce un gestore eventi asincroni.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_Example"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Complete Example</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_Example"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Esempio completo</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.</source>
+          <target state="translated">Il progetto Windows Presentation Foundation (WPF) seguente contiene gli esempi di codice di questo argomento.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>To run the project, perform the following steps:</source>
+          <target state="translated">Per eseguire il progetto, effettuare i passaggi seguenti:</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Avviare Visual Studio.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Nella barra dei menu scegliere <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Nuovo<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated">Verrà visualizzata la finestra di dialogo <bpt id="p1">**</bpt>Nuovo progetto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> category, choose <bpt id="p3">**</bpt>Visual Basic<ept id="p3">**</ept>, and then choose <bpt id="p4">**</bpt>Windows<ept id="p4">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>installato<ept id="p1">**</ept>, <bpt id="p2">**</bpt>modelli<ept id="p2">**</ept> categoria, scegliere <bpt id="p3">**</bpt>Visual Basic<ept id="p3">**</ept>, quindi scegliere <bpt id="p4">**</bpt>Windows<ept id="p4">**</ept>.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Choose <bpt id="p1">**</bpt>WPF Application<ept id="p1">**</ept> from the list of project types.</source>
+          <target state="translated">Scegliere <bpt id="p1">**</bpt>applicazione WPF<ept id="p1">**</ept> dall'elenco dei tipi di progetto.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Enter <ph id="ph1">`AsyncReturnTypes`</ph> as the name of the project, and then choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">Immettere <ph id="ph1">`AsyncReturnTypes`</ph> come nome del progetto, quindi scegliere il <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">Il nuovo progetto verrà visualizzato <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Nell'Editor di codice di Visual Studio scegliere la scheda <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>If the tab is not visible, open the shortcut menu for MainWindow.xaml in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then choose <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+          <target state="translated">Se la scheda non è visibile, aprire il menu di scelta rapida per MainWindow. XAML in <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, quindi scegliere <bpt id="p2">**</bpt>aprire<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> window of MainWindow.xaml, replace the code with the following code.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> finestra di MainWindow. XAML, sostituire il codice con il codice seguente.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A simple window that contains a text box and a button appears in the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> window of MainWindow.xaml.</source>
+          <target state="translated">Viene visualizzata una finestra semplice che contiene una casella di testo e un pulsante nel <bpt id="p1">**</bpt>progettazione<ept id="p1">**</ept> finestra di MainWindow. Xaml.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, aprire il menu di scelta rapida per MainWindow.xaml.vb e quindi scegliere <bpt id="p2">**</bpt>Visualizza codice<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Replace the code in MainWindow.xaml.vb with the following code.</source>
+          <target state="translated">Sostituire il codice in MainWindow.xaml.vb con quello riportato di seguito.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The following output should appear.</source>
+          <target state="translated">Dovrebbe venire visualizzato l'output seguente.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Tasks.Task.FromResult%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task.FromResult%2A&gt;&lt;/xref:System.Threading.Tasks.Task.FromResult%2A&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedura dettagliata: Accesso al Web tramite Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Control Flow in Async Programs (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Flusso di controllo in programmi asincroni (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Operatore Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

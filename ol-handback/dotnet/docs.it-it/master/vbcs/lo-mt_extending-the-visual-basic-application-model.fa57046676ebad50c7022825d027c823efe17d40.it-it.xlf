@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9752cdfa79d3db4c8b07daa95aea2c842e06cc36</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\developing-apps\customizing-extending-my\extending-the-visual-basic-application-model.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8e63ed49a440286c4b1b5e7e890c2062e9db91d7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2eee4a4e9001fc4a5a1ea82cd98909552aab75fc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Extending the Visual Basic Application Model | Microsoft Docs</source>
+          <target state="translated">Estensione del modello di applicazione Visual Basic | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Extending the Visual Basic Application Model</source>
+          <target state="translated">Estensione del modello di applicazione Visual Basic</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can add functionality to the application model by overriding the <ph id="ph1">`Overridable`</ph> members of the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; class.</source>
+          <target state="translated">È possibile aggiungere funzionalità al modello dell'applicazione eseguendo l'override di <ph id="ph1">`Overridable`</ph> i membri di &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;classe.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This technique allows you to customize the behavior of the application model and add calls to your own methods as the application starts up and shuts down.</source>
+          <target state="translated">Questa tecnica consente di personalizzare il comportamento del modello di applicazione e aggiungere chiamate a metodi personalizzati, come l'applicazione viene avviato e arrestato.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Visual Overview of the Application Model</source>
+          <target state="translated">Panoramica visiva del modello di applicazione</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This section visually presents the sequence of function calls in the Visual Basic Application Model.</source>
+          <target state="translated">In questa sezione sono visivamente la sequenza di chiamate di funzione nel modello di applicazione Visual Basic.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The next section describes the purpose of each function in detail.</source>
+          <target state="translated">La prossima sezione descrive lo scopo di ogni funzione in modo dettagliato.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following graphic shows the application model call sequence in a normal Visual Basic Windows Forms application.</source>
+          <target state="translated">La figura seguente illustra la sequenza di chiamate del modello di applicazione in una normale applicazione Windows Form di Visual Basic.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The sequence starts when the <ph id="ph1">`Sub Main`</ph> procedure calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method.</source>
+          <target state="translated">La sequenza inizia quando il <ph id="ph1">`Sub Main`</ph> chiamate di procedure di &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;(metodo).&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model &amp;#45;&amp;#45; Run<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelrun.gif "</bpt>VB_ModelRun<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Modello di applicazione Visual Basic-- Eseguire<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelrun.gif "</bpt>VB_ModelRun<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The Visual Basic Application Model also provides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt; and &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt; events.</source>
+          <target state="translated">Il modello di applicazione Visual Basic fornisce inoltre il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;e &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;gli eventi.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following graphics show the mechanism for raising these events.</source>
+          <target state="translated">Le immagini che seguono viene illustrato il meccanismo per la generazione di questi eventi.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model &amp;#45;&amp;#45; Next Instance<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelnext.gif "</bpt>VB_ModelNext<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Modello di applicazione Visual Basic-- Istanza successivamente<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelnext.gif "</bpt>VB_ModelNext<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model Unhandled Exception<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_unhandex.gif "</bpt>VB_UnhandEx<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Eccezione non gestita del modello di applicazione Visual Basic<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_unhandex.gif "</bpt>VB_UnhandEx<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Overriding the Base Methods</source>
+          <target state="translated">L'override dei metodi Base</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method defines the order in which the <ph id="ph1">`Application`</ph> methods run.</source>
+          <target state="translated">Il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;metodo definisce l'ordine in cui il <ph id="ph1">`Application`</ph> metodi di esecuzione.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the <ph id="ph1">`Sub Main`</ph> procedure for a Windows Forms application calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method.</source>
+          <target state="translated">Per impostazione predefinita, il <ph id="ph1">`Sub Main`</ph> procedure per un'applicazione Windows Form chiama il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;(metodo).&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If the application is a normal application (multiple-instance application), or the first instance of a single-instance application, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method executes the <ph id="ph1">`Overridable`</ph> methods in the following order:</source>
+          <target state="translated">Se l'applicazione è un'applicazione normale (applicazione di più istanze) o la prima istanza di un'applicazione a istanza singola, il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;il metodo viene eseguito il <ph id="ph1">`Overridable`</ph> metodi nell'ordine seguente:&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>By default, this method sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and calls <ph id="ph1">`ShowSplashScreen`</ph> if neither <ph id="ph2">`/nosplash`</ph> nor <ph id="ph3">`-nosplash`</ph> is used as a command-line argument.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo imposta gli stili di visualizzazione, gli stili di visualizzazione di testo ed entità corrente per il thread principale dell'applicazione (se l'applicazione utilizza l'autenticazione di Windows) e chiama <ph id="ph1">`ShowSplashScreen`</ph> se non si specifica <ph id="ph2">`/nosplash`</ph> né <ph id="ph3">`-nosplash`</ph> viene utilizzato come un argomento della riga di comando.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The application startup sequence is canceled if this function returns <ph id="ph1">`False`</ph>.</source>
+          <target state="translated">La sequenza di avvio dell'applicazione viene annullata se la funzione restituisce <ph id="ph1">`False`</ph>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This can be useful if there are circumstances in which the application should not run.</source>
+          <target state="translated">Questo può essere utile se vi sono circostanze in cui l'applicazione non deve essere eseguita.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt; method calls the following methods:</source>
+          <target state="translated">Il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;metodo chiama i metodi seguenti:&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Determines if the application has a splash screen defined and if it does, displays the splash screen on a separate thread.</source>
+          <target state="translated">Determina se l'applicazione dispone di una schermata iniziale e in caso affermativo, viene visualizzata la schermata iniziale in un thread separato.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt; method contains the code that displays the splash screen for at least the number of milliseconds specified by the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt; property.</source>
+          <target state="translated">Il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;metodo contiene il codice che consente di visualizzare la schermata iniziale di schermata per almeno il numero di millisecondi specificato dalla &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;proprietà.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use this functionality, you must add the splash screen to your application using the <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept> (which sets the <ph id="ph1">`My.Application.MinimumSplashScreenDisplayTime`</ph> property to two seconds), or set the <ph id="ph2">`My.Application.MinimumSplashScreenDisplayTime`</ph> property in a method that overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt; or &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt; method.</source>
+          <target state="translated">Per utilizzare questa funzionalità, è necessario aggiungere la schermata iniziale per l'applicazione utilizzando il <bpt id="p1">**</bpt>Progettazione progetti<ept id="p1">**</ept> (che imposta il <ph id="ph1">`My.Application.MinimumSplashScreenDisplayTime`</ph> proprietà su due secondi), o impostare il <ph id="ph2">`My.Application.MinimumSplashScreenDisplayTime`</ph> proprietà in un metodo che esegue l'override di &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;o &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;(metodo).&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;.</source>
+          <target state="translated">Per ulteriori informazioni, vedere &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Allows a designer to emit code that initializes the splash screen.</source>
+          <target state="translated">Consente di generare il codice che inizializza la schermata iniziale.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>By default, this method does nothing.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo non esegue alcuna operazione.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If you select a splash screen for your application in the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, the designer overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt; method with a method that sets the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt; property to a new instance of the splash-screen form.</source>
+          <target state="translated">Se si seleziona una schermata dell'applicazione nel <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Progettazione progetti<ept id="p1">**</ept>, la finestra di progettazione esegue l'override di &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;con un metodo che imposta il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt;proprietà in una nuova istanza del form schermata iniziale.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Provides an extensibility point for raising the <ph id="ph1">`Startup`</ph> event.</source>
+          <target state="translated">Fornisce un punto di estensibilità per la generazione di <ph id="ph1">`Startup`</ph> eventi.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The application startup sequence stops if this function returns <ph id="ph1">`False`</ph>.</source>
+          <target state="translated">La sequenza di avvio dell'applicazione viene interrotta se questa funzione restituisce <ph id="ph1">`False`</ph>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt; event.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo genera il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;eventi.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the event handler sets the <ph id="ph1">@System.ComponentModel.CancelEventArgs.Cancel</ph> property of the event argument to <ph id="ph2">`True`</ph>, the method returns <ph id="ph3">`False`</ph> to cancel the application startup.</source>
+          <target state="translated">Se il gestore dell'evento imposta il <ph id="ph1">@System.ComponentModel.CancelEventArgs.Cancel</ph> proprietà dell'argomento dell'evento per <ph id="ph2">`True`</ph>, il metodo restituisce <ph id="ph3">`False`</ph> per annullare l'avvio dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Provides the starting point for when the main application is ready to start running, after the initialization is done.</source>
+          <target state="translated">Fornisce il punto di partenza per quando è pronto per avviare l'esecuzione, dopo l'inizializzazione viene eseguita l'applicazione principale.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>By default, before it enters the Windows Forms message loop, this method calls the <ph id="ph1">`OnCreateMainForm`</ph> (to create the application's main form) and <ph id="ph2">`HideSplashScreen`</ph> (to close the splash screen) methods:</source>
+          <target state="translated">Per impostazione predefinita, prima che immetta il ciclo di messaggi Windows Form, questo metodo chiama il <ph id="ph1">`OnCreateMainForm`</ph> (per la creazione del form principale dell'applicazione) e <ph id="ph2">`HideSplashScreen`</ph> (per chiudere la schermata iniziale) metodi:</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides a way for a designer to emit code that initializes the main form.</source>
+          <target state="translated">Fornisce un modo per una finestra di progettazione generare il codice che inizializza il form principale.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>By default, this method does nothing.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo non esegue alcuna operazione.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>However, when you select a main form for your application in the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, the designer overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt; method with a method that sets the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt; property to a new instance of the main form.</source>
+          <target state="translated">Tuttavia, quando si seleziona un form principale dell'applicazione nel <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Progettazione progetti<ept id="p1">**</ept>, la finestra di progettazione esegue l'override il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;con un metodo che imposta il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt;proprietà in una nuova istanza del form principale.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>If application has a splash screen defined and it is open, this method closes the splash screen.</source>
+          <target state="translated">Se l'applicazione ha una schermata iniziale e è aperto, questo metodo chiude la schermata iniziale.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>By default, this method closes the splash screen.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo chiude la schermata iniziale.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Provides a way to customize how a single-instance application behaves when another instance of the application starts.</source>
+          <target state="translated">Fornisce un modo per personalizzare il comportamento di un'applicazione a istanza singola quando viene avviata un'altra istanza dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt; event.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo genera il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;eventi.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Provides an extensibility point for raising the <ph id="ph1">`Shutdown`</ph> event.</source>
+          <target state="translated">Fornisce un punto di estensibilità per la generazione di <ph id="ph1">`Shutdown`</ph> eventi.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This method does not run if an unhandled exception occurs in the main application.</source>
+          <target state="translated">Questo metodo non viene eseguito se si verifica un'eccezione non gestita nell'applicazione principale.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt; event.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo genera il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;eventi.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Executed if an unhandled exception occurs in any of the above listed methods.</source>
+          <target state="translated">Eseguito se si verifica un'eccezione non gestita in uno dei metodi sopra elencati.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt; event as long as a debugger is not attached and the application is handling the <ph id="ph1">`UnhandledException`</ph> event.</source>
+          <target state="translated">Per impostazione predefinita, questo metodo genera il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;eventi fino a quando non è collegato un debugger e l'applicazione gestisce il <ph id="ph1">`UnhandledException`</ph> eventi.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If the application is a single-instance application, and the application is already running, the subsequent instance of the application calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt; method on the original instance of the application, and then exits.</source>
+          <target state="translated">Se l'applicazione è un'applicazione a istanza singola e l'applicazione è già in esecuzione, l'istanza successiva dell'applicazione chiama il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;(metodo) nell'istanza originale di applicazione e quindi viene chiusa.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; constructor calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property to determine which text rendering engine to use for the application's forms.</source>
+          <target state="translated">Il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;costruttore chiama il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;proprietà per determinare quale motore di rendering di testo da utilizzare per i form dell'applicazione.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; &lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>By default, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property returns <ph id="ph1">`False`</ph>, indicating that the GDI text rendering engine be used, which is the default in <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>.</source>
+          <target state="translated">Per impostazione predefinita, il &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;restituisce proprietà <ph id="ph1">`False`</ph>, che indica che il motore di rendering del testo GDI utilizzabile, ossia l'impostazione predefinita in <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can override the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property to return <ph id="ph1">`True`</ph>, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.</source>
+          <target state="translated">È possibile eseguire l'override di &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;proprietà da restituire <ph id="ph1">`True`</ph>, che indica che verrà utilizzato il motore di rendering di testo GDI+, ossia l'impostazione predefinita in Visual Basic .NET 2002 e Visual Basic .NET 2003.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Configuring the Application</source>
+          <target state="translated">Configurazione dell'applicazione</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>As a part of the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> Application model, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; class provides protected properties that configure the application.</source>
+          <target state="translated">Come parte di <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> modello di applicazione, la &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;classe offre proprietà protette che consentono di configurare l'applicazione.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>These properties should be set in the constructor of the implementing class.</source>
+          <target state="translated">Queste proprietà devono essere impostate nel costruttore della classe di implementazione.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In a default Windows Forms project, the <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept> creates code to set the properties with the designer settings.</source>
+          <target state="translated">In un progetto Windows Form predefinito, il <bpt id="p1">**</bpt>progettazione<ept id="p1">**</ept> consente di creare codice per impostare le proprietà con le impostazioni della finestra di progettazione.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The properties are used only when the application is starting; setting them after the application starts has no effect.</source>
+          <target state="translated">Le proprietà vengono utilizzate solo all'avvio dell'applicazione; la loro impostazione dopo l'avvio dell'applicazione non ha alcun effetto.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Proprietà</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Determines</source>
+          <target state="translated">Determina</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Setting in the Application pane of  the Project Designer</source>
+          <target state="translated">L'impostazione nel riquadro di progettazione dell'applicazione</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Whether the application runs as a single-instance or multiple-instance application.</source>
+          <target state="translated">Se l'applicazione viene eseguito come applicazione a istanza singola o a più istanze.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Make single instance application<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>Rendi a istanza singola<ept id="p1">**</ept> casella di controllo</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If the application will use visual styles that match Windows XP.</source>
+          <target state="translated">Se l'applicazione utilizzerà gli stili di visualizzazione che corrispondono a Windows XP.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Enable XP visual styles<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>Abilitare gli stili visivi XP<ept id="p1">**</ept> casella di controllo</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If application automatically saves application's user-settings changes when the application exits.</source>
+          <target state="translated">Se l'applicazione salva le modifiche delle impostazioni utente dell'applicazione automaticamente alla chiusura dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save My.Settings on Shutdown<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>Salva My. Settings in fase di arresto<ept id="p1">**</ept> casella di controllo</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>What causes the application to terminate, such as when the startup form closes or when the last form closes.</source>
+          <target state="translated">La causa l'interruzione, ad esempio quando si chiude il form di avvio o quando si chiude l'ultimo modulo dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Shutdown mode<ept id="p1">**</ept> list</source>
+          <target state="translated"><bpt id="p1">**</bpt>Modalità di arresto<ept id="p1">**</ept> elenco</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Overview of the Visual Basic Application Model<ept id="p1">](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Panoramica del modello di applicazione Visual Basic<ept id="p1">](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Application Page, Project Designer (Visual Basic)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Pagina Applicazione, Creazione progetti (Visual Basic)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

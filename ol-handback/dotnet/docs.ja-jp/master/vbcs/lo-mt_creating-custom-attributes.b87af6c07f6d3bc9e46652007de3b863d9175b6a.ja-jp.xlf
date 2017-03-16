@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1aa97a591fdbdfab931a8b5e4f70ec3c00762332</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\attributes\creating-custom-attributes.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d789b86e919780564160094a64a319e73a66b48</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">316825e9d601284cc3d4675827b4c83eee53cfab</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Creating Custom Attributes (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">カスタム属性 (Visual Basic) の作成 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Creating Custom Attributes (Visual Basic)</source>
+          <target state="translated">カスタム属性 (Visual Basic) の作成</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can create your own custom attributes by defining an attribute class, a class that derives directly or indirectly from &lt;xref:System.Attribute&gt;, which makes identifying attribute definitions in metadata fast and easy.</source>
+          <target state="translated">独自のカスタム属性を作成するには、属性クラスから直接または間接的に派生したクラスを定義することで&lt;xref:System.Attribute&gt;、迅速かつ容易なメタデータで属性の定義を識別するため、&lt;/xref:System.Attribute&gt; 。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Suppose you want to tag types with the name of the programmer who wrote the type.</source>
+          <target state="translated">タグという名前の型の型を記述したプログラマにするとします。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You might define a custom <ph id="ph1">`Author`</ph> attribute class:</source>
+          <target state="translated">カスタムを定義することも<ph id="ph1">`Author`</ph>属性クラス。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The class name is the attribute's name, <ph id="ph1">`Author`</ph>.</source>
+          <target state="translated">クラス名は、属性の名<ph id="ph1">`Author`</ph>します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It is derived from <ph id="ph1">`System.Attribute`</ph>, so it is a custom attribute class.</source>
+          <target state="translated">派生<ph id="ph1">`System.Attribute`</ph>ので、これはカスタム属性クラスです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The constructor's parameters are the custom attribute's positional parameters.</source>
+          <target state="translated">コンス トラクターのパラメーターは、カスタム属性の位置指定パラメーターです。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In this example, <ph id="ph1">`name`</ph> is a positional parameter.</source>
+          <target state="translated">この例では<ph id="ph1">`name`</ph>位置指定パラメーターです。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Any public read-write fields or properties are named parameters.</source>
+          <target state="translated">任意の読み取り/書き込みのパブリック フィールドまたはプロパティは名前付きパラメーター。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In this case, <ph id="ph1">`version`</ph> is the only named parameter.</source>
+          <target state="translated">この場合、<ph id="ph1">`version`</ph>はのみ名前付きパラメーター。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Note the use of the <ph id="ph1">`AttributeUsage`</ph> attribute to make the <ph id="ph2">`Author`</ph> attribute valid only on class and <ph id="ph3">`Structure`</ph> declarations.</source>
+          <target state="translated">使用に注意してください、<ph id="ph1">`AttributeUsage`</ph>属性を<ph id="ph2">`Author`</ph>属性がクラスでのみ有効と<ph id="ph3">`Structure`</ph>宣言します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You could use this new attribute as follows:</source>
+          <target state="translated">次のように、この新しい属性を使用できます。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AttributeUsage`</ph> has a named parameter, <ph id="ph2">`AllowMultiple`</ph>, with which you can make a custom attribute single-use or multiuse.</source>
+          <target state="translated"><ph id="ph1">`AttributeUsage`</ph>名前付きパラメーターを持つ<ph id="ph2">`AllowMultiple`</ph>、これは、カスタム属性単一目的または multiuse とします。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the following code example, a multiuse attribute is created.</source>
+          <target state="translated">次のコード例では、multiuse 属性が作成されます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>In the following code example, multiple attributes of the same type are applied to a class.</source>
+          <target state="translated">次のコード例では、同じ種類の複数の属性がクラスに適用されます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If your attribute class contains a property, that property must be read-write.</source>
+          <target state="translated">属性クラスにプロパティが含まれている場合、そのプロパティは読み取り/書き込みをする必要があります。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Reflection&gt;</source>
+          <target state="translated">&lt;xref:System.Reflection&gt;&lt;/xref:System.Reflection&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Visual Basic Programming Guide<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic のプログラミング ガイド<ept id="p1">](../../../../visual-basic/programming-guide/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Writing Custom Attributes<ept id="p1">](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>カスタム属性の記述<ept id="p1">](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Reflection (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/reflection.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>リフレクション (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/reflection.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Attributes (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/attributes.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>属性 (Visual Basic)<ept id="p1">](../../../../visual-basic/language-reference/attributes.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Accessing Attributes by Using Reflection (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>リフレクション (Visual Basic) を使用して属性へのアクセス<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>AttributeUsage (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>AttributeUsage (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

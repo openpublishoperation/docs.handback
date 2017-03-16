@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">86184c7de3fe16148bf954b16d703ca682216337</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\covariance-contravariance\using-variance-in-interfaces-for-generic-collections.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3674bc0b3c2779be22db796be6e121c6b9c2beee</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f990f85ef0e83496bef74a594c05a9396f50cf5c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using Variance in Interfaces for Generic Collections (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">泛型集合 (Visual Basic 中) 的接口中使用变体 |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using Variance in Interfaces for Generic Collections (Visual Basic)</source>
+          <target state="translated">泛型集合 (Visual Basic 中) 的接口中使用变体</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A covariant interface allows its methods to return more derived types than those specified in the interface.</source>
+          <target state="translated">协变接口允许其方法以返回更多比在接口中指定的派生的类型。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>A contravariant interface allows its methods to accept parameters of less derived types than those specified in the interface.</source>
+          <target state="translated">逆变接口允许其方法来接受较少比指定的那些接口中的派生类型的参数。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In .NET Framework 4, several existing interfaces became covariant and contravariant.</source>
+          <target state="translated">在.NET Framework 4 中，多个现有接口变得协变和逆变。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>These include &lt;xref:System.Collections.Generic.IEnumerable%601&gt; and &lt;xref:System.IComparable%601&gt;.</source>
+          <target state="translated">其中包括&lt;xref:System.Collections.Generic.IEnumerable%601&gt;和&lt;xref:System.IComparable%601&gt;。&lt;/xref:System.IComparable%601&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This enables you to reuse methods that operate with generic collections of base types for collections of derived types.</source>
+          <target state="translated">这样您就可以重用与基类型派生类型的集合的泛型集合进行操作的方法。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For a list of variant interfaces in the .NET Framework, see <bpt id="p1">[</bpt>Variance in Generic Interfaces (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)</ept>.</source>
+          <target state="translated">.NET Framework 中的变体接口的列表，请参阅<bpt id="p1">[</bpt>泛型接口 (Visual Basic 中) 中的变体<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)</ept>。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Converting Generic Collections</source>
+          <target state="translated">转换泛型集合</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the benefits of covariance support in the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface.</source>
+          <target state="translated">下面的示例阐释了协变支持中的好处&lt;xref:System.Collections.Generic.IEnumerable%601&gt;接口。&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PrintFullName`</ph> method accepts a collection of the <ph id="ph2">`IEnumerable(Of Person)`</ph> type as a parameter.</source>
+          <target state="translated"><ph id="ph1">`PrintFullName`</ph>方法接受一套<ph id="ph2">`IEnumerable(Of Person)`</ph>类型作为参数。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>However, you can reuse it for a collection of the <ph id="ph1">`IEnumerable(Of Person)`</ph> type because <ph id="ph2">`Employee`</ph> inherits <ph id="ph3">`Person`</ph>.</source>
+          <target state="translated">但是，您可以重复使用它的集合<ph id="ph1">`IEnumerable(Of Person)`</ph>类型，因为<ph id="ph2">`Employee`</ph>继承<ph id="ph3">`Person`</ph>。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Comparing Generic Collections</source>
+          <target state="translated">比较泛型集合</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The following example illustrates the benefits of contravariance support in the &lt;xref:System.Collections.Generic.IComparer%601&gt; interface.</source>
+          <target state="translated">下面的示例阐释了逆变中的支持权益&lt;xref:System.Collections.Generic.IComparer%601&gt;接口。&lt;/xref:System.Collections.Generic.IComparer%601&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PersonComparer`</ph> class implements the <ph id="ph2">`IComparer(Of Person)`</ph> interface.</source>
+          <target state="translated"><ph id="ph1">`PersonComparer`</ph> 类实现 <ph id="ph2">`IComparer(Of Person)`</ph> 接口。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>However, you can reuse this class to compare a sequence of objects of the <ph id="ph1">`Employee`</ph> type because <ph id="ph2">`Employee`</ph> inherits <ph id="ph3">`Person`</ph>.</source>
+          <target state="translated">但是，您可以重复使用此类来比较的对象的序列<ph id="ph1">`Employee`</ph>类型，因为<ph id="ph2">`Employee`</ph>继承<ph id="ph3">`Person`</ph>。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Variance in Generic Interfaces (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>泛型接口 (Visual Basic 中) 中的变体<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
