@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ae3d599f7173162c07fbaeda60435615f101b10d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\strings\walkthrough-encrypting-and-decrypting-strings.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">89b311df54bd25d6550b0a008ce7f0d03ff6e44d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0e09ebf0e9d18ea2c984b3d1a868e1a4393f6888</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-encrypting-and-decrypting-strings.d016cda730fdcf5f9f4a59f983a46a474c4378b5.it-it is different with handoff file name: walkthrough-encrypting-and-decrypting-strings.d016cda730fdcf5f9f4a59f983a46a474c4378b5.it-it.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Encrypting and Decrypting Strings in Visual Basic | Microsoft Docs</source>
+          <target state="translated">La crittografia e decrittografia di stringhe in Visual Basic | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Encrypting and Decrypting Strings in Visual Basic</source>
+          <target state="translated">Procedura dettagliata: crittografia e decrittografia di stringhe in Visual Basic</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough shows you how to use the &lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt; class to encrypt and decrypt strings using the cryptographic service provider (CSP) version of the Triple Data Encryption Standard (&lt;xref:System.Security.Cryptography.TripleDES&gt;) algorithm.</source>
+          <target state="translated">Questa procedura dettagliata viene illustrato come utilizzare il &lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;(classe) per crittografare e decrittografare le stringhe utilizzando la versione del provider (CSP) del servizio di crittografia di Triple Data Encryption Standard (&lt;xref:System.Security.Cryptography.TripleDES&gt;) algoritmo.&lt;/xref:System.Security.Cryptography.TripleDES&gt; &lt;/xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string.</source>
+          <target state="translated">Il primo passaggio consiste nel creare una semplice classe wrapper che incapsula l'algoritmo 3DES e archivia i dati crittografati come una stringa con codifica base 64.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Then, that wrapper is used to securely store private user data in a publicly accessible text file.</source>
+          <target state="translated">Il wrapper viene quindi utilizzato per archiviare in modo sicuro i dati personali dell'utente in un file di testo accessibile pubblicamente.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can use encryption to protect user secrets (for example, passwords) and to make credentials unreadable by unauthorized users.</source>
+          <target state="translated">È possibile utilizzare la crittografia per proteggere informazioni riservate dell'utente (ad esempio, le password) e per rendere illeggibile le credenziali di utenti non autorizzati.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This can protect an authorized user's identity from being stolen, which protects the user's assets and provides non-repudiation.</source>
+          <target state="translated">È possibile impedire identità di un utente autorizzato da rubati, che consente di proteggere le risorse dell'utente e consente di non ripudio.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Encryption can also protect a user's data from being accessed by unauthorized users.</source>
+          <target state="translated">La crittografia può inoltre proteggere i dati dell'utente da cui si accede da utenti non autorizzati.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Cryptographic Services<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere <bpt id="p1">[</bpt>servizi di crittografia<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive.</source>
+          <target state="translated">Gli algoritmi Triple Data Encryption Standard (3DES) e Rijndael (ora denominato Advanced Encryption Standard [AES]) garantiscono maggiore sicurezza rispetto a DES in quanto più complesse.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:System.Security.Cryptography.DES&gt; and &lt;xref:System.Security.Cryptography.Rijndael&gt;.</source>
+          <target state="translated">Per ulteriori informazioni, vedere &lt;xref:System.Security.Cryptography.DES&gt;e &lt;xref:System.Security.Cryptography.Rijndael&gt;.&lt;/xref:System.Security.Cryptography.Rijndael&gt; &lt;/xref:System.Security.Cryptography.DES&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To create the encryption wrapper</source>
+          <target state="translated">Per creare il wrapper di crittografia</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Create the <ph id="ph1">`Simple3Des`</ph> class to encapsulate the encryption and decryption methods.</source>
+          <target state="translated">Creare la <ph id="ph1">`Simple3Des`</ph> classe per incapsulare i metodi di crittografia e decrittografia.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#38<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#38;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Add an import of the cryptography namespace to the start of the file that contains the <ph id="ph1">`Simple3Des`</ph> class.</source>
+          <target state="translated">Aggiungere un'importazione dello spazio dei nomi cryptography all'inizio del file che contiene la <ph id="ph1">`Simple3Des`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#77<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>&amp;#77; VbVbalrStrings<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`Simple3Des`</ph> class, add a private field to store the 3DES cryptographic service provider.</source>
+          <target state="translated">Nella <ph id="ph1">`Simple3Des`</ph> classe, aggiungere un campo privato per archiviare il provider del servizio di crittografia 3DES.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#39<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#39;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Add a private method that creates a byte array of a specified length from the hash of the specified key.</source>
+          <target state="translated">Aggiungere un metodo privato che crea una matrice di byte di lunghezza specificata dall'hash della chiave specificata.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#41<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings n.&amp;41;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Add a constructor to initialize the 3DES cryptographic service provider.</source>
+          <target state="translated">Aggiungere un costruttore per inizializzare il provider del servizio di crittografia 3DES.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`key`</ph> parameter controls the <ph id="ph2">`EncryptData`</ph> and <ph id="ph3">`DecryptData`</ph> methods.</source>
+          <target state="translated">Il <ph id="ph1">`key`</ph> parametro controlla il <ph id="ph2">`EncryptData`</ph> e <ph id="ph3">`DecryptData`</ph> metodi.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#40<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>&amp;#40; VbVbalrStrings<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add a public method that encrypts a string.</source>
+          <target state="translated">Aggiungere un metodo pubblico che consente di crittografare una stringa.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#42<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#42;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Add a public method that decrypts a string.</source>
+          <target state="translated">Aggiungere un metodo pubblico che consente di decrittografare una stringa.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#43<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#43;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The wrapper class can now be used to protect user assets.</source>
+          <target state="translated">La classe wrapper ora può essere utilizzata per proteggere risorse utente.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this example, it is used to securely store private user data in a publicly accessible text file.</source>
+          <target state="translated">In questo esempio, consente di archiviare in modo sicuro i dati personali dell'utente in un file di testo accessibile pubblicamente.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To test the encryption wrapper</source>
+          <target state="translated">Per testare il wrapper di crittografia</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In a separate class, add a method that uses the wrapper's <ph id="ph1">`EncryptData`</ph> method to encrypt a string and write it to the user's My Documents folder.</source>
+          <target state="translated">In una classe separata, aggiungere un metodo che usa il wrapper <ph id="ph1">`EncryptData`</ph> per crittografare una stringa e scriverli all'utente della cartella documenti.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#78<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#78;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Add a method that reads the encrypted string from the user's My Documents folder and decrypts the string with the wrapper's <ph id="ph1">`DecryptData`</ph> method.</source>
+          <target state="translated">Aggiungere un metodo che legge la stringa crittografata da parte dell'utente della cartella documenti e consente di decrittografare la stringa con il wrapper <ph id="ph1">`DecryptData`</ph> metodo.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#79<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings&amp;#79;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add user interface code to call the <ph id="ph1">`TestEncoding`</ph> and <ph id="ph2">`TestDecoding`</ph> methods.</source>
+          <target state="translated">Aggiungere il codice dell'interfaccia utente di chiamare il <ph id="ph1">`TestEncoding`</ph> e <ph id="ph2">`TestDecoding`</ph> metodi.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Run the application.</source>
+          <target state="translated">Eseguire l'applicazione.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When you test the application, notice that it will not decrypt the data if you provide the wrong password.</source>
+          <target state="translated">Quando si testa l'applicazione, si noti che non è possibile decrittografare i dati se si specifica la password errata.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography&gt;&lt;/xref:System.Security.Cryptography&gt;</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;&lt;/xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.DES&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.DES&gt;&lt;/xref:System.Security.Cryptography.DES&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.TripleDES&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.TripleDES&gt;&lt;/xref:System.Security.Cryptography.TripleDES&gt;</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.Rijndael&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.Rijndael&gt;&lt;/xref:System.Security.Cryptography.Rijndael&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Cryptographic Services<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Servizi di crittografia<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

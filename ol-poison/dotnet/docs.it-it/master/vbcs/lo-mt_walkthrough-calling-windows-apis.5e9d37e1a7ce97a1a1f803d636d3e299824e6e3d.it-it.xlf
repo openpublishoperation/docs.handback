@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5001ccebb0a5b8cadd4e856342601506cf1d033f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\com-interop\walkthrough-calling-windows-apis.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">df6f538d93567d7ea6392a5201e4c77530004e46</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e8bc2d79ac166b2b41f241acfe0422d969d84a76</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-calling-windows-apis.5e9d37e1a7ce97a1a1f803d636d3e299824e6e3d.it-it is different with handoff file name: walkthrough-calling-windows-apis.5e9d37e1a7ce97a1a1f803d636d3e299824e6e3d.it-it.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Calling Windows APIs (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Procedura dettagliata: Chiamata delle API di Windows (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Calling Windows APIs (Visual Basic)</source>
+          <target state="translated">Procedura dettagliata: chiamata delle API di Windows (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows operating system.</source>
+          <target state="translated">API di Windows sono librerie a collegamento dinamico (DLL) che fanno parte del sistema operativo Windows.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You use them to perform tasks when it is difficult to write equivalent procedures of your own.</source>
+          <target state="translated">Utilizzarli per eseguire attività quando è difficile scrivere routine equivalenti.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For example, Windows provides a function named <ph id="ph1">`FlashWindowEx`</ph> that lets you make the title bar for an application alternate between light and dark shades.</source>
+          <target state="translated">Ad esempio, Windows fornisce una funzione denominata <ph id="ph1">`FlashWindowEx`</ph> che consente di rendere la barra del titolo di un'applicazione alternare sfumature chiare e scure.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The advantage of using Windows APIs in your code is that they can save development time because they contain dozens of useful functions that are already written and waiting to be used.</source>
+          <target state="translated">Il vantaggio di utilizzare le API di Windows nel codice è che è possibile risparmiare tempo sviluppo perché contengono molte utili funzionalità che sono già scritto e in attesa di essere utilizzato.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The disadvantage is that Windows APIs can be difficult to work with and unforgiving when things go wrong.</source>
+          <target state="translated">Lo svantaggio è che le API di Windows può risultare difficile lavorare con e grossi quando le cose vanno male.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Windows APIs represent a special category of interoperability.</source>
+          <target state="translated">API di Windows rappresentano una categoria speciale di interoperabilità.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Windows APIs do not use managed code, do not have built-in type libraries, and use data types that are different than those used with Visual Studio.</source>
+          <target state="translated">API di Windows non utilizzano codice gestito, non dispongono di librerie dei tipi e utilizzare tipi di dati che sono diversi da quelli utilizzati con Visual Studio.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Because of these differences, and because Windows APIs are not COM objects, interoperability with Windows APIs and the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> is performed using platform invoke, or PInvoke.</source>
+          <target state="translated">A causa di queste differenze, e poiché le API di Windows non sono oggetti COM, l'interoperabilità con le API di Windows e <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> viene realizzata mediante platform invoke, o PInvoke.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Platform invoke is a service that enables managed code to call unmanaged functions implemented in DLLs.</source>
+          <target state="translated">Platform invoke è un servizio che consente al codice per chiamare funzioni non gestite implementate in DLL gestito.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Consuming Unmanaged DLL Functions<ept id="p1">](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere <bpt id="p1">[</bpt>utilizzo di funzioni DLL non gestite<ept id="p1">](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045)</ept>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You can use PInvoke in <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> by using either the <ph id="ph2">`Declare`</ph> statement or applying the <ph id="ph3">`DllImport`</ph> attribute to an empty procedure.</source>
+          <target state="translated">È possibile utilizzare PInvoke in <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> utilizzando il <ph id="ph2">`Declare`</ph> istruzione o l'applicazione di <ph id="ph3">`DllImport`</ph> attributo a una routine vuota.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Windows API calls were an important part of <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> programming in the past, but are seldom necessary with <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>.</source>
+          <target state="translated">Chiamate API Windows sono una parte importante di <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> programmazione in passato, ma in genere non sono necessarie con <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Whenever possible, you should use managed code from the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> to perform tasks, instead of Windows API calls.</source>
+          <target state="translated">Quando possibile, utilizzare codice gestito di <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> per eseguire attività, invece di chiamate API Windows.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This walkthrough provides information for those situations in which using Windows APIs is necessary.</source>
+          <target state="translated">Questa procedura dettagliata vengono fornite informazioni per i casi in cui tramite le API di Windows è necessaria.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>API Calls Using Declare</source>
+          <target state="translated">Chiamate API tramite dichiarare</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The most common way to call Windows APIs is by using the <ph id="ph1">`Declare`</ph> statement.</source>
+          <target state="translated">È il modo più comune per chiamare le API di Windows utilizzando il <ph id="ph1">`Declare`</ph> istruzione.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To declare a DLL procedure</source>
+          <target state="translated">Per dichiarare una routine DLL</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Determine the name of the function you want to call, plus its arguments, argument types, and return value, as well as the name and location of the DLL that contains it.</source>
+          <target state="translated">Determinare il nome della funzione da chiamare, più argomenti, tipi di argomenti e restituire valore, nonché il nome e percorso della DLL che lo contiene.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For complete information about the Windows APIs, see the Win32 SDK documentation in the Platform SDK Windows API.</source>
+          <target state="translated">Per informazioni complete sulle API di Windows, vedere la documentazione di Win32 SDK nell'API di Windows Platform SDK.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For more information about the constants that Windows APIs use, examine the header files such as Windows.h included with the Platform SDK.</source>
+          <target state="translated">Per ulteriori informazioni sulle costanti che utilizzano le API di Windows, esaminare i file di intestazione, ad esempio incluso in SDK della piattaforma Windows. h.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Open a new Windows Application project by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, and then clicking <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Aprire un nuovo progetto applicazione Windows, fare clic su <bpt id="p1">**</bpt>New<ept id="p1">**</ept> sul <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu e quindi fare clic su <bpt id="p3">**</bpt>progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box appears.</source>
+          <target state="translated">Verrà visualizzata la finestra di dialogo <bpt id="p1">**</bpt>Nuovo progetto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Windows Application<ept id="p1">**</ept> from the list of <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> project templates.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>applicazione Windows<ept id="p1">**</ept> dall'elenco di <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> modelli di progetto.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The new project is displayed.</source>
+          <target state="translated">Viene visualizzato il nuovo progetto.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Add the following <ph id="ph1">`Declare`</ph> function either to the class or module in which you want to use the DLL:</source>
+          <target state="translated">Aggiungere il codice seguente <ph id="ph1">`Declare`</ph> funzione alla classe o modulo in cui si desidera utilizzare la DLL:</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#9<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>9 VbVbalrInterop<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Parts of the Declare Statement</source>
+          <target state="translated">Parti dell'istruzione Declare</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Declare`</ph> statement includes the following elements.</source>
+          <target state="translated">Il <ph id="ph1">`Declare`</ph> istruzione include i seguenti elementi.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Auto modifier</source>
+          <target state="translated">Modificatore Auto</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Auto`</ph> modifier instructs the runtime to convert the string based on the method name according to common language runtime rules (or alias name if specified).</source>
+          <target state="translated">Il <ph id="ph1">`Auto`</ph> modificatore indica al runtime di convertire la stringa in base al nome di metodo in base alle regole di common language runtime (o nome di alias se specificato).</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Lib and Alias keywords</source>
+          <target state="translated">Parole chiave lib e Alias</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The name following the <ph id="ph1">`Function`</ph> keyword is the name your program uses to access the imported function.</source>
+          <target state="translated">Il nome che segue il <ph id="ph1">`Function`</ph> (parola chiave) è il nome del programma utilizzato per accedere alla funzione importata.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>It can be the same as the real name of the function you are calling, or you can use any valid procedure name and then employ the <ph id="ph1">`Alias`</ph> keyword to specify the real name of the function you are calling.</source>
+          <target state="translated">Può essere lo stesso nome reale della funzione che si sta chiamando oppure è possibile utilizzare qualsiasi nome di routine valido e quindi utilizzano il <ph id="ph1">`Alias`</ph> (parola chiave) per specificare il nome reale della funzione che si sta chiamando.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Specify the <ph id="ph1">`Lib`</ph> keyword, followed by the name and location of the DLL that contains the function you are calling.</source>
+          <target state="translated">Specificare il <ph id="ph1">`Lib`</ph> (parola chiave), seguito dal nome e percorso della DLL che contiene la funzione che si sta chiamando.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You do not need to specify the path for files located in the Windows system directories.</source>
+          <target state="translated">Non è necessario specificare il percorso dei file presenti nella directory di sistema Windows.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`Alias`</ph> keyword if the name of the function you are calling is not a valid <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> procedure name, or conflicts with the name of other items in your application.</source>
+          <target state="translated">Utilizzare il <ph id="ph1">`Alias`</ph> (parola chiave) se il nome della funzione che si sta chiamando non è valido <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> nome della stored procedure o in conflitto con il nome di altri elementi all'interno dell'applicazione.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Alias`</ph> indicates the true name of the function being called.</source>
+          <target state="translated"><ph id="ph1">`Alias`</ph>indica il nome reale della funzione chiamata.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Argument and Data Type Declarations</source>
+          <target state="translated">Argomento e le dichiarazioni di tipi di dati</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Declare the arguments and their data types.</source>
+          <target state="translated">Dichiarare gli argomenti e i tipi di dati.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This part can be challenging because the data types that Windows uses do not correspond to Visual Studio data types.</source>
+          <target state="translated">Può essere difficile poiché i tipi di dati che utilizza Windows non corrispondono ai tipi di dati di Visual Studio.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> does a lot of the work for you by converting arguments to compatible data types, a process called <bpt id="p1">*</bpt>marshaling<ept id="p1">*</ept>.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>gran parte del lavoro è la conversione di argomenti di tipi di dati compatibili, un processo denominato <bpt id="p1">*</bpt>marshalling<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You can explicitly control how arguments are marshaled by using the &lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt; attribute defined in the &lt;xref:System.Runtime.InteropServices&gt; namespace.</source>
+          <target state="translated">È possibile controllare in modo esplicito la modalità di marshalling di argomenti utilizzando il &lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;attributo definito nel &lt;xref:System.Runtime.InteropServices&gt;dello spazio dei nomi.&lt;/xref:System.Runtime.InteropServices&gt; &lt;/xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Previous versions of <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> allowed you to declare parameters <ph id="ph2">`As Any`</ph>, meaning that data of any data type could be used.</source>
+          <target state="translated">Le versioni precedenti di <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> consentivano di dichiarare parametri <ph id="ph2">`As Any`</ph>, vale a dire che i dati di tutti i dati tipo può essere utilizzato.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> requires that you use a specific data type for all <ph id="ph2">`Declare`</ph> statements.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>è necessario utilizzare un tipo di dati specifico per tutti <ph id="ph2">`Declare`</ph> istruzioni.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Windows API Constants</source>
+          <target state="translated">Costanti di API Windows</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Some arguments are combinations of constants.</source>
+          <target state="translated">Alcuni argomenti sono combinazioni di costanti.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`MessageBox`</ph> API shown in this walkthrough accepts an integer argument called <ph id="ph2">`Typ`</ph> that controls how the message box is displayed.</source>
+          <target state="translated">Ad esempio, il <ph id="ph1">`MessageBox`</ph> API descritta in questa procedura dettagliata accetta un argomento integer denominato <ph id="ph2">`Typ`</ph> che controlla come viene visualizzata la finestra di messaggio.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>You can determine the numeric value of these constants by examining the <ph id="ph1">`#define`</ph> statements in the file WinUser.h.</source>
+          <target state="translated">È possibile determinare il valore numerico di queste costanti esaminando il <ph id="ph1">`#define`</ph> istruzioni nel file winuser.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The numeric values are generally shown in hexadecimal, so you may want to use a calculator to add them and convert to decimal.</source>
+          <target state="translated">I valori numerici vengono in genere visualizzati in formato esadecimale, pertanto è consigliabile utilizzare una calcolatrice per sommarli e convertirli in decimale.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>For example, if you want to combine the constants for the exclamation style <ph id="ph1">`MB_ICONEXCLAMATION`</ph> 0x00000030 and the Yes/No style <ph id="ph2">`MB_YESNO`</ph> 0x00000004, you can add the numbers and get a result of 0x00000034, or 52 decimal.</source>
+          <target state="translated">Ad esempio, se si desidera combinare le costanti per lo stile esclamativo <ph id="ph1">`MB_ICONEXCLAMATION`</ph> 0x00000030 e Sì/alcuno stile <ph id="ph2">`MB_YESNO`</ph> 0x00000004, è possibile aggiungere i numeri e ottenere un risultato di 0x00000034 o 52 decimali.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Although you can use the decimal result directly, it is better to declare these values as constants in your application and combine them using the <ph id="ph1">`Or`</ph> operator.</source>
+          <target state="translated">Anche se è possibile utilizzare direttamente il risultato decimale, è preferibile dichiarare questi valori come costanti nell'applicazione e combinarli tramite il <ph id="ph1">`Or`</ph> operatore.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To declare constants for Windows API calls</source>
+          <target state="translated">Per dichiarare le costanti per le chiamate API Windows</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Consult the documentation for the Windows function you are calling.</source>
+          <target state="translated">Consultare la documentazione per la funzione Windows che si sta chiamando.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Determine the name of the constants it uses and the name of the .h file that contains the numeric values for these constants.</source>
+          <target state="translated">Determinare il nome di costanti utilizzate e il nome del file con estensione h che contiene i valori numerici per queste costanti.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Use a text editor, such as Notepad, to view the contents of the header (.h) file, and find the values associated with the constants you are using.</source>
+          <target state="translated">Utilizzare un editor di testo, ad esempio Blocco note, per visualizzare il contenuto del file di intestazione (h) e trovare i valori associati alle costanti.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>For example, the <ph id="ph1">`MessageBox`</ph> API uses the constant <ph id="ph2">`MB_ICONQUESTION`</ph> to show a question mark in the message box.</source>
+          <target state="translated">Ad esempio, il <ph id="ph1">`MessageBox`</ph> API utilizza la costante <ph id="ph2">`MB_ICONQUESTION`</ph> per visualizzare un punto interrogativo nella finestra di messaggio.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The definition for <ph id="ph1">`MB_ICONQUESTION`</ph> is in WinUser.h and appears as follows:</source>
+          <target state="translated">La definizione per <ph id="ph1">`MB_ICONQUESTION`</ph> in winuser. H e viene visualizzato come segue:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Add equivalent <ph id="ph1">`Const`</ph> statements to your class or module to make these constants available to your application.</source>
+          <target state="translated">Aggiungere equivalente <ph id="ph1">`Const`</ph> istruzioni per la classe o un modulo per rendere le costanti disponibili per l'applicazione.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Ad esempio:</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#11<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#11;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>To call the DLL procedure</source>
+          <target state="translated">Per chiamare la routine DLL</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Add a button named <ph id="ph1">`Button1`</ph> to the startup form for your project, and then double-click it to view its code.</source>
+          <target state="translated">Aggiungere un pulsante denominato <ph id="ph1">`Button1`</ph> per l'avvio del modulo per il progetto e quindi fare doppio clic per visualizzare il codice.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The event handler for the button is displayed.</source>
+          <target state="translated">Il gestore eventi per il pulsante viene visualizzato.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Add code to the <ph id="ph1">`Click`</ph> event handler for the button you added, to call the procedure and provide the appropriate arguments:</source>
+          <target state="translated">Aggiungere codice per il <ph id="ph1">`Click`</ph> gestore dell'evento del pulsante aggiunto per chiamare la routine e specificare gli argomenti appropriati:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#12<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#12;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Run the project by pressing F5.</source>
+          <target state="translated">Eseguire il progetto premendo F5.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The message box is displayed with both <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> and <bpt id="p2">**</bpt>No<ept id="p2">**</ept> response buttons.</source>
+          <target state="translated">La finestra di messaggio viene visualizzata con entrambi <bpt id="p1">**</bpt>Sì<ept id="p1">**</ept> e <bpt id="p2">**</bpt>n<ept id="p2">**</ept> pulsanti di risposta.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Click either one.</source>
+          <target state="translated">Fare clic su uno.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Data Marshaling</source>
+          <target state="translated">Marshalling dei dati</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> automatically converts the data types of parameters and return values for Windows API calls, but you can use the <ph id="ph2">`MarshalAs`</ph> attribute to explicitly specify unmanaged data types that an API expects.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>Converte i tipi di dati dei parametri e valori restituiti per le chiamate API Windows, ma si possono utilizzare automaticamente il <ph id="ph2">`MarshalAs`</ph> attributo per specificare in modo esplicito i tipi di dati non gestiti che prevede un'API.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>For more information about interop marshaling, see <bpt id="p1">[</bpt>Interop Marshaling<ept id="p1">](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sul marshalling di interoperabilità, vedere <bpt id="p1">[</bpt>marshalling di interoperabilità<ept id="p1">](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)</ept>.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>To use Declare and MarshalAs in an API call</source>
+          <target state="translated">Per utilizzare Declare e MarshalAs in una chiamata API</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Determine the name of the function you want to call, plus its arguments, data types, and return value.</source>
+          <target state="translated">Determinare il nome della funzione da chiamare, gli argomenti, tipi di dati e valore restituito.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>To simplify access to the <ph id="ph1">`MarshalAs`</ph> attribute, add an <ph id="ph2">`Imports`</ph> statement to the top of the code for the class or module, as in the following example:</source>
+          <target state="translated">Per semplificare l'accesso per il <ph id="ph1">`MarshalAs`</ph> attributo, aggiungere un <ph id="ph2">`Imports`</ph> all'inizio del codice per la classe o modulo, come nell'esempio seguente:</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#13<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>13 VbVbalrInterop<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Add a function prototype for the imported function to the class or module you are using, and apply the <ph id="ph1">`MarshalAs`</ph> attribute to the parameters or return value.</source>
+          <target state="translated">Aggiungere un prototipo di funzione per la funzione importata nella classe o modulo si utilizza e applicare il <ph id="ph1">`MarshalAs`</ph> per i parametri dell'attributo o valore restituito.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>In the following example, an API call that expects the type <ph id="ph1">`void*`</ph> is marshaled as <ph id="ph2">`AsAny`</ph>:</source>
+          <target state="translated">Nell'esempio seguente, una chiamata API che prevede il tipo <ph id="ph1">`void*`</ph> viene sottoposto a marshalling come <ph id="ph2">`AsAny`</ph>:</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#14<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#14;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>API Calls Using DllImport</source>
+          <target state="translated">Chiamate API tramite DllImport</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`DllImport`</ph> attribute provides a second way to call functions in DLLs without type libraries.</source>
+          <target state="translated">Il <ph id="ph1">`DllImport`</ph> attributo fornisce un metodo alternativo di chiamare funzioni nelle DLL senza librerie dei tipi.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DllImport`</ph> is roughly equivalent to using a <ph id="ph2">`Declare`</ph> statement but provides more control over how functions are called.</source>
+          <target state="translated"><ph id="ph1">`DllImport`</ph>è quasi equivalente all'utilizzo di un <ph id="ph2">`Declare`</ph> istruzione ma fornisce maggiore controllo sulla modalità di chiamata delle funzioni.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>You can use <ph id="ph1">`DllImport`</ph> with most Windows API calls as long as the call refers to a shared (sometimes called <bpt id="p1">*</bpt>static<ept id="p1">*</ept>) method.</source>
+          <target state="translated">È possibile utilizzare <ph id="ph1">`DllImport`</ph> con la maggior parte delle API di Windows chiama, purché la chiamata fa riferimento a una scheda SCSI (talvolta chiamato <bpt id="p1">*</bpt>statico<ept id="p1">*</ept>) metodo.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>You cannot use methods that require an instance of a class.</source>
+          <target state="translated">È possibile utilizzare metodi che richiedono un'istanza di una classe.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Unlike <ph id="ph1">`Declare`</ph> statements, <ph id="ph2">`DllImport`</ph> calls cannot use the <ph id="ph3">`MarshalAs`</ph> attribute.</source>
+          <target state="translated">A differenza di <ph id="ph1">`Declare`</ph> istruzioni <ph id="ph2">`DllImport`</ph> chiamate è possono utilizzare il <ph id="ph3">`MarshalAs`</ph> attributo.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To call a Windows API using the DllImport attribute</source>
+          <target state="translated">Per chiamare un'API di Windows utilizzando l'attributo DllImport</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Open a new Windows Application project by clicking <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, and then clicking <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Aprire un nuovo progetto applicazione Windows, fare clic su <bpt id="p1">**</bpt>New<ept id="p1">**</ept> sul <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu e quindi fare clic su <bpt id="p3">**</bpt>progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box appears.</source>
+          <target state="translated">Verrà visualizzata la finestra di dialogo <bpt id="p1">**</bpt>Nuovo progetto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Windows Application<ept id="p1">**</ept> from the list of <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> project templates.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>applicazione Windows<ept id="p1">**</ept> dall'elenco di <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> modelli di progetto.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The new project is displayed.</source>
+          <target state="translated">Viene visualizzato il nuovo progetto.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Add a button named <ph id="ph1">`Button2`</ph> to the startup form.</source>
+          <target state="translated">Aggiungere un pulsante denominato <ph id="ph1">`Button2`</ph> al form di avvio.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Double-click <ph id="ph1">`Button2`</ph> to open the code view for the form.</source>
+          <target state="translated">Fare doppio clic su <ph id="ph1">`Button2`</ph> per visualizzare il codice per il form.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To simplify access to <ph id="ph1">`DllImport`</ph>, add an <ph id="ph2">`Imports`</ph> statement to the top of the code for the startup form class:</source>
+          <target state="translated">Per semplificare l'accesso a <ph id="ph1">`DllImport`</ph>, aggiungere un <ph id="ph2">`Imports`</ph> all'inizio del codice per la classe di form di avvio:</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#13<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>13 VbVbalrInterop<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Declare an empty function preceding the <ph id="ph1">`End Class`</ph> statement for the form, and name the function <ph id="ph2">`MoveFile`</ph>.</source>
+          <target state="translated">Dichiarare una funzione vuota prima di <ph id="ph1">`End Class`</ph> istruzione per il form e il nome di funzione <ph id="ph2">`MoveFile`</ph>.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Apply the <ph id="ph1">`Public`</ph> and <ph id="ph2">`Shared`</ph> modifiers to the function declaration and set parameters for <ph id="ph3">`MoveFile`</ph> based on the arguments the Windows API function uses:</source>
+          <target state="translated">Applicare il <ph id="ph1">`Public`</ph> e <ph id="ph2">`Shared`</ph> i modificatori di dichiarazione di funzione e impostare i parametri per <ph id="ph3">`MoveFile`</ph> basata sugli argomenti viene utilizzata la funzione API Windows:</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#16<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#16;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Your function can have any valid procedure name; the <ph id="ph1">`DllImport`</ph> attribute specifies the name in the DLL.</source>
+          <target state="translated">La funzione può avere qualsiasi nome di routine valido; il <ph id="ph1">`DllImport`</ph> attributo specifica il nome della DLL.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>It also handles interoperability marshaling for the parameters and return values, so you can choose Visual Studio data types that are similar to the data types the API uses.</source>
+          <target state="translated">Gestisce inoltre il marshalling di interoperabilità per i parametri e valori restituiti, è possibile scegliere i tipi di dati di Visual Studio sono simili ai dati dei tipi utilizzati dall'API.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Apply the <ph id="ph1">`DllImport`</ph> attribute to the empty function.</source>
+          <target state="translated">Applicare il <ph id="ph1">`DllImport`</ph> attributo alla funzione vuota.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The first parameter is the name and location of the DLL containing the function you are calling.</source>
+          <target state="translated">Il primo parametro è il nome e il percorso della DLL che contiene la funzione che si sta chiamando.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>You do not need to specify the path for files located in the Windows system directories.</source>
+          <target state="translated">Non è necessario specificare il percorso dei file presenti nella directory di sistema Windows.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>The second parameter is a named argument that specifies the name of the function in the Windows API.</source>
+          <target state="translated">Il secondo parametro è un argomento denominato che specifica il nome della funzione nell'API di Windows.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In this example, the <ph id="ph1">`DllImport`</ph> attribute forces calls to <ph id="ph2">`MoveFile`</ph> to be forwarded to <ph id="ph3">`MoveFileW`</ph> in KERNEL32.DLL.</source>
+          <target state="translated">In questo esempio, il <ph id="ph1">`DllImport`</ph> attributo impone che le chiamate a <ph id="ph2">`MoveFile`</ph> deve essere inoltrato al <ph id="ph3">`MoveFileW`</ph> in KERNEL32. DLL.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`MoveFileW`</ph> method copies a file from the path <ph id="ph2">`src`</ph> to the path <ph id="ph3">`dst`</ph>.</source>
+          <target state="translated">Il <ph id="ph1">`MoveFileW`</ph> metodo copia un file dal percorso di <ph id="ph2">`src`</ph> al percorso <ph id="ph3">`dst`</ph>.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#17<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop n.&amp;17;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Add code to the <ph id="ph1">`Button2_Click`</ph> event handler to call the function:</source>
+          <target state="translated">Aggiungere codice per il <ph id="ph1">`Button2_Click`</ph> gestore eventi per chiamare la funzione:</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#18<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#18;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Create a file named Test.txt and place it in the C:\Tmp directory on your hard drive.</source>
+          <target state="translated">Creare un file denominato test. txt e inserirlo nella directory C:\Tmp sul disco rigido.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Create the Tmp directory if necessary.</source>
+          <target state="translated">Se necessario, creare la directory Tmp.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Press F5 to start the application.</source>
+          <target state="translated">Premere F5 per avviare l’applicazione.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The main form appears.</source>
+          <target state="translated">Viene visualizzato il form principale.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Button2<ept id="p1">**</ept>.</source>
+          <target state="translated">Fare clic su <bpt id="p1">**</bpt>Button2<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>The message "The file was moved successfully" is displayed if the file can be moved.</source>
+          <target state="translated">Se il file può essere spostato, viene visualizzato il messaggio "il file è stato spostato correttamente".</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Runtime.InteropServices.DllImportAttribute&gt;</source>
+          <target state="translated">&lt;xref:System.Runtime.InteropServices.DllImportAttribute&gt;&lt;/xref:System.Runtime.InteropServices.DllImportAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</source>
+          <target state="translated">&lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;&lt;/xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Declare Statement<ept id="p1">](../../../visual-basic/language-reference/statements/declare-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Declare (istruzione)<ept id="p1">](../../../visual-basic/language-reference/statements/declare-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Auto<ept id="p1">](../../../visual-basic/language-reference/modifiers/auto.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Automatico<ept id="p1">](../../../visual-basic/language-reference/modifiers/auto.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Alias<ept id="p1">](../../../visual-basic/language-reference/statements/alias-clause.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Alias<ept id="p1">](../../../visual-basic/language-reference/statements/alias-clause.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>COM Interop<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Interoperabilità COM<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Creating Prototypes in Managed Code<ept id="p1">](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Creazione di prototipi nel codice gestito<ept id="p1">](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Marshaling a Delegate as a Callback Method<ept id="p1">](http://msdn.microsoft.com/library/6ddd7866-9804-4571-84de-83f5cc017a5a)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Marshalling di un delegato come metodo di Callback<ept id="p1">](http://msdn.microsoft.com/library/6ddd7866-9804-4571-84de-83f5cc017a5a)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

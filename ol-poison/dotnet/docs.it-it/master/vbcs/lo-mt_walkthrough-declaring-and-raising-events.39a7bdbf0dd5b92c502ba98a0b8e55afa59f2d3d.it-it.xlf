@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">233673c1d42684b7caa9042d18fb341a1043a31b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\events\walkthrough-declaring-and-raising-events.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00e058dfb7b92a732ffc7d82d69b89046dfc847b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4f91d57a5d5abc5d6e81cb8d86930553d8d29f8</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-declaring-and-raising-events.39a7bdbf0dd5b92c502ba98a0b8e55afa59f2d3d.it-it is different with handoff file name: walkthrough-declaring-and-raising-events.39a7bdbf0dd5b92c502ba98a0b8e55afa59f2d3d.it-it.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Declaring and Raising Events (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Dichiarazione e generazione di eventi (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Declaring and Raising Events (Visual Basic)</source>
+          <target state="translated">Procedura dettagliata: dichiarazione e generazione di eventi (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough demonstrates how to declare and raise events for a class named <ph id="ph1">`Widget`</ph>.</source>
+          <target state="translated">Questa procedura dettagliata viene illustrato come dichiarare e generare eventi per una classe denominata <ph id="ph1">`Widget`</ph>.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>After you complete the steps, you might want to read the companion topic, <bpt id="p1">[</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept>, which shows how to use events from <ph id="ph1">`Widget`</ph> objects to provide status information in an application.</source>
+          <target state="translated">Dopo aver completato i passaggi, è possibile leggere l'argomento correlato, <bpt id="p1">[</bpt>procedura dettagliata: gestione degli eventi<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept>, che illustra come utilizzare gli eventi da <ph id="ph1">`Widget`</ph> gli oggetti da fornire informazioni sullo stato in un'applicazione.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The Widget Class</source>
+          <target state="translated">La classe Widget</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Assume for the moment that you have a <ph id="ph1">`Widget`</ph> class.</source>
+          <target state="translated">Si supponga che si dispone di un <ph id="ph1">`Widget`</ph> (classe).</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`Widget`</ph> class has a method that can take a long time to execute, and you want your application to be able to put up some kind of completion indicator.</source>
+          <target state="translated">La <ph id="ph1">`Widget`</ph> classe dispone di un metodo che può richiedere un tempo di esecuzione e si desidera che l'applicazione in grado di venga visualizzato un indicatore di completamento.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Of course, you could make the <ph id="ph1">`Widget`</ph> object show a percent-complete dialog box, but then you would be stuck with that dialog box in every project in which you used the <ph id="ph2">`Widget`</ph> class.</source>
+          <target state="translated">Naturalmente, è possibile apportare il <ph id="ph1">`Widget`</ph> oggetto visualizzare una finestra di dialogo percentuale di completamento, ma quindi verrebbe con tale finestra di dialogo in ogni progetto in cui viene utilizzata la <ph id="ph2">`Widget`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A good principle of object design is to let the application that uses an object handle the user interface—unless the whole purpose of the object is to manage a form or dialog box.</source>
+          <target state="translated">Una buona regola della progettazione di oggetti consiste nel consentire all'applicazione che utilizza un handle di oggetto dell'interfaccia utente, a meno che non è lo scopo dell'oggetto per la gestione di un modulo o finestra di dialogo.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The purpose of <ph id="ph1">`Widget`</ph> is to perform other tasks, so it is better to add a <ph id="ph2">`PercentDone`</ph> event and let the procedure that calls <ph id="ph3">`Widget`</ph>'s methods handle that event and display status updates.</source>
+          <target state="translated">Lo scopo di <ph id="ph1">`Widget`</ph> per eseguire altre attività, pertanto è consigliabile aggiungere un <ph id="ph2">`PercentDone`</ph> evento e consentire alla routine che chiama <ph id="ph3">`Widget`</ph>di metodi gestiscono che lo stato di evento e di visualizzare gli aggiornamenti.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PercentDone`</ph> event can also provide a mechanism for canceling the task.</source>
+          <target state="translated">Il <ph id="ph1">`PercentDone`</ph> eventi possono anche fornire un meccanismo per l'annullamento dell'attività.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To build the code example for this topic</source>
+          <target state="translated">Per compilare l'esempio di codice per questo argomento</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Open a new <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> Windows Application project and create a form named <ph id="ph2">`Form1`</ph>.</source>
+          <target state="translated">Aprire un nuovo <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> applicazione Windows di progetto e creare un form denominato <ph id="ph2">`Form1`</ph>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Add two buttons and a label to <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">Aggiungere due pulsanti e un'etichetta a <ph id="ph1">`Form1`</ph>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Name the objects as shown in the following table.</source>
+          <target state="translated">Denominare gli oggetti come illustrato nella tabella seguente.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">Oggetto</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Proprietà</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">Impostazione</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Start Task</source>
+          <target state="translated">Attività di avvio</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">Annulla</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`(Name)`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`(Name)`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>lblPercentDone, 0</source>
+          <target state="translated">lblPercentDone, 0</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add Class<ept id="p2">**</ept> to add a class named <ph id="ph1">`Widget.vb`</ph> to the project.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>progetto<ept id="p1">**</ept> menu, scegliere <bpt id="p2">**</bpt>Aggiungi classe<ept id="p2">**</ept> per aggiungere una classe denominata <ph id="ph1">`Widget.vb`</ph> al progetto.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To declare an event for the Widget class</source>
+          <target state="translated">Per dichiarare un evento per la classe Widget</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`Event`</ph> keyword to declare an event in the <ph id="ph2">`Widget`</ph> class.</source>
+          <target state="translated">Utilizzare il <ph id="ph1">`Event`</ph> parola chiave per dichiarare un evento nella <ph id="ph2">`Widget`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Note that an event can have <ph id="ph1">`ByVal`</ph> and <ph id="ph2">`ByRef`</ph> arguments, as <ph id="ph3">`Widget`</ph>'s <ph id="ph4">`PercentDone`</ph> event demonstrates:</source>
+          <target state="translated">Si noti che un evento può avere <ph id="ph1">`ByVal`</ph> e <ph id="ph2">`ByRef`</ph> argomenti, come <ph id="ph3">`Widget`</ph>del <ph id="ph4">`PercentDone`</ph> dimostrato dall'evento:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#1<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents n.&amp;1;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>When the calling object receives a <ph id="ph1">`PercentDone`</ph> event, the <ph id="ph2">`Percent`</ph> argument contains the percentage of the task that is complete.</source>
+          <target state="translated">Quando l'oggetto chiamante riceve un <ph id="ph1">`PercentDone`</ph> evento, il <ph id="ph2">`Percent`</ph> argomento contiene la percentuale di completamento dell'attività.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Cancel`</ph> argument can be set to <ph id="ph2">`True`</ph> to cancel the method that raised the event.</source>
+          <target state="translated">Il <ph id="ph1">`Cancel`</ph> argomento può essere impostato su <ph id="ph2">`True`</ph> per annullare il metodo che ha generato l'evento.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have <ph id="ph1">`Optional`</ph> or <ph id="ph2">`ParamArray`</ph> arguments, and events do not have return values.</source>
+          <target state="translated">È possibile dichiarare argomenti dell'evento come argomenti di procedure, con le seguenti eccezioni: gli eventi devono avere <ph id="ph1">`Optional`</ph> o <ph id="ph2">`ParamArray`</ph> gli argomenti e gli eventi non dispongono di valori restituiti.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PercentDone`</ph> event is raised by the <ph id="ph2">`LongTask`</ph> method of the <ph id="ph3">`Widget`</ph> class.</source>
+          <target state="translated">Il <ph id="ph1">`PercentDone`</ph> evento viene generato dal <ph id="ph2">`LongTask`</ph> metodo la <ph id="ph3">`Widget`</ph> classe.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`LongTask`</ph> takes two arguments: the length of time the method pretends to be doing work, and the minimum time interval before <ph id="ph2">`LongTask`</ph> pauses to raise the <ph id="ph3">`PercentDone`</ph> event.</source>
+          <target state="translated"><ph id="ph1">`LongTask`</ph>accetta due argomenti: il periodo di tempo apparentemente richiesto dal metodo eseguire le operazioni e l'intervallo di tempo minimo prima <ph id="ph2">`LongTask`</ph> pause per generare il <ph id="ph3">`PercentDone`</ph> evento.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To raise the PercentDone event</source>
+          <target state="translated">Per generare l'evento PercentDone</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To simplify access to the <ph id="ph1">`Timer`</ph> property used by this class, add an <ph id="ph2">`Imports`</ph> statement to the top of the declarations section of your class module, above the <ph id="ph3">`Class Widget`</ph> statement.</source>
+          <target state="translated">Per semplificare l'accesso per il <ph id="ph1">`Timer`</ph> proprietà utilizzata da questa classe, aggiungere un <ph id="ph2">`Imports`</ph> istruzione all'inizio della sezione relativa alle dichiarazioni del modulo di classe, sopra il <ph id="ph3">`Class Widget`</ph> istruzione.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#2<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents n.&amp;2;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Add the following code to the <ph id="ph1">`Widget`</ph> class:</source>
+          <target state="translated">Aggiungere il codice seguente alla classe <ph id="ph1">`Widget`</ph> :</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#3<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents n.&amp;3;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When your application calls the <ph id="ph1">`LongTask`</ph> method, the <ph id="ph2">`Widget`</ph> class raises the <ph id="ph3">`PercentDone`</ph> event every <ph id="ph4">`MinimumInterval`</ph> seconds.</source>
+          <target state="translated">Quando l'applicazione chiama il <ph id="ph1">`LongTask`</ph> (metodo), il <ph id="ph2">`Widget`</ph> classe genera il <ph id="ph3">`PercentDone`</ph> evento ogni <ph id="ph4">`MinimumInterval`</ph> secondi.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>When the event returns, <ph id="ph1">`LongTask`</ph> checks to see if the <ph id="ph2">`Cancel`</ph> argument was set to <ph id="ph3">`True`</ph>.</source>
+          <target state="translated">Quando termina, l'evento <ph id="ph1">`LongTask`</ph> verifica se il <ph id="ph2">`Cancel`</ph> argomento è stato impostato su <ph id="ph3">`True`</ph>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A few disclaimers are necessary here.</source>
+          <target state="translated">Di seguito sono necessarie alcune osservazioni.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For simplicity, the <ph id="ph1">`LongTask`</ph> procedure assumes you know in advance how long the task will take.</source>
+          <target state="translated">Per semplicità, la <ph id="ph1">`LongTask`</ph> procedura si presuppone che si conosce in anticipo la durata dell'attività.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This is almost never the case.</source>
+          <target state="translated">Ciò avviene quasi mai.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Dividing tasks into chunks of even size can be difficult, and often what matters most to users is simply the amount of time that passes before they get an indication that something is happening.</source>
+          <target state="translated">Suddivisione delle attività in blocchi di dimensioni pari può essere difficile e spesso gli utenti desiderano soprattutto è semplicemente la quantità di tempo di attesa prima di ottenere un'indicazione che si è verificato.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You may have spotted another flaw in this sample.</source>
+          <target state="translated">In questo esempio si potrebbe individua un difetto di un altro.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Timer`</ph> property returns the number of seconds that have passed since midnight; therefore, the application gets stuck if it is started just before midnight.</source>
+          <target state="translated">Il <ph id="ph1">`Timer`</ph> proprietà restituisce il numero di secondi trascorsi dalla mezzanotte; pertanto, l'applicazione ottiene bloccata se è stato avviato prima di mezzanotte.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A more careful approach to measuring time would take boundary conditions such as this into consideration, or avoid them altogether, using properties such as <ph id="ph1">`Now`</ph>.</source>
+          <target state="translated">Un approccio più precisa per misurare il tempo necessario tenere in considerazione o evitarli del tutto, utilizzando le proprietà, ad esempio <ph id="ph1">`Now`</ph>.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Now that the <ph id="ph1">`Widget`</ph> class can raise events, you can move to the next walkthrough.</source>
+          <target state="translated">Ora che la <ph id="ph1">`Widget`</ph> classe può generare eventi, è possibile spostare la successiva procedura dettagliata.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept> demonstrates how to use <ph id="ph1">`WithEvents`</ph> to associate an event handler with the <ph id="ph2">`PercentDone`</ph> event.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Procedura dettagliata: Gestione degli eventi<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept> viene illustrato come utilizzare <ph id="ph1">`WithEvents`</ph> per associare un gestore eventi con il <ph id="ph2">`PercentDone`</ph> evento.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;&lt;/xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;&lt;/xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedura dettagliata: Gestione degli eventi<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Eventi<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
