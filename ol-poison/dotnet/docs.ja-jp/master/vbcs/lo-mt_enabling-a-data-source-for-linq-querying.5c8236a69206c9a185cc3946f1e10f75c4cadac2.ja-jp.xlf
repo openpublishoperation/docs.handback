@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">34bdc4e056d982799eac35eb2398dd3f23f6f351</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\enabling-a-data-source-for-linq-querying.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4feeba2c8eb91a16fa340f9d479d538b02087a1c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0611b6c4d44b04568935a611bd008fcce640cbdf</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_enabling-a-data-source-for-linq-querying.5c8236a69206c9a185cc3946f1e10f75c4cadac2.ja-jp is different with handoff file name: enabling-a-data-source-for-linq-querying.5c8236a69206c9a185cc3946f1e10f75c4cadac2.ja-jp.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Enabling a Data Source for LINQ Querying2 | Microsoft Docs</source>
+          <target state="translated">LINQ Querying2 のデータ ソースの有効化 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Enabling a Data Source for LINQ Querying</source>
+          <target state="translated">データ ソースの LINQ クエリの有効化</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>There are various ways to extend <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to enable any data source to be queried in the <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> pattern.</source>
+          <target state="translated">さまざまな方法で拡張する<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>でクエリを実行する任意のデータ ソースを有効にする、<ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>パターンです。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The data source might be a data structure, a Web service, a file system, or a database, to name some.</source>
+          <target state="translated">データ ソースは、いくつか例を挙げると、データ構造体、Web サービス、ファイル システム、またはデータベースの場合があります。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> pattern makes it easy for clients to query a data source for which <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying is enabled, because the syntax and pattern of the query does not change.</source>
+          <target state="translated">クエリの構文とパターンは変わらないため、<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> パターンを使用すると、クライアントは <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> クエリが有効になっているデータ ソースを簡単にクエリできます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The ways in which <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> can be extended to these data sources include the following:</source>
+          <target state="translated">方法<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>を拡張できるこれらのデータをソースには、次が含まれます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Implementing the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface in a type to enable <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to Objects querying of that type.</source>
+          <target state="translated">実装する、&lt;xref:System.Collections.Generic.IEnumerable%601&gt;インターフェイスを有効にするのには、タイプで<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>その型のオブジェクトを照会します&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Creating standard query operator methods such as &lt;xref:System.Linq.Enumerable.Where%2A&gt; and &lt;xref:System.Linq.Enumerable.Select%2A&gt; that extend a type, to enable custom <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of that type.</source>
+          <target state="translated">標準クエリ演算子メソッドのなど作成&lt;xref:System.Linq.Enumerable.Where%2A&gt;と&lt;xref:System.Linq.Enumerable.Select%2A&gt;ユーザー設定を有効にする、型を拡張する<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>その型のクエリを実行します&lt;/xref:System.Linq.Enumerable.Select%2A&gt;&lt;/xref:System.Linq.Enumerable.Where%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Creating a provider for your data source that implements the &lt;xref:System.Linq.IQueryable%601&gt; interface.</source>
+          <target state="translated">実装するデータ ソースのプロバイダーを作成する、&lt;xref:System.Linq.IQueryable%601&gt;インターフェイス&lt;/xref:System.Linq.IQueryable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A provider that implements this interface receives <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> queries in the form of expression trees, which it can execute in a custom way, for example remotely.</source>
+          <target state="translated">このインターフェイスを実装したプロバイダーは、式ツリーの形式で <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> クエリを受け取ります。プロバイダーはこれをカスタマイズされた方法 (たとえばリモート) で実行できます。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Creating a provider for your data source that takes advantage of an existing <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> technology.</source>
+          <target state="translated">既存の活用、データ ソースのプロバイダーを作成する<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>テクノロジです。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Such a provider would enable not only querying, but also insert, update, and delete operations and mapping for user-defined types.</source>
+          <target state="translated">そのようなプロバイダーは、クエリだけでなく、挿入、更新、および削除などの操作や、ユーザー定義型のマッピングも有効にします。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>This topic discusses these options.</source>
+          <target state="translated">このトピックでは、これらのオプションについて説明します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>How to Enable LINQ Querying of Your Data Source</source>
+          <target state="translated">データ ソースの LINQ クエリを有効にする方法</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In-Memory Data</source>
+          <target state="translated">インメモリ データ</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>There are two ways you can enable <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of in-memory data.</source>
+          <target state="translated">2 つの方法が有効にできます<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>メモリ内のデータのクエリを実行します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If the data is of a type that implements &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, you can query the data by using <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> to Objects.</source>
+          <target state="translated">実装する型の場合は、データ&lt;xref:System.Collections.Generic.IEnumerable%601&gt;を使用して、データを照会する<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>オブジェクトにします&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If it does not make sense to enable enumeration of your type by implementing the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; interface, you can define <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> standard query operator methods in that type or create <ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> standard query operator methods that extend the type.</source>
+          <target state="translated">実装することで、型の列挙体を有効にする意味が行わないかどうか、&lt;xref:System.Collections.Generic.IEnumerable%601&gt;インターフェイスを定義できます<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>標準クエリ演算子メソッドをその型または作成<ph id="ph2">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>標準クエリ演算子メソッド型を拡張する&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Custom implementations of the standard query operators should use deferred execution to return the results.</source>
+          <target state="translated">標準クエリ演算子のカスタム実装は、結果を返すために遅延実行を使用する必要があります。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Remote Data</source>
+          <target state="translated">リモート データ</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The best option for enabling <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> querying of a remote data source is to implement the &lt;xref:System.Linq.IQueryable%601&gt; interface.</source>
+          <target state="translated">有効にするための最適なオプション<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>を実装するのには、リモート データ ソースのクエリ、&lt;xref:System.Linq.IQueryable%601&gt;インターフェイス&lt;/xref:System.Linq.IQueryable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, this differs from extending a provider such as <ph id="ph1">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> for a data source.</source>
+          <target state="translated">しかしこれは、<ph id="ph1">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> などのプロバイダーをデータ ソースに対して拡張することとは別です。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>No provider models for extending existing <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> technologies, such as <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph>, to other types of data source are available in <ph id="ph3">[!INCLUDE[vs_orcas_long](../../../../csharp/misc/includes/vs_orcas_long_md.md)]</ph>.</source>
+          <target state="translated">既存の拡張するためにプロバイダー モデル<ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>テクノロジなど<ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> でその他の型のデータ ソースが利用<ph id="ph3">[!INCLUDE[vs_orcas_long](../../../../csharp/misc/includes/vs_orcas_long_md.md)]</ph>します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>IQueryable LINQ Providers</source>
+          <target state="translated">IQueryable LINQ プロバイダー</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> providers that implement &lt;xref:System.Linq.IQueryable%601&gt; can vary widely in their complexity.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>実装したプロバイダー&lt;xref:System.Linq.IQueryable%601&gt;複雑度に大きく異なることができます&lt;/xref:System.Linq.IQueryable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>This section discusses the different levels of complexity.</source>
+          <target state="translated">このセクションでは、さまざまなレベルの複雑度について説明します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>A less complex <ph id="ph1">`IQueryable`</ph> provider might interface with a single method of a Web service.</source>
+          <target state="translated">複雑度が低めの <ph id="ph1">`IQueryable`</ph> プロバイダーは、多くの場合、Web サービスの単一のメソッドとやり取りします。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>This type of provider is very specific because it expects specific information in the queries that it handles.</source>
+          <target state="translated">この種のプロバイダーは処理するクエリに特定の情報を受け取るので非常に高い固有性を持ちます。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>It has a closed type system, perhaps exposing a single result type.</source>
+          <target state="translated">クローズされた型システムを持ち、おそらく&amp;1; つの結果型を公開します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Most of the execution of the query occurs locally, for example by using the &lt;xref:System.Linq.Enumerable&gt; implementations of the standard query operators.</source>
+          <target state="translated">たとえばを使用するクエリの実行のほとんどがローカルで発生する、&lt;xref:System.Linq.Enumerable&gt;標準クエリ演算子の実装&lt;/xref:System.Linq.Enumerable&gt;。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.</source>
+          <target state="translated">複雑度が低めのプロバイダーは、クエリを表す式ツリーのメソッド呼び出し式を&amp;1; つだけ調べ、残りのクエリのロジックは他の場所で処理されるようにします。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>An <ph id="ph1">`IQueryable`</ph> provider of medium complexity might target a data source that has a partially expressive query language.</source>
+          <target state="translated">複雑度が中レベルの <ph id="ph1">`IQueryable`</ph> プロバイダーは、部分的に表現力が豊かなクエリ言語を持つデータ ソースを対象とします。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If it targets a Web service, it might interface with more than one method of the Web service and select the method to call based on the question that the query poses.</source>
+          <target state="translated">そのプロバイダーが Web サービスを対象とする場合、Web サービスの複数のメソッドとやり取りし、クエリが提示する問題に基づいて呼び出すメソッドを選択します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>A provider of medium complexity would have a richer type system than a simple provider, but it would still be a fixed type system.</source>
+          <target state="translated">中レベルの複雑度のプロバイダーは、簡単なプロバイダーより型システムが豊富ですが、それでもその種類は限られています。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, the provider might expose types that have one-to-many relationships that can be traversed, but it would not provide mapping technology for user-defined types.</source>
+          <target state="translated">たとえば、このレベルのプロバイダーは走査できる一対多リレーションシップを持つ型を公開する場合がありますが、ユーザー定義型のマッピング テクノロジは提供しません。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A complex <ph id="ph1">`IQueryable`</ph> provider, such as the <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> provider, might translate complete <ph id="ph3">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> queries to an expressive query language, such as SQL.</source>
+          <target state="translated"><ph id="ph1">`IQueryable`</ph> プロバイダーなどの複雑な <ph id="ph2">[!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)]</ph> プロバイダーは <ph id="ph3">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> クエリ一式を、SQL などの表現力が豊かなクエリ言語に変換する場合があります。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>A complex provider is more general than a less complex provider, because it can handle a wider variety of questions in the query.</source>
+          <target state="translated">複雑なプロバイダーは、それほど複雑でないプロバイダーより一般的です。これは、より多様な質問をクエリで処理できるためです。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>It also has an open type system and therefore must contain extensive infrastructure to map user-defined types.</source>
+          <target state="translated">さらに、オープンな型システムを持つため、ユーザー定義型をマップするために広範なインフラストラクチャを含める必要があります。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Developing a complex provider requires a significant amount of effort.</source>
+          <target state="translated">複雑なプロバイダーの開発には、多大な労力を要します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.IQueryable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.IQueryable%601&gt;&lt;/xref:System.Linq.IQueryable%601&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Linq.Enumerable&gt;</source>
+          <target state="translated">&lt;xref:System.Linq.Enumerable&gt;&lt;/xref:System.Linq.Enumerable&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Standard Query Operators Overview (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>標準クエリ演算子の概要 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>LINQ to Objects (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
