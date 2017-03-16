@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cfb8fc77d3e0d85ef795a94fc95ab61a8f68ff39</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\data-types\troubleshooting-data-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">66c89c53e4bbf1371d3cee24feadea1c3f570602</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ffd43de433285784a53ad5ce82f11e6f2852d057</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_troubleshooting-data-types.baa0db98dd89d82c48ee458d984f6dd1b2cff643.de-de is different with handoff file name: troubleshooting-data-types.baa0db98dd89d82c48ee458d984f6dd1b2cff643.de-de.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Troubleshooting Data Types (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Problembehandlung bei Datentypen (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Troubleshooting Data Types (Visual Basic)</source>
+          <target state="translated">Problembehandlung bei Datentypen (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This page lists some common problems that can occur when you perform operations on intrinsic data types.</source>
+          <target state="translated">Diese Seite listet einige der häufigsten Probleme, die auftreten können, wenn Operationen mit systeminternen Datentypen ausgeführt.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Floating-Point Expressions Do Not Compare as Equal</source>
+          <target state="translated">Gleitkomma-Ausdrücke vergleichen nicht gleichwertig</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>When you work with floating-point numbers (<bpt id="p1">[</bpt>Single Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/single-data-type.md)</ept> and <bpt id="p2">[</bpt>Double Data Type<ept id="p2">](../../../../visual-basic/language-reference/data-types/double-data-type.md)</ept>), remember that they are stored as binary fractions.</source>
+          <target state="translated">Beim Arbeiten mit Gleitkommazahlen (<bpt id="p1">[</bpt>Single-Datentyp<ept id="p1">](../../../../visual-basic/language-reference/data-types/single-data-type.md)</ept> und <bpt id="p2">[</bpt>Double-Datentyp<ept id="p2">](../../../../visual-basic/language-reference/data-types/double-data-type.md)</ept>), beachten Sie, dass sie als binäre Brüche gespeichert werden.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means they cannot hold an exact representation of any quantity that is not a binary fraction (of the form k / (2 ^ n) where k and n are integers).</source>
+          <target state="translated">Dies bedeutet, sie können keine genaue Darstellung der eine Menge, die nicht Binärbruch enthalten (im Format k / (2 ^ n), k und n sind ganze Zahlen).</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, 0.5 (= 1/2) and 0.3125 (= 5/16) can be held as precise values, whereas 0.2 (= 1/5) and 0.3 (= 3/10) can be only approximations.</source>
+          <target state="translated">Beispielsweise können 0,5 (= 1/2) and 0,3125 (= 5/16) als präzise Werte gespeichert werden, während 0,2 (= 1/5) und 0,3 (= 3/10) nur Näherungswerte sein können.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Because of this imprecision, you cannot rely on exact results when you operate on floating-point values.</source>
+          <target state="translated">Aus diesem Grund können nicht Ungenauigkeit, Sie genaue Ergebnisse abhängig, wenn Sie mit Gleitkommawerten arbeiten.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In particular, two values that are theoretically equal might have slightly different representations.</source>
+          <target state="translated">Insbesondere möglicherweise zwei Werte, die theoretisch gleich sind etwas unterschiedlich dargestellt.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>To compare floating-point quantities</source>
+          <target state="translated">Zu vergleichenden Gleitkommazahlen Mengen</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>1.  Calculate the absolute value of their difference by using the &lt;xref:System.Math.Abs%2A&gt; method of the &lt;xref:System.Math&gt; class in the &lt;xref:System&gt; namespace.</source>
+          <target state="translated">1.  Berechnen Sie den Absolutbetrag ihrer Differenz mithilfe der &lt;xref:System.Math.Abs%2A&gt;Methode der &lt;xref:System.Math&gt;-Klasse in die &lt;xref:System&gt;Namespace.&lt;/xref:System&gt; &lt;/xref:System.Math&gt; &lt;/xref:System.Math.Abs%2A&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>2.  Determine an acceptable maximum difference, such that you can consider the two quantities to be equal for practical purposes if their difference is no larger.</source>
+          <target state="translated">2.  Bestimmen Sie eine zulässige maximale Abweichung, die Sie berücksichtigen können die beiden Größen für praktische Zwecke gleich sein, sofern ihre Abweichung nicht größer ist.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>3.  Compare the absolute value of the difference to the acceptable difference.</source>
+          <target state="translated">3.  Vergleichen Sie den absoluten Wert des Unterschieds mit der zulässigen Abweichung.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following example demonstrates both incorrect and correct comparison of two <ph id="ph1">`Double`</ph> values.</source>
+          <target state="translated">Das folgende Beispiel zeigt die falschen und richtigen Vergleich von zwei <ph id="ph1">`Double`</ph> Werte.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes#10<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes&amp;#10;<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The previous example uses the &lt;xref:System.Double.ToString%2A&gt; method of the &lt;xref:System.Double&gt; structure so that it can specify better  precision than the <ph id="ph1">`CStr`</ph> keyword uses.</source>
+          <target state="translated">Im vorhergehenden Beispiel wird die &lt;xref:System.Double.ToString%2A&gt;Methode der &lt;xref:System.Double&gt;so strukturieren, dass er eine größere Genauigkeit als angeben kann die <ph id="ph1">`CStr`</ph> -Schlüsselwort verwendet.&lt;/xref:System.Double&gt; &lt;/xref:System.Double.ToString%2A&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The default is 15 digits, but the "G17" format extends it to 17 digits.</source>
+          <target state="translated">Der Standardwert ist 15 Stellen, aber das Format "G17" erweitert ihn auf 17 Ziffern.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Mod Operator Does Not Return Accurate Result</source>
+          <target state="translated">Mod-Operator gibt kein präzises Ergebnis zurück.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Because of the imprecision of floating-point storage, the <bpt id="p1">[</bpt>Mod Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/mod-operator.md)</ept> can return an unexpected result when at least one of the operands is floating-point.</source>
+          <target state="translated">Aufgrund der Ungenauigkeit von Gleitkommazahlen die <bpt id="p1">[</bpt>Mod-Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/mod-operator.md)</ept> kann ein unerwartetes Ergebnis zurückgeben, wenn mindestens einer der Operanden eine Gleitkommazahl ist.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>Decimal Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/decimal-data-type.md)</ept> does not use floating-point representation.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>Decimal-Datentyp<ept id="p1">](../../../../visual-basic/language-reference/data-types/decimal-data-type.md)</ept> gleitkommadarstellung wird nicht verwendet.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Many numbers that are inexact in <ph id="ph1">`Single`</ph> and <ph id="ph2">`Double`</ph> are exact in <ph id="ph3">`Decimal`</ph> (for example 0.2 and 0.3).</source>
+          <target state="translated">Viele Zahlen, die ungenau sind <ph id="ph1">`Single`</ph> und <ph id="ph2">`Double`</ph> sind genau in <ph id="ph3">`Decimal`</ph> (z. B. 0,2 und 0,3).</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Although arithmetic is slower in <ph id="ph1">`Decimal`</ph> than in floating-point, it might be worth the performance decrease to achieve better precision.</source>
+          <target state="translated">Obwohl die Berechnung ist langsamer in <ph id="ph1">`Decimal`</ph> als in Gleitkommazahlen es möglicherweise wiegt die geringere Leistung, größere Genauigkeit.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>To find the integer remainder of floating-point quantities</source>
+          <target state="translated">Um den ganzzahligen Rest Gleitkomma Mengen suchen</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>1.  Declare variables as <ph id="ph1">`Decimal`</ph>.</source>
+          <target state="translated">1.  Deklarieren Sie Variablen als <ph id="ph1">`Decimal`</ph>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>2.  Use the literal type character <ph id="ph1">`D`</ph> to force literals to <ph id="ph2">`Decimal`</ph>, in case their values are too large for the <ph id="ph3">`Long`</ph> data type.</source>
+          <target state="translated">2.  Verwenden Sie das Literalzeichen <ph id="ph1">`D`</ph> erzwingen Literale <ph id="ph2">`Decimal`</ph>für den Fall, dass ihre Werte für zu groß sind die <ph id="ph3">`Long`</ph> -Datentyp.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The following example demonstrates the potential imprecision of floating-point operands.</source>
+          <target state="translated">Das folgende Beispiel zeigt die potenzielle Ungenauigkeit der Gleitkomma-Operanden.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes#11<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes&amp;#11;<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The previous example uses the &lt;xref:System.Double.ToString%2A&gt; method of the &lt;xref:System.Double&gt; structure so that it can specify better precision than the <ph id="ph1">`CStr`</ph> keyword uses.</source>
+          <target state="translated">Im vorhergehenden Beispiel wird die &lt;xref:System.Double.ToString%2A&gt;Methode der &lt;xref:System.Double&gt;so strukturieren, dass er eine größere Genauigkeit als angeben kann die <ph id="ph1">`CStr`</ph> -Schlüsselwort verwendet.&lt;/xref:System.Double&gt; &lt;/xref:System.Double.ToString%2A&gt;</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The default is 15 digits, but the "G17" format extends it to 17 digits.</source>
+          <target state="translated">Der Standardwert ist 15 Stellen, aber das Format "G17" erweitert ihn auf 17 Ziffern.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`zeroPointTwo`</ph> is <ph id="ph2">`Double`</ph>, its value for 0.2 is an infinitely repeating binary fraction with a stored value of 0.20000000000000001.</source>
+          <target state="translated">Da <ph id="ph1">`zeroPointTwo`</ph> ist <ph id="ph2">`Double`</ph>, sein Wert für 0,2 ein unendlicher Binärbruch mit dem gespeicherten Wert 0,20000000000000001 dargestellt wird.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Dividing 2.0 by this quantity yields 9.9999999999999995 with a remainder of 0.19999999999999991.</source>
+          <target state="translated">2.0 durch diese Menge dividiert ergibt 9,9999999999999995 mit dem Rest des 0,19999999999999991.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the expression for <ph id="ph1">`decimalRemainder`</ph>, the literal type character <ph id="ph2">`D`</ph> forces both operands to <ph id="ph3">`Decimal`</ph>, and 0.2 has a precise representation.</source>
+          <target state="translated">Im Ausdruck für <ph id="ph1">`decimalRemainder`</ph>, das Literalzeichen <ph id="ph2">`D`</ph> erzwingt, dass beide Operanden <ph id="ph3">`Decimal`</ph>, und 0,2 wird präzise dargestellt.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Therefore the <ph id="ph1">`Mod`</ph> operator yields the expected remainder of 0.0.</source>
+          <target state="translated">Aus diesem Grund die <ph id="ph1">`Mod`</ph> -Operator liefert den erwarteten Rest 0,0.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Note that it is not sufficient to declare <ph id="ph1">`decimalRemainder`</ph> as <ph id="ph2">`Decimal`</ph>.</source>
+          <target state="translated">Beachten Sie, dass es nicht ausreicht, deklarieren <ph id="ph1">`decimalRemainder`</ph> als <ph id="ph2">`Decimal`</ph>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You must also force the literals to <ph id="ph1">`Decimal`</ph>, or they use <ph id="ph2">`Double`</ph> by default and <ph id="ph3">`decimalRemainder`</ph> receives the same inaccurate value as <ph id="ph4">`doubleRemainder`</ph>.</source>
+          <target state="translated">Sie müssen außerdem die Literale erzwingen <ph id="ph1">`Decimal`</ph>, oder sie verwenden <ph id="ph2">`Double`</ph> standardmäßig und <ph id="ph3">`decimalRemainder`</ph> empfängt ungenauen denselben Wert wie <ph id="ph4">`doubleRemainder`</ph>.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Boolean Type Does Not Convert to Numeric Type Accurately</source>
+          <target state="translated">Boolean-Typ konvertiert nicht numerischen Typ korrekt</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Boolean Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)</ept> values are not stored as numbers, and the stored values are not intended to be equivalent to numbers.</source>
+          <target state="translated"><bpt id="p1">[</bpt>Boolean-Datentyp<ept id="p1">](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)</ept> Werte werden nicht als Zahlen gespeichert, und die gespeicherten Werte sollen nicht mit Zahlen gleichwertig sein.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>For compatibility with earlier versions, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> provides conversion keywords (<bpt id="p1">[</bpt>CType Function<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept>, <ph id="ph2">`CBool`</ph>, <ph id="ph3">`CInt`</ph>, and so on) to convert between <ph id="ph4">`Boolean`</ph> and numeric types.</source>
+          <target state="translated">Für die Kompatibilität mit früheren Versionen <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> bietet Konvertierungsschlüsselwörter (<bpt id="p1">[</bpt>CType-Funktion<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept>, <ph id="ph2">`CBool`</ph>, <ph id="ph3">`CInt`</ph>usw.) zum Konvertieren zwischen <ph id="ph4">`Boolean`</ph> und numerischen Typen.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, other languages sometimes perform these conversions differently, as do the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> methods.</source>
+          <target state="translated">Andere Sprachen manchmal führen jedoch diese Konvertierungen wie unterschiedlich die <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> Methoden.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You should never write code that relies on equivalent numeric values for <ph id="ph1">`True`</ph> and <ph id="ph2">`False`</ph>.</source>
+          <target state="translated">Sie sollten nie schreiben Code, der von entsprechenden numerischen Werten für beruht <ph id="ph1">`True`</ph> und <ph id="ph2">`False`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Whenever possible, you should restrict usage of <ph id="ph1">`Boolean`</ph> variables to the logical values for which they are designed.</source>
+          <target state="translated">Wann immer möglich, beschränken Sie die Verwendung von <ph id="ph1">`Boolean`</ph> Variablen auf die logischen Werte, für die sie entworfen werden.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>If you must mix <ph id="ph1">`Boolean`</ph> and numeric values, make sure that you understand the conversion method that you select.</source>
+          <target state="translated">Wenn Sie kombinieren müssen <ph id="ph1">`Boolean`</ph> und numerische Werte, stellen Sie sicher, dass Sie die Konvertierungsmethode verstehen, die Sie auswählen.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Conversion in Visual Basic</source>
+          <target state="translated">Konvertieren in Visual Basic</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When you use the <ph id="ph1">`CType`</ph> or <ph id="ph2">`CBool`</ph> conversion keywords to convert numeric data types to <ph id="ph3">`Boolean`</ph>, 0 becomes <ph id="ph4">`False`</ph> and all other values become <ph id="ph5">`True`</ph>.</source>
+          <target state="translated">Bei Verwendung der <ph id="ph1">`CType`</ph> oder <ph id="ph2">`CBool`</ph> Konvertierungsschlüsselwörter Konvertieren von numerischen Datentypen in <ph id="ph3">`Boolean`</ph>, wird 0 <ph id="ph4">`False`</ph> und alle anderen Werte werden <ph id="ph5">`True`</ph>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>When you convert <ph id="ph1">`Boolean`</ph> values to numeric types by using the conversion keywords, <ph id="ph2">`False`</ph> becomes 0 and <ph id="ph3">`True`</ph> becomes -1.</source>
+          <target state="translated">Bei der Konvertierung <ph id="ph1">`Boolean`</ph> Werte in numerische Typen mit den Konvertierungsschlüsselwörtern <ph id="ph2">`False`</ph> wird 0 und <ph id="ph3">`True`</ph> wird – 1.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Conversion in the Framework</source>
+          <target state="translated">Konvertierung in das Framework</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Convert.ToInt32%2A&gt; method of the &lt;xref:System.Convert&gt; class in the &lt;xref:System&gt; namespace converts <ph id="ph1">`True`</ph> to +1.</source>
+          <target state="translated">Die &lt;xref:System.Convert.ToInt32%2A&gt;Methode der &lt;xref:System.Convert&gt;-Klasse in die &lt;xref:System&gt;Namespace konvertiert <ph id="ph1">`True`</ph> bis +&amp;1;.&lt;/xref:System&gt; &lt;/xref:System.Convert&gt; &lt;/xref:System.Convert.ToInt32%2A&gt;</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If you must convert a <ph id="ph1">`Boolean`</ph> value to a numeric data type, be careful about which conversion method you use.</source>
+          <target state="translated">Wenn Sie konvertieren eine <ph id="ph1">`Boolean`</ph> -Wert in einen numerischen Datentyp aufweisen, seien Sie vorsichtig Konvertierungsmethode, die Sie verwenden.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Character Literal Generates Compiler Error</source>
+          <target state="translated">Zeichenliteral generiert Compilerfehler.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In the absence of any type characters, <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> assumes default data types for literals.</source>
+          <target state="translated">In Ermangelung keine Typzeichen <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> Standarddatentypen für Literale.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The default type for a character literal — enclosed in quotation marks (<ph id="ph1">`" "`</ph>) — is <ph id="ph2">`String`</ph>.</source>
+          <target state="translated">Der Standardtyp für ein Zeichenliteral – in Anführungszeichen eingeschlossen (<ph id="ph1">`" "`</ph>) – ist <ph id="ph2">`String`</ph>.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`String`</ph> data type does not widen to the <bpt id="p1">[</bpt>Char Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/char-data-type.md)</ept>.</source>
+          <target state="translated">Die <ph id="ph1">`String`</ph> Datentyp wird nicht erweitert werden, um die <bpt id="p1">[</bpt>Char-Datentyp<ept id="p1">](../../../../visual-basic/language-reference/data-types/char-data-type.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This means that if you want to assign a literal to a <ph id="ph1">`Char`</ph> variable, you must either make a narrowing conversion or force the literal to the <ph id="ph2">`Char`</ph> type.</source>
+          <target state="translated">Dies bedeutet, dass, wenn Sie ein Literal zuweisen möchten eine <ph id="ph1">`Char`</ph> Variablen, Sie stellen eine einschränkende Konvertierung, oder erzwingen Sie das Literal der <ph id="ph2">`Char`</ph> Typ.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To create a Char literal to assign to a variable or constant</source>
+          <target state="translated">Eine char-Variable zuweisen zu einer Variablen oder Konstanten Literalen erstellen</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>1.  Declare the variable or constant as <ph id="ph1">`Char`</ph>.</source>
+          <target state="translated">1.  Deklarieren Sie die Variable oder Konstante als <ph id="ph1">`Char`</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>2.  Enclose the character value in quotation marks (<ph id="ph1">`" "`</ph>).</source>
+          <target state="translated">2.  Schließen Sie den Zeichenwert in Anführungszeichen (<ph id="ph1">`" "`</ph>).</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>3.  Follow the closing double quotation mark with the literal type character <ph id="ph1">`C`</ph> to force the literal to <ph id="ph2">`Char`</ph>.</source>
+          <target state="translated">3.  Führen Sie das schließende Anführungszeichen das Literaltypzeichen <ph id="ph1">`C`</ph> zu erzwingen, dass das Literal <ph id="ph2">`Char`</ph>.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This is necessary if the type checking switch (<bpt id="p1">[</bpt>Option Strict Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept>) is <ph id="ph1">`On`</ph>, and it is desirable in any case.</source>
+          <target state="translated">Dies ist erforderlich, wenn die Überprüfung des Typs wechseln (<bpt id="p1">[</bpt>Option Strict-Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept>) ist <ph id="ph1">`On`</ph>, und es ist in jedem Fall wünschenswert.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The following example demonstrates both unsuccessful and successful assignments of a literal to a <ph id="ph1">`Char`</ph> variable.</source>
+          <target state="translated">Das folgende Beispiel zeigt sowohl erfolgreiche als auch nicht erfolgreiche Zuweisungen von ein Literal eine <ph id="ph1">`Char`</ph> Variable.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes#12<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrDataTypes&amp;#12;<ept id="p2">](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>There is always a risk in using narrowing conversions, because they can fail at run time.</source>
+          <target state="translated">Es besteht immer ein Risiko mit einschränkende Konvertierungen, da sie zur Laufzeit fehlschlagen können.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>For example, a conversion from <ph id="ph1">`String`</ph> to <ph id="ph2">`Char`</ph> can fail if the <ph id="ph3">`String`</ph> value contains more than one character.</source>
+          <target state="translated">Angenommen, eine Konvertierung von <ph id="ph1">`String`</ph> auf <ph id="ph2">`Char`</ph> kann fehlschlagen, wenn die <ph id="ph3">`String`</ph> Wert mehr als ein Zeichen enthält.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Therefore, it is better programming to use the <ph id="ph1">`C`</ph> type character.</source>
+          <target state="translated">Es ist daher besser Programmiersprachen verwenden die <ph id="ph1">`C`</ph> Zeichen eingeben.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>String Conversion Fails at Run Time</source>
+          <target state="translated">Konvertierung zur Laufzeit fehlschlägt.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>String Data Type<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept> participates in very few widening conversions.</source>
+          <target state="translated">Die <bpt id="p1">[</bpt>String-Datentyp<ept id="p1">](../../../../visual-basic/language-reference/data-types/string-data-type.md)</ept> nur sehr wenige erweiternde Konvertierungen beteiligt.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`String`</ph> widens only to itself and <ph id="ph2">`Object`</ph>, and only <ph id="ph3">`Char`</ph> and <ph id="ph4">`Char()`</ph> (a <ph id="ph5">`Char`</ph> array) widen to <ph id="ph6">`String`</ph>.</source>
+          <target state="translated"><ph id="ph1">`String`</ph>Erweitert die nur sich selbst und <ph id="ph2">`Object`</ph>, und nur <ph id="ph3">`Char`</ph> und <ph id="ph4">`Char()`</ph> (eine <ph id="ph5">`Char`</ph> Array) werden zu <ph id="ph6">`String`</ph>.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This is because <ph id="ph1">`String`</ph> variables and constants can contain values that other data types cannot contain.</source>
+          <target state="translated">Grund hierfür ist, <ph id="ph1">`String`</ph> Variablen und Konstanten können Werte enthalten, die andere Datentypen enthalten können.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>When the type checking switch (<bpt id="p1">[</bpt>Option Strict Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept>) is <ph id="ph1">`On`</ph>, the compiler disallows all implicit narrowing conversions.</source>
+          <target state="translated">Wenn die Überprüfung des Typs wechseln (<bpt id="p1">[</bpt>Option Strict-Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/option-strict-statement.md)</ept>) ist <ph id="ph1">`On`</ph>, der Compiler lässt alle implizite einschränkende Konvertierungen.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>This includes those involving <ph id="ph1">`String`</ph>.</source>
+          <target state="translated">Dies gilt für die im Zusammenhang mit <ph id="ph1">`String`</ph>.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Your code can still use conversion keywords such as <ph id="ph1">`CStr`</ph> and <bpt id="p1">[</bpt>CType Function<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept>, which direct the <ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> to attempt the conversion.</source>
+          <target state="translated">Code kann dennoch Konvertierungsschlüsselwörter wie z. B. <ph id="ph1">`CStr`</ph> und <bpt id="p1">[</bpt>CType-Funktion<ept id="p1">](../../../../visual-basic/language-reference/functions/ctype-function.md)</ept>, welche direkt den <ph id="ph2">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> , die Konvertierung auszuführen.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>The narrowing-conversion error is suppressed for conversions from the elements in a <ph id="ph1">`For Each…Next`</ph> collection to the loop control variable.</source>
+          <target state="translated">Der Fehler für einschränkende Konvertierung wird unterdrückt für Konvertierungen von den Elementen in einem <ph id="ph1">`For Each…Next`</ph> -Auflistung, um die Schleifensteuerungsvariable.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>For more information and examples, see the "Narrowing Conversions" section in <bpt id="p1">[</bpt>For Each...Next Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>.</source>
+          <target state="translated">Weitere Informationen und Beispiele finden Sie im Abschnitt "Einschränkende Konvertierungen" im <bpt id="p1">[</bpt>für jede... Nächste Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Narrowing Conversion Protection</source>
+          <target state="translated">Einschränkende Konvertierung Schutz</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>The disadvantage of narrowing conversions is that they can fail at run time.</source>
+          <target state="translated">Der Nachteil der einschränkende Konvertierungen ist, dass sie zur Laufzeit fehlschlagen können.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For example, if a <ph id="ph1">`String`</ph> variable contains anything other than "True" or "False," it cannot be converted to <ph id="ph2">`Boolean`</ph>.</source>
+          <target state="translated">Z. B. wenn ein <ph id="ph1">`String`</ph> Variable enthält alles andere als "True" oder "False", es konvertiert werden kann <ph id="ph2">`Boolean`</ph>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>If it contains punctuation characters, conversion to any numeric type fails.</source>
+          <target state="translated">Satzzeichen enthalten, schlägt fehl, die Konvertierung in einen beliebigen numerischen Typ.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Unless you know that your <ph id="ph1">`String`</ph> variable always holds values that the destination type can accept, you should not try a conversion.</source>
+          <target state="translated">Es sei denn, Sie wissen, dass Ihre <ph id="ph1">`String`</ph> Variable enthält immer die Werte, die der Zieltyp akzeptieren kann, Sie sollten nicht versuchen, eine Konvertierung.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>If you must convert from <ph id="ph1">`String`</ph> to another data type, the safest procedure is to enclose the attempted conversion in the <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">Konvertieren von muss <ph id="ph1">`String`</ph> in einen anderen Datentyp, ist am sichersten, die Konvertierung in den <bpt id="p1">[</bpt>versuchen... Catch... Finally-Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>This lets you deal with a run-time failure.</source>
+          <target state="translated">Dadurch können Sie den Umgang mit einem Laufzeitfehler.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Character Arrays</source>
+          <target state="translated">Zeichenarrays</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>A single <ph id="ph1">`Char`</ph> and an array of <ph id="ph2">`Char`</ph> elements both widen to <ph id="ph3">`String`</ph>.</source>
+          <target state="translated">Ein einzelnes <ph id="ph1">`Char`</ph> und ein Array von <ph id="ph2">`Char`</ph> Elemente sowohl zu erweitert <ph id="ph3">`String`</ph>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>However, <ph id="ph1">`String`</ph> does not widen to <ph id="ph2">`Char()`</ph>.</source>
+          <target state="translated">Allerdings <ph id="ph1">`String`</ph> wird nicht erweitert, um <ph id="ph2">`Char()`</ph>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>To convert a <ph id="ph1">`String`</ph> value to a <ph id="ph2">`Char`</ph> array, you can use the &lt;xref:System.String.ToCharArray%2A&gt; method of the &lt;xref:System.String?displayProperty=fullName&gt; class.</source>
+          <target state="translated">Konvertieren einer <ph id="ph1">`String`</ph> -Wert in einen <ph id="ph2">`Char`</ph> Array, können Sie die &lt;xref:System.String.ToCharArray%2A&gt;Methode der &lt;xref:System.String?displayProperty=fullName&gt;Klasse.&lt;/xref:System.String?displayProperty=fullName&gt; &lt;/xref:System.String.ToCharArray%2A&gt;</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Meaningless Values</source>
+          <target state="translated">Bedeutungslose Werte</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In general, <ph id="ph1">`String`</ph> values are not meaningful in other data types, and conversion is highly artificial and dangerous.</source>
+          <target state="translated">Im allgemeinen <ph id="ph1">`String`</ph> Werte sind nicht in andere Datentypen sinnvoll, und eine Konvertierung ist nur künstliche und sehr gefährlich.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Whenever possible, you should restrict usage of <ph id="ph1">`String`</ph> variables to the character sequences for which they are designed.</source>
+          <target state="translated">Wann immer möglich, beschränken Sie die Verwendung von <ph id="ph1">`String`</ph> Variablen auf die Zeichenfolgen, für die sie entworfen werden.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>You should never write code that relies on equivalent values in other types.</source>
+          <target state="translated">Sie sollten nie Code schreiben, der von entsprechenden Werten in anderen Typen abhängt.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Datentypen<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Characters<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Typzeichen<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Value Types and Reference Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Werttypen und Verweistypen<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Conversions in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Typumwandlungen in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Data Types<ept id="p1">](../../../../visual-basic/language-reference/data-types/data-type-summary.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Datentypen<ept id="p1">](../../../../visual-basic/language-reference/data-types/data-type-summary.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Type Conversion Functions<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Typkonvertierungsfunktionen<ept id="p1">](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Efficient Use of Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Effiziente Verwendung von Datentypen<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

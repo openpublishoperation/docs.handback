@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ec8fa89c8921eadee428a90971d9ae4ce305a109</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\thread-synchronization.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">507fd3da6f780fafc0c90fc0aad1da71b8d75111</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c9f1ce06f6aa83729f732b6a23672aef4a568997</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_thread-synchronization.a94319cbd48da68f6f013cf0f45ed5381e943b73.de-de is different with handoff file name: thread-synchronization.a94319cbd48da68f6f013cf0f45ed5381e943b73.de-de.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread Synchronization (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Threadsynchronisierung (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread Synchronization (Visual Basic)</source>
+          <target state="translated">Threadsynchronisierung (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The following sections describe features and classes that can be used to synchronize access to resources in multithreaded applications.</source>
+          <target state="translated">In den folgenden Abschnitten wird beschrieben, Funktionen und Klassen, die zum Synchronisieren des Zugriffs auf Ressourcen in Multithreadanwendungen verwendet werden können.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>One of the benefits of using multiple threads in an application is that each thread executes asynchronously.</source>
+          <target state="translated">Einer der Vorteile der Verwendung von mehreren Threads in einer Anwendung ist, dass jeder Thread asynchron ausgeführt wird.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For Windows applications, this allows time-consuming tasks to be performed in the background while the application window and controls remain responsive.</source>
+          <target state="translated">Für Windows-Clientanwendungen können zeitintensive Aufgaben im Hintergrund während des Anwendungsfensters ausgeführt werden, und Steuerelemente reaktionsfähig bleiben.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For server applications, multithreading provides the ability to handle each incoming request with a different thread.</source>
+          <target state="translated">Für Server-Applications multithreading bietet die Möglichkeit, jede eingehende Anforderung mit einem anderen Thread zu behandeln.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Otherwise, each new request would not get serviced until the previous request had been fully satisfied.</source>
+          <target state="translated">Andernfalls würde jede neue Anforderung erst verarbeitet, erhalten die vorherige Anforderung vollständig erfüllt wurde.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>However, the asynchronous nature of threads means that access to resources such as file handles, network connections, and memory must be coordinated.</source>
+          <target state="translated">Allerdings muss der asynchrone Natur des Threads bedeutet, die Zugriff auf Ressourcen wie Dateihandles, Netzwerkschnittstellen und Speicher koordiniert werden.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Otherwise, two or more threads could access the same resource at the same time, each unaware of the other's actions.</source>
+          <target state="translated">Andernfalls konnte in zwei oder mehr Threads dieselbe Ressource zur gleichen Zeit, jede keine Kenntnis von den anderen Aktionen zugegriffen werden.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The result is unpredictable data corruption.</source>
+          <target state="translated">Das Ergebnis ist unvorhersehbar Daten beschädigt.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For simple operations on integral numeric data types, synchronizing threads can be accomplished with members of the &lt;xref:System.Threading.Interlocked&gt; class.</source>
+          <target state="translated">Für einfache Operationen für ganzzahlige numerische Datentypen Synchronisieren von Threads mit Mitgliedern der &lt;xref:System.Threading.Interlocked&gt;Klasse&lt;/xref:System.Threading.Interlocked&gt; möglich</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>For all other data types and non thread-safe resources, multithreading can only be safely performed using the constructs in this topic.</source>
+          <target state="translated">Für alle anderen Daten können Typen und nicht threadsicheren Ressourcen kann multithreading nur sicher ausgeführt werden mit den Konstrukten in diesem Thema.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For background information on multithreaded programming, see:</source>
+          <target state="translated">Hintergrundinformationen zur Multithreadprogrammierung finden Sie unter:</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Managed Threading Basics<ept id="p1">](http://msdn.microsoft.com/library/b2944911-0e8f-427d-a8bb-077550618935)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Grundlagen des verwalteten Threadings<ept id="p1">](http://msdn.microsoft.com/library/b2944911-0e8f-427d-a8bb-077550618935)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using Threads and Threading<ept id="p1">](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Verwenden von Threads und Threading<ept id="p1">](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Managed Threading Best Practices<ept id="p1">](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Verwaltetes Threading Best Practices<ept id="p1">](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The lock and SyncLock Keywords</source>
+          <target state="translated">Die lock- und SyncLock-Schlüsselwörter</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The Visual Basic <ph id="ph1">`SyncLock`</ph> statement can be used to ensure that a block of code runs to completion without interruption by other threads.</source>
+          <target state="translated">Visual Basic <ph id="ph1">`SyncLock`</ph> Anweisung um sicherzustellen, dass ein Codeblock ohne Unterbrechung vollständig ausgeführt wird von anderen Threads verwendet werden kann.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This is accomplished by obtaining a mutual-exclusion lock for a given object for the duration of the code block.</source>
+          <target state="translated">Dies geschieht durch Abrufen einer Sperre gegenseitigen Ausschluss für ein bestimmtes Objekt für die Dauer des Codeblocks.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`SyncLock`</ph> statement is given an object as an argument, and is followed by a code block that is to be executed by only one thread at a time.</source>
+          <target state="translated">Ein <ph id="ph1">`SyncLock`</ph> -Anweisung wird ein Objekt als Argument zugewiesen, und ist ein Codeblock, der nur von einem Thread zu einem Zeitpunkt ausgeführt werden soll.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The argument provided to the <ph id="ph1">`SyncLock`</ph> keyword must be an object based on a reference type, and is used to define the scope of the lock.</source>
+          <target state="translated">Das Argument bereitgestellt, um die <ph id="ph1">`SyncLock`</ph> Schlüsselwort muss ein Objekt basierend auf ein Verweistyp sein und wird verwendet, um den Umfang der Sperre zu definieren.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>In the example above, the lock scope is limited to this function because no references to the object <ph id="ph1">`lockThis`</ph> exist outside the function.</source>
+          <target state="translated">Im obigen Beispiel der sperrenbereich ist für diese Funktion beschränkt, da keine Verweise auf das Objekt <ph id="ph1">`lockThis`</ph> außerhalb der Funktion vorhanden ist.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If such a reference did exist, lock scope would extend to that object.</source>
+          <target state="translated">Wenn Sie ein solchen Verweis vorhanden war, würde Sperre auf dieses Objekt erweitern.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Strictly speaking, the object provided is used solely to uniquely identify the resource being shared among multiple threads, so it can be an arbitrary class instance.</source>
+          <target state="translated">Genau genommen wird das bereitgestellte Objekt verwendet, ausschließlich für die Identifizierung der Ressourcen von mehreren Threads freigegeben wird, sodass sie bezeichnen werden kann.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In practice, however, this object usually represents the resource for which thread synchronization is necessary.</source>
+          <target state="translated">In der Praxis jedoch dieses Objekt dargestellt in der Regel die Ressource, für die die Threadaktivität Synchronisierung erforderlich ist.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For example, if a container object is to be used by multiple threads, then the container can be passed to lock, and the synchronized code block following the lock would access the container.</source>
+          <target state="translated">Beispielsweise ist ein Container-Objekt von mehreren Threads verwendet werden, dann kann der Container übergeben werden, um Sperren und der synchronisierte Codeblock hinter der Sperre werden auf den Container zugreifen.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>As long as other threads locks on the same contain before accessing it, then access to the object is safely synchronized.</source>
+          <target state="translated">Solange andere Threads Sperren für die gleiche enthalten, bevor Sie darauf zugreifen und dann Zugriff auf das Objekt sicher synchronisiert.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Generally, it is best to avoid locking on a <ph id="ph1">`public`</ph> type, or on object instances beyond the control of your application.</source>
+          <target state="translated">Im Allgemeinen ist es am besten vermeiden Sie das Sperren auf einer <ph id="ph1">`public`</ph> Typ oder Objektinstanzen außerhalb der Kontrolle Ihrer Anwendung.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`lockThis`</ph> can be problematic if the instance can be accessed publicly, because code beyond your control may lock on the object as well.</source>
+          <target state="translated">Z. B. <ph id="ph1">`lockThis`</ph> kann da Sperrung Code außerhalb Ihrer Kontrolle auf das Objekt ebenfalls problematisch, wenn die Instanz öffentlich zugegriffen werden kann.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This could create deadlock situations where two or more threads wait for the release of the same object.</source>
+          <target state="translated">Dies könnte Deadlocks verursachen, in denen zwei oder mehr Threads für die Version des gleichen Objekts warten.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Locking on a public data type, as opposed to an object, can cause problems for the same reason.</source>
+          <target state="translated">Sperren von öffentlichen Datentypen, im Gegensatz zu einem Objekt können Sie aus demselben Grund Probleme verursachen.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Locking on literal strings is especially risky because literal strings are <bpt id="p1">*</bpt>interned<ept id="p1">*</ept> by the common language runtime (CLR).</source>
+          <target state="translated">Sperren von Zeichenfolgenliteralen ist besonders riskant, da Literalzeichenfolgen sind <bpt id="p1">*</bpt>Internpool<ept id="p1">*</ept> von der common Language Runtime (CLR).</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This means that there is one instance of any given string literal for the entire program, the exact same object represents the literal in all running application domains, on all threads.</source>
+          <target state="translated">Dies bedeutet, dass eine Instanz von jedem Zeichenfolgenliteral für das gesamte Programm vorhanden ist, genaue das gleiche Objekt dar, das Literal in allen Anwendungsdomänen, die auf allen Threads ausgeführt.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>As a result, a lock placed on a string with the same contents anywhere in the application process locks all instances of that string in the application.</source>
+          <target state="translated">Daher führt eine Sperre für eine Zeichenfolge mit dem gleichen Inhalt an einer beliebigen Stelle in den Prozess Anwendungssperren alle Instanzen der Zeichenfolge in der Anwendung.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>As a result, it is best to lock a private or protected member that is not interned.</source>
+          <target state="translated">Daher empfiehlt es sich um eine private oder geschützte Member zu sperren, der nicht intern gespeichert werden.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Some classes provide members specifically for locking.</source>
+          <target state="translated">Einige Klassen bieten Member speziell für Sperren.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Array&gt; type, for example, provides &lt;xref:System.Array.SyncRoot%2A&gt;.</source>
+          <target state="translated">Der &lt;xref:System.Array&gt;Typ, z. B. bietet &lt;xref:System.Array.SyncRoot%2A&gt;.&lt;/xref:System.Array.SyncRoot%2A&gt; &lt;/xref:System.Array&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Many collection types provide a <ph id="ph1">`SyncRoot`</ph> member as well.</source>
+          <target state="translated">Viele Auflistungstypen bieten eine <ph id="ph1">`SyncRoot`</ph> auch Member.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For more information about the <ph id="ph1">`SyncLock`</ph> statement, see the following topics:</source>
+          <target state="translated">Weitere Informationen zu den <ph id="ph1">`SyncLock`</ph> -Anweisung finden Sie unter den folgenden Themen:</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>SyncLock Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/synclock-statement.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SyncLock-Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/synclock-statement.md)</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Monitors</source>
+          <target state="translated">Monitore</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Like the <ph id="ph1">`SyncLock`</ph> keyword, monitors prevent blocks of code from simultaneous execution by multiple threads.</source>
+          <target state="translated">Wie die <ph id="ph1">`SyncLock`</ph> Schlüsselwort Monitore verhindern von Codeblöcken gleichzeitige Ausführung von mehreren Threads.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.Monitor.Enter%2A&gt; method allows one and only one thread to proceed into the following statements; all other threads are blocked until the executing thread calls &lt;xref:System.Threading.Monitor.Exit%2A&gt;.</source>
+          <target state="translated">Die &lt;xref:System.Threading.Monitor.Enter%2A&gt;Methode kann nur ein Thread in die folgenden Anweisungen fortgesetzt; alle anderen Threads werden blockiert, bis der Ausführende Thread &lt;xref:System.Threading.Monitor.Exit%2A&gt;.&lt;/xref:System.Threading.Monitor.Exit%2A&gt; ruft&lt;/xref:System.Threading.Monitor.Enter%2A&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This is just like using the <ph id="ph1">`SyncLock`</ph> keyword.</source>
+          <target state="translated">Dies ist vergleichbar mit dem <ph id="ph1">`SyncLock`</ph> Schlüsselwort.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This is equivalent to:</source>
+          <target state="translated">Dies ist äquivalent zu:</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Using the <ph id="ph1">`SyncLock`</ph> keyword is generally preferred over using the &lt;xref:System.Threading.Monitor&gt; class directly, both because <ph id="ph2">`SyncLock`</ph> is more concise, and because <ph id="ph3">`SyncLock`</ph> insures that the underlying monitor is released, even if the protected code throws an exception.</source>
+          <target state="translated">Mithilfe der <ph id="ph1">`SyncLock`</ph> Schlüsselwort ist im allgemeinen Verwendung der &lt;xref:System.Threading.Monitor&gt;direkte, sowohl da <ph id="ph2">`SyncLock`</ph> ist präziser, und da <ph id="ph3">`SyncLock`</ph> wird sichergestellt, dass der zugrunde liegenden Monitor freigegeben wird, selbst wenn der geschützte Code eine Ausnahme auslöst.&lt;/xref:System.Threading.Monitor&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This is accomplished with the <ph id="ph1">`Finally`</ph> keyword, which executes its associated code block regardless of whether an exception is thrown.</source>
+          <target state="translated">Dies erfolgt mit der <ph id="ph1">`Finally`</ph> -Schlüsselwort, die ausgeführt werden, den zugehörigen Codeblock unabhängig davon, ob eine Ausnahme ausgelöst wird.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Synchronization Events and Wait Handles</source>
+          <target state="translated">Synchronisierungsereignisse und Wait-Handles</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Using a lock or monitor is useful for preventing the simultaneous execution of thread-sensitive blocks of code, but these constructs do not allow one thread to communicate an event to another.</source>
+          <target state="translated">Mithilfe einer Sperre oder einem Monitor wird verhindert, dass die gleichzeitige Ausführung von Codeblöcken Thread unterschieden, aber diese Konstrukte lassen sich nicht auf einen Thread ein Ereignis in einen anderen zu kommunizieren.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>This requires <bpt id="p1">*</bpt>synchronization events<ept id="p1">*</ept>, which are objects that have one of two states, signaled and un-signaled, that can be used to activate and suspend threads.</source>
+          <target state="translated">Dies erfordert <bpt id="p1">*</bpt>Synchronisierungsereignisse<ept id="p1">*</ept>, sind Objekte, die einen der beiden Zustände haben signalisiert "und" nicht signalisiert ", können, zu aktivieren und Anhalten von Threads verwendet werden.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Threads can be suspended by being made to wait on a synchronization event that is unsignaled, and can be activated by changing the event state to signaled.</source>
+          <target state="translated">Threads können vom wird versucht, auf die Synchronisation warten, die zwischen unterbrochen, und durch Ändern des Ereignisstatus signalisiert aktiviert werden können.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>If a thread attempts to wait on an event that is already signaled, then the thread continues to execute without delay.</source>
+          <target state="translated">Wenn ein Thread versucht, auf ein Ereignis zu warten, das bereits signalisiert wird, wird der Thread ohne Verzögerung fortgesetzt.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>There are two kinds of synchronization events: &lt;xref:System.Threading.AutoResetEvent&gt;, and &lt;xref:System.Threading.ManualResetEvent&gt;.</source>
+          <target state="translated">Es gibt zwei Arten von Synchronisierungsereignisse: &lt;xref:System.Threading.AutoResetEvent&gt;, und &lt;xref:System.Threading.ManualResetEvent&gt;.&lt;/xref:System.Threading.ManualResetEvent&gt; &lt;/xref:System.Threading.AutoResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>They differ only in that &lt;xref:System.Threading.AutoResetEvent&gt; changes from signaled to unsignaled automatically any time it activates a thread.</source>
+          <target state="translated">Unterscheiden sich nur in &lt;xref:System.Threading.AutoResetEvent&gt;ändert sich von signalisiert zu nicht signalisierten automatisch es jeweils einen Thread aktiviert.&lt;/xref:System.Threading.AutoResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Conversely, a &lt;xref:System.Threading.ManualResetEvent&gt; allows any number of threads to be activated by its signaled state, and will only revert to an unsignaled state when its &lt;xref:System.Threading.EventWaitHandle.Reset%2A&gt; method is called.</source>
+          <target state="translated">Dagegen eine &lt;xref:System.Threading.ManualResetEvent&gt;kann eine beliebige Anzahl von Threads über den signalisierten Zustand zu aktivieren und wird nur in den signalisierten Zustand über, wenn die &lt;xref:System.Threading.EventWaitHandle.Reset%2A&gt;wird aufgerufen.&lt;/xref:System.Threading.EventWaitHandle.Reset%2A&gt; &lt;/xref:System.Threading.ManualResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Threads can be made to wait on events by calling one of the wait methods, such as &lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt;, &lt;xref:System.Threading.WaitHandle.WaitAny%2A&gt;, or &lt;xref:System.Threading.WaitHandle.WaitAll%2A&gt;.</source>
+          <target state="translated">Threads können erfolgen, und Warten auf Ereignisse durch Aufrufen einer der Wait-Methoden, wie z. B. &lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt;, &lt;xref:System.Threading.WaitHandle.WaitAny%2A&gt;, oder &lt;xref:System.Threading.WaitHandle.WaitAll%2A&gt;.&lt;/xref:System.Threading.WaitHandle.WaitAll%2A&gt; &lt;/xref:System.Threading.WaitHandle.WaitAny%2A&gt; &lt;/xref:System.Threading.WaitHandle.WaitOne%2A&gt;</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName&gt; causes the thread to wait until a single event becomes signaled, &lt;xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName&gt; blocks a thread until one or more indicated events become signaled, and &lt;xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=fullName&gt; blocks the thread until all of the indicated events become signaled.</source>
+          <target state="translated">&lt;xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName&gt;bewirkt, dass der Thread wartet, bis ein einzelnes Ereignis signalisiert wird, &lt;xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName&gt;blockiert einen Thread, bis ein oder mehrere angegebene Ereignisse signalisiert werden, und &lt;xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=fullName&gt;den Thread blockiert, bis alle angegebenen Ereignisse signalisiert werden.&lt;/xref:System.Threading.WaitHandle.WaitAll%2A?displayProperty=fullName&gt; &lt;/xref:System.Threading.WaitHandle.WaitAny%2A?displayProperty=fullName&gt;&lt;/xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>An event becomes signaled when its &lt;xref:System.Threading.EventWaitHandle.Set%2A&gt; method is called.</source>
+          <target state="translated">Ein Ereignis wird signalisiert, wenn seine &lt;xref:System.Threading.EventWaitHandle.Set%2A&gt;wird aufgerufen.&lt;/xref:System.Threading.EventWaitHandle.Set%2A&gt;</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>In the following example, a thread is created and started by the <ph id="ph1">`Main`</ph> function.</source>
+          <target state="translated">Im folgenden Beispiel ein Thread erstellt und gestartet, indem die <ph id="ph1">`Main`</ph> Funktion.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The new thread waits on an event using the &lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt; method.</source>
+          <target state="translated">Der neue Thread wartet auf ein Ereignis mit der &lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt;-Methode.&lt;/xref:System.Threading.WaitHandle.WaitOne%2A&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The thread is suspended until the event becomes signaled by the primary thread that is executing the <ph id="ph1">`Main`</ph> function.</source>
+          <target state="translated">Der Thread wird angehalten, bis das Ereignis durch den primären Thread signalisiert wird, die ausgeführt wird, die <ph id="ph1">`Main`</ph> Funktion.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Once the event becomes signaled, the auxiliary thread returns.</source>
+          <target state="translated">Sobald das Ereignis signalisiert wird, gibt die zusätzlichen Threads zurück.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In this case, because the event is only used for one thread activation, either the &lt;xref:System.Threading.AutoResetEvent&gt; or &lt;xref:System.Threading.ManualResetEvent&gt; classes could be used.</source>
+          <target state="translated">In diesem Fall, da das Ereignis nur entweder für einen Thread-Aktivierung verwendet wird die &lt;xref:System.Threading.AutoResetEvent&gt;oder &lt;xref:System.Threading.ManualResetEvent&gt;Klassen verwendet werden.&lt;/xref:System.Threading.ManualResetEvent&gt; &lt;/xref:System.Threading.AutoResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Mutex Object</source>
+          <target state="translated">Mutex-Objekt</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>mutex<ept id="p1">*</ept> is similar to a monitor; it prevents the simultaneous execution of a block of code by more than one thread at a time.</source>
+          <target state="translated">Ein <bpt id="p1">*</bpt>Mutex<ept id="p1">*</ept> ähnelt einem Monitor; es wird verhindert, dass die gleichzeitige Ausführung eines Codeblocks durch mehrere Threads gleichzeitig.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In fact, the name "mutex" is a shortened form of the term "mutually exclusive."</source>
+          <target state="translated">Tatsächlich ist der Name "Mutex" eine Kurzform des Begriffs "sich gegenseitig ausschließende."</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Unlike monitors, however, a mutex can be used to synchronize threads across processes.</source>
+          <target state="translated">Im Gegensatz zu Monitoren kann jedoch ein Mutex verwendet werden, prozessübergreifend Threads zu synchronisieren.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>A mutex is represented by the &lt;xref:System.Threading.Mutex&gt; class.</source>
+          <target state="translated">Ein Mutex wird durch die &lt;xref:System.Threading.Mutex&gt;Klasse&lt;/xref:System.Threading.Mutex&gt; dargestellt.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>When used for inter-process synchronization, a mutex is called a <bpt id="p1">*</bpt>named mutex<ept id="p1">*</ept> because it is to be used in another application, and therefore it cannot be shared by means of a global or static variable.</source>
+          <target state="translated">Ein Mutex wird aufgerufen, wenn für die prozessübergreifende Synchronisierung verwendet wird, eine <bpt id="p1">*</bpt>benannten Mutex<ept id="p1">*</ept> daran, dass es in einer anderen Anwendung verwendet wird und daher nicht mithilfe einer globalen oder statischen Variablen gemeinsam genutzt werden kann.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>It must be given a name so that both applications can access the same mutex object.</source>
+          <target state="translated">Es muss ein Name zugewiesen werden, so, dass beide Anwendungen dieselbe Mutex-Objekt zugreifen können.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Although a mutex can be used for intra-process thread synchronization, using &lt;xref:System.Threading.Monitor&gt; is generally preferred, because monitors were designed specifically for the .NET Framework and therefore make better use of resources.</source>
+          <target state="translated">Obwohl ein Mutex für die prozessinterne Threadsynchronisierung verwendet werden kann, &lt;xref:System.Threading.Monitor&gt;wird im Allgemeinen empfohlen, da Monitore speziell für .NET Framework entwickelt wurden und daher eine bessere Nutzung der Ressourcen.&lt;/xref:System.Threading.Monitor&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>In contrast, the &lt;xref:System.Threading.Mutex&gt; class is a wrapper to a Win32 construct.</source>
+          <target state="translated">Im Gegensatz dazu die &lt;xref:System.Threading.Mutex&gt;ist ein Wrapper für ein Win32-Konstrukt.&lt;/xref:System.Threading.Mutex&gt;</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>While it is more powerful than a monitor, a mutex requires interop transitions that are more computationally expensive than those required by the &lt;xref:System.Threading.Monitor&gt; class.</source>
+          <target state="translated">Zwar leistungsstärker als ein Monitor, benötigt ein Mutex Interop-Übergänge, die rechenintensiver sind als die von der &lt;xref:System.Threading.Monitor&gt;Klasse.&lt;/xref:System.Threading.Monitor&gt;</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>For an example of using a mutex, see <bpt id="p1">[</bpt>Mutexes<ept id="p1">](http://msdn.microsoft.com/library/9dd06e25-12c0-4a9e-855a-452dc83803e2)</ept>.</source>
+          <target state="translated">Ein Beispiel für die Verwendung eines Mutex, finden Sie unter <bpt id="p1">[</bpt>Mutexe<ept id="p1">](http://msdn.microsoft.com/library/9dd06e25-12c0-4a9e-855a-452dc83803e2)</ept>.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Interlocked Class</source>
+          <target state="translated">Interlocked-Klasse</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>You can use the methods of the &lt;xref:System.Threading.Interlocked&gt; class to prevent problems that can occur when multiple threads attempt to simultaneously update or compare the same value.</source>
+          <target state="translated">Sie können die Methoden der die &lt;xref:System.Threading.Interlocked&gt;Klasse, um Probleme zu vermeiden, die auftreten können, wenn mehrere Threads gleichzeitig versuchen, aktualisieren oder den gleichen Wert vergleichen.&lt;/xref:System.Threading.Interlocked&gt;</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>The methods of this class let you safely increment, decrement, exchange, and compare values from any thread.</source>
+          <target state="translated">Die Methoden dieser Klasse können Sie problemlos erhöhen, verringern, austauschen und Vergleichen von Werten aus einem beliebigen Thread.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>ReaderWriter Locks</source>
+          <target state="translated">ReaderWriter-Sperren</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>In some cases, you may want to lock a resource only when data is being written and permit multiple clients to simultaneously read data when data is not being updated.</source>
+          <target state="translated">In einigen Fällen empfiehlt es sich um eine Ressource zu sperren, nur, wenn Daten geschrieben werden und mehrere Clients gleichzeitig Daten lesen, wenn Daten nicht aktualisiert werden.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.ReaderWriterLock&gt; class enforces exclusive access to a resource while a thread is modifying the resource, but it allows non-exclusive access when reading the resource.</source>
+          <target state="translated">Die &lt;xref:System.Threading.ReaderWriterLock&gt;-Klasse gewährleistet exklusiven Zugriff auf eine Ressource, während ein Thread die Ressource ändert, erlaubt jedoch einen nicht exklusiven Zugriff beim Lesen der Ressource.&lt;/xref:System.Threading.ReaderWriterLock&gt;</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>ReaderWriter locks are a useful alternative to exclusive locks, which cause other threads to wait, even when those threads do not need to update data.</source>
+          <target state="translated">ReaderWriter-Sperren sind eine nützliche Alternative zu exklusiven Sperren, die andere Threads wartet, selbst wenn diese Threads keine Daten aktualisieren müssen.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Deadlocks</source>
+          <target state="translated">Deadlocks</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Thread synchronization is invaluable in multithreaded applications, but there is always the danger of creating a <ph id="ph1">`deadlock`</ph>, where multiple threads are waiting for each other and the application comes to a halt.</source>
+          <target state="translated">Threadsynchronisierung in Multithreadanwendungen sehr nützlich ist, aber es besteht immer die Gefahr einer <ph id="ph1">`deadlock`</ph>, bei dem mehrere Threads aufeinander warten und die Anwendung zu unterbrechen.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>A deadlock is analogous to a situation in which cars are stopped at a four-way stop and each person is waiting for the other to go.</source>
+          <target state="translated">Ein Deadlock ist analog zu einer Situation, in der Autos an eine vier-Wege-Stop beendet werden, und jede Person wartet auf den anderen wechseln.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Avoiding deadlocks is important; the key is careful planning.</source>
+          <target state="translated">Vermeiden von Deadlocks ist wichtig. der Schlüssel ist eine sorgfältige Planung.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>You can often predict deadlock situations by diagramming multithreaded applications before you start coding.</source>
+          <target state="translated">Sie können häufig Deadlocks Vorhersagen von Multithreadanwendungen abbilden, bevor Sie mit dem Programmieren beginnen.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread&gt;&lt;/xref:System.Threading.Thread&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.WaitHandle.WaitOne%2A&gt;&lt;/xref:System.Threading.WaitHandle.WaitOne%2A&gt;</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.WaitHandle.WaitAny%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.WaitHandle.WaitAny%2A&gt;&lt;/xref:System.Threading.WaitHandle.WaitAny%2A&gt;</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.WaitHandle.WaitAll%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.WaitHandle.WaitAll%2A&gt;&lt;/xref:System.Threading.WaitHandle.WaitAll%2A&gt;</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Join%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Join%2A&gt;&lt;/xref:System.Threading.Thread.Join%2A&gt;</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Start%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Start%2A&gt;&lt;/xref:System.Threading.Thread.Start%2A&gt;</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Sleep%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Sleep%2A&gt;&lt;/xref:System.Threading.Thread.Sleep%2A&gt;</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Monitor&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Monitor&gt;&lt;/xref:System.Threading.Monitor&gt;</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Mutex&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Mutex&gt;&lt;/xref:System.Threading.Mutex&gt;</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.AutoResetEvent&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.AutoResetEvent&gt;&lt;/xref:System.Threading.AutoResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.ManualResetEvent&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.ManualResetEvent&gt;&lt;/xref:System.Threading.ManualResetEvent&gt;</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Interlocked&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Interlocked&gt;&lt;/xref:System.Threading.Interlocked&gt;</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.WaitHandle&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.WaitHandle&gt;&lt;/xref:System.Threading.WaitHandle&gt;</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.EventWaitHandle&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.EventWaitHandle&gt;&lt;/xref:System.Threading.EventWaitHandle&gt;</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading&gt;</source>
+          <target state="translated">&lt;xref:System.Threading&gt;&lt;/xref:System.Threading&gt;</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.EventWaitHandle.Set%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.EventWaitHandle.Set%2A&gt;&lt;/xref:System.Threading.EventWaitHandle.Set%2A&gt;</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Multithreaded Applications (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Multithreadanwendungen (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>SyncLock Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/synclock-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>SyncLock-Anweisung<ept id="p1">](../../../../visual-basic/language-reference/statements/synclock-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Mutexes<ept id="p1">](http://msdn.microsoft.com/library/9dd06e25-12c0-4a9e-855a-452dc83803e2)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Mutexe<ept id="p1">](http://msdn.microsoft.com/library/9dd06e25-12c0-4a9e-855a-452dc83803e2)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Interlocked Operations<ept id="p1">](http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Interlocked-Vorgänge<ept id="p1">](http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>AutoResetEvent<ept id="p1">](http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>AutoResetEvent<ept id="p1">](http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Synchronizing Data for Multithreading<ept id="p1">](http://msdn.microsoft.com/library/b980eb4c-71d5-4860-864a-6dfe3692430a)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Synchronisieren von Daten für Multithreading<ept id="p1">](http://msdn.microsoft.com/library/b980eb4c-71d5-4860-864a-6dfe3692430a)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
