@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5bde7f49a2f2bc8a2e6c1eeab3722428b8a37a95</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\multithreaded-applications.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b5810b625bb60a0eb0dcaedc01461b4d3402e292</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6fba892797edd5d3711895591b1dda105d7cfd96</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_multithreaded-applications.240b9dd27b26ffa1492ddda79874f5b87b544805.ru-ru is different with handoff file name: multithreaded-applications.240b9dd27b26ffa1492ddda79874f5b87b544805.ru-ru.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Multithreaded Applications (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Многопоточные приложения (Visual Basic) | Документы Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Multithreaded Applications (Visual Basic)</source>
+          <target state="translated">Многопоточные приложения (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>With Visual Basic, you can write applications that perform multiple tasks at the same time.</source>
+          <target state="translated">С помощью Visual Basic можно писать приложения, которые выполняют несколько задач одновременно.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Tasks with the potential of holding up other tasks can execute on separate threads, a process known as <bpt id="p1">*</bpt>multithreading<ept id="p1">*</ept> or <bpt id="p2">*</bpt>free threading<ept id="p2">*</ept>.</source>
+          <target state="translated">Задачи, которые могут задержать выполнение других задач могут выполнять в отдельных потоках, этот процесс называется <bpt id="p1">*</bpt>многопоточность<ept id="p1">*</ept> или <bpt id="p2">*</bpt>освобождения потоков<ept id="p2">*</ept>.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Applications that use multithreading are more responsive to user input because the user interface stays active as processor-intensive tasks execute on separate threads.</source>
+          <target state="translated">Приложения, использующие многопоточность, более реагирования на действия пользователя, поскольку пользовательский интерфейс остается активным, как процессор задачи выполняются в других потоках.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Multithreading is also useful when you create scalable applications, because you can add threads as the workload increases.</source>
+          <target state="translated">Многопотоковость также полезна при создании масштабируемых приложений, поскольку пользователь может добавлять потоки при увеличении рабочей нагрузки.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Creating and Using Threads</source>
+          <target state="translated">Создание и использование потоков</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you need more control over the behavior of your application's threads, you can manage the threads yourself.</source>
+          <target state="translated">Если требуется больший контроль над поведением потоков приложения, можно управлять потоками самостоятельно.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>However, realize that writing correct multithreaded applications can be difficult: Your application may stop responding or experience transient errors caused by race conditions.</source>
+          <target state="translated">Однако учтите, что написание правильных многопоточных приложений может быть трудно: приложение может перестать отвечать на запросы или взаимодействия временных ошибок, вызванных конкуренции.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Thread-Safe Components<ept id="p1">](http://msdn.microsoft.com/library/4f7c7377-a782-4bd0-aaa3-9db8c12945ee)</ept>.</source>
+          <target state="translated">Дополнительные сведения см. в разделе <bpt id="p1">[</bpt>потокобезопасные компоненты<ept id="p1">](http://msdn.microsoft.com/library/4f7c7377-a782-4bd0-aaa3-9db8c12945ee)</ept>.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You create a new thread by declaring a variable of type &lt;xref:System.Threading.Thread&gt; and calling the constructor, providing the name of the procedure or method that you want to execute on the new thread.</source>
+          <target state="translated">Новый поток создается путем объявления переменной типа &lt;xref:System.Threading.Thread&gt;и вызова конструктора, которому предоставляется имя процедуры или метода, необходимо выполнить в новом потоке.&lt;/xref:System.Threading.Thread&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following code provides an example.</source>
+          <target state="translated">Ниже приведен пример кода.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Starting and Stopping Threads</source>
+          <target state="translated">Запуск и остановка потоков</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>To start the execution of a new thread, use the &lt;xref:System.Threading.Thread.Start%2A&gt; method, as shown in the following code.</source>
+          <target state="translated">Чтобы начать выполнение нового потока, используйте &lt;xref:System.Threading.Thread.Start%2A&gt;метод, как показано в следующем коде.&lt;/xref:System.Threading.Thread.Start%2A&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>To stop the execution of a thread, use the &lt;xref:System.Threading.Thread.Abort%2A&gt; method, as shown in the following code.</source>
+          <target state="translated">Чтобы остановить выполнение потока, используйте &lt;xref:System.Threading.Thread.Abort%2A&gt;метод, как показано в следующем коде.&lt;/xref:System.Threading.Thread.Abort%2A&gt;</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Besides starting and stopping threads, you can also pause threads by calling the &lt;xref:System.Threading.Thread.Sleep%2A&gt; or &lt;xref:System.Threading.Thread.Suspend%2A&gt; method, resume a suspended thread by using the &lt;xref:System.Threading.Thread.Resume%2A&gt; method, and destroy a thread by using the &lt;xref:System.Threading.Thread.Abort%2A&gt; method</source>
+          <target state="translated">Помимо запуска и остановки потоков, можно приостанавливать потоки, вызывая &lt;xref:System.Threading.Thread.Sleep%2A&gt;или &lt;xref:System.Threading.Thread.Suspend%2A&gt;метод, возобновление приостановленного потока с помощью &lt;xref:System.Threading.Thread.Resume%2A&gt;метода и уничтожать поток с помощью &lt;xref:System.Threading.Thread.Abort%2A&gt;метода&lt;/xref:System.Threading.Thread.Abort%2A&gt; &lt;/xref:System.Threading.Thread.Resume%2A&gt; &lt;/xref:System.Threading.Thread.Suspend%2A&gt; &lt;/xref:System.Threading.Thread.Sleep%2A&gt;</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Thread Methods</source>
+          <target state="translated">Методы управления потоками</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The following table shows some of the methods that you can use to control individual threads.</source>
+          <target state="translated">Ниже приведены некоторые методы, которые можно использовать для управления отдельными потоками.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Method</source>
+          <target state="translated">Метод</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Action</source>
+          <target state="translated">Действие</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Start%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Start%2A&gt;&lt;/xref:System.Threading.Thread.Start%2A&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Causes a thread to start to run.</source>
+          <target state="translated">Вынуждает поток начнут выполняться.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Sleep%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Sleep%2A&gt;&lt;/xref:System.Threading.Thread.Sleep%2A&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Pauses a thread for a specified time.</source>
+          <target state="translated">Приостанавливает поток на заданное время.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Suspend%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Suspend%2A&gt;&lt;/xref:System.Threading.Thread.Suspend%2A&gt;</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Pauses a thread when it reaches a safe point.</source>
+          <target state="translated">Приостанавливает поток, когда он достигает безопасной точки.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Abort%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Abort%2A&gt;&lt;/xref:System.Threading.Thread.Abort%2A&gt;</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Stops a thread when it reaches a safe point.</source>
+          <target state="translated">Останавливает поток, когда он достигает безопасной точки.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Resume%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Resume%2A&gt;&lt;/xref:System.Threading.Thread.Resume%2A&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Restarts a suspended thread</source>
+          <target state="translated">Перезапускает приостановленного потока</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Join%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Join%2A&gt;&lt;/xref:System.Threading.Thread.Join%2A&gt;</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Causes the current thread to wait for another thread to finish.</source>
+          <target state="translated">Вызывает текущий поток для ожидания завершения другого потока.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If used with a time-out value, this method returns <ph id="ph1">`True`</ph> if the thread finishes in the allocated time.</source>
+          <target state="translated">Если используется значение времени ожидания, метод возвращает <ph id="ph1">`True`</ph> Если поток завершается в назначенное время.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Safe Points</source>
+          <target state="translated">Безопасные точки</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Most of these methods are self-explanatory, but the concept of <bpt id="p1">*</bpt>safe points<ept id="p1">*</ept> may be new to you.</source>
+          <target state="translated">Большинство этих методов говорят сами за себя, но понятие <bpt id="p1">*</bpt>точках, безопасных<ept id="p1">*</ept> может оказаться новой для пользователя.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Safe points are locations in code where it is safe for the common language runtime to perform automatic <bpt id="p1">*</bpt>garbage collection<ept id="p1">*</ept>, the process of releasing unused variables and reclaiming memory.</source>
+          <target state="translated">Безопасные точки располагаются в местах кода, в которых может безопасно для среды CLR для выполнения автоматического <bpt id="p1">*</bpt>мусора<ept id="p1">*</ept>, процесс уничтожения неиспользуемых переменных и освобождения памяти.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When you call the &lt;xref:System.Threading.Thread.Abort%2A&gt; or &lt;xref:System.Threading.Thread.Suspend%2A&gt; method of a thread, the common language runtime analyzes the code and determines the location of an appropriate location for the thread to stop running.</source>
+          <target state="translated">При вызове &lt;xref:System.Threading.Thread.Abort%2A&gt;или &lt;xref:System.Threading.Thread.Suspend%2A&gt;метод потока, общеязыковая среда выполнения анализирует код и определяет подходящее место для остановки потока.&lt;/xref:System.Threading.Thread.Suspend%2A&gt; &lt;/xref:System.Threading.Thread.Abort%2A&gt;</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Thread Properties</source>
+          <target state="translated">Свойства потока</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Threads also contain several useful properties, as shown in the following table:</source>
+          <target state="translated">Потоки также имеют несколько полезных свойств, как показано в следующей таблице.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">Свойство</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <target state="translated">Значение</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.IsAlive%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.IsAlive%2A&gt;&lt;/xref:System.Threading.Thread.IsAlive%2A&gt;</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Contains the value <ph id="ph1">`True`</ph> if a thread is active.</source>
+          <target state="translated">Содержит значение <ph id="ph1">`True`</ph> , если поток активен.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.IsBackground%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.IsBackground%2A&gt;&lt;/xref:System.Threading.Thread.IsBackground%2A&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Gets or sets a Boolean that indicates if a thread is or should be a background thread.</source>
+          <target state="translated">Возвращает или задает логическое значение, указывающее, если поток или должно быть в фоновом потоке.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Background threads are like foreground threads, but a background thread does not prevent a process from stopping.</source>
+          <target state="translated">Фоновые потоки отличаются от основного потока, но в фоновом потоке не запрещает процесс остановки.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Once all foreground threads that belong to a process have stopped, the common language runtime ends the process by calling the &lt;xref:System.Threading.Thread.Abort%2A&gt; method on background threads that are still alive.</source>
+          <target state="translated">Когда будут остановлены все основные потоки, принадлежащие процессу, общеязыковая среда выполнения завершает процесс путем вызова &lt;xref:System.Threading.Thread.Abort%2A&gt;метод в фоновых потоках, которые еще продолжают существовать.&lt;/xref:System.Threading.Thread.Abort%2A&gt;</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Name%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Name%2A&gt;&lt;/xref:System.Threading.Thread.Name%2A&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Gets or sets the name of a thread.</source>
+          <target state="translated">Возвращает или задает имя потока.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Most frequently used to discover individual threads when you debug.</source>
+          <target state="translated">Чаще всего используется для обнаружения отдельных потоков при отладке.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.Priority%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.Priority%2A&gt;&lt;/xref:System.Threading.Thread.Priority%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Gets or sets a value that is used by the operating system to prioritize thread scheduling.</source>
+          <target state="translated">Возвращает или задает значение, которое используется операционной системой для установки приоритетов потоков.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread.ThreadState%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread.ThreadState%2A&gt;&lt;/xref:System.Threading.Thread.ThreadState%2A&gt;</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Contains a value that describes a thread's state or states.</source>
+          <target state="translated">Содержит значение, описывающее состояние или состояния потока.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Thread Priorities</source>
+          <target state="translated">Приоритеты потоков</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Every thread has a priority property that determines how big or small a slice of processor time it has to execute.</source>
+          <target state="translated">Каждый поток имеет приоритетное свойство, которое определяет от размера фрагмента процессорного времени, ей нужно выполнить.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The operating system allocates longer time slices to high-priority threads and shorter time slices to low-priority threads.</source>
+          <target state="translated">Операционная система выделяет более длинные отрезки времени на потоки с высоким приоритетом и более короткие отрезки времени потоки с низким приоритетом.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>New threads are created with the value of <ph id="ph1">`Normal`</ph>, but you can change the &lt;xref:System.Threading.Thread.Priority%2A&gt; property to any value in the &lt;xref:System.Threading.ThreadPriority&gt; enumeration.</source>
+          <target state="translated">Новые потоки создаются со значением <ph id="ph1">`Normal`</ph>, но можно изменить &lt;xref:System.Threading.Thread.Priority%2A&gt;любое значение в свойства &lt;xref:System.Threading.ThreadPriority&gt;перечисления.&lt;/xref:System.Threading.ThreadPriority&gt; &lt;/xref:System.Threading.Thread.Priority%2A&gt;</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>See &lt;xref:System.Threading.ThreadPriority&gt; for a detailed description of the various thread priorities.</source>
+          <target state="translated">В разделе &lt;xref:System.Threading.ThreadPriority&gt;Подробное описание различных приоритетов потоков.&lt;/xref:System.Threading.ThreadPriority&gt;</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Foreground and Background Threads</source>
+          <target state="translated">Основные и фоновые потоки</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>foreground thread<ept id="p1">*</ept> runs indefinitely, whereas a <bpt id="p2">*</bpt>background thread<ept id="p2">*</ept> stops as soon as the last foreground thread has stopped.</source>
+          <target state="translated">Объект <bpt id="p1">*</bpt>основной поток<ept id="p1">*</ept> выполняется бесконечно, тогда как <bpt id="p2">*</bpt>фоновый поток<ept id="p2">*</ept> останавливается сразу после остановки последнего основного потока.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>You can use the &lt;xref:System.Threading.Thread.IsBackground%2A&gt; property to determine or change the background status of a thread.</source>
+          <target state="translated">Можно использовать &lt;xref:System.Threading.Thread.IsBackground%2A&gt;Свойства для определения или изменения фонового статуса потока.&lt;/xref:System.Threading.Thread.IsBackground%2A&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">См. также</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Thread&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Thread&gt;&lt;/xref:System.Threading.Thread&gt;</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Thread Synchronization (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Синхронизация потоков (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Parameters and Return Values for Multithreaded Procedures (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Параметры и возвращаемые значения для многопоточных процедур (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Работа с потоками (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
