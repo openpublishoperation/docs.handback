@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">31561d586c9c05f502002efdfc455acb55159fed</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-query-for-sentences-that-contain-a-specified-set-of-words.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85c756debdef82455e28a1577cf431362ca4b1af</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bb6619ac66fd5b2eaad9876b6e5e52b4107e46dc</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_how-to-query-for-sentences-that-contain-a-specified-set-of-words.941d51c0f6c08ef3a8ee1cdcc523c53492a57936.zh-tw is different with handoff file name: how-to-query-for-sentences-that-contain-a-specified-set-of-words.941d51c0f6c08ef3a8ee1cdcc523c53492a57936.zh-tw.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">如何︰ 查詢包含一組指定的文字 (LINQ) (Visual Basic) 的句子 |Microsoft 文件</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)</source>
+          <target state="translated">如何：查詢包含指定字組的句子 (LINQ) (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example shows how to find sentences in a text file that contain matches for each of a specified set of words.</source>
+          <target state="translated">這個範例示範如何在包含一組指定的文字相符的文字檔案中找到的句子。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Although the array of search terms is hard-coded in this example, it could also be populated dynamically at runtime.</source>
+          <target state="translated">雖然搜尋詞彙的陣列是硬式編碼在此範例中，它可能也會填入以動態方式在執行階段。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."</source>
+          <target state="translated">在此範例中，查詢會傳回 「 過去 」，包含文字的句子 「 資料 」 和 「 整合式 」。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">範例</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The query works by first splitting the text into sentences, and then splitting the sentences into an array of strings that hold each word.</source>
+          <target state="translated">查詢的運作方式是先將文字分割成句子，並接著將句子分割成保留每個字的字串陣列。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>For each of these arrays, the &lt;xref:System.Linq.Enumerable.Distinct%2A&gt; method removes all duplicate words, and then the query performs an &lt;xref:System.Linq.Enumerable.Intersect%2A&gt; operation on the word array and the <ph id="ph1">`wordsToMatch`</ph> array.</source>
+          <target state="translated">陣列，每個&lt;xref:System.Linq.Enumerable.Distinct%2A&gt;方法會移除所有重複的文字，並接著執行查詢&lt;xref:System.Linq.Enumerable.Intersect%2A&gt;word 陣列上的作業和<ph id="ph1">`wordsToMatch`</ph>陣列。&lt;/xref:System.Linq.Enumerable.Intersect%2A&gt; &lt;/xref:System.Linq.Enumerable.Distinct%2A&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>If the count of the intersection is the same as the count of the <ph id="ph1">`wordsToMatch`</ph> array, all words were found in the words and the original sentence is returned.</source>
+          <target state="translated">如果交集的計數會的計數相同<ph id="ph1">`wordsToMatch`</ph>陣列，文字中找不到的所有文字，並傳回原始的句子。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In the call to &lt;xref:System.String.Split%2A&gt;, the punctuation marks are used as separators in order to remove them from the string.</source>
+          <target state="translated">在呼叫&lt;xref:System.String.Split%2A&gt;，才能移除字串做為分隔符號使用標點符號。&lt;/xref:System.String.Split%2A&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If you did not do this, for example you could have a string "Historically," that would not match "Historically" in the <ph id="ph1">`wordsToMatch`</ph> array.</source>
+          <target state="translated">如果您沒有這麼做，您可以有字串 「 過去 」 的範例，就不符合 「 過去 」 在<ph id="ph1">`wordsToMatch`</ph>陣列。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You may have to use additional separators, depending on the types of punctuation found in the source text.</source>
+          <target state="translated">您可能要使用其他分隔符號，根據之原始程式文字中找到的標點符號的類型。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">編譯程式碼</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Create a project that targets the .NET Framework version 3.5 or higher with a reference to System.Core.dll and a <ph id="ph1">`Imports`</ph> statement for the System.Linq namespace.</source>
+          <target state="translated">建立以.NET Framework 3.5 版或以上版本，搭配 system.core.dll 的參考目標的專案和<ph id="ph1">`Imports`</ph>System.Linq 命名空間陳述式。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另請參閱</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>LINQ and Strings (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>LINQ 和字串 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
