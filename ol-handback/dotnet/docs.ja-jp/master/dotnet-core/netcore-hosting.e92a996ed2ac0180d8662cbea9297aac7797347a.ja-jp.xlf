@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-0ca64c3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b3b0e7a0e2d2a330b10b2f3482ddd1ed3d51bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\core\tutorials\netcore-hosting.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dotnet-core</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e542b525b8245c7b60beb5f2bf0ec4ec1f8be20</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f82402e2298ea66394108d5b3488949b76dad04d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core | Microsoft Docs</source>
+          <target state="translated">.NET Core のホスティング | Microsoft Docs</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime from native code</source>
+          <target state="translated">ネイティブ コードから .NET Core ランタイムをホスティングする</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET, .NET Core, Hosting, Hosting .NET Core</source>
+          <target state="translated">.NET, .NET Core, ホスティング, .NET Core のホスティング</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Hosting .NET Core</source>
+          <target state="translated">.NET Core のホスティング</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Like all managed code, .NET Core applications are executed by a host.</source>
+          <target state="translated">あらゆるマネージ コードと同様に、.NET Core アプリケーションはホストにより実行されます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.</source>
+          <target state="translated">ホストは、ランタイム (JIT やガベージ コレクターのようなコンポーネントを含む) の開始、AppDomain の作成、マネージ エントリ ポイントの呼び出しを担当します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario and, in most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications.</source>
+          <target state="translated">.NET Core ランタイムのホスティングは高度なシナリオです。ほとんどの場合、.NET Core 開発者はホスティングについて心配する必要がありません。.NET Core ビルド プロセスが .NET Core アプリケーションを実行するための既定ホストを提供するためです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.</source>
+          <target state="translated">ただし、特別な状況で、ネイティブ プロセスのマネージ コードを呼び出す手段として、あるいはランタイムの動作をさらに細かくコントロールする目的で .NET Core ランタイムを明示的にホスティングすると効果的な場合があります。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (<ph id="ph1">@System.AppDomain</ph>), and execute managed code in it.</source>
+          <target state="translated">この記事では、ネイティブ コードから .NET Core ランタイムを開始し、最初のアプリケーション ドメイン (<ph id="ph1">@System.AppDomain</ph>) を作成し、その中でマネージ コードを実行するために必要な手順について説明します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core.</source>
+          <target state="translated">ホストはネイティブ アプリケーションであるため、このチュートリアルでは、C++ アプリケーションを構築して .NET Core をホスティングする方法について説明します。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You will need a C++ development environment (such as that provided by <bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept>).</source>
+          <target state="translated">C++ 開発環境が必要になります (<bpt id="p1">[</bpt>Visual Studio<ept id="p1">](https://www.visualstudio.com/downloads/)</ept> に付属のものなど)。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>You will also want a simple .NET Core application to test the host with, so you should install the <bpt id="p1">[</bpt>.NET Core SDK<ept id="p1">](https://www.microsoft.com/net/core)</ept> and <bpt id="p2">[</bpt>build a small .NET Core test app<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept> (such as a 'Hello World' app).</source>
+          <target state="translated">ホストをテストするための単純な .NET Core アプリケーションも必要です。そのため、<bpt id="p1">[</bpt>.NET Core SDK<ept id="p1">](https://www.microsoft.com/net/core)</ept> をインストールし、<bpt id="p2">[</bpt>小さい .NET Core テスト アプリを作成<ept id="p2">](https://github.com/dotnet/docs/blob/master/docs/csharp/getting-started/with-visual-studio.md)</ept>してください ('Hello World' アプリなど)。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The 'Hello World' app created by the new .NET Core console project template is sufficient.</source>
+          <target state="translated">新しい .NET Core コンソール プロジェクト テンプレートで作成される 'Hello World' アプリで十分です。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This tutorial and its <bpt id="p1">[</bpt>associated sample<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> build a Windows host, but please see the notes at the end of this article about hosting on Unix.</source>
+          <target state="translated">このチュートリアルとその<bpt id="p1">[</bpt>関連サンプル<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>では Windows ホストを作成します。Unix のホスティングについては、この記事の終わりにある注記を参照してください。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Creating the host</source>
+          <target state="translated">ホストを作成する</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A sample host demonstrating the steps outlined in this article is available in our <bpt id="p1">[</bpt>.NET Core samples<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> repository.</source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core サンプル<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept> リポジトリには、この記事で説明する手順を実演するサンプル ホストがあります。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Comments in the sample's host.cpp file clearly associate the numbered steps from this tutorial with where they are performed in the sample.</source>
+          <target state="translated">サンプルの host.cpp ファイルにあるコメントを見れば、このチュートリアルで番号が付けられている手順がサンプルのどこで実行されるかわかります。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency.</source>
+          <target state="translated">サンプル ホストは学習目的のために利用されるものです。エラーのチェック時に軽くなっており、効率性より読みやすさを重視して設計されています。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>More real-world host samples are available in the <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept> repository.</source>
+          <target state="translated">より実際的なホスト サンプルは <bpt id="p1">[</bpt>dotnet/coreclr<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept> リポジトリにあります。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">[</bpt>CoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>, in particular, is a good general-purpose host to study after reading through the simpler sample.</source>
+          <target state="translated">特に、<bpt id="p1">[</bpt>CoreRun ホスト<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun)</ept>は、単純なサンプルを読んだ後に学習するのに最適な汎用ホストです。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>A note about mscoree.h</source>
+          <target state="translated">mscoree.h に関する注記</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The primary .NET Core hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>) is defined in <bpt id="p1">[</bpt>MSCOREE.IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept>.</source>
+          <target state="translated">プライマリ .NET Core ホスティング インターフェイス (<ph id="ph1">`ICLRRuntimeHost2`</ph>) は <bpt id="p1">[</bpt>MSCOREE.IDL<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL)</ept> で設計されます。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the <bpt id="p1">[</bpt>.NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr/)</ept> is built.</source>
+          <target state="translated">ホストで参照する必要がある、このファイルのヘッダー バージョン (mscoree.h) は、<bpt id="p1">[</bpt>.NET Core ランタイム<ept id="p1">](https://github.com/dotnet/coreclr/)</ept>がビルドされるときに MIDL 経由で生成されます。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>If you do not want to build the .NET Core runtime, mscoree.h is also available as a <bpt id="p1">[</bpt>pre-built header<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept> in the dotnet/coreclr repository.</source>
+          <target state="translated">.NET Core ランタイムをビルドしない場合、dotnet/coreclr リポジトリの<bpt id="p1">[</bpt>ビルド済みヘッダー<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc)</ept>の mscoree.h を利用することもできます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Instructions on building the .NET Core runtime<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept> can be found in its GitHub repository.</source>
+          <target state="translated"><bpt id="p1">[</bpt>.NET Core ランタイムのビルド手順<ept id="p1">](https://github.com/dotnet/coreclr#building-the-repository)</ept>はその GitHub リポジトリにあります。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Step 1 - Identify the managed entry point</source>
+          <target state="translated">手順 1 - マネージ エントリ ポイントを特定する</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>After referencing necessary headers (<bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using.</source>
+          <target state="translated">必要なヘッダーを参照した後 (<bpt id="p1">[</bpt>mscoree.h<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)</ept> や stdio.h など)、.NET Core ホストが最初に行うことは、それが使用するマネージ エントリ ポイントを見つけることです。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose <ph id="ph1">`main`</ph> method will be executed.</source>
+          <target state="translated">その作業は、このサンプル ホストでは、<ph id="ph1">`main`</ph> メソッドが実行されるマネージ バイナリのパスとして最初のコマンド ライン引数をホストに渡すことで行われます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#1<ept id="p2">](../../../samples/core/hosting/host.cpp#1)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Step 2 - Find and load CoreCLR.dll</source>
+          <target state="translated">手順 2 - CoreCLR.dll を見つけて読み込む</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The .NET Core runtime APIs are in <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> (on Windows).</source>
+          <target state="translated">.NET Core ランタイム API は <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> にあります (Windows)。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To get our hosting interface (<ph id="ph1">`ICLRRuntimeHost2`</ph>), it's necessary to find and load <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">ホスティング インターフェイス (<ph id="ph1">`ICLRRuntimeHost2`</ph>) を取得するには、<bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> を見つけて読み込む必要があります。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>It is up to the host to define a convention for how it will locate <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated"><bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> の見つけ方を定義するのはホストです。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Some hosts expect the file to be present in a well-known machine-wide location (such as %programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0).</source>
+          <target state="translated">一部のホストは、コンピューター全体の既知の場所にこのファイルがあるものと予測します (%programfiles%\dotnet\shared\Microsoft.NETCore.App\1.1.0 など)。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Others expect that <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> will be loaded from a location next to either the host itself or the app to be hosted.</source>
+          <target state="translated">他のホストは、ホスト自体またはホスティングするアプリの隣にある場所から <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> を読み込むものと予測します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Still others might consult an environment variable to find the library.</source>
+          <target state="translated">環境変数を参照してライブラリを見つける場合もあります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>On Linux or Mac, the core runtime library is <bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> or <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept>, respectively.</source>
+          <target state="translated">Linux または Mac の場合、コア ランタイム ライブラリはそれぞれ、<bpt id="p1">*</bpt>libcoreclr.so<ept id="p1">*</ept> と <bpt id="p2">*</bpt>libcoreclr.dylib<ept id="p2">*</ept> です。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Our sample host probes a few common locations for <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept>.</source>
+          <target state="translated">このサンプル ホストでは、いくつかの一般的な場所で <bpt id="p1">*</bpt>CoreCLR.dll<ept id="p1">*</ept> を探します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Once found, it must be loaded via <ph id="ph1">`LoadLibrary`</ph> (or <ph id="ph2">`dlopen`</ph> on Linux/Mac).</source>
+          <target state="translated">見つかると、<ph id="ph1">`LoadLibrary`</ph> (Linux/Mac の場合は <ph id="ph2">`dlopen`</ph>) 経由で読み込まれます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#2<ept id="p2">](../../../samples/core/hosting/host.cpp#2)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Step 3 - Get an ICLRRuntimeHost2 Instance</source>
+          <target state="translated">手順 3 - ICLRRuntimeHost2 インスタンスを取得する</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`ICLRRuntimeHost2`</ph> hosting interface is retrieved by calling <ph id="ph2">`GetProcAddress`</ph> (or <ph id="ph3">`dlsym`</ph> on Linux/Mac) on <ph id="ph4">`GetCLRRuntimeHost`</ph>, and then invoking that function.</source>
+          <target state="translated"><ph id="ph1">`ICLRRuntimeHost2`</ph> ホスティング インターフェイスは、<ph id="ph4">`GetCLRRuntimeHost`</ph> で <ph id="ph2">`GetProcAddress`</ph> を呼び出し (Linux/Mac の場合は <ph id="ph3">`dlsym`</ph>)、その関数を実行することで取得されます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#3<ept id="p2">](../../../samples/core/hosting/host.cpp#3)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Step 4 - Setting startup flags and starting the runtime</source>
+          <target state="translated">手順 4 - スタートアップ フラグを設定し、ランタイムを開始する</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>With an <ph id="ph1">`ICLRRuntimeHost2`</ph> in-hand, we can now specify runtime-wide startup flags and start the runtime.</source>
+          <target state="translated"><ph id="ph1">`ICLRRuntimeHost2`</ph> が用意されたので、ランタイム全体のスタートアップ フラグを指定し、ランタイムを開始できます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Startup flags will determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).</source>
+          <target state="translated">スタートアップ フラグは、使用するガベージ コレクター (GC) (同時実行またはサーバー)、シングル AppDomain とマルチ AppDomain のいずれを使用するのか、使用するローダー最適化ポリシー (アセンブリのドメイン中立読み込み用) を決定します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#4<ept id="p2">](../../../samples/core/hosting/host.cpp#4)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The runtime is started with a call to the <ph id="ph1">`Start`</ph> function.</source>
+          <target state="translated">ランタイムは <ph id="ph1">`Start`</ph> 関数を呼び出すことで開始されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Step 5 - Preparing AppDomain settings</source>
+          <target state="translated">手順 5 - AppDomain 設定を準備する</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Once the runtime is started, we will want to set up an AppDomain.</source>
+          <target state="translated">ランタイムが開始したら、AppDomain を設定します。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.</source>
+          <target state="translated">ただし、.NET AppDomain を作成するとき、たくさんのオプションを指定する必要があります。それらを最初に用意する必要があります。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>AppDomain flags specify AppDomain behaviors related to security and interop.</source>
+          <target state="translated">AppDomain フラグは、セキュリティと相互運用に関連する AppDomain 動作を指定します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.</source>
+          <target state="translated">以前の Siliverlight ホストはこれらの設定を利用し、ユーザー コードをサンドボックス化していましたが、最新の .NET Core ホストは完全な信頼としてユーザー コードを実行し、相互運用を有効にします。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#5<ept id="p2">](../../../samples/core/hosting/host.cpp#5)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>After deciding which AppDomain flags to use, AppDomain properties must be defined.</source>
+          <target state="translated">使用する AppDomain フラグを決定したら、AppDomain プロパティを定義する必要があります。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The properties are key/value pairs of strings.</source>
+          <target state="translated">プロパティは文字列のキー/値のペアです。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Many of the properties relate to how the AppDomain will load assemblies.</source>
+          <target state="translated">プロパティの多くは、AppDomain がアセンブリを読み込む方法に関連します。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Common AppDomain properties include:</source>
+          <target state="translated">共通 AppDomain プロパティ:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph> This is a list of assembly paths (delimited by ';' on Windows and ':' on Unix) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains).</source>
+          <target state="translated"><ph id="ph1">`TRUSTED_PLATFORM_ASSEMBLIES`</ph> これはアセンブリ パスの一覧です (Windows は ';' で、Unix は ':' で区切られています)。これに対して AppDomain は読み込みに優先順位を設定し、完全信頼を与えます (部分信頼ドメインでも)。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios.</source>
+          <target state="translated">.NET Framework シナリオの GAC と同様に、このリストには 'Framework' アセンブリとその他の信頼されるモジュールを含めます。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Some hosts will put any library next to <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> on this list, others have hard-coded manifests listing trusted assemblies for their purposes.</source>
+          <target state="translated">目的に応じて、このリストの <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> の隣にライブラリが置かれるホストもあれば、ハードコーディングされたマニフェストに信頼されるアセンブリが一覧表示されるホストもあります。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_PATHS`</ph> This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list.</source>
+          <target state="translated"><ph id="ph1">`APP_PATHS`</ph> これは、信頼されるプラットフォーム アセンブリ (TPA) リストでアセンブリが見つからない場合、アセンブリを探すパスのリストです。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>These paths are meant to be the locations where users' assemblies can be found.</source>
+          <target state="translated">これらのパスは、ユーザーのアセンブリが見つかる可能性のある場所です。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In a sandboxed AppDomain, assemblies loaded from these paths will only be granted partial trust.</source>
+          <target state="translated">サンドボックス化された AppDomain では、これらのパスから読み込まれるアセンブリには部分信頼のみが与えられます。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Common APP_PATH paths include the path the target app was loaded from or other locations where user assets are known to live.</source>
+          <target state="translated">共通 APP_PATH パスには、ターゲット アプリの読み込み元のパスやユーザー アセットが存在することがわかっているその他の場所があります。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`APP_NI_PATHS`</ph> This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.</source>
+          <target state="translated"><ph id="ph1">`APP_NI_PATHS`</ph> このリストは、ネイティブ イメージを探すパスであることを除き、APP_PATHS とよく似ています。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph> This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.</source>
+          <target state="translated"><ph id="ph1">`NATIVE_DLL_SEARCH_DIRECTORIES`</ph> このプロパティは、p/invoke で呼び出されたネイティブ DLL を探すときにローダーが調べるパスの一覧です。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph> This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).</source>
+          <target state="translated"><ph id="ph1">`PLATFORM_RESOURCE_ROOTS`</ph> このリストには、(カルチャ固有の下位ディレクトリで) リソース サテライト アセンブリを探すパスが含まれています。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`AppDomainCompatSwitch`</ph> This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against).</source>
+          <target state="translated"><ph id="ph1">`AppDomainCompatSwitch`</ph> この文字列は、明示的なターゲット フレームワーク モニカーのないアセンブリに使用する互換性を指定します (アセンブリが実行する対象のフレームワークを示すアセンブリレベルの属性)。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Typically, this should be set to <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph> but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.</source>
+          <target state="translated">通常、これは <ph id="ph1">`"UseLatestBehaviorWhenTFMNotSpecified"`</ph> に設定しますが、以前の Silverlight や Windows Phone の互換性を優先するホストもあります。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In our <bpt id="p1">[</bpt>simple sample host<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>, these properties are set up as follows:</source>
+          <target state="translated">この<bpt id="p1">[</bpt>単純なサンプル ホスト<ept id="p1">](https://github.com/dotnet/docs/tree/master/samples/core/hosting)</ept>では、これらのプロパティは次のように設定されています。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#6<ept id="p2">](../../../samples/core/hosting/host.cpp#6)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Step 6 - Create the AppDomain</source>
+          <target state="translated">手順 6 - AppDomain を作成する</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Once all AppDomain flags and properties are prepared, <ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> can be used to set up the AppDomain.</source>
+          <target state="translated">すべての AppDomain フラグとプロパティを用意したら、<ph id="ph1">`ICLRRuntimeHost2::CreateAppDomainWithManager`</ph> を利用して AppDomain を設定できます。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>This function optionally takes a fully qualified assembly name and type name to use as the domain's AppDomain manager.</source>
+          <target state="translated">この関数は任意で完全修飾アセンブリ名と型の名前を取得し、ドメインの AppDomain マネージャーとして使用します。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.</source>
+          <target state="translated">AppDomain マネージャーは、AppDomain の一部の動作の制御をホストに許可できます。ホストがユーザー コードを直接呼び出さない場合、マネージ コードを起動するエントリ ポイントを提供することもあります。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#7<ept id="p2">](../../../samples/core/hosting/host.cpp#7)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Step 7 - Run managed code!</source>
+          <target state="translated">手順 7 - マネージ コードを実行する</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>With an AppDomain up and running, the host can now start executing managed code.</source>
+          <target state="translated">AppDomain が稼働したら、ホストはマネージ コードを実行できます。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The easiest way to do this is to use <ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> to invoke a managed assembly's entry point method.</source>
+          <target state="translated">これを行う最も簡単な方法は、<ph id="ph1">`ICLRRuntimeHost2::ExecuteAssembly`</ph> を利用してマネージ アセンブリのエントリ ポイント メソッドを呼び出すことです。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Note that this function only works in single-domain scenarios.</source>
+          <target state="translated">この関数は単一ドメインのシナリオでのみ動作します。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#8<ept id="p2">](../../../samples/core/hosting/host.cpp#8)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Another option, if <ph id="ph1">`ExecuteAssembly`</ph> doesn't meet your host's needs, is to use <ph id="ph2">`CreateDelegate`</ph> to create a function pointer to a static managed method.</source>
+          <target state="translated">別の選択肢としては、<ph id="ph1">`ExecuteAssembly`</ph> がホストのニーズを満たさない場合、<ph id="ph2">`CreateDelegate`</ph> を利用し、静的マネージ メソッドの関数ポインターを作成します。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point.</source>
+          <target state="translated">その場合、ホストにそれが呼び出すメソッドのシグネチャを通知する必要があります (関数ポインターの種類を作成する目的で)。ただし、アセンブリのエントリ ポイント以外のコードを呼び出す柔軟性が許可されます。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Step 8 - Clean up</source>
+          <target state="translated">手順 8 - クリーンアップ</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the <ph id="ph1">`ICLRRuntimeHost2`</ph> reference.</source>
+          <target state="translated">最後に、ホストはそれ自体のクリーンアップを行います。AppDomain をアンロードし、ランタイムを停止し、<ph id="ph1">`ICLRRuntimeHost2`</ph> 参照を解放します。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-cpp</bpt><bpt id="p2">[</bpt>NetCoreHost#9<ept id="p2">](../../../samples/core/hosting/host.cpp#9)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>About Hosting .NET Core on Unix</source>
+          <target state="translated">Unix で .NET Core をホスティングする方法について</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>.NET Core is a cross-platform product, running on Windows, Linux, and Mac operating systems.</source>
+          <target state="translated">.NET Core はプラットフォームに依存しない製品です。Windows、Linux、Mac オペレーティング システムで動作します。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>As native applications, though, hosts for different platforms will have some differences between them.</source>
+          <target state="translated">ただし、ネイティブ アプリケーションのように、プラットフォームが異なればホストに違いがあります。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The process described above of using <ph id="ph1">`ICLRRuntimeHost2`</ph> to start the runtime, create an AppDomain, and execute managed code, should work on any supported operating system.</source>
+          <target state="translated">前述の <ph id="ph1">`ICLRRuntimeHost2`</ph> を利用してランタイムを開始し、AppDomain を作成し、マネージ コードを実行するプロセスは、サポートされているあらゆるオペレーティング システムで動作するはずです。</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>However, the interfaces defined in mscoree.h can be cumbersome to work with on Unix platforms since mscoree makes many Win32 assumptions.</source>
+          <target state="translated">ただし、mscoree.h に定義されているインターフェイスは、Unix プラットフォームで使用するには複雑です。mscoree は、さまざまな面で Win32 を想定しているためです。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>To make hosting on Unix platforms easier, a set of more platform-neutral hosting API wrappers are available in <bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept>.</source>
+          <target state="translated">Unix プラットフォームでのホスティングを簡単にするために、よりプラットフォーム ニュートラルなホスティング API ラッパーのセットが <bpt id="p1">[</bpt>coreclrhost.h<ept id="p1">](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h)</ept> にあります。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>An example of using coreclrhost.h (instead of mscoree.h directly) can be seen in the <bpt id="p1">[</bpt>UnixCoreRun host<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>.</source>
+          <target state="translated">coreclrhost.h を利用する例 (mscoree.h を直接利用するのではなく) が <bpt id="p1">[</bpt>UnixCoreRun ホスト<ept id="p1">](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts)</ept>にあります。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The steps to use the APIs from coreclrhost.h to host the runtime are similar to the steps when using mscoree.h:</source>
+          <target state="translated">coreclrhost.h の API を利用してランタイムをホスティングする手順は、mscoree.h を使用するときので順に似ています。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Identify the managed code to execute (from command line parameters, for example).</source>
+          <target state="translated">(コマンド ライン パラメーターなどから) 実行するマネージ コードを特定します。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Load the CoreCLR library.</source>
+          <target state="translated">CoreCLR ライブラリを読み込みます。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Get function pointers to CoreCLR's <ph id="ph1">`coreclr_initialize`</ph>, <ph id="ph2">`coreclr_create_delegate`</ph>, <ph id="ph3">`coreclr_execute_assembly`</ph>, and <ph id="ph4">`coreclr_shutdown`</ph> functions using <ph id="ph5">`dlsym`</ph></source>
+          <target state="translated">CoreCLR の <ph id="ph1">`coreclr_initialize`</ph>、<ph id="ph2">`coreclr_create_delegate`</ph>、<ph id="ph3">`coreclr_execute_assembly`</ph>、<ph id="ph4">`coreclr_shutdown`</ph> 関数の関数ポインターを <ph id="ph5">`dlsym`</ph> を利用して取得します。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Set up AppDomain properties (such as the TPA list).</source>
+          <target state="translated">AppDomain プロパティを設定します (TPA リストなど)。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This is the same as step 5 from the mscoree workflow, above.</source>
+          <target state="translated">これは前述の mscoree ワークフローの手順 5 と同じです。</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_initialize`</ph> to start the runtime and create an AppDomain.</source>
+          <target state="translated"><ph id="ph1">`coreclr_initialize`</ph> を使用し、ランタイムを開始し、AppDomain を作成します。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>This will also create a <ph id="ph1">`hostHandle`</ph> pointer that will be used in future hosting calls.</source>
+          <target state="translated">これで今後のホスティング呼び出しで使用される <ph id="ph1">`hostHandle`</ph> ポインターも作成されます。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Note that this function performs the roles of both steps 4 and 6 from the previous workflow.</source>
+          <target state="translated">この関数は、前述のワークフローの手順 4 と 6 の両方の役割を実行します。</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Use either <ph id="ph1">`coreclr_execute_assembly`</ph> or <ph id="ph2">`coreclr_create_delegate`</ph> to execute managed code.</source>
+          <target state="translated"><ph id="ph1">`coreclr_execute_assembly`</ph> または <ph id="ph2">`coreclr_create_delegate`</ph> を利用してマネージ コードを実行します。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>These functions are analogous to mscoree's <ph id="ph1">`ExecuteAssembly`</ph> and <ph id="ph2">`CreateDelegate`</ph> functions from step 7 of the previous workflow.</source>
+          <target state="translated">これらの関数は、前述のワークフローの手順 7 の mscoree の <ph id="ph1">`ExecuteAssembly`</ph> 関数と <ph id="ph2">`CreateDelegate`</ph> 関数に似ています。</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Use <ph id="ph1">`coreclr_shutdown`</ph> to unload the AppDomain and shut down the runtime.</source>
+          <target state="translated"><ph id="ph1">`coreclr_shutdown`</ph> を利用して AppDomain をアンロードし、ランタイムをシャットダウンします。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>Conclusion</source>
+          <target state="translated">まとめ</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Once your host is built, it can be tested by running it from the command line and passing any arguments (like the managed app to run) the host expects.</source>
+          <target state="translated">ホストがビルドされたら、テストできます。コマンド ラインから実行し、ホストが期待する引数を渡します (実行するマネージ アプリなど)。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by <ph id="ph1">`dotnet build`</ph>.</source>
+          <target state="translated">実行するホストの .NET Core アプリを指定するとき、<ph id="ph1">`dotnet build`</ph> により生成された .dll を使用してください。</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Executables produced by <ph id="ph1">`dotnet publish`</ph> for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.</source>
+          <target state="translated">自己完結型アプリケーションのために <ph id="ph1">`dotnet publish`</ph> で生成された実行可能ファイルが実質的に既定の .NET Core ホストになります (メインライン シナリオでコマンド ラインから直接、アプリを起動できるように)。ユーザー コードがコンパイルされ、同じ名前の dll が作られます。</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>If things don't work initially, double-check that <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.</source>
+          <target state="translated">最初の実行で動作しなかった場合、ホストが期待している場所に <bpt id="p1">*</bpt>coreclr.dll<ept id="p1">*</ept> があること、必要なすべての Framework ライブラリが TPA 一覧にあること、CoreCLR のビット数 (32 ビットまたは 64 ビット) がホストのビルド方法に一致することをもう一度確認してください。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Hosting the .NET Core runtime is an advanced scenario that many developers won't require, but for those who need to launch managed code from a native process, or who need more control over the .NET Core runtime's behavior, it can be very useful.</source>
+          <target state="translated">.NET Core ランタイムのホスティングは、多くの開発者が必要としない高度なシナリオですが、ネイティブ プロセスからマネージ コードを起動する場合や .NET Core ランタイムの動作をより細かくコントロールする場合、非常に便利です。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Because .NET Core is able to run side-by-side with itself, it's even possible to create hosts which initialize and start multiple versions of the .NET Core runtime and execute apps on all of them in the same process.</source>
+          <target state="translated">.NET Core は並行して実行できるので、同じプロセス内で、複数のバージョンの .NET Core ランタイムを初期化して開始するホストを作成し、そのすべてのホスト上でアプリを実行することもできます。</target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
