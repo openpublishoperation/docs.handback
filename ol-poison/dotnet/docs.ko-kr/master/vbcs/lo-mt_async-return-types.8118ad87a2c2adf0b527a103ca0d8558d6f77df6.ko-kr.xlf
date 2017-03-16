@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">703d3fc3f503017edf38521d77f9b15a92d0ebf3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\async-return-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">14d5c5c08d314d8cba1e1d008bca242e49b0ebaf</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">95d6b73c1a0412eea0b716e496a460af7e228958</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_async-return-types.8118ad87a2c2adf0b527a103ca0d8558d6f77df6.ko-kr is different with handoff file name: async-return-types.8118ad87a2c2adf0b527a103ca0d8558d6f77df6.ko-kr.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Async Return Types (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">비동기 반환 형식 (Visual Basic) | Microsoft 문서</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Async Return Types (Visual Basic)</source>
+          <target state="translated">비동기 반환 형식 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Async methods have three possible return types: &lt;xref:System.Threading.Tasks.Task%601&gt;, &lt;xref:System.Threading.Tasks.Task&gt;, and void.</source>
+          <target state="translated">비동기 메서드는 세 가지 가능한 반환 형식은: &lt;xref:System.Threading.Tasks.Task%601&gt;, &lt;xref:System.Threading.Tasks.Task&gt;, void 및.&lt;/xref:System.Threading.Tasks.Task&gt; &lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, the void return type is written as a <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedure.</source>
+          <target state="translated">Visual Basic의 경우 반환 형식이 void로 작성 되는 <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> 프로시저입니다.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For more information about async methods, see <bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</source>
+          <target state="translated">비동기 메서드에 대 한 자세한 내용은 참조 하십시오. <bpt id="p1">[</bpt>Async 및 Await (Visual Basic)를 사용한 비동기 프로그래밍<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.</source>
+          <target state="translated">다음 섹션 중 하나에서 각 반환 형식을 살펴보고 세 가지 형식 모두를 사용하는 전체 예제는 이 항목의 끝에 나와 있습니다.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">예제를 실행 하려면 Visual Studio 2012 이상 및.NET Framework 4.5 또는 있어야 사용자의 컴퓨터에 설치 되어 있습니다.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TaskTReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Task(T) Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TaskTReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Task (t) 반환 형식</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.Tasks.Task%601&gt; return type is used for an async method that contains a <bpt id="p1">[</bpt>Return<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> statement in which the operand has type <ph id="ph1">`TResult`</ph>.</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task%601&gt;반환 형식을 포함 하는 비동기 메서드에 사용 되는 <bpt id="p1">[</bpt>반환<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> 문이 있는 피연산자 형식 <ph id="ph1">`TResult`</ph>.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`TaskOfT_MethodAsync`</ph> async method contains a return statement that returns an integer.</source>
+          <target state="translated">다음 예제에서는 <ph id="ph1">`TaskOfT_MethodAsync`</ph> 비동기 메서드는 정수를 반환 하는 return 문을 포함 합니다.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Therefore, the method declaration must specify a return type of <ph id="ph1">`Task(Of Integer)`</ph>.</source>
+          <target state="translated">따라서 메서드 선언에서의 반환 형식을 지정 해야 <ph id="ph1">`Task(Of Integer)`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`TaskOfT_MethodAsync`</ph> is called from within an await expression, the await expression retrieves the integer value (the value of <ph id="ph2">`leisureHours`</ph>) that's stored in the task that's returned by <ph id="ph3">`TaskOfT_MethodAsync`</ph>.</source>
+          <target state="translated">때 <ph id="ph1">`TaskOfT_MethodAsync`</ph> 라고에서 await 식에서 await 식의 정수 값을 검색 (값 <ph id="ph2">`leisureHours`</ph>)에서 반환 되는 작업에 저장 된 <ph id="ph3">`TaskOfT_MethodAsync`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>For more information about await expressions, see <bpt id="p1">[</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept>.</source>
+          <target state="translated">에 대 한 자세한 내용은 await 표현을 참조 하십시오 <bpt id="p1">[</bpt>Await 연산자<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following code calls and awaits method <ph id="ph1">`TaskOfT_MethodAsync`</ph>.</source>
+          <target state="translated">다음 코드를 호출 하 고 메서드를 기다립니다 <ph id="ph1">`TaskOfT_MethodAsync`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The result is assigned to the <ph id="ph1">`result1`</ph> variable.</source>
+          <target state="translated">결과에 할당 되는 <ph id="ph1">`result1`</ph> 변수입니다.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can better understand how this happens by separating the call to <ph id="ph1">`TaskOfT_MethodAsync`</ph> from the application of <ph id="ph2">`Await`</ph>, as the following code shows.</source>
+          <target state="translated">이에 대 한 호출을 구분 하 여 문제가 발생 하는 방법을 더 잘 이해할 수 <ph id="ph1">`TaskOfT_MethodAsync`</ph> 의 응용 프로그램에서 <ph id="ph2">`Await`</ph>다음 코드와 같이 합니다.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A call to method <ph id="ph1">`TaskOfT_MethodAsync`</ph> that isn't immediately awaited returns a <ph id="ph2">`Task(Of Integer)`</ph>, as you would expect from the declaration of the method.</source>
+          <target state="translated">메서드를 호출 <ph id="ph1">`TaskOfT_MethodAsync`</ph> 대기 중이 던된 즉시 반환이 아닌는 <ph id="ph2">`Task(Of Integer)`</ph>메서드의 선언에서 예상 대로입니다.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The task is assigned to the <ph id="ph1">`integerTask`</ph> variable in the example.</source>
+          <target state="translated">작업에 할당 되는 <ph id="ph1">`integerTask`</ph> 예에서 변수입니다.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`integerTask`</ph> is a &lt;xref:System.Threading.Tasks.Task%601&gt;, it contains a &lt;xref:System.Threading.Tasks.Task%601.Result&gt; property of type <ph id="ph2">`TResult`</ph>.</source>
+          <target state="translated">때문에 <ph id="ph1">`integerTask`</ph> 는 &lt;xref:System.Threading.Tasks.Task%601&gt;, 포함 된 한 &lt;xref:System.Threading.Tasks.Task%601.Result&gt;형식의 속성 <ph id="ph2">`TResult`</ph>.&lt;/xref:System.Threading.Tasks.Task%601.Result&gt; &lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In this case, TResult represents an integer type.</source>
+          <target state="translated">이 경우 TResult는 정수 형식을 나타냅니다.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>When <ph id="ph1">`Await`</ph> is applied to <ph id="ph2">`integerTask`</ph>, the await expression evaluates to the contents of the &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt; property of <ph id="ph3">`integerTask`</ph>.</source>
+          <target state="translated">때 <ph id="ph1">`Await`</ph> 적용할 <ph id="ph2">`integerTask`</ph>, await 식이의 내용에는 &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt;속성 <ph id="ph3">`integerTask`</ph>.&lt;/xref:System.Threading.Tasks.Task%601.Result%2A&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The value is assigned to the <ph id="ph1">`result2`</ph> variable.</source>
+          <target state="translated">값에 할당 되는 <ph id="ph1">`result2`</ph> 변수입니다.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt; property is a blocking property.</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task%601.Result%2A&gt;속성은 차단 속성.&lt;/xref:System.Threading.Tasks.Task%601.Result%2A&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available.</source>
+          <target state="translated">해당 작업이 완료되기 전에 액세스하려고 하면, 작업이 완료되고 값을 사용할 수 있을 때까지 현재 활성화된 스레드가 차단됩니다.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>In most cases, you should access the value by using <ph id="ph1">`Await`</ph> instead of accessing the property directly.</source>
+          <target state="translated">사용 하 여 값 액세스 해야 하는 대부분의 경우에서 <ph id="ph1">`Await`</ph> 속성에 직접 액세스 하는 대신 합니다.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The display statements in the following code verify that the values of the <ph id="ph1">`result1`</ph> variable, the <ph id="ph2">`result2`</ph> variable, and the <ph id="ph3">`Result`</ph> property are the same.</source>
+          <target state="translated">디스플레이 문을 다음 코드에서를 확인 하는 값은 <ph id="ph1">`result1`</ph> 변수는 <ph id="ph2">`result2`</ph> 변수를 및 <ph id="ph3">`Result`</ph> 속성은 동일 합니다.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Remember that the <ph id="ph1">`Result`</ph> property is a blocking property and shouldn't be accessed before its task has been awaited.</source>
+          <target state="translated">유의 해야는 <ph id="ph1">`Result`</ph> 속성은 차단 속성 및 해당 작업에 대기 되지 전에 액세스 해서는 안 되 합니다.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TaskReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Task Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TaskReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>작업 반환 형식</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Async methods that don't contain a return statement or that contain a return statement that doesn't return an operand usually have a return type of &lt;xref:System.Threading.Tasks.Task&gt;.</source>
+          <target state="translated">Return 문을 포함 하지는 또는 일반적으로 피연산자를 반환 하지 않는 return 문이 포함 하는 비동기 메서드는 &lt;xref:System.Threading.Tasks.Task&gt;.&lt;/xref:System.Threading.Tasks.Task&gt; 의 반환 형식</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Such methods would be <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> procedures if they were written to run synchronously.</source>
+          <target state="translated">이러한 메서드는 것 <bpt id="p1">[</bpt>Sub<ept id="p1">](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)</ept> 프로시저 동기적으로 실행 하도록 작성 된 것입니다.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you use a <ph id="ph1">`Task`</ph> return type for an async method, a calling method can use an <ph id="ph2">`Await`</ph> operator to suspend the caller's completion until the called async method has finished.</source>
+          <target state="translated">사용 하는 경우는 <ph id="ph1">`Task`</ph> 형식을 반환 비동기 메서드를 호출 하는 메서드에서 사용할 수는 <ph id="ph2">`Await`</ph> 연산자를 호출된 된 비동기 메서드에서 끝날 때까지 호출자의 완료를 일시 중단 합니다.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the following example, async method <ph id="ph1">`Task_MethodAsync`</ph> doesn't contain a return statement.</source>
+          <target state="translated">다음 예제에서는 비동기 메서드 <ph id="ph1">`Task_MethodAsync`</ph> return 문이 포함 되어 있지 않습니다.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Therefore, you specify a return type of <ph id="ph1">`Task`</ph> for the method, which enables <ph id="ph2">`Task_MethodAsync`</ph> to be awaited.</source>
+          <target state="translated">반환 형식을 지정 하는 따라서 <ph id="ph1">`Task`</ph> 메서드의 수 있도록 <ph id="ph2">`Task_MethodAsync`</ph> 를 대기할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The definition of the <ph id="ph1">`Task`</ph> type doesn't include a <ph id="ph2">`Result`</ph> property to store a return value.</source>
+          <target state="translated">정의 <ph id="ph1">`Task`</ph> 형식이 포함 되지 않습니다는 <ph id="ph2">`Result`</ph> 속성을 반환 값을 저장 합니다.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Task_MethodAsync`</ph> is called and awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous <ph id="ph2">`Sub`</ph> or void-returning method.</source>
+          <target state="translated"><ph id="ph1">`Task_MethodAsync`</ph>호출 하 고 await 문에서 동기식 호출 문을 비슷합니다 await 식 대신 사용 하 여 대기 <ph id="ph2">`Sub`</ph> 또는 메서드의 void를 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The application of an <ph id="ph1">`Await`</ph> operator in this case doesn't produce a value.</source>
+          <target state="translated">응용 프로그램 <ph id="ph1">`Await`</ph> 연산자가 경우 값을 생성 하지는 합니다.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The following code calls and awaits method <ph id="ph1">`Task_MethodAsync`</ph>.</source>
+          <target state="translated">다음 코드를 호출 하 고 메서드를 기다립니다 <ph id="ph1">`Task_MethodAsync`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>As in the previous &lt;xref:System.Threading.Tasks.Task%601&gt; example, you can separate the call to <ph id="ph1">`Task_MethodAsync`</ph> from the application of an <ph id="ph2">`Await`</ph> operator, as the following code shows.</source>
+          <target state="translated">이전 처럼 &lt;xref:System.Threading.Tasks.Task%601&gt;예제에 대 한 호출을 구분할 수 있습니다 <ph id="ph1">`Task_MethodAsync`</ph> 의 응용 프로그램에서 한 <ph id="ph2">`Await`</ph> 다음 코드와 같이 연산자.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>However, remember that a <ph id="ph1">`Task`</ph> doesn't have a <ph id="ph2">`Result`</ph> property, and that no value is produced when an await operator is applied to a <ph id="ph3">`Task`</ph>.</source>
+          <target state="translated">그러나에 유의 해야는 <ph id="ph1">`Task`</ph> 없는 <ph id="ph2">`Result`</ph> 속성과 await 연산자에 적용 되는 값은 생성 되는 <ph id="ph3">`Task`</ph>합니다.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The following code separates calling <ph id="ph1">`Task_MethodAsync`</ph> from awaiting the task that <ph id="ph2">`Task_MethodAsync`</ph> returns.</source>
+          <target state="translated">호출을 구분 하는 다음 코드 <ph id="ph1">`Task_MethodAsync`</ph> 에서 작업을 대기 하는 <ph id="ph2">`Task_MethodAsync`</ph> 반환 합니다.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_VoidReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Void Return Type</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_VoidReturnType"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Void 반환 형식</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The primary use of <ph id="ph1">`Sub`</ph> procedures is in event handlers, where there is no return type (referred to as a void return type in other languages).</source>
+          <target state="translated">주된 용도 <ph id="ph1">`Sub`</ph> 프로시저는 이벤트 처리기의 경우 (다른 언어의 반환 형식이 void 라고도 함) 반환 형식이 없습니다.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget."</source>
+          <target state="translated">void 반환은 또한 "실행 후 제거"로 분류할 수 있는 작업을 수행하는 메서드 또는 viod를 반환하는 메서드를 재정의하는 데 사용할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>However, you should return a <ph id="ph1">`Task`</ph> wherever possible, because a void-returning async method can't be awaited.</source>
+          <target state="translated">하지만 반환 해야 한 <ph id="ph1">`Task`</ph> 가능 void 반환 비동기 메서드를 대기할 수 없습니다.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.</source>
+          <target state="translated">이러한 메서드의 호출자는 호출된 비동기 메서드가 마치는 것을 기다리지 않고 완료될 때까지 계속 진행할 수 있어야 하므로, 해당 호출자는 비동기 메서드가 생성하는 모든 값 또는 예외와 독립되어 있어야 합니다.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail.</source>
+          <target state="translated">void를 반환하는 비동기 메서드의 호출자는 메서드에서 throw되는 예외를 catch할 수 없으므로 이러한 처리되지 않은 예외를 사용하면 응용 프로그램이 실패할 수 있습니다.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>If an exception occurs in an async method that returns a &lt;xref:System.Threading.Tasks.Task&gt; or &lt;xref:System.Threading.Tasks.Task%601&gt;, the exception is stored in the returned task, and rethrown when the task is awaited.</source>
+          <target state="translated">비동기 메서드에서 반환 하는 경우 예외가 발생 한 &lt;xref:System.Threading.Tasks.Task&gt;또는 &lt;xref:System.Threading.Tasks.Task%601&gt;, 예외가 반환된 된 작업에 저장 되 고 작업에 대 한 대기 하는 경우 다시 throw 합니다.&lt;/xref:System.Threading.Tasks.Task%601&gt; &lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Therefore, make sure that any async method that can produce an exception has a return type of &lt;xref:System.Threading.Tasks.Task&gt; or &lt;xref:System.Threading.Tasks.Task%601&gt; and that calls to the method are awaited.</source>
+          <target state="translated">따라서 예외를 생성할 수 있는 비동기 메서드가의 반환 형식에 있는지를 확인 &lt;xref:System.Threading.Tasks.Task&gt;또는 &lt;xref:System.Threading.Tasks.Task%601&gt;메서드를 호출 하는 대기 하 고.&lt;/xref:System.Threading.Tasks.Task%601&gt; &lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For more information about how to catch exceptions in async methods, see <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">비동기 메서드에서 예외를 catch 하는 방법에 대 한 자세한 내용은 참조 <bpt id="p1">[</bpt>시도 중... Catch... Finally 문<ept id="p1">](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following code defines an async event handler.</source>
+          <target state="translated">다음 코드는 비동기 이벤트 처리기를 정의합니다.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_Example"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Complete Example</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_Example"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>전체 예제</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.</source>
+          <target state="translated">다음 WPF(Windows Presentation Foundation) 프로젝트는 이 항목의 코드 예제를 포함합니다.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>To run the project, perform the following steps:</source>
+          <target state="translated">프로젝트를 실행하려면 다음 단계를 수행합니다.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Visual Studio를 시작합니다.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">메뉴 모음에서 <bpt id="p1">**</bpt>파일<ept id="p1">**</ept>, <bpt id="p2">**</bpt>새로 만들기<ept id="p2">**</ept>, <bpt id="p3">**</bpt>프로젝트<ept id="p3">**</ept>를 차례로 선택합니다.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated"><bpt id="p1">**</bpt>새 프로젝트<ept id="p1">**</ept> 대화 상자가 열립니다.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> category, choose <bpt id="p3">**</bpt>Visual Basic<ept id="p3">**</ept>, and then choose <bpt id="p4">**</bpt>Windows<ept id="p4">**</ept>.</source>
+          <target state="translated">에 <bpt id="p1">**</bpt>설치 됨<ept id="p1">**</ept>, <bpt id="p2">**</bpt>템플릿<ept id="p2">**</ept> 범주를 선택 <bpt id="p3">**</bpt>Visual Basic<ept id="p3">**</ept>를 선택한 다음 <bpt id="p4">**</bpt>Windows<ept id="p4">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Choose <bpt id="p1">**</bpt>WPF Application<ept id="p1">**</ept> from the list of project types.</source>
+          <target state="translated">선택 <bpt id="p1">**</bpt>WPF 응용 프로그램<ept id="p1">**</ept> 프로젝트 형식 목록에서.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Enter <ph id="ph1">`AsyncReturnTypes`</ph> as the name of the project, and then choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button.</source>
+          <target state="translated">입력 <ph id="ph1">`AsyncReturnTypes`</ph> , 프로젝트의 이름으로 선택 하 고는 <bpt id="p1">**</bpt>확인<ept id="p1">**</ept> 단추입니다.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">새 프로젝트가 표시 <bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Visual Studio 코드 편집기에서 <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> 탭을 선택합니다.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>If the tab is not visible, open the shortcut menu for MainWindow.xaml in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, and then choose <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.</source>
+          <target state="translated">탭 보이지 않으면 mainwindow.xaml의 바로 가기 메뉴를 열고 <bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>를 선택한 다음 <bpt id="p2">**</bpt>열고<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> window of MainWindow.xaml, replace the code with the following code.</source>
+          <target state="translated">에 <bpt id="p1">**</bpt>XAML<ept id="p1">**</ept> MainWindow.xaml의 창 코드를 다음 코드로 바꿉니다.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A simple window that contains a text box and a button appears in the <bpt id="p1">**</bpt>Design<ept id="p1">**</ept> window of MainWindow.xaml.</source>
+          <target state="translated">에 텍스트 상자와 단추가 포함 된 간단한 창이 표시는 <bpt id="p1">**</bpt>디자인<ept id="p1">**</ept> MainWindow.xaml의 창.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>솔루션 탐색기<ept id="p1">**</ept>, MainWindow.xaml.vb에 대 한 바로 가기 메뉴를 열고 선택한 다음 <bpt id="p2">**</bpt>코드 보기<ept id="p2">**</ept>합니다.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Replace the code in MainWindow.xaml.vb with the following code.</source>
+          <target state="translated">MainWindow.xaml.vb의 코드를 다음 코드로 바꿉니다.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">F5 키를 선택하여 프로그램을 실행한 다음 <bpt id="p1">**</bpt>시작<ept id="p1">**</ept> 단추를 선택합니다.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>The following output should appear.</source>
+          <target state="translated">다음과 같은 출력이 표시됩니다.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">참고 항목</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Tasks.Task.FromResult%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task.FromResult%2A&gt;&lt;/xref:System.Threading.Tasks.Task.FromResult%2A&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>연습: Async를 사용 하 여 웹 서비스에 액세스 및 Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Control Flow in Async Programs (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>비동기 프로그램 (Visual Basic)의 제어 흐름<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>비동기<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Await 연산자<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
