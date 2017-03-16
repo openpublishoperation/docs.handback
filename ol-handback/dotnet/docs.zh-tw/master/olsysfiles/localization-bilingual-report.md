@@ -1,11 +1,30 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/language-reference/operators/toc.md) | InSyncHandedBackSuccess | [Details](#d15667bd55e69fd822684df9a81cc2c996ca039f880)
 
 ## Item Details
+##### <a name='d15667bd55e69fd822684df9a81cc2c996ca039f880'></a> Source: [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs/blob/a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0/docs/csharp/language-reference/operators/toc.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [docs\csharp\language-reference\operators\toc.md](https://github.com/dotnet/docs.zh-tw/blob/2ccce8bbf8201b88bdf4380e4c543f16b2e84eaf/docs/csharp/language-reference/operators/toc.md)
+* Handoff File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/50d54dfe7a77be87f80d7b4887cfe5783ffcbff1/ol-handoff/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Handoff Datetime: 2017-03-13 16:56:52
+* Handoff Reason: Include
+* Handoff Name: docs_HT_P1#OL#CPubP1#20170313T151011
+* Archive File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handoff/blob/20e94a136a0a37f61645a4e664db0b4cc8d98aa9/ol-archive/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Archive Datetime: 2017-03-13 22:22:43
+* Handback File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/796c8fb01a7e1ae4a0b2a6ba5b69ab7bcbae4ea9/ol-handback/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Handback Datetime: 2017-03-16 23:12:21
+* Handback Name: docs_HT_P1#OL#CPubP1#20170313T151011-de-de-es-es-fr-fr-it-it-ja-jp-ko-kr-pt-br-ru-ru-zh-cn-zh-tw_2
+* Bilingual File: [toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf](https://github.com/dotnet/docs.handback/blob/796c8fb01a7e1ae4a0b2a6ba5b69ab7bcbae4ea9/ol-handback/dotnet/docs.zh-tw/master/p1-ht/toc.508bc8d161dbb12bfd869a135a3a1500f8ba4524.zh-tw.xlf)
+* Bilingual Datetime: 2017-03-16 23:16:02
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
