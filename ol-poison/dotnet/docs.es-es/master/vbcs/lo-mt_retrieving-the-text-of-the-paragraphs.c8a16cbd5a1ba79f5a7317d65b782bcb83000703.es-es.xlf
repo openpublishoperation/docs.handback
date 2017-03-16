@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">147c8e60e44fd71869df84cbee9836213d96c0fd</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\retrieving-the-text-of-the-paragraphs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0966c2fb29e225577d08b841064ab26d5fc12d6e</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2ba3ac8b410ad6c84a52a2248e702ed44edc5bcc</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_retrieving-the-text-of-the-paragraphs.c8a16cbd5a1ba79f5a7317d65b782bcb83000703.es-es is different with handoff file name: retrieving-the-text-of-the-paragraphs.c8a16cbd5a1ba79f5a7317d65b782bcb83000703.es-es.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Retrieving the Text of the Paragraphs (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Recuperar el texto de los párrafos (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Retrieving the Text of the Paragraphs (Visual Basic)</source>
+          <target state="translated">Recuperar el texto de los párrafos (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This example builds on the previous example, <bpt id="p1">[</bpt>Retrieving the Paragraphs and Their Styles (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)</ept>.</source>
+          <target state="translated">En este ejemplo se basa en el ejemplo anterior, <bpt id="p1">[</bpt>recuperar los párrafos y sus estilos (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This new example retrieves the text of each paragraph as a string.</source>
+          <target state="translated">El nuevo ejemplo recupera el texto de cada párrafo como una cadena.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To retrieve the text, this example adds an additional query that iterates through the collection of anonymous types and projects a new collection of an anonymous type with the addition of a new member, <ph id="ph1">`Text`</ph>.</source>
+          <target state="translated">Para ello, incorpora una consulta nueva que lleva a cabo una iteración a lo largo de la colección de tipos anónimos y proyecta una nueva colección de un tipo anónimo incluyendo a un nuevo miembro, <ph id="ph1">`Text`</ph>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>It uses the &lt;xref:System.Linq.Enumerable.Aggregate%2A&gt; standard query operator to concatenate multiple strings into one string.</source>
+          <target state="translated">Usa el &lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;operador de consulta estándar para concatenar varias cadenas en una sola cadena.&lt;/xref:System.Linq.Enumerable.Aggregate%2A&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This technique (that is, first projecting to a collection of an anonymous type, then using this collection to project to a new collection of an anonymous type) is a common and useful idiom.</source>
+          <target state="translated">Esta técnica (es decir, primeramente proyectar una colección de un tipo anónimo para después utilizarla para proyectarla en una colección nueva de un tipo anónimo) es un común y resulta muy útil.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This query could have been written without projecting to the first anonymous type.</source>
+          <target state="translated">Se podría haber escrito esta consulta sin que se realice una proyección en el primer tipo anónimo.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>However, because of lazy evaluation, doing so does not use much additional processing power.</source>
+          <target state="translated">Sin embargo, debido a la evaluación aplazada, no se utilizaría mucha potencia de procesamiento adicional en caso de utilizarse.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The idiom creates more short lived objects on the heap, but this does not substantially degrade performance.</source>
+          <target state="translated">Esta técnica crea objetos de menor duración en la pila de memoria, pero esto no reduce de forma significativa el rendimiento.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Of course, it would be possible to write a single query that contains the functionality to retrieve the paragraphs, the style of each paragraph, and the text of each paragraph.</source>
+          <target state="translated">Por supuesto, sería posible escribir una única consulta que contuviese la funcionalidad necesaria para recuperar los párrafos, el estilo de cada uno de ellos y su texto.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>However, it often is useful to break up a more complicated query into multiple queries because the resulting code is more modular and easier to maintain.</source>
+          <target state="translated">Sin embargo, a menudo resulta útil dividir una consulta más compleja en múltiples consultas, ya que el código resultante será más modular y fácil de mantener.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Furthermore, if you need to reuse a portion of the query, it is easier to refactor if the queries are written in this manner.</source>
+          <target state="translated">Y lo que es más, si necesitara reutilizar una parte de esa consulta, resultaría más sencillo refactorizarla si las consultas están escritas de esta forma.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>These queries, which are chained together, use the processing model that is examined in detail in the topic <bpt id="p1">[</bpt>Tutorial: Deferred Execution (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-deferred-execution.md)</ept>.</source>
+          <target state="translated">Estas consultas, que están conectadas entre sí, usan el modelo de procesamiento que se describe detalladamente en el tema <bpt id="p1">[</bpt>Tutorial: ejecución diferida (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-deferred-execution.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Ejemplo</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This example processes a WordprocessingML document, determining the element node, the style name, and the text of each paragraph.</source>
+          <target state="translated">Este ejemplo procesa un documento WordprocessingML, determinando el nodo elemento, el nombre del estilo y el texto de cada párrafo.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>This example builds on the previous examples in this tutorial.</source>
+          <target state="translated">Este ejemplo se basa en los ejemplos anteriormente vistos en este tutorial.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The new query is called out in comments in the code below.</source>
+          <target state="translated">En los comentarios del siguiente código se menciona dónde se encuentra la nueva consulta.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For instructions for creating the source document for this example, see <bpt id="p1">[</bpt>Creating the Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</source>
+          <target state="translated">Para obtener instrucciones para crear el documento de origen para este ejemplo, vea <bpt id="p1">[</bpt>crear Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>This example uses classes from the WindowsBase assembly.</source>
+          <target state="translated">Este ejemplo utiliza las clases que se encuentran en el ensamblado WindowsBase.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It uses types in the &lt;xref:System.IO.Packaging?displayProperty=fullName&gt; namespace.</source>
+          <target state="translated">Utiliza los tipos en el &lt;xref:System.IO.Packaging?displayProperty=fullName&gt;espacio de nombres.&lt;/xref:System.IO.Packaging?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This example produces the following output when applied to the document described in <bpt id="p1">[</bpt>Creating the Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</source>
+          <target state="translated">Este ejemplo produce el siguiente resultado cuando se aplica al documento descrito en <bpt id="p1">[</bpt>crear Source Office Open XML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Next Steps</source>
+          <target state="translated">Pasos siguientes</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The next example shows how to use an extension method, instead of &lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;, to concatenate multiple strings into a single string.</source>
+          <target state="translated">En el ejemplo siguiente se muestra cómo utilizar un método de extensión en lugar de &lt;xref:System.Linq.Enumerable.Aggregate%2A&gt;, para concatenar varias cadenas en una sola cadena.&lt;/xref:System.Linq.Enumerable.Aggregate%2A&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Refactoring Using an Extension Method (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Refactorizar utilizando un método de extensión (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-an-extension-method.md)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Tutorial: Manipular contenido en un documento WordprocessingML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>La ejecución aplazada y evaluación diferida en LINQ to XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

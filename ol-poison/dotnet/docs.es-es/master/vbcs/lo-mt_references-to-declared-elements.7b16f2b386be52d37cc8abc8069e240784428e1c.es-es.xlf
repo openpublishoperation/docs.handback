@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">48a04f81075accc073b0d1f5b7a61006bef807ae</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\declared-elements\references-to-declared-elements.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4666a9598aec7a4d00b7c9b377d274058dc0c720</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d46b404eb20ed5b925a224bf6078ab20df1f4a4a</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_references-to-declared-elements.7b16f2b386be52d37cc8abc8069e240784428e1c.es-es is different with handoff file name: references-to-declared-elements.7b16f2b386be52d37cc8abc8069e240784428e1c.es-es.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>References to Declared Elements (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Referencias a elementos declarados (Visual Basic) | Documentos de Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>References to Declared Elements (Visual Basic)</source>
+          <target state="translated">Referencias a elementos declarados (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When your code refers to a declared element, the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler matches the name in your reference to the appropriate declaration of that name.</source>
+          <target state="translated">Cuando el código hace referencia a un elemento declarado, el <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compilador coincide con el nombre de la referencia con la declaración pertinente del nombre.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If more than one element is declared with the same name, you can control which of those elements is to be referenced by <bpt id="p1">*</bpt>qualifying<ept id="p1">*</ept> its name.</source>
+          <target state="translated">Si más de un elemento se declara con el mismo nombre, puede controlar cuáles de esos elementos se haga referencia a <bpt id="p1">*</bpt>calificación<ept id="p1">*</ept> su nombre.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The compiler attempts to match a name reference to a name declaration with the <bpt id="p1">*</bpt>narrowest scope<ept id="p1">*</ept>.</source>
+          <target state="translated">El compilador intenta hacer coincidir una referencia de nombre con una declaración de nombre con el <bpt id="p1">*</bpt>ámbito más restringido<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means it starts with the code making the reference and works outward through successive levels of containing elements.</source>
+          <target state="translated">Esto significa que comienza con el código que hace la referencia y se mueve hacia afuera a través de los niveles sucesivos de elementos contenedores.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The following example shows references to two variables with the same name.</source>
+          <target state="translated">El ejemplo siguiente muestra las referencias a dos variables con el mismo nombre.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The example declares two variables, each named <ph id="ph1">`totalCount`</ph>, at different levels of scope in module <ph id="ph2">`container`</ph>.</source>
+          <target state="translated">En el ejemplo se declara dos variables, cada uno denominado <ph id="ph1">`totalCount`</ph>, en diferentes niveles de ámbito en el módulo <ph id="ph2">`container`</ph>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When the procedure <ph id="ph1">`showCount`</ph> displays <ph id="ph2">`totalCount`</ph> without qualification, the <ph id="ph3">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler resolves the reference to the declaration with the narrowest scope, namely the local declaration inside <ph id="ph4">`showCount`</ph>.</source>
+          <target state="translated">Cuando el procedimiento <ph id="ph1">`showCount`</ph> muestra <ph id="ph2">`totalCount`</ph> sin calificación, el <ph id="ph3">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compilador resuelve la referencia a la declaración con el ámbito más restringido, concretamente la declaración local dentro de <ph id="ph4">`showCount`</ph>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When it qualifies <ph id="ph1">`totalCount`</ph> with the containing module <ph id="ph2">`container`</ph>, the compiler resolves the reference to the declaration with the broader scope.</source>
+          <target state="translated">Cuando califica <ph id="ph1">`totalCount`</ph> con el módulo contenedor <ph id="ph2">`container`</ph>, el compilador resuelve la referencia a la declaración con el ámbito más amplio.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Qualifying an Element Name</source>
+          <target state="translated">Calificar un nombre de elemento</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If you want to override this search process and specify a name declared in a broader scope, you must <bpt id="p1">*</bpt>qualify<ept id="p1">*</ept> the name with the containing element of the broader scope.</source>
+          <target state="translated">Si desea invalidar este proceso de búsqueda y especificar un nombre declarado en un ámbito más amplio, debe <bpt id="p1">*</bpt>calificar<ept id="p1">*</ept> el nombre con el elemento contenedor del ámbito más amplio.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In some cases, you might also have to qualify the containing element.</source>
+          <target state="translated">En algunos casos, es posible que deba calificar el elemento contenedor.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Qualifying a name means preceding it in your source statement with information that identifies where the target element is defined.</source>
+          <target state="translated">Calificar un nombre significa que precede en la instrucción de origen con la información que identifica dónde se define el elemento de destino.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This information is called a <bpt id="p1">*</bpt>qualification string<ept id="p1">*</ept>.</source>
+          <target state="translated">Esta información se denomina un <bpt id="p1">*</bpt>cadena de calificación<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>It can include one or more namespaces and a module, class, or structure.</source>
+          <target state="translated">Puede incluir uno o más espacios de nombres y un módulo, clase o estructura.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The qualification string should unambiguously specify the module, class, or structure containing the target element.</source>
+          <target state="translated">La cadena de calificación debe especificar de forma inequívoca el módulo, clase o estructura que contiene el elemento de destino.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The container might in turn be located in another containing element, usually a namespace.</source>
+          <target state="translated">El contenedor a su vez puede estar ubicado en otro elemento contenedor, normalmente un espacio de nombres.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You might need to include several containing elements in the qualification string.</source>
+          <target state="translated">Debe incluir varios elementos contenedores en la cadena de calificación.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To access a declared element by qualifying its name</source>
+          <target state="translated">Para obtener acceso a un elemento declarado mediante la calificación de su nombre</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Determine the location in which the element has been defined.</source>
+          <target state="translated">Determinar la ubicación en la que se ha definido el elemento.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This might include a namespace, or even a hierarchy of namespaces.</source>
+          <target state="translated">Esto puede incluir un espacio de nombres o incluso una jerarquía de espacios de nombres.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Within the lowest-level namespace, the element must be contained in a module, class, or structure.</source>
+          <target state="translated">En el espacio de nombres de nivel inferior, el elemento debe estar contenido en un módulo, clase o estructura.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine a qualification path based on the target element's location.</source>
+          <target state="translated">Determinar una ruta de acceso de calificación basada en la ubicación del elemento de destino.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Start with the highest-level namespace, proceed to the lowest-level namespace, and end with the module, class, or structure containing the target element.</source>
+          <target state="translated">Comience con el espacio de nombres de nivel superior, continúe con el espacio de nombres de nivel más bajo y termina con el módulo, clase o estructura que contiene el elemento de destino.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Each element in the path must contain the element that follows it.</source>
+          <target state="translated">Cada elemento de la ruta de acceso debe contener el elemento que le sigue.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`outerSpace`</ph> → <ph id="ph2">`innerSpace`</ph> → <ph id="ph3">`holdsTotals`</ph> → <ph id="ph4">`totals`</ph></source>
+          <target state="translated"><ph id="ph1">`outerSpace`</ph> → <ph id="ph2">`innerSpace`</ph> → <ph id="ph3">`holdsTotals`</ph> → <ph id="ph4">`totals`</ph></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Prepare the qualification string for the target element.</source>
+          <target state="translated">Prepare la cadena de calificación para el elemento de destino.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Place a period (<ph id="ph1">`.`</ph>) after every element in the path.</source>
+          <target state="translated">Coloque un punto (<ph id="ph1">`.`</ph>) después de cada elemento de la ruta de acceso.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Your application must have access to every element in your qualification string.</source>
+          <target state="translated">La aplicación debe tener acceso a cada elemento de la cadena de calificación.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Write the expression or assignment statement referring to the target element in the normal way.</source>
+          <target state="translated">Escriba la expresión o instrucción de asignación que hace referencia al elemento de destino de la manera normal.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Precede the target element name with the qualification string.</source>
+          <target state="translated">Delante del nombre del elemento de destino con la cadena de calificación.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The name should immediately follow the period (<ph id="ph1">`.`</ph>) that follows the module, class, or structure that contains the element.</source>
+          <target state="translated">El nombre debe seguir inmediatamente el período (<ph id="ph1">`.`</ph>) que sigue el módulo, clase o estructura que contiene el elemento.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The compiler uses the qualification string to find a clear, unambiguous declaration to which it can match the target element reference.</source>
+          <target state="translated">El compilador utiliza la cadena de calificación para encontrar una declaración clara e inequívoca a la que puede coincidir con la referencia de elemento de destino.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You might also have to qualify a name reference if your application has access to more than one programming element that has the same name.</source>
+          <target state="translated">También podría tener que calificar una referencia de nombre si su aplicación tiene acceso a más de un elemento de programación que tiene el mismo nombre.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, the &lt;xref:System.Windows.Forms&gt; and &lt;xref:System.Web.UI.WebControls&gt; namespaces both contain a <ph id="ph1">`Label`</ph> class (&lt;xref:System.Windows.Forms.Label?displayProperty=fullName&gt; and &lt;xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt;).</source>
+          <target state="translated">Por ejemplo, el &lt;xref:System.Windows.Forms&gt;y &lt;xref:System.Web.UI.WebControls&gt;espacios de nombres contienen un <ph id="ph1">`Label`</ph> clase (&lt;xref:System.Windows.Forms.Label?displayProperty=fullName&gt; y &lt;xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt;).&lt;/xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt; &lt;/xref:System.Windows.Forms.Label?displayProperty=fullName&gt; &lt;/xref:System.Web.UI.WebControls&gt; &lt;/xref:System.Windows.Forms&gt;</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If your application uses both, or if it defines its own <ph id="ph1">`Label`</ph> class, you must distinguish the different <ph id="ph2">`Label`</ph> objects.</source>
+          <target state="translated">Si su aplicación utiliza los dos o si define su propio <ph id="ph1">`Label`</ph> (clase), debe distinguir los diferentes <ph id="ph2">`Label`</ph> objetos.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Include the namespace or import alias in the variable declaration.</source>
+          <target state="translated">Incluir el alias del espacio de nombres o la importación en la declaración de variable.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following example uses the import alias.</source>
+          <target state="translated">En el ejemplo siguiente se utiliza el alias de importación.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Members of Other Containing Elements</source>
+          <target state="translated">Miembros de otros elementos que contiene</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When you use a nonshared member of another class or structure, you must first qualify the member name with a variable or expression that points to an instance of the class or structure.</source>
+          <target state="translated">Cuando se utiliza un miembro no compartido de otra clase o estructura, primero debe calificar el nombre de miembro con una variable o expresión que señale a una instancia de la clase o estructura.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the following example, <ph id="ph1">`demoClass`</ph> is an instance of a class named <ph id="ph2">`class1`</ph>.</source>
+          <target state="translated">En el ejemplo siguiente, <ph id="ph1">`demoClass`</ph> es una instancia de una clase denominada <ph id="ph2">`class1`</ph>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You cannot use the class name itself to qualify a member that is not <bpt id="p1">[</bpt>Shared<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept>.</source>
+          <target state="translated">No puede utilizar el nombre de la clase para calificar a un miembro que no sea <bpt id="p1">[</bpt>Shared<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You must first create an instance in an object variable (in this case <ph id="ph1">`demoClass`</ph>) and then reference it by the variable name.</source>
+          <target state="translated">Primero debe crear una instancia en una variable de objeto (en este caso <ph id="ph1">`demoClass`</ph>) y, a continuación, hacer referencia a ella por el nombre de variable.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>If a class or structure has a <ph id="ph1">`Shared`</ph> member, you can qualify that member either with the class or structure name or with a variable or expression that points to an instance.</source>
+          <target state="translated">Si una clase o estructura tiene un <ph id="ph1">`Shared`</ph> miembro, puede calificar ese miembro con el nombre de clase o estructura o con una variable o expresión que señale a una instancia.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A module does not have any separate instances, and all its members are <ph id="ph1">`Shared`</ph> by default.</source>
+          <target state="translated">Un módulo no tiene ninguna instancia separada y todos sus miembros son <ph id="ph1">`Shared`</ph> de forma predeterminada.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Therefore, you qualify a module member with the module name.</source>
+          <target state="translated">Por lo tanto, califica a un miembro de módulo con el nombre del módulo.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following example shows qualified references to module member procedures.</source>
+          <target state="translated">El ejemplo siguiente muestra referencias calificadas a procedimientos de miembros de módulo.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The example declares two <ph id="ph1">`Sub`</ph> procedures, both named <ph id="ph2">`perform`</ph>, in different modules in a project.</source>
+          <target state="translated">El ejemplo declara dos <ph id="ph1">`Sub`</ph> procedimientos, con el nombre <ph id="ph2">`perform`</ph>, en módulos diferentes de un proyecto.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Each one can be specified without qualification within its own module but must be qualified if referenced from anywhere else.</source>
+          <target state="translated">Cada uno de ellos puede especificarse sin calificación en su propio módulo, pero debe ser completo si se hace referencia desde cualquier otro lugar.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Because the final reference in <ph id="ph1">`module3`</ph> does not qualify <ph id="ph2">`perform`</ph>, the compiler cannot resolve that reference.</source>
+          <target state="translated">Dado que la última referencia en <ph id="ph1">`module3`</ph> no cumple los requisitos <ph id="ph2">`perform`</ph>, el compilador no puede resolver esa referencia.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>References to Projects</source>
+          <target state="translated">Referencias a proyectos</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>To use <bpt id="p1">[</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept> elements defined in another project, you must first set a <bpt id="p2">*</bpt>reference<ept id="p2">*</ept> to that project's assembly or type library.</source>
+          <target state="translated">Usar <bpt id="p1">[</bpt>público<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept> elementos definidos en otro proyecto, primero debe establecer una <bpt id="p2">*</bpt>referencia<ept id="p2">*</ept> a la biblioteca del proyecto de ensamblado o tipo.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To set a reference, click <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Project<ept id="p2">**</ept> menu, or use the <bpt id="p3">[</bpt>/reference (Visual Basic)<ept id="p3">](../../../../visual-basic/reference/command-line-compiler/reference.md)</ept> command-line compiler option.</source>
+          <target state="translated">Para establecer una referencia, haga clic en <bpt id="p1">**</bpt>Agregar referencia<ept id="p1">**</ept> en el <bpt id="p2">**</bpt>proyecto<ept id="p2">**</ept> menú o use la <bpt id="p3">[</bpt>/reference (Visual Basic)<ept id="p3">](../../../../visual-basic/reference/command-line-compiler/reference.md)</ept> opción del compilador de línea de comandos.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For example, you can use the XML object model of the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</source>
+          <target state="translated">Por ejemplo, puede utilizar el modelo de objetos XML de la <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If you set a reference to the &lt;xref:System.Xml&gt; namespace, you can declare and use any of its classes, such as &lt;xref:System.Xml.XmlDocument&gt;.</source>
+          <target state="translated">Si establece una referencia a la &lt;xref:System.Xml&gt;espacio de nombres, puede declarar y utilizar cualquiera de sus clases, como &lt;xref:System.Xml.XmlDocument&gt;.&lt;/xref:System.Xml.XmlDocument&gt; &lt;/xref:System.Xml&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The following example uses &lt;xref:System.Xml.XmlDocument&gt;.</source>
+          <target state="translated">En el ejemplo siguiente se utiliza &lt;xref:System.Xml.XmlDocument&gt;.&lt;/xref:System.Xml.XmlDocument&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Importing Containing Elements</source>
+          <target state="translated">Importar elementos contenedores</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">[</bpt>Imports Statement (.NET Namespace and Type)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> to <bpt id="p2">*</bpt>import<ept id="p2">*</ept> the namespaces that contain the modules or classes that you want to use.</source>
+          <target state="translated">Puede usar el <bpt id="p1">[</bpt>Imports (instrucción Namespace .NET y tipo)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> a <bpt id="p2">*</bpt>importar<ept id="p2">*</ept> los espacios de nombres que contienen los módulos o clases que desea utilizar.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This enables you to refer to the elements defined in an imported namespace without fully qualifying their names.</source>
+          <target state="translated">Esto permite hacer referencia a los elementos definidos en un espacio de nombres importado sin calificar por completo sus nombres.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The following example rewrites the previous example to import the &lt;xref:System.Xml&gt; namespace.</source>
+          <target state="translated">En el ejemplo siguiente se vuelve a escribir el ejemplo anterior para importar el &lt;xref:System.Xml&gt;espacio de nombres.&lt;/xref:System.Xml&gt;</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In addition, the <ph id="ph1">`Imports`</ph> statement can define an <bpt id="p1">*</bpt>import alias<ept id="p1">*</ept> for each imported namespace.</source>
+          <target state="translated">Además, el <ph id="ph1">`Imports`</ph> instrucción puede definir un <bpt id="p1">*</bpt>alias de importación<ept id="p1">*</ept> para cada espacio de nombres importado.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This can make the source code shorter and easier to read.</source>
+          <target state="translated">Esto puede hacer que el código fuente más corto y fácil de leer.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following example rewrites the previous example to use <ph id="ph1">`xD`</ph> as an alias for the &lt;xref:System.Xml&gt; namespace.</source>
+          <target state="translated">En el ejemplo siguiente se vuelve a escribir el ejemplo anterior para utilizar <ph id="ph1">`xD`</ph> como un alias para el &lt;xref:System.Xml&gt;espacio de nombres.&lt;/xref:System.Xml&gt;</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Imports`</ph> statement does not make elements from other projects available to your application.</source>
+          <target state="translated">El <ph id="ph1">`Imports`</ph> no hace que los elementos de otros proyectos disponibles para la aplicación.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>That is, it does not take the place of setting a reference.</source>
+          <target state="translated">Es decir, no tiene lugar de la configuración de una referencia.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Importing a namespace just removes the requirement to qualify the names defined in that namespace.</source>
+          <target state="translated">Importar un espacio de nombres sólo quita la necesidad de calificar los nombres definidos en ese espacio de nombres.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You can also use the <ph id="ph1">`Imports`</ph> statement to import modules, classes, structures, and enumerations.</source>
+          <target state="translated">También puede utilizar el <ph id="ph1">`Imports`</ph> instrucción para importar módulos, clases, estructuras y enumeraciones.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can then use the members of such imported elements without qualification.</source>
+          <target state="translated">A continuación, puede utilizar a los miembros de estos elementos importados sin calificación.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>However, you must always qualify nonshared members of classes and structures with a variable or expression that evaluates to an instance of the class or structure.</source>
+          <target state="translated">Sin embargo, debe calificar siempre los miembros no compartidos de clases y estructuras con una variable o expresión que se evalúa como una instancia de la clase o estructura.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Naming Guidelines</source>
+          <target state="translated">Instrucciones de nomenclatura</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you define two or more programming elements that have the same name, a <bpt id="p1">*</bpt>name ambiguity<ept id="p1">*</ept> can result when the compiler attempts to resolve a reference to that name.</source>
+          <target state="translated">Cuando se definen dos o más elementos de programación que tienen el mismo nombre, un <bpt id="p1">*</bpt>ambigüedad de nombres<ept id="p1">*</ept> puede producirse cuando el compilador intenta resolver una referencia a ese nombre.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If more than one definition is in scope, or if no definition is in scope, the reference is irresolvable.</source>
+          <target state="translated">Si hay más de una definición en el ámbito, o si ninguna definición está en ámbito, la referencia es irresoluble.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For an example, see "Qualified Reference Example" on this Help page.</source>
+          <target state="translated">Para obtener un ejemplo, vea "Ejemplo de referencia calificada" en esta página de ayuda.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You can avoid name ambiguity by giving all your elements unique names.</source>
+          <target state="translated">Para evitar la ambigüedad de nombres proporcionando nombres únicos a todos los elementos.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Then you can make reference to any element without having to qualify its name with a namespace, module, or class.</source>
+          <target state="translated">A continuación, puede hacer referencia a cualquier elemento sin tener que calificar su nombre con un espacio de nombres, módulo o clase.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You also reduce the chances of accidentally referring to the wrong element.</source>
+          <target state="translated">También se reduce la posibilidad de hacer referencia accidentalmente a un elemento equivocado.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Shadowing</source>
+          <target state="translated">Sombrear</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When two programming elements share the same name, one of them can hide, or <bpt id="p1">*</bpt>shadow<ept id="p1">*</ept>, the other one.</source>
+          <target state="translated">Si dos elementos de programación comparten el mismo nombre, uno de ellos puede ocultar, o <bpt id="p1">*</bpt>instantáneas<ept id="p1">*</ept>, otro.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A shadowed element is not available for reference; instead, when your code uses the shadowed element name, the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler resolves it to the shadowing element.</source>
+          <target state="translated">Un elemento sombreado no está disponible como referencia; en su lugar, cuando el código utiliza el nombre del elemento sombreado, el <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compilador resuelve en el elemento de sombreado.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>For a more detailed explanation with examples, see <bpt id="p1">[</bpt>Shadowing in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept>.</source>
+          <target state="translated">Para obtener una explicación más detallada con ejemplos, vea <bpt id="p1">[</bpt>sombrear en Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vea también</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Declared Element Names<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Nombres de elementos declarados<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Declared Element Characteristics<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Características de los elementos declarados<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>NIB How to: Modify Project Properties and Configuration Settings<ept id="p1">](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>NIB Cómo: modificar las propiedades de proyecto y opciones de configuración<ept id="p1">](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Variables<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Variables<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Imports Statement (.NET Namespace and Type)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Instrucción Imports (Tipo y espacio de nombres de .NET)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>New Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>New (operador)<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
