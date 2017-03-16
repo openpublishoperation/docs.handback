@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c9c60bb4730ef6569390f76f63c40a2cbd1c9524</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-stream-xml-fragments-from-an-xmlreader.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2277fcbdfb99c62bb994c70ae0d88dbb23311bf6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1354c0055bb15144ef37112b94fb8af10952eef7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Stream XML Fragments from an XmlReader (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Gewusst wie: Streamen von XML-Fragmenten aus einem XmlReader (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Stream XML Fragments from an XmlReader (Visual Basic)</source>
+          <target state="translated">Gewusst wie: Streamen von XML-Fragmenten aus einem XmlReader (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you have to process large XML files, it might not be feasible to load the whole XML tree into memory.</source>
+          <target state="translated">Wenn Sie große XML-Dateien verarbeiten müssen, kann u. U. nicht die gesamte XML-Struktur in den Arbeitsspeicher geladen werden.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic shows how to stream fragments using an &lt;xref:System.Xml.XmlReader&gt;.</source>
+          <target state="translated">In diesem Thema veranschaulicht, wie mithilfe einer &lt;xref:System.Xml.XmlReader&gt;.&lt;/xref:System.Xml.XmlReader&gt; Fragmente Streamen</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>One of the most effective ways to use an &lt;xref:System.Xml.XmlReader&gt; to read &lt;xref:System.Xml.Linq.XElement&gt; objects is to write your own custom axis method.</source>
+          <target state="translated">Eine der effektivsten Methoden verwenden ein &lt;xref:System.Xml.XmlReader&gt;Lesen &lt;xref:System.Xml.Linq.XElement&gt;Objekten ist eine eigene benutzerdefinierte Achsenmethode schreiben.&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An axis method typically returns a collection such as &lt;xref:System.Collections.Generic.IEnumerable%601&gt; of &lt;xref:System.Xml.Linq.XElement&gt;, as shown in the example in this topic.</source>
+          <target state="translated">Achsenmethode gibt in der Regel eine Auflistung wie z. B. &lt;xref:System.Collections.Generic.IEnumerable%601&gt;von &lt;xref:System.Xml.Linq.XElement&gt;, wie im Beispiel in diesem Thema gezeigt.&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In the custom axis method, after you create the XML fragment by calling the &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt; method, return the collection using <ph id="ph1">`yield return`</ph>.</source>
+          <target state="translated">In der benutzerdefinierten Achsenmethode, nach der Erstellung von XML-Fragment durch Aufrufen der &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;-Methode zurückgegeben wird, die Auflistung mit <ph id="ph1">`yield return`</ph>.&lt;/xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This provides deferred execution semantics to your custom axis method.</source>
+          <target state="translated">Auf diese Weise versehen Sie Ihre benutzerdefinierte Achsenmethode mit der Semantik für eine verzögerte Ausführung.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When you create an XML tree from an &lt;xref:System.Xml.XmlReader&gt; object, the &lt;xref:System.Xml.XmlReader&gt; must be positioned on an element.</source>
+          <target state="translated">Beim Erstellen einer XML-Struktur aus einem &lt;xref:System.Xml.XmlReader&gt;-Objekt, das &lt;xref:System.Xml.XmlReader&gt;muss auf einem Element positioniert werden.&lt;/xref:System.Xml.XmlReader&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt; method does not return until it has read the close tag of the element.</source>
+          <target state="translated">Die &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;Methode gibt keinen zurück, bis sie das Endtag des Elements gelesen hat.&lt;/xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If you want to create a partial tree, you can instantiate an &lt;xref:System.Xml.XmlReader&gt;, position the reader on the node that you want to convert to an &lt;xref:System.Xml.Linq.XElement&gt; tree, and then create the &lt;xref:System.Xml.Linq.XElement&gt; object.</source>
+          <target state="translated">Wenn Sie eine Teilstruktur erstellen möchten, instanziieren Sie ein &lt;xref:System.Xml.XmlReader&gt;, positionieren Sie den Reader auf dem Knoten, die Sie zum konvertieren möchten eine &lt;xref:System.Xml.Linq.XElement&gt;Struktur, und erstellen Sie die &lt;xref:System.Xml.Linq.XElement&gt;Objekt.&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The topic <bpt id="p1">[</bpt>How to: Stream XML Fragments with Access to Header Information (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md)</ept> contains information and an example on how to stream a more complex document.</source>
+          <target state="translated">Das Thema <bpt id="p1">[</bpt>How to: Stream XML-Fragmenten mit Zugriff auf Headerinformationen (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md)</ept> enthält Informationen und ein Beispiel dafür, wie komplexere Dokumente gestreamt.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The topic <bpt id="p1">[</bpt>How to: Perform Streaming Transform of Large XML Documents (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md)</ept> contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.</source>
+          <target state="translated">Das Thema <bpt id="p1">[</bpt>Gewusst wie: Ausführen Streaming Transformieren von großen XML-Dokumenten (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md)</ept> enthält ein Beispiel der Verwendung von LINQ to XML extrem große XML-Dokumente zu transformieren, Beibehaltung einer geringen speicherbeanspruchung.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">Beispiel</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This example creates a custom axis method.</source>
+          <target state="translated">Dieses Beispiel erstellt eine benutzerdefinierte Achsenmethode.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can query it by using a <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> query.</source>
+          <target state="translated">Zum Abfragen kann eine <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph>-Abfrage verwendet werden.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The custom axis method, <ph id="ph1">`StreamRootChildDoc`</ph>, is a method that is designed specifically to read a document that has a repeating <ph id="ph2">`Child`</ph> element.</source>
+          <target state="translated">Die benutzerdefinierte Achsenmethode <ph id="ph1">`StreamRootChildDoc`</ph> eignet sich vor allem zum Lesen eines Dokuments, das ein sich wiederholendes <ph id="ph2">`Child`</ph>-Element enthält.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">Dieses Beispiel erzeugt die folgende Ausgabe:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In this example, the source document is very small.</source>
+          <target state="translated">In diesem Beispiel ist das Quelldokument sehr klein.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, even if there were millions of <ph id="ph1">`Child`</ph> elements, this example would still have a small memory footprint.</source>
+          <target state="translated">Dieses Beispiel würde aber auch dann wenig Speicher beanspruchen, wenn das Quelldokument Millionen <ph id="ph1">`Child`</ph>-Elemente enthielte.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Implementing IEnumerable(Of T) in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Exemplarische Vorgehensweise: Implementieren von IEnumerable(Of T) in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Parsing XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Analysieren von XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

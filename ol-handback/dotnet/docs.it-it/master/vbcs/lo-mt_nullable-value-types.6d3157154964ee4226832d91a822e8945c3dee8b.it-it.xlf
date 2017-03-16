@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9cdf1864fe955a082936596821ee84c831b86444</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\data-types\nullable-value-types.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">026e294bdd6f97d8d365f4e81101898e762943fc</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6fed3ca968601f71b711a462ffa98b9f5f4c2eaa</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Nullable Value Types (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Tipi di valore nullable (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Nullable Value Types (Visual Basic)</source>
+          <target state="translated">Tipi di valori nullable (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Sometimes you work with a value type that does not have a defined value in certain circumstances.</source>
+          <target state="translated">A volte si lavora con un tipo di valore che non dispongono di un valore definito in determinate circostanze.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For example, a field in a database might have to distinguish between having an assigned value that is meaningful and not having an assigned value.</source>
+          <target state="translated">Ad esempio, un campo in un database potrebbe essere necessario distinguere tra l'assegnazione di un valore significativo e non un valore assegnato.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Value types can be extended to take either their normal values or a null value.</source>
+          <target state="translated">Tipi di valore possono essere esteso per i relativi valori normali o un valore null.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Such an extension is called a <bpt id="p1">*</bpt>nullable type<ept id="p1">*</ept>.</source>
+          <target state="translated">Tale estensione viene chiamato un <bpt id="p1">*</bpt>tipo nullable<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Each nullable type is constructed from the generic &lt;xref:System.Nullable%601&gt; structure.</source>
+          <target state="translated">Ogni tipo nullable viene costruito dalla classe generica &lt;xref:System.Nullable%601&gt;struttura.&lt;/xref:System.Nullable%601&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Consider a database that tracks work-related activities.</source>
+          <target state="translated">Si consideri un database che tiene traccia delle attività lavorative.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following example constructs a nullable <ph id="ph1">`Boolean`</ph> type and declares a variable of that type.</source>
+          <target state="translated">Il seguente esempio crea un oggetto nullable <ph id="ph1">`Boolean`</ph> digitare e dichiara una variabile di quel tipo.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>You can write the declaration in three ways:</source>
+          <target state="translated">È possibile scrivere la dichiarazione in tre modi:</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#1<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;1;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The variable <ph id="ph1">`ridesBusToWork`</ph> can hold a value of <ph id="ph2">`True`</ph>, a value of <ph id="ph3">`False`</ph>, or no value at all.</source>
+          <target state="translated">La variabile <ph id="ph1">`ridesBusToWork`</ph> può contenere un valore di <ph id="ph2">`True`</ph>, un valore di <ph id="ph3">`False`</ph>, o nessun valore.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Its initial default value is no value at all, which in this case could mean that the information has not yet been obtained for this person.</source>
+          <target state="translated">Il valore iniziale non è alcun valore, che in questo caso potrebbe significare che le informazioni non ha ancora ottenute per questa persona.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In contrast, <ph id="ph1">`False`</ph> could mean that the information has been obtained and the person does not ride the bus to work.</source>
+          <target state="translated">Al contrario, <ph id="ph1">`False`</ph> potrebbe significare che ha ottenute le informazioni e la persona non sfruttare il bus di lavoro.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can declare variables and properties with nullable types, and you can declare an array with elements of a nullable type.</source>
+          <target state="translated">È possibile dichiarare variabili e proprietà con tipi nullable ed è possibile dichiarare una matrice con elementi di un tipo nullable.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can declare procedures with nullable types as parameters, and you can return a nullable type from a <ph id="ph1">`Function`</ph> procedure.</source>
+          <target state="translated">È possibile dichiarare procedure con tipi nullable come parametri, e si può restituire un tipo nullable da un <ph id="ph1">`Function`</ph> procedura.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You cannot construct a nullable type on a reference type such as an array, a <ph id="ph1">`String`</ph>, or a class.</source>
+          <target state="translated">Non è possibile costruire un tipo nullable su un tipo di riferimento, ad esempio una matrice, un <ph id="ph1">`String`</ph>, o una classe.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The underlying type must be a value type.</source>
+          <target state="translated">Il tipo sottostante deve essere un tipo di valore.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Value Types and Reference Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere <bpt id="p1">[</bpt>tipi di valore e tipi di riferimento<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Using a Nullable Type Variable</source>
+          <target state="translated">Utilizzo di una variabile di tipo Nullable</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The most important members of a nullable type are its &lt;xref:System.Nullable%601.HasValue%2A&gt; and &lt;xref:System.Nullable%601.Value%2A&gt; properties.</source>
+          <target state="translated">I membri di un tipo nullable più importanti sono le &lt;xref:System.Nullable%601.HasValue%2A&gt;e &lt;xref:System.Nullable%601.Value%2A&gt;proprietà.&lt;/xref:System.Nullable%601.Value%2A&gt; &lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>For a variable of a nullable type, &lt;xref:System.Nullable%601.HasValue%2A&gt; tells you whether the variable contains a defined value.</source>
+          <target state="translated">Per una variabile di un tipo nullable, &lt;xref:System.Nullable%601.HasValue%2A&gt;indica se la variabile contiene un valore definito.&lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>If &lt;xref:System.Nullable%601.HasValue%2A&gt; is <ph id="ph1">`True`</ph>, you can read the value from &lt;xref:System.Nullable%601.Value%2A&gt;.</source>
+          <target state="translated">Se &lt;xref:System.Nullable%601.HasValue%2A&gt;è <ph id="ph1">`True`</ph>, è possibile leggere il valore da &lt;xref:System.Nullable%601.Value%2A&gt;.&lt;/xref:System.Nullable%601.Value%2A&gt; &lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Note that both &lt;xref:System.Nullable%601.HasValue%2A&gt; and &lt;xref:System.Nullable%601.Value%2A&gt; are <ph id="ph1">`ReadOnly`</ph> properties.</source>
+          <target state="translated">Si noti che entrambi &lt;xref:System.Nullable%601.HasValue%2A&gt;e &lt;xref:System.Nullable%601.Value%2A&gt;sono <ph id="ph1">`ReadOnly`</ph> proprietà.&lt;/xref:System.Nullable%601.Value%2A&gt; &lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Default Values</source>
+          <target state="translated">Valori predefiniti</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>When you declare a variable with a nullable type, its &lt;xref:System.Nullable%601.HasValue%2A&gt; property has a default value of <ph id="ph1">`False`</ph>.</source>
+          <target state="translated">Quando si dichiara una variabile con un tipo nullable, il relativo &lt;xref:System.Nullable%601.HasValue%2A&gt;proprietà ha un valore predefinito di <ph id="ph1">`False`</ph>.&lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This means that by default the variable has no defined value, instead of the default value of its underlying value type.</source>
+          <target state="translated">Ciò significa che per impostazione predefinita la variabile non ha valore definito, anziché il valore predefinito del relativo tipo di valore sottostante.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the following example, the variable <ph id="ph1">`numberOfChildren`</ph> initially has no defined value, even though the default value of the <ph id="ph2">`Integer`</ph> type is 0.</source>
+          <target state="translated">Nell'esempio seguente, la variabile <ph id="ph1">`numberOfChildren`</ph> inizialmente non ha valore definito, anche se il valore predefinito di <ph id="ph2">`Integer`</ph> tipo è 0.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#2<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;2;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>A null value is useful to indicate an undefined or unknown value.</source>
+          <target state="translated">Un valore null è utile per indicare un valore non definito o sconosciuto.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`numberOfChildren`</ph> had been declared as <ph id="ph2">`Integer`</ph>, there would be no value that could indicate that the information is not currently available.</source>
+          <target state="translated">Se <ph id="ph1">`numberOfChildren`</ph> fosse stato dichiarato come <ph id="ph2">`Integer`</ph>, non vi sarà alcun valore in grado di indicare che le informazioni non sono attualmente disponibili.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Storing Values</source>
+          <target state="translated">La memorizzazione di valori</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>You store a value in a variable or property of a nullable type in the typical way.</source>
+          <target state="translated">Archiviare un valore in una variabile o proprietà di un tipo nullable nel modo usuale.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The following example assigns a value to the variable <ph id="ph1">`numberOfChildren`</ph> declared in the previous example.</source>
+          <target state="translated">Nell'esempio seguente assegna un valore alla variabile <ph id="ph1">`numberOfChildren`</ph> dichiarato nell'esempio precedente.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#3<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;3;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If a variable or property of a nullable type contains a defined value, you can cause it to revert to its initial state of not having a value assigned.</source>
+          <target state="translated">Se una variabile o proprietà di un tipo nullable contiene un valore definito, è possibile che venga ripristinato lo stato iniziale di non avere un valore assegnato.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>You do this by setting the variable or property to <ph id="ph1">`Nothing`</ph>, as the following example shows.</source>
+          <target state="translated">Questo caso, impostare la variabile o proprietà <ph id="ph1">`Nothing`</ph>, come illustrato nell'esempio seguente.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#4<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;4;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Although you can assign <ph id="ph1">`Nothing`</ph> to a variable of a nullable type, you cannot test it for <ph id="ph2">`Nothing`</ph> by using the equal sign.</source>
+          <target state="translated">Sebbene sia possibile assegnare <ph id="ph1">`Nothing`</ph> a una variabile di un tipo nullable, è possibile eseguirne il test per <ph id="ph2">`Nothing`</ph> con il segno di uguale.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Comparison that uses the equal sign, <ph id="ph1">`someVar = Nothing`</ph>, always evaluates to <ph id="ph2">`Nothing`</ph>.</source>
+          <target state="translated">Un confronto che utilizza il segno di uguale, <ph id="ph1">`someVar = Nothing`</ph>, restituisce sempre <ph id="ph2">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>You can test the variable's &lt;xref:System.Nullable%601.HasValue%2A&gt; property for <ph id="ph1">`False`</ph>, or test by using the <ph id="ph2">`Is`</ph> or <ph id="ph3">`IsNot`</ph> operator.</source>
+          <target state="translated">È possibile testare la variabile &lt;xref:System.Nullable%601.HasValue%2A&gt;proprietà <ph id="ph1">`False`</ph>, o di test utilizzando il <ph id="ph2">`Is`</ph> o <ph id="ph3">`IsNot`</ph> operatore.&lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Retrieving Values</source>
+          <target state="translated">Recupero di valori</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>To retrieve the value of a variable of a nullable type, you should first test its &lt;xref:System.Nullable%601.HasValue%2A&gt; property to confirm that it has a value.</source>
+          <target state="translated">Per recuperare il valore di una variabile di un tipo nullable, è necessario testare la &lt;xref:System.Nullable%601.HasValue%2A&gt;proprietà per assicurarsi che un valore.&lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If you try to read the value when &lt;xref:System.Nullable%601.HasValue%2A&gt; is <ph id="ph1">`False`</ph>, <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> throws an &lt;xref:System.InvalidOperationException&gt; exception.</source>
+          <target state="translated">Se si tenta di leggere il valore quando &lt;xref:System.Nullable%601.HasValue%2A&gt;è <ph id="ph1">`False`</ph>, <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> genera un &lt;xref:System.InvalidOperationException&gt;(eccezione).&lt;/xref:System.InvalidOperationException&gt; &lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The following example shows the recommended way to read the variable <ph id="ph1">`numberOfChildren`</ph> of the previous examples.</source>
+          <target state="translated">Nell'esempio seguente viene illustrato il modo consigliato per la lettura della variabile <ph id="ph1">`numberOfChildren`</ph> degli esempi precedenti.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#5<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;5;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Comparing Nullable Types</source>
+          <target state="translated">Il confronto dei tipi Nullable</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>When nullable <ph id="ph1">`Boolean`</ph> variables are used in Boolean expressions, the result can be <ph id="ph2">`True`</ph>, <ph id="ph3">`False`</ph>, or <ph id="ph4">`Nothing`</ph>.</source>
+          <target state="translated">Quando nullable <ph id="ph1">`Boolean`</ph> variabili vengono utilizzate nelle espressioni booleane, il risultato può essere <ph id="ph2">`True`</ph>, <ph id="ph3">`False`</ph>, o <ph id="ph4">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following is the truth table for <ph id="ph1">`And`</ph> and <ph id="ph2">`Or`</ph>.</source>
+          <target state="translated">Di seguito è la tabella della verità per <ph id="ph1">`And`</ph> e <ph id="ph2">`Or`</ph>.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`b1`</ph> and <ph id="ph2">`b2`</ph> now have three possible values, there are nine combinations to evaluate.</source>
+          <target state="translated">Poiché <ph id="ph1">`b1`</ph> e <ph id="ph2">`b2`</ph> disporrà di tre valori possibili sono presenti nove combinazioni da valutare.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>b1</source>
+          <target state="translated">B1</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>b2</source>
+          <target state="translated">B2</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>b1 And b2</source>
+          <target state="translated">B1 e b2</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>b1 Or b2</source>
+          <target state="translated">B1 o b2</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>When the value of a Boolean variable or expression is <ph id="ph1">`Nothing`</ph>, it is neither <ph id="ph2">`true`</ph> nor <ph id="ph3">`false`</ph>.</source>
+          <target state="translated">Quando il valore di una variabile o espressione booleana è <ph id="ph1">`Nothing`</ph>, non è <ph id="ph2">`true`</ph> né <ph id="ph3">`false`</ph>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Consider the following example.</source>
+          <target state="translated">Si osservi l'esempio riportato di seguito.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#6<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>6 VbVbalrNullableValue<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In this example, <ph id="ph1">`b1 And b2`</ph> evaluates to <ph id="ph2">`Nothing`</ph>.</source>
+          <target state="translated">In questo esempio, <ph id="ph1">`b1 And b2`</ph> restituisce <ph id="ph2">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>As a result, the <ph id="ph1">`Else`</ph> clause is executed in each <ph id="ph2">`If`</ph> statement, and the output is as follows:</source>
+          <target state="translated">Di conseguenza, il <ph id="ph1">`Else`</ph> clausola viene eseguita in ogni <ph id="ph2">`If`</ph> istruzione e l'output è indicato di seguito:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source><ph id="ph1"> `AndAlso`</ph> and <ph id="ph2">`OrElse`</ph>, which use short-circuit evaluation, must evaluate their second operands when the first evaluates to <ph id="ph3">`Nothing`</ph>.</source>
+          <target state="translated"><ph id="ph1"> `AndAlso`</ph>e <ph id="ph2">`OrElse`</ph>, che utilizzano la valutazione, short circuit devono valutare i secondi operandi quando restituisce il primo <ph id="ph3">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Propagation</source>
+          <target state="translated">Propagazione</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If one or both of the operands of an arithmetic, comparison, shift, or type operation is nullable, the result of the operation is also nullable.</source>
+          <target state="translated">Se uno o entrambi gli operandi di un aritmetica, di confronto, MAIUSC o operazione di tipo è nullable, il risultato dell'operazione è nullable.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>If both operands have values that are not <ph id="ph1">`Nothing`</ph>, the operation is performed on the underlying values of the operands, as if neither were a nullable type.</source>
+          <target state="translated">Se entrambi gli operandi hanno valori non <ph id="ph1">`Nothing`</ph>, l'operazione viene eseguita sui valori sottostanti degli operandi, come se non fossero un tipo nullable.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>In the following example, variables <ph id="ph1">`compare1`</ph> and <ph id="ph2">`sum1`</ph> are implicitly typed.</source>
+          <target state="translated">Nell'esempio seguente, le variabili <ph id="ph1">`compare1`</ph> e <ph id="ph2">`sum1`</ph> sono tipizzate in modo implicito.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>If you rest the mouse pointer over them, you will see that the compiler infers nullable types for both of them.</source>
+          <target state="translated">Se si posiziona il puntatore del mouse su di essi, si noterà che il compilatore deduce tipi nullable per entrambe.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#7<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue&amp;#7;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>If one or both operands have a value of <ph id="ph1">`Nothing`</ph>, the result will be <ph id="ph2">`Nothing`</ph>.</source>
+          <target state="translated">Se uno o entrambi gli operandi hanno un valore di <ph id="ph1">`Nothing`</ph>, il risultato sarà <ph id="ph2">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue#8<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrNullableValue n.&amp;8;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/nullable-value-types_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Using Nullable Types with Data</source>
+          <target state="translated">Utilizzo dei tipi Nullable con dati</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>A database is one of the most important places to use nullable types.</source>
+          <target state="translated">Un database è uno dei posti più importanti per utilizzare i tipi nullable.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Not all database objects currently support nullable types, but the designer-generated table adapters do.</source>
+          <target state="translated">Non tutti gli oggetti di database attualmente supportano i tipi nullable, mentre gli adattatori di tabella generati dalla finestra di progettazione.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>See "TableAdapter Support for Nullable Types" in <bpt id="p1">[</bpt>TableAdapter Overview<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)</ept>.</source>
+          <target state="translated">Vedere "Supporto dei TableAdapter per i tipi Nullable" in <bpt id="p1">[</bpt>TableAdapter Overview<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)</ept>.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.InvalidOperationException&gt;</source>
+          <target state="translated">&lt;xref:System.InvalidOperationException&gt;&lt;/xref:System.InvalidOperationException&gt;</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Nullable%601.HasValue%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Nullable%601.HasValue%2A&gt;&lt;/xref:System.Nullable%601.HasValue%2A&gt;</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Using Nullable Types<ept id="p1">](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Uso dei tipi nullable<ept id="p1">](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipi di dati<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Value Types and Reference Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipi di valore e tipi di riferimento<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Troubleshooting Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Risoluzione dei tipi di dati<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>TableAdapter Overview<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Panoramica di TableAdapter<ept id="p1">](https://docs.microsoft.com/visualstudio/data-tools/tableadapter-overview)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>If Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/if-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Se (operatore)<ept id="p1">](../../../../visual-basic/language-reference/operators/if-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Local Type Inference<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Inferenza del tipo locale<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Is Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/is-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Is (operatore)<ept id="p1">](../../../../visual-basic/language-reference/operators/is-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>IsNot Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/isnot-operator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Operatore IsNot<ept id="p1">](../../../../visual-basic/language-reference/operators/isnot-operator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

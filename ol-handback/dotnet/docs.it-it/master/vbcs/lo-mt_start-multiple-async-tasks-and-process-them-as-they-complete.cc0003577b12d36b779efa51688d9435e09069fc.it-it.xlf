@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6fbf4611ecd64abfd016963dff887d82aad333b7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\start-multiple-async-tasks-and-process-them-as-they-complete.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dd0170ae283ca0c8cb8551e1d4ba91059e67f3f9</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">781fd99b94b88117e51f3fb19fc94e7ab2b2d29c</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Start Multiple Async Tasks and Process Them As They Complete (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Avviare più attività asincrone ed elaborarle quando vengono completate (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)</source>
+          <target state="translated">Avviare più attività asincrone ed elaborarle quando vengono completate (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>By using &lt;xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName&gt;, you can start multiple tasks at the same time and process them one by one as they’re completed rather than process them in the order in which they're started.</source>
+          <target state="translated">Utilizzando &lt;xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName&gt;, è possibile avviare più attività contemporaneamente ed elaborare uno alla volta, si è completati invece di elaborarle nell'ordine in cui è avviati.&lt;/xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following example uses a query to create a collection of tasks.</source>
+          <target state="translated">Nell'esempio seguente viene utilizzata una query per creare una raccolta di attività.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Each task downloads the contents of a specified website.</source>
+          <target state="translated">Ogni attività Scarica il contenuto di un sito Web specificato.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>In each iteration of a while loop, an awaited call to <ph id="ph1">`WhenAny`</ph> returns the task in the collection of tasks that finishes its download first.</source>
+          <target state="translated">In ogni iterazione di un periodo di tempo del ciclo, una chiamata a atteso <ph id="ph1">`WhenAny`</ph> restituisce l'attività nella raccolta di attività che termina il download per prima.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>That task is removed from the collection and processed.</source>
+          <target state="translated">Tale attività viene rimossa dalla raccolta ed elaborato.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The loop repeats until the collection contains no more tasks.</source>
+          <target state="translated">Il ciclo viene ripetuto fino a quando la raccolta non contiene altre attività.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>To run the examples, you must have Visual Studio 2012 or newer and  the .NET Framework 4.5 or newer installed on your computer.</source>
+          <target state="translated">Per eseguire gli esempi, è necessario disporre di Visual Studio 2012 o versione successiva e .NET Framework 4.5 o versioni successive installato nel computer in uso.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Downloading the Example</source>
+          <target state="translated">Download dell'esempio</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can download the complete Windows Presentation Foundation (WPF) project from <bpt id="p1">[</bpt>Async Sample: Fine Tuning Your Application<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept> and then follow these steps.</source>
+          <target state="translated">È possibile scaricare il progetto completo di Windows Presentation Foundation (WPF) da <bpt id="p1">[</bpt>esempio asincrono: Fine ottimizzazione dell'applicazione<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept> e attenersi alla seguente procedura.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Decompress the file that you downloaded, and then start Visual Studio.</source>
+          <target state="translated">Decomprimere il file scaricato e quindi avviare Visual Studio.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">Nella barra dei menu scegliere <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Apri<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Progetto/Soluzione<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningVB.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Apri progetto<ept id="p1">**</ept> la finestra di dialogo, aprire la cartella che contiene il codice di esempio che è stato decompresso e quindi aprire il file di soluzione (sln) per AsyncFineTuningVB.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for the <bpt id="p2">**</bpt>ProcessTasksAsTheyFinish<ept id="p2">**</ept> project, and then choose <bpt id="p3">**</bpt>Set as StartUp Project<ept id="p3">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, aprire il menu di scelta rapida per il <bpt id="p2">**</bpt>ProcessTasksAsTheyFinish<ept id="p2">**</ept> del progetto, quindi fare clic <bpt id="p3">**</bpt>imposta come progetto di avvio<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the project.</source>
+          <target state="translated">Premere il tasto F5 per eseguire il progetto.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Choose the Ctrl+F5 keys to run the project without debugging it.</source>
+          <target state="translated">Premere i tasti Ctrl + F5 per eseguire il progetto senza eseguirne il debug.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Run the project several times to verify that the downloaded lengths don't always appear in the same order.</source>
+          <target state="translated">Eseguire il progetto più volte per verificare che le lunghezze scaricate non siano sempre visualizzati nello stesso ordine.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>If you don't want to download the project, you can review the MainWindow.xaml.vb file at the end of this topic.</source>
+          <target state="translated">Se non si desidera scaricare il progetto, è possibile esaminare il file MainWindow.xaml.vb alla fine di questo argomento.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Building the Example</source>
+          <target state="translated">Compilazione dell'esempio</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This example adds to the code that’s developed in <bpt id="p1">[</bpt>Cancel Remaining Async Tasks after One Is Complete (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)</ept> and uses the same UI.</source>
+          <target state="translated">Questo esempio viene aggiunto al codice che è stato sviluppato in <bpt id="p1">[</bpt>annullare attività asincrone rimanenti dopo una completa (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md)</ept> e utilizza la stessa interfaccia utente.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose <bpt id="p1">**</bpt>CancelAfterOneTask<ept id="p1">**</ept> as the <bpt id="p2">**</bpt>StartUp Project<ept id="p2">**</ept>.</source>
+          <target state="translated">Per compilare l'esempio è l'utente passo passo, seguire le istruzioni nella sezione "Download di esempio", ma scegliere <bpt id="p1">**</bpt>CancelAfterOneTask<ept id="p1">**</ept> come il <bpt id="p2">**</bpt>progetto di avvio<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Add the changes in this topic to the <ph id="ph1">`AccessTheWebAsync`</ph> method in that project.</source>
+          <target state="translated">Aggiungere le modifiche in questo argomento per il <ph id="ph1">`AccessTheWebAsync`</ph> metodo nel progetto.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The changes are marked with asterisks.</source>
+          <target state="translated">Le modifiche sono contrassegnate con asterischi.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>CancelAfterOneTask<ept id="p1">**</ept> project already includes a query that, when executed, creates a collection of tasks.</source>
+          <target state="translated">Il <bpt id="p1">**</bpt>CancelAfterOneTask<ept id="p1">**</ept> progetto include già una query che, quando eseguita, crea una raccolta di attività.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Each call to <ph id="ph1">`ProcessURLAsync`</ph> in the following code returns a &lt;xref:System.Threading.Tasks.Task%601&gt; where <ph id="ph2">`TResult`</ph> is an integer.</source>
+          <target state="translated">Ogni chiamata a <ph id="ph1">`ProcessURLAsync`</ph> nel codice seguente restituisce un &lt;xref:System.Threading.Tasks.Task%601&gt;dove <ph id="ph2">`TResult`</ph> è un numero intero.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the MainWindow.xaml.vb file of the  project, make the following changes to the <ph id="ph1">`AccessTheWebAsync`</ph> method.</source>
+          <target state="translated">Nel file MainWindow.xaml.vb del progetto, apportare le modifiche seguenti per il <ph id="ph1">`AccessTheWebAsync`</ph> metodo.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Execute the query by applying &lt;xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName&gt; instead of &lt;xref:System.Linq.Enumerable.ToArray%2A&gt;.</source>
+          <target state="translated">Eseguire la query applicando &lt;xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName&gt;anziché &lt;xref:System.Linq.Enumerable.ToArray%2A&gt;.&lt;/xref:System.Linq.Enumerable.ToArray%2A&gt; &lt;/xref:System.Linq.Enumerable.ToList%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Add a while loop that performs the following steps for each task in the collection.</source>
+          <target state="translated">Aggiungere un po' di tempo ciclo che esegue i passaggi seguenti per ogni attività nella raccolta.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Awaits a call to <ph id="ph1">`WhenAny`</ph> to identify the first task in the collection to finish its download.</source>
+          <target state="translated">Attende una chiamata a <ph id="ph1">`WhenAny`</ph> per identificare la prima attività da completare il download nella raccolta.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>2<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>2<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Removes that task from the collection.</source>
+          <target state="translated">Rimuove l'attività dalla raccolta.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>3<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>3<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Awaits <ph id="ph1">`firstFinishedTask`</ph>, which is returned by a call to <ph id="ph2">`ProcessURLAsync`</ph>.</source>
+          <target state="translated">Attende <ph id="ph1">`firstFinishedTask`</ph>, che viene restituito da una chiamata a <ph id="ph2">`ProcessURLAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`firstFinishedTask`</ph> variable is a &lt;xref:System.Threading.Tasks.Task%601&gt; where <ph id="ph2">`TReturn`</ph> is an integer.</source>
+          <target state="translated">Il <ph id="ph1">`firstFinishedTask`</ph> variabile è un &lt;xref:System.Threading.Tasks.Task%601&gt;dove <ph id="ph2">`TReturn`</ph> è un numero intero.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.</source>
+          <target state="translated">L'attività è già completa, ma si è in attesa per recuperare la lunghezza del sito Web scaricato, come illustrato nell'esempio seguente.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>You should run the project several times to verify that the downloaded lengths don't always appear in the same order.</source>
+          <target state="translated">È necessario eseguire il progetto più volte per verificare che le lunghezze scaricate non siano sempre visualizzati nello stesso ordine.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You can use <ph id="ph1">`WhenAny`</ph> in a loop, as described in the example, to solve problems that involve a small number of tasks.</source>
+          <target state="translated">È possibile utilizzare <ph id="ph1">`WhenAny`</ph> in un ciclo, come descritto nell'esempio, per risolvere i problemi che coinvolgono un numero limitato di attività.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>However, other approaches are more efficient if you have a large number of tasks to process.</source>
+          <target state="translated">Tuttavia, se ci sono molte attività da elaborare, altri approcci sono più efficienti.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For more information and examples, see <bpt id="p1">[</bpt>Processing Tasks as they complete<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=260810)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni ed esempi, vedere <bpt id="p1">[</bpt>man mano che completa le attività di elaborazione<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=260810)</ept>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Complete Example</source>
+          <target state="translated">Esempio completo</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>The following code is the complete text of the MainWindow.xaml.vb file for the example.</source>
+          <target state="translated">Il codice seguente è il testo completo del file MainWindow.xaml.vb per l'esempio.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Asterisks mark the elements that were added for this example.</source>
+          <target state="translated">Gli asterischi contrassegnare gli elementi che sono stati aggiunti per questo esempio.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Notice that you must add a reference for &lt;xref:System.Net.Http&gt;.</source>
+          <target state="translated">Si noti che è necessario aggiungere un riferimento per &lt;xref:System.Net.Http&gt;.&lt;/xref:System.Net.Http&gt;</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>You can download the project from <bpt id="p1">[</bpt>Async Sample: Fine Tuning Your Application<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept>.</source>
+          <target state="translated">È possibile scaricare il progetto da <bpt id="p1">[</bpt>esempio asincrono: Fine ottimizzazione dell'applicazione<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept>.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.Tasks.Task.WhenAny%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task.WhenAny%2A&gt;&lt;/xref:System.Threading.Tasks.Task.WhenAny%2A&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Fine-Tuning Your Async Application (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Ottimizzazione dell'applicazione Async (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Programmazione asincrona con Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Sample: Fine Tuning Your Application<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Esempio asincrono: Ottimizzazione dell'applicazione<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255046)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

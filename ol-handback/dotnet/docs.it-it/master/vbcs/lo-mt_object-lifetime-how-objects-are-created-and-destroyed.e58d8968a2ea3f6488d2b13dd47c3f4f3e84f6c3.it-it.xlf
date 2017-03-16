@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">404c21c39a24d54c008fddf6dc386cc2895fe3a0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\objects-and-classes\object-lifetime-how-objects-are-created-and-destroyed.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e014e125cb65134f8526308bfab4d2bfdc4a687b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91fb8a8d836c42b16145676f0bfc78c39448fe21</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Object Lifetime: How Objects Are Created and Destroyed (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Durata degli oggetti: Come gli oggetti vengono creati e distrutti (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)</source>
+          <target state="translated">Durata degli oggetti: come creare ed eliminare definitivamente oggetti (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An instance of a class, an object, is created by using the <ph id="ph1">`New`</ph> keyword.</source>
+          <target state="translated">È stata creata un'istanza di una classe, un oggetto, mediante la parola chiave <ph id="ph1">`New`</ph>.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Initialization tasks often must be performed on new objects before they are used.</source>
+          <target state="translated">Prima di usare i nuovi oggetti per la prima volta, è spesso necessario eseguire attività di inizializzazione.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Common initialization tasks include opening files, connecting to databases, and reading values of registry keys.</source>
+          <target state="translated">Tra le attività di inizializzazione più comuni vi sono l'apertura dei file, la connessione a un database e la lettura dei valori delle chiavi del Registro di sistema.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Visual Basic controls the initialization of new objects using procedures called <bpt id="p1">*</bpt>constructors<ept id="p1">*</ept> (special methods that allow control over initialization).</source>
+          <target state="translated">Visual Basic l'inizializzazione di nuovi oggetti mediante routine denominate <bpt id="p1">*</bpt>costruttori<ept id="p1">*</ept> (metodi speciali che consentono il controllo dell'inizializzazione).</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>After an object leaves scope, it is released by the common language runtime (CLR).</source>
+          <target state="translated">Dopo aver abbandona un ambito, un oggetto viene rilasciato da Common Language Runtime (CLR).</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Visual Basic controls the release of system resources using procedures called <bpt id="p1">*</bpt>destructors<ept id="p1">*</ept>.</source>
+          <target state="translated">Visual Basic consente di controllare il rilascio delle risorse di sistema mediante routine denominate <bpt id="p1">*</bpt>distruttori<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Together, constructors and destructors support the creation of robust and predictable class libraries.</source>
+          <target state="translated">Sia i costruttori che i distruttori supportano la creazione di librerie di classi prevedibili e affidabili.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Using Constructors and Destructors</source>
+          <target state="translated">Uso di costruttori e distruttori</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Constructors and destructors control the creation and destruction of objects.</source>
+          <target state="translated">È possibile usare costruttori e distruttori per controllare la creazione e l'eliminazione di oggetti.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Sub New`</ph> and <ph id="ph2">`Sub Finalize`</ph> procedures in Visual Basic initialize and destroy objects; they replace the <ph id="ph3">`Class_Initialize`</ph> and <ph id="ph4">`Class_Terminate`</ph> methods used in <ph id="ph5">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 6.0 and earlier versions.</source>
+          <target state="translated">In Visual Basic le routine <ph id="ph1">`Sub New`</ph> e <ph id="ph2">`Sub Finalize`</ph> consentono di inizializzare ed eliminare in modo permanente gli oggetti sostituendo i metodi <ph id="ph3">`Class_Initialize`</ph> e <ph id="ph4">`Class_Terminate`</ph> usati in <ph id="ph5">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> 6.0 e nelle versioni precedenti.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Sub New</source>
+          <target state="translated">Sub New</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Sub New`</ph> constructor can run only once when a class is created.</source>
+          <target state="translated">Il costruttore <ph id="ph1">`Sub New`</ph> può essere eseguito solo una volta dopo la creazione di una classe.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>It cannot be called explicitly anywhere other than in the first line of code of another constructor from either the same class or from a derived class.</source>
+          <target state="translated">Non può essere chiamato in modo esplicito in alcun punto che non sia la prima riga di codice di un altro costruttore, dalla stessa classe o da una classe derivata.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Furthermore, the code in the <ph id="ph1">`Sub New`</ph> method always runs before any other code in a class.</source>
+          <target state="translated">Inoltre, il codice nel metodo <ph id="ph1">`Sub New`</ph> viene sempre eseguito prima di qualsiasi altro codice in una classe.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvblong](../../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> and later versions implicitly create a <ph id="ph2">`Sub New`</ph> constructor at run time if you do not explicitly define a <ph id="ph3">`Sub New`</ph> procedure for a class.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvblong](../../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>e versioni successive creano in modo implicito un <ph id="ph2">`Sub New`</ph> costruttore in fase di esecuzione se non si definisce in modo esplicito un <ph id="ph3">`Sub New`</ph> routine per una classe.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To create a constructor for a class, create a procedure named <ph id="ph1">`Sub New`</ph> anywhere in the class definition.</source>
+          <target state="translated">Per creare un costruttore per una classe, creare una routine denominata <ph id="ph1">`Sub New`</ph> in qualsiasi punto della definizione della classe.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>To create a parameterized constructor, specify the names and data types of arguments to <ph id="ph1">`Sub New`</ph> just as you would specify arguments for any other procedure, as in the following code:</source>
+          <target state="translated">Per creare un costruttore con parametri, specificare i nomi e i tipi di dati degli argomenti su <ph id="ph1">`Sub New`</ph> analogamente a come si specificano argomenti per qualsiasi altra routine, come illustrato nel codice seguente:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#42<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP&amp;#42;<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Constructors are frequently overloaded, as in the following code:</source>
+          <target state="translated">I costruttori sono spesso in overload, come nell'esempio seguente:</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrOOP#116<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>N.&amp;116; VbVbalrOOP<ept id="p2">](../../../../visual-basic/misc/codesnippet/VisualBasic/object-lifetime-how-objects-are-created-and-destroyed_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When you define a class derived from another class, the first line of a constructor must be a call to the constructor of the base class, unless the base class has an accessible constructor that takes no parameters.</source>
+          <target state="translated">Quando si definisce una classe derivata da un'altra classe, la prima riga di un costruttore deve essere una chiamata al costruttore della classe base, a meno che questa disponga di un costruttore accessibile che non accetta parametri.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>A call to the base class that contains the above constructor, for example, would be <ph id="ph1">`MyBase.New(s)`</ph>.</source>
+          <target state="translated">Una chiamata della classe base che contiene questo costruttore sarebbe ad esempio <ph id="ph1">`MyBase.New(s)`</ph>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Otherwise, <ph id="ph1">`MyBase.New`</ph> is optional, and the <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> runtime calls it implicitly.</source>
+          <target state="translated">In caso contrario, l'oggetto <ph id="ph1">`MyBase.New`</ph> è facoltativo e il runtime di <ph id="ph2">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> lo chiama implicitamente.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>After you write the code to call the parent object's constructor, you can add any additional initialization code to the <ph id="ph1">`Sub New`</ph> procedure.</source>
+          <target state="translated">Dopo aver scritto il codice per chiamare il costruttore di un oggetto padre, è possibile aggiungere un codice di inizializzazione alla routine <ph id="ph1">`Sub New`</ph>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Sub New`</ph> can accept arguments when called as a parameterized constructor.</source>
+          <target state="translated">La routine <ph id="ph1">`Sub New`</ph> può accettare gli argomenti quando viene chiamata come costruttore con parametri.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>These parameters are passed from the procedure calling the constructor, for example, <ph id="ph1">`Dim AnObject As New ThisClass(X)`</ph>.</source>
+          <target state="translated">Tali parametri vengono passati dalla routine che chiama il costruttore, ad esempio, <ph id="ph1">`Dim AnObject As New ThisClass(X)`</ph>.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Sub Finalize</source>
+          <target state="translated">Sub Finalize</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Before releasing objects, the CLR automatically calls the <ph id="ph1">`Finalize`</ph> method for objects that define a <ph id="ph2">`Sub Finalize`</ph> procedure.</source>
+          <target state="translated">Prima di rilasciare oggetti, CLR richiede automaticamente al metodo <ph id="ph1">`Finalize`</ph> gli oggetti che definiscono una routine <ph id="ph2">`Sub Finalize`</ph>.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finalize`</ph> method can contain code that needs to execute just before an object is destroyed, such as code for closing files and saving state information.</source>
+          <target state="translated">È possibile che il metodo <ph id="ph1">`Finalize`</ph> contenga codice che è necessario eseguire subito prima dell'eliminazione permanente di un oggetto, ad esempio codice relativo alla chiusura di file e al salvataggio delle informazioni sullo stato.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>There is a slight performance penalty for executing <ph id="ph1">`Sub Finalize`</ph>, so you should define a <ph id="ph2">`Sub Finalize`</ph> method only when you need to release objects explicitly.</source>
+          <target state="translated">L'esecuzione di <ph id="ph1">`Sub Finalize`</ph> comporta una lieve riduzione delle prestazioni. Si consiglia quindi di definire un metodo <ph id="ph2">`Sub Finalize`</ph> solo quando è necessario rilasciare in modo esplicito gli oggetti.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The garbage collector in the CLR does not (and cannot) dispose of <bpt id="p1">*</bpt>unmanaged objects<ept id="p1">*</ept>, objects that the operating system executes directly, outside the CLR environment.</source>
+          <target state="translated">Il garbage collector in CLR non esiste (e non) smaltire <bpt id="p1">*</bpt>oggetti non gestiti<ept id="p1">*</ept>, gli oggetti che vengono eseguiti direttamente dal sistema operativo all'esterno dell'ambiente CLR.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>This is because different unmanaged objects must be disposed of in different ways.</source>
+          <target state="translated">Questo perché i diversi oggetti non gestiti devono essere eliminati in modi differenti.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>That information is not directly associated with the unmanaged object; it must be found in the documentation for the object.</source>
+          <target state="translated">Le informazioni non sono direttamente associate all'oggetto non gestito e devono quindi essere identificate nella documentazione relativa all'oggetto.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>A class that uses unmanaged objects must dispose of them in its <ph id="ph1">`Finalize`</ph> method.</source>
+          <target state="translated">Se una classe usa oggetti non gestiti, è necessario eliminarli nel relativo metodo <ph id="ph1">`Finalize`</ph>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finalize`</ph> destructor is a protected method that can be called only from the class it belongs to, or from derived classes.</source>
+          <target state="translated">Il distruttore <ph id="ph1">`Finalize`</ph> è un metodo protetto che può essere chiamato solo dalla classe a cui appartiene o dalle classi derivate.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The system calls <ph id="ph1">`Finalize`</ph> automatically when an object is destroyed, so you should not explicitly call <ph id="ph2">`Finalize`</ph> from outside of a derived class's <ph id="ph3">`Finalize`</ph> implementation.</source>
+          <target state="translated">Poiché <ph id="ph1">`Finalize`</ph> viene chiamato automaticamente dal sistema quando viene eliminato in modo permanente un oggetto, si consiglia di non chiamare <ph id="ph2">`Finalize`</ph> in modo esplicito dall'esterno dell'implementazione <ph id="ph3">`Finalize`</ph> di una classe derivata.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Unlike <ph id="ph1">`Class_Terminate`</ph>, which executes as soon as an object is set to nothing, there is usually a delay between when an object loses scope and when Visual Basic calls the <ph id="ph2">`Finalize`</ph> destructor.</source>
+          <target state="translated">A differenza del metodo <ph id="ph1">`Class_Terminate`</ph> che viene eseguito subito dopo aver impostato un oggetto su Nothing, tra l'abbandono dell'ambito da parte di un oggetto e la chiamata del distruttore <ph id="ph2">`Finalize`</ph> da parte di Visual Basic si verifica generalmente un ritardo.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvblong](../../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> and later versions allow for a second kind of destructor, &lt;xref:System.IDisposable.Dispose%2A&gt;, which can be explicitly called at any time to immediately release resources.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvblong](../../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>e versioni successive supporta un altro tipo di distruttore, &lt;xref:System.IDisposable.Dispose%2A&gt;, che può essere chiamato in modo esplicito in qualsiasi momento per rilasciare subito le risorse.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Finalize`</ph> destructor should not throw exceptions, because they cannot be handled by the application and can cause the application to terminate.</source>
+          <target state="translated">Un distruttore <ph id="ph1">`Finalize`</ph> non deve generare eccezioni, perché queste non possono essere gestite dall'applicazione e possono provocarne l'interruzione.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>How New and Finalize Methods Work in a Class Hierarchy</source>
+          <target state="translated">Uso dei metodi New e Finalize in una gerarchia di classi</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Whenever an instance of a class is created, the common language runtime (CLR) attempts to execute a procedure named <ph id="ph1">`New`</ph>, if it exists in that object.</source>
+          <target state="translated">Ogni volta che viene creata un'istanza di una classe, nel Common Language Runtime (CLR) viene effettuato un tentativo di eseguire una routine denominata <ph id="ph1">`New`</ph>, se esiste in quell'oggetto.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`New`</ph> is a type of procedure called a <ph id="ph2">`constructor`</ph> that is used to initialize new objects before any other code in an object executes.</source>
+          <target state="translated"><ph id="ph1">`New`</ph> è un tipo di routine chiamato <ph id="ph2">`constructor`</ph> che consente di inizializzare nuovi oggetti prima che venga eseguito qualsiasi altro codice in un oggetto.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`New`</ph> constructor can be used to open files, connect to databases, initialize variables, and take care of any other tasks that need to be done before an object can be used.</source>
+          <target state="translated">Un costruttore <ph id="ph1">`New`</ph> consente di aprire file, collegarsi a database, inizializzare variabili e svolgere ogni altra attività necessaria prima che un oggetto possa essere usato.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When an instance of a derived class is created, the <ph id="ph1">`Sub New`</ph> constructor of the base class executes first, followed by constructors in derived classes.</source>
+          <target state="translated">Quando viene creata un'istanza di una classe derivata, viene eseguito innanzitutto il costruttore <ph id="ph1">`Sub New`</ph> della classe base, seguito dai costruttori delle classi derivate.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>This happens because the first line of code in a <ph id="ph1">`Sub New`</ph> constructor uses the syntax <ph id="ph2">`MyBase.New()`</ph>to call the constructor of the class immediately above itself in the class hierarchy.</source>
+          <target state="translated">Nella prima riga del codice di un costruttore <ph id="ph1">`Sub New`</ph>, infatti, viene usata la sintassi <ph id="ph2">`MyBase.New()`</ph> per chiamare il costruttore della classe immediatamente superiore nella gerarchia delle classi.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Sub New`</ph> constructor is then called for each class in the class hierarchy until the constructor for the base class is reached.</source>
+          <target state="translated">Viene quindi eseguita la chiamata al costruttore <ph id="ph1">`Sub New`</ph> di ogni classe della gerarchia fino al raggiungimento del costruttore della classe base.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>At that point, the code in the constructor for the base class executes, followed by the code in each constructor in all derived classes and the code in the most derived classes is executed last.</source>
+          <target state="translated">A quel punto viene eseguito il codice del costruttore della classe base, seguito dal codice del costruttore di tutte le classi derivate. In ultimo viene eseguito il codice delle classi derivate di livello più basso.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Constructors and Inheritance<ept id="p1">]</ept><bpt id="p2">(../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance.gif "</bpt>vaConstructorsInheritance<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Costruttori ed ereditarietà<ept id="p1">]</ept><bpt id="p2">(../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance.gif "</bpt>vaConstructorsInheritance<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>When an object is no longer needed, the CLR calls the &lt;xref:System.Object.Finalize%2A&gt; method for that object before freeing its memory.</source>
+          <target state="translated">Quando un oggetto non è più necessario, CLR chiama il &lt;xref:System.Object.Finalize%2A&gt;metodo per l'oggetto prima di liberare la memoria.&lt;/xref:System.Object.Finalize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Object.Finalize%2A&gt; method is called a <ph id="ph1">`destructor`</ph> because it performs cleanup tasks, such as saving state information, closing files and connections to databases, and other tasks that must be done before releasing the object.</source>
+          <target state="translated">Il &lt;xref:System.Object.Finalize%2A&gt;viene chiamato un <ph id="ph1">`destructor`</ph> perché consente di eseguire attività di pulizia, quali il salvataggio delle informazioni sullo stato, la chiusura di file e delle connessioni ai database e altre attività che deve essere eseguita prima del rilascio dell'oggetto.&lt;/xref:System.Object.Finalize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Constructors Inheritance2<ept id="p1">]</ept><bpt id="p2">(../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance_2.gif "</bpt>vaConstructorsInheritance_2<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Inheritance2 dei costruttori<ept id="p1">]</ept><bpt id="p2">(../../../../visual-basic/programming-guide/language-features/objects-and-classes/media/vaconstructorsinheritance_2.gif "</bpt>vaConstructorsInheritance_2<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>IDisposable Interface</source>
+          <target state="translated">Interfaccia IDisposable</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Class instances often control resources not managed by the CLR, such as Windows handles and database connections.</source>
+          <target state="translated">Le istanze di classe controllano spesso risorse non gestite da CLR, quali gli handle di Windows e le connessioni al database.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>These resources must be disposed of in the <ph id="ph1">`Finalize`</ph> method of the class, so that they will be released when the object is destroyed by the garbage collector.</source>
+          <target state="translated">È necessario eliminare queste risorse in modo permanente nel metodo <ph id="ph1">`Finalize`</ph> della classe per consentirne il rilascio quando il Garbage Collector rimuove l'oggetto.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>However, the garbage collector destroys objects only when the CLR requires more free memory.</source>
+          <target state="translated">Tuttavia, poiché il Garbage Collector elimina gli oggetti in modo permanente solo quando CLR richiede la disponibilità di maggiore memoria,</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This means that the resources may not be released until long after the object goes out of scope.</source>
+          <target state="translated">è possibile che le risorse vengano rilasciate solo molto tempo dopo l'abbandono dell'ambito da parte dell'oggetto.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>To supplement garbage collection, your classes can provide a mechanism to actively manage system resources if they implement the &lt;xref:System.IDisposable&gt; interface.</source>
+          <target state="translated">Per completare l'operazione di garbage collection, le classi possono fornire un meccanismo per gestire attivamente le risorse di sistema se implementano il &lt;xref:System.IDisposable&gt;interfaccia.&lt;/xref:System.IDisposable&gt;</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.IDisposable&gt; has one method, &lt;xref:System.IDisposable.Dispose%2A&gt;, which clients should call when they finish using an object.</source>
+          <target state="translated">&lt;xref:System.IDisposable&gt;dispone di un metodo, &lt;xref:System.IDisposable.Dispose%2A&gt;, quali i client chiamano dopo aver utilizzato un oggetto.&lt;/xref:System.IDisposable.Dispose%2A&gt;&lt;/xref:System.IDisposable&gt;</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can use the &lt;xref:System.IDisposable.Dispose%2A&gt; method to immediately release resources and perform tasks such as closing files and database connections.</source>
+          <target state="translated">È possibile utilizzare il &lt;xref:System.IDisposable.Dispose%2A&gt;metodo immediatamente rilasciare risorse ed eseguire attività quali la chiusura di file e le connessioni al database.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Unlike the <ph id="ph1">`Finalize`</ph> destructor, the &lt;xref:System.IDisposable.Dispose%2A&gt; method is not called automatically.</source>
+          <target state="translated">A differenza di <ph id="ph1">`Finalize`</ph> distruttore, il &lt;xref:System.IDisposable.Dispose%2A&gt;metodo non viene chiamato automaticamente.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Clients of a class must explicitly call &lt;xref:System.IDisposable.Dispose%2A&gt; when you want to immediately release resources.</source>
+          <target state="translated">I client di una classe chiamino in modo esplicito &lt;xref:System.IDisposable.Dispose%2A&gt;quando si desidera rilasciare immediatamente risorse.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Implementing IDisposable</source>
+          <target state="translated">Implementazione di IDisposable</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>A class that implements the &lt;xref:System.IDisposable&gt; interface should include these sections of code:</source>
+          <target state="translated">Una classe che implementa il &lt;xref:System.IDisposable&gt;interfaccia deve includere le seguenti sezioni del codice:&lt;/xref:System.IDisposable&gt;</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>A field for keeping track of whether the object has been disposed:</source>
+          <target state="translated">Campo che consente di controllare se l'oggetto è stato eliminato in modo permanente:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>An overload of the &lt;xref:System.IDisposable.Dispose%2A&gt; that frees the class's resources.</source>
+          <target state="translated">Un overload di &lt;xref:System.IDisposable.Dispose%2A&gt;che consente di liberare le risorse della classe.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This method should be called by the &lt;xref:System.IDisposable.Dispose%2A&gt; and <ph id="ph1">`Finalize`</ph> methods of the base class:</source>
+          <target state="translated">Questo metodo deve essere chiamato dal &lt;xref:System.IDisposable.Dispose%2A&gt;e <ph id="ph1">`Finalize`</ph> metodi della classe di base:&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>An implementation of &lt;xref:System.IDisposable.Dispose%2A&gt; that contains only the following code:</source>
+          <target state="translated">Un'implementazione di &lt;xref:System.IDisposable.Dispose%2A&gt;che contiene solo il codice seguente:&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>An override of the <ph id="ph1">`Finalize`</ph> method that contains only the following code:</source>
+          <target state="translated">Override del metodo <ph id="ph1">`Finalize`</ph> che contiene solo il codice seguente:</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Deriving from a Class that Implements IDisposable</source>
+          <target state="translated">Derivazione da una classe che implementa IDisposable</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>A class that derives from a base class that implements the &lt;xref:System.IDisposable&gt; interface does not need to override any of the base methods unless it uses additional resources that need to be disposed.</source>
+          <target state="translated">Una classe che deriva da una classe base che implementa il &lt;xref:System.IDisposable&gt;interfaccia non è necessario eseguire l'override di tutti i metodi di base, a meno che utilizzi risorse aggiuntive che devono essere eliminati.&lt;/xref:System.IDisposable&gt;</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In that situation, the derived class should override the base class's <ph id="ph1">`Dispose(disposing)`</ph> method to dispose of the derived class's resources.</source>
+          <target state="translated">In questo caso, la classe derivata deve eseguire l'override del metodo <ph id="ph1">`Dispose(disposing)`</ph> della classe base per eliminare in modo permanente le risorse della classe derivata.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This override must call the base class's <ph id="ph1">`Dispose(disposing)`</ph> method.</source>
+          <target state="translated">Inoltre, tale override deve chiamare il metodo <ph id="ph1">`Dispose(disposing)`</ph> della classe base.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>A derived class should not override the base class's &lt;xref:System.IDisposable.Dispose%2A&gt; and <ph id="ph1">`Finalize`</ph> methods.</source>
+          <target state="translated">Una classe derivata non eseguire l'override della classe base &lt;xref:System.IDisposable.Dispose%2A&gt;e <ph id="ph1">`Finalize`</ph> metodi.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>When those methods are called from an instance of the derived class, the base class's implementation of those methods call the derived class's override of the <ph id="ph1">`Dispose(disposing)`</ph> method.</source>
+          <target state="translated">Infatti, quando questi metodi vengono chiamati da un'istanza della classe derivata, la relativa implementazione della classe base chiama l'override del metodo <ph id="ph1">`Dispose(disposing)`</ph> della classe derivata.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Garbage Collection and the Finalize Destructor</source>
+          <target state="translated">Garbage Collection e il distruttore Finalize</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> uses the <bpt id="p1">*</bpt>reference-tracing garbage collection<ept id="p1">*</ept> system to periodically release unused resources.</source>
+          <target state="translated">Il <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> utilizza il <bpt id="p1">*</bpt>operazione di garbage collection basata su tracciatura dei riferimenti<ept id="p1">*</ept> sistema per il rilascio periodico delle risorse inutilizzate.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Visual Basic 6.0 and earlier versions used a different system called <bpt id="p1">*</bpt>reference counting<ept id="p1">*</ept> to manage resources.</source>
+          <target state="translated">Visual Basic 6.0 e versioni precedenti di utilizzare un sistema diverso, definito <bpt id="p1">*</bpt>il conteggio dei riferimenti<ept id="p1">*</ept> per gestire le risorse.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Although both systems perform the same function automatically, there are a few important differences.</source>
+          <target state="translated">Anche se in entrambi i casi viene eseguita automaticamente la stessa funzione, vi sono alcune importanti differenze.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>The CLR periodically destroys objects when the system determines that such objects are no longer needed.</source>
+          <target state="translated">Mediante il metodo CLR gli oggetti vengono eliminati periodicamente quando il sistema stabilisce che non sono più necessari.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Objects are released more quickly when system resources are in short supply, and less frequently otherwise.</source>
+          <target state="translated">Gli oggetti vengono rilasciati più rapidamente quando le risorse di sistema sono insufficienti e con una frequenza minore in caso contrario.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The delay between when an object loses scope and when the CLR releases it means that, unlike with objects in Visual Basic 6.0 and earlier versions, you cannot determine exactly when the object will be destroyed.</source>
+          <target state="translated">Il ritardo tra il momento in cui un oggetto abbandona l'ambito e il relativo rilascio da parte di CLR indica che, a differenza di quanto avveniva in Visual Basic 6.0 e nelle versioni precedenti, non è possibile stabilire esattamente quando l'oggetto verrà eliminato definitivamente.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In such a situation, objects are said to have <bpt id="p1">*</bpt>non-deterministic lifetime<ept id="p1">*</ept>.</source>
+          <target state="translated">In questo caso, gli oggetti vengono definiti con <bpt id="p1">*</bpt>durata non deterministica<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>In most cases, non-deterministic lifetime does not change how you write applications, as long as you remember that the <ph id="ph1">`Finalize`</ph> destructor may not immediately execute when an object loses scope.</source>
+          <target state="translated">Nella maggior parte dei casi la durata non deterministica non influisce sulla modalità di scrittura delle applicazioni, purché si ricordi che è possibile che il distruttore <ph id="ph1">`Finalize`</ph> non venga eseguito immediatamente dopo la perdita di ambito di un oggetto.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Another difference between the garbage-collection systems involves the use of <ph id="ph1">`Nothing`</ph>.</source>
+          <target state="translated">Un'altra differenza tra i sistemi di Garbage Collection riguarda l'uso di <ph id="ph1">`Nothing`</ph>.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned <ph id="ph1">`Nothing`</ph> to object variables to release the references those variables held.</source>
+          <target state="translated">Per poter usare il conteggio dei riferimenti, in Visual Basic 6.0 e nelle versioni precedenti, a volte veniva assegnato <ph id="ph1">`Nothing`</ph> alle variabili oggetto in modo da rilasciare i riferimenti contenuti in tali variabili.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>If the variable held the last reference to the object, the object's resources were released immediately.</source>
+          <target state="translated">Se la variabile conteneva l'ultimo riferimento all'oggetto, le risorse dell'oggetto venivano rilasciate immediatamente.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately.</source>
+          <target state="translated">Anche se in alcuni casi questa routine può risultare ancora utile, la sua esecuzione nelle versioni successive di Visual Basic non risulta mai nel rilascio immediato delle risorse da parte dell'oggetto a cui si fa riferimento.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>To release resources immediately, use the object's &lt;xref:System.IDisposable.Dispose%2A&gt; method, if available.</source>
+          <target state="translated">Per rilasciare immediatamente risorse, utilizzare l'oggetto &lt;xref:System.IDisposable.Dispose%2A&gt;metodo, se disponibile.&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The only time you should set a variable to <ph id="ph1">`Nothing`</ph> is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.</source>
+          <target state="translated">Si consiglia di impostare una variabile su <ph id="ph1">`Nothing`</ph> solo nel caso in cui la durata della variabile risulti lunga in relazione al tempo necessario per l'individuazione degli oggetti isolati tramite le operazioni del Garbage Collector.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.IDisposable.Dispose%2A&gt;</source>
+          <target state="translated">&lt;xref:System.IDisposable.Dispose%2A&gt;&lt;/xref:System.IDisposable.Dispose%2A&gt;</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Initialization and Termination of Components<ept id="p1">](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Inizializzazione e terminazione di componenti<ept id="p1">](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>New Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Operatore new<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Cleaning Up Unmanaged Resources<ept id="p1">](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Pulizia delle risorse non gestite<ept id="p1">](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Nothing<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Nothing<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

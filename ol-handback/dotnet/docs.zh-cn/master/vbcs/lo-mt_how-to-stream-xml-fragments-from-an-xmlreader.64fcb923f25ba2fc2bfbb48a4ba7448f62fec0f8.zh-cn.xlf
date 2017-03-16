@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c9c60bb4730ef6569390f76f63c40a2cbd1c9524</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\how-to-stream-xml-fragments-from-an-xmlreader.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2277fcbdfb99c62bb994c70ae0d88dbb23311bf6</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1354c0055bb15144ef37112b94fb8af10952eef7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>How to: Stream XML Fragments from an XmlReader (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">如何︰ 从 XmlReader (Visual Basic 中) 的 XML 片段进行流式处理 |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>How to: Stream XML Fragments from an XmlReader (Visual Basic)</source>
+          <target state="translated">如何︰ 从 XmlReader (Visual Basic 中) 的 XML 片段进行流式处理</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you have to process large XML files, it might not be feasible to load the whole XML tree into memory.</source>
+          <target state="translated">如果必须处理很大的 XML 文件，将整个 XML 树加载到内存可能不可行。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This topic shows how to stream fragments using an &lt;xref:System.Xml.XmlReader&gt;.</source>
+          <target state="translated">本主题演示如何使用&lt;xref:System.Xml.XmlReader&gt;。&lt;/xref:System.Xml.XmlReader&gt;片段进行流式处理</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>One of the most effective ways to use an &lt;xref:System.Xml.XmlReader&gt; to read &lt;xref:System.Xml.Linq.XElement&gt; objects is to write your own custom axis method.</source>
+          <target state="translated">若要使用的最有效方法之一&lt;xref:System.Xml.XmlReader&gt;读取&lt;xref:System.Xml.Linq.XElement&gt;对象是编写您自己的自定义轴方法。&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>An axis method typically returns a collection such as &lt;xref:System.Collections.Generic.IEnumerable%601&gt; of &lt;xref:System.Xml.Linq.XElement&gt;, as shown in the example in this topic.</source>
+          <target state="translated">轴方法通常返回一个集合比如&lt;xref:System.Collections.Generic.IEnumerable%601&gt;的&lt;xref:System.Xml.Linq.XElement&gt;，本主题中的示例中所示。&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>In the custom axis method, after you create the XML fragment by calling the &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt; method, return the collection using <ph id="ph1">`yield return`</ph>.</source>
+          <target state="translated">在自定义轴方法中，通过调用创建的 XML 片段后&lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;方法，返回集合使用<ph id="ph1">`yield return`</ph>。&lt;/xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This provides deferred execution semantics to your custom axis method.</source>
+          <target state="translated">这可为您的自定义轴方法提供延迟执行语义。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When you create an XML tree from an &lt;xref:System.Xml.XmlReader&gt; object, the &lt;xref:System.Xml.XmlReader&gt; must be positioned on an element.</source>
+          <target state="translated">当创建 XML 树从&lt;xref:System.Xml.XmlReader&gt;对象，&lt;xref:System.Xml.XmlReader&gt;必须定位在元素上。&lt;/xref:System.Xml.XmlReader&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt; method does not return until it has read the close tag of the element.</source>
+          <target state="translated">&lt;xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;方法不返回读取的元素结束标记之前。&lt;/xref:System.Xml.Linq.XNode.ReadFrom%2A&gt;</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If you want to create a partial tree, you can instantiate an &lt;xref:System.Xml.XmlReader&gt;, position the reader on the node that you want to convert to an &lt;xref:System.Xml.Linq.XElement&gt; tree, and then create the &lt;xref:System.Xml.Linq.XElement&gt; object.</source>
+          <target state="translated">如果您想要创建一个部分树，您可以实例化&lt;xref:System.Xml.XmlReader&gt;，将读取器定位在想要转换为节点&lt;xref:System.Xml.Linq.XElement&gt;树，然后再创建&lt;xref:System.Xml.Linq.XElement&gt;对象。&lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.Linq.XElement&gt; &lt;/xref:System.Xml.XmlReader&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The topic <bpt id="p1">[</bpt>How to: Stream XML Fragments with Access to Header Information (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md)</ept> contains information and an example on how to stream a more complex document.</source>
+          <target state="translated">主题<bpt id="p1">[</bpt>如何︰ 流处理可访问标头信息 (Visual Basic 中) 的 XML 片段<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md)</ept>包含信息以及有关如何流式处理更复杂文档的示例。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The topic <bpt id="p1">[</bpt>How to: Perform Streaming Transform of Large XML Documents (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md)</ept> contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.</source>
+          <target state="translated">主题<bpt id="p1">[</bpt>如何︰ 执行流式处理转换的大型 XML 文档 (Visual Basic 中)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md)</ept>包含举例说明如何使用 LINQ to XML 在保持很小的内存需求量的同时转换极大的 XML 文档。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">示例</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This example creates a custom axis method.</source>
+          <target state="translated">本示例创建一个自定义轴方法。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can query it by using a <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> query.</source>
+          <target state="translated">可以通过使用 <ph id="ph1">[!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)]</ph> 查询来查询该方法。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The custom axis method, <ph id="ph1">`StreamRootChildDoc`</ph>, is a method that is designed specifically to read a document that has a repeating <ph id="ph2">`Child`</ph> element.</source>
+          <target state="translated">自定义轴方法 <ph id="ph1">`StreamRootChildDoc`</ph> 是一个专门设计的方法，用于读取具有重复 <ph id="ph2">`Child`</ph> 元素的文档。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>This example produces the following output:</source>
+          <target state="translated">该示例产生下面的输出：</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>In this example, the source document is very small.</source>
+          <target state="translated">在本示例中，源文档非常小。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>However, even if there were millions of <ph id="ph1">`Child`</ph> elements, this example would still have a small memory footprint.</source>
+          <target state="translated">但是即使有数百万个 <ph id="ph1">`Child`</ph> 元素，本示例也仍具有很小的内存需求量。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Implementing IEnumerable(Of T) in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>演练︰ 在 Visual Basic 中实现 IEnumerable(Of T)<ept id="p1">](../../../../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Parsing XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>分析 XML (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

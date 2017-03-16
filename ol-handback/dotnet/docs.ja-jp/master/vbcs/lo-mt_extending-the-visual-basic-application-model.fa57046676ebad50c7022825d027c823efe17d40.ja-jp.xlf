@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9752cdfa79d3db4c8b07daa95aea2c842e06cc36</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\developing-apps\customizing-extending-my\extending-the-visual-basic-application-model.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8e63ed49a440286c4b1b5e7e890c2062e9db91d7</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2eee4a4e9001fc4a5a1ea82cd98909552aab75fc</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Extending the Visual Basic Application Model | Microsoft Docs</source>
+          <target state="translated">Visual Basic アプリケーション モデルの拡張 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Extending the Visual Basic Application Model</source>
+          <target state="translated">Visual Basic アプリケーション モデルの拡張</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can add functionality to the application model by overriding the <ph id="ph1">`Overridable`</ph> members of the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; class.</source>
+          <target state="translated">アプリケーション モデルに対する機能を追加するにはオーバーライドすることで、 <ph id="ph1">`Overridable`</ph> &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;クラス&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;のメンバー</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This technique allows you to customize the behavior of the application model and add calls to your own methods as the application starts up and shuts down.</source>
+          <target state="translated">この手法を使用すると、アプリケーション モデルの動作をカスタマイズして、アプリケーションの起動およびシャット ダウンすると、独自のメソッドの呼び出しを追加できます。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Visual Overview of the Application Model</source>
+          <target state="translated">アプリケーション モデルの視覚的な概要</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This section visually presents the sequence of function calls in the Visual Basic Application Model.</source>
+          <target state="translated">ここでは、Visual Basic アプリケーション モデルで関数呼び出しのシーケンスを視覚的に示します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The next section describes the purpose of each function in detail.</source>
+          <target state="translated">次のセクションでは、各関数の詳細の目的について説明します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following graphic shows the application model call sequence in a normal Visual Basic Windows Forms application.</source>
+          <target state="translated">次の図は、標準の Visual Basic Windows フォーム アプリケーションでのアプリケーション モデルの呼び出しシーケンスを示しています。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The sequence starts when the <ph id="ph1">`Sub Main`</ph> procedure calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method.</source>
+          <target state="translated">シーケンスが開始、<ph id="ph1">`Sub Main`</ph>プロシージャの呼び出し、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;メソッド&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model &amp;#45;&amp;#45; Run<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelrun.gif "</bpt>VB_ModelRun<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Visual Basic アプリケーション モデル--実行<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelrun.gif "</bpt>VB_ModelRun<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The Visual Basic Application Model also provides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt; and &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt; events.</source>
+          <target state="translated">Visual Basic アプリケーション モデルにも用意されています、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;と&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;イベント&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The following graphics show the mechanism for raising these events.</source>
+          <target state="translated">次の図は、これらのイベントが発生するしくみを示します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model &amp;#45;&amp;#45; Next Instance<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelnext.gif "</bpt>VB_ModelNext<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Visual Basic アプリケーション モデル--次にインスタンスの<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_modelnext.gif "</bpt>VB_ModelNext<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">![</bpt>Visual Basic Application Model Unhandled Exception<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_unhandex.gif "</bpt>VB_UnhandEx<ept id="p2">")</ept></source>
+          <target state="translated"><bpt id="p1">![</bpt>Visual Basic アプリケーション モデル ハンドルされていない例外<ept id="p1">]</ept><bpt id="p2">(../../../visual-basic/developing-apps/customizing-extending-my/media/vb_unhandex.gif "</bpt>VB_UnhandEx<ept id="p2">")</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Overriding the Base Methods</source>
+          <target state="translated">基本メソッドのオーバーライド</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method defines the order in which the <ph id="ph1">`Application`</ph> methods run.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;メソッドでは、順序を定義する、<ph id="ph1">`Application`</ph>メソッドを実行します&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>By default, the <ph id="ph1">`Sub Main`</ph> procedure for a Windows Forms application calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method.</source>
+          <target state="translated">既定では、 <ph id="ph1">`Sub Main`</ph> Windows フォーム アプリケーションのプロシージャを呼び出す、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;メソッド&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>If the application is a normal application (multiple-instance application), or the first instance of a single-instance application, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt; method executes the <ph id="ph1">`Overridable`</ph> methods in the following order:</source>
+          <target state="translated">アプリケーションが通常のアプリケーション (複数のインスタンス アプリケーション)、または単一インスタンスのアプリケーションの最初のインスタンスの場合、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;メソッドが実行される、<ph id="ph1">`Overridable`</ph>次の順序のメソッド:&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A&gt;</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>By default, this method sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and calls <ph id="ph1">`ShowSplashScreen`</ph> if neither <ph id="ph2">`/nosplash`</ph> nor <ph id="ph3">`-nosplash`</ph> is used as a command-line argument.</source>
+          <target state="translated">Visual スタイル、テキストの表示スタイル、および (アプリケーションでは、Windows 認証を使用) 場合は、メイン アプリケーション スレッドの現在のプリンシパル既定では、このメソッドを設定および呼び出し<ph id="ph1">`ShowSplashScreen`</ph>されなかった場合<ph id="ph2">`/nosplash`</ph>も<ph id="ph3">`-nosplash`</ph>コマンドライン引数として使用します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The application startup sequence is canceled if this function returns <ph id="ph1">`False`</ph>.</source>
+          <target state="translated">この関数が返す場合、アプリケーションの起動処理が取り消された<ph id="ph1">`False`</ph>です。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This can be useful if there are circumstances in which the application should not run.</source>
+          <target state="translated">これは、アプリケーションを実行するはいけない状況がある場合に役立ちます。 ことができます。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt; method calls the following methods:</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;メソッドは、次のメソッドを呼び出します&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Determines if the application has a splash screen defined and if it does, displays the splash screen on a separate thread.</source>
+          <target state="translated">かどうかをアプリケーション定義のスプラッシュ スクリーンと場合は、別のスレッドでスプラッシュ画面が表示されます。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt; method contains the code that displays the splash screen for at least the number of milliseconds specified by the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt; property.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;メソッドには、スプラッシュを表示するコードが含まれている画面を少なくともによって指定されたミリ秒数、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;プロパティ&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>To use this functionality, you must add the splash screen to your application using the <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept> (which sets the <ph id="ph1">`My.Application.MinimumSplashScreenDisplayTime`</ph> property to two seconds), or set the <ph id="ph2">`My.Application.MinimumSplashScreenDisplayTime`</ph> property in a method that overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt; or &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt; method.</source>
+          <target state="translated">この機能を使用するのには、アプリケーションを使用して、スプラッシュ スクリーンを追加する必要があります、<bpt id="p1">**</bpt>プロジェクト デザイナー<ept id="p1">**</ept> (設定する、<ph id="ph1">`My.Application.MinimumSplashScreenDisplayTime`</ph>プロパティを&amp;2; 秒)、設定、または、<ph id="ph2">`My.Application.MinimumSplashScreenDisplayTime`</ph>プロパティをオーバーライドするメソッドに、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;または&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;メソッド&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;.</source>
+          <target state="translated">詳細については、 &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;。&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A&gt;を参照してください。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Allows a designer to emit code that initializes the splash screen.</source>
+          <target state="translated">スプラッシュ スクリーンを初期化するコードを出力するデザイナーを使用します。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>By default, this method does nothing.</source>
+          <target state="translated">既定では、このメソッドは何もしません。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If you select a splash screen for your application in the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, the designer overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt; method with a method that sets the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt; property to a new instance of the splash-screen form.</source>
+          <target state="translated">アプリケーションのスプラッシュ画面を選択するかどうか、 <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>プロジェクト デザイナー<ept id="p1">**</ept>、デザイナーをオーバーライドし、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;メソッドを設定するメソッドを&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt;スプラッシュ スクリーンのフォームの新しいインスタンスをプロパティ&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A&gt;</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Provides an extensibility point for raising the <ph id="ph1">`Startup`</ph> event.</source>
+          <target state="translated">発生させるための拡張ポイントを提供、<ph id="ph1">`Startup`</ph>イベントです。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The application startup sequence stops if this function returns <ph id="ph1">`False`</ph>.</source>
+          <target state="translated">この関数が返す場合、アプリケーションの起動処理が停止した<ph id="ph1">`False`</ph>します。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt; event.</source>
+          <target state="translated">既定では、このメソッドを発生させる、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;イベント&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If the event handler sets the <ph id="ph1">@System.ComponentModel.CancelEventArgs.Cancel</ph> property of the event argument to <ph id="ph2">`True`</ph>, the method returns <ph id="ph3">`False`</ph> to cancel the application startup.</source>
+          <target state="translated">イベント ハンドラーを設定する場合、<ph id="ph1">@System.ComponentModel.CancelEventArgs.Cancel</ph>にイベント引数の<ph id="ph2">`True`</ph>、メソッドが戻る<ph id="ph3">`False`</ph>をアプリケーションの起動を取り消します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A&gt;</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Provides the starting point for when the main application is ready to start running, after the initialization is done.</source>
+          <target state="translated">メインのアプリケーションに、初期化が完了した後に実行を開始する準備ができて場合の開始点を提供します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>By default, before it enters the Windows Forms message loop, this method calls the <ph id="ph1">`OnCreateMainForm`</ph> (to create the application's main form) and <ph id="ph2">`HideSplashScreen`</ph> (to close the splash screen) methods:</source>
+          <target state="translated">既定では、Windows フォームのメッセージ ループに入る前にこのメソッドは、 <ph id="ph1">`OnCreateMainForm`</ph> (フォームを作成するアプリケーションのメイン) と<ph id="ph2">`HideSplashScreen`</ph>(スプラッシュ画面を閉じる) をメソッド。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Provides a way for a designer to emit code that initializes the main form.</source>
+          <target state="translated">デザイナーでメイン フォームの初期化コードを出力する方法を提供します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>By default, this method does nothing.</source>
+          <target state="translated">既定では、このメソッドは何もしません。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>However, when you select a main form for your application in the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept>, the designer overrides the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt; method with a method that sets the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt; property to a new instance of the main form.</source>
+          <target state="translated">ただしでのアプリケーションのメイン フォームを選択すると、 <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> <bpt id="p1">**</bpt>プロジェクト デザイナー<ept id="p1">**</ept>、デザイナーをオーバーライドし、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;メソッドを設定するメソッドを&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt;プロパティをメイン フォームの新しいインスタンスにします&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A&gt;</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>If application has a splash screen defined and it is open, this method closes the splash screen.</source>
+          <target state="translated">アプリケーションには、スプラッシュ スクリーンが定義されており、それが開いている場合、このメソッドは、スプラッシュ スクリーンを閉じます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>By default, this method closes the splash screen.</source>
+          <target state="translated">既定では、このメソッドは、スプラッシュ スクリーンを閉じます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Provides a way to customize how a single-instance application behaves when another instance of the application starts.</source>
+          <target state="translated">アプリケーションの別のインスタンスの起動時の単一インスタンス アプリケーションの動作をカスタマイズする方法を提供します。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt; event.</source>
+          <target state="translated">既定では、このメソッドを発生させる、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;イベント&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Provides an extensibility point for raising the <ph id="ph1">`Shutdown`</ph> event.</source>
+          <target state="translated">発生させるための拡張ポイントを提供、<ph id="ph1">`Shutdown`</ph>イベントです。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>This method does not run if an unhandled exception occurs in the main application.</source>
+          <target state="translated">このメソッドは、メインのアプリケーションでハンドルされない例外が発生した場合に実行されません。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt; event.</source>
+          <target state="translated">既定では、このメソッドを発生させる、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;イベント&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;.&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException%2A&gt;</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Executed if an unhandled exception occurs in any of the above listed methods.</source>
+          <target state="translated">上に表示されているメソッドのいずれかでハンドルされない例外が発生した場合に実行します。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>By default, this method raises the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt; event as long as a debugger is not attached and the application is handling the <ph id="ph1">`UnhandledException`</ph> event.</source>
+          <target state="translated">既定では、このメソッドを発生させる、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;イベントは、デバッガーがアタッチされていないと、アプリケーションの処理とならない限り、<ph id="ph1">`UnhandledException`</ph>イベント&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If the application is a single-instance application, and the application is already running, the subsequent instance of the application calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt; method on the original instance of the application, and then exits.</source>
+          <target state="translated">アプリケーションの後続のインスタンスを呼び出すアプリケーションが単一インスタンス アプリケーションでは、アプリケーションが既に実行中の場合、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;アプリケーション、およびし終了するは、元のインスタンス上のメソッドです&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; constructor calls the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property to determine which text rendering engine to use for the application's forms.</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;コンス トラクターによって、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;プロパティをアプリケーションのフォームを使用するどのテキスト レンダリング エンジンを確認します&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>By default, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property returns <ph id="ph1">`False`</ph>, indicating that the GDI text rendering engine be used, which is the default in <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>.</source>
+          <target state="translated">既定では、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;プロパティを返します<ph id="ph1">`False`</ph>、これには、既定で GDI テキスト レンダリング エンジンを使用することを示す、 <ph id="ph2">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>。&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; 。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>You can override the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt; property to return <ph id="ph1">`True`</ph>, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.</source>
+          <target state="translated">オーバーライドすることができます、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;を返すプロパティ<ph id="ph1">`True`</ph>GDI + テキスト レンダリング エンジンを使用することを示します既定で Visual Basic .NET 2002 および Visual Basic .NET 2003 である&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Configuring the Application</source>
+          <target state="translated">アプリケーションを構成します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>As a part of the <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> Application model, the &lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt; class provides protected properties that configure the application.</source>
+          <target state="translated">一部として、<ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>アプリケーション モデル、&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;クラスには、アプリケーションを構成する保護対象のプロパティが用意されています&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>These properties should be set in the constructor of the implementing class.</source>
+          <target state="translated">これらのプロパティは、実装するクラスのコンス トラクターで設定する必要があります。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>In a default Windows Forms project, the <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept> creates code to set the properties with the designer settings.</source>
+          <target state="translated">既定の Windows フォーム プロジェクトで、<bpt id="p1">**</bpt>プロジェクト デザイナー<ept id="p1">**</ept>デザイナーの設定とプロパティを設定するコードを作成します。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>The properties are used only when the application is starting; setting them after the application starts has no effect.</source>
+          <target state="translated">アプリケーションを起動すると、場合にのみ、プロパティを使用します。アプリケーションの起動後に設定しても効果はありません。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Determines</source>
+          <target state="translated">決定</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Setting in the Application pane of  the Project Designer</source>
+          <target state="translated">プロジェクト デザイナーの [アプリケーション] ウィンドウの設定</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance%2A&gt;</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Whether the application runs as a single-instance or multiple-instance application.</source>
+          <target state="translated">かどうか、アプリケーションは、単一インスタンスまたは複数のインスタンスのアプリケーションとして実行されます。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Make single instance application<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>単一インスタンス アプリケーションを作成する<ept id="p1">**</ept> チェック ボックス</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles%2A&gt;</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If the application will use visual styles that match Windows XP.</source>
+          <target state="translated">場合は、アプリケーションでは、Windows XP に一致する visual スタイルを使用します。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Enable XP visual styles<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>XP の visual スタイルを有効にする<ept id="p1">**</ept> チェック ボックス</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit%2A&gt;</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>If application automatically saves application's user-settings changes when the application exits.</source>
+          <target state="translated">場合は、アプリケーションの終了時に、アプリケーションは自動的にアプリケーションのユーザー設定の変更を保存します。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Save My.Settings on Shutdown<ept id="p1">**</ept> check box</source>
+          <target state="translated"><bpt id="p1">**</bpt>My.Settings をシャット ダウン時に保存<ept id="p1">**</ept> チェック ボックス</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle%2A&gt;</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>What causes the application to terminate, such as when the startup form closes or when the last form closes.</source>
+          <target state="translated">アプリケーションをスタートアップ フォームを閉じたときや、最後のフォームを閉じたときなど、終了の原因です。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Shutdown mode<ept id="p1">**</ept> list</source>
+          <target state="translated"><bpt id="p1">**</bpt>シャット ダウン モード<ept id="p1">**</ept> ボックスの一覧</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup&gt;</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance&gt;</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown&gt;</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged&gt;</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;&lt;/xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Overview of the Visual Basic Application Model<ept id="p1">](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic アプリケーション モデルの概要<ept id="p1">](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Application Page, Project Designer (Visual Basic)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>[アプリケーション] ページ (プロジェクト デザイナー)<ept id="p1">](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

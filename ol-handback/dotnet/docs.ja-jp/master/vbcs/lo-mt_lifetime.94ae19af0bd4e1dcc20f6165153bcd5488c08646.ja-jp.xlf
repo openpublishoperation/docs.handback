@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fa0cbdf4a8fe5e8fc41e4e4f373c79451fb7b75f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\declared-elements\lifetime.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">022c43d985d495bbb7731dabddd51b970ba41534</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8cc4415f003b59929429da4b12a080048e739a02</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Lifetime in Visual Basic | Microsoft Docs</source>
+          <target state="translated">Visual Basic における有効期間 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Lifetime in Visual Basic</source>
+          <target state="translated">Visual Basic における有効期間</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">*</bpt>lifetime<ept id="p1">*</ept> of a declared element is the period of time during which it is available for use.</source>
+          <target state="translated"><bpt id="p1">*</bpt>有効期間<ept id="p1">*</ept>宣言された要素は、一定時間その中に、使用可能です。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Variables are the only elements that have lifetime.</source>
+          <target state="translated">変数は、有効期間がある要素だけです。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For this purpose, the compiler treats procedure parameters and function returns as special cases of variables.</source>
+          <target state="translated">この目的では、コンパイラは、プロシージャのパラメーターを処理し、変数の特殊なケースとして関数を返します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The lifetime of a variable represents the period of time during which it can hold a value.</source>
+          <target state="translated">変数の有効期間は、値を保持できる期間を表します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Its value can change over its lifetime, but it always holds some value.</source>
+          <target state="translated">その値をその有効期間を通じて変更できますが、いくつかの値を常に保持します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Different Lifetimes</source>
+          <target state="translated">別の有効期間</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>member variable<ept id="p1">*</ept> (declared at module level, outside any procedure) typically has the same lifetime as the element in which it is declared.</source>
+          <target state="translated">A<bpt id="p1">*</bpt>メンバー変数<ept id="p1">*</ept>(プロシージャの外側のモジュール レベルで宣言された) が宣言された要素と同じ有効期間は、通常ができます。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>A nonshared variable declared in a class or structure exists as a separate copy for each instance of the class or structure in which it is declared.</source>
+          <target state="translated">クラスまたは構造体で宣言されている非共有変数は、クラスまたは構造体の宣言されているは、各インスタンスの別のコピーとして存在します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Each such variable has the same lifetime as its instance.</source>
+          <target state="translated">このような各変数には、そのインスタンスと同じ有効期間があります。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>However, a <ph id="ph1">`Shared`</ph> variable has only a single lifetime, which lasts for the entire time your application is running.</source>
+          <target state="translated">ただし、<ph id="ph1">`Shared`</ph>変数が有効期間は&amp;1; つだけでは継続時間全体で、アプリケーションが実行されています。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>local variable<ept id="p1">*</ept> (declared inside a procedure) exists only while the procedure in which it is declared is running.</source>
+          <target state="translated">A<bpt id="p1">*</bpt>ローカル変数<ept id="p1">*</ept>(プロシージャ内で宣言された) が宣言されているプロシージャの実行中にのみ存在します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>This applies also to that procedure's parameters and to any function return.</source>
+          <target state="translated">関数の戻り値とそのプロシージャのパラメーターにも当てはまります。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, if that procedure calls other procedures, the local variables retain their values while the called procedures are running.</source>
+          <target state="translated">ただし、プロシージャが他のプロシージャを呼び出した場合は、呼び出されたプロシージャが実行中にローカル変数の値は保持します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Beginning of Lifetime</source>
+          <target state="translated">有効期間の開始</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>A local variable's lifetime begins when control enters the procedure in which it is declared.</source>
+          <target state="translated">ローカル変数の有効期間は、制御が宣言されている手順を開始するときに開始されます。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Every local variable is initialized to the default value for its data type as soon as the procedure begins running.</source>
+          <target state="translated">プロシージャが開始されるとすぐには、すべてのローカル変数をそのデータ型の既定値に初期化を実行しています。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When the procedure encounters a <ph id="ph1">`Dim`</ph> statement that specifies initial values, it sets those variables to those values, even if your code had already assigned other values to them.</source>
+          <target state="translated">プロシージャが検出した場合、<ph id="ph1">`Dim`</ph>を初期値を指定するステートメントにローカル変数に設定これらの値をコードではその他の値に既に割り当ていた場合でもです。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Each member of a structure variable is initialized as if it were a separate variable.</source>
+          <target state="translated">構造体変数の各メンバーは、そうでは別々 の変数として初期化されます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Similarly, each element of an array variable is initialized individually.</source>
+          <target state="translated">同様に、配列変数の各要素は、個別に初期化されます。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Variables declared within a block inside a procedure (such as a <ph id="ph1">`For`</ph> loop) are initialized on entry to the procedure.</source>
+          <target state="translated">プロシージャ内のブロック内で宣言された変数 (など、<ph id="ph1">`For`</ph>ループ)、プロシージャへのエントリが初期化されています。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>These initializations take effect whether or not your code ever executes the block.</source>
+          <target state="translated">このような初期化を有効に、コードがこれまで、ブロックを実行するかどうか。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>End of Lifetime</source>
+          <target state="translated">有効期間の終了</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>When a procedure terminates, the values of its local variables are not preserved, and <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> reclaims their memory.</source>
+          <target state="translated">プロシージャが終了すると、そのローカル変数の値は保持されず、および<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>のメモリを解放します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>The next time you call the procedure, all its local variables are created afresh and reinitialized.</source>
+          <target state="translated">次に、プロシージャを呼び出すとき、すべてのローカル変数が新しく作成して再初期化します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>When an instance of a class or structure terminates, its nonshared variables lose their memory and their values.</source>
+          <target state="translated">クラスまたは構造体のインスタンスが終了すると、非共有変数には、そのメモリとその値が失われます。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Each new instance of the class or structure creates and reinitializes its nonshared variables.</source>
+          <target state="translated">クラスまたは構造体の新しいインスタンスごとでは、作成し、非共有変数を再初期化します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, <ph id="ph1">`Shared`</ph> variables are preserved until your application stops running.</source>
+          <target state="translated">ただし、<ph id="ph1">`Shared`</ph>変数は、アプリケーションの実行が停止されるまで保持されます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Extension of Lifetime</source>
+          <target state="translated">有効期間の延長</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If you declare a local variable with the <ph id="ph1">`Static`</ph> keyword, its lifetime is longer than the execution time of its procedure.</source>
+          <target state="translated">ローカル変数を宣言する場合、<ph id="ph1">`Static`</ph>キーワード、その有効期間は、プロシージャの実行時間より長い。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The following table shows how the procedure declaration determines how long a <ph id="ph1">`Static`</ph> variable exists.</source>
+          <target state="translated">次の表は、プロシージャの宣言が期間を指定する方法を示しています、<ph id="ph1">`Static`</ph>変数が存在します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Procedure location and sharing</source>
+          <target state="translated">プロシージャの場所との共有</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Static variable lifetime begins</source>
+          <target state="translated">静的変数の有効期間を開始します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Static variable lifetime ends</source>
+          <target state="translated">静的変数の有効期間の終了</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In a module (shared by default)</source>
+          <target state="translated">(既定では共有) モジュールで</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The first time the procedure is called</source>
+          <target state="translated">初めてのプロシージャが呼び出されたとき</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When your application stops running</source>
+          <target state="translated">アプリケーションの実行が終了</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In a class, <ph id="ph1">`Shared`</ph> (procedure is not an instance member)</source>
+          <target state="translated">クラスでは、 <ph id="ph1">`Shared`</ph> (手順は、インスタンスのメンバーではありません)</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The first time the procedure is called either on a specific instance or on the class or structure name itself</source>
+          <target state="translated">最初に、特定のインスタンスまたはクラスまたは構造体名自体のいずれかの手順が呼び出されます</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When your application stops running</source>
+          <target state="translated">アプリケーションの実行が終了</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In an instance of a class, not <ph id="ph1">`Shared`</ph> (procedure is an instance member)</source>
+          <target state="translated">クラスのインスタンスでない<ph id="ph1">`Shared`</ph>(手順では、インスタンス メンバー)</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The first time the procedure is called on the specific instance</source>
+          <target state="translated">初めてのプロシージャは、特定のインスタンスで呼び出されます</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>When the instance is released for garbage collection (GC)</source>
+          <target state="translated">ガベージ コレクション (GC) のインスタンスを解放する場合</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Static Variables of the Same Name</source>
+          <target state="translated">同じ名前の静的変数</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You can declare static variables with the same name in more than one procedure.</source>
+          <target state="translated">1 つ以上の手順で同じ名前を持つ静的変数を宣言することができます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>If you do this, the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler considers each such variable to be a separate element.</source>
+          <target state="translated">これを行う場合、<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>コンパイラは、このような各変数は別々 の要素を考慮します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The initialization of one of these variables does not affect the values of the others.</source>
+          <target state="translated">これらの変数のいずれかの初期化では、他の値は影響しません。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The same applies if you define a procedure with a set of overloads and declare a static variable with the same name in each overload.</source>
+          <target state="translated">同じには、プロシージャのオーバー ロードのセットを定義およびオーバー ロードごとに同じ名前を持つ静的変数を宣言する場合が適用されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Containing Elements for Static Variables</source>
+          <target state="translated">静的変数のコンテナー要素</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>You can declare a static local variable within a class, that is, inside a procedure in that class.</source>
+          <target state="translated">つまり、そのクラスのプロシージャの中、クラス内で静的ローカル変数を宣言できます。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>However, you cannot declare a static local variable within a structure, either as a structure member or as a local variable of a procedure within that structure.</source>
+          <target state="translated">ただし、構造体のメンバー、またはその構造内のプロシージャのローカル変数として、構造内で静的ローカル変数を宣言できません。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="translated">説明</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The following example declares a variable with the <bpt id="p1">[</bpt>Static<ept id="p1">](../../../../visual-basic/language-reference/modifiers/static.md)</ept> keyword.</source>
+          <target state="translated">次の例で変数が宣言、<bpt id="p1">[</bpt>静的<ept id="p1">](../../../../visual-basic/language-reference/modifiers/static.md)</ept>キーワードです。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>(Note that you do not need the <ph id="ph1">`Dim`</ph> keyword when the <bpt id="p1">[</bpt>Dim Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/dim-statement.md)</ept> uses a modifier such as <ph id="ph2">`Static`</ph>.)</source>
+          <target state="translated">(必要としないこと、<ph id="ph1">`Dim`</ph>キーワードと、 <bpt id="p1">[</bpt>Dim ステートメント<ept id="p1">](../../../../visual-basic/language-reference/statements/dim-statement.md)</ept>など、修飾子を使用して<ph id="ph2">`Static`</ph>)。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">コード</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrKeywords#13<ept id="p2">](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrKeywords&amp;#13;<ept id="p2">](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Comments</source>
+          <target state="translated">コメント</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>In the preceding example, the variable <ph id="ph1">`applesSold`</ph> continues to exist after the procedure <ph id="ph2">`runningTotal`</ph> returns to the calling code.</source>
+          <target state="translated">上記の例では、変数<ph id="ph1">`applesSold`</ph>手順の後に存在し続けます<ph id="ph2">`runningTotal`</ph>呼び出し元のコードを返します。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The next time <ph id="ph1">`runningTotal`</ph> is called, <ph id="ph2">`applesSold`</ph> retains its previously calculated value.</source>
+          <target state="translated">次回<ph id="ph1">`runningTotal`</ph>が呼び出されると、<ph id="ph2">`applesSold`</ph>以前の計算値を保持します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`applesSold`</ph> had been declared without using <ph id="ph2">`Static`</ph>, the previous accumulated values would not be preserved across calls to <ph id="ph3">`runningTotal`</ph>.</source>
+          <target state="translated">場合<ph id="ph1">`applesSold`</ph>を使用せずに宣言されていた<ph id="ph2">`Static`</ph>への呼び出しによる、以前の累積値を保持されませんが<ph id="ph3">`runningTotal`</ph>です。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>The next time <ph id="ph1">`runningTotal`</ph> was called, <ph id="ph2">`applesSold`</ph> would have been recreated and initialized to 0, and <ph id="ph3">`runningTotal`</ph> would have simply returned the same value with which it was called.</source>
+          <target state="translated">次回<ph id="ph1">`runningTotal`</ph>、呼び出された<ph id="ph2">`applesSold`</ph>は再作成され、0 に初期化と<ph id="ph3">`runningTotal`</ph>あればだけ返さ呼び出されたのと同じ値です。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Compiling the Code</source>
+          <target state="translated">コードのコンパイル</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>You can initialize the value of a static local variable as part of its declaration.</source>
+          <target state="translated">宣言の一部として静的ローカル変数の値を初期化することができます。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>If you declare an array to be <ph id="ph1">`Static`</ph>, you can initialize its rank (number of dimensions), the length of each dimension, and the values of the individual elements.</source>
+          <target state="translated">配列を宣言する場合<ph id="ph1">`Static`</ph>、そのランク (次元数)、各次元の長さと個々 の要素の値に初期化することができます。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Security</source>
+          <target state="translated">セキュリティ</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>In the preceding example, you can produce the same lifetime by declaring <ph id="ph1">`applesSold`</ph> at module level.</source>
+          <target state="translated">前の例では、宣言することで有効期間は同じを生成できます<ph id="ph1">`applesSold`</ph>モジュール レベルです。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>If you changed the scope of a variable this way, however, the procedure would no longer have exclusive access to it.</source>
+          <target state="translated">こうすると、変数のスコープを変更した場合は、ただし、プロシージャ不要になったに排他的にアクセスします。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Because other procedures could access <ph id="ph1">`applesSold`</ph> and change its value, the running total could be unreliable and the code could be more difficult to maintain.</source>
+          <target state="translated">他のプロシージャにアクセスできなかったため<ph id="ph1">`applesSold`</ph>とその値を変更、集計の途中の信頼性が低いことがおよび、コードを保守が困難でした。 します。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Shared<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>共有<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Nothing<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>何もない<ept id="p1">](../../../../visual-basic/language-reference/nothing.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Declared Element Names<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>宣言された要素名<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>References to Declared Elements<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>宣言された要素への参照<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Scope in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic におけるスコープ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Access Levels in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic でのアクセス レベル<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Variables<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>変数<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Variable Declaration<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>変数宣言<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Troubleshooting Data Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>データ型のトラブルシューティング<ept id="p1">](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Static<ept id="p1">](../../../../visual-basic/language-reference/modifiers/static.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Static<ept id="p1">](../../../../visual-basic/language-reference/modifiers/static.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
