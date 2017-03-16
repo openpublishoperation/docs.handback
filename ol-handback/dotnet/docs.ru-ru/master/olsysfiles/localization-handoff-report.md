@@ -1,11 +1,48 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/fae5eabac7d1aac577c5c7a27e306c8c7ea8b418/docs/core/migration/index.md) | HandedOffSuccess | [Details](#73ab5a9bdd957e6d9394a3be0aa55f554ee7a86a49)
+ [docs\csharp\csharp-7.md](https://github.com/dotnet/docs/blob/fae5eabac7d1aac577c5c7a27e306c8c7ea8b418/docs/csharp/csharp-7.md) | HandedOffSuccess | [Details](#0e54d8f458d6885f934b4168631474f576f1936e126)
 
 ## Item Details
+##### <a name='73ab5a9bdd957e6d9394a3be0aa55f554ee7a86a49'></a> Source: [docs\core\migration\index.md](https://github.com/dotnet/docs/blob/fae5eabac7d1aac577c5c7a27e306c8c7ea8b418/docs/core/migration/index.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/1e38c4aec90116b208088fceb3439e889dad41cc/ol-handoff/dotnet/docs.ru-ru/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf)
+* Handoff Datetime: 2017-03-16 23:35:50
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* Current Target File: [docs\core\migration\index.md](https://github.com/dotnet/docs.ru-ru/blob/51999b84d3bfbe6f4ee122315d7d7921e47adefd/docs/core/migration/index.md)
+* Current Handback File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/e1095cf1c351244a12fde22809e5edf67cab4cbb/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf)
+* Current Handback Datetime: 2017-03-13 20:27:57
+* Bilingual File: [index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf](https://github.com/dotnet/docs.handback/blob/e1095cf1c351244a12fde22809e5edf67cab4cbb/ol-handback/dotnet/docs.ru-ru/master/dotnet-core/index.a84528465d95dded404ec8bd249a6f0c47efcfbb.ru-ru.xlf)
+* Bilingual Datetime: 2017-03-13 20:30:20
+* [Back to Top](#report-top)
+
+##### <a name='0e54d8f458d6885f934b4168631474f576f1936e126'></a> Source: [docs\csharp\csharp-7.md](https://github.com/dotnet/docs/blob/fae5eabac7d1aac577c5c7a27e306c8c7ea8b418/docs/csharp/csharp-7.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [csharp-7.c8dfe14568b533ec731220d3f7708bce3dcb49cd.ru-ru.xlf](https://github.com/dotnet/docs.handoff/blob/1e38c4aec90116b208088fceb3439e889dad41cc/ol-handoff/dotnet/docs.ru-ru/master/vbcs_med-ht/csharp-7.c8dfe14568b533ec731220d3f7708bce3dcb49cd.ru-ru.xlf)
+* Handoff Datetime: 2017-03-16 23:35:50
+* Handoff Reason: Include
+* Handoff Name: 
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Handback Name: 
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
