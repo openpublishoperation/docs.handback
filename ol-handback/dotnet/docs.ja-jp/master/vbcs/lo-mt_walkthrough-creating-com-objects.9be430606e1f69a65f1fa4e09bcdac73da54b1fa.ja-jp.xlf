@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cce28e2be5914880107334bf2c4dc4dc645b4793</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\com-interop\walkthrough-creating-com-objects.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8f9970738326495287f86e791817ac5babc80b6c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8ba90849247e8482d64f6fdf58b735d18a917f3f</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Creating COM Objects with Visual Basic | Microsoft Docs</source>
+          <target state="translated">チュートリアル: Visual Basic での COM オブジェクトの作成 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Creating COM Objects with Visual Basic</source>
+          <target state="translated">チュートリアル : Visual Basic での COM オブジェクトの作成</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When creating new applications or components, it is best to create .NET Framework assemblies.</source>
+          <target state="translated">新しいアプリケーションまたはコンポーネントを作成する場合は、.NET Framework アセンブリを作成することをお勧めします。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>However, <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> also makes it easy to expose a .NET Framework component to COM.</source>
+          <target state="translated">ただし、<ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>も容易に COM に .NET Framework コンポーネントを公開するには</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This enables you to provide new components for earlier application suites that require COM components.</source>
+          <target state="translated">これにより、COM コンポーネントを必要とする以前のアプリケーション スイートに新しいコンポーネントを提供することができます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This walkthrough demonstrates how to use <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> to expose <ph id="ph2">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> objects as COM objects, both with and without the COM class template.</source>
+          <target state="translated">このチュートリアルを使用する方法について説明<ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>を公開する<ph id="ph2">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>COM オブジェクト、COM クラス テンプレートの有無にかかわらず、としてオブジェクトです。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The easiest way to expose COM objects is by using the COM class template.</source>
+          <target state="translated">COM オブジェクトを公開する最も簡単な方法は、COM クラス テンプレートを使用してです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The COM class template creates a new class, and then configures your project to generate the class and interoperability layer as a COM object and register it with the operating system.</source>
+          <target state="translated">COM クラス テンプレートは、新しいクラスを作成し、COM オブジェクトとしてのクラスと相互運用性レイヤーを生成し、オペレーティング システムに登録するようにプロジェクトを構成します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Although you can also expose a class created in <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> as a COM object for unmanaged code to use, it is not a true COM object and cannot be used by <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>.</source>
+          <target state="translated">作成されたクラスを公開することもできます。 ただし<ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>を使用するアンマネージ コードの COM オブジェクトとして true COM オブジェクトではない、では使用できません<ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>COM Interoperability in .NET Framework Applications<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。 <bpt id="p1">[</bpt>.NET Framework アプリケーションにおける COM 相互運用性<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>To create a COM object by using the COM class template</source>
+          <target state="translated">COM クラス テンプレートを使用して COM オブジェクトを作成するには</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Open a new Windows Application project from the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu by clicking <bpt id="p2">**</bpt>New Project<ept id="p2">**</ept>.</source>
+          <target state="translated">新しい Windows アプリケーション プロジェクトを開き、<bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept>をクリックしてメニュー<bpt id="p2">**</bpt>新しいプロジェクト<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box under the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> field, check that Windows is selected.</source>
+          <target state="translated"><bpt id="p1">**</bpt>新しいプロジェクト<ept id="p1">**</ept>ダイアログ ボックスで 、<bpt id="p2">**</bpt>プロジェクトの種類<ept id="p2">**</ept>フィールドに、Windows が選択されていることを確認します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class Library<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> list, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>クラス ライブラリ<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>テンプレート<ept id="p2">**</ept>一覧をクリックして<bpt id="p3">**</bpt>OK<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The new project is displayed.</source>
+          <target state="translated">新しいプロジェクトが表示されます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Project<ept id="p2">**</ept> menu.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>新しい項目の追加<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>プロジェクト<ept id="p2">**</ept>メニュー。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Add New Item<ept id="p1">**</ept> dialog box is displayed.</source>
+          <target state="translated"><bpt id="p1">**</bpt>新しい項目の追加<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>COM Class<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> list, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>COM クラス<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>テンプレート<ept id="p2">**</ept>一覧をクリックして<bpt id="p3">**</bpt>追加<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> adds a new class and configures the new project for COM interop.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>新しいクラスを追加し、COM 相互運用機能の新しいプロジェクトを構成します。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Add code such as properties, methods, and events to the COM class.</source>
+          <target state="translated">COM クラスには、プロパティ、メソッド、およびイベントのようなコードを追加します。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Build ClassLibrary1<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Build<ept id="p2">**</ept> menu.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>ビルド ClassLibrary1<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept>メニュー。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> builds the assembly and registers the COM object with the operating system.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>アセンブリがビルドされ、オペレーティング システムに COM オブジェクトを登録します。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Creating COM Objects without the COM Class Template</source>
+          <target state="translated">COM クラス テンプレートを使用せずに COM オブジェクトを作成します。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can also create a COM class manually instead of using the COM class template.</source>
+          <target state="translated">COM クラス テンプレートを使用する代わりに、手動での COM クラスを作成することもできます。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This procedure is helpful when you are working from the command line or when you want more control over how COM objects are defined.</source>
+          <target state="translated">コマンドラインから作業している場合、または COM オブジェクトの定義方法を制御する場合は、この手順をお勧めします。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>To set up your project to generate a COM object</source>
+          <target state="translated">COM オブジェクトを生成するプロジェクトを設定するには</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Open a new Windows Application project from the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu by clicking <bpt id="p2">**</bpt>NewProject<ept id="p2">**</ept>.</source>
+          <target state="translated">新しい Windows アプリケーション プロジェクトを開き、<bpt id="p1">**</bpt>ファイル<ept id="p1">**</ept>をクリックしてメニュー <bpt id="p2">**</bpt>NewProject<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box under the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> field, check that Windows is selected.</source>
+          <target state="translated"><bpt id="p1">**</bpt>新しいプロジェクト<ept id="p1">**</ept>ダイアログ ボックスで 、<bpt id="p2">**</bpt>プロジェクトの種類<ept id="p2">**</ept>フィールドに、Windows が選択されていることを確認します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class Library<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> list, and then click <bpt id="p3">**</bpt>OK<ept id="p3">**</ept>.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>クラス ライブラリ<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>テンプレート<ept id="p2">**</ept>一覧をクリックして<bpt id="p3">**</bpt>OK<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The new project is displayed.</source>
+          <target state="translated">新しいプロジェクトが表示されます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click your project, and then click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ソリューション エクスプ ローラー<ept id="p1">**</ept>、プロジェクトを右クリックし、クリックして<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Project Designer<ept id="p1">**</ept> is displayed.</source>
+          <target state="translated"><bpt id="p1">**</bpt>プロジェクト デザイナー<ept id="p1">**</ept>が表示されます。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Compile<ept id="p1">**</ept> tab.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[コンパイル]<ept id="p1">**</ept> タブをクリックします。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Register for COM Interop<ept id="p1">**</ept> check box.</source>
+          <target state="translated">選択、 <bpt id="p1">**</bpt>COM 相互運用機能の登録<ept id="p1">**</ept>チェック ボックスをオンします。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>To set up the code in your class to create a COM object</source>
+          <target state="translated">COM オブジェクトを作成する、クラスのコードを設定するには</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, double-click <bpt id="p2">**</bpt>Class1.vb<ept id="p2">**</ept> to display its code.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ソリューション エクスプ ローラー<ept id="p1">**</ept>をダブルクリックして<bpt id="p2">**</bpt>Class1.vb<ept id="p2">**</ept>そのコードを表示します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Rename the class to <ph id="ph1">`ComClass1`</ph>.</source>
+          <target state="translated">クラスの名前を <ph id="ph1">`ComClass1`</ph> に変更します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Add the following constants to <ph id="ph1">`ComClass1`</ph>.</source>
+          <target state="translated">次の定数を追加<ph id="ph1">`ComClass1`</ph>します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>They will store the Globally Unique Identifier (GUID) constants that the COM objects are required to have.</source>
+          <target state="translated">COM オブジェクトを持つ必要はグローバル一意識別子 (GUID) の定数が格納されます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#2<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#2;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Create Guid<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ツール<ept id="p1">**</ept> メニューのをクリックして<bpt id="p2">**</bpt>Guid の作成<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create GUID<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Registry Format<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Copy<ept id="p3">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>GUID の作成<ept id="p1">**</ept>ダイアログ ボックスで、をクリックして<bpt id="p2">**</bpt>レジストリ形式<ept id="p2">**</ept> をクリックし、<bpt id="p3">**</bpt>コピー<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Exit<ept id="p1">**</ept>.</source>
+          <target state="translated">[ <bpt id="p1">**</bpt>終了<ept id="p1">**</ept>] をクリックします。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Replace the empty string for the <ph id="ph1">`ClassId`</ph> with the GUID, removing the leading and trailing braces.</source>
+          <target state="translated">空の文字列を置き換える、 <ph id="ph1">`ClassId`</ph> 、guid を削除、先頭と末尾の右中かっこです。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For example, if the GUID provided by Guidgen is <ph id="ph1">`"{2C8B0AEE-02C9-486e-B809-C780A11530FE}"`</ph> then your code should appear as follows.</source>
+          <target state="translated">たとえば、Guidgen で GUID が提供される場合は<ph id="ph1">`"{2C8B0AEE-02C9-486e-B809-C780A11530FE}"`</ph>コードは次のように表示する必要があります。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#3<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#3;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Repeat the previous steps for the <ph id="ph1">`InterfaceId`</ph> and <ph id="ph2">`EventsId`</ph> constants, as in the following example.</source>
+          <target state="translated">前の手順を繰り返します、<ph id="ph1">`InterfaceId`</ph>と<ph id="ph2">`EventsId`</ph>定数は、次の例に示すようにします。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#4<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;4;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Make sure that the GUIDs are new and unique; otherwise, your COM component could conflict with other COM components.</source>
+          <target state="translated">Guid は、新規および一意であるかどうかを確認します。それ以外の場合、COM コンポーネントは、他の COM コンポーネントと競合する可能性があります。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Add the <ph id="ph1">`ComClass`</ph> attribute to <ph id="ph2">`ComClass1`</ph>, specifying the GUIDs for the Class ID, Interface ID, and Events ID as in the following example:</source>
+          <target state="translated">追加、<ph id="ph1">`ComClass`</ph>属性を<ph id="ph2">`ComClass1`</ph>、クラス ID、インターフェイス ID、およびイベント ID の Guid を指定する例を次に示します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#5<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#5;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>COM classes must have a parameterless <ph id="ph1">`Public Sub New()`</ph> constructor, or the class will not register correctly.</source>
+          <target state="translated">COM クラスが必要で、パラメーターなし<ph id="ph1">`Public Sub New()`</ph>コンス トラクター、またはクラスが正しく登録されません。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Add a parameterless constructor to the class:</source>
+          <target state="translated">クラスには、パラメーターなしのコンス トラクターを追加します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#6<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;6;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-creating-com-objects_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Add properties, methods, and events to the class, ending it with an <ph id="ph1">`End Class`</ph> statement.</source>
+          <target state="translated">プロパティ、メソッド、およびイベントを終了して、クラスに追加、<ph id="ph1">`End Class`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Build Solution<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Build<ept id="p2">**</ept> menu.</source>
+          <target state="translated">選択<bpt id="p1">**</bpt>ソリューションのビルド<ept id="p1">**</ept>から、<bpt id="p2">**</bpt>ビルド<ept id="p2">**</ept>メニュー。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> builds the assembly and registers the COM object with the operating system.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>アセンブリがビルドされ、オペレーティング システムに COM オブジェクトを登録します。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The COM objects you generate with <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> cannot be used by other <ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> applications because they are not true COM objects.</source>
+          <target state="translated">COM オブジェクトを使用して作成する<ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>他では使用できません<ph id="ph2">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>アプリケーションは true。 COM オブジェクトではないためです。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Attempts to add references to such COM objects will raise an error.</source>
+          <target state="translated">このような COM オブジェクトへの参照の追加を試行によってエラーが発生します。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>For details, see <bpt id="p1">[</bpt>COM Interoperability in .NET Framework Applications<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept>.</source>
+          <target state="translated">詳細については、「 <bpt id="p1">[</bpt>.NET Framework アプリケーションにおける COM 相互運用性<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.ComClassAttribute&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.ComClassAttribute&gt;&lt;/xref:Microsoft.VisualBasic.ComClassAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>COM Interop<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>COM 相互運用機能<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Implementing Inheritance with COM Objects<ept id="p1">](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>チュートリアル: COM オブジェクトによる継承の実装<ept id="p1">](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>#Region Directive<ept id="p1">](../../../visual-basic/language-reference/directives/region-directive.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>#Region ディレクティブ<ept id="p1">](../../../visual-basic/language-reference/directives/region-directive.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>COM Interoperability in .NET Framework Applications<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>.NET Framework アプリケーションにおける COM 相互運用性<ept id="p1">](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Troubleshooting Interoperability<ept id="p1">](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>相互運用性のトラブルシューティング<ept id="p1">](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

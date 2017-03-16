@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cbab7da8c97ca202f8a4d0a1a65b8fa240cca32d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\covariance-contravariance\variance-in-delegates.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">adc4b7a8e4176173779d75c2feb6b4b977377a41</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5c0afe04633a0673fb5ad45f6775338e0e4e9a81</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Variance in Delegates (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Varianza nei delegati (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Variance in Delegates (Visual Basic)</source>
+          <target state="translated">Varianza nei delegati (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>.NET Framework 3.5 introduced variance support for matching method signatures with delegate types in all delegates in C# and Visual Basic.</source>
+          <target state="translated">.NET framework 3.5 è stato introdotto il supporto della varianza per la corrispondenza delle firme di metodo con i tipi delegati in tutti i delegati in c# e Visual Basic.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>This means that you can assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type.</source>
+          <target state="translated">Ciò significa che è possibile assegnare ai delegati non solo i metodi con firme corrispondenti, ma anche i metodi che restituiscono più derivati (covarianza) i tipi o che accettano parametri con tipi meno derivati (controvarianza) rispetto a quello specificato dal tipo di delegato.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This includes both generic and non-generic delegates.</source>
+          <target state="translated">Ciò include delegati sia generici e non generica.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>For example, consider the following code, which has two classes and two delegates: generic and non-generic.</source>
+          <target state="translated">Ad esempio, si consideri il codice seguente, che dispone di due classi e due delegati: generico e non generici.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>When you create delegates of the <ph id="ph1">`SampleDelegate`</ph> or <ph id="ph2">`SampleDelegate(Of A, R)`</ph> types, you can assign any one of the following methods to those delegates.</source>
+          <target state="translated">Quando si creano delegati del <ph id="ph1">`SampleDelegate`</ph> o <ph id="ph2">`SampleDelegate(Of A, R)`</ph> tipi, è possibile assegnare uno dei metodi seguenti per i delegati.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The following code example illustrates the implicit conversion between the method signature and the delegate type.</source>
+          <target state="translated">Esempio di codice seguente viene illustrata la conversione implicita tra la firma del metodo e il tipo delegato.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more examples, see <bpt id="p1">[</bpt>Using Variance in Delegates (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)</ept> and <bpt id="p2">[</bpt>Using Variance for Func and Action Generic Delegates (Visual Basic)<ept id="p2">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept>.</source>
+          <target state="translated">Per ulteriori esempi, vedere <bpt id="p1">[</bpt>utilizzando varianza nei delegati (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)</ept> e <bpt id="p2">[</bpt>utilizzando la varianza per i delegati generici azione (Visual Basic) e Func<ept id="p2">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Variance in Generic Type Parameters</source>
+          <target state="translated">Varianza nei parametri di tipo generico</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>In .NET Framework 4 and later you can enable implicit conversion between delegates, so that generic delegates that have different types specified by generic type parameters can be assigned to each other, if the types are inherited from each other as required by variance.</source>
+          <target state="translated">In .NET Framework 4 e versioni successive è possibile abilitare la conversione implicita tra delegati, in modo che i delegati generici con tipi diversi specificati dai parametri di tipo generico possono essere assegnati tra loro, se i tipi vengono ereditati da altra come richiesto dalla varianza.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To enable implicit conversion, you must explicitly declare generic parameters in a delegate as covariant or contravariant by using the <ph id="ph1">`in`</ph> or <ph id="ph2">`out`</ph> keyword.</source>
+          <target state="translated">Per abilitare la conversione implicita, è necessario dichiarare in modo esplicito i parametri generici di un delegato come covarianti o controvarianti utilizzando il <ph id="ph1">`in`</ph> o <ph id="ph2">`out`</ph> (parola chiave).</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The following code example shows how you can create a delegate that has a covariant generic type parameter.</source>
+          <target state="translated">Esempio di codice seguente viene illustrato come creare un delegato con un parametro di tipo generico covariante.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>If you use only variance support to match method signatures with delegate types and do not use the <ph id="ph1">`in`</ph> and <ph id="ph2">`out`</ph> keywords, you may find that sometimes you can instantiate delegates with identical lambda expressions or methods, but you cannot assign one delegate to another.</source>
+          <target state="translated">Se si utilizza solo il supporto della varianza per la corrispondenza delle firme di metodo con tipi delegati e non utilizzare il <ph id="ph1">`in`</ph> e <ph id="ph2">`out`</ph> le parole chiave, è possibile che in alcuni casi è possibile creare istanze di delegati con metodi o espressioni lambda identiche, ma non è possibile assegnare un delegato a un altro.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In the following code example, <ph id="ph1">`SampleGenericDelegate(Of String)`</ph> can't be explicitly converted to <ph id="ph2">`SampleGenericDelegate(Of Object)`</ph>, although <ph id="ph3">`String`</ph> inherits <ph id="ph4">`Object`</ph>.</source>
+          <target state="translated">Nell'esempio di codice seguente, <ph id="ph1">`SampleGenericDelegate(Of String)`</ph> non può essere convertito in modo esplicito in <ph id="ph2">`SampleGenericDelegate(Of Object)`</ph>, sebbene <ph id="ph3">`String`</ph> eredita <ph id="ph4">`Object`</ph>.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>You can fix this problem by marking the generic parameter <ph id="ph1">`T`</ph> with the <ph id="ph2">`out`</ph> keyword.</source>
+          <target state="translated">È possibile risolvere questo problema contrassegnando il parametro generico <ph id="ph1">`T`</ph> con il <ph id="ph2">`out`</ph> (parola chiave).</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Generic Delegates That Have Variant Type Parameters in the .NET Framework</source>
+          <target state="translated">Delegati generici con variante di parametri di tipo in .NET Framework</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>.NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:</source>
+          <target state="translated">.NET framework 4 è stato introdotto il supporto della varianza per i parametri di tipo generico in diversi delegati generici esistenti:</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Action`</ph> delegates from the &lt;xref:System&gt; namespace, for example, &lt;xref:System.Action%601&gt; and &lt;xref:System.Action%602&gt;</source>
+          <target state="translated"><ph id="ph1">`Action`</ph>delega dal &lt;xref:System&gt;spazio dei nomi, ad esempio, &lt;xref:System.Action%601&gt;e &lt;xref:System.Action%602&gt;&lt;/xref:System.Action%602&gt; &lt;/xref:System.Action%601&gt; &lt;/xref:System&gt;</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Func`</ph> delegates from the &lt;xref:System&gt; namespace, for example, &lt;xref:System.Func%601&gt; and &lt;xref:System.Func%602&gt;</source>
+          <target state="translated"><ph id="ph1">`Func`</ph>delega dal &lt;xref:System&gt;spazio dei nomi, ad esempio, &lt;xref:System.Func%601&gt;e &lt;xref:System.Func%602&gt;&lt;/xref:System.Func%602&gt; &lt;/xref:System.Func%601&gt; &lt;/xref:System&gt;</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Predicate%601&gt; delegate</source>
+          <target state="translated">Il &lt;xref:System.Predicate%601&gt;delegato&lt;/xref:System.Predicate%601&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Comparison%601&gt; delegate</source>
+          <target state="translated">Il &lt;xref:System.Comparison%601&gt;delegato&lt;/xref:System.Comparison%601&gt;</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Converter%602&gt; delegate</source>
+          <target state="translated">Il &lt;xref:System.Converter%602&gt;delegato&lt;/xref:System.Converter%602&gt;</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information and examples, see <bpt id="p1">[</bpt>Using Variance for Func and Action Generic Delegates (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni ed esempi, vedere <bpt id="p1">[</bpt>utilizzando la varianza per i delegati generici azione (Visual Basic) e Func<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Declaring Variant Type Parameters in Generic Delegates</source>
+          <target state="translated">Dichiarazione dei parametri di tipo Variant in delegati generici</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If a generic delegate has covariant or contravariant generic type parameters, it can be referred to as a <bpt id="p1">*</bpt>variant generic delegate<ept id="p1">*</ept>.</source>
+          <target state="translated">Se un delegato generico è covariante o parametri di tipo generico controvariante, può essere indicato come un <bpt id="p1">*</bpt>delegati generici varianti<ept id="p1">*</ept>.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>You can declare a generic type parameter covariant in a generic delegate by using the <ph id="ph1">`out`</ph> keyword.</source>
+          <target state="translated">È possibile dichiarare un parametro di tipo generico covarianti in un delegato generico utilizzando il <ph id="ph1">`out`</ph> (parola chiave).</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The covariant type can be used only as a method return type and not as a type of method arguments.</source>
+          <target state="translated">Di tipo covariante può essere utilizzato solo come un tipo restituito del metodo e non come un tipo di argomenti del metodo.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following code example shows how to declare a covariant generic delegate.</source>
+          <target state="translated">Esempio di codice seguente viene illustrato come dichiarare un delegato generico covariante.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can declare a generic type parameter contravariant in a generic delegate by using the <ph id="ph1">`in`</ph> keyword.</source>
+          <target state="translated">È possibile dichiarare una controvariante del parametro di tipo generico in un delegato generico utilizzando il <ph id="ph1">`in`</ph> (parola chiave).</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>The contravariant type can be used only as a type of method arguments and not as a method return type.</source>
+          <target state="translated">Il tipo controvariante può essere utilizzato solo come un tipo di argomenti del metodo e non come un tipo restituito del metodo.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The following code example shows how to declare a contravariant generic delegate.</source>
+          <target state="translated">Esempio di codice seguente viene illustrato come dichiarare un delegato generico controvariante.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><ph id="ph1"> `ByRef`</ph> parameters in Visual Basic can't be marked as variant.</source>
+          <target state="translated"><ph id="ph1"> `ByRef`</ph>i parametri in Visual Basic non possono essere contrassegnati come variant.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>It is also possible to support both variance and covariance in the same delegate, but for different type parameters.</source>
+          <target state="translated">È inoltre possibile supportare sia la varianza e covarianza nello stesso delegato, ma per i parametri di tipo diverso.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>This is shown in the following example.</source>
+          <target state="translated">come illustrato nell'esempio riportato di seguito.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Instantiating and Invoking Variant Generic Delegates</source>
+          <target state="translated">Creare un'istanza e richiamare delegati generici varianti</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>You can instantiate and invoke variant delegates just as you instantiate and invoke invariant delegates.</source>
+          <target state="translated">È possibile creare un'istanza e richiamare delegati varianti esattamente come si crea un'istanza e richiamare delegati invarianti.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>In the following example, the delegate is instantiated by a lambda expression.</source>
+          <target state="translated">Nell'esempio seguente viene creata un'istanza di delegato da un'espressione lambda.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Combining Variant Generic Delegates</source>
+          <target state="translated">La combinazione dei delegati generici varianti</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You should not combine variant delegates.</source>
+          <target state="translated">È consigliabile non combinare delegati varianti.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Delegate.Combine%2A&gt; method does not support variant delegate conversion and expects delegates to be of exactly the same type.</source>
+          <target state="translated">Il &lt;xref:System.Delegate.Combine%2A&gt;metodo non supporta la conversione di delegati varianti e prevede che i delegati per essere dello stesso tipo.&lt;/xref:System.Delegate.Combine%2A&gt;</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This can lead to a run-time exception when you combine delegates either by using the &lt;xref:System.Delegate.Combine%2A&gt; method (in C# and Visual Basic) or by using the <ph id="ph1">`+`</ph> operator (in C#), as shown in the following code example.</source>
+          <target state="translated">Questo può causare un'eccezione in fase di esecuzione quando si combinano delegati utilizzando il &lt;xref:System.Delegate.Combine%2A&gt;(metodo) (in c# e Visual Basic) o tramite il <ph id="ph1">`+`</ph> (operatore) (in c#), come illustrato nell'esempio di codice seguente.&lt;/xref:System.Delegate.Combine%2A&gt;</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Variance in Generic Type Parameters for Value and Reference Types</source>
+          <target state="translated">Varianza nei parametri di tipo generico per valore e tipi di riferimento</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Variance for generic type parameters is supported for reference types only.</source>
+          <target state="translated">La varianza per i parametri di tipo generico è supportata per i tipi di riferimento solo.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example, <ph id="ph1">`DVariant(Of Int)`</ph>can't be implicitly converted to <ph id="ph2">`DVariant(Of Object)`</ph> or <ph id="ph3">`DVariant(Of Long)`</ph>, because integer is a value type.</source>
+          <target state="translated">Ad esempio, <ph id="ph1">`DVariant(Of Int)`</ph>non può essere convertita implicitamente in <ph id="ph2">`DVariant(Of Object)`</ph> o <ph id="ph3">`DVariant(Of Long)`</ph>, poiché integer è un tipo di valore.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The following example demonstrates that variance in generic type parameters is not supported for value types.</source>
+          <target state="translated">Nell'esempio seguente viene illustrato che la varianza in tipo generico con parametri non è supportata per i tipi di valore.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Relaxed Delegate Conversion in Visual Basic</source>
+          <target state="translated">Conversione di tipo relaxed del delegato in Visual Basic</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Relaxed delegate conversion enables more flexibility in matching method signatures with delegate types.</source>
+          <target state="translated">Conversione di tipo relaxed del delegato consente una maggiore flessibilità in corrispondenza delle firme di metodo con i tipi delegati.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>For example, it lets you omit parameter specifications and omit function return values when you assign a method to a delegate.</source>
+          <target state="translated">Ad esempio, consente di omettere le specifiche dei parametri e omettere i valori restituiti dalla funzione quando si assegna un metodo a un delegato.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Relaxed Delegate Conversion<ept id="p1">](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere <bpt id="p1">[</bpt>conversione di tipo Relaxed del delegato<ept id="p1">](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Generics<ept id="p1">](https://msdn.microsoft.com/library/ms172192)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Generics<ept id="p1">](https://msdn.microsoft.com/library/ms172192)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Using Variance for Func and Action Generic Delegates (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Utilizzo della varianza per Func e azione delegati generici (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

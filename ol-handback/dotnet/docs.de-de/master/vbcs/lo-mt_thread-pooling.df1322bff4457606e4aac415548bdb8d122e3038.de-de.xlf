@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6037d7ea17e260d44bae571aa25d413996f5a123</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\threading\thread-pooling.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">752ab8a32354efd3a876c9dda0b1223350a5dc96</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">323b018189df3ffdb291aadb2f112d1ab9a2adac</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Thread Pooling (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Threadpooling (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Thread Pooling (Visual Basic)</source>
+          <target state="translated">Threadpooling (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A <bpt id="p1">*</bpt>thread pool<ept id="p1">*</ept> is a collection of threads that can be used to perform several tasks in the background.</source>
+          <target state="translated">Ein <bpt id="p1">*</bpt>Threadpool<ept id="p1">*</ept> ist eine Auflistung von Threads, die verwendet werden kann, um verschiedene Aufgaben im Hintergrund ausgeführt.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>(See <bpt id="p1">[</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept> for background information.) This leaves the primary thread free to perform other tasks asynchronously.</source>
+          <target state="translated">(Siehe <bpt id="p1">[</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept> Hintergrundinformationen.) Dies bewirkt, dass der primären Thread asynchron andere Aufgaben ausführen.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Thread pools are often employed in server applications.</source>
+          <target state="translated">Threadpools sind häufig in serveranwendungen verwendet.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Each incoming request is assigned to a thread from the thread pool, so that the request can be processed asynchronously, without tying up the primary thread or delaying the processing of subsequent requests.</source>
+          <target state="translated">Jede eingehende Anforderung wird einem Thread aus dem Threadpool zugewiesen, sodass die Anforderung asynchron verarbeitet werden kann, ohne den primären Thread binden oder die Verarbeitung von nachfolgenden Anforderungen zu verzögern.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Once a thread in the pool completes its task, it is returned to a queue of waiting threads, where it can be reused.</source>
+          <target state="translated">Wenn ein Thread im Pool seine Aufgabe abgeschlossen ist, wird es zurückgegeben an eine Warteschlange der wartenden Threads, in dem es wiederverwendet werden.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>This reuse enables applications to avoid the cost of creating a new thread for each task.</source>
+          <target state="translated">Diese wiederverwenden können Clientanwendungen, die Kosten für das Erstellen eines neuen Threads für jeden Vorgang zu vermeiden.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Thread pools typically have a maximum number of threads.</source>
+          <target state="translated">Threadpools haben in der Regel eine maximale Anzahl von Threads.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If all the threads are busy, additional tasks are put in queue until they can be serviced as threads become available.</source>
+          <target state="translated">Wenn alle Threads aktiv sind, werden zusätzliche Aufgaben in Warteschlange eingereiht, bis sie von wieder verfügbaren Threads verarbeitet werden können.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>You can implement your own thread pool, but it is easier to use the thread pool provided by the .NET Framework through the &lt;xref:System.Threading.ThreadPool&gt; class.</source>
+          <target state="translated">Sie können einen eigenen Threadpool implementieren, aber es ist einfacher, die von .NET Framework durch die &lt;xref:System.Threading.ThreadPool&gt;Klasse&lt;/xref:System.Threading.ThreadPool&gt; bereitgestellten Threadpool zu verwenden</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>With thread pooling, you call the &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName&gt; method with a delegate for the procedure you want to run, and Visual Basic creates the thread and runs your procedure.</source>
+          <target state="translated">Beim pooling von Threads rufen Sie die &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName&gt;-Methode mit einem Delegaten für die Prozedur, die Sie ausführen möchten, und Visual Basic wird der Thread erstellt und führt die Prozedur.&lt;/xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Thread Pooling Example</source>
+          <target state="translated">Beispiel für Pooling von Threads</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The following example shows how you can use thread pooling to start several tasks.</source>
+          <target state="translated">Das folgende Beispiel zeigt, wie Sie mehrere Aufgaben gestartet pooling von Threads verwenden können.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>One advantage of thread pooling is that you can pass arguments in a state object to the task procedure.</source>
+          <target state="translated">Ein Vorteil der pooling von Threads ist, dass Argumente ein Zustandsobjekt an den Task-Prozedur übergeben werden kann.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>If the procedure you are calling requires more than one argument, you can cast a structure or an instance of a class into an <ph id="ph1">`Object`</ph> data type.</source>
+          <target state="translated">Wenn die aufgerufene Prozedur mehr als ein Argument erfordert, können Sie eine Struktur oder eine Instanz einer Klasse in Umwandeln einer <ph id="ph1">`Object`</ph> -Datentyp.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Thread Pool Parameters and Return Values</source>
+          <target state="translated">Thread-Pool-Parameter und Rückgabewerte</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Returning values from a thread-pool thread is not straightforward.</source>
+          <target state="translated">Rückgabe von Werten aus einem Threadpool-Thread ist nicht einfach.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The standard way of returning values from a function call is not allowed because <ph id="ph1">`Sub`</ph> procedures are the only type of procedure that can be queued to a thread pool.</source>
+          <target state="translated">Das Standardverfahren für die Rückgabe von Werten aus einem Funktionsaufruf ist nicht zulässig, da <ph id="ph1">`Sub`</ph> Verfahren sind die einzige Art von Prozedur, die einen Threadpool in die Warteschlange gestellt werden kann.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>One way you can provide parameters and return values is by wrapping the parameters, return values, and methods in a wrapper class as described in <bpt id="p1">[</bpt>Parameters and Return Values for Multithreaded Procedures (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)</ept>.</source>
+          <target state="translated">Eine Möglichkeit, Sie können Parameter angeben und Werte wird durch die Parameter, Rückgabewerte und Methoden in einem Wrapper gemäß <bpt id="p1">[</bpt>Parameter und Rückgabewerte für Multithreadprozeduren (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>An easer way to provide parameters and return values is by using the optional <ph id="ph1">`ByVal`</ph> state object variable of the &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt; method.</source>
+          <target state="translated">Ein einfacheres Verfahren geben Sie Parameter und Rückgabewerte wird mithilfe des optionalen <ph id="ph1">`ByVal`</ph> Objektvariable des Status der &lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;-Methode.&lt;/xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>If you use this variable to pass a reference to an instance of a class, the members of the instance can be modified by the thread-pool thread and used as return values.</source>
+          <target state="translated">Wenn Sie diese Variable verwenden, um einen Verweis auf eine Instanz einer Klasse zu übergeben, können die Member der Instanz durch den Threadpool-Thread geändert und als Rückgabewerte verwendet werden.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>At first it may not be obvious that you can modify an object referred to by a variable that is passed by value.</source>
+          <target state="translated">Zunächst kann es nicht offensichtlich, ändern Sie ein Objekt verweist auf eine Variable, die als Wert übergeben wird.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>You can do this because only the object reference is passed by value.</source>
+          <target state="translated">Dies ist möglich, da nur der Objektverweis als Wert übergeben wird.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>When you make changes to members of the object referred to by the object reference, the changes apply to the actual class instance.</source>
+          <target state="translated">Wenn Sie Member des Objekts gemäß den Objektverweis ändern, werden die Änderungen auf die tatsächliche Instanz anwenden.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Structures cannot be used to return values inside state objects.</source>
+          <target state="translated">Strukturen können zum Zurückgeben von Werten in Statusobjekten verwendet werden.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Because structures are value types, changes that the asynchronous process makes do not change the members of the original structure.</source>
+          <target state="translated">Da Strukturen Werttypen sind, ändern Änderungen, die der asynchrone Prozess vornimmt nicht die Elemente der Originalstruktur.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Use structures to provide parameters when return values are not needed.</source>
+          <target state="translated">Verwenden Sie Strukturen, um Parameter bereitzustellen, wenn keine Rückgabewerte benötigt werden.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;&lt;/xref:System.Threading.ThreadPool.QueueUserWorkItem%2A&gt;</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading&gt;</source>
+          <target state="translated">&lt;xref:System.Threading&gt;&lt;/xref:System.Threading&gt;</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Threading.ThreadPool&gt;</source>
+          <target state="translated">&lt;xref:System.Threading.ThreadPool&gt;&lt;/xref:System.Threading.ThreadPool&gt;</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Use a Thread Pool (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Gewusst wie: Verwenden eines Threadpools (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Threading (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Multithreaded Applications (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Multithreadanwendungen (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/multithreaded-applications.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Thread Synchronization (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Threadsynchronisierung (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/threading/thread-synchronization.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

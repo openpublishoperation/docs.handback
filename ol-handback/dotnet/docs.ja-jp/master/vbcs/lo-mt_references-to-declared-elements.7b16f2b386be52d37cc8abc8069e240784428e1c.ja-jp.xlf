@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">48a04f81075accc073b0d1f5b7a61006bef807ae</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\declared-elements\references-to-declared-elements.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4666a9598aec7a4d00b7c9b377d274058dc0c720</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d46b404eb20ed5b925a224bf6078ab20df1f4a4a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>References to Declared Elements (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">宣言された要素 (Visual Basic) への参照 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>References to Declared Elements (Visual Basic)</source>
+          <target state="translated">宣言された要素の参照 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When your code refers to a declared element, the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler matches the name in your reference to the appropriate declaration of that name.</source>
+          <target state="translated">コードが宣言された要素を参照している場合、<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>コンパイラでその名前の適切な宣言への参照を名前に一致します。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>If more than one element is declared with the same name, you can control which of those elements is to be referenced by <bpt id="p1">*</bpt>qualifying<ept id="p1">*</ept> its name.</source>
+          <target state="translated">参照にはそれらの要素を制御するには複数の要素が同じ名前で宣言されている場合<bpt id="p1">*</bpt>正規<ept id="p1">*</ept>の名前。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The compiler attempts to match a name reference to a name declaration with the <bpt id="p1">*</bpt>narrowest scope<ept id="p1">*</ept>.</source>
+          <target state="translated">コンパイラが名の宣言でへの参照を名前に一致しようとした場合、<bpt id="p1">*</bpt>だけ狭いスコープ<ept id="p1">*</ept>します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This means it starts with the code making the reference and works outward through successive levels of containing elements.</source>
+          <target state="translated">これは、参照するコードから開始して、下位レベルの要素を含む外側はことを意味します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The following example shows references to two variables with the same name.</source>
+          <target state="translated">次の例では、同じ名前の&amp;2; つの変数への参照を示します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The example declares two variables, each named <ph id="ph1">`totalCount`</ph>, at different levels of scope in module <ph id="ph2">`container`</ph>.</source>
+          <target state="translated">例では、2 つの変数を宣言して、各名前付き<ph id="ph1">`totalCount`</ph>、モジュール内でスコープのさまざまなレベルで<ph id="ph2">`container`</ph>します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When the procedure <ph id="ph1">`showCount`</ph> displays <ph id="ph2">`totalCount`</ph> without qualification, the <ph id="ph3">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler resolves the reference to the declaration with the narrowest scope, namely the local declaration inside <ph id="ph4">`showCount`</ph>.</source>
+          <target state="translated">ときにプロシージャ<ph id="ph1">`showCount`</ph>表示<ph id="ph2">`totalCount`</ph>修飾なし、<ph id="ph3">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>コンパイラが最も狭いスコープ、つまり内でローカル宣言を使用して宣言への参照を解決<ph id="ph4">`showCount`</ph>します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>When it qualifies <ph id="ph1">`totalCount`</ph> with the containing module <ph id="ph2">`container`</ph>, the compiler resolves the reference to the declaration with the broader scope.</source>
+          <target state="translated">適用されるときに<ph id="ph1">`totalCount`</ph>を含むモジュールを使用して<ph id="ph2">`container`</ph>コンパイラがより広いスコープを使用して宣言への参照を解決します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Qualifying an Element Name</source>
+          <target state="translated">要素名の修飾</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>If you want to override this search process and specify a name declared in a broader scope, you must <bpt id="p1">*</bpt>qualify<ept id="p1">*</ept> the name with the containing element of the broader scope.</source>
+          <target state="translated">この検索処理をオーバーライドし、名前で宣言されているより広いスコープする必要がありますを指定する場合<bpt id="p1">*</bpt>修飾<ept id="p1">*</ept>より広いスコープのコンテナー要素の名前。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>In some cases, you might also have to qualify the containing element.</source>
+          <target state="translated">場合によっては、コンテナーの要素を修飾する必要がありますも。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Qualifying a name means preceding it in your source statement with information that identifies where the target element is defined.</source>
+          <target state="translated">ターゲット要素を定義する場所を識別する情報、ソース ステートメント内の前の名前を修飾します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This information is called a <bpt id="p1">*</bpt>qualification string<ept id="p1">*</ept>.</source>
+          <target state="translated">この情報と呼ばれる、<bpt id="p1">*</bpt>修飾文字列<ept id="p1">*</ept>します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>It can include one or more namespaces and a module, class, or structure.</source>
+          <target state="translated">1 つを含めることまたは複数の名前空間とモジュールの場合、クラスまたは構造体します。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The qualification string should unambiguously specify the module, class, or structure containing the target element.</source>
+          <target state="translated">修飾文字列は、モジュール、クラス、または対象の要素を含む構造体に明確を指定する必要があります。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The container might in turn be located in another containing element, usually a namespace.</source>
+          <target state="translated">コンテナーは、他のコンテナー要素、通常は名前空間に存在するさらに可能性があります。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>You might need to include several containing elements in the qualification string.</source>
+          <target state="translated">修飾文字列に含まれるいくつかの要素を含める必要がある可能性があります。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To access a declared element by qualifying its name</source>
+          <target state="translated">その名前を修飾することによって宣言された要素にアクセスするには</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Determine the location in which the element has been defined.</source>
+          <target state="translated">要素が定義されている場所を決定します。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This might include a namespace, or even a hierarchy of namespaces.</source>
+          <target state="translated">これは、名前空間または名前空間の階層も含まれます。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Within the lowest-level namespace, the element must be contained in a module, class, or structure.</source>
+          <target state="translated">最下位レベルの名前空間内では、モジュール、クラスまたは構造体の要素を含める必要があります。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Determine a qualification path based on the target element's location.</source>
+          <target state="translated">ターゲット要素の場所に基づいて修飾パスを決定します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Start with the highest-level namespace, proceed to the lowest-level namespace, and end with the module, class, or structure containing the target element.</source>
+          <target state="translated">最上位レベルの名前空間を持つ起動、最下位レベルの名前空間に進み、モジュール、クラス、または対象の要素を含む構造体で終了します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Each element in the path must contain the element that follows it.</source>
+          <target state="translated">パス内の各要素には、それに続く要素を含める必要があります。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`outerSpace`</ph> → <ph id="ph2">`innerSpace`</ph> → <ph id="ph3">`holdsTotals`</ph> → <ph id="ph4">`totals`</ph></source>
+          <target state="translated"><ph id="ph1">`outerSpace`</ph> → <ph id="ph2">`innerSpace`</ph> → <ph id="ph3">`holdsTotals`</ph> → <ph id="ph4">`totals`</ph></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Prepare the qualification string for the target element.</source>
+          <target state="translated">ターゲット要素の修飾文字列を準備します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Place a period (<ph id="ph1">`.`</ph>) after every element in the path.</source>
+          <target state="translated">ピリオドを挿入 (<ph id="ph1">`.`</ph>) のパスのすべての要素の後です。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Your application must have access to every element in your qualification string.</source>
+          <target state="translated">アプリケーションによっては、修飾文字列内のすべての要素へのアクセスが必要です。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Write the expression or assignment statement referring to the target element in the normal way.</source>
+          <target state="translated">式または通常の方法で対象となる要素を参照する代入ステートメントを記述します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Precede the target element name with the qualification string.</source>
+          <target state="translated">修飾文字列とターゲットの要素名の前に記述します。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The name should immediately follow the period (<ph id="ph1">`.`</ph>) that follows the module, class, or structure that contains the element.</source>
+          <target state="translated">名前は、ピリオドの直後 (<ph id="ph1">`.`</ph>) モジュール、クラス、または、要素を格納する構造体を参照します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The compiler uses the qualification string to find a clear, unambiguous declaration to which it can match the target element reference.</source>
+          <target state="translated">コンパイラでは、修飾文字列を使用して、ターゲット要素の参照と一致させて、明確に明確な宣言を見つけます。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>You might also have to qualify a name reference if your application has access to more than one programming element that has the same name.</source>
+          <target state="translated">アプリケーションに同じ名前を持つ&amp;2; つ以上のプログラミング要素へのアクセスがある場合は、名前の参照を修飾することもあります。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>For example, the &lt;xref:System.Windows.Forms&gt; and &lt;xref:System.Web.UI.WebControls&gt; namespaces both contain a <ph id="ph1">`Label`</ph> class (&lt;xref:System.Windows.Forms.Label?displayProperty=fullName&gt; and &lt;xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt;).</source>
+          <target state="translated">たとえば、&lt;xref:System.Windows.Forms&gt;と&lt;xref:System.Web.UI.WebControls&gt;両方名前空間を含む、<ph id="ph1">`Label`</ph>クラス (&lt;xref:System.Windows.Forms.Label?displayProperty=fullName&gt;と&lt;xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt;).&lt;/xref:System.Web.UI.WebControls.Label?displayProperty=fullName&gt; &lt;/xref:System.Windows.Forms.Label?displayProperty=fullName&gt; &lt;/xref:System.Web.UI.WebControls&gt; &lt;/xref:System.Windows.Forms&gt;</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>If your application uses both, or if it defines its own <ph id="ph1">`Label`</ph> class, you must distinguish the different <ph id="ph2">`Label`</ph> objects.</source>
+          <target state="translated">アプリケーションは、両方を使用している場合、またはそれ自体を定義する<ph id="ph1">`Label`</ph>クラス、さまざまなを区別する必要があります<ph id="ph2">`Label`</ph>オブジェクトです。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Include the namespace or import alias in the variable declaration.</source>
+          <target state="translated">変数の宣言には、名前空間またはインポート エイリアスを含めます。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following example uses the import alias.</source>
+          <target state="translated">次の例では、インポート エイリアスを使用します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Members of Other Containing Elements</source>
+          <target state="translated">別のコンテナー要素のメンバー</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>When you use a nonshared member of another class or structure, you must first qualify the member name with a variable or expression that points to an instance of the class or structure.</source>
+          <target state="translated">別のクラスまたは構造体の非共有メンバーを使用する場合は、最初に変数またはクラスまたは構造体のインスタンスを指す式でメンバー名を修飾する必要があります。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>In the following example, <ph id="ph1">`demoClass`</ph> is an instance of a class named <ph id="ph2">`class1`</ph>.</source>
+          <target state="translated">次の例で<ph id="ph1">`demoClass`</ph>という名前のクラスのインスタンスは、<ph id="ph2">`class1`</ph>です。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>You cannot use the class name itself to qualify a member that is not <bpt id="p1">[</bpt>Shared<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept>.</source>
+          <target state="translated">クラス名自体を使用していないメンバーを修飾することはできません<bpt id="p1">[</bpt>Shared<ept id="p1">](../../../../visual-basic/language-reference/modifiers/shared.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You must first create an instance in an object variable (in this case <ph id="ph1">`demoClass`</ph>) and then reference it by the variable name.</source>
+          <target state="translated">まず、オブジェクト変数のインスタンスを作成する必要があります (ここで<ph id="ph1">`demoClass`</ph>) それを変数名で参照します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>If a class or structure has a <ph id="ph1">`Shared`</ph> member, you can qualify that member either with the class or structure name or with a variable or expression that points to an instance.</source>
+          <target state="translated">クラスまたは構造体がある場合、<ph id="ph1">`Shared`</ph>メンバー、またはいずれかでクラスまたは構造体の名前の変数またはインスタンスを指す式には、そのメンバーを修飾することができます。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A module does not have any separate instances, and all its members are <ph id="ph1">`Shared`</ph> by default.</source>
+          <target state="translated">モジュールには、個別のインスタンスはありませんし、そのすべてのメンバーが<ph id="ph1">`Shared`</ph>既定です。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Therefore, you qualify a module member with the module name.</source>
+          <target state="translated">そのため、モジュール名を持つモジュール メンバーを修飾します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following example shows qualified references to module member procedures.</source>
+          <target state="translated">次の例では、モジュール メンバー プロシージャへの修飾参照を示します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The example declares two <ph id="ph1">`Sub`</ph> procedures, both named <ph id="ph2">`perform`</ph>, in different modules in a project.</source>
+          <target state="translated">2 つの例<ph id="ph1">`Sub`</ph>という名前の手順、<ph id="ph2">`perform`</ph>プロジェクト内の異なるモジュールでします。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Each one can be specified without qualification within its own module but must be qualified if referenced from anywhere else.</source>
+          <target state="translated">1 つずつでは、独自のモジュール内の修飾なしで指定できますが、それ以外の任意の場所から参照されている場合に限定する必要があります。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Because the final reference in <ph id="ph1">`module3`</ph> does not qualify <ph id="ph2">`perform`</ph>, the compiler cannot resolve that reference.</source>
+          <target state="translated">最後を参照するため<ph id="ph1">`module3`</ph>修飾していない<ph id="ph2">`perform`</ph>コンパイラは、その参照を解決できません。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>References to Projects</source>
+          <target state="translated">プロジェクトへの参照</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>To use <bpt id="p1">[</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept> elements defined in another project, you must first set a <bpt id="p2">*</bpt>reference<ept id="p2">*</ept> to that project's assembly or type library.</source>
+          <target state="translated">使用する<bpt id="p1">[</bpt>パブリック<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept>、別のプロジェクトで定義されている要素は、まず設定、<bpt id="p2">*</bpt>参照<ept id="p2">*</ept>そのプロジェクトのアセンブリやタイプ ライブラリにします。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>To set a reference, click <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Project<ept id="p2">**</ept> menu, or use the <bpt id="p3">[</bpt>/reference (Visual Basic)<ept id="p3">](../../../../visual-basic/reference/command-line-compiler/reference.md)</ept> command-line compiler option.</source>
+          <target state="translated">参照を設定する をクリックして<bpt id="p1">**</bpt>参照の追加<ept id="p1">**</ept>上、<bpt id="p2">**</bpt>プロジェクト<ept id="p2">**</ept> メニュー、 <bpt id="p3">[</bpt>/reference (Visual Basic)<ept id="p3">](../../../../visual-basic/reference/command-line-compiler/reference.md)</ept>コマンド ライン コンパイラ オプション。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>For example, you can use the XML object model of the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</source>
+          <target state="translated">XML オブジェクト モデルを使用するなど、<ph id="ph1">[!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>です。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>If you set a reference to the &lt;xref:System.Xml&gt; namespace, you can declare and use any of its classes, such as &lt;xref:System.Xml.XmlDocument&gt;.</source>
+          <target state="translated">参照を設定した場合、&lt;xref:System.Xml&gt;名前空間を宣言して&lt;xref:System.Xml.XmlDocument&gt;.&lt;/xref:System.Xml.XmlDocument&gt;など、そのクラスのいずれかを使用する&lt;/xref:System.Xml&gt;</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>The following example uses &lt;xref:System.Xml.XmlDocument&gt;.</source>
+          <target state="translated">次のコードの例では、 &lt;xref:System.Xml.XmlDocument&gt;。&lt;/xref:System.Xml.XmlDocument&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Importing Containing Elements</source>
+          <target state="translated">コンテナー要素のインポート</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>You can use the <bpt id="p1">[</bpt>Imports Statement (.NET Namespace and Type)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> to <bpt id="p2">*</bpt>import<ept id="p2">*</ept> the namespaces that contain the modules or classes that you want to use.</source>
+          <target state="translated">使用することができます、 <bpt id="p1">[</bpt>Imports ステートメント (.NET Namespace よぶ型)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept>に<bpt id="p2">*</bpt>インポート<ept id="p2">*</ept>モジュールまたはを使用するクラスを含む名前空間。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>This enables you to refer to the elements defined in an imported namespace without fully qualifying their names.</source>
+          <target state="translated">これにより、その名前を完全に修飾せずにインポートされた名前空間で定義された要素を参照してください。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The following example rewrites the previous example to import the &lt;xref:System.Xml&gt; namespace.</source>
+          <target state="translated">次の例は、インポートする前の例を書き換える、&lt;xref:System.Xml&gt;名前空間&lt;/xref:System.Xml&gt;。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In addition, the <ph id="ph1">`Imports`</ph> statement can define an <bpt id="p1">*</bpt>import alias<ept id="p1">*</ept> for each imported namespace.</source>
+          <target state="translated">さらに、<ph id="ph1">`Imports`</ph>ステートメントで定義できる、<bpt id="p1">*</bpt>インポート エイリアス<ept id="p1">*</ept>インポートされた名前空間ごとにします。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>This can make the source code shorter and easier to read.</source>
+          <target state="translated">これにより、ソース コード短く、読みやすくします。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>The following example rewrites the previous example to use <ph id="ph1">`xD`</ph> as an alias for the &lt;xref:System.Xml&gt; namespace.</source>
+          <target state="translated">次の例を使用する前の例を書き換える<ph id="ph1">`xD`</ph>のエイリアスとして、&lt;xref:System.Xml&gt;名前空間&lt;/xref:System.Xml&gt;。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Imports`</ph> statement does not make elements from other projects available to your application.</source>
+          <target state="translated"><ph id="ph1">`Imports`</ph>ステートメントは行いません要素が他のプロジェクトからアプリケーションに使用します。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>That is, it does not take the place of setting a reference.</source>
+          <target state="translated">つまり、参照を設定場所は考慮しません。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Importing a namespace just removes the requirement to qualify the names defined in that namespace.</source>
+          <target state="translated">だけに、名前空間をインポートするには、その名前空間で定義されている名前を修飾するための要件を削除します。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>You can also use the <ph id="ph1">`Imports`</ph> statement to import modules, classes, structures, and enumerations.</source>
+          <target state="translated">使用することも、<ph id="ph1">`Imports`</ph>モジュール、クラス、構造体、および列挙型をインポートするステートメントです。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>You can then use the members of such imported elements without qualification.</source>
+          <target state="translated">このようなインポートされた要素の修飾なしのメンバーを使用して送信することができます。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>However, you must always qualify nonshared members of classes and structures with a variable or expression that evaluates to an instance of the class or structure.</source>
+          <target state="translated">ただし、クラスと構造体は、変数またはクラスまたは構造体のインスタンスに評価される式の非共有メンバーを常に修飾する必要があります。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Naming Guidelines</source>
+          <target state="translated">名前付けのガイドライン</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you define two or more programming elements that have the same name, a <bpt id="p1">*</bpt>name ambiguity<ept id="p1">*</ept> can result when the compiler attempts to resolve a reference to that name.</source>
+          <target state="translated">同じ名前を持つ&amp;2; つ以上のプログラミング要素を定義するとき、<bpt id="p1">*</bpt>あいまいさという名前を<ept id="p1">*</ept>コンパイラがその名前への参照を解決しようとすると発生することができます。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>If more than one definition is in scope, or if no definition is in scope, the reference is irresolvable.</source>
+          <target state="translated">1 つの定義がスコープ内にある数より多い場合、または、参照が解決されない定義がスコープでない場合は、です。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>For an example, see "Qualified Reference Example" on this Help page.</source>
+          <target state="translated">たとえば、このページで「修飾参照の使用例」を参照してください。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>You can avoid name ambiguity by giving all your elements unique names.</source>
+          <target state="translated">すべての要素に一意の名前を提供することにより、名前のあいまいさを回避できます。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Then you can make reference to any element without having to qualify its name with a namespace, module, or class.</source>
+          <target state="translated">その名の名前空間、モジュール、またはクラスを修飾しなくても任意の要素への参照をすることができます。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You also reduce the chances of accidentally referring to the wrong element.</source>
+          <target state="translated">正しくない要素を誤って参照する可能性を低くします。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Shadowing</source>
+          <target state="translated">シャドウ</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>When two programming elements share the same name, one of them can hide, or <bpt id="p1">*</bpt>shadow<ept id="p1">*</ept>, the other one.</source>
+          <target state="translated">2 つのプログラミング要素は、同じ名前を共有する場合の&amp;1; つ非表示にできます、または<bpt id="p1">*</bpt>シャドウ<ept id="p1">*</ept>、もう&amp;1; つです。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>A shadowed element is not available for reference; instead, when your code uses the shadowed element name, the <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> compiler resolves it to the shadowing element.</source>
+          <target state="translated">影付きの要素は参照できません。代わりに、コードが影付きの要素名を使用する場合、<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>コンパイラでは、それを解決する要素。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>For a more detailed explanation with examples, see <bpt id="p1">[</bpt>Shadowing in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept>.</source>
+          <target state="translated">例と詳細については、次を参照してください。 <bpt id="p1">[</bpt>Visual Basic におけるシャドウ<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Declared Element Names<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>宣言された要素名<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Declared Element Characteristics<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>宣言された要素の特性<ept id="p1">](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>NIB How to: Modify Project Properties and Configuration Settings<ept id="p1">](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>NIB 方法: プロジェクトのプロパティと構成設定の変更<ept id="p1">](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Variables<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>変数<ept id="p1">](../../../../visual-basic/programming-guide/language-features/variables/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Imports Statement (.NET Namespace and Type)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Imports ステートメント (.NET 名前空間および型)<ept id="p1">](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>New Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>New 演算子<ept id="p1">](../../../../visual-basic/language-reference/operators/new-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Public<ept id="p1">](../../../../visual-basic/language-reference/modifiers/public.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">643fff648336c664961ad7956308acbaea262f61</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\walkthrough-accessing-the-web-by-using-async-and-await.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">829f0cb2cd2a5a72fc93d6bd7a25acd0ca650e03</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4479d7063bc080496d0bc1f06d130050323e93d2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Accessing the Web with Async and Await (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Accesso al Web con Async e Await (Visual Basic) | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)</source>
+          <target state="translated">Procedura dettagliata: accesso al Web con Async e Await (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can write asynchronous programs more easily and intuitively by using features that were introduced in <ph id="ph1">[!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]</ph>.</source>
+          <target state="translated">È possibile scrivere programmi asincroni più semplice e intuitivo utilizzando le funzionalità introdotte in <ph id="ph1">[!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]</ph>.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.</source>
+          <target state="translated">È possibile scrivere codice asincrono simile al codice sincrono e consentire al compilatore di gestire le complesse funzioni di callback e continuazione tipiche del codice asincrono.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For more information about the Async feature, see <bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sulla funzionalità asincrone, vedere <bpt id="p1">[</bpt>la programmazione asincrona con Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites.</source>
+          <target state="translated">Questa procedura dettagliata inizia con l'esecuzione di un'applicazione Windows Presentation Foundation (WPF) sincrona che somma il numero di byte in un elenco di siti Web.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The walkthrough then converts the application to an asynchronous solution by using the new features.</source>
+          <target state="translated">La procedura dettagliata converte quindi l'applicazione in una soluzione asincrona usando le nuove funzionalità.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you don't want to build the applications yourself, you can download "Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)" from <bpt id="p1">[</bpt>Developer Code Samples<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept>.</source>
+          <target state="translated">Se non si desidera compilare le applicazioni autonomamente, è possibile scaricare "esempio asincrono: accesso la procedura dettagliata Web (c# e Visual Basic)" da <bpt id="p1">[</bpt>Developer Code Samples<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept>.</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In this walkthrough, you complete the following tasks:</source>
+          <target state="translated">Questa procedura dettagliata prevede l'esecuzione delle attività seguenti:</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To create a WPF application<ept id="p1">](#CreateWPFApp)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per creare un'applicazione WPF<ept id="p1">](#CreateWPFApp)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To design a simple WPF MainWindow<ept id="p1">](#MainWindow)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per progettare una finestra principale semplice WPF<ept id="p1">](#MainWindow)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To add a reference<ept id="p1">](#AddRef)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per aggiungere un riferimento<ept id="p1">](#AddRef)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To add necessary Imports statements<ept id="p1">](#ImportsState)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per aggiungere istruzioni Imports necessarie<ept id="p1">](#ImportsState)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To create a synchronous application<ept id="p1">](#synchronous)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per creare un'applicazione sincrona<ept id="p1">](#synchronous)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To test the synchronous solution<ept id="p1">](#testSynch)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per testare la soluzione sincrona<ept id="p1">](#testSynch)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert GetURLContents to an asynchronous method<ept id="p1">](#GetURLContents)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per convertire un metodo asincrono GetURLContents<ept id="p1">](#GetURLContents)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert SumPageSizes to an asynchronous method<ept id="p1">](#SumPageSizes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per convertire un metodo asincrono SumPageSizes<ept id="p1">](#SumPageSizes)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert startButton_Click to an asynchronous method<ept id="p1">](#startButton)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per convertire un metodo asincrono startButton_Click<ept id="p1">](#startButton)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To test the asynchronous solution<ept id="p1">](#testAsynch)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per testare la soluzione asincrona<ept id="p1">](#testAsynch)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To replace method GetURLContentsAsync with a .NET Framework method<ept id="p1">](#GetURLContentsAsync)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Per sostituire il metodo GetURLContentsAsync con un metodo .NET Framework<ept id="p1">](#GetURLContentsAsync)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Example<ept id="p1">](#BKMK_CompleteCodeExamples)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Esempio<ept id="p1">](#BKMK_CompleteCodeExamples)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">Prerequisiti</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Visual Studio 2012 or later must be installed on your computer.</source>
+          <target state="translated">Visual Studio 2012 o versione successiva deve essere installato nel computer.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Microsoft website<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=235233)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere il <bpt id="p1">[</bpt>sito Web Microsoft<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=235233)</ept>.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="CreateWPFApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To create a WPF application</source>
+          <target state="translated"><bpt id="p1">&lt;a name="CreateWPFApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per creare un'applicazione WPF</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Avviare Visual Studio.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">Nella barra dei menu scegliere <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Nuovo<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated">Verrà visualizzata la finestra di dialogo <bpt id="p1">**</bpt>Nuovo progetto<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed Templates<ept id="p1">**</ept> pane, choose Visual Basic, and then choose <bpt id="p2">**</bpt>WPF Application<ept id="p2">**</ept> from the list of project types.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>modelli installati<ept id="p1">**</ept> riquadro, scegliere Visual Basic, quindi <bpt id="p2">**</bpt>applicazione WPF<ept id="p2">**</ept> dall'elenco dei tipi di progetto.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> text box, enter <ph id="ph1">`AsyncExampleWPF`</ph>, and then choose the <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> button.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> testo immettere <ph id="ph1">`AsyncExampleWPF`</ph>, quindi scegliere il <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">Il nuovo progetto verrà visualizzato <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="MainWindow"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To design a simple WPF MainWindow</source>
+          <target state="translated"><bpt id="p1">&lt;a name="MainWindow"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per progettare una finestra principale semplice WPF</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Nell'Editor di codice di Visual Studio scegliere la scheda <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Toolbox<ept id="p1">**</ept> window isn’t visible, open the <bpt id="p2">**</bpt>View<ept id="p2">**</ept> menu, and then choose <bpt id="p3">**</bpt>Toolbox<ept id="p3">**</ept>.</source>
+          <target state="translated">Se il <bpt id="p1">**</bpt>della casella degli strumenti<ept id="p1">**</ept> finestra non è visibile, aprire il <bpt id="p2">**</bpt>visualizzazione<ept id="p2">**</ept> dal menu e quindi scegliere <bpt id="p3">**</bpt>della casella degli strumenti<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add a <bpt id="p1">**</bpt>Button<ept id="p1">**</ept> control and a <bpt id="p2">**</bpt>TextBox<ept id="p2">**</ept> control to the <bpt id="p3">**</bpt>MainWindow<ept id="p3">**</ept> window.</source>
+          <target state="translated">Aggiungere un <bpt id="p1">**</bpt>pulsante<ept id="p1">**</ept> controllo e un <bpt id="p2">**</bpt>TextBox<ept id="p2">**</ept> controllo il <bpt id="p3">**</bpt>MainWindow<ept id="p3">**</ept> finestra.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Highlight the <bpt id="p1">**</bpt>TextBox<ept id="p1">**</ept> control and, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> window, set the following values:</source>
+          <target state="translated">Evidenziare il <bpt id="p1">**</bpt>TextBox<ept id="p1">**</ept> controllo e, nel <bpt id="p2">**</bpt>proprietà<ept id="p2">**</ept> finestra, impostare i valori seguenti:</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property to <ph id="ph1">`resultsTextBox`</ph>.</source>
+          <target state="translated">Impostare il <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> proprietà <ph id="ph1">`resultsTextBox`</ph>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Height<ept id="p1">**</ept> property to 250.</source>
+          <target state="translated">Impostare il <bpt id="p1">**</bpt>altezza<ept id="p1">**</ept> proprietà a 250.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Width<ept id="p1">**</ept> property to 500.</source>
+          <target state="translated">Impostare il <bpt id="p1">**</bpt>larghezza<ept id="p1">**</ept> proprietà fino a 500.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Text<ept id="p1">**</ept> tab, specify a monospaced font, such as Lucida Console or Global Monospace.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>testo<ept id="p1">**</ept> , specificare un carattere a spaziatura fissa, ad esempio Lucida Console o a spaziatura fissa globale.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Highlight the <bpt id="p1">**</bpt>Button<ept id="p1">**</ept> control and, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> window, set the following values:</source>
+          <target state="translated">Evidenziare il <bpt id="p1">**</bpt>pulsante<ept id="p1">**</ept> controllo e, nel <bpt id="p2">**</bpt>proprietà<ept id="p2">**</ept> finestra, impostare i valori seguenti:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property to <ph id="ph1">`startButton`</ph>.</source>
+          <target state="translated">Impostare il <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> proprietà <ph id="ph1">`startButton`</ph>.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Content<ept id="p1">**</ept> property from <bpt id="p2">**</bpt>Button<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Start<ept id="p3">**</ept>.</source>
+          <target state="translated">Modificare il valore di <bpt id="p1">**</bpt>contenuto<ept id="p1">**</ept> proprietà <bpt id="p2">**</bpt>pulsante<ept id="p2">**</ept> a <bpt id="p3">**</bpt>avviare<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Position the text box and the button so that both appear in the <bpt id="p1">**</bpt>MainWindow<ept id="p1">**</ept> window.</source>
+          <target state="translated">Posizionare la casella di testo e il pulsante in modo che entrambi visualizzati nella finestra di <bpt id="p1">**</bpt>MainWindow<ept id="p1">**</ept> finestra.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For more information about the WPF XAML Designer, see <bpt id="p1">[</bpt>Creating a UI by using XAML Designer<ept id="p1">](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni sulla finestra di progettazione XAML WPF, vedere <bpt id="p1">[</bpt>la creazione di un'interfaccia utente tramite XAML Designer<ept id="p1">](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)</ept>.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="AddRef"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To add a reference</source>
+          <target state="translated"><bpt id="p1">&lt;a name="AddRef"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per aggiungere un riferimento</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, highlight your project's name.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, evidenziare il nome del progetto.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>Project<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Add Reference<ept id="p2">**</ept>.</source>
+          <target state="translated">Nella barra dei menu, scegliere <bpt id="p1">**</bpt>progetto<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Aggiungi riferimento<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Reference Manager<ept id="p1">**</ept> dialog box appears.</source>
+          <target state="translated">Il <bpt id="p1">**</bpt>gestione riferimenti<ept id="p1">**</ept> viene visualizzata la finestra di dialogo.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>At the top of the dialog box, verify that your project is targeting the .NET Framework 4.5 or higher.</source>
+          <target state="translated">Nella parte superiore della finestra di dialogo, verificare che il progetto è destinato a .NET Framework 4.5 o versioni successive.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Assemblies<ept id="p1">**</ept> area, choose <bpt id="p2">**</bpt>Framework<ept id="p2">**</ept> if it isn’t already chosen.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>assembly<ept id="p1">**</ept> area, scegliere <bpt id="p2">**</bpt>Framework<ept id="p2">**</ept> se non è già selezionato.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the list of names, select the <bpt id="p1">**</bpt>System.Net.Http<ept id="p1">**</ept> check box.</source>
+          <target state="translated">Nell'elenco di nomi, selezionare il <bpt id="p1">**</bpt>System.Net.Http<ept id="p1">**</ept> casella di controllo.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button to close the dialog box.</source>
+          <target state="translated">Scegliere il <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> per chiudere la finestra di dialogo.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="ImportsState"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To add necessary Imports statements</source>
+          <target state="translated"><bpt id="p1">&lt;a name="ImportsState"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per aggiungere istruzioni Imports necessarie</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, aprire il menu di scelta rapida per MainWindow.xaml.vb e quindi scegliere <bpt id="p2">**</bpt>Visualizza codice<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Add the following <ph id="ph1">`Imports`</ph> statements at the top of the code file if they’re not already present.</source>
+          <target state="translated">Aggiungere il codice seguente <ph id="ph1">`Imports`</ph> istruzioni all'inizio del file di codice, se non sono già presenti.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="synchronous"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To create a synchronous application</source>
+          <target state="translated"><bpt id="p1">&lt;a name="synchronous"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per creare un'applicazione sincrona</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In the design window, MainWindow.xaml, double-click the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button to create the <ph id="ph1">`startButton_Click`</ph> event handler in MainWindow.xaml.vb.</source>
+          <target state="translated">Nella finestra di progettazione, MainWindow. XAML, fare doppio clic su di <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> per creare il <ph id="ph1">`startButton_Click`</ph> gestore dell'evento nel file MainWindow.xaml.vb.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In MainWindow.xaml.vb, copy the following code into the body of <ph id="ph1">`startButton_Click`</ph>:</source>
+          <target state="translated">In MainWindow.xaml.vb, copiare il codice seguente nel corpo di <ph id="ph1">`startButton_Click`</ph>:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The code calls the method that drives the application, <ph id="ph1">`SumPageSizes`</ph>, and displays a message when control returns to <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">Il codice chiama il metodo che controlla l'applicazione <ph id="ph1">`SumPageSizes`</ph> e visualizza un messaggio quando il controllo torna a <ph id="ph2">`startButton_Click`</ph>.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The code for the synchronous solution contains the following four methods:</source>
+          <target state="translated">Il codice per la soluzione sincrona contiene i quattro metodi seguenti:</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`SumPageSizes`</ph>, which gets a list of webpage URLs from <ph id="ph2">`SetUpURLList`</ph> and then calls <ph id="ph3">`GetURLContents`</ph> and <ph id="ph4">`DisplayResults`</ph> to process each URL.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizes`</ph>, che ottiene un elenco di URL delle pagine Web da <ph id="ph2">`SetUpURLList`</ph> e quindi chiama <ph id="ph3">`GetURLContents`</ph> e <ph id="ph4">`DisplayResults`</ph> per elaborare ogni URL.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`SetUpURLList`</ph>, which makes and returns a list of web addresses.</source>
+          <target state="translated"><ph id="ph1">`SetUpURLList`</ph>, che crea e restituisce un elenco di indirizzi web.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`GetURLContents`</ph>, which downloads the contents of each website and returns the contents as a byte array.</source>
+          <target state="translated"><ph id="ph1">`GetURLContents`</ph>, che scarica il contenuto di ogni sito Web e restituisce il contenuto come matrice di byte.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DisplayResults`</ph>, which displays  the number of bytes in the byte array for each URL.</source>
+          <target state="translated"><ph id="ph1">`DisplayResults`</ph>, che visualizza il numero di byte nella matrice di byte per ogni URL.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Copy the following four methods, and then paste them under the <ph id="ph1">`startButton_Click`</ph> event handler in MainWindow.xaml.vb:</source>
+          <target state="translated">Copiare i quattro metodi seguenti e incollarli nel <ph id="ph1">`startButton_Click`</ph> gestore dell'evento nel file MainWindow.xaml.vb:</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="testSynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To test the synchronous solution</source>
+          <target state="translated"><bpt id="p1">&lt;a name="testSynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per testare la soluzione sincrona</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Output that resembles the following list should appear.</source>
+          <target state="translated">Verrà visualizzato un output simile all'elenco seguente.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Notice that it takes a few seconds to display the counts.</source>
+          <target state="translated">Si noti che sono necessari alcuni secondi per visualizzare i conteggi.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>During that time, the UI thread is blocked while it waits for requested resources to download.</source>
+          <target state="translated">Durante tale periodo, il thread dell'interfaccia utente viene bloccato mentre attende il download delle risorse richieste.</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>As a result, you can't move, maximize, minimize, or even close the display window after you choose the  <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Di conseguenza, è possibile spostare, ingrandire, ridurre al minimo o perfino chiudere la finestra di visualizzazione dopo aver scelto il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>These efforts fail until the byte counts start to appear.</source>
+          <target state="translated">Queste operazioni hanno esito negativo finché non vengono visualizzati i conteggi dei byte.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If a website isn’t responding, you have no indication of which site failed.</source>
+          <target state="translated">Se un sito Web non risponde, non si ha alcuna indicazione relativa al sito con esito negativo.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It is difficult even to stop waiting and close the program.</source>
+          <target state="translated">È inoltre difficile interrompere l'attesa e chiudere il programma.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="GetURLContents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert GetURLContents to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="GetURLContents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per convertire un metodo asincrono GetURLContents</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To convert the synchronous solution to an asynchronous solution, the best place to start is in <ph id="ph1">`GetURLContents`</ph> because the calls to the &lt;xref:System.Net.HttpWebRequest&gt; method &lt;xref:System.Net.HttpWebRequest.GetResponse%2A&gt; and to the &lt;xref:System.IO.Stream&gt; method &lt;xref:System.IO.Stream.CopyTo%2A&gt; are where the application accesses the web.</source>
+          <target state="translated">Per convertire la soluzione sincrona in una soluzione asincrona, è consigliabile iniziare in <ph id="ph1">`GetURLContents`</ph> perché le chiamate al &lt;xref:System.Net.HttpWebRequest&gt;metodo &lt;xref:System.Net.HttpWebRequest.GetResponse%2A&gt;e il &lt;xref:System.IO.Stream&gt;metodo &lt;xref:System.IO.Stream.CopyTo%2A&gt;sono in cui l'applicazione accede al web.&lt;/xref:System.IO.Stream.CopyTo%2A&gt; &lt;/xref:System.IO.Stream&gt; &lt;/xref:System.Net.HttpWebRequest.GetResponse%2A&gt; &lt;/xref:System.Net.HttpWebRequest&gt;</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.</source>
+          <target state="translated">.NET Framework semplifica la conversione fornendo versioni asincrone di entrambi i metodi.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information about the methods that are used in <ph id="ph1">`GetURLContents`</ph>, see &lt;xref:System.Net.WebRequest&gt;.</source>
+          <target state="translated">Per ulteriori informazioni sui metodi utilizzati in <ph id="ph1">`GetURLContents`</ph>, vedere &lt;xref:System.Net.WebRequest&gt;.&lt;/xref:System.Net.WebRequest&gt;</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>As you follow the steps in this walkthrough, several compiler errors appear.</source>
+          <target state="translated">Mentre si esegue la procedura descritta in questa procedura dettagliata, vengono visualizzati diversi errori del compilatore.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You can ignore them and continue with the walkthrough.</source>
+          <target state="translated">È possibile ignorarli e continuare con la procedura dettagliata.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Change the method that's called in the third line of <ph id="ph1">`GetURLContents`</ph> from <ph id="ph2">`GetResponse`</ph> to the asynchronous, task-based &lt;xref:System.Net.WebRequest.GetResponseAsync%2A&gt; method.</source>
+          <target state="translated">Modifica del metodo viene chiamato nella terza riga del <ph id="ph1">`GetURLContents`</ph> da <ph id="ph2">`GetResponse`</ph> asincrono, basato su attività &lt;xref:System.Net.WebRequest.GetResponseAsync%2A&gt;(metodo).&lt;/xref:System.Net.WebRequest.GetResponseAsync%2A&gt;</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`GetResponseAsync`</ph> returns a &lt;xref:System.Threading.Tasks.Task%601&gt;.</source>
+          <target state="translated"><ph id="ph1">`GetResponseAsync`</ph>Restituisce un &lt;xref:System.Threading.Tasks.Task%601&gt;.&lt;/xref:System.Threading.Tasks.Task%601&gt;</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In this case, the <bpt id="p1">*</bpt>task return variable<ept id="p1">*</ept>, <ph id="ph1">`TResult`</ph>, has type &lt;xref:System.Net.WebResponse&gt;.</source>
+          <target state="translated">In questo caso, il <bpt id="p1">*</bpt>variabile restituita attività<ept id="p1">*</ept>, <ph id="ph1">`TResult`</ph>, è di tipo &lt;xref:System.Net.WebResponse&gt;.&lt;/xref:System.Net.WebResponse&gt;</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The task is a promise to produce an actual <ph id="ph1">`WebResponse`</ph> object after the requested data has been downloaded and the task has run to completion.</source>
+          <target state="translated">L'attività rappresenta una promessa di creazione di un oggetto <ph id="ph1">`WebResponse`</ph> effettivo dopo il download dei dati richiesti e il completamento dell'esecuzione dell'attività.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>To retrieve the <ph id="ph1">`WebResponse`</ph> value from the task, apply an <bpt id="p1">[</bpt>Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept> operator to the call to <ph id="ph2">`GetResponseAsync`</ph>, as the following code shows.</source>
+          <target state="translated">Per recuperare il <ph id="ph1">`WebResponse`</ph> valore dall'attività, applicare un <bpt id="p1">[</bpt>Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept> operatore per la chiamata a <ph id="ph2">`GetResponseAsync`</ph>, come mostrato nel codice seguente.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Await`</ph> operator suspends the execution of the current method, <ph id="ph2">`GetURLContents`</ph>, until the awaited task is complete.</source>
+          <target state="translated">Il <ph id="ph1">`Await`</ph> operatore sospende l'esecuzione del metodo corrente, <ph id="ph2">`GetURLContents`</ph>, fino a quando l'attività attesa è stata completata.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In the meantime, control returns to the caller of the current method.</source>
+          <target state="translated">Nel frattempo il controllo viene restituito al chiamante del metodo asincrono.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In this example, the current method is <ph id="ph1">`GetURLContents`</ph>, and the caller is <ph id="ph2">`SumPageSizes`</ph>.</source>
+          <target state="translated">In questo esempio, il metodo corrente è <ph id="ph1">`GetURLContents`</ph> e il chiamante è <ph id="ph2">`SumPageSizes`</ph>.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>When the task is finished, the promised <ph id="ph1">`WebResponse`</ph> object is produced as the value of the awaited task and assigned to the variable <ph id="ph2">`response`</ph>.</source>
+          <target state="translated">Quando l'attività è terminata, l'oggetto promesso <ph id="ph1">`WebResponse`</ph> viene generato come valore dell'attività attesa e assegnato alla variabile <ph id="ph2">`response`</ph>.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`webReq.GetResponseAsync`</ph> returns a <ph id="ph2">`Task(Of WebResponse)`</ph> or <ph id="ph3">`Task&lt;WebResponse&gt;`</ph>.</source>
+          <target state="translated">La chiamata a <ph id="ph1">`webReq.GetResponseAsync`</ph> restituisce <ph id="ph2">`Task(Of WebResponse)`</ph> o <ph id="ph3">`Task&lt;WebResponse&gt;`</ph>.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Then an <ph id="ph1">`Await`</ph> operator is applied to the task to retrieve the <ph id="ph2">`WebResponse`</ph> value.</source>
+          <target state="translated">Un oggetto <ph id="ph1">`Await`</ph> operatore viene applicato all'attività per recuperare il <ph id="ph2">`WebResponse`</ph> valore.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Because you added the <ph id="ph1">`Await`</ph> operator in the previous step, a compiler error occurs.</source>
+          <target state="translated">Poiché è stato aggiunto il <ph id="ph1">`Await`</ph> operatore nel passaggio precedente, verrà generato un errore del compilatore.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The operator can be used only in methods that are marked with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier.</source>
+          <target state="translated">L'operatore può essere utilizzato solo nei metodi contrassegnati con il <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modificatore.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Ignore the error while you repeat the conversion steps to replace the call to <ph id="ph1">`CopyTo`</ph> with a call to <ph id="ph2">`CopyToAsync`</ph>.</source>
+          <target state="translated">Ignorare l'errore mentre vengono ripetuti i passaggi di conversione per sostituire la chiamata a <ph id="ph1">`CopyTo`</ph> con una chiamata a <ph id="ph2">`CopyToAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Change the name of the method that’s called to &lt;xref:System.IO.Stream.CopyToAsync%2A&gt;.</source>
+          <target state="translated">Modificare il nome del metodo che viene chiamato per &lt;xref:System.IO.Stream.CopyToAsync%2A&gt;.&lt;/xref:System.IO.Stream.CopyToAsync%2A&gt;</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CopyTo`</ph> or <ph id="ph2">`CopyToAsync`</ph> method copies bytes to its argument, <ph id="ph3">`content`</ph>, and doesn’t return a meaningful value.</source>
+          <target state="translated">Il metodo <ph id="ph1">`CopyTo`</ph> o <ph id="ph2">`CopyToAsync`</ph> copia i byte nel relativo argomento <ph id="ph3">`content`</ph> e non restituisce un valore significativo.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the synchronous version, the call to <ph id="ph1">`CopyTo`</ph> is a simple statement that doesn't return a value.</source>
+          <target state="translated">Nella versione sincrona, la chiamata a <ph id="ph1">`CopyTo`</ph> è un'istruzione semplice che non restituisce un valore.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The asynchronous version, <ph id="ph1">`CopyToAsync`</ph>, returns a &lt;xref:System.Threading.Tasks.Task&gt;.</source>
+          <target state="translated">La versione asincrona <ph id="ph1">`CopyToAsync`</ph>, restituisce un &lt;xref:System.Threading.Tasks.Task&gt;.&lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The task functions like "Task(void)" and enables the method to be awaited.</source>
+          <target state="translated">L'attività è analoga a "Task(void)" e consente l'attesa del metodo.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Apply <ph id="ph1">`Await`</ph> or <ph id="ph2">`await`</ph> to the call to <ph id="ph3">`CopyToAsync`</ph>, as the following code shows.</source>
+          <target state="translated">Applicare <ph id="ph1">`Await`</ph> o <ph id="ph2">`await`</ph> alla chiamata a <ph id="ph3">`CopyToAsync`</ph>, come mostrato nel codice riportato di seguito.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The previous statement abbreviates the following two lines of code.</source>
+          <target state="translated">L'istruzione precedente abbrevia le due righe di codice riportate di seguito.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>All that remains to be done in <ph id="ph1">`GetURLContents`</ph> is to adjust the method signature.</source>
+          <target state="translated">A questo punto, non rimane che modificare la firma del metodo in <ph id="ph1">`GetURLContents`</ph>.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">`Await`</ph> operator only in methods that are marked with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier.</source>
+          <target state="translated">È possibile utilizzare il <ph id="ph1">`Await`</ph> operatore solo nei metodi contrassegnati con il <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modificatore.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Add the modifier to mark the method as an <bpt id="p1">*</bpt>async method<ept id="p1">*</ept>, as the following code shows.</source>
+          <target state="translated">Aggiungere il modificatore per contrassegnare il metodo come un <bpt id="p1">*</bpt>metodo asincrono<ept id="p1">*</ept>, come mostrato nel codice seguente.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The return type of an async method can only be &lt;xref:System.Threading.Tasks.Task&gt;, &lt;xref:System.Threading.Tasks.Task%601&gt;.</source>
+          <target state="translated">Il tipo restituito di un metodo asincrono può essere solo &lt;xref:System.Threading.Tasks.Task&gt; &lt;xref:System.Threading.Tasks.Task%601&gt;.&lt;/xref:System.Threading.Tasks.Task%601&gt; ,&lt;/xref:System.Threading.Tasks.Task&gt;</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, the method must be a <ph id="ph1">`Function`</ph> that returns a <ph id="ph2">`Task`</ph> or a <ph id="ph3">`Task(Of T)`</ph>, or the method must be a <ph id="ph4">`Sub`</ph>.</source>
+          <target state="translated">In Visual Basic, il metodo deve essere <ph id="ph1">`Function`</ph> che restituisce <ph id="ph2">`Task`</ph> o <ph id="ph3">`Task(Of T)`</ph> oppure il metodo deve essere <ph id="ph4">`Sub`</ph>.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Typically, a <ph id="ph1">`Sub`</ph> method  is used only in an async event handler, where <ph id="ph2">`Sub`</ph> is required.</source>
+          <target state="translated">In genere, un <ph id="ph1">`Sub`</ph> metodo viene utilizzato solo in un gestore eventi asincrono, in cui <ph id="ph2">`Sub`</ph> è obbligatorio.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In other cases, you use <ph id="ph1">`Task(T)`</ph> if the completed method has a <bpt id="p1">[</bpt>Return<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> statement that returns a value of type T, and you use <ph id="ph2">`Task`</ph> if the completed method doesn’t return a meaningful value.</source>
+          <target state="translated">In altri casi, utilizzare <ph id="ph1">`Task(T)`</ph> se il metodo completato ha un <bpt id="p1">[</bpt>restituire<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> istruzione che restituisce un valore di tipo T e si utilizza <ph id="ph2">`Task`</ph> se il metodo completato non restituisce alcun valore significativo.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni, vedere <bpt id="p1">[</bpt>Async restituire tipi (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Method <ph id="ph1">`GetURLContents`</ph> has a return statement, and the statement returns a byte array.</source>
+          <target state="translated">Il metodo <ph id="ph1">`GetURLContents`</ph> dispone di un'istruzione return che restituisce una matrice di byte.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Therefore, the return type of the async version is Task(T), where T is a byte array.</source>
+          <target state="translated">Pertanto, il tipo restituito della versione asincrona è Task(T), dove T è una matrice di byte.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Make the following changes in the method signature:</source>
+          <target state="translated">Apportare le modifiche seguenti nella firma del metodo:</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Change the return type to <ph id="ph1">`Task(Of Byte())`</ph>.</source>
+          <target state="translated">Modificare il tipo restituito per <ph id="ph1">`Task(Of Byte())`</ph>.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>By convention, asynchronous methods have names that end in "Async," so rename the method <ph id="ph1">`GetURLContentsAsync`</ph>.</source>
+          <target state="translated">Per convenzione, i metodi asincroni presentano nomi che terminano in "Async". Rinominare pertanto il metodo <ph id="ph1">`GetURLContentsAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">Nel codice seguente sono illustrate queste modifiche.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>With those few changes, the conversion of <ph id="ph1">`GetURLContents`</ph> to an asynchronous method is complete.</source>
+          <target state="translated">Dopo aver apportato queste modifiche, la conversione di <ph id="ph1">`GetURLContents`</ph> in un metodo asincrono è completa.</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="SumPageSizes"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert SumPageSizes to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="SumPageSizes"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per convertire un metodo asincrono SumPageSizes</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Repeat the steps from the previous procedure for <ph id="ph1">`SumPageSizes`</ph>.</source>
+          <target state="translated">Ripetere i passaggi della procedura precedente per <ph id="ph1">`SumPageSizes`</ph>.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>First, change the call to <ph id="ph1">`GetURLContents`</ph> to an asynchronous call.</source>
+          <target state="translated">In primo luogo, modificare la chiamata a <ph id="ph1">`GetURLContents`</ph> in una chiamata asincrona.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Change the name of the method that’s called from <ph id="ph1">`GetURLContents`</ph> to <ph id="ph2">`GetURLContentsAsync`</ph>, if you haven't already done so.</source>
+          <target state="translated">Modificare il nome del metodo chiamato da <ph id="ph1">`GetURLContents`</ph> in <ph id="ph2">`GetURLContentsAsync`</ph>, se non è ancora stato fatto.</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Apply <ph id="ph1">`Await`</ph> to the task that <ph id="ph2">`GetURLContentsAsync`</ph> returns to obtain the byte array value.</source>
+          <target state="translated">Applicare <ph id="ph1">`Await`</ph> all'attività che <ph id="ph2">`GetURLContentsAsync`</ph> valore restituisce per ottenere il byte della matrice.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">Nel codice seguente sono illustrate queste modifiche.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The previous assignment abbreviates the following two lines of code.</source>
+          <target state="translated">L'assegnazione precedente abbrevia le due righe di codice riportate di seguito.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Make the following changes in the method's signature:</source>
+          <target state="translated">Apportare le modifiche seguenti nella firma del metodo:</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Mark the method with the <ph id="ph1">`Async`</ph> modifier.</source>
+          <target state="translated">Contrassegnare il metodo con il <ph id="ph1">`Async`</ph> modificatore.</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Add "Async" to the method name.</source>
+          <target state="translated">Aggiungere "Async" al nome del metodo.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>There is no task return variable, T, this time because <ph id="ph1">`SumPageSizesAsync`</ph> doesn’t return a value for T. (The method has no <ph id="ph2">`Return`</ph> statement.) However, the method must return a <ph id="ph3">`Task`</ph> to be awaitable.</source>
+          <target state="translated">In questo caso non esiste alcuna variabile di restituzione dell'attività, T, perché <ph id="ph1">`SumPageSizesAsync`</ph> non restituisce un valore per T. (Il metodo non ha <ph id="ph2">`Return`</ph> istruzione.) Tuttavia, il metodo deve restituire <ph id="ph3">`Task`</ph> per poter essere un metodo di tipo awaitable.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Therefore, change the method type from <ph id="ph1">`Sub`</ph> to <ph id="ph2">`Function`</ph>.</source>
+          <target state="translated">Pertanto, modificare il tipo di metodo da <ph id="ph1">`Sub`</ph> a <ph id="ph2">`Function`</ph>.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The return type of the function is <ph id="ph1">`Task`</ph>.</source>
+          <target state="translated">Il tipo restituito della funzione è <ph id="ph1">`Task`</ph>.</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">Nel codice seguente sono illustrate queste modifiche.</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The conversion of <ph id="ph1">`SumPageSizes`</ph> to <ph id="ph2">`SumPageSizesAsync`</ph> is complete.</source>
+          <target state="translated">La conversione di <ph id="ph1">`SumPageSizes`</ph> in <ph id="ph2">`SumPageSizesAsync`</ph> è completa.</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="startButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert startButton_Click to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="startButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per convertire un metodo asincrono startButton_Click</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In the event handler, change the name of the called method from <ph id="ph1">`SumPageSizes`</ph> to <ph id="ph2">`SumPageSizesAsync`</ph>, if you haven’t already done so.</source>
+          <target state="translated">Nel gestore eventi modificare il nome del metodo chiamato da <ph id="ph1">`SumPageSizes`</ph> in <ph id="ph2">`SumPageSizesAsync`</ph>, se non è ancora stato fatto.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`SumPageSizesAsync`</ph> is an async method, change the code in the event handler to await the result.</source>
+          <target state="translated">Poiché <ph id="ph1">`SumPageSizesAsync`</ph> è un metodo asincrono, modificare il codice nel gestore eventi in modo che attenda il risultato.</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`SumPageSizesAsync`</ph> mirrors the call to <ph id="ph2">`CopyToAsync`</ph> in <ph id="ph3">`GetURLContentsAsync`</ph>.</source>
+          <target state="translated">La chiamata a <ph id="ph1">`SumPageSizesAsync`</ph> rispecchia la chiamata a <ph id="ph2">`CopyToAsync`</ph> in <ph id="ph3">`GetURLContentsAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The call returns a <ph id="ph1">`Task`</ph>, not a <ph id="ph2">`Task(T)`</ph>.</source>
+          <target state="translated">La chiamata restituisce <ph id="ph1">`Task`</ph> e non <ph id="ph2">`Task(T)`</ph>.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>As in previous procedures, you can convert the call by using one statement or two statements.</source>
+          <target state="translated">Come nelle procedure precedenti, è possibile convertire la chiamata tramite una o due istruzioni.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">Nel codice seguente sono illustrate queste modifiche.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>To prevent accidentally reentering the operation, add the following statement at the top of <ph id="ph1">`startButton_Click`</ph> to disable the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Per evitare accidentalmente immettere di nuovo l'operazione, aggiungere l'istruzione seguente all'inizio del <ph id="ph1">`startButton_Click`</ph> per disabilitare il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You can reenable the button at the end of the event handler.</source>
+          <target state="translated">È possibile riabilitare il pulsante alla fine del gestore eventi.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For more information about reentrancy, see <bpt id="p1">[</bpt>Handling Reentrancy in Async Apps (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)</ept>.</source>
+          <target state="translated">Per ulteriori informazioni su reentrancy, vedere <bpt id="p1">[</bpt>la gestione della Reentrancy nelle applicazioni asincrone (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)</ept>.</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Finally, add the <ph id="ph1">`Async`</ph> modifier to the declaration so that the event handler can await <ph id="ph2">`SumPagSizesAsync`</ph>.</source>
+          <target state="translated">Infine, aggiungere il <ph id="ph1">`Async`</ph> modificatore per la dichiarazione in modo che il gestore eventi può await <ph id="ph2">`SumPagSizesAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Typically, the names of event handlers aren’t changed.</source>
+          <target state="translated">In genere, i nomi dei gestori eventi non vengono modificati.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The return type isn’t changed to <ph id="ph1">`Task`</ph> because event handlers must be <ph id="ph2">`Sub`</ph> procedures in Visual Basic.</source>
+          <target state="translated">Il tipo restituito non è cambiato in <ph id="ph1">`Task`</ph> perché i gestori eventi devono essere <ph id="ph2">`Sub`</ph> routine in Visual Basic.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The conversion of the project from synchronous to asynchronous processing is complete.</source>
+          <target state="translated">La conversione del progetto dall'elaborazione sincrona a quella asincrona è completa.</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="testAsynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To test the asynchronous solution</source>
+          <target state="translated"><bpt id="p1">&lt;a name="testAsynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per testare la soluzione asincrona</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Output that resembles the output of the synchronous solution should appear.</source>
+          <target state="translated">Viene visualizzato un output simile all'output della soluzione sincrona.</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, notice the following differences.</source>
+          <target state="translated">Esistono tuttavia le differenze seguenti:</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The results don’t all occur at the same time, after the processing is complete.</source>
+          <target state="translated">I risultati non vengono restituiti contemporaneamente, al termine dell'elaborazione.</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For example, both programs contain a line in <ph id="ph1">`startButton_Click`</ph> that clears the text box.</source>
+          <target state="translated">Ad esempio, entrambi i programmi contengono una riga in <ph id="ph1">`startButton_Click`</ph> che consente di cancellare la casella di testo.</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The intent is to clear the text box between runs if you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button for a second time, after one set of results has appeared.</source>
+          <target state="translated">Lo scopo consiste nel deselezionare la casella di testo tra le esecuzioni, se si sceglie il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante per la seconda volta, dopo è apparsa un set di risultati.</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work.</source>
+          <target state="translated">Nella versione sincrona la casella di testo viene cancellata prima della seconda visualizzazione dei conteggi, ovvero quando vengono completati i download e il thread dell'interfaccia utente è libero di eseguire altre operazioni.</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In the asynchronous version, the text box clears immediately after you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Poiché la versione asincrona, la casella di testo Cancella immediatamente dopo aver scelto il <bpt id="p1">**</bpt>avviare<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Most importantly, the UI thread isn’t blocked during the downloads.</source>
+          <target state="translated">È importante notare che il thread dell'interfaccia utente non è bloccato durante il download.</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>You can move or resize the window while the web resources are being downloaded, counted, and displayed.</source>
+          <target state="translated">È possibile spostare o ridimensionare la finestra durante il download, il conteggio e la visualizzazione delle risorse Web.</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>If one of the websites is slow or not responding, you can cancel the operation by choosing the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button (the x in the red field in the upper-right corner).</source>
+          <target state="translated">Se uno dei siti Web è lento o non risponde, è possibile annullare l'operazione scegliendo il <bpt id="p1">**</bpt>Chiudi<ept id="p1">**</ept> pulsante (la x nella casella rossa nell'angolo superiore destro).</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="GetURLContentsAsync"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To replace method GetURLContentsAsync with a .NET Framework method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="GetURLContentsAsync"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Per sostituire il metodo GetURLContentsAsync con un metodo .NET Framework</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The .NET Framework 4.5 provides many async methods that you can use.</source>
+          <target state="translated">.NET Framework 4.5 fornisce molti metodi asincroni che è possibile usare.</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>One of them, the &lt;xref:System.Net.Http.HttpClient&gt; method &lt;xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt;, does just what you need for this walkthrough.</source>
+          <target state="translated">Uno di essi, il &lt;xref:System.Net.Http.HttpClient&gt;metodo &lt;xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt;, viene solo ciò che è necessario per questa procedura dettagliata.&lt;/xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt; &lt;/xref:System.Net.Http.HttpClient&gt;</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>You can use it instead of the <ph id="ph1">`GetURLContentsAsync`</ph> method that you created in an earlier procedure.</source>
+          <target state="translated">È possibile usarlo al posto del metodo <ph id="ph1">`GetURLContentsAsync`</ph> creato in una procedura precedente.</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The first step is to create an <ph id="ph1">`HttpClient`</ph> object in method <ph id="ph2">`SumPageSizesAsync`</ph>.</source>
+          <target state="translated">Il primo passaggio consiste nel creare un oggetto <ph id="ph1">`HttpClient`</ph> nel metodo <ph id="ph2">`SumPageSizesAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Add the following declaration at the start of the method.</source>
+          <target state="translated">Aggiungere la dichiarazione seguente all'inizio del metodo.</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`SumPageSizesAsync,`</ph> replace the call to your <ph id="ph2">`GetURLContentsAsync`</ph> method with a call to the <ph id="ph3">`HttpClient`</ph> method.</source>
+          <target state="translated">In <ph id="ph1">`SumPageSizesAsync,`</ph> sostituire la chiamata al metodo <ph id="ph2">`GetURLContentsAsync`</ph> con una chiamata al metodo <ph id="ph3">`HttpClient`</ph>.</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Remove or comment out the <ph id="ph1">`GetURLContentsAsync`</ph> method that you wrote.</source>
+          <target state="translated">Rimuovere o impostare come commento il metodo <ph id="ph1">`GetURLContentsAsync`</ph> precedentemente scritto.</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.</source>
+          <target state="translated">Il comportamento di questa versione del progetto deve corrispondere al comportamento descritto nella procedura "Per eseguire il test della soluzione asincrona" ma con un intervento ridotto da parte dell'utente.</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CompleteCodeExamples"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Example</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CompleteCodeExamples"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Esempio</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous <ph id="ph1">`GetURLContentsAsync`</ph> method that you wrote.</source>
+          <target state="translated">Il codice seguente contiene l'esempio completo della conversione da soluzione sincrona a soluzione asincrona usando il metodo <ph id="ph1">`GetURLContentsAsync`</ph> asincrono precedentemente scritto.</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Notice that it strongly resembles the original, synchronous solution.</source>
+          <target state="translated">Si noti che è molto simile alla soluzione sincrona originale.</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The following code contains the full example of the solution that uses the <ph id="ph1">`HttpClient`</ph> method, <ph id="ph2">`GetByteArrayAsync`</ph>.</source>
+          <target state="translated">Il codice seguente contiene l'esempio completo della soluzione che usa il metodo <ph id="ph1">`HttpClient`</ph>, <ph id="ph2">`GetByteArrayAsync`</ph>.</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>Esempio asincrono: Accesso la procedura dettagliata Web (c# e Visual Basic)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Await (operatore)<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Programmazione asincrona con Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tipi restituiti asincroni (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Task-based Asynchronous Programming (TAP)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=204847)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Programmazione asincrona basato su attività (TAP)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=204847)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedura: estendere la procedura dettagliata asincrona tramite Task. whenall (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Procedura: effettuare più richieste Web in parallelo tramite Async e Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

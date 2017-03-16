@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e0e548989b1d2c32b9faf5ce0dd90ae371dfc028</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\using-async-for-file-access.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f76db4d4a1fa47f8a3e8bad147f2d544d72c5982</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ca428d19d52a6ed2537a041f016b217dd8eae8a</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Using Async for File Access (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">非同期ファイルへのアクセス (Visual Basic) の使用 |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Using Async for File Access (Visual Basic)</source>
+          <target state="translated">ファイル アクセスにおける非同期の使用 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can use the Async feature to access files.</source>
+          <target state="translated">非同期機能を使用して、ファイルにアクセスすることができます。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>By using the Async feature, you can call into asynchronous methods without using callbacks or splitting your code across multiple methods or lambda expressions.</source>
+          <target state="translated">非同期機能を使用すると、コールバックの使用や複数のメソッドまたはラムダ式へのコードの分割を行わずに、非同期メソッドを呼び出すことができます。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>To make synchronous code asynchronous, you just call an asynchronous method instead of a synchronous method and add a few keywords to the code.</source>
+          <target state="translated">同期コードを非同期にするだけ同期メソッドの代わりに非同期のメソッドを呼び出すをコードにいくつかのキーワードを追加します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You might consider the following reasons for adding asynchrony to file access calls:</source>
+          <target state="translated">ファイル アクセスの呼び出しを非同期処理を追加するために、次の理由を考慮することがあります。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Asynchrony makes UI applications more responsive because the UI thread that launches the operation can perform other work.</source>
+          <target state="translated">非同期性により、UI アプリケーション応答性の高い、操作を起動する UI スレッドが他の作業を実行するためです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If the UI thread must execute code that takes a long time (for example, more than 50 milliseconds), the UI may freeze until the I/O is complete and the UI thread can again process keyboard and mouse input and other events.</source>
+          <target state="translated">コードを UI スレッドで実行する必要があります (たとえば、50 を超えるミリ秒) の長い時間がかかること、UI がフリーズ、I/O が完了して、UI スレッドをもう一度キーボードを処理およびマウス入力やその他のイベントまで。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Asynchrony improves the scalability of ASP.NET and other server-based applications by reducing the need for threads.</source>
+          <target state="translated">非同期処理では、ASP.NET のスケーラビリティおよびその他のサーバー ベースのアプリケーションがスレッドの必要性を減らすことによって向上します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>If the application uses a dedicated thread per response and a thousand requests are being handled simultaneously, a thousand threads are needed.</source>
+          <target state="translated">アプリケーションが応答ごとに専用のスレッドを使用して、1000 単位の要求が同時に処理されている場合は、3 桁のスレッドが必要です。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Asynchronous operations often don’t need to use a thread during the wait.</source>
+          <target state="translated">多くの場合、非同期操作は、待機中のスレッドを使用する必要ありません。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>They use the existing I/O completion thread briefly at the end.</source>
+          <target state="translated">既存の I/O 完了スレッドは、最後に簡単に、使用します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The latency of a file access operation might be very low under current conditions, but the latency may greatly increase in the future.</source>
+          <target state="translated">ファイル アクセス操作の待機時間は、現在の状況では、非常に少ない可能性がありますが、待機時間は大幅に、将来増加します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>For example, a file may be moved to a server that's across the world.</source>
+          <target state="translated">たとえば、世界中であるサーバーにファイルを移動することがあります。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>The added overhead of using the Async feature is small.</source>
+          <target state="translated">追加された非同期機能を使用するオーバーヘッドは小さいです。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Asynchronous tasks can easily be run in parallel.</source>
+          <target state="translated">非同期タスクは、並列で簡単に実行できます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Running the Examples</source>
+          <target state="translated">例の実行</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>To run the examples in this topic, you can create a <bpt id="p1">**</bpt>WPF Application<ept id="p1">**</ept> or a <bpt id="p2">**</bpt>Windows Forms Application<ept id="p2">**</ept> and then add a <bpt id="p3">**</bpt>Button<ept id="p3">**</ept>.</source>
+          <target state="translated">このトピックの例を実行するには、作成、 <bpt id="p1">**</bpt>WPF アプリケーション<ept id="p1">**</ept>または<bpt id="p2">**</bpt>Windows フォーム アプリケーション<ept id="p2">**</ept>し、追加、<bpt id="p3">**</bpt>ボタン<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In the button's <ph id="ph1">`Click`</ph> event, add a call to the first method in each example.</source>
+          <target state="translated">ボタンの<ph id="ph1">`Click`</ph>イベント、それぞれの例に最初のメソッドの呼び出しを追加します。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>In the following examples, include the following <ph id="ph1">`Imports`</ph> statements.</source>
+          <target state="translated">次の例については、次が含まれる<ph id="ph1">`Imports`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Use of the FileStream Class</source>
+          <target state="translated">FileStream クラスの使用方法</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The examples in this topic use the &lt;xref:System.IO.FileStream&gt; class, which has an option that causes asynchronous I/O to occur at the operating system level.</source>
+          <target state="translated">このトピックで例として、&lt;xref:System.IO.FileStream&gt;クラスで、オペレーティング システム レベルで発生する非同期 I/O を原因となるオプションがあります&lt;/xref:System.IO.FileStream&gt;。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>By using this option, you can avoid blocking a ThreadPool thread in many cases.</source>
+          <target state="translated">このオプションを使用すると、多くの場合、ThreadPool のスレッドのブロックを回避できます。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To enable this option, you specify the <ph id="ph1">`useAsync=true`</ph> or <ph id="ph2">`options=FileOptions.Asynchronous`</ph> argument in the constructor call.</source>
+          <target state="translated">指定するには、このオプションを有効にする、<ph id="ph1">`useAsync=true`</ph>または<ph id="ph2">`options=FileOptions.Asynchronous`</ph>のコンス トラクター呼び出しの引数。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can’t use this option with &lt;xref:System.IO.StreamReader&gt; and &lt;xref:System.IO.StreamWriter&gt; if you open them directly by specifying a file path.</source>
+          <target state="translated">&lt;xref:System.IO.StreamReader&gt;&lt;xref:System.IO.StreamWriter&gt;ファイル パスを指定して直接開くかどうか&lt;/xref:System.IO.StreamWriter&gt;&lt;/xref:System.IO.StreamReader&gt;と、このオプションを使用することはできません。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>However, you can use this option if you provide them a &lt;xref:System.IO.Stream&gt; that the &lt;xref:System.IO.FileStream&gt; class opened.</source>
+          <target state="translated">そこで指定する場合、このオプションを使用する、&lt;xref:System.IO.Stream&gt;を&lt;xref:System.IO.FileStream&gt;クラスを開く&lt;/xref:System.IO.FileStream&gt;&lt;/xref:System.IO.Stream&gt;。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Note that asynchronous calls are faster in UI apps even if a ThreadPool thread is blocked, because the UI thread isn’t blocked during the wait.</source>
+          <target state="translated">非同期呼び出しがあること UI アプリで高速なスレッド プールのスレッドがブロックされている場合でも、待機中に UI スレッドがブロックされていないので注意してください。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Writing Text</source>
+          <target state="translated">テキストの書き込み</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following example writes text to a file.</source>
+          <target state="translated">次の例では、テキストをファイルに書き込みます。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>At each await statement, the method immediately exits.</source>
+          <target state="translated">Await ステートメントのそれぞれで、メソッドがすぐに終了します。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>When the file I/O is complete, the method resumes at the statement that follows the await statement.</source>
+          <target state="translated">ファイル I/O が完了すると、メソッドは await ステートメントに続くステートメントから再開されます。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Note that the async modifier is in the definition of methods that use the await statement.</source>
+          <target state="translated">Async 修飾子が await ステートメントを使用するメソッドの定義に注意してください。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The original example has the statement <ph id="ph1">`Await sourceStream.WriteAsync(encodedText, 0, encodedText.Length)`</ph>, which is a contraction of the following two statements:</source>
+          <target state="translated">元の例には、ステートメントが含まれている<ph id="ph1">`Await sourceStream.WriteAsync(encodedText, 0, encodedText.Length)`</ph>、これは、次の 2 つのステートメントの省略形。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The first statement returns a task and causes file processing to start.</source>
+          <target state="translated">最初のステートメントは、タスクを返し、ファイル処理が開始します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The second statement with the await causes the method to immediately exit and return a different task.</source>
+          <target state="translated">Await で&amp;2; 番目のステートメントをすぐに終了し、別のタスクを返すメソッドです。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>When the file processing later completes, execution returns to the statement that follows the await.</source>
+          <target state="translated">ファイルの後で処理が完了したら、実行が await の次のステートメントに返します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>For more information, see  <bpt id="p1">[</bpt>Control Flow in Async Programs (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。<bpt id="p1">[</bpt>非同期プログラム (Visual Basic) の制御フロー<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Reading Text</source>
+          <target state="translated">テキストの読み取り</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The following example reads text from a file.</source>
+          <target state="translated">次の例では、ファイルからテキストを読み取ります。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>The text is buffered and, in this case, placed into a &lt;xref:System.Text.StringBuilder&gt;.</source>
+          <target state="translated">テキストがバッファーに格納され、この場合、保存されます&lt;xref:System.Text.StringBuilder&gt;。&lt;/xref:System.Text.StringBuilder&gt;</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Unlike in the previous example, the evaluation of the await produces a value.</source>
+          <target state="translated">異なり、前の例で await の評価値を生成します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.IO.Stream.ReadAsync%2A&gt; method returns a &lt;xref:System.Threading.Tasks.Task&gt;<ph id="ph1">\&lt;</ph>&lt;xref:System.Int32&gt;&gt;, so the evaluation of the await produces an <ph id="ph2">`Int32`</ph> value (<ph id="ph3">`numRead`</ph>) after the operation completes.</source>
+          <target state="translated">&lt;xref:System.IO.Stream.ReadAsync%2A&gt;メソッドが返される、 &lt;xref:System.Threading.Tasks.Task&gt; <ph id="ph1">\&lt;</ph> &lt;xref:System.Int32&gt;&gt; await の評価を生成するため、<ph id="ph2">`Int32`</ph>値 (<ph id="ph3">`numRead`</ph>)、操作が完了した後&lt;/xref:System.Int32&gt;&lt;/xref:System.Threading.Tasks.Task&gt;&lt;/xref:System.IO.Stream.ReadAsync%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。 <bpt id="p1">[</bpt>Async を返す型 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Parallel Asynchronous I/O</source>
+          <target state="translated">並列の非同期 I/O</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The following example demonstrates parallel processing by writing 10 text files.</source>
+          <target state="translated">次の例では、10 個のテキスト ファイルを記述して並列処理を示します。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>For each file, the &lt;xref:System.IO.Stream.WriteAsync%2A&gt; method returns a task that is then added to a list of tasks.</source>
+          <target state="translated">ファイルごとに、&lt;xref:System.IO.Stream.WriteAsync%2A&gt;メソッドは、タスクの一覧に追加するタスクを返します&lt;/xref:System.IO.Stream.WriteAsync%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Await Task.WhenAll(tasks)`</ph> statement exits the method and resumes within the method when file processing is complete for all of the tasks.</source>
+          <target state="translated"><ph id="ph1">`Await Task.WhenAll(tasks)`</ph>ステートメントは、メソッドを終了し、すべてのタスクのファイルの処理がメソッド内の再開を完了します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The example closes all &lt;xref:System.IO.FileStream&gt; instances in a <ph id="ph1">`Finally`</ph> block after the tasks are complete.</source>
+          <target state="translated">この例ではすべて&lt;xref:System.IO.FileStream&gt;のインスタンス、<ph id="ph1">`Finally`</ph>タスクが完了したらをブロックします&lt;/xref:System.IO.FileStream&gt;。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>If each <ph id="ph1">`FileStream`</ph> was instead created in a <ph id="ph2">`Imports`</ph> statement, the <ph id="ph3">`FileStream`</ph> might be disposed of before the task was complete.</source>
+          <target state="translated">各<ph id="ph1">`FileStream`</ph>で作成した代わりに、<ph id="ph2">`Imports`</ph>ステートメント、<ph id="ph3">`FileStream`</ph>タスクが完了する前に破棄することがあります。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Note that any performance boost is almost entirely from the parallel processing and not the asynchronous processing.</source>
+          <target state="translated">すべてのパフォーマンスの向上が並列処理と非同期処理ではないからほぼ完全ことに注意してください。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>The advantages of asynchrony are that it doesn’t tie up multiple threads, and that it doesn’t tie up the user interface thread.</source>
+          <target state="translated">非同期性のメリットは、複数のスレッドせず拘束されないことと、ユーザー インターフェイス スレッドせず拘束されないことです。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>When using the &lt;xref:System.IO.Stream.WriteAsync%2A&gt; and &lt;xref:System.IO.Stream.ReadAsync%2A&gt; methods, you can specify a &lt;xref:System.Threading.CancellationToken&gt;, which you can use to cancel the operation mid-stream.</source>
+          <target state="translated">使用する場合、&lt;xref:System.IO.Stream.WriteAsync%2A&gt;と&lt;xref:System.IO.Stream.ReadAsync%2A&gt;メソッドを指定できます、&lt;xref:System.Threading.CancellationToken&gt;を操作の途中で取り消すことができます&lt;/xref:System.Threading.CancellationToken&gt;&lt;/xref:System.IO.Stream.ReadAsync%2A&gt;&lt;/xref:System.IO.Stream.WriteAsync%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Fine-Tuning Your Async Application (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept> and <bpt id="p2">[</bpt>Cancellation in Managed Threads<ept id="p2">](http://msdn.microsoft.com/library/eea11fe5-d8b0-4314-bb5d-8a58166fb1c3)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。<bpt id="p1">[</bpt>微調整 Your Async アプリケーション (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/fine-tuning-your-async-application.md)</ept>と<bpt id="p2">[</bpt>マネージ スレッドのキャンセル<ept id="p2">](http://msdn.microsoft.com/library/eea11fe5-d8b0-4314-bb5d-8a58166fb1c3)</ept>します。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>非同期プログラミングを Async と Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>非同期の戻り値の型 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Control Flow in Async Programs (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>(Visual Basic) の非同期プログラムにおける制御フロー<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

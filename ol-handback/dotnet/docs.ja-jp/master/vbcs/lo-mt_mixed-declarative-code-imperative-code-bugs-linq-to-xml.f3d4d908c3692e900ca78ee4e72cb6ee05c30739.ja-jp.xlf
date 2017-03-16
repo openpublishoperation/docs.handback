@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">08edcabc3f0238c499f87c713f205ee5a517a1ea</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\linq\mixed-declarative-code-imperative-code-bugs-linq-to-xml.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0b5c3b5f04c7ede7d1c68c3b5d3b197daa13177c</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">398d7655e38f58b68fa237549a155ad9721e9ce2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Mixed Declarative Code-Imperative Code Bugs (LINQ to XML) (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">混在の宣言型コード命令型コードのバグ (LINQ to XML) (Visual Basic) |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Mixed Declarative Code/Imperative Code Bugs (LINQ to XML) (Visual Basic)</source>
+          <target state="translated">混在の宣言型コードと命令型コードのバグ (LINQ to XML) (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]</ph> contains various methods that allow you to modify an XML tree directly.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)]</ph> には、XML ツリーを直接変更できるさまざまなメソッドが含まれています。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You can add elements, delete elements, change the contents of an element, add attributes, and so on.</source>
+          <target state="translated">たとえば、要素の追加、要素の削除、要素の内容の変更、属性の追加などの操作を行うことができます。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This programming interface is described in <bpt id="p1">[</bpt>Modifying XML Trees (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)</ept>.</source>
+          <target state="translated">このプログラミング インターフェイスについては、「 <bpt id="p1">[</bpt>XML ツリーの変更 (LINQ to XML) (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>If you are iterating through one of the axes, such as &lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt;, and you are modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.</source>
+          <target state="translated">かどうかは、反復処理する、軸のいずれかなど、 &lt;xref:System.Xml.Linq.XContainer.Elements%2A&gt;、軸を反復処理するには、XML ツリーを変更して、見慣れないバグが発生してしまうことです&lt;/xref:System.Xml.Linq.XContainer.Elements%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This problem is sometimes known as "The Halloween Problem".</source>
+          <target state="translated">この問題は、"ハロウィーン問題" と呼ばれることがあります。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Definition of the Problem</source>
+          <target state="translated">問題の定義</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>When you write some code using LINQ that iterates through a collection, you are writing code in a declarative style.</source>
+          <target state="translated">コレクションを反復処理するコードを LINQ を使用して記述する場合は、宣言型スタイルでコードを記述することになります。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It is more akin to describing <bpt id="p1">*</bpt>what<ept id="p1">*</ept> you want, rather that <bpt id="p2">*</bpt>how<ept id="p2">*</ept> you want to get it done.</source>
+          <target state="translated">かを記述<bpt id="p1">*</bpt>何<ept id="p1">*</ept>するではなくを<bpt id="p2">*</bpt>方法<ept id="p2">*</ept>処理します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If you write code that 1) gets the first element, 2) tests it for some condition, 3) modifies it, and 4) puts it back into the list, then this would be imperative code.</source>
+          <target state="translated">たとえば、1) 最初の要素を取得する、2) この要素を何らかの条件に対してテストする、3) この要素を変更する、4) この要素をリストに戻す、というコードを記述した場合、それは命令型のコードです。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>You are telling the computer <bpt id="p1">*</bpt>how<ept id="p1">*</ept> to do what you want done.</source>
+          <target state="translated">コンピューターに指示する<bpt id="p1">*</bpt>方法<ept id="p1">*</ept>を実行する操作を行います。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Mixing these styles of code in the same operation is what leads to problems.</source>
+          <target state="translated">この&amp;2; つのスタイルのコードが同じ操作に混在していると、問題の原因になります。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Consider the following:</source>
+          <target state="translated">次に例を示します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Suppose you have a linked list with three items in it (a, b, and c):</source>
+          <target state="translated">3 つの項目 (a、b、および c) を含むリンク リストがあるとします。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Now, suppose that you want to move through the linked list, adding three new items (a', b', and c').</source>
+          <target state="translated">このリンク リスト内を移動しながら&amp;3; つの新しい項目 (a'、b'、および c') を追加して、</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>You want the resulting linked list to look like this:</source>
+          <target state="translated">次のようなリンク リストが生成されるようにします。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>So you write code that iterates through the list, and for every item, adds a new item right after it.</source>
+          <target state="translated">ここで、リストを反復処理して各項目の後ろに新しいアイテムを追加するコードを記述した場合、</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>What happens is that your code will first see the <ph id="ph1">`a`</ph> element, and insert <ph id="ph2">`a'`</ph> after it.</source>
+          <target state="translated">その結果は、コードによって最初に <ph id="ph1">`a`</ph> 要素が検出され、その後ろに <ph id="ph2">`a'`</ph> が追加されます。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Now, your code will move to the next node in the list, which is now <ph id="ph1">`a'`</ph>!</source>
+          <target state="translated">その後、リストの次のノードに移動しますが、それは既に <ph id="ph1">`a'`</ph> になっています。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>It happily adds a new item to the list, <ph id="ph1">`a''`</ph>.</source>
+          <target state="translated">そのため、新しい項目として <ph id="ph1">`a''`</ph> がリストに追加されてしまいます。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>How would you solve this in the real world?</source>
+          <target state="translated">現実にこのような問題が発生したら、どうすればよいでしょうか。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Well, you might make a copy of the original linked list, and create a completely new list.</source>
+          <target state="translated">まず、元のリンク リストをコピーして、まったく新しいリストを作成する方法が考えられます。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Or if you are writing purely imperative code, you might find the first item, add the new item, and then advance twice in the linked list, advancing over the element that you just added.</source>
+          <target state="translated">また、純粋な命令型のコードを記述するのであれば、最初の項目を検出し、新しい項目を追加したら、リンク リストの&amp;2; つ先 (追加した要素を越えた先) に移動するという方法もあります。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Adding While Iterating</source>
+          <target state="translated">反復処理と追加</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example, suppose you want to write some code that for every element in a tree, you want to create a duplicate element:</source>
+          <target state="translated">たとえば、ツリーのすべての要素に対してその複製となる要素を作成するコードを記述するとします。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>This code goes into an infinite loop.</source>
+          <target state="translated">このコードは、無限ループに入ります。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`foreach`</ph> statement iterates through the <ph id="ph2">`Elements()`</ph> axis, adding new elements to the <ph id="ph3">`doc`</ph> element.</source>
+          <target state="translated"><ph id="ph1">`foreach`</ph> ステートメントは、<ph id="ph2">`Elements()`</ph> 軸を反復処理して <ph id="ph3">`doc`</ph> 要素に新しい要素を追加しますが、</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>It ends up iterating also through the elements it just added.</source>
+          <target state="translated">追加した要素も反復処理されることになります。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>And because it allocates new objects with every iteration of the loop, it will eventually consume all available memory.</source>
+          <target state="translated">ループが繰り返されるたびに新しいオブジェクトが割り当てられるため、最後には使用可能なメモリがすべて消費されてしまいます。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>You can fix this problem by pulling the collection into memory using the &lt;xref:System.Linq.Enumerable.ToList%2A&gt; standard query operator, as follows:</source>
+          <target state="translated">この問題を修正するには、コレクションを使用してメモリを引いて、&lt;xref:System.Linq.Enumerable.ToList%2A&gt;次のように、標準クエリ演算子:&lt;/xref:System.Linq.Enumerable.ToList%2A&gt;</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Now the code works.</source>
+          <target state="translated">これで、コードが機能するようになります。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The resulting XML tree is the following:</source>
+          <target state="translated">結果の XML ツリーは次のようになります。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Deleting While Iterating</source>
+          <target state="translated">反復処理と削除</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>If you want to delete all nodes at a certain level, you might be tempted to write code like the following:</source>
+          <target state="translated">特定のレベルのノードをすべて削除する場合、次のようなコードを記述することが考えられます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>However, this does not do what you want.</source>
+          <target state="translated">しかし、これでは目的の操作は行われません。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In this situation, after you have removed the first element, A, it is removed from the XML tree contained in root, and the code in the Elements method that is doing the iterating cannot find the next element.</source>
+          <target state="translated">最初の要素 A を削除すると、ルートに含まれる XML ツリーから A が削除されるため、反復処理を行っている Elements メソッド内のコードが次の要素を見つけられなくなります。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The preceding code produces the following output:</source>
+          <target state="translated">上のコードを実行すると、次の出力が生成されます。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>The solution again is to call &lt;xref:System.Linq.Enumerable.ToList%2A&gt; to materialize the collection, as follows:</source>
+          <target state="translated">解決策はもう一度呼び出す、&lt;xref:System.Linq.Enumerable.ToList%2A&gt;次のように、コレクションを具体化するために:&lt;/xref:System.Linq.Enumerable.ToList%2A&gt;</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>This produces the following output:</source>
+          <target state="translated">このコードを実行すると、次の出力が生成されます。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Alternatively, you can eliminate the iteration altogether by calling &lt;xref:System.Xml.Linq.XElement.RemoveAll%2A&gt; on the parent element:</source>
+          <target state="translated">呼び出して、反復処理を完全取り除く代わりに、&lt;xref:System.Xml.Linq.XElement.RemoveAll%2A&gt;親要素:&lt;/xref:System.Xml.Linq.XElement.RemoveAll%2A&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Why Can't LINQ Automatically Handle This?</source>
+          <target state="translated">この問題が LINQ で自動的に処理されない理由</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>One approach would be to always bring everything into memory instead of doing lazy evaluation.</source>
+          <target state="translated">まず、レイジー評価を行う代わりに常にすべてをメモリに読み込む方法が考えられます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>However, it would be very expensive in terms of performance and memory use.</source>
+          <target state="translated">しかし、この方法では、パフォーマンスとメモリ使用量のコストが非常に高くなります。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>In fact, if LINQ and (LINQ to XML) were to take this approach, it would fail in real-world situations.</source>
+          <target state="translated">実際、仮に LINQ (LINQ to XML) でこの方法を使用したとしても、現実には使いものにならないでしょう。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Another possible approach would be to put in some sort of transaction syntax into LINQ, and have the compiler attempt to analyze the code and determine if any particular collection needed to be materialized.</source>
+          <target state="translated">その他に、ある種のトランザクション構文を LINQ に追加して、コンパイラがコードを分析して特定のコレクションを具体化する必要があるかどうかを特定するようにする方法も考えられます。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>However, attempting to determine all code that has side-effects is incredibly complex.</source>
+          <target state="translated">しかし、副作用のあるコードをすべて特定しようとすると非常に複雑になります。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Consider the following code:</source>
+          <target state="translated">次のコードがあるとします。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Such analysis code would need to analyze the methods TestSomeCondition and DoMyProjection, and all methods that those methods called, to determine if any code had side-effects.</source>
+          <target state="translated">このような分析コードで副作用のあるコードの有無を特定するには、TestSomeCondition および DoMyProjection の&amp;2; つのメソッドと、これらが呼び出すすべてのメソッドを分析する必要があります。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>But the analysis code could not just look for any code that had side-effects.</source>
+          <target state="translated">しかし、その分析コードでは、ただ副作用のあるコードを探すだけでなく、</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>It would need to select for just the code that had side-effects on the child elements of <ph id="ph1">`root`</ph> in this situation.</source>
+          <target state="translated">この状況では、<ph id="ph1">`root`</ph> の子要素に対して副作用があるコードのみを選択する必要があります。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>LINQ to XML does not attempt to do any such analysis.</source>
+          <target state="translated">LINQ to XML ではこのような分析は行われません。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>It is up to you to avoid these problems.</source>
+          <target state="translated">これらの問題は、開発者が回避する必要があります。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Guidance</source>
+          <target state="translated">ガイダンス</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>First, do not mix declarative and imperative code.</source>
+          <target state="translated">第&amp;1; に、宣言型のコードと命令型のコードを混在させないようにします。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Even if you know exactly the semantics of your collections and the semantics of the methods that modify the XML tree, if you write some clever code that avoids these categories of problems, your code will need to be maintained by other developers in the future, and they may not be as clear on the issues.</source>
+          <target state="translated">仮に、コレクションのセマンティクスと、XML ツリーを変更するメソッドのセマンティクスを正確に把握していて、このカテゴリの問題を巧妙に回避するコードを記述できたとしても、将来そのコードの保守を行う別の開発者が同じようにこの問題に通じているとは限りません。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>If you mix declarative and imperative coding styles, your code will be more brittle.</source>
+          <target state="translated">宣言型と命令型のコーディング スタイルが混在していると、コードが不安定になります。</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>If you write code that materializes a collection so that these problems are avoided, note it with comments as appropriate in your code, so that maintenance programmers will understand the issue.</source>
+          <target state="translated">これらの問題を回避するためにコレクションを具体化するコードを記述する場合は、コードを保守するプログラマが問題を把握できるように、必要に応じてコメントを付けるようにしてください。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Second, if performance and other considerations allow, use only declarative code.</source>
+          <target state="translated">第&amp;2; に、パフォーマンスやその他の事情が許すのであれば、宣言型のコードのみを使用するようにします。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Don't modify your existing XML tree.</source>
+          <target state="translated">既存の XML ツリーは変更せずに、</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Generate a new one.</source>
+          <target state="translated">新しいツリーを生成します。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Advanced LINQ to XML Programming (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>高度な LINQ to XML のプログラミング (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">643fff648336c664961ad7956308acbaea262f61</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\async\walkthrough-accessing-the-web-by-using-async-and-await.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">829f0cb2cd2a5a72fc93d6bd7a25acd0ca650e03</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4479d7063bc080496d0bc1f06d130050323e93d2</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Accessing the Web with Async and Await (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Async で Web にアクセスして、Await (Visual Basic) |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)</source>
+          <target state="translated">チュートリアル: Async と Await を使用した Web へのアクセス (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can write asynchronous programs more easily and intuitively by using features that were introduced in <ph id="ph1">[!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]</ph>.</source>
+          <target state="translated">プログラムを作成できます非同期より簡単かつ直感的にで導入された機能を使用して<ph id="ph1">[!INCLUDE[vs_dev11_long](../../../../csharp/includes/vs_dev11_long_md.md)]</ph>します。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You can write asynchronous code that looks like synchronous code and let the compiler handle the difficult callback functions and continuations that asynchronous code usually entails.</source>
+          <target state="translated">同期コードに似た非同期コードを記述し、通常の非同期コードが必要とする難しいコールバック関数や継続の処理をコンパイラに任せます。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>For more information about the Async feature, see <bpt id="p1">[</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>.</source>
+          <target state="translated">非同期機能の詳細については、次を参照してください。 <bpt id="p1">[</bpt>Async と Await (Visual Basic) を使用した非同期プログラミング<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This walkthrough starts with a synchronous Windows Presentation Foundation (WPF) application that sums the number of bytes in a list of websites.</source>
+          <target state="translated">このチュートリアルは、Web サイトの一覧でのバイト数の合計を計算する同期 Windows Presentation Foundation (WPF) アプリケーションから開始します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>The walkthrough then converts the application to an asynchronous solution by using the new features.</source>
+          <target state="translated">その後、新しい機能を使用して、アプリケーションを非同期ソリューションに変換します。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you don't want to build the applications yourself, you can download "Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)" from <bpt id="p1">[</bpt>Developer Code Samples<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept>.</source>
+          <target state="translated">アプリケーションをビルドしたくない場合は、ダウンロード"Async サンプル: Web のチュートリアル (c# および Visual Basic) にアクセスする"から<bpt id="p1">[</bpt>デベロッパー サンプル コード集<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept>します。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In this walkthrough, you complete the following tasks:</source>
+          <target state="translated">このチュートリアルでは、次のタスクを行います。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To create a WPF application<ept id="p1">](#CreateWPFApp)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>WPF アプリケーションを作成するには<ept id="p1">](#CreateWPFApp)</ept></target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To design a simple WPF MainWindow<ept id="p1">](#MainWindow)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>単純な WPF MainWindow をデザインします。<ept id="p1">](#MainWindow)</ept></target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To add a reference<ept id="p1">](#AddRef)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>参照を追加するには<ept id="p1">](#AddRef)</ept></target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To add necessary Imports statements<ept id="p1">](#ImportsState)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>必要な Imports ステートメントを追加するには<ept id="p1">](#ImportsState)</ept></target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To create a synchronous application<ept id="p1">](#synchronous)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>同期アプリケーションを作成するには<ept id="p1">](#synchronous)</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To test the synchronous solution<ept id="p1">](#testSynch)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>同期ソリューションをテストするには<ept id="p1">](#testSynch)</ept></target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert GetURLContents to an asynchronous method<ept id="p1">](#GetURLContents)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>GetURLContents を非同期メソッドに変換するには<ept id="p1">](#GetURLContents)</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert SumPageSizes to an asynchronous method<ept id="p1">](#SumPageSizes)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>SumPageSizes を非同期メソッドに変換するには<ept id="p1">](#SumPageSizes)</ept></target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To convert startButton_Click to an asynchronous method<ept id="p1">](#startButton)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>StartButton_Click を非同期メソッドに変換するには<ept id="p1">](#startButton)</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To test the asynchronous solution<ept id="p1">](#testAsynch)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>非同期のソリューションをテストするには<ept id="p1">](#testAsynch)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>To replace method GetURLContentsAsync with a .NET Framework method<ept id="p1">](#GetURLContentsAsync)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>GetURLContentsAsync メソッドを .NET Framework メソッドに置き換えます<ept id="p1">](#GetURLContentsAsync)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Example<ept id="p1">](#BKMK_CompleteCodeExamples)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>使用例<ept id="p1">](#BKMK_CompleteCodeExamples)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Prerequisites</source>
+          <target state="translated">必須コンポーネント</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Visual Studio 2012 or later must be installed on your computer.</source>
+          <target state="translated">Visual Studio 2012 またはそれ以降は、お使いのコンピューターにインストールする必要があります。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>For more information, see the <bpt id="p1">[</bpt>Microsoft website<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=235233)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。、 <bpt id="p1">[</bpt>Microsoft web サイト<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=235233)</ept>します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="CreateWPFApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To create a WPF application</source>
+          <target state="translated"><bpt id="p1">&lt;a name="CreateWPFApp"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>WPF アプリケーションを作成するには</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Start Visual Studio.</source>
+          <target state="translated">Visual Studio を起動します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>File<ept id="p1">**</ept>, <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">メニュー バーで、 <bpt id="p1">**</bpt>[ファイル]<ept id="p1">**</ept>、 <bpt id="p2">**</bpt>[新規作成]<ept id="p2">**</ept>、 <bpt id="p3">**</bpt>[プロジェクト]<ept id="p3">**</ept>の順にクリックします。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box opens.</source>
+          <target state="translated"><bpt id="p1">**</bpt>[新しいプロジェクト]<ept id="p1">**</ept> ダイアログ ボックスが表示されます。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Installed Templates<ept id="p1">**</ept> pane, choose Visual Basic, and then choose <bpt id="p2">**</bpt>WPF Application<ept id="p2">**</ept> from the list of project types.</source>
+          <target state="translated"><bpt id="p1">**</bpt>インストールされたテンプレート<ept id="p1">**</ept>] ウィンドウでは、Visual Basic を選択し、[ <bpt id="p2">**</bpt>WPF アプリケーション<ept id="p2">**</ept>プロジェクトの種類の一覧からです。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> text box, enter <ph id="ph1">`AsyncExampleWPF`</ph>, and then choose the <bpt id="p2">**</bpt>OK<ept id="p2">**</ept> button.</source>
+          <target state="translated"><bpt id="p1">**</bpt>名<ept id="p1">**</ept>テキスト ボックスに、入力<ph id="ph1">`AsyncExampleWPF`</ph>を選択し、 <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>  ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The new project appears in <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>.</source>
+          <target state="translated">新しいプロジェクトに表示されます<bpt id="p1">**</bpt>ソリューション エクスプ ローラー<ept id="p1">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="MainWindow"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To design a simple WPF MainWindow</source>
+          <target state="translated"><bpt id="p1">&lt;a name="MainWindow"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>単純な WPF MainWindow をデザインします。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>In the Visual Studio Code Editor, choose the <bpt id="p1">**</bpt>MainWindow.xaml<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Visual Studio コード エディターで、 <bpt id="p1">**</bpt>[MainWindow.xaml]<ept id="p1">**</ept> タブをクリックします。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>Toolbox<ept id="p1">**</ept> window isn’t visible, open the <bpt id="p2">**</bpt>View<ept id="p2">**</ept> menu, and then choose <bpt id="p3">**</bpt>Toolbox<ept id="p3">**</ept>.</source>
+          <target state="translated">場合、<bpt id="p1">**</bpt>ツールボックス<ept id="p1">**</ept>ウィンドウが表示されている、開かれている、<bpt id="p2">**</bpt>ビュー<ept id="p2">**</ept> ] メニューの [クリックして<bpt id="p3">**</bpt>ツールボックス<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add a <bpt id="p1">**</bpt>Button<ept id="p1">**</ept> control and a <bpt id="p2">**</bpt>TextBox<ept id="p2">**</ept> control to the <bpt id="p3">**</bpt>MainWindow<ept id="p3">**</ept> window.</source>
+          <target state="translated">追加、<bpt id="p1">**</bpt>ボタン<ept id="p1">**</ept>コントロールと<bpt id="p2">**</bpt> テキスト ボックス<ept id="p2">**</ept>に制御を<bpt id="p3">**</bpt>MainWindow<ept id="p3">**</ept>ウィンドウです。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Highlight the <bpt id="p1">**</bpt>TextBox<ept id="p1">**</ept> control and, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> window, set the following values:</source>
+          <target state="translated">強調表示、 <bpt id="p1">**</bpt> テキスト ボックス<ept id="p1">**</ept>コントロールと、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept>ウィンドウでは、次の値を設定します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property to <ph id="ph1">`resultsTextBox`</ph>.</source>
+          <target state="translated">設定、<bpt id="p1">**</bpt>名<ept id="p1">**</ept>プロパティを<ph id="ph1">`resultsTextBox`</ph>します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Height<ept id="p1">**</ept> property to 250.</source>
+          <target state="translated">設定、<bpt id="p1">**</bpt>高さ<ept id="p1">**</ept>250 プロパティです。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Width<ept id="p1">**</ept> property to 500.</source>
+          <target state="translated">設定、<bpt id="p1">**</bpt>幅<ept id="p1">**</ept>500 プロパティです。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Text<ept id="p1">**</ept> tab, specify a monospaced font, such as Lucida Console or Global Monospace.</source>
+          <target state="translated"><bpt id="p1">**</bpt>テキスト<ept id="p1">**</ept>タブで、グローバル Monospace Lucida コンソールなどの等幅フォントを指定します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Highlight the <bpt id="p1">**</bpt>Button<ept id="p1">**</ept> control and, in the <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept> window, set the following values:</source>
+          <target state="translated">強調表示、<bpt id="p1">**</bpt>ボタン<ept id="p1">**</ept>コントロールと、<bpt id="p2">**</bpt>プロパティ<ept id="p2">**</ept>ウィンドウでは、次の値を設定します。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Set the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> property to <ph id="ph1">`startButton`</ph>.</source>
+          <target state="translated">設定、<bpt id="p1">**</bpt>名<ept id="p1">**</ept>プロパティを<ph id="ph1">`startButton`</ph>します。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Change the value of the <bpt id="p1">**</bpt>Content<ept id="p1">**</ept> property from <bpt id="p2">**</bpt>Button<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Start<ept id="p3">**</ept>.</source>
+          <target state="translated">値を変更、<bpt id="p1">**</bpt>コンテンツ<ept id="p1">**</ept>プロパティから<bpt id="p2">**</bpt>ボタン<ept id="p2">**</ept>に<bpt id="p3">**</bpt>開始<ept id="p3">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Position the text box and the button so that both appear in the <bpt id="p1">**</bpt>MainWindow<ept id="p1">**</ept> window.</source>
+          <target state="translated">両方ともに表示されるように、テキスト ボックスとボタンを位置、 <bpt id="p1">**</bpt>MainWindow<ept id="p1">**</ept>ウィンドウです。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>For more information about the WPF XAML Designer, see <bpt id="p1">[</bpt>Creating a UI by using XAML Designer<ept id="p1">](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)</ept>.</source>
+          <target state="translated">WPF XAML デザイナーの詳細については、次を参照してください。 <bpt id="p1">[</bpt>XAML デザイナーを使用して UI を作成する<ept id="p1">](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio)</ept>です。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="AddRef"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To add a reference</source>
+          <target state="translated"><bpt id="p1">&lt;a name="AddRef"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>参照を追加するには</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, highlight your project's name.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ソリューション エクスプ ローラー<ept id="p1">**</ept>プロジェクトの名前を強調表示します。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>On the menu bar, choose <bpt id="p1">**</bpt>Project<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Add Reference<ept id="p2">**</ept>.</source>
+          <target state="translated">メニュー バー<bpt id="p1">**</bpt>プロジェクト<ept id="p1">**</ept>、<bpt id="p2">**</bpt>参照の追加<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>Reference Manager<ept id="p1">**</ept> dialog box appears.</source>
+          <target state="translated"><bpt id="p1">**</bpt>参照マネージャー<ept id="p1">**</ept>  ダイアログ ボックスが表示されます。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>At the top of the dialog box, verify that your project is targeting the .NET Framework 4.5 or higher.</source>
+          <target state="translated">ダイアログ ボックスの上部にあるプロジェクトが .NET Framework 4.5 以降を対象としていることを確認します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Assemblies<ept id="p1">**</ept> area, choose <bpt id="p2">**</bpt>Framework<ept id="p2">**</ept> if it isn’t already chosen.</source>
+          <target state="translated"><bpt id="p1">**</bpt>アセンブリ<ept id="p1">**</ept>領域で、選択<bpt id="p2">**</bpt>Framework<ept id="p2">**</ept>が選択されていない場合。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>In the list of names, select the <bpt id="p1">**</bpt>System.Net.Http<ept id="p1">**</ept> check box.</source>
+          <target state="translated">名前の一覧で、選択、 <bpt id="p1">**</bpt>System.Net.Http<ept id="p1">**</ept>チェック ボックスをオンします。</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Choose the <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> button to close the dialog box.</source>
+          <target state="translated">選択、 <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>  ダイアログ ボックスを閉じます。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="ImportsState"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To add necessary Imports statements</source>
+          <target state="translated"><bpt id="p1">&lt;a name="ImportsState"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>必要な Imports ステートメントを追加するには</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, open the shortcut menu for MainWindow.xaml.vb, and then choose <bpt id="p2">**</bpt>View Code<ept id="p2">**</ept>.</source>
+          <target state="translated"><bpt id="p1">**</bpt>ソリューション エクスプ ローラー<ept id="p1">**</ept>MainWindow.xaml.vb のショートカット メニューを開き、クリックして<bpt id="p2">**</bpt>コードの表示<ept id="p2">**</ept>します。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Add the following <ph id="ph1">`Imports`</ph> statements at the top of the code file if they’re not already present.</source>
+          <target state="translated">次の追加<ph id="ph1">`Imports`</ph>存在していない場合は、コード ファイルの上部にあるステートメントです。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="synchronous"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To create a synchronous application</source>
+          <target state="translated"><bpt id="p1">&lt;a name="synchronous"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>同期アプリケーションを作成するには</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>In the design window, MainWindow.xaml, double-click the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button to create the <ph id="ph1">`startButton_Click`</ph> event handler in MainWindow.xaml.vb.</source>
+          <target state="translated">デザイン ウィンドウで、MainWindow.xaml をダブルクリック、<bpt id="p1">**</bpt>開始<ept id="p1">**</ept>を作成するボタン、 <ph id="ph1">`startButton_Click`</ph> MainWindow.xaml.vb 内のイベント ハンドラーです。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In MainWindow.xaml.vb, copy the following code into the body of <ph id="ph1">`startButton_Click`</ph>:</source>
+          <target state="translated">MainWindow.xaml.vb の本文に次のコードをコピー <ph id="ph1">`startButton_Click`</ph>:</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The code calls the method that drives the application, <ph id="ph1">`SumPageSizes`</ph>, and displays a message when control returns to <ph id="ph2">`startButton_Click`</ph>.</source>
+          <target state="translated">このコードは、<ph id="ph1">`SumPageSizes`</ph> アプリケーションを実行するメソッドを呼び出し、<ph id="ph2">`startButton_Click`</ph> に制御が戻るとメッセージを表示します。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The code for the synchronous solution contains the following four methods:</source>
+          <target state="translated">同期ソリューションのコードには、次の&amp;4; つのメソッドが含まれています。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`SumPageSizes`</ph>, which gets a list of webpage URLs from <ph id="ph2">`SetUpURLList`</ph> and then calls <ph id="ph3">`GetURLContents`</ph> and <ph id="ph4">`DisplayResults`</ph> to process each URL.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizes`</ph> は、<ph id="ph2">`SetUpURLList`</ph> から Web ページ URL のリストを取得し、<ph id="ph3">`GetURLContents`</ph> と <ph id="ph4">`DisplayResults`</ph> を呼び出して各 URL を処理します。</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`SetUpURLList`</ph>, which makes and returns a list of web addresses.</source>
+          <target state="translated"><ph id="ph1">`SetUpURLList`</ph> は、Web アドレスのリストを作成して返します。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`GetURLContents`</ph>, which downloads the contents of each website and returns the contents as a byte array.</source>
+          <target state="translated"><ph id="ph1">`GetURLContents`</ph> は、各 Web サイトのコンテンツをダウンロードし、バイト配列としてそのコンテンツを返します。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`DisplayResults`</ph>, which displays  the number of bytes in the byte array for each URL.</source>
+          <target state="translated"><ph id="ph1">`DisplayResults`</ph> は、各 URL のバイト配列内のバイト数を表示します。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Copy the following four methods, and then paste them under the <ph id="ph1">`startButton_Click`</ph> event handler in MainWindow.xaml.vb:</source>
+          <target state="translated">次の&amp;4; つのメソッドをコピーして貼り付けて下に、 <ph id="ph1">`startButton_Click`</ph> MainWindow.xaml.vb 内のイベント ハンドラー。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="testSynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To test the synchronous solution</source>
+          <target state="translated"><bpt id="p1">&lt;a name="testSynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>同期ソリューションをテストするには</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">F5 キーを押してプログラムを実行し、 <bpt id="p1">**</bpt>[Start]<ept id="p1">**</ept> を複数回クリックします。</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Output that resembles the following list should appear.</source>
+          <target state="translated">次の一覧のような出力が表示されます。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Notice that it takes a few seconds to display the counts.</source>
+          <target state="translated">カウントの表示には数秒かかる点に注意してください。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>During that time, the UI thread is blocked while it waits for requested resources to download.</source>
+          <target state="translated">その間、要求されたリソースのダウンロードが完了するまで UI スレッドがブロックされます。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>As a result, you can't move, maximize, minimize, or even close the display window after you choose the  <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">その結果、移動できない場合を最大化、最小化、またはを選択した後、表示 ウィンドウを閉じることも、<bpt id="p1">**</bpt>開始<ept id="p1">**</ept> ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>These efforts fail until the byte counts start to appear.</source>
+          <target state="translated">バイト カウントの表示が開始するまでは、これらの操作を実行しても失敗します。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>If a website isn’t responding, you have no indication of which site failed.</source>
+          <target state="translated">Web サイトが応答していない場合、どのサイトに問題があるのかを示す情報は表示されません。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It is difficult even to stop waiting and close the program.</source>
+          <target state="translated">待つのをやめて、プログラムを閉じることさえ難しい状態になります。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="GetURLContents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert GetURLContents to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="GetURLContents"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>GetURLContents を非同期メソッドに変換するには</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To convert the synchronous solution to an asynchronous solution, the best place to start is in <ph id="ph1">`GetURLContents`</ph> because the calls to the &lt;xref:System.Net.HttpWebRequest&gt; method &lt;xref:System.Net.HttpWebRequest.GetResponse%2A&gt; and to the &lt;xref:System.IO.Stream&gt; method &lt;xref:System.IO.Stream.CopyTo%2A&gt; are where the application accesses the web.</source>
+          <target state="translated">開始する最適な場所が、同期ソリューションを非同期のソリューションに変換する<ph id="ph1">`GetURLContents`</ph>ためへの呼び出し、&lt;xref:System.Net.HttpWebRequest&gt;メソッド&lt;xref:System.Net.HttpWebRequest.GetResponse%2A&gt;にされ、&lt;xref:System.IO.Stream&gt;メソッド&lt;xref:System.IO.Stream.CopyTo%2A&gt;アプリケーションが web にアクセスするには&lt;/xref:System.IO.Stream.CopyTo%2A&gt;&lt;/xref:System.IO.Stream&gt;&lt;/xref:System.Net.HttpWebRequest.GetResponse%2A&gt;&lt;/xref:System.Net.HttpWebRequest&gt;。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>The .NET Framework makes the conversion easy by supplying asynchronous versions of both methods.</source>
+          <target state="translated">.NET Framework には両方のメソッドの非同期バージョンが用意されているため、変換は簡単です。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>For more information about the methods that are used in <ph id="ph1">`GetURLContents`</ph>, see &lt;xref:System.Net.WebRequest&gt;.</source>
+          <target state="translated">使用される方法の詳細については<ph id="ph1">`GetURLContents`</ph>、 &lt;xref:System.Net.WebRequest&gt;.&lt;/xref:System.Net.WebRequest&gt;を参照してください。</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>As you follow the steps in this walkthrough, several compiler errors appear.</source>
+          <target state="translated">このチュートリアルの手順に従っていると、いくつかのコンパイラ エラーが表示されます。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>You can ignore them and continue with the walkthrough.</source>
+          <target state="translated">これらのエラーは無視することで、チュートリアルを続行できます。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Change the method that's called in the third line of <ph id="ph1">`GetURLContents`</ph> from <ph id="ph2">`GetResponse`</ph> to the asynchronous, task-based &lt;xref:System.Net.WebRequest.GetResponseAsync%2A&gt; method.</source>
+          <target state="translated">3 行目に呼び出されるメソッドを変更する<ph id="ph1">`GetURLContents`</ph>から<ph id="ph2">`GetResponse`</ph>、非同期タスク ベース&lt;xref:System.Net.WebRequest.GetResponseAsync%2A&gt;メソッド&lt;/xref:System.Net.WebRequest.GetResponseAsync%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`GetResponseAsync`</ph> returns a &lt;xref:System.Threading.Tasks.Task%601&gt;.</source>
+          <target state="translated"><ph id="ph1">`GetResponseAsync`</ph>&lt;xref:System.Threading.Tasks.Task%601&gt;。&lt;/xref:System.Threading.Tasks.Task%601&gt;を返します</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>In this case, the <bpt id="p1">*</bpt>task return variable<ept id="p1">*</ept>, <ph id="ph1">`TResult`</ph>, has type &lt;xref:System.Net.WebResponse&gt;.</source>
+          <target state="translated">ここで、<bpt id="p1">*</bpt>タスク戻り変数<ept id="p1">*</ept>、 <ph id="ph1">`TResult`</ph>、型を持つ&lt;xref:System.Net.WebResponse&gt;.&lt;/xref:System.Net.WebResponse&gt;</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>The task is a promise to produce an actual <ph id="ph1">`WebResponse`</ph> object after the requested data has been downloaded and the task has run to completion.</source>
+          <target state="translated">このタスクは、要求されたデータのダウンロードが完了し、タスクが最後まで実行された後に、実際の <ph id="ph1">`WebResponse`</ph> オブジェクトを生成するという約束です。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>To retrieve the <ph id="ph1">`WebResponse`</ph> value from the task, apply an <bpt id="p1">[</bpt>Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept> operator to the call to <ph id="ph2">`GetResponseAsync`</ph>, as the following code shows.</source>
+          <target state="translated">取得する、<ph id="ph1">`WebResponse`</ph>タスクから値を適用、 <bpt id="p1">[</bpt>Await<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept>演算子への呼び出しを<ph id="ph2">`GetResponseAsync`</ph>次のコードを示します。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>5<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Await`</ph> operator suspends the execution of the current method, <ph id="ph2">`GetURLContents`</ph>, until the awaited task is complete.</source>
+          <target state="translated"><ph id="ph1">`Await`</ph>演算子は、現在のメソッドの実行を中断<ph id="ph2">`GetURLContents`</ph>待機中のタスクが完了するまで、します。</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>In the meantime, control returns to the caller of the current method.</source>
+          <target state="translated">その間、現在のメソッドの呼び出し元に制御が戻されます。</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In this example, the current method is <ph id="ph1">`GetURLContents`</ph>, and the caller is <ph id="ph2">`SumPageSizes`</ph>.</source>
+          <target state="translated">この例では、現在のメソッドが <ph id="ph1">`GetURLContents`</ph> で、呼び出し元が <ph id="ph2">`SumPageSizes`</ph> です。</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>When the task is finished, the promised <ph id="ph1">`WebResponse`</ph> object is produced as the value of the awaited task and assigned to the variable <ph id="ph2">`response`</ph>.</source>
+          <target state="translated">タスクが完了すると、約束されていた <ph id="ph1">`WebResponse`</ph> オブジェクトが完了したタスクの値として生成され、変数 <ph id="ph2">`response`</ph> に割り当てられます。</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>6<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`webReq.GetResponseAsync`</ph> returns a <ph id="ph2">`Task(Of WebResponse)`</ph> or <ph id="ph3">`Task&lt;WebResponse&gt;`</ph>.</source>
+          <target state="translated"><ph id="ph1">`webReq.GetResponseAsync`</ph> への呼び出しによって、<ph id="ph2">`Task(Of WebResponse)`</ph> または <ph id="ph3">`Task&lt;WebResponse&gt;`</ph> が返されます。</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>Then an <ph id="ph1">`Await`</ph> operator is applied to the task to retrieve the <ph id="ph2">`WebResponse`</ph> value.</source>
+          <target state="translated"><ph id="ph1">`Await`</ph>を取得するタスクに演算子を適用、<ph id="ph2">`WebResponse`</ph>値。</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Because you added the <ph id="ph1">`Await`</ph> operator in the previous step, a compiler error occurs.</source>
+          <target state="translated">追加したので、<ph id="ph1">`Await`</ph>前の手順で演算子は、コンパイラ エラーが発生します。</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The operator can be used only in methods that are marked with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier.</source>
+          <target state="translated">マークされたメソッドでのみ使用できます、演算子、 <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept>修飾子です。</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Ignore the error while you repeat the conversion steps to replace the call to <ph id="ph1">`CopyTo`</ph> with a call to <ph id="ph2">`CopyToAsync`</ph>.</source>
+          <target state="translated"><ph id="ph1">`CopyTo`</ph> への呼び出しを <ph id="ph2">`CopyToAsync`</ph> への呼び出しに置き換える変換手順を繰り返す間は、エラーを無視してください。</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Change the name of the method that’s called to &lt;xref:System.IO.Stream.CopyToAsync%2A&gt;.</source>
+          <target state="translated">&lt;xref:System.IO.Stream.CopyToAsync%2A&gt;。&lt;/xref:System.IO.Stream.CopyToAsync%2A&gt;ために呼び出されるメソッドの名前を変更します。</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`CopyTo`</ph> or <ph id="ph2">`CopyToAsync`</ph> method copies bytes to its argument, <ph id="ph3">`content`</ph>, and doesn’t return a meaningful value.</source>
+          <target state="translated"><ph id="ph1">`CopyTo`</ph> または <ph id="ph2">`CopyToAsync`</ph> メソッドは、その引数 <ph id="ph3">`content`</ph> にバイトをコピーし、意味のある値は返しません。</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>In the synchronous version, the call to <ph id="ph1">`CopyTo`</ph> is a simple statement that doesn't return a value.</source>
+          <target state="translated">同期バージョンでは、<ph id="ph1">`CopyTo`</ph> への呼び出しは値を返さない単純なステートメントです。</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The asynchronous version, <ph id="ph1">`CopyToAsync`</ph>, returns a &lt;xref:System.Threading.Tasks.Task&gt;.</source>
+          <target state="translated">非同期バージョン<ph id="ph1">`CopyToAsync`</ph>、 &lt;xref:System.Threading.Tasks.Task&gt;.&lt;/xref:System.Threading.Tasks.Task&gt;を返します</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>The task functions like "Task(void)" and enables the method to be awaited.</source>
+          <target state="translated">タスクは "Task(void)" のように機能し、メソッドを待機できるようにします。</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>Apply <ph id="ph1">`Await`</ph> or <ph id="ph2">`await`</ph> to the call to <ph id="ph3">`CopyToAsync`</ph>, as the following code shows.</source>
+          <target state="translated">次のコードに示すように、<ph id="ph1">`Await`</ph> または <ph id="ph2">`await`</ph> を、<ph id="ph3">`CopyToAsync`</ph> への呼び出しに適用します。</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>7<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The previous statement abbreviates the following two lines of code.</source>
+          <target state="translated">上記のステートメントでは、次の&amp;2; 行のコードを省略しています。</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>8<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>All that remains to be done in <ph id="ph1">`GetURLContents`</ph> is to adjust the method signature.</source>
+          <target state="translated"><ph id="ph1">`GetURLContents`</ph> 内で必要な作業として残っているのは、メソッド シグネチャの調整のみです。</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>You can use the <ph id="ph1">`Await`</ph> operator only in methods that are marked with the <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept> modifier.</source>
+          <target state="translated">使用することができます、<ph id="ph1">`Await`</ph>演算子でマークされたメソッドでのみ、 <bpt id="p1">[</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept>修飾子です。</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Add the modifier to mark the method as an <bpt id="p1">*</bpt>async method<ept id="p1">*</ept>, as the following code shows.</source>
+          <target state="translated">メソッドとしてマークする修飾子を追加、 <bpt id="p1">*</bpt>async メソッド<ept id="p1">*</ept>次のコードを示します。</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>9<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The return type of an async method can only be &lt;xref:System.Threading.Tasks.Task&gt;, &lt;xref:System.Threading.Tasks.Task%601&gt;.</source>
+          <target state="translated">&lt;xref:System.Threading.Tasks.Task&gt; &lt;xref:System.Threading.Tasks.Task%601&gt;。&lt;/xref:System.Threading.Tasks.Task%601&gt;&lt;/xref:System.Threading.Tasks.Task&gt;できる、非同期メソッドの戻り値の型</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, the method must be a <ph id="ph1">`Function`</ph> that returns a <ph id="ph2">`Task`</ph> or a <ph id="ph3">`Task(Of T)`</ph>, or the method must be a <ph id="ph4">`Sub`</ph>.</source>
+          <target state="translated">Visual Basic でのメソッドは、<ph id="ph2">`Task`</ph> または <ph id="ph3">`Task(Of T)`</ph> を返す <ph id="ph1">`Function`</ph> にするか、<ph id="ph4">`Sub`</ph> にする必要があります。</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Typically, a <ph id="ph1">`Sub`</ph> method  is used only in an async event handler, where <ph id="ph2">`Sub`</ph> is required.</source>
+          <target state="translated">通常、<ph id="ph1">`Sub`</ph>メソッドは非同期のイベント ハンドラーでのみ使用場所<ph id="ph2">`Sub`</ph>が必要です。</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>In other cases, you use <ph id="ph1">`Task(T)`</ph> if the completed method has a <bpt id="p1">[</bpt>Return<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept> statement that returns a value of type T, and you use <ph id="ph2">`Task`</ph> if the completed method doesn’t return a meaningful value.</source>
+          <target state="translated">使用するその他の場合、 <ph id="ph1">`Task(T)`</ph> 、完成したメソッドがある場合、<bpt id="p1">[</bpt>返す<ept id="p1">](../../../../visual-basic/language-reference/statements/return-statement.md)</ept>の値を返すステートメントは、T を入力し、使用する<ph id="ph2">`Task`</ph>完成したメソッドの有効な値が返されない場合。</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。 <bpt id="p1">[</bpt>Async を返す型 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Method <ph id="ph1">`GetURLContents`</ph> has a return statement, and the statement returns a byte array.</source>
+          <target state="translated">メソッド <ph id="ph1">`GetURLContents`</ph> には return ステートメントがあり、このステートメントはバイト配列を返します。</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Therefore, the return type of the async version is Task(T), where T is a byte array.</source>
+          <target state="translated">そのため、非同期バージョンの戻り値の型は Task(T) であり、T はバイト配列です。</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Make the following changes in the method signature:</source>
+          <target state="translated">メソッド シグネチャに、次の変更を加えます。</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Change the return type to <ph id="ph1">`Task(Of Byte())`</ph>.</source>
+          <target state="translated">戻り値の型を変更する<ph id="ph1">`Task(Of Byte())`</ph>です。</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>By convention, asynchronous methods have names that end in "Async," so rename the method <ph id="ph1">`GetURLContentsAsync`</ph>.</source>
+          <target state="translated">規則により、非同期メソッドは "Async" で終わる名前を持つことになっているため、メソッドの名前を <ph id="ph1">`GetURLContentsAsync`</ph> に変更します。</target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">これらの変更を次のコードに示します。</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>With those few changes, the conversion of <ph id="ph1">`GetURLContents`</ph> to an asynchronous method is complete.</source>
+          <target state="translated">このいくつかの変更によって、<ph id="ph1">`GetURLContents`</ph> の非同期メソッドへの変換が完了しました。</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="SumPageSizes"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert SumPageSizes to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="SumPageSizes"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>SumPageSizes を非同期メソッドに変換するには</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Repeat the steps from the previous procedure for <ph id="ph1">`SumPageSizes`</ph>.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizes`</ph> に対して、前述した手順を繰り返します。</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>First, change the call to <ph id="ph1">`GetURLContents`</ph> to an asynchronous call.</source>
+          <target state="translated">まずは、<ph id="ph1">`GetURLContents`</ph> への呼び出しを非同期呼び出しに変更します。</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Change the name of the method that’s called from <ph id="ph1">`GetURLContents`</ph> to <ph id="ph2">`GetURLContentsAsync`</ph>, if you haven't already done so.</source>
+          <target state="translated">呼び出されるメソッドの名前を <ph id="ph1">`GetURLContents`</ph> から <ph id="ph2">`GetURLContentsAsync`</ph> に変更します (まだ変更していない場合)。</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Apply <ph id="ph1">`Await`</ph> to the task that <ph id="ph2">`GetURLContentsAsync`</ph> returns to obtain the byte array value.</source>
+          <target state="translated">適用<ph id="ph1">`Await`</ph>タスクにいる<ph id="ph2">`GetURLContentsAsync`</ph>バイトを取得するを返します。 配列の値。</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">これらの変更を次のコードに示します。</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The previous assignment abbreviates the following two lines of code.</source>
+          <target state="translated">上記の割り当てでは、次の&amp;2; 行のコードを省略しています。</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Make the following changes in the method's signature:</source>
+          <target state="translated">メソッドのシグネチャに、次の変更を加えます。</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>Mark the method with the <ph id="ph1">`Async`</ph> modifier.</source>
+          <target state="translated">使用してメソッドをマーク、<ph id="ph1">`Async`</ph>修飾子です。</target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Add "Async" to the method name.</source>
+          <target state="translated">メソッド名に "Async" を追加します。</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>There is no task return variable, T, this time because <ph id="ph1">`SumPageSizesAsync`</ph> doesn’t return a value for T. (The method has no <ph id="ph2">`Return`</ph> statement.) However, the method must return a <ph id="ph3">`Task`</ph> to be awaitable.</source>
+          <target state="translated">今回、タスク戻り変数の T がない理由は、<ph id="ph1">`SumPageSizesAsync`</ph> が T のための値を返さないからです (メソッドには いいえ<ph id="ph2">`Return`</ph>ステートメントです)。ただし、メソッドは待機可能になるために <ph id="ph3">`Task`</ph> を返す必要があります。</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Therefore, change the method type from <ph id="ph1">`Sub`</ph> to <ph id="ph2">`Function`</ph>.</source>
+          <target state="translated">したがってからメソッドの型を変更<ph id="ph1">`Sub`</ph>に<ph id="ph2">`Function`</ph>します。</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>The return type of the function is <ph id="ph1">`Task`</ph>.</source>
+          <target state="translated">関数の戻り値の型は、<ph id="ph1">`Task`</ph> です。</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">これらの変更を次のコードに示します。</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>The conversion of <ph id="ph1">`SumPageSizes`</ph> to <ph id="ph2">`SumPageSizesAsync`</ph> is complete.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizes`</ph> から <ph id="ph2">`SumPageSizesAsync`</ph> への変換が完了しました。</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="startButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To convert startButton_Click to an asynchronous method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="startButton"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>StartButton_Click を非同期メソッドに変換するには</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In the event handler, change the name of the called method from <ph id="ph1">`SumPageSizes`</ph> to <ph id="ph2">`SumPageSizesAsync`</ph>, if you haven’t already done so.</source>
+          <target state="translated">イベント ハンドラーで、呼び出されるメソッドの名前を <ph id="ph1">`SumPageSizes`</ph> から <ph id="ph2">`SumPageSizesAsync`</ph> に変更します (まだ変更していない場合)。</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Because <ph id="ph1">`SumPageSizesAsync`</ph> is an async method, change the code in the event handler to await the result.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizesAsync`</ph> は非同期メソッドであるため、結果を待機するイベント ハンドラーのコードを変更します。</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>The call to <ph id="ph1">`SumPageSizesAsync`</ph> mirrors the call to <ph id="ph2">`CopyToAsync`</ph> in <ph id="ph3">`GetURLContentsAsync`</ph>.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizesAsync`</ph> への呼び出しは、<ph id="ph3">`GetURLContentsAsync`</ph> の <ph id="ph2">`CopyToAsync`</ph> への呼び出しに似ています。</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>The call returns a <ph id="ph1">`Task`</ph>, not a <ph id="ph2">`Task(T)`</ph>.</source>
+          <target state="translated">この呼び出しによって、<ph id="ph2">`Task(T)`</ph> ではなく <ph id="ph1">`Task`</ph> が返されます。</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>As in previous procedures, you can convert the call by using one statement or two statements.</source>
+          <target state="translated">前述した手順と同様に、1 つまたは&amp;2; つのステートメントを使用して、呼び出しを変換できます。</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>The following code shows these changes.</source>
+          <target state="translated">これらの変更を次のコードに示します。</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>To prevent accidentally reentering the operation, add the following statement at the top of <ph id="ph1">`startButton_Click`</ph> to disable the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">誤って、操作を再入力を防ぐためには、次のステートメントを追加の上部にある<ph id="ph1">`startButton_Click`</ph>を無効にする、<bpt id="p1">**</bpt>開始<ept id="p1">**</ept> ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You can reenable the button at the end of the event handler.</source>
+          <target state="translated">イベント ハンドラーの末尾で、ボタンを再び有効にできます。</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For more information about reentrancy, see <bpt id="p1">[</bpt>Handling Reentrancy in Async Apps (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)</ept>.</source>
+          <target state="translated">再入の詳細については、次を参照してください。 <bpt id="p1">[</bpt>(Visual Basic) の非同期アプリにおける再入の処理<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Finally, add the <ph id="ph1">`Async`</ph> modifier to the declaration so that the event handler can await <ph id="ph2">`SumPagSizesAsync`</ph>.</source>
+          <target state="translated">最後に、追加、<ph id="ph1">`Async`</ph>修飾子、宣言をイベント ハンドラーを待機できるように<ph id="ph2">`SumPagSizesAsync`</ph>します。</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Typically, the names of event handlers aren’t changed.</source>
+          <target state="translated">通常、イベント ハンドラーの名前は変更されません。</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The return type isn’t changed to <ph id="ph1">`Task`</ph> because event handlers must be <ph id="ph2">`Sub`</ph> procedures in Visual Basic.</source>
+          <target state="translated">戻り値の型は変更されずに<ph id="ph1">`Task`</ph>イベント ハンドラーがある必要がありますので<ph id="ph2">`Sub`</ph>Visual Basic におけるプロシージャです。</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>The conversion of the project from synchronous to asynchronous processing is complete.</source>
+          <target state="translated">同期処理から非同期処理へのプロジェクトの変換が完了しました。</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="testAsynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To test the asynchronous solution</source>
+          <target state="translated"><bpt id="p1">&lt;a name="testAsynch"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>非同期のソリューションをテストするには</target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">F5 キーを押してプログラムを実行し、 <bpt id="p1">**</bpt>[Start]<ept id="p1">**</ept> を複数回クリックします。</target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Output that resembles the output of the synchronous solution should appear.</source>
+          <target state="translated">同期ソリューションの出力に似た出力が表示されます。</target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>However, notice the following differences.</source>
+          <target state="translated">ただし、次の相違点に注意してください。</target>       </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>The results don’t all occur at the same time, after the processing is complete.</source>
+          <target state="translated">処理の完了後に、すべての結果が同時に表示されることはありません。</target>       </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>For example, both programs contain a line in <ph id="ph1">`startButton_Click`</ph> that clears the text box.</source>
+          <target state="translated">たとえば、両方のプログラムの <ph id="ph1">`startButton_Click`</ph> には、テキスト ボックスをクリアする行が含まれています。</target>       </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>The intent is to clear the text box between runs if you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button for a second time, after one set of results has appeared.</source>
+          <target state="translated">選択した場合の実行の間のテキスト ボックスをオフにすることが目的、<bpt id="p1">**</bpt>開始<ept id="p1">**</ept>1 組の結果が表示されたら、2 回ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>In the synchronous version, the text box is cleared just before the counts appear for the second time, when the downloads are completed and the UI thread is free to do other work.</source>
+          <target state="translated">同期バージョンでは、2 回目のカウントが表示される直前、ダウンロードが完了して UI スレッドが他の処理を実行できる状態になったときにテキスト ボックスがクリアされます。</target>       </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>In the asynchronous version, the text box clears immediately after you choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">選択した後すぐに、非同期バージョンで、テキスト ボックスをクリア、<bpt id="p1">**</bpt>開始<ept id="p1">**</ept> ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>Most importantly, the UI thread isn’t blocked during the downloads.</source>
+          <target state="translated">最も重要な点は、ダウンロード中に UI スレッドがブロックされないことです。</target>       </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>You can move or resize the window while the web resources are being downloaded, counted, and displayed.</source>
+          <target state="translated">Web リソースをダウンロード、カウント、および表示している間に、ウィンドウの移動やサイズ変更を行うことができます。</target>       </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>If one of the websites is slow or not responding, you can cancel the operation by choosing the <bpt id="p1">**</bpt>Close<ept id="p1">**</ept> button (the x in the red field in the upper-right corner).</source>
+          <target state="translated">Web サイトのいずれかの処理が遅いか応答していないする操作を取り消すことを選択している場合、<bpt id="p1">**</bpt>閉じる<ept id="p1">**</ept>(右上隅の赤いフィールドに x) ボタンをクリックします。</target>       </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="GetURLContentsAsync"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> To replace method GetURLContentsAsync with a .NET Framework method</source>
+          <target state="translated"><bpt id="p1">&lt;a name="GetURLContentsAsync"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>GetURLContentsAsync メソッドを .NET Framework メソッドに置き換えます</target>       </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>The .NET Framework 4.5 provides many async methods that you can use.</source>
+          <target state="translated">.NET Framework 4.5 では、使用できる非同期メソッドが数多く用意されています。</target>       </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>One of them, the &lt;xref:System.Net.Http.HttpClient&gt; method &lt;xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt;, does just what you need for this walkthrough.</source>
+          <target state="translated">1 つで、&lt;xref:System.Net.Http.HttpClient&gt;メソッド&lt;xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt;、必要なものだけをこのチュートリアルでは&lt;/xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29&gt;&lt;/xref:System.Net.Http.HttpClient&gt;。</target>       </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>You can use it instead of the <ph id="ph1">`GetURLContentsAsync`</ph> method that you created in an earlier procedure.</source>
+          <target state="translated">これを、前述の手順で作成した <ph id="ph1">`GetURLContentsAsync`</ph> メソッドの代わりに使用できます。</target>       </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>The first step is to create an <ph id="ph1">`HttpClient`</ph> object in method <ph id="ph2">`SumPageSizesAsync`</ph>.</source>
+          <target state="translated">まずは、<ph id="ph2">`SumPageSizesAsync`</ph> メソッドに <ph id="ph1">`HttpClient`</ph> オブジェクトを作成します。</target>       </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>Add the following declaration at the start of the method.</source>
+          <target state="translated">次の宣言をメソッドの先頭に追加します。</target>       </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`SumPageSizesAsync,`</ph> replace the call to your <ph id="ph2">`GetURLContentsAsync`</ph> method with a call to the <ph id="ph3">`HttpClient`</ph> method.</source>
+          <target state="translated"><ph id="ph1">`SumPageSizesAsync,`</ph> で、<ph id="ph2">`GetURLContentsAsync`</ph> メソッドへの呼び出しを <ph id="ph3">`HttpClient`</ph> メソッドへの呼び出しに置き換えます。</target>       </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>Remove or comment out the <ph id="ph1">`GetURLContentsAsync`</ph> method that you wrote.</source>
+          <target state="translated">記述した <ph id="ph1">`GetURLContentsAsync`</ph> メソッドを削除するかコメント アウトします。</target>       </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Choose the F5 key to run the program, and then choose the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button.</source>
+          <target state="translated">F5 キーを押してプログラムを実行し、 <bpt id="p1">**</bpt>[Start]<ept id="p1">**</ept> を複数回クリックします。</target>       </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>The behavior of this version of the project should match the behavior that the "To test the asynchronous solution" procedure describes but with even less effort from you.</source>
+          <target state="translated">このバージョンのプロジェクトの動作は、「非同期ソリューションをテストするには」の手順で説明している動作と同じですが、さらに少ない手間で作成できます。</target>       </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CompleteCodeExamples"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Example</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CompleteCodeExamples"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>使用例</target>       </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>The following code contains the full example of the conversion from a synchronous to an asynchronous solution by using the asynchronous <ph id="ph1">`GetURLContentsAsync`</ph> method that you wrote.</source>
+          <target state="translated">次のコードには、記述した非同期 <ph id="ph1">`GetURLContentsAsync`</ph> メソッドを使用する、同期ソリューションから非同期ソリューションへの変換例のすべてが含まれています。</target>       </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Notice that it strongly resembles the original, synchronous solution.</source>
+          <target state="translated">この例は、元の同期ソリューションと非常によく似ています。</target>       </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>The following code contains the full example of the solution that uses the <ph id="ph1">`HttpClient`</ph> method, <ph id="ph2">`GetByteArrayAsync`</ph>.</source>
+          <target state="translated">次のコードには、<ph id="ph1">`HttpClient`</ph> の <ph id="ph2">`GetByteArrayAsync`</ph> メソッドを使用するソリューション例のすべてが含まれています。</target>       </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>非同期のサンプル: Web のチュートリアル (c# および Visual Basic) にアクセスします。<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=255191)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Await Operator<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Await 演算子<ept id="p1">](../../../../visual-basic/language-reference/operators/await-operator.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>非同期<ept id="p1">](../../../../visual-basic/language-reference/modifiers/async.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Asynchronous Programming with Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>非同期プログラミングを Async と Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="283" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Async Return Types (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>非同期の戻り値の型 (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="284" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Task-based Asynchronous Programming (TAP)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=204847)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>タスク ベースの非同期プログラミング (TAP)<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=204847)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="285" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>方法: Task.WhenAll (Visual Basic) を使用して Asyncwalkthrough を拡張<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="286" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>方法: 並列で Async を使用して、複数の Web 要求を実行して、Await (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

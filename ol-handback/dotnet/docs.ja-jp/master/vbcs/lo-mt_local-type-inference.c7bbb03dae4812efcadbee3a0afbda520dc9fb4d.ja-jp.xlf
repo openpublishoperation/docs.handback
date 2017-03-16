@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2bb673ce871b8e875f62c373404a849c139ab598</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\variables\local-type-inference.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b2cfdb55e891c7878738fb2ef44fc65878176817</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fdf9b1ae136e40d9a92e5b27ea86671c9893c5e7</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Local Type Inference (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">ローカル型推論 (Visual Basic) |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Local Type Inference (Visual Basic)</source>
+          <target state="translated">ローカル型の推論 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The Visual Basic compiler uses <bpt id="p1">*</bpt>type inference<ept id="p1">*</ept> to determine the data types of local variables declared without an <ph id="ph1">`As`</ph> clause.</source>
+          <target state="translated">Visual Basic コンパイラを使用して<bpt id="p1">*</bpt>型の推論<ept id="p1">*</ept>なしで宣言されたローカル変数のデータ型を決定する、<ph id="ph1">`As`</ph>句。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The compiler infers the type of the variable from the type of the initialization expression.</source>
+          <target state="translated">コンパイラは、初期化式の型から変数の型を推論します。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This enables you to declare variables without explicitly stating a type, as shown in the following example.</source>
+          <target state="translated">これにより、次の例のように、型を明示的に指定せず変数を宣言することができます。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>As a result of the declarations, both <ph id="ph1">`num1`</ph> and <ph id="ph2">`num2`</ph> are strongly typed as integers.</source>
+          <target state="translated">宣言の結果、両方とも<ph id="ph1">`num1`</ph>と<ph id="ph2">`num2`</ph>整数として厳密に型指定します。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#1<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;#1;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>If you do not want <ph id="ph1">`num2`</ph> in the previous example to be typed as an <ph id="ph2">`Integer`</ph>, you can specify another type by using a declaration like <ph id="ph3">`Dim num3 As Object = 3`</ph> or <ph id="ph4">`Dim num4 As Double = 3`</ph>.</source>
+          <target state="translated">たくない場合<ph id="ph1">`num2`</ph>として入力するのには、前の例で、<ph id="ph2">`Integer`</ph>のような宣言を使用して別の種類を指定することができます<ph id="ph3">`Dim num3 As Object = 3`</ph>または<ph id="ph4">`Dim num4 As Double = 3`</ph>です。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Local type inference applies at procedure level.</source>
+          <target state="translated">プロシージャ レベルでローカル型推論が適用されます。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It cannot be used to declare variables at module level (within a class, structure, module, or interface but not within a procedure or block).</source>
+          <target state="translated">(クラス、構造体、モジュール、またはインターフェイス内では、プロシージャまたはブロック内ではなく)、モジュール レベルで変数を宣言する使用することはできません。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>If <ph id="ph1">`num2`</ph> in the previous example were a field of a class instead of a local variable in a procedure, the declaration would cause an error with <ph id="ph2">`Option Strict`</ph> on, and would classify <ph id="ph3">`num2`</ph> as an <ph id="ph4">`Object`</ph> with <ph id="ph5">`Option Strict`</ph> off.</source>
+          <target state="translated">場合<ph id="ph1">`num2`</ph>前の例では、プロシージャ内のローカル変数ではなくクラスのフィールドでエラーが発生すると、宣言<ph id="ph2">`Option Strict`</ph>、および分類は<ph id="ph3">`num2`</ph>として、<ph id="ph4">`Object`</ph>と<ph id="ph5">`Option Strict`</ph>オフします。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Similarly, local type inference does not apply to procedure level variables declared as <ph id="ph1">`Static`</ph>.</source>
+          <target state="translated">同様に、ローカル型の推論には当てはまりませんプロシージャ レベルの変数として宣言されている<ph id="ph1">`Static`</ph>します。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Type Inference vs. Late Binding</source>
+          <target state="translated">型の推論と遅延バインディング</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Code that uses type inference resembles code that relies on late binding.</source>
+          <target state="translated">推論タイプをコードでは、遅延バインディングに依存するコードに似ています。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>However, type inference strongly types the variable instead of leaving it as <ph id="ph1">`Object`</ph>.</source>
+          <target state="translated">ただし、型の推論型を厳密として残さず変数<ph id="ph1">`Object`</ph>します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The compiler uses a variable's initializer to determine the variable's type at compile time to produce early-bound code.</source>
+          <target state="translated">コンパイラでは、変数の初期化子を使用して、事前バインディングされたコードを作成するコンパイル時に、変数の型を調べます。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the previous example, <ph id="ph1">`num2`</ph>, like <ph id="ph2">`num1`</ph>, is typed as an <ph id="ph3">`Integer`</ph>.</source>
+          <target state="translated">前の例で<ph id="ph1">`num2`</ph>と同様に<ph id="ph2">`num1`</ph>、として型指定された、<ph id="ph3">`Integer`</ph>です。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>The behavior of early-bound variables differs from that of late-bound variables, for which the type is known only at run time.</source>
+          <target state="translated">事前バインディングされた変数の動作は、実行時にのみを型が認識されている、遅延バインディングされた変数の動作とは異なります。</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Knowing the type early enables the compiler to identify problems before execution, allocate memory precisely, and perform other optimizations.</source>
+          <target state="translated">型の早い段階により、コンパイラは、実行前に問題を識別するために理解していれば、正確には、メモリを割り当てし、その他の最適化を実行します。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Early binding also enables the Visual Basic integrated development environment (IDE) to provide IntelliSense Help about the members of an object.</source>
+          <target state="translated">事前バインディングでは、Visual Basic の統合開発環境 (IDE) のオブジェクトのメンバーについて IntelliSense のヘルプを提供することもできます。</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Early binding is also preferred for performance.</source>
+          <target state="translated">事前バインディングもパフォーマンスの優先的に使用できます。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>This is because all data stored in a late-bound variable must be wrapped as type <ph id="ph1">`Object`</ph>, and accessing members of the type at run time makes the program slower.</source>
+          <target state="translated">これは、遅延バインディングされた変数に格納されているすべてのデータは、型としてラップする必要があるために、 <ph id="ph1">`Object`</ph>、低速のプログラムは、実行時に、型のメンバーにアクセスするとします。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Examples</source>
+          <target state="translated">例</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Type inference occurs when a local variable is declared without an <ph id="ph1">`As`</ph> clause and initialized.</source>
+          <target state="translated">型の推定が発生せず、ローカル変数が宣言されている場合、<ph id="ph1">`As`</ph>句と初期化します。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>The compiler uses the type of the assigned initial value as the type of the variable.</source>
+          <target state="translated">コンパイラは、変数の型として割り当てられた初期値の型を使用します。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>For example, each of the following lines of code declares a variable of type <ph id="ph1">`String`</ph>.</source>
+          <target state="translated">たとえば、次のコード行の各型の変数を宣言<ph id="ph1">`String`</ph>します。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#2<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;#2;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The following code demonstrates two equivalent ways to create an array of integers.</source>
+          <target state="translated">次のコードでは、整数の配列を作成する&amp;2; つの同等の方法を示します。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#3<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;#3;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>It is convenient to use type inference to determine the type of a loop control variable.</source>
+          <target state="translated">型の推論を使用して、ループ制御変数の型を確認すると便利です。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In the following code, the compiler infers that <ph id="ph1">`number`</ph> is an <ph id="ph2">`Integer`</ph> because <ph id="ph3">`someNumbers2`</ph> from the previous example is an array of integers.</source>
+          <target state="translated">次のコードに、コンパイラが推論される<ph id="ph1">`number`</ph>は、<ph id="ph2">`Integer`</ph>ため<ph id="ph3">`someNumbers2`</ph>前の例は、整数の配列。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#4<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;4;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Local type inference can be used in <ph id="ph1">`Using`</ph> statements to establish the type of the resource name, as the following example demonstrates.</source>
+          <target state="translated">ローカル型推論を使用できる<ph id="ph1">`Using`</ph>ステートメントを次の例に示すように、リソース名の型を設定します。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#7<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;#7;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The type of a variable can also be inferred from the return values of functions, as the following example demonstrates.</source>
+          <target state="translated">次の例に示すように、変数の型を関数の戻り値から推論もことができます。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Both <ph id="ph1">`pList1`</ph> and <ph id="ph2">`pList2`</ph> are arrays of processes because <ph id="ph3">`Process.GetProcesses`</ph> returns an array of processes.</source>
+          <target state="translated">両方とも<ph id="ph1">`pList1`</ph>と<ph id="ph2">`pList2`</ph>ためのプロセスの配列である<ph id="ph3">`Process.GetProcesses`</ph>プロセスの配列を返します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference#5<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrTypeInference&amp;#5;<ept id="p2">](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/local-type-inference_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Option Infer</source>
+          <target state="translated">Option Infer します。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`Option Infer`</ph> enables you specify whether local type inference is allowed in a particular file.</source>
+          <target state="translated"><ph id="ph1">`Option Infer`</ph>特定のファイルでローカル型推論を許可するかどうかを指定できます。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>To enable or to block the option, type one of the following statements at the start of the file.</source>
+          <target state="translated">有効にするか、オプションは、ファイルの先頭に次のステートメントのいずれかを入力します。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>If you do not specify a value for <ph id="ph1">`Option Infer`</ph> in your code, the compiler default is <ph id="ph2">`Option Infer On`</ph>.</source>
+          <target state="translated">値が指定されていない場合<ph id="ph1">`Option Infer`</ph>コンパイラの既定値は、コードでは、<ph id="ph2">`Option Infer On`</ph>です。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>For projects upgraded from <ph id="ph1">[!INCLUDE[vb_orcas_long](../../../../visual-basic/misc/includes/vb_orcas_long_md.md)]</ph> or earlier, the compiler default is <ph id="ph2">`Option Infer Off`</ph>.</source>
+          <target state="translated">アップグレードされたプロジェクトの<ph id="ph1">[!INCLUDE[vb_orcas_long](../../../../visual-basic/misc/includes/vb_orcas_long_md.md)]</ph>コンパイラの既定値は、前の手順では、または<ph id="ph2">`Option Infer Off`</ph>です。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>If the value set for <ph id="ph1">`Option Infer`</ph> in a file conflicts with the value set in the IDE or on the command line, the value in the file has precedence.</source>
+          <target state="translated">ファイルの <ph id="ph1">`Option Infer`</ph> に設定した値が IDE またはコマンド ラインに設定した値と競合した場合は、ファイルの値が優先されます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Option Infer Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-infer-statement.md)</ept> and <bpt id="p2">[</bpt>Compile Page, Project Designer (Visual Basic)<ept id="p2">](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。 <bpt id="p1">[</bpt>Option Infer ステートメント<ept id="p1">](../../../../visual-basic/language-reference/statements/option-infer-statement.md)</ept>と<bpt id="p2">[</bpt>コンパイル ページで、プロジェクト デザイナー) (Visual Basic)<ept id="p2">](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)</ept>します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Restrictions</source>
+          <target state="translated">制限事項</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Type inference can be used only for non-static local variables; it cannot be used to determine the type of class fields, properties, or functions.</source>
+          <target state="translated">型の推論は、非静的ローカル変数に対してのみ使用できます。クラスのフィールド、プロパティ、または関数の種類を判断に使用できません。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Anonymous Types<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>匿名型<ept id="p1">](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Early and Late Binding<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>事前バインディングと遅延バインディング<ept id="p1">](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>For Each...Next Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>各.次のステートメント<ept id="p1">](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>For...Next Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/for-next-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>.次のステートメント<ept id="p1">](../../../../visual-basic/language-reference/statements/for-next-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Option Infer Statement<ept id="p1">](../../../../visual-basic/language-reference/statements/option-infer-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Option Infer ステートメント<ept id="p1">](../../../../visual-basic/language-reference/statements/option-infer-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>/optioninfer<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>/optioninfer<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Introduction to LINQ in Visual Basic<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Visual Basic における LINQ の概要<ept id="p1">](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cbc37638ed5c57b94356c2d189f36b66202ceba5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\com-interop\troubleshooting-interoperability.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">028984616a60a729da4e65417c8740568d697268</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5944c149b7d7d438451ceb286886e47b9515e66d</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Troubleshooting Interoperability (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Problembehandlung bei Interoperabilität (Visual Basic) | Microsoft-Dokumentation</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Troubleshooting Interoperability (Visual Basic)</source>
+          <target state="translated">Problembehandlung bei Interoperabilität (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>When you interoperate between COM and the managed code of the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>, you may encounter one or more of the following common issues.</source>
+          <target state="translated">Wenn Sie Interoperabilität zwischen COM und verwaltetem Code von der <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>, eine oder mehrere der folgenden Probleme auftreten können.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor1"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Interop Marshaling</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor1"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Interop-Marshalling</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>At times, you may have to use data types that are not part of the <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</source>
+          <target state="translated">Von Zeit zu Zeit müssen unter Umständen Datentypen verwenden, die nicht Teil der <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph>.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Interop assemblies handle most of the work for COM objects, but you may have to control the data types that are used when managed objects are exposed to COM.</source>
+          <target state="translated">Interop-Assemblys behandeln die meisten Aufgaben für COM-Objekte, jedoch müssen Sie möglicherweise die Daten steuern, die verwendet werden, wenn verwaltete Objekte für COM verfügbar gemacht werden</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>For example, structures in class libraries must specify the <ph id="ph1">`BStr`</ph> unmanaged type on strings sent to COM objects created by Visual Basic 6.0 and earlier versions.</source>
+          <target state="translated">Strukturen in Klassenbibliotheken müssen z. B. Angeben der <ph id="ph1">`BStr`</ph> nicht verwalteten Typ auf Zeichenfolgen, die von Visual Basic 6.0 und früheren Versionen erstellte COM-Objekte gesendet.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>In such cases, you can use the &lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt; attribute to cause managed types to be exposed as unmanaged types.</source>
+          <target state="translated">In solchen Fällen können Sie die &lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;Attribut, damit verwaltete Typen als nicht verwaltete Typen verfügbar gemacht werden.&lt;/xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor2"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Exporting Fixed-Length Strings to Unmanaged Code</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor2"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Exportieren von Zeichenfolgen fester Länge in nicht verwaltetem Code</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>In Visual Basic 6.0 and earlier versions, strings are exported to COM objects as sequences of bytes without a null termination character.</source>
+          <target state="translated">In Visual Basic 6.0 und früheren Versionen werden Zeichenfolgen als Bytefolgen ohne abschließendes null-Zeichen in COM-Objekte exportiert.</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For compatibility with other languages, <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> includes a termination character when exporting strings.</source>
+          <target state="translated">Für die Kompatibilität mit anderen Sprachen <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> Fügt ein abschließendes Zeichen beim Exportieren von Zeichenfolgen.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The best way to address this incompatibility is to export strings that lack the termination character as arrays of <ph id="ph1">`Byte`</ph> or <ph id="ph2">`Char`</ph>.</source>
+          <target state="translated">Die beste Möglichkeit, diese Inkompatibilität zu beheben ist, Zeichenfolgen, können exportieren das Endzeichen der als Arrays von <ph id="ph1">`Byte`</ph> oder <ph id="ph2">`Char`</ph>.</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor3"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Exporting Inheritance Hierarchies</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor3"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Exportieren von Vererbungshierarchien</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Managed class hierarchies flatten out when exposed as COM objects.</source>
+          <target state="translated">Verwalteter Klassen Hierarchien gehen beim Offenlegen als COM-Objekte verfügbar gemacht.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>For example, if you define a base class with a member, and then inherit the base class in a derived class that is exposed as a COM object, clients that use the derived class in the COM object will not be able to use the inherited members.</source>
+          <target state="translated">Z. B. Wenn Sie eine Basisklasse mit einem Member definieren und dann erben die Basisklasse in einer abgeleiteten Klasse, die als COM-Objekt verfügbar gemacht wird, werden Clients, die im COM-Objekt die abgeleitete Klasse verwenden nicht die geerbten Member verwenden können.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Base class members can be accessed from COM objects only as instances of a base class, and then only if the base class is also created as a COM object.</source>
+          <target state="translated">Member der Basisklasse können von COM-Objekten nur als Instanzen einer Basisklasse zugegriffen werden, und klicken Sie dann nur, wenn die Basisklasse ebenfalls als COM-Objekt erstellt wird.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Overloaded Methods</source>
+          <target state="translated">Überladene Methoden</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Although you can create overloaded methods with <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>, they are not supported by COM.</source>
+          <target state="translated">Sie können jedoch überladene Methoden mit <ph id="ph1">[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>, werden sie von COM nicht unterstützt</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>When a class that contains overloaded methods is exposed as a COM object, new method names are generated for the overloaded methods.</source>
+          <target state="translated">Wenn eine Klasse, die überladene Methoden enthält, die als COM-Objekt verfügbar ist, werden für die überladenen Methoden neue Methodennamen generiert.</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>For example, consider a class that has two overloads of the <ph id="ph1">`Synch`</ph> method.</source>
+          <target state="translated">Betrachten Sie beispielsweise eine Klasse mit zwei Überladungen der <ph id="ph1">`Synch`</ph> Methode.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>When the class is exposed as a COM object, the new generated method names could be <ph id="ph1">`Synch`</ph> and <ph id="ph2">`Synch_2`</ph>.</source>
+          <target state="translated">Wenn die Klasse als COM-Objekt verfügbar gemacht wird, kann die neu generierten Methodennamen <ph id="ph1">`Synch`</ph> und <ph id="ph2">`Synch_2`</ph>.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The renaming can cause two problems for consumers of the COM object.</source>
+          <target state="translated">Die Umbenennung kann dazu führen, dass zwei Probleme für Consumer des COM-Objekts.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Clients might not expect the generated method names.</source>
+          <target state="translated">Clients können die generierten Methodennamen nicht erwarten.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The generated method names in the class exposed as a COM object can change when new overloads are added to the class or its base class.</source>
+          <target state="translated">Die generierten Methodennamen in der Klasse als COM-Objekt verfügbar gemacht können ändern, wenn neue Überladungen der Klasse oder der Basisklasse hinzugefügt werden.</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>This can cause versioning problems.</source>
+          <target state="translated">Dies kann Versionsprobleme verursachen.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>To solve both problems, give each method a unique name, instead of using overloading, when you develop objects that will be exposed as COM objects.</source>
+          <target state="translated">Um beide Probleme zu beheben, geben Sie jeder Methode einen eindeutigen Namen, anstatt Sie mithilfe der Überladung, wenn Sie Objekte entwickeln, die als COM-Objekte verfügbar gemacht werden.</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor4"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Use of COM Objects Through Interop Assemblies</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor4"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Verwenden von COM-Objekten über Interop-Assemblys</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>You use interop assemblies almost as if they are managed code replacements for the COM objects they represent.</source>
+          <target state="translated">Verwenden Sie Interop-Assemblys, fast so, als ob sie verwalteten Code als Ersatz für die COM-Objekte sind, die sie darstellen.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>However, because they are wrappers and not actual COM objects, there are some differences between using interop assemblies and standard assemblies.</source>
+          <target state="translated">Da sie Wrapper und keine eigentlichen COM-Objekte sind, bestehen jedoch einige Unterschiede zwischen der Verwendung von Interop-Assemblys und Standardassemblys.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>These areas of difference include the exposure of classes, and data types for parameters and return values.</source>
+          <target state="translated">Diese betreffen der Offenlegung von Klassen und Datentypen für Parameter und Rückgabewerte.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor5"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Classes Exposed as Both Interfaces and Classes</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor5"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Klassen, die verfügbar gemacht werden, als beide Schnittstellen und Klassen</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Unlike classes in standard assemblies, COM classes are exposed in interop assemblies as both an interface and a class that represents the COM class.</source>
+          <target state="translated">Im Gegensatz zu Klassen in Standardassemblys werden COM-Klassen verfügbar gemacht, in Interop-Assemblys als eine Schnittstelle und eine Klasse, die COM-Klasse darstellt.</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The interface's name is identical to that of the COM class.</source>
+          <target state="translated">Der Name der Schnittstelle ist identisch mit dem der COM-Klasse.</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The name of the interop class is the same as that of the original COM class, but with the word "Class" appended.</source>
+          <target state="translated">Der Name der Interop-Klasse ist identisch mit der ursprünglichen COM-Klasse mit dem Wort "Class" angefügt.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>For example, suppose you have a project with a reference to an interop assembly for a COM object.</source>
+          <target state="translated">Nehmen wir beispielsweise an, dass Sie ein Projekt mit einem Verweis auf eine Interop-Assembly für COM-Objekt verfügen.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>If the COM class is named <ph id="ph1">`MyComClass`</ph>, IntelliSense and the Object Browser show an interface named <ph id="ph2">`MyComClass`</ph> and a class named <ph id="ph3">`MyComClassClass`</ph>.</source>
+          <target state="translated">Wenn die COM-Klasse heißt <ph id="ph1">`MyComClass`</ph>, IntelliSense und im Objektkatalog Anzeigen eine Schnittstelle namens <ph id="ph2">`MyComClass`</ph> und eine Klasse namens <ph id="ph3">`MyComClassClass`</ph>.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor6"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Creating Instances of a .NET Framework Class</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor6"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Erstellen von Instanzen einer .NET Framework-Klasse</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Generally, you create an instance of a <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> class using the <ph id="ph2">`New`</ph> statement with a class name.</source>
+          <target state="translated">Im Allgemeinen erstellen Sie eine Instanz von einer <ph id="ph1">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> -Klasse unter Verwendung der <ph id="ph2">`New`</ph> -Anweisung mit einem Namen.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Having a COM class represented by an interop assembly is the one case in which you can use the <ph id="ph1">`New`</ph> statement with an interface.</source>
+          <target state="translated">Eine durch eine Interop-Assembly dargestellte COM-Klasse ist, verwenden Sie die <ph id="ph1">`New`</ph> -Anweisung mit einer Schnittstelle.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Unless you are using the COM class with an <ph id="ph1">`Inherits`</ph> statement, you can use the interface just as you would a class.</source>
+          <target state="translated">Nur beim verwenden die COM-Klasse mit einer <ph id="ph1">`Inherits`</ph> -Anweisung können Sie die Schnittstelle wie eine Klasse verwenden.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The following code demonstrates how to create a <ph id="ph1">`Command`</ph> object in a project that has a reference to the Microsoft ActiveX Data Objects 2.8 Library COM object:</source>
+          <target state="translated">Der folgende Code veranschaulicht, wie ein <ph id="ph1">`Command`</ph> Objekt in ein Projekt, das einen Verweis auf die Microsoft ActiveX Data Objekte 2.8-Bibliothek COM-Objekt hat:</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#20<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;20;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>However, if you are using the COM class as the base for a derived class, you must use the interop class that represents the COM class, as in the following code:</source>
+          <target state="translated">Wenn Sie die COM-Klasse als Basis für eine abgeleitete Klasse verwenden, müssen Sie die Interop-Klasse verwenden, die für die COM-Klasse, wie im folgenden Code:</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#21<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;21;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Interop assemblies implicitly implement interfaces that represent COM classes.</source>
+          <target state="translated">Interop-Assemblys implementieren implizit Schnittstellen, die COM-Klassen darstellen.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>You should not try to use the <ph id="ph1">`Implements`</ph> statement to implement these interfaces or an error will result.</source>
+          <target state="translated">Sie sollten nicht versuchen, verwenden Sie die <ph id="ph1">`Implements`</ph> Anweisung zum Implementieren dieser Schnittstellen führt.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor7"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Data Types for Parameters and Return Values</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor7"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Datentypen für Parameter und Rückgabewerte</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Unlike members of standard assemblies, interop assembly members may have data types that differ from those used in the  original object declaration.</source>
+          <target state="translated">Im Gegensatz zu Membern von Standardassemblys möglicherweise Interop-Assemblies-Datentypen, die von denen in der ursprünglichen Deklaration des Objekts abweichen.</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Although interop assemblies implicitly convert COM types to compatible common language runtime types, you should pay attention to the data types that are used by both sides to prevent runtime errors.</source>
+          <target state="translated">Zwar Interop-Assemblys für COM-Typen implizit in mit der common Language Runtime kompatible Typen konvertiert, achten Sie besonders auf die Datentypen, die von beiden Seiten verwendet werden, um Laufzeitfehler zu vermeiden.</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>For example, in COM objects created in Visual Basic 6.0 and earlier versions, values of type <ph id="ph1">`Integer`</ph> assume the <ph id="ph2">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> equivalent type, <ph id="ph3">`Short`</ph>.</source>
+          <target state="translated">Z. B. in COM-Objekte, die in Visual Basic 6.0 und früheren Versionen, die Werte des Typs erstellt <ph id="ph1">`Integer`</ph> nehmen Sie an der <ph id="ph2">[!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]</ph> entsprechenden Typ <ph id="ph3">`Short`</ph>.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>It is recommended that you use the Object Browser to examine the characteristics of imported members before you use them.</source>
+          <target state="translated">Es wird empfohlen, dass Sie den Objektkatalog verwenden, um die Merkmale importierter Member zu untersuchen, bevor Sie sie verwenden.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor8"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Module level COM methods</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor8"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>COM Methoden auf Modulebene</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Most COM objects are used by creating an instance of a COM class using the <ph id="ph1">`New`</ph> keyword and then calling methods of the object.</source>
+          <target state="translated">Die meisten COM-Objekte wird durch Erstellen einer Instanz eines COM-Klasse mit dem <ph id="ph1">`New`</ph> -Schlüsselwort und dem anschließenden Aufrufen der Methoden des Objekts.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>One exception to this rule involves COM objects that contain <ph id="ph1">`AppObj`</ph> or <ph id="ph2">`GlobalMultiUse`</ph> COM classes.</source>
+          <target state="translated">Eine Ausnahme dieser Regel betrifft COM-Objekte, die enthalten <ph id="ph1">`AppObj`</ph> oder <ph id="ph2">`GlobalMultiUse`</ph> COM-Klassen.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Such classes resemble module level methods in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> classes.</source>
+          <target state="translated">Solche Klassen entsprechen den Methoden auf Modulebene in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> Klassen.</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Visual Basic 6.0 and earlier versions implicitly create instances of such objects for you the first time that you call one of their methods.</source>
+          <target state="translated">Visual Basic 6.0 und früheren Versionen erstellen implizit Instanzen solcher Objekte zur ersten, die eine ihrer Methoden aufgerufen werden.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>For example, in Visual Basic 6.0 you can add a reference to the Microsoft DAO 3.6 Object Library and call the <ph id="ph1">`DBEngine`</ph> method without first creating an instance:</source>
+          <target state="translated">Fügen Sie z. B. in Visual Basic 6.0 einen Verweis auf die Microsoft DAO 3.6-Objektbibliothek und rufen Sie die <ph id="ph1">`DBEngine`</ph> Methode ohne zunächst eine Instanz erstellt:</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> requires that you always create instances of COM objects before you can use their methods.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>erfordert, dass Sie immer Instanzen von COM-Objekten erstellen, bevor Sie deren Methoden verwenden können.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>To use these methods in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>, declare a variable of the desired class and use the new keyword to assign the object to the object variable.</source>
+          <target state="translated">Diese Methoden in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>, deklarieren Sie eine Variable der gewünschten Klasse, und verwenden Sie das new-Schlüsselwort, das Objekt der Objektvariablen zuzuweisen.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Shared`</ph> keyword can be used when you want to make sure that only one instance of the class is created.</source>
+          <target state="translated">Das <ph id="ph1">`Shared`</ph> -Schlüsselwort kann verwendet werden, wenn Sie sicherstellen möchten, dass nur eine Instanz der Klasse erstellt wird.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#23<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;23;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor9"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Unhandled Errors in Event Handlers</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor9"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Nicht behandelte Fehler im Ereignishandler</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>One common interop problem involves errors in event handlers that handle events raised by COM objects.</source>
+          <target state="translated">Ein häufiges Interop-Problem umfasst die Fehler im Ereignishandler, die von COM-Objekten ausgelöste Ereignisse behandeln.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Such errors are ignored unless you specifically check for errors using <ph id="ph1">`On Error`</ph> or <ph id="ph2">`Try...Catch...Finally`</ph> statements.</source>
+          <target state="translated">Solche Fehler werden ignoriert, es sei denn, Sie prüfen Sie insbesondere für Fehler bei der Verwendung <ph id="ph1">`On Error`</ph> oder <ph id="ph2">`Try...Catch...Finally`</ph> Anweisungen.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>For example, the following example is from a <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> project that has a reference to the Microsoft ActiveX Data Objects 2.8 Library COM object.</source>
+          <target state="translated">Z. B. das folgende Beispiel stammt aus einer <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> -Projekt, das einen Verweis auf das Microsoft ActiveX Data Objekte 2.8-Bibliothek COM-Objekt enthält.</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#24<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#24;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>This example raises an error as expected.</source>
+          <target state="translated">In diesem Beispiel löst einen Fehler aus, wie erwartet.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>However, if you try the same example without the <ph id="ph1">`Try...Catch...Finally`</ph> block, the error is ignored as if you used the <ph id="ph2">`OnError Resume Next`</ph> statement.</source>
+          <target state="translated">Jedoch wenn Sie, dasselbe Beispiel ohne versuchen den <ph id="ph1">`Try...Catch...Finally`</ph> Block, der Fehler wird ignoriert, wie wenn Sie die <ph id="ph2">`OnError Resume Next`</ph> Anweisung.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Without error handling, the division by zero silently fails.</source>
+          <target state="translated">Ohne Fehlerbehandlung schlägt die Division durch&amp;0; (null) im Hintergrund fehl.</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Because such errors never raise unhandled exception errors, it is important that you use some form of exception handling in event handlers that handle events from COM objects.</source>
+          <target state="translated">Da solche Fehler niemals Fehler nicht behandelte Ausnahme auslöst, ist es wichtig, dass Sie eine Form der Ausnahmebehandlung in Ereignishandler für die Behandlung von Ereignissen COM-Objekte verwenden.</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Understanding COM interop errors</source>
+          <target state="translated">Grundlegendes zu COM-Interop-Fehler</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Without error handling, interop calls often generate errors that provide little information.</source>
+          <target state="translated">Ohne Fehlerbehandlung generieren Interop-Aufrufe häufig Fehler, die wenig Informationen liefern.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Whenever possible, use structured error handling to provide more information about problems when they occur.</source>
+          <target state="translated">Verwenden Sie nach Möglichkeit strukturierte Fehlerbehandlung bieten weitere Informationen zu Problemen, bei deren auftreten.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>This can be especially helpful when you debug applications.</source>
+          <target state="translated">Dies kann besonders hilfreich sein, beim Debuggen von ASP.NET-Webanwendungen.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Zum Beispiel:</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#25<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#25;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>You can find information such as the error description, HRESULT, and the source of COM errors by examining the contents of the exception object.</source>
+          <target state="translated">Erhalten Sie Informationen wie die Beschreibung, HRESULT und die Quelle der COM-Fehler durch den Inhalt des Ausnahmeobjekts untersuchen.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor10"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> ActiveX Control Issues</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor10"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>ActiveX-Steuerelement-Probleme</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Most ActiveX controls that work with Visual Basic 6.0 work with <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> without trouble.</source>
+          <target state="translated">Die meisten ActiveX-Steuerelemente, die mit Visual Basic 6.0 arbeiten mit <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> problemlos.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>The main exceptions are container controls, or controls that visually contain other controls.</source>
+          <target state="translated">Die wichtigsten Ausnahmen sind Container oder Steuerelemente, die visuell andere Steuerelemente enthalten.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Some examples of older controls that do not work correctly with <ph id="ph1">[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]</ph> are as follows:</source>
+          <target state="translated">Einige Beispiele für ältere Steuerelemente, die in nicht ordnungsgemäß funktionieren <ph id="ph1">[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]</ph> lauten wie folgt:</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Microsoft Forms 2.0 Frame control</source>
+          <target state="translated">Microsoft Forms 2.0-Frame-Steuerelement</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Up-Down control, also known as the spin control</source>
+          <target state="translated">Auf-ab-Steuerelement, auch bekannt als das Drehfeld-Steuerelement</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Sheridan Tab Control</source>
+          <target state="translated">Schreiber Registerkarten-Steuerelement</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>There are only a few workarounds for unsupported ActiveX control problems.</source>
+          <target state="translated">Es gibt nur wenige Lösungsmöglichkeiten für nicht unterstützte ActiveX-Steuerelement-Probleme.</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>You can migrate existing controls to <ph id="ph1">[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]</ph> if you own the original source code.</source>
+          <target state="translated">Sie können vorhandene Steuerelemente migrieren <ph id="ph1">[!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]</ph> Wenn Sie den ursprünglichen Quellcode besitzen.</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Otherwise, you can check with software vendors for updated .NET-compatible versions of controls to replace unsupported ActiveX controls.</source>
+          <target state="translated">Überprüfen Sie andernfalls können Sie mit Software-Anbietern für aktualisiert. NET-kompatiblen Versionen von Steuerelementen ersetzen nicht die ActiveX-Steuerelemente unterstützt.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor11"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Passing ReadOnly Properties of Controls ByRef</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor11"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Die ReadOnly-Eigenschaften der Steuerelemente ByRef übergeben</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> sometimes raises COM errors such as "Error 0x800A017F CTL_E_SETNOTSUPPORTED" when you pass <ph id="ph2">`ReadOnly`</ph> properties of some older ActiveX controls as <ph id="ph3">`ByRef`</ph> parameters to other procedures.</source>
+          <target state="translated"><ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph>Löst manchmal COM-Fehler, z. B. "Error 0x800A017F CTL_E_SETNOTSUPPORTED" aus, wenn Sie übergeben <ph id="ph2">`ReadOnly`</ph> Eigenschaften älterer ActiveX-Steuerelemente als <ph id="ph3">`ByRef`</ph> Parameter an andere Prozeduren.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Similar procedure calls from Visual Basic 6.0 do not raise an error, and the parameters are treated as if you passed them by value.</source>
+          <target state="translated">Ähnliche Prozeduraufrufe aus Visual Basic 6.0 lösen keinen Fehler, und die Parameter werden behandelt, als ob Sie sie nach Wert übergeben.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>The error message you see in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> is the COM object reporting that you are trying to change a property that does not have a property <ph id="ph2">`Set`</ph> procedure.</source>
+          <target state="translated">Die Fehlermeldung finden Sie unter in <ph id="ph1">[!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]</ph> ist das COM-Objekt, das meldet, dass Sie versuchen, eine Eigenschaft zu ändern, die nicht über eine Eigenschaft verfügt <ph id="ph2">`Set`</ph> Verfahren.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>If you have access to the procedure being called, you can prevent this error by using the <ph id="ph1">`ByVal`</ph> keyword to declare parameters that accept <ph id="ph2">`ReadOnly`</ph> properties.</source>
+          <target state="translated">Wenn Sie die aufgerufene Prozedur können zugreifen, können Sie diesen Fehler verhindern, mithilfe der <ph id="ph1">`ByVal`</ph> Schlüsselwort Parameter zu deklarieren, akzeptieren <ph id="ph2">`ReadOnly`</ph> Eigenschaften.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="translated">Beispiel:</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#26<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#26;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>If you do not have access to the source code for the procedure being called, you can force the property to be passed by value by adding an extra set of brackets around the calling procedure.</source>
+          <target state="translated">Wenn Sie keinen Zugriff auf den Quellcode für die aufgerufene Prozedur können Sie die Eigenschaft als Wert übergeben wird, durch hinzufügen einen zusätzlichen Satz von Klammern die aufrufende Prozedur erzwingen.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>For example, in a project that has a reference to the Microsoft ActiveX Data Objects 2.8 Library COM object, you can use:</source>
+          <target state="translated">Z. B. in einem Projekt, das einen Verweis auf die Microsoft ActiveX Data Objekte 2.8-Bibliothek COM-Objekt verfügt, können Sie:</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop#27<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrInterop&amp;#27;<ept id="p2">](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/troubleshooting-interoperability_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor12"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Deploying Assemblies That Expose Interop</source>
+          <target state="translated"><bpt id="p1">&lt;a name="vbconinteroperabilitymarshalinganchor12"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Bereitstellen von Assemblys, die Interop verfügbar machen</target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Deploying assemblies that expose COM interfaces presents some unique challenges.</source>
+          <target state="translated">Bereitstellen von Assemblys, die COM-Schnittstellen verfügbar machen, stellt einige eindeutige Herausforderung dar.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>For example, a potential problem occurs when separate applications reference the same COM assembly.</source>
+          <target state="translated">Beispielsweise tritt ein potenzielles Problem beim separaten Anwendung derselben COM-Assembly verweisen.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>This situation is common when a new version of an assembly is installed and another application is still using the old version of the assembly.</source>
+          <target state="translated">Dies ist üblich, wenn eine neue Version einer Assembly installiert ist und von einer anderen Anwendung ist immer noch die alte Version der Assembly.</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>If you uninstall an assembly that shares a DLL, you can unintentionally make it unavailable to the other assemblies.</source>
+          <target state="translated">Wenn Sie eine Assembly, die gemeinsam eine DLL deinstallieren, können Sie versehentlich es nicht verfügbar an anderen Assemblys vornehmen.</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>To avoid this problem, you should install shared assemblies to the Global Assembly Cache (GAC) and use a MergeModule for the component.</source>
+          <target state="translated">Um dieses Problem zu vermeiden, sollten Sie freigegebene Assemblys zum globalen Assemblycache (GAC) installieren und verwenden ein Mergemodul für die Komponente.</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>If you cannot install the application in the GAC, it should be installed to CommonFilesFolder in a version-specific subdirectory.</source>
+          <target state="translated">Wenn Sie die Anwendung im GAC installieren können, sollten sie in einem versionsspezifischen Unterverzeichnis des CommonFilesFolder installiert.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Assemblies that are not shared should be located side by side in the directory with the calling application.</source>
+          <target state="translated">Assemblys, die nicht gemeinsam genutzt werden, sollten im Verzeichnis mit der aufrufenden Anwendung nebeneinander befinden.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Siehe auch</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</source>
+          <target state="translated">&lt;xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;&lt;/xref:System.Runtime.InteropServices.MarshalAsAttribute&gt;</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>COM Interop<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>COM-Interop<ept id="p1">](../../../visual-basic/programming-guide/com-interop/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Tlbimp.exe (Type Library Importer)<ept id="p1">](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tlbimp.exe (Type Library Importer-Tool)<ept id="p1">](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Tlbexp.exe (Type Library Exporter)<ept id="p1">](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Tlbexp.exe (Type Library Exporter-Tool)<ept id="p1">](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Implementing Inheritance with COM Objects<ept id="p1">](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Exemplarische Vorgehensweise: Implementieren der Vererbung mit COM-Objekten<ept id="p1">](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Inherits Statement<ept id="p1">](../../../visual-basic/language-reference/statements/inherits-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Inherits-Anweisung<ept id="p1">](../../../visual-basic/language-reference/statements/inherits-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Global Assembly Cache<ept id="p1">](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Globaler Assemblycache<ept id="p1">](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

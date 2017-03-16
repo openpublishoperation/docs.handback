@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4ea1e21bd8cc392889c477e78338384ed05d4cbb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\iterators.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b40d34676075d1a70e8aa929762edacc5a512b07</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">273debdea7e97bf5b55ca691a81a3a48dddc1409</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">反復子 (Visual Basic) |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Iterators (Visual Basic)</source>
+          <target state="translated">反復子 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>An <bpt id="p1">*</bpt>iterator<ept id="p1">*</ept> can be used to step through collections such as lists and arrays.</source>
+          <target state="translated"><bpt id="p1">*</bpt>反復子<ept id="p1">*</ept>コレクションのステップ実行の一覧し、配列などに使用できます。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>An iterator method or <ph id="ph1">`get`</ph> accessor performs a custom iteration over a collection.</source>
+          <target state="translated">Iterator メソッドまたは<ph id="ph1">`get`</ph>アクセサーは、コレクションに対するカスタム イテレーションを実行します。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>An iterator method uses the <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept> statement to return each element one at a time.</source>
+          <target state="translated">Iterator メソッドを使用して、 <bpt id="p1">[</bpt>Yield<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept>ステートメントを一度に&amp;1; つの各要素を返します。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>When a <ph id="ph1">`Yield`</ph> statement is reached, the current location in code is remembered.</source>
+          <target state="translated">ときに、<ph id="ph1">`Yield`</ph>ステートメントに達すると、コード内の現在位置が記憶されます。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Execution is restarted from that location the next time the iterator function is called.</source>
+          <target state="translated">次回の反復子関数が呼び出されたとき、その場所から実行が再開されます。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You consume an iterator from client code by using a <bpt id="p1">[</bpt>For Each…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept> statement, or by using a LINQ query.</source>
+          <target state="translated">使用してクライアント コードから反復子を使用する、<bpt id="p1">[</bpt>ごとにしています.次<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept>ステートメント、または LINQ クエリを使用しています。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>In the following example, the first iteration of the <ph id="ph1">`For Each`</ph> loop causes execution to proceed  in the <ph id="ph2">`SomeNumbers`</ph> iterator method until the first <ph id="ph3">`Yield`</ph> statement is reached.</source>
+          <target state="translated">次の例の最初のイテレーションで、<ph id="ph1">`For Each`</ph>ループが実行を続行すると、<ph id="ph2">`SomeNumbers`</ph>最初まで反復子メソッド<ph id="ph3">`Yield`</ph>ステートメントに到達します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 3, and the current location in the iterator method is retained.</source>
+          <target state="translated">このイテレーションは第 3 の値を返し、iterator メソッドの現在位置が保持されます。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>On the next iteration of the loop, execution in the iterator method continues from where it left off, again stopping when it reaches a <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">ループの次の反復処理では、iterator メソッドの実行が場所から続行し、もう一度停止になったときに中断、<ph id="ph1">`Yield`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This iteration returns a value of 5, and the current location in the iterator method is again retained.</source>
+          <target state="translated">このイテレーションは 5 の値を返し、iterator メソッドの現在位置が保持されます再。</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The loop completes when the end of the iterator method is reached.</source>
+          <target state="translated">Iterator メソッドの終わりに達したときに、ループが完了します。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The return type of an iterator method or <ph id="ph1">`get`</ph> accessor can be &lt;xref:System.Collections.IEnumerable&gt;, &lt;xref:System.Collections.Generic.IEnumerable%601&gt;, &lt;xref:System.Collections.IEnumerator&gt;, or &lt;xref:System.Collections.Generic.IEnumerator%601&gt;.</source>
+          <target state="translated">Iterator メソッドの戻り値の型または<ph id="ph1">`get`</ph>アクセサーは、 &lt;xref:System.Collections.IEnumerable&gt;、 &lt;xref:System.Collections.Generic.IEnumerable%601&gt;、 &lt;xref:System.Collections.IEnumerator&gt;、または&lt;xref:System.Collections.Generic.IEnumerator%601&gt;.&lt;/xref:System.Collections.Generic.IEnumerator%601&gt; &lt;/xref:System.Collections.IEnumerator&gt; &lt;/xref:System.Collections.Generic.IEnumerable%601&gt; &lt;/xref:System.Collections.IEnumerable&gt;</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>You can use an <ph id="ph1">`Exit Function`</ph> or <ph id="ph2">`Return`</ph> statement to end the iteration.</source>
+          <target state="translated">使用することができます、<ph id="ph1">`Exit Function`</ph>または<ph id="ph2">`Return`</ph>ステートメント、反復を終了します。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>A Visual Basic iterator function or <ph id="ph1">`get`</ph> accessor declaration includes an <bpt id="p1">[</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept> modifier.</source>
+          <target state="translated">Visual Basic の反復子関数または<ph id="ph1">`get`</ph>アクセサー宣言が含まれる、<bpt id="p1">[</bpt>反復子<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept>修飾子です。</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Iterators were introduced in Visual Basic in Visual Studio 2012.</source>
+          <target state="translated">Visual Studio 2012 で Visual Basic では、反復子が導入されています。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>In this topic<ept id="p1">**</ept></source>
+          <target state="translated"><bpt id="p1">**</bpt>このトピックの内容<ept id="p1">**</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Simple Iterator<ept id="p1">](#BKMK_SimpleIterator)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>単純な反復子<ept id="p1">](#BKMK_SimpleIterator)</ept></target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Creating a Collection Class<ept id="p1">](#BKMK_CollectionClass)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>コレクション クラスを作成します。<ept id="p1">](#BKMK_CollectionClass)</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Try Blocks<ept id="p1">](#BKMK_TryBlocks)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>Try ブロック<ept id="p1">](#BKMK_TryBlocks)</ept></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Anonymous Methods<ept id="p1">](#BKMK_AnonymousMethods)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>匿名メソッド<ept id="p1">](#BKMK_AnonymousMethods)</ept></target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Using Iterators with a Generic List<ept id="p1">](#BKMK_GenericList)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>ジェネリック リストと共に反復子の使用<ept id="p1">](#BKMK_GenericList)</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Syntax Information<ept id="p1">](#BKMK_SyntaxInformation)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>構文情報<ept id="p1">](#BKMK_SyntaxInformation)</ept></target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Technical Implementation<ept id="p1">](#BKMK_Technical)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>技術的な実装<ept id="p1">](#BKMK_Technical)</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Use of Iterators<ept id="p1">](#BKMK_UseOfIterators)</ept></source>
+          <target state="translated"><bpt id="p1">[</bpt>反復子の使用<ept id="p1">](#BKMK_UseOfIterators)</ept></target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>For all examples in the topic except the Simple Iterator example, include <bpt id="p1">[</bpt>Imports<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept> statements for the <ph id="ph1">`System.Collections`</ph> and <ph id="ph2">`System.Collections.Generic`</ph> namespaces.</source>
+          <target state="translated">トピックの「単純な反復子の使用例を除くすべての例については、含める<bpt id="p1">[</bpt>Imports<ept id="p1">](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)</ept>ステートメントを、<ph id="ph1">`System.Collections`</ph>と<ph id="ph2">`System.Collections.Generic`</ph>名前空間。</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Simple Iterator</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SimpleIterator"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>単純な反復子</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The following example has a single <ph id="ph1">`Yield`</ph> statement that is inside a <bpt id="p1">[</bpt>For…Next<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept> loop.</source>
+          <target state="translated">次の例は、1 つ<ph id="ph1">`Yield`</ph>ステートメント内にある、<bpt id="p1">[</bpt>にしています.次<ept id="p1">](../../../visual-basic/language-reference/statements/for-next-statement.md)</ept>ループします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>In <ph id="ph1">`Main`</ph>, each iteration of the <ph id="ph2">`For Each`</ph> statement body creates a call to the iterator function, which proceeds to the next <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated"><ph id="ph1">`Main`</ph>の各反復処理、<ph id="ph2">`For Each`</ph>ステートメント本体を次の手順を実行する反復子関数の呼び出しを作成<ph id="ph3">`Yield`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Creating a Collection Class</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_CollectionClass"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>コレクション クラスを作成します。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`DaysOfTheWeek`</ph> class implements the &lt;xref:System.Collections.IEnumerable&gt; interface, which requires a &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method.</source>
+          <target state="translated">次の例では、<ph id="ph1">`DaysOfTheWeek`</ph>クラスが実装する、&lt;xref:System.Collections.IEnumerable&gt;インターフェイスを必要とする、&lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;メソッド&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;&lt;/xref:System.Collections.IEnumerable&gt;。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The compiler implicitly calls the <ph id="ph1">`GetEnumerator`</ph> method, which returns an &lt;xref:System.Collections.IEnumerator&gt;.</source>
+          <target state="translated">コンパイラが暗黙的に呼び出す、 <ph id="ph1">`GetEnumerator`</ph> &lt;xref:System.Collections.IEnumerator&gt;.&lt;/xref:System.Collections.IEnumerator&gt;を返すメソッド</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`GetEnumerator`</ph> method returns each string one at a time by using the <ph id="ph2">`Yield`</ph> statement, and  an <ph id="ph3">`Iterator`</ph> modifier is in the function declaration.</source>
+          <target state="translated"><ph id="ph1">`GetEnumerator`</ph>メソッドを使用して、一度に&amp;1; つの各文字列を返します、<ph id="ph2">`Yield`</ph>ステートメント、および<ph id="ph3">`Iterator`</ph>修飾子は関数宣言では。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following example creates a <ph id="ph1">`Zoo`</ph> class that contains a collection of animals.</source>
+          <target state="translated">次の例を作成し、<ph id="ph1">`Zoo`</ph>動物のコレクションを格納するクラス。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statement that refers to the class instance (<ph id="ph2">`theZoo`</ph>) implicitly calls the <ph id="ph3">`GetEnumerator`</ph> method.</source>
+          <target state="translated"><ph id="ph1">`For Each`</ph>クラスのインスタンスを参照するステートメント (<ph id="ph2">`theZoo`</ph>) を暗黙的に呼び出す、<ph id="ph3">`GetEnumerator`</ph>メソッドです。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`For Each`</ph> statements that refer to the <ph id="ph2">`Birds`</ph> and <ph id="ph3">`Mammals`</ph> properties use the <ph id="ph4">`AnimalsForType`</ph> named iterator method.</source>
+          <target state="translated"><ph id="ph1">`For Each`</ph>を参照するステートメント、<ph id="ph2">`Birds`</ph>と<ph id="ph3">`Mammals`</ph>プロパティを使用して、 <ph id="ph4">`AnimalsForType`</ph> iterator メソッドの名前します。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Try Blocks</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_TryBlocks"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Try ブロック</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Visual Basic allows a <ph id="ph1">`Yield`</ph> statement in the <ph id="ph2">`Try`</ph> block of a <bpt id="p1">[</bpt>Try...Catch...Finally Statement<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>.</source>
+          <target state="translated">Visual Basic では、<ph id="ph1">`Yield`</ph>内のステートメントで、<ph id="ph2">`Try`</ph>のブロック、<bpt id="p1">[</bpt>しようとしています.キャッチしてください.Finally ステートメント<ept id="p1">](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Try`</ph> block that has a <ph id="ph2">`Yield`</ph> statement can have <ph id="ph3">`Catch`</ph> blocks, and can have a <ph id="ph4">`Finally`</ph> block.</source>
+          <target state="translated">A<ph id="ph1">`Try`</ph>がブロック、<ph id="ph2">`Yield`</ph>ステートメントにはできます<ph id="ph3">`Catch`</ph>ブロック、およびことができますが、<ph id="ph4">`Finally`</ph>ブロックします。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>The following example includes <ph id="ph1">`Try`</ph>, <ph id="ph2">`Catch`</ph>, and <ph id="ph3">`Finally`</ph> blocks in an iterator function.</source>
+          <target state="translated">次の例が含まれます<ph id="ph1">`Try`</ph>、 <ph id="ph2">`Catch`</ph>、および<ph id="ph3">`Finally`</ph>では、反復子関数をブロックします。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Finally`</ph> block in the iterator function executes before the <ph id="ph2">`For Each`</ph> iteration finishes.</source>
+          <target state="translated"><ph id="ph1">`Finally`</ph> Iterator 関数内のブロックを実行する前に、<ph id="ph2">`For Each`</ph>イテレーションが完了するとします。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Yield`</ph> statement cannot be inside a <ph id="ph2">`Catch`</ph> block or a <ph id="ph3">`Finally`</ph> block.</source>
+          <target state="translated">A<ph id="ph1">`Yield`</ph>ステートメント内で使用できない、<ph id="ph2">`Catch`</ph>ブロックまたは<ph id="ph3">`Finally`</ph>ブロックします。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>If the <ph id="ph1">`For Each`</ph> body (instead of the iterator method) throws an exception, a <ph id="ph2">`Catch`</ph> block in the iterator function is not executed, but a <ph id="ph3">`Finally`</ph> block in the iterator function is executed.</source>
+          <target state="translated">場合、<ph id="ph1">`For Each`</ph>本体 (iterator メソッド) ではなく、例外がスロー、 <ph id="ph2">`Catch`</ph> iterator 関数内のブロックは実行されませんが、<ph id="ph3">`Finally`</ph>反復子関数でのブロックを実行します。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>A <ph id="ph1">`Catch`</ph> block inside an iterator function catches only exceptions that occur inside the iterator function.</source>
+          <target state="translated">A<ph id="ph1">`Catch`</ph>反復子関数の内側のブロックは、反復子関数内で発生する例外だけをキャッチします。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Anonymous Methods</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_AnonymousMethods"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>匿名メソッド</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an anonymous function can be an iterator function.</source>
+          <target state="translated">Visual basic では、iterator 関数が匿名関数にできます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>The following example illustrates this.</source>
+          <target state="translated">次に例を示します。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>The following example has a non-iterator method that validates the arguments.</source>
+          <target state="translated">次の例では、引数を検証する非反復子メソッドがあります。</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>The method returns the result of an anonymous iterator that describes the collection elements.</source>
+          <target state="translated">このメソッドは、匿名、コレクションの要素を示す反復子の結果を返します。</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>If validation is instead inside the iterator function, the validation cannot be performed until the start of the first iteration of the <ph id="ph1">`For Each`</ph> body.</source>
+          <target state="translated">最初のイテレーションの開始まで、検証を実行できない検証が代わりに反復子関数の内部である場合は、<ph id="ph1">`For Each`</ph>本文。</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Using Iterators with a Generic List</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_GenericList"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>ジェネリック リストと共に反復子の使用</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>In the following example, the <ph id="ph1">`Stack(Of T)`</ph> generic class implements the &lt;xref:System.Collections.Generic.IEnumerable%601&gt; generic interface.</source>
+          <target state="translated">次の例では、<ph id="ph1">`Stack(Of T)`</ph>ジェネリック クラスが実装する、&lt;xref:System.Collections.Generic.IEnumerable%601&gt;ジェネリック インターフェイス&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;。</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Push`</ph> method assigns values to an array of type <ph id="ph2">`T`</ph>.</source>
+          <target state="translated"><ph id="ph1">`Push`</ph>メソッドでは、型の配列に値を割り当てます<ph id="ph2">`T`</ph>します。</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method returns the array values by using the <ph id="ph1">`Yield`</ph> statement.</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;メソッドを使用して配列の値を返す、<ph id="ph1">`Yield`</ph>ステートメント&lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>In addition to the generic &lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt; method, the non-generic &lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt; method must also be implemented.</source>
+          <target state="translated">ジェネリックだけでなく&lt;xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;メソッドは、非ジェネリック&lt;xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;メソッドを実装することがもする必要があります&lt;/xref:System.Collections.IEnumerable.GetEnumerator%2A&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>This is because &lt;xref:System.Collections.Generic.IEnumerable%601&gt; inherits from &lt;xref:System.Collections.IEnumerable&gt;.</source>
+          <target state="translated">これは、ため&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;xref:System.Collections.IEnumerable&gt;.&lt;/xref:System.Collections.IEnumerable&gt;から継承&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>The non-generic implementation defers to the generic implementation.</source>
+          <target state="translated">非ジェネリックの実装は、ジェネリックな実装に従います。</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>The example uses named iterators to support various ways of iterating through the same collection of data.</source>
+          <target state="translated">例では、さまざまなデータの同じコレクションを反復処理する方法をサポートするために名前付きの反復子を使用します。</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>These named iterators are the <ph id="ph1">`TopToBottom`</ph> and <ph id="ph2">`BottomToTop`</ph> properties, and the <ph id="ph3">`TopN`</ph> method.</source>
+          <target state="translated">これらの反復子を名前付き、<ph id="ph1">`TopToBottom`</ph>と<ph id="ph2">`BottomToTop`</ph>プロパティ、および<ph id="ph3">`TopN`</ph>メソッドです。</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`BottomToTop`</ph> property declaration includes the <ph id="ph2">`Iterator`</ph> keyword.</source>
+          <target state="translated"><ph id="ph1">`BottomToTop`</ph>プロパティ宣言が含まれる、<ph id="ph2">`Iterator`</ph>キーワードです。</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Syntax Information</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_SyntaxInformation"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>構文情報</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>An iterator can occur as a method or <ph id="ph1">`get`</ph> accessor.</source>
+          <target state="translated">メソッドとして発生することが、反復子または<ph id="ph1">`get`</ph>アクセサー。</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.</source>
+          <target state="translated">反復子は、イベント、コンス トラクター、静的コンス トラクターまたは静的のデストラクターで発生することはできません。</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>An implicit conversion must exist from the expression type in the <ph id="ph1">`Yield`</ph> statement to the return type of the iterator.</source>
+          <target state="translated">式の型から暗黙的な変換が存在する必要があります、<ph id="ph1">`Yield`</ph>ステートメント、反復子の戻り値の型。</target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, an iterator method cannot have any <ph id="ph1">`ByRef`</ph> parameters.</source>
+          <target state="translated">Visual Basic では、iterator メソッドは指定できません<ph id="ph1">`ByRef`</ph>パラメーター。</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>In Visual Basic, "Yield" is not a reserved word and has special meaning only when it is used in an <ph id="ph1">`Iterator`</ph> method or <ph id="ph2">`get`</ph> accessor.</source>
+          <target state="translated">Visual basic で「メリットをもたらす」予約語ではない、特別な意味で使用されている場合にのみ、<ph id="ph1">`Iterator`</ph>メソッドまたは<ph id="ph2">`get`</ph>アクセサー。</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Technical Implementation</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_Technical"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>技術的な実装</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Although you write an iterator as a method, the compiler translates it into a nested class that is, in effect, a state machine.</source>
+          <target state="translated">メソッドとして、反復子を記述しても、コンパイラが il 変換を入れ子になったクラスには、実際には、ステート マシンです。</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>This class keeps track of the position of the iterator as long the <ph id="ph1">`For Each...Next`</ph> loop in the client code continues.</source>
+          <target state="translated">このクラスには、時間と反復子の位置の追跡<ph id="ph1">`For Each...Next`</ph>クライアント コードでのループが継続されます。</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that is generated for an iterator method.</source>
+          <target state="translated">コンパイラが何を表示するには、iterator メソッドに対して生成される Microsoft 中間言語コードを表示するのに、Ildasm.exe ツールを使用することができます。</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>When you create an iterator for a <bpt id="p1">[</bpt>class<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept> or <bpt id="p2">[</bpt>struct<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>, you do not have to implement the whole &lt;xref:System.Collections.IEnumerator&gt; interface.</source>
+          <target state="translated">反復子を作成する場合、<bpt id="p1">[</bpt>クラス<ept id="p1">](../../../csharp/language-reference/keywords/class.md)</ept>または<bpt id="p2">[</bpt>構造体<ept id="p2">](../../../csharp/language-reference/keywords/struct.md)</ept>、全体を実装する必要はありません&lt;xref:System.Collections.IEnumerator&gt;インターフェイス&lt;/xref:System.Collections.IEnumerator&gt;。</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>When the compiler detects the iterator, it automatically generates the <ph id="ph1">`Current`</ph>, <ph id="ph2">`MoveNext`</ph>, and <ph id="ph3">`Dispose`</ph> methods of the &lt;xref:System.Collections.IEnumerator&gt; or &lt;xref:System.Collections.Generic.IEnumerator%601&gt; interface.</source>
+          <target state="translated">自動的に生成されますコンパイラでは、反復子を検出すると、 <ph id="ph1">`Current`</ph>、 <ph id="ph2">`MoveNext`</ph>、および<ph id="ph3">`Dispose`</ph>のメソッド、&lt;xref:System.Collections.IEnumerator&gt;または&lt;xref:System.Collections.Generic.IEnumerator%601&gt;インターフェイス&lt;/xref:System.Collections.Generic.IEnumerator%601&gt;&lt;/xref:System.Collections.IEnumerator&gt;。</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>On each successive iteration of the <ph id="ph1">`For Each…Next`</ph> loop (or the direct call to <ph id="ph2">`IEnumerator.MoveNext`</ph>), the next iterator code body resumes after the previous <ph id="ph3">`Yield`</ph> statement.</source>
+          <target state="translated">一連の各イテレーションで、<ph id="ph1">`For Each…Next`</ph>ループ (または直接の呼び出し<ph id="ph2">`IEnumerator.MoveNext`</ph>)、次の反復子コード本体が、前の後に再開<ph id="ph3">`Yield`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>It then continues to the next <ph id="ph1">`Yield`</ph> statement until the end of the iterator body is reached, or until an <ph id="ph2">`Exit Function`</ph> or <ph id="ph3">`Return`</ph> statement is encountered.</source>
+          <target state="translated">次に続きます<ph id="ph1">`Yield`</ph>ステートメント、反復子本体の末尾に到達するまでになるか、<ph id="ph2">`Exit Function`</ph>または<ph id="ph3">`Return`</ph>ステートメントが見つかりました。</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Iterators do not support the &lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt; method.</source>
+          <target state="translated">反復子をサポートしていない、&lt;xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;メソッド&lt;/xref:System.Collections.IEnumerator.Reset%2A?displayProperty=fullName&gt;。</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>To re-iterate from the start, you must obtain a new iterator.</source>
+          <target state="translated">最初から再反復処理するには、新しい反復子を取得する必要があります。</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>For additional information, see the <bpt id="p1">[</bpt>Visual Basic Language Specification<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>.</source>
+          <target state="translated">詳細については、次を参照してください。、 <bpt id="p1">[</bpt>Visual Basic 言語仕様<ept id="p1">](../../../visual-basic/reference/language-specification.md)</ept>します。</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept> Use of Iterators</source>
+          <target state="translated"><bpt id="p1">&lt;a name="BKMK_UseOfIterators"&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>反復子の使用</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Iterators enable you to maintain the simplicity of a <ph id="ph1">`For Each`</ph> loop when you need to use complex code to populate a list sequence.</source>
+          <target state="translated">反復子を使用するの簡潔さを維持するために、<ph id="ph1">`For Each`</ph>リストの順番を設定する複雑なコードを使用する必要がある場合をループします。</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This can be useful when you want to do the following:</source>
+          <target state="translated">次の操作を実行するときに便利になります。</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Modify the list sequence after the first <ph id="ph1">`For Each`</ph> loop iteration.</source>
+          <target state="translated">1 つ目後のリストの順番の変更<ph id="ph1">`For Each`</ph>イテレーションをループします。</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Avoid fully loading a large list before the first iteration of a <ph id="ph1">`For Each`</ph> loop.</source>
+          <target state="translated">最初のイテレーションの前に大きなリストが完全に読み込まれないように、<ph id="ph1">`For Each`</ph>ループします。</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>An example is a paged fetch to load a batch of table rows.</source>
+          <target state="translated">例では、テーブル行のバッチをロードするページのフェッチを示します。</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Another example is the &lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt; method, which implements iterators within the .NET Framework.</source>
+          <target state="translated">別の例は、&lt;xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;メソッドで、.NET Framework 内での反復子を実装します&lt;/xref:System.IO.DirectoryInfo.EnumerateFiles%2A&gt;。</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Encapsulate building the list in the iterator.</source>
+          <target state="translated">反復子のリストの作成をカプセル化します。</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the iterator method, you can build the list and then yield each result in a loop.</source>
+          <target state="translated">Iterator メソッドのリストを作成し、ループ内では、各結果を生成できます。</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic&gt;&lt;/xref:System.Collections.Generic&gt;</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Collections.Generic.IEnumerable%601&gt;</source>
+          <target state="translated">&lt;xref:System.Collections.Generic.IEnumerable%601&gt;&lt;/xref:System.Collections.Generic.IEnumerable%601&gt;</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>For Each...Next Statement<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>各.次のステートメント<ept id="p1">](../../../visual-basic/language-reference/statements/for-each-next-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Yield Statement<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Yield ステートメント<ept id="p1">](../../../visual-basic/language-reference/statements/yield-statement.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Iterator<ept id="p1">](../../../visual-basic/language-reference/modifiers/iterator.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

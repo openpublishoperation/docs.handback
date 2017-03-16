@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">adc58e081cd9b874a841d84b11d92cbffb6ba6b8</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\concepts\assemblies-gac\walkthrough-embedding-types-from-managed-assemblies-in-vs.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cbd4d830944ba574d2c187645a5558884d4b90a3</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85ac426a23cdea773199adc3f21123f93da0beda</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">Procedura dettagliata: Incorporamento dei tipi da assembly in Visual Studio (Visual Basic) gestiti | Documenti di Microsoft</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)</source>
+          <target state="translated">Procedura dettagliata: Incorporamento dei tipi da assembly gestiti in Visual Studio (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>If you embed type information from a strong-named managed assembly, you can loosely couple types in an application to achieve version independence.</source>
+          <target state="translated">Se si incorporano informazioni sul tipo da un assembly gestito sicuro, è possibile un'associazione debole dei tipi in un'applicazione per ottenere l'indipendenza dalla versione.</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>That is, your program can be written to use types from multiple versions of a managed library without having to be recompiled for each version.</source>
+          <target state="translated">Vale a dire, il programma può essere scritto per utilizzare tipi di più versioni di una libreria gestita senza dover ricompilare per ogni versione.</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Type embedding is frequently used with COM interop, such as an application that uses automation objects from Microsoft Office.</source>
+          <target state="translated">L'incorporamento dei tipi viene spesso utilizzato con l'interoperabilità COM, ad esempio un'applicazione che utilizza gli oggetti di automazione di Microsoft Office.</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Embedding type information enables the same build of a program to work with different versions of Microsoft Office on different computers.</source>
+          <target state="translated">Incorporamento di informazioni sul tipo consente la stessa build di un programma per l'utilizzo delle diverse versioni di Microsoft Office in computer diversi.</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>However, you can also use type embedding with a fully managed solution.</source>
+          <target state="translated">Tuttavia, è possibile utilizzare anche incorporamento dei tipi con una soluzione completamente gestita.</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Type information can be embedded from an assembly that has the following characteristics:</source>
+          <target state="translated">Informazioni sul tipo possono essere incorporati da un assembly che ha le caratteristiche seguenti:</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The assembly exposes at least one public interface.</source>
+          <target state="translated">L'assembly espone almeno un'interfaccia pubblica.</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The embedded interfaces are annotated with a <ph id="ph1">`ComImport`</ph> attribute and a <ph id="ph2">`Guid`</ph> attribute (and a unique GUID).</source>
+          <target state="translated">Le interfacce incorporate vengono annotate con un <ph id="ph1">`ComImport`</ph> attributo e un <ph id="ph2">`Guid`</ph> attributo (e un GUID univoco).</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The assembly is annotated with the <ph id="ph1">`ImportedFromTypeLib`</ph> attribute or the <ph id="ph2">`PrimaryInteropAssembly`</ph> attribute, and an assembly-level <ph id="ph3">`Guid`</ph> attribute.</source>
+          <target state="translated">L'assembly viene annotato con il <ph id="ph1">`ImportedFromTypeLib`</ph> attributo o <ph id="ph2">`PrimaryInteropAssembly`</ph> attributo e un livello di assembly <ph id="ph3">`Guid`</ph> attributo.</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>(By default, Visual Basic project templates include an assembly-level <ph id="ph1">`Guid`</ph> attribute.)</source>
+          <target state="translated">(Per impostazione predefinita, i modelli di progetto Visual Basic includono un livello di assembly <ph id="ph1">`Guid`</ph> attributo.)</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>After you have specified the public interfaces that can be embedded, you can create runtime classes that implement those interfaces.</source>
+          <target state="translated">Dopo aver specificato le interfacce pubbliche che possono essere incorporate, è possibile creare classi di runtime che implementano tali interfacce.</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>A client program can then embed the type information for those interfaces at design time by referencing the assembly that contains the public interfaces and setting the <ph id="ph1">`Embed Interop Types`</ph> property of the reference to <ph id="ph2">`True`</ph>.</source>
+          <target state="translated">Un programma client può quindi incorporare le informazioni sul tipo per tali interfacce in fase di progettazione facendo riferimento all'assembly che contiene le interfacce pubbliche e l'impostazione di <ph id="ph1">`Embed Interop Types`</ph> proprietà di riferimento su <ph id="ph2">`True`</ph>.</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This is equivalent to using the command line compiler and referencing the assembly by using the <ph id="ph1">`/link`</ph> compiler option.</source>
+          <target state="translated">Ciò equivale a utilizzando il compilatore della riga di comando e fare riferimento all'assembly utilizzando il <ph id="ph1">`/link`</ph> l'opzione del compilatore.</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The client program can then load instances of your runtime objects typed as those interfaces.</source>
+          <target state="translated">Il programma client può quindi caricare le istanze degli oggetti di runtime tipizzati come tali interfacce.</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>If you create a new version of your strong-named runtime assembly, the client program does not have to be recompiled with the updated runtime assembly.</source>
+          <target state="translated">Se si crea una nuova versione dell'assembly con nome sicuro di runtime, il programma client non devono essere ricompilate con l'assembly di runtime aggiornato.</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Instead, the client program continues to use whichever version of the runtime assembly is available to it, using the embedded type information for the public interfaces.</source>
+          <target state="translated">Al contrario, il programma client continua a utilizzare qualsiasi versione di assembly di runtime è disponibile, utilizzando le informazioni sul tipo incorporato per le interfacce pubbliche.</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Because the primary function of type embedding is to support embedding of type information from COM interop assemblies, the following limitations apply when you embed type information in a fully managed solution:</source>
+          <target state="translated">Poiché la funzione principale di incorporamento dei tipi è supporta l'incorporamento di informazioni sui tipi da assembly di interoperabilità COM, le limitazioni seguenti si applicano quando si incorporano informazioni sul tipo in una soluzione completamente gestita:</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Only attributes specific to COM interop are embedded; other attributes are ignored.</source>
+          <target state="translated">Solo gli attributi specifici per l'interoperabilità COM sono incorporati. altri attributi vengono ignorati.</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If a type uses generic parameters and the type of the generic parameter is an embedded type, that type cannot be used across an assembly boundary.</source>
+          <target state="translated">Se un tipo utilizza parametri generici e il tipo del parametro generico è un tipo incorporato, è Impossibile utilizzare tale tipo attraverso un limite di assembly.</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Examples of crossing an assembly boundary include calling a method from another assembly or a deriving a type from a type defined in another assembly.</source>
+          <target state="translated">Esempi di oltrepassare il limite di un assembly chiama un metodo da un altro assembly o un tipo deriva da un tipo definito in un altro assembly.</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Constants are not embedded.</source>
+          <target state="translated">Le costanti non sono incorporate.</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>The &lt;xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName&gt; class does not support an embedded type as a key.</source>
+          <target state="translated">La &lt;xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName&gt;classe non supporta un tipo incorporato come chiave.&lt;/xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName&gt;</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>You can implement your own dictionary type to support an embedded type as a key.</source>
+          <target state="translated">È possibile implementare un tipo di dizionario per supportare un tipo incorporato come chiave.</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>In this walkthrough, you will do the following:</source>
+          <target state="translated">In questa procedura dettagliata, verranno effettuate le operazioni seguenti:</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Create a strong-named assembly that has a public interface that contains type information that can be embedded.</source>
+          <target state="translated">Creare un assembly con nome sicuro che dispone di un'interfaccia pubblica che contiene informazioni sul tipo che può essere incorporati.</target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Create a strong-named runtime assembly that implements that public interface.</source>
+          <target state="translated">Creare un assembly con nome sicuro di runtime che implementa l'interfaccia pubblica.</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Create a client program that embeds the type information from the public interface and creates an instance of the class from the runtime assembly.</source>
+          <target state="translated">Creare un programma client che incorpora le informazioni sul tipo dell'interfaccia pubblica e crea un'istanza della classe da assembly di runtime.</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Modify and rebuild the runtime assembly.</source>
+          <target state="translated">Modificare e ricompilare l'assembly di runtime.</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Run the client program to see that the new version of the runtime assembly is being used without having to recompile the client program.</source>
+          <target state="translated">Eseguire il programma client per verificare che la nuova versione dell'assembly di runtime viene usata senza dover ricompilare il programma client.</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Creating an Interface</source>
+          <target state="translated">Creazione di un'interfaccia</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To create the type equivalence interface project</source>
+          <target state="translated">Per creare il progetto di interfaccia di equivalenza del tipo</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">In Visual Studio, nel <bpt id="p1">**</bpt>File<ept id="p1">**</ept> dal menu <bpt id="p2">**</bpt>New<ept id="p2">**</ept> e quindi fare clic su <bpt id="p3">**</bpt>progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> pane, make sure that <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> is selected.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nuovo progetto<ept id="p1">**</ept> della finestra di dialogo di <bpt id="p2">**</bpt>tipi di progetto<ept id="p2">**</ept> riquadro, assicurarsi che <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> è selezionata.</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class Library<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> pane.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>libreria di classi<ept id="p1">**</ept> nel <bpt id="p2">**</bpt>modelli<ept id="p2">**</ept> riquadro.</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> box, type <ph id="ph1">`TypeEquivalenceInterface`</ph>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> digitare <ph id="ph1">`TypeEquivalenceInterface`</ph>, quindi fare clic su <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>The new project is created.</source>
+          <target state="translated">Viene creato il nuovo progetto.</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the Class1.vb file and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, il file Class1. vb e fare clic su <bpt id="p2">**</bpt>rinominare<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Rename the file to <ph id="ph1">`ISampleInterface.vb`</ph> and press ENTER.</source>
+          <target state="translated">Rinominare il file in <ph id="ph1">`ISampleInterface.vb`</ph> e premere INVIO.</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Renaming the file will also rename the class to <ph id="ph1">`ISampleInterface`</ph>.</source>
+          <target state="translated">Ridenominazione del file verrà anche rinominare la classe come <ph id="ph1">`ISampleInterface`</ph>.</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This class will represent the public interface for the class.</source>
+          <target state="translated">Questa classe rappresenterà l'interfaccia pubblica per la classe.</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceInterface project and click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceInterface e fare clic su <bpt id="p1">**</bpt>proprietà<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Compile<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Fare clic sulla scheda <bpt id="p1">**</bpt>Compila<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Set the output path to a valid location on your development computer, such as <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</source>
+          <target state="translated">Impostare il percorso di output a un percorso valido sul computer di sviluppo, ad esempio <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>This location will also be used in a later step in this walkthrough.</source>
+          <target state="translated">Questo percorso verrà utilizzato anche in un passaggio successivo in questa procedura dettagliata.</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>While still editing the project properties, click the <bpt id="p1">**</bpt>Signing<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Durante la modifica delle proprietà del progetto, scegliere il <bpt id="p1">**</bpt>firma<ept id="p1">**</ept> scheda.</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Sign the assembly<ept id="p1">**</ept> option.</source>
+          <target state="translated">Selezionare il <bpt id="p1">**</bpt>firmare l'assembly<ept id="p1">**</ept> (opzione).</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Choose a strong name key file<ept id="p1">**</ept> list, click <bpt id="p2">**</bpt>&lt;New...&gt;<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Scegli un file chiave con nome sicuro<ept id="p1">**</ept> elenco, fare clic su <bpt id="p2">**</bpt> &lt;New...&gt; <ept id="p2">**</ept>.&lt;/New...&gt;</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Key file name<ept id="p1">**</ept> box, type <ph id="ph1">`key.snk`</ph>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome file di chiave<ept id="p1">**</ept> digitare <ph id="ph1">`key.snk`</ph>.</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Clear the <bpt id="p1">**</bpt>Protect my key file with a password<ept id="p1">**</ept> check box.</source>
+          <target state="translated">Cancella il <bpt id="p1">**</bpt>Proteggi file di chiave con una password<ept id="p1">**</ept> casella di controllo.</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Fare clic su <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Open the ISampleInterface.vb file.</source>
+          <target state="translated">Aprire il file vb.</target>       </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Add the following code to the ISampleInterface class file to create the ISampleInterface interface.</source>
+          <target state="translated">Aggiungere il codice seguente al file di classe ISampleInterface per creare l'interfaccia ISampleInterface.</target>       </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>0<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Create Guid<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>strumenti<ept id="p1">**</ept> menu, fare clic su <bpt id="p2">**</bpt>crea Guid<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Create GUID<ept id="p1">**</ept> dialog box, click <bpt id="p2">**</bpt>Registry Format<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Copy<ept id="p3">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Crea GUID<ept id="p1">**</ept> la finestra di dialogo, fare clic su <bpt id="p2">**</bpt>il formato del Registro di sistema<ept id="p2">**</ept> e quindi fare clic su <bpt id="p3">**</bpt>copia<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>Exit<ept id="p1">**</ept>.</source>
+          <target state="translated">Fare clic su <bpt id="p1">**</bpt>Esci<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`Guid`</ph> attribute, delete the sample GUID and paste in the GUID that you copied from the <bpt id="p1">**</bpt>Create GUID<ept id="p1">**</ept> dialog box.</source>
+          <target state="translated">Nel <ph id="ph1">`Guid`</ph> attributo, eliminare il GUID di esempio e incollare il GUID copiato dal <bpt id="p1">**</bpt>Crea GUID<ept id="p1">**</ept> la finestra di dialogo.</target>       </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Remove the braces ({}) from the copied GUID.</source>
+          <target state="translated">Rimuovere le parentesi graffe ({}) dal GUID copiato.</target>       </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Show All Files<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>progetto<ept id="p1">**</ept> menu, fare clic su <bpt id="p2">**</bpt>Mostra tutti i file<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>My Project<ept id="p2">**</ept> folder.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, espandere il <bpt id="p2">**</bpt>progetto<ept id="p2">**</ept> cartella.</target>       </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Double-click the AssemblyInfo.vb.</source>
+          <target state="translated">Fare doppio clic il file AssemblyInfo. vb.</target>       </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Add the following attribute to the file.</source>
+          <target state="translated">Aggiungere l'attributo seguente al file.</target>       </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>1<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Save the file.</source>
+          <target state="translated">Salvare il file.</target>       </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+          <target state="translated">Salvare il progetto.</target>       </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceInterface project and click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceInterface e fare clic su <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>The class library .dll file is compiled and saved to the specified build output path (for example, C:\TypeEquivalenceSample).</source>
+          <target state="translated">Il file con estensione dll della libreria di classi viene compilato e salvato nel percorso di output di compilazione specificata (ad esempio, C:\TypeEquivalenceSample).</target>       </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Creating a Runtime Class</source>
+          <target state="translated">Creazione di una classe di Runtime</target>       </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>To create the type equivalence runtime project</source>
+          <target state="translated">Per creare il progetto di runtime di equivalenza del tipo</target>       </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">In Visual Studio, nel <bpt id="p1">**</bpt>File<ept id="p1">**</ept> dal menu <bpt id="p2">**</bpt>New<ept id="p2">**</ept> e quindi fare clic su <bpt id="p3">**</bpt>progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> pane, make sure that <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> is selected.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nuovo progetto<ept id="p1">**</ept> della finestra di dialogo di <bpt id="p2">**</bpt>tipi di progetto<ept id="p2">**</ept> riquadro, assicurarsi che <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> è selezionata.</target>       </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Class Library<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> pane.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>libreria di classi<ept id="p1">**</ept> nel <bpt id="p2">**</bpt>modelli<ept id="p2">**</ept> riquadro.</target>       </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> box, type <ph id="ph1">`TypeEquivalenceRuntime`</ph>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> digitare <ph id="ph1">`TypeEquivalenceRuntime`</ph>, quindi fare clic su <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The new project is created.</source>
+          <target state="translated">Viene creato il nuovo progetto.</target>       </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, right-click the Class1.vb file and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, il file Class1. vb e fare clic su <bpt id="p2">**</bpt>rinominare<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Rename the file to <ph id="ph1">`SampleClass.vb`</ph> and press ENTER.</source>
+          <target state="translated">Rinominare il file in <ph id="ph1">`SampleClass.vb`</ph> e premere INVIO.</target>       </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Renaming the file also renames the class to <ph id="ph1">`SampleClass`</ph>.</source>
+          <target state="translated">Ridenominazione del file consente inoltre di rinominare la classe <ph id="ph1">`SampleClass`</ph>.</target>       </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>This class will implement the <ph id="ph1">`ISampleInterface`</ph> interface.</source>
+          <target state="translated">Questa classe implementerà il <ph id="ph1">`ISampleInterface`</ph> interfaccia.</target>       </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceRuntime project and click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceRuntime e fare clic su <bpt id="p1">**</bpt>proprietà<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Compile<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Fare clic sulla scheda <bpt id="p1">**</bpt>Compila<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Set the output path to the same location you used in the TypeEquivalenceInterface project, for example, <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</source>
+          <target state="translated">Impostare il percorso di output nello stesso percorso usato nel progetto TypeEquivalenceInterface, ad esempio, <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</target>       </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>While still editing the project properties, click the <bpt id="p1">**</bpt>Signing<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Durante la modifica delle proprietà del progetto, scegliere il <bpt id="p1">**</bpt>firma<ept id="p1">**</ept> scheda.</target>       </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Select the <bpt id="p1">**</bpt>Sign the assembly<ept id="p1">**</ept> option.</source>
+          <target state="translated">Selezionare il <bpt id="p1">**</bpt>firmare l'assembly<ept id="p1">**</ept> (opzione).</target>       </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Choose a strong name key file<ept id="p1">**</ept> list, click <bpt id="p2">**</bpt>&lt;New...&gt;<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Scegli un file chiave con nome sicuro<ept id="p1">**</ept> elenco, fare clic su <bpt id="p2">**</bpt> &lt;New...&gt; <ept id="p2">**</ept>.&lt;/New...&gt;</target>       </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Key file name<ept id="p1">**</ept> box, type <ph id="ph1">`key.snk`</ph>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome file di chiave<ept id="p1">**</ept> digitare <ph id="ph1">`key.snk`</ph>.</target>       </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Clear the <bpt id="p1">**</bpt>Protect my key file with a password<ept id="p1">**</ept> check box.</source>
+          <target state="translated">Cancella il <bpt id="p1">**</bpt>Proteggi file di chiave con una password<ept id="p1">**</ept> casella di controllo.</target>       </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Fare clic su <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceRuntime project and click <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceRuntime e fare clic su <bpt id="p1">**</bpt>Aggiungi riferimento<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> tab and browse to the output path folder.</source>
+          <target state="translated">Fare clic su di <bpt id="p1">**</bpt>Sfoglia<ept id="p1">**</ept> scheda e passare alla cartella del percorso di output.</target>       </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Select the TypeEquivalenceInterface.dll file and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Selezionare il file TypeEquivalenceInterface. dll e fare clic su <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Show All Files<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>progetto<ept id="p1">**</ept> menu, fare clic su <bpt id="p2">**</bpt>Mostra tutti i file<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>References<ept id="p2">**</ept> folder.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, espandere il <bpt id="p2">**</bpt>riferimenti<ept id="p2">**</ept> cartella.</target>       </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Select the TypeEquivalenceInterface reference.</source>
+          <target state="translated">Selezionare il riferimento TypeEquivalenceInterface.</target>       </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>In the Properties window for the TypeEquivalenceInterface reference, set the <bpt id="p1">**</bpt>Specific Version<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>False<ept id="p2">**</ept>.</source>
+          <target state="translated">Nella finestra proprietà per il riferimento TypeEquivalenceInterface, impostare il <bpt id="p1">**</bpt>versione specifica<ept id="p1">**</ept> proprietà <bpt id="p2">**</bpt>False<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>Add the following code to the SampleClass class file to create the SampleClass class.</source>
+          <target state="translated">Aggiungere il codice seguente al file di classe SampleClass per creare la classe SampleClass.</target>       </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>2<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>2<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+          <target state="translated">Salvare il progetto.</target>       </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceRuntime project and click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceRuntime e fare clic su <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>The class library .dll file is compiled and saved to the specified build output path (for example, C:\TypeEquivalenceSample).</source>
+          <target state="translated">Il file con estensione dll della libreria di classi viene compilato e salvato nel percorso di output di compilazione specificata (ad esempio, C:\TypeEquivalenceSample).</target>       </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Creating a Client Project</source>
+          <target state="translated">Creazione di un progetto Client</target>       </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>To create the type equivalence client project</source>
+          <target state="translated">Per creare il progetto client di equivalenza del tipo</target>       </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>New<ept id="p2">**</ept> and then click <bpt id="p3">**</bpt>Project<ept id="p3">**</ept>.</source>
+          <target state="translated">In Visual Studio, nel <bpt id="p1">**</bpt>File<ept id="p1">**</ept> dal menu <bpt id="p2">**</bpt>New<ept id="p2">**</ept> e quindi fare clic su <bpt id="p3">**</bpt>progetto<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>New Project<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Project Types<ept id="p2">**</ept> pane, make sure that <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> is selected.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nuovo progetto<ept id="p1">**</ept> della finestra di dialogo di <bpt id="p2">**</bpt>tipi di progetto<ept id="p2">**</ept> riquadro, assicurarsi che <bpt id="p3">**</bpt>Windows<ept id="p3">**</ept> è selezionata.</target>       </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>Select <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Templates<ept id="p2">**</ept> pane.</source>
+          <target state="translated">Selezionare <bpt id="p1">**</bpt>applicazione Console<ept id="p1">**</ept> nel <bpt id="p2">**</bpt>modelli<ept id="p2">**</ept> riquadro.</target>       </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> box, type <ph id="ph1">`TypeEquivalenceClient`</ph>, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>nome<ept id="p1">**</ept> digitare <ph id="ph1">`TypeEquivalenceClient`</ph>, quindi fare clic su <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The new project is created.</source>
+          <target state="translated">Viene creato il nuovo progetto.</target>       </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceClient project and click <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceClient e fare clic su <bpt id="p1">**</bpt>proprietà<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Compile<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Fare clic sulla scheda <bpt id="p1">**</bpt>Compila<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>Set the output path to the same location you used in the TypeEquivalenceInterface project, for example, <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</source>
+          <target state="translated">Impostare il percorso di output nello stesso percorso usato nel progetto TypeEquivalenceInterface, ad esempio, <ph id="ph1">`C:\TypeEquivalenceSample`</ph>.</target>       </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceClient project and click <bpt id="p1">**</bpt>Add Reference<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceClient e fare clic su <bpt id="p1">**</bpt>Aggiungi riferimento<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> tab and browse to the output path folder.</source>
+          <target state="translated">Fare clic su di <bpt id="p1">**</bpt>Sfoglia<ept id="p1">**</ept> scheda e passare alla cartella del percorso di output.</target>       </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>Select the TypeEquivalenceInterface.dll file (not the TypeEquivalenceRuntime.dll) and click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+          <target state="translated">Selezionare il file TypeEquivalenceInterface. dll (non TypeEquivalenceRuntime. dll) e fare clic su <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Show All Files<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>progetto<ept id="p1">**</ept> menu, fare clic su <bpt id="p2">**</bpt>Mostra tutti i file<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>In <bpt id="p1">**</bpt>Solution Explorer<ept id="p1">**</ept>, expand the <bpt id="p2">**</bpt>References<ept id="p2">**</ept> folder.</source>
+          <target state="translated">In <bpt id="p1">**</bpt>Esplora<ept id="p1">**</ept>, espandere il <bpt id="p2">**</bpt>riferimenti<ept id="p2">**</ept> cartella.</target>       </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>Select the TypeEquivalenceInterface reference.</source>
+          <target state="translated">Selezionare il riferimento TypeEquivalenceInterface.</target>       </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>In the Properties window for the TypeEquivalenceInterface reference, set the <bpt id="p1">**</bpt>Embed Interop Types<ept id="p1">**</ept> property to <bpt id="p2">**</bpt>True<ept id="p2">**</ept>.</source>
+          <target state="translated">Nella finestra proprietà per il riferimento TypeEquivalenceInterface, impostare il <bpt id="p1">**</bpt>Embed Interop Types<ept id="p1">**</ept> proprietà <bpt id="p2">**</bpt>True<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Add the following code to the Module1.vb file to create the client program.</source>
+          <target state="translated">Aggiungere il codice seguente al file Module1. vb per creare il programma client.</target>       </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>3<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>3<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Press CTRL+F5 to build and run the program.</source>
+          <target state="translated">Premere CTRL + F5 per compilare ed eseguire il programma.</target>       </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Modifying the Interface</source>
+          <target state="translated">Modifica dell'interfaccia</target>       </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>To modify the interface</source>
+          <target state="translated">Per modificare l'interfaccia</target>       </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">In Visual Studio, nel <bpt id="p1">**</bpt>File<ept id="p1">**</ept> dal menu <bpt id="p2">**</bpt>aprire<ept id="p2">**</ept>, quindi fare clic su <bpt id="p3">**</bpt>progetto/soluzione<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, right-click the TypeEquivalenceInterface project, and then click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Apri progetto<ept id="p1">**</ept> la finestra di dialogo, fare clic sul progetto TypeEquivalenceInterface, quindi fare clic su <bpt id="p2">**</bpt>proprietà<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Fare clic sulla scheda <bpt id="p1">**</bpt>Applicazione<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Assembly Information<ept id="p1">**</ept> button.</source>
+          <target state="translated">Fare clic su di <bpt id="p1">**</bpt>informazioni sull'Assembly<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Change the <bpt id="p1">**</bpt>Assembly Version<ept id="p1">**</ept> and <bpt id="p2">**</bpt>File Version<ept id="p2">**</ept> values to <ph id="ph1">`2.0.0.0`</ph>.</source>
+          <target state="translated">Modifica il <bpt id="p1">**</bpt>versione dell'Assembly<ept id="p1">**</ept> e <bpt id="p2">**</bpt>versione File<ept id="p2">**</ept> valori <ph id="ph1">`2.0.0.0`</ph>.</target>       </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>Open the ISampleInterface.vb file.</source>
+          <target state="translated">Aprire il file vb.</target>       </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>Add the following line of code to the ISampleInterface interface.</source>
+          <target state="translated">Aggiungere la riga di codice seguente all'interfaccia ISampleInterface.</target>       </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>4<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></source>
+          <target state="translated"><bpt id="p1">&lt;CodeContentPlaceHolder&gt;</bpt>4<ept id="p1">&lt;/CodeContentPlaceHolder&gt;</ept></target>       </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>Save the file.</source>
+          <target state="translated">Salvare il file.</target>       </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+          <target state="translated">Salvare il progetto.</target>       </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceInterface project and click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceInterface e fare clic su <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>A new version of the class library .dll file is compiled and saved in the specified build output path (for example, C:\TypeEquivalenceSample).</source>
+          <target state="translated">Una nuova versione del file. dll della libreria di classe viene compilata e salvata nel percorso di output di compilazione specificato (ad esempio, C:\TypeEquivalenceSample).</target>       </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>Modifying the Runtime Class</source>
+          <target state="translated">Modifica la classe di Runtime</target>       </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>To modify the runtime class</source>
+          <target state="translated">Per modificare la classe di runtime</target>       </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>In Visual Studio, on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, point to <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Project/Solution<ept id="p3">**</ept>.</source>
+          <target state="translated">In Visual Studio, nel <bpt id="p1">**</bpt>File<ept id="p1">**</ept> dal menu <bpt id="p2">**</bpt>aprire<ept id="p2">**</ept>, quindi fare clic su <bpt id="p3">**</bpt>progetto/soluzione<ept id="p3">**</ept>.</target>       </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>In the <bpt id="p1">**</bpt>Open Project<ept id="p1">**</ept> dialog box, right-click the TypeEquivalenceRuntime project and click <bpt id="p2">**</bpt>Properties<ept id="p2">**</ept>.</source>
+          <target state="translated">Nel <bpt id="p1">**</bpt>Apri progetto<ept id="p1">**</ept> finestra di dialogo, fare clic sul progetto TypeEquivalenceRuntime e scegliere <bpt id="p2">**</bpt>proprietà<ept id="p2">**</ept>.</target>       </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> tab.</source>
+          <target state="translated">Fare clic sulla scheda <bpt id="p1">**</bpt>Applicazione<ept id="p1">**</ept> .</target>       </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>Click the <bpt id="p1">**</bpt>Assembly Information<ept id="p1">**</ept> button.</source>
+          <target state="translated">Fare clic su di <bpt id="p1">**</bpt>informazioni sull'Assembly<ept id="p1">**</ept> pulsante.</target>       </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Change the <bpt id="p1">**</bpt>Assembly Version<ept id="p1">**</ept> and <bpt id="p2">**</bpt>File Version<ept id="p2">**</ept> values to <ph id="ph1">`2.0.0.0`</ph>.</source>
+          <target state="translated">Modifica il <bpt id="p1">**</bpt>versione dell'Assembly<ept id="p1">**</ept> e <bpt id="p2">**</bpt>versione File<ept id="p2">**</ept> valori <ph id="ph1">`2.0.0.0`</ph>.</target>       </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>Open the SampleClass.vbfile.</source>
+          <target state="translated">Aprire il SampleClass.vbfile.</target>       </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Add the following lines of code to the SampleClass class.</source>
+          <target state="translated">Aggiungere le seguenti righe di codice alla classe SampleClass.</target>       </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>Save the project.</source>
+          <target state="translated">Salvare il progetto.</target>       </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Right-click the TypeEquivalenceRuntime project and click <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</source>
+          <target state="translated">Pulsante destro del mouse sul progetto TypeEquivalenceRuntime e fare clic su <bpt id="p1">**</bpt>Build<ept id="p1">**</ept>.</target>       </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>An updated version of the class library .dll file is compiled and saved in the previously specified build output path (for example, C:\TypeEquivalenceSample).</source>
+          <target state="translated">Una versione aggiornata del file. dll della libreria di classe viene compilata e salvata nel percorso di output di compilazione specificata in precedenza (ad esempio, C:\TypeEquivalenceSample).</target>       </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample).</source>
+          <target state="translated">In Esplora File, aprire la cartella del percorso di output (ad esempio, C:\TypeEquivalenceSample).</target>       </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>Double-click the TypeEquivalenceClient.exe to run the program.</source>
+          <target state="translated">Fare doppio clic su TypeEquivalenceClient.exe per eseguire il programma.</target>       </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.</source>
+          <target state="translated">Il programma rifletterà la nuova versione dell'assembly TypeEquivalenceRuntime senza essere stato ricompilato.</target>       </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">Vedere anche</target>       </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>/link (Visual Basic)<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/link.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1">[</bpt>/Link (Visual Basic)<ept id="p1">](../../../../visual-basic/reference/command-line-compiler/link.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Programming Concepts<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Concetti di programmazione<ept id="p1">](../../../../visual-basic/programming-guide/concepts/index.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Programming with Assemblies<ept id="p1">](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Programmazione con assembly<ept id="p1">](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Assemblies and the Global Assembly Cache (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>Gli assembly e Global Assembly Cache (Visual Basic)<ept id="p1">](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

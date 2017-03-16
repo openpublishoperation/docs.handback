@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">233673c1d42684b7caa9042d18fb341a1043a31b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\events\walkthrough-declaring-and-raising-events.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">00e058dfb7b92a732ffc7d82d69b89046dfc847b</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4f91d57a5d5abc5d6e81cb8d86930553d8d29f8</xliffext:olxliffhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Declaring and Raising Events (Visual Basic) | Microsoft Docs</source>
+          <target state="translated">宣言と発生 (Visual Basic) のイベント |Microsoft ドキュメント</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Declaring and Raising Events (Visual Basic)</source>
+          <target state="translated">チュートリアル: イベントの宣言と発生 (Visual Basic)</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough demonstrates how to declare and raise events for a class named <ph id="ph1">`Widget`</ph>.</source>
+          <target state="translated">このチュートリアルを宣言してという名前のクラスのイベントを発生させる方法について説明<ph id="ph1">`Widget`</ph>します。</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>After you complete the steps, you might want to read the companion topic, <bpt id="p1">[</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept>, which shows how to use events from <ph id="ph1">`Widget`</ph> objects to provide status information in an application.</source>
+          <target state="translated">手順を完了すると後、は、関連トピックを確認することができます<bpt id="p1">[</bpt>チュートリアル: イベントの処理<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept>からのイベントを使用する方法を説明<ph id="ph1">`Widget`</ph>アプリケーションで、状態情報を入力するオブジェクト。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The Widget Class</source>
+          <target state="translated">Widget クラス</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Assume for the moment that you have a <ph id="ph1">`Widget`</ph> class.</source>
+          <target state="translated">想定した、<ph id="ph1">`Widget`</ph>クラスです。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Your <ph id="ph1">`Widget`</ph> class has a method that can take a long time to execute, and you want your application to be able to put up some kind of completion indicator.</source>
+          <target state="translated"><ph id="ph1">`Widget`</ph>クラスに実行するには時間が長くなるメソッドとする場合、アプリケーションが何らかの完了のインジケーターを配置することです。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Of course, you could make the <ph id="ph1">`Widget`</ph> object show a percent-complete dialog box, but then you would be stuck with that dialog box in every project in which you used the <ph id="ph2">`Widget`</ph> class.</source>
+          <target state="translated">もちろん、行うことができます、<ph id="ph1">`Widget`</ph>オブジェクト % 完了ダイアログ ボックスの表示が、そのダイアログ ボックスを使用するすべてのプロジェクトで使用するスタックするし、<ph id="ph2">`Widget`</ph>クラスです。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>A good principle of object design is to let the application that uses an object handle the user interface—unless the whole purpose of the object is to manage a form or dialog box.</source>
+          <target state="translated">オブジェクト設計の原則は、オブジェクト ハンドル ユーザー インターフェイスを使用して、アプリケーションは、オブジェクトの全体の目的は、フォームまたはダイアログ ボックスを管理する場合を除き、します。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The purpose of <ph id="ph1">`Widget`</ph> is to perform other tasks, so it is better to add a <ph id="ph2">`PercentDone`</ph> event and let the procedure that calls <ph id="ph3">`Widget`</ph>'s methods handle that event and display status updates.</source>
+          <target state="translated">目的は、<ph id="ph1">`Widget`</ph>を追加することが、その他のタスクを実行することです、<ph id="ph2">`PercentDone`</ph>イベントおよび let を呼び出すプロシージャ<ph id="ph3">`Widget`</ph>メソッド処理がイベントと表示の状態を更新します。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PercentDone`</ph> event can also provide a mechanism for canceling the task.</source>
+          <target state="translated"><ph id="ph1">`PercentDone`</ph>イベントは、タスクのキャンセル メカニズムも提供できます。</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To build the code example for this topic</source>
+          <target state="translated">このトピックのコード例をビルドするには</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Open a new <ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph> Windows Application project and create a form named <ph id="ph2">`Form1`</ph>.</source>
+          <target state="translated">新しい<ph id="ph1">[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]</ph>Windows アプリケーション プロジェクトし、という名前のフォームを作成する<ph id="ph2">`Form1`</ph>です。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Add two buttons and a label to <ph id="ph1">`Form1`</ph>.</source>
+          <target state="translated">2 つのボタンとラベルを追加<ph id="ph1">`Form1`</ph>します。</target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Name the objects as shown in the following table.</source>
+          <target state="translated">次の表に示すように、オブジェクトの名前を付けます。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Object</source>
+          <target state="translated">オブジェクト</target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Property</source>
+          <target state="translated">プロパティ</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Setting</source>
+          <target state="translated">設定</target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Start Task</source>
+          <target state="translated">開始タスク</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">キャンセル</target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`(Name)`</ph>, <ph id="ph2">`Text`</ph></source>
+          <target state="translated"><ph id="ph1">`(Name)`</ph>, <ph id="ph2">`Text`</ph></target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>lblPercentDone, 0</source>
+          <target state="translated">lblPercentDone 0</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>On the <bpt id="p1">**</bpt>Project<ept id="p1">**</ept> menu, choose <bpt id="p2">**</bpt>Add Class<ept id="p2">**</ept> to add a class named <ph id="ph1">`Widget.vb`</ph> to the project.</source>
+          <target state="translated"><bpt id="p1">**</bpt>プロジェクト<ept id="p1">**</ept>] メニューの [選択<bpt id="p2">**</bpt>クラスの追加<ept id="p2">**</ept>という名前のクラスを追加する<ph id="ph1">`Widget.vb`</ph>をプロジェクトにします。</target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>To declare an event for the Widget class</source>
+          <target state="translated">ウィジェット クラスのイベントを宣言するには</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Use the <ph id="ph1">`Event`</ph> keyword to declare an event in the <ph id="ph2">`Widget`</ph> class.</source>
+          <target state="translated">使用して、<ph id="ph1">`Event`</ph>でイベントを宣言するキーワード、<ph id="ph2">`Widget`</ph>クラスです。</target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Note that an event can have <ph id="ph1">`ByVal`</ph> and <ph id="ph2">`ByRef`</ph> arguments, as <ph id="ph3">`Widget`</ph>'s <ph id="ph4">`PercentDone`</ph> event demonstrates:</source>
+          <target state="translated">イベントがあることに注意してください<ph id="ph1">`ByVal`</ph>と<ph id="ph2">`ByRef`</ph>、引数として<ph id="ph3">`Widget`</ph>の<ph id="ph4">`PercentDone`</ph>イベントを示しています。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#1<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents&amp;#1;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>When the calling object receives a <ph id="ph1">`PercentDone`</ph> event, the <ph id="ph2">`Percent`</ph> argument contains the percentage of the task that is complete.</source>
+          <target state="translated">呼び出し元のオブジェクトを受信すると、 <ph id="ph1">`PercentDone`</ph> 、イベント、<ph id="ph2">`Percent`</ph>引数には、タスクが完了の割合が含まれています。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Cancel`</ph> argument can be set to <ph id="ph2">`True`</ph> to cancel the method that raised the event.</source>
+          <target state="translated"><ph id="ph1">`Cancel`</ph>引数に設定することができます<ph id="ph2">`True`</ph>イベントを発生させたメソッドをキャンセルします。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have <ph id="ph1">`Optional`</ph> or <ph id="ph2">`ParamArray`</ph> arguments, and events do not have return values.</source>
+          <target state="translated">イベント引数を宣言するには、次の例外を除き、プロシージャ引数の場合と同様。 イベントを使用できない<ph id="ph1">`Optional`</ph>または<ph id="ph2">`ParamArray`</ph>引数、およびイベントには戻り値がないです。</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`PercentDone`</ph> event is raised by the <ph id="ph2">`LongTask`</ph> method of the <ph id="ph3">`Widget`</ph> class.</source>
+          <target state="translated"><ph id="ph1">`PercentDone`</ph>によってイベントが発生した、<ph id="ph2">`LongTask`</ph>のメソッド、<ph id="ph3">`Widget`</ph>クラスです。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">`LongTask`</ph> takes two arguments: the length of time the method pretends to be doing work, and the minimum time interval before <ph id="ph2">`LongTask`</ph> pauses to raise the <ph id="ph3">`PercentDone`</ph> event.</source>
+          <target state="translated"><ph id="ph1">`LongTask`</ph>2 つの引数: 時間の長さメソッドが行う作業、および前に最小の時間間隔を装う<ph id="ph2">`LongTask`</ph>させる一時停止、<ph id="ph3">`PercentDone`</ph>イベントです。</target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>To raise the PercentDone event</source>
+          <target state="translated">ですイベントを生成するには</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>To simplify access to the <ph id="ph1">`Timer`</ph> property used by this class, add an <ph id="ph2">`Imports`</ph> statement to the top of the declarations section of your class module, above the <ph id="ph3">`Class Widget`</ph> statement.</source>
+          <target state="translated">アクセスを簡略化する、<ph id="ph1">`Timer`</ph>このクラスによって使用されるプロパティを追加、<ph id="ph2">`Imports`</ph>ステートメントをクラス モジュールの宣言セクションの上部に上、<ph id="ph3">`Class Widget`</ph>ステートメントです。</target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#2<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents&amp;#2;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Add the following code to the <ph id="ph1">`Widget`</ph> class:</source>
+          <target state="translated"><ph id="ph1">`Widget`</ph> クラスに次のコードを追加します。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents#3<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbcnWalkthroughDeclaringAndRaisingEvents&amp;#3;<ept id="p2">](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-declaring-and-raising-events_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>When your application calls the <ph id="ph1">`LongTask`</ph> method, the <ph id="ph2">`Widget`</ph> class raises the <ph id="ph3">`PercentDone`</ph> event every <ph id="ph4">`MinimumInterval`</ph> seconds.</source>
+          <target state="translated">アプリケーションを呼び出すと、 <ph id="ph1">`LongTask`</ph> 、メソッド、<ph id="ph2">`Widget`</ph>クラスが生成、<ph id="ph3">`PercentDone`</ph>イベントすべて<ph id="ph4">`MinimumInterval`</ph>秒です。</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>When the event returns, <ph id="ph1">`LongTask`</ph> checks to see if the <ph id="ph2">`Cancel`</ph> argument was set to <ph id="ph3">`True`</ph>.</source>
+          <target state="translated">イベントが返されるときに<ph id="ph1">`LongTask`</ph>かどうかをチェック、<ph id="ph2">`Cancel`</ph>引数に設定された<ph id="ph3">`True`</ph>します。</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>A few disclaimers are necessary here.</source>
+          <target state="translated">いくつかの免責事項は、ここで必要です。</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For simplicity, the <ph id="ph1">`LongTask`</ph> procedure assumes you know in advance how long the task will take.</source>
+          <target state="translated">簡略化のため、<ph id="ph1">`LongTask`</ph>手順では、事前にわかってタスクにかかるものとします。</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>This is almost never the case.</source>
+          <target state="translated">これは、ケースではほとんどありません。</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Dividing tasks into chunks of even size can be difficult, and often what matters most to users is simply the amount of time that passes before they get an indication that something is happening.</source>
+          <target state="translated">何かが起こっているかを示す値を取得するまでに経過する時間数だけでは、多くの場合、最も重要な要素をユーザーに、タスクを均等なサイズのチャンクに分割することは困難ですが、できます。</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>You may have spotted another flaw in this sample.</source>
+          <target state="translated">このサンプルでは別の問題を見つけられたら可能性があります。</target>       </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Timer`</ph> property returns the number of seconds that have passed since midnight; therefore, the application gets stuck if it is started just before midnight.</source>
+          <target state="translated"><ph id="ph1">`Timer`</ph>プロパティには、午前&amp;0; 時から経過した秒数が返されます。 そのため、アプリケーションから抜け出せなく直前の午前&amp;0; 時に起動された場合。</target>       </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>A more careful approach to measuring time would take boundary conditions such as this into consideration, or avoid them altogether, using properties such as <ph id="ph1">`Now`</ph>.</source>
+          <target state="translated">時間の計測をより慎重な方法はこのなどを考慮に入れるの境界条件に入れるかなどのプロパティを使用して<ph id="ph1">`Now`</ph>します。</target>       </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Now that the <ph id="ph1">`Widget`</ph> class can raise events, you can move to the next walkthrough.</source>
+          <target state="translated">これで、<ph id="ph1">`Widget`</ph>クラスには、イベントを発生させて、次のように次のチュートリアルに進むことができます。</target>       </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept> demonstrates how to use <ph id="ph1">`WithEvents`</ph> to associate an event handler with the <ph id="ph2">`PercentDone`</ph> event.</source>
+          <target state="translated"><bpt id="p1">[</bpt>チュートリアル: イベントの処理<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept>を使用する方法を示します<ph id="ph1">`WithEvents`</ph>に、イベント ハンドラーを関連付けるには、<ph id="ph2">`PercentDone`</ph>イベントです。</target>       </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">関連項目</target>       </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;&lt;/xref:Microsoft.VisualBasic.DateAndTime.Timer%2A&gt;</target>       </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>&lt;xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;</source>
+          <target state="translated">&lt;xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;&lt;/xref:Microsoft.VisualBasic.DateAndTime.Now%2A&gt;</target>       </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Walkthrough: Handling Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept><ph id="ph1"> </ph></source>
+          <target state="translated"><bpt id="p1"> [</bpt>チュートリアル: イベントの処理<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)</ept><ph id="ph1"> </ph></target>       </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Events<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>イベント<ept id="p1">](../../../../visual-basic/programming-guide/language-features/events/index.md)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
