@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-317e149" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ae3d599f7173162c07fbaeda60435615f101b10d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">docs\visual-basic\programming-guide\language-features\strings\walkthrough-encrypting-and-decrypting-strings.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">vbcs_lo-mt</xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Machine Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">89b311df54bd25d6550b0a008ce7f0d03ff6e44d</xliffext:olskeletonhash>
+      <xliffext:olxliffhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0e09ebf0e9d18ea2c984b3d1a868e1a4393f6888</xliffext:olxliffhash>
+      <xliffext:poisonError xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Handback file name: lo-mt_walkthrough-encrypting-and-decrypting-strings.d016cda730fdcf5f9f4a59f983a46a474c4378b5.zh-cn is different with handoff file name: walkthrough-encrypting-and-decrypting-strings.d016cda730fdcf5f9f4a59f983a46a474c4378b5.zh-cn.</xliffext:poisonError>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Encrypting and Decrypting Strings in Visual Basic | Microsoft Docs</source>
+          <target state="translated">加密和解密在 Visual Basic 中的字符串 |Microsoft 文档</target>       </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Walkthrough: Encrypting and Decrypting Strings in Visual Basic</source>
+          <target state="translated">演练：在 Visual Basic 中对字符串进行加密和解密</target>       </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This walkthrough shows you how to use the &lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt; class to encrypt and decrypt strings using the cryptographic service provider (CSP) version of the Triple Data Encryption Standard (&lt;xref:System.Security.Cryptography.TripleDES&gt;) algorithm.</source>
+          <target state="translated">本演练演示如何使用&lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;类来加密和解密使用加密服务提供程序 (CSP) 版本的三重数据加密标准字符串 (&lt;xref:System.Security.Cryptography.TripleDES&gt;) 算法。&lt;/xref:System.Security.Cryptography.TripleDES&gt; &lt;/xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</target>       </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The first step is to create a simple wrapper class that encapsulates the 3DES algorithm and stores the encrypted data as a base-64 encoded string.</source>
+          <target state="translated">第一步是创建一个简单的包装类，它封装 3DES 算法，并将已加密的数据存储为 base 64 编码的字符串。</target>       </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Then, that wrapper is used to securely store private user data in a publicly accessible text file.</source>
+          <target state="translated">然后，该包装用于安全地将私人用户数据存储在可公开访问的文本文件。</target>       </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>You can use encryption to protect user secrets (for example, passwords) and to make credentials unreadable by unauthorized users.</source>
+          <target state="translated">可以使用加密来保护用户的机密信息 （如密码） 并进行未经授权的用户无法读取凭据。</target>       </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This can protect an authorized user's identity from being stolen, which protects the user's assets and provides non-repudiation.</source>
+          <target state="translated">这样可防止授权的用户的标识从此被盗用、 它保护用户的资产并提供不可否认性。</target>       </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Encryption can also protect a user's data from being accessed by unauthorized users.</source>
+          <target state="translated">加密还可保护用户的数据不被未经授权的用户的访问。</target>       </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Cryptographic Services<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept>.</source>
+          <target state="translated">有关详细信息，请参阅<bpt id="p1">[</bpt>加密服务<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept>。</target>       </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The Rijndael (now referred to as Advanced Encryption Standard [AES]) and Triple Data Encryption Standard (3DES) algorithms provide greater security than DES because they are more computationally intensive.</source>
+          <target state="translated">Rijndael （现在称为高级加密标准 [AES]） 和三重数据加密标准 (3DES) 算法提供更高的安全性比 DES，因为它们是多个计算密集型操作。</target>       </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For more information, see &lt;xref:System.Security.Cryptography.DES&gt; and &lt;xref:System.Security.Cryptography.Rijndael&gt;.</source>
+          <target state="translated">有关详细信息，请参阅&lt;xref:System.Security.Cryptography.DES&gt;和&lt;xref:System.Security.Cryptography.Rijndael&gt;。&lt;/xref:System.Security.Cryptography.Rijndael&gt; &lt;/xref:System.Security.Cryptography.DES&gt;</target>       </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>To create the encryption wrapper</source>
+          <target state="translated">若要创建加密包装器</target>       </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Create the <ph id="ph1">`Simple3Des`</ph> class to encapsulate the encryption and decryption methods.</source>
+          <target state="translated">创建<ph id="ph1">`Simple3Des`</ph>类来封装的加密和解密的方法。</target>       </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#38<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;38;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Add an import of the cryptography namespace to the start of the file that contains the <ph id="ph1">`Simple3Des`</ph> class.</source>
+          <target state="translated">将加密命名空间导入添加到包含的文件的起始位置<ph id="ph1">`Simple3Des`</ph>类。</target>       </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#77<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;77;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>In the <ph id="ph1">`Simple3Des`</ph> class, add a private field to store the 3DES cryptographic service provider.</source>
+          <target state="translated">在<ph id="ph1">`Simple3Des`</ph>类，添加一个私有字段来存储 3DES 加密服务提供程序。</target>       </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#39<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;39;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Add a private method that creates a byte array of a specified length from the hash of the specified key.</source>
+          <target state="translated">添加一个从指定的键的哈希值创建一个指定长度的字节数组的私有方法。</target>       </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#41<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;41;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Add a constructor to initialize the 3DES cryptographic service provider.</source>
+          <target state="translated">添加一个构造函数来初始化 3DES 加密服务提供程序。</target>       </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`key`</ph> parameter controls the <ph id="ph2">`EncryptData`</ph> and <ph id="ph3">`DecryptData`</ph> methods.</source>
+          <target state="translated"><ph id="ph1">`key`</ph>参数控制<ph id="ph2">`EncryptData`</ph>和<ph id="ph3">`DecryptData`</ph>方法。</target>       </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#40<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;40;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Add a public method that encrypts a string.</source>
+          <target state="translated">添加对字符串进行加密的公共方法。</target>       </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#42<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;42;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Add a public method that decrypts a string.</source>
+          <target state="translated">添加对字符串进行解密的公共方法。</target>       </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#43<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;43;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>The wrapper class can now be used to protect user assets.</source>
+          <target state="translated">包装类现在可以用于保护用户的资产。</target>       </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In this example, it is used to securely store private user data in a publicly accessible text file.</source>
+          <target state="translated">在本示例中，它用于安全地将私人用户数据存储在可公开访问的文本文件。</target>       </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>To test the encryption wrapper</source>
+          <target state="translated">若要测试加密包装器</target>       </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>In a separate class, add a method that uses the wrapper's <ph id="ph1">`EncryptData`</ph> method to encrypt a string and write it to the user's My Documents folder.</source>
+          <target state="translated">在单独的类中，添加一个方法来使用该包装<ph id="ph1">`EncryptData`</ph>方法加密字符串，并将其写入到用户的我的文档文件夹。</target>       </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#78<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;78;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Add a method that reads the encrypted string from the user's My Documents folder and decrypts the string with the wrapper's <ph id="ph1">`DecryptData`</ph> method.</source>
+          <target state="translated">添加从用户读取加密的字符串的方法的我的文档文件夹并使用包装器的字符串解密<ph id="ph1">`DecryptData`</ph>方法。</target>       </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings#79<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)</ept><ept id="p1">]</ept></source>
+          <target state="translated"><bpt id="p1">[!code-vb</bpt><bpt id="p2">[</bpt>VbVbalrStrings #&amp;79;<ept id="p2">](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)</ept><ept id="p1">]</ept></target>       </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Add user interface code to call the <ph id="ph1">`TestEncoding`</ph> and <ph id="ph2">`TestDecoding`</ph> methods.</source>
+          <target state="translated">添加用户界面代码以调用<ph id="ph1">`TestEncoding`</ph>和<ph id="ph2">`TestDecoding`</ph>方法。</target>       </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Run the application.</source>
+          <target state="translated">运行该应用程序。</target>       </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>When you test the application, notice that it will not decrypt the data if you provide the wrong password.</source>
+          <target state="translated">测试应用程序时，请注意它将解密的数据，是否提供了错误的密码。</target>       </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>See Also</source>
+          <target state="translated">另请参阅</target>       </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography&gt;&lt;/xref:System.Security.Cryptography&gt;</target>       </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;&lt;/xref:System.Security.Cryptography.DESCryptoServiceProvider&gt;</target>       </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.DES&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.DES&gt;&lt;/xref:System.Security.Cryptography.DES&gt;</target>       </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.TripleDES&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.TripleDES&gt;&lt;/xref:System.Security.Cryptography.TripleDES&gt;</target>       </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>&lt;xref:System.Security.Cryptography.Rijndael&gt;</source>
+          <target state="translated">&lt;xref:System.Security.Cryptography.Rijndael&gt;&lt;/xref:System.Security.Cryptography.Rijndael&gt;</target>       </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source><bpt id="p1"> [</bpt>Cryptographic Services<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept></source>
+          <target state="translated"><bpt id="p1"> [</bpt>加密服务<ept id="p1">](http://msdn.microsoft.com/library/f96284bc-7b73-44b5-ac59-fac613ad09f8)</ept></target>       </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
